@@ -18,5 +18,8 @@
 }
 body {
 	background-image: img src="rkdocs/bgrepeat.jpg";
-    background-repeat: repeat;
+  background-repeat: repeat;
+}
+table {
+  background-color: "#f9f8ef"
 }
