@@ -10,4 +10,9 @@
 .grid-item1 {
   grid-column-start: 1;
   grid-column-end: 4;
+  text-align: center;
+}
+.grid-item3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
