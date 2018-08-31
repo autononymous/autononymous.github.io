@@ -4,6 +4,7 @@
   grid-template-columns: auto auto auto;
   border: 1px solid black;
   border-collapse: collapse;
+  text-align: center;
   
 }
 .grid-item1 {
