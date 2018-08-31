@@ -17,8 +17,6 @@
   grid-column-end: 4;
 }
 body {
-	background-image: url("bgrepeat.jpg");
-	background-repeat: repeat;
-
-
+	background-image: url("autononymous.github.io/Ryan/rkdocs/bgrepeat.jpg");
+    background-repeat: repeat;
 }
