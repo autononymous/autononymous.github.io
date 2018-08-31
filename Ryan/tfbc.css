@@ -17,6 +17,6 @@
   grid-column-end: 4;
 }
 body {
-	background-image: url("rkdocs/bgrepeat.jpg");
+	background-image: img src="rkdocs/bgrepeat.jpg";
     background-repeat: repeat;
 }
