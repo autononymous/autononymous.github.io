@@ -1,6 +1,13 @@
-headermain {
-		text-align: center;
-		font-family: times, serif; 
-		font-size: 14pt; 
-		font-style: bold;
+.headermain {
+	text-align: center;
+	font-family: times, serif; 
+	font-size: 14pt; 
+	font-style: bold;
+}
+.bodytext {
+	font-style: normal;
+	text-align: justify;
+	font-size: 12pt;
+	font-family: times,serif;
+
 }
