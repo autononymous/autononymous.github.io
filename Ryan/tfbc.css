@@ -16,3 +16,9 @@
   grid-column-start: 1;
   grid-column-end: 4;
 }
+body {
+	background-image: url("bgrepeat.jpg");
+	background-repeat: repeat;
+
+
+}
