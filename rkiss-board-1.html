@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AUTO | Ryan Kissinger</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="images/titlepage_image.png" />
+  </head>
+  <style>
+	  /* <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */
+	  :root{
+		  --color_1: #EFEFEF;	/* ISABELLINE */
+		  --color_2: #1B1B1B;	/* EERIE BLACK */
+		  --color_5: #CC4B49;	/* DARK SCARLET */
+		  --color_4: #2F2F2F;  	/* JET BLACK */
+		  --color_3: #C2C091;	/* KHAKI GOLD */
+		  --color_6: #ACACAC;   /* SILVER */
+		  --color_7: #DADADA;   /* GAINSBORO */
+		  --color_8: #560319;
+		  --color_t2:  linear-gradient(90deg, hsla(0,0%,11%,0.96) 10%, hsla(0,0%,11%,1) 90%);
+	  }
+	  
+	  a:link, a:visited, a:active {
+		  color: inherit;
+	  }
+	  h1 {
+		  text-align: center;
+		  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+		  color: var(--color_1);
+		  font-weight: bolder;
+		  letter-spacing: 2px;
+	  }
+	  h2 {
+		  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+		  text-align: center;
+		  text-decoration: underline
+	  }
+	  h3 {
+		  color: var(--color_5);
+		  text-align: center;
+		  font-weight: 625;
+	  }	  
+	  .h_highlight {
+		  text-align: center;
+		  font-size: x-large;
+		  color:  var(--color_4);
+		  font-weight: 700;
+		  background-color: var(--color_5);
+		  padding-left: 20px;
+		  padding-right: 20px;
+		  text-decoration: none;
+		  font-variant-caps: small-caps;
+		  border-bottom: 3px solid var(--color_4);
+	  }
+	  .h_sublight {
+		  text-align: center;
+		  font-size: 16pt;
+		  color:  var(--color_2);
+		  font-weight: 700;
+		  background: linear-gradient(0deg, var(--color_6) 40%, var(--color_1) 100%);
+		  padding-left: 20px;
+		  padding-right: 20px;
+		  text-decoration: none;
+		  font-variant-caps: small-caps;
+		  border-bottom: 2px solid var(--color_4);
+		  font-style: italic;
+	  }
+	  h5 {
+		  color: var(--color_5);
+		  text-align: center;
+		  font-weight: 700;
+	  }
+	  h6 {
+		  color: var(--color_3);
+		  text-align: left;
+		  font-weight: 700;
+		  font-style: italic;
+		  font-size: large;
+		  text-decoration: underline;
+	  }
+	  .card-header {
+		  background-color: var(--color_4);
+		  border-right: 20px solid var(--color_5);
+		  border-left: 20px solid var(--color_5);
+	  }
+	  .main {
+		  text-indent: 30px;
+		  text-align: justify;
+		  padding-top: 15px;
+		  margin-bottom: 0px;
+		  font-size: large;
+	  }
+	  p {
+		  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+	  }
+	  body {
+		  background-color: var(--color_2);
+	  }
+	  .bg-darker {
+		  background: linear-gradient(to top, hsla(0,0%,11%,0.80) 0%, hsla(0,0%,11%,0.90) 20%, hsla(0,0%,11%,0.98) 50%);
+	  }
+	  .bg-name {
+		  background-color:	var(--color_4);
+		  border-bottom: 3px groove var(--color_5);
+		  border-top: 3px groove var(--color_5);
+		  border-radius: 10px;
+	  }
+	  .media-sectionimage { /* Images for sidebar header pics */
+		  width: 25%;
+		  border-radius: 10px;
+		  border: 4px solid var(--color_3);
+	  }
+	  .media-sidebarimage { /* Images for sidebar header pics */
+		  width: 100%;
+		  height:100%;
+	  }
+
+	  .mainbody { /* Main body section to the right of the content navbar. */
+		  background-color: var(--color_1);
+		  padding: 20px 35px 20px 35px;
+		  border-radius: 10px;
+	  }
+	  .cardbody {
+		  background-color: var(--color_1);
+	  }
+	  .sidebar-card {
+		  border-top: 0px solid var(--color_1);
+		  border-bottom: 0px solid var(--color_1);
+		  border-left: 0px solid var(--color_3);
+		  border-right: 0px solid var(--color_1);
+	  }
+	  
+	  .column-left {
+		  border-right: 2px solid var(--color_4);
+	  }
+	  .column-left-content {
+		  padding-left: 2%;
+		  padding-right: 2%;
+	  }
+	  .column-left-content2 {
+		  
+	  }
+	  .chapterlist {
+		  margin-bottom: 0px;
+	  }
+	  .nav-bottomline {
+		  border-bottom: 2px solid var(--color_1);
+	  }
+	  .subtext {
+		  color: var(--color_5);
+		  
+		  text-align: center;
+		  font-size: x-large;
+		  font-stretch: ultra-expanded;
+		  letter-spacing: 10px;
+		  font-weight: 500;
+		  
+	  }
+  </style>
+  
+  <body style="padding-top: 70px">
+<!-- Jumbotron header: Autononymous -->
+  <div class="container-fluid bg-darker fixed-top nav-bottomline">
+<br>
+	  <h1 class="display-4">Autononymous.</h1><center><h class="subtext">RYAN KISSINGER</h>
+	  </center>
+
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-none"> <a class="navbar-brand" href="#">&raquo; AUTO </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> About Us </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
+		  <a class="dropdown-item" href="#">Ryan Kissinger</a> 
+		  <a class="dropdown-item" href="#">Jason Keller</a>
+          <a class="dropdown-item" href="#">Jack Ratkovich</a> </div>
+      </li>
+		<style>
+			.navdiv {
+				color: white;
+				padding: 0px;
+				margin: 0px;
+				font-size: x-large;
+			}
+		</style>
+	  <p class="navdiv">&nbsp; | &nbsp;</p>
+      <li class="nav-item"> <a class="nav-link" href="#"><span class="badge badge-danger">1</span> &nbsp; Ryan's Project  </a> </li>
+	  <p class="navdiv">&nbsp; | &nbsp;</p>
+	  <li class="nav-item"> <a class="nav-link" href="#"> <span class="badge badge-danger">1</span> &nbsp; Jason's Project</a> </li>
+	  <p class="navdiv">&nbsp; | &nbsp;</p>
+		<li class="nav-item"> <a class="nav-link" href="#"><span class="badge badge-danger">1</span> &nbsp; Jack's Project  </a> </li>
+    </ul>
+  </div>
+</nav>
+
+  </div>
+<!-- Navigation Bar-->	  
+<br><br><br><br><br><br>
+<!-- Rows separating side navbar and content-->
+  <div class="row">
+<div class="col-lg-3 col-md-1"></div>
+<div class="col-lg-6 col-md-10">
+	<style>
+		.stanza {
+			text-align: center;
+			align-content: center;
+			align-self: center;
+			font-size: xx-large;
+			font-weight:  800;
+			color: var(--color_8);
+			margin-top: 20px;
+			margin-bottom: 20px;
+			
+		}
+	</style>
+	<div class="col-12 mainbody">
+		<center><h class="h_highlight">&raquo; Longboard / Contents</h></center>
+	  	<style>
+			.contentlist {
+				font-size: x-large;
+				margin-left: 5%;
+			}
+		</style>
+		<br>
+		<ol class="contentlist">
+			<li><a href="#abstract">Abstract</a></li>
+			<li><a href="#mechparts">Mechanical Parts</a></li>
+			<li><a href="#">Dolor</a></li>
+			<li><a href="#">Sit Amet</a></li>
+		</ol>
+    </div>  
+	<br>
+	<div class="col-12 mainbody">
+	  <center><h class="h_highlight">&raquo; Longboard / Abstract</h><a id="abstract"/></center>
+	  <p class="main">The objective of this project was to design an affordable approach to powered longboards with a unique twist on the control method. Boosted boards typically run in excess of a thousand dollars, and conversion kits are still somewhat expensive. I took a graduate-level class at California Polytechnic State University called Mechanical Control System Design, and I determined my class project to be the design of a powered longboard, since the approach I conceived had never been done before.</p>
+		<p class="main">What's so unique about this particular design is the control method: using load pedals that read the user's weight distribution between the front and the back. Rather than conventional control methods that entail the use of a handheld controller using a wireless/bluetooth protocol of communication, this approach taps into the body's innate control system. Without electronics or motors, the longboard is already a device driven by the body's sense of balance, and this approach only furthers that natural connection with the board.</p>
+		<center><br> <h class="h_sublight">&raquo; Basic Considerations</h>
+		</center>
+	  <p class="main">What does it take to power a longboard uphill, anyways? Several assumptions give us the parameters we need to start selecting components &mdash; namely, the torque required to get the longboard up the hill. Below are some basic calculations that give us a ballpark estimate of what kind of torque we need out of the motor. We assume that the longboard wheels behave like a rack-and-pinion, or that there is no slippage between the ground and the wheels. This is a reasonable assumption; unless the rider is intentionally attempting to do slides on the board, the high-durometer wheels prevent the wheels from sliding against the street. </p>
+		<br> 
+	  <center><img src="images/board_project/board_fig1.png" alt="Torque requirement calculations." style="width:90%; border: 4px solid var(--color_2); border-radius: 10px;"/></center>
+	  <p class="main"> Assuming a 200-pound (90.72 kg) rider gives us a reasonable factor of safety. Through these calculations, using simple newtonian principles, we find a linear relationship between torque and the incline angle, dependent on rider mass, gravity, and the wheel radius. Chiefly, these findings express that <strong>for every degree increase, a motionless cold-start requires  1.5 N*m of torque </strong> to break static equilibrium.</p>
+	  <p class="main">This distinction phases out the vast majority of brushed motors. It takes a beefy motor to be able to carry a rider up a steep hill, and even a beer-can motors like the ones in the <a href="#">Vex Robotics line</a> fail to meet the standards we need for this. This is why we lean towards the use of a brushless motor (motors typically used by RC enthusiasts), allowing us to use power components such as lithium-polymer batteries to their full potential (no pun intended). </p>
+		<hr>
+	</div>
+	<br>
+	<div class="col-12 mainbody">
+	  <center><br> <h class="h_highlight">&raquo; Longboard / Mechanical Parts</h> <a id="mechparts"/>
+	  <p class="main">The list below contains all the parts selected for this project.</p>
+	  <br>
+	  <center><img src="images/board_project/board_fig2.png" alt="Torque requirement calculations." style="width:90%; border: 4px solid var(--color_2); border-radius: 10px;"/></center>
+	  <p class="main">Selection of the <strong>Turnigy SK8-149kV </strong> is based around the power, current, and Kv rating of the motor. <i>Power</i> is calculated as current times voltage: with a max power rating of 3500 watts and a maximum current of 80 amps, the motor is able to handle a maximum voltage of about 40 volts (though this is far beyond the voltage of our selected battery. It <em>is</em> an option to select a stronger battery.) Research on message boards and powered longboard enthusiast websites specifies the Turnigy line as among the best in terms of quality and power transmission. It runs on three-phase power and uses a Hall-effect sensor encoder to read position, so that the motor can effectively be controlled with a SISO PID controller, though we will get to this later.</p>
+	  <p class="main"> The <strong>FX1901 load sensor</strong> was a surprising find for our team, a diamond in the rough; the perfect balance between cost and quality. At around $30, the 1901 operates as a full Wheatstone bridge compression load cell that can register in excess of 200 pounds. This is satisfactory for the requirements of this project; not only will the rider's weight be distributed between both legs, but our design orients the load pedals so they are driven by the rider's toes, not the heel. The four wires running off of the load cell are power, ground, positive and negative signal. This is much better than using a conventional bathroom-scale load cell that only has three wires, requiring at least two to be chained together to get a full Wheatstone bridge.</p>
+	  <p class="main">For the power requirements of the project, the <strong>Turnigy 5000mAh battery</strong> satisfies our needs. It's a six-cell LiPo battery with a 60-Coulomb discharge capable of providing 22.2V to the motor. A <strong>LiPo alarm</strong> is also a necessary component to be able to read the voltage, to ensure battery depletion does not reach dangerous levels. </p>
+	  <p class="main">An optional addition is the <strong>BNO055 accelerometer and gyroscope</strong> by Adafruit Industries. The final circuit schematic allows for it to be connected to the custom circuitboard as a hat. If implemented into the code, it can be used to amplify the proportional gain by the incline angle using the gyroscope, and the accelerometer can provide further controls to ensure smooth operation.</p>
+	  <p class="main">The <strong>Turnigy SK8-VESC </strong>is a critical component for our powered skateboard. Designed by Benjamin Vedder, this ESC (or Electric Speed Controller) acts as a MOSFET, simplifying the connection between the battery and our three-phase motor, allowing us to control it like a servo. This servo connection also provides a clean 5V+ and GND- for our custom circuit board. In order to interface with this component, we'll also need a <strong>USB Type-A</strong> (the old kind whose connector is shaped like a loaf of bread.) By using Benjamin Vedder's VESC Tool, we can set the parameters of the control system, though the specifics of this will be detailed later. </p>
+	  <p class="main">The <strong>custom motor mount set by VANPRO</strong> is an affordable approach found on Amazon that contains everything we need to mount our motor to the trucks. The reason we mount the motor to the trucks and not the deck is because the trucks are the only location where the distance between the motor output shaft and the wheel doesn't change with respect to the yaw of the board &mdash; or else the belt connecting both pulleys wouldn't be tight. This kit contains a <strong>mounting plate</strong> to rigidly connect the motor to the truck, <strong>a set of pulleys</strong> providing a 2:1 gear ratio, and <strong>a belt</strong> to transmit motor torque from shaft-to-wheel.</p>
+		  <p class="main">VANPRO also sells <strong>custom wheels,</strong> which are a requirement for this project. I originally thought my longboard's setup with <em>These Wheels</em> was enough to interface with the custom motor mount set, but the custom wheels provided have space for fasteners, allowing us to mount the larger pulley to the wheel &mdash; how else would we transmit power? I can also testify that the wheels have a sufficient durometer, better than you'd think. I thought they'd be Kroger-brand quality wheels like the ones you'd find on a $20 kids' skateboard at Target, but I'd place them up in quality with <em>These</em> and <em>Orangatang</em> wheels.</p>
+	<p class="main">Further description of electrical components will be discussed in the following pages, as these tie intimately with our circuit board design.</p>
+		  <hr>	
+	</div>
+	<br>
+    <nav class="align-content-center">
+          <!-- Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks-->
+          <ul class="pagination align-content-center">
+            <li class="page-item disabled"> <a class="page-link" href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> <span class="sr-only">Previous</span></a></li>
+            <li class="page-item active"> <span class="page-link"> 1 <span class="sr-only">(current)</span></span></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">4</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"> <a class="page-link" href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> <span class="sr-only">Next</span></a></li>
+          </ul>
+    </nav>
+</div> 
+<div class="col-lg-3 col-md-1"></div>
+  </div>
+  
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="../js/jquery-3.3.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="../js/popper.min.js"></script> 
+    <script src="../js/bootstrap-4.3.1.js"></script>
+  </body>
+</html>
