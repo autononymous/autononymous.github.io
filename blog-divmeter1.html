@@ -24,6 +24,12 @@
 		  --color_t2:  linear-gradient(90deg, hsla(0,0%,11%,0.96) 10%, hsla(0,0%,11%,1) 90%);
 	  }
 	  
+      td,tr 
+      {
+          padding-left: 10px;
+          padding-right: 10px;
+      }
+
 	  a:link, a:visited, a:active {
 		  color: inherit;
 	  }
@@ -227,8 +233,8 @@
 <br><br><br><br><br><br>
 <!-- Rows separating side navbar and content-->
   <div class="row">
-<div class="col-lg-3 col-md-1"></div>
-<div class="col-lg-6 col-md-10">
+<div class="col-lg-2 col-md-1"></div>
+<div class="col-lg-8 col-md-10">
 	<style>
 		.stanza 
         {
@@ -421,22 +427,138 @@
         </center>
 
         <p class="main">
-            asdf
+            The <b>SN74HC595</b> is an 8-bit, serial-in, parallel shift-out register that we will use to hold the 4-bit binary values for each Nixie tube. The user manual <a style="color: var(--color_5);" href="http://www.ti.com/lit/pdf/scls041">can be found here.</a>
         </p>
 
+        <p class="main">
+            To save you a click, I'll go over the fundamental parts of the HC595 to establish a better understanding of how we can interface with it. First, of course, the most important task at-hand is to understand its properties. The following is the pinouts for the HC595:
+        </p>
+        <br><hr>
+        <div class="row">
+        <div class="col-lg-6" style="vertical-align:middle; height: 100%; align-content: center;">
+            <figure>
+                <img src="images/divmeter_project/HC595_pinout.png" alt="Divmeter pinout." width="100%" class="blogimage" style="align-content: middle;"/>
+            </figure>
+        </div>
+        <div class="col-lg-6">
+            <table width="100%">
+                <tr>
 
+                    <td style="font-weight: 700;">Pin</td>
+                    <td style="font-weight: 700;">Description</td>
+                </tr>
+                <tr>
+                    <td> VCC </td>
+                    <td style="text-align: left;"> Power pin</td>
+                </tr>
+                <tr>
+                    <td> GND </td>
+                    <td style="text-align: left;"> Ground </td style="text-align: left;">
+                </tr>
+                <tr>
+                    <td> SER / DS </td>
+                    <td style="text-align: left;"> Serial Input</td style="text-align: left;">
+                </tr>
+                <tr>
+                    <td style="text-decoration-line: overline;"> OE </td>
+                    <td style="text-align: left;"> Output Enable (active when LOW)</td style="text-align: left;">
+                </tr>
+                <tr>
+                    <td> RCLK / STCP</td>
+                    <td style="text-align: left;"> Storage register clock pin</td style="text-align: left;">
+                </tr>
+                <tr>
+                    <td> SRCLK / SHCP</td>
+                    <td style="text-align: left;"> Shift register clock pin</td style="text-align: left;">
+                </tr>
+                <tr>
+                    <td> MR </td>
+                    <td style="text-align: left;"> Master reset (active when LOW)</td style="text-align: left;">
+                </tr>
+                <tr>
+                    <td style="text-decoration-line: overline;"> SRCLR </td>
+                    <td style="text-align: left;"> Clear</td style="text-align: left;">
+                </tr>
+                <tr>
+                    <td> Q<sub>A</sub></td>
+                    <td style="text-align: left;"> Bit 1, least significant bit</td style="text-align: left;">
+                </tr>
+                <tr>
+                    <td> Q<sub>B</sub></td>
+                    <td style="text-align: left;"> Bit 2</td style="text-align: left;">
+                </tr>
+                <tr>
+                    <td> Q<sub>C</sub></td>
+                    <td style="text-align: left;"> Bit 3</td style="text-align: left;">
+                </tr>
+                <tr>
+                    <td> Q<sub>D</sub></td>
+                    <td style="text-align: left;"> Bit 4</td style="text-align: left;">
+                </tr>
+                <tr>
+                    <td> Q<sub>E</sub></td>
+                    <td style="text-align: left;"> Bit 5</td style="text-align: left;">
+                </tr>
+                <tr>
+                    <td> Q<sub>F</sub></td>
+                    <td style="text-align: left;"> Bit 6</td style="text-align: left;">
+                </tr>
+                <tr>
+                    <td> Q<sub>G</sub></td>
+                    <td style="text-align: left;"> Bit 7</td style="text-align: left;">
+                </tr>
+                <tr>
+                    <td> Q<sub>H</sub></td>
+                    <td style="text-align: left;"> Bit 8, most significant bit</td style="text-align: left;">
+                </tr>
+                <tr>
+                    <td> Q<sub>H</sub>'</td>
+                    <td style="text-align: left;"> Daisy Chain Out (to next Serial)</td style="text-align: left;">
+                </tr>
+            </table>
+        </div>
+        </div>
+        <br><hr>
+        <p class="main">
+            What's important to note here is that the bits transferred in to the shift register through Serial first enter the Q<sub>A</sub> register, then are procedurally shifted towards the Q<sub>H</sub>. Therefore, when we interface with this device, the LSB will end up being the last shifted value, housed in Q<sub>A</sub>, and conversely, the MSB will house the first shifted value (in Q<sub>H</sub>). Any further bit shifts will result in the Q<sub>H</sub> bit being shifted to the next shift register, into its Q<sub>A</sub> space.
+        </p>
+        <p class="main">
+            Our end goal, of course, is to drive the nixie tubes. The K155ID5 chip, which we will discuss next, is what allows us to take the 4-bit binary number and convert it to a signal that drives one number at a time on the nixie tubes. By chaining three of the HC595 chips together, we have six available 4-bit binary numbers to drive our six nixie tubes.
+        </p>
+        <p class="main">
+            So how do the bits get shifted in, then? We use the Serial, RCLK and SRCLK to drive this process. 
+        </p>
+        <p class="main">
+            The <b> STCP </b> pin is the storage register clock pin. When it is low, the device "starts listening" for binary values to be introduced through the Serial line. When we change it to high, the device stops listening, then shifts the input data to the output line.
+        </p>
+        <p class="main">
+            The <b> SHCP </b> pin is the shift register clock pin. All we care about with this pin is its behavior on a rising edge transition &mdash; when it changes from low to high, all the values in our shift register are shifted by one place: Q<sub>A</sub> is shifted to Q<sub>B</sub>, Q<sub>B</sub> to Q<sub>C</sub>, and so on. The value in Q<sub>H</sub> is shifted through the Q<sub>H</sub>' pin, which connects to the next register's Serial line, entering it into its Q<sub>A</sub> position.
+        </p>
+        <p class="main">
+            The <b> Serial </b> pin holds the data transferred from the microcontroller: a single bit, zero or one, low or high. The value in this register is shifted in when the SHCP pin undergoes a rising edge transition.
+        </p>
         <br><hr>
 
         <center>
         <h class="h_sublight">
-            K155ID5 Binary-To-BCD
+            K155ID1 Binary-To-BCD
         </h>
         </center>
-
+        
         <p class="main">
-            asdf
+            
+            The <b>K155ID1</b> (also known as the К155ИД4 or the SN74155N) is a binary-to-BCD driver that converts our 4-bit nybble of binary numbers into a signal for the correct digit on our Nixie tubes. The user manual <a href="docs/k155id1.pdf" style="color: var(--color_5);">can be found here.</a>
         </p>
-
+        <img src="images/divmeter_project/74141_truthtable.png" height="400px" style="float: left; padding: 20px;"/>
+        <p class="main">
+            To the left is a truth table of values that correspond to the pins A, B, C, and D, which directly connect to either the high-nybble or low-nybble of the HC535. So long as our chip is supplied with power and ground, the binary number represented by A, B, C, and D directly influences the activated pin.
+        </p>
+        <p class="main">
+            We observe on the pinout schematic that the values 0-9 are represented. For this particular chip (that only represents values 0-9), any value greater than 9 (or 0x0110, binary ten) results in no output. For the sake of convenience, we can use these values as "dead outputs" when we don't want to display a number.
+        </p>
+        <p class="main">
+            What's nice about this chip is that it is directly intended for use with high-voltage Nixie tubes; after all, the documentation contains a Russian document from the cold war era, so we know this technology is antiquated. The Logic Diagram shows us that zener diodes and PNP BJT logic is present in the device. Since BJTs are present, the signal obtained from our microcontroller is segregated from the high-voltage connection to the Nixie tubes running in excess of 200 volts. That means we (ideally) don't fry our microcontroller and everything else when we interface with it!
+        </p>
 
         <br><hr>
 
@@ -447,7 +569,10 @@
         </center>
 
         <p class="main">
-            asdf
+            The Adafruit ESP-32 HUZZAH32 microcontroller is an excellent featherboard I reccomend for prototyping purposes. To save time building our Divergence Meter, we don't have to worry about soldering thermal ground planes and using heat guns for intricate components. One part I never want to solder again is the USB-to-UART chip, with terminals as small as the width of a human hair. We can save time, effort, and tears by just using the full featherboard and implementing it in our design.
+        </p>
+        <p class="main">
+            My reccomendation of the ESP32 is because its power equates well with the requirements of the project: it has four distinct timer channels (this is a clock, after all), gives us a wealth of pins, and has low power requirements and power consumption during operation. Using Sloeber, an IDE built off of the Arduino workspace that packs a lot more power, we can interface with the ESP-32 quickly to prototype code.
         </p>
 
         <br><hr>
@@ -459,15 +584,23 @@
         </center>
 
         <p class="main">
-            asdf
+            The NCH6100HV, designed by Yan Zeyuan, supplies us with exactly the power we need to drive the Nixie tubes. Further documentation of this device <a href="https://elty.pl/pl/p/file/ca247d15f86f21efcaf90591a05a01f2/NIXIE-Power-Supply-Datasheet-EN-v1.0.0.pdf">can be found here.</a> This step-up converter can accept a 12V signal and amplify it to the 200V we need to power the filament of our Nixie tubes.
         </p>
+
+       
 
     </div>
 	<br>
-	
+	<div class="col-12 mainbody">
+         <div class="row">
+            <div class="col-3">  <center>&leftarrow;Previous Page</center> </div>
+            <div class="col-6"> <center>1 <a href="blog-divmeter2.html">2</a> 3 4 5 6</center></div>
+            <div class="col-3"><center><a href="blog-divmeter2.html">Next Page&rightarrow;</a> </center> </div>
+        </div>
+    </div>
 	<br>
 </div> 
-<div class="col-lg-3 col-md-1"></div>
+<div class="col-lg-2 col-md-1"></div>
   </div>
   
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
