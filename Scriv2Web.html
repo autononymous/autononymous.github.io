@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Scriv2Web Tool by SavantGuarde</title>
+  <title>Scriv2Web Tool by Savant-Guarde</title>
 
   <style>
     body {
@@ -14,6 +14,14 @@
 div {
   /* background-color: rgba(5,5,100,0.08); */
   /* border: 1px solid rgba(5,5,100,0.08); */
+}
+
+h {
+  margin-bottom: 0px;
+}
+
+li {
+  margin-bottom: 5px;
 }
 
 /* ======== [Structure of page] ======== */
@@ -33,6 +41,7 @@ div.str-tabs {
 div.str-body {
   flex:8;
   border:1px solid black;
+  overflow:hidden;
 }
 
 /* ======== [Tabs] ======== */
@@ -88,7 +97,8 @@ div.tab-container {
 div.sheet {
   width:100%;
   height:100%;
-  background: linear-gradient(to right, rgba(255,255,255,0.3)), center/110% url('https://autononymous.io/wp-content/uploads/2025/04/repeat_sas_02.png') ;
+  background-color: white;
+  background-image: linear-gradient(to right, rgba(255,255,255,0.3)), top/110% url('https://autononymous.io/wp-content/uploads/2025/04/repeat_sas_02.png') ;
 }
 div.sheetbody {
   margin:20px;
@@ -118,12 +128,15 @@ div.sht-bodytext {
   margin-left:15px;
   padding-left:10px;
   border-left:1px solid black;
+  margin-top: 0em;
 }
 div.sht-bodysub {
-  margin-left:5px;
-  padding-left:10px;
-  border-left:1px solid black;
-  line-height:1em;
+  text-align: justify;
+}
+p.bodytext {
+  text-align: justify;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 div.sht-body {  
 }
@@ -400,12 +413,105 @@ textarea.text-output-css {
 <!-- ---[SHEET 01]---- -->
     <div class="sheet sht1" id="sht1" style=""><div class="sheetbody">
       <div class="sht-header"><h2>Scriv2Web Compiler and Viewer</h2></div>
-      <div class="sht-subheader"><span>Designed by Savant-Guarde</span></div>
+      <div class="sht-subheader"><span>Designed by <a href="https://autononymous.io/authors-and-stories/savantguarde/">Savant-Guarde</a></span></div>
       <hr>
       <div class="sht-bodytext">
         <h3>About</h3>
         <div class="sht-bodysub">
-        <p>Compiling text for webnovels sucks, but it shouldn't have to.</p>
+        <p class="bodytext">
+          Compiling text for webnovels can suck, but it shouldn't have to. 
+          That's why I developed a tool to simplify the process,
+          reducing a lot of the repetitive work.
+        </p>
+        <p class="bodytext">
+          This tool is designed to take a custom, compiled JSON file from 
+          <a href="https://www.literatureandlatte.com/scrivener/overview">
+            Scrivener</a> and convert it into a webnovel format. 
+          It also allows you to customize the CSS for each chapter element,
+          so you can make it look exactly how you want.
+        </p>
+          </div>
+        </div>
+        <div class="sht-bodytext">
+          <h3>How It Works</h3>
+          <div class="sht-bodysub">
+          <p class="bodytext">
+            This tool takes a JSON file and parses it into a format that can
+            be used for posting on webnovel sites such as Wattpad, Archive Of
+            Our Own, Royal Road, and DeviantArt. The resulting text is presented
+            in both raw HTML and formatted HTML, depending on the site and whether
+            it accepts custom HTML.
+              <ul>
+                <li><em>Sites Without HTML Customization:</em> Wattpad, DeviantArt</li>
+                <li><em>Sites With HTML Customization:</em> Archive Of Our Own, Royal Road</li>
+              </ul>
+            </p>
+            </div>
+        </div>
+        <div class="sht-bodytext">
+          <h3>Template Files</h3>
+          <p class="bodytext">
+            I've created some template files to get you started.
+          </p>
+          <p class="bodytext">
+            Creating a new project from the template provided is an option, but don't worry: you don't have to create an entirely new Scrivener project to use this tool. All it requires
+            is to (1) set up some custom metadata in the Inspector, and (2) specify the
+            style of the body text.
+          </p>
+          <p class="bodytext">
+            &emsp;&raquo;&ensp;<a href="https://github.com/autononymous/autononymous.github.io/blob/master/docs/Scrivener/WebPublishing_rev1p0.scrformat" target="_blank" download="WebPublishing_V1.scrformat">Webnovel Export Format [.scrformat]</a>
+          </p>
+          <p class="bodytext">
+            &emsp;&raquo;&ensp;<a href="https://github.com/autononymous/autononymous.github.io/blob/master/docs/Scrivener/Webnovel.scrivtemplate">Webnovel Project Template [.scrivtemplate]</a>
+          </p>
+          <p class="bodytext">
+            For instructions on how to set this up in an <em>existing</em> project, please see the FAQ below.
+          </p>
+          <div class="sht-bodysub">
+          </div>
+        </div>
+        <div class="sht-bodytext">
+          <h3>Instructions (New Project)</h3>
+          <div class="sht-bodysub">
+            <p class="bodytext">
+              <ol>
+                <li>Open Scrivener and select <em>File &raquo; "New Project&hellip;"</em></li>
+                <li>Under the <em>Options</em> dropdown, select <em>"Import Templates&hellip;"</em> and import the custom project file.</li>
+                <li>Follow the format shown in the Binder. First level is the <strong>Act</strong>, second level is the <strong>Chapter</strong>, and third level is for each individual <strong>Scene</strong>. </li>
+                <li>Proceed to compose your masterpiece, or copy & paste your content in from Google Docs/Wavemaker/etc. Make sure that the content of your story uses the "Body" style so that Scrivener can identify it later in the export process. Feel free to modify this style how you want, as it is only the name of this style that matters.</li>
+                <li>When you're ready to compile, hit <em>Ctrl+Shift+E</em> or navigate to <em>File &raquo; "Compile&hellip;</em></li>
+                <li>Select the Project Format labelled "Web Publishing". It should already be there in the compiling formats, but if it isn't, click the gear button at the bottom and select <em>"Import Formats&hellip;"</em> to load the custom export configuration. </li>
+                <li>IMPORTANT: Make sure the "Compile For" setting at the top is for "Plain Text (.txt)". </li>
+                <li>Export the .JSON file to a friendly location on your computer so that you can load it into this web tool.</li>
+              </ol>
+            </p>
+              
+            </div>
+        </div>
+        <div class="sht-bodytext">
+          <h3>Using The Scriv2Web System</h3>
+          <div class="sht-bodysub">
+            <p class="bodytext">  
+              I have a sample file (first three chapters of my story, <a href="https://autononymous.io/authors-and-stories/savantguarde/the-frostburn-chronicles-firebrand/#TOC">Firebrand</a>) pre-loaded so you can play around with the features before you import your work.
+            </p>
+            <p class="bodytext">
+              Import the .JSON file into the second tab. By clicking on the elements in the third tab, set up the custom CSS for each element type. Proceed to the fourth tab to prepare the text in any format you desire. 
+            </p>
+          </div>
+        </div>
+        <div class="sht-bodytext">
+          <h3>FAQ</h3>
+            <p class="bodytext">
+              I'm not taking questions today: gotta take the lady to a movie. Come back on April 26th or so.
+            </p>
+          <div class="sht-bodysub">
+          </div>
+        </div>
+        <div class="sht-bodytext">
+          <h3>Support</h3>
+          <div class="sht-bodysub">
+            <p class="bodytext"> If you find this tool useful, you can support my writing at <a href="https://autononymous.io/authors-and-stories/savantguarde/">Autononymous.io</a>, or support development through <a href="https://ko-fi.com/savantguarde">my KoFi page</a>. </p>
+            <p class="bodytext"> If you have any questions, comments, or suggestions, please feel free to reach out to me on <a href="https://www.reddit.com/user/SavantGuarde">Reddit</a>, or through the comments below! </p>
           </div>
         </div>
     </div></div> <!-- end of SHEET 01 ----------------------------- -->
