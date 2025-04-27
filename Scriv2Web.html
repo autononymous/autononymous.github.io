@@ -31,7 +31,7 @@ div.str-full {
   position:absolute;
   left:5%;
   width:90%;
-  max-width:1000px;
+  max-width:800px;
   margin:auto;
   
 }
@@ -354,6 +354,8 @@ div.activeitem-v:hover {
       );
 }
 
+/* ======== [TOC Elements] ======== */
+
 
 
 /* ======== [Misc Elements] ======== */
@@ -373,11 +375,11 @@ span.console {
 }
 textarea.text-output {
   width:100%;
-  height:100px;
+  min-height:400px;
   padding:5px;
   background-color:transparent;
   border:1px dashed black;
-  resize: none;
+  resize: vertical;
 }
 textarea.text-output-html {
   position:relative;
@@ -398,6 +400,19 @@ textarea.text-output-css {
   top:10px;
   width:95%;
   min-height:500px;
+  padding:5px;
+  margin-bottom:20px;
+  background-color:transparent;
+  border:1px dashed black;
+  border-radius:10px;
+  resize: vertical;
+}
+textarea.text-output-toc {
+  position:relative;
+  left:5px;
+  top:10px;
+  width:95%;
+  min-height:100px;
   padding:5px;
   margin-bottom:20px;
   background-color:transparent;
@@ -426,6 +441,7 @@ div.ownertext {
       <div class="tab" id="tab2" onclick="ACTIVETAB=2;SetActiveTab(this,'sht2');"><span class="tab-title">JSON Input</span></div>
       <div class="tab" id="tab3" onclick="ACTIVETAB=3;SetActiveTab(this,'sht3');"><span class="tab-title">Configuration</span></div>
       <div class="tab" id="tab4" onclick="ACTIVETAB=4;SetActiveTab(this,'sht4');"><span class="tab-title">Output</span></div>
+      <div class="tab" id="tab5" onclick="ACTIVETAB=5;SetActiveTab(this,'sht5');"><span class="tab-title">Table Of Contents</span></div>
     </div>
     
   </div> <!-- end of Tabs -->
@@ -453,7 +469,11 @@ div.ownertext {
           so you can make it look exactly how you want.
         </p>
         <p class="bodytext">
-          I use this to format my stories <a href="https://autononymous.io/authors-and-stories/savantguarde/the-frostburn-chronicles-firebrand/#TOC">Firebrand</a> and <a href="https://autononymous.io/authors-and-stories/savantguarde/paragate/">Paragate</a>. Loaded into this program, as a template, is the first three chapters of Paragate.
+          I use this to format my stories <a href="https://autononymous.io/authors-and-stories/savantguarde/the-frostburn-chronicles-firebrand/#TOC">
+            Firebrand</a> and <a href="https://autononymous.io/authors-and-stories/savantguarde/paragate/">
+            Paragate</a>. Loaded into this program, as a template, is the first four chapters of Paragate. 
+            It's a story with two alternating first-person perspectives, so it demonstrates the capacity to 
+            use different text formatting styles.
           </div>
         </div>
         <div class="sht-bodytext">
@@ -549,7 +569,7 @@ div.ownertext {
       <hr>
       <div class="sht-body">
       <br><span> JSON preview: </span>
-      <textarea class="text-output" id="JSONoutput"></textarea>
+      <textarea class="text-output" id="JSONoutput" onchange="ManualUpdateJSON(this);"></textarea>
       </div>
     </div></div> <!-- end of SHEET 02 ----------------------------- -->
     
@@ -692,9 +712,33 @@ div.ownertext {
      <!--   <textarea id="htmlbody"></textarea> -->
       
     </div></div> <!-- end of SHEET 04 ----------------------------- -->
+
+<!-- ---[SHEET 05]---- -->
+    <div class="sheet sht5" id="sht5" style=""><div class="sheetbody">
+      <div class="sht-header">
+        <h2>Table of Contents for <span id="storyname">Webnovel</span></h2>
+      </div>
+      <div class="sht-subheader">
+        <span>&#10022; 
+          Word Count <span id="d-wc">here</span> &#10022; 
+          Project Name "<span id="d-prj">here</span>" &#10022;         
+        </span>
+      </div>
+      <hr>
+      <p>First release on <input type="date" id="ReleaseStartDate" onchange="PopulateTOC();"> and every <input type="number" id="ReleaseFrequency" style="width:40px;" value="7" onchange="PopulateTOC();"> days for <select style="width:80px;" id="ReleaseLink" onchange="PopulateTOC();"> <option value="AO3">A03</option><option value="Wattpad">Wattpad</option><option value="RoyalRoad">Royal Road</option><option value="DeviantArt">DeviantArt</option><option value="Personal">Personal Site</option></select>.</p>
+      <hr>
+      <p>CSS Output:</p>
+      <textarea class="text-output-toc" id="TOCoutHTML">CSS goes here.</textarea>
+      <hr>
+      <div class="toc-tocbody" id="tocbody">
+
+      </div>
+
+    </div></div> <!-- end of SHEET 05 ----------------------------- -->
+
 <!-- ---[SHEET OVERLAYS]---- -->    
     <div style="position:absolute;top:2px;right:5px;font-size:0.8em;">
-   Version 1.03
+   Version 1.04
     </div>
     <div class="ownertext">
       &copy; 2025 Savant-Guarde&emsp;(<a href="https://autononymous.io/authors-and-stories/savantguarde/">Autononymous.io</a>)<br>
@@ -708,7 +752,7 @@ div.ownertext {
 
     
 const sampleTITLE = `
-font-size: 6.0vw;<br>
+font-size: 3.0rem;<br>
 font-family: 'Garamond';<br>
 text-decoration: underline;<br>
 font-style: none;<br>
@@ -720,7 +764,7 @@ padding-top:10px;<br>
 `
 ;
 const sampleSUBTITLE = `
-font-size: 3.5vw;<br>
+font-size: 2.5rem;<br>
 font-family: 'Garamond';<br>
 text-decoration: none;<br>
 font-style: italic;<br>
@@ -779,8 +823,8 @@ const cssTemplate = `
 
 const jsTemplate = `
 
-{"Manuscript":[{"DocType":"Meta","Index":0 },{"DocType":"Act","GivenName":"","SevenWordSummary":"","AutoNamePart":"","AutoNameFull":"ACT I","ActNum":1,"ChapterPart":"","ChapterFull":"","ScenePart":"","SceneFull":"","Style":"","Perspective":"","Index":1,"Label":"[2] Narrative Revision","Status":"No Status","Keywords":"","UUID":"1","Synopsis":"","VerboseID":"1","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"Part One","Body":""},{"DocType":"Chapter","GivenName":"Robot Boy","SevenWordSummary":"Cody introduces his boring work life.","AutoNamePart":"Chapter&nbsp;One","AutoNameFull":"Chapter&nbsp;One","ActNum":1,"ChapterPart":1,"ChapterFull":1,"ScenePart":"","SceneFull":"","Style":"","Perspective":"Cody Dunsmore","Index":2,"Label":"[3] Polishing Revision","Status":"No Status","Keywords":"","UUID":"1","Synopsis":"","VerboseID":"1.1","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"
-01","Body":""},{"DocType":"Scene","GivenName":"Robot Boy","AutoNamePart":1,"SevenWordSummary":"Cody introduces his life after college.","AutoNameFull":1,"ActNum":1,"ChapterPart":1,"ChapterFull":1,"ScenePart":1,"SceneFull":1,"Style":"Cody","Perspective":"Cody Dunsmore","Index":3,"Label":"Modern World","Status":"03: Narrative Revision","Keywords":"","UUID":"2","Synopsis":"","VerboseID":"1.1.1","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-C01-1","Body":"
+{"Manuscript":[{"DocType":"Meta","Index":0 },{"DocType":"Act","GivenName":"","SevenWordSummary":"","AutoNamePart":"","AutoNameFull":"ACT I","ActNum":1,"ChapterPart":"","ChapterFull":"","ScenePart":"","SceneFull":"","Style":"","Perspective":"","Index":1,"Label":"[2] Narrative Revision","Status":"No Status","Keywords":"","UUID":"1","Synopsis":"","VerboseID":"1","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"Part One","Body":""},{"DocType":"Chapter","GivenName":"Robot Boy","SevenWordSummary":"Cody introduces his boring work life.","AutoNamePart":"Chapter&nbsp;One","AutoNameFull":"Chapter&nbsp;One","ActNum":1,"ChapterPart":1,"ChapterFull":1,"ScenePart":"","SceneFull":"","Style":"","Perspective":"Cody Dunsmore","Index":2,"Label":"[3] Polishing Revision","Status":"No Status","Keywords":"","UUID":"1","Synopsis":"A male office worker languishes in his listless life.","VerboseID":"1.1","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"
+01","Body":""},{"DocType":"Scene","GivenName":"Robot Boy","AutoNamePart":1,"SevenWordSummary":"Cody introduces his life after college.","AutoNameFull":1,"ActNum":1,"ChapterPart":1,"ChapterFull":1,"ScenePart":1,"SceneFull":1,"Style":"Cody","Perspective":"Cody Dunsmore","Index":3,"Label":"Modern World","Status":"03: Narrative Revision","Keywords":"","UUID":"2","Synopsis":"A male office worker languishes in his listless life.","VerboseID":"1.1.1","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-C01-1","Body":"
 <p>&emsp;In the long, dragging years after college, all I could ever ask is to waste my life as efficiently as possible. </p>
 <p>&emsp;My mind loiters in the long lull between emails, dragging the 3D model on my computer in circles. The flat fluorescents take the office closer to a colorless center: what my colleague calls &quot;suicide gray,&quot; showing no sign of winter&apos;s transition to spring. Somewhere beyond the window shades and bleached brick walls, life awakens from its slumber in the foothills of the Rocky Mountains, trading the dormant golden brown for verdant green. And though the end of winter is supposed to bring that nostalgic chill, I&apos;m kept lukewarm by the hum of an unbalanced, rusted fan that rattles over any sound of nature.</p>
 <p>&emsp;But I notice one thing, at least. I can smell the dry acreage of cereal grasses scattered across the Rocky Mountain foothills: a sense that only comes when it&apos;s late in the fall, or after the long winter when my nose is no longer running, when the world begins to open. It&apos;s when the late sun absorbs in the fronds of dormant fields once left to shadow &mdash; that golden hour late in the workday &mdash; when an arid essence gusts through the cracked corners of the crumbling ceiling.</p>
@@ -938,7 +982,7 @@ Got a minute?</p>
 <p>&emsp;&quot;Not on the weekends. Just set your alarm on Sunday: you can&apos;t be late again.&quot; </p>
 <p>&emsp;She returns to her row. I gather my things, throwing my bag over my shoulder to go home and recover from this exhausting brand of restlessness. </p>
 <p>&emsp;I pass her row of cubes lit by a single light from her pink lamp. She&apos;s comfortably buried in the stacks of drawings, and I find a part of me wondering how I ever found the strength to carry that weight.</p>
-"},{"DocType":"Chapter","GivenName":"Tiger Girl","SevenWordSummary":"Katiya celebrates a stressful work transition.","AutoNamePart":"Chapter&nbsp;Two","AutoNameFull":"Chapter&nbsp;Two","ActNum":1,"ChapterPart":2,"ChapterFull":2,"ScenePart":"","SceneFull":"","Style":"","Perspective":"Katiya Breakey-Hilde","Index":6,"Label":"[3] Polishing Revision","Status":"02: Polished Revision","Keywords":"","UUID":"5","Synopsis":"","VerboseID":"1.2","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"
+"},{"DocType":"Chapter","GivenName":"Tiger Girl","SevenWordSummary":"Katiya celebrates a stressful work transition.","AutoNamePart":"Chapter&nbsp;Two","AutoNameFull":"Chapter&nbsp;Two","ActNum":1,"ChapterPart":2,"ChapterFull":2,"ScenePart":"","SceneFull":"","Style":"","Perspective":"Katiya Breakey-Hilde","Index":6,"Label":"[3] Polishing Revision","Status":"02: Polished Revision","Keywords":"","UUID":"5","Synopsis":"A female knight trembles at the edge of eternal war.","VerboseID":"1.2","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"
 02","Body":""},{"DocType":"Scene","GivenName":"","AutoNamePart":1,"SevenWordSummary":"Katiya introduces how stressful her life is.","AutoNameFull":4,"ActNum":1,"ChapterPart":2,"ChapterFull":2,"ScenePart":1,"SceneFull":4,"Style":"Katiya","Perspective":"Katiya Breakey-Hilde","Index":7,"Label":"Fantasy World","Status":"02: Polished Revision","Keywords":"","UUID":"6","Synopsis":"","VerboseID":"1.2.4","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-K01-1","Body":"
 <p>&emsp;He said that I would never find peace in shouldering the weight of all the world. He said it wasn&apos;t because I was weak, or that I was naive &mdash; or that I wasn&apos;t aware of all the reasons we had to be afraid.</p>
 <p>&emsp;He said it was because those feelings were wasting my life. And then he died the next day in his sleep: burned alive with his youngest progeny that lacked the strength to fight back.</p>
@@ -1047,7 +1091,7 @@ Got a minute?</p>
 <p>&emsp;My free hand fumbles for my pocket, then in my pocket, for the iron key labeled BREAKEY-HILDE. It surprises me how well I can do two things at once.</p>
 <p>&emsp;&quot;But my stuff from the barracks is still outside,&quot; I say. &quot;I have to unpack!&quot;</p>
 <p>&emsp;&quot;Then we&apos;ll toss it inside,&quot; he says. &quot;You can unpack tomorrow.&quot;</p>
-"},{"DocType":"Chapter","GivenName":"Firsthand Home","SevenWordSummary":"Cody spends his first night at home.","AutoNamePart":"Chapter&nbsp;Three","AutoNameFull":"Chapter&nbsp;Three","ActNum":1,"ChapterPart":3,"ChapterFull":3,"ScenePart":"","SceneFull":"","Style":"","Perspective":"Cody Dunsmore","Index":11,"Label":"[3] Polishing Revision","Status":"No Status","Keywords":"","UUID":"10","Synopsis":"","VerboseID":"1.3","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"
+"},{"DocType":"Chapter","GivenName":"Firsthand Home","SevenWordSummary":"Cody spends his first night at home.","AutoNamePart":"Chapter&nbsp;Three","AutoNameFull":"Chapter&nbsp;Three","ActNum":1,"ChapterPart":3,"ChapterFull":3,"ScenePart":"","SceneFull":"","Style":"","Perspective":"Cody Dunsmore","Index":11,"Label":"[3] Polishing Revision","Status":"No Status","Keywords":"","UUID":"10","Synopsis":"Cody returns to his new place in his hometown.","VerboseID":"1.3","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"
 03","Body":""},{"DocType":"Scene","GivenName":"Firsthand Home","AutoNamePart":1,"SevenWordSummary":"Cody drives home on a nostalgic road.","AutoNameFull":8,"ActNum":1,"ChapterPart":3,"ChapterFull":3,"ScenePart":1,"SceneFull":8,"Style":"Cody","Perspective":"Cody Dunsmore","Index":12,"Label":"Modern World","Status":"No Status","Keywords":"","UUID":"11","Synopsis":"","VerboseID":"1.3.8","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-C02-1","Body":"
 <p>&emsp;&quot;I can unpack it all tomorrow. Let&apos;s just toss it all inside.&quot;</p>
 <p>&emsp;&quot;But you have to unpack,&quot; my mom says. &quot;All the stuff from your bedroom is still in our living room!&quot;</p>
@@ -1152,7 +1196,7 @@ Got a minute?</p>
 <p>&emsp;The thoughts get me nowhere, but the seltzer does. And when the clock reads 8:00 PM, three deep with the gold-painted cans standing like little league trophies on the finely-polished counter, I&apos;m finally able to forget. And I forget even easier when he stumbles through the open door.</p>
 <p>&emsp;&quot;Beer later, wey. Wanna hotbox my car?&quot;</p>
 <p>&emsp;He slicks his black hair back before dragging his feet on my mat, carrying a rack of cheap beer with an OfficeMax nametag pinned upside-down.</p>
-"},{"DocType":"Chapter","GivenName":"Secondhand Cottage","SevenWordSummary":"","AutoNamePart":"Chapter&nbsp;Four","AutoNameFull":"Chapter&nbsp;Four","ActNum":1,"ChapterPart":4,"ChapterFull":4,"ScenePart":"","SceneFull":"","Style":"","Perspective":"","Index":15,"Label":"[3] Polishing Revision","Status":"No Status","Keywords":"","UUID":"14","Synopsis":"","VerboseID":"1.4","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"
+"},{"DocType":"Chapter","GivenName":"Secondhand Cottage","SevenWordSummary":"","AutoNamePart":"Chapter&nbsp;Four","AutoNameFull":"Chapter&nbsp;Four","ActNum":1,"ChapterPart":4,"ChapterFull":4,"ScenePart":"","SceneFull":"","Style":"","Perspective":"","Index":15,"Label":"[3] Polishing Revision","Status":"No Status","Keywords":"","UUID":"14","Synopsis":"Katiya rushes to begin her first day.","VerboseID":"1.4","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"
 04","Body":""},{"DocType":"Scene","GivenName":"","AutoNamePart":1,"SevenWordSummary":"Katiya has nightmares of a devastating past.","AutoNameFull":11,"ActNum":1,"ChapterPart":4,"ChapterFull":4,"ScenePart":1,"SceneFull":11,"Style":"Katiya","Perspective":"Katiya Breakey-Hilde","Index":16,"Label":"Fantasy World","Status":"02: Polished Revision","Keywords":"","UUID":"15","Synopsis":"","VerboseID":"1.4.11","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-K02-1","Body":"
 <p>&emsp;The next lucid moment, I find myself pinned upside-down beneath a thick wooden rack. The heat climbs as I drag my heels across the floor, my clothes so black and charred that I pray my sweaty flesh might slick me back through the narrow space. Within the hot box of crackling logs and scalding cinders, the roar of recircling flames makes the house screech in agony when its bones crunch and crumble, casting twigs and thatch to the ashen floor.</p>
 <p>&emsp;The twisting and thrashing gets me nowhere, but when a log column crashes into the thin floor, the rack slides into the hollow foundation. My body is so small and pathetic, but I&apos;m barely able to command my cramped muscles to escape, crawling across the floor as the smoke billows overhead, drawing shallow, stinging breaths into  my pinched lungs. </p>
@@ -1294,6 +1338,8 @@ const lastsaveCSS = localStorage.getItem('AC_cssJSON');
 var ActiveCSS = 'Default';
 
 var StoryStyles = [];
+
+var TOCdata = [];
 
 var jFile = InitialStoryLoad();
 var jCSS = InitialCSSLoad();
@@ -1474,6 +1520,18 @@ function ApplyCSS() {
   //newTitle + newSubtitle + newSection + newBody;
 }
 
+function AddToTOC(source) {
+  TOCdata.push({
+        Type: source.DocType,
+        Title: source.AutoNameFull,
+        Subtitle: source.GivenName,
+        Style: source.Style,
+        ChNum: source.ChapterFull,
+        Synopsis: source.Synopsis,
+        Links: source.Links,
+      });
+}
+
 function InitialStoryLoad() {
   let jOutput;
   if (lastsaveStory) {
@@ -1491,7 +1549,7 @@ function InitialStoryLoad() {
   	jOutput = JSON.parse(jsTemplate.replaceAll('\n',''));
     MessageBox.innerHTML = "> No existing autosave. Loading example JSON."
   }
-  document.getElementById('JSONoutput').value = JSON.stringify(jOutput);
+  document.getElementById('JSONoutput').value = JSON.stringify(jOutput,null,2);
   return jOutput;
 }
 
@@ -1508,7 +1566,7 @@ document.getElementById('fileInput')
       try {
       	localStorage.setItem('AC_ScrivJSON',content);
         MessageBox.innerHTML +="<br>&emsp;> Saved loaded file to internal storage."
-        document.getElementById('JSONoutput').value = content;
+        document.getElementById('JSONoutput').value = JSON.stringify(JSON.parse(content),null,2);
       } catch (error) {
       	MessageBox.innerHTML +="<br>&emsp;> Unable to save existing JSON element."
       }
@@ -1546,6 +1604,18 @@ function ResetData() {
   jFile = JSON.parse(jsTemplate.replaceAll('\n',''));
   MessageBox.innerHTML = "> Reset to default template."
 
+}
+
+function ManualUpdateJSON(elem) {
+  let lastjFile = Object.assign({},jFile);
+  try {
+    let newJSON = JSON.parse(elem.value);
+    jFile = newJSON;
+    MessageBox.innerHTML = "Applied manual changes to JSON source.";
+
+  } catch (error) {
+    MessageBox.innerHTML = "Unable to apply manual changes to JSON source.";
+  }
 }
 
 function loadChapterContents(chapter,doRefresh) {
@@ -1619,7 +1689,8 @@ function ProcessFile() {
       FILE[i].Next = FILE[i+1];
     }
   }
-  
+
+
 // Enumerate CHAPTERLIST from JSON data.
   let nAct = -1;
   let nScene = 0;
@@ -1627,9 +1698,12 @@ function ProcessFile() {
   let nChapter = -1;
   for (let i=0; i<FILE.length; i++) {
   	ElemType = FILE[i].DocType;
+    // For ACT elements -----------------------------------
   	if ( ElemType == "Act") { 
-    
+      AddToTOC(FILE[i]);
+    // For CHAPTER elements -------------------------------   	
     } else if ( ElemType == "Chapter" ) {
+      AddToTOC(FILE[i]);
     	nScene = 0;
       nChapter++;
     	CHAPTERLIST[nChapter] = Object.assign({}, CHLIST_JSON);
@@ -1648,6 +1722,9 @@ function ProcessFile() {
       CHAPTERLIST[nChapter].Body = [];  
       CHAPTERLIST[nChapter].Style = FILE[i+1].Style; // Only works if the first element is a chapter.
       
+      
+
+    // For SCENE elements ----------------------------------      
     } else if ( ElemType == "Scene") {
     	CHAPTERLIST[nChapter].Body[nScene] = [FILE[i].Style, BodyFix(FILE[i].Body)];
       
@@ -1750,6 +1827,100 @@ function selectParameter(elem,CSSid) {
   document.getElementById(CSSid).style.display="";
 }
 
+function pad(num, size) {
+    var s = "000000000" + num;
+    return s.substr(s.length-size);
+}
+
+function PopulateTOC() {
+  let TOC = document.getElementById('tocbody');
+  TOC.innerHTML = "";
+  let TOChtml = "";
+  TOChtml += `
+  <style>
+    .TOC-table {
+      display: grid;
+      grid-template-columns: 1fr 6fr 2fr;
+      gap: 10px;
+      padding: 10px;
+      width: 100%;
+      border: 1px solid #ccc;
+    }
+    .TOC-header {
+      grid-column: span 3;
+      font-weight: bold;
+      text-align: center;
+    }
+    .TOC-actspan {
+      text-align: center;
+      grid-column: span 3;
+      border-top: 1px solid gray;
+      border-bottom: 1px solid gray;
+      padding-top:10px;
+      padding-bottom:10px;
+    }
+    .TOC-colname {
+      font-weight: bold;
+      text-align: center;
+    }
+    .TOC-chnum {
+      text-align: center;
+    }
+    .TOC-chname {
+      font-style: italic;
+    }
+    .TOC-chsynopsis {
+      font-style: italic;
+      font-size:0.8rem;
+      color:grey;
+    }
+    .TOC-chninfo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .TOC-chninfo > div {
+    }
+    .TOC-chrelease {
+      text-align: center;
+      height:100%;
+      padding-top:10px;
+      padding-bottom:10px;
+    }
+  </style>
+  <div style="margin-right:20px;">
+    <div class="TOC-table">
+      <div class="TOC-header"><span id="storyname">Story Name Goes Here</span></div>
+      <div class="TOC-colname">Chapter</div>
+      <div class="TOC-colname">Title</div>
+      <div class="TOC-colname">Release</div>
+  `
+  let StartDate = document.getElementById('ReleaseStartDate').valueAsDate;
+  let RelDate = new Date(Date.parse(StartDate) - (86400000*(document.getElementById('ReleaseFrequency').value-1)));
+  TOCdata.forEach((item, index) => {
+    if (item.Type == "Act") {
+      TOChtml += 
+      `    <div class="TOC-actspan"><span>== ${item.Title} ==</span></div>`
+    } else { // This is a chapter.
+      RelDate = new Date(Date.parse(RelDate) + (86400000*document.getElementById('ReleaseFrequency').value))
+      TOChtml += `
+        <div class="TOC-chnum">${item.ChNum}</div>
+        <div class="TOC-chinfo">
+          <div class="TOC-chname"><a href="${item.Links[document.getElementById('ReleaseLink').selectedOptions[0].value]}">${item.Subtitle}</a></div>
+          <div class="TOC-chsynopsis">${item.Synopsis}</div>
+        </div>
+        <div class="TOC-chrelease">${pad(RelDate.getMonth()+1,2)}/${pad(RelDate.getDate(),2)}/${RelDate.getFullYear().toString().slice(2,4)}</div>
+      `;
+    }
+  });
+  TOChtml += ` 
+    </div>
+  </div>
+  `;
+  TOC.innerHTML = TOChtml;
+  document.getElementById('TOCoutHTML').innerHTML = TOC.innerHTML;
+  document.getElementById('TOCoutHTML').value = TOC.innerHTML;
+}
+
 
 function Initialize() {
 // Load CSS modules with template (or existing).
@@ -1761,8 +1932,10 @@ function Initialize() {
 
 Initialize();
 ProcessFile();
+document.getElementById('ReleaseStartDate').valueAsDate = new Date();
 setNavigation(true,'AO3');
 ApplyCSS();
+PopulateTOC();
 
   </script>
 </body>
