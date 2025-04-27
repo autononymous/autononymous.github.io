@@ -1350,7 +1350,7 @@ function InitialCSSLoad() {
   } else {
   	jOutput = JSON.parse(cssTemplate.replaceAll('\n',''));
   }
-    //console.log(jOutput);
+    console.debug(jOutput);
     
 
     // Get all style names from loaded JSON story file.
@@ -1360,6 +1360,10 @@ function InitialCSSLoad() {
         StoryStyles.push(chapter.Style);
       }
     });
+
+    if(!StoryStyles.includes('Default')) {
+      StoryStyles.unshift('Default');
+    }
 
     // Get all style names from loaded CSS file.
     let cssStyles = [];
@@ -1374,7 +1378,7 @@ function InitialCSSLoad() {
     // Also, update the <select> options in the HTML.
     StoryStyles.forEach(LoadedStyle => {
       if (!cssStyles.includes(LoadedStyle)) {
-        console.log(LoadedStyle);
+        //console.log(LoadedStyle);
         jOutput[LoadedStyle] = newCSSEntry(LoadedStyle);
       }
       document.getElementById('projectstyles').innerHTML += `<option value="${LoadedStyle}">${LoadedStyle}</option>`;
@@ -1442,7 +1446,7 @@ function ApplyCSS() {
     .forEach( item => { item.style = newBody; });
 
   StoryStyles.forEach(LoadedStyle => {    
-    console.log(LoadedStyle);
+    //console.log(LoadedStyle);
     Object.values(document.getElementsByClassName('text-title-'+LoadedStyle))
       .forEach( item => { item.style = jCSS[LoadedStyle].Title.replaceAll('<br>','\n'); });
     Object.values(document.getElementsByClassName('text-subtitle-'+LoadedStyle))
