@@ -8,40 +8,48 @@
   <title>Reader</title>
 
   <style>
-    :root {
+
+:root {
   --bordercolor: transparent;
-  --ctrltransp: 0.01
+  --ctrltransp: 0.01;
 }
 
 body {
-  background-color: #151515;
+  background-color: grey;
   color:white;
 }
 
 h3.hAct {
-  font-size: 3vw;
+  font-size: 4rem;
   text-align: center;
 }
 h3.hChap {
-  font-size: 8vw;
-  line-height: 2em;
+  font-family: 'Courier Prime', 'Courier';
+  font-variant: small-caps;
+  font-size: min(4rem,8vw);
+  line-height: 1em;  
+  margin-bottom:-0.5em;
+  text-decoration: underline;
   text-align: center;
 }
 h3.hSub {
-  font-size: 6vw;
+  font-family: 'Courier Prime', 'Courier';
+  font-size: min(3rem,6vw);
+  font-variant: small-caps;
   line-height: 1.0em;
-  margin-top:-1.75em;
+  margin-bottom:-1em;
   text-align: center;
 }
+/*
 h3.hSub:before {
   content:'"';
 }
 h3.hSub:after {
   content:'"';
 }
+  */
 h3.hScn {
-  font-size: 6vw;
-  line-height: 2.0em;
+  font-size: min(4rem,6vw);
   margin-top:2em;
   text-align: center;
 } 
@@ -56,36 +64,53 @@ p.Para {
   font-size: 1.5em;
 }
 
+div.options {
+  border: 1px solid gray;
+  position: absolute;
+  top:400px;
+  height:60px;
+  width: 100%;
+  display: inline-flex;
+}
+
+div.positioner {
+/* Center contents*/
+  position:absolute;
+  width: min(800px,100%);
+  height: 100%;
+  transform: translate(-50%,0);
+  top:0;
+  left: 50%;
+  height: 100%;
+}
 div.fullbody {
   border: 2px solid var(--bordercolor);
   width: 100%;
   height: 100%;
   max-width: 800px;
-  margin:auto;
 }
 div.fullbody > div {
   border: 2px solid var(--bordercolor);
 }
 
 div.header {
-  height: 40vh;
+  height: 500px;
+  background-color: #151515;
 }
 
 div.body {
-  z-index:-1;
+  background-color: #151515;
   text-wrap: wrap;
-  height: 90vh;
-  width:100%;
-  overflow-x: hidden;
+  height: 80%;
   overflow-y: hidden;
 }
 div.interface {
   z-index:1;
   position: absolute;
-  top: 41vh;
+  top: 500px;
   left:0;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   display: inline-flex;
   /*
   background-image: linear-gradient(
@@ -108,32 +133,24 @@ div.right {
   background-color: rgba(255, 128, 128, var(--ctrltransp));
 }
 
-div.previous {
-  background-color:blue;
-}
-div.next {
-  
-}
 div.reader {
   z-index:0;
-  width:90%;
-  padding-left: 30px;
+  margin-left:30px;
+  margin-right: 30px;
   text-align: justify;
-  position:relative;
 }
 div.page {
-  position:relative;
   background-color: rgba(255,255,255,0.00);
-  width:90%;
-  left:5%;
   
 }
 
 div.tracker {
+  background-color: #151515;
   height: 10vh;
   text-align: center;
 }
 div.bonus {
+  background-color: #151515;
   height: 30vh;
 }
 div.titleimage {
@@ -141,51 +158,80 @@ div.titleimage {
   background-position: center;
   background-size: cover;
   position:relative;
-  width:80vw;
-  height:20vw;
-  top:5vw;
+  width: 80%;
+  height:200px;
+  top:30px;
   margin:auto;
   box-shadow: 0px 0px 20px 20px #151515 inset
+}
+
+
+div.ctrl {
+  flex:4;
+}
+div.ctrl-fontup {
+  text-align: center;
+  font-size: 2em;
+  margin: auto;
+  flex: 1;
+  background-color: rgba(128, 255, 128, 0.1);
+}
+div.ctrl-fontdn {
+  text-align: center;
+  font-size: 2em;
+  margin: auto;
+  flex: 1;
+  background-color: rgba(255, 128, 128, 0.1);
 }
   </style>
 
   
 </head>
 <body>
-  <div class="fullbody">
-  <div class="header">
-    <div class="titleimage">
-    
-    </div>
-  </div>
-  <div class="body" id="body">
-    <div class="reader" id="reader">
-      <div id="page0" class="page activepage">
-      
+  <div class="positioner">
+    <div class="fullbody">
+    <div class="header">
+      <div class="titleimage">   
+      </div>
+      <div class="options">
+        <div class="ctrl"> </div>
+        <div class="ctrl"> </div>
+        <div class="ctrl-fontup" onclick="BodyFontSize(1);">&#8853;</div>
+        <div class="ctrl-fontdn" onclick="BodyFontSize(-1);">&#8854;</div>
       </div>
     </div>
-    <div class="interface">
-      <div class="control left" onclick="SetPage(-1);"></div>
-      <div class="control right" onclick="SetPage(1);"></div>
+    <div class="body" id="body">
+      <div class="reader" id="reader">
+        <div id="page0" class="page activepage">
+        
+        </div>
+      </div>
+      <div class="interface">
+        <div class="control left" onclick="SetPage(-1);"></div>
+        <div class="control right" onclick="SetPage(1);"></div>
+      </div>
+    </div>
+    <div class="tracker">
+    <p> Chapter 
+    <span id="n-chnum"></span>
+    of
+    <span id="n-chtot"></span>
+    &emsp;||&emsp;
+    Page
+    <span id="n-pgnum"></span>
+    of
+    <span id="n-pgtot"></span>
+    
+    </p>
+    </div>
+    <div class="bonus">
+      <div class="footer">
+        <p>Autononymous &copy; 2024 || Version 0.1.0</p>
+      </div>
     </div>
   </div>
-  <div class="tracker">
-  <p> Chapter 
-  <span id="n-chnum"></span>
-  of
-  <span id="n-chtot"></span>
-  &emsp;||&emsp;
-  Page
-  <span id="n-pgnum"></span>
-  of
-  <span id="n-pgtot"></span>
-  
-  </p>
-  </div>
-  <div class="bonus">
-  
-  </div>
 </div>
+
 
   <script>
     var jStory = "";
@@ -193,6 +239,8 @@ var storyLoaded = false;
 
 var ChapterSelected = 1;
 var JumpToLastPage = false;
+
+var FontSize = 1.5;
 
 const metaCHNUM = document.getElementById('n-chnum');
 const metaCHTOT = document.getElementById('n-chtot');
@@ -252,6 +300,18 @@ function SetPage(advance) {
     }
   	
   }
+}
+
+function BodyFontSize(advance) {
+  let fontitems = document.getElementsByClassName("Para");
+  let currentSize = parseFloat(window.getComputedStyle(fontitems[0], null).getPropertyValue('font-size')) / 16; // Convert to em
+  console.log(`Current font size is ${currentSize}em`);
+  let newSize = currentSize + (advance * 0.1);
+  if (newSize < 0.5) newSize = 0.5; // Minimum font size
+  if (newSize > 3) newSize = 3; // Maximum font size
+  FontSize = newSize;
+  loadStory(ChapterSelected);
+  console.log(`Font size changed to ${newSize}em`);
 }
 
 async function loadStory(chapter) {
@@ -378,13 +438,19 @@ async function loadStory(chapter) {
       	READER.innerHTML += `<h3 class="hScn" id='current'> </h3>`;
         if( isOverflow() == false ) {
   				READER.innerHTML = lastHTML;
+          READER.className = "page";
+          READER.style.display = "none";
+          document.getElementById('reader').innerHTML += `<div id="page${n_page++}" class="page activepage"></div>`;
+          Pages++;
+          READER = document.getElementsByClassName('activepage')[0];
+          READER.innerHTML += `<h3 class="hScn" id='current'> </h3>`;
         }
         TARGET = document.getElementById('current');
         TARGET.id = "";
         break;
       case '#P#':
       	currentTag = "P";
-      	READER.innerHTML += `<p class="Para" id='current'> </p>`;
+      	READER.innerHTML += `<p class="Para" style="font-size:${FontSize}em;" id='current'> </p>`;
         if( isOverflow() == false ) {
   				READER.innerHTML = lastHTML;
         }
@@ -403,7 +469,7 @@ async function loadStory(chapter) {
           document.getElementById('reader').innerHTML += `<div id="page${n_page++}" class="page activepage"></div>`;
           Pages++;
           READER = document.getElementsByClassName('activepage')[0];
-          READER.innerHTML += `<p class="Para" id='current'> </p>`;
+          READER.innerHTML += `<p class="Para" style="font-size:${FontSize}em;" id='current'> </p>`;
           TARGET = document.getElementById('current');
           TARGET.id = "";
           TARGET.innerHTML += credit + " ";
@@ -435,8 +501,14 @@ async function loadStory(chapter) {
   console.info("Completed loading.")
 
 }
-
-//addEventListener("resize", (event) => {loadStory(ChapterSelected)});
+var lastWindowWidth = window.innerWidth;
+addEventListener("resize", (event) => { 
+  if (window.innerWidth != lastWindowWidth) {
+    lastWindowWidth = window.innerWidth;
+    loadStory(ChapterSelected)
+    console.log(`Window resized to ${lastWindowWidth}px`)
+  };
+});
 loadStory(ChapterSelected);
   </script>
 </body>
