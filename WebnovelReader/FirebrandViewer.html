@@ -608,7 +608,7 @@ div.TOC {
     var jStory = "";
 var storyLoaded = false;
 
-var ChapterSelected = 1;
+var ChapterSelected = 0;
 var JumpToLastPage = false;
 
 var FontSize = 1.5;
@@ -671,6 +671,7 @@ function isOverflow() {
   return ((result <= 0)?false:true);
 }
 
+const MinChapter = 0; // zero for prologue in this case
 var ChapterCount = 0;
 
 var jContent = JSON.parse(`[]`);
@@ -701,7 +702,7 @@ function SetPage(advance) {
 
     } else {
       // Jump to next chapter if it exists.
-      if (((ChapterSelected + advance) > ChapterCount) || ((ChapterSelected + advance) <= 0)) {
+      if (((ChapterSelected + advance) > ChapterCount) || ((ChapterSelected + advance) < MinChapter)) {
         //console.warn(`Chapter ${ChapterSelected + advance} does not exist.`)
       } else if (advance > 0) {
         //console.info(`Loading next chapter ${ChapterSelected + advance}.`)
@@ -816,7 +817,7 @@ async function loadStory(chapter) {
         RelDate = new Date(Date.parse(RelDate) + (86400000*ReleaseFrequency[parcel.ChapterFull-1]));
         TableOfContents.innerHTML += `
           <div class="TOC-chnum">
-            ${parcel.VerboseID}              
+            ${(parcel.VerboseOverride==""?(parcel.ActNum+'.'+('00'+parcel.ChapterFull).slice(-2)):parcel.VerboseOverride)}              
           </div>
           <div class="TOC-chname">
             <div class="TOC-chinfo" onclick="loadStory(${parcel.ChapterFull});ChapterSelected=${parcel.ChapterFull};">${parcel.GivenName}</div>
