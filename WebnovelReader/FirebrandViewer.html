@@ -794,7 +794,7 @@ async function loadTOC() {
         if(TOCfromJSON == true) {          
             TableOfContents.innerHTML += `
               <div class="TOC-chnum">
-                ${(parcel.VerboseOverride==""?(parcel.ActNum+'.'+('00'+(parcel.ChapterFull-2)).slice(-2)):parcel.VerboseOverride)}              
+                ${(parcel.VerboseOverride==""?(parcel.ActNum+'.'+('00'+(parcel.ChapterFull)).slice(-2)):parcel.VerboseOverride)}              
               </div>
               <div class="TOC-chname">
                 <div class="TOC-chinfo" onclick="loadStory(${parcel.ChapterFull});ChapterSelected=${parcel.ChapterFull};">${(parcel.ChapterOverride=="" ? parcel.GivenName : parcel.ChapterOverride)}</div>
