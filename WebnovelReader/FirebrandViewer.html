@@ -416,6 +416,7 @@ div.TOC {
   left:50%;
   transform: translate(-50%,0%);
   height:100%;
+  width:100%;
 }
 .TOC-table {
   position:absolute;
@@ -817,7 +818,7 @@ async function loadStory(chapter) {
             ${parcel.VerboseID}              
           </div>
           <div class="TOC-chname">
-            <div class="TOC-chinfo" onclick="loadStory(${parcel.ChapterFull})">${parcel.GivenName}</div>
+            <div class="TOC-chinfo" onclick="loadStory(${parcel.ChapterFull});ChapterSelected=${parcel.ChapterFull};">${parcel.GivenName}</div>
             <div class="TOC-chsynopsis">${parcel.Synopsis}</div>               
           </div>
           <div class="TOC-chrelease">
