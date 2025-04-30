@@ -789,19 +789,21 @@ async function loadTOC() {
         }
         break;   
       case "Chapter":
-      if(TOCfromJSON == true) {          
-          TableOfContents.innerHTML += `
-            <div class="TOC-chnum">
-              ${(parcel.VerboseOverride==""?(parcel.ActNum+'.'+('00'+parcel.ChapterFull).slice(-2)):parcel.VerboseOverride)}              
-            </div>
-            <div class="TOC-chname">
-              <div class="TOC-chinfo" onclick="loadStory(${parcel.ChapterFull});ChapterSelected=${parcel.ChapterFull};">${(parcel.ChapterOverride=="" ? parcel.GivenName : parcel.ChapterOverride)}</div>
-              <div class="TOC-chsynopsis">${parcel.Synopsis}</div>               
-            </div>
-            <div class="TOC-chrelease">
-              ${pad(RelDate.getMonth()+1,2)}/${pad(RelDate.getDate(),2)}/${RelDate.getFullYear().toString().slice(2,4)}
-            </div>
-            `;
+        console.log(parseFloat(parcel.NextPublish));
+        RelDate = new Date(Date.parse(RelDate) + (86400000*parseFloat(parcel.NextPublish)));
+        if(TOCfromJSON == true) {          
+            TableOfContents.innerHTML += `
+              <div class="TOC-chnum">
+                ${(parcel.VerboseOverride==""?(parcel.ActNum+'.'+('00'+(parcel.ChapterFull-2)).slice(-2)):parcel.VerboseOverride)}              
+              </div>
+              <div class="TOC-chname">
+                <div class="TOC-chinfo" onclick="loadStory(${parcel.ChapterFull});ChapterSelected=${parcel.ChapterFull};">${(parcel.ChapterOverride=="" ? parcel.GivenName : parcel.ChapterOverride)}</div>
+                <div class="TOC-chsynopsis">${parcel.Synopsis}</div>               
+              </div>
+              <div class="TOC-chrelease">
+                ${pad(RelDate.getMonth()+1,2)}/${pad(RelDate.getDate(),2)}/${RelDate.getFullYear().toString().slice(2,4)}
+              </div>
+              `;
         }
         break;
       case "Scene":
