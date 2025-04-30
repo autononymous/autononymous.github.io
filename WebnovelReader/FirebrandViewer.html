@@ -793,7 +793,7 @@ async function loadStory(chapter) {
   	let type = parcel.DocType;
   	switch(type) {
     	case "Act":
-      	if (parcel.ChapterFull == chapter) {
+      	if (parcel.ChapterFull == chapter && false) { // TODO: remove false if you want to show the Act
           jContent.push(newEntry(type,`Act ${parcel.ActNum}`));
           jContent[jContent.length-1].subject = "";
           Pouch.push(`#ACT#`,`Act ${parcel.ActNum}`,`#/#`)
