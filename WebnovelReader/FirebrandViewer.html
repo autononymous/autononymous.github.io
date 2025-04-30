@@ -18,8 +18,10 @@
 
 :root {
   --colorPrimary: #BD001B;
+  --colorPrimaryFaded: rgba(189, 0, 27, 0.2);
   --colorSecondary: #D31620;
   --colorTertiary: #D3A42E;
+  --colorTertiaryFaded: rgba(211, 164, 46, 0.2);
   --colorQuaternary: #BA931B;
   --colorQuinternary: #A57C00;
 
@@ -227,7 +229,7 @@ img.bookcover {
   object-fit: cover;
   object-position: 50% 40%;
   aspect-ratio: 3/4.4;
-  box-shadow: 0px 0px 10px 10px var(--colorSecondary);
+  box-shadow: 0px 0px 10px 10px var(--colorPrimaryFaded);
   height:65vw;
   margin-bottom: 10px;
 }
@@ -260,7 +262,7 @@ img.bookcover {
     object-fit: cover;
     object-position: 50% 40%;
     aspect-ratio: 3/4.4;
-    box-shadow: 0px 0px 10px 10px var(--colorSecondary);
+    box-shadow: 0px 0px 10px 10px var(--colorPrimaryFaded);
     height:400px;
   }
 }
@@ -299,8 +301,8 @@ div.options {
   left: 50%;
   transform: translate(-50%,0%);
   display: grid;
-  justify-content: end;
-  grid-template-columns: auto auto auto 50px 50px auto 50px 50px;
+  justify-content: center;
+  grid-template-columns: 50px 50px auto 50px 50px;
   grid-gap: 10px; /* Added grid gap for spacing */
   align-items: center; /* Added alignment for items in the grid */  
   border-top: 1px solid var(--textPrimary);
@@ -409,8 +411,79 @@ div.tg-progresslinemask {
   border-right: 2px solid var(--backgroundColor);
 }
 
+div.TOC {
+  position:absolute;
+  left:50%;
+  transform: translate(-50%,0%);
+  height:100%;
+}
+.TOC-table {
+  position:absolute;
+  left:50%;
+  transform: translate(-50%,0%);
+  display: grid;
+  grid-template-columns: 1fr 6fr 2fr;
+  gap: 10px;
+  padding: 10px;
+  width: max(90%,600px);
+}
+.TOC-header {
+  grid-column: span 3;
+  font-weight: bold;
+  text-align: center;
+}
+.TOC-actspan {
+  text-align: center;
+  grid-column: span 3;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding-top:10px;
+  padding-bottom:10px;
+  background-image: linear-gradient(to right, transparent, var(--colorPrimaryFaded), var(--colorPrimaryFaded), transparent);
+}
+.TOC-colname {
+  font-weight: bold;
+  text-align: center;
+}
+.TOC-chnum {
+  text-align: center;
+}
+.TOC-chname {
+  font-style: italic;
+}
+.TOC-chsynopsis {
+  font-style: italic;
+  font-size:0.8rem;
+  color:grey;
+}
+.TOC-chninfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.TOC-chname:hover {
+  cursor: pointer;
+  background-color: var(--colorTertiaryFaded);
+}
+.TOC-chrelease {
+  text-align: center;
+  height:100%;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.TOC-linespan {
+  grid-column: span 3;
+  border-top: 1px dotted var(--backgroundColor);
+}
+.footer {
+  grid-column: span 3;
+  text-align: center;
+  font-size:0.8rem;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-top: 1px solid var(--backgroundColor);
+}
 
-  </style>
+</style>
 
 <!------___   _ ________  ___ _    __------>
 <!-----/ / | | |_   _|  \/  || |   \ \----->
@@ -450,9 +523,6 @@ div.tg-progresslinemask {
           </div>
         </div>
         <div class="options">
-          <div class="ctrl"> asdf </div>
-          <div class="ctrl"> asdf </div>
-          <div class="ctrl"> asdf </div>
           <div class="ctrl lineup" onclick="BodyLineHeight(1);"> 
             <img class="texticon" src="https://github.com/autononymous/autononymous.github.io/blob/master/WebnovelReader/icons/fbicon-LineUp.png?raw=true" alt="&#8853;">
           </div>
@@ -512,10 +582,13 @@ div.tg-progresslinemask {
       <div class="bonus">
         
       </div>
-      <div class="footer">
-        <p>Autononymous &copy; 2025 || Designed by Savant-Guarde || Version 1.0</p>
+      <div class="TOC">       
+        <div class="TOC-table" id="TOCtable">
+
+        </div>         
       </div>
-    </div>      
+      
+    </div>         
   </div>
 
 <!------_______ _____ ______ ___________ _______------>
@@ -540,6 +613,17 @@ var FontSize = 1.5;
 var LineHeight = 1.0;
 
 var FontPrefs = localStorage.getItem('AC-FontPrefs');
+
+const TableOfContents = document.getElementById('TOCtable');
+
+var ReleaseFrequency = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7]; // Default release frequency
+var StartDate = new Date("2025-03-13T00:00:00Z"); // Default start date
+var RelDate = new Date(Date.parse(StartDate) - (86400000*ReleaseFrequency[0]));
+
+function pad(num, size) {
+    var s = "000000000" + num;
+    return s.substr(s.length-size);
+}
 
 if (FontPrefs) {    
   const prefsArray = FontPrefs.split(',');
@@ -602,7 +686,7 @@ function SetPage(advance) {
   if(isFirstClick == false) {
     let QueriedPage = CurrentPage+advance;
     if( (QueriedPage >= 0) && (QueriedPage <= Pages) )  {
-      console.log(`Page ${QueriedPage} exists in Chapter ${ChapterSelected}.`)
+      //console.log(`Page ${QueriedPage} exists in Chapter ${ChapterSelected}.`)
       READER.style.display = "none";
       READER = document.getElementById(`page${QueriedPage}`);
       READER.style.display = "";
@@ -616,18 +700,18 @@ function SetPage(advance) {
     } else {
       // Jump to next chapter if it exists.
       if (((ChapterSelected + advance) > ChapterCount) || ((ChapterSelected + advance) <= 0)) {
-        console.warn(`Chapter ${ChapterSelected + advance} does not exist.`)
+        //console.warn(`Chapter ${ChapterSelected + advance} does not exist.`)
       } else if (advance > 0) {
-        console.info(`Loading next chapter ${ChapterSelected + advance}.`)
+        //console.info(`Loading next chapter ${ChapterSelected + advance}.`)
         ChapterSelected += advance;
         loadStory(ChapterSelected)
       } else if (advance < 0) {
-        console.info(`Loading previous chapter ${ChapterSelected + advance}.`)
+        //console.info(`Loading previous chapter ${ChapterSelected + advance}.`)
         ChapterSelected += advance;
         loadStory(ChapterSelected);
         JumpToLastPage = true;
       } else {
-        console.warn(`Page ${QueriedPage} does not exist.`)
+        //console.warn(`Page ${QueriedPage} does not exist.`)
       }      
     }
   } else {
@@ -640,25 +724,25 @@ function BodyFontSize(advance) {
   if(!isFirstClick) {
     let fontitems = document.getElementsByClassName("Para");
     let currentSize = parseFloat(window.getComputedStyle(fontitems[0], null).getPropertyValue('font-size')) / 16; // Convert to em
-    console.log(`Current font size is ${currentSize}em`);
+    //console.log(`Current font size is ${currentSize}em`);
     let newSize = currentSize + (advance * 0.1);
     if (newSize < 0.5) newSize = 0.5; // Minimum font size
     if (newSize > 3) newSize = 3; // Maximum font size
     FontSize = newSize;
     loadStory(ChapterSelected);
-    console.log(`Font size changed to ${newSize}em`);
+    //console.log(`Font size changed to ${newSize}em`);
   }  
   localStorage.setItem('AC-FontPrefs',[FontSize,LineHeight]);
 }
 
 function BodyLineHeight(advance) {  
-  console.log(advance*0.1)
+  //console.log(advance*0.1)
   let fontitems = document.getElementsByClassName("Para");
   let lhValue = fontitems[0].style.lineHeight;
   let currentSize = parseFloat(lhValue.slice(0,lhValue.length-2))
-  console.log(currentSize)
+  //console.log(currentSize)
   let newSize = (currentSize) + (advance * 0.1);  
-  console.log(newSize)
+  //console.log(newSize)
   if (newSize < 0.8) newSize = 0.8; // Minimum font size
   if (newSize > 2) newSize = 2; // Maximum font size
   if(!isFirstClick) {    
@@ -667,8 +751,8 @@ function BodyLineHeight(advance) {
     loadStory(ChapterSelected);
     
   }  
-  console.log(`Current line height is ${currentSize}em`);
-  console.log(`Line height changed to ${newSize}em`);
+  //console.log(`Current line height is ${currentSize}em`);
+  //console.log(`Line height changed to ${newSize}em`);
 
   localStorage.setItem('AC-FontPrefs',[FontSize,LineHeight]);
 }
@@ -679,7 +763,7 @@ async function loadStory(chapter) {
   const data = await response.text();
   var Lines = [];
   jStory = JSON.parse(data.replaceAll('\n',''));
-  console.info(`Story content for ${jStory.Nickname} has been loaded.`)
+  //console.info(`Story content for ${jStory.Nickname} has been loaded.`)
   
   document.getElementById('body').innerHTML = `    <div class="reader" id="reader">
       <div id="page0" class="page activepage">
@@ -698,8 +782,10 @@ async function loadStory(chapter) {
   Pouch = [];
   READER = document.getElementsByClassName("activepage")[0];
   
-  console.info(`Data has been reset.`)
+  //console.info(`Data has been reset.`)
   
+  TableOfContents.innerHTML = "";
+
     jStory.Manuscript.forEach(parcel => {
   	let type = parcel.DocType;
   	switch(type) {
@@ -709,6 +795,13 @@ async function loadStory(chapter) {
           jContent[jContent.length-1].subject = "";
           Pouch.push(`#ACT#`,`Act ${parcel.ActNum}`,`#/#`)
         }
+        TableOfContents.innerHTML += `
+          <div class="TOC-actspan">
+            <div class="TOC-cell">
+              ${parcel.AutoNameFull}              
+            </div>
+          </div>
+          `;
         break;
       case "Chapter":
       	ChapterCount++;
@@ -718,7 +811,21 @@ async function loadStory(chapter) {
           Pouch.push(`#CHNUM#`,`${parcel.AutoNameFull}`,`#/#`)
           Pouch.push(`#SUB#`,`"${parcel.GivenName}"`,`#/#`)
         }
-        break;
+        RelDate = new Date(Date.parse(RelDate) + (86400000*ReleaseFrequency[parcel.ChapterFull-1]));
+        TableOfContents.innerHTML += `
+          <div class="TOC-chnum">
+            ${parcel.VerboseID}              
+          </div>
+          <div class="TOC-chname">
+            <div class="TOC-chinfo" onclick="loadStory(${parcel.ChapterFull})">${parcel.GivenName}</div>
+            <div class="TOC-chsynopsis">${parcel.Synopsis}</div>               
+          </div>
+          <div class="TOC-chrelease">
+            ${pad(RelDate.getMonth()+1,2)}/${pad(RelDate.getDate(),2)}/${RelDate.getFullYear().toString().slice(2,4)}
+          </div>
+          <div class="TOC-linespan"></div>
+          `;
+          break;
       case "Scene":
       	if (parcel.ChapterFull == chapter) {
           jContent.push(newEntry(type,parcel.ScenePart,""))
@@ -739,10 +846,15 @@ async function loadStory(chapter) {
         break;
     }
   })
+
+  TableOfContents.innerHTML += `
+    <div class="footer">
+      <p>Autononymous &copy; 2025 || Designed by Savant-Guarde || Version 1.0</p>
+    </div>`
   
-  console.info(`There are ${ChapterCount} available chapters in Project ${jStory.Nickname}.`)
+  //console.info(`There are ${ChapterCount} available chapters in Project ${jStory.Nickname}.`)
   
-  //console.log(Pouch)
+  ////console.log(Pouch)
   
   var credit = "";
   var lastHTML = "";
@@ -837,7 +949,7 @@ async function loadStory(chapter) {
         break;
     }
   }
-  console.info("There are " + Pages + " total pages in this chapter.")
+  //console.info("There are " + Pages + " total pages in this chapter.")
   
   READER.className = "page";
   READER.style.display = "none";
@@ -860,7 +972,7 @@ async function loadStory(chapter) {
   READER.style.display = "";
   
   
-  console.info("Completed loading.")
+  //console.info("Completed loading.")
 
   
   if(isFirstClick) {
@@ -890,7 +1002,7 @@ addEventListener("resize", (event) => {
   if (window.innerWidth != lastWindowWidth) {
     lastWindowWidth = window.innerWidth;
     loadStory(ChapterSelected)
-    console.log(`Window resized to ${lastWindowWidth}px`)
+    //console.log(`Window resized to ${lastWindowWidth}px`)
   };
 });
 
