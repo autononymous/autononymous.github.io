@@ -610,8 +610,8 @@ async function loadStory(chapter) {
       	if (parcel.ChapterFull == chapter) {
           jContent.push(newEntry(type,parcel.AutoNameFull))
           jContent[jContent.length-1].subject = parcel.GivenName
-          Pouch.push(`#CHNUM#`,`Chapter ${parcel.ChapterFull}`,`#/#`)
-          Pouch.push(`#SUB#`,`${parcel.GivenName}`,`#/#`)
+          Pouch.push(`#CHNUM#`,`${parcel.AutoNameFull}`,`#/#`)
+          Pouch.push(`#SUB#`,`"${parcel.GivenName}"`,`#/#`)
         }
         break;
       case "Scene":
