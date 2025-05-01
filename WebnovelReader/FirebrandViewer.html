@@ -524,7 +524,7 @@ div.TOC {
             
           </div>
         </div>
-        <div class="options">
+        <div class="options" id="options">
           <div class="ctrl lineup" onclick="BodyLineHeight(1);"> 
             <img class="texticon" title="Increase Line Spacing" src="https://github.com/autononymous/autononymous.github.io/blob/master/WebnovelReader/icons/fbicon-LineDn.png?raw=true" alt="&#8853;">
           </div>
@@ -797,7 +797,7 @@ async function loadTOC() {
                 ${(parcel.VerboseOverride==""?(parcel.ActNum+'.'+('00'+(parcel.ChapterFull)).slice(-2)):parcel.VerboseOverride)}              
               </div>
               <div class="TOC-chname">
-                <div class="TOC-chinfo" onclick="loadStory(${parcel.ChapterFull});ChapterSelected=${parcel.ChapterFull};">${(parcel.ChapterOverride=="" ? parcel.GivenName : parcel.ChapterOverride)}</div>
+                <div class="TOC-chinfo" onclick="loadStory(${parcel.ChapterFull});ChapterSelected=${parcel.ChapterFull};document.location='#options'">${(parcel.ChapterOverride=="" ? parcel.GivenName : parcel.ChapterOverride)}</div>
                 <div class="TOC-chsynopsis">${parcel.Synopsis}</div>               
               </div>
               <div class="TOC-chrelease">
