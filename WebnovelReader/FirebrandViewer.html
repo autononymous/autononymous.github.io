@@ -317,6 +317,8 @@ div.ctrl {
   align-items: center;
   cursor: pointer;
   font-family: 'Courier Prime', 'Courier';
+  border: var(--textPrimary) 1px solid;
+  border-radius: 10px;
   
 }
 div.fontup, div.lineup {
@@ -395,10 +397,10 @@ div.tg-background {
 div.tg-progressmask {
   position:relative;
   background-color: var(--backgroundColor);
-  width:40%;
+  width:100%;
   top:0;
   height:16px;
-  left:60%;
+  left:0%;
 }
 div.tg-progresslines{
   position:relative;
@@ -530,7 +532,7 @@ div.unreleased {
           </div>
         </div>
         <div class="options" id="options">
-          <div class="ctrl extendpage" onclick="ExtendPage();"> 
+          <div class="ctrl extendpage" id="contscroll" onclick="ExtendPage();"> 
             <img class="texticon" title="Continuous Scrolling" src="https://github.com/autononymous/autononymous.github.io/blob/master/WebnovelReader/icons/fbicon-Extend.png?raw=true" alt="&#8853;">
           </div>
           <div class="ctrl lineup" onclick="BodyLineHeight(1);"> 
@@ -565,7 +567,7 @@ div.unreleased {
           <div class="control right" onclick="SetPage(1);"></div>
         </div>
       </div>
-      <div class="tracker"> 
+      <div class="tracker" id="tracker"> 
         <div class="track-text">
           <p> 
             Part <span id="n-chnum"></span> of <span id="n-chtot"></span>
@@ -653,10 +655,12 @@ const metaPGTOT = document.getElementById('n-pgtot');
 const barVisual = document.getElementById('visualtracker')
 const barLines = document.getElementById('visuallines')
 
+var isCONTINUOUS = false; // Continuous scrolling
 
 var READER = document.getElementsByClassName("activepage")[0];
 
 function setProgressBar(pagecount) {
+  if (!isCONTINUOUS) {
   barLines.innerHTML = "";
   for (let i=0; i<pagecount; i++) {
     if (i==0) {
@@ -664,6 +668,55 @@ function setProgressBar(pagecount) {
     } else {
       barLines.innerHTML += `<div class="tg-progresslinemask" id="bar${i}" style="background: var(--backgroundColor);"></div>`;
     }   
+  }
+  } else {
+    if (isCONTINUOUS) {
+      document.getElementById('visuallines').innerHTML = `<div class="tg-progressmask" id="maskbar"></div>`;
+    }
+  }
+}
+
+function UpdateScroller () {
+  let Progmask = document.getElementById('maskbar');
+  let SectionDims = document.getElementById('reader').getBoundingClientRect();
+  //console.log(SectionDims.height,SectionDims.bottom);
+  let Progress = (((-SectionDims.top)/((Math.abs(SectionDims.height))) ) * 100).toFixed(1) + 10;
+  Progress = (Progress>=100) ? 100 : (Progress<=0) ? 0 : Progress;
+
+  //console.log(Progress)
+
+  Progmask.style.left = `${Progress}%`;
+  Progmask.style.width = `${(100-Progress)}%`;
+
+};
+
+
+//var ScrollerHeight = document.getElementById('body').getClientBoundingRect();
+
+async function ExtendPage() {
+// Toggle continuous scrolling (first page has no limit)
+  isCONTINUOUS = !isCONTINUOUS;
+  document.getElementById("contscroll").style.backgroundColor = (isCONTINUOUS) ? "var(--colorPrimaryFaded)" : "var(--backgroundColor)";
+  //console.debug("CONTINUOUS SCROLLING: " + isCONTINUOUS);
+
+  document.getElementById("body").style.overflowY = (isCONTINUOUS) ? "hidden" : "auto";
+  document.getElementById("body").style.height = (isCONTINUOUS) ? "unset" : "80%";
+  
+  await loadStory(ChapterSelected);
+
+  console.debug(`Height: ${document.getElementById('body').offsetHeight}px`)
+
+  StretchInterface();
+  document.getElementById('tracker').style.position = (isCONTINUOUS) ? "sticky" : "unset"; // Change to sticky for continuous scrolling
+  document.getElementById('tracker').style.bottom = (isCONTINUOUS) ? "0" : "auto"; // Adjust top position for continuous scrolling
+  document.getElementById('tracker').style.zIndex = (isCONTINUOUS) ? "10" : "1"; // Adjust z-index for tracker visibility
+  // Additional code to handle other UI updates can be added here if necessary
+  //ScrollerHeight = document.getElementById('body').getClientBoundingRect();
+  if (isCONTINUOUS) {
+    document.getElementById('visuallines').innerHTML = `<div class="tg-progressmask" id="maskbar"></div>`;
+    addEventListener('scroll', UpdateScroller);
+  } else {
+    removeEventListener('scroll', UpdateScroller);
   }
 }
 
@@ -675,7 +728,7 @@ function newEntry(type,title) {
 const Window = document.getElementById("body");
 const Read = document.getElementById("reader");
 
-function isOverflow() {
+function NotOverflow() {
 	let result = Window.getBoundingClientRect().bottom - document.getElementsByClassName('activepage')[0].getBoundingClientRect().bottom;
   return ((result <= 0)?false:true);
 }
@@ -734,7 +787,14 @@ function SetPage(advance) {
     isFirstClick = false;        
   }
   document.getElementById('interface').style.background ="none";
+  GoToStart();
+  StretchInterface();
 }
+
+function StretchInterface() {
+  document.getElementById('interface').style.height = (isCONTINUOUS) ? `${document.getElementById('body').offsetHeight}px` : "100%";
+}
+
 
 function BodyFontSize(advance) {
   if(!isFirstClick) {
@@ -749,6 +809,10 @@ function BodyFontSize(advance) {
     //console.log(`Font size changed to ${newSize}em`);
   }  
   localStorage.setItem('AC-FontPrefs',[FontSize,LineHeight]);
+}
+
+function GoToStart() {
+  document.location='#options';
 }
 
 function BodyLineHeight(advance) {  
@@ -812,7 +876,7 @@ async function loadTOC() {
                 ${(parcel.VerboseOverride==""?(parcel.ActNum+'.'+('00'+(parcel.ChapterFull)).slice(-2)):parcel.VerboseOverride)}              
               </div>
               <div class="TOC-chname ${ChapterStatus}">
-                <div class="TOC-chinfo" onclick="loadStory(${parcel.ChapterFull});ChapterSelected=${parcel.ChapterFull};document.location='#options'">${(parcel.ChapterOverride=="" ? parcel.GivenName : parcel.ChapterOverride)}</div>
+                <div class="TOC-chinfo" onclick="loadStory(${parcel.ChapterFull});ChapterSelected=${parcel.ChapterFull};GoToStart();">${(parcel.ChapterOverride=="" ? parcel.GivenName : parcel.ChapterOverride)}</div>
                 <div class="TOC-chsynopsis">${parcel.Synopsis}</div>               
               </div>
               <div class="TOC-chrelease">
@@ -828,7 +892,7 @@ async function loadTOC() {
     TableOfContents.innerHTML += `
       <div class="footer">
         <br><br>
-        <p>Autononymous &copy; 2025 || Designed by Savant-Guarde || Version 1.</p>
+        <p>Autononymous &copy; 2025 || Designed by Savant-Guarde || Version 1.05</p>
       </div>`
   }
   
@@ -943,6 +1007,9 @@ async function loadStory(chapter) {
   var credit = "";
   var lastHTML = "";
   var currentTag = "";
+
+  var ChapterCounter = 0;
+  var SceneCounter = 0;
   
   var n_page = 1;
   
@@ -955,7 +1022,7 @@ async function loadStory(chapter) {
     	case '#ACT#':
       	currentTag = "ACT";
       	READER.innerHTML += `<h3 class="hAct" id='current'> </h3>`;
-        if( isOverflow() == false ) {
+        if( ((NotOverflow() == false) && (!isCONTINUOUS)) ) {
         
   				READER.innerHTML = lastHTML;
         }
@@ -966,16 +1033,17 @@ async function loadStory(chapter) {
       	nScene = 0;
       	currentTag = "CHNUM";
       	READER.innerHTML += `<h3 class="hChap" id='current'> </h3>`;
-        if( isOverflow() == false ) {	
+        if( ((NotOverflow() == false) && (!isCONTINUOUS)) ) {	
   				READER.innerHTML = lastHTML;
         }
         TARGET = document.getElementById('current');
-        TARGET.id = "";
+        ChapterCounter++;
+        TARGET.id = `Chapter${ChapterCounter}`;
         break;
       case '#SUB#':
       	currentTag = "SUB";
       	READER.innerHTML += `<h3 class="hSub" id='current'> </h3>`;
-        if( isOverflow() == false ) { 
+        if( ((NotOverflow() == false) && (!isCONTINUOUS)) ) { 
   				READER.innerHTML = lastHTML;
           READER.className = "page";
           READER.style.display = "none";
@@ -983,16 +1051,14 @@ async function loadStory(chapter) {
           Pages++;
           READER = document.getElementsByClassName('activepage')[0];
           READER.innerHTML += `<h3 class="hSub" id='current'> </h3>`;
-          TARGET = document.getElementById('current');
-          TARGET.id = "";
         }
         TARGET = document.getElementById('current');
-        TARGET.id = "";
+        TARGET.id = ""; 
         break;
       case '#SC#':
       	currentTag = "SC";
       	READER.innerHTML += `<h3 class="hScn" id='current'> </h3>`;
-        if( isOverflow() == false ) {
+        if( ((NotOverflow() == false) && (!isCONTINUOUS)) ) {
   				READER.innerHTML = lastHTML;
           READER.className = "page";
           READER.style.display = "none";
@@ -1000,14 +1066,15 @@ async function loadStory(chapter) {
           Pages++;
           READER = document.getElementsByClassName('activepage')[0];
           READER.innerHTML += `<h3 class="hScn" id='current'> </h3>`;
-        }
+        }        
+        SceneCounter++;
         TARGET = document.getElementById('current');
-        TARGET.id = "";
+        TARGET.id = `Scene${SceneCounter}`;
         break;
       case '#P#':
       	currentTag = "P";
       	READER.innerHTML += `<p class="Para" style="font-size:${FontSize}em;line-height:${LineHeight}em;" id='current'> </p>`;
-        if( isOverflow() == false ) {
+        if( ((NotOverflow() == false) && (!isCONTINUOUS)) ) {
   				READER.innerHTML = lastHTML;
         }
         TARGET = document.getElementById('current');
@@ -1018,7 +1085,7 @@ async function loadStory(chapter) {
         break; 
       default:
       	TARGET.innerHTML += credit + " ";
-        if( isOverflow() == false ) {
+        if( ((NotOverflow() == false) && (!isCONTINUOUS)) ) {
   				READER.innerHTML = lastHTML;
           READER.className = "page";
           READER.style.display = "none";
@@ -1051,8 +1118,7 @@ async function loadStory(chapter) {
   metaCHNUM.innerHTML = ChapterSelected;
   metaCHTOT.innerHTML = ChapterCount; 
 
-  setProgressBar(Pages+1);
-  
+  setProgressBar(Pages+1);  
   READER.style.display = "";
   
   
@@ -1061,7 +1127,7 @@ async function loadStory(chapter) {
   
   if(isFirstClick) {
     document.getElementById('interface').style.background = `
-    url(ReaderInstructions.png) no-repeat center/100%,
+    url(ReaderInstructions.png) no-repeat top/100%,
     linear-gradient(
     to bottom,
     rgba(21, 21, 21,0.8),
@@ -1074,6 +1140,9 @@ async function loadStory(chapter) {
 
   document.getElementById('fontsize').innerHTML = `${(FontSize*16).toFixed(0)}`;
   document.getElementById('lineheight').innerHTML = `${LineHeight.toFixed(1)}em`;
+
+  StretchInterface();
+
 }
 
 
@@ -1098,6 +1167,8 @@ function initialize() {
 //loadStory(ChapterSelected);
 
 loadTOC();
+
+GoToStart();
 
   </script>
 </body>
