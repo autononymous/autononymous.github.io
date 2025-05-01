@@ -419,6 +419,11 @@ div.TOC {
   height:100%;
   width:100%;
 }
+div.unreleased {
+  color: var(--textTertiary);
+  background-color: var(--colorPrimaryFaded)
+
+}
 .TOC-table {
   position:absolute;
   left:50%;
@@ -619,8 +624,9 @@ var FontPrefs = localStorage.getItem('AC-FontPrefs');
 const TableOfContents = document.getElementById('TOCtable');
 
 var ReleaseFrequency = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7]; // Default release frequency
-var StartDate = new Date("2025-03-13T00:00:00Z"); // Default start date
+var StartDate = new Date("2025-04-17T00:00:00Z"); // Default start date
 var RelDate = new Date(Date.parse(StartDate) - (86400000*ReleaseFrequency[0]));
+
 
 function pad(num, size) {
     var s = "000000000" + num;
@@ -765,6 +771,10 @@ function BodyLineHeight(advance) {
 }
 
 async function loadTOC() {
+  //console.log("RELD"+RelDate)
+  await loadStory(ChapterSelected);
+  //console.log("RELDA"+RelDate)
+  //console.log("Chapters:" + ChapterCount)
   const TOCresponse = await fetch(FILELOC + "docs/FBTOC00.json");
   const tTOCdata = await TOCresponse.text();
   // Process the TOC data here
@@ -775,7 +785,7 @@ async function loadTOC() {
   }
   tocData.Manuscript.forEach(parcel => {
     let type = parcel.DocType;
-    console.log(type)
+    //console.log(type)
     switch(type) {      
     	case "Act":
         if(TOCfromJSON == true) {        
@@ -789,14 +799,16 @@ async function loadTOC() {
         }
         break;   
       case "Chapter":
-        console.log(parseFloat(parcel.NextPublish));
+        //console.log("NextPublish"+new Date(Date.parse(RelDate)));
         RelDate = new Date(Date.parse(RelDate) + (86400000*parseFloat(parcel.NextPublish)));
+        //console.debug("RD:"+RelDate)
         if(TOCfromJSON == true) {          
+            let ChapterStatus = (((parcel).ChapterFull < parseFloat(ChapterCount)-1)||(ChapterCount == 0) ) ? "" : "unreleased";
             TableOfContents.innerHTML += `
               <div class="TOC-chnum">
                 ${(parcel.VerboseOverride==""?(parcel.ActNum+'.'+('00'+(parcel.ChapterFull)).slice(-2)):parcel.VerboseOverride)}              
               </div>
-              <div class="TOC-chname">
+              <div class="TOC-chname ${ChapterStatus}">
                 <div class="TOC-chinfo" onclick="loadStory(${parcel.ChapterFull});ChapterSelected=${parcel.ChapterFull};document.location='#options'">${(parcel.ChapterOverride=="" ? parcel.GivenName : parcel.ChapterOverride)}</div>
                 <div class="TOC-chsynopsis">${parcel.Synopsis}</div>               
               </div>
@@ -809,6 +821,14 @@ async function loadTOC() {
       case "Scene":
     }
   });
+  if(TOCfromJSON == true) {   
+    TableOfContents.innerHTML += `
+      <div class="footer">
+        <br><br>
+        <p>Autononymous &copy; 2025 || Designed by Savant-Guarde || Version 1.</p>
+      </div>`
+  }
+  
 }
 
 async function loadStory(chapter) {
@@ -868,8 +888,9 @@ async function loadStory(chapter) {
           Pouch.push(`#CHNUM#`,`${parcel.AutoNameFull}`,`#/#`)
           Pouch.push(`#SUB#`,`"${parcel.GivenName}"`,`#/#`)
         }
-        RelDate = new Date(Date.parse(RelDate) + (86400000*ReleaseFrequency[parcel.ChapterFull-1]));
+        
         if(TOCfromJSON != true) {          
+          RelDate = new Date(Date.parse(RelDate) + (86400000*ReleaseFrequency[parcel.ChapterFull-1]));
           TableOfContents.innerHTML += `
             <div class="TOC-chnum">
               ${(parcel.VerboseOverride==""?(parcel.ActNum+'.'+('00'+parcel.ChapterFull).slice(-2)):parcel.VerboseOverride)}              
@@ -905,10 +926,12 @@ async function loadStory(chapter) {
     }
   })
 
-  TableOfContents.innerHTML += `
-    <div class="footer">
-      <p>Autononymous &copy; 2025 || Designed by Savant-Guarde || Version 1.0</p>
-    </div>`
+  if(TOCfromJSON != true) {   
+    TableOfContents.innerHTML += `
+      <div class="footer">
+        <p>Autononymous &copy; 2025 || Designed by Savant-Guarde || Version 1.3</p>
+      </div>`
+  }
   
   //console.info(`There are ${ChapterCount} available chapters in Project ${jStory.Nickname}.`)
   
@@ -1069,7 +1092,7 @@ function initialize() {
   
   
 }
-loadStory(ChapterSelected);
+//loadStory(ChapterSelected);
 
 loadTOC();
 
