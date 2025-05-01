@@ -303,7 +303,7 @@ div.options {
   transform: translate(-50%,0%);
   display: grid;
   justify-content: center;
-  grid-template-columns: 50px 50px auto 50px 50px;
+  grid-template-columns: 50px 50px 50px auto 50px 50px;
   grid-gap: 10px; /* Added grid gap for spacing */
   align-items: center; /* Added alignment for items in the grid */  
   border-top: 1px solid var(--textPrimary);
@@ -530,6 +530,9 @@ div.unreleased {
           </div>
         </div>
         <div class="options" id="options">
+          <div class="ctrl extendpage" onclick="ExtendPage();"> 
+            <img class="texticon" title="Continuous Scrolling" src="https://github.com/autononymous/autononymous.github.io/blob/master/WebnovelReader/icons/fbicon-Extend.png?raw=true" alt="&#8853;">
+          </div>
           <div class="ctrl lineup" onclick="BodyLineHeight(1);"> 
             <img class="texticon" title="Increase Line Spacing" src="https://github.com/autononymous/autononymous.github.io/blob/master/WebnovelReader/icons/fbicon-LineDn.png?raw=true" alt="&#8853;">
           </div>
