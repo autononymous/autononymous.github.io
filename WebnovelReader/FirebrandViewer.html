@@ -423,12 +423,20 @@ div.interface {
   position: absolute;
   top: calc( var(--headerHeight) + 50px);
   left:0;
-  height: 100%;
+  height: 80vh;
   width: 100%;
   display: inline-flex;   
 }
 div.control {
   flex:1;
+}
+div.left {
+  background-image: linear-gradient(to left, rgba(255,100,100,0.05), rgba(255,100,100,0.2)); /* Updated second rgba value */
+  border: 1px dotted white;
+}
+div.right {
+  background-image: linear-gradient(to right, rgba(255,255,100,0.05), rgba(255,255,100,0.2)); /* Updated second rgba value */
+  border: 1px dotted white;
 }
 
 div.reader {
@@ -910,7 +918,7 @@ async function ExtendPage() {
 
   StretchInterface();
   document.getElementById('tracker').style.position = (isCONTINUOUS) ? "sticky" : "unset"; // Change to sticky for continuous scrolling
-  document.getElementById('tracker').style.bottom = (isCONTINUOUS) ? "0" : "auto"; // Adjust top position for continuous scrolling
+  document.getElementById('tracker').style.bottom = (isCONTINUOUS) ? "0" : "unset"; // Adjust top position for continuous scrolling
   document.getElementById('tracker').style.zIndex = (isCONTINUOUS) ? "10" : "1"; // Adjust z-index for tracker visibility
   // Additional code to handle other UI updates can be added here if necessary
   //ScrollerHeight = document.getElementById('body').getClientBoundingRect();
@@ -932,7 +940,7 @@ function NotOverflow() {
 }
 
 function SetPage(advance) {
-  if(isFirstClick == false) {
+  if(isFirstClick == false) {   
     let QueriedPage = CurrentPage+advance;
     if( (QueriedPage >= 0) && (QueriedPage <= Pages) )  {
       //console.log(`Page ${QueriedPage} exists in Chapter ${ChapterSelected}.`)
@@ -972,7 +980,7 @@ function SetPage(advance) {
 }
 
 function StretchInterface() {
-  document.getElementById('interface').style.height = (isCONTINUOUS) ? `${document.getElementById('body').offsetHeight}px` : "100%";
+  document.getElementById('interface').style.height = (isCONTINUOUS) ? `${document.getElementById('body').offsetHeight}px` : "75vh";
 }
 
 function BodyFontSize(advance) {
@@ -1083,16 +1091,28 @@ async function loadStory(chapter) {
   var Lines = [];
   jStory = JSON.parse(data.replaceAll('\n',''));
   //console.info(`Story content for ${jStory.Nickname} has been loaded.`)
-  
-  document.getElementById('body').innerHTML = `    <div class="reader" id="reader">
+  if (isFirstClick) {
+    document.getElementById('body').innerHTML = `    <div class="reader" id="reader">
       <div id="page0" class="page activepage">
       
       </div>
     </div>
     <div class="interface" id="interface">
-      <div class="control left" onclick="SetPage(-1);"></div>
-      <div class="control right" onclick="SetPage(1);"></div>
+      <div class="control left"  id="leftCtrl" onclick="SetPage(-1);clearVisuals();"></div>
+      <div class="control right"  id="rightCtrl" onclick="SetPage(1);clearVisuals();"></div>
     </div>`
+  } else {
+    document.getElementById('body').innerHTML = `    <div class="reader" id="reader">
+      <div id="page0" class="page activepage">
+      
+      </div>
+    </div>
+    <div class="interface" id="interface">
+      <div class="control" onclick="SetPage(-1);"></div>
+      <div class="control" onclick="SetPage(1);"></div>
+    </div>`
+  }
+  
   currentOffset = 0;
   CurrentPage = 0;
   ChapterCount = 0;
@@ -1332,7 +1352,12 @@ async function loadStory(chapter) {
 
 }
 
-
+function clearVisuals() {
+  document.getElementById('leftCtrl').style.backgroundImage = "none";
+  document.getElementById('rightCtrl').style.backgroundImage = "none";
+  document.getElementById('leftCtrl').style.border = "none";
+  document.getElementById('rightCtrl').style.border = "none";
+}
 
 
 
@@ -1345,6 +1370,7 @@ addEventListener("resize", (event) => {
     loadStory(ChapterSelected)
     //console.log(`Window resized to ${lastWindowWidth}px`)
   };
+  
 });
 
 //loadStory(ChapterSelected);
