@@ -278,7 +278,7 @@ img.bookcover {
 
 div.options {
   position: absolute;
-  top: calc(var(--headerHeight) - 100px);
+  top: calc(var(--headerHeight) - 25px);
   height:60px;
   width: 90%;
   left: 50%;
@@ -421,11 +421,15 @@ div.body {
 }
 div.interface {
   position: absolute;
-  top: var(--headerHeight);
+  top: calc( var(--headerHeight) + 50px);
   left:0;
   height: 100%;
   width: 100%;
   display: inline-flex;   
+}
+@media (min-width: 950px) { /* Gotta change this one manually: no variables. */
+  div.interface {
+  top: var(--headerHeight);
 }
 div.control {
   flex:1;
