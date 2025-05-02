@@ -42,7 +42,7 @@
   --textTertiary: hsl(356, 100%, 85%);
 
   /* Typesetting dimensions */
-  --ReaderMargins: 50px;
+  --ReaderMargins: 15vw;
 }
 
 @media (min-width: 950px) { /* Gotta change this one manually: no variables. */
@@ -1268,6 +1268,7 @@ async function loadStory(chapter) {
       default:
       	TARGET.innerHTML += credit + " ";
         if( ((NotOverflow() == false) && (!isCONTINUOUS)) ) {
+		TARGET.style="text-align-last:justify;";
   				READER.innerHTML = lastHTML;
           READER.className = "page";
           READER.style.display = "none";
