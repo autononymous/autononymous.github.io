@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Reader</title>
+
+<style>
+
+:root {
+    --AllText:          white;
+    --BackgroundColor:  #121212;
+
+    --DEBUG:            rgba(255,255,100,0.00);
+    --DEBUGborder:      none;/*2px solid rgba(100,100,255,0.2);*/
+
+    --MarginSize:       50px;
+    --MarginPage:       20px;
+
+    --ColorAdvance:     hsla(351, 0%, 14%, 20%); /* hsla(351, 100%, 14%, 40%); */
+    --ColorAdvanceInfo: rgba(255,255,255, 0);
+    --ColorAdvanceBorder: 1px solid hsla(0, 0%, 50%, 40%);
+
+    --ColorPrimary:     hsl(351, 100%, 37%);
+    --ColorSecondary:   hsl(43, 65%, 37%);
+    --ColorTertiary:    hsl(43, 65%, 50%);
+    --ColorQuarternary: hsl(357, 81%, 46%);
+
+    --ActColor:         darkred;
+    --ActSize:          3.0em;
+    --ActFont:          'Garamond';
+
+    --ChapHeaderColor:  var(--AllText);
+    --ChapHeaderSize:   3.0em;
+    --ChapHeaderFont:   'Garamond';
+
+    --ChapSubColor:     var(--AllText);
+    --ChapSubSize:      2.5em;
+    --ChapSubFont:      'Garamond';
+
+    --SectionColor:     var(--AllText);
+    --SectionSize:      3.0em;
+    --SectionFont:      'Garamond';
+
+    --BodyColor:        var(--AllText);
+    --BodySize:         1.5rem;
+    --BodyFont:         'Times New Roman';
+    --BodyLineHeight:   1.0em;
+
+    --InvertImages:     invert(0);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--BackgroundColor);
+    color: var(--AllText);
+    overflow-x: hidden;
+}
+img {
+    filter: var(--InvertImages);
+}
+
+h3.hACT {
+    border: var(--DEBUGborder);
+    color: var(--ActColor);
+    font-size: var(--ActSize);
+    font-family: var(--ActFont);
+    text-align: center;
+    line-height: 2em;
+
+}
+
+h3.hCHAPTER {
+    border: var(--DEBUGborder);
+    color: var(--ChapHeaderColor);
+    font-size: var(--ChapHeaderSize);
+    font-family: var(--ChapHeaderFont);
+    text-align: center;
+    line-height: 0.2em;
+
+}
+
+h3.hSUBTITLE {
+    border: var(--DEBUGborder);
+    color: var(--ChapSubColor);
+    font-size: var(--ChapSubSize);
+    font-family: var(--ChapSubFont);
+    text-align: center;
+    line-height: 0.1em;
+
+}
+
+h3.hSCENE {
+    border: var(--DEBUGborder);
+    color: var(--SectionColor);
+    font-size: var(--SectionSize);
+    font-family: var(--SectionFont);
+    text-align: center;
+
+}
+
+p.pBODY {
+    border: var(--DEBUGborder);
+    color: var(--BodyColor);
+    font-size: var(--BodySize);
+    font-family: var(--BodyFont);    
+    padding-left: var(--MarginSize);
+    padding-right: var(--MarginSize);
+    text-align: justify;
+    line-height: var(--BodyLineHeight);
+
+}
+p.SPLIT {
+    border: 2px solid var(--DEBUGborder);
+    text-indent: none;
+}
+p.LAST {
+    text-align-last: justify;
+}
+
+
+div.Page {
+    border: var(--DEBUGborder);
+    background-color: var(--DEBUG);
+    padding-bottom: var(--MarginPage);
+}
+div.Container {
+    position: absolute;
+    left:5vw;
+    border: var(--DEBUGborder);
+    background-color: var(--DEBUG);
+    width:90vw;    
+    min-height:80vh; 
+    overflow:hidden;
+    
+}
+div.Interface {
+    width:100vw;
+    height:50px;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+
+}
+div.Interface > div {
+    flex: 1;
+    width: 50px;
+    height: 50px;
+}
+img.Icon {
+    height:100%;
+    width: auto;
+    cursor: pointer;
+}
+
+div.Target {
+    position: absolute;
+    min-height: 600px;
+    width: 90vw;   
+    z-index: 1;
+}
+div.Controls {
+    width:100%;
+    height:80vh;
+    position:relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 4fr 3fr 4fr;
+    grid-template-rows: 20fr 1fr 5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+}
+div.ControlLeft {
+    border: var(--ColorAdvanceBorder);
+    background-color: var(--ColorAdvance);
+    grid-area: 1 / 1 / 2 / 2;
+    cursor: pointer;
+}
+div.ControlRight {
+    border: var(--ColorAdvanceBorder);
+    background-color: var(--ColorAdvance);
+    grid-area: 1 / 3 / 2 / 4;
+    cursor: pointer;
+}
+div.ControlBottom {
+    border: var(--ColorAdvanceBorder);
+    background-color: var(--ColorAdvance);
+    grid-area: 3 / 1 / 4 / 4;
+    cursor:help;
+}
+div.ControlInfo {
+    position:relative;
+    left:50%;
+    top:50%;
+    text-align: center;
+    transform:translate(-50%,0);
+}
+span.ControlInfo {
+    font-size: 5vw;
+    margin: 5vw;
+    padding:2vw;
+    background-color: var(--ColorAdvanceInfo);
+    box-shadow: 0px 0px 10px 10px var(--ColorAdvanceInfo);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+div.Window {
+    position:fixed;
+    height:calc(100vh - 100px) ;
+    width: 100vw;
+    left:50%;
+    top:0;
+    transform: translate(-50%,0);
+    pointer-events: none;
+}
+div.ProgressSpacer {
+    height: calc( 100vh - 120px );
+}
+div.Progress {
+    position: sticky;
+    left:50%;    
+    height: 100px;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: middle;
+}
+div.Bar {    
+    border: var(--DEBUGborder);
+    margin-top: 5px;
+    flex:1;
+    height:100%;
+    background-color: var(--BackgroundColor);
+}
+div.ProgressMask {
+    position:absolute;
+    top:0;
+    background-color: var(--BackgroundColor);
+    width:0%;
+    height:100%;
+    right:0;
+}
+div.Status {    
+    border: var(--DEBUGborder);
+    flex:1;
+    height:100%;
+}   
+
+div.ProgressBackground {
+    width: 80vw;
+    height: 16px;
+    background-image: linear-gradient(to right, var(--ColorQuarternary), var(--ColorTertiary));
+    position:relative;
+    left:50%;
+    top:10px;
+    transform:translate(-50%,0);
+    border-radius: 8px;
+}
+div.ProgressLines {    
+    display: inline-flex;
+    flex-direction: row;
+    width:100%;
+    height:100%;
+}
+div.ProgressLines > div {
+    flex: 1;
+    border: 1px solid var(--BackgroundColor);
+}
+div.BarInactive {
+    background-color: var(--BackgroundColor);
+}
+div.BarActive {
+    background-color: transparent;
+}
+div.Leftmost { border-radius: 8px 0px 0px 8px;}
+div.Rightmost { border-radius: 0px 8px 8px 0px;}
+div.ProgressMask {
+    right:0;
+}
+
+div.Status {
+    position:relative;
+    top:20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+}
+div.Status > div {
+    margin-left:  10vw;
+    margin-right: 10vw;
+}
+div.LeftInfo  { 
+    grid-area: 1 / 1 / 2 / 2; 
+    text-align: left;
+}
+div.RightInfo { 
+    grid-area: 1 / 2 / 2 / 3; 
+    text-align: right;
+}
+div.LowerInfo { 
+    grid-area: 2 / 1 / 3 / 3; 
+    text-align: center;
+}
+
+
+</style>
+
+</head>
+<!------------------------------[BODY]-------------------------------->
+<body>
+<div id="FULLBODY">
+    <div id="INTERFACE" class="Interface">
+        <div id="ICON-ONEPAGE" onclick="buttonContinuous();"><img class="Icon" title="Continuous Scrolling" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Extend.png" alt="&#8853;"></div>
+        <div id="ICON-LINEUP" onclick="buttonLineSpace(-1);"><img class="Icon" title="Increase Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineDn.png" alt="&#8853;"></div>
+        <div id="ICON-LINEDN" onclick="buttonLineSpace(1);"><img class="Icon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;"></div>
+        <div id="ICON-FONTUP" onclick="buttonFontSize(1);"><img class="Icon" title="Increase Font Size"" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Larger.png" alt="&#8853;"></div>
+        <div id="ICON-FONTDN" onclick="buttonFontSize(-1);"><img class="Icon" title="Decrease Font Size" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Smaller.png" alt="&#8854;"></div>
+        <div id="ICON-THEME" onclick="buttonSetTheme(1);"><img class="Icon" title="Change Theme" src="https://cdn-icons-png.flaticon.com/512/11072/11072905.png"></div>
+    </div>
+    <div id="CONTAINER" class="Container">    
+        <div id="TARGET" class="Target">        
+        </div>
+        <div id="CONTROL" class="Controls">
+            <div id="CONTROL-LEFT" class="ControlLeft" onclick="ChangePage(-1)">
+                <div class="ControlInfo">
+                    <span style="font-size:20vw;line-height:0em">&laquo;</span>
+                    <br>
+                    <span class="ControlInfo" style="line-height:1.5rem;text-align:left;">Last</span>
+                </div>
+            </div>
+            <div id="CONTROL-RIGHT" class="ControlRight" onclick="ChangePage(1)">
+                <div class="ControlInfo">
+                    <span style="font-size:20vw;line-height:0em">&raquo;</span>
+                    <br>
+                    <span class="ControlInfo" style="line-height:1.5rem;text-align:right;">Next</span>
+                </div>
+            </div>
+            <div id="CONTROL-BOTTOM" class="ControlBottom"><div class="ControlInfo"><span class="ControlInfo" style="text-align:center;"><u>More</u></span></div></div>
+        </div>
+    </div>
+    <div id="PROGRESS-WINDOW" class="Window">
+        <div id="SPACER" class="ProgressSpacer"></div>
+        <div id="PROGRESS" class="Progress">
+            <div id="BAR" class="Bar">
+                <div id="PROGRESS-BG" class="ProgressBackground">
+                    <div id="PROGRESS-LINES" class="ProgressLines">
+
+                    </div>
+                    <div id="PROGRESS-MASK" class="ProgressMask">
+
+                    </div>
+                </div>
+            </div>
+            <div id="STATUS" class="Status">
+                <div id="INFO-LEFT"  class="LeftInfo" >Page <span id="N-PAGE-CURRENT"></span> of <span id="N-PAGE-TOTAL"></span></div>
+                <div id="INFO-RIGHT" class="RightInfo">Part <span id="N-PART-CURRENT"></span> of <span id="N-PART-TOTAL"></div>
+                <div id="INFO-LOWER" class="LowerInfo"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------[SCRIPT]---------------------------->
+<script>
+
+const STYLES = {
+    "LightMode":{
+        "--AllText":          "black",
+        "--BackgroundColor":  "white",
+
+        "--DEBUG":            "rgba(255,255,100,0.00)",
+        "--DEBUGborder":      "none",
+
+        "--MarginSize":       "50px",
+        "--MarginPage":       "20px",
+
+        "--ColorAdvance":     "hsla(351, 0%, 14%, 20%)",
+        "--ColorAdvanceInfo": "rgba(255,255,255, 0)",
+        "--ColorAdvanceBorder": "1px solid hsla(0, 0%, 50%, 40%)",
+
+        "--ColorPrimary":     "hsl(351, 100%, 37%)",
+        "--ColorSecondary":   "hsl(43, 65%, 37%)",
+        "--ColorTertiary":    "hsl(43, 65%, 50%)",
+        "--ColorQuarternary": "hsl(357, 81%, 46%)",
+
+        "--ActColor":         "darkred",
+        "--ActSize":          "3.0em",
+        "--ActFont":          'Garamond',
+
+        "--ChapHeaderColor":  "var(--AllText)",
+        "--ChapHeaderSize":   "3.0em",
+        "--ChapHeaderFont":   "'Garamond'",
+
+        "--ChapSubColor":     "var(--AllText)",
+        "--ChapSubSize":      "2.5em",
+        "--ChapSubFont":      'Garamond',
+
+        "--SectionColor":     "var(--AllText)",
+        "--SectionSize":      "3.0em",
+        "--SectionFont":      'Garamond',
+
+        "--BodyColor":        "var(--AllText)",
+        "--BodySize":         "1.5rem",
+        "--BodyFont":         'Times New Roman',
+        "--BodyLineHeight":   "1.0em",
+
+        "--InvertImages":     "invert(1)"
+    },
+    "DarkMode":{
+        "--AllText":          "white",
+        "--BackgroundColor":  "#121212",
+
+        "--DEBUG":            "rgba(255,255,100,0.00)",
+        "--DEBUGborder":      "none",
+
+        "--MarginSize":       "50px",
+        "--MarginPage":       "20px",
+
+        "--ColorAdvance":     "hsla(351, 0%, 14%, 20%)",
+        "--ColorAdvanceInfo": "rgba(255,255,255, 0)",
+        "--ColorAdvanceBorder": "1px solid hsla(0, 0%, 50%, 40%)",
+
+        "--ColorPrimary":     "hsl(351, 100%, 37%)",
+        "--ColorSecondary":   "hsl(43, 65%, 37%)",
+        "--ColorTertiary":    "hsl(43, 65%, 50%)",
+        "--ColorQuarternary": "hsl(357, 81%, 46%)",
+
+        "--ActColor":         "darkred",
+        "--ActSize":          "3.0em",
+        "--ActFont":          'Garamond',
+
+        "--ChapHeaderColor":  "var(--AllText)",
+        "--ChapHeaderSize":   "3.0em",
+        "--ChapHeaderFont":   "'Garamond'",
+
+        "--ChapSubColor":     "var(--AllText)",
+        "--ChapSubSize":      "2.5em",
+        "--ChapSubFont":      'Garamond',
+
+        "--SectionColor":     "var(--AllText)",
+        "--SectionSize":      "3.0em",
+        "--SectionFont":      'Garamond',
+
+        "--BodyColor":        "var(--AllText)",
+        "--BodySize":         "1.5rem",
+        "--BodyFont":         'Times New Roman',
+        "--BodyLineHeight":   "1.0em",
+
+        "--InvertImages":     "invert(0)"
+    }
+}
+
+// Get variables from URL
+const urlParams = new URLSearchParams(window.location.search);
+console.log(urlParams);
+// Get specific parameters from URL; default to prologue
+var ChapterNumber = parseFloat(urlParams.get('Chapter')) || 0;
+// Advance chapters at end of section? Default to TRUE.
+var AdvanceChapters = urlParams.get('DoAdvance') || true;
+// Show in dark theme? Default to FALSE.
+var isDarkMode = urlParams.get('DoAdvance') || false;
+
+
+
+
+
+
+
+// Naming important elements
+const eContainer        = document.getElementById('CONTAINER');
+const eControl          = document.getElementById('CONTROL');
+const eControlLeft      = document.getElementById('CONTROL-LEFT');
+const eControlRight     = document.getElementById('CONTROL-RIGHT');
+const eControlBottom    = document.getElementById('CONTROL-BOTTOM');
+const eBinder           = document.getElementById('TARGET');
+const eBarBox           = document.getElementById('BAR');
+const eBarMask          = document.getElementById('PROGRESS-MASK');
+const eBarBackground    = document.getElementById('PROGRESS-BG');
+const eBarLineBox       = document.getElementById('PROGRESS-LINES');
+
+const eThisPage         = document.getElementById('N-PAGE-CURRENT');
+const eTotalPages       = document.getElementById('N-PAGE-TOTAL');
+const eThisPart         = document.getElementById('N-PART-CURRENT');
+const eTotalParts       = document.getElementById('N-PART-TOTAL');
+
+
+addEventListener("resize",RollTicker);
+
+divTARGET = document.getElementById('TARGET');
+divCONTAINER = document.getElementById('CONTAINER');
+
+const ROOT = document.querySelector(':root');
+const FONTSIZES = ['1.50rem','1.75rem','2.00rem','2.25rem','2.50rem'];
+const LINEHEIGHTS = ['1.20em','1.30em','1.40em','1.50em','1.60em','1.70em',]
+const THEMES = ['DarkMode','LightMode'];
+var ThemeStage = isDarkMode?1:0;
+var FontStage = 2;
+var LineStage = 2;
+buttonSetTheme(0);
+ROOT.style.setProperty('--BodySize', FONTSIZES[FontStage] );
+ROOT.style.setProperty('--BodyLineHeight', LINEHEIGHTS[LineStage] );
+
+
+eThisPage.innerHTML     = ('00'+0).slice(-2);
+eTotalPages.innerHTML   = ('00'+99).slice(-2);
+eThisPart.innerHTML     = ('00'+1).slice(-2);
+eTotalParts.innerHTML   = ('00'+99).slice(-2);
+
+const FOOTERTEXT = `The Frostburn Chronicles: Firebrand&emsp;||&emsp;&copy; 2025 Savant-Guarde&emsp;||&emsp;Autononymous.io`;
+document.getElementById('INFO-LOWER').innerHTML = FOOTERTEXT;
+
+// Initializing variables
+
+var isFirstClick = true;
+var CurrentPageNumber = 0;
+
+
+var ChapterMinNumber = 0;
+var ChapterMaxNumber = 0;
+
+IsContinuous = false;
+
+
+
+// ===============================<[ INITIAL DATA ]>===================================
+
+// Root directory of further files
+SourceROOT = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/"
+// Exported JSON file from Scrivener containing the story
+SourceFILE = SourceROOT + "/docs/FB00.json"
+
+// Fetch the JSON file
+async function fetchJSON() {
+    try {
+        const response = await fetch(SourceFILE);
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        const data = await response.text();
+        return JSON.parse(data.replaceAll(/(\r\n|\n|\r)/gm, ''));
+    } catch (error) {
+        console.error('Error fetching the file:', error);
+    }
+}
+
+// JSON file containing the story
+var jLoad = "";
+
+// ===============================<[ FUNCTIONS ]>===================================
+
+// Function to initialize the reader
+function initializeReader() {
+    // Initialization logic here
+}
+
+async function buttonContinuous() {
+    IsContinuous = !IsContinuous;
+    eContainer.style.overflow = IsContinuous?"scroll":"hidden";    
+    await reload();
+}
+function buttonFontSize(advance) {
+    //let CurrentSize = getComputedStyle(ROOT).getPropertyValue('--BodySize')
+    //console.log(` > Current size is ${CurrentSize}.`)
+    let query = advance + FontStage;
+    if (query >= 0 && query < FONTSIZES.length) {
+        FontStage += advance;
+        ROOT.style.setProperty('--BodySize', FONTSIZES[query] );
+        //console.debug(`Size set to ${FONTSIZES[query]} at Query Stage ${FontStage}.`)
+        reload();
+    } else {
+        console.warn(`Error changing font size: Outside limits.`)
+    }
+}
+function buttonLineSpace(advance) {
+    let query = advance + LineStage;
+    if (query >= 0 && query < LINEHEIGHTS.length) {
+        LineStage += advance;
+        ROOT.style.setProperty('--BodyLineHeight', LINEHEIGHTS[query] );
+        //console.debug(`Size set to ${FONTSIZES[query]} at Query Stage ${FontStage}.`)
+        reload();
+    } else {
+        console.warn(`Error changing line height: Outside limits.`)
+    }    
+}
+function buttonSetTheme(advance) {
+    let ThemeCount = THEMES.length;
+    ThemeStage += advance;
+    ThemeStage = (ThemeStage >= ThemeCount)?  0  : ThemeStage;
+    let SelectedTheme = THEMES[ThemeStage];
+    console.info(`Setting active theme to "${SelectedTheme}".`)
+    Object.entries(STYLES[SelectedTheme]).forEach(parameter => {
+        ROOT.style.setProperty(parameter[0], parameter[1] );
+    });
+    ROOT.style.setProperty('--BodySize', FONTSIZES[FontStage] );
+    ROOT.style.setProperty('--BodyLineHeight', LINEHEIGHTS[LineStage] );
+
+}
+
+function GenerateProgress() {
+    eBarLineBox.innerHTML = "";
+    if(!IsContinuous) {
+        // Text stuff
+        eThisPage.innerHTML = ('00'+(CurrentPageNumber+1)).slice(-2);
+        eTotalPages.innerHTML = ('00'+(PageMaxCount+1)).slice(-2);
+        eThisPart.innerHTML     = ('00'+(ChapterNumber+1)).slice(-2);
+        eTotalParts.innerHTML   = ('00'+(ChapterMaxNumber+1)).slice(-2);
+        // Visual stuff
+        eContainer.removeEventListener("scroll", UpdateProgressSlider);
+        eBarMask.style.width = '0%';
+        for (let i=0; i<=PageMaxCount; i++) {
+            if(i == PageMaxCount) {
+                eBarLineBox.innerHTML += `<div id="PROG${i}" class="BarInactive Rightmost"></div>`;
+            } else  if (i == 0) {
+                eBarLineBox.innerHTML += `<div id="PROG${i}" class="BarActive Leftmost"></div>`;
+            } else {
+                eBarLineBox.innerHTML += `<div id="PROG${i}" class="BarInactive"></div>`;
+            }                
+        }
+    } else {
+        console.info("Scrolling mode active.")
+        eBarMask.style.width = "100%";
+        eContainer.addEventListener("scroll", UpdateProgressSlider);
+    }
+    
+}
+function UpdateProgress() {
+    for (let i=0; i<=PageMaxCount; i++) {
+        let ThisBar = document.getElementById(`PROG${i}`);
+        try {
+            if (i <= CurrentPageNumber) {
+                ThisBar.className = "BarActive";
+            } else {
+                ThisBar.className = "BarInactive";
+            }
+            if (i == PageMaxCount) { ThisBar.className += ` Rightmost` }
+            if (i == 0) { ThisBar.className += ` Leftmost` }
+        } catch (error) {
+            console.warn(`Bar at PROG${i} does not exist.`)
+        }
+    }
+    eThisPage.innerHTML = ('00'+(CurrentPageNumber+1)).slice(-2);
+}
+function UpdateProgressSlider() {
+    let SectionDims = eBinder.getBoundingClientRect();  
+    let WindowDims = eContainer.getBoundingClientRect();
+    //let Top = -SectionDims.top;
+    //let Bottom = SectionDims.bottom;
+    //let Height = ;
+   // console.log(` > Top: ${WindowDims.top},\n > Bottom: ${WindowDims.bottom},\n > Height: ${WindowDims.height},\n`);
+    //console.log(` > Top: ${Top},\n > Bottom: ${Bottom},\n > Height: ${Height},\n`);
+    let Progress = (((-SectionDims.top)) / (SectionDims.height-WindowDims.height))*100;    
+    eBarMask.style.width = ( 100 - ((Progress > 98) ? 100 : (Progress < 5) ? 0 : Progress)) + "%";
+}
+
+
+
+
+function ChangePage(extent) {
+    if (isFirstClick) {
+        [eControlLeft,eControlRight,eControlBottom].forEach(elem => {
+            elem.innerHTML = "";
+            elem.style.backgroundColor = "transparent";
+            elem.style.border = "none";
+        })
+        isFirstClick = false;
+    } else {
+        // If greater than min bound and less than max bound of pages,
+        if ( (CurrentPageNumber + extent >= PageMinCount) && (CurrentPageNumber + extent <= PageMaxCount) ) {
+            CurrentPageNumber += extent;
+            ElemPosition.style.display = "none";    
+            ElemPosition = document.getElementById(`PAGE${CurrentPageNumber}`)
+            ElemPosition.style.display = "";            
+            UpdateProgress();
+        // If not, get the next chapter if it exists.
+        } else {
+            if( (ChapterNumber + extent >= ChapterMinNumber) && (ChapterNumber + extent <= ChapterMaxNumber)) {
+                if (AdvanceChapters) {
+                    ChapterNumber += extent;
+                    reload(extent>0?false:true);                
+                    UpdateProgress();
+                } else {
+                    console.warn(`Parameter 'AdvanceChapters' was deactivated from the URL (set to FALSE).`);
+                }
+            } else {
+                console.warn(`> Queried page ${CurrentPageNumber+extent} is outside defined bounds [ ${PageMinCount}, ${PageMaxCount} ].\n> Queried chapter ${ChapterNumber+extent} is also outside chapter bounds [ ${ChapterMinNumber}, ${ChapterMaxNumber} ].`)
+            }
+            
+        }
+    }
+}
+
+// Debug message handling
+var tDEBUG = "";
+function debugLNC(msg,writeout) {
+// Debug Line N' Clear
+    if (writeout == undefined) {
+        writeout = false; // Default to false if not provided
+    }
+    tDEBUG += msg;
+    if (writeout) {
+        console.debug(`${tDEBUG}`);
+        tDEBUG = ""; // Reset the debug variable
+    }
+}
+
+var Ticker = [];
+
+async function SpoolTicker() {
+    console.debug("Spooling text...")
+    let pItem = 0; // Initialize the item index
+    jLoad.Manuscript.forEach( parcel => {
+        pItem++;
+        let pType = parcel.DocType;
+        let pAct = parcel.ActFull;
+        let pChapter = parcel.ChapterFull;
+        let pScene = parcel.SceneFull;
+        
+        switch (pType) {
+            case "Act":
+                if (pChapter == ChapterNumber) {
+                    debugLNC(`> Act ${pAct} from index position ${pItem} loaded into Ticker.\n`, false);
+                    // Loading in act information:
+                    Ticker.push(`#ACT#`,`Act ${parcel.ActNum}`,`#/#`)
+                }
+                break;
+            case "Chapter":
+                ChapterMaxNumber++;
+                if (pChapter == ChapterNumber) {
+                    debugLNC(`> Chapter ${pChapter} from index position ${pItem} loaded into Ticker.\n`, false);
+                    // Loading in chapter information:
+                    Ticker.push(`#CHP#`,`${parcel.AutoNameFull}`,`#/#`)
+                    Ticker.push(`#SUB#`,`${parcel.GivenName}`,`#/#`)
+                }
+                break;
+            case "Scene":
+                if (pChapter == ChapterNumber) {
+                    debugLNC(`> Scene ${pScene} from index position ${pItem} loaded into Ticker.\n`,false);
+                    // Loading in scene information:
+                    Ticker.push(`#SCN#`,`${parcel.ScenePart}`,`#/#`)
+                    Lines = parcel.Body.replaceAll('<p>','\n').replaceAll('</p>','').split('\n')          
+                    Lines.forEach( Line => {
+                        Ticker.push('#PAR#')
+                        Line.split(' ').forEach( Word => {
+                            Ticker.push((Word!="")?Word:"")
+                        });   
+                        Ticker.push('#/#');
+                    });
+                }
+                break;
+            default:
+                break;
+        }
+    });
+    debugLNC("",true);
+}
+
+const template_ACT          = `<h3 class="hACT" id="active"></h>`;
+const template_CHAPTER      = `<h3 class="hCHAPTER" id="active"></h>`;
+const template_SUBTITLE     = `<h3 class="hSUBTITLE" id="active"></h>`;
+const template_SCENE        = `<h3 class="hSCENE" id="active"></h>`;
+const template_BODY         = `<p class="pBODY" id="active"></p>`;
+const template_BODYSPLIT    = `<p class="pBODY SPLIT" id="active">`;
+
+var PageMinCount = 0;
+var PageMaxCount = 0;
+var ElemPosition;
+var TextPosition;
+var LastTextState;
+
+var I; ////////////////////
+
+
+// Advance the page on overflow of a new element.
+function AdvancePage(newElement) {
+    if(!IsContinuous) {
+        // Reset to last text state
+        ElemPosition.innerHTML = LastTextState + "";
+        // then hide the page,
+        ElemPosition.style.display = "none";
+        // advance the page count,
+        PageMaxCount++;
+        // and generate a new DIV for the page
+        divTARGET.innerHTML += `<div id="PAGE${PageMaxCount}" class="Page"></div> `;
+        // and reset the position so we continue filling the next page.
+        ElemPosition = document.getElementById(`PAGE${PageMaxCount}`);
+        ElemPosition.innerHTML = newElement + "";
+    }
+}
+
+// Advance the page on overflow of continuous text feed.
+function AdvancePageForText(nextText) {   
+    if(!IsContinuous) {
+        ElemPosition.innerHTML = LastTextState + "";
+        TextPosition = document.getElementById('active'); 
+        TextPosition.id = "";
+        TextPosition.className = "pBODY LAST"
+        //console.debug(TextPosition.outerHTML)
+        ElemPosition.style.display = "none";
+        PageMaxCount++;
+        divTARGET.innerHTML += `<div id="PAGE${PageMaxCount}" class="Page"></div> `;
+        ElemPosition = document.getElementById(`PAGE${PageMaxCount}`);
+        ElemPosition.innerHTML = template_BODYSPLIT + nextText + "</p>";
+        //console.debug(`New text on Page ${PageMaxCount} at ${nextText}.`)
+        TextPosition = document.getElementById('active'); 
+        //console.debug(ElemPosition.outerHTML)
+        //console.debug(document.getElementById('active'))
+        //console.debug(TextPosition.innerHTML)
+    }
+}
+
+function TextOverflow() {
+    let Comparison = ((divTARGET.clientHeight) > divCONTAINER.clientHeight)
+    if (Comparison) {//console.debug(`${divTARGET.clientHeight}  >  ${divCONTAINER.clientHeight} on Page ${PageMaxCount} at ${Ticker[I-1]} ${Ticker[I]} ${Ticker[I+1]}.`)
+        }
+    return Comparison;
+}
+
+function RollTicker() {
+    console.debug("Deploying text...");
+
+    PageMaxCount = 0;
+
+    divTARGET.innerHTML = `<div id="PAGE${PageMaxCount}" class="Page"></div> `;
+
+    ElemPosition = document.getElementById(`PAGE${PageMaxCount}`)
+
+    for (let i=0; i<Ticker.length; i++) {
+        let Ticket = Ticker[i];
+        I = i;
+        LastTextState = ElemPosition.innerHTML + "";
+        switch(Ticket) {   
+            // For ACT tickets,         
+            case '#ACT#':
+                ElemPosition.innerHTML += template_ACT;
+                TextPosition = document.getElementById('active'); 
+                if(TextOverflow()) {  
+                    AdvancePage(template_ACT);  
+                }
+                             
+                break;
+            // For CHAPTER tickets,
+            case '#CHP#':
+                ElemPosition.innerHTML += template_CHAPTER;
+                TextPosition = document.getElementById('active'); 
+                if(TextOverflow()) {  
+                    AdvancePage(template_CHAPTER);  
+                }  
+                break;
+            // For SUBTITLE tickets,
+            case '#SUB#':
+                ElemPosition.innerHTML += template_SUBTITLE;
+                TextPosition = document.getElementById('active'); 
+                if(TextOverflow()) {  
+                    AdvancePage(template_SUBTITLE);  
+                }
+                break;
+            // For SCENE NUMBER tickets,
+            case '#SCN#':
+                ElemPosition.innerHTML += template_SCENE;
+                TextPosition = document.getElementById('active'); 
+                if(TextOverflow()) {  
+                    AdvancePage(template_SCENE);  
+                }
+                break;
+
+            // For PARAGRAPH START tickets,
+            case '#PAR#':
+                ElemPosition.innerHTML += template_BODY;
+                TextPosition = document.getElementById('active'); 
+                if(TextOverflow()) {  
+                    AdvancePage(template_BODY);  
+                }
+                break;
+
+            // For tickets that signify the end of an element,
+            case '#/#':
+                TextPosition.id = "";
+                break;
+            
+            // For continuous text word-by-word,
+            default:
+                TextPosition.innerHTML += (Ticket + " ");
+                TextPosition = document.getElementById('active'); 
+                if(TextOverflow()) {  
+                    AdvancePageForText( Ticket + " ");                   
+                }
+                break;
+        }
+    } // end deployment loop
+    // Hide the last page
+    ElemPosition.style.display = "none";
+    // and reload the first one as displayed item
+    ElemPosition = document.getElementById(`PAGE0`)
+    ElemPosition.style.display = "";
+
+    GenerateProgress();
+}
+
+
+// ===============================<[ PROGRAM CODE ]>===================================
+
+async function main() {
+    let tic = new Date();
+    // Initialize the reader
+    initializeReader();
+
+    jLoad = await fetchJSON(); // Fetch the JSON file
+
+    // Spool the ticker
+    await SpoolTicker();
+
+    RollTicker();
+
+eThisPage.innerHTML = ('00'+(CurrentPageNumber+1)).slice(-2);
+
+    let toc = new Date();
+
+    console.info(`Loaded program in ${ (toc.getMilliseconds()-tic.getMilliseconds()) / 1000 } seconds.`)
+}
+
+async function reload(LoadAtEnd) {
+    eBinder.innerHTML = "";
+    eBarLineBox.innerHTML = "";
+    PageMinCount = 0;
+    PageMaxCount = 0;
+    Ticker = [];
+    await SpoolTicker();
+    RollTicker();    
+    CurrentPageNumber = LoadAtEnd?PageMaxCount:0;
+    ChangePage(0); ////////////////////////////////////////////////
+}
+
+main(); // Call the main function
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
+
+
+<!-- This software is licensed under the GNU General Public License. -->
+<!-- You can redistribute it and/or modify it under the terms of the GPL. -->
+<!-- This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. -->
+<!-- You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>. -->
