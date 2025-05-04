@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minimalist Reader</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap">
+
 
 <style>
 
@@ -34,6 +36,7 @@
     --ChapHeaderColor:  var(--AllText);
     --ChapHeaderSize:   3.0em;
     --ChapHeaderFont:   'Garamond';
+    --ChapDecor:        'underline';
 
     --ChapSubColor:     var(--AllText);
     --ChapSubSize:      2.5em;
@@ -81,6 +84,8 @@ h3.hCHAPTER {
     font-size: var(--ChapHeaderSize);
     font-family: var(--ChapHeaderFont);
     text-align: center;
+    margin: 5px;
+    text-decoration: var(--ChapDecor);
 
 }
 
@@ -90,6 +95,7 @@ h3.hSUBTITLE {
     font-size: var(--ChapSubSize);
     font-family: var(--ChapSubFont);
     text-align: center;
+    margin: 5px;
 
 }
 
@@ -124,7 +130,7 @@ p.pBODY {
     text-align: justify;
     line-height: var(--BodyLineHeight);
     margin:0;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.0em; /*========================*/
 
 }
 p.SPLIT {
@@ -144,14 +150,14 @@ div.Page {
 div.Container {
     position: absolute;
     top: 100px;
-    height:calc(100vh - 220px);
+    height:calc(100vh - 210px);
     left:5vw;
     border: var(--DEBUGborder);
     background-color: var(--DEBUG);
     width:90vw;    
     overflow:hidden;
-    overflow-x: hidden;
-    
+    overflow-x: hidden;   
+    z-index: 10; 
 }
 div.Interface {
     width:100vw;
@@ -186,7 +192,7 @@ div.Controls {
     position:sticky;
     z-index: 10;
     display: grid;
-    grid-template-columns: 4fr 3fr 4fr;
+    grid-template-columns: 100fr 1fr 100fr;
     grid-template-rows: 30fr 1fr 1fr;/*20fr 1fr 5fr;*/
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -303,7 +309,7 @@ div.ProgressMask {
 
 div.Status {
     position:relative;
-    top:20px;
+    top:0px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -393,7 +399,6 @@ const STYLES = {
     "LightMode":{
         "--AllText":          "black",
         "--Background":       "255,255,255",
-        "--BackgroundColor":  "rgba(var(--Background),1)",
 
         "--DEBUG":            "rgba(255,255,100,0.00)",
         "--DEBUGborder":      "none",
@@ -401,30 +406,31 @@ const STYLES = {
         "--MarginSize":       "5vw",
         "--MarginPage":       "20px",
 
-        "--ColorAdvance":     "hsla(351, 0%, 14%, 20%)",
-        "--ColorAdvanceInfo": "rgba(255,255,255, 0)",
-        "--ColorAdvanceBorder": "1px solid hsla(0, 0%, 50%, 40%)",
-
         "--ColorPrimary":     "black",
         "--ColorSecondary":   "black",
         "--ColorTertiary":    "black",
         "--ColorQuarternary": "black",
 
+        "--ColorAdvance":     "rgba(var(--Background),0.2)",
+        "--ColorAdvanceInfo": "rgba(255,255,255, 0)",
+        "--ColorAdvanceBorder": "rgba(var(--Background),0.5)",
+
         "--ActColor":         "darkred",
         "--ActSize":          "3.0em",
-        "--ActFont":          'Garamond',
+        "--ActFont":          "'Courier Prime', 'Courier'",
 
         "--ChapHeaderColor":  "var(--AllText)",
-        "--ChapHeaderSize":   "3.0em",
-        "--ChapHeaderFont":   "'Garamond'",
+        "--ChapHeaderSize":   "min(10vw,3.5em)",
+        "--ChapHeaderFont":   "'Courier Prime', 'Courier'",
+        "--ChapDecor":        "underline",
 
         "--ChapSubColor":     "var(--AllText)",
-        "--ChapSubSize":      "2.5em",
-        "--ChapSubFont":      'Garamond',
+        "--ChapSubSize":      "min(8vw,3.0em)",
+        "--ChapSubFont":      "'Courier Prime', 'Courier'",
 
         "--SectionColor":     "var(--AllText)",
-        "--SectionSize":      "3.0em",
-        "--SectionFont":      'Garamond',
+        "--SectionSize":      "min(10vw,3.25em)",
+        "--SectionFont":      "'Courier Prime', 'Courier'",
 
         "--BodyColor":        "var(--AllText)",
         "--BodySize":         "1.5rem",
@@ -439,38 +445,38 @@ const STYLES = {
     "DarkMode":{
         "--AllText":          "white",
         "--Background":       "18,18,18",
-        "--BackgroundColor":  "rgba(var(--Background),1)",
 
         "--DEBUG":            "rgba(255,255,100,0.00)",
         "--DEBUGborder":      "none",
 
-        "--MarginSize":       "50px",
+        "--MarginSize":       "5vw",
         "--MarginPage":       "20px",
-
-        "--ColorAdvance":     "hsla(351, 0%, 14%, 20%)",
-        "--ColorAdvanceInfo": "rgba(255,255,255, 0)",
-        "--ColorAdvanceBorder": "1px solid hsla(0, 0%, 50%, 40%)",
 
         "--ColorPrimary":     "hsl(351, 100%, 37%)",
         "--ColorSecondary":   "hsl(43, 65%, 37%)",
         "--ColorTertiary":    "hsl(43, 65%, 50%)",
         "--ColorQuarternary": "hsl(357, 81%, 46%)",
 
+        "--ColorAdvance":     "rgba(var(--ColorPrimary),0.1)",
+        "--ColorAdvanceInfo": "rgba(255,255,255, 0)",
+        "--ColorAdvanceBorder":"rgba(var(--ColorPrimary),0.1)",
+
         "--ActColor":         "darkred",
         "--ActSize":          "3.0em",
-        "--ActFont":          'Garamond',
+        "--ActFont":          "'Garamond'",
 
         "--ChapHeaderColor":  "var(--AllText)",
         "--ChapHeaderSize":   "3.0em",
         "--ChapHeaderFont":   "'Garamond'",
+        "--ChapDecor":        "Underline",
 
         "--ChapSubColor":     "var(--AllText)",
         "--ChapSubSize":      "2.5em",
-        "--ChapSubFont":      'Garamond',
+        "--ChapSubFont":      "'Garamond'",
 
         "--SectionColor":     "var(--AllText)",
         "--SectionSize":      "3.0em",
-        "--SectionFont":      'Garamond',
+        "--SectionFont":      "'Garamond'",
 
         "--BodyColor":        "var(--AllText)",
         "--BodySize":         "1.5rem",
@@ -528,8 +534,15 @@ const FONTSIZES = ['1.50rem','1.75rem','2.00rem','2.25rem','2.50rem'];
 const LINEHEIGHTS = ['1.20em','1.30em','1.40em','1.50em','1.60em','1.70em',]
 const THEMES = ['DarkMode','LightMode'];
 var ThemeStage = isDarkMode?1:0;
+
 var FontStage = 2;
 var LineStage = 3;
+
+// Format for small devices
+if(window.innerWidth < 700) {
+    FontStage = 0;
+}
+
 buttonSetTheme(0);
 ROOT.style.setProperty('--BodySize', FONTSIZES[FontStage] );
 ROOT.style.setProperty('--BodyLineHeight', LINEHEIGHTS[LineStage] );
@@ -540,7 +553,7 @@ eTotalPages.innerHTML   = ('00'+99).slice(-2);
 eThisPart.innerHTML     = ('00'+1).slice(-2);
 eTotalParts.innerHTML   = ('00'+99).slice(-2);
 
-const FOOTERTEXT = `The Frostburn Chronicles: Firebrand&emsp;||&emsp;&copy; 2025 <a href="https://autononymous.io/authors-and-stories/savantguarde/">Savant-Guarde</a>&emsp;||&emsp;<a href="https://autononymous.io/">Autononymous.io</a>`;
+const FOOTERTEXT = `&copy; 2025 <a href="https://autononymous.io/authors-and-stories/savantguarde/">Savant-Guarde</a>&emsp;||&emsp;<a href="https://autononymous.io/">Autononymous.io</a>`;
 document.getElementById('INFO-LOWER').innerHTML = FOOTERTEXT;
 
 // Initializing variables
@@ -699,6 +712,14 @@ function ChangePage(extent) {
             elem.style.border = "none";
         })
         eControl.style.backgroundColor="transparent";
+        eContainer.style.backgroundImage = `
+            linear-gradient(
+                to bottom,
+                rgba(var(--Background),1.00) 0%,
+                rgba(var(--Background),0.00) 100px,
+                rgba(var(--Background),0.00) calc(100% - 100px),
+                rgba(var(--Background),1.00) 100%
+            )`
         isFirstClick = false;
     } else {
         // If greater than min bound and less than max bound of pages,
@@ -745,6 +766,7 @@ var Ticker = [];
 async function SpoolTicker() {
     console.debug("Spooling text...")
     let pItem = 0; // Initialize the item index
+    ChapterMaxNumber = 0;
     jLoad.Manuscript.forEach( parcel => {
         pItem++;
         let pType = parcel.DocType;
