@@ -13,6 +13,7 @@
     --AllText:          white;
     --Background:       '18,18,18';
     --BackgroundColor:  rgba(var(--Background),1);
+    --BackgroundImg:    none;
 
     --DEBUG:            rgba(255,255,100,0.00);
     --DEBUGborder:      none;/*2px solid rgba(100,100,255,0.2);*/
@@ -62,6 +63,9 @@ body {
     background-color: var(--BackgroundColor);
     color: var(--AllText);
     overflow-x: hidden;
+    background-image: var(--BackgroundImg);
+    width:100vw;
+    position:fixed;
 }
 img {
     filter: var(--InvertImages);
@@ -115,11 +119,12 @@ h3.hSCENE::before {
 h3.hSCENE::after {
     content: var(--SceneDecorator);
 }
+/*
 h3.hSCENE:first-of-type {
     border-top: var(--SceneSeparator);
     margin-top: 100px;
 }
-
+*/
 p.pBODY {
     border: var(--DEBUGborder);
     color: var(--BodyColor);
@@ -150,7 +155,7 @@ div.Page {
 div.Container {
     position: absolute;
     top: 100px;
-    height:calc(100vh - 210px);
+    height:calc(100vh - 220px);
     left:5vw;
     border: var(--DEBUGborder);
     background-color: var(--DEBUG);
@@ -331,6 +336,7 @@ div.RightInfo {
 div.LowerInfo { 
     grid-area: 2 / 1 / 3 / 3; 
     text-align: center;
+    pointer-events: all;
 }
 
 
@@ -339,56 +345,54 @@ div.LowerInfo {
 </head>
 <!------------------------------[BODY]-------------------------------->
 <body>
-<div id="FULLBODY">
-    <div id="INTERFACE" class="Interface">
-        <div id="ICON-ONEPAGE" onclick="buttonContinuous();"><img class="Icon" title="Continuous Scrolling" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Extend.png" alt="&#8853;"></div>
-        <div id="ICON-LINEDN" onclick="buttonLineSpace(1);"><img class="Icon" title="Increase Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineDn.png" alt="&#8853;"></div>
-        <div id="ICON-LINEUP" onclick="buttonLineSpace(-1);"><img class="Icon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;"></div>
-        <div id="ICON-FONTUP" onclick="buttonFontSize(1);"><img class="Icon" title="Increase Font Size"" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Larger.png" alt="&#8853;"></div>
-        <div id="ICON-FONTDN" onclick="buttonFontSize(-1);"><img class="Icon" title="Decrease Font Size" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Smaller.png" alt="&#8854;"></div>
-        <div id="ICON-THEME" onclick="buttonSetTheme(1);"><img class="Icon" title="Change Theme" src="https://cdn-icons-png.flaticon.com/512/11072/11072905.png"></div>
+<div id="INTERFACE" class="Interface">
+    <div id="ICON-ONEPAGE" onclick="buttonContinuous();"><img class="Icon" title="Continuous Scrolling" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Extend.png" alt="&#8853;"></div>
+    <div id="ICON-LINEDN" onclick="buttonLineSpace(1);"><img class="Icon" title="Increase Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineDn.png" alt="&#8853;"></div>
+    <div id="ICON-LINEUP" onclick="buttonLineSpace(-1);"><img class="Icon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;"></div>
+    <div id="ICON-FONTUP" onclick="buttonFontSize(1);"><img class="Icon" title="Increase Font Size"" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Larger.png" alt="&#8853;"></div>
+    <div id="ICON-FONTDN" onclick="buttonFontSize(-1);"><img class="Icon" title="Decrease Font Size" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Smaller.png" alt="&#8854;"></div>
+    <div id="ICON-THEME" onclick="buttonSetTheme(1);"><img class="Icon" title="Change Theme" src="https://cdn-icons-png.flaticon.com/512/11072/11072905.png"></div>
+</div>
+<div id="CONTAINER" class="Container">    
+    <div id="TARGET" class="Target">        
     </div>
-    <div id="CONTAINER" class="Container">    
-        <div id="TARGET" class="Target">        
-        </div>
-        <div id="CONTROL" class="Controls">
-            <div id="CONTROL-LEFT" class="ControlLeft" onclick="ChangePage(-1)">
-                <div class="ControlInfo">
-                    <span style="font-size:20vw;line-height:0em">&laquo;</span>
-                    <br>
-                    <span class="ControlInfo" style="line-height:1.5rem;text-align:left;">Last</span>
-                </div>
+    <div id="CONTROL" class="Controls">
+        <div id="CONTROL-LEFT" class="ControlLeft" onclick="ChangePage(-1)">
+            <div class="ControlInfo">
+                <span style="font-size:20vw;line-height:0em">&laquo;</span>
+                <br>
+                <span class="ControlInfo" style="line-height:1.5rem;text-align:left;">Last</span>
             </div>
-            <div id="CONTROL-RIGHT" class="ControlRight" onclick="ChangePage(1)">
-                <div class="ControlInfo">
-                    <span style="font-size:20vw;line-height:0em">&raquo;</span>
-                    <br>
-                    <span class="ControlInfo" style="line-height:1.5rem;text-align:right;">Next</span>
-                </div>
-            </div>
-            <!--
-            <div id="CONTROL-BOTTOM" class="ControlBottom"><div class="ControlInfo"><span class="ControlInfo" style="text-align:center;"><u>More</u></span></div></div>
-            -->
         </div>
+        <div id="CONTROL-RIGHT" class="ControlRight" onclick="ChangePage(1)">
+            <div class="ControlInfo">
+                <span style="font-size:20vw;line-height:0em">&raquo;</span>
+                <br>
+                <span class="ControlInfo" style="line-height:1.5rem;text-align:right;">Next</span>
+            </div>
+        </div>
+        <!--
+        <div id="CONTROL-BOTTOM" class="ControlBottom"><div class="ControlInfo"><span class="ControlInfo" style="text-align:center;"><u>More</u></span></div></div>
+        -->
     </div>
-    <div id="PROGRESS-WINDOW" class="Window">
-        <div id="SPACER" class="ProgressSpacer"></div>
-        <div id="PROGRESS" class="Progress">
-            <div id="BAR" class="Bar">
-                <div id="PROGRESS-BG" class="ProgressBackground">
-                    <div id="PROGRESS-LINES" class="ProgressLines">
+</div>
+<div id="PROGRESS-WINDOW" class="Window">
+    <div id="SPACER" class="ProgressSpacer"></div>
+    <div id="PROGRESS" class="Progress">
+        <div id="BAR" class="Bar">
+            <div id="PROGRESS-BG" class="ProgressBackground">
+                <div id="PROGRESS-LINES" class="ProgressLines">
 
-                    </div>
-                    <div id="PROGRESS-MASK" class="ProgressMask">
+                </div>
+                <div id="PROGRESS-MASK" class="ProgressMask">
 
-                    </div>
                 </div>
             </div>
-            <div id="STATUS" class="Status">
-                <div id="INFO-LEFT"  class="LeftInfo" >Page <span id="N-PAGE-CURRENT"></span> of <span id="N-PAGE-TOTAL"></span></div>
-                <div id="INFO-RIGHT" class="RightInfo">Part <span id="N-PART-CURRENT"></span> of <span id="N-PART-TOTAL"></div>
-                <div id="INFO-LOWER" class="LowerInfo"></div>
-            </div>
+        </div>
+        <div id="STATUS" class="Status">
+            <div id="INFO-LEFT"  class="LeftInfo" >Page <span id="N-PAGE-CURRENT"></span> of <span id="N-PAGE-TOTAL"></span></div>
+            <div id="INFO-RIGHT" class="RightInfo">Part <span id="N-PART-CURRENT"></span> of <span id="N-PART-TOTAL"></div>
+            <div id="INFO-LOWER" class="LowerInfo"></div>
         </div>
     </div>
 </div>
@@ -397,8 +401,9 @@ div.LowerInfo {
 
 const STYLES = {
     "LightMode":{
-        "--AllText":          "black",
+        "--AllText":          "rgba(0,0,0,1)",
         "--Background":       "255,255,255",
+        "--BackgroundImg":    "none",
 
         "--DEBUG":            "rgba(255,255,100,0.00)",
         "--DEBUGborder":      "none",
@@ -444,7 +449,9 @@ const STYLES = {
     },
     "DarkMode":{
         "--AllText":          "white",
-        "--Background":       "18,18,18",
+        "--Background":       "18,18,18",        
+        "--BackgroundImg":    "linear-gradient(to right,crimson 0%,black 10%,black 80%, crimson 100%)",
+
 
         "--DEBUG":            "rgba(255,255,100,0.00)",
         "--DEBUGborder":      "none",
@@ -461,6 +468,53 @@ const STYLES = {
         "--ColorAdvanceInfo": "rgba(255,255,255, 0)",
         "--ColorAdvanceBorder":"rgba(var(--ColorPrimary),0.1)",
 
+        "--ActColor":         "darkred",
+        "--ActSize":          "3.0em",
+        "--ActFont":          "'Garamond'",
+
+        "--ChapHeaderColor":  "var(--AllText)",
+        "--ChapHeaderSize":   "3.0em",
+        "--ChapHeaderFont":   "'Garamond'",
+        "--ChapDecor":        "Underline",
+
+        "--ChapSubColor":     "var(--AllText)",
+        "--ChapSubSize":      "2.5em",
+        "--ChapSubFont":      "'Garamond'",
+
+        "--SectionColor":     "var(--AllText)",
+        "--SectionSize":      "3.0em",
+        "--SectionFont":      "'Garamond'",
+
+        "--BodyColor":        "var(--AllText)",
+        "--BodySize":         "1.5rem",
+        "--BodyFont":         'Times New Roman',
+        "--BodyLineHeight":   "1.0em",
+
+        "--InvertImages":     "invert(0)",
+    
+        "--SceneDecorator":   "' - '",
+        "--SceneSeparator":   "calc('2px dashed ' + var(--BodyColor));"
+    },
+    "Firebrand":{
+        "--AllText":          "white",
+        "--Background":       "18,18,18",
+
+        "--DEBUG":            "rgba(255,255,100,0.00)",
+        "--DEBUGborder":      "none",
+
+        "--MarginSize":       "5vw",
+        "--MarginPage":       "20px",
+
+        "--ColorPrimary":     "hsl(351, 100%, 37%)",
+        "--ColorSecondary":   "hsl(43, 65%, 37%)",
+        "--ColorTertiary":    "hsl(43, 65%, 50%)",
+        "--ColorQuarternary": "hsl(357, 81%, 46%)",
+
+        "--ColorAdvance":     "rgba(var(--ColorPrimary),0.1)",
+        "--ColorAdvanceInfo": "rgba(255,255,255, 0)",
+        "--ColorAdvanceBorder":"rgba(var(--ColorPrimary),0.1)",
+                
+        "--BackgroundImg":    "linear-gradient(to right, var(--ColorPrimary), var(--BackgroundColor), var(--ColorPrimary))",
         "--ActColor":         "darkred",
         "--ActSize":          "3.0em",
         "--ActFont":          "'Garamond'",
@@ -532,7 +586,7 @@ divCONTAINER = document.getElementById('CONTAINER');
 const ROOT = document.querySelector(':root');
 const FONTSIZES = ['1.50rem','1.75rem','2.00rem','2.25rem','2.50rem'];
 const LINEHEIGHTS = ['1.20em','1.30em','1.40em','1.50em','1.60em','1.70em',]
-const THEMES = ['DarkMode','LightMode'];
+const THEMES = ['DarkMode','LightMode'/*,'Firebrand'*/];
 var ThemeStage = isDarkMode?1:0;
 
 var FontStage = 2;
