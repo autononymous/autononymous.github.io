@@ -9,7 +9,8 @@
 
 :root {
     --AllText:          white;
-    --BackgroundColor:  #121212;
+    --Background:       '18,18,18';
+    --BackgroundColor:  rgba(var(--Background),1);
 
     --DEBUG:            rgba(255,255,100,0.00);
     --DEBUGborder:      none;/*2px solid rgba(100,100,255,0.2);*/
@@ -172,6 +173,7 @@ img.Icon {
 div.Target {
     position: absolute;
     max-width: 800px;
+    padding-bottom: 20px;
     top:50px;
     left:50%;
     transform: translateX(-50%);
@@ -187,7 +189,8 @@ div.Controls {
     grid-template-columns: 4fr 3fr 4fr;
     grid-template-rows: 30fr 1fr 1fr;/*20fr 1fr 5fr;*/
     grid-column-gap: 0px;
-    grid-row-gap: 0px; 
+    grid-row-gap: 0px;
+    background-color: rgba(var(--Background),0.8);
 }
 div.ControlLeft {
     border: var(--ColorAdvanceBorder);
@@ -389,7 +392,8 @@ div.LowerInfo {
 const STYLES = {
     "LightMode":{
         "--AllText":          "black",
-        "--BackgroundColor":  "white",
+        "--Background":       "255,255,255",
+        "--BackgroundColor":  "rgba(var(--Background),1)",
 
         "--DEBUG":            "rgba(255,255,100,0.00)",
         "--DEBUGborder":      "none",
@@ -434,7 +438,8 @@ const STYLES = {
     },
     "DarkMode":{
         "--AllText":          "white",
-        "--BackgroundColor":  "#121212",
+        "--Background":       "18,18,18",
+        "--BackgroundColor":  "rgba(var(--Background),1)",
 
         "--DEBUG":            "rgba(255,255,100,0.00)",
         "--DEBUGborder":      "none",
@@ -687,11 +692,13 @@ function UpdateProgressSlider() {
 
 function ChangePage(extent) {
     if (isFirstClick) {
+        reload();
         [eControlLeft,eControlRight/*,eControlBottom*/].forEach(elem => {
             elem.innerHTML = "";
             elem.style.backgroundColor = "transparent";
             elem.style.border = "none";
         })
+        eControl.style.backgroundColor="transparent";
         isFirstClick = false;
     } else {
         // If greater than min bound and less than max bound of pages,
