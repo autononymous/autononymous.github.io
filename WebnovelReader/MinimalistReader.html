@@ -635,17 +635,17 @@ divTARGET = document.getElementById('TARGET');
 divCONTAINER = document.getElementById('CONTAINER');
 
 const ROOT = document.querySelector(':root');
-const FONTSIZES = ['1.50rem','1.75rem','2.00rem','2.25rem','2.50rem'];
+const FONTSIZES = ['1.00rem','1.25rem','1.50rem','1.75rem','2.00rem','2.25rem','2.50rem'];
 const LINEHEIGHTS = ['1.20em','1.30em','1.40em','1.50em','1.60em','1.70em',]
 const THEMES = ['DarkMode','LightMode'/*,'Firebrand'*/];
 var ThemeStage = isDarkMode?1:0;
 
-var FontStage = 2;
+var FontStage = 4;
 var LineStage = 3;
 
 // Format for small devices
 if(window.innerWidth < 700) {
-    FontStage = 0;
+    FontStage = 1;
 }
 
 buttonSetTheme(0);
