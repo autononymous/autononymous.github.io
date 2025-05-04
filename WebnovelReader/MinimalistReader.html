@@ -548,7 +548,7 @@ const STYLES = {
 const urlParams = new URLSearchParams(window.location.search);
 console.log(urlParams);
 // Get specific parameters from URL; default to prologue
-var ChapterNumber = parseFloat(urlParams.get('Chapter')) || 0;
+var ChapterNumber = parseFloat(urlParams.get('Chapter')) || 1;
 // Advance chapters at end of section? Default to TRUE.
 var AdvanceChapters = urlParams.get('DoAdvance') || true;
 // Show in dark theme? Default to FALSE.
@@ -617,8 +617,8 @@ var CurrentPageNumber = 0;
 var ShowActs = false;
 
 
-var ChapterMinNumber = 0;
-var ChapterMaxNumber = 0;
+var ChapterMinNumber = 1;
+var ChapterMaxNumber = 1;
 
 IsContinuous = false;
 
