@@ -787,7 +787,7 @@ async function SpoolTicker() {
                 if (pChapter == ChapterNumber) {
                     debugLNC(`> Chapter ${pChapter} from index position ${pItem} loaded into Ticker.\n`, false);
                     // Loading in chapter information:
-                    Ticker.push(`#CHP#`,`${parcel.AutoNameFull}`,`#/#`)
+                    Ticker.push(`#CHP#`,`${(parcel.ChapterOverride=="")?parcel.AutoNameFull:parcel.ChapterOverride}`,`#/#`)
                     Ticker.push(`#SUB#`,`${parcel.GivenName}`,`#/#`)
                 }
                 break;
