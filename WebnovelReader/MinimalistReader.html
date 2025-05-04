@@ -48,6 +48,9 @@
     --BodyLineHeight:   1.0em;
 
     --InvertImages:     invert(0);
+
+    --SceneDecorator:   " - ";
+    --SceneSeparator:   2px dashed var(--BodyColor);
 }
 
 body {
@@ -60,13 +63,14 @@ img {
     filter: var(--InvertImages);
 }
 
+
+
 h3.hACT {
     border: var(--DEBUGborder);
     color: var(--ActColor);
     font-size: var(--ActSize);
     font-family: var(--ActFont);
     text-align: center;
-    line-height: 2em;
 
 }
 
@@ -76,7 +80,6 @@ h3.hCHAPTER {
     font-size: var(--ChapHeaderSize);
     font-family: var(--ChapHeaderFont);
     text-align: center;
-    line-height: 0.2em;
 
 }
 
@@ -86,7 +89,6 @@ h3.hSUBTITLE {
     font-size: var(--ChapSubSize);
     font-family: var(--ChapSubFont);
     text-align: center;
-    line-height: 0.1em;
 
 }
 
@@ -96,7 +98,19 @@ h3.hSCENE {
     font-size: var(--SectionSize);
     font-family: var(--SectionFont);
     text-align: center;
-
+    border-top: none;
+    height: auto;
+    padding-top: 3.5vh;
+}
+h3.hSCENE::before {
+    content: var(--SceneDecorator);
+}
+h3.hSCENE::after {
+    content: var(--SceneDecorator);
+}
+h3.hSCENE:first-of-type {
+    border-top: var(--SceneSeparator);
+    margin-top: 100px;
 }
 
 p.pBODY {
@@ -108,6 +122,8 @@ p.pBODY {
     padding-right: var(--MarginSize);
     text-align: justify;
     line-height: var(--BodyLineHeight);
+    margin:0;
+    margin-bottom: 0.3em;
 
 }
 p.SPLIT {
@@ -126,17 +142,19 @@ div.Page {
 }
 div.Container {
     position: absolute;
+    top: 100px;
+    height:calc(100vh - 220px);
     left:5vw;
     border: var(--DEBUGborder);
     background-color: var(--DEBUG);
     width:90vw;    
-    min-height:80vh; 
     overflow:hidden;
+    overflow-x: hidden;
     
 }
 div.Interface {
     width:100vw;
-    height:50px;
+    height:40px;
     display: inline-flex;
     justify-content: center;
     text-align: center;
@@ -144,8 +162,6 @@ div.Interface {
 }
 div.Interface > div {
     flex: 1;
-    width: 50px;
-    height: 50px;
 }
 img.Icon {
     height:100%;
@@ -156,6 +172,7 @@ img.Icon {
 div.Target {
     position: absolute;
     max-width: 800px;
+    top:50px;
     left:50%;
     transform: translateX(-50%);
     width: 90vw;   
@@ -164,11 +181,11 @@ div.Target {
 div.Controls {
     width:100%;
     height:80vh;
-    position:relative;
+    position:sticky;
     z-index: 10;
     display: grid;
     grid-template-columns: 4fr 3fr 4fr;
-    grid-template-rows: 20fr 1fr 5fr;
+    grid-template-rows: 30fr 1fr 1fr;/*20fr 1fr 5fr;*/
     grid-column-gap: 0px;
     grid-row-gap: 0px; 
 }
@@ -193,7 +210,7 @@ div.ControlBottom {
 div.ControlInfo {
     position:relative;
     left:50%;
-    top:50%;
+    top:40%;
     text-align: center;
     transform:translate(-50%,0);
 }
@@ -209,7 +226,7 @@ span.ControlInfo {
 
 div.Window {
     position:fixed;
-    height:calc(100vh - 100px) ;
+    height:100vh;
     width: 100vw;
     left:50%;
     top:0;
@@ -316,8 +333,8 @@ div.LowerInfo {
 <div id="FULLBODY">
     <div id="INTERFACE" class="Interface">
         <div id="ICON-ONEPAGE" onclick="buttonContinuous();"><img class="Icon" title="Continuous Scrolling" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Extend.png" alt="&#8853;"></div>
-        <div id="ICON-LINEUP" onclick="buttonLineSpace(-1);"><img class="Icon" title="Increase Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineDn.png" alt="&#8853;"></div>
-        <div id="ICON-LINEDN" onclick="buttonLineSpace(1);"><img class="Icon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;"></div>
+        <div id="ICON-LINEDN" onclick="buttonLineSpace(1);"><img class="Icon" title="Increase Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineDn.png" alt="&#8853;"></div>
+        <div id="ICON-LINEUP" onclick="buttonLineSpace(-1);"><img class="Icon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;"></div>
         <div id="ICON-FONTUP" onclick="buttonFontSize(1);"><img class="Icon" title="Increase Font Size"" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Larger.png" alt="&#8853;"></div>
         <div id="ICON-FONTDN" onclick="buttonFontSize(-1);"><img class="Icon" title="Decrease Font Size" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Smaller.png" alt="&#8854;"></div>
         <div id="ICON-THEME" onclick="buttonSetTheme(1);"><img class="Icon" title="Change Theme" src="https://cdn-icons-png.flaticon.com/512/11072/11072905.png"></div>
@@ -340,7 +357,9 @@ div.LowerInfo {
                     <span class="ControlInfo" style="line-height:1.5rem;text-align:right;">Next</span>
                 </div>
             </div>
+            <!--
             <div id="CONTROL-BOTTOM" class="ControlBottom"><div class="ControlInfo"><span class="ControlInfo" style="text-align:center;"><u>More</u></span></div></div>
+            -->
         </div>
     </div>
     <div id="PROGRESS-WINDOW" class="Window">
@@ -408,7 +427,10 @@ const STYLES = {
         "--BodyFont":         'Times New Roman',
         "--BodyLineHeight":   "1.0em",
 
-        "--InvertImages":     "invert(1)"
+        "--InvertImages":     "invert(1)",
+    
+        "--SceneDecorator":   "' - '",
+        "--SceneSeparator":   "calc('2px dashed ' + var(--BodyColor));"
     },
     "DarkMode":{
         "--AllText":          "white",
@@ -450,7 +472,10 @@ const STYLES = {
         "--BodyFont":         'Times New Roman',
         "--BodyLineHeight":   "1.0em",
 
-        "--InvertImages":     "invert(0)"
+        "--InvertImages":     "invert(0)",
+    
+        "--SceneDecorator":   "' - '",
+        "--SceneSeparator":   "calc('2px dashed ' + var(--BodyColor));"
     }
 }
 
@@ -499,7 +524,7 @@ const LINEHEIGHTS = ['1.20em','1.30em','1.40em','1.50em','1.60em','1.70em',]
 const THEMES = ['DarkMode','LightMode'];
 var ThemeStage = isDarkMode?1:0;
 var FontStage = 2;
-var LineStage = 2;
+var LineStage = 3;
 buttonSetTheme(0);
 ROOT.style.setProperty('--BodySize', FONTSIZES[FontStage] );
 ROOT.style.setProperty('--BodyLineHeight', LINEHEIGHTS[LineStage] );
@@ -517,6 +542,7 @@ document.getElementById('INFO-LOWER').innerHTML = FOOTERTEXT;
 
 var isFirstClick = true;
 var CurrentPageNumber = 0;
+var ShowActs = false;
 
 
 var ChapterMinNumber = 0;
@@ -559,7 +585,7 @@ function initializeReader() {
 
 async function buttonContinuous() {
     IsContinuous = !IsContinuous;
-    eContainer.style.overflow = IsContinuous?"scroll":"hidden";    
+    eContainer.style.overflowY = IsContinuous?"scroll":"hidden";    
     await reload();
 }
 function buttonFontSize(advance) {
@@ -661,7 +687,7 @@ function UpdateProgressSlider() {
 
 function ChangePage(extent) {
     if (isFirstClick) {
-        [eControlLeft,eControlRight,eControlBottom].forEach(elem => {
+        [eControlLeft,eControlRight/*,eControlBottom*/].forEach(elem => {
             elem.innerHTML = "";
             elem.style.backgroundColor = "transparent";
             elem.style.border = "none";
@@ -721,7 +747,7 @@ async function SpoolTicker() {
         
         switch (pType) {
             case "Act":
-                if (pChapter == ChapterNumber) {
+                if (pChapter == ChapterNumber && ShowActs) {
                     debugLNC(`> Act ${pAct} from index position ${pItem} loaded into Ticker.\n`, false);
                     // Loading in act information:
                     Ticker.push(`#ACT#`,`Act ${parcel.ActNum}`,`#/#`)
@@ -802,6 +828,7 @@ function AdvancePageForText(nextText) {
         ElemPosition.style.display = "none";
         PageMaxCount++;
         divTARGET.innerHTML += `<div id="PAGE${PageMaxCount}" class="Page"></div> `;
+        FillElement = "PARAGRAPH";
         ElemPosition = document.getElementById(`PAGE${PageMaxCount}`);
         ElemPosition.innerHTML = template_BODYSPLIT + nextText + "</p>";
         //console.debug(`New text on Page ${PageMaxCount} at ${nextText}.`)
@@ -819,6 +846,8 @@ function TextOverflow() {
     return Comparison;
 }
 
+var FillElement = "";
+
 function RollTicker() {
     console.debug("Deploying text...");
 
@@ -835,6 +864,7 @@ function RollTicker() {
         switch(Ticket) {   
             // For ACT tickets,         
             case '#ACT#':
+                FillElement = "ACT";
                 ElemPosition.innerHTML += template_ACT;
                 TextPosition = document.getElementById('active'); 
                 if(TextOverflow()) {  
@@ -844,6 +874,7 @@ function RollTicker() {
                 break;
             // For CHAPTER tickets,
             case '#CHP#':
+            FillElement = "CHAPTER";
                 ElemPosition.innerHTML += template_CHAPTER;
                 TextPosition = document.getElementById('active'); 
                 if(TextOverflow()) {  
@@ -852,6 +883,7 @@ function RollTicker() {
                 break;
             // For SUBTITLE tickets,
             case '#SUB#':
+                FillElement = "SUBTITLE";
                 ElemPosition.innerHTML += template_SUBTITLE;
                 TextPosition = document.getElementById('active'); 
                 if(TextOverflow()) {  
@@ -860,6 +892,7 @@ function RollTicker() {
                 break;
             // For SCENE NUMBER tickets,
             case '#SCN#':
+                FillElement = "SCENENUM";
                 ElemPosition.innerHTML += template_SCENE;
                 TextPosition = document.getElementById('active'); 
                 if(TextOverflow()) {  
@@ -869,6 +902,7 @@ function RollTicker() {
 
             // For PARAGRAPH START tickets,
             case '#PAR#':
+                FillElement = "PARAGRAPH";
                 ElemPosition.innerHTML += template_BODY;
                 TextPosition = document.getElementById('active'); 
                 if(TextOverflow()) {  
@@ -878,15 +912,17 @@ function RollTicker() {
 
             // For tickets that signify the end of an element,
             case '#/#':
+                FillElement = "";
                 TextPosition.id = "";
                 break;
             
             // For continuous text word-by-word,
             default:
-                TextPosition.innerHTML += (Ticket + " ");
+                let FillBit = (FillElement=="PARAGRAPH")?Ticket + " " : Ticket;
+                TextPosition.innerHTML += (FillBit);
                 TextPosition = document.getElementById('active'); 
                 if(TextOverflow()) {  
-                    AdvancePageForText( Ticket + " ");                   
+                    AdvancePageForText( FillBit );                   
                 }
                 break;
         }
