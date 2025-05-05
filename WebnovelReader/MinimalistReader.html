@@ -6,9 +6,16 @@
     <title>Minimalist Reader</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap">
 
-
+<!-------_______ _______   ___      _______--------------------------------------->   
+<!------/ /  ___|_   _\ \ / / |    |  ___\ \--------------------------------------> 
+<!-----/ /\ `--.  | |  \ V /| |    | |__  \ \-------------------------------------> 
+<!--- < <  `--. \ | |   \ / | |    |  __|  > > -----------------------------------> 
+<!-----\ \/\__/ / | |   | | | |____| |___ / /-------------------------------------> 
+<!------\_\____/  \_/   \_/ \_____/\____//_/--------------------------------------> 
 <style>
 
+
+/* ROOT styles to be modified by theme settings in Javascript */
 :root {
     --AllText:          white;
     --Background:       '18,18,18';
@@ -26,12 +33,12 @@
 
     --ColorAdvance:     hsla(351, 0%, 14%, 20%); /* hsla(351, 100%, 14%, 40%); */
     --ColorAdvanceInfo: rgba(255,255,255, 0);
-    --ColorAdvanceBorder: 1px solid hsla(0, 0%, 50%, 40%);
+    --ColorAdvanceBorder: 1px solid hsla(0, 0%, 50%, 40%);        
 
-    --ColorPrimary:     hsl(351, 100%, 37%);
-    --ColorSecondary:   hsl(43, 65%, 37%);
-    --ColorTertiary:    hsl(43, 65%, 50%);
-    --ColorQuarternary: hsl(357, 81%, 46%);
+    --ColorPrimary:     189, 0, 28;
+    --ColorSecondary:   156, 121, 33;
+    --ColorTertiary:    210, 163, 45;
+    --ColorQuarternary: 212, 22, 32;
 
     --ActColor:         darkred;
     --ActSize:          3.0em;
@@ -61,6 +68,7 @@
     --SceneSeparator:   2px dashed var(--BodyColor);
 }
 
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
     background-color: var(--BackgroundColor);
@@ -75,16 +83,16 @@ img {
     filter: var(--InvertImages);
 }
 a {
-  color: var(--ColorPrimary);
+  color: rgba(var(--ColorPrimary),1);
   text-decoration: none;
 } a:link {
-  color: var(--ColorSecondary);
+  color: rgba(var(--ColorSecondary),1);
 } a:visited {
-  color: var(--ColorSecondary);
+  color: rgba(var(--ColorSecondary),1);
 } a:hover {
-  color: var(--ColorTertiary);
+  color: rgba(var(--ColorTertiary),1);
 } a:active {
-  color: var(--ColorSecondary);
+  color: rgba(var(--ColorSecondary),1);
 }
 
 div.FullContainer {
@@ -191,6 +199,7 @@ div.Container {
     overflow:hidden;
     overflow-x: hidden;   
     z-index: 10; 
+    scrollbar-width: none;
 }
 div.Interface {
     width:100vw;
@@ -217,6 +226,7 @@ div.Target {
     transform: translateX(-50%);
     width: 90vw;   
     z-index: 1;
+    top: 0px;
 }
 div.Controls {
     width:100%;
@@ -224,23 +234,55 @@ div.Controls {
     position:sticky;
     z-index: 10;
     display: grid;
-    grid-template-columns: 100fr 1fr 100fr;
+    grid-template-columns: 5fr 10fr 5fr;
     grid-template-rows: 30fr 1fr 1fr;/*20fr 1fr 5fr;*/
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     background-color: rgba(var(--Background),0.8);
+    pointer-events:none;
 }
 div.ControlLeft {
     border: var(--ColorAdvanceBorder);
     background-color: var(--ColorAdvance);
     grid-area: 1 / 1 / 2 / 2;
     cursor: pointer;
+    transition: opacity 1s;
+    pointer-events:all;
+    background-image: 
+        radial-gradient(
+        ellipse at -100%,
+        rgba(var(--ColorPrimary),0.50) 0%,
+        transparent 50vw
+        );
+    opacity:0;
+}
+div.ControlLeft:hover {
+    opacity:1;
 }
 div.ControlRight {
     border: var(--ColorAdvanceBorder);
     background-color: var(--ColorAdvance);
     grid-area: 1 / 3 / 2 / 4;
     cursor: pointer;
+    pointer-events:all;
+    transition: opacity 1s;
+    background-image: 
+        radial-gradient(
+        ellipse at 200%,
+        rgba(var(--ColorPrimary),0.50) 0%,
+        transparent 50vw
+        );
+    opacity: 0;
+}
+div.ControlRight:hover {
+    opacity:1;
+    
+}
+
+div.ControlSpacer {
+    cursor:ns-resize;
+    grid-area: 1 / 2 / 2 / 3;
+    pointer-events:all;
 }
 div.ControlBottom {
     border: var(--ColorAdvanceBorder);
@@ -251,7 +293,7 @@ div.ControlBottom {
 div.ControlInfo {
     position:relative;
     left:50%;
-    top:40%;
+    top:50%;
     text-align: center;
     transform:translate(-50%,0);
 }
@@ -276,7 +318,9 @@ div.Window {
 }
 div.ProgressSpacer {
     height: calc( 100vh - 120px );
-}
+    top: 80px;
+    position: relative;
+  }
 div.Progress {
     position: sticky;
     left:50%;    
@@ -378,9 +422,22 @@ div.LowerInfo {
     }
 }
 
+div.FULLINTERFACE {
+    pointer-events: none;
+}
+
 
 
 </style>
+
+
+<!------___   _ ________  ___ _    __--------------------------------------------->
+<!-----/ / | | |_   _|  \/  || |   \ \-------------------------------------------->
+<!----/ /| |_| | | | | .  . || |    \ \------------------------------------------->
+<!-- < < |  _  | | | | |\/| || |     > > ----------------------------------------->
+<!----\ \| | | | | | | |  | || |____/ /------------------------------------------->
+<!-----\_\_| |_/ \_/ \_|  |_/\_____/_/-------------------------------------------->
+
 
 </head>
 <!------------------------------[BODY]-------------------------------->
@@ -397,6 +454,7 @@ div.LowerInfo {
     <div id="CONTAINER" class="Container">    
         <div id="TARGET" class="Target">        
         </div>
+        <!--
         <div id="CONTROL" class="Controls">
             <div id="CONTROL-LEFT" class="ControlLeft" onclick="ChangePage(-1)">
                 <div class="ControlInfo">
@@ -412,10 +470,9 @@ div.LowerInfo {
                     <span class="ControlInfo" style="line-height:1.5rem;text-align:right;">Next</span>
                 </div>
             </div>
-            <!--
             <div id="CONTROL-BOTTOM" class="ControlBottom"><div class="ControlInfo"><span class="ControlInfo" style="text-align:center;"><u>More</u></span></div></div>
-            -->
-        </div>
+            
+        </div>-->
     </div>
     <div id="PROGRESS-WINDOW" class="Window">
         <div id="SPACER" class="ProgressSpacer"></div>
@@ -437,10 +494,45 @@ div.LowerInfo {
             </div>
         </div>
     </div>
+    <div id="FULLINTERFACE">
+        <div id="CONTROL" class="Controls">
+            <div id="CONTROL-LEFT" class="ControlLeft" onclick="ChangePage(-1);">
+                <div class="ControlInfo">
+                    <span style="font-size:20vw;line-height:0em">&laquo;</span>
+                    <br>
+                    <span class="ControlInfo" style="line-height:1.5rem;text-align:left;">Last</span>
+                </div>
+            </div>
+            <div id="CONTROL-MIDSCROLL" class="ControlSpacer" onclick="ChangePage(0);"></div>
+            <div id="CONTROL-RIGHT" class="ControlRight" onclick="ChangePage(1);">
+                <div class="ControlInfo">
+                    <span style="font-size:20vw;line-height:0em">&raquo;</span>
+                    <br>
+                    <span class="ControlInfo" style="line-height:1.5rem;text-align:right;">Next</span>
+                </div>
+            </div>
+            <!--
+            <div id="CONTROL-BOTTOM" class="ControlBottom"><div class="ControlInfo"><span class="ControlInfo" style="text-align:center;"><u>More</u></span></div></div>
+            -->
+        </div>
+
+    </div>
 </div>
-<!-----------------------------[SCRIPT]---------------------------->
+
+
+
+<!------_______ _____ ______ ___________ _______---------------------------------->
+<!-----/ /  ___/  __ \| ___ \_   _| ___ \_   _\ \--------------------------------->
+<!----/ /\ `--.| /  \/| |_/ / | | | |_/ / | |  \ \-------------------------------->
+<!-- < <  `--. \ |    |    /  | | |  __/  | |   > > ------------------------------>
+<!----\ \/\__/ / \__/\| |\ \ _| |_| |     | |  / /-------------------------------->
+<!-----\_\____/ \____/\_| \_|\___/\_|     \_/ /_/--------------------------------->
+
+
+
 <script>
 
+/* Themes for Minimalist Reader */
 const STYLES = {
     "LightMode":{
         "--AllText":          "rgba(0,0,0,1)",
@@ -456,10 +548,10 @@ const STYLES = {
         "--BarLeft":          "rgba(40,40,40,1.0)",
         "--BarRight":         "rgba(40,40,40,1.0)",
 
-        "--ColorPrimary":     "black",
-        "--ColorSecondary":   "dimgray",
-        "--ColorTertiary":    "darkgray",
-        "--ColorQuarternary": "gainsboro",
+        "--ColorPrimary":     "0,0,0",
+        "--ColorSecondary":   "20,20,20",
+        "--ColorTertiary":    "80,80,80",
+        "--ColorQuarternary": "120,120,120",
 
         "--ColorAdvance":     "rgba(var(--Background),0.2)",
         "--ColorAdvanceInfo": "rgba(255,255,255, 0)",
@@ -504,17 +596,17 @@ const STYLES = {
         "--MarginSize":       "5vw",
         "--MarginPage":       "20px",
 
-        "--ColorPrimary":     "hsl(351, 100%, 37%)",
-        "--ColorSecondary":   "hsl(43, 65%, 37%)",
-        "--ColorTertiary":    "hsl(43, 65%, 50%)",
-        "--ColorQuarternary": "hsl(357, 81%, 46%)",
+        "--ColorPrimary":     '189, 0, 28',
+        "--ColorSecondary":   '156, 121, 33',
+        "--ColorTertiary":    '210, 163, 45',
+        "--ColorQuarternary": '212, 22, 32',
 
-        "--BarLeft":          "var(--ColorTertiary)",
-        "--BarRight":         "var(--ColorQuarternary)", 
+        "--BarLeft":          "rgba(var(--ColorTertiary),1)",
+        "--BarRight":         "rgba(var(--ColorQuarternary),1)", 
 
-        "--ColorAdvance":     "rgba(var(--ColorPrimary),0.1)",
+        "--ColorAdvance":     "rgba(0,0,0,0.1)",
         "--ColorAdvanceInfo": "rgba(255,255,255, 0)",
-        "--ColorAdvanceBorder":"rgba(var(--ColorPrimary),0.1)",
+        "--ColorAdvanceBorder":"rgba(0,0,0,0.1)",
 
         "--ActColor":         "darkred",
         "--ActSize":          "3.0em",
@@ -565,7 +657,7 @@ const STYLES = {
         "--ColorAdvanceInfo": "rgba(255,255,255, 0)",
         "--ColorAdvanceBorder":"rgba(var(--ColorPrimary),0.1)",
                 
-        "--BackgroundImg":    "linear-gradient(to right, var(--ColorPrimary), var(--BackgroundColor), var(--ColorPrimary))",
+        "--BackgroundImg":    "linear-gradient(to right, rgba(var(--ColorPrimary),1), var(--BackgroundColor), rgba(var(--ColorPrimary),1))",
         "--ActColor":         "darkred",
         "--ActSize":          "3.0em",
         "--ActFont":          "'Garamond'",
@@ -603,7 +695,7 @@ var ChapterNumber = parseFloat(urlParams.get('Chapter')) || 1;
 // Advance chapters at end of section? Default to TRUE.
 var AdvanceChapters = urlParams.get('DoAdvance') || true;
 // Show in dark theme? Default to FALSE.
-var isDarkMode = urlParams.get('DoAdvance') || false;
+var isDarkMode = urlParams.get('DarkTheme') || false;
 
 
 
@@ -617,6 +709,7 @@ const eControl          = document.getElementById('CONTROL');
 const eControlLeft      = document.getElementById('CONTROL-LEFT');
 const eControlRight     = document.getElementById('CONTROL-RIGHT');
 const eControlBottom    = document.getElementById('CONTROL-BOTTOM');
+const eControlSpacer    = document.getElementById('CONTROL-MIDSCROLL');
 const eBinder           = document.getElementById('TARGET');
 const eBarBox           = document.getElementById('BAR');
 const eBarMask          = document.getElementById('PROGRESS-MASK');
@@ -657,6 +750,12 @@ eThisPage.innerHTML     = ('00'+0).slice(-2);
 eTotalPages.innerHTML   = ('00'+99).slice(-2);
 eThisPart.innerHTML     = ('00'+1).slice(-2);
 eTotalParts.innerHTML   = ('00'+99).slice(-2);
+
+// Initial opacity settings for instructions (to clear later)
+eControlLeft.style.opacity = 1;
+eControlRight.style.opacity = 1;
+
+
 
 const FOOTERTEXT = `&copy; 2025 <a href="https://autononymous.io/authors-and-stories/savantguarde/">Savant-Guarde</a>&emsp;||&emsp;<a href="https://autononymous.io/">Autononymous.io</a>`;
 document.getElementById('INFO-LOWER').innerHTML = FOOTERTEXT;
@@ -801,11 +900,11 @@ function UpdateProgressSlider() {
     //let Height = ;
    // console.log(` > Top: ${WindowDims.top},\n > Bottom: ${WindowDims.bottom},\n > Height: ${WindowDims.height},\n`);
     //console.log(` > Top: ${Top},\n > Bottom: ${Bottom},\n > Height: ${Height},\n`);
-    let Progress = (((-SectionDims.top)) / (SectionDims.height-WindowDims.height))*100;    
-    eBarMask.style.width = ( 100 - ((Progress > 98) ? 100 : (Progress < 5) ? 0 : Progress)) + "%";
+    let Progress = (((-SectionDims.top+100)) / (SectionDims.height-WindowDims.height))*100;    
+    eBarMask.style.width = ( 100 - ((Progress > 95) ? 100 : (Progress < 5) ? 0 : Progress)) + "%";
 }
 
-
+//////////////////////// CALCULATIONS FOR SCROLLBAR \\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 function ChangePage(extent) {
@@ -815,7 +914,9 @@ function ChangePage(extent) {
             elem.innerHTML = "";
             elem.style.backgroundColor = "transparent";
             elem.style.border = "none";
+            elem.style.removeProperty("opacity");
         })
+        eControlSpacer.style.pointerEvents = "none";
         eControl.style.backgroundColor="transparent";
         eContainer.style.backgroundImage = `
             linear-gradient(
