@@ -69,6 +69,8 @@
 
     --SceneDecorator:   " - ";
     --SceneSeparator:   2px dashed var(--BodyColor);
+
+    --TOCEntryHeight:   80px;
 }
 
 /* Base styles */
@@ -83,10 +85,8 @@ body {
     background-blend-mode: luminosity;
     background-position-x: center;
     background-size: 150%;
-
-    width:100vw;
-    position:fixed;
-    left:0;
+    position:static;
+    overflow:hidden;
 }
 img {
     filter: var(--InvertImages);
@@ -105,12 +105,16 @@ a {
 }
 
 div.FullContainer {
-    position:fixed;
-    top:10px;
+    transform: translate( 0vw 0vh);
+    opacity:1;
+    position:absolute;
+    top:0;
+    padding-top:10px;
     left:0;
     width:100vw;
     height:90vh;
-    overflow:hidden;
+    /*overflow:hidden;---------------------------------------------*/
+    background-color: rgba(var(--Background),1)
 }
 @media only screen and (max-width: 600px) {
     div.FullContainer {
@@ -124,7 +128,7 @@ h3.hACT {
     font-size: var(--ActSize);
     font-family: var(--ActFont);
     text-align: center;
-
+    
 }
 
 h3.hCHAPTER {
@@ -241,19 +245,32 @@ div.Target {
 div.ControlBase {
     height:100vh;
 }
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }    
+}
+
 div.Controls {
     width:100%;
-    height: 100%;
+    height: calc(100vh - 50px);
     position:sticky;
     z-index: 10;
     display: grid;
     grid-template-columns: 5fr 10fr 5fr;
-    grid-template-rows: 30fr 0fr 0fr;/*20fr 1fr 5fr;*/
+    grid-template-rows: 20fr 1fr 5fr;/*20fr 1fr 5fr;*/
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    /*background-color: rgba(var(--Background),0.8);*/
+    background-color: rgba(var(--Background),0.8);
+    opacity:1;
     pointer-events:none;
 }
+div.Controls > div {
+    /*border: 1px solid blue;*/
+}
+
 div.ControlLeft {
     border: var(--ColorAdvanceBorder);
     background-color: var(--ColorAdvance);
@@ -307,6 +324,7 @@ div.ControlBottom {
     background-color: var(--ColorAdvance);
     grid-area: 3 / 1 / 4 / 4;
     cursor:help;
+    pointer-events:none;
 }
 div.ControlInfo {
     position:relative;
@@ -323,7 +341,6 @@ span.ControlInfo {
     box-shadow: 0px 0px 10px 10px var(--ColorAdvanceInfo);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 
 div.Window {
     position:fixed;
@@ -426,10 +443,58 @@ div.RightInfo {
 }
 div.LowerInfo { 
     grid-area: 2 / 1 / 3 / 3; 
+    position:absolute;
+    top: calc(80vh + 100px);
+    left:50%;
+
     text-align: center;
+    font-weight: bolder;
     pointer-events: all;
     white-space: nowrap;
+    font-size: 30px;
+    line-height:0;
+    transform: translate(-50%, 0px) scale(800%, 120%) ;
+    opacity: 0.3;
 }
+
+
+@keyframes slide-up {
+    from {
+        opacity:1;        
+        /*transform: translate( 0vw    0vh);*/
+    } to {
+        opacity:0;
+        /*transform: translate( 0vw -120vh);*/
+    }
+}
+@keyframes slide-down {
+    from {
+        opacity:0;        
+        pointer-events: none;
+        /*transform: translate( 0vw    0vh);*/
+    } to {
+        opacity:1;
+        pointer-events: all;
+        /*transform: translate( 0vw -120vh);*/
+    }
+}
+
+@keyframes fliparrow-up {
+    from {
+        transform: translate(-50%, 0px) scale(800%,  120%) ;
+    } to {
+        transform: translate(-50%, 0px) scale(800%, -120%) ;
+    }
+}
+@keyframes fliparrow-down {
+    from {
+        transform: translate(-50%, 0px) scale(800%, -120%) ;
+    } to {
+        transform: translate(-50%, 0px) scale(800%,  120%) ;
+    }
+}
+
+
 
 @media only screen and (max-width: 600px) {
     div.ProgressSpacer {
@@ -444,7 +509,127 @@ div.FULLINTERFACE {
     pointer-events: none;
 }
 
+/*Table Of Contents*/
+div.TableOfContents {
+    position:absolute;
+    top:0;
+    background-color: rgba(var(--Background),1);
+    /*border: 1px solid var(--AllText);*/
+    width:100vw;
+    height:90vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    left:0vw;
+}
+/*
+div.TableOfContents > div { border: 2px solid red; }
+div.TableOfContents > div > div { border: 2px solid green; }
+div.TableOfContents > div > div > div { border: 2px solid blue; }
+*/
+div.TOC {
+    width:100%;
+    height:100%;
+}
+div.Table {
+    display:inline-flex;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: center;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+div.Act {
+    width:100%;
+    height:auto;
+    display:inline-flex;
+    flex-direction: column;
+}
+div.ActRow {
+    width:100%;
+    height: 30px;
+    /*background-color: rgba(var(--ColorPrimary),0.1);*/
+    font-family: var(--ActFont);
+    font-size: 2em;
+    text-align: center;
+    border-top:2px solid black;
+    border-bottom: 2px solid black;
+}
+div.ChapterSet {
+    overflow:hidden;
+    height:auto;
+}
+div.ChapterRow {
+    display: inline-flex;
+    flex-direction: row;
+    height: var(--TOCEntryHeight);
+    justify-items: left;
+    transition: background-color 0.3s ease-in-out 0.05s;
+}
+div.ChapterRow:hover {
+    background-color: rgba(var(--ColorPrimary),0.1)
+}
+div.TOCmarker {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  background-color: black;
+  border-radius: 50%;
+  margin-left: calc(4vw + 3px);
+  transform: translate(-50%,0);
+  margin-top: calc( (var(--TOCEntryHeight)/2) - 10px);
+}
+div.ChapterState {
+    margin-left: 4vw;
+    margin-right:2vw;
+    position: relative;
+    background-color: black;
+    width: 6px;
+    top: 0;
+    height: 100%;
+    transform: translate(0%, -50%);
+    left: calc(-4vw - 13px);
+}
 
+div.ChapterNumber {
+    width:40px;
+    font-size: 2.0em;
+    padding-right:2px;
+    text-align: left;
+    font-family: var(--ChapHeaderFont);
+    margin-top:25px;
+    transform: translate(-50%,0);
+}
+div.ChapterDescription {
+    max-width:80vw;
+    flex:5;
+    display: inline-flex;
+    flex-direction: column;
+}
+div.ChapterName {
+    flex:1;
+    height:30px;
+    text-align: left;
+    font-size: 1.2em;
+    font-family: var(--ChapSubFont);
+    white-space: nowrap;
+    margin-top:5px;
+}
+div.ChapterSynopsis {
+    flex:4;
+    text-align: left;
+    text-emphasis: italic;
+    font-size:0.8em;
+    opacity:0.6;
+    font-family: var(--BodyFont);
+    overflow-y: hidden;
+    margin-bottom:5px;
+}
+div.ChapterDate {  
+    position:relative;
+    transform: rotate(-90deg) translate(-5px,calc(4vw + 25px));
+    width: 20px;
+    opacity:0.3;
+}
 
 </style>
 
@@ -456,11 +641,55 @@ div.FULLINTERFACE {
 <!----\ \| | | | | | | |  | || |____/ /------------------------------------------->
 <!-----\_\_| |_/ \_/ \_|  |_/\_____/_/-------------------------------------------->
 
+<!-- This is the copypasta for each TOC entry. 
+
+For each act:
+    <div id="TOC-ACT1" class="TOC Act">
+        <div id="TOC-ACT1-ROW" class="TOC ActRow">          
+            ACT 01  
+        </div>
+    </div>
+
+For each CHAPTER:
+    <div class="ChapterSet">
+        <div id="TOC-CH1" class="TOC ChapterRow">
+            <div class="TOCmarker"></div>
+            <div id="TOC-CH1-STATE" class="ChapterState"></div>
+            <div id="TOC-CH1-NUM" class="TOC ChapterNumber"><span>01</span></div>
+            <div id="TOC-CH1-DESC" class="TOC ChapterDescription">
+                <div id="TOC-CH1-NAME" class="TOC ChapterName">First Beginning</div>
+                <div id="TOC-CH1-SYN" class="TOC ChapterSynopsis">Descriptions.</div>
+            </div>
+            <div id="TOC-CH1-DATE" class="TOC ChapterDate">01/01/2026</div>
+        </div>
+    </div>
+
+-->
 
 </head>
 <!------------------------------[BODY]-------------------------------->
 <body>
-<div id="BACKGROUND-CONTROL" class="Options"></div>
+<div id="TABLEOFCONTENTS" class="TableOfContents">
+    <div id="TOC-TABLE" class="TOC Table">
+        <div id="TOC-ACT1" class="TOC Act">
+            <div id="TOC-ACT1-ROW" class="TOC ActRow">          
+                ACT 01  
+            </div>
+            <div class="ChapterSet">
+                <div id="TOC-CH1" class="TOC ChapterRow">
+                    <div class="TOCmarker"></div>
+                    <div id="TOC-CH1-STATE" class="ChapterState"></div>
+                    <div id="TOC-CH1-NUM" class="TOC ChapterNumber"><span>01</span></div>
+                    <div id="TOC-CH1-DESC" class="TOC ChapterDescription">
+                        <div id="TOC-CH1-NAME" class="TOC ChapterName">First Beginning</div>
+                        <div id="TOC-CH1-SYN" class="TOC ChapterSynopsis">Descriptions.</div>
+                    </div>
+                    <div id="TOC-CH1-DATE" class="TOC ChapterDate">01/01/2026</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="FULLCONTAINER" class="FullContainer">
     <div id="INTERFACE" class="Interface">
         <div id="ICON-ONEPAGE" onclick="buttonContinuous();"><img class="Icon" title="Continuous Scrolling" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Extend.png" alt="&#8853;"></div>
@@ -473,25 +702,6 @@ div.FULLINTERFACE {
     <div id="CONTAINER" class="Container">    
         <div id="TARGET" class="Target">        
         </div>
-        <!--
-        <div id="CONTROL" class="Controls">
-            <div id="CONTROL-LEFT" class="ControlLeft" onclick="ChangePage(-1)">
-                <div class="ControlInfo">
-                    <span style="font-size:20vw;line-height:0em">&laquo;</span>
-                    <br>
-                    <span class="ControlInfo" style="line-height:1.5rem;text-align:left;">Last</span>
-                </div>
-            </div>
-            <div id="CONTROL-RIGHT" class="ControlRight" onclick="ChangePage(1)">
-                <div class="ControlInfo">
-                    <span style="font-size:20vw;line-height:0em">&raquo;</span>
-                    <br>
-                    <span class="ControlInfo" style="line-height:1.5rem;text-align:right;">Next</span>
-                </div>
-            </div>
-            <div id="CONTROL-BOTTOM" class="ControlBottom"><div class="ControlInfo"><span class="ControlInfo" style="text-align:center;"><u>More</u></span></div></div>
-            
-        </div>-->
     </div>
     <div id="PROGRESS-WINDOW" class="Window">
         <div id="SPACER" class="ProgressSpacer"></div>
@@ -508,8 +718,7 @@ div.FULLINTERFACE {
             </div>
             <div id="STATUS" class="Status">
                 <div id="INFO-LEFT"  class="LeftInfo" >Page <span id="N-PAGE-CURRENT"></span> of <span id="N-PAGE-TOTAL"></span></div>
-                <div id="INFO-RIGHT" class="RightInfo">Part <span id="N-PART-CURRENT"></span> of <span id="N-PART-TOTAL"></div>
-                <div id="INFO-LOWER" class="LowerInfo"></div>
+                <div id="INFO-RIGHT" class="RightInfo">Part <span id="N-PART-CURRENT"></span> of <span id="N-PART-TOTAL"></div>                
             </div>
         </div>
     </div>
@@ -529,16 +738,20 @@ div.FULLINTERFACE {
                     <br>
                     <span class="ControlInfo" style="line-height:1.5rem;text-align:right;">Next</span>
                 </div>
+            </div>            
+            <div id="CONTROL-BOTTOM" class="ControlBottom">
+                <div class="ControlInfo" style="top:20%;">
+                    <span class="ControlInfo" style="text-align:center;">
+                        <u>Table Of Contents</u>
+                    </span>
+                </div>
             </div>
-            <!--
-            <div id="CONTROL-BOTTOM" class="ControlBottom"><div class="ControlInfo"><span class="ControlInfo" style="text-align:center;"><u>More</u></span></div></div>
-            -->
         </div>
-
     </div>
 </div>
-
-
+<div>
+    <div id="INFO-LOWER" class="LowerInfo" onclick="ToggleTOC();">&or;</div>
+</div>
 
 <!------_______ _____ ______ ___________ _______---------------------------------->
 <!-----/ /  ___/  __ \| ___ \_   _| ___ \_   _\ \--------------------------------->
@@ -712,6 +925,41 @@ const STYLES = {
     }
 }
 
+const TOCtarget = document.getElementById('TOC-TABLE');
+var TOCchapterTARGET = "";
+function TOChtmlACT(nAct,name) {
+    let result = `
+    <div id="TOC-ACT${nAct}" class="TOC Act">
+        <div id="TOC-ACT${nAct}-ROW" class="TOC ActRow">          
+            ${name} 
+        </div>
+        <div class="ChapterSet" id="TOC-ACT${nAct}-CHAPTERS">
+        </div>
+    </div>
+    `
+    TOCchapterTARGET = `TOC-ACT${nAct}-CHAPTERS`;
+    return result;
+}
+
+function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent) {
+    let result = `    
+        <div id="TOC-CH${nChap}" class="TOC ChapterRow" onclick="ChapterNumber = ${nChap};reload();ToggleTOC();">
+            <div id="TOC-CH${nChap}-DATE" class="TOC ChapterDate">${pubdate}</div>
+            <div class="TOCmarker"></div>
+            <div id="TOC-CH${nChap}-STATE" class="ChapterState" style="height:${percent}%"></div>
+            <div id="TOC-CH${nChap}-NUM" class="TOC ChapterNumber"><span>${('00'+nDisplayed).slice(-2)}</span></div>
+            <div id="TOC-CH${nChap}-DESC" class="TOC ChapterDescription">
+                <div id="TOC-CH${nChap}-NAME" class="TOC ChapterName">${name}</div>
+                <div id="TOC-CH${nChap}-SYN" class="TOC ChapterSynopsis">${synopsis}</div>
+            </div>            
+        </div>
+    `;
+    return result;
+}
+
+
+
+
 // Get variables from URL
 const urlParams = new URLSearchParams(window.location.search);
 console.log(urlParams);
@@ -731,6 +979,8 @@ var isCustomMode = urlParams.get('StoryTheme') || false;
 
 
 // Naming important elements
+
+const eFullContainer    = document.getElementById('FULLCONTAINER');
 const eContainer        = document.getElementById('CONTAINER');
 const eControl          = document.getElementById('CONTROL');
 const eControlLeft      = document.getElementById('CONTROL-LEFT');
@@ -747,6 +997,8 @@ const eThisPage         = document.getElementById('N-PAGE-CURRENT');
 const eTotalPages       = document.getElementById('N-PAGE-TOTAL');
 const eThisPart         = document.getElementById('N-PART-CURRENT');
 const eTotalParts       = document.getElementById('N-PART-TOTAL');
+
+const eTOCArrow         = document.getElementById('INFO-LOWER');
 
 
 addEventListener("resize",RollTicker);
@@ -804,13 +1056,22 @@ eControlRight.style.opacity = 1;
 
 
 const FOOTERTEXT = `&copy; 2025 <a href="https://autononymous.io/authors-and-stories/savantguarde/">Savant-Guarde</a>&emsp;||&emsp;<a href="https://autononymous.io/">Autononymous.io</a>`;
-document.getElementById('INFO-LOWER').innerHTML = FOOTERTEXT;
+//document.getElementById('INFO-LOWER').innerHTML = FOOTERTEXT;
 
 // Initializing variables
 
 var isFirstClick = true;
 var CurrentPageNumber = 0;
 var ShowActs = false;
+
+var TOCstate = false;
+
+// These are the date calculations for the TOC.
+var StartDate = new Date("2025-04-17T00:00:00Z"); // Default start date
+//var RelDate = new Date(Date.parse(StartDate) - (86400000*7));
+var NowDate = new Date();
+var ThisProgress = 1; // This chapter contribution is 100%.
+var NextProgress = 1; // This chapter contributes this much height to the next.
 
 
 var ChapterMinNumber = 1;
@@ -845,6 +1106,29 @@ async function fetchJSON() {
 var jLoad = "";
 
 // ===============================<[ FUNCTIONS ]>===================================
+
+
+function ToggleTOC() {
+    if(!isFirstClick) {
+        TOCstate = !TOCstate;
+        console.log(`TOC is ${TOCstate}.`)
+        //eFullContainer.style.animation = "";
+        eFullContainer.style.opacity = (TOCstate)?  1  :  0  ;
+        eTOCArrow.style.transform = (TOCstate)?
+            `translate(-50%, 0px) scale(800%, 120%)`:
+            `translate(-50%, 0px) scale(800%,-120%)`;
+        eFullContainer.style.animation = ("0.5s linear 0.25s forwards" + ((TOCstate)?" slide-up ":" slide-down "));
+        eTOCArrow.style.animation = ("0.5s linear 0.25s forwards" + ((TOCstate)?" fliparrow-up ":" fliparrow-down "));
+        //eFullContainer.style.pointerEvents = (TOCstate)?"none":"all";
+
+        eControlRight.style.pointerEvents = (TOCstate)?"none":"all";
+        eControlLeft.style.pointerEvents = (TOCstate)?"none":"all";
+        eControlBottom.style.pointerEvents = (TOCstate)?"none":"all";
+        eControlSpacer.style.pointerEvents = (TOCstate)?"none":"none";
+
+        eFullContainer.style.pointerEvents = (TOCstate)?"none":"all";
+    }
+}
 
 function SaveSettings() {
     localStorage.setItem('ReaderFontStage', FontStage);
@@ -963,13 +1247,13 @@ function ChangePage(extent) {
     if (isFirstClick) {
         reload();
         [eControlLeft,eControlRight/*,eControlBottom*/].forEach(elem => {
-            elem.innerHTML = "";
-            elem.style.backgroundColor = "transparent";
+            //elem.innerHTML = "";
+            elem.style.animation = "0.5s ease-in-out 0.25s forwards fadeout";
             elem.style.border = "none";
-            elem.style.removeProperty("opacity");
+           //elem.style.removeProperty("opacity");
         })
         eControlSpacer.style.pointerEvents = "none";
-        eControl.style.backgroundColor="transparent";
+        eControl.style.animation = "0.5s ease-in-out 0.25s forwards fadeout";
         /*
         eContainer.style.backgroundImage = `
             linear-gradient(
@@ -1021,35 +1305,93 @@ function debugLNC(msg,writeout) {
     }
 }
 
+// A fix since this story starts with two prologue parts.
+function AdjustedIndex(index) {
+    return (index < 2)?0:index-2;
+}
+function pad(num, size) {
+    var s = "000000000" + num;
+    return s.substr(s.length-size);
+}
+function yeardate(date) {
+    const month = date.getMonth();
+    var result = date.getDate();
+    for (let i = 0 ; i < month ; i++) {
+        result += new Date(date.getFullYear(),i+1,0).getDate();
+    }
+    result += (date.getFullYear()-2025)*365;
+    return result;
+}
+
 var Ticker = [];
 
 async function SpoolTicker() {
     console.debug("Spooling text...")
     let pItem = 0; // Initialize the item index
+    let ActCtr = 0;
+
     ChapterMaxNumber = 0;
+
+    TOCtarget.innerHTML = ''; //TOC clear ------------------------//
+    let RelDate = StartDate;
+
+
+    let today = parseFloat(yeardate(NowDate));
+    let startday = parseFloat(yeardate(StartDate));
+    let releaseday = parseFloat(yeardate(StartDate));
+
+    console.log(`${today}, ${startday}, ${releaseday}`)
+
     jLoad.Manuscript.forEach( parcel => {
         pItem++;
         let pType = parcel.DocType;
         let pAct = parcel.ActFull;
         let pChapter = parcel.ChapterFull;
-        let pScene = parcel.SceneFull;
+        let pScene = parcel.SceneFull;       
+
+        let DatePercentage=1;
         
         switch (pType) {
             case "Act":
+                ActCtr++; // for TOC
                 if (pChapter == ChapterNumber && ShowActs) {
                     debugLNC(`> Act ${pAct} from index position ${pItem} loaded into Ticker.\n`, false);
                     // Loading in act information:
                     Ticker.push(`#ACT#`,`Act ${parcel.ActNum}`,`#/#`)
                 }
+                // Building Table Of Contents with Act:
+                TOCtarget.innerHTML += TOChtmlACT(ActCtr,parcel.DocName);
                 break;
             case "Chapter":
+                releaseday += parseFloat(parcel.NextPublish);
                 ChapterMaxNumber++;
+                RelDate = new Date(Date.parse(RelDate) + (86400000*parseFloat(parcel.NextPublish)));
+                let EntryDateStr = `${pad(RelDate.getMonth()+1,2)}/${pad(RelDate.getDate(),2)}`// /${RelDate.getFullYear().toString().slice(2,4)}`
                 if (pChapter == ChapterNumber) {
                     debugLNC(`> Chapter ${pChapter} from index position ${pItem} loaded into Ticker.\n`, false);
                     // Loading in chapter information:
                     Ticker.push(`#CHP#`,`${(parcel.ChapterOverride=="")?parcel.AutoNameFull:parcel.ChapterOverride}`,`#/#`)
                     Ticker.push(`#SUB#`,`${parcel.GivenName}`,`#/#`)
                 }
+                               
+                document.getElementById(TOCchapterTARGET).innerHTML += TOChtmlCHAPTER(parcel.ChapterFull,((parcel.ChapterOverride=="")?parcel.AutoNameFull:parcel.ChapterOverride),parcel.Synopsis,EntryDateStr,AdjustedIndex(parcel.ChapterFull),DatePercentage)
+                // Calculating height of date progress bar:     
+
+                console.log(`Release #${ChapterMaxNumber}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}`)
+
+                if (today >= releaseday) {
+                    DatePercentage = 1;
+                } else if (today <= startday) {
+                    DatePercentage = 0;
+                } else {
+                    DatePercentage = (today - startday) / (releaseday - startday);
+                }
+                let VertBar = document.getElementById(`TOC-CH${parcel.ChapterFull}-STATE`)
+                
+                VertBar.style.height = `${DatePercentage * 100}%`;
+                VertBar.style.top = `${(0.5 * (1 / (DatePercentage))) * 100}%`;
+                
+                startday = releaseday;
                 break;
             case "Scene":
                 if (pChapter == ChapterNumber) {
