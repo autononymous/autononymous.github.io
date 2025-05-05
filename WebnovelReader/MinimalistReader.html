@@ -459,23 +459,35 @@ div.LowerInfo {
 
 
 @keyframes slide-up {
-    from {
-        opacity:1;        
-        /*transform: translate( 0vw    0vh);*/
-    } to {
-        opacity:0;
-        /*transform: translate( 0vw -120vh);*/
+    0% {
+        opacity:1;  
+        top: 0;
+        pointer-events: all;
+    } 
+    60% {
+        top: -110vh;
+        pointer-events: none;
+        opacity:0;  
+    }
+    100% {
+        top: -110vh;
+        opacity:0;  
     }
 }
 @keyframes slide-down {
-    from {
-        opacity:0;        
-        pointer-events: none;
-        /*transform: translate( 0vw    0vh);*/
-    } to {
-        opacity:1;
+    0% {
+        opacity:0;  
+        top: -110vh;
         pointer-events: all;
-        /*transform: translate( 0vw -120vh);*/
+    } 
+    60% {
+        top: 0;
+        pointer-events: none;
+        opacity:1;  
+    }
+    100% {
+        top: 0;
+        opacity:1;  
     }
 }
 
@@ -551,8 +563,9 @@ div.ActRow {
     font-family: var(--ActFont);
     font-size: 2em;
     text-align: center;
-    border-top:2px solid black;
-    border-bottom: 2px solid black;
+    border-top:2px solid rgba(var(--ColorPrimary),1);
+    border-bottom: 2px solid rgba(var(--ColorPrimary),1);
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.5);
 }
 div.ChapterSet {
     overflow:hidden;
@@ -572,7 +585,7 @@ div.TOCmarker {
   position: relative;
   height: 10px;
   width: 10px;
-  background-color: black;
+  background-color: rgba(var(--ColorSecondary),1);
   border-radius: 50%;
   margin-left: calc(4vw + 3px);
   transform: translate(-50%,0);
@@ -582,12 +595,12 @@ div.ChapterState {
     margin-left: 4vw;
     margin-right:2vw;
     position: relative;
-    background-color: black;
-    width: 6px;
+    background-color: rgba(var(--ColorPrimary),1);
+    width: 4px;
     top: 0;
     height: 100%;
     transform: translate(0%, -50%);
-    left: calc(-4vw - 13px);
+    left: calc(-4vw - 12px);
 }
 
 div.ChapterNumber {
@@ -604,6 +617,10 @@ div.ChapterDescription {
     flex:5;
     display: inline-flex;
     flex-direction: column;
+    position: relative;
+    left: -10px;
+    border-left: 1px dashed rgba(var(--ColorPrimary),0.4);
+    padding-left: 15px;
 }
 div.ChapterName {
     flex:1;
@@ -774,7 +791,7 @@ const STYLES = {
         "--DEBUG":            "rgba(255,255,100,0.00)",
         "--DEBUGborder":      "none",
 
-        "--MarginSize":       "5vw",
+        "--MarginSize":       "max(30px,5vw)",
         "--MarginPage":       "20px",
 
         "--BarLeft":          "rgba(40,40,40,1.0)",
@@ -841,9 +858,9 @@ const STYLES = {
         "--ColorAdvanceInfo": "rgba(255,255,255, 0)",
         "--ColorAdvanceBorder":"rgba(0,0,0,0.0)",
 
-        "--ActColor":         "darkred",
+        "--ActColor":         "rgb(var(--ColorPrimary))",
         "--ActSize":          "3.0em",
-        "--ActFont":          "'Garamond'",
+        "--ActFont":          "'Courier Prime', 'Courier'",
 
         "--ChapHeaderColor":  "var(--AllText)",
         "--ChapHeaderSize":   "min(10vw,3.5em)",
@@ -1114,16 +1131,18 @@ function ToggleTOC() {
         console.log(`TOC is ${TOCstate}.`)
         //eFullContainer.style.animation = "";
         eFullContainer.style.opacity = (TOCstate)?  1  :  0  ;
+        eFullContainer.style.top = (TOCstate)?  '0'  :  '-110vh'  ;
+
         eTOCArrow.style.transform = (TOCstate)?
             `translate(-50%, 0px) scale(800%, 120%)`:
             `translate(-50%, 0px) scale(800%,-120%)`;
-        eFullContainer.style.animation = ("0.5s linear 0.25s forwards" + ((TOCstate)?" slide-up ":" slide-down "));
+        eFullContainer.style.animation = ("1s ease-in-out 0.25s forwards" + ((TOCstate)?" slide-up ":" slide-down "));
         eTOCArrow.style.animation = ("0.5s linear 0.25s forwards" + ((TOCstate)?" fliparrow-up ":" fliparrow-down "));
         //eFullContainer.style.pointerEvents = (TOCstate)?"none":"all";
 
         eControlRight.style.pointerEvents = (TOCstate)?"none":"all";
         eControlLeft.style.pointerEvents = (TOCstate)?"none":"all";
-        eControlBottom.style.pointerEvents = (TOCstate)?"none":"all";
+        eControlBottom.style.pointerEvents = (TOCstate)?"none":"none";
         eControlSpacer.style.pointerEvents = (TOCstate)?"none":"none";
 
         eFullContainer.style.pointerEvents = (TOCstate)?"none":"all";
