@@ -33,7 +33,9 @@
 
     --ColorAdvance:     hsla(351, 0%, 14%, 20%); /* hsla(351, 100%, 14%, 40%); */
     --ColorAdvanceInfo: rgba(255,255,255, 0);
-    --ColorAdvanceBorder: 1px solid hsla(0, 0%, 50%, 40%);        
+    --ColorAdvanceBorder: 1px solid hsla(0, 0%, 50%, 40%);
+
+    --ColorSpecial:     120, 0, 8;  
 
     --ColorPrimary:     189, 0, 28;
     --ColorSecondary:   156, 121, 33;
@@ -48,6 +50,7 @@
     --ChapHeaderSize:   3.0em;
     --ChapHeaderFont:   'Garamond';
     --ChapDecor:        'underline';
+    --ChapCaps:         'small-caps';
 
     --ChapSubColor:     var(--AllText);
     --ChapSubSize:      2.5em;
@@ -126,6 +129,7 @@ h3.hCHAPTER {
     text-align: center;
     margin: 5px;
     text-decoration: var(--ChapDecor);
+    font-variant: var(--ChapCaps);
 
 }
 
@@ -454,11 +458,11 @@ div.FULLINTERFACE {
 <div id="FULLCONTAINER" class="FullContainer">
     <div id="INTERFACE" class="Interface">
         <div id="ICON-ONEPAGE" onclick="buttonContinuous();"><img class="Icon" title="Continuous Scrolling" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Extend.png" alt="&#8853;"></div>
-        <div id="ICON-LINEDN" onclick="buttonLineSpace(1);"><img class="Icon" title="Increase Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineDn.png" alt="&#8853;"></div>
-        <div id="ICON-LINEUP" onclick="buttonLineSpace(-1);"><img class="Icon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;"></div>
-        <div id="ICON-FONTUP" onclick="buttonFontSize(1);"><img class="Icon" title="Increase Font Size"" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Larger.png" alt="&#8853;"></div>
-        <div id="ICON-FONTDN" onclick="buttonFontSize(-1);"><img class="Icon" title="Decrease Font Size" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Smaller.png" alt="&#8854;"></div>
-        <div id="ICON-THEME" onclick="buttonSetTheme(1);"><img class="Icon" title="Change Theme" src="https://cdn-icons-png.flaticon.com/512/11072/11072905.png"></div>
+        <div id="ICON-LINEDN" onclick="buttonLineSpace(1);SaveSettings();"><img class="Icon" title="Increase Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineDn.png" alt="&#8853;"></div>
+        <div id="ICON-LINEUP" onclick="buttonLineSpace(-1);SaveSettings();"><img class="Icon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;"></div>
+        <div id="ICON-FONTUP" onclick="buttonFontSize(1);SaveSettings();"><img class="Icon" title="Increase Font Size"" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Larger.png" alt="&#8853;"></div>
+        <div id="ICON-FONTDN" onclick="buttonFontSize(-1);SaveSettings();"><img class="Icon" title="Decrease Font Size" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Smaller.png" alt="&#8854;"></div>
+        <div id="ICON-THEME" onclick="buttonSetTheme(1);SaveSettings();"><img class="Icon" title="Change Theme" src="https://cdn-icons-png.flaticon.com/512/11072/11072905.png"></div>
     </div>
     <div id="CONTAINER" class="Container">    
         <div id="TARGET" class="Target">        
@@ -574,6 +578,7 @@ const STYLES = {
         "--ChapHeaderSize":   "min(10vw,3.5em)",
         "--ChapHeaderFont":   "'Courier Prime', 'Courier'",
         "--ChapDecor":        "underline",
+        "--ChapCaps":         "small-caps",
 
         "--ChapSubColor":     "var(--AllText)",
         "--ChapSubSize":      "min(8vw,3.0em)",
@@ -602,41 +607,42 @@ const STYLES = {
         "--DEBUG":            "rgba(255,255,100,0.00)",
         "--DEBUGborder":      "none",
 
-        "--MarginSize":       "5vw",
+        "--MarginSize":       "max(30px,5vw)",
         "--MarginPage":       "20px",
 
-        "--ColorPrimary":     '189, 0, 28',
-        "--ColorSecondary":   '156, 121, 33',
-        "--ColorTertiary":    '210, 163, 45',
-        "--ColorQuarternary": '212, 22, 32',
+        "--ColorPrimary":     '255,255,255',//'189, 0, 28',
+        "--ColorSecondary":   '255,255,255',//'156, 121, 33',
+        "--ColorTertiary":    '200,200,200',//'210, 163, 45',
+        "--ColorQuarternary": '255,255,255',//'212, 22, 32',
 
         "--BarLeft":          "white",//rgba(var(--ColorTertiary),1)",
         "--BarRight":         "white",//rgba(var(--ColorQuarternary),1)", 
 
-        "--ColorAdvance":     "rgba(0,0,0,0.1)",
+        "--ColorAdvance":     "rgba(0,0,0,0.0)",
         "--ColorAdvanceInfo": "rgba(255,255,255, 0)",
-        "--ColorAdvanceBorder":"rgba(0,0,0,0.1)",
+        "--ColorAdvanceBorder":"rgba(0,0,0,0.0)",
 
         "--ActColor":         "darkred",
         "--ActSize":          "3.0em",
         "--ActFont":          "'Garamond'",
 
         "--ChapHeaderColor":  "var(--AllText)",
-        "--ChapHeaderSize":   "3.0em",
-        "--ChapHeaderFont":   "'Garamond'",
-        "--ChapDecor":        "Underline",
+        "--ChapHeaderSize":   "min(10vw,3.5em)",
+        "--ChapHeaderFont":   "'Courier Prime', 'Courier'",
+        "--ChapDecor":        "underline",
+        "--ChapCaps":         "small-caps",
 
         "--ChapSubColor":     "var(--AllText)",
-        "--ChapSubSize":      "2.5em",
-        "--ChapSubFont":      "'Garamond'",
+        "--ChapSubSize":      "min(8vw,3.0em)",
+        "--ChapSubFont":      "'Courier Prime', 'Courier'",
 
         "--SectionColor":     "var(--AllText)",
-        "--SectionSize":      "3.0em",
-        "--SectionFont":      "'Garamond'",
+        "--SectionSize":      "min(10vw,3.25em)",
+        "--SectionFont":      "'Courier Prime', 'Courier'",
 
         "--BodyColor":        "var(--AllText)",
         "--BodySize":         "1.5rem",
-        "--BodyFont":         'Times New Roman',
+        "--BodyFont":         "'Lucida Fax','Times New Roman'",
         "--BodyLineHeight":   "1.0em",
 
         "--InvertImages":     "invert(0)",
@@ -645,8 +651,8 @@ const STYLES = {
         "--SceneSeparator":   "calc('2px dashed ' + var(--BodyColor));"
     },
     "Firebrand":{
-        "--AllText":          "white",
-        "--Background":       "18,18,18",
+        "--AllText":          "black",
+        "--Background":       "255,255,255",
 
         "--DEBUG":            "rgba(255,255,100,0.00)",
         "--DEBUGborder":      "none",
@@ -654,35 +660,38 @@ const STYLES = {
         "--MarginSize":       "5vw",
         "--MarginPage":       "20px",
 
-        "--BarLeft":          "crimson",
-        "--BarRight":         "crimson",
+        "--ColorSpecial":     '120, 0, 8',
 
         "--ColorPrimary":     '189, 0, 28',
-        "--ColorSecondary":   '156, 121, 33',
-        "--ColorTertiary":    '210, 163, 45',
+        "--ColorSecondary":   'var(--ColorSpecial)',//'156, 121, 33',
+        "--ColorTertiary":    '120, 100, 0',
         "--ColorQuarternary": '212, 22, 32',
+
+        "--BarLeft":          "rgb(var(--ColorSpecial))",
+        "--BarRight":         "rgb(var(--ColorSpecial))",
 
         "--ColorAdvance":     "transparent",
         "--ColorAdvanceInfo": "rgba(255,255,255, 0)",
         "--ColorAdvanceBorder":"transparent",
                 
-        "--BackgroundImg":    "linear-gradient(to right, rgba(var(--ColorPrimary),1), var(--BackgroundColor), rgba(var(--ColorPrimary),1))",
+        "--BackgroundImg":    "linear-gradient(to right, rgba(var(--ColorPrimary),1), rgba(var(--ColorPrimary),1))",
         
         "--ActColor":         "rgb(var(--ColorPrimary))",
         "--ActSize":          "3.0em",
         "--ActFont":          "'Courier Prime', 'Courier'",
 
-        "--ChapHeaderColor":  "rgb(var(--ColorPrimary))",
-        "--ChapHeaderSize":   "3.0em",
+        "--ChapHeaderColor":  "rgb(var(--ColorSpecial))",
+        "--ChapHeaderSize":   "min(10vw,3.5em)",
         "--ChapHeaderFont":   "'Courier Prime', 'Courier'",
-        "--ChapDecor":        "Underline",
+        "--ChapDecor":        "underline",
+        "--ChapCaps":         "small-caps",
 
-        "--ChapSubColor":     "rgb(var(--ColorPrimary))",
-        "--ChapSubSize":      "2.5em",
+        "--ChapSubColor":     "rgb(var(--ColorSpecial))",
+        "--ChapSubSize":      "min(7vw,3.0em)",
         "--ChapSubFont":      "'Courier Prime', 'Courier'",
 
-        "--SectionColor":     "var(--AllText)",
-        "--SectionSize":      "3.0em",
+        "--SectionColor":     "rgb(var(--ColorSpecial))",
+        "--SectionSize":      "min(10vw,3.25em)",
         "--SectionFont":      "'Courier Prime', 'Courier'",
 
         "--BodyColor":        "var(--AllText)",
@@ -690,7 +699,7 @@ const STYLES = {
         "--BodyFont":         "'Lucida Fax','Times New Roman'",
         "--BodyLineHeight":   "1.0em",
 
-        "--InvertImages":     "invert(0)",
+        "--InvertImages":     "invert(1)",
     
         "--SceneDecorator":   "' - '",
         "--SceneSeparator":   "calc('2px dashed ' + var(--BodyColor));"
@@ -742,8 +751,8 @@ divCONTAINER = document.getElementById('CONTAINER');
 const ROOT = document.querySelector(':root');
 const FONTSIZES = ['1.00rem','1.25rem','1.50rem','1.75rem','2.00rem','2.25rem','2.50rem'];
 const LINEHEIGHTS = ['1.20em','1.30em','1.40em','1.50em','1.60em','1.70em',]
-const THEMES = ['DarkMode','LightMode','Firebrand'];
-var ThemeStage = isDarkMode?1:isCustomMode?2:0;
+const THEMES = ['DarkMode','LightMode'];//,'Firebrand'];
+var ThemeStage = isDarkMode?1:0;
 
 var FontStage = 2;
 var LineStage = 3;
@@ -754,6 +763,22 @@ if(window.innerWidth < 500) {
 }else if(window.innerWidth > 850) {
     FontStage = 3;
 }
+
+var SavedFontStage = localStorage.getItem('ReaderFontStage');
+var SavedLineStage = localStorage.getItem('ReaderLineStage');
+var SavedThemeStage = localStorage.getItem('ReaderThemeStage');
+
+
+if(SavedFontStage) {
+    FontStage = parseFloat(SavedFontStage);
+}
+if (SavedLineStage) {
+    LineStage = parseFloat(SavedLineStage);
+}
+if (SavedThemeStage) {
+    ThemeStage = parseFloat(SavedThemeStage);
+}
+
 
 
 buttonSetTheme(0);
@@ -814,6 +839,12 @@ async function fetchJSON() {
 var jLoad = "";
 
 // ===============================<[ FUNCTIONS ]>===================================
+
+function SaveSettings() {
+    localStorage.setItem('ReaderFontStage', FontStage);
+    localStorage.setItem('ReaderLineStage', LineStage);    
+    localStorage.setItem('ReaderThemeStage', ThemeStage);
+}
 
 // Function to initialize the reader
 function initializeReader() {
