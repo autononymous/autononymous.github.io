@@ -77,7 +77,13 @@ body {
     background-color: var(--BackgroundColor);
     color: var(--AllText);
     overflow-x: hidden;
+
     background-image: var(--BackgroundImg);
+    background-repeat: repeat-y;
+    background-blend-mode: luminosity;
+    background-position-x: center;
+    background-size: 150%;
+
     width:100vw;
     position:fixed;
     left:0;
@@ -245,7 +251,7 @@ div.Controls {
     grid-template-rows: 30fr 0fr 0fr;/*20fr 1fr 5fr;*/
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    background-color: rgba(var(--Background),0.8);
+    /*background-color: rgba(var(--Background),0.8);*/
     pointer-events:none;
 }
 div.ControlLeft {
@@ -347,7 +353,7 @@ div.Bar {
     margin-top: 5px;
     flex:1;
     height:100%;
-    background-color: var(--BackgroundColor);
+    /*background-color: var(--BackgroundColor);*/
 }
 div.ProgressMask {
     position:absolute;
@@ -550,7 +556,7 @@ const STYLES = {
     "LightMode":{
         "--AllText":          "rgba(0,0,0,1)",
         "--Background":       "255,255,255",
-        "--BackgroundImg":    "none",
+        "--BackgroundImg":    "none",//url(https://autononymous.io/wp-content/uploads/2024/11/repeat_kat_02_b-1.png)",
 
         "--DEBUG":            "rgba(255,255,100,0.00)",
         "--DEBUGborder":      "none",
@@ -566,9 +572,9 @@ const STYLES = {
         "--ColorTertiary":    "80,80,80",
         "--ColorQuarternary": "120,120,120",
 
-        "--ColorAdvance":     "rgba(var(--Background),0.2)",
+        "--ColorAdvance":     "rgba(var(--Background),0.0)",
         "--ColorAdvanceInfo": "rgba(255,255,255, 0)",
-        "--ColorAdvanceBorder": "rgba(var(--Background),0.5)",
+        "--ColorAdvanceBorder": "rgba(var(--Background),0.0)",
 
         "--ActColor":         "darkred",
         "--ActSize":          "3.0em",
@@ -964,6 +970,7 @@ function ChangePage(extent) {
         })
         eControlSpacer.style.pointerEvents = "none";
         eControl.style.backgroundColor="transparent";
+        /*
         eContainer.style.backgroundImage = `
             linear-gradient(
                 to bottom,
@@ -972,6 +979,7 @@ function ChangePage(extent) {
                 rgba(var(--Background),0.00) calc(100% - 100px),
                 rgba(var(--Background),1.00) 100%
             )`
+        */
         isFirstClick = false;
     } else {
         // If greater than min bound and less than max bound of pages,
