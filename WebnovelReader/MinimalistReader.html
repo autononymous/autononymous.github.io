@@ -459,7 +459,7 @@ div.LowerInfo {
 }
 @media only screen and (max-width: 600px) {
     div.LowerInfo {
-        top: calc(100dvh - 25px);
+        top: calc(92dvh - 25px);
     }
 }
 
@@ -616,13 +616,14 @@ div.newrow {
 
 div.TOCmarker {
   position: relative;
-  height: 10px;
-  width: 10px;
-  background-color: rgba(var(--ColorSecondary),1);
+  height: 12px;
+  width: 12px;
+  background-color: none;
+  border: 1px solid rgba(var(--ColorSecondary),1);
   border-radius: 50%;
   margin-left: calc(4vw + 3px);
   transform: translate(-50%,0);
-  margin-top: calc( (var(--TOCEntryHeight)/2) - 10px);
+  margin-top: calc( (var(--TOCEntryHeight)/2) - 9px);
 }
 div.ChapterState {
     margin-left: 4vw;
@@ -633,7 +634,7 @@ div.ChapterState {
     top: 0;
     height: 100%;
     /*transform: translate(0%, -50%);*/
-    left: calc(-4vw - 12px);
+    left: calc(-4vw - 15px);
 }
 
 div.ChapterNumber {
@@ -684,16 +685,17 @@ div.ChapterDate {
 
 div.StoryCover {
     position: absolute;
-    width: 80vw;
+    width: min(500px,80vw);
     background-image: url('https://autononymous.io/wp-content/uploads/2025/05/FIREBRAND_for_reader.png');
-    height: 200px;
+    height: 500px;
     filter: var(--InvertImages);
-    background-position: center;
+    background-position:center 0%;
     background-size: 100% auto;
-    left: 10vw;
+    left: 50%;
+    transform: translateX(-50%);
     top: 5vh;
     color:white;
-    text-align: center;
+    text-align:center;
     background-repeat: no-repeat;
 }
 
@@ -1018,7 +1020,7 @@ function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew) {
     let result = `    
         <div id="TOC-CH${nChap}" ${ChapterInteraction}> 
             <div id="TOC-CH${nChap}-DATE" class="TOC ChapterDate">${pubdate}</div>
-            <div class="TOCmarker"></div>
+            <div class="TOCmarker" ${ChapterIsActive?'style="background-color: rgba(var(--ColorSecondary),1"':''}></div>
             <div id="TOC-CH${nChap}-STATE" class="ChapterState" style="height:${percent}%"></div>
             <div id="TOC-CH${nChap}-NUM" class="TOC ChapterNumber"><span>${('00'+nDisplayed).slice(-2)}</span></div>
             <div id="TOC-CH${nChap}-DESC" class="TOC ChapterDescription">
@@ -1488,12 +1490,12 @@ async function SpoolTicker() {
     ChapterMaxNumber = 0;
 
     //-TOCtarget.innerHTML = ''; //TOC clear ------------------------//
-    //-let RelDate = StartDate;
+    let RelDate = StartDate;
 
 
-    //-let today = parseFloat(yeardate(NowDate));
-    //-let startday = parseFloat(yeardate(StartDate));
-    //-let releaseday = parseFloat(yeardate(StartDate));
+    let today = parseFloat(yeardate(NowDate));
+    let startday = parseFloat(yeardate(StartDate));
+    let releaseday = parseFloat(yeardate(StartDate));
 
     //-console.log(`${today}, ${startday}, ${releaseday}`)
 
@@ -1502,9 +1504,11 @@ async function SpoolTicker() {
         let pType = parcel.DocType;
         let pAct = parcel.ActFull;
         let pChapter = parcel.ChapterFull;
-        let pScene = parcel.SceneFull;       
+        let pScene = parcel.SceneFull;   
+        
+        let WritePass = true;
 
-        //-let DatePercentage=1;
+        //-let DatePercentage = 1;
         
         switch (pType) {
             case "Act":
@@ -1518,11 +1522,18 @@ async function SpoolTicker() {
                 //-TOCtarget.innerHTML += TOChtmlACT(ActCtr,parcel.DocName);
                 break;
             case "Chapter":
-                //-releaseday += parseFloat(parcel.NextPublish);
-                ChapterMaxNumber++;
+                WritePass = (today >= releaseday);
+                releaseday += parseFloat(parcel.NextPublish);    
+                if (WritePass) {
+                    ChapterMaxNumber++;  
+                }  
+                        
                 //-RelDate = new Date(Date.parse(RelDate) + (86400000*parseFloat(parcel.NextPublish)));
                 //-let EntryDateStr = `${pad(RelDate.getMonth()+1,2)}/${pad(RelDate.getDate(),2)}`// /${RelDate.getFullYear().toString().slice(2,4)}`
-                if (pChapter == ChapterNumber) {
+                if ((pChapter == ChapterNumber) && (WritePass)) {
+
+                    
+
                     debugLNC(`> Chapter ${pChapter} from index position ${pItem} loaded into Ticker.\n`, false);
                     // Loading in chapter information:
                     Ticker.push(`#CHP#`,`${(parcel.ChapterOverride=="")?parcel.AutoNameFull:parcel.ChapterOverride}`,`#/#`)
@@ -1532,7 +1543,7 @@ async function SpoolTicker() {
                 //-document.getElementById(TOCchapterTARGET).innerHTML += TOChtmlCHAPTER(parcel.ChapterFull,parcel.GivenName,parcel.Synopsis,EntryDateStr,AdjustedIndex(parcel.ChapterFull),DatePercentage)
                 // Calculating height of date progress bar:     
 
-                //-console.log(`Release #${ChapterMaxNumber}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}`)
+                console.log(`Release #${ChapterMaxNumber}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}`)
 
                 /*-
                 if (today >= releaseday) {
@@ -1546,12 +1557,12 @@ async function SpoolTicker() {
                 
                 VertBar.style.height = `${DatePercentage * 100}%`;
                 VertBar.style.top = `${(0.5 * (1 / (DatePercentage))) * 100}%`;
-                
-                startday = releaseday;
                 -*/
+                startday = releaseday;
+                
                 break;
             case "Scene":
-                if (pChapter == ChapterNumber) {
+                if ((pChapter == ChapterNumber) && (WritePass)) {
                     debugLNC(`> Scene ${pScene} from index position ${pItem} loaded into Ticker.\n`,false);
                     // Loading in scene information:
                     Ticker.push(`#SCN#`,`${parcel.ScenePart}`,`#/#`)
