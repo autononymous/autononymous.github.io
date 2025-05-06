@@ -208,7 +208,7 @@ div.Container {
     height:calc(100vh - 220px);
     left:5vw;
     border: var(--DEBUGborder);
-    background-color: var(--DEBUG);
+    background-color: var(--BackgroundColor);
     width:90vw;    
     overflow:hidden;
     overflow-x: hidden;   
@@ -581,11 +581,39 @@ div.ChapterRow {
     flex-direction: row;
     height: var(--TOCEntryHeight);
     justify-items: left;
+}
+@keyframes flasherror {
+    0% {
+        background-color: transparent;
+    } 
+    30% {
+        background-color: rgba(237, 146, 146, 0.3);
+    }
+    70% {
+        background-color: rgba(237, 146, 146, 0.3);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+div.activerow {
     transition: background-color 0.3s ease-in-out 0.05s;
 }
-div.ChapterRow:hover {
-    background-color: rgba(var(--ColorPrimary),0.1)
+div.activerow:hover {
+    background-color: rgba(var(--ColorPrimary),0.15)
 }
+div.inactiverow {
+    transition: background-color 0.3s ease-in-out 0.05s;
+    background-color: rgba(128,128,128,0.15);
+}
+div.inactiverow:hover {
+    background-color: rgba(255,50,50,0.15);
+}
+div.newrow {
+    background-color: rgba(255,255,40,0.15);
+}
+
 div.TOCmarker {
   position: relative;
   height: 10px;
@@ -604,7 +632,7 @@ div.ChapterState {
     width: 4px;
     top: 0;
     height: 100%;
-    transform: translate(0%, -50%);
+    /*transform: translate(0%, -50%);*/
     left: calc(-4vw - 12px);
 }
 
@@ -962,10 +990,14 @@ function TOChtmlACT(nAct,name) {
     TOCchapterTARGET = `TOC-ACT${nAct}-CHAPTERS`;
     return result;
 }
+function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew) {
+    
+    ChapterIsActive = (nChap <= ChapterMaxNumber);
 
-function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent) {
+    let ChapterInteraction = ChapterIsActive?(`class="TOC ChapterRow activerow ${isnew?'newrow':''}"  onclick="ChapterNumber=${nChap};reload();ToggleTOC();"`):(`class="TOC ChapterRow inactiverow ${isnew?'newrow':''}"`);
+
     let result = `    
-        <div id="TOC-CH${nChap}" class="TOC ChapterRow" onclick="ChapterNumber = ${nChap};reload();ToggleTOC();"> 
+        <div id="TOC-CH${nChap}" ${ChapterInteraction}> 
             <div id="TOC-CH${nChap}-DATE" class="TOC ChapterDate">${pubdate}</div>
             <div class="TOCmarker"></div>
             <div id="TOC-CH${nChap}-STATE" class="ChapterState" style="height:${percent}%"></div>
@@ -1382,6 +1414,7 @@ async function BuildTOC() {
         let pChapter = parcel.ChapterFull;
         let pScene = parcel.SceneFull;   
         
+        let ChapterIsActive = true;
 
         let DatePercentage = 1;           
 
@@ -1392,12 +1425,14 @@ async function BuildTOC() {
                 TOCtarget.innerHTML += TOChtmlACT(ActCtr,parcel.DocName);
                 break;
             case "Chapter":
+
                 releaseday += parseFloat(parcel.NextPublish);
                 ChapterMaxNumberT++;
                 RelDate = new Date(Date.parse(RelDate) + (86400000*parseFloat(parcel.NextPublish)));
                 let EntryDateStr = `${pad(RelDate.getMonth()+1,2)}/${pad(RelDate.getDate(),2)}`// /${RelDate.getFullYear().toString().slice(2,4)}`
 
-                document.getElementById(TOCchapterTARGET).innerHTML += TOChtmlCHAPTER(parcel.ChapterFull,parcel.GivenName,parcel.Synopsis,EntryDateStr,AdjustedIndex(parcel.ChapterFull),DatePercentage)
+                document.getElementById(TOCchapterTARGET).innerHTML += TOChtmlCHAPTER(parcel.ChapterFull,parcel.GivenName,parcel.Synopsis,EntryDateStr,AdjustedIndex(parcel.ChapterFull),DatePercentage,
+                ((today >= startday)&&(today <= (releaseday+7) )) )
                 // Calculating height of date progress bar:                  
 
                 if (today >= releaseday) {
@@ -1412,7 +1447,8 @@ async function BuildTOC() {
                 console.log(`Release #${ChapterMaxNumberT}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}\n  percentage ${DatePercentage}.`)
                 
                 VertBar.style.height = `${DatePercentage * 100}%`;
-                VertBar.style.top = `${((0.5 * (1 / (DatePercentage))) - (1 - DatePercentage)) * 100}%`;
+                VertBar.style.top = `
+                ${((-0.5) - ((1-DatePercentage)/2))*100}%`;
                 
                 startday = releaseday;
                 break;
@@ -1680,7 +1716,6 @@ async function main() {
 
     // Spool the ticker
     await SpoolTicker();
-
     await BuildTOC();
 
     RollTicker();
@@ -1699,6 +1734,7 @@ async function reload(LoadAtEnd) {
     PageMaxCount = 0;
     Ticker = [];
     await SpoolTicker();
+    //await BuildTOC();
     RollTicker();    
     CurrentPageNumber = LoadAtEnd?PageMaxCount:0;
     ChangePage(0); ////////////////////////////////////////////////
