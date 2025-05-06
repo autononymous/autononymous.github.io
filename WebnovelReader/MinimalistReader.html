@@ -965,7 +965,7 @@ function TOChtmlACT(nAct,name) {
 
 function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent) {
     let result = `    
-        <div id="TOC-CH${nChap}" class="TOC ChapterRow" onclick="ChapterNumber = ${nChap+2};reload();ToggleTOC();"> 
+        <div id="TOC-CH${nChap}" class="TOC ChapterRow" onclick="ChapterNumber = ${nChap};reload();ToggleTOC();"> 
             <div id="TOC-CH${nChap}-DATE" class="TOC ChapterDate">${pubdate}</div>
             <div class="TOCmarker"></div>
             <div id="TOC-CH${nChap}-STATE" class="ChapterState" style="height:${percent}%"></div>
@@ -1347,7 +1347,7 @@ function debugLNC(msg,writeout) {
 
 // A fix since this story starts with two prologue parts.
 function AdjustedIndex(index) {
-    return index;//(index < 2)?0:index-2;
+    return (index < 2)?0:index-2;
 }
 function pad(num, size) {
     var s = "000000000" + num;
