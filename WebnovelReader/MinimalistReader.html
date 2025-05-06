@@ -1393,7 +1393,7 @@ async function SpoolTicker() {
                     Ticker.push(`#SUB#`,`${parcel.GivenName}`,`#/#`)
                 }
                                
-                document.getElementById(TOCchapterTARGET).innerHTML += TOChtmlCHAPTER(parcel.ChapterFull,((parcel.ChapterOverride=="")?parcel.AutoNameFull:parcel.ChapterOverride),parcel.Synopsis,EntryDateStr,AdjustedIndex(parcel.ChapterFull),DatePercentage)
+                document.getElementById(TOCchapterTARGET).innerHTML += TOChtmlCHAPTER(parcel.ChapterFull,parcel.GivenName,parcel.Synopsis,EntryDateStr,AdjustedIndex(parcel.ChapterFull),DatePercentage)
                 // Calculating height of date progress bar:     
 
                 console.log(`Release #${ChapterMaxNumber}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}`)
