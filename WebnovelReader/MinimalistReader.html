@@ -965,7 +965,7 @@ function TOChtmlACT(nAct,name) {
 
 function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent) {
     let result = `    
-        <div id="TOC-CH${nChap}" class="TOC ChapterRow" onclick="ChapterNumber = ${nChap};reload();ToggleTOC();">
+        <div id="TOC-CH${nChap}" class="TOC ChapterRow" onclick="ChapterNumber = ${nChap+2};reload();ToggleTOC();"> 
             <div id="TOC-CH${nChap}-DATE" class="TOC ChapterDate">${pubdate}</div>
             <div class="TOCmarker"></div>
             <div id="TOC-CH${nChap}-STATE" class="ChapterState" style="height:${percent}%"></div>
@@ -1108,14 +1108,15 @@ IsContinuous = false;
 // Root directory of further files
 SourceROOT = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/"
 // Exported JSON file from Scrivener containing the story
-SourceFILE = SourceROOT + "/docs/FB01.json"
+SourceFILE = SourceROOT + "/docs/FB01.json";
+SourceTOC = SourceROOT + "/docs/FBTOC00.json";
 
 // Fetch the JSON file
 async function fetchJSON() {
     try {
         const response = await fetch(SourceFILE);
         if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
+            throw new Error('Network response for JSON was not ok ' + response.statusText);
         }
         const data = await response.text();
         return JSON.parse(data.replaceAll(/(\r\n|\n|\r)/gm, ''));
@@ -1124,8 +1125,23 @@ async function fetchJSON() {
     }
 }
 
+// Fetch the TOC JSON file
+async function fetchTOC() {
+    try {
+        const response = await fetch(SourceTOC);
+        if (!response.ok) {
+            throw new Error('Network response for TOC JSON was not ok ' + response.statusText);
+        }
+        const data = await response.text();
+        return JSON.parse(data.replaceAll(/(\r\n|\n|\r)/gm, ''));
+    } catch (error) {
+        console.error("Unable to load the TOC JSON file.")
+    }
+}
+
 // JSON file containing the story
 var jLoad = "";
+var jTOC  = "";
 
 // ===============================<[ FUNCTIONS ]>===================================
 
@@ -1133,7 +1149,7 @@ var jLoad = "";
 function ToggleTOC() {
     if(!isFirstClick) {
         TOCstate = !TOCstate;
-        console.log(`TOC is ${TOCstate}.`)
+        //console.log(`TOC is ${TOCstate}.`)
         //eFullContainer.style.animation = "";
         eFullContainer.style.opacity = (TOCstate)?  1  :  0  ;
         eFullContainer.style.top = (TOCstate)?  '0'  :  '-110vh'  ;
@@ -1331,7 +1347,7 @@ function debugLNC(msg,writeout) {
 
 // A fix since this story starts with two prologue parts.
 function AdjustedIndex(index) {
-    return (index < 2)?0:index-2;
+    return index;//(index < 2)?0:index-2;
 }
 function pad(num, size) {
     var s = "000000000" + num;
@@ -1347,6 +1363,64 @@ function yeardate(date) {
     return result;
 }
 
+async function BuildTOC() {
+    console.debug("Building the Table Of Contents...");
+    TOCtarget.innerHTML = ''; //TOC clear ------------------------//
+    let RelDate = StartDate;
+
+    let today = parseFloat(yeardate(NowDate));
+    let startday = parseFloat(yeardate(StartDate));
+    let releaseday = parseFloat(yeardate(StartDate));
+
+    console.log(`${today}, ${startday}, ${releaseday}`)
+    let ChapterMaxNumberT = 0;
+      
+    let ActCtr = 0;  
+    jTOC.Manuscript.forEach( parcel => {
+        let pType = parcel.DocType;
+        let pAct = parcel.ActFull;
+        let pChapter = parcel.ChapterFull;
+        let pScene = parcel.SceneFull;   
+        
+
+        let DatePercentage = 1;           
+
+        switch (pType) {
+            case "Act":
+                ActCtr++;
+                console.log("Act "+ActCtr)
+                TOCtarget.innerHTML += TOChtmlACT(ActCtr,parcel.DocName);
+                break;
+            case "Chapter":
+                releaseday += parseFloat(parcel.NextPublish);
+                ChapterMaxNumberT++;
+                RelDate = new Date(Date.parse(RelDate) + (86400000*parseFloat(parcel.NextPublish)));
+                let EntryDateStr = `${pad(RelDate.getMonth()+1,2)}/${pad(RelDate.getDate(),2)}`// /${RelDate.getFullYear().toString().slice(2,4)}`
+
+                document.getElementById(TOCchapterTARGET).innerHTML += TOChtmlCHAPTER(parcel.ChapterFull,parcel.GivenName,parcel.Synopsis,EntryDateStr,AdjustedIndex(parcel.ChapterFull),DatePercentage)
+                // Calculating height of date progress bar:                  
+
+                if (today >= releaseday) {
+                    DatePercentage = 1;
+                } else if (today <= startday) {
+                    DatePercentage = 0;
+                } else {
+                    DatePercentage = (today - startday) / (releaseday - startday);
+                }
+                let VertBar = document.getElementById(`TOC-CH${parcel.ChapterFull}-STATE`)
+
+                console.log(`Release #${ChapterMaxNumberT}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}\n  percentage ${DatePercentage}.`)
+                
+                VertBar.style.height = `${DatePercentage * 100}%`;
+                VertBar.style.top = `${((0.5 * (1 / (DatePercentage))) - (1 - DatePercentage)) * 100}%`;
+                
+                startday = releaseday;
+                break;
+        }
+    });
+}
+
+
 var Ticker = [];
 
 async function SpoolTicker() {
@@ -1356,15 +1430,15 @@ async function SpoolTicker() {
 
     ChapterMaxNumber = 0;
 
-    TOCtarget.innerHTML = ''; //TOC clear ------------------------//
-    let RelDate = StartDate;
+    //-TOCtarget.innerHTML = ''; //TOC clear ------------------------//
+    //-let RelDate = StartDate;
 
 
-    let today = parseFloat(yeardate(NowDate));
-    let startday = parseFloat(yeardate(StartDate));
-    let releaseday = parseFloat(yeardate(StartDate));
+    //-let today = parseFloat(yeardate(NowDate));
+    //-let startday = parseFloat(yeardate(StartDate));
+    //-let releaseday = parseFloat(yeardate(StartDate));
 
-    console.log(`${today}, ${startday}, ${releaseday}`)
+    //-console.log(`${today}, ${startday}, ${releaseday}`)
 
     jLoad.Manuscript.forEach( parcel => {
         pItem++;
@@ -1373,24 +1447,24 @@ async function SpoolTicker() {
         let pChapter = parcel.ChapterFull;
         let pScene = parcel.SceneFull;       
 
-        let DatePercentage=1;
+        //-let DatePercentage=1;
         
         switch (pType) {
             case "Act":
-                ActCtr++; // for TOC
+                //-ActCtr++; // for TOC
                 if (pChapter == ChapterNumber && ShowActs) {
                     debugLNC(`> Act ${pAct} from index position ${pItem} loaded into Ticker.\n`, false);
                     // Loading in act information:
                     Ticker.push(`#ACT#`,`Act ${parcel.ActNum}`,`#/#`)
                 }
                 // Building Table Of Contents with Act:
-                TOCtarget.innerHTML += TOChtmlACT(ActCtr,parcel.DocName);
+                //-TOCtarget.innerHTML += TOChtmlACT(ActCtr,parcel.DocName);
                 break;
             case "Chapter":
-                releaseday += parseFloat(parcel.NextPublish);
+                //-releaseday += parseFloat(parcel.NextPublish);
                 ChapterMaxNumber++;
-                RelDate = new Date(Date.parse(RelDate) + (86400000*parseFloat(parcel.NextPublish)));
-                let EntryDateStr = `${pad(RelDate.getMonth()+1,2)}/${pad(RelDate.getDate(),2)}`// /${RelDate.getFullYear().toString().slice(2,4)}`
+                //-RelDate = new Date(Date.parse(RelDate) + (86400000*parseFloat(parcel.NextPublish)));
+                //-let EntryDateStr = `${pad(RelDate.getMonth()+1,2)}/${pad(RelDate.getDate(),2)}`// /${RelDate.getFullYear().toString().slice(2,4)}`
                 if (pChapter == ChapterNumber) {
                     debugLNC(`> Chapter ${pChapter} from index position ${pItem} loaded into Ticker.\n`, false);
                     // Loading in chapter information:
@@ -1398,11 +1472,12 @@ async function SpoolTicker() {
                     Ticker.push(`#SUB#`,`${parcel.GivenName}`,`#/#`)
                 }
                                
-                document.getElementById(TOCchapterTARGET).innerHTML += TOChtmlCHAPTER(parcel.ChapterFull,parcel.GivenName,parcel.Synopsis,EntryDateStr,AdjustedIndex(parcel.ChapterFull),DatePercentage)
+                //-document.getElementById(TOCchapterTARGET).innerHTML += TOChtmlCHAPTER(parcel.ChapterFull,parcel.GivenName,parcel.Synopsis,EntryDateStr,AdjustedIndex(parcel.ChapterFull),DatePercentage)
                 // Calculating height of date progress bar:     
 
-                console.log(`Release #${ChapterMaxNumber}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}`)
+                //-console.log(`Release #${ChapterMaxNumber}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}`)
 
+                /*-
                 if (today >= releaseday) {
                     DatePercentage = 1;
                 } else if (today <= startday) {
@@ -1416,6 +1491,7 @@ async function SpoolTicker() {
                 VertBar.style.top = `${(0.5 * (1 / (DatePercentage))) * 100}%`;
                 
                 startday = releaseday;
+                -*/
                 break;
             case "Scene":
                 if (pChapter == ChapterNumber) {
@@ -1600,9 +1676,12 @@ async function main() {
     initializeReader();
 
     jLoad = await fetchJSON(); // Fetch the JSON file
+    jTOC  = await fetchTOC();
 
     // Spool the ticker
     await SpoolTicker();
+
+    await BuildTOC();
 
     RollTicker();
 
