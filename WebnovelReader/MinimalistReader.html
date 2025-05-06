@@ -681,6 +681,22 @@ div.ChapterDate {
     opacity:0.3;
 }
 
+
+div.StoryCover {
+    position: absolute;
+    width: 80vw;
+    background-image: url('https://autononymous.io/wp-content/uploads/2025/05/FIREBRAND_for_reader.png');
+    height: 200px;
+    filter: var(--InvertImages);
+    background-position: center;
+    background-size: 100% auto;
+    left: 10vw;
+    top: 5vh;
+    color:white;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
 </style>
 
 
@@ -795,6 +811,9 @@ For each CHAPTER:
                         <u>Table Of Contents</u>
                     </span>
                 </div>
+            </div>
+            <div id="STORYCOVER" class="StoryCover">
+
             </div>
         </div>
     </div>
@@ -1053,7 +1072,7 @@ const eThisPart         = document.getElementById('N-PART-CURRENT');
 const eTotalParts       = document.getElementById('N-PART-TOTAL');
 
 const eTOCArrow         = document.getElementById('INFO-LOWER');
-
+const eStoryCover       = document.getElementById('STORYCOVER');
 
 addEventListener("resize",RollTicker);
 
@@ -1109,8 +1128,10 @@ eControlRight.style.opacity = 1;
 
 
 
-const FOOTERTEXT = `&copy; 2025 <a href="https://autononymous.io/authors-and-stories/savantguarde/">Savant-Guarde</a>&emsp;||&emsp;<a href="https://autononymous.io/">Autononymous.io</a>`;
+const FOOTERTEXT = `&copy; 2025 <a href="https://autononymous.io/authors-and-stories/savantguarde/">Savant-Guarde</a><br><a href="https://autononymous.io/">Autononymous.io</a>`;
 //document.getElementById('INFO-LOWER').innerHTML = FOOTERTEXT;
+
+//-- eStoryCover.innerHTML = `<div>${FOOTERTEXT}</div>`;
 
 // Initializing variables
 
@@ -1432,7 +1453,7 @@ async function BuildTOC() {
                 let EntryDateStr = `${pad(RelDate.getMonth()+1,2)}/${pad(RelDate.getDate(),2)}`// /${RelDate.getFullYear().toString().slice(2,4)}`
 
                 document.getElementById(TOCchapterTARGET).innerHTML += TOChtmlCHAPTER(parcel.ChapterFull,parcel.GivenName,parcel.Synopsis,EntryDateStr,AdjustedIndex(parcel.ChapterFull),DatePercentage,
-                ((today >= startday)&&(today <= (releaseday+7) )) )
+                ((today >= releaseday)&&(today <= (releaseday+7) )) )
                 // Calculating height of date progress bar:                  
 
                 if (today >= releaseday) {
