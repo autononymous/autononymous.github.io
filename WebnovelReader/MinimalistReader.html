@@ -456,7 +456,11 @@ div.LowerInfo {
     transform: translate(-50%, 0px) scale(800%, 120%) ;
     opacity: 0.3;
 }
-
+@media only screen and (max-width: 600px) {
+    div.LowerInfo {
+        top: calc(80vh - 50px);
+    }
+}
 
 @keyframes slide-up {
     0% {
