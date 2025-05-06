@@ -112,7 +112,7 @@ div.FullContainer {
     padding-top:10px;
     left:0;
     width:100vw;
-    height:90vh;
+    height:100dvh;
     /*overflow:hidden;---------------------------------------------*/
     background-color: rgba(var(--Background),1)
 }
@@ -344,7 +344,7 @@ span.ControlInfo {
 
 div.Window {
     position:fixed;
-    height:100vh;
+    height:100dvh;
     width: 100vw;
     left:50%;
     top:0;
@@ -352,7 +352,7 @@ div.Window {
     pointer-events: none;
 }
 div.ProgressSpacer {
-    height: calc( 100vh - 120px );
+    height: calc( 100dvh - 120px );
     top: 80px;
     position: relative;
   }
@@ -364,6 +364,7 @@ div.Progress {
     display: inline-flex;
     flex-direction: column;
     align-content: middle;
+    background-color: rgba(var(--Background),1);
 }
 div.Bar {    
     border: var(--DEBUGborder);
@@ -532,7 +533,7 @@ div.TableOfContents {
     background-color: rgba(var(--Background),1);
     /*border: 1px solid var(--AllText);*/
     width:100vw;
-    height:90vh;
+    height:100dvh; /* -------------------- 90vh;*/
     overflow-x: hidden;
     overflow-y: scroll;
     left:0vw;
