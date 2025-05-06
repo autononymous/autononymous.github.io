@@ -445,7 +445,7 @@ div.RightInfo {
 div.LowerInfo { 
     grid-area: 2 / 1 / 3 / 3; 
     position:absolute;
-    top: calc(80vh + 100px);
+    top: calc(100vh - 50px);
     left:50%;
     
     text-align: center;
@@ -454,8 +454,8 @@ div.LowerInfo {
     white-space: nowrap;
     font-size: 30px;
     line-height:0;
-    transform: translate(-50%, 0px) scale(800%, 120%) ;
-    opacity: 0.3;
+    transform: translate(-50%, 0px) scale(800%, 200%) ;
+    opacity: 0.5;
 }
 @media only screen and (max-width: 600px) {
     div.LowerInfo {
@@ -498,16 +498,16 @@ div.LowerInfo {
 
 @keyframes fliparrow-up {
     from {
-        transform: translate(-50%, 0px) scale(800%,  120%) ;
+        transform: translate(-50%, 0px) scale(800%,  200%) ;
     } to {
-        transform: translate(-50%, 0px) scale(800%, -120%) ;
+        transform: translate(-50%, 0px) scale(800%, -200%) ;
     }
 }
 @keyframes fliparrow-down {
     from {
-        transform: translate(-50%, 0px) scale(800%, -120%) ;
+        transform: translate(-50%, 0px) scale(800%, -200%) ;
     } to {
-        transform: translate(-50%, 0px) scale(800%,  120%) ;
+        transform: translate(-50%, 0px) scale(800%,  200%) ;
     }
 }
 
