@@ -1,0 +1,715 @@
+
+{"Manuscript":[{"DocType":"Meta","Index":0 },{"DocType":"Act","GivenName":"","SevenWordSummary":"","AutoNamePart":"","AutoNameFull":"ACT I","ActNum":1,"ChapterOverride":"","ChapterPart":"","ChapterFull":"","VerboseOverride":"","ScenePart":"","SceneFull":"","Style":"","Perspective":"Both","Index":1,"Label":"[3] Polishing Revision","Status":"No Status","Keywords":"","UUID":"1","Synopsis":"","NextPublish":"7","VerboseID":"1","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"Prologue","Body":""},{"DocType":"Chapter","GivenName":"An Introduction (In Parts)","SevenWordSummary":"Preview when their interdependence begins.","AutoNamePart":"Chapter&nbsp;One","AutoNameFull":"Chapter&nbsp;One","ActNum":1,"ChapterOverride":"Prologue","ChapterPart":1,"ChapterFull":1,"ScenePart":"","SceneFull":"","Style":"","Perspective":"Both","Index":2,"Label":"[3] Polishing Revision","Status":"No Status","Keywords":"","UUID":"1","Synopsis":"Katiya depends on Cody for the first time.","NextPublish":"7","VerboseID":"1.1","VerboseOverride":"","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"
+00","Body":""},{"DocType":"Scene","GivenName":"","AutoNamePart":1,"SevenWordSummary":"","AutoNameFull":1,"ActNum":1,"ChapterOverride":"","ChapterPart":1,"ChapterFull":1,"VerboseOverride":"","ScenePart":1,"SceneFull":1,"Style":"Default","Perspective":"Both","Index":3,"Label":"Mixed Chapter","Status":"No Status","Keywords":"","UUID":"2","Synopsis":"","NextPublish":"7","VerboseID":"1.1.1","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-00-1","Body":"
+Prologue is set in custom HTML."},{"DocType":"Act","GivenName":"","SevenWordSummary":"","AutoNamePart":"","AutoNameFull":"ACT II","ActNum":2,"ChapterOverride":"","ChapterPart":"","ChapterFull":"","VerboseOverride":"","ScenePart":"","SceneFull":"","Style":"","Perspective":"Both","Index":4,"Label":"[2] Narrative Revision","Status":"No Status","Keywords":"","UUID":"3","Synopsis":"","NextPublish":"7","VerboseID":"2","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"Part One","Body":""},{"DocType":"Chapter","GivenName":"Robot Boy","SevenWordSummary":"Cody introduces his boring work life.","AutoNamePart":"Chapter&nbsp;One","AutoNameFull":"Chapter&nbsp;Two","ActNum":2,"ChapterOverride":"Chapter One","ChapterPart":1,"ChapterFull":2,"ScenePart":"","SceneFull":"","Style":"","Perspective":"Cody","Index":5,"Label":"[3] Polishing Revision","Status":"No Status","Keywords":"","UUID":"3","Synopsis":"Cody&apos;s work life is passionless and boring, though he still holds a glimmer of ambition for a future he dreamed of.","NextPublish":"7","VerboseID":"2.2","VerboseOverride":"","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"
+01","Body":""},{"DocType":"Scene","GivenName":"Robot Boy","AutoNamePart":1,"SevenWordSummary":"Cody introduces his life after college.","AutoNameFull":2,"ActNum":2,"ChapterOverride":"","ChapterPart":1,"ChapterFull":2,"VerboseOverride":"","ScenePart":1,"SceneFull":2,"Style":"Cody","Perspective":"Cody","Index":6,"Label":"Modern World","Status":"03: Narrative Revision","Keywords":"","UUID":"4","Synopsis":"","NextPublish":"7","VerboseID":"2.2.2","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-C01-1","Body":"
+<p>&emsp;In the long, dragging years after college, all I could ever ask is to waste my life as efficiently as possible. </p>
+<p>&emsp;My mind loiters in the long lull between emails, dragging the 3D model on my computer in circles. The flat fluorescents take the office closer to a colorless center: what my colleague calls &quot;suicide gray,&quot; showing no sign of winter&apos;s transition to spring. Somewhere beyond the window shades and bleached brick walls, life awakens from its slumber in the foothills of the Rocky Mountains, trading the dormant golden brown for verdant green. And though the end of winter is supposed to bring that nostalgic chill, I&apos;m kept lukewarm by the hum of an unbalanced, rusted fan that rattles over any sound of nature.</p>
+<p>&emsp;But I notice one thing, at least. I can smell the dry acreage of cereal grasses scattered across the Rocky Mountain foothills: a sense that only comes when it&apos;s late in the fall, or after the long winter when my nose is no longer running, when the world begins to open. It&apos;s when the late sun absorbs in the fronds of dormant fields once left to shadow &mdash; that golden hour late in the workday &mdash; when an arid essence gusts through the cracked corners of the crumbling ceiling.</p>
+<p>&emsp;Our department&apos;s office is tucked in the brow of several hills that block it from a captivating view. It was home to Navidson-Monroe&apos;s Aerospace division in the sixties, still sharing a wall with the warehouse where technicians toil over our drawings. But the Aerospace team and its bean counters made their great migration in the nineties, taking their perch a couple hundred feet higher atop the foothills: glancing down upon the city of Denver, convinced their fingers feel for the pulse of the throat of the world. </p>
+<p>&emsp;So then the less-sexy divisions &mdash; like us &mdash; fell down into their musty wake, too far behind the &quot;cutting edge&quot; to earn a view beyond the cutting edge. </p>
+<p>&emsp;Working in the battery division of an aerospace company is like eating ice cream every day, but it&apos;s got raisins in it. A fine treat for a new graduate, but I crave something that tastes more like space &mdash; like Dippin&apos; Dots, or maybe those freeze-dried ice creams they sell at the science museum. It&apos;s like ordering a salad at a pizza place, or ordering a cheeseburger at a Mexican restaurant. Or any other food-related simile: I&apos;m just hungry and bored since it&apos;s so close to the end of the day, and I don&apos;t have any frozen meals left in the break room fridge.</p>
+<p>&emsp;But maybe every dream is a Pyrrhic compromise between that first, beatific vision and half of anything you ever bargained for. When I glance out the surly glass window, cocking my head at just the right angle, I can see the same shimmering solar reflectors and satellite dishes I saw from the window of my childhood bedroom. And although the Level 01 insignia on my nametag hasn&apos;t changed in two-and-a-half years, I guess I&apos;m at least physically closer.</p>
+<p>&emsp;One day I&apos;ll design rockets, I promised myself.</p>
+<p>&emsp;My father said that&apos;s what it takes to chase a dream. I believe in that freedom because I don&apos;t have a choice. I&apos;m the last chance my mother and father have to see their child make it, and when I look at the wallpaper of my brother and I on the vertical monitor, I remember I&apos;m the only one who was blessed with time.</p>
+"},{"DocType":"Scene","GivenName":"Robot Boy","AutoNamePart":2,"SevenWordSummary":"Cody takes heat from his coworkers.","AutoNameFull":3,"ActNum":2,"ChapterOverride":"","ChapterPart":1,"ChapterFull":2,"VerboseOverride":"","ScenePart":2,"SceneFull":3,"Style":"Cody","Perspective":"Cody","Index":7,"Label":"Modern World","Status":"03: Narrative Revision","Keywords":"","UUID":"5","Synopsis":"","NextPublish":"7","VerboseID":"2.2.3","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-C01-2","Body":"
+<p>&emsp;I realize I&apos;m done working on the redline when my hands stop moving. Copying changes from a red-inked engineering drawing to the computer is easy enough to get lost in thought. The music from my brother&apos;s old IPod keeps the rhythm in the keys. I pop out one of the yellowed earbuds so the lyrics don&apos;t mince the words.</p>
+<p>&emsp;In the title block: DUNSMORE, 03/08/16.</p>
+<p>&emsp;Checked by SAKURASHIMA, 03/08/17. That means I have an excuse to let my crush Kei look at it.</p>
+<p>&emsp;Designed by PRADESH, the guy who keeps giving me these  sheets with red scribbles on them, telling me exactly the changes to make, leaving no room for creativity or judgment.</p>
+<p>&emsp;Control-P. Landscape. Tabloid. Margins wide, and black-and-white lines, so the the sheet looks bleaker than the office. </p>
+<p>&emsp;My computer talks to the printer, sounding off a distant whir six rows down. I rise from the cubicle, untucking the collared shirt from my jeans, opposite of what I used to do when I started here. Seems most of my fellow pencil-pushers have settled on the fact that we&apos;re not flashy enough to get customer visits. That&apos;s for the suit-wearing showmen of the R&D division, off in their hangar.</p>
+<p>&emsp;The paper is warm when it spins two sheets off the press &mdash; one copy of my drawing, and one copy of the reference drawing I used from the fifties. The office is so quiet that I can hear it tap against the edge of the tray. It&apos;s time for an appraisal on my work, a second set of eyes, and I return to the only other engineer near my age in this division. She&apos;s poised at her standing desk when I approach her, focused on a model of a battery enclosure.</p>
+<p>&emsp;&quot;Hey there, Kei,&quot; I say. </p>
+<p>&emsp;She lifts a finger. I rest my elbow against the divide of her cubicle. She refuses eye contact, glued to some calculation as her lips move without words. Then she says: &quot;Remember seven and nine-sixteenths.&quot;</p>
+<p>&emsp;&quot;Uh . . . got it.&quot;</p>
+<p>&emsp;She takes a long pause, her manicured nails clattering against the pink, wireless keyboard. Then she draws several  lines on the pad of engineering paper, scribbling several numbers down, halting at the fifth.</p>
+<p>&emsp;&quot;Okay, what was it?&quot;</p>
+<p>&emsp;&quot;Six,&quot;</p>
+<p>&emsp;&quot;Six . . .&quot;</p>
+<p>&emsp;&quot;And . . . twenty-five sixteenths?&quot;</p>
+<p>&emsp;&quot;Twenty-five . . .&quot; She finally looks up at me with her sapphire rings though dark bangs. &quot;What&apos;s your problem?&quot;</p>
+<p>&emsp;&quot;Lots of things. Nothing work-related,&quot; I say.</p>
+<p>&emsp;&quot;I doubt that,&quot; she says, but cracks a smile as she takes the pages into her hands.</p>
+<p>&emsp;&quot;Do you have your Ouija board?&quot; I ask. </p>
+<p>&emsp;&quot;For what?&quot; She asks.</p>
+<p>&emsp;&quot;The person who made this would be a hundred and twenty,&quot; I say. &quot;Since we couldn&apos;t call them during retirement, I thought I&apos;d try the afterlife.&quot;</p>
+<p>&emsp;It gets half a laugh. &quot;I thought séances were for the sales team, always trying to predict our next contract.&quot;</p>
+<p>&emsp;&quot;They&apos;re able to sell things before we even design them,&quot; I say. &quot;How do they do it?&quot;</p>
+<p>&emsp;&quot;I wish I knew. Maybe we could get ahead for once, then.&quot; Her eyes return to the page. &quot;So what&apos;d you screw up this time?&quot;</p>
+<p>&emsp;I describe the process.</p>
+<p>&emsp; &quot;You know, I thought Student Government in high school was the end of you asking seniors for help,&quot; she says.</p>
+<p>&emsp;&quot;I&apos;d ask one of our lifers if I wanted a senior&apos;s ideas. I figured you&apos;d spare me an oral history of hand-drafting.&quot;</p>
+<p>&emsp;&quot;Sure.&quot; She gestures to the far corner of her desk, stacked neatly with folded sheets. &quot;I&apos;ll get to it later today if you add it to the pile.&quot; </p>
+<p>&emsp;&quot;Later today?&quot; I ask. </p>
+<p>&emsp;&quot;Yeah.&quot;</p>
+<p>&emsp;&quot;It&apos;s Friday,&quot; I tell her.</p>
+<p>&emsp;&quot;It&apos;s not like I have anything else interesting going on,&quot; she says.</p>
+<p>&emsp;&quot;So you&apos;re staying late again?&quot;</p>
+<p>&emsp;Her oscillating fan wafts her perfume into the air. I&apos;m assaulted with the mental rhyme of a different late Friday, one evening when it was just the two of us, the last Friday of the year before she left for college. </p>
+<p>&emsp;A memory flashes of the club room in high school half a decade ago. It was the night before the summer festival. She was sitting at the desk facing the open window. The wind caught her hair as she stapled strips of construction paper into long chains. I feel my stomach well with the same feeling I felt then, when I realized I was running out of time to make a move, before a whole year would separate us. I remember that stirring feeling of excitement when I approached her, longing for the courage to speak the words.</p>
+<p>&emsp;But she acted first. </p>
+<p>&emsp;The darkness of that room made it feel like the two of us spent an eternity in there, as if she was making up for the whole year I wouldn&apos;t see her, for the unrequited connection that began just a little too late. We laid there on the reading couch, facing each other, feeling each other, letting passion pass the hours before the scuttle of the midnight cleaning crew returned us to reality. And then&mdash;</p>
+<p>&emsp;&quot;Hello &mdash; Earth to Cody?&quot;</p>
+<p>&emsp;I realize I&apos;m watching her lips move instead of listening to her words. &quot;Uh . . . yeah? What?&quot; </p>
+<p>&emsp;&quot;How about the other three things I sent you?&quot;</p>
+<p>&emsp;&quot;Three things? Oh. The redlines, you mean.&quot; I scratch the back of my head. &quot;Still in the works. I&apos;m almost done with the second one.&quot;</p>
+<p>&emsp;&quot;But it&apos;s been like two weeks.&quot;</p>
+<p>&emsp;Naveen Pradesh peeks above the wall of his cubicle, and I know exactly what&apos;s in store.</p>
+<p>&emsp;&quot;I know. But with the enclosure redesign, I just&mdash;&quot;</p>
+<p>&emsp;Nav asks, &quot;How many did you finish today, Cody?&quot;</p>
+<p>&emsp;&quot;I did two of them,&quot; I say. &quot;Sir.&quot; My voice cracks. &quot;But I had to scan the old drawings through the projector, on the old computer, and...&quot;</p>
+<p>&emsp;&quot;Our team is behind. We need all hands on deck here, or else we&apos;re never going to beat all the stuff the machine shop is sending us.&quot;</p>
+<p>&emsp;&quot;I know that,&quot; I say. &quot;I&apos;ll&mdash;&quot;</p>
+<p>&emsp;&quot;You need to get in early. And you need to stay the full time. Like Kei: sometimes even longer than eight hours. Just because you&apos;re salaried doesn&apos;t mean every day can be a half-day.&quot;</p>
+<p>&emsp;I nod. </p>
+<p>&emsp;&quot;You want to be on her level, don&apos;t you?&quot;</p>
+<p>&emsp;I stumble over the response as that familiar pang of anxiety arrests me. My nails bite the flesh of my palms.</p>
+<p>&emsp; &quot;Y-yeah,&quot; I say.</p>
+<p>&emsp;I feel that poisonous feeling rise in my stomach, the same one I felt all those times before, every time my ambition was axed with sharp critique. The words that follow are well-rehearsed.</p>
+<p>&emsp;&quot;I promise I&apos;ll do better.&quot; I turn to Kei before retreating to my desk. &quot;And thanks. I&apos;ll have all your stuff done by the end of Monday.&quot;</p>
+<p>&emsp;&quot;End of today, Cody,&quot; Nav says.</p>
+<p>&emsp;It takes everything not to give in.</p>
+<p>&emsp;&quot;Sure, boss,&quot; I say. &quot;I&apos;m on it.&quot;</p>
+"},{"DocType":"Scene","GivenName":"Robot Boy","AutoNamePart":3,"SevenWordSummary":"Cody and Kei talk before the weekend.","AutoNameFull":4,"ActNum":2,"ChapterOverride":"","ChapterPart":1,"ChapterFull":2,"VerboseOverride":"","ScenePart":3,"SceneFull":4,"Style":"Cody","Perspective":"Cody","Index":8,"Label":"Modern World","Status":"03: Narrative Revision","Keywords":"","UUID":"6","Synopsis":"","NextPublish":"7","VerboseID":"2.2.4","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-C01-3","Body":"
+<p>&emsp;I retreat to my desk to doom-scroll through social media, trading the personal feeling of apathy for a more global feeling of hopelessness. It fills me with a certain kind of despair when I see all the marriage announcements of friends and acquaintances, like I&apos;ve continuously been behind since I never dated in college: not even Kei. I had some fun, but I was too busy for anything meaningful. And as the only child left in my family, my parents beg for grandchildren like I used to beg for sleepovers on the weekends. My profile says I&apos;m single, and it hasn&apos;t changed since the end of high school when a different childhood friend and I tried to hit it off. But like Kei and I the year before, it was just too late.</p>
+<p>&emsp;I can&apos;t help but keep scrolling to pass the time. It does little to release the burnout of five continuous hours.  If it&apos;s not social media, it&apos;s something else: endless politics; global warming; celebrity nonsense; social turmoil. And eventually &mdash; as I always do &mdash; I close the app just to open it again.</p>
+<p>&emsp;The last sliver of the workday passes. I manage to grind out the third redline a couple minutes before 4:40. I used to get in so early to be ahead of all the others, but now I get in a little after 9:00 and work until everyone else has left, jog my mouse for a while, then either change into gym clothes or head straight home. </p>
+<p>&emsp;Naveen surprises me before I can pack my bag. He approaches with his backpack over his shoulder, ready to start his weekend. </p>
+<p>&emsp;&quot;Cody. Make sure you get in early on Monday &mdash; I know you tend to get in rather late.&quot;</p>
+<p>&emsp;&quot;Oh, yeah. Sure thing, Nav,&quot; I tell him, stuffing down the aftertaste of our exchange. &quot;Is there something before the stand-up meeting? It&apos;s not on the calendar.&quot;</p>
+<p>&emsp;&quot;The rest of the team talked about it last night at our Thursday get-together. I was about to leave right now until I realized you weren&apos;t there to hear it.&quot; </p>
+<p>&emsp;His expression is distraught. The pang of fear seizes my stomach again. </p>
+<p>&emsp;&quot;What is it?&quot; I manage.</p>
+<p>&emsp;&quot;There&apos;s a meeting on Monday, nine A.M., about the new contract,&quot; he says.</p>
+<p>&emsp;&quot;We have that in the bag, right?&quot;</p>
+<p>&emsp;&quot;No. It&apos;s not looking good.&quot;    </p>
+<p>&emsp;&quot;Not good? What does that mean? As in less work? Or...&quot; My stomach turns further with the call of the void. If it&apos;s really that, and the grim reaper in HR is sharpening her scythe, I&apos;d think the surprise meeting would have happened today, giving us a weekend to mourn our benefits.</p>
+<p>&emsp;&quot;I&apos;m not sure yet. But I promise you guys will hear anything they tell me.&quot;</p>
+<p>&emsp;I swallow. If there&apos;s one good thing I can say about him, it&apos;s that he&apos;s always transparent.</p>
+<p>&emsp;&quot;Sure. Thanks, boss.&quot;</p>
+<p>&emsp;&quot;Yeah,&quot; he says, shifting the weight of his Jansport backpack, still hanging there as if he&apos;s trying to remember something.</p>
+<p>&emsp;I try at humor.</p>
+<p>&emsp;&quot;Hey. If it&apos;s catered, I&apos;ll get there whenever you want me. You know this company runs on grocery store donuts.&quot;</p>
+<p>&emsp;&quot;I&apos;m sure there will be something.&quot; </p>
+<p>&emsp;He smirks a little. Feels like joking with my doctor at a well-check, or the cashier&apos;s response when the unscanned item should be free. </p>
+<p>&emsp;&quot;There was one more thing,&quot; he says, lingering there. &quot;There was something you told me last week . . .&quot; His words are followed by the silence of the empty cubes and the 3D printer&apos;s persistent whine. He&apos;s trying to remember something, and after a couple seconds of scratching his chin, it finally hits him. &quot;Oh yeah &mdash; you get to move into the new place today, is that right?&quot;</p>
+<p>&emsp;&quot;That&apos;s right,&quot; I say. </p>
+<p>&emsp;&quot;Congratulations.&quot;</p>
+<p>&emsp;&quot;Thanks. My parents are helping me unload my stuff. But Mom seems kind of sad, though.&quot;</p>
+<p>&emsp;&quot;Sure. Took my wife a while to get over it when Raj left,&quot; Nav says. &quot;But he went out of state, though.&quot;</p>
+<p>&emsp;&quot;Oh. Nice,&quot; I say.</p>
+<p>&emsp;&quot;Off to California.&quot;</p>
+<p>&emsp;&quot;That&apos;s cool,&quot; I add. &quot;Just like I did.&quot;</p>
+<p>&emsp; &quot;Yeah,&quot; he says.</p>
+<p>&emsp;&quot;Great,&quot; I say.</p>
+<p>&emsp;&quot;Yeah. For Silicon Valley,&quot; he says. &quot;Computer science.&quot;</p>
+<p>&emsp;&quot;Wow,&quot; I say.</p>
+<p>&emsp;&quot;Yeah. For some startup. He says he&apos;s enjoying it,&quot; Nav says.</p>
+<p>&emsp;&quot;Sweet,&quot; I add, completely tapped out on adjectives.</p>
+<p>&emsp;He shifts the weight of his backpack, steadying his square-frame glasses. &quot;Well, congrats. It&apos;s a big step. You&apos;ve earned it, my friend,&quot; he says, with a light smile. &quot;Just don&apos;t lift so much this weekend that you sleep in.&quot;</p>
+<p>&emsp;&quot;Yep. Nine A.M. sharp. And free coffee,&quot; I say.</p>
+<p>&emsp; &quot;Always,&quot; he says, giving the same thumbs-up he does at the end of any day. &quot;Thanks for getting those redlines done.&quot;</p>
+<p>&emsp;I nod. Then my computer times out from half an hour of inactivity before I can lock it.</p>
+<p>&emsp;I stare at the reflection, struggling to reconcile what I see. A silhouette of overgrown, short brown hair glares back at me, his stubble long past five-o&apos;clock, roughly combed into a corporate shape. His expression is sunken like melted wax, crescents etched beneath his sockets, and melting further every day. </p>
+<p>&emsp;Below the monitor, a hefty pile of work is bottomless. I can&apos;t bring myself to touch the rest of it today, so instead I hide my head in my hands, trying not to wet my palms with my eyes. A couple minutes pass after the electronic door clicks behind Nav, and another row away, the gentle sound of keystrokes cease their clatter.</p>
+<p>&emsp;My screen lights with something in the lower-right corner.</p>
+<p>&emsp;SAKURA_KEI 16:57:12:
+Got a minute?</p>
+<p>&emsp;I fumble the login twice before I send the reply.</p>
+<p>&emsp;DUNSMO_COD 16:58:21:
+?</p>
+<p>&emsp; I can hear her heels in the linoleum crossway before she reaches the flourescent-bleached carpet, and I&apos;m quick to wipe my eyes.</p>
+<p>&emsp;&quot;Hey, Cody. I&apos;m sorry I caused all that. I know Nav can be pretty direct about things,&quot; Kei says.</p>
+<p>&emsp;&quot;No, it&apos;s fine. He&apos;s right, and it doesn&apos;t bother me . . . but,&quot; </p>
+<p>&emsp;&quot;But what?&quot; She asks.</p>
+<p>&emsp;I perk my ears to the rest of the office, to ensure we&apos;re the only ones left. It still comes out as a raucous whisper.</p>
+<p>&emsp;&quot;But I&apos;m just so tired, you know?&quot; </p>
+<p>&emsp;&quot;Of course,&quot; she says.</p>
+<p>&emsp;The sadness crystallizes to anger, and I pull a restrained splinter of it out of me. &quot;So when do I get to design something? Where&apos;s the industry life that University sold to me? All those senior projects that let us play pretend, tossing us three hundred bucks a team to think up inventions that might change the world. It&apos;s no wonder that none of our professors tried living in the real world.&quot;</p>
+<p>&emsp;She nods. &quot;No kidding.&quot;</p>
+<p>&emsp;&quot;I thought every day in industry would be fun. Hell, I was like one of those graduating preschoolers, you know, saying he wants to be a cop so he can &apos;shoot bad guys&apos; . . . or whatever it is that Paw Patrol tells your little brothers the criminal justice system is about.&quot;</p>
+<p>&emsp;She laughs hard enough to snort. It&apos;s too late to cover her mouth. &quot;They&apos;re in middle school now, so I don&apos;t think they watch that stuff anymore. They&apos;re into anime now.&quot;</p>
+<p>&emsp;&quot;But all we get to do is fix mistakes. Everything that exists in this company has already been designed, and we&apos;re just left with the paperwork.&quot; </p>
+<p>&emsp;&quot;I thought you loved paperwork,&quot; Kei says. &quot;You were so good at it during our campaign in Student Gov.&quot;</p>
+<p>&emsp;&quot;Because you made me do it. That&apos;s all a Vice President is good for.&quot;</p>
+<p>&emsp;&quot;Please, Cody. You were good at more than that,&quot; she says. </p>
+<p>&emsp;My heart almost skips a beat. But she&apos;s talking about the work.</p>
+<p>&emsp;&quot;Tell me,&quot; I ask. &quot;How long have you been here?&quot;</p>
+<p>&emsp;She counts the seasons on her fingers. </p>
+<p>&emsp;&quot;About three years. Roughly one more than you&apos;ve been here &mdash; because I got out of college a quarter early.&quot;</p>
+<p>&emsp;&quot;And when did you move up?&quot; </p>
+<p>&emsp;She seems reluctant, as if it will hurt me. </p>
+<p>&emsp;&quot;Please, just tell me,&quot; I ask.</p>
+<p>&emsp;&quot;After . . . a year and two months, but we were busy, you know, and projects kept flowing. They could afford it.&quot;</p>
+<p>&emsp;I turn away from the monitor. My eyes settle on the shadow cast by the Space Division building. &quot;I&apos;ll get there. And to the next thing, I know. It&apos;s just going to be a while.&quot;</p>
+<p>&emsp;&quot;You&apos;re a good worker. And you&apos;re doing fine,&quot; she says. I can feel her hand on my shoulder, sending sparks through my nerves. &quot;There&apos;s a reason I picked you to run with me.&quot;</p>
+<p>&emsp;&quot;So it wasn&apos;t just looks,&quot; I say. &quot;Or my cultural background. I know I tested well with the Lacrosse Bro demographic.&quot;</p>
+<p>&emsp;&quot;You were one of them. But, no, that&apos;s not why.&quot; She shares a genuine smile. &quot;You should know you&apos;re more than any of that,&quot; she says, looking at me the same way she used to &mdash; but I know better now than to read any further. </p>
+<p>&emsp;&quot;Thanks,&quot; I say.</p>
+<p>&emsp;&quot;You should go home. You&apos;ve been working on that last redline for three days, and now it&apos;s over. Call it a week.&quot;</p>
+<p>&emsp;&quot;It&apos;s only four-thirty,&quot; I say. &quot;How long have you been here?&quot;</p>
+<p>&emsp;&quot;Since six or so.&quot;</p>
+<p>&emsp;&quot;Well, you&apos;re a better woman than I am.&quot; Then I add, &quot;Since I&apos;m not.&quot; Then I add, &quot;A woman, you know.&quot;</p>
+<p>&emsp;&quot;Enough,&quot; she laughs. &quot;Go set up your new place. And you know . . . I&apos;d love to stop by and check it out sometime.&quot;</p>
+<p>&emsp;My heart skips. &quot;Sure,&quot; I say. &quot;And . . .&quot; maybe we could stop by after a movie this weekend?</p>
+<p>&emsp;&quot;And what?&quot; She asks.</p>
+<p>&emsp;&quot;And . . . I&apos;ll see you tomorrow.&quot;</p>
+<p>&emsp;&quot;You&apos;ll see me Monday,&quot; she says. &quot;Don&apos;t come in tomorrow. Even I won&apos;t be here.&quot;</p>
+<p>&emsp;&quot;I thought you slept here,&quot; I tell her.</p>
+<p>&emsp;&quot;Not on the weekends. Just set your alarm on Sunday: you can&apos;t be late again.&quot; </p>
+<p>&emsp;She returns to her row. I gather my things, throwing my bag over my shoulder to go home and recover from this exhausting brand of restlessness. </p>
+<p>&emsp;I pass her row of cubes lit by a single light from her pink lamp. She&apos;s comfortably buried in the stacks of drawings, and I find a part of me wondering how I ever found the strength to carry that weight.</p>
+"},{"DocType":"Chapter","GivenName":"Tiger Girl","SevenWordSummary":"Katiya celebrates a stressful work transition.","AutoNamePart":"Chapter&nbsp;Two","AutoNameFull":"Chapter&nbsp;Three","ActNum":2,"ChapterOverride":"Chapter Two","ChapterPart":2,"ChapterFull":3,"ScenePart":"","SceneFull":"","Style":"","Perspective":"Katiya","Index":9,"Label":"[3] Polishing Revision","Status":"02: Polished Revision","Keywords":"","UUID":"7","Synopsis":"Katiya crosses the threshold of a new stage of training, threatening her with being cast into the horrors of the war.","NextPublish":"7","VerboseID":"2.3","VerboseOverride":"","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"
+02","Body":""},{"DocType":"Scene","GivenName":"","AutoNamePart":1,"SevenWordSummary":"Katiya introduces how stressful her life is.","AutoNameFull":5,"ActNum":2,"ChapterOverride":"","ChapterPart":2,"ChapterFull":3,"VerboseOverride":"","ScenePart":1,"SceneFull":5,"Style":"Katiya","Perspective":"Katiya","Index":10,"Label":"Fantasy World","Status":"02: Polished Revision","Keywords":"","UUID":"8","Synopsis":"","NextPublish":"7","VerboseID":"2.3.5","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-K01-1","Body":"
+<p>&emsp;He said that I would never find peace in shouldering the weight of all the world. He said it wasn&apos;t because I was weak, or that I was naive &mdash; or that I wasn&apos;t aware of all the reasons we had to be afraid.</p>
+<p>&emsp;He said it was because those feelings were wasting my life. And then he died the next day in his sleep: burned alive with his youngest progeny that lacked the strength to fight back.</p>
+<p>&emsp;My father made the same mistake that all the other villagers make, thinking that suffering is only caused by change. They think the discomfort in their everyday lives is just an affect of higher forces &mdash; whether by the whims of the Gods or the everlasting hunger of our war. They assume the rare breadths of stillness are caused by a break in the action: that war and its wreckage are just the affects of an empire&apos;s ambition; that all the fighting is only driven by greed.</p>
+<p>&emsp;That if we stopped fighting, no one would have to die.</p>
+<p>&emsp;They fall to that temptation to live the lie, to say it so long and loud that they think their words can incarnate it. Gods know it&apos;s as effective as sleeping beneath barricades of bedsheets to ward off the Chymaera, hiding as the East shakes the ground with its ravenous hunger.</p>
+<p>&emsp;But they&apos;re wrong. They have no idea of how much violence has to happen just to keep things exactly the way they are.</p>
+"},{"DocType":"Scene","GivenName":"","AutoNamePart":2,"SevenWordSummary":"Katiya celebrates the next step of training.","AutoNameFull":6,"ActNum":2,"ChapterOverride":"","ChapterPart":2,"ChapterFull":3,"VerboseOverride":"","ScenePart":2,"SceneFull":6,"Style":"Katiya","Perspective":"Katiya","Index":11,"Label":"Fantasy World","Status":"No Status","Keywords":"","UUID":"9","Synopsis":"","NextPublish":"7","VerboseID":"2.3.6","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-K01-2","Body":"
+<p>&emsp;I hoped this week would never come. </p>
+<p>&emsp;Six months have passed since we arrived here. We were taken straight from graduation, the first time they hitched wagons to motorcars instead of horses.</p>
+<p>&emsp;It was as soon as we dropped our bags in the barracks that the Royal Guardsmen kept us busy in every waking moment, spending every second of daylight training in the militarized city of Gaffesend. And every night, I found myself at the taverns (though I never touched so much as a drop of ale), dragging my boyfriend Jullian out of the barracks until light crested over the horizon; refusing to be alone; begging to forget the impermanence of this small breadth of freedom.</p>
+<p>&emsp;Yet that freedom ends today. </p>
+<p>&emsp;I find myself here in Gaffesend Tavern, sitting at a bartop, watching the bustling narrow street in front of the grand lake, wondering why Jullian hasn&apos;t bothered to approach me. I hate drinking because it always makes me feel like I&apos;m too weak to face reality. Before long, I realize I&apos;m not watching the exits &mdash; and the more I keep pace with my male comrades, the more I find some stupid hope that this dizziness might shake my own feelings loose. I swirl the crimson ale around in the wooden mug to free the bubbles, envying how easily they float to the surface. </p>
+<p>&emsp;An hour passes since the close of labour. The cobblestone streets bustle with villagers returning home from a long day&apos;s work. There are four of us that watch from the window, entranced by the balance of energy between two worlds. Now is that rare hour when the drunken stupor of the pub&apos;s regulars matches the stumble of the tiresome commoners. The sun has already vanished below the mountains, but its colorful influence reflects across the lake.</p>
+<p>&emsp;I get the spins as my childhood friend Bertram talks to Ryder and Cae, two shy recruits that would sit alone if we weren&apos;t all friends. None of us would be here if they weren&apos;t dangling the keys to our new homes at the end of it, forcing us all to weather the best and worst of our graduating class. Somewhere behind us, the others laugh and cheer. They&apos;ve convinced themselves that this transition is a triumphant victory, too shortsighted to see that life in Gaffesend rides on the results of an enervating final test. </p>
+<p>&emsp;There&apos;s no more simulations, practice runs, or drills. Failure is a one-way ticket to the front lines, and I will never get another chance.</p>
+<p>&emsp;I take another sip, coaxing that feeling of joy to wash over me. I can tell that Bertram thinks the same thoughts when his eyes rest on the village on the other side of the lake. He nudges my right arm before opening his mouth to speak, gesturing to the twelve other trainees behind him.</p>
+<p>&emsp;&quot;To them it&apos;s just a random assignment, no more than the toss of a coin. But to you and I, and maybe Ryder, this is divine. This is the will of the Gods, Katiya. This is the first sentence in our declaration of war.&quot;</p>
+<p>&emsp;I tell him it is, and with my next swallow of ale, I prove it.</p>
+<p>&emsp;The details are hazy. My mind protects me by forgetting everything I witnessed as a young child, and the harder I push to excise them, the deeper they dig. All I have left is the memory of Bertram pulling me from the smoldering cabin, dragging me to my mother Stella so that our fractured families could escape to the south.</p>
+<p>&emsp;&quot;For years I was so angry,&quot; I tell him. &quot;If I could have joined the forces then, I would have put off all the schooling. I would have gone straight to the front lines to find justice for what they did to us.&quot;</p>
+<p>&emsp;&quot;So why didn&apos;t you?&quot; He asks with a smirk.</p>
+<p>&emsp;I shrug. &quot;How could all Chymaerans be evil if there are people like Pax that have their blood?&quot;</p>
+<p>&emsp;I gesture to the half-blooded halfwit behind us. Paxton uses his Chymaeran Essence to try to freeze the watered-down liquor, enough to stack a seventh shot glass as the others cheer him on, drawing the attention of all the other patrons. Even Ryder puts his book down for a second to watch, letting out a small chuckle as it wavers.</p>
+<p>&emsp;&quot;You have honor and a kind heart, and it&apos;s what I like about you. What I always have,&quot; Bertram says. He leans close enough that I can feel his firm shoulder press against mine. &quot;But keep enough of that anger. If we don&apos;t make the program &mdash; or if the enemy breaks the lines and crosses the lake in the winter &mdash; that fury is the only thing that&apos;s going to keep us alive.&quot;</p>
+<p>&emsp;&quot;Rest assured it runs in my circuits with the Essence,&quot; I tell him. &quot;The long winter ends with our probation. It&apos;s spring now, and we have a&mdash;&quot;</p>
+<p>&emsp;My words cut short when the tower crashes on the eighth glass. Pax presses his face to the table&apos;s surface, sucking up whatever he can of the liquor and the attention. </p>
+<p>&emsp;But I still find that I&apos;m unable to escape the gravity of that feeling &mdash; that dragging desire that&apos;s followed me since the beginning. The desire to have that one moment that validates all of it, that makes it all worth something. And I pray to the Gods that longing is stronger than the fear of what lies ahead. </p>
+"},{"DocType":"Scene","GivenName":"","AutoNamePart":3,"SevenWordSummary":"Chief Aldrin introduces their probational exams.","AutoNameFull":7,"ActNum":2,"ChapterOverride":"","ChapterPart":2,"ChapterFull":3,"VerboseOverride":"","ScenePart":3,"SceneFull":7,"Style":"Katiya","Perspective":"Katiya","Index":12,"Label":"Fantasy World","Status":"No Status","Keywords":"","UUID":"10","Synopsis":"","NextPublish":"7","VerboseID":"2.3.7","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-K01-3","Body":"
+<p>&emsp;It all starts when Chief Aldrin climbs the small stage. Tonight it&apos;s edicts instead of music, and he takes a swig from his mug to make sure the words sound like a toast instead of orders.</p>
+<p>&emsp;&quot;It was three months ago that you all graduated in the top of your class. Instead of heading straight to the front lines, you were chosen to challenge yourself with a higher purpose. You demonstrated that you might have what it takes to join our ranks full-time. And starting tomorrow, you&apos;ll get your chance to prove yourself as something special.&quot;</p>
+<p>&emsp;Aldrin Valensend pauses expecting cheers, but he&apos;s met with silence. The cadets&apos; faces fall when reality crashes their party.</p>
+<p>&emsp;&quot;Or else it&apos;s off to the meat grinder,&quot; Ryder mutters, closing his book on an earmarked page. &quot;The machine is hungry again.&quot;</p>
+<p>&emsp;So hungry they&apos;d let in women like me, I think. To wear the men&apos;s leftovers.</p>
+<p>&emsp;&quot;S-so hungry they&apos;d let in outsiders like me, I guess.&quot; Cae&apos;s ears twitch as she mutters into her cup. The Ahkvan swishes her tail with apprehension, and when Aldrin opens his mouth to try to rally us again, she withdraws her face from the mug, saturating the bronze fur on her face with a fine mustache of suds.</p>
+<p>&emsp;&quot;Look. I can tell you&apos;re all nervous,&quot; he says. &quot;It&apos;s why I have the kegs here, to try to loosen you up a little,&quot; he says, taking another swig as if it will get him one sip closer to connecting with us. &quot;Trust me, lads. There&apos;s fear in every class &mdash; I&apos;ve seen fifteen in my time, and the reaction is the same every night before. But I want you to understand that you are not fighting for a limited number of slots. There is not a set number: you have already proved your excellence in the Capital. And if you keep that excellence, you will join us. I mean, Katiya&apos;s brother Erik joined us last year.&quot; He turns to me for validation. &quot;Didn&apos;t Erik say it wasn&apos;t that bad?&quot;</p>
+<p>&emsp;I say, &quot;It wasn&apos;t bad for his health, at least. Without all the drinking, he dropped a near twenty pounds.&quot;</p>
+<p>&emsp;The cadets chuckle, and Aldrin looks a little more self-assured.</p>
+<p>&emsp;&quot;Well, I can assure you that the last three months is a hard as this probation gets.&quot; He holds up a stamped sheet of vellum scrawled with ink. &quot;You see this page?&quot;</p>
+<p>&emsp;We all recongize it immmediately. It was taken straight from the posting board outside the field office.</p>
+<p>&emsp;&quot;This system hearkens back to the old days. Back to those centuries ago when the world was vastly unexplored: those centuries when bands of brave adventurers took tasks to be paid in Kine, back when the empire&apos;s reach was shorter. When ruins and old dungeons were unexplored, before we could raise whole armies with the singnal single &mdash;&quot; he stutters, wetting his tongue with another sip&mdash; &quot;erm, single signal, of a wire.&quot; He waves the document in his hand, and the air is quiet enough to hear the heavy wax seal shake the paper. &quot;This is the lifeblood of our operation. We call them quests.&quot;</p>
+<p>&emsp;The cadets cringe. As if any of these tasks could be considered heroic, I think.</p>
+<p>&emsp;Bertram nudges me. &quot;Did this process come out of a fable?&quot;</p>
+<p>&emsp;&quot;But it&apos;s not slaying monsters. Or, at least, not most of them. Maybe one of our elders has a problem with rats that savaged her Essenced crops, and they might start a fire if they gnaw the wires. Maybe it&apos;s a domestic dispute that needs authority. Or maybe it&apos;s a family near the eastern border that wants to feel safe.</p>
+<p>&emsp;Those are the ones I&apos;ll take, I think.</p>
+<p>&emsp;&quot;And then there&apos;s the ones that take a little more courage. Scouting positions. Thrusting yourself just a small distance beyond the lines to make sure there&apos;s nothing there, prodding at the Purgatory Mountains with one of our mentors.&quot;</p>
+<p>&emsp;My stomach drops at the thought, but I hate that feeling.</p>
+<p>&emsp;He concludes, &quot;These are the quests you will be completing. And there is always an overwhelming number of them, so you will never have a dull moment. And&mdash;&quot;</p>
+<p>&emsp;A cadet cuts him off without raising his hand.</p>
+<p>&emsp;&quot;So what, then, we just do them?&quot;</p>
+<p>&emsp;&quot;You want to wait for me to finish, Pax? Gods above,&quot; Aldrin says. &quot;Yes. You take them. You finish them. And you get them signed off and stamped by the ones that wrote them, whether they&apos;re townsfolk or the Knights of the Royal Guard. You hold on to them, and every month you submit them.&quot;</p>
+<p>&emsp;I can predict the next question before he asks it. All I wonder is if he&apos;ll raise his hand this time, and surely enough:</p>
+<p>&emsp;&quot;Well, do we have to do some of the hard ones, or else we&apos;ll be sent to the war?&quot; </p>
+<p>&emsp;The nervous air breaks with laughter. Pax&apos;s hand is raised this time, and it stays there.</p>
+<p>&emsp;&quot;No, of course not. Remember when I said you already proved yourselves? This is only about reaching a minimum.&quot;</p>
+<p>&emsp;&quot;Of how many?&quot;</p>
+<p>&emsp;&quot;Shut your mouth, Pax,&quot; Ryder says, but he cracks a smile. The room&apos;s laughter grows.</p>
+<p>&emsp;&quot;Of . . . no number, Gods damn it!&quot; Aldrin balls his fists, but finds relief at how the joyful spirit returns to his young cadets. &quot;You&apos;ll do as many as you think is right. And we&apos;ll see how many you do.&quot;</p>
+<p>&emsp;We all seem to feel a little better. The Ahkvas telegraph their feelings the easiest: I can see Cae&apos;s frayed tail loosen as she relaxes.</p>
+<p>&emsp;&quot;So.&quot; Aldrin clears his throat. &quot;I know that small chance scares you, but I want you to forget it. You&apos;ve worked for years and years to get out into the world beyond the capital, and here you are! You better be damn sure that you live up to that. Get closer with the people of our town. Assimilate yourself into our community. Spend time with your comrades between quests: go hike a trail, head to the hot spring on a day off, and listen well to the senior guardsmen, all right?&quot;</p>
+<p>&emsp;&quot;Sir, yes sir!&quot; we shout from habit.</p>
+<p>&emsp;&quot;No, no! This isn&apos;t training anymore. Stop that,&quot; he barks. &quot;Work hard and live well. Make this time feel like you&apos;re the adventurers of the old days. And, please &mdash; do something other than drink here every night, understood?&quot;</p>
+<p>&emsp;&quot;Sir-&quot; We hesitate, raising our mugs instead.</p>
+<p>&emsp;&quot;Fill up, lads,&quot; he says. &quot;A toast to your future!&quot;</p>
+"},{"DocType":"Scene","GivenName":"","AutoNamePart":4,"SevenWordSummary":"Jullian ushers Katiya back to her place.","AutoNameFull":8,"ActNum":2,"ChapterOverride":"","ChapterPart":2,"ChapterFull":3,"VerboseOverride":"","ScenePart":4,"SceneFull":8,"Style":"Katiya","Perspective":"Katiya","Index":13,"Label":"Fantasy World","Status":"No Status","Keywords":"","UUID":"11","Synopsis":"","NextPublish":"7","VerboseID":"2.3.8","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-K01-4","Body":"
+<p>&emsp;The fledgling Royal Knights form a line at the kegs, their mugs wavering as suds spill across the warped wooden floorboards. We raise our full cups as color drains from the sky, and somewhere across Lake Garrison, the faint amethyst glow of Chymaeran Essence emanates from the silhouetting pines.</p>
+<p>&emsp;I throw back another two fills on a challenge, and not long after, I find myself among the last of our group. Most of the others left to explore their new townhomes as official trainees of the Royal Guard. Cae and Ryder vanished as soon as possible. Some of the others dragged Pax outside so he wouldn&apos;t vomit on the floor, and I haven&apos;t seen him since.</p>
+<p>&emsp;Jullian is still distant, chatting in the corner with his group of friends. Bertrand sits next to me on the long wooden bench in the corner, careful to keep us from touching though he sits rather close, enough for me to smell the booze on his breath.</p>
+<p>&emsp;&quot;You know,&quot; he stammers, &quot;I haven&apos;t said something for a while.&quot;</p>
+<p>&emsp;&quot;What something?&quot; I ask, afraid to risk standing or else I&apos;ll crash through the coffee table. I twirl the key around my finger in the opposite direction of the twisting world.</p>
+<p>&emsp;&quot;Something ever,&quot; he says, then clarifies, &quot;Ever said, yeah.&quot;</p>
+<p>&emsp;&quot;Ever? Like, ever ever?&quot;</p>
+<p>&emsp;&quot;Ever,&quot; he says. &quot;Never, I mean. And I don&apos;t know if now is the right time.&quot; Bertrand looks almost uncomfotable. His blue eyes rattle in his skull when he tries to look at me, brushing his dark hair to the side. &quot;I&mdash;&quot;</p>
+<p>&emsp;A hand grabs my arm. It&apos;s Jullian.</p>
+<p>&emsp;&quot;It&apos;s time to go home, Katiya,&quot; he says.</p>
+<p>&emsp;&quot;But why?&quot; I ask.</p>
+<p>&emsp;&quot;Because we have to get up early tomorrow.&quot;</p>
+<p>&emsp;&quot;For what?&quot; I ask.</p>
+<p>&emsp;&quot;For the first day of work, remember?&quot; He says.</p>
+<p>&emsp;I struggle to focus my mind, but I manage to ask the question. &quot;Then why in Khiras&apos; name did the Commander plan a party the night before?&quot;</p>
+<p>&emsp;Jullian pauses for a second, while Bertram nods in agreement. &quot;That&apos;s actually a really good question,&quot; Jullian says. &quot;Maybe as a test? Or just so he can scold the ones that don&apos;t show up tomorrow?&quot;</p>
+<p>&emsp;I mutter something even I don&apos;t understand when my stomach tries to transition from sitting to standing. My body goes limp when he escorts me from the couch.</p>
+<p>&emsp;Jullian turns to Bertram. &quot;You should leave, too.&quot; He returns an uncomfortable glare when Jullian stabilizes me in an embrace, muttering something about him being mad because his parents gave his name too many L&apos;s.</p>
+<p>&emsp;&quot;I guess we&apos;re going,&quot; I tell Bertram.</p>
+<p>&emsp;&quot;Well, get home safe,&quot; he mutters, losing his campaign against gravity as his body crashes against the vacant bench.</p>
+<p>&emsp;Jullian&apos;s thin as a reed, but he&apos;s strong enough to escort me from the pub. The air is crisp and cold when we step outside. Our boots crunch in the melting frost from winter&apos;s last snowstorm, and we find a relief from the humidity of twenty-some cadets. Beneath his bangs of dirty blonde hair, he always seems to hold a permanent look of discontent, but I know it&apos;s not because he&apos;s angry.</p>
+<p>&emsp;&quot;Why didn&apos;t you join me? Sitting with all the quiet ones,&quot; he says.</p>
+<p>&emsp;&quot;They&apos;re my friends,&quot; I tell him. &quot;And they could be yours if you spent more time with all of them.&quot;</p>
+<p>&emsp;He tensions his fingers in mine. &quot;You still could have come by, though.&quot;</p>
+<p>&emsp;And so could you, I think, but it&apos;s less effort to just apologize. &quot;I&apos;m sorry.&quot;</p>
+<p>&emsp;&quot;I know you&apos;re satisfied with the friends you have, but I just want to meet new people. And, compared to the city, our assignment here feels like a second chance for someone like me.&quot;</p>
+<p>&emsp;I pause for a moment. &quot;What do you mean, &apos;a second chance?&apos;&quot;</p>
+<p>&emsp;&quot;No, no! I mean, I wasted so many years of my life afraid to make friends. It was so easy to tell myself that I shouldn&apos;t bother trying &mdash; that I was too busy taking care of my brothers when my mother spent her days slaving away on the looms.&quot;</p>
+<p>&emsp;I nod, coaxing him to continue.</p>
+<p>&emsp;&quot;So many of my younger years I wasted. That was until you came along and showed me that I was more than that, that I was worth it.&quot;</p>
+<p>&emsp;&quot;Well, you are worth it,&quot; I say. &quot;You should know that.&quot;</p>
+<p>&emsp;&quot;But do you see what I mean? Most days it feels like I can&apos;t even speak right. You spend you days with one core group of friends because you&apos;ve already figured it out, but every time I gather the courage to speak, it feels like a performance.&quot; He sniffles from the cold. &quot;You&apos;re a bird that was pushed out of the nest at just the right time to learn to fly, but I never left the nest. And now my body is so much heavier, and my wings feel so uncomfortable.&quot;</p>
+<p>&emsp;&quot;I&apos;ve always said you can practice with me,&quot; I tell him.</p>
+<p>&emsp;&quot;But it comes so naturally to you, though. You&apos;re so beautiful. The world begs for you to interact with it, but I&apos;m just average-looking.&quot;</p>
+<p>&emsp;&quot;So you&apos;re saying that all I have going for me is my looks?&quot; I grab the collar of his shirt as I slur the words, but not hard enough to come off as real anger. &quot;That&apos;s all you think of me, huh, that I&apos;m just a dazzling piece of arm candy? I&apos;m a Gods-damn warrior!&quot;</p>
+<p>&emsp;He stutters over an apology. Maybe he still struggles to tell the difference between anger and sarcasm. My hands tension further around his shirt, and I derive an odd pleasure from seeing him squirm a little here and there.</p>
+<p>&emsp;I feel my fingers trace past his left ear, grazing the hairs of his neck before I draw him down to my height. &quot;Then maybe you can show me with your actions, if the words aren&apos;t enough.&quot;</p>
+<p>&emsp;He hesitates for a moment, but the resonant pull of our bodies&apos; Essence is too strong. I can feel his heartbeat hasten as the feeling goads him closer. I plant kisses on his neck, and for several minutes, we allow our anxieties to precipitate the act that absolves them.</p>
+<p>&emsp;The lamplighter walks around us, using his Essence to light the streetlamps, and I nearly lean the two of us into a bush. I can feel him surrender to his instincts when his arms embrace me, and below, I can feel evidence of his excitement.</p>
+<p>&emsp;&quot;I think we should get home,&quot; he says. &quot;To yours.&quot;</p>
+<p>&emsp;My free hand fumbles for my pocket, then in my pocket, for the iron key labeled BREAKEY-HILDE. It surprises me how well I can do two things at once.</p>
+<p>&emsp;&quot;But my stuff from the barracks is still outside,&quot; I say. &quot;I have to unpack!&quot;</p>
+<p>&emsp;&quot;Then we&apos;ll toss it inside,&quot; he says. &quot;You can unpack tomorrow.&quot;</p>
+"},{"DocType":"Chapter","GivenName":"Firsthand Home","SevenWordSummary":"Cody spends his first night at home.","AutoNamePart":"Chapter&nbsp;Three","AutoNameFull":"Chapter&nbsp;Four","ActNum":2,"ChapterOverride":"Chapter Three","ChapterPart":3,"ChapterFull":4,"ScenePart":"","SceneFull":"","Style":"","Perspective":"Cody","Index":14,"Label":"[3] Polishing Revision","Status":"No Status","Keywords":"","UUID":"12","Synopsis":"Cody drives home from work late, and spends the first night in his new home.","NextPublish":"7","VerboseID":"2.4","VerboseOverride":"","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"
+03","Body":""},{"DocType":"Scene","GivenName":"Firsthand Home","AutoNamePart":1,"SevenWordSummary":"Cody drives home on a nostalgic road.","AutoNameFull":9,"ActNum":2,"ChapterOverride":"","ChapterPart":3,"ChapterFull":4,"VerboseOverride":"","ScenePart":1,"SceneFull":9,"Style":"Cody","Perspective":"Cody","Index":15,"Label":"Modern World","Status":"No Status","Keywords":"","UUID":"13","Synopsis":"","NextPublish":"7","VerboseID":"2.4.9","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-C02-1","Body":"
+<p>&emsp;&quot;I can unpack it all tomorrow. Let&apos;s just toss it all inside.&quot;</p>
+<p>&emsp;&quot;But you have to unpack,&quot; my mom says. &quot;All the stuff from your bedroom is still in our living room!&quot;</p>
+<p>&emsp;It surprises me how incapable I am of doing two things at once. As I approach my car, my free hand fumbles in my pocket, searching for my keys, and I grab them by the piece of painters&apos; tape that&apos;s still stuck to the new house key.The blue strip is scribed in Sharpie with the name DUNSMORE, and as I flip it around with a single hand to grab my car key, I nearly trip down the switchback of concrete stairs leading to the parking lot, launching my keys into the air.</p>
+<p>&emsp;&quot;What happened?&quot; My mother asks.</p>
+<p>&emsp;&quot;Nearly tripped down the stairs,&quot; I say. &quot;You know the aerospace guys have an elevator? Their entrance looks like some kind of brutalist doomsday bunker. Our stairway is so worn from forty years, it&apos;s practically a slide.&quot;</p>
+<p>&emsp;&quot;Huh,&quot; she says. &quot;Well, we said we were going to do this today, and Dad has his RV convention tomorrow morning, so we can&apos;t do it then.&quot;</p>
+<p>&emsp;&quot;He doesn&apos;t have to help,&quot; I say. &quot;I literally got my degree in how to measure stuff. I&apos;m more than capable of drilling holes in the wall, you know.&quot;</p>
+<p>&emsp;&quot;But you know how excited he is to help you, Cody,&quot; she says. &quot;He wouldn&apos;t stop telling the Richards at dinner how excited he is that his boy&apos;s moving out. &apos;Forging his own way,&apos; I think he said.&quot;</p>
+<p>&emsp;&quot;Really?&quot; I stoop down to grab the keys, careful not to twist my damn ankle even further. &quot;It&apos;s spring now. Who&apos;s going to mow the lawn the way he likes it? I don&apos;t think any of the neighbor kids are gonna mow it twice just so it can have that fancy &apos;checker&apos; look. They can&apos;t be bought off with ice cream like me.&quot;</p>
+<p>&emsp;&quot;You&apos;re doing that thing where you try to change the subject,&quot; she says. &quot;We&apos;re coming over today, Cody,&quot; then adds, &quot;at least we&apos;re getting it over with. Then you won&apos;t have to see us for a week.&quot;</p>
+<p>&emsp;&quot;It&apos;s not like that,&quot; I insist. &quot;You guys are everything to me. Why do you think I moved so close? So you can do my laundry?&quot; I trundle through the vacant, dusty lot as I hold the end of the key to my chin, spamming the lock button. A few steps later, my Subaru chirps in response: one of the few cars left in the hundred-car-lot, parked in the last spot left against the tall barbed-wire fence. Drained of my stamina after three emails and a few redlines, I try not to audibly sigh, doing the math on how much time I have to relax before we spend the rest of the evening playing Tetris with my furniture.</p>
+<p>&emsp;&quot;Well, we love you. And we want you to know how proud of you we are. Our boy is moving up in the world. A mortgage? And his first house?&quot;</p>
+<p>&emsp;&quot;Old, I know. I&apos;ll check the mail tomorrow for my AARP card.&quot;</p>
+<p>&emsp;&quot;And maybe next, you&apos;ll find that special person.&quot;</p>
+<p>&emsp;I groan. &quot;You&apos;ll get your grandkids when you get them.&quot; I finally break the long shadow of the Aerospace division&apos;s building when I make it to the fence, feeling the setting sun warm the back of my neck. &quot; I&apos;ll talk to you later.&quot;</p>
+<p>&emsp;&quot;We&apos;re proud of you,&quot; she insists.</p>
+<p>&emsp;&quot;Thanks,&quot; I say, hinging open the car door to deposit myself in the driver&apos;s seat as shadow consumes the full span of the lot. I turn the key and the engine hums to life, taking one last glance to the top of the crumbling stairwell to confirm Kei&apos;s refusal to start her weekend. </p>
+<p>&emsp;But her Ford Fiesta is still here, collecting dust as the last car on the lot.</p>
+<p>&emsp;Alone, I still feel a small sense of warmth inside me. A part of me is glad I chose to stay close. Beyond that oasis of unrelenting love is a desert, and when I&apos;m not surrounded by the family that help me forget, it&apos;s a boundless journey where the scenery never changes, just like those long stretches of barren road when I drove to university, on long breaks between semesters. </p>
+<p>&emsp;Maybe that&apos;s why I find comfort in returning home to the forest, where the horizon is obscured by trees. When I drive home from a long day at Navidson-Monroe, slithering down switchbacks of the Shaleborough foothills in my WRX, I watch the graduation tassle from high school sway with the curves, feeling a hint of the same exhilaration when my friends and I used to drive the other way, climbing the asphalt turns until the roads switched to trails, settling somewhere between the mountains for another adventurous chapter in a childhood summer.</p>
+<p>&emsp;But the sun has set, and the association I had with this road has been wholly overwritten with the feelings I&apos;ve carried home. Nav&apos;s words seem to follow that feeling of residual guilt when I consider how behind I always am. Time used to be segmented in semesters, quarters, and classes, but the demands of the customer are endless and indivisible. </p>
+<p>&emsp;At least it means that business is well &mdash; far better than being afraid of layoffs.</p>
+<p>&emsp;When I crank up the playlist my friends and I made together, lower the sun roof, crack the windows, and allow the throttle to twist my stomach as I accelerate around the curves, I find I&apos;m able to let those cherished memories win over.</p>
+<p>&emsp;And then a call comes over the hands-free system.</p>
+"},{"DocType":"Scene","GivenName":"Firsthand Home","AutoNamePart":2,"SevenWordSummary":"An old friend calls. Cody feels behind.","AutoNameFull":10,"ActNum":2,"ChapterOverride":"","ChapterPart":3,"ChapterFull":4,"VerboseOverride":"","ScenePart":2,"SceneFull":10,"Style":"Cody","Perspective":"Cody","Index":16,"Label":"Modern World","Status":"02: Polished Revision","Keywords":"","UUID":"14","Synopsis":"","NextPublish":"7","VerboseID":"2.4.10","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-C02-2","Body":"
+<p>&emsp;I press the button on the steering wheel, and CALL ACTIVE flashes in segmented letters on the LCD. Hearing his voice over the phone makes it feel like he&apos;s speeding around the curves in the car in front of me, calling to ask if we can stop off at Sonic for a milkshake before we unpack the tents from our cars.</p>
+<p>&emsp; But many years have passed since those summers.</p>
+<p>&emsp;&quot;Hey, buddy.&quot; His voice is raspy over the phone. &quot;How have you been?&quot; </p>
+<p>&emsp;&quot;Pretty good, Scott,&quot; I say, making sure to pitch my voice up.</p>
+<p>&emsp;&quot;Just wanted to call to check in with you. I saw you just got a new place in our hometown. Congrats!&quot;</p>
+<p>&emsp;&quot;Thanks,&quot; I tell him. &quot;And I saw you got a new place around Orange County. A full-size house?&quot;</p>
+<p>&emsp;&quot;You know how Kaycee&apos;s parents are,&quot; he says. &quot;I guess it&apos;s what happens when you&apos;re an only child.&quot;</p>
+<p>&emsp;&quot;I wish it worked that way for me,&quot; I say.</p>
+<p>&emsp;&quot;So then I guess I should thank you for setting us up,&quot; Scott says. &quot;What about you? Any progress in your love life?&quot;</p>
+<p>&emsp;&quot;Not yet, buddy. I&apos;m starting to think I missed the chance.&quot;</p>
+<p>&emsp;&quot;I always thought you&apos;d get together with Kei. Didn&apos;t you tell me last time that she works with you?&quot;</p>
+<p>&emsp;My fingers tension around the steering wheel, and I find I&apos;m taking the turns sharper. &quot;I&apos;m not so sure, but I&apos;m doing what I can.&quot;</p>
+<p>&emsp;&quot;I&apos;m not just calling to check up on you. I&apos;m calling for two things. First, I wanted to tell you that Kaycee and I are gonna be in Colorado in a couple weeks.&quot;</p>
+<p>&emsp;&quot;Oh, really? That&apos;s great,&quot; I tell him. &quot;We should meet up.&quot;</p>
+<p>&emsp;&quot;Absolutely. And it&apos;s tied in with the second thing.&quot; Scott takes a long pause, and the phone&apos;s static gives way to the hum of my car&apos;s engine. &quot;I proposed to Kaycee, and she said &apos;yes.&apos;&quot;</p>
+<p>&emsp;&quot;Oh. That&apos;s fantastic!&quot; I tell him. &quot;I&apos;m so happy for you.&quot;</p>
+<p>&emsp;&quot;Well, you&apos;ve been my closest friend since the beginning. I wanted this to be a question I ask you in person, when we drive out there, but . . . I want you to be in my wedding. I&apos;ve thought about it a while, and, well . . . I was wondering if you would be my Best Man.&quot;</p>
+<p>&emsp;I feel a rare feeling of elation overtake me. &quot;I would be honored to be that for you, Scott.&quot;</p>
+<p>&emsp;&quot;Great! Great,&quot; he says. &quot;We can talk about it more when I head out there. From the championship lacrosse team with you and Miguel, to all those sleepovers in your basement, to those summer trips up to the mountains, I mean, you&apos;ve been there for all of it.&quot;</p>
+<p>&emsp;&quot;I drive down that same road we took camping every day,&quot; I say.</p>
+<p>&emsp;&quot;Yeah, you finally made it into Navidson-Monroe, you nerd. Designing rockets?&quot;</p>
+<p>&emsp;&quot;Not quite yet,&quot; I tell him.</p>
+<p>&emsp;&quot;Well, you&apos;ll get there. And at this wedding, if you haven&apos;t confessed your feelings to Kei, I&apos;ll get you together with one of Kaycee&apos;s bridesmaids. You know California &mdash; she&apos;s got some really pretty friends. And Kylie&apos;s gonna be there too. The &apos;Burnett&apos;s girl,&apos; remember? Didn&apos;t you guys hit it off in the freshman dorms?&quot;</p>
+<p>&emsp;I laugh. &quot;Thanks, buddy. I&apos;ll look forward to it, then.&quot;</p>
+<p>&emsp;&quot;Sure.&quot; He pauses for a moment, as if deciding whether to end the call. My thumb feathers the END CALL button on the steering wheel, but then he pipes up.</p>
+<p>&emsp;His voice cracks: &quot;You know, you were the one that brought all of us together. You were the &apos;uniter&apos; of all our friends, I guess. And the further I get from those years, you know . . . I miss that.&quot;</p>
+<p>&emsp;My grasp loosens on the steering wheel as I struggle to remember the last time I ever hung out with more than one person at a time. Sometimes it feels like adulthood just gives us more convenient excuses to stay alone. But it feels wrong to dwell too long on stuff that far in the past.</p>
+<p>&emsp;&quot;Thanks. I miss those days too,&quot; I say. &quot;Call me again sometime before you head out here. We&apos;ll plan a day downtown in Denver.&quot;</p>
+<p>&emsp;&quot;Will do,&quot; he says. The line clicks. All that&apos;s left is the hum of the engine as I reach the bottom of the foothills, stuck in the space between songs when the vocals feather away.</p>
+<p>&emsp;I&apos;m stopped at a red light at a vacant crossroads. My left hand drums against the side of the car, keeping a beat without a song. It&apos;s always when I&apos;m the most still that I feel the flow of time, seconds ticking away with the rhythmic, harmonic shake of the engine. The discomfort of this stillness overtakes me as I sit here second after second without a single car passing, but the light is still green on the crossway. The crossroads is pitch black, and the feeling of emptiness rises my flesh with static like a sleeping limb.</p>
+<p>&emsp;The feeling of itching stillness begins to return to me, that call of the void, and I feel it&apos;s presence as if it were sitting in the backseat, in the space where my friends used to be. I drop the pedal to the floor before the light can change, longing for that feeling of inertia to lull me back to peace: ripping through the intersection before the light can change.</p>
+"},{"DocType":"Scene","GivenName":"Firsthand Home","AutoNamePart":3,"SevenWordSummary":"Cody unpacks with his parents. Miguel enters.","AutoNameFull":11,"ActNum":2,"ChapterOverride":"","ChapterPart":3,"ChapterFull":4,"VerboseOverride":"","ScenePart":3,"SceneFull":11,"Style":"Cody","Perspective":"Cody","Index":17,"Label":"Modern World","Status":"No Status","Keywords":"","UUID":"15","Synopsis":"","NextPublish":"7","VerboseID":"2.4.11","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-C02-3","Body":"
+<p>&emsp;A Bankers Box is the last thing I have to store away in the small closet beneath the stairs. It&apos;s somehow lived to service my family through many moves, and the yellowed white of the cardboard is long-aged to prove it.  First is the word OFFICE in my mother&apos;s cursive from twenty-some years ago. That was scratched out to say COLLEGE STUFF in my father&apos;s handwriting five years ago. Four years later, for the long move back, I amended that with a semicolon, adding ENGINEERING TEXTBOOKS (AND SHIT) in my fine block script to help clarify. And now &mdash; so redacted it looks like a square Dalmatian &mdash; it reads CODY DUNSMORE, FIRST HOME.</p>
+<p>&emsp;Inside is all the hobby stuff I used to like when I had the energy: a mess of soldering tips, beer-can capacitors and resistors as if I went back to the 90s and robbed a Radio Shack. There&apos;s a couple games I picked up when Mom drove me to GameStop for midnight releases with my buddies, and weighing it down is the signed lacrosse ball from the last Varsity game that let me letter in high school.</p>
+<p>&emsp;&quot;You know, for a new home owner, you sure have a lot of crap to start,&quot; my father says. &quot;Your mother and I started with nothing. Nothing!&quot;</p>
+<p>&emsp;&quot;But it is a whole lot of nothing.&quot; I gesture to the lonely folding chair and cheap television in the small foyer. &quot;The modern man needs very little to be satisfied.&quot;</p>
+<p>&emsp;&quot;I just hope it&apos;s enough to survive,&quot; my mother says. She rubs her temples.</p>
+<p>&emsp;&quot;I&apos;m just glad it comes with a washer and dryer. Otherwise I&apos;d have to buy new clothes every week.&quot;</p>
+<p>&emsp;&quot;Dear Lord, Alan. Did we raise him?&quot; She turns to my father. &quot;Did he forget how to wash clothes some time in college?&quot;</p>
+<p>&emsp;&quot;He&apos;ll be fine, Kim,&quot; Dad says. </p>
+<p>&emsp;It humors us when she gets the panicked look on her face. Neither of us can tell if it&apos;s a joke.</p>
+<p>&emsp;&quot;You remember? She&apos;s only washed my clothes since I got back from school. I think I remember how to do it.&quot;</p>
+<p>&emsp;&quot;But you need to keep your shirts nice. For work,&quot; she says. &quot;You need to iron them. Did you get an ironing board?&quot;</p>
+<p>&emsp;&quot;I get it. I know, and I will, tomorrow,&quot; I tell her. &quot;You remember I&apos;ve been working there for two years, right? Everybody just wears jeans. Some even T-shirts.&quot;</p>
+<p>&emsp;Dad&apos;s face furrows at the thought. &quot;Dressing like that won&apos;t get you a promotion.&quot;</p>
+<p>&emsp;&quot;Well, they make fun of me when I dress up enough to tuck in my shirt. Saying I&apos;m trying to take their jobs.&quot;</p>
+<p>&emsp;&quot;Well, then . . .&quot; Dad starts, but his words trail off. </p>
+<p>&emsp;The silence returns to us: it&apos;s a pivotal moment in our relationship. They were empty-nesters for four years, and right when they got used to it, they had me again for another two.  The childhood home will be so quiet: maybe it deafens them. I remember my mom kept the room and bed so neat every time I returned from college.</p>
+<p>&emsp;Maybe there are phases to it, just like my late brother&apos;s room was all those years ago. It was as still as a museum for months. All his books and participation trophies were scattered thoughtfully as if he had just left the house to go see friends for a really, really long time, his letterman&apos;s jacket glistening with pins on the chair, and I almost thought they were planning on putting the whole room behind glass, until one windy day showed them it&apos;d be safer in seventeen boxes. </p>
+<p>&emsp;Cardboard. </p>
+<p>&emsp;Not like the polished wooden box beneath the ground, protecting all the things the illness couldn&apos;t take.</p>
+<p>&emsp;They head towards the door and turn the knob, still chipper despite how it drags on all of us, and my father wants to show it the least. </p>
+<p>&emsp;I almost think I can hear his voice crack. &quot;Just promise us you&apos;ll visit, right? Dinner next week?&quot; And to make it less emasculating, he adds, &quot;Your mother will go nuts if she can&apos;t do a load of laundry at least once a month.&quot;</p>
+<p>&emsp;&quot;I swear I&apos;ll never do it again,&quot; she says.</p>
+<p>&emsp;&quot;I promise,&quot; I say.</p>
+<p>&emsp;&quot;And maybe you can bring over a girl,&quot; Dad says. &quot;Don&apos;t get me wrong. You did great in school, but we&apos;re never gonna have grandchildren at this rate.&quot;</p>
+<p>&emsp;&quot;Oh, Alan,&quot; Mom says. I think she&apos;s gonna shake her head or admonish him. </p>
+<p>&emsp;But she surprises me. </p>
+<p>&emsp;&quot;You&apos;re right. Wasn&apos;t there a reason Cody insisted on that queen-size bed?&quot;</p>
+<p>&emsp;&quot;And the spare bedroom. He&apos;s smart. Put a bed in there and he&apos;s got a fine doghouse.&quot;</p>
+<p>&emsp;&quot;Oh. The gaming room, you mean?&quot; I ask, and they&apos;re half out the door before Dad answers.</p>
+<p>&emsp;&quot;Lonely girls his age start collecting cats. I just pray you don&apos;t do that with games on that computer program you were showing me.&quot;</p>
+<p>&emsp;I hold the smile though their words cut me, though they don&apos;t realize it. </p>
+<p>&emsp;This isn&apos;t the way I wanted this memory to end.</p>
+<p>&emsp;&quot;Maybe you can get that girl from work to come over. The older one you went to prom with. The asian one,&quot; Dad says.</p>
+<p>&emsp;&quot;That&apos;s enough,&quot; I tell him.</p>
+<p>&emsp;I give my mother and father a hug. I squeeze my mother a little longer because she likes them, and I swear I can feel her tremble, just a little, and when they head for the car, my mother chokes on the last words before she&apos;ll probably lose it.</p>
+<p>&emsp;&quot;We love you, Cody. We&apos;re so proud of you,&quot; she says, loud enough that all my new neighbors can hear.</p>
+<p>&emsp;&quot;Thanks. I love you too,&quot; I say.</p>
+<p>&emsp;I wave for a while as they depart, blasting the 80s love songs through their windows as my father ducks his head.</p>
+<p>&emsp;I retreat through the threshold of the doorway, hesitating to close the door or else the suddenness of this new chapter might give me whiplash. A couple tears leave my eyes. I sniff. It&apos;s a bright March day, and somewhere beyond the spotless windows, the birds sing songs in staccato, coupled with the chattering rumble of new construction.</p>
+<p>&emsp;I flick the lights on, then off, then on again, then settle for off. I sit at the head of the glass dining table to find myself in a familiar headspace, from all those years ago in college, when my roommates left to drive home to their families, and flying for me wasn&apos;t an option. In the small closet beneath the stairs is the Bankers Box, and somewhere inside my head I wonder how I can ever reignite those old passions.</p>
+<p>&emsp;I sit there until tinnitus rings in my ears. I don&apos;t feel like gaming, going for a walk, or saying hello to the neighbors. I love my parents to pieces, but their words still cut me. I mean, I&apos;m twenty-six years old: is this the age where you start to really believe you&apos;ll be alone forever? </p>
+<p>&emsp;The comebacks always come to you long after they&apos;re useful. I open the fridge my mom overstocked with frozen food from Costco in case I starve in the next three months and grab an off-brand seltzer, returning to darkness when the door closes. Then maybe he should have lived! He was smarter, handsomer, more alive than this flaw could ever give me, I could have said, but I&apos;m glad I didn&apos;t. </p>
+<p>&emsp;What do they think? Some neighbor girl is going to stumble in here looking for love?</p>
+<p>&emsp;The thoughts get me nowhere, but the seltzer does. And when the clock reads 8:00 PM, three deep with the gold-painted cans standing like little league trophies on the finely-polished counter, I&apos;m finally able to forget. And I forget even easier when he stumbles through the open door.</p>
+<p>&emsp;&quot;Beer later, wey. Wanna hotbox my car?&quot;</p>
+<p>&emsp;He slicks his black hair back before dragging his feet on my mat, carrying a rack of cheap beer with an OfficeMax nametag pinned upside-down.</p>
+"},{"DocType":"Chapter","GivenName":"","SevenWordSummary":"","AutoNamePart":"Chapter&nbsp;Four","AutoNameFull":"Chapter&nbsp;Five","ActNum":2,"ChapterOverride":"","ChapterPart":4,"ChapterFull":5,"ScenePart":"","SceneFull":"","Style":"","Perspective":"Both","Index":18,"Label":"[3] Polishing Revision","Status":"No Status","Keywords":"","UUID":"16","Synopsis":"","NextPublish":"7","VerboseID":"2.5","VerboseOverride":"","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"
+04","Body":""},{"DocType":"Scene","GivenName":"","AutoNamePart":1,"SevenWordSummary":"Katiya has nightmares of a devastating past.","AutoNameFull":12,"ActNum":2,"ChapterOverride":"","ChapterPart":4,"ChapterFull":5,"VerboseOverride":"","ScenePart":1,"SceneFull":12,"Style":"Katiya","Perspective":"Katiya","Index":19,"Label":"Fantasy World","Status":"02: Polished Revision","Keywords":"","UUID":"17","Synopsis":"","NextPublish":"7","VerboseID":"2.5.12","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-K02-1","Body":"
+<p>&emsp;The next lucid moment, I find myself pinned upside-down beneath a thick wooden rack. The heat climbs as I drag my heels across the floor, my clothes so black and charred that I pray my sweaty flesh might slick me back through the narrow space. Within the hot box of crackling logs and scalding cinders, the roar of recircling flames makes the house screech in agony when its bones crunch and crumble, casting twigs and thatch to the ashen floor.</p>
+<p>&emsp;The twisting and thrashing gets me nowhere, but when a log column crashes into the thin floor, the rack slides into the hollow foundation. My body is so small and pathetic, but I&apos;m barely able to command my cramped muscles to escape, crawling across the floor as the smoke billows overhead, drawing shallow, stinging breaths into  my pinched lungs. </p>
+<p>&emsp;The log walls close in like long fingers of a burning fist that clenches, casting glowing rubies of raging ruin that spread like a rash across the cabin&apos;s bones, and as I gasp harder for desperate breaths, losing the strength of air to drive my muscles, I realize that all the windows and doors are missing.</p>
+<p>&emsp;The heat would evaporate my tears if I had the fluids left to cry. All that&apos;s left is to feel how much I loathe this feeling of helplessness. Didn&apos;t I escape this crumbling crypt of cinders? Or was the full life I led after just a dream of a dying mind, denying its demise? Didn&apos;t Stella and Erik and Bertram treat my burns as we sought solitude on the outskirts of Northaven? Or is this the last memory of my soul in the Reservoir, preparing to be reborn?</p>
+<p>&emsp;But this body is so weak and useless, and I lust so strongly for power, for Essence: Essence that might let me bend steel; to bash through the walls; to crush the skulls of the arsonists. I only wish I could live to return the favor, to get revenge for that fading image of their faces.</p>
+<p>&emsp;But I&apos;m just a child, and nobody came.</p>
+<p>&emsp;The last segment of wall collapses, and I join my father and sisters,  entombed forever beneath the rubble. </p>
+<p>&emsp;Or so I think, until I gasp for breath beneath the silken sheets of an unfamiliar bed.</p>
+"},{"DocType":"Scene","GivenName":"Secondhand Cottage","AutoNamePart":2,"SevenWordSummary":"Katiya explores her new Guard-sactioned home.","AutoNameFull":13,"ActNum":2,"ChapterOverride":"Chapter Four","ChapterPart":4,"ChapterFull":5,"VerboseOverride":"","ScenePart":2,"SceneFull":13,"Style":"Katiya","Perspective":"Katiya","Index":20,"Label":"Fantasy World","Status":"No Status","Keywords":"","UUID":"18","Synopsis":"","NextPublish":"7","VerboseID":"2.5.13","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-K02-2","Body":"
+<p>&emsp;It takes a couple seconds before my mind is able to catch up on two decades of living history. It&apos;s not the first time my mind tormented me with visions of another life, one where the Gods of fortune hadn&apos;t intervened. My episodes were worse in the Barracks: so bad that they threw me in with all the other traumatized children of the war that tossed and turned too much in their sleep, waking the others with the foreshadowing shouts and screams of the slaughter that might await them.</p>
+<p>&emsp;I always think I can be stronger. I always find myself thinking I can outmaneuver it, but it matters not how viciously I fight to comport myself. That poisonous malady of the soul is an everflowing source of suffering stronger than the sea. And even as I sit here with full recollection of everything that&apos;s brought me to this moment, I still can&apos;t shake that feeling of eternal freefall, that uncomfortable feathering in my stomach that casts my fingers and toes in phantom static, waiting and waiting for when I&apos;ll splatter against the end of this bottomless pit.</p>
+<p>&emsp;But the end never comes. The only way, it seems, is to distract myself from the infinite fall, so that feeling becomes a lesser part of me. I&apos;ve tried hating it, but it never concedes. I&apos;ve tried overpowering it, but it&apos;s like sculpting water. So all I can do is follow the words of my father when these episodes would overtake me.</p>
+<p>&emsp;Katiya, he would say. My beautiful daughter, you have to focus. Tell me, where are you right now?</p>
+<p>&emsp;&quot;I&apos;m in the town of Gaffesend, across the lake from where we used to live,&quot; I mutter, clutching my chest with numbing fingers that hinge against my will. My other hand reaches for the left side of the bed as I call out his name, longing for a touch beyond lust, but the bed is cold again: damp with his sweat from our passions the night before.</p>
+<p>&emsp;Where are you?</p>
+<p>&emsp;&quot;I&apos;m in my new home. In the bedroom,&quot; I breathe. &quot;With plastered walls,&quot; I breathe. &quot;And a fan,&quot; I breathe, taking two breaths before the next distracting question comes to me I cast a look around as my eyes adjust from the dark of sleep to the brightness of morning.</p>
+<p>&emsp;When are you?</p>
+<p>&emsp;&quot;A near twenty years after I lost you.&quot; </p>
+<p>&emsp;It&apos;s the hundred-and-twenty-ninth year after the Fall. A long winter fades into spring as the world opens again, and I can smell the buds of flowers blooming in the wild spaces. &quot;I&apos;ve come back to find something I lost, I think,&quot; I add.</p>
+<p>&emsp;And can you describe how you feel?</p>
+<p>&emsp;My breaths are slowing. My heart is acclimating to the stillness, and my body is accepting there&apos;s nothing that threatens it, even though I&apos;ve already identified all the exits. I must have flamed a little in my sleep: there are small burn holes where my naked body pressed hardest against the fabric. The sheets are saturated with soot from the scalding heat my circuits must have risen, but that&apos;s not what upsets me the most. As the world returns to me, I can feel my fists ball on a different kind of anger.</p>
+<p>&emsp;I thought the passion of the night before might have compelled Jullian him to stay. The feeling of that truth feels so palpable when he kisses me, and for the hour after, my mind floats on the joy of all we&apos;ve shared: watching each other&apos;s siblings; studying those long nights together; even training in the early mornings; and all the time we&apos;d set aside for each other despite everything.</p>
+<p>&emsp;Maybe it&apos;s the annoyed sigh he breathes when I goad him on the morning runs around the village, one of our traditions. Or maybe it&apos;s in the listless tick he acquired any time we walk about the village. Or maybe it&apos;s in his new group of friends &mdash; though he&apos;s always longed for a group to belong to, and I don&apos;t fault him for any of that.</p>
+<p>&emsp;But he wasn&apos;t here when I needed him. The only considerate act was topping off the Essence switch with a touch, allowing the ceiling fan enough energy to run until I awoke. His clothes vanished as if he was trying to clear a crime scene.</p>
+<p>&emsp;After I release myself from the tangle of bedsheets, I  poke my head out the back window facing west &mdash; nearly forgetting to cover my breasts with the thick red curtain as I try to guess the time. It&apos;s a commerce street,  and the stalls are vacant without produce or trinkets, the stools still tucked beneath the counters. The merchants tend to gather an hour after sunrise, meaning it&apos;s long before the time that we were told to gather outside the officer post.</p>
+<p>&emsp;I glance out the east window that looks out upon a quaint little garden: my tiny lawn with a walkway that divides it, enclosed by the spires of a wrought-iron fence. The mountain air is so crisp and fresh as it pours though the windows, wrapping around the curtain that covers my extremities, and when I lift my eyes to the Purgatory Mountains, feeling the morning sun radiate my skin, I find a captivating view of Lake Gaffesend.</p>
+<p>&emsp;The Gods of fortune haven&apos;t forgotten me, I think: but I refuse to ever lean on them with all my weight.</p>
+<p>&emsp;I find the closet furnished to the measurements I gave at Orientation, though almost everything seems to be genderless. The underwear is the only thing that&apos;s distinctly feminine, and after smelling myself to ensure the stench of sweat is not severe, I slip on a pair, and proceed to dress in the Royal Guard&apos;s underclothes.</p>
+<p>&emsp;The white undershirt is baggy, but not too long in the sleeves. I&apos;m just relieved to not have to wear the same binder I wore for graduation. After six hours listening to names, thinking I&apos;d pass out from the pain in my back and ribs, I wondered why they call it a &quot;breastplate&quot; when it&apos;s flatter than the Capital fields. </p>
+<p>&emsp;But this is different armor: armor designed for show instead of function, for making the villagers feel safe, though the thin steel couldn&apos;t stop two thrashings from a sword. The steel only covers the shoulders, arms, hands, and chest, exposing the undershirt at the midriff. And beyond the showy sabatons on my feet, embellished with gold trim like all the rest of the armor that was never meant to get so much as a scratch, there are thin tassets that couldn&apos;t protect my hip from so much as a fall.</p>
+<p>&emsp;I relish the feeling of excitement to try it on: anything that tears me from the lingering feeling in my stomach, and when I step into the washroom to look into the mirror, I imagine its guise before I even put it on.</p>
+<p>&emsp;The person that looks back at me is carved as intentionally as the thousand sculptures my father whittled in the forest across the lake, carving the trimmings and stumps from his work as a carpenter. The only difference is in our intentions. His comes from that sedentary softness of imaginary inner peace, the very reason my parents settled in that village all those years ago. His showed in the soft shavings that split from the virgin bark, falling to the floor like petals as he perfected its form. But my intention lies in the real world, of flesh and blood. It lies in the continuous honing of my body to be ready for the fight that&apos;s coming &mdash; the approaching end to the long fall that forever turns my stomach &mdash; and I&apos;ll need every bit of strength I can gather to act as a breakwall, so that ruinous poison never spills over upon the innocents.</p>
+<p>&emsp;I trace the definition in my abs, noticing all the imperfections I have yet to carve through training, trying to stop that self-immolating voice that says I will never be strong enough; that if not for Jullian, no one else would ever be attracted to someone like me. But this life has only ever been a sacrifice, since it should have been taken. I can&apos;t change my modest height, but I&apos;ve shaped just about everything else, and when I put on the undershirt, it covers all the weakness I have yet to improve.</p>
+<p>&emsp;And now it&apos;s time to hone myself further.</p>
+"},{"DocType":"Scene","GivenName":"","AutoNamePart":3,"SevenWordSummary":"Katiya struggles to start her day.","AutoNameFull":14,"ActNum":2,"ChapterOverride":"","ChapterPart":4,"ChapterFull":5,"VerboseOverride":"","ScenePart":3,"SceneFull":14,"Style":"Katiya","Perspective":"Katiya","Index":21,"Label":"Fantasy World","Status":"No Status","Keywords":"","UUID":"19","Synopsis":"","NextPublish":"7","VerboseID":"2.5.14","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-K02-3","Body":"
+<p>&emsp;I descend the stairs in bare feet, carrying the thin cosmetic armor. The kitchen counters are vacant beyond some basic decorations: a bowl and a candle on every surface, what I&apos;ve learned is the bare minimum for any military-issued living space. Part of me hopes for an explanatory note from Jullian, but I find nothing, just my bag of possessions scattered across the floor.</p>
+<p>&emsp;My stomach rumbles when my nose notices the commerce street is open. I spark the burners with Essence, throwing on some standard-issue porridge rations as I try to put on my second layer of clothing.</p>
+<p>&emsp;A knock sounds on the door, rapping so hard that I should hear it anywhere in the house. It startles me when I&apos;m putting on the solid armor that refuses to give as I contort my body. It&apos;s an unfamiliar voice, but incredibly deep and charming.</p>
+<p>&emsp;&quot;Miss Katiya, darling, it&apos;s time to wake up,&quot; he says.</p>
+<p>&emsp;&quot;Coming.&quot; I try to dress faster while blinded, but forget I&apos;m standing in front of my bag of personal items.</p>
+<p>&emsp;&quot;No need. I&apos;m a knocker commissioned by the Guard.&quot;</p>
+<p>&emsp;My foot catches before I can respond. I crash to the ground with a high squeak, my arms bound by an arm hole.</p>
+<p>&emsp;&quot;Miss Katiya . . . are you alright in there?&quot;</p>
+<p>&emsp;I&apos;m certainly not right inside the armor.</p>
+<p>&emsp;&quot;I&apos;m fine,&quot; I say, my head half-protruding from the head hole like a bashful turtle. My arms are all twisted inside the uncompromising metal. &quot;Thanks for the warning.&quot;</p>
+<p>&emsp;&quot;Not a problem, love,&quot; he says. </p>
+<p>&emsp;As I struggle to free myself from my metal cocoon, I recognize that there&apos;s a hinged strap on the side: something that would have made the struggle a whole lot easier.</p>
+<p>&emsp;But then a sizzling sound sets off behind me. I&apos;m so charged with Essence that I must&apos;ve transferred too much to the burner. The porridge bubbles over the edges of the pot, edging off the wooden spoon that bridged the center. Scrambling from the floor, I reach my hand to withdraw heat from the stove, feeling that transfer of energy return to my circuits.</p>
+<p>&emsp;&quot;Gods damn it,&quot; I tell myself. And when I reach to grasp the handle of the pot, my foot slips in a mess of oats on the floor, casting a plume of molten chunks across the floorboards and the cabinetry.</p>
+<p>&emsp;A voice rises from the other side of the house: a different pitch with the same sentiment.</p>
+<p>&emsp; &quot;You alright in there, Aleena?&quot;</p>
+<p>&emsp;Aleena? Who&apos;s Aleena?</p>
+<p>&emsp;&quot;Yeah, just a little accident,&quot; I say. &quot;Looks like I&apos;ll be skipping breakfast.&quot;</p>
+<p>&emsp;&quot;You can&apos;t miss breakfast if you&apos;re defending the village,&quot; he says. &quot;Come to the window.&quot;</p>
+<p>&emsp;&quot;One second,&quot; I say, before throwing my armor on the right way, finding  buckles and straps that are stitched there for a reason. When I&apos;m sufficiently sharp, clothed in bright crimson and silver that&apos;s trimmed with gold, I reach for the window sill to drag it open.</p>
+<p>&emsp;A stocky, bald man squats on one of the stools in the shadow of the building, his collection of fresh breads proudly displayed across the front of the booth.</p>
+<p>&emsp;&quot;You&apos;re not Aleena. Your voice sounds like hers, though. Are you a friend?&quot;</p>
+<p>&emsp;&quot;This is my new house,&quot; I tell him.</p>
+<p>&emsp;&quot;Oh. Sorry,&quot; he says. &quot;Well, you&apos;re certainly prettier than she was!&quot;</p>
+<p>&emsp;A hand slaps him across the cheek. I bend down to see where it came from, and it&apos;s his wife, unloading the rest of their produce: they must have just arrived.</p>
+<p>&emsp;&quot;I&apos;m Derry. And this is my wife, Carmen. We sell fresh bread here every morning.&quot; </p>
+<p>&emsp;I shake their hands, bending awkwardly to meet their eyes from four feet off of street level.</p>
+<p>&emsp;&quot;The last girl preferred waking to the smell of fresh bread,&quot; Carmen says. &quot;She regaled us with tales of her travels in exchange for a loaf. Maybe you can do the same?&quot;</p>
+<p>&emsp;My peckishness speaks first. </p>
+<p>&emsp;&quot;Of course. What do I owe you?&quot; I ask, drawing my fingers into my coin purse for a couple Kine.</p>
+<p>&emsp;&quot;The first one&apos;s free, because I think you&apos;ll make a great customer. It&apos;s fresh, with a special blend of spices in there,&quot; he insists.</p>
+<p>&emsp;His wife turns from unloading the cart. &quot;Say, what happened to the other girl?&quot;</p>
+<p>&emsp; I withdraw the key from my pocket: without the cover of night or blurred vision, I can inspect it a lot easier. The surface is rough where her name was ground away. I can see the shape of her letters interspersed between mine. It&apos;s been sanded enough that I&apos;m sure she&apos;s not the first: it&apos;s evident that the names of cadets were stacked and scratched nearly halfway through the metal shaft &mdash; at least twenty of them &mdash; and I doubt all those tenants left to move into a permanent home.</p>
+<p>&emsp;The brief pang of fear surprises me, nearly overriding my hunger.</p>
+<p>&emsp;&quot;A shame she was drafted,&quot; Derry says, but his face lightens. &quot;But you seem lovely, too. Keep us entertained with stories of your little . . . quests, and we&apos;ll share a little,&quot; he insists.</p>
+<p>&emsp;&quot;I can do that,&quot; I manage: tempted, but too timid to ask how many faces they&apos;ve seen before.</p>
+<p>&emsp;&quot;And what&apos;s your name, dear?&quot;</p>
+<p>&emsp;&quot;Katiya. Miss Katiya Breakey,&quot; I say.</p>
+<p>&emsp;&quot;You have a wonderful day, Miss Katiya,&quot; he says, flashing a toothy smile before handing me a steaming breakfast bun.</p>
+<p>&emsp;The hunger is more persuasive than the urge to clean the mess. I rush through the front door with the delicious bread dissolving between my teeth, and as I turn to set the lock, I catch the sight of a familiar face. </p>
+<p>&emsp;Bertram struggles to bend down and tie his boot. I&apos;m not the only one that&apos;s not used to the armor.</p>
+<p>&emsp;&quot;It&apos;s like the old village all over again,&quot; I shout.</p>
+<p>&emsp;It startles him. He mulls over a response as I approach, struggling harder to tie a simple knot. &quot;Less fire, though. I hope it stays that way.&quot;</p>
+<p>&emsp;&quot;Speaking of disasters,&quot; I say, &quot;I don&apos;t mind watching you struggle for a while, but are you going to let me help you?&quot;</p>
+<p>&emsp;Bertram blushes, then nods. I stoop down to tame his laces, laughing at how stiffly he stands on the porch.</p>
+<p>&emsp;&quot;You know, you&apos;re supposed to tie them BEFORE you can&apos;t bend over,&quot; I say.</p>
+<p>&emsp;&quot;I would surely remember if this nagging headache went away. I think I lost part of my mind last night. Say &mdash; where&apos;s double-L? Didn&apos;t you leave with him?&quot;</p>
+<p>&emsp;&quot;I did.&quot;</p>
+<p>&emsp;&quot;But he didn&apos;t stay,&quot; he replies.</p>
+<p>&emsp;&quot;I guess not,&quot; I tell him. </p>
+<p>&emsp;He looks like he&apos;s about to add some commentary, but hinges his mouth shut before the insults can fly, settling instead for something else. &quot;Should we walk together?&quot;</p>
+<p>&emsp;&quot;That sounds great.&quot;</p>
+<p>&emsp; &quot;And maybe every morning?&quot;</p>
+<p>&emsp;&quot;That sounds even better.&quot;</p>
+"},{"DocType":"Scene","GivenName":"","AutoNamePart":4,"SevenWordSummary":"Walk from home to the Royal Base.","AutoNameFull":15,"ActNum":2,"ChapterOverride":"","ChapterPart":4,"ChapterFull":5,"VerboseOverride":"","ScenePart":4,"SceneFull":15,"Style":"Katiya","Perspective":"Katiya","Index":22,"Label":"Fantasy World","Status":"No Status","Keywords":"","UUID":"20","Synopsis":"","NextPublish":"7","VerboseID":"2.5.15","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-K02-4","Body":"
+<p>&emsp;The walk is quick since we already live in the military district, a few blocks from the boundary of the Gaffe Royal Base. We discuss the letters from our families, the identical layout of our houses, our headaches, and reminisce on the few moments of joy we experienced together in the capital.</p>
+<p>&emsp;With my best friend here, I can almost convince myself that it&apos;s all going to be alright, and I relish in the nostalgia of shared memories. The feeling carries all the way until we arrive at the posting board, ready to start on our first day.</p>
+"},{"DocType":"Chapter","GivenName":"A Past Outgrown","SevenWordSummary":"Miguel and Cody celebrate like old times.","AutoNamePart":"Chapter&nbsp;Five","AutoNameFull":"Chapter&nbsp;Six","ActNum":2,"ChapterOverride":"Chapter Five","ChapterPart":5,"ChapterFull":6,"ScenePart":"","SceneFull":"","Style":"","Perspective":"Cody","Index":23,"Label":"[2] Narrative Revision","Status":"No Status","Keywords":"","UUID":"21","Synopsis":"Miguel and Cody celebrate the new home, trying to avoid the gravity of the past.","NextPublish":"7","VerboseID":"2.6","VerboseOverride":"","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"
+05","Body":""},{"DocType":"Scene","GivenName":"","AutoNamePart":1,"SevenWordSummary":"Cody and Miguel have a sleepover.","AutoNameFull":16,"ActNum":2,"ChapterOverride":"","ChapterPart":5,"ChapterFull":6,"VerboseOverride":"","ScenePart":1,"SceneFull":16,"Style":"Cody","Perspective":"Cody","Index":24,"Label":"Modern World","Status":"No Status","Keywords":"","UUID":"22","Synopsis":"","NextPublish":"7","VerboseID":"2.6.16","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-C03-1","Body":"
+<p>&emsp;&quot;Since you started on your first day, you haven&apos;t been drug tested. What&apos;s gonna change their mind on Monday, bro? My work never runs drug tests,&quot; he says. Gunfire cracks over the TV, flashing the empty walls with pops of color.</p>
+<p>&emsp;&quot;No shit, Miguel. Their corporate structure banks on baked box-boys like you. The ones that forget they&apos;re lifting crates and stocking shelves and selling printers for eight hours a day.&quot;</p>
+<p>&emsp;&quot;That&apos;s manager Miguel now &mdash; I order the little guys to do it. I&apos;m a number-puncher like you now,&quot; He brags. &quot;Oh. But except I&apos;m actually good enough to get promoted.&quot;</p>
+<p>&emsp;The words hit at the same time as a round-ending enemy airstrike. The bombs collapse my soldier to the dirt as the word DEFEAT brandishes across the screens, reassuring us that &quot;we&apos;ll get them next time.&quot; But his quips hurt no more than the vibrations in the controller.</p>
+<p>&emsp; Miguel cracks another lukewarm beer, kicking the box of the remaining 27 over to me. I put down my custom controller.</p>
+<p>&emsp; &quot;I get bringing over a six-pack of some IPA, maybe a 12-pack of Coors or something, but thirty?&quot;</p>
+<p>&emsp;He manages a straight face as his brown eyes pierce mine, wiping the suds from his scruffy lip rug. &quot;You know, Jesus was wrong when he said &apos;man can&apos;t live on bread alone.&apos; He didn&apos;t know you could drink it yet.&quot;</p>
+<p>&emsp;&quot;Is that right?&quot; I laugh.</p>
+<p>&emsp;&quot;They&apos;ve been rolling around the back of my car for a couple weeks after going to Katy&apos;s house. You know, high school Katy?&quot;</p>
+<p>&emsp;&quot;No?&quot;</p>
+<p>&emsp; &quot;The pregnancy scare one, with the nice&mdash;.&quot;</p>
+<p>&emsp;&quot;Yeah, no &mdash; I remember,&quot; I say. Her face flashes in my mind from our junior prom group. Miguel took her while I took Kei.</p>
+<p>&emsp;&quot;Well, I took her friend home and stole the thirty-rack since no one touched it. Those guys are all fuckin&apos; hipsters, man, so far up their ass about IPA&apos;s and stuff, they won&apos;t drink just to get drunk anymore.&quot;</p>
+<p>&emsp;&quot;Coming from the guy who doesn&apos;t smoke just to get high,&quot; I tell him. &quot;Passionate stoners are worse than drinkers. You couldn&apos;t be any more uninteresting when you&apos;re talking about &apos;Sour Dee&apos; or whatever,&quot; I say.</p>
+<p>&emsp;&quot;Fuck off.&quot;</p>
+<p>&emsp;He burps. I crack another warm one, and when the timer on the pre-game lobby counts to zero, I lift my controller again. But he hits me with something that isn&apos;t just a snide comeback.</p>
+<p>&emsp;&quot;Do you miss high school?&quot; He asks.</p>
+<p>&emsp;It takes me a moment to think. I haven&apos;t really considered it, though I&apos;ve noticed myself staying away from those places we hung out between classes and after school. Those places have some gravity I&apos;m afraid will get me sucked into that past, when I&apos;ve worked so hard to put those good times behind me.</p>
+<p>&emsp;&quot;I dunno. It&apos;s like a friend you haven&apos;t seen in a while. Nice to visit every once in a while and relish in the past. But it&apos;s best for both of us if we move on, you know?&quot; </p>
+<p>&emsp;He drops the controller into his lap. My thumbs dig into the sticks when I climb a ladder for a sniper nest, only to get blasted off by a camper.</p>
+<p>&emsp;&quot;You trying to say something?&quot;</p>
+<p>&emsp;&quot;No, dude,&quot; I start. &quot;I&mdash;&quot;</p>
+<p>&emsp;&quot;You can use that losing take on Kei or Kylie all you want, but on your friend?&quot;</p>
+<p>&emsp;&quot;No, of course not! No, man. You&apos;re my best friend. You-&quot;</p>
+<p>&emsp;&quot;I&apos;m messing with you, fucker,&quot; he says. </p>
+<p>&emsp;He laughs, swigging the rest of his beer between deaths.</p>
+<p>&emsp;He says, &quot;I do. I mean, a part of me does. I hated high school until the end of junior year when our group really started to hang out. It&apos;s like, I never felt like I was a part of something until then. And . . . I don&apos;t know if I really felt it since.&quot;</p>
+<p>&emsp;&quot;Yeah. I wonder what the others are up to,&quot; I ask.</p>
+<p>&emsp;&quot;Kayla&apos;s having her second kid already. Another girl, I think. Her and Johnny Boy are still together.&quot;</p>
+<p>&emsp;&quot;I was surprised. Getting married half a year after high school? I didn&apos;t think they&apos;d make it this far.&quot;</p>
+<p>&emsp;&quot;You never went to their wedding, though.&quot;</p>
+<p>&emsp;&quot;I was in college halfway across the country, bud,&quot; I say.</p>
+<p>&emsp;&quot;How about Kei?&quot; He asks. &quot;You were trying to get with her for a while, but you never had the cajones to do it before she graduated after our junior year.&quot;</p>
+<p>&emsp;&quot;I&apos;ve told you before,&quot; I say. &quot;She&apos;s at my work.&quot;</p>
+<p>&emsp;&quot;No shit!&quot; He laughs. &quot;The yellow thirst was real for you, man.&quot; He cracks another can after getting mowed down by an LMG. &quot;Are you gonna shoot your shot? You told me you got some experience in college, right?&quot;</p>
+<p>&emsp;&quot;Yeah. But I don&apos;t know...&quot; none of those nights in college really fulfilled me. I was always missing something. &quot;I&apos;m not into the clubbing scene like you are.&quot;</p>
+<p>&emsp;&quot;All you have to do is ask! It&apos;s not like high school. Alcohol changes things. The fellas I met in college showed me all around the city. I know that shit like the front of my hand!&quot;</p>
+<p>&emsp;&quot;Back. The back of your hand,&quot; I say.</p>
+<p>&emsp;&quot;Whatever. But we need to get you laid, now that you got this fine house. Shit, man, I wish I could afford something like this. People our age probably never will.&quot;</p>
+<p>&emsp;&quot;But you still live here in Hearthland Ridge,&quot; I say.</p>
+<p>&emsp;&quot;Paying for a studio! Like living in a fuckin&apos; box for seventeen hundred a month,&quot; he says. &quot;Walls so paper-thin I can hear everything. I&apos;d rather go out and get some pussy than cuck myself to the soundtrack of someone else getting it.&quot;</p>
+<p>&emsp;&quot;Uh, sure,&quot; I say &mdash; sometimes I wonder if he tries to fit as many of those words as he can into a sentence. </p>
+<p>&emsp;&quot;But really. I&apos;m proud of you, man,&quot; he tells me. &quot;Really. You&apos;ve worked hard and you&apos;ve made it. When I was trying to work my way through our senior class, you were grinding at math and shit. You have an actual chance to get wifed up. It&apos;s not in my blood.&quot;</p>
+<p>&emsp;&quot;What do you mean?&quot; I ask.</p>
+<p>&emsp;&quot;Well, I don&apos;t want to. I like the chase better,  you know. Settling down? That&apos;s like giving up. What do you do, then? With that feeling, you know, when you have a couple rats with some chick and you know you&apos;re locked in for the next forever?&quot;</p>
+<p>&emsp;The feeling&apos;s all I&apos;ve been able to think about since I got back here. No more regimentation. No convenient road map of class to class to graduation: now it&apos;s all just open-ended.</p>
+<p>&emsp;&quot;But, like, nothing against you if you&apos;re into that. Having rats can be dope.&quot;</p>
+<p>&emsp;&quot;Someday. Maybe. I&apos;m just too boring, I think,&quot; I say.</p>
+<p>&emsp;&quot;Boring? You were the heart of our group back then, dude. You brought us together. You&apos;re good at that.&quot;</p>
+<p>&emsp;&quot;But nothing&apos;s forcing any of us to be together anymore,&quot; I say. &quot;Look at how many have moved away from here. It&apos;s just you and me now, right?&quot;</p>
+<p>&emsp;&quot;Kayla and John are in California. Michael went to Kansas. He likes flat woman, so I guess he wants a state that can get him off just by driving on the roads.&quot;</p>
+<p>&emsp;The beer comes up my nose. I drop the controller and the batteries pop out. &quot;Ugh. Fuck, man,&quot; I say, balancing the pain of carbonation in my nose with the urge to laugh, imagining Mike trying to stick his wiener in a Kansas anthill.</p>
+<p>&emsp;Miguel says, &quot;Maybe we&apos;ll be stuck here forever. But hey, as long as we&apos;re both here.&quot;</p>
+<p>&emsp;&quot;I just wish . . .&quot; I start to say, but instead, I reach down and pop the batteries back in the controller.</p>
+<p>&emsp;He slicks his hair back again, finishing another one. &quot;Is it cool if I crash here? I mean, I can drive high, but not drunk.&quot;</p>
+<p>&emsp;&quot;Sure, man. But I don&apos;t have a cot or a sleeping bag or anything.&quot;</p>
+<p>&emsp;&quot;Please. I&apos;ve slept on floors my whole adult life!&quot; He gestures to the box with 23 stones left. &quot;Now are you gonna help me finish all of them?&quot;</p>
+<p>&emsp;&quot;All of them?&quot;</p>
+<p>&emsp;&quot;All of them,&quot; he says. &quot;It&apos;s Friday. I know we&apos;re old and shit now, but stay awake a little longer, like we&apos;re twelve and it&apos;s a sleepover in your parents&apos; basement, and I&apos;ll tell you a bedtime story.&quot;</p>
+<p>&emsp;&quot;Oh, great. About what?&quot;</p>
+<p>&emsp;&quot;One time I was playing on your Xbox when you were out of town. When you had me pet-sitting, and...&quot;</p>
+<p>&emsp;&quot;I&apos;ll pass. But&mdash;&quot; I think, as long as I&apos;m not drinking alone, it can&apos;t hurt. What&apos;s the worst that can happen?</p>
+"},{"DocType":"Scene","GivenName":"","AutoNamePart":2,"SevenWordSummary":"The two drunken friends talk about life.","AutoNameFull":17,"ActNum":2,"ChapterOverride":"","ChapterPart":5,"ChapterFull":6,"VerboseOverride":"","ScenePart":2,"SceneFull":17,"Style":"Cody","Perspective":"Cody","Index":25,"Label":"Modern World","Status":"No Status","Keywords":"","UUID":"23","Synopsis":"","NextPublish":"7","VerboseID":"2.6.17","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-C03-2","Body":"
+<p>&emsp;&quot;No, I get what you&apos;re saying, but what do you mean?&quot; Miguel says, slurring his words as he melts into the futon: the only piece of furniture our drunk asses could assemble. The overturned boxes are makeshift tables that keep the cans off the floor, since we&apos;re feeling too lazy to dig for a trash bag.</p>
+<p>&emsp;I lift the can to my lips, but I don&apos;t let the poison pass the threshold. Past experience tells me that I&apos;m toeing my limit: lost enough to let my stupid emotions leak on my face, to conjure words to try to push them down, but not enough to kneel at the porcelain throne. I know the feeling is real because the wetness on my face gives it credence, and I often think he&apos;s the only friend I&apos;ve got left to listen.</p>
+<p>&emsp;If only I could get him to.</p>
+<p>&emsp;&quot;How can you get it if you don&apos;t know what I mean?&quot; I ask.</p>
+<p>&emsp;&quot;I get it, bro, just not what you mean.&quot; Miguel lifts the cracked smartphone above his face as he lays on the futon, thumb-scrolling through an endless barrage of ads and entertainment. </p>
+<p>&emsp;&quot;What I mean is that I don&apos;t feel it anymore. My life is just work, then sleep, then work, then go to sleep, but it&apos;s nothing more than that. I don&apos;t have it like you do. You always have the energy, but I don&apos;t know how you find it.&quot; The tears leak further: I can&apos;t remember the last time I was drunk enough to let them out. &quot;But I know the time is in between there somewhere, I mean, I&apos;m certain I could fit in anything if I tried. But I&apos;m always just so damn tired.&quot;</p>
+<p>&emsp;He swipes right a couple times in a dating app, still refusing to look up. &quot;Time isn&apos;t the only thing that&apos;s too small of yours to fit.&quot; He laughs. Then the vibration from a match startles him. </p>
+<p>&emsp;Miguel&apos;s thumb slips and he flings his phone in the air, letting out a grunt when it crashes into his nose.He jolts upright to rub the pain out, looking at me for the first time in an hour.</p>
+<p>&emsp;&quot;Oh, shit. You&apos;re serious.&quot;</p>
+<p>&emsp;&quot;Yeah, you think this is just a bit?&quot;</p>
+<p>&emsp;&quot;No, of course not.&quot; He sets his phone on a cardboard box and thinks for a moment. &quot;Why I &apos;feel it.&apos; I don&apos;t know . . . I guess I just got a big family that always keeps me busy. My cousins are young, and my siblings are still in college, so I end up going to their parties and stuff.&quot;</p>
+<p>&emsp;&quot;So it&apos;s like college never ended for you. Never realized I&apos;d miss it so much . . . my roommates made the damn experience,&quot; I say. It didn&apos;t matter if we were in the dorms or slumming it in an expensive renter-fixer-upper west of campus: those fuckers forced me to get out. &quot;Most nights, when I was studying in my bedroom, nose stuck in a textbook, they&apos;d pick the lock and barge in &mdash; shooting me with flaming Nerf darts, assaulting me with a pizza cutter, or dragging me to one of their parties.&quot;</p>
+<p>&emsp;He takes the last swig of his seventh can. &quot;Just like my older cousins. They show up to my house to drag me clubbing, even if I pulled a &apos;tenner&apos; at work.&quot;</p>
+<p>&emsp;&quot;Man. If my brother was still around, I&apos;m sure he&apos;d be over here all the time,&quot; I say.</p>
+<p>&emsp;&quot;Of course. Our families had a lot of fun together: barbeques, parties at the park...&quot; The list trails off when he crunches the can in his hands.</p>
+<p>&emsp;&quot;You remember those weekends in middle school when we tried to beat the Halo campaign in a single night?&quot;</p>
+<p>&emsp;&quot;Yeah. And your brother would buy all those energy drinks, sneaking them downstairs for us,&quot; he says. &quot;Oh, and the summer tent sleepovers, remember that one night you were so scared of the lightning you couldn&apos;t move, and my dad had to carry you back inside?&quot;</p>
+<p>&emsp;&quot;I was stuck in the sleeping bag, so soaking wet from the rain I almost slid out of his arms,&quot; I say. We share a laugh. &quot;Or the RV trip we took for the out-of-state Lacrosse game&mdash;when we got stuck on the side of the road. We used up all the power playing GameCube and my dad was furious!&quot;</p>
+<p>&emsp;He laughs. &quot;Yeah. And we had to ask one of the families running behind to pick us up. The whole time we waited there, your dad was screaming at Triple-A, and your mom was trying to cook, but the RV tipped so far to the side that she couldn&apos;t set anything on the counter...&quot;</p>
+<p>&emsp;&quot;...And all we could do was just pass the ball on the side of the road, wondering whether or not we were gonna make the game.&quot;</p>
+<p>&emsp;&quot;But we won that one, right?&quot;</p>
+<p>&emsp;&quot;Yeah &mdash; I ripped the game-winning corner pocket.&quot;</p>
+<p>&emsp;&quot;Oh yeah. Their team was trash. The goalie scored on himself.&quot;</p>
+<p>&emsp;The nostalgia can only abate the emptiness for so long. I take another swig, feeling the body high mix with the dizziness from the flat beer. Without them, the next words might not have left me.</p>
+<p>&emsp;&quot;But now it&apos;s just like . . . I dunno. I only know that it sucks, you know?&quot;</p>
+<p>&emsp;&quot;Of course.&quot;</p>
+<p>&emsp;&quot;Like, I&apos;m trying to care, but I don&apos;t. My mind doesn&apos;t want me to be happy.&quot; I nearly fall out of the folding chair when I&apos;m talking with my arms. &quot;We&apos;re not forced to get out there anymore. To meet new people, to keep friendships alive. All our friends are getting married or serious while we&apos;re just left behind. My parents nag me about it all the time: getting impatient since I&apos;m the only one left that&apos;ll keep the family name going. And&mdash;&quot;
+
+&quot;That shit doesn&apos;t matter. That&apos;s not what it&apos;s about,&quot; Miguel says. &quot;You just gotta do, man. You gotta do things just to do them.&quot;</p>
+<p>&emsp;I furrow my brows. &quot;To do what?&quot;</p>
+<p>&emsp;He wets his lips on a last sip before he tries at something profound.</p>
+<p>&emsp;&quot;The doing is what makes happiness come, when even . . . even when you&apos;re, like, not happy, and shit, you force yourself to do things, so happy shit can happen more often and shit, so you can have the chance to enjoy it,&quot; he insists. </p>
+<p>&emsp;I&apos;m lost without words, so he decides to muddy the waters even further.</p>
+<p>&emsp;&quot;You get the gist of what I&apos;m saying? Like, you have to decide to do no matter what. Like even when you don&apos;t feel like it, you know, you do. The doing, I mean, is something you choose which gives a chance of something good. Or something, at least. You know?&quot;
+
+I feel like I just had a seizure. &quot;What the fuck does that even mean?&quot;</p>
+<p>&emsp;&quot;I don&apos;t know, man. Maybe I&apos;m bad at . . . no, maybe you suck at listening,&quot; he says. &quot;I said that shit perfectly.&quot;</p>
+<p>&emsp;I mutter to myself, trying to piece together what he said. It takes me a couple seconds. &quot;Force yourself to engage with the world. Give happiness its best chance to come out, because it&apos;s all you can do.&quot;</p>
+<p>&emsp;&quot;That&apos;s exactly what I said!&quot; He snatches another can, using the light of the TV to inspect all the dents from rolling around in his Corolla.</p>
+<p>&emsp;&quot;Like hell you did!&quot; I roll my eyes.</p>
+<p>&emsp;His verbal seizure must have made him tired. He puts the can down instead of cracking another one, and after a long yawn, he pulls the unzipped sleeping bag off the floor and wraps it around himself on the futon.
+
+&quot;That thing goes down flat, you know,&quot; I offer. &quot;It doesn&apos;t have to be a couch.&quot;</p>
+<p>&emsp;&quot;Too much effort. I&apos;ve slept on worse,&quot; he says. &quot;I gotta get to sleep so I can make it to church tomorrow.&quot;</p>
+<p>&emsp;&quot;And show up hungover? I doubt you&apos;ll make it through the service,&quot; I say. &quot;But, hey, if you stay a while after, I&apos;m sure you could catch the double-A meeting.&quot;</p>
+<p>&emsp;He&apos;s too tired for a clap-back. He&apos;s not even scrolling his phone anymore: just sprawled there with his feet dangling over the wobbly armrest, arms tucked beneath him, his face buried into a folded towel.</p>
+<p>&emsp;I glance at the stove. &quot;It&apos;s only like 12:30.&quot;</p>
+<p>&emsp;&quot;Long day . . . leading idiots . . . feels so late,&quot; he says, turning to bury his face in the leather crevice of the couch.</p>
+<p>&emsp;&quot;So much for an all-nighter, huh?&quot;</p>
+<p>&emsp;&quot;Nnnn,&quot; he mumbles into the towel. &quot;Guessn&apos;t.&quot;</p>
+<p>&emsp;&quot;I guess we&apos;re not young anymore,&quot; I say. &quot;We didn&apos;t even make it through half the rack.&quot;</p>
+<p>&emsp;&quot;Nn.&quot;</p>
+<p>&emsp;&quot;So are we gonna finish these?&quot;</p>
+<p>&emsp;No answer.</p>
+<p>&emsp;&quot;I said...&quot;</p>
+<p>&emsp;But then I give up.</p>
+"},{"DocType":"Chapter","GivenName":"A Future Foretold","SevenWordSummary":"Katiya&apos;s traumatic past interferes with her work.","AutoNamePart":"Chapter&nbsp;Six","AutoNameFull":"Chapter&nbsp;Seven","ActNum":2,"ChapterOverride":"Chapter Six","ChapterPart":6,"ChapterFull":7,"ScenePart":"","SceneFull":"","Style":"","Perspective":"Katiya","Index":26,"Label":"[2] Narrative Revision","Status":"No Status","Keywords":"","UUID":"24","Synopsis":"A slow first day slaving over farm work ends with panic over an Essence event to the north. Katiya&apos;s panic seizes her ability to carry out the functions of her job.","NextPublish":"7","VerboseID":"2.7","VerboseOverride":"","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"
+06","Body":""},{"DocType":"Scene","GivenName":"","AutoNamePart":1,"SevenWordSummary":"A slow first day ends in panic.","AutoNameFull":18,"ActNum":2,"ChapterOverride":"","ChapterPart":6,"ChapterFull":7,"VerboseOverride":"","ScenePart":1,"SceneFull":18,"Style":"Katiya","Perspective":"Katiya","Index":27,"Label":"Fantasy World","Status":"No Status","Keywords":"","UUID":"25","Synopsis":"","NextPublish":"7","VerboseID":"2.7.18","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-K03-1","Body":"
+<p>&emsp;&quot;Is that as bad as it gets? Or is this just because it&apos;s the first day?&quot; Pax asks. &quot;Maybe Aldrin wasn&apos;t lying. I thought we&apos;d be at the enemy&apos;s doorstep most days, waiting for one of them to break through.&quot; He chows down on a raw potato that he withdraws from his pocket, spitting scraps with every syllable. &quot;But this is great &mdash; a little work for as much produce as you can eat!&quot;</p>
+<p>&emsp;&quot;As long as you don&apos;t get caught, you idiot,&quot; Ryder groans.</p>
+<p>&emsp;The two hike behind us as the sky shifts to dusk, eclipsing all the light from the setting sun. I can feel slivers of potato catching in my hair. Bertram and I shiver in their shade as we struggle for footing, stumbling down the switchbacks of the southern foothills. Despite the half-baked ramblings that often get him in trouble, Pax is right this time. There wasn&apos;t a single scouting mission on the board beyond patrolling the town.</p>
+<p>&emsp;Does it really get this easy?</p>
+<p>&emsp;I wait until the switchback slithers east and the trail straightens, catching the fading light on my first quest form. It&apos;s stamped and scribbled with an illiterate farmer&apos;s signature, dirtied from folding by my soil-soaked fingers. Something catches my eye before we turn another corner: a small statement that the guildscribes helped the farmer write, the only part of the form scrawled in coherent letters.</p>
+<p>&emsp;&quot;Hah, did you see this section?&quot; I ask Bertram. Pax and Ryder look over our heads without bending. &quot;List the concern and how it demands the strength of the Royal Guard&apos;s Knights.&quot;</p>
+<p>&emsp;Bertram squints, reading the two words before a laugh seizes his throat. </p>
+<p>&emsp;Ryder reads it instead.</p>
+<p>&emsp;&quot;Defending vegetables.&quot;</p>
+<p>&emsp;&quot;From what?&quot; Pax asks. &quot;Hungry bellies?&quot;</p>
+<p>&emsp;We share a laugh.</p>
+<p>&emsp;&quot;If this is as hard as it gets, then this is a vacation,&quot; Pax says, showing us his large, calloused hands. &quot;I grew up on the outer farmlands of the Capital, working fields from dawn to dusk. Every day I was strapped for time. But this was nothing.&quot;</p>
+<p>&emsp;Bertram agrees. &quot;Farming up here is practically a hobby with how that town in the North supplies us. They supply the whole damn capital, but shouldn&apos;t they be covered in frost?&quot;</p>
+<p>&emsp;I agree. </p>
+<p>&emsp;&quot;Most maps don&apos;t even chart the land north of the Purgatory Mountains,&quot; I say. &quot;It should be a frozen wasteland.&quot;</p>
+<p>&emsp;&quot;It sure is. I used to live there, up in Blackwater,&quot; Ryder says. It&apos;s probably the first fact he&apos;s volunteered since I met him.</p>
+<p>&emsp;&quot;No way. I&apos;ve never met someone from up there,&quot; I say. </p>
+<p>&emsp;&quot;Me neither,&quot; Pax says. &quot;I guess there&apos;s no reason to leave when there&apos;s no chance to starve, right?&quot;</p>
+<p>&emsp;&quot;There&apos;s no reason to leave because you can&apos;t. Not unless you spend your whole life plotting an escape.&quot;</p>
+<p>&emsp;The words are enough to halt us.</p>
+<p>&emsp;&quot;An escape?&quot; Bertram asks. &quot;Why would you have to escape? I thought they were part of the empire. Some kind of commune of field-hands and farmers, with enough Essence to keep the climate year-round.&quot;</p>
+<p>&emsp;&quot;There&apos;s not enough Essence in all of Fosroth to allow that,&quot; Pax adds. &quot;Trust me. The Capital lands are unworkable in the winter. I couldn&apos;t even use a spade on them before I left. So I can&apos;t even imagine working the lands up there.&quot;</p>
+<p>&emsp;&quot;That&apos;s because the lands are beneath the ground, in warm chambers brought to life by a single Mask&apos;s Divine Wish,&quot; Ryder says. &quot;A Divine Wish granting a chamber that can feed for eternity, rife with the seeds and succulence of every plant imaginable. But it doesn&apos;t work without slaves. None of Blackwater&apos;s middling Academy recruits find out until it&apos;s too late, so they&apos;re thrust beyond the walls: not for combat, but for servitude, delving into&mdash;&quot;</p>
+<p>&emsp;His words cut off when a crimson glow saturates the northern hills. We&apos;re too slow to shield our eyes when a blinding light flashes from beyond the Purgatory Mountains, as if brought by Ryder&apos;s invocation.</p>
+<p>&emsp;It barely catches our eyes as we descend the southern foothills. Any one of us could have missed it if we blinked at the wrong time. But before we can second-guess this shared experience &mdash; held as a glow in our retinas when we close our eyes &mdash; we find the faintest column of crimson light stretching skyward, like a glowing thread tethering our world of Fosroth to the stars.</p>
+<p>&emsp;It fades like lightning before we have the time to speak its presence. An eerie silence overshadows the town. The wind withdraws with bated breath. The crickets refuse to rub their wings. But to us &mdash; a naive band of knights that only know battle through secondhand stories &mdash; it&apos;s the truest evidence of a war we&apos;ve gotten yet, and it runs my skin with gooseflesh.</p>
+<p>&emsp;Our pace hastens down the treacherous trail. The trembling words fill every inch of impedance that keeps us from an outright sprint.</p>
+<p>&emsp;&quot;I thought the war was contained to the east, not the north! How would they even get around that far?&quot; Paxton huffs.</p>
+<p>&emsp;&quot;It&apos;d be almost impossible for the enemy to take Blackwater,&quot; Ryder says.</p>
+<p>&emsp;&quot;But the column was red!&quot; Bertram says. &quot;There&apos;s surely a Mask up there that just did something. It might have even been their Divine Wish...&quot;</p>
+<p>&emsp;&quot;You mean they just jettisoned all their Essence?&quot; I ask. Essence on the order of the Gods breaks the very laws of this world. Only a select few carry the blessing in their blood. But using it all at once comes at the cost of life.</p>
+<p>&emsp;We tap our circuits for Essence, for the strength in our legs to descend faster and faster, predicating the call to Gaffesend Base. The trail ends on the side of the long, wrapping road we tried to cut, and then it&apos;s a dead sprint. </p>
+<p>&emsp;I refuse to be late on the first day. My sickening fear and small size propel me far ahead of the others, drawing on more anxiety than Essence as I tear past the landmarks of our small town. The trail transitions from matted dirt to concrete, to cobblestone, then back to concrete, until I&apos;m rushing along the west edge of the lake in the military district: dragged forward by the weight of the thin breastplate; begged by my burning lungs to stop or else I might collapse into the water.</p>
+"},{"DocType":"Scene","GivenName":"","AutoNamePart":2,"SevenWordSummary":"They respond to the events of Firebrand.","AutoNameFull":19,"ActNum":2,"ChapterOverride":"","ChapterPart":6,"ChapterFull":7,"VerboseOverride":"","ScenePart":2,"SceneFull":19,"Style":"Katiya","Perspective":"Katiya","Index":28,"Label":"Fantasy World","Status":"No Status","Keywords":"","UUID":"26","Synopsis":"","NextPublish":"7","VerboseID":"2.7.19","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-K03-2","Body":"
+<p>&emsp;I pass the threshold of the gate, gasping for breaths as my last sprint dissolves into a jog. It becomes immediately obvious that weren&apos;t the only ones to notice: most of the recruits gather outside the guard post, swarming around the re-purposed adventurers&apos; guild like flies to excrement. </p>
+<p>&emsp;I spot my brother Erik leaning against the doorframe.</p>
+<p>&emsp;&quot;What&apos;s happening?&quot; I ask.</p>
+<p>&emsp;&quot;Some major Essence event.&quot;</p>
+<p>&emsp;&quot;Yeah, we saw it. We were on the southern hills.&quot; </p>
+<p>&emsp;I gasp for breath. He hands me his canteen. One long drink later, I find my mouth wet enough to continue.</p>
+<p>&emsp;&quot;Should we be afraid?&quot;</p>
+<p>&emsp;&quot;Afraid? Guards aren&apos;t supposed to be afraid,&quot; he says, staring down at me with our father&apos;s amber eyes.</p>
+<p>&emsp;&quot;Not afraid . . . I meant concerned,&quot; I say. My mind&apos;s too busy redirecting resources to my starving muscles, and I can feel it in the heat of my flushed face.</p>
+<p>&emsp;&quot;I don&apos;t think so.&quot;</p>
+<p>&emsp;I try to slide past him to get in, but he traps me with his brazen arms. &quot;Relax,&quot; he says. &quot;You&apos;re going to be fine. You know I wouldn&apos;t let anything happen to you.&quot;</p>
+<p>&emsp;&quot;I know that,&quot; I tell him.</p>
+<p>&emsp;&quot;You always get so damn worked up. Just breathe,&quot; he demands. &quot;We&apos;re safe here in the city.&quot;</p>
+<p>&emsp;I draw several long breaths in my nose and out my mouth before he releases me, just as Bertram, Pax, and Ryder finally catch up.  We enter the main room of the command post, packed to the walls with knights and soldiers. In the corner, the Line Type machines send a one-way barrage of signals across wires. There are three of them: one for the war front, one for the capital, and one that&apos;s used for up north, rarely getting an answer to anything.</p>
+<p>&emsp;&quot;Status of Blackwater?&quot; Aldrin orders.</p>
+<p>&emsp;&quot;Clearing the line right now to get their response,&quot; a guard says.</p>
+<p>&emsp;Loud chirps on the line screech with the strain of such distance. The vibrations resonate different-shaped keys that dance in their fixtures, stamping against a swiftly scrolling sheet of paper. A long half-minute passes, and the guard impatiently waits until there&apos;s enough information to report on.</p>
+<p>&emsp;&quot;Blackwater is safe,&quot; the guard says first. &quot;A civilian event in the north district. General Ullrich sending Royal Guard to investigate, not a Mask event, full stop,&quot; he says.</p>
+<p>&emsp;The room breathes a collective sigh of relief.</p>
+<p>&emsp;&quot;Was it perpetrated by Chymaeran meddling?&quot; Aldrin asks.</p>
+<p>&emsp;&quot;I don&apos;t think so,&quot; he says. &quot;I&mdash;&quot;</p>
+<p>&emsp;&quot;We don&apos;t &apos;think&apos; here! We speak when we know, and we know when we do,&quot; he barks. </p>
+<p>&emsp;&quot;Uh-Understood, sir.&quot;</p>
+<p>&emsp;&quot;Relay to the Valensends in the Capital. And send it to the boys at the front, so they don&apos;t have something extra to stress over tonight,&quot; he says.</p>
+<p>&emsp;&quot;Prompting the line,&quot; the others say, setting the mechanical keys in position.</p>
+<p>&emsp;Aldrin turns from the command zone to address the mix of soldiers and guards. &quot;Looks like an oddity: maybe Essence stores ignited. If it was a Divine Wish, we would know it &mdash; it surely would have done a lot more damage. I&apos;ve heard some group up there called the &apos;Carmine&apos; hoards dead Essence, so maybe it was them,&quot; he says.</p>
+<p>&emsp;He turns to the guildscribes.</p>
+<p>&emsp;&quot;We&apos;ll run a couple scouting parties, just in case. Write up some quest forms for the new knights: this is a good excuse to get some experience and some exercise.&quot;</p>
+<p>&emsp;The guildscribes nod before he turns to us again, waiting until all the novice knights file in through the double doors.</p>
+<p>&emsp;&quot;Things should die down in a week, but we&apos;re going to keep the city on alert. We want to be sure that the Chymaera aren&apos;t using this as an opportunity to strike.&quot;</p>
+<p>&emsp;I know what he&apos;s going to ask for next when his eyes dart between the new recruits. I try to dissolve into the crowd, hoping the discomfort in my chest is just exhaustion from running across the town.</p>
+<p>&emsp;&quot;I need volunteers for night watch, to head north and see what&apos;s going on,&quot; he says. &quot;It&apos;s worth a quest. Extra work means an extra day off.&quot;</p>
+<p>&emsp;I falter when I&apos;m shoulder-to-shoulder with my colleagues. Guilt and shame tug me forward, but that same crushing feeling I found in the cabin is so much stronger.</p>
+<p>&emsp;&quot;This is easy. No more than several hours,&quot; he says.</p>
+<p>&emsp;You&apos;re all going to do this, is what I hear.</p>
+<p>&emsp;I can only watch as my colleagues step forward, arranging themselves in groups, but I taste the smoke. I&apos;m snared in the past. I can see the Chymaerans and their glowing, amethyst eyes as they penetrate the shattered glass windows, stretching with their sharp obsidian limbs to finish what the fire began.</p>
+<p>&emsp;This self-immolating spite can only swell when the lust for flight outpaces fight. My hands run cold as if the Chymaeran Curse were churning in my circuits, chilling my veins, and I have to lean against the wall to catch a breath.</p>
+<p>&emsp;Bertram follows me outside. I&apos;m fortunate that the others are too distracted to witness this moment of utter weakness.</p>
+<p>&emsp;&quot;What&apos;s going on, Kat?&quot;</p>
+<p>&emsp;&quot;I feel sick,&quot; I tell him.</p>
+<p>&emsp;&quot;Right now? All of a sudden?&quot; He asks.</p>
+<p>&emsp;I feel like I&apos;m going to lose my breakfast and lunch. It&apos;s only then that he realizes he&apos;s drawing attention.</p>
+<p>&emsp;I feel a shock pulse my body when the worst comes to pass, unable to speak or explain when Aldrin steps outside.</p>
+<p>&emsp;&quot;What&apos;s going on here?&quot; Aldrin asks.</p>
+<p>&emsp;I don&apos;t want to look weak, but maybe I should just tell him. There&apos;s no way out of this. After I think I have a grasp on my nausea, I open my mouth to speak.</p>
+<p>&emsp;But Bertram beats me to it.</p>
+<p>&emsp;&quot;She&apos;s been feeling sick since the farm,&quot; he says. &quot;They were trying to be nice with the samples and the free meal, and we were trying to be respectful: first day, you know. But after all the running...&quot;</p>
+<p>&emsp;&quot;She seemed fine minutes ago,&quot; Aldrin says.</p>
+<p>&emsp;I doubt this farce will work. I say, &quot;No, I&mdash;&quot;</p>
+<p>&emsp;&quot;Because she didn&apos;t want to look weak on the first day,&quot; Bertram says. &quot;Don&apos;t you know how hard it is for her? She talked to me the whole way back about it, being a female guard and all, trying not to prove the stereotype.&quot;</p>
+<p>&emsp;&quot;Oh,&quot; Aldrin says. He approaches, placing his glove on my shoulder. &quot;I respect that. We refuse to have that kind of backwards thinking in our ranks. We&apos;re trying to get rid of it. But you&apos;re not of use to me if you&apos;re not at your best,&quot; he says.</p>
+<p>&emsp;I can feel the cold night air again. I manage to stand upright without the wall.</p>
+<p>&emsp;&quot;T-thank you,&quot; I say, wiping my mouth, although my stomach and its contents are still there.</p>
+<p>&emsp;&quot;Go home and get some rest: this is hardly a task, I just wanted an excuse to give you junior guards some exercise,&quot; he tells me. &quot;And Berry&mdash;would you mind walking her home?&quot; He hands two quest forms to him. &quot;Bring these back to me tomorrow. I&apos;ll give you credit.&quot; And then he whispers: &quot;Just don&apos;t tell anyone else.&quot;</p>
+<p>&emsp;&quot;Yes, sir. Thank you, sir,&quot; Bertram says, taking my arm before he escorts me towards the complex. We make sure to pass the gates before we drop the act.</p>
+"},{"DocType":"Scene","GivenName":"","AutoNamePart":3,"SevenWordSummary":"Katiya&apos;s anxiety cracks her tough facade.","AutoNameFull":20,"ActNum":2,"ChapterOverride":"","ChapterPart":6,"ChapterFull":7,"VerboseOverride":"","ScenePart":3,"SceneFull":20,"Style":"Katiya","Perspective":"Katiya","Index":29,"Label":"Fantasy World","Status":"No Status","Keywords":"","UUID":"27","Synopsis":"","NextPublish":"7","VerboseID":"2.7.20","Links":{"Wattpad":"","Personal":"","RoyalRoad":"","AO3":"","DeviantArt":""},"DocName":"PG-K03-3","Body":"
+<p>&emsp;&quot;What was that about?&quot; Bertram asks. The grasp of his hands on my torso is so strong that I hardly have to walk.</p>
+<p>&emsp;&quot;I ... I don&apos;t know,&quot; I tell him. &quot;I thought I got over this. I thought I wasn&apos;t so damn weak and pathetic...&quot;</p>
+<p>&emsp;&quot;You&apos;re not pathetic! You earned your presence here,&quot; he assures me. &quot;You had a bad day, is all.&quot;</p>
+<p>&emsp;&quot;But how can I last when it&apos;s really down to the wire, when it&apos;s real, if my mind fights me at something so simple, so stupid and pathetic and weak, like this?&quot; I let out an exasperated groan. If he wasn&apos;t holding me, I might bash myself in the face with my gauntlets.</p>
+<p>&emsp;&quot;We&apos;ll take it step-by-step. You have time. Space in some scouting missions between the banal tasks,&quot; he insists.</p>
+<p>&emsp;&quot;But that was the first step. It was a step down. It was so low that it couldn&apos;t have even been called a step, and I tripped,&quot; I tell him, feeling the tears well up in my eyes. &quot;We went through the same thing that day, how does it not come back to haunt you? Why don&apos;t you run? Why are you so still?&quot;</p>
+<p>&emsp;&quot;I don&apos;t know,&quot; he tells me, still holding me upright when all I want to do is crumble. &quot;I just live in the absolute present. I just find that I&apos;m less attached to it all: maybe I just don&apos;t care what happens.&quot;</p>
+<p>&emsp;&quot;What does that even mean?&quot; I ask, wiping my eyes.</p>
+<p>&emsp;&quot;I don&apos;t know. Maybe I&apos;m just bad at describing it,&quot; he says. &quot;Maybe...&quot;</p>
+<p>&emsp;I can feel him quickly release his hands when he realizes he&apos;s holding me up by the contours of my breastplate.</p>
+<p>&emsp;&quot;Sorry.&quot;</p>
+<p>&emsp;The suddenness gets me to crack a smile. It escalates further. Pretty soon we&apos;re both laughing, and I wipe the tears from my eyes.</p>
+<p>&emsp;&quot;But really, though. I promise that I&apos;ll always have your back. I won&apos;t go off and die on you,&quot; he says.</p>
+<p>&emsp;&quot;You better not,&quot; I tell him, still letting off a couple chuckles before my lungs settle. &quot;We&apos;ll defend some more vegetables tomorrow. Maybe even something more dangerous.&quot;</p>
+<p>&emsp;&quot;I&apos;ll look forward to it,&quot; he says.</p>
+<p>&emsp;There&apos;s a certain hesitation in him when he stands close, as if there&apos;s something more he wants to say. But the moment passes. Instead, he hands me my copy of the quest sheet.</p>
+<p>&emsp;&quot;Well,&quot; he says. &quot;I guess I&apos;ll see you tomorrow.&quot;</p>
+<p>&emsp;&quot;Until tomorrow,&quot; I say.</p>
+<p>&emsp;I wave to him as I fumble for the key in my pocket; feeling for the name etched into the iron; making sure it&apos;s still there; praying to the Gods that it won&apos;t be ground any further. There&apos;s a sweet smell of grilled meat that makes me hungry: someone cooks a pig on a spit across the way. </p>
+<p>&emsp;Longing for rations after a long day, I turn my head to the entry window, trying to decide what I&apos;ll make. But instead, I find an odd, unflickering light illuminating the walls.</p>
+<p>&emsp;&quot;Huh.&quot;</p>
+<p>&emsp;My body is out of adrenaline, so I&apos;m strangely calm. I approach the window instead of the door, trying to remember if I latched the back window after getting free breakfast from the merchants. I press my ear to the thin, wavy glass for an auditory cue: unable to see clearly through the drawn curtains, holding my breath until I hear the words of a foreign tongue. The words lack the harshness of Chymaeran dialect. Maybe it&apos;s Ahkvasan? Auvryan or Verdalan? One of the old dialects?</p>
+<p>&emsp;I can only make out the silhouette of a stumbling man, holding something thicker than a rapier but thinner than a sword. He doesn&apos;t seem to be taking anything. Maybe this is a test &mdash; maybe Aldrin didn&apos;t mean it and wants to see if my actions can match my claims to courage.</p>
+<p>&emsp;I approach the front door, allowing the burgeoning anger of my incompetence to consume me, leaving no space for fear. My hand is steady, unsheathing the dagger as I gingerly turn the key in the lock until it clicks. There&apos;s no room for explanation that this isn&apos;t a test or a burglar, so I let the Essence saturate my circuits.</p>
+<p>&emsp;I turn the handle and rush the intruder. I spring forward with such force that the floorboards nearly snap when they give. My circuits run hot with Essence. My hands glow orange with heat, ready to burn their flesh until they beg to be sent to the Reservoir of Souls. </p>
+<p>&emsp;But just before I&apos;m ready to deal his death, he turns to face me, and I&apos;m unable to reconcile the oddness of his appearance.</p>
+<p>&emsp;The man looks no older than I am, somewhere halfway mixed between a Royal and a vagrant. The fineness of his silken shirt is accented with a checkered pattern of light blue boxes. The fabric is whiter than snow. His stubble is unkempt and shaggy though his light brown hair is clipped finer than all the royals I&apos;ve ever seen. His brown eyes widen with panic as I intercept him, casting him over the kitchen table, searing the fabric of his fine shirt with fire before I can withdraw the heat from my hands.</p>
+<p>&emsp;He drops the strange sword against the ground, and it looks like a metal training stick that ends with a basket, not even a blade. Is it a broom? Is he some kind of housekeeper hired by the Royal Guard, another service like the knocker?</p>
+<p>&emsp;He&apos;s far too weak to put up a fight when I straddle him against the floor, his face smudged in the puddle of porridge I left when I was rushing out the door. He&apos;s so weak that I have to lighten my grasp or else I might break his bones.</p>
+<p>&emsp;It&apos;s then that he spills his first string of words to me. And somehow, I understand them perfectly.</p>
+"}
+  ],"Created":"Thursday, May 8, 2025","Author":"","Project":"PARAGATE","Nickname":"PARAGATE","WordCount":"25,679"}
