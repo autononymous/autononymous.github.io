@@ -17,10 +17,19 @@
 
 /* ROOT styles to be modified by theme settings in Javascript */
 :root {
+
+    --BackgroundBlue:   '2,2,5';
+    --BackgroundRed:    '5,2,2';
+    --TextBlue:         '200,200,255';
+    --TextRed:          '255,200,200'; 
+
     --AllText:          white;
     --Background:       '18,18,18';
     --BackgroundColor:  rgba(var(--Background),1);
     --BackgroundImg:    none;
+
+    --AllTitleFont:     'Courier Prime', 'Courier';
+    --AllBodyFont:      'Lucida Fax','Times New Roman';
 
     --DEBUG:            rgba(255,255,100,0.00);
     --DEBUGborder:      none;/*2px solid rgba(100,100,255,0.2);*/
@@ -838,7 +847,17 @@ For each CHAPTER:
 /* Themes for Minimalist Reader */
 const STYLES = {
     "LightMode":{
+
+        "--BackgroundBlue":   '240,240,255',
+        "--BackgroundRed":    '255,240,240',
+        "--TextBlue":         '18,18,36',
+        "--TextRed":          '36,18,18',
+
         "--AllText":          "rgba(0,0,0,1)",
+
+        "--AllTitleFont":     "'Courier Prime', 'Courier'",
+        "--AllBodyFont":      "'Lucida Fax','Times New Roman'",
+
         "--Background":       "255,255,255",
         "--BackgroundImg":    "none",//url(https://autononymous.io/wp-content/uploads/2024/11/repeat_kat_02_b-1.png)",
 
@@ -862,25 +881,25 @@ const STYLES = {
 
         "--ActColor":         "darkred",
         "--ActSize":          "3.0em",
-        "--ActFont":          "'Courier Prime', 'Courier'",
+        "--ActFont":          "var(--AllTitleFont)",
 
         "--ChapHeaderColor":  "var(--AllText)",
         "--ChapHeaderSize":   "min(10vw,3.5em)",
-        "--ChapHeaderFont":   "'Courier Prime', 'Courier'",
+        "--ChapHeaderFont":   "var(--AllTitleFont)",
         "--ChapDecor":        "underline",
         "--ChapCaps":         "small-caps",
 
         "--ChapSubColor":     "var(--AllText)",
         "--ChapSubSize":      "min(8vw,3.0em)",
-        "--ChapSubFont":      "'Courier Prime', 'Courier'",
+        "--ChapSubFont":      "var(--AllTitleFont)",
 
         "--SectionColor":     "var(--AllText)",
         "--SectionSize":      "min(10vw,3.25em)",
-        "--SectionFont":      "'Courier Prime', 'Courier'",
+        "--SectionFont":      "var(--AllTitleFont)",
 
         "--BodyColor":        "var(--AllText)",
         "--BodySize":         "1.5rem",
-        "--BodyFont":         "'Lucida Fax','Times New Roman'",
+        "--BodyFont":         "var(--AllBodyFont)",
         "--BodyLineHeight":   "1.0em",
 
         "--InvertImages":     "invert(1)",
@@ -889,7 +908,17 @@ const STYLES = {
         "--SceneSeparator":   "calc('2px dashed ' + var(--BodyColor));"
     },
     "DarkMode":{
+
+        "--BackgroundBlue":   '18,18,36',
+        "--BackgroundRed":    '36,18,18',
+        "--TextBlue":         '200,200,255',
+        "--TextRed":          '255,200,200',
+
         "--AllText":          "white",
+
+        "--AllTitleFont":     "'Courier Prime', 'Courier'",
+        "--AllBodyFont":      "'Lucida Fax','Times New Roman'",
+
         "--Background":       "18,18,18",        
         "--BackgroundImg":    "linear-gradient(to right,crimson 0%,black 10%,black 80%, crimson 100%)",
 
@@ -914,93 +943,40 @@ const STYLES = {
 
         "--ActColor":         "rgb(var(--ColorPrimary))",
         "--ActSize":          "3.0em",
-        "--ActFont":          "'Courier Prime', 'Courier'",
+        "--ActFont":          "var(--AllTitleFont)",
 
         "--ChapHeaderColor":  "var(--AllText)",
         "--ChapHeaderSize":   "min(10vw,3.5em)",
-        "--ChapHeaderFont":   "'Courier Prime', 'Courier'",
+        "--ChapHeaderFont":   "var(--AllTitleFont)",
         "--ChapDecor":        "underline",
         "--ChapCaps":         "small-caps",
 
         "--ChapSubColor":     "var(--AllText)",
         "--ChapSubSize":      "min(8vw,3.0em)",
-        "--ChapSubFont":      "'Courier Prime', 'Courier'",
+        "--ChapSubFont":      "var(--AllTitleFont)",
 
         "--SectionColor":     "var(--AllText)",
         "--SectionSize":      "min(10vw,3.25em)",
-        "--SectionFont":      "'Courier Prime', 'Courier'",
+        "--SectionFont":      "var(--AllTitleFont)",
 
         "--BodyColor":        "var(--AllText)",
         "--BodySize":         "1.5rem",
-        "--BodyFont":         "'Lucida Fax','Times New Roman'",
+        "--BodyFont":         "var(--AllBodyFont)",
         "--BodyLineHeight":   "1.0em",
 
         "--InvertImages":     "invert(0)",
     
         "--SceneDecorator":   "' - '",
         "--SceneSeparator":   "calc('2px dashed ' + var(--BodyColor));"
-    },
-    "Firebrand":{
-        "--AllText":          "black",
-        "--Background":       "255,255,255",
-
-        "--DEBUG":            "rgba(255,255,100,0.00)",
-        "--DEBUGborder":      "none",
-
-        "--MarginSize":       "5vw",
-        "--MarginPage":       "20px",
-
-        "--ColorSpecial":     '120, 0, 8',
-
-        "--ColorPrimary":     '189, 0, 28',
-        "--ColorSecondary":   'var(--ColorSpecial)',//'156, 121, 33',
-        "--ColorTertiary":    '120, 100, 0',
-        "--ColorQuarternary": '212, 22, 32',
-
-        "--BarLeft":          "rgb(var(--ColorSpecial))",
-        "--BarRight":         "rgb(var(--ColorSpecial))",
-
-        "--ColorAdvance":     "transparent",
-        "--ColorAdvanceInfo": "rgba(255,255,255, 0)",
-        "--ColorAdvanceBorder":"transparent",
-                
-        "--BackgroundImg":    "linear-gradient(to right, rgba(var(--ColorPrimary),1), rgba(var(--ColorPrimary),1))",
-        
-        "--ActColor":         "rgb(var(--ColorPrimary))",
-        "--ActSize":          "3.0em",
-        "--ActFont":          "'Courier Prime', 'Courier'",
-
-        "--ChapHeaderColor":  "rgb(var(--ColorSpecial))",
-        "--ChapHeaderSize":   "min(10vw,3.5em)",
-        "--ChapHeaderFont":   "'Courier Prime', 'Courier'",
-        "--ChapDecor":        "underline",
-        "--ChapCaps":         "small-caps",
-
-        "--ChapSubColor":     "rgb(var(--ColorSpecial))",
-        "--ChapSubSize":      "min(7vw,3.0em)",
-        "--ChapSubFont":      "'Courier Prime', 'Courier'",
-
-        "--SectionColor":     "rgb(var(--ColorSpecial))",
-        "--SectionSize":      "min(10vw,3.25em)",
-        "--SectionFont":      "'Courier Prime', 'Courier'",
-
-        "--BodyColor":        "var(--AllText)",
-        "--BodySize":         "1.7rem",
-        "--BodyFont":         "'Lucida Fax','Times New Roman'",
-        "--BodyLineHeight":   "1.0em",
-
-        "--InvertImages":     "invert(1)",
-    
-        "--SceneDecorator":   "' - '",
-        "--SceneSeparator":   "calc('2px dashed ' + var(--BodyColor));"
-    }
+    } 
 }
 
 const TOCtarget = document.getElementById('TOC-TABLE');
 var TOCchapterTARGET = "";
-function TOChtmlACT(nAct,name) {
+
+function TOChtmlACT(nAct,name,theme) {
     let result = `
-    <div id="TOC-ACT${nAct}" class="TOC Act">
+    <div id="TOC-ACT${nAct}" class="TOC ${theme} Act">
         <div id="TOC-ACT${nAct}-ROW" class="TOC ActRow">          
             ${name} 
         </div>
@@ -1011,11 +987,11 @@ function TOChtmlACT(nAct,name) {
     TOCchapterTARGET = `TOC-ACT${nAct}-CHAPTERS`;
     return result;
 }
-function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew) {
+function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew,theme) {
     
     ChapterIsActive = (nChap <= ChapterMaxNumber);
 
-    let ChapterInteraction = ChapterIsActive?(`class="TOC ChapterRow activerow ${isnew?'newrow':''}"  onclick="ChapterNumber=${nChap};reload();ToggleTOC();"`):(`class="TOC ChapterRow inactiverow ${isnew?'newrow':''}"`);
+    let ChapterInteraction = ChapterIsActive?(`class="TOC ${theme} ChapterRow activerow ${isnew?'newrow':''}"  onclick="ChapterNumber=${nChap};reload();ToggleTOC();"`):(`class="TOC ChapterRow inactiverow ${isnew?'newrow':''}"`);
 
     let result = `    
         <div id="TOC-CH${nChap}" ${ChapterInteraction}> 
@@ -1276,7 +1252,7 @@ function buttonSetTheme(advance) {
     });
     ROOT.style.setProperty('--BodySize', FONTSIZES[FontStage] );
     ROOT.style.setProperty('--BodyLineHeight', LINEHEIGHTS[LineStage] );
-
+    SetTheme(Perspective);
 }
 
 function GenerateProgress() {
@@ -1383,6 +1359,7 @@ function ChangePage(extent) {
             }
             
         }
+        SetTheme(Perspective);
     }
 }
 
@@ -1465,6 +1442,7 @@ async function BuildTOC() {
                 } else {
                     DatePercentage = (today - startday) / (releaseday - startday);
                 }
+                
                 let VertBar = document.getElementById(`TOC-CH${parcel.ChapterFull}-STATE`)
 
                 console.log(`Release #${ChapterMaxNumberT}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}\n  percentage ${DatePercentage}.`)
@@ -1516,7 +1494,7 @@ async function SpoolTicker() {
                 if (pChapter == ChapterNumber && ShowActs) {
                     debugLNC(`> Act ${pAct} from index position ${pItem} loaded into Ticker.\n`, false);
                     // Loading in act information:
-                    Ticker.push(`#ACT#`,`Act ${parcel.ActNum}`,`#/#`)
+                    Ticker.push(`%${parcel.Perspective}%`,`#ACT#`,`Act ${parcel.ActNum}`,`#/#`)
                 }
                 // Building Table Of Contents with Act:
                 //-TOCtarget.innerHTML += TOChtmlACT(ActCtr,parcel.DocName);
@@ -1536,8 +1514,8 @@ async function SpoolTicker() {
 
                     debugLNC(`> Chapter ${pChapter} from index position ${pItem} loaded into Ticker.\n`, false);
                     // Loading in chapter information:
-                    Ticker.push(`#CHP#`,`${(parcel.ChapterOverride=="")?parcel.AutoNameFull:parcel.ChapterOverride}`,`#/#`)
-                    Ticker.push(`#SUB#`,`${parcel.GivenName}`,`#/#`)
+                    Ticker.push(`%${parcel.Perspective}%`,`#CHP#`,`${(parcel.ChapterOverride=="")?parcel.AutoNameFull:parcel.ChapterOverride}`,`#/#`)
+                    Ticker.push(`%${parcel.Perspective}%`,`#SUB#`,`${parcel.GivenName}`,`#/#`)
                 }
                                
                 //-document.getElementById(TOCchapterTARGET).innerHTML += TOChtmlCHAPTER(parcel.ChapterFull,parcel.GivenName,parcel.Synopsis,EntryDateStr,AdjustedIndex(parcel.ChapterFull),DatePercentage)
@@ -1565,10 +1543,10 @@ async function SpoolTicker() {
                 if ((pChapter == ChapterNumber) && (WritePass)) {
                     debugLNC(`> Scene ${pScene} from index position ${pItem} loaded into Ticker.\n`,false);
                     // Loading in scene information:
-                    Ticker.push(`#SCN#`,`${parcel.ScenePart}`,`#/#`)
+                    Ticker.push(`%${parcel.Perspective}%`,`#SCN#`,`${parcel.ScenePart}`,`#/#`)
                     Lines = parcel.Body.replaceAll('<p>','\n').replaceAll('</p>','').split('\n')          
                     Lines.forEach( Line => {
-                        Ticker.push('#PAR#')
+                        Ticker.push(`%${parcel.Perspective}%`,'#PAR#')
                         Line.split(' ').forEach( Word => {
                             Ticker.push((Word!="")?Word:"")
                         });   
@@ -1598,6 +1576,48 @@ var LastTextState;
 
 var I; ////////////////////
 
+function SetTheme(StyleChoice) {
+    let TextSet = "";
+    let BackgroundSet = "";
+    let FontSetBody = "";
+    let FontSetTitle = "";
+
+    console.log(StyleChoice);
+    console.log(ThemeStage)
+
+    switch(StyleChoice) {
+        case 'Cody':
+            TextSet = STYLES[THEMES[ThemeStage]]["--TextBlue"];
+            BackgroundSet = STYLES[THEMES[ThemeStage]]["--BackgroundBlue"];
+            FontSetBody = "Bahnschrift";
+            FontSetTitle = "Bahnschrift";
+            break;
+        case 'Katiya':
+            TextSet = STYLES[THEMES[ThemeStage]]["--TextRed"];
+            BackgroundSet = STYLES[THEMES[ThemeStage]]["--BackgroundRed"];
+            FontSetBody = `'Lucida Fax', 'Times New Roman'`;
+            FontSetTitle = `'Lucida Fax', 'Times New Roman'`;
+            break;
+        default:
+            TextSet = STYLES[THEMES[ThemeStage]]["--AllText"];
+            BackgroundSet = STYLES[THEMES[ThemeStage]]["--Background"];
+            FontSetBody = `'Lucida Fax', 'Times New Roman'`;
+            break;
+    
+    }
+
+    ROOT.style.setProperty('--BackgroundColor', `rgba(${BackgroundSet},1)` );
+    ROOT.style.setProperty('--AllText', `rgba(${TextSet},1)` );
+    ROOT.style.setProperty('--Background',BackgroundSet);
+
+    ROOT.style.setProperty('--BarLeft', `rgba(${TextSet},1)` );
+    ROOT.style.setProperty('--BarRight', `rgba(${TextSet},1)` );
+
+    ROOT.style.setProperty('--AllTitleFont', FontSetTitle  );
+    ROOT.style.setProperty('--AllBodyFont', FontSetBody );
+
+}
+
 
 // Advance the page on overflow of a new element.
 function AdvancePage(newElement) {
@@ -1609,7 +1629,7 @@ function AdvancePage(newElement) {
         // advance the page count,
         PageMaxCount++;
         // and generate a new DIV for the page
-        divTARGET.innerHTML += `<div id="PAGE${PageMaxCount}" class="Page"></div> `;
+        divTARGET.innerHTML += `<div id="PAGE${PageMaxCount}" class="Page ${Perspective}"></div> `;
         // and reset the position so we continue filling the next page.
         ElemPosition = document.getElementById(`PAGE${PageMaxCount}`);
         ElemPosition.innerHTML = newElement + "";
@@ -1620,18 +1640,19 @@ function AdvancePage(newElement) {
 function AdvancePageForText(nextText) {   
     if(!IsContinuous) {
         ElemPosition.innerHTML = LastTextState + "";
-        TextPosition = document.getElementById('active'); 
+        TextPosition = document.getElementById('active');
         TextPosition.id = "";
-        TextPosition.className = "pBODY LAST"
+        TextPosition.className = "pBODY LAST " + Perspective;
         //console.debug(TextPosition.outerHTML)
         ElemPosition.style.display = "none";
         PageMaxCount++;
-        divTARGET.innerHTML += `<div id="PAGE${PageMaxCount}" class="Page"></div> `;
+        divTARGET.innerHTML += `<div id="PAGE${PageMaxCount}" class="Page ${Perspective}"></div> `;
         FillElement = "PARAGRAPH";
         ElemPosition = document.getElementById(`PAGE${PageMaxCount}`);
         ElemPosition.innerHTML = template_BODYSPLIT + nextText + "</p>";
         //console.debug(`New text on Page ${PageMaxCount} at ${nextText}.`)
-        TextPosition = document.getElementById('active'); 
+        TextPosition = document.getElementById('active');        
+        TextPosition.className += " " + Perspective + " ";
         //console.debug(ElemPosition.outerHTML)
         //console.debug(document.getElementById('active'))
         //console.debug(TextPosition.innerHTML)
@@ -1646,26 +1667,44 @@ function TextOverflow() {
 }
 
 var FillElement = "";
+var Perspective = "Cody";
 
 function RollTicker() {
     console.debug("Deploying text...");
 
     PageMaxCount = 0;
 
-    divTARGET.innerHTML = `<div id="PAGE${PageMaxCount}" class="Page"></div> `;
+    divTARGET.innerHTML = `<div id="PAGE${PageMaxCount}" class="Page ${Perspective}"></div> `;
 
-    ElemPosition = document.getElementById(`PAGE${PageMaxCount}`)
+    ElemPosition = document.getElementById(`PAGE${PageMaxCount}`)    
 
     for (let i=0; i<Ticker.length; i++) {
         let Ticket = Ticker[i];
         I = i;
         LastTextState = ElemPosition.innerHTML + "";
+
         switch(Ticket) {   
             // For ACT tickets,         
+
+            case '%Cody%':
+                //console.log(`Cody`);
+                Perspective = "Cody";
+                break;
+
+            case '%Katiya%':
+                //console.log(`Kat`);
+                Perspective = "Katiya";
+                break;
+
+            case '%Both%':
+                Perspective = "Both";
+                break;
+
             case '#ACT#':
                 FillElement = "ACT";
                 ElemPosition.innerHTML += template_ACT;
                 TextPosition = document.getElementById('active'); 
+                TextPosition.className += " " + Perspective + " ";
                 if(TextOverflow()) {  
                     AdvancePage(template_ACT);  
                 }
@@ -1676,6 +1715,8 @@ function RollTicker() {
             FillElement = "CHAPTER";
                 ElemPosition.innerHTML += template_CHAPTER;
                 TextPosition = document.getElementById('active'); 
+                TextPosition.className += " " + Perspective + " ";
+                console.log(TextPosition.className);
                 if(TextOverflow()) {  
                     AdvancePage(template_CHAPTER);  
                 }  
@@ -1685,6 +1726,7 @@ function RollTicker() {
                 FillElement = "SUBTITLE";
                 ElemPosition.innerHTML += template_SUBTITLE;
                 TextPosition = document.getElementById('active'); 
+                TextPosition.className += " " + Perspective + " ";
                 if(TextOverflow()) {  
                     AdvancePage(template_SUBTITLE);  
                 }
@@ -1694,6 +1736,7 @@ function RollTicker() {
                 FillElement = "SCENENUM";
                 ElemPosition.innerHTML += template_SCENE;
                 TextPosition = document.getElementById('active'); 
+                TextPosition.className += " " + Perspective + " ";
                 if(TextOverflow()) {  
                     AdvancePage(template_SCENE);  
                 }
@@ -1704,6 +1747,7 @@ function RollTicker() {
                 FillElement = "PARAGRAPH";
                 ElemPosition.innerHTML += template_BODY;
                 TextPosition = document.getElementById('active'); 
+                TextPosition.className += " " + Perspective + " ";
                 if(TextOverflow()) {  
                     AdvancePage(template_BODY);  
                 }
