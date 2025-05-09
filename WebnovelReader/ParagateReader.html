@@ -695,7 +695,7 @@ div.ChapterDate {
 div.StoryCover {
     position: absolute;
     width: min(500px,80vw);
-    background-image: url('https://autononymous.io/wp-content/uploads/2025/05/FIREBRAND_for_reader.png');
+    background-image: url('https://autononymous.io/wp-content/uploads/2025/05/PARAGATE_for_reader1.png');
     height: 500px;
     filter: var(--InvertImages);
     background-position:center 0%;
@@ -1013,7 +1013,7 @@ function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew,the
 
 // Get variables from URL
 const urlParams = new URLSearchParams(window.location.search);
-console.log(urlParams);
+//console.log(urlParams);
 // Get specific parameters from URL; default to prologue
 var ChapterNumber = parseFloat(urlParams.get('Chapter')) || 1;
 // Advance chapters at end of section? Default to TRUE.
@@ -1180,7 +1180,7 @@ var jTOC  = "";
 function ToggleTOC() {
     if(!isFirstClick) {
         TOCstate = !TOCstate;
-        //console.log(`TOC is ${TOCstate}.`)
+        ////console.log(`TOC is ${TOCstate}.`)
         //eFullContainer.style.animation = "";
         eFullContainer.style.opacity = (TOCstate)?  1  :  0  ;
         eFullContainer.style.top = (TOCstate)?  '0'  :  '-110vh'  ;
@@ -1219,7 +1219,7 @@ async function buttonContinuous() {
 }
 function buttonFontSize(advance) {
     //let CurrentSize = getComputedStyle(ROOT).getPropertyValue('--BodySize')
-    //console.log(` > Current size is ${CurrentSize}.`)
+    ////console.log(` > Current size is ${CurrentSize}.`)
     let query = advance + FontStage;
     if (query >= 0 && query < FONTSIZES.length) {
         FontStage += advance;
@@ -1305,8 +1305,8 @@ function UpdateProgressSlider() {
     //let Top = -SectionDims.top;
     //let Bottom = SectionDims.bottom;
     //let Height = ;
-   // console.log(` > Top: ${WindowDims.top},\n > Bottom: ${WindowDims.bottom},\n > Height: ${WindowDims.height},\n`);
-    //console.log(` > Top: ${Top},\n > Bottom: ${Bottom},\n > Height: ${Height},\n`);
+   // //console.log(` > Top: ${WindowDims.top},\n > Bottom: ${WindowDims.bottom},\n > Height: ${WindowDims.height},\n`);
+    ////console.log(` > Top: ${Top},\n > Bottom: ${Bottom},\n > Height: ${Height},\n`);
     let Progress = (((-SectionDims.top+100)) / (SectionDims.height-WindowDims.height))*100;    
     eBarMask.style.width = ( 100 - ((Progress > 95) ? 100 : (Progress < 5) ? 0 : Progress)) + "%";
 }
@@ -1348,6 +1348,9 @@ function ChangePage(extent) {
         } else {
             if( (ChapterNumber + extent >= ChapterMinNumber) && (ChapterNumber + extent <= ChapterMaxNumber)) {
                 if (AdvanceChapters) {
+                    if (ChapterNumber + extent == 0) {                        
+                        SetPrologue();
+                    }
                     ChapterNumber += extent;
                     reload(extent>0?false:true);                
                     UpdateProgress();
@@ -1404,7 +1407,7 @@ async function BuildTOC() {
     let startday = parseFloat(yeardate(StartDate));
     let releaseday = parseFloat(yeardate(StartDate));
 
-    console.log(`${today}, ${startday}, ${releaseday}`)
+    //console.log(`${today}, ${startday}, ${releaseday}`)
     let ChapterMaxNumberT = 0;
       
     let ActCtr = 0;  
@@ -1421,7 +1424,7 @@ async function BuildTOC() {
         switch (pType) {
             case "Act":
                 ActCtr++;
-                console.log("Act "+ActCtr)
+                //console.log("Act "+ActCtr)
                 TOCtarget.innerHTML += TOChtmlACT(ActCtr,parcel.DocName);
                 break;
             case "Chapter":
@@ -1445,7 +1448,7 @@ async function BuildTOC() {
                 
                 let VertBar = document.getElementById(`TOC-CH${parcel.ChapterFull}-STATE`)
 
-                console.log(`Release #${ChapterMaxNumberT}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}\n  percentage ${DatePercentage}.`)
+                //console.log(`Release #${ChapterMaxNumberT}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}\n  percentage ${DatePercentage}.`)
                 
                 VertBar.style.height = `${DatePercentage * 100}%`;
                 VertBar.style.top = `
@@ -1475,7 +1478,7 @@ async function SpoolTicker() {
     let startday = parseFloat(yeardate(StartDate));
     let releaseday = parseFloat(yeardate(StartDate));
 
-    //-console.log(`${today}, ${startday}, ${releaseday}`)
+    //-//console.log(`${today}, ${startday}, ${releaseday}`)
 
     jLoad.Manuscript.forEach( parcel => {
         pItem++;
@@ -1521,7 +1524,7 @@ async function SpoolTicker() {
                 //-document.getElementById(TOCchapterTARGET).innerHTML += TOChtmlCHAPTER(parcel.ChapterFull,parcel.GivenName,parcel.Synopsis,EntryDateStr,AdjustedIndex(parcel.ChapterFull),DatePercentage)
                 // Calculating height of date progress bar:     
 
-                console.log(`Release #${ChapterMaxNumber}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}`)
+                //console.log(`Release #${ChapterMaxNumber}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}`)
 
                 /*-
                 if (today >= releaseday) {
@@ -1582,8 +1585,8 @@ function SetTheme(StyleChoice) {
     let FontSetBody = "";
     let FontSetTitle = "";
 
-    console.log(StyleChoice);
-    console.log(ThemeStage)
+    //console.log(StyleChoice);
+    //console.log(ThemeStage)
 
     switch(StyleChoice) {
         case 'Cody':
@@ -1599,7 +1602,7 @@ function SetTheme(StyleChoice) {
             FontSetTitle = `'Lucida Fax', 'Times New Roman'`;
             break;
         default:
-            TextSet = STYLES[THEMES[ThemeStage]]["--AllText"];
+            TextSet = ThemeStage?"0,0,0":"255,255,255";
             BackgroundSet = STYLES[THEMES[ThemeStage]]["--Background"];
             FontSetBody = `'Lucida Fax', 'Times New Roman'`;
             break;
@@ -1687,12 +1690,12 @@ function RollTicker() {
             // For ACT tickets,         
 
             case '%Cody%':
-                //console.log(`Cody`);
+                ////console.log(`Cody`);
                 Perspective = "Cody";
                 break;
 
             case '%Katiya%':
-                //console.log(`Kat`);
+                ////console.log(`Kat`);
                 Perspective = "Katiya";
                 break;
 
@@ -1716,7 +1719,7 @@ function RollTicker() {
                 ElemPosition.innerHTML += template_CHAPTER;
                 TextPosition = document.getElementById('active'); 
                 TextPosition.className += " " + Perspective + " ";
-                console.log(TextPosition.className);
+                //console.log(TextPosition.className);
                 if(TextOverflow()) {  
                     AdvancePage(template_CHAPTER);  
                 }  
@@ -1796,9 +1799,11 @@ async function main() {
 
     RollTicker();
 
-eThisPage.innerHTML = ('00'+(CurrentPageNumber+1)).slice(-2);
+    eThisPage.innerHTML = ('00'+(CurrentPageNumber+1)).slice(-2);
 
     let toc = new Date();
+
+    SetPrologue();
 
     console.info(`Loaded program in ${ (toc.getMilliseconds()-tic.getMilliseconds()) / 1000 } seconds.`)
 }
