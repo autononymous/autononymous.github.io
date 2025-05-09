@@ -546,6 +546,8 @@ div.TableOfContents {
     overflow-x: hidden;
     overflow-y: scroll;
     left:0vw;
+    opacity:1;
+    pointer-events: all;
 }
 /*
 div.TableOfContents > div { border: 2px solid red; }
@@ -714,7 +716,24 @@ div.AuthorNote {
     background-color: rgba(255,255,0,0.1);
     border: 1px solid var(--AllText);
     border-radius: 5px;
-    padding: 5px;
+    font-size:min(5vw,1em);
+    line-height:min(7vw,1.2em);
+    padding: 5vw;
+}
+
+@keyframes hideTOC {
+    from {
+        opacity:1;
+    } to {
+        opacity:0;
+    }
+}
+@keyframes showTOC {
+    from {
+        opacity:0;
+    } to {
+        opacity:1;
+    }
 }
 
 </style>
@@ -868,7 +887,6 @@ const STYLES = {
         "--AllBodyFont":      "'Lucida Fax','Times New Roman'",
 
         "--Background":       "255,255,255",
-        "--BackgroundImg":    "none",//url(https://autononymous.io/wp-content/uploads/2024/11/repeat_kat_02_b-1.png)",
 
         "--DEBUG":            "rgba(255,255,100,0.00)",
         "--DEBUGborder":      "none",
@@ -929,7 +947,6 @@ const STYLES = {
         "--AllBodyFont":      "'Lucida Fax','Times New Roman'",
 
         "--Background":       "18,18,18",        
-        "--BackgroundImg":    "linear-gradient(to right,crimson 0%,black 10%,black 80%, crimson 100%)",
 
 
         "--DEBUG":            "rgba(255,255,100,0.00)",
@@ -1037,6 +1054,8 @@ var isCustomMode = urlParams.get('StoryTheme') || false;
 
 // Naming important elements
 
+const eTOC = document.getElementById('TABLEOFCONTENTS');
+
 const eFullContainer    = document.getElementById('FULLCONTAINER');
 const eContainer        = document.getElementById('CONTAINER');
 const eControl          = document.getElementById('CONTROL');
@@ -1143,7 +1162,7 @@ var ChapterMaxNumber = 1;
 
 IsContinuous = false;
 
-
+eTOC.style.opacity = 0;
 
 // ===============================<[ INITIAL DATA ]>===================================
 
@@ -1191,6 +1210,8 @@ var jTOC  = "";
 function ToggleTOC() {
     if(!isFirstClick) {
         TOCstate = !TOCstate;
+
+        
         ////console.log(`TOC is ${TOCstate}.`)
         //eFullContainer.style.animation = "";
         eFullContainer.style.opacity = (TOCstate)?  1  :  0  ;
@@ -1209,7 +1230,18 @@ function ToggleTOC() {
         eControlSpacer.style.pointerEvents = (TOCstate)?"none":"none";
 
         eFullContainer.style.pointerEvents = (TOCstate)?"none":"all";
-    }
+        eTOC.style.animation = ("1s ease-in-out 0.25s forwards" + ((TOCstate)?" showTOC ":" hideTOC "));
+        if(!TOCstate) {
+            //eTOC.style.opacity = 0;
+            eTOC.style.pointerEvents = "none";
+        }
+        if(TOCstate) {
+            //eTOC.style.opacity = 1;
+            eTOC.style.pointerEvents = "all";
+        }
+        
+        
+    }   
 }
 
 function SaveSettings() {
@@ -1359,9 +1391,9 @@ function ChangePage(extent) {
         eContainer.style.overflowY = IsContinuous?"scroll":"hidden";
         eContainer.style.left = '5vw';
         eContainer.style.width = '90vw';
-        eBinder.style.width = '90vw';
-        eBinder.style.transform = 'translateX(-50%)';
-        WasPrologue = false;
+        WasPrologue = false;        
+        eFullContainer.style.removeProperty('backgroundImage');
+        eContainer.style.removeProperty('backgroundColor');
     } else {  
         eContainer.style.overflowY = IsContinuous?"scroll":"hidden";
     }
@@ -1701,11 +1733,10 @@ function RollTicker() {
                 eContainer.style.overflowY = IsContinuous?"scroll":"hidden";
                 eContainer.style.left = '0vw';
                 eContainer.style.width = '100vw';
-                eBinder.style.width = '98vw';
-                eBinder.style.transform = 'translateX(-49%)';
                 TextPosition.innerHTML = PROLOGUE;
                 WasPrologue = true;
-
+                //eFullContainer.style.backgroundImage = 'linear-gradient(to right, rgba(var(--BackgroundBlue),1), rgba(var(--BackgroundRed),1))'
+               // eContainer.style.backgroundColor = "transparent";
                 break;
 
             case '%Cody%':
@@ -1855,230 +1886,230 @@ PROLOGUE = `
 
 
 <p>&nbsp;</p>
-<div style="width: 100%; padding-left: 15px; padding-right: 15px;">
+<div style="width: 100%; padding-left: 0; padding-right: 0; font-size: 3vw; line-height: 3.6vw;">
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 50%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 50%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>Ever since the night I crossed the threshold of that mysterious door, I swore I'd never see that bitch again.</p>
 </div>
-<div style="flex: 50%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 50%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>Ever since the night I crossed the threshold of that mysterious door, I swore that I would never see that bastard again.</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 50%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 50%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>But for reasons beyond my control, I've found myself drawn back to the violent, dagger-wielding cosplay chick I found on the other side.</p>
 </div>
-<div style="flex: 50%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 50%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>But for reasons beyond my control, I've found myself drawn back to the weak and listless nobleman I found on the other side.</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 50%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 50%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>It was in a breadth of dragging boredom, sitting in the darkness of my new home without even the energy to turn on the Playstation, that I heard her pounding upon the door I swore I'd never open again.</p>
 </div>
-<div style="flex: 50%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 50%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>It was a seizure of panic, crumpled to the floor with adrenaline flooding my veins over a catastrophic failure, that led me to pound upon the door I swore I'd never open again.</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 50%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 50%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>I bolted the damn thing shut with all the screws I could find in my toolbox, and even cruised by Rowe's over the weekend to buy brackets, drilling straight into the freshly-painted wood siding. I even soldered a hall-effect sensor with one of those piezo-alarms, in case the bitch tried to break in, as revenge for the drunken night I stumbled over there.</p>
 </div>
-<div style="flex: 50%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 50%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>It took a great struggle to lift the the heavy bookcase I propped against the door: already filled with spare pauldrons and gauntlets for the cosmetic Royal Guards' armor. Panic makes my circuits run hot with with Essence. And when I find the disfigured brass doorknob &mdash; the one I melted shut after I kicked that drunken bastard through the threshold of that cursed doorway &mdash; I find it's easy to melt the soft metal straight off with the scalding heat in my hands.</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 50%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 50%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>I tried for so long to forget that chaotic bitch ever existed.</p>
 </div>
-<div style="flex: 50%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 50%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>I tried for so long to forget that hapless bastard ever existed.</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 20%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 20%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>&nbsp;</p>
 </div>
-<div style="flex: 80%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 80%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>I tried to turn to my work: proving I have what it takes to be a city guard in the province of Gaffesend, thinking that distracting myself with quests might liberate me from the fear of my home: a place that should allay me with feelings of respite after a long and stressful day.</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 80%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 80%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>A place where I can dissolve into the couch after working at Monroe-Navidson, after a long day drawing pictures on the computer.</p>
 </div>
-<div style="flex: 20%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 20%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>&nbsp;</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 20%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 20%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>&nbsp;</p>
 </div>
-<div style="flex: 80%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 80%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>After a long day catching runaway livestock, or marching seven laps around the city boundary.</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 80%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 80%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>A place where I'll inevitably fall into those terrible old habits &mdash; just like all those weekends at university I spent alone in the darkness of my bedroom, fending off feelings of loneliness with sleep, seltzer, and an even stronger feeling of immobilizing apathy.</p>
 </div>
-<div style="flex: 20%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 20%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>&nbsp;</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 20%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 20%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>&nbsp;</p>
 </div>
-<div style="flex: 80%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 80%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>If only my boyfriend would stay long enough to let me wake up next to him: maybe he could save me from the nightmares of the fire, but the side of his bed is always cold.</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 80%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 80%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>Why do I shut out all the people I care about? Did I grow complacent with that renewable resource of love I felt when I lived with my parents after college?</p>
 </div>
-<div style="flex: 20%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 20%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>&nbsp;</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 20%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 20%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>&nbsp;</p>
 </div>
-<div style="flex: 80%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 80%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>I doubt any other man would fawn over a girl that's trained to kill: I've honed myself into something I can't even recognize in the mirror. I was raised in the forest across the lake, the daughter of a carpenter. My surviving mother works the looms in the capital city of Northaven that we fled to.</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 80%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 80%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>My mother was a schoolteacher, who made sure I'd never miss an assignment. And my father's a technician at the aerospace company I work at: barely managing to get me a role in the battery division I work in.</p>
 </div>
-<div style="flex: 20%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 20%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>&nbsp;</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 50%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 50%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>There's a part of me that longs so deeply to feel like I really matter to someone.</p>
 <p>But I don't ever seem to have the emotional currency, or the energy, to allow Miguel to drag me with his cousins to all those stupid nightclubs in Denver. I stopped following the Top 100 list when I wasn't forced to be relevant. I don't use social media because it drains me even further, lacking the minimum number of fucks to convince people my life is perfect.</p>
 </div>
-<div style="flex: 50%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 50%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>There's a part of me that longs so deeply to feel like I really matter to someone.</p>
 <p>But I don't ever seem to have the ability to slow down. Gods know it's probably wrong to say when I have my boyfriend, Jullian, but all I've ever felt since we graduated from the Academy is that we've been growing apart. I don't go to the bars because I loathe drinking &mdash; it brings me that feeling of powerlessness I felt when I lost everything all those years ago.</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 50%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 50%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>And even right now, I feel this utter indifference to the future and what awaits.</p>
 </div>
-<div style="flex: 50%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 50%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>And even right now, I feel this petrifying terror to the future and what awaits.</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 80%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 80%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>Sometimes I wonder if I'll outlive my parents at this rate. I've felt so damn close to the edge before: I'm just lucky that I live close to them, and that I have a best friend to keep me busy.</p>
 </div>
-<div style="flex: 20%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 20%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>&nbsp;</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 20%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 20%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>&nbsp;</p>
 </div>
-<div style="flex: 80%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 80%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>But there's a fire lit beneath me that keeps me going. I hold on to the image of my siblings and father on the night of the attack.</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 80%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 80%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>I hold to that image of what a single moment of weakness might do to them. I mean, after we lost Jackson, I was the only child that could carry on their name.</p>
 </div>
-<div style="flex: 20%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 20%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>&nbsp;</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 20%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 20%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>&nbsp;</p>
 </div>
-<div style="flex: 80%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 80%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>And I carry on the legacy of all I lost, yearning for that moment to prove my strength,</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 80%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 80%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>chasing the fumes of a once bright and beautiful dream to design rockets, as stupid as it might have been as a young kid that took everything in the house apart to see how it works.</p>
 </div>
-<div style="flex: 20%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 20%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>&nbsp;</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 50%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 50%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>Maybe I can find that sense of passion again if I drag myself to work everyday and continue the grind.</p>
 <p>God knows I'm on the edge of losing my job at work after all those layoffs. I'll never have the chance to confess to the one girl I've chased since high school.</p>
 </div>
-<div style="flex: 50%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 50%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>Maybe I can find that sense of peace again if I press through all the anguish and trepidation.</p>
 <p>Gods know I'm on the edge of being cast into the front lines if I can't get over these stupid reflexes of fear. My best friend might die from my incompetence.</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 20%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 20%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>&nbsp;</p>
 </div>
-<div style="flex: 80%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 80%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>And it surely won't happen if I can't stabilize my stupid feelings as I collapse in weakness to the floor, feeling the blood drain from my extremities as I nearly punch a hole in this stupid door.</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 80%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 80%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>It sounds like that scene from <em>The Shining</em>, the way she pounds on the door.</p>
 </div>
-<div style="flex: 20%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 20%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>&nbsp;</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 50%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 50%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>It sounds like she actually might be in trouble.</p>
 <p>Maybe it was a bad idea to bolt the door shut so she couldn't ambush me when I was in my <em>chonies </em>pining for a midnight snack.</p>
 </div>
-<div style="flex: 50%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 50%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>It seems like he actually might not care.</p>
 <p>Maybe it was a bad idea to throw all those knives at his head, or to pull my sword and slice that serious gash in his hand.</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 50%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 50%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>But I feel the strangest pull that draws me to her.</p>
 <p>A sense of vitality and excitement I long for, with an energy for life that realizes how special it is.</p>
 <p>And with those looks and a killer body, that's kept me up all those nights after we first met.</p>
 </div>
-<div style="flex: 50%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 50%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>But I feel the strangest pull that draws me to him.</p>
 <p>A sense of stillness and comfort, with a brave sense of humor that's stronger than all I have to fear.</p>
 <p>And with those muscular arms and handsome scruff of stubble that's kept him fresh in my mind.</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 50%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 50%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>So I rush to the garage to find the power drill, glad there isn't a security deposit to worry about when I own the place.</p>
 </div>
-<div style="flex: 50%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 50%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>So I plead for him to open the door as the tears crest my eyes, longing for a sense of comfort I've never been able to find.</p>
 </div>
 </div>
 <div style="display: flex; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
-<div style="font-family: 'Arial'; text-align: justify; flex: 50%; font-size: 1em; margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="font-family: 'Arial'; text-align: justify; flex: 50%;  margin-right: 15px; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>And when the door opens, I see Katiya in an entirely different light.</p>
 </div>
-<div style="flex: 50%; font-size: 1em; margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
+<div style="flex: 50%;  margin-left: 15px; font-family: 'Cambria'; text-align: justify; text-align-last: right; font-weight: 500; text-indent: 0; margin-bottom: 0; letter-spacing: 0.1em;">
 <p>And when the door opens, I see Cody in an entirely different light.</p>
 </div>
 </div>

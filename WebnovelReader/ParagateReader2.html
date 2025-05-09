@@ -1,74 +1,117 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Reader</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap">
+
 
 
 <style>
 
 :root {
-    --UIheight: 100px;
+    --UIheight: 50px;
     --darkblue: rgb(12, 12, 42);
     --darkred: rgb(42, 12, 12);
     --lightblue: rgba(200,200,255,1);
     --lightred: rgba(255,200,200,1);
-    --textmargin: 20px;
+    --textmargin: 50px;
+    --FooterHeight: 200px;
 }
-
+body {
+    background-color:gainsboro;
+}
 p {
-    font-size: 3em;
+    font-size: 1rem;
     text-align: justify;
-}
-div {
-    border:1px solid black;
-    background-color: rgba(0,0,0,0.05);
+    margin-top:0;
+    margin-bottom:0;
 }
 
-div.UIbar{
+div.Header {
     position:absolute;
     left:50%;
-    top:0%;
+    top:0;
     transform: translateX(-50%);
     height: var(--UIheight);
     width:100%;
 }
 div.Display {
     position:absolute;
-    left:50%;
+    left:50vw;
     top: var(--UIheight);
-    transform: translateX(-50%);
+    transform: translateX(-50vw);
     height: calc( 90dvh - var(--UIheight) );
     width: 100%;
 }
 
-div.bodytext {
-    padding-top: 0px;
-    padding-bottom: 40px;
-    margin-top: -20px;
-    margin-bottom:-20px;    
+div.bodytext { 
     padding-left: var(--textmargin);
     padding-right: var(--textmargin);
 }
 div.style1 {
     background-color: var(--darkblue);
     color: var(--lightblue);    
-    box-shadow: 0px 0px 50px 50px var(--darkblue);
     
 }
 div.style2 {
     background-color: var(--darkred);
     color: var(--lightred);
-    box-shadow: 0px 0px 50px 50px var(--darkred);
 }
 
+div.Footer {
+    position:fixed;
+    background-color: white;
+    width:100%;
+    height:var(--FooterHeight);
+    top: calc( 100dvh - var(--FooterHeight) );
+    left:50%;
+    transform: translateX(-50%);
+}
+div.ToggleTOC {
+    font-family: Arial, Helvetica, sans-serif;
+    position:absolute;
+    font-size: 15vw;
+    margin:0;
+    padding:0;
+    bottom:0;
+    line-height:0.5em;
+    font-weight: bolder;
+    left:50%;
+    transform: translateX(-50%) scaleX(500%);
+    width:100%;
+    height:80px;
+    text-align: center;
+}
+div.Header {
+    width:100vw;
+    height:40px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    text-align: center;
+
+}
+div.Header > div {
+    flex: 1;
+}
+img.Icon {
+    height:40px;
+    width: auto;
+    cursor: pointer;
+}
 
 </style>
 </head>
 <body>
 
-<div class="Display">
+<div class="Display TableOfContents">
+    <p>Fusce molestie aliquam mauris, in semper leo sodales et. In sed pharetra massa, ac lacinia metus. Sed quis odio orci. Mauris eu tristique enim. Sed at velit in mauris venenatis semper vel ac lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla elementum, ante id sodales iaculis, felis mi aliquam dolor, sit amet fringilla dolor justo at urna. Fusce eu sem id augue pellentesque vestibulum vel eu quam.
+    </p>
+</div>
 
-
+<div class="Display Binder" id="BINDER">
     <div class="bodytext style1"><p>Fusce molestie aliquam mauris, in semper leo sodales et. In sed pharetra massa, ac lacinia metus. Sed quis odio orci. Mauris eu tristique enim. Sed at velit in mauris venenatis semper vel ac lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla elementum, ante id sodales iaculis, felis mi aliquam dolor, sit amet fringilla dolor justo at urna. Fusce eu sem id augue pellentesque vestibulum vel eu quam.
     </p></div>
     <div class="bodytext style2"><p>Pellentesque fringilla tincidunt odio eget posuere. Sed maximus cursus nibh vitae congue. Etiam dapibus lobortis purus vitae volutpat. Sed vel risus ut massa gravida laoreet at at leo. Ut viverra neque a tellus suscipit luctus. Aliquam ultrices cursus neque, id posuere dolor pretium quis. Morbi efficitur tellus sed imperdiet imperdiet. Donec porttitor ante mauris, id sodales odio volutpat consequat. Proin sit amet quam eget nulla bibendum tincidunt vel vitae metus. Aenean in fringilla urna, eu pharetra sem. In et dictum neque. Donec finibus velit ac erat sagittis suscipit. Nam posuere dignissim dolor at faucibus.
@@ -81,14 +124,37 @@ div.style2 {
     </p></div>
 </div>
 
-<div class="UIbar"></div>
+<div class="Header" id="HEADER">
+    <div id="ICON-ONEPAGE" onclick="buttonContinuous();"><img class="Icon" title="Continuous Scrolling" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Extend.png" alt="&#8853;"></div>
+    <div id="ICON-LINEDN" onclick="buttonLineSpace(1);SaveSettings();"><img class="Icon" title="Increase Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineDn.png" alt="&#8853;"></div>
+    <div id="ICON-LINEUP" onclick="buttonLineSpace(-1);SaveSettings();"><img class="Icon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;"></div>
+    <div id="ICON-FONTUP" onclick="buttonFontSize(1);SaveSettings();"><img class="Icon" title="Increase Font Size"" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Larger.png" alt="&#8853;"></div>
+    <div id="ICON-FONTDN" onclick="buttonFontSize(-1);SaveSettings();"><img class="Icon" title="Decrease Font Size" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Smaller.png" alt="&#8854;"></div>
+    <div id="ICON-THEME" onclick="buttonSetTheme(1);SaveSettings();"><img class="Icon" title="Change Theme" src="https://cdn-icons-png.flaticon.com/512/11072/11072905.png"></div>
 
+</div>
 
-
-
+<div class="Footer" id="FOOTER">
+    <div class="ProgressBar"></div>
+    <div class="ToggleTOC" onclick="ToggleTOC();"><span>&or;</span></div>
+</div>
 <script>
 
 
+const eFOOTER = document.getElementById('FOOTER');
+const eBINDER = document.getElementById('BINDER');
+
+
+var ShowTOC = false;
+
+function ToggleTOC() {
+    ShowTOC = !ShowTOC;
+    if (ShowTOC) {
+        eBINDER.style.top = "110vh";
+    } else {
+        eBINDER.style.removeProperty("top");
+    }
+}
 
 
 
