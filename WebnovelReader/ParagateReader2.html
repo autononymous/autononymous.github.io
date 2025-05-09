@@ -1,0 +1,98 @@
+
+<html>
+
+<head>
+
+
+<style>
+
+:root {
+    --UIheight: 100px;
+    --darkblue: rgb(12, 12, 42);
+    --darkred: rgb(42, 12, 12);
+    --lightblue: rgba(200,200,255,1);
+    --lightred: rgba(255,200,200,1);
+    --textmargin: 20px;
+}
+
+p {
+    font-size: 3em;
+    text-align: justify;
+}
+div {
+    border:1px solid black;
+    background-color: rgba(0,0,0,0.05);
+}
+
+div.UIbar{
+    position:absolute;
+    left:50%;
+    top:0%;
+    transform: translateX(-50%);
+    height: var(--UIheight);
+    width:100%;
+}
+div.Display {
+    position:absolute;
+    left:50%;
+    top: var(--UIheight);
+    transform: translateX(-50%);
+    height: calc( 90dvh - var(--UIheight) );
+    width: 100%;
+}
+
+div.bodytext {
+    padding-top: 0px;
+    padding-bottom: 40px;
+    margin-top: -20px;
+    margin-bottom:-20px;    
+    padding-left: var(--textmargin);
+    padding-right: var(--textmargin);
+}
+div.style1 {
+    background-color: var(--darkblue);
+    color: var(--lightblue);    
+    box-shadow: 0px 0px 50px 50px var(--darkblue);
+    
+}
+div.style2 {
+    background-color: var(--darkred);
+    color: var(--lightred);
+    box-shadow: 0px 0px 50px 50px var(--darkred);
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="Display">
+
+
+    <div class="bodytext style1"><p>Fusce molestie aliquam mauris, in semper leo sodales et. In sed pharetra massa, ac lacinia metus. Sed quis odio orci. Mauris eu tristique enim. Sed at velit in mauris venenatis semper vel ac lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla elementum, ante id sodales iaculis, felis mi aliquam dolor, sit amet fringilla dolor justo at urna. Fusce eu sem id augue pellentesque vestibulum vel eu quam.
+    </p></div>
+    <div class="bodytext style2"><p>Pellentesque fringilla tincidunt odio eget posuere. Sed maximus cursus nibh vitae congue. Etiam dapibus lobortis purus vitae volutpat. Sed vel risus ut massa gravida laoreet at at leo. Ut viverra neque a tellus suscipit luctus. Aliquam ultrices cursus neque, id posuere dolor pretium quis. Morbi efficitur tellus sed imperdiet imperdiet. Donec porttitor ante mauris, id sodales odio volutpat consequat. Proin sit amet quam eget nulla bibendum tincidunt vel vitae metus. Aenean in fringilla urna, eu pharetra sem. In et dictum neque. Donec finibus velit ac erat sagittis suscipit. Nam posuere dignissim dolor at faucibus.
+    </p></div>
+    <div class="bodytext style1"><p>Cras efficitur tempus auctor. Aenean elementum suscipit tellus, vel aliquet lorem lacinia sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam quis purus vitae leo sodales iaculis. Praesent tortor libero, vehicula sit amet eleifend non, finibus sit amet est. Vivamus ullamcorper massa in sapien commodo euismod. Donec dictum diam mollis, molestie nibh sit amet, iaculis nisi. Donec urna quam, sodales eu aliquet sed, tincidunt vel dui. Donec vitae convallis tortor. Suspendisse rhoncus tortor vitae augue blandit, at lacinia justo faucibus. Nulla tincidunt faucibus velit, finibus tincidunt purus venenatis sed.
+    </p></div>
+    <div class="bodytext style2"><p>Vestibulum consectetur accumsan lorem, nec sollicitudin lorem ornare sed. Vivamus sit amet nisi nisi. Nam ac diam vestibulum, interdum orci tincidunt, lobortis ex. Sed ut rhoncus mauris. Fusce semper ligula vitae risus pulvinar, efficitur placerat tortor convallis. Suspendisse tincidunt commodo orci, sed posuere purus fermentum vitae. Pellentesque hendrerit fringilla laoreet. Phasellus interdum nunc massa, sed ultricies ligula consectetur ut. Fusce rutrum eget velit ut rutrum. Aenean sit amet magna at urna sodales suscipit. Etiam cursus ipsum eget eros ullamcorper, sed tristique nisi congue. Donec mollis congue nisl, viverra iaculis metus blandit eget. Etiam mattis gravida molestie. Quisque sagittis, eros nec malesuada viverra, eros lorem porttitor ligula, in tincidunt nisi nisi pretium ipsum.
+    </p></div>
+    <div class="bodytext style1"><p>Ut bibendum mattis felis, lacinia gravida libero mattis at. Aliquam non volutpat diam. Pellentesque vitae suscipit ex. Sed eget risus in est venenatis vulputate. Curabitur non venenatis risus. Vivamus sollicitudin velit eget tortor pellentesque sodales. Donec orci tortor, posuere quis tellus in, mollis tincidunt tortor. Quisque sed orci eget elit iaculis sollicitudin sit amet sed eros. Phasellus semper vestibulum risus eu iaculis. Aliquam erat volutpat. Integer luctus cursus eros. Fusce blandit iaculis ex vitae ultricies. Praesent quam ipsum, hendrerit sit amet fringilla a, feugiat vel libero. 
+    </p></div>
+</div>
+
+<div class="UIbar"></div>
+
+
+
+
+<script>
+
+
+
+
+
+
+</script>
+</body>
+</html>
