@@ -430,7 +430,7 @@ div.ProgressMask {
 
 div.Status {
     position:relative;
-    top:0px;
+    top: -6.3px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -1069,6 +1069,8 @@ const eBarMask          = document.getElementById('PROGRESS-MASK');
 const eBarBackground    = document.getElementById('PROGRESS-BG');
 const eBarLineBox       = document.getElementById('PROGRESS-LINES');
 
+const ePageStatus       = document.getElementById('INFO-LEFT');
+const ePartStatus       = document.getElementById('INFO-RIGHT');
 const eThisPage         = document.getElementById('N-PAGE-CURRENT');
 const eTotalPages       = document.getElementById('N-PAGE-TOTAL');
 const eThisPart         = document.getElementById('N-PART-CURRENT');
@@ -1119,11 +1121,12 @@ buttonSetTheme(0);
 ROOT.style.setProperty('--BodySize', FONTSIZES[FontStage] );
 ROOT.style.setProperty('--BodyLineHeight', LINEHEIGHTS[LineStage] );
 
-
-eThisPage.innerHTML     = ('00'+0).slice(-2);
-eTotalPages.innerHTML   = ('00'+99).slice(-2);
-eThisPart.innerHTML     = ('00'+1).slice(-2);
-eTotalParts.innerHTML   = ('00'+99).slice(-2);
+ePageStatus.innerHTML   = `Scroll Mode Active`;
+//eThisPage.innerHTML     = ('00'+0).slice(-2);
+//eTotalPages.innerHTML   = ('00'+99).slice(-2);
+ePartStatus.innerHTML   = "Introduction"
+//eThisPart.innerHTML     = ('00'+1).slice(-2);
+//eTotalParts.innerHTML   = ('00'+99).slice(-2);
 
 // Initial opacity settings for instructions (to clear later)
 eControlLeft.style.opacity = 1;
@@ -1339,8 +1342,13 @@ function UpdateProgress() {
         } catch (error) {
             console.warn(`Bar at PROG${i} does not exist.`)
         }
+        
     }
-    eThisPage.innerHTML = ('00'+(CurrentPageNumber+1)).slice(-2);
+    if(!IsContinuous){
+        ePageStatus.innerHTML = `Page ${CurrentPageNumber+1} of ${PageMaxCount+1}`;
+    }
+    
+    //eThisPage.innerHTML = ('00'+(CurrentPageNumber+1)).slice(-2);
 }
 function UpdateProgressSlider() {
     let SectionDims = eBinder.getBoundingClientRect();  
@@ -1352,6 +1360,7 @@ function UpdateProgressSlider() {
     ////console.log(` > Top: ${Top},\n > Bottom: ${Bottom},\n > Height: ${Height},\n`);
     let Progress = (((-SectionDims.top+100)) / (SectionDims.height-WindowDims.height))*100;    
     eBarMask.style.width = ( 100 - ((Progress > 95) ? 100 : (Progress < 5) ? 0 : Progress)) + "%";
+    ePageStatus.innerHTML = `Scroll Mode: ${Progress.toFixed(0)}%`;
 }
 
 //////////////////////// CALCULATIONS FOR SCROLLBAR \\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -1418,6 +1427,7 @@ function ChangePage(extent) {
                     SetTheme(Perspective);              
                     UpdateProgress();
                     buttonFontSize(0);
+                    ePartStatus.innerHTML = `${('00'+ChapterNumber).slice(-2)}: ${ChapterNames[ChapterNumber-1]}`;
                 } else {
                     console.warn(`Parameter 'AdvanceChapters' was deactivated from the URL (set to FALSE).`);
                 }
@@ -1525,6 +1535,7 @@ async function BuildTOC() {
 
 
 var Ticker = [];
+var ChapterNames = [];
 
 async function SpoolTicker() {
     console.debug("Spooling text...")
@@ -1568,6 +1579,7 @@ async function SpoolTicker() {
                 if (WritePass) {
                     ChapterMaxNumber++;  
                 }  
+                ChapterNames.push( `${parcel.Perspective}` )
                         
                 if ((pChapter == ChapterNumber) && (WritePass)) {
                     debugLNC(`> Chapter ${pChapter} from index position ${pItem} loaded into Ticker.\n`, false);
@@ -1849,7 +1861,7 @@ async function main() {
 
     RollTicker();
 
-    eThisPage.innerHTML = ('00'+(CurrentPageNumber+1)).slice(-2);
+    //eThisPage.innerHTML = ('00'+(CurrentPageNumber+1)).slice(-2);
 
     let toc = new Date();
 

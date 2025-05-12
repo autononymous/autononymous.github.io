@@ -136,19 +136,78 @@ img.Icon {
 
 <div class="Footer" id="FOOTER">
     <div class="ProgressBar"></div>
-    <div class="ToggleTOC" onclick="ToggleTOC();"><span>&or;</span></div>
+    <div class="ToggleTOC" onclick="StateTOC();"><span>&or;</span></div>
 </div>
 <script>
 
-
+// Defined Elements
 const eFOOTER = document.getElementById('FOOTER');
 const eBINDER = document.getElementById('BINDER');
+var eTARGET = "";
+var vFOOTER = 0;
 
+// Constant Variables
+const SourceROOT = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/"
+const SourceFILE = SourceROOT + "/docs/PG00.json";
+const SourceTOC = SourceROOT + "/docs/PG00TOC.json";
+const vPageTol = 50;
 
+// Operational Variables
+var jTEXT = "";
 var ShowTOC = false;
+var CONTENT = [];
 
-function ToggleTOC() {
-    ShowTOC = !ShowTOC;
+var DebugText = "";
+
+var Current = JSON.parse(`{"Chapter":0,"Page":0}`);
+var Max = JSON.parse(`{"Chapter":0,"Page":0}`);
+var Min = JSON.parse(`{"Chapter":0,"Page":0}`);
+
+// Functions
+
+async function fetchJSON() {
+    try {
+        const response = await fetch(SourceFILE);
+        if (!response.ok) {
+            throw new Error('Network response for JSON was not ok ' + response.statusText);
+        }
+        const data = await response.text();
+        return JSON.parse(data.replaceAll(/(\r\n|\n|\r)/gm, ''));
+    } catch (error) {
+        console.error('Error fetching the file:', error);
+    }
+}
+
+async function fetchTOC() {
+    try {
+        const response = await fetch(SourceTOC);
+        if (!response.ok) {
+            throw new Error('Network response for TOC JSON was not ok ' + response.statusText);
+        }
+        const data = await response.text();
+        return JSON.parse(data.replaceAll(/(\r\n|\n|\r)/gm, ''));
+    } catch (error) {
+        console.error("Unable to load the TOC JSON file.")
+    }
+}
+async function Initialize() {
+    jTEXT   = await fetchJSON();
+    jTOC    = await fetchTOC();
+    console.debug(jTEXT);
+    await TextBuilder();
+    await TextDeployer(6);
+    console.log(DebugText);DebugText="";
+}
+
+
+
+function StateTOC(state) {
+    if(state) {
+        ShowTOC = state;
+    } else {
+        ShowTOC = !ShowTOC;
+    }
+    
     if (ShowTOC) {
         eBINDER.style.top = "110vh";
     } else {
@@ -156,7 +215,137 @@ function ToggleTOC() {
     }
 }
 
+async function TextBuilder() {
 
+    let ContentIndex = 0;
+
+    jTEXT.Manuscript.forEach ( parcel => {
+        // Define what we're getting.
+        let pTitle      = (parcel.ChapterOverride=="") ? parcel.AutoNameFull : parcel.ChapterOverride;
+        let pSubtitle   = parcel.GivenName;
+        let pContent    = parcel.Body;
+        let pID         = (parcel.VerboseOverride=="") ? parcel.VerboseID : parcel.VerboseOverride;
+        let pSynopsis   = parcel.Synopsis;
+        let pType       = parcel.DocType;
+        let pStyle      = parcel.Perspective;
+        let pSceneNum   = parcel.ScenePart;
+
+        switch(pType) {
+            case "Chapter":
+                CONTENT.push([
+                    '#STYLE#', 
+                     pStyle, 
+                    '%CHP%', 
+                     pTitle, 
+                    '%SUB%', 
+                     pSubtitle
+                ]);
+                break;
+            case "Scene":
+                let Lines = pContent
+                    .replaceAll('<p>','\n')
+                    .replaceAll('</p>','')
+                    .split('\n');
+                let Words = [];
+                Lines.forEach (Line => {
+                    Line.split(' ').forEach(Word => {
+                        if(Word != "") {Words.push(Word);}
+                    });                    
+                    Words.push('#BRK#');
+                });
+                CONTENT[CONTENT.length-1].push(
+                    '#STYLE#', 
+                     pStyle, 
+                    '%SEC%',
+                     pSceneNum,
+                    '%SCN%'
+                );
+                Words.forEach( Word => {
+                    CONTENT[CONTENT.length-1].push(Word);
+                })
+                break;            
+        }
+    });
+    // Now get the characteristics of the loaded data.
+    Min.Chapter = 0;
+    Max.Chapter = CONTENT.length;
+
+
+}
+
+async function TextDeployer(ChapterNum) {
+    let LoadedChapter = 0;
+    if(ChapterNum) {
+        LoadedChapter = (ChapterNum < Max.Chapter) ? ((ChapterNum >= 0) ? ChapterNum : Min.Chapter ) : Max.Chapter;
+    }
+
+    //DBG// console.debug(`Min=${Min.Chapter}, \nMax=${Max.Chapter},\nPrompted=${ChapterNum},\nLoaded=${LoadedChapter}`)
+
+
+    // Get characteristics of the page where text will be loaded.
+    let vFOOTER = eFOOTER.getBoundingClientRect().top;
+
+    // Define Trackers
+    let tStyle = undefined;
+    let tElement = undefined;
+
+    // Define Reading States
+    let rElem = false;
+
+    eBINDER.innerHTML = "";
+    eBINDER.innerHTML += `<div id="PAGE0"></div>`;
+    eTARGET = document.getElementById('PAGE0');
+    Current.Page = 0;
+
+    CONTENT[LoadedChapter].forEach( token => {
+        if (rElem) {
+            tStyle = token;
+            console.debug(tStyle);
+            rElem = false;
+        }
+        switch (token) {
+            case '#STYLE#':
+                rElem = true;
+                break;
+            case '#BRK#':
+                eTARGET.innerHTML += "<br>";
+                break;
+            case '%CHP%':
+                break;
+            case '%SUB%':
+                break;
+            case '%SEC%':
+                break;
+            case '%SCN%':
+                break;
+            default:
+                AdvanceText(" " + token);
+                break;
+        }
+    });
+    
+    DebugText += `\n > Chapter ${LoadedChapter+1} loaded.`;
+
+}
+
+function AdvanceText(text) {
+    let LastState = eTARGET.innerHTML + "";
+    eTARGET.innerHTML += text;
+    let PageDistance = (vFOOTER + vPageTol) - eTARGET.getBoundingClientRect().bottom
+    //console.debug(` ${vFOOTER} + ${vPageTol} - ${eTARGET.getBoundingClientRect().bottom} = ${PageDistance}`);
+    if ( (vFOOTER + vPageTol) < eTARGET.getBoundingClientRect().bottom ) {
+        eTARGET.innerHTML = LastState;
+        Current.Page++;
+        eBINDER.innerHTML += `<div id="PAGE${Current.Page}""></div>`;
+        eTARGET.style.display = "none";
+        eTARGET = document.getElementById(`PAGE${Current.Page}`);
+        eTARGET.innerHTML += text;
+    }
+}
+
+
+
+Initialize();
 
 
 </script>
