@@ -19,9 +19,14 @@
 :root {
 
     --BackgroundBlue:   '2,2,5';
-    --BackgroundRed:    '5,2,2';
+    --BackgroundRed:    '5,2,2';    
+    --BackgroundPlain:  rgba(237,237,237);
+
+    --ThemeColor:       white;
+
     --TextBlue:         '200,200,255';
     --TextRed:          '255,200,200'; 
+    --TextPlain:        rgba(237,237,237);
 
     --AllText:          white;
     --Background:       '18,18,18';
@@ -85,7 +90,7 @@
 /* Base styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--BackgroundColor);
+    background-color: rgba(var(--Background),1);
     color: var(--AllText);
     overflow-x: hidden;
 
@@ -171,6 +176,8 @@ h3.hSCENE {
     border-top: none;
     height: auto;
     padding-top: 3.5vh;
+    margin-bottom: 0;
+    padding-bottom: 2vh;
 }
 h3.hSCENE::before {
     content: var(--SceneDecorator);
@@ -196,23 +203,44 @@ p.pBODY {
     margin:0;
     margin-bottom: 0.0em; /*========================*/
 }
-p.Cody {
+.Cody {
     background-color: rgb(var(--BackgroundBlue));
     color: rgb(var(--TextBlue));
-    font-size: var(--BodySize);
+    font-family: "Bahnschrift";  
+}
+.Katiya {
+    background-color: rgb(var(--BackgroundRed));
+    color: rgb(var(--TextRed));
+    font-family: 'Lucida Fax', 'Times New Roman';
+}
+.Both {
+    background-color: rgb(var(--Backgr));
+    color: rgb(var(--TextRed));
+    font-family: 'Lucida Fax', 'Times New Roman';
+}
+h3.Cody {
+    background-color: rgb(var(--BackgroundBlue));
+    color: rgb(var(--TextBlue));
     font-family: "Bahnschrift";   
+}
+h3.Katiya {
+    background-color: rgb(var(--BackgroundRed));
+    color: rgb(var(--TextRed));
+    font-family: 'Lucida Fax', 'Times New Roman';
+}
+p.Cody {
+    color: rgb(var(--TextBlue));
+    font-size: var(--BodySize);
     padding-left: var(--MarginSize);
     padding-right: var(--MarginSize);
     line-height: var(--BodyLineHeight);
 }
 p.Katiya {
-    background-color: rgb(var(--BackgroundRed));
     color: rgb(var(--TextRed));
-    font-size: calc(var(--BodySize) - 0.2em);
-    font-family: 'Lucida Fax', 'Times New Roman';
+    font-size: calc(var(--BodySize) - 0.0em);
     padding-left: var(--MarginSize);
     padding-right: var(--MarginSize);
-    line-height: calc(var(--BodyLineHeight) + 0.2em);
+    line-height: calc(var(--BodyLineHeight) + 0.0em);
 }
 p.SPLIT {
     border: 2px solid var(--DEBUGborder);
@@ -234,7 +262,7 @@ div.Container {
     height:calc(100vh - 220px);
     left:0vw;
     border: var(--DEBUGborder);
-    background-color: var(--BackgroundColor);
+    background-color: rgba(var(--BackgroundColor));
     width:100vw;/*90vw;*/    
     overflow:hidden;
     overflow-x: hidden;   
@@ -402,7 +430,7 @@ div.Bar {
 div.ProgressMask {
     position:absolute;
     top:0;
-    background-color: var(--BackgroundColor);
+    background-color: rgba(var(--BackgroundColor),1);
     width:0%;
     height:100%;
     right:0;
@@ -416,7 +444,7 @@ div.Status {
 div.ProgressBackground {
     width: 80vw;
     height: 16px;
-    background-image: linear-gradient(to right, var(--BarLeft), var(--BarRight));
+    background-image: linear-gradient(to right, rgba(var(--ThemeColor),1), rgba(var(--ThemeColor),1));
     position:relative;
     left:50%;
     top:10px;
@@ -431,10 +459,10 @@ div.ProgressLines {
 }
 div.ProgressLines > div {
     flex: 1;
-    border: 1px solid var(--BackgroundColor);
+    border: 1px solid rgba(var(--BackgroundColor),1);
 }
 div.BarInactive {
-    background-color: var(--BackgroundColor);
+    background-color: rgba(var(--BackgroundColor),1);
 }
 div.BarActive {
     background-color: transparent;
@@ -459,16 +487,19 @@ div.Status > div {
     margin-right: 10vw;
 }
 div.LeftInfo  { 
+    color: rgb(var(--ThemeColor));
     grid-area: 1 / 1 / 2 / 2; 
     text-align: left;
     white-space: nowrap;
 }
 div.RightInfo { 
+    color: rgb(var(--ThemeColor));
     grid-area: 1 / 2 / 2 / 3; 
     text-align: right;
     white-space: nowrap;
 }
 div.LowerInfo { 
+    color: rgb(var(--ThemeColor));
     grid-area: 2 / 1 / 3 / 3; 
     position:absolute;
     top: calc(100vh - 100px);
@@ -574,6 +605,7 @@ div.TableOfContents > div > div > div { border: 2px solid blue; }
 div.TOC {
     width:100%;
     height:100%;
+    color: rgba(var(--ThemeColor),1);
 }
 div.Table {
     display:inline-flex;
@@ -598,8 +630,8 @@ div.ActRow {
     text-align: center;
     padding-top:10px;
     padding-bottom:10px;
-    border-top:2px solid var(--AllText);
-    border-bottom: 2px solid var(--AllText);
+    border-top:2px solid rgba(var(--ThemeColor),1);
+    border-bottom: 2px solid rgba(var(--ThemeColor),1);
     box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.5);
 }
 div.ChapterSet {
@@ -895,8 +927,11 @@ const STYLES = {
 
         "--BackgroundBlue":   '240,240,255',
         "--BackgroundRed":    '255,240,240',
+        "--BackgroundPlain":  '255,255,255',
+
         "--TextBlue":         '18,18,36',
         "--TextRed":          '36,18,18',
+        "--TextPlain":        '0,0,0',
 
         "--AllText":          "rgba(0,0,0,1)",
 
@@ -954,9 +989,12 @@ const STYLES = {
     "DarkMode":{
 
         "--BackgroundBlue":   '18,18,36',
-        "--BackgroundRed":    '36,18,18',
+        "--BackgroundRed":    '36,18,18',        
+        "--BackgroundPlain":  '18,18,18',
+
         "--TextBlue":         '200,200,255',
         "--TextRed":          '255,200,200',
+        "--TextPlain":        '255,255,255',
 
         "--AllText":          "white",
 
@@ -1051,7 +1089,10 @@ function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew,the
     return result;
 }
 
+var Ticker = [];
+var ChapterNames = [];
 
+var ViewIndices = [];
 
 
 // Get variables from URL
@@ -1189,7 +1230,7 @@ eTOC.style.opacity = 0;
 // Root directory of further files
 SourceROOT = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/"
 // Exported JSON file from Scrivener containing the story
-SourceFILE = SourceROOT + "/docs/PG00.json";
+SourceFILE = SourceROOT + "/docs/PGtest.json";
 SourceTOC = SourceROOT + "/docs/PG00TOC.json";
 
 // Fetch the JSON file
@@ -1304,6 +1345,36 @@ function buttonLineSpace(advance) {
         console.warn(`Error changing line height: Outside limits.`)
     }    
 }
+
+function OverrideTheme() {
+    switch (ViewIndices[ChapterNumber-1]) {
+        case "Cody":
+            ROOT.style.setProperty('--Background',"var(--BackgroundBlue)");
+            ROOT.style.setProperty('--BackgroundColor',"var(--BackgroundBlue)");
+            ROOT.style.setProperty('--ChapSubColor', `rgba(var(--TextBlue),1)`);
+            ROOT.style.setProperty('--ChapHeaderColor', `rgba(var(--TextBlue),1)`);
+            ROOT.style.setProperty('--ThemeColor',"var(--TextBlue)");
+            break;
+        case "Katiya":
+            ROOT.style.setProperty('--Background',"var(--BackgroundRed)");
+            ROOT.style.setProperty('--BackgroundColor',"var(--BackgroundRed)");
+            ROOT.style.setProperty('--ChapSubColor', `rgba(var(--TextRed),1)`);
+            ROOT.style.setProperty('--ChapHeaderColor', `rgba(var(--TextRed),1)`);
+            ROOT.style.setProperty('--ThemeColor',"var(--TextRed)");
+            break;
+        default:
+            ROOT.style.setProperty('--Background',"var(--BackgroundPlain)");
+            ROOT.style.setProperty('--BackgroundColor',"var(--BackgroundPlain)");
+            ROOT.style.setProperty('--ChapSubColor', `rgba(var(--TextPlain),1)`);
+            ROOT.style.setProperty('--ChapHeaderColor', `rgba(var(--TextPlain),1)`);
+            ROOT.style.setProperty('--ThemeColor',"var(--TextPlain)");
+            break;
+    }
+}
+
+
+
+
 function buttonSetTheme(advance) {
     let ThemeCount = THEMES.length;
     ThemeStage += advance;
@@ -1316,6 +1387,8 @@ function buttonSetTheme(advance) {
     ROOT.style.setProperty('--BodySize', FONTSIZES[FontStage] );
     ROOT.style.setProperty('--BodyLineHeight', LINEHEIGHTS[LineStage] );
     SetTheme(Perspective);
+
+    OverrideTheme();
 }
 
 function GenerateProgress() {
@@ -1342,7 +1415,9 @@ function GenerateProgress() {
         console.info("Scrolling mode active.")
         eBarMask.style.width = "100%";
         eContainer.addEventListener("scroll", UpdateProgressSlider);
+
     }
+    
     
 }
 function UpdateProgress() {
@@ -1384,7 +1459,6 @@ function UpdateProgressSlider() {
 
 
 function ChangePage(extent) {
-
     if (isFirstClick) {
         reload();
         [eControlLeft,eControlRight/*,eControlBottom*/].forEach(elem => {
@@ -1454,6 +1528,7 @@ function ChangePage(extent) {
             
         }
     }
+    OverrideTheme();
 }
 
 // Debug message handling
@@ -1551,8 +1626,7 @@ async function BuildTOC() {
 }
 
 
-var Ticker = [];
-var ChapterNames = [];
+
 
 async function SpoolTicker() {
     console.debug("Spooling text...")
@@ -1592,6 +1666,7 @@ async function SpoolTicker() {
                 break;
             case "Chapter":
                 WritePass = (today >= releaseday);
+                ViewIndices.push(parcel.Perspective);
                 releaseday += parseFloat(parcel.NextPublish);    
                 if (WritePass) {
                     ChapterMaxNumber++;  
@@ -1650,7 +1725,7 @@ function SetTheme(StyleChoice) {
     let FontSetBody = "";
     let FontSetTitle = "";
 
-    //console.log(StyleChoice);
+    console.debug(StyleChoice);
     //console.log(ThemeStage)
 
     switch(StyleChoice) {
@@ -1667,21 +1742,27 @@ function SetTheme(StyleChoice) {
             FontSetTitle = `'Lucida Fax', 'Times New Roman'`;
             break;
         default:
-            TextSet = ThemeStage?"0,0,0":"255,255,255";
-            BackgroundSet = STYLES[THEMES[ThemeStage]]["--Background"];
-            FontSetBody = `'Lucida Fax', 'Times New Roman'`;
+            TextSet = STYLES[THEMES[ThemeStage]]["--TextPlain"];
+            BackgroundSet = STYLES[THEMES[ThemeStage]]["--BackgroundPlain"];
+            FontSetBody = `'Lucida Fax', 'Times New Roman'`;            
+            FontSetTitle = `'Lucida Fax', 'Times New Roman'`;
             break;
     
     }
 
+
     ROOT.style.setProperty('--BackgroundColor', `rgba(${BackgroundSet},1)` );
+    
+    ROOT.style.setProperty('--ChapSubColor', `rgba(${TextSet},1)` );
+    ROOT.style.setProperty('--ChapHeaderColor', `rgba(${TextSet},1)` );
     ROOT.style.setProperty('--AllText', `rgba(${TextSet},1)` );
+    
     ROOT.style.setProperty('--Background',BackgroundSet);
 
     ROOT.style.setProperty('--BarLeft', `rgba(${TextSet},1)` );
     ROOT.style.setProperty('--BarRight', `rgba(${TextSet},1)` );
 
-    ROOT.style.setProperty('--AllTitleFont', FontSetTitle  );
+    ROOT.style.setProperty('--AllTitleFont', FontSetTitle );
     ROOT.style.setProperty('--AllBodyFont', FontSetBody );
 
 }
@@ -1698,7 +1779,7 @@ function AdvancePage(newElement) {
         // advance the page count,
         PageMaxCount++;
         // and generate a new DIV for the page
-        divTARGET.innerHTML += `<div id="PAGE${PageMaxCount}" class="Page ${Perspective}"></div> `;
+        divTARGET.innerHTML += `<div id="PAGE${PageMaxCount}" class="Page ${Perspage}"></div> `;
         // and reset the position so we continue filling the next page.
         ElemPosition = document.getElementById(`PAGE${PageMaxCount}`);
         ElemPosition.innerHTML = newElement + "";
@@ -1715,7 +1796,7 @@ function AdvancePageForText(nextText) {
         //console.debug(TextPosition.outerHTML)
         ElemPosition.style.display = "none";
         PageMaxCount++;
-        divTARGET.innerHTML += `<div id="PAGE${PageMaxCount}" class="Page ${Perspective}"></div> `;
+        divTARGET.innerHTML += `<div id="PAGE${PageMaxCount}" class="Page ${Perspage}"></div> `;
         FillElement = "PARAGRAPH";
         ElemPosition = document.getElementById(`PAGE${PageMaxCount}`);
         ElemPosition.innerHTML = template_BODYSPLIT + nextText + "</p>";
@@ -1737,18 +1818,28 @@ function TextOverflow() {
 
 var FillElement = "";
 var Perspective = "Cody";
+var Perspage = "Cody"
 
 function RollTicker() {
     console.debug("Deploying text...");
 
-    PageMaxCount = 0;
+    PageMaxCount = 0;    
 
-    divTARGET.innerHTML = `<div id="PAGE${PageMaxCount}" class="Page ${Perspective}"></div> `;
+    Perspective = Perspage = ViewIndices[ChapterNumber-1];
+
+    console.debug(`This chapter is ${Perspective}'s.`)
+
+    divTARGET.innerHTML = `<div id="PAGE${PageMaxCount}" class="Page ${Perspage}"></div> `;
 
     ElemPosition = document.getElementById(`PAGE${PageMaxCount}`)    
 
+    let debugSpool = "";
+
     for (let i=0; i<Ticker.length; i++) {
         let Ticket = Ticker[i];
+
+        debugSpool += " " + Ticket;
+
         I = i;
         LastTextState = ElemPosition.innerHTML + "";
 
@@ -1850,8 +1941,13 @@ function RollTicker() {
                     AdvancePageForText( FillBit );                   
                 }
                 break;
-        }
+        }       
+
     } // end deployment loop
+
+    console.debug(debugSpool);
+
+
     // Hide the last page
     ElemPosition.style.display = "none";
     // and reload the first one as displayed item
@@ -1896,6 +1992,28 @@ async function reload(LoadAtEnd) {
     RollTicker();    
     CurrentPageNumber = LoadAtEnd?PageMaxCount:0;
     ChangePage(0); ////////////////////////////////////////////////
+    switch (ViewIndices[ChapterNumber-1]) {
+        case "Cody":
+            ROOT.style.setProperty('--Background',"var(--BackgroundBlue)");
+            ROOT.style.setProperty('--BackgroundColor',"var(--BackgroundBlue)");
+            ROOT.style.setProperty('--ChapSubColor', `rgba(var(--TextBlue),1)`);
+            ROOT.style.setProperty('--ChapHeaderColor', `rgba(var(--TextBlue),1)`);
+            break;
+        case "Katiya":
+            ROOT.style.setProperty('--Background',"var(--BackgroundRed)");
+            ROOT.style.setProperty('--BackgroundColor',"var(--BackgroundRed)");
+            ROOT.style.setProperty('--ChapSubColor', `rgba(var(--TextRed),1)`);
+            ROOT.style.setProperty('--ChapHeaderColor', `rgba(var(--TextRed),1)`);
+
+            break;
+        default:
+            ROOT.style.setProperty('--Background',"var(--BackgroundPlain)");
+            ROOT.style.setProperty('--BackgroundColor',"var(--BackgroundPlain)");
+            ROOT.style.setProperty('--ChapSubColor', `rgba(var(--TextPlain),1)`);
+            ROOT.style.setProperty('--ChapHeaderColor', `rgba(var(--TextPlain),1)`);
+
+            break;
+    }
 }
 
 main(); // Call the main function
