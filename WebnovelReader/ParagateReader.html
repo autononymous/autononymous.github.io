@@ -195,7 +195,24 @@ p.pBODY {
     line-height: var(--BodyLineHeight);
     margin:0;
     margin-bottom: 0.0em; /*========================*/
-
+}
+p.Cody {
+    background-color: rgb(var(--BackgroundBlue));
+    color: rgb(var(--TextBlue));
+    font-size: var(--BodySize);
+    font-family: "Bahnschrift";   
+    padding-left: var(--MarginSize);
+    padding-right: var(--MarginSize);
+    line-height: var(--BodyLineHeight);
+}
+p.Katiya {
+    background-color: rgb(var(--BackgroundRed));
+    color: rgb(var(--TextRed));
+    font-size: calc(var(--BodySize) - 0.2em);
+    font-family: 'Lucida Fax', 'Times New Roman';
+    padding-left: var(--MarginSize);
+    padding-right: var(--MarginSize);
+    line-height: calc(var(--BodyLineHeight) + 0.2em);
 }
 p.SPLIT {
     border: 2px solid var(--DEBUGborder);
@@ -215,10 +232,10 @@ div.Container {
     position: absolute;
     top: 100px;
     height:calc(100vh - 220px);
-    left:5vw;
+    left:0vw;
     border: var(--DEBUGborder);
     background-color: var(--BackgroundColor);
-    width:90vw;    
+    width:100vw;/*90vw;*/    
     overflow:hidden;
     overflow-x: hidden;   
     z-index: 10; 
@@ -247,7 +264,7 @@ div.Target {
     padding-bottom: 10px;
     left:50%;
     transform: translateX(-50%);
-    width: 90vw;   
+    width: 100vw;/*90vw;*/  
     z-index: 1;
     top: 0px;
 }
