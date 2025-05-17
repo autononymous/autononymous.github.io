@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    :root {
+    --TextSetWidthFixed: 20px;
+    --TextSetWidthDynamic: 10vw;
+    --TextSize: 1.5em;
+    --TextLineHeight: 1.5em;
+    --TextMargin: 5vw;
+
+    --TextColor: black;
+    --BackgroundColor: white;
+    --BarColor: black;
+    --IconState: invert(1);
+
+    --Title: 2.5em;
+    --Subtitle: 2.0em;
+    --Section: 2.5em;
+
+    --SubtitleAccent: '  ';
+    --SectionAccent: ' - '
+
+
+    }
+
+    body {
+        overflow:hidden;
+        background-color: var(--BackgroundColor);
+    }
+    div {
+        border: none;/*1px solid black;*/
+    }
+    .Cody {
+        color: var(--TextColor);
+        font-family: 'Bahnschrift', 'Arial';
+    }
+    p.Cody {
+        font-size: var(--TextSize);
+        line-height: var(--TextLineHeight);
+        text-align: justify;
+    }
+
+    h3 {
+        text-align: center;
+    }
+    h3.Title {
+        font-size: var(--Title);
+        color: var(--TextColor);
+        text-decoration: underline;
+    }
+    h3.Subtitle {
+        font-size: var(--Subtitle);
+        color: var(--TextColor);
+    }
+    h3.Section {
+        font-size: var(--Section);
+        color: var(--TextColor);
+    }
+    h3.Section::before{
+        content:var(--SectionAccent);
+    }
+    h3.Section::after{
+        content:var(--SectionAccent);
+    }
+
+    .Katiya {
+        color: var(--TextColor);
+        font-family: 'Lucida Fax', 'Times New Roman'
+    }
+    p.Katiya {
+        font-size: calc(var(--TextSize) - 0.2em);
+        line-height: var(--TextLineHeight);
+        text-align: justify;
+    }
+
+    div.FullContainer {
+        display: grid;
+        grid-template:
+            'leftmargin header header header rightmargin'
+            'leftmargin body body body rightmargin'
+            'leftmargin footer footer footer rightmargin';
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        position:absolute;
+        width:100vw;
+        height:100dvh;
+        left:-50vw;
+        top:0;
+        transform: translateX(50vw);
+        overflow:hidden;
+    } 
+    div.Gutter {
+        width: max(calc((100vw - 600px)/2),var(--TextMargin))
+    }
+    .ContainerLeft   { 
+        grid-area: leftmargin;
+    }
+    .ContainerHead   { 
+        grid-area: header;
+        height:100px;        
+        width:auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        text-align: center;
+    }
+        img.Icon {
+            position:relative;
+            top:25%;
+            transform: translateY(-50%);
+            height:40px;
+            width: auto;
+            cursor: pointer;        
+            filter: var(--IconState);
+        }
+    .ContainerRight  { 
+        grid-area: rightmargin;
+    }
+    .ContainerBody   { 
+        grid-area: body;
+        height: calc(100dvh - 100px - min(35vw,120px));
+        width: min(600px, calc( 100vw - (var(--TextMargin) / 2) ));
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+    .ContainerFooter {
+        grid-area: footer;
+        display: inline-flex;
+        flex-direction: column;
+        height:min(35vw,120px);
+    }
+        .FooterProgress {
+            height:min(10vw,20px);
+        }
+            .ProgressBar {
+                position:relative;
+                top: min(2vw,2px);
+                left: 0; /**/
+                width:0px; /**/
+                height: min(6vw,14px);
+                background-color: var(--BarColor);
+            }
+        .FooterInfo {             
+            height:min(25vw,100px);
+            width:100%;
+            display: inline-flex;
+            flex-direction: row;
+        }
+            .Footer-Left {
+                width:min(25vw,100px);
+                font-size: min(30vw,120px);
+                line-height: 0;
+                cursor:pointer;
+                color: var(--BarColor);
+            }
+            .Footer-Center {
+                width: calc( 100% - min(50vw,200px) );
+            }
+                .FooterContent {                
+                    color: var(--BarColor);
+                    text-align: center;                
+                    line-height:1em;
+                    position:relative;
+                    left:50%;
+                    top:50%;
+                    transform: translate(-50%,-50%);                
+                    transition: linear 0.2s;
+                }
+                .FooterContent > p {
+                    padding:0;
+                    margin:0;
+                }
+                
+                .FooterContent:hover {
+                    color: gray;
+                    cursor:help;
+                    border: 1px solid gray;
+                    border-radius: 5px;
+                    transition: linear 0.2s;
+                }
+            .InfoTitle {
+                padding:0;
+                margin:0;
+                line-height:1em;
+            }
+            .Footer-Right {
+                width: min(25vw,100px);
+                font-size: min(30vw,120px);
+                line-height: 0;   
+                cursor:pointer;    
+                color: var(--BarColor);
+                
+            }
+    div.Page {
+        position:relative;
+        left: min(var(--TextSetWidthFixed), var(--TextSetWidthDynamic));
+        width:max(calc(100% - (var(--TextSetWidthFixed)*2)), calc(100% - (var(--TextSetWidthDynamic)*2)));
+        padding-bottom: 50dvh; /*calc(50dvh - 100px - min(35vw,120px));*/
+    }
+        div.EndSpacer {
+            height:100vw;
+        }
+    div.Centered {
+        position: relative;
+        left:50%;
+        top:min(10vw,35px);
+        transform: translate(-50%,-50%);
+        text-align: center;
+        pointer-events: none;
+    }
+    
+    div.Cover {
+        position: fixed;
+        left:max(calc((100vw - 600px)/2),var(--TextMargin));
+        top:100px;
+        width:min(600px, calc( 100vw - (var(--TextMargin) / 2) ));
+        height:calc(100dvh - 100px - min(35vw,120px));
+        pointer-events: none;
+        background-image: 
+            linear-gradient(
+                to bottom,
+                var(--BackgroundColor) 3%,
+                transparent 8%,
+                transparent 92%,
+                var(--BackgroundColor) 97%
+            )
+    }
+
+
+    @media only screen and (max-width: 700px) {
+        div.FullContainer {
+            grid-template:
+                'header header header'
+                'leftmargin body rightmargin'
+                'footer footer footer';
+        }
+        div.Gutter {
+            width:0px;
+        }
+        div.ContainerBody {
+            width:100%;
+        }
+        div.Cover {
+            left:0;
+            width:100%;
+        }
+    }
+
+  
+    
+</style>
+
+
+<body>
+    <div class="FullContainer" id="FULL">
+        <div class="ContainerLeft Gutter"></div>
+        <div class="ContainerHead">
+            <div class="Icon" id="ICON-LINEDN" ><img class="Icon" title="Increase Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineDn.png" alt="&#8853;" onclick="SetPreferences('LineHeight',1)"></div>
+            <div class="Icon" id="ICON-LINEUP" ><img class="Icon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;" onclick="SetPreferences('LineHeight',-1)"></div>
+            <div class="Icon" id="ICON-FONTUP" ><img class="Icon" title="Increase Font Size"" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Larger.png" alt="&#8853;" onclick="SetPreferences('FontSize',1)"></div>
+            <div class="Icon" id="ICON-FONTDN" ><img class="Icon" title="Decrease Font Size" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Smaller.png" alt="&#8854;" onclick="SetPreferences('FontSize',-1)"></div>
+            <div class="Icon" id="ICON-THEME" ><img class="Icon" title="Light/Dark Mode" src="https://autononymous.io/wp-content/uploads/2025/05/dark-theme-svgrepo-com.png" onclick="Preferences.DisplayMode=(Preferences.DisplayMode=='Light')?'Dark':'Light';console.log('Changed color to '+Preferences.DisplayMode+'.');InvertIcons();SetScrollerEvents();runScrollEvents();SaveState();"></div>
+        </div> 
+        <!--  ></div> -->
+        <div class="ContainerRight Gutter"></div>
+        <div class="ContainerBody" id="BODY">
+            <div class="Page" id="PAGE">
+            </div>
+            <div class="Cover" id="COVER">
+            </div>
+        </div>
+        <div class="ContainerFooter">
+            <div class="FooterProgress">
+                <div class="ProgressBar" id="PROGRESS"></div>
+            </div>
+            <div class="FooterInfo">
+                <div onclick="CurrentChapter=CurrentChapter.Previous;PlaceChapter(CurrentChapter);SaveState();" class="Footer-Left"><div class="Centered">&laquo;</div></div>
+                <div class="Footer-Center">
+                    <div class="FooterContent" id="DATA" title="View Table Of Contents">
+
+                    </div>
+                </div>
+                <div onclick="CurrentChapter=CurrentChapter.Next;PlaceChapter(CurrentChapter);SaveState();" class="Footer-Right"><div class="Centered">&raquo;</div></div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+
+// ==========================<{Defining Elements}>============================ //
+
+    const eBODY = document.getElementsByTagName('body')[0];
+    const ePAGE = document.getElementById('PAGE');
+    const eWINDOW = document.getElementById('BODY');
+    const ePROGRESS = document.getElementById('PROGRESS');
+    const ROOT = document.querySelector(':root');
+    const eDATA = document.getElementById('DATA');
+
+// ==========================<{Constant Variables}>============================ //
+    // Root directory location for files
+    SourceROOT  = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/"
+    SourceFILE  = SourceROOT + "/docs/PGtest.json";
+    SourceTOC   = SourceROOT + "/docs/PG00TOC.json";
+
+    // Date Key for determining the most recent file (****UPDATE!****)
+    DATEKEY = "Tuesday, May 13, 2025";
+
+    // Miscellaneous variables
+    DebugLog = "";
+    function debugLog(text,mode) {
+        DebugLog += text;
+        if (mode) {
+            console.debug(DebugLog);
+            DebugLog = "";
+        }
+    }
+    // Start date from Autononymous release day on March 14, 2025.
+    const tSTART = new Date("2025-03-14T00:00:00Z"); //var RelDate = new Date(Date.parse(StartDate) - (86400000*7));
+    const dBEGIN = 56; //************Story release relative date
+    const dSTART = yeardate(tSTART);
+
+    // Current date.
+    const tNOW = new Date();
+    const dNOW = yeardate(tNOW);
+
+    console.debug(`Start date is ${dSTART}.\nToday is ${dNOW}, ${dNOW-dSTART} days later.`)
+
+    const MODES = ["Background","Text","ProgressBar"];
+
+    const jSTYLES = ` 
+    {
+        "Katiya":
+        {
+            "Light":
+            {
+                "Background":[255,200,200,1],
+                "Text": [36 ,18 ,18 ,1],
+                "ProgressBar": [36 ,18 ,18 ,1]
+            },
+            "Dark":
+            {
+                "Background":[36 ,18 ,18 ,1],
+                "Text": [255,200,200,1],
+                "ProgressBar":[255,200,200,1]
+            },
+            "Prefix":" &#10048; ",
+            "Suffix":" &#10048; "
+        },
+        "Cody":
+        {
+            "Light":
+            {
+                "Background":[200,200,255,1],
+                "Text": [18 ,18 ,36 ,1],
+                "ProgressBar": [18 ,18 ,36 ,1]
+            },
+            "Dark":
+            {
+                "Background":[18 ,18 ,36 ,1],
+                "Text": [200,200,255,1],
+                "ProgressBar":[200,200,255,1]
+            },
+            "Prefix":" /* ",
+            "Suffix":" */ "
+        },
+        "Default":
+        {
+            "Light":
+            {
+                "Background":[240,240,240,1],
+                "Text": [18 ,18 ,18 ,1],
+                "ProgressBar": [18 ,18 ,18 ,1]
+            },
+            "Dark":
+            {
+                "Background":[18 ,18 ,18 ,1],
+                "Text": [240,240,240,1],
+                "ProgressBar":[240,240,240,1]
+            },
+            "Prefix":" ~ ",
+            "Suffix":" ~ "
+        }
+    }`
+    const STYLES = JSON.parse(jSTYLES.replaceAll(/(\r\n|\n|\r)/gm, ''));
+
+    const sTransition   = .5; //percent
+    const sHold         = .5; //percent
+    const sOffset       = 0; //percent
+
+// ==========================<{Changing Variables}>============================ //
+    var STORY = [];
+    var INFO;
+    var CurrentChapter;
+    var ScrollProgress = 0;
+    var PageElementList = [];
+    var Position = 0;
+
+    // User preference settings.
+
+    const PreferencesDefault = {
+        "StartChapter":1,
+        "DisplayMode":"Light",
+        "FontSize":"1.5em",
+        "LineHeight":"1.5em",
+        "Margins": "5vw"
+    }
+    var Preferences = PreferencesDefault;
+    const SettingsDefault = {
+        "FontSize":{
+            "Setting":3,
+            "Options":["0.9em","1.1em","1.3em","1.5em","1.7em","1.9em","2.1em"],
+            "CSSname":"--TextSize"
+        },
+        "LineHeight":{
+            "Setting":3,
+            "Options":["0.9em","1.1em","1.3em","1.5em","1.7em","1.9em","2.1em"],
+            "CSSname":"--TextLineHeight"
+        },
+        "Margins":{
+            "Setting":1,
+            "Options":["5vw","10vw","15vw"],
+            "CSSname":"--TextMargin"
+        }
+    }
+    var Settings = SettingsDefault;
+
+    ROOT.style.setProperty("--TextSize",Preferences.FontSize);
+    ROOT.style.setProperty("--TextLineHeight",Preferences.LineHeight);
+    ROOT.style.setProperty("--TextMargin",Preferences.Margins);
+    
+    var CHSET = {
+        "Text":[],
+        "Background":[],
+        "ProgressBar":[]
+    };   
+
+    var Keyframes = {
+        "Text":[],
+        "Background":[],
+        "ProgressBar":[]
+    };
+
+// ==============================<{Functions}>======================== //
+
+//__________________________________________________________________
+//     NAME: | > yeardate
+// CATEGORY: | > Time
+//  PURPOSE: | > Get relative date.
+//       IN: | > Standard formatted date.
+//   MODIFY: | > None.
+//      OUT: | > Integer relative date.
+//
+function yeardate(date) {
+    const month = date.getMonth();
+    var result = date.getDate();
+    for (let i = 0 ; i < month ; i++) {
+        result += new Date(date.getFullYear(),i+1,0).getDate();
+    }
+    result += (date.getFullYear()-2025)*365;
+    return result;
+}
+
+
+
+
+//__________________________________________________________________
+//     NAME: | > clearLocalStorage
+// CATEGORY: | > Initializing
+//  PURPOSE: | > Function to run in console to test loading files.
+//       IN: | > 
+//   MODIFY: | > 
+//      OUT: | > 
+//
+function clearLocalStorage() {
+    localStorage.removeItem('AC_SAVE');
+    localStorage.removeItem('AC_SETTINGS');
+    localStorage.removeItem('AC_PREFS');
+}
+
+function SaveState() {
+    Preferences.StartChapter = CurrentChapter.ChapterNumber-1;
+    localStorage.setItem('AC_SETTINGS',JSON.stringify(Settings))
+    localStorage.setItem('AC_PREFS',JSON.stringify(Preferences));
+    console.debug(' > User preferences saved to internal storage.')
+}
+function LoadPreferences() {
+    let saveprefs = localStorage.getItem('AC_PREFS');
+    let savesettings = localStorage.getItem('AC_SETTINGS');
+    if (saveprefs && savesettings) {
+        try {
+            Preferences = JSON.parse(saveprefs);
+            Settings = JSON.parse(savesettings);
+
+            Object.values(Settings).forEach( setting  => {                
+                ROOT.style.setProperty(setting.CSSname,setting.Options[setting.Setting]);
+            });      
+
+            CurrentChapter = STORY[Preferences.StartChapter];
+
+            let newstate = (Preferences.DisplayMode=="Dark")?0:1;
+            ROOT.style.setProperty("--IconState",`invert(${newstate})`)
+   
+            console.debug(" > User preferences successfully loaded from Local Storage.")
+        } catch (error) {
+            console.debug(" > Unable to load user preferences from saved. \n << ERRORTEXT: " + error + " >>")
+            // Reset to default.
+            Preferences = PreferencesDefault;
+            Settings = SettingsDefault;
+
+
+        }
+    } else {
+        console.debug(" > Preferences have not been set yet.")
+        SaveState();
+    }
+}
+
+
+function InvertIcons() {
+    let newstate = (Preferences.DisplayMode=="Dark")?0:1;
+    ROOT.style.setProperty("--IconState",`invert(${newstate})`)
+}
+
+function SetPreferences(property,increment) {
+    let Params = Settings[property];
+    let range = [ 0 , Params.Options.length ];
+    let current = Params.Setting;
+    let queried = current + increment;
+
+    if (queried >= range[0] && queried < range[1]) {
+        Params.Setting = queried;
+        Preferences[property] = Params.Options[queried];
+        ROOT.style.setProperty(Params.CSSname,Preferences[property])
+        console.info(` > Parameter '${property}' is now set to ${Preferences[property]}.`)
+
+        SaveState();
+
+        SetScrollerEvents();
+        runScrollEvents();
+
+    } else {
+        console.warn(` > Parameter setting for '${property}' is out of bounds [${range[0]},${range[1]}].`)
+    }
+
+}
+
+//__________________________________________________________________
+//     NAME: | > fetchJSON
+// CATEGORY: | > Initializing
+//  PURPOSE: | > Either load local save if it exists (to reduce server load),
+//           |   or pull data from server.  Formats data through ParseStory().
+//       IN: | > 
+//   MODIFY: | > 
+//      OUT: | > 
+//
+async function fetchJSON() {
+    // Check if we already have this saved locally first.
+    let SavedContent = localStorage.getItem('AC_SAVE');
+    if(SavedContent) {
+        try {
+            let jSavedContent = JSON.parse(SavedContent.replaceAll(/(\r\n|\n|\r)/gm, ''));
+            if (jSavedContent.Created == DATEKEY) {
+                let result = ParseStory(jSavedContent);
+                debugLog("> Loaded existing text in local storage.\n",true);
+                return result;
+            }
+        } catch (error) {
+            debugLog("> Error loading existing text in local storage.\n"+error+"\n",false);
+        }
+    }
+    // If not, proceed to load.
+    try {
+        const response = await fetch(SourceFILE);
+        if (!response.ok) {
+            debugLog("> ERROR: Network response failure for story JSON.\n",false);
+        }
+        const data = await response.text();
+        let jDATA = JSON.parse(data.replaceAll(/(\r\n|\n|\r)/gm, ''));
+        let result = ParseStory(jDATA);
+        localStorage.setItem('AC_SAVE',JSON.stringify(jDATA))
+        debugLog("> Story successfully loaded.\n",true);
+        return result;
+    } catch (error) {
+        debugLog("> Error in fetch process.\n",false);
+    }
+    debugLog("",true);
+}
+
+//__________________________________________________________________
+//     NAME: | > ParseStory
+// CATEGORY: | > Initializing
+//  PURPOSE: | > Format the exported JSON file into something more readable.
+//       IN: | > 
+//   MODIFY: | > 
+//      OUT: | > 
+//
+function ParseStory(data) {
+
+    // Chapters need to be counted.
+    let c = 0;
+
+    // Release dates need to be calculated.
+    let ThisDate = dSTART + 0;
+
+    // Pull non-Manuscript data first.
+    INFO = {
+        "Author": data.Author,
+        "Created":data.Created,
+        "ShortName":data.Nickname,
+        "FullName":data.Project,
+        "TotalWords":data.WordCount
+    };    
+
+    // Iteratively load the JSON export file into something more accessible.
+    
+    // Variables for last and next chapter data:
+    //console.debug(data)
+
+    let Story = Object.values(data.Manuscript);
+    for (let i=0; i<Story.length; i++) {
+        // Save story array to 'entry' for easier sightreading.
+        let entry = Story[i];
+        let ePerspective="";
+
+        // Iterate for each entry of the singular JSON file.
+        switch(entry.DocType) {
+        case "Chapter":
+            let eTitle = (entry.ChapterOverride=="")?entry.AutoNameFull:entry.ChapterOverride;
+            let eSubtitle = (entry.GivenName=="")?"":entry.GivenName;
+            let eActNumber = entry.ActNum;
+            let eChapterNumber = entry.ChapterFull;
+            let eSynopsis = entry.Synopsis;
+            let eID = (entry.VerboseOverride=="")?entry.VerboseID:entry.VerboseOverride;
+            ePerspective = (entry.Perspective=="Both")?"Default":entry.Perspective;
+
+            let prefix = STYLES[ePerspective].Prefix;
+            let suffix = STYLES[ePerspective].Suffix;
+
+            ThisDate += parseFloat(entry.NextPublish);
+            let eRelease = ThisDate;
+
+            STORY.push(
+            {
+                "Title":eTitle,
+                "Subtitle":eSubtitle,
+                "Act":eActNumber,
+                "ChapterNumber": eChapterNumber,
+                "Synopsis":eSynopsis,
+                "ID":eID,
+                "Body":[],
+                "BodyFormatted":[],
+                "Release":eRelease,
+                "Perspective":ePerspective,
+                "Previous":"",
+                "Next":""
+            });
+            STORY[STORY.length-1].BodyFormatted.push(`<h3 id="title_${entry.ChapterFull}" class="${ePerspective} Title">${eTitle}</h3>`);
+            STORY[STORY.length-1].BodyFormatted.push(`<h3 id="sub_${entry.ChapterFull}" class="${ePerspective} Subtitle">${prefix + eSubtitle + suffix}</h3>`);
+    
+            // Set 'next' and 'previous' chapters as circular objexts
+            if (c==0) {
+                STORY[STORY.length-1].Previous = STORY[STORY.length-1];
+            } else if (c==STORY.length-1) {
+                STORY[STORY.length-1].Previous = STORY[STORY.length-2];
+                STORY[STORY.length-2].Next = STORY[STORY.length-1];
+                STORY[STORY.length-1].Next = STORY[0];
+            } else {
+                STORY[STORY.length-1].Previous = STORY[STORY.length-2];
+                STORY[STORY.length-2].Next = STORY[STORY.length-1];
+            }
+
+            c++;
+            break;
+        case "Scene":
+            let eBody = entry.Body.replaceAll('<p>','\n').replaceAll('</p>','').split('\n');         
+            ePerspective = (entry.Perspective=="Both")?"Default":entry.Perspective;
+
+            let LineIndex = 1;
+            STORY[STORY.length-1].BodyFormatted.push(`<h3 id="${entry.ChapterFull}.${entry.SceneFull}" class="${ePerspective} Section">${entry.ScenePart}</h3>`);
+            eBody.forEach(passage => {
+                if (passage != "") {
+                    STORY[STORY.length-1].Body.push(passage);
+                    STORY[STORY.length-1].BodyFormatted.push(
+                        `<p id="${entry.ChapterFull}.${entry.SceneFull}.${LineIndex++}" class="${ePerspective}">`
+                        + passage
+                        + `</p>`
+                    );
+                }                
+            });
+            break;
+        default:
+            break;
+        }
+    }
+    return data;
+}
+
+function Event_Pulse( keyframe, progress, previous, next, transition, hold , offset ) {
+    let pStart  = progress - (transition/2) - (hold/2) + offset;
+    let pEnd    = progress + (transition/2) + (hold/2) + offset;
+
+    // Initial node.
+    keyframe.push([progress,previous[0],previous[1],previous[2],previous[3]]);
+}
+function Event_Switch( keyframe, progress, previous, next, transition, hold , offset ) {
+    // NOTE: 'hold' has no effect.
+    let pStart  = progress - (transition/2) + offset;
+    let pEnd    = progress + (transition/2) + offset;
+
+    keyframe.push([pStart,previous[0],previous[1],previous[2],previous[3]]);
+    keyframe.push([pEnd,next[0],next[1],next[2],next[3]]);
+
+
+}
+
+
+function SetScrollerEvents() {
+    let PageElements = ePAGE.childNodes;
+    let LastStyle = "Default";//PageElements[0].className.split(" ")[0];
+    let ThisStyle = PageElements[0].className.split(" ")[0];
+
+    Keyframes = {
+        "Text":[],
+        "Background":[],
+        "ProgressBar":[]
+    };
+
+    // Start on neutral theme.
+    let Progress = 0;
+    let Style = STYLES["Default"][Preferences.DisplayMode]
+    MODES.forEach( mode  => {
+        Keyframes[mode].push([Progress,Style[mode][0],Style[mode][1],Style[mode][2],Style[mode][3]]);
+        let last = STYLES[LastStyle][Preferences.DisplayMode][mode]
+        let next = STYLES[ThisStyle][Preferences.DisplayMode][mode]
+        Previous = [last[0],last[1],last[2],last[3]];
+        Next = [next[0],next[1],next[2],next[3]];
+        Event_Switch(Keyframes[mode],Progress,Previous,Next,2.00,0.00,2.00);
+    });
+
+    let IsFirstElement = true;
+
+    for (let i=0; i<PageElements.length; i++) {
+        element = PageElements[i];
+        // Get previous style and current style.
+        LastStyle = ThisStyle + "";
+        ThisStyle = element.className.split(" ")[0];
+
+        if ( (ThisStyle != LastStyle) ) { //|| (IsFirstElement && (element.tagName == "P")) || (i == PageElements.length-5) ) {
+            //--console.log("Style change.",LastStyle,ThisStyle)
+            IsFirstElement = false;
+            let Progress = ScrollPosition(element);
+            let Style = STYLES[ThisStyle][Preferences.DisplayMode];
+            MODES.forEach( mode  => {
+                let last = STYLES[LastStyle][Preferences.DisplayMode][mode]
+                let next = STYLES[ThisStyle][Preferences.DisplayMode][mode]
+                Previous = [last[0],last[1],last[2],last[3]];
+                Next = [next[0],next[1],next[2],next[3]];
+                Event_Switch(Keyframes[mode],Progress,Previous,Next,1,sHold,-0.5);
+            });
+        }
+    }
+
+
+
+    // End on neutral theme.
+    Progress = 100;
+    Style = STYLES["Default"][Preferences.DisplayMode]
+    ThisStyle = "Default";
+    MODES.forEach( mode  => {
+        let last = STYLES[LastStyle][Preferences.DisplayMode][mode]
+        let next = STYLES[ThisStyle][Preferences.DisplayMode][mode]
+        Previous = [last[0],last[1],last[2],last[3]];
+        Next = [next[0],next[1],next[2],next[3]];
+        Event_Switch(Keyframes[mode],Progress,Previous,Next,2.00,0.00,-2.00);
+        Keyframes[mode].push([Progress,Style[mode][0],Style[mode][1],Style[mode][2],Style[mode][3]]);
+    });
+
+   
+    //--console.log(PageElementList);
+    //--console.log(LastStyle)
+    //--console.debug(Keyframes)
+}
+
+
+function ChannelSet(CHANNEL) {
+    LastElement = CHANNEL[0];
+    NextElement = CHANNEL[1];
+    for (let i=0; i<CHANNEL.length-1; i++) {
+        if (CHANNEL[i][0] < Position) {
+            LastElement = Object.assign({}, CHANNEL[i]);
+            NextElement = Object.assign({}, CHANNEL[i+1]);
+        }
+    }      
+    let Progress = (NextElement[0]-Position)/(NextElement[0]-LastElement[0])
+    /*
+    console.debug(`
+    Last Element: ${LastElement[0]},${LastElement[1]},${LastElement[2]},${LastElement[3]}\n
+    Next Element: ${NextElement[0]},${NextElement[1]},${NextElement[2]},${NextElement[3]}\n
+    Position: ${Position}\n
+    Progress: ${Progress}
+    `);
+    */
+
+    let RED = (LastElement[1]*Progress)+(NextElement[1]*(1-Progress));
+    let GRN = (LastElement[2]*Progress)+(NextElement[2]*(1-Progress));
+    let BLU = (LastElement[3]*Progress)+(NextElement[3]*(1-Progress));
+    let ALP = 1;
+
+    return [RED,GRN,BLU,ALP];
+}
+
+
+
+
+
+//__________________________________________________________________
+//     NAME: | > PlaceChapter
+// CATEGORY: | > Init, UI Response
+//  PURPOSE: | > Set chapter text into BODY. Set up scroll events.
+//       IN: | > Chapter number.
+//   MODIFY: | > 
+//      OUT: | > 
+//
+function PlaceChapter(CHAPTER) {
+    StartChapter = CurrentChapter.ChapterNumber;
+    // NOTE: Chapter number is (1) ahead of indexing. 
+    ePAGE.innerHTML = "";
+    CHAPTER.BodyFormatted.forEach( Line => {
+        ePAGE.innerHTML += Line;
+    }) 
+    //ePAGE.innerHTML += `<div class="EndSpacer"></div>`;
+    eWINDOW.scrollTop = 0;
+    SetScrollerEvents();    
+    SetInfo();
+}
+
+
+//__________________________________________________________________
+//     NAME: | > Setup
+// CATEGORY: | > Initializing
+//  PURPOSE: | > Initializes all data, loading story and content.
+//       IN: | > 
+//   MODIFY: | > 
+//      OUT: | > 
+//
+async function setup() {    
+
+    // Get and format the story JSON file.
+    jSTORY = await fetchJSON();
+
+    LoadPreferences();
+
+    // Set current chapter.
+    CurrentChapter = STORY[Preferences.StartChapter];
+    PlaceChapter(CurrentChapter);
+
+    console.error(Preferences.DisplayMode)
+
+    runScrollEvents();
+
+    SetInfo();
+    
+}
+
+function ScrollPosition(elem) {
+    let PageRect = ePAGE.getBoundingClientRect();
+    let ItemRect = elem.getBoundingClientRect();
+    let BodyRect = eWINDOW.getBoundingClientRect();
+
+    let PageHeight = PageRect.height - BodyRect.height;
+    let PositionHeight = ItemRect.top - BodyRect.top;
+    let ScrollPos = Math.abs(((PositionHeight/PageHeight)*100))
+    ScrollPos = (ScrollPos>=100)?
+                        100:
+                        ((ScrollPos<=0)?
+                            0:
+                            ScrollPos);
+
+    /*
+    console.debug(`
+    Page height is at ${PageRect.height} - ${BodyRect.height} = ${PageHeight}.
+    Position height is at ${ItemRect.top} - ${BodyRect.top} = ${PositionHeight}.
+    `);
+    */
+    return ScrollPos;
+}
+
+function ApplyColors() {
+
+    ROOT.style.setProperty("--TextColor",`rgba(${CHSET["Text"][0]},${CHSET["Text"][1]},${CHSET["Text"][2]},${CHSET["Text"][3]})`);
+    ROOT.style.setProperty("--BackgroundColor",`rgba(${CHSET["Background"][0]},${CHSET["Background"][1]},${CHSET["Background"][2]},${CHSET["Background"][3]})`);
+    ROOT.style.setProperty("--BarColor",`rgba(${CHSET["ProgressBar"][0]},${CHSET["ProgressBar"][1]},${CHSET["ProgressBar"][2]},${CHSET["ProgressBar"][3]})`);
+}
+
+function SetInfo() {
+    eDATA.innerHTML = 
+          "<h4 class='InfoTitle'>" + INFO.FullName + " " + CurrentChapter.ID + "</h4><p>"
+        + CurrentChapter.Title + "<br>"
+        + CurrentChapter.Subtitle + "</p>"
+        ; 
+}
+
+function runScrollEvents() {
+    Position = ScrollPosition(ePAGE);
+    //console.log(ScrollProgress);
+    ePROGRESS.style.width = `${Position}%`;   
+
+
+    MODES.forEach( mode => {
+        CHSET[mode] = ChannelSet(Keyframes[mode])
+    })
+
+    ApplyColors();
+    
+    
+}
+
+
+// ==========================<{Function Code}>============================ //
+
+eWINDOW.addEventListener('scroll',runScrollEvents);
+setup();
+
+
+</script>
+</body>
+</html>
+
+<!--Wastebin
+  let MinChapter = 1;
+    let MaxChapter = STORY.length;
+    let ThisChapter = CHAPTER.ChapterNumber;
+
+    if (ThisChapter > MaxChapter) {
+        console.warn(` > Chapter ${ThisChapter} is above maximum chapter of ${MaxChapter}.`);
+        return;
+    } else if (ThisChapter < MinChapter) {
+        console.warn(` > Chapter ${ThisChapter} is below minimum chapter of ${MinChapter}.`);
+        return;
+    } else {
+        console.info(` > Loading Chapter ${ThisChapter}.`)
+    }
+    while
+-->
