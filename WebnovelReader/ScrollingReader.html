@@ -485,8 +485,7 @@ function clearLocalStorage() {
     localStorage.removeItem('AC_PREFS');
 }
 
-function SaveState() {
-    Preferences.StartChapter = CurrentChapter.ChapterNumber-1;
+function SaveState() {    
     localStorage.setItem('AC_SETTINGS',JSON.stringify(Settings))
     localStorage.setItem('AC_PREFS',JSON.stringify(Preferences));
     console.debug(' > User preferences saved to internal storage.')
@@ -838,6 +837,7 @@ function PlaceChapter(CHAPTER) {
     }) 
     //ePAGE.innerHTML += `<div class="EndSpacer"></div>`;
     eWINDOW.scrollTop = 0;
+    Preferences.StartChapter = CurrentChapter.ChapterNumber-1;
     SetScrollerEvents();    
     SetInfo();
 }
