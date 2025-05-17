@@ -266,7 +266,8 @@
             <div class="Icon" id="ICON-LINEUP" ><img class="Icon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;" onclick="SetPreferences('LineHeight',-1)"></div>
             <div class="Icon" id="ICON-FONTUP" ><img class="Icon" title="Increase Font Size"" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Larger.png" alt="&#8853;" onclick="SetPreferences('FontSize',1)"></div>
             <div class="Icon" id="ICON-FONTDN" ><img class="Icon" title="Decrease Font Size" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Smaller.png" alt="&#8854;" onclick="SetPreferences('FontSize',-1)"></div>
-            <div class="Icon" id="ICON-THEME" ><img class="Icon" title="Light/Dark Mode" src="https://autononymous.io/wp-content/uploads/2025/05/dark-theme-svgrepo-com.png" onclick="Preferences.DisplayMode=(Preferences.DisplayMode=='Light')?'Dark':'Light';console.log('Changed color to '+Preferences.DisplayMode+'.');InvertIcons();SetScrollerEvents();runScrollEvents();SaveState();"></div>
+            <div class="Icon" id="ICON-THEME" onclick="Preferences.DisplayMode=(Preferences.DisplayMode=='Light')?'Dark':'Light';console.log('Changed color to '+Preferences.DisplayMode+'.');InvertIcons();SetScrollerEvents();runScrollEvents();SaveState();">
+                <span style="color: var(--TextColor);font-size: 40px;cursor:pointer;">&#9680;</span></div>
         </div> 
         <!--  ></div> -->
         <div class="ContainerRight Gutter"></div>
