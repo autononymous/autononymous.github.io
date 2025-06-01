@@ -308,7 +308,7 @@
 // ==========================<{Constant Variables}>============================ //
     // Root directory location for files
     SourceROOT  = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/"
-    SourceFILE  = SourceROOT + "/docs/PG01.json";
+    SourceFILE  = SourceROOT + "/docs/PG04.json";
     SourceTOC   = SourceROOT + "/docs/PG00TOC.json";
 
     // ************** DEBUG local pull option ************
@@ -589,12 +589,13 @@ async function fetchJSON() {
         }
         const data = await response.text();
         let jDATA = JSON.parse(data.replaceAll(/(\r\n|\n|\r)/gm, ''));
+        console.log(jDATA);
         let result = ParseStory(jDATA);
         localStorage.setItem('AC_SAVE',JSON.stringify(jDATA))
         debugLog("> Story successfully loaded.\n",true);
         return result;
     } catch (error) {
-        debugLog("> Error in fetch process.\n",false);
+        debugLog("> Error in fetch process.\n> "+error,false);
     }
     debugLog("",true);
 }
@@ -630,6 +631,7 @@ function ParseStory(data) {
     //console.debug(data)
 
     let Story = Object.values(data.Manuscript);
+    console.log(Story)
     for (let i=0; i<Story.length; i++) {
         // Save story array to 'entry' for easier sightreading.
         let entry = Story[i];
@@ -638,19 +640,21 @@ function ParseStory(data) {
         // Iterate for each entry of the singular JSON file.
         switch(entry.DocType) {
         case "Chapter":
-            let eTitle = (entry.ChapterOverride=="")?entry.AutoNameFull:entry.ChapterOverride;
+            let eTitle = (entry.ChapterOverride==""||entry.ChapterOverride==undefined)?entry.AutoNameFull:entry.ChapterOverride;
             let eSubtitle = (entry.GivenName=="")?"":entry.GivenName;
             let eActNumber = entry.ActNum;
             let eChapterNumber = entry.ChapterFull;
             let eSynopsis = entry.Synopsis;
             let eID = (entry.VerboseOverride=="")?entry.VerboseID:entry.VerboseOverride;
-            ePerspective = (entry.Perspective=="Both")?"Default":entry.Perspective;
+            ePerspective = ((entry.Perspective=="Mixed")||(entry.Perspective==""))?"Default":entry.Perspective;
 
             let prefix = STYLES[ePerspective].Prefix;
             let suffix = STYLES[ePerspective].Suffix;
 
             ThisDate += parseFloat(entry.NextPublish);
             let eRelease = ThisDate;
+
+            console.log(eTitle);
 
             STORY.push(
             {
@@ -686,7 +690,7 @@ function ParseStory(data) {
             break;
         case "Scene":
             let eBody = entry.Body.replaceAll('<p>','\n').replaceAll('</p>','').split('\n');         
-            ePerspective = (entry.Perspective=="Both")?"Default":entry.Perspective;
+            ePerspective = ((entry.Perspective=="Mixed")||(entry.Perspective==""))?"Default":entry.Perspective;
 
             let LineIndex = 1;
             STORY[STORY.length-1].BodyFormatted.push(`<h3 id="${entry.ChapterFull}.${entry.SceneFull}" class="${ePerspective} Section">${entry.ScenePart}</h3>`);
@@ -698,7 +702,7 @@ function ParseStory(data) {
                         + passage
                         + `</p>`
                     );
-                }                
+                }              
             });
             break;
         default:
