@@ -253,6 +253,36 @@
         }
     }
 
+p.msgfrom {
+    font-family: 'Consolas','Lucida Console','Arial';
+    text-indent: none;
+    line-height:1.2rem;
+    padding:0;
+    margin:0;
+    text-align:left;
+}
+p.msgto {
+    font-family: 'Consolas','Lucida Console','Arial';
+    text-indent: none;
+    line-height:1.2rem;
+    padding:0;
+    margin:0;
+    text-align:right;
+}
+
+span.msgfromdate {    
+    font-size: 0.6em;    
+}
+span.msgfrom {
+    font-size: 1.0em;
+}
+span.msgtodate {    
+    font-size: 0.6em;    
+}
+span.msgto {
+    font-size: 1.0em;
+}
+
   
     
 </style>
@@ -693,16 +723,41 @@ function ParseStory(data) {
             ePerspective = ((entry.Perspective=="Mixed")||(entry.Perspective==""))?"Default":entry.Perspective;
 
             let LineIndex = 1;
+            let WritingMessage = false; // Generating message div.
             STORY[STORY.length-1].BodyFormatted.push(`<h3 id="${entry.ChapterFull}.${entry.SceneFull}" class="${ePerspective} Section">${entry.ScenePart}</h3>`);
             eBody.forEach(passage => {
                 if (passage != "") {
-                    let passagefix = passage.replaceAll(`"'`,`"`).replaceAll(`'"`,`"`)
-                    STORY[STORY.length-1].Body.push(passagefix);
-                    STORY[STORY.length-1].BodyFormatted.push(
-                        `<p id="${entry.ChapterFull}.${entry.SceneFull}.${LineIndex++}" class="${ePerspective}">`
-                        + passagefix
-                        + `</p>`
-                    );
+                    STORY[STORY.length-1].Body.push(passage);
+                    if (passage.search("msg") != -1) {
+                        let msgtype = 
+                            (passage.search("msgfromdate") != -1) ? "msgfrom" :
+                            (passage.search("msgfrom") != -1) ? "msgfrom" :
+                            (passage.search("msgtodate") != -1) ? "msgto" :
+                            (passage.search("msgto") != -1) ? "msgto" : "";
+                        if (WritingMessage == false) {
+                            STORY[STORY.length-1].BodyFormatted.push(
+                                `<p id="${entry.ChapterFull}.${entry.SceneFull}.${LineIndex++}" class="${ePerspective} ${msgtype}">`
+                                + passage
+                            );                   
+                            WritingMessage = true;
+                        } else {
+                            console.log(passage)
+                            STORY[STORY.length-1].BodyFormatted[STORY[STORY.length-1].BodyFormatted.length-1] += '<br>' + (passage);
+                        }
+                        console.warn(passage)
+                    } else {
+                        if(WritingMessage == true) {
+                            WritingMessage = false;
+                            STORY[STORY.length-1].BodyFormatted[STORY[STORY.length-1].BodyFormatted.length-1] += (`</p>`);
+                        }
+                        
+                        STORY[STORY.length-1].BodyFormatted.push(
+                            `<p id="${entry.ChapterFull}.${entry.SceneFull}.${LineIndex++}" class="${ePerspective}">`
+                            + passage
+                            + `</p>`
+                    )   ;
+                    }
+                    
                 }              
             });
             break;
