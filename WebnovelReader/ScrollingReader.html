@@ -696,10 +696,11 @@ function ParseStory(data) {
             STORY[STORY.length-1].BodyFormatted.push(`<h3 id="${entry.ChapterFull}.${entry.SceneFull}" class="${ePerspective} Section">${entry.ScenePart}</h3>`);
             eBody.forEach(passage => {
                 if (passage != "") {
-                    STORY[STORY.length-1].Body.push(passage);
+                    let passagefix = passage.replaceAll(`"'`,`"`).replaceAll(`'"`,`"`)
+                    STORY[STORY.length-1].Body.push(passagefix);
                     STORY[STORY.length-1].BodyFormatted.push(
                         `<p id="${entry.ChapterFull}.${entry.SceneFull}.${LineIndex++}" class="${ePerspective}">`
-                        + passage
+                        + passagefix
                         + `</p>`
                     );
                 }              
