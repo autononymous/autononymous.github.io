@@ -14,8 +14,16 @@
     --TextLineHeight: 1.5em;
     --TextMargin: 5vw;
 
+    --ActiveTitle:'Bahnschrift', 'Arial';
+    --ActiveSub:'Bahnschrift', 'Arial';
+    --ActivePrimary: 189, 0, 28;
+    --ActiveSecondary: 156, 121, 33;
+    --TOCEntryHeight:   80px;
+    --TOCbackground: rgba(0,0,0,0.1);
+
     --TextColor: black;
     --BackgroundColor: white;
+    --HoverColor: rgba(12,12,12,0.1);
     --BarColor: black;
     --IconState: invert(1);
 
@@ -38,7 +46,7 @@
 
     body {
         overflow:hidden;
-        background-color: var(--BackgroundColor);
+        background-color: var(--BackgroundColor);/**/
     }
     div {
         border: none;/*1px solid black;*/
@@ -102,14 +110,17 @@
         top:0;
         transform: translateX(50vw);
         overflow:hidden;
+        /*background-color: var(--BackgroundColor)*/
     } 
     div.Gutter {
         width: max(calc((100vw - 600px)/2),var(--TextMargin))
     }
     .ContainerLeft   { 
         grid-area: leftmargin;
+        background-color: var(--BackgroundColor);
     }
     .ContainerHead   { 
+        background-color: var(--BackgroundColor);
         grid-area: header;
         height:100px;        
         width:auto;
@@ -128,6 +139,7 @@
         }
     .ContainerRight  { 
         grid-area: rightmargin;
+        background-color: var(--BackgroundColor);
     }
     .ContainerBody   { 
         grid-area: body;
@@ -136,6 +148,7 @@
         overflow-x: hidden;
         overflow-y: scroll;
         scrollbar-width: none;
+        background-color: var(--BackgroundColor);/**/
     }
     .ContainerFooter {
         grid-area: footer;
@@ -145,6 +158,7 @@
     }
         .FooterProgress {
             height:min(10vw,20px);
+            background-color: var(--BackgroundColor);/**/
         }
             .ProgressBar {
                 position:relative;
@@ -169,6 +183,7 @@
             }
             .Footer-Center {
                 width: calc( 100% - min(50vw,200px) );
+                pointer-events: none;
             }
                 .FooterContent {                
                     color: var(--BarColor);
@@ -221,8 +236,7 @@
         transform: translate(-50%,-50%);
         text-align: center;
         pointer-events: none;
-    }
-    
+    }    
     div.Cover {
         position: fixed;
         left:max(calc((100vw - 600px)/2),var(--TextMargin));
@@ -239,8 +253,7 @@
                 var(--BackgroundColor) 97%
             )
     }
-
-
+    
     @media only screen and (max-width: 700px) {
         div.FullContainer {
             grid-template:
@@ -339,12 +352,223 @@ span.msgto {
     line-height: 1.25;
 }
 
-  
-    
+
+
+
+
+div.TOC {
+    width:100%;
+    height:100%;
+    color: var(--TextColor);/*rgba(var(--ActivePrimary),1);*/
+}
+div.Table {
+    display:inline-flex;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: center;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+div.Act {
+    width:100%;
+    height:auto;
+    display:inline-flex;
+    flex-direction: column;
+}
+div.ActRow {
+    width:100%;
+    height: 40px;
+    /*background-color: rgba(var(--ColorPrimary),0.1);*/
+    font-family: var(--ActiveTitle);
+    font-size: 2em;
+    text-align: center;
+    border-top:2px solid rgba(var(--TextColor),1);
+    border-bottom: 2px solid rgba(var(--TextColor),1);
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.5);
+}
+div.ChapterSet {
+    overflow:hidden;
+    height:auto;
+}
+div.ChapterRow {
+    display: inline-flex;
+    flex-direction: row;
+    height: var(--TOCEntryHeight);
+    justify-items: left;
+}
+@keyframes flasherror {
+    0% {
+        background-color: transparent;
+    } 
+    30% {
+        background-color: rgba(237, 146, 146, 0.3);
+    }
+    70% {
+        background-color: rgba(237, 146, 146, 0.3);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        opacity:1;  
+        top: 0;
+        pointer-events: all;
+    } 
+    60% {
+        top: -110vh;
+        pointer-events: none;
+        opacity:0;  
+    }
+    100% {
+        top: -110vh;
+        opacity:0;  
+    }
+}
+@keyframes slide-down {
+    0% {
+        opacity:0;  
+        top: -110vh;
+        pointer-events: all;
+    } 
+    60% {
+        top: 0;
+        pointer-events: none;
+        opacity:1;  
+    }
+    100% {
+        top: 0;
+        opacity:1;  
+    }
+}
+
+div.activerow {
+    transition: background-color 0.3s ease-in-out 0.05s;
+}
+div.activerow:hover {
+    background-color: var(--HoverColor)
+}
+div.inactiverow {
+    transition: background-color 0.3s ease-in-out 0.05s;
+    background-color: rgba(128,128,128,0.15);
+}
+div.inactiverow:hover {
+    background-color: rgba(255,50,50,0.15);
+}
+div.newrow {
+    background-color: rgba(255,255,40,0.15);
+}
+
+div.TOCmarker {
+  position: relative;
+  height: 12px;
+  width: 12px;
+  background-color: none;
+  border: 1px solid var(--TextColor);/*rgba(var(--ActivePrimary),1);*/
+  border-radius: 50%;
+  margin-left: calc(4vw + 3px);
+  transform: translate(-50%,0);
+  margin-top: calc( (var(--TOCEntryHeight)/2) - 9px);
+}
+@media only screen and (max-width: 700px) {
+    div.TOCmain {
+        grid-template:
+            'tocgutter tocbody tocgutter'
+            'tocfooter tocfooter tocfooter';
+    }
+}
+
+div.TOCmain {
+    position:absolute;
+    left:50vw;
+    top:0;
+    transform: translateX(-50%);
+    width: min(600px, 100vw);/*calc( 100vw - (var(--TextMargin) / 2) ));*/
+    height: calc(100dvh - 120px);
+    position: absolute;
+    overflow-y:scroll;    
+    scrollbar-width: none;
+    background: var(--TOCbackground);
+}   
+
+div.FloatName {
+    position:absolute;
+    bottom: 0px;
+    left: 50vw;
+    transform: translateX(-50%)
+}
+
+div.ChapterState {
+    margin-left: 4vw;
+    margin-right:2vw;
+    position: relative;
+    background-color: var(--TextColor);/*rgba(var(--ActivePrimary),1);*/
+    width: 4px;
+    top: 0;
+    height: 100%;
+    /*transform: translate(0%, -50%);*/
+    left: calc(-4vw - 15px);
+}
+
+div.ChapterNumber {
+    width:40px;
+    font-size: 2.0em;
+    padding-right:2px;
+    text-align: left;
+    font-family: var(--ActiveTitle);
+    margin-top:25px;
+    transform: translate(-50%,0);
+}
+div.ChapterDescription {
+    max-width:80vw;
+    flex:5;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    left: -10px;
+    border-left: 1px dashed var(--BarColor);/*rgba(var(--ActivePrimary),;*/
+    padding-left: 15px;
+}
+div.ChapterName {
+    flex:1;
+    height:30px;
+    text-align: left;
+    font-size: 1.2em;
+    font-family: var(--ActiveTitle);
+    white-space: nowrap;
+    margin-top:5px;
+}
+div.ChapterSynopsis {
+    flex:4;
+    text-align: left;
+    text-emphasis: italic;
+    font-size:0.8em;
+    opacity:0.6;
+    font-family: var(--ActiveSub);
+    overflow-y: hidden;
+    margin-bottom:5px;
+}
+div.ChapterDate {  
+    position:relative;
+    transform: rotate(-90deg) translate(-5px,calc(4vw + 25px));
+    width: 20px;
+    opacity:0.3;
+}
+
+
+
+
+
+
 </style>
 
 
 <body>
+    <div class="TOCmain" id="TOC">     
+        
+    </div>
     <div class="FullContainer" id="FULL">
         <div class="ContainerLeft Gutter"></div>
         <div class="ContainerHead">
@@ -370,12 +594,17 @@ span.msgto {
             <div class="FooterInfo">
                 <div onclick="CurrentChapter=CurrentChapter.Previous;PlaceChapter(CurrentChapter);SaveState();" class="Footer-Left"><div class="Centered">&laquo;</div></div>
                 <div class="Footer-Center">
-                    <div class="FooterContent" id="DATA" title="View Table Of Contents">
-
+                    <!-- moved
+                    <div class="FooterContent" id="DATA" title="View Table Of Contents" onclick="ToggleTOC(true)">
                     </div>
+                    -->
                 </div>
                 <div onclick="CurrentChapter=CurrentChapter.Next;PlaceChapter(CurrentChapter);SaveState();" class="Footer-Right"><div class="Centered">&raquo;</div></div>
             </div>
+        </div>
+    </div>
+    <div class="FloatName">
+        <div class="FooterContent" id="DATA" title="View Table Of Contents" onclick="ToggleTOC()">
         </div>
     </div>
 
@@ -384,6 +613,8 @@ span.msgto {
 
 // ==========================<{Defining Elements}>============================ //
 
+    const eTOC = document.getElementById('TOC')
+    const eFULL = document.getElementById('FULL');
     const eBODY = document.getElementsByTagName('body')[0];
     const ePAGE = document.getElementById('PAGE');
     const eWINDOW = document.getElementById('BODY');
@@ -394,8 +625,11 @@ span.msgto {
 // ==========================<{Constant Variables}>============================ //
     // Root directory location for files
     SourceROOT  = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/"
-    SourceFILE  = SourceROOT + "/docs/PG04.json";
+    SourceFILE  = SourceROOT + "/docs/PG05.json";
     SourceTOC   = SourceROOT + "/docs/PG00TOC.json";
+
+    StoryName = "Paragate"
+    var isTOCshown = false;
 
     // ************** DEBUG local pull option ************
     //SourceFILE  = `C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/WebnovelReader/docs/PG04.json`;
@@ -416,7 +650,8 @@ span.msgto {
         }
     }
     // Start date from Autononymous release day on March 14, 2025.
-    const tSTART = new Date("2025-03-14T00:00:00Z"); //var RelDate = new Date(Date.parse(StartDate) - (86400000*7));
+    const tSTART = new Date("2025-03-14T00:00:00Z"); 
+    //var RelDate = new Date(Date.parse(StartDate) - (86400000*7));
     const dBEGIN = 56; //************Story release relative date
     const dSTART = yeardate(tSTART);
 
@@ -492,6 +727,7 @@ span.msgto {
     var STORY = [];
     var INFO;
     var CurrentChapter;
+    var MaximumChapter = 0;
     var ScrollProgress = 0;
     var PageElementList = [];
     var Position = 0;
@@ -734,14 +970,16 @@ function ParseStory(data) {
         // Iterate for each entry of the singular JSON file.
         switch(entry.DocType) {
         case "Chapter":
+            MaximumChapter++;
             let eTitle = (entry.ChapterOverride==""||entry.ChapterOverride==undefined)?entry.AutoNameFull:entry.ChapterOverride;
             let eSubtitle = (entry.GivenName=="")?"":entry.GivenName;
             let eActNumber = entry.ActNum;
             let eChapterNumber = entry.ChapterFull;
             let eSynopsis = entry.Synopsis;
-            let eID = (entry.VerboseOverride=="")?entry.VerboseID:entry.VerboseOverride;
+            let eID = (entry.VerboseOverride==undefined)?(entry.ActNum-1+"."+entry.ChapterFull):entry.VerboseOverride;
+            
             ePerspective = ((entry.Perspective=="Mixed")||(entry.Perspective==""))?"Default":entry.Perspective;
-
+            console.error(entry.VerboseOverride)
             let prefix = STYLES[ePerspective].Prefix;
             let suffix = STYLES[ePerspective].Suffix;
 
@@ -946,7 +1184,123 @@ function ChannelSet(CHANNEL) {
     return [RED,GRN,BLU,ALP];
 }
 
+function ToggleTOC() {
+    isTOCshown = !isTOCshown
+    eFULL.style.opacity = (isTOCshown)?  1  :  0  ;
+    eFULL.style.top = (isTOCshown)?  '0'  :  '-110vh'  ;
+    eFULL.style.animation = ("1s ease-in-out 0.25s forwards" + ((isTOCshown)?" slide-up ":" slide-down "));
+    eFULL.style.pointerEvents = (isTOCshown)?"none":"all";
+       
+}
 
+// Legacy TOC functions ==========================
+var TOCchapterTARGET = "";
+function TOChtmlACT(nAct,name) {
+    let result = `
+    <div id="TOC-ACT${nAct}" class="TOC Act">
+        <div id="TOC-ACT${nAct}-ROW" class="TOC ActRow">          
+            ${name} 
+        </div>
+        <div class="ChapterSet" id="TOC-ACT${nAct}-CHAPTERS">
+        </div>
+    </div>
+    `
+    TOCchapterTARGET = `TOC-ACT${nAct}-CHAPTERS`;
+    return result;
+}
+function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew) {
+    //console.info(`${nChap},${name},${synopsis},${pubdate},${nDisplayed},${percent},${isnew}`)
+    ChapterIsActive = (nChap <= MaximumChapter);
+    //console.info(MaximumChapter)
+    let ChapterInteraction = ChapterIsActive?(`class="TOC ChapterRow activerow ${isnew?'newrow':''}"  onclick="CurrentChapter=STORY[${nChap-1}];PlaceChapter(CurrentChapter);SaveState();ToggleTOC();"`):(`class="TOC ChapterRow inactiverow ${isnew?'newrow':''}"`);
+
+    let result = `    
+        <div id="TOC-CH${nChap}" ${ChapterInteraction}> 
+            <div id="TOC-CH${nChap}-DATE" class="TOC ChapterDate">${pubdate}</div>
+            <div class="TOCmarker" ${ChapterIsActive?'style="background-color: rgba(var(--ColorSecondary),1"':''}></div>
+            <div id="TOC-CH${nChap}-STATE" class="ChapterState" style="height:${percent}%"></div>
+            <div id="TOC-CH${nChap}-NUM" class="TOC ChapterNumber"><span>${('00'+nDisplayed).slice(-2)}</span></div>
+            <div id="TOC-CH${nChap}-DESC" class="TOC ChapterDescription">
+                <div id="TOC-CH${nChap}-NAME" class="TOC ChapterName">${name}</div>
+                <div id="TOC-CH${nChap}-SYN" class="TOC ChapterSynopsis">${synopsis}</div>
+            </div>            
+        </div>
+    `;
+    return result;
+}
+
+function pad(num, size) {
+    var s = "000000000" + num;
+    return s.substr(s.length-size);
+}
+
+function AdjustedIndex(index) {
+    return (index < 2)?0:index-2;
+}
+
+async function BuildTOC() {
+    console.debug("Building the Table Of Contents...");
+    eTOC.innerHTML = ''; //TOC clear ------------------------//    
+    let RelDate = tSTART;
+
+    let today = parseFloat(yeardate(tNOW));
+    let startday = parseFloat(yeardate(tSTART));
+    let releaseday = parseFloat(yeardate(tSTART));
+
+    console.log(`${today}, ${startday}, ${releaseday}`)
+    let ChapterMaxNumberT = 0;
+      
+    let ActCtr = 0;  
+    jSTORY.Manuscript.forEach( parcel => {
+        let pType = parcel.DocType;
+        let pAct = parcel.ActNum;
+        let pChapter = parcel.ChapterFull;
+        let pScene = parcel.SceneFull;   
+        
+        let ChapterIsActive = true;
+
+        let DatePercentage = 1;    
+        
+        //console.warn(`${pType},${pAct},${pChapter},${pScene}`)
+
+        switch (pType) {
+            case "Act":
+                ActCtr++;
+                //console.log("Act "+ActCtr)
+                eTOC.innerHTML += TOChtmlACT(ActCtr,parcel.DocName);
+                break;
+            case "Chapter":
+                console.info(`${today} ... ${releaseday}`)
+                let NextPush = parcel.NextPublish==undefined?7:parcel.NextPublish;
+                releaseday += parseFloat(NextPush);
+                ChapterMaxNumberT++;
+                RelDate = new Date(Date.parse(RelDate) + (86400000*parseFloat(NextPush)));
+                let EntryDateStr = `${pad(RelDate.getMonth()+1,2)}/${pad(RelDate.getDate(),2)}`// /${RelDate.getFullYear().toString().slice(2,4)}`
+                //console.warn(EntryDateStr)
+                document.getElementById(TOCchapterTARGET).innerHTML += TOChtmlCHAPTER(parcel.ChapterFull,parcel.GivenName,parcel.Synopsis,EntryDateStr,AdjustedIndex(parcel.ChapterFull),DatePercentage,
+                ((today >= releaseday)&&(today <= (releaseday+7) )) )
+                // Calculating height of date progress bar:                  
+
+                if (today >= releaseday) {
+                    DatePercentage = 1;
+                } else if (today <= startday) {
+                    DatePercentage = 0;
+                } else {
+                    DatePercentage = (today - startday) / (releaseday - startday);
+                }
+                let VertBar = document.getElementById(`TOC-CH${parcel.ChapterFull}-STATE`)
+
+                console.log(`Release #${ChapterMaxNumberT}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}\n  percentage ${DatePercentage}.`)
+                
+                VertBar.style.height = `${DatePercentage * 100}%`;
+                VertBar.style.top = `
+                ${((-0.5) - ((1-DatePercentage)/2))*100}%`;
+                
+                startday = releaseday;
+                break;
+        }
+    });
+}
 
 
 
@@ -999,6 +1353,8 @@ async function setup() {
     SetInfo();
 
     SetMessageState();
+
+    BuildTOC();
     
 }
 
@@ -1030,11 +1386,13 @@ function ApplyColors() {
     ROOT.style.setProperty("--TextColor",`rgba(${CHSET["Text"][0]},${CHSET["Text"][1]},${CHSET["Text"][2]},${CHSET["Text"][3]})`);
     ROOT.style.setProperty("--BackgroundColor",`rgba(${CHSET["Background"][0]},${CHSET["Background"][1]},${CHSET["Background"][2]},${CHSET["Background"][3]})`);
     ROOT.style.setProperty("--BarColor",`rgba(${CHSET["ProgressBar"][0]},${CHSET["ProgressBar"][1]},${CHSET["ProgressBar"][2]},${CHSET["ProgressBar"][3]})`);
+    ROOT.style.setProperty("--HoverColor",`rgba(${CHSET["ProgressBar"][0]},${CHSET["ProgressBar"][1]},${CHSET["ProgressBar"][2]},${0.1})`);
+    ROOT.style.setProperty("--TOCbackground",`rgba(${CHSET["ProgressBar"][0]},${CHSET["ProgressBar"][1]},${CHSET["ProgressBar"][2]},${0.03})`);
 }
 
 function SetInfo() {
     eDATA.innerHTML = 
-          "<h4 class='InfoTitle'>" + INFO.FullName + " " + CurrentChapter.ID + "</h4><p>"
+          "<h4 class='InfoTitle'>" + StoryName + " " + CurrentChapter.ID + "</h4><p>"
         + CurrentChapter.Title + "<br>"
         + CurrentChapter.Subtitle + "</p>"
         ; 
@@ -1054,6 +1412,7 @@ function runScrollEvents() {
     
     
 }
+
 
 
 // ==========================<{Function Code}>============================ //
