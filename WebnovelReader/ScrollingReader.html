@@ -13,6 +13,7 @@
     --TextSize: 1.5em;
     --TextLineHeight: 1.5em;
     --TextMargin: 5vw;
+    --DefaultWidth: 600px;
 
     --ActiveTitle:'Bahnschrift', 'Arial';
     --ActiveSub:'Bahnschrift', 'Arial';
@@ -26,6 +27,8 @@
     --HoverColor: rgba(12,12,12,0.1);
     --BarColor: black;
     --IconState: invert(1);
+    --CodyOp: 1;
+    --KatOp:  1;
 
     --Title: 2.5em;
     --Subtitle: 2.0em;
@@ -47,6 +50,7 @@
     body {
         overflow:hidden;
         background-color: var(--BackgroundColor);/**/
+        background-image: url("design/bg-cody.png");
     }
     div {
         border: none;/*1px solid black;*/
@@ -94,6 +98,42 @@
         text-align: justify;
     }
 
+    div.imgbg {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100vw;
+        height:100vh;
+    }
+    div.codybg {
+        background-image:             
+            linear-gradient(
+                to right, 
+                transparent 0%,
+                rgba(128,128,128,0.9) min(calc(100vw - var(--DefaultWidth)), calc(var(--TextMargin) / 2)), 
+                rgba(128,128,128,0.9) max(var(--DefaultWidth), 100% - calc( var(--TextMargin) / 2)), 
+                transparent 100%
+            ),
+            url("design/bg-cody.jpg");
+        opacity: var(--CodyOp); 
+        filter: var(--IconState);
+        mix-blend-mode: hard-light;
+    }
+    div.katbg {
+        background-image:             
+            linear-gradient(
+                to right, 
+                transparent 0%,
+                rgba(128,128,128,0.9) min(calc(100vw - var(--DefaultWidth)), calc(var(--TextMargin) / 2)), 
+                rgba(128,128,128,0.9) max(var(--DefaultWidth), 100% - calc( var(--TextMargin) / 2)), 
+                transparent 100%
+            ),
+            url("design/bg-kat.jpg");
+        opacity: var(--KatOp);            
+        filter: var(--IconState);
+        mix-blend-mode:hard-light;
+    }
+
     div.FullContainer {
         display: grid;
         grid-template:
@@ -102,7 +142,6 @@
             'leftmargin footer footer footer rightmargin';
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-
         position:absolute;
         width:100vw;
         height:100dvh;
@@ -113,11 +152,15 @@
         /*background-color: var(--BackgroundColor)*/
     } 
     div.Gutter {
-        width: max(calc((100vw - 600px)/2),var(--TextMargin))
+        width: max(calc((100vw - var(--DefaultWidth))/2),var(--TextMargin))
     }
     .ContainerLeft   { 
         grid-area: leftmargin;
-        background-color: var(--BackgroundColor);
+        /*background-color: var(--BackgroundColor);*/
+    }
+    .ContainerRight  { 
+        grid-area: rightmargin;
+        /*background-color: var(--BackgroundColor);*/
     }
     .ContainerHead   { 
         background-color: var(--BackgroundColor);
@@ -136,19 +179,15 @@
             width: auto;
             cursor: pointer;        
             filter: var(--IconState);
-        }
-    .ContainerRight  { 
-        grid-area: rightmargin;
-        background-color: var(--BackgroundColor);
-    }
+        }    
     .ContainerBody   { 
         grid-area: body;
         height: calc(100dvh - 100px - min(35vw,120px));
-        width: min(600px, calc( 100vw - (var(--TextMargin) / 2) ));
+        width: min(var(--DefaultWidth), calc( 100vw - (var(--TextMargin) / 2) ));
         overflow-x: hidden;
         overflow-y: scroll;
         scrollbar-width: none;
-        background-color: var(--BackgroundColor);/**/
+        /*background-color: var(--BackgroundColor);/**/
     }
     .ContainerFooter {
         grid-area: footer;
@@ -443,6 +482,32 @@ div.ChapterRow {
         opacity:1;  
     }
 }
+@keyframes fadein {
+    0% {
+        opacity:0;  
+        pointer-events: none;
+    } 
+    40% {
+        pointer-events: all;
+        opacity:0;  
+    }
+    100% {
+        opacity:1;  
+    }
+}
+@keyframes fadeout {
+    0% {
+        opacity:1;
+        pointer-events: all;
+    } 
+    40% {
+        pointer-events: none;
+        opacity:0;  
+    }
+    100% {
+        opacity:0;  
+    }
+}
 
 div.activerow {
     transition: background-color 0.3s ease-in-out 0.05s;
@@ -491,6 +556,7 @@ div.TOCmain {
     overflow-y:scroll;    
     scrollbar-width: none;
     background: var(--TOCbackground);
+    opacity:0;
 }   
 
 div.FloatName {
@@ -566,6 +632,8 @@ div.ChapterDate {
 
 
 <body>
+    <div class="imgbg codybg"></div>
+    <div class="imgbg katbg"></div>
     <div class="TOCmain" id="TOC">     
         
     </div>
@@ -719,6 +787,8 @@ div.ChapterDate {
     }`
     const STYLES = JSON.parse(jSTYLES.replaceAll(/(\r\n|\n|\r)/gm, ''));
 
+    const sTrans2       = 5; //--------------------------------------------------------------
+
     const sTransition   = .5; //percent
     const sHold         = .5; //percent
     const sOffset       = 0; //percent
@@ -731,6 +801,9 @@ div.ChapterDate {
     var ScrollProgress = 0;
     var PageElementList = [];
     var Position = 0;
+
+    var TL_Opacity = 0.00;
+    var BL_Opacity = 0.00;
 
     // User preference settings.
 
@@ -919,7 +992,7 @@ async function fetchJSON() {
         }
         const data = await response.text();
         let jDATA = JSON.parse(data.replaceAll(/(\r\n|\n|\r)/gm, ''));
-        console.log(jDATA);
+        //console.log(jDATA);
         let result = ParseStory(jDATA);
         localStorage.setItem('AC_SAVE',JSON.stringify(jDATA))
         debugLog("> Story successfully loaded.\n",true);
@@ -961,7 +1034,7 @@ function ParseStory(data) {
     //console.debug(data)
 
     let Story = Object.values(data.Manuscript);
-    console.log(Story)
+    //console.log(Story)
     for (let i=0; i<Story.length; i++) {
         // Save story array to 'entry' for easier sightreading.
         let entry = Story[i];
@@ -979,14 +1052,14 @@ function ParseStory(data) {
             let eID = (entry.VerboseOverride==undefined)?(entry.ActNum-1+"."+entry.ChapterFull):entry.VerboseOverride;
             
             ePerspective = ((entry.Perspective=="Mixed")||(entry.Perspective==""))?"Default":entry.Perspective;
-            console.error(entry.VerboseOverride)
+            //console.error(entry.VerboseOverride)
             let prefix = STYLES[ePerspective].Prefix;
             let suffix = STYLES[ePerspective].Suffix;
 
             ThisDate += parseFloat(entry.NextPublish);
             let eRelease = ThisDate;
 
-            console.log(eTitle);
+            //console.log(eTitle);
 
             STORY.push(
             {
@@ -1043,10 +1116,10 @@ function ParseStory(data) {
                             );                   
                             WritingMessage = true;
                         } else {
-                            console.log(passage)
+                            //console.log(passage)
                             STORY[STORY.length-1].BodyFormatted[STORY[STORY.length-1].BodyFormatted.length-1] += '<br>' + (passage);
                         }
-                        console.warn(passage)
+                        //console.warn(passage)
                     } else {
                         if(WritingMessage == true) {
                             WritingMessage = false;
@@ -1070,20 +1143,20 @@ function ParseStory(data) {
     return data;
 }
 
-function Event_Pulse( keyframe, progress, previous, next, transition, hold , offset ) {
+function Event_Pulse( keyframe, progress, previous, next, transition, hold , offset , wasTheme, isTheme) {
     let pStart  = progress - (transition/2) - (hold/2) + offset;
     let pEnd    = progress + (transition/2) + (hold/2) + offset;
 
     // Initial node.
-    keyframe.push([progress,previous[0],previous[1],previous[2],previous[3]]);
+    keyframe.push([progress,previous[0],previous[1],previous[2],previous[3], wasTheme, isTheme]);
 }
-function Event_Switch( keyframe, progress, previous, next, transition, hold , offset ) {
+function Event_Switch( keyframe, progress, previous, next, transition, hold , offset , wasTheme, isTheme ) {
     // NOTE: 'hold' has no effect.
     let pStart  = progress - (transition/2) + offset;
     let pEnd    = progress + (transition/2) + offset;
 
-    keyframe.push([pStart,previous[0],previous[1],previous[2],previous[3]]);
-    keyframe.push([pEnd,next[0],next[1],next[2],next[3]]);
+    keyframe.push([pStart,previous[0],previous[1],previous[2],previous[3], wasTheme, isTheme]);
+    keyframe.push([pEnd,next[0],next[1],next[2],next[3], wasTheme, isTheme]);
 
 
 }
@@ -1104,12 +1177,12 @@ function SetScrollerEvents() {
     let Progress = 0;
     let Style = STYLES["Default"][Preferences.DisplayMode]
     MODES.forEach( mode  => {
-        Keyframes[mode].push([Progress,Style[mode][0],Style[mode][1],Style[mode][2],Style[mode][3]]);
+        Keyframes[mode].push([Progress,Style[mode][0],Style[mode][1],Style[mode][2],Style[mode][3], LastStyle+"", ThisStyle+""]);
         let last = STYLES[LastStyle][Preferences.DisplayMode][mode]
         let next = STYLES[ThisStyle][Preferences.DisplayMode][mode]
         Previous = [last[0],last[1],last[2],last[3]];
         Next = [next[0],next[1],next[2],next[3]];
-        Event_Switch(Keyframes[mode],Progress,Previous,Next,2.00,0.00,2.00);
+        Event_Switch(Keyframes[mode],Progress,Previous,Next,4.00,0.00,2.00, LastStyle+"", ThisStyle+"");
     });
 
     let IsFirstElement = true;
@@ -1121,7 +1194,7 @@ function SetScrollerEvents() {
         ThisStyle = element.className.split(" ")[0];
 
         if ( (ThisStyle != LastStyle) ) { //|| (IsFirstElement && (element.tagName == "P")) || (i == PageElements.length-5) ) {
-            //--console.log("Style change.",LastStyle,ThisStyle)
+            console.log("Style change.",LastStyle,ThisStyle)
             IsFirstElement = false;
             let Progress = ScrollPosition(element);
             let Style = STYLES[ThisStyle][Preferences.DisplayMode];
@@ -1130,7 +1203,7 @@ function SetScrollerEvents() {
                 let next = STYLES[ThisStyle][Preferences.DisplayMode][mode]
                 Previous = [last[0],last[1],last[2],last[3]];
                 Next = [next[0],next[1],next[2],next[3]];
-                Event_Switch(Keyframes[mode],Progress,Previous,Next,1,sHold,-0.5);
+                Event_Switch(Keyframes[mode],Progress,Previous,Next,sTrans2,sHold,-0.5, LastStyle+"", ThisStyle+"");
             });
         }
     }
@@ -1146,8 +1219,8 @@ function SetScrollerEvents() {
         let next = STYLES[ThisStyle][Preferences.DisplayMode][mode]
         Previous = [last[0],last[1],last[2],last[3]];
         Next = [next[0],next[1],next[2],next[3]];
-        Event_Switch(Keyframes[mode],Progress,Previous,Next,2.00,0.00,-2.00);
-        Keyframes[mode].push([Progress,Style[mode][0],Style[mode][1],Style[mode][2],Style[mode][3]]);
+        Event_Switch(Keyframes[mode],Progress,Previous,Next,2.00,0.00,-2.00, LastStyle+"", ThisStyle+"");
+        Keyframes[mode].push([Progress,Style[mode][0],Style[mode][1],Style[mode][2],Style[mode][3], LastStyle+"", ThisStyle+""]);
     });
 
    
@@ -1176,19 +1249,25 @@ function ChannelSet(CHANNEL) {
     `);
     */
 
+    console.log(LastElement,NextElement)
+
+
     let RED = (LastElement[1]*Progress)+(NextElement[1]*(1-Progress));
     let GRN = (LastElement[2]*Progress)+(NextElement[2]*(1-Progress));
-    let BLU = (LastElement[3]*Progress)+(NextElement[3]*(1-Progress));
-    let ALP = 1;
-
+    let BLU = (LastElement[3]*Progress)+(NextElement[3]*(1-Progress));      
+    let ALP = ((NextElement[5]=="Cody")*Progress)+((LastElement[6]=="Cody")*(1-Progress));    
+    //TL_Opacity = ALP;
+    //BL_Opacity = 1-ALP;
     return [RED,GRN,BLU,ALP];
 }
 
 function ToggleTOC() {
-    isTOCshown = !isTOCshown
-    eFULL.style.opacity = (isTOCshown)?  1  :  0  ;
+    isTOCshown = !isTOCshown    
     eFULL.style.top = (isTOCshown)?  '0'  :  '-110vh'  ;
     eFULL.style.animation = ("1s ease-in-out 0.25s forwards" + ((isTOCshown)?" slide-up ":" slide-down "));
+    eTOC.style.animation = ("1s ease-in-out 0.25s forwards" + ((isTOCshown)?" fadein ":" fadeout "));
+    eFULL.style.opacity = (isTOCshown)?  1  :  0  ;
+    eTOC.style.opacity  = (isTOCshown)?  1  :  0  ;     
     eFULL.style.pointerEvents = (isTOCshown)?"none":"all";
        
 }
@@ -1239,7 +1318,7 @@ function AdjustedIndex(index) {
 }
 
 async function BuildTOC() {
-    console.debug("Building the Table Of Contents...");
+    //console.debug("Building the Table Of Contents...");
     eTOC.innerHTML = ''; //TOC clear ------------------------//    
     let RelDate = tSTART;
 
@@ -1247,7 +1326,7 @@ async function BuildTOC() {
     let startday = parseFloat(yeardate(tSTART));
     let releaseday = parseFloat(yeardate(tSTART));
 
-    console.log(`${today}, ${startday}, ${releaseday}`)
+    //console.log(`${today}, ${startday}, ${releaseday}`)
     let ChapterMaxNumberT = 0;
       
     let ActCtr = 0;  
@@ -1270,7 +1349,7 @@ async function BuildTOC() {
                 eTOC.innerHTML += TOChtmlACT(ActCtr,parcel.DocName);
                 break;
             case "Chapter":
-                console.info(`${today} ... ${releaseday}`)
+                //console.info(`${today} ... ${releaseday}`)
                 let NextPush = parcel.NextPublish==undefined?7:parcel.NextPublish;
                 releaseday += parseFloat(NextPush);
                 ChapterMaxNumberT++;
@@ -1290,7 +1369,7 @@ async function BuildTOC() {
                 }
                 let VertBar = document.getElementById(`TOC-CH${parcel.ChapterFull}-STATE`)
 
-                console.log(`Release #${ChapterMaxNumberT}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}\n  percentage ${DatePercentage}.`)
+                //console.log(`Release #${ChapterMaxNumberT}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}\n  percentage ${DatePercentage}.`)
                 
                 VertBar.style.height = `${DatePercentage * 100}%`;
                 VertBar.style.top = `
@@ -1383,11 +1462,14 @@ function ScrollPosition(elem) {
 
 function ApplyColors() {
 
-    ROOT.style.setProperty("--TextColor",`rgba(${CHSET["Text"][0]},${CHSET["Text"][1]},${CHSET["Text"][2]},${CHSET["Text"][3]})`);
-    ROOT.style.setProperty("--BackgroundColor",`rgba(${CHSET["Background"][0]},${CHSET["Background"][1]},${CHSET["Background"][2]},${CHSET["Background"][3]})`);
-    ROOT.style.setProperty("--BarColor",`rgba(${CHSET["ProgressBar"][0]},${CHSET["ProgressBar"][1]},${CHSET["ProgressBar"][2]},${CHSET["ProgressBar"][3]})`);
+    ROOT.style.setProperty("--TextColor",`rgba(${CHSET["Text"][0]},${CHSET["Text"][1]},${CHSET["Text"][2]},${1})`);
+    ROOT.style.setProperty("--BackgroundColor",`rgba(${CHSET["Background"][0]},${CHSET["Background"][1]},${CHSET["Background"][2]},${1})`);
+    ROOT.style.setProperty("--BarColor",`rgba(${CHSET["ProgressBar"][0]},${CHSET["ProgressBar"][1]},${CHSET["ProgressBar"][2]},${1})`);
     ROOT.style.setProperty("--HoverColor",`rgba(${CHSET["ProgressBar"][0]},${CHSET["ProgressBar"][1]},${CHSET["ProgressBar"][2]},${0.1})`);
     ROOT.style.setProperty("--TOCbackground",`rgba(${CHSET["ProgressBar"][0]},${CHSET["ProgressBar"][1]},${CHSET["ProgressBar"][2]},${0.03})`);
+    ROOT.style.setProperty("--CodyOp",CHSET["Background"][3]);
+    ROOT.style.setProperty("--KatOp",1-CHSET["Background"][3]);
+    //console.log(CHSET["Background"][3])
 }
 
 function SetInfo() {
@@ -1403,13 +1485,13 @@ function runScrollEvents() {
     //console.log(ScrollProgress);
     ePROGRESS.style.width = `${Position}%`;   
 
-
     MODES.forEach( mode => {
         CHSET[mode] = ChannelSet(Keyframes[mode])
     })
 
     ApplyColors();
     
+    console.log(CHSET["Background"][3]) /**-*/
     
 }
 
