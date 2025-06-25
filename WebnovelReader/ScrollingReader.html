@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Oxanium:wght@200..800&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
 </head>
 
 <style>
     :root {
-    --TextSetWidthFixed: 20px;
+    --TextSetWidthFixed: 40px;
     --TextSetWidthDynamic: 10vw;
     --TextSize: 1.5em;
     --TextLineHeight: 1.5em;
     --TextMargin: 5vw;
     --DefaultWidth: 600px;
 
-    --ActiveTitle:'Bahnschrift', 'Arial';
-    --ActiveSub:'Bahnschrift', 'Arial';
+    --CodyTitle:"Oxanium", sans-serif, "Bahnscrift",'Arial';
+    --CodyText:"Roboto Flex", sans-serif, 'Bahnschrift', 'Arial';
+    --CodySize: calc( var(--TextSize) - 0.10em );
+
+    --KatiyaTitle: "Cormorant Unicase", serif;
+    --KatiyaText:'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman';
+    --KatiyaSize: calc(var(--TextSize) + 0.00em );
+
+    --ActiveTitle: var(--CodyTitle);
+    --ActiveSub: var(--CodyText);
+    --ActiveSize: var(--CodySize);
+
     --ActivePrimary: 189, 0, 28;
     --ActiveSecondary: 156, 121, 33;
     --TOCEntryHeight:   80px;
@@ -55,14 +69,19 @@
     div {
         border: none;/*1px solid black;*/
     }
+
     .Cody {
         color: var(--TextColor);
-        font-family: 'Bahnschrift', 'Arial';
     }
     p.Cody {
-        font-size: var(--TextSize);
+        font-size: var(--CodySize);
         line-height: var(--TextLineHeight);
         text-align: justify;
+        font-family: var(--CodyText);
+        font-weight:300;
+    }
+    h3.Cody {
+        font-family: var(--CodyTitle);
     }
 
     h3 {
@@ -90,12 +109,16 @@
 
     .Katiya {
         color: var(--TextColor);
-        font-family: 'Lucida Fax', 'Times New Roman'
     }
     p.Katiya {
-        font-size: calc(var(--TextSize) - 0.2em);
+        font-family: var(--KatiyaText);
+        font-size: var(--KatiyaSize);
+        font-weight:500;
         line-height: var(--TextLineHeight);
         text-align: justify;
+    }
+    h3.Katiya {
+        font-family: var(--KatiyaTitle);
     }
 
     div.imgbg {
@@ -109,10 +132,10 @@
         background-image:             
             linear-gradient(
                 to right, 
-                transparent 0%,
-                rgba(128,128,128,0.9) min(calc(100vw - var(--DefaultWidth)), calc(var(--TextMargin) / 2)), 
-                rgba(128,128,128,0.9) max(var(--DefaultWidth), 100% - calc( var(--TextMargin) / 2)), 
-                transparent 100%
+                rgba(128,128,128,0.2) 0%,
+                rgba(128,128,128,0.9) min(calc(100vw - var(--DefaultWidth) - 100px ), calc(var(--TextMargin) / 2)), 
+                rgba(128,128,128,0.9) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
+                rgba(128,128,128,0.2) 100%
             ),
             url("design/bg-cody.jpg");
         opacity: var(--CodyOp); 
@@ -123,10 +146,10 @@
         background-image:             
             linear-gradient(
                 to right, 
-                transparent 0%,
-                rgba(128,128,128,0.9) min(calc(100vw - var(--DefaultWidth)), calc(var(--TextMargin) / 2)), 
-                rgba(128,128,128,0.9) max(var(--DefaultWidth), 100% - calc( var(--TextMargin) / 2)), 
-                transparent 100%
+                rgba(128,128,128,0.2) 0%,
+                rgba(128,128,128,0.9) min(calc(100vw - var(--DefaultWidth) - 100px ), calc(var(--TextMargin) / 2)), 
+                rgba(128,128,128,0.9) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
+                rgba(128,128,128,0.2) 100%
             ),
             url("design/bg-kat.jpg");
         opacity: var(--KatOp);            
@@ -250,6 +273,12 @@
                 padding:0;
                 margin:0;
                 line-height:1em;
+                font-family: var(--ActiveTitle);
+                font-size: var(--ActiveSize);
+            }
+            .InfoSub {
+                font-family: var(--ActiveSub);
+                font-size: var(--ActiveSize);
             }
             .Footer-Right {
                 width: min(25vw,100px);
@@ -596,6 +625,7 @@ div.ChapterDescription {
     left: -10px;
     border-left: 1px dashed var(--BarColor);/*rgba(var(--ActivePrimary),;*/
     padding-left: 15px;
+    font-weight: 500;
 }
 div.ChapterName {
     flex:1;
@@ -737,7 +767,7 @@ div.ChapterDate {
         {
             "Light":
             {
-                "Background":[255,200,200,1],
+                "Background":[255,220,220,1],
                 "Text": [36 ,18 ,18 ,1],
                 "ProgressBar": [36 ,18 ,18 ,1]
             },
@@ -754,7 +784,7 @@ div.ChapterDate {
         {
             "Light":
             {
-                "Background":[200,200,255,1],
+                "Background":[220,220,255,1],
                 "Text": [18 ,18 ,36 ,1],
                 "ProgressBar": [18 ,18 ,36 ,1]
             },
@@ -801,6 +831,9 @@ div.ChapterDate {
     var ScrollProgress = 0;
     var PageElementList = [];
     var Position = 0;
+
+    ThisStoryTheme = "Default"
+    LastStoryTheme = "Default"
 
     var TL_Opacity = 0.00;
     var BL_Opacity = 0.00;
@@ -1194,7 +1227,7 @@ function SetScrollerEvents() {
         ThisStyle = element.className.split(" ")[0];
 
         if ( (ThisStyle != LastStyle) ) { //|| (IsFirstElement && (element.tagName == "P")) || (i == PageElements.length-5) ) {
-            console.log("Style change.",LastStyle,ThisStyle)
+            //console.log("Style change.",LastStyle,ThisStyle)
             IsFirstElement = false;
             let Progress = ScrollPosition(element);
             let Style = STYLES[ThisStyle][Preferences.DisplayMode];
@@ -1256,8 +1289,56 @@ function ChannelSet(CHANNEL) {
     let GRN = (LastElement[2]*Progress)+(NextElement[2]*(1-Progress));
     let BLU = (LastElement[3]*Progress)+(NextElement[3]*(1-Progress));      
     let ALP = ((NextElement[5]=="Cody")*Progress)+((LastElement[6]=="Cody")*(1-Progress));    
-    //TL_Opacity = ALP;
-    //BL_Opacity = 1-ALP;
+        
+    let FadeThresh = 0.93
+    let StartEndPerc = Math.abs(Position-50)*2;
+    let StartEndOff = StartEndPerc-(100*FadeThresh)
+    let StartEndMul = StartEndOff<0 ? 1 : 1-(StartEndOff/(100-(100*FadeThresh)))
+
+    //console.log(StartEndMul)
+
+    TL_Opacity = ALP * StartEndMul;
+    BL_Opacity = (1-ALP) * StartEndMul;
+
+    /*
+    if( ((LastElement[6]=="Default") && (NextElement[6]=="Default")) || ((LastElement[5]=="Default") && (NextElement[5]=="Default"))) {
+        TL_Opacity = BL_Opacity = 0;
+    }
+    */
+
+    let IsStartOf = false;
+
+    ThisStoryTheme = (NextElement[5]=="Cody")&&(LastElement[6]=="Cody")?"Cody":"Katiya"
+    
+    if ((LastElement[6]=="Default")&&(NextElement[6]=="Default")) {
+        ThisStoryTheme = LastElement[5];
+        IsStartOf = true;
+    } else if ((LastElement[5]=="Default")&&(NextElement[5]=="Default")) {
+        ThisStoryTheme = NextElement[6];
+        IsStartOf = true;
+    }
+
+    console.log(ThisStoryTheme)
+
+    if((ThisStoryTheme != LastStoryTheme) || IsStartOf) {
+
+        if(ThisStoryTheme == "Cody") {
+            ROOT.style.setProperty("--ActiveTitle","var(--CodyTitle)")
+            ROOT.style.setProperty("--ActiveSub"  ,"var(--CodyText )")
+            ROOT.style.setProperty("--ActiveSize" ,"1.1em")
+        } else if (ThisStoryTheme == "Katiya") {
+            ROOT.style.setProperty("--ActiveTitle","var(--KatiyaTitle)")
+            ROOT.style.setProperty("--ActiveSub"  ,"var(--KatiyaText )")
+            ROOT.style.setProperty("--ActiveSize" ,"1.2em")
+        } else {
+            
+
+        }
+    }
+    
+    LastStoryTheme = ThisStoryTheme + "";
+
+
     return [RED,GRN,BLU,ALP];
 }
 
@@ -1467,14 +1548,14 @@ function ApplyColors() {
     ROOT.style.setProperty("--BarColor",`rgba(${CHSET["ProgressBar"][0]},${CHSET["ProgressBar"][1]},${CHSET["ProgressBar"][2]},${1})`);
     ROOT.style.setProperty("--HoverColor",`rgba(${CHSET["ProgressBar"][0]},${CHSET["ProgressBar"][1]},${CHSET["ProgressBar"][2]},${0.1})`);
     ROOT.style.setProperty("--TOCbackground",`rgba(${CHSET["ProgressBar"][0]},${CHSET["ProgressBar"][1]},${CHSET["ProgressBar"][2]},${0.03})`);
-    ROOT.style.setProperty("--CodyOp",CHSET["Background"][3]);
-    ROOT.style.setProperty("--KatOp",1-CHSET["Background"][3]);
+    ROOT.style.setProperty("--CodyOp",TL_Opacity); /*CHSET["Background"][3]);/**/
+    ROOT.style.setProperty("--KatOp",BL_Opacity); /*1-CHSET["Background"][3]);/**/
     //console.log(CHSET["Background"][3])
 }
 
 function SetInfo() {
     eDATA.innerHTML = 
-          "<h4 class='InfoTitle'>" + StoryName + " " + CurrentChapter.ID + "</h4><p>"
+          "<h4 class='InfoTitle'>" + StoryName + " " + CurrentChapter.ID + "</h4><p class='InfoSub'>"
         + CurrentChapter.Title + "<br>"
         + CurrentChapter.Subtitle + "</p>"
         ; 
@@ -1491,7 +1572,7 @@ function runScrollEvents() {
 
     ApplyColors();
     
-    console.log(CHSET["Background"][3]) /**-*/
+    //console.log(CHSET["Background"][3]) /**-*/
     
 }
 
