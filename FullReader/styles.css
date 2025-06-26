@@ -1,0 +1,85 @@
+:root {
+    --TextColor: black;
+    --BackgroundColor: white;
+    --HoverColor: rgba(12,12,12,0.1);
+    --BarColor: black;
+    --InversionState: invert(1);
+
+    --Title: 2.5em;
+    --Subtitle: 2.0em;
+    --Section: 2.5em;
+
+    /*=========={ Theme Variables }==========*/
+    --T0_TitleFont:     "";
+    --T0_TextFont:      "";
+    --T0_TitleSize:     "";
+    --T0_TextSize:      ""; 
+    --T0_Background:    "";
+    --T0_Opacity:       0;
+
+    --T1_TitleFont:     "";
+    --T1_TextFont:      "";
+    --T1_TitleSize:     "";
+    --T1_TextSize:      ""; 
+    --T1_Background:    ""; 
+    --T1_Opacity:       0;
+
+    --T2_TitleFont:     "";
+    --T2_TextFont:      "";
+    --T2_TitleSize:     "";
+    --T2_TextSize:      "";  
+    --T2_Background:    "";
+    --T2_Opacity:       0;
+
+    --T3_TitleFont:     "";
+    --T3_TextFont:      "";
+    --T3_TitleSize:     "";
+    --T3_TextSize:      "";  
+    --T3_Background:    "";
+    --T3_Opacity:       0;
+
+    /*==========={ Active Items }============*/
+    --ActiveTitleFont:  var(--T0_TitleFont);
+    --ActiveTextFont:   var(--T0_TextFont);
+    --ActiveTitleSize:  var(--T0_TitleSize);
+    --ActiveTextSize:   var(--T0_TextSize);
+
+    /*=========={ Message Theming }==========*/
+    --MsgFont: "SanFrancisco",'Helvetica Neue','Helvetica';
+    --MsgColorTo: rgba(33, 138, 255, 0.8);
+    --MsgFontColorTo: white;
+    --MsgColorFrom: rgba(216, 216, 216, 0.8);
+    --MsgFontColorFrom: black;
+
+    /*============{ Note Theming }===========*/
+}
+
+/*============{ BACKGROUND STYLES }==============*/
+div.image-background {
+    position:           absolute;
+    top:                0;
+    left:               0;
+    width:              100vw;
+    height:             100vh;
+    mix-blend-mode:     hard-light;
+}
+div.T0-background {
+    background-image:   var(--T0_Background);
+    opacity:            var(--T0_Opacity); 
+    filter:             var(--InversionState);
+}
+div.T1-background {
+    background-image:   var(--T1_Background);
+    opacity:            var(--T1_Opacity); 
+    filter:             var(--InversionState);
+}
+div.T2-background {
+    background-image:   var(--T2_Background);
+    opacity:            var(--T2_Opacity); 
+    filter:             var(--InversionState);
+}
+div.T3-background {
+    background-image:   var(--T3_Background);
+    opacity:            var(--T3_Opacity); 
+    filter:             var(--InversionState);
+}
