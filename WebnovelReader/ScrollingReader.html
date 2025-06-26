@@ -12,6 +12,7 @@
 
 <style>
     :root {
+
     --TextSetWidthFixed: 40px;
     --TextSetWidthDynamic: 10vw;
     --TextSize: 1.5em;
@@ -669,8 +670,109 @@ div.ChapterDate {
 
 
 
+div.CoverAnnounce {
+    position:absolute;
+    left:50vw;
+    top:50vh;
+    transform: translate(-50%,-50%);
+    width: 100vw;
+    height:100vh;
+    background-image: 
+        radial-gradient(
+            rgba(128,128,128,0.8), 
+            rgba(128,128,128,0.4)), 
+        linear-gradient(to right, 
+        rgba(255,64,64,0.5),
+        rgba(64,64,255,0.5));
+    animation: 0.5s ease-in-out 0.2s forwards fadein;
+}
+img.StoryCover {
+    max-block-size: 400px;
+    block-size: 90vw;
+    /*width: min(400px,80vw);/**/
+    position:absolute;
+    left:50%;
+    top:33dvh;/*calc(33dvh + 50px);/**/
+    transform:translate(-50%,-50%);
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.6);
+    border: 2px solid black;
+}
+div.Announcements {
+    color: black;
+    font-family: var(--ActiveSub);
+    font-weight: 500;
+    position: absolute;
+    bottom: calc(33dvh - 10px);
+    height: calc(33dvh - 60px);/*calc(100dvh - min(800px,60dvh) - 60px - 20px - 90px);/**/
+    left: 50%;
+    transform: translate(-50%,100%);
+    width: min(400px,80vw);
+    border: 2px solid black;
+    border-radius:3px;
+    background-color: rgba(232, 223, 166, 0.75);
+    padding-left:10px;
+    padding-right:10px;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 10px 0px inset;
+}
+div.SocialsBar {
+    position:absolute;
+    bottom: calc(33dvh + 30px);
+    left:50vw;
+    transform: translate(-50%,50%);
+    width: min(400px,80vw);
+    height:40px;
+    padding-left:10px;
+    padding-right:10px;
+    display: inline-flex;
+    align-items:center;
+    justify-content:space-between;
 
-
+}
+div.SocialsBar > div {
+    flex: 1;
+    margin:3px;
+    max-width: 100px;
+    height:40px;
+    border-radius: 10px;
+    border: 3px solid black;    
+    align-items:center;
+    justify-content:middle;
+    text-align:center;
+}
+div.CoverAnnounce::after {
+    content:"Click anywhere to dismiss.";
+    position:absolute;
+    bottom:15px;
+    left:50vw;
+    width:100%;
+    text-align: center;
+    transform:translateX(-50%);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    font-family: var(--CodyText);
+    text-shadow: 0px 0px 8px black;
+    
+}
+div.Announcements > div {
+    /*padding-top:10px;/**/
+    /*padding-bottom:10px;/**/
+    border-top: 1px dashed black;
+}
+h3.Announcements {
+    font-family: var(--ActiveTitle);
+    font-weight: 500;
+    font-size: 2rem;
+    line-height:0;
+    margin:0;
+    margin-top:1em;
+    margin-bottom:0.5em;
+}
+p.Announcements {
+    font-family: var(--ActiveSub);
+    font-weight: 500;
+}
 
 </style>
 
@@ -711,7 +813,7 @@ div.ChapterDate {
                     </div>
                     -->
                 </div>
-                <div onclick="if(CurrentChapter.ChapterNumber < MaximumChapter){CurrentChapter=CurrentChapter.Next;PlaceChapter(CurrentChapter);SaveState();}else{console.warn('Outside range.')}" class="Footer-Right"><div class="Centered">&raquo;</div></div>
+                <div onclick="if((CurrentChapter.ChapterNumber < MaximumChapter)||(AuthorMode)){CurrentChapter=CurrentChapter.Next;PlaceChapter(CurrentChapter);SaveState();}else{console.warn('Outside range.')}" class="Footer-Right"><div class="Centered">&raquo;</div></div>
             </div>
         </div>
     </div>
@@ -720,12 +822,23 @@ div.ChapterDate {
         </div>
     </div>
 
+    <div class="CoverAnnounce" style="opacity:0;" onclick="DismissAnnouncements();" id="ANNOUNCEBOX">
+        <img src="PGISO2.png" class="StoryCover"/>
+        <div class="Announcements" id="ANNOUNCE">
+            Lorem Ipsum Dolor Sit Amet
+        </div>
+        <div class="SocialsBar">
+            <div><img src=""/></div>
+        </div>
+    </div>
 
 <script>
 
 // ==========================<{Defining Elements}>============================ //
 
-    const eTOC = document.getElementById('TOC')
+    const eSTARTBOX = document.getElementById('ANNOUNCEBOX');
+    const eANNOUNCE = document.getElementById('ANNOUNCE');
+    const eTOC = document.getElementById('TOC');
     const eFULL = document.getElementById('FULL');
     const eBODY = document.getElementsByTagName('body')[0];
     const ePAGE = document.getElementById('PAGE');
@@ -747,7 +860,39 @@ div.ChapterDate {
     //SourceFILE  = `C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/WebnovelReader/docs/PG04.json`;
 
 
+    // Get parameters from search
+    getParameters = () => {
 
+        // Address of the current window
+        address = window.location.search
+
+        // Returns a URLSearchParams object instance
+        parameterList = new URLSearchParams(address)
+
+        // Created a map which holds key value pairs
+        let map = new Map()
+
+        // Storing every key value pair in the map
+        parameterList.forEach((value, key) => {
+            map.set(key, value)
+        })
+
+        // Returning the map of GET parameters
+        return map
+    }
+
+    // Gets all the getParameters
+    const SrcParams = getParameters();
+
+    console.log(SrcParams)
+
+    var AuthorMode = SrcParams.get('mode')=="author"?true:false;
+
+    if(AuthorMode) {
+        console.info("> Running in Author Mode: or Cheater Mode for very perceptive code monkeys that want to preview unfinished releases before they are available.")
+    } else {
+        console.info("> No parameters present.")
+    }
 
     // Date Key for determining the most recent file (****UPDATE!****)
     DATEKEY = "Tuesday, May 13, 2025";
@@ -897,7 +1042,27 @@ div.ChapterDate {
         "ProgressBar":[]
     };
 
+    const NewAnnouncements = {
+        "06/24/25":"Test Announcement, Please Ignore",
+        "06/25/25":"Ignore This Too. If You Can Ignore This Rather Wordy Post That Would Be Very Apprecciated Too So Thank You In Advance",
+        "06/26/25":"Has anyone ever really been far even as decided to go use do more look like?"
+    }
+
 // ==============================<{Functions}>======================== //
+
+function LoadAnnouncements() {
+    eSTARTBOX.style.opacity="1";
+    eANNOUNCE.innerHTML = `<div><h3 class="Announcements"> Announcements </h3></div>`;
+    Object.entries(NewAnnouncements).reverse().forEach( ([timestamp,content]) => {
+        eANNOUNCE.innerHTML += `<div> <p class="Announcements"><strong><u>${timestamp}: </u></strong><br> ${content}</p></div>`;
+    })
+}
+function DismissAnnouncements() {
+    //this.outerHTML = "";
+    eSTARTBOX.style.animation = '1.0s ease-in-out 0.5s forwards fadeout';
+    eSTARTBOX.style.pointerEvents = "none";
+}
+
 
 //__________________________________________________________________
 //     NAME: | > yeardate
@@ -1109,7 +1274,7 @@ function ParseStory(data) {
             //console.log(`Now is ${dNOW}`)
             //console.log(eRelease);
 
-            if (eRelease <= dNOW) {
+            if (eRelease <= dNOW || AuthorMode) {
                 MaximumChapter++;
             }
 
@@ -1497,7 +1662,7 @@ function PlaceChapter(CHAPTER) {
     // NOTE: Chapter number is (1) ahead of indexing. 
     ePAGE.innerHTML = "";
     //console.log(CHAPTER.Active)
-    if( CHAPTER.Active ) {
+    if( CHAPTER.Active || AuthorMode) {
         CHAPTER.BodyFormatted.forEach( Line => {
             ePAGE.innerHTML += Line;
         }) 
@@ -1526,6 +1691,8 @@ async function setup() {
     jSTORY = await fetchJSON();
 
     LoadPreferences();
+
+    LoadAnnouncements();
 
     // Set current chapter.
     CurrentChapter = STORY[Preferences.StartChapter];

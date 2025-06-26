@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Firebrand by <a href="https://autononymous.io/authors-and-stories/savantguarde/the-frostburn-chronicles-firebrand">Savant-Guarde</a></title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap">
+
+<!-------_______ _______   ___      _______--------------------------------------->   
+<!------/ /  ___|_   _\ \ / / |    |  ___\ \--------------------------------------> 
+<!-----/ /\ `--.  | |  \ V /| |    | |__  \ \-------------------------------------> 
+<!--- < <  `--. \ | |   \ / | |    |  __|  > > -----------------------------------> 
+<!-----\ \/\__/ / | |   | | | |____| |___ / /-------------------------------------> 
+<!------\_\____/  \_/   \_/ \_____/\____//_/--------------------------------------> 
+
+  <style>
+/* ---------------------------------------------------------- */
+/* ==================== CSS Root Styles ===================== */
+/* ---------------------------------------------------------- */
+:root {
+  /* Element colors */
+  --colorPrimary: #BD001B;
+  --colorPrimaryFaded: rgba(189, 0, 27, 0.2);
+  --colorSecondary: #D31620;
+  --colorTertiary: #D3A42E;
+  --colorTertiaryFaded: rgba(211, 164, 46, 0.2);
+  --colorQuaternary: #BA931B;
+  --colorQuinternary: #A57C00;
+
+  /* Background and layout */
+  --backgroundColor: #151515;
+
+  /* Page standard dimensions */
+  --headerHeight: 1700px;
+  --maximumWidth: 800px;
+
+  /* Font and typesetting colors */
+  --textPrimary: whitesmoke;
+  --textSecondary: #F3E3C3;
+  --textTertiary: hsl(356, 100%, 85%);
+
+  /* Typesetting dimensions */
+  --ReaderMargins: min(15vw,100px);
+}
+
+@media (min-width: 950px) { /* Gotta change this one manually: no variables. */
+  :root {
+  --headerHeight:1300px;
+  }
+}
+
+
+
+/* ---------------------------------------------------------- */
+/* =================== CSS Global Styles ==================== */
+/* ---------------------------------------------------------- */
+
+body {
+  height:100%;
+  background-color: dimgrey;  
+  color: var(--textPrimary);
+}
+a {
+  color: var(--textPrimary);
+  text-decoration: none;
+} a:link {
+  color: var(--textPrimary);
+} a:visited {
+  color: var(--textPrimary);
+} a:hover {
+  color: var(--textSecondary);
+} a:active {
+  color: var(--textPrimary);
+}
+
+
+/* ---------------------------------------------------------- */
+/* ==================== CSS Text Styles ===================== */
+/* ---------------------------------------------------------- */
+h3.hAct {
+  font-size: 4rem;
+  text-align: center;
+}
+h3.hChap {
+  font-family: 'Courier Prime', 'Courier';
+  font-variant: small-caps;
+  font-size: min(4rem,8vw);
+  line-height: 1em;  
+  margin-bottom:-0.5em;
+  text-decoration: underline;
+  text-align: center;
+}
+h3.hSub {
+  font-family: 'Courier Prime', 'Courier';
+  font-size: min(3rem,6vw);
+  font-variant: small-caps;
+  line-height: 1.0em;
+  margin-bottom:-1em;
+  text-align: center;
+}
+
+.descriptor {
+  font-family: 'Courier Prime', 'Courier';
+}
+h2.descriptor {  
+  font-size: 3.0em;
+  font-weight: lighter;
+  margin-bottom: -0.7em;
+  text-align: center;
+  text-decoration: underline;
+}
+h3.descriptor {
+  font-size: 2.0em;
+  text-align: center;
+}
+h4.descriptor {
+  font-size: 1.25em;
+  margin-bottom: 0em;
+  text-align: center;
+}
+p.descriptor {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+  color: var(--textSecondary);
+}
+
+h3.hScn {
+  font-size: min(4rem,6vw);
+  margin-top:2em;
+  text-align: center;
+} 
+h3.hScn:before {
+  content:"-";
+}
+h3.hScn:after {
+  content:"-"
+}
+
+p.Para {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+/* ---------------------------------------------------------- */
+/* ==================== CSS DIV Styles ====================== */
+/* ---------------------------------------------------------- */
+
+/* __________________________________________________________ */
+/* ============>>> Full page body properties <<<============= */
+
+div.fullbackground {
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background-image: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 1) calc( 50vw - 320px ),
+    rgba(255, 255, 255, 1) calc( 50vw + 320px ),
+    rgba(255, 255, 255, 0.3) 100%
+    ),
+    url('https://autononymous.io/wp-content/uploads/2025/05/FB_background.jpg');
+  background-position: center;
+  background-size:cover;
+}
+div.bordered {
+  position:fixed;
+  padding-left: 10px;
+  padding-right:10px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--backgroundColor),
+    red,
+    var(--backgroundColor)
+  );
+  width: min(var(--maximumWidth),100%);
+  height:calc(100% + 10px);
+  transform: translate(-50%,0);
+  top:-10px;
+  left: 50%;
+}
+div.backwall {
+  background-color: var(--backgroundColor);
+  width:100%;
+  height:100%;
+}
+div.positioner {
+/* Center contents*/
+  position:absolute;
+  width: min(calc(var(--maximumWidth) - 20px),100%);
+  height: 100%;
+  transform: translate(-50%,0);
+  top:-5px;
+  left: 50%;
+  height: 100%;
+  flex:10;
+}
+div.fullbody {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+}
+
+/* __________________________________________________________ */
+/* ============>>>     Header properties     <<<============= */
+
+div.header {
+  height: var(--headerHeight);
+}
+
+/* Small format properties */
+div.premise {
+  width:100%;
+  margin: auto;
+  display: inline-flex;
+  flex-direction: column-reverse;
+}
+div.premisetext {
+  flex:1; 
+  padding-left: 20px;
+  padding-right: 20px;
+}
+div.premisecover {
+  flex:1;
+  width: 100%;
+}
+img.bookcover {
+  position: relative;
+  left:50%;
+  transform: translate(-50%,0);
+  object-fit: cover;
+  object-position: 50% 40%;
+  aspect-ratio: 3/4.4;
+  box-shadow: 0px 0px 10px 10px var(--colorPrimaryFaded);
+  height:65vw;
+  margin-bottom: 10px;
+}
+
+/* Larger format properties */
+@media (min-width: 950px) { /* Gotta change this one manually: no variables. */
+  div.premise {
+    width:100%;    
+    margin:unset;
+    display: inline-flex;
+    flex-direction: row;
+  }
+  div.premisetext {
+    flex:1;
+    min-width: 400px;
+  }
+  div.premisecover {
+    flex:1;
+    max-width: 50%;
+    vertical-align: middle;
+  }
+  img.bookcover {
+    position: relative;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+    object-position: 50% 40%;
+    aspect-ratio: 3/4.4;
+    box-shadow: 0px 0px 10px 10px var(--colorPrimaryFaded);
+    height:400px;
+  }
+}
+
+
+
+/* __________________________________________________________ */
+/* =============>>> User Controls properties <<<============= */
+
+div.options {
+  position: absolute;
+  top: calc(var(--headerHeight) - 25px);
+  height:60px;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%,0%);
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50px 50px 50px auto 50px 50px;
+  grid-gap: 10px; /* Added grid gap for spacing */
+  align-items: center; /* Added alignment for items in the grid */  
+  border-top: 1px solid var(--textPrimary);
+  border-bottom: 1px solid var(--textPrimary);
+}
+div.ctrl {  
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Courier Prime', 'Courier';
+  border: var(--textPrimary) 1px solid;
+  border-radius: 10px;
+  
+}
+div.fontup, div.lineup {
+  text-align: center;
+  font-size: 2em;
+  margin: auto;
+  flex: 1;
+  /*background-color: rgba(128, 255, 128, 0.1);*/
+}
+div.fontdn, div.linedn {
+  text-align: center;
+  font-size: 2em;
+  margin: auto;
+  flex: 1;
+  /*background-color: rgba(255, 128, 128, 0.1);*/
+}
+img.texticon {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border: 1px solid var(--textPrimary); border-radius: 10px;
+}
+div.ctrldata {
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 1px solid var(--textPrimary); border-radius: 10px;  
+}
+div.ctrldata-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height:20px;  
+  line-height:0em;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;  
+}
+div.dataname {
+  font-size: 0.8em;
+  width:50px;
+  color: var(--textPrimary);
+  text-align:end;
+}
+div.dataval {
+  font-size: 1.0em;
+  width:50px;
+  color: var(--textSecondary);
+}
+div.storymap {
+  width:90%; /* Added position relative for proper alignment */
+  position:relative;
+  left:50%;
+  transform: translate(-50%,0%);
+}
+img.storymap {
+  width:100%;
+  height:auto; /* Added height auto for responsive design */
+}
+div.map-pin {
+  font-family: 'Courier Prime', 'Courier';
+  font-weight: bold;
+  font-size: min(2vw,1.1em);
+  color:darkred;
+  border:none;
+  width: min(20vw,180px); /* Added min width for responsiveness */
+  height:auto;
+  text-align: center;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  /* Added additional styles for better visibility */
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+div.map-pin::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-left: -10px; /* Half of the width of the arrow */
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent; /* Arrow color */
+}
+div.map-pin::before {
+  /* Add a dot */
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  /* Add a dot */
+  width: 8px; /* Example size for the dot */
+  height: 8px; /* Example size for the dot */
+  background-color: none; /* Example color for the dot */
+  border: 2px solid darkred;
+  border-radius: 50%; /* Make it circular */
+  transform: translate(-48%, 110%); /* Center the dot */
+}
+
+
+
+
+/* ---------------------------------------------------------- */
+/* ==================== CSS Body Styles ===================== */
+/* ---------------------------------------------------------- */
+
+div.body {
+  text-wrap: wrap;
+  height: 75%;
+  overflow-y: hidden;
+}
+div.interface {
+  position: absolute;
+  top: calc( var(--headerHeight) + 50px);
+  left:0;
+  height: 80vh;
+  width: 100%;
+  display: inline-flex;   
+}
+div.control {
+  flex:1;
+}
+div.left {
+  background-image: linear-gradient(to left, rgba(255,100,100,0.05), rgba(255,100,100,0.2)); /* Updated second rgba value */
+  border: 1px dotted white;
+}
+div.right {
+  background-image: linear-gradient(to right, rgba(255,255,100,0.05), rgba(255,255,100,0.2)); /* Updated second rgba value */
+  border: 1px dotted white;
+}
+
+div.reader {
+  margin-left: var(--ReaderMargins);
+  margin-right: var(--ReaderMargins);
+  text-align: justify;
+}
+div.page {
+  background-color: rgba(255,255,255,0.00);
+  width:100%;
+  
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* ================== CSS Tracker Styles ==================== */
+/* ---------------------------------------------------------- */
+
+div.tracker {
+  background-color: var(--backgroundColor);
+  height: 10vh;
+  text-align: center;
+}
+div.bonus {
+  background-color: var(--backgroundColor);
+  height: 20%;
+}
+div.titleimage {
+  background-image: url('https://autononymous.io/wp-content/uploads/2024/11/IMG_0373.png');
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+  height:200px;
+  margin:auto;
+  border: 2px solid var(--colorPrimary);
+  /*box-shadow: 0px 0px 20px 20px var(--backgroundColor) inset*/
+}
+div.tg-container {
+  position:absolute;
+  width: 90%;
+  height: 50px;
+  left:50%;
+  transform: translate(-50%,0%);
+}
+div.tg-background {
+  position: absolute;
+  width: 100%;
+  height: 16px;
+  margin: auto;  
+  background-image: 
+    linear-gradient(
+      to right,
+      var(--colorPrimary),
+      var(--colorTertiary)
+    );
+  border-radius: 8px;  
+}
+div.tg-progressmask {
+  position:relative;
+  background-color: var(--backgroundColor);
+  width:100%;
+  top:0;
+  height:16px;
+  left:0%;
+}
+div.tg-progresslines{
+  position:relative;
+  height:120%;
+  width:100%;
+  display: inline-flex;
+}
+div.tg-progresslinemask { 
+  flex:1; 
+  border-left: 2px solid var(--backgroundColor);
+  border-right: 2px solid var(--backgroundColor);
+}
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* ============= CSS Table Of Contents Styles =============== */
+/* ---------------------------------------------------------- */
+
+div.TOC {
+  position:absolute;
+  left:50%;
+  transform: translate(-50%,0%);
+  height:100%;
+  width:100%;
+}
+div.unreleased {
+  color: var(--textTertiary);
+  background-color: var(--colorPrimaryFaded)
+}
+.TOC-table {
+  position:absolute;
+  left:50%;
+  transform: translate(-50%,0%);
+  display: grid;
+  grid-template-columns: 1fr 6fr 2fr;
+  gap: 10px;
+  padding: 10px;
+  width: min(100%,600px);
+}
+.TOC-header {
+  grid-column: span 3;
+  font-weight: bold;
+  text-align: center;
+}
+.TOC-actspan {
+  text-align: center;
+  grid-column: span 3;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding-top:10px;
+  padding-bottom:10px;
+  background-image: linear-gradient(to right, transparent, var(--colorPrimaryFaded), var(--colorPrimaryFaded), transparent);
+}
+.TOC-colname {
+  font-weight: bold;
+  text-align: center;
+}
+.TOC-chnum {
+  text-align: center;
+}
+.TOC-chname {
+  font-style: italic;
+}
+.TOC-chsynopsis {
+  font-style: italic;
+  font-size:0.8rem;
+  color:grey;
+}
+.TOC-chninfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.TOC-chname:hover {
+  cursor: pointer;
+  background-color: var(--colorTertiaryFaded);
+}
+.TOC-chrelease {
+  text-align: center;
+  height:100%;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.TOC-linespan {
+  grid-column: span 3;
+  border-top: 1px dotted var(--backgroundColor);
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* =================== CSS Footer Styles ==================== */
+/* ---------------------------------------------------------- */
+
+.footer {
+  grid-column: span 3;
+  text-align: center;
+  font-size:0.8rem;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-top: 1px solid var(--backgroundColor);
+}
+
+</style>
+
+<!------___   _ ________  ___ _    __--------------------------------------------->
+<!-----/ / | | |_   _|  \/  || |   \ \-------------------------------------------->
+<!----/ /| |_| | | | | .  . || |    \ \------------------------------------------->
+<!-- < < |  _  | | | | |\/| || |     > > ----------------------------------------->
+<!----\ \| | | | | | | |  | || |____/ /------------------------------------------->
+<!-----\_\_| |_/ \_/ \_|  |_/\_____/_/-------------------------------------------->
+
+
+  
+</head>
+<body>
+  <div class="fullbackground"></div>
+
+
+  <!--[Background border of the page.]-->
+  <div class="bordered">
+    <div class="backwall"></div>
+  </div>
+
+
+  <!--[Positioned content body of the page.]-->
+  <div class="positioner">
+    <div class="fullbody">
+
+
+      <!--[Header preceding the content.]-->
+      <div class="header">        
+        <div class="about" id="about">
+          <!-- <div class="titleimage"></div> -->
+          <div class="about-text">
+            <h2 class="descriptor"><span>FIREBRAND</span></h2>
+            <h3 class="descriptor"><span>by Savant-Guarde</span></h3>
+            <div class="premise">
+              <div class="premisetext">                
+                <p class="descriptor"><span>With unlimited chances to rewrite the past, would you find peace in imperfection — or lose yourself in eternity?</span></p>
+                <p class="descriptor"><span><strong>“Firebrand”</strong> (Book One of The Frostburn Chronicles) follows Titus Berguard, a valedictorian from a military academy in a frostbitten wasteland. As graduation nears, Titus and his friends—Sylvia, Romin, and Valentina—face the looming threat of service. When disaster strikes the last human city, Titus discovers he can rewrite the past. But with each reset, his friends forget everything, and Titus is left alone with the weight of every outcome.</span></p>
+                <p class="descriptor"><span></span>Torn by guilt and loneliness, Titus battles his need for perfection and the decay of his sanity. Firebrand is a story of time travel, romance, friendship, and never giving up hope in a dying world.</span></p>
+              </div>
+              <div class="premisecover">
+                <img src="https://autononymous.io/wp-content/uploads/2025/04/firebrand__the_frostburn_chronicles_by_savant_guarde_djk23bf-414w-2x.png" class="bookcover">
+              </div>
+            </div>           
+          </div>
+          <h3 class="descriptor">Map of Blackwater:</h3>
+          <div class="storymap">
+            
+            <div class="mapinteractive">
+              <img id="map" class="storymap" src="https://autononymous.io/wp-content/uploads/2025/04/BLACKWATER.png">
+              <div class="map-pin" id="pinmap">
+                <span id="pinchname"></span>
+              </div> 
+            </div>
+          </div>
+        </div>
+
+
+        <!--[User controls for the content body.]-->
+        <div class="options" id="options">
+          <div class="ctrl extendpage" id="contscroll" onclick="ExtendPage();"> 
+            <img class="texticon" title="Continuous Scrolling" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Extend.png" alt="&#8853;">
+          </div>
+          <div class="ctrl lineup" onclick="BodyLineHeight(1);"> 
+            <img class="texticon" title="Increase Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineDn.png" alt="&#8853;">
+          </div>
+          <div class="ctrl linedn" onclick="BodyLineHeight(-1);"> 
+            <img class="texticon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;">
+          </div>
+          <div class="ctrl ctrldata">
+            <div class="ctrldata-content">
+              <div class="dataname">Size</div><div class="dataval"><span id="fontsize"></span></div>
+            </div>
+            <div class="ctrldata-content">
+              <div class="dataname">Height</div><div class="dataval"><span id="lineheight"></span></div>
+            </div>
+          </div>
+          <div class="ctrl fontup"">
+            <img class="texticon" title="Increase Font Size" onclick="BodyFontSize(1);" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Larger.png" alt="&#8853;">
+          </div>
+          <div class="ctrl fontdn">
+            <img class="texticon" title="Decrease Font Size" onclick="BodyFontSize(-1);" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Smaller.png" alt="&#8854;">
+          </div>
+        </div>
+      </div>
+
+
+      <!--[Story content ends up here.]-->
+      <div class="body" id="body">
+        <div class="reader" id="reader">
+          <div id="page0" class="page activepage">            
+          </div>
+        </div>
+        <div class="interface" id="interface">
+          <div class="control left" onclick="SetPage(-1);"></div>
+          <div class="control right" onclick="SetPage(1);"></div>
+        </div>
+      </div>
+
+
+      <!--[Header preceding the content.]-->
+      <div class="tracker" id="tracker"> 
+        <div class="track-text">
+          <p> 
+            Part <span id="n-chnum"></span> of <span id="n-chtot"></span>
+          &emsp;||&emsp;
+          Page <span id="n-pgnum"></span> of <span id="n-pgtot"></span>        
+          </p>
+        </div>
+        <div class="track-graphic">
+          <div class="tg-container">
+            <div class="tg-background">
+              <div class="tg-progresslines" id="visuallines">
+                  <div class="tg-progresslinemask"></div>
+                  <div class="tg-progresslinemask"></div>
+                  <div class="tg-progresslinemask"></div>
+                  <div class="tg-progresslinemask"></div>
+                  <div class="tg-progresslinemask"></div>
+                  <div class="tg-progresslinemask"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--[Following table of contents.]-->
+      <br><br><br><br>
+      <div class="TOC">       
+        <div class="TOC-table" id="TOCtable">
+        </div>         
+      </div>      
+    </div>         
+  </div>
+
+<!------_______ _____ ______ ___________ _______---------------------------------->
+<!-----/ /  ___/  __ \| ___ \_   _| ___ \_   _\ \--------------------------------->
+<!----/ /\ `--.| /  \/| |_/ / | | | |_/ / | |  \ \-------------------------------->
+<!-- < <  `--. \ |    |    /  | | |  __/  | |   > > ------------------------------>
+<!----\ \/\__/ / \__/\| |\ \ _| |_| |     | |  / /-------------------------------->
+<!-----\_\____/ \____/\_| \_|\___/\_|     \_/ /_/--------------------------------->
+
+<script>
+
+const PINPOSITIONS = [
+  { left: "50%", top: "25%" }, // Prologue
+  { left: "30%", top: "80%" }, // Chapter 01
+  { left: "30%", top: "80%" }, // Chapter 02
+  { left: "30%", top: "80%" }, // Chapter 03
+  { left: "38%", top: "50%" }, // Chapter 04
+  { left: "43%", top: "51%" }, // Chapter 05
+  { left: "53%", top: "29%" }, // Chapter 06
+  { left: "53%", top: "29%" }, // Chapter 07
+  { left: "50%", top: "37%" }, // Chapter 08
+  { left: "53%", top: "29%" }, // Chapter 09
+  { left: "43%", top: "51%" }, // Chapter 10
+  { left: "38%", top: "33%" }, // Chapter 11
+  { left: "38%", top: "33%" }, // Chapter 12
+  { left: "36%", top: "29%" }, // Chapter 13
+  { left: "35%", top: "28%" }, // Chapter 14
+  { left: "26%", top: "15%" }, // Chapter 15
+  { left: "26%", top: "15%" }, // Chapter 16
+  { left: "55%", top: "10%" }, // Chapter 17
+  { left: "49%", top: "07%" }, // Chapter 18
+  // Next Act ------------------------------------
+  { left: "52%", top: "30%" }, // Chapter 19
+];
+
+function SetPin(chap,chname) {
+  const pin = document.getElementById('pinmap');
+  const position = PINPOSITIONS[chap];
+  if (position) {
+    pin.style.left = position.left;
+    pin.style.top = position.top;
+    document.getElementById('pinchname').innerHTML = chname;
+    console.debug(`Pin position set for chapter ${chap}: left: ${position.left}, top: ${position.top}`);
+  } else {
+    console.warn(`No pin position defined for chapter ${chap}`);
+  }
+}
+
+const PIN = document.getElementById('pinmap');
+
+
+
+const root = document.documentElement;
+const currentColor = getComputedStyle(root).getPropertyValue('--main-color');
+
+
+    
+var jStory = "";
+var storyLoaded = false;
+const htmlAUTO = "https://autononymous.io"
+const FooterText = `
+ Copyright &copy; <a href="${htmlAUTO}">Autononymous</a> 2025 || Designed by Savant-Guarde || Version 1.4 
+`;
+const FILELOC = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/"
+
+
+var ChapterSelected = 0;
+var JumpToLastPage = false;
+
+var FontSize = 1.5;
+var LineHeight = 1.0;
+
+var FontPrefs = localStorage.getItem('AC-FontPrefs');
+const TableOfContents = document.getElementById('TOCtable');
+
+var ReleaseFrequency = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7]; // Default release frequency
+
+var StartDate = new Date("2025-04-17T00:00:00Z"); // Default start date
+var RelDate = new Date(Date.parse(StartDate) - (86400000*ReleaseFrequency[0]));
+
+const metaCHNUM = document.getElementById('n-chnum');
+const metaCHTOT = document.getElementById('n-chtot');
+const metaPGNUM = document.getElementById('n-pgnum');
+const metaPGTOT = document.getElementById('n-pgtot');
+const Window = document.getElementById("body");
+const Read = document.getElementById("reader");
+const barVisual = document.getElementById('visualtracker')
+const barLines = document.getElementById('visuallines')
+var READER = document.getElementsByClassName("activepage")[0];
+
+const MinChapter = 0; // zero for prologue in this case
+var ChapterCount = 0;
+
+var ChapterOffset = 2; // Prologues that don't numerically count as chapters
+
+var CurrentPage = 0;
+var Pages = 0;
+var isFirstClick = true;
+
+var isCONTINUOUS = false; // Continuous scrolling
+var TOCfromJSON = true; // Use TOC provided in alternate JSON file.
+
+var jContent = JSON.parse(`[]`);
+var TARGET = '';
+var Pouch = [];
+var currentOffset = 0;
+
+
+
+
+if (FontPrefs) {    
+  const prefsArray = FontPrefs.split(',');
+  FontSize = parseFloat(prefsArray[0]);
+  LineHeight = parseFloat(prefsArray[1]);
+  document.getElementById('fontsize').innerHTML = `${(FontSize*16).toFixed(0)}`;
+  document.getElementById('lineheight').innerHTML = `${LineHeight.toFixed(1)}em`;
+}
+
+
+
+
+function pad(num, size) {
+    var s = "000000000" + num;
+    return s.substr(s.length-size);
+}
+
+function setProgressBar(pagecount) {
+  if (!isCONTINUOUS) {
+  barLines.innerHTML = "";
+  for (let i=0; i<pagecount; i++) {
+    if (i==0) {
+      barLines.innerHTML += `<div class="tg-progresslinemask" id="bar${i}" style="background: transparent;"></div>`;
+    } else {
+      barLines.innerHTML += `<div class="tg-progresslinemask" id="bar${i}" style="background: var(--backgroundColor);"></div>`;
+    }   
+  }
+  } else {
+    if (isCONTINUOUS) {
+      document.getElementById('visuallines').innerHTML = `<div class="tg-progressmask" id="maskbar"></div>`;
+    }
+  }
+}
+
+function UpdateScroller () {
+  let Progmask = document.getElementById('maskbar');
+  let SectionDims = document.getElementById('reader').getBoundingClientRect();
+  //console.log(SectionDims.height,SectionDims.bottom);
+  let Progress = (((-SectionDims.top)/((Math.abs(SectionDims.height))) ) * 100).toFixed(1) + 10;
+  Progress = (Progress>=100) ? 100 : (Progress<=0) ? 0 : Progress;
+
+  //console.log(Progress)
+
+  Progmask.style.left = `${Progress}%`;
+  Progmask.style.width = `${(100-Progress)}%`;
+
+};
+
+async function ExtendPage() {
+// Toggle continuous scrolling (first page has no limit)
+  isCONTINUOUS = !isCONTINUOUS;
+  document.getElementById("contscroll").style.backgroundColor = (isCONTINUOUS) ? "var(--colorPrimaryFaded)" : "var(--backgroundColor)";
+  //console.debug("CONTINUOUS SCROLLING: " + isCONTINUOUS);
+
+  document.getElementById("body").style.overflowY = (isCONTINUOUS) ? "hidden" : "auto";
+  document.getElementById("body").style.height = (isCONTINUOUS) ? "unset" : "80%";
+  
+  await loadStory(ChapterSelected);
+
+  console.debug(`Height: ${document.getElementById('body').offsetHeight}px`)
+
+  StretchInterface();
+  document.getElementById('tracker').style.position = (isCONTINUOUS) ? "sticky" : "unset"; // Change to sticky for continuous scrolling
+  document.getElementById('tracker').style.bottom = (isCONTINUOUS) ? "0" : "unset"; // Adjust top position for continuous scrolling
+  document.getElementById('tracker').style.zIndex = (isCONTINUOUS) ? "10" : "1"; // Adjust z-index for tracker visibility
+  // Additional code to handle other UI updates can be added here if necessary
+  //ScrollerHeight = document.getElementById('body').getClientBoundingRect();
+  if (isCONTINUOUS) {
+    document.getElementById('visuallines').innerHTML = `<div class="tg-progressmask" id="maskbar"></div>`;
+    addEventListener('scroll', UpdateScroller);
+  } else {
+    removeEventListener('scroll', UpdateScroller);
+  }
+}
+
+function newEntry(type,title) {
+	return JSON.parse(`{ "type":"${type}" , "title":"${title}"}`);
+}
+
+function NotOverflow() {
+	let result = Window.getBoundingClientRect().bottom - document.getElementsByClassName('activepage')[0].getBoundingClientRect().bottom;
+  return ((result <= 0)?false:true);
+}
+
+function SetPage(advance) {
+  if(isFirstClick == false) {   
+    let QueriedPage = CurrentPage+advance;
+    if( (QueriedPage >= 0) && (QueriedPage <= Pages) )  {
+      //console.log(`Page ${QueriedPage} exists in Chapter ${ChapterSelected}.`)
+      READER.style.display = "none";
+      READER = document.getElementById(`page${QueriedPage}`);
+      READER.style.display = "";
+      CurrentPage = QueriedPage;
+      metaPGNUM.innerHTML = CurrentPage+1;
+      for(let i=0; i<=Pages; i++) {
+        let thisBarBox = document.getElementById(`bar${i}`);
+        thisBarBox.style.background = (i>CurrentPage) ? 'var(--backgroundColor)':'transparent';
+      }
+
+    } else {
+      // Jump to next chapter if it exists.
+      if (((ChapterSelected + advance) > (ChapterCount-ChapterOffset)) || ((ChapterSelected + advance) < MinChapter)) {
+        //console.warn(`Chapter ${ChapterSelected + advance} does not exist.`)
+      } else if (advance > 0) {
+        //console.info(`Loading next chapter ${ChapterSelected + advance}.`)
+        ChapterSelected += advance;
+        loadStory(ChapterSelected)
+      } else if (advance < 0) {
+        //console.info(`Loading previous chapter ${ChapterSelected + advance}.`)
+        ChapterSelected += advance;
+        loadStory(ChapterSelected);
+        JumpToLastPage = true;
+      } else {
+        //console.warn(`Page ${QueriedPage} does not exist.`)
+      }      
+    }
+  } else {
+    isFirstClick = false;        
+  }
+  document.getElementById('interface').style.background ="none";
+  GoToStart();
+  StretchInterface();
+}
+
+function StretchInterface() {
+  document.getElementById('interface').style.height = (isCONTINUOUS) ? `${document.getElementById('body').offsetHeight}px` : "75vh";
+}
+
+function BodyFontSize(advance) {
+  if(!isFirstClick) {
+    let fontitems = document.getElementsByClassName("Para");
+    let currentSize = parseFloat(window.getComputedStyle(fontitems[0], null).getPropertyValue('font-size')) / 16; // Convert to em
+    //console.log(`Current font size is ${currentSize}em`);
+    let newSize = currentSize + (advance * 0.1);
+    if (newSize < 0.5) newSize = 0.5; // Minimum font size
+    if (newSize > 3) newSize = 3; // Maximum font size
+    FontSize = newSize;
+    loadStory(ChapterSelected);
+    //console.log(`Font size changed to ${newSize}em`);
+  }  
+  localStorage.setItem('AC-FontPrefs',[FontSize,LineHeight]);
+}
+
+function GoToStart() {
+  document.location='#options';
+}
+
+function BodyLineHeight(advance) {  
+  //console.log(advance*0.1)
+  let fontitems = document.getElementsByClassName("Para");
+  let lhValue = fontitems[0].style.lineHeight;
+  let currentSize = parseFloat(lhValue.slice(0,lhValue.length-2))
+  //console.log(currentSize)
+  let newSize = (currentSize) + (advance * 0.1);  
+  //console.log(newSize)
+  if (newSize < 0.8) newSize = 0.8; // Minimum font size
+  if (newSize > 2) newSize = 2; // Maximum font size
+  if(!isFirstClick) {    
+   
+    LineHeight = newSize;
+    loadStory(ChapterSelected);
+    
+  }  
+  //console.log(`Current line height is ${currentSize}em`);
+  //console.log(`Line height changed to ${newSize}em`);
+
+  localStorage.setItem('AC-FontPrefs',[FontSize,LineHeight]);
+}
+
+async function loadTOC() {
+  //console.log("RELD"+RelDate)
+  await loadStory(ChapterSelected);
+  //console.log("RELDA"+RelDate)
+  //console.log("Chapters:" + ChapterCount)
+  const TOCresponse = await fetch(FILELOC + "docs/FBTOC00.json");
+  const tTOCdata = await TOCresponse.text();
+  // Process the TOC data here
+  const tocData = JSON.parse(tTOCdata.replaceAll('\n',''));
+  // Assuming tocData is an array of chapters
+  if(TOCfromJSON == true) { 
+    TableOfContents.innerHTML = "";
+  }
+  tocData.Manuscript.forEach(parcel => {
+    let type = parcel.DocType;
+    //console.log(type)
+    switch(type) {      
+    	case "Act":
+        if(TOCfromJSON == true) {        
+          TableOfContents.innerHTML += `
+            <div class="TOC-actspan">
+              <div class="TOC-cell">
+                ${parcel.AutoNameFull}              
+              </div>
+            </div>
+            `;
+        }
+        break;   
+      case "Chapter":
+        //console.log("NextPublish"+new Date(Date.parse(RelDate)));
+        RelDate = new Date(Date.parse(RelDate) + (86400000*parseFloat(parcel.NextPublish)));
+        //console.debug("RD:"+RelDate)
+        if(TOCfromJSON == true) {          
+            let ChapterStatus = (((parcel).ChapterFull < parseFloat(ChapterCount)-1)||(ChapterCount == 0) ) ? "" : "unreleased";
+            TableOfContents.innerHTML += `
+              <div class="TOC-chnum">
+                ${(parcel.VerboseOverride==""?(parcel.ActNum+'.'+('00'+(parcel.ChapterFull)).slice(-2)):parcel.VerboseOverride)}              
+              </div>
+              <div class="TOC-chname ${ChapterStatus}">
+                <div class="TOC-chinfo" onclick="loadStory(${parcel.ChapterFull});ChapterSelected=${parcel.ChapterFull};GoToStart();">${(parcel.ChapterOverride=="" ? parcel.GivenName : parcel.ChapterOverride)}</div>
+                <div class="TOC-chsynopsis">${parcel.Synopsis}</div>               
+              </div>
+              <div class="TOC-chrelease">
+                ${pad(RelDate.getMonth()+1,2)}/${pad(RelDate.getDate(),2)}/${RelDate.getFullYear().toString().slice(2,4)}
+              </div>
+              `;
+        }
+        break;
+      case "Scene":
+    }
+  });
+  if(TOCfromJSON == true) {   
+    TableOfContents.innerHTML += `
+      <div class="footer">
+        <br><br>
+        <p>${FooterText}</p>
+      </div>`
+  }
+  
+}
+
+async function loadStory(chapter) {
+	const response = await fetch(FILELOC + "docs/FB00.json");
+  const data = await response.text();
+  var Lines = [];
+  jStory = JSON.parse(data.replaceAll('\n',''));
+  //console.info(`Story content for ${jStory.Nickname} has been loaded.`)
+  if (isFirstClick) {
+    document.getElementById('body').innerHTML = `    <div class="reader" id="reader">
+      <div id="page0" class="page activepage">
+      
+      </div>
+    </div>
+    <div class="interface" id="interface">
+      <div class="control left"  id="leftCtrl" onclick="SetPage(-1);clearVisuals();"></div>
+      <div class="control right"  id="rightCtrl" onclick="SetPage(1);clearVisuals();"></div>
+    </div>`
+  } else {
+    document.getElementById('body').innerHTML = `    <div class="reader" id="reader">
+      <div id="page0" class="page activepage">
+      
+      </div>
+    </div>
+    <div class="interface" id="interface">
+      <div class="control" onclick="SetPage(-1);"></div>
+      <div class="control" onclick="SetPage(1);"></div>
+    </div>`
+  }
+  
+  currentOffset = 0;
+  CurrentPage = 0;
+  ChapterCount = 0;
+  Pages = 0;
+  TARGET = '';
+  Pouch = [];
+  READER = document.getElementsByClassName("activepage")[0];
+  
+  //console.info(`Data has been reset.`)
+  
+  var ThisChapterName = "";
+
+
+  if(TOCfromJSON != true) { 
+    TableOfContents.innerHTML = "";
+  }
+
+    jStory.Manuscript.forEach(parcel => {
+  	let type = parcel.DocType;
+  	switch(type) {
+    	case "Act":
+      	if (parcel.ChapterFull == chapter && false) { // TODO: remove false to show the Act
+          jContent.push(newEntry(type,`Act ${parcel.ActNum}`));
+          jContent[jContent.length-1].subject = "";
+          Pouch.push(`#ACT#`,`Act ${parcel.ActNum}`,`#/#`)
+        }
+        if(TOCfromJSON != true) {        
+          TableOfContents.innerHTML += `
+            <div class="TOC-actspan">
+              <div class="TOC-cell">
+                ${parcel.AutoNameFull}              
+              </div>
+            </div>
+            `;
+        }
+        break;
+      case "Chapter":
+      	ChapterCount++;
+      	if (parcel.ChapterFull == chapter) {
+          jContent.push(newEntry(type,parcel.AutoNameFull))
+          jContent[jContent.length-1].subject = parcel.GivenName
+          Pouch.push(`#CHNUM#`,`${parcel.AutoNameFull}`,`#/#`)
+          Pouch.push(`#SUB#`,`"${parcel.GivenName}"`,`#/#`)
+          ThisChapterName = parcel.AutoNameFull;
+        }
+        
+        if(TOCfromJSON != true) {          
+          RelDate = new Date(Date.parse(RelDate) + (86400000*ReleaseFrequency[parcel.ChapterFull-1]));
+          TableOfContents.innerHTML += `
+            <div class="TOC-chnum">
+              ${(parcel.VerboseOverride==""?(parcel.ActNum+'.'+('00'+parcel.ChapterFull).slice(-2)):parcel.VerboseOverride)}              
+            </div>
+            <div class="TOC-chname">
+              <div class="TOC-chinfo" onclick="loadStory(${parcel.ChapterFull});ChapterSelected=${parcel.ChapterFull};">${(parcel.ChapterOverride=="" ? parcel.GivenName : parcel.ChapterOverride)}</div>
+              <div class="TOC-chsynopsis">${parcel.Synopsis}</div>               
+            </div>
+            <div class="TOC-chrelease">
+              ${pad(RelDate.getMonth()+1,2)}/${pad(RelDate.getDate(),2)}/${RelDate.getFullYear().toString().slice(2,4)}
+            </div>
+            `;
+        }
+          break;
+      case "Scene":
+      	if (parcel.ChapterFull == chapter) {
+          jContent.push(newEntry(type,parcel.ScenePart,""))
+          jContent[jContent.length-1].subject = parcel.Body.replaceAll('<p>','\n').replaceAll('</p>','').split('\n')
+          Pouch.push('#SC#',parcel.ScenePart,'#/#')
+          Lines = parcel.Body.replaceAll('<p>','\n').replaceAll('</p>','').split('\n')          
+          Lines.forEach( Line => {
+          	Pouch.push('#P#')
+            Line.split(' ').forEach( Word => {
+              Pouch.push((Word!="")?Word:"")
+            })   
+            Pouch.push('#/#')
+          })          
+        }
+        break;
+      default:
+      	// ignore
+        break;
+    }
+  })
+
+  if(TOCfromJSON != true) {   
+    TableOfContents.innerHTML += `
+      <div class="footer">
+        <p>${FooterText}</p>
+      </div>`
+  }
+  
+  //console.info(`There are ${ChapterCount} available chapters in Project ${jStory.Nickname}.`)
+  
+  ////console.log(Pouch)
+  
+  var credit = "";
+  var lastHTML = "";
+  var currentTag = "";
+
+  var ChapterCounter = 0;
+  var SceneCounter = 0;
+  
+  var n_page = 1;
+  
+  var nScene = 1;
+  
+  for (let i=0; i<Pouch.length; i++) {
+  	credit = Pouch[i];
+    lastHTML = READER.innerHTML + " ";
+  	switch (credit) {
+    	case '#ACT#':
+      	currentTag = "ACT";
+      	READER.innerHTML += `<h3 class="hAct" id='current'> </h3>`;
+        if( ((NotOverflow() == false) && (!isCONTINUOUS)) ) {
+        
+  				READER.innerHTML = lastHTML;
+        }
+        TARGET = document.getElementById('current');
+        TARGET.id = "";
+        break;
+      case '#CHNUM#':
+      	nScene = 0;
+      	currentTag = "CHNUM";
+      	READER.innerHTML += `<h3 class="hChap" id='current'> </h3>`;
+        if( ((NotOverflow() == false) && (!isCONTINUOUS)) ) {	
+  				READER.innerHTML = lastHTML;
+        }
+        TARGET = document.getElementById('current');
+        ChapterCounter++;
+        TARGET.id = `Chapter${ChapterCounter}`;
+        break;
+      case '#SUB#':
+      	currentTag = "SUB";
+      	READER.innerHTML += `<h3 class="hSub" id='current'> </h3>`;
+        if( ((NotOverflow() == false) && (!isCONTINUOUS)) ) { 
+  				READER.innerHTML = lastHTML;
+          READER.className = "page";
+          READER.style.display = "none";
+          document.getElementById('reader').innerHTML += `<div id="page${n_page++}" class="page activepage"></div>`;
+          Pages++;
+          READER = document.getElementsByClassName('activepage')[0];
+          READER.innerHTML += `<h3 class="hSub" id='current'> </h3>`;
+        }
+        TARGET = document.getElementById('current');
+        TARGET.id = ""; 
+        break;
+      case '#SC#':
+      	currentTag = "SC";
+      	READER.innerHTML += `<h3 class="hScn" id='current'> </h3>`;
+        if( ((NotOverflow() == false) && (!isCONTINUOUS)) ) {
+  				READER.innerHTML = lastHTML;
+          READER.className = "page";
+          READER.style.display = "none";
+          document.getElementById('reader').innerHTML += `<div id="page${n_page++}" class="page activepage"></div>`;
+          Pages++;
+          READER = document.getElementsByClassName('activepage')[0];
+          READER.innerHTML += `<h3 class="hScn" id='current'> </h3>`;
+        }        
+        SceneCounter++;
+        TARGET = document.getElementById('current');
+        TARGET.id = `Scene${SceneCounter}`;
+        break;
+      case '#P#':
+      	currentTag = "P";
+      	READER.innerHTML += `<p class="Para" style="font-size:${FontSize}em;line-height:${LineHeight}em;" id='current'> </p>`;
+        if( ((NotOverflow() == false) && (!isCONTINUOUS)) ) {
+  				READER.innerHTML = lastHTML;
+        }
+        TARGET = document.getElementById('current');
+        TARGET.id = "";
+        break;
+      case '#/#':
+      	TARGET = READER;
+        break; 
+      default:
+      	TARGET.innerHTML += credit + " ";
+        if( ((NotOverflow() == false) && (!isCONTINUOUS)) ) {
+		TARGET.style="text-align-last:justify;";
+  				READER.innerHTML = lastHTML;
+          READER.className = "page";
+          READER.style.display = "none";
+          document.getElementById('reader').innerHTML += `<div id="page${n_page++}" class="page activepage"></div>`;
+          Pages++;
+          READER = document.getElementsByClassName('activepage')[0];
+          READER.innerHTML += `<p class="Para" style="font-size:${FontSize}em;line-height:${LineHeight}em;" id='current'> </p>`;
+          TARGET = document.getElementById('current');
+          TARGET.id = "";
+          TARGET.innerHTML += credit + " ";
+        }
+        break;
+    }
+  }
+  //console.info("There are " + Pages + " total pages in this chapter.")
+  
+  READER.className = "page";
+  READER.style.display = "none";
+  if (JumpToLastPage) {
+  	READER = document.getElementById(`page${Pages}`);
+    CurrentPage = Pages;
+    JumpToLastPage = false;
+  } else {
+  	READER = document.getElementById('page0');
+  }
+  
+  metaPGNUM.innerHTML = CurrentPage+1;
+  metaPGTOT.innerHTML = Pages+1;
+  
+  metaCHNUM.innerHTML = ChapterSelected;
+  metaCHTOT.innerHTML = ChapterCount - ChapterOffset; 
+
+  setProgressBar(Pages+1);  
+  READER.style.display = "";
+  
+  
+  //console.info("Completed loading.")
+
+  
+  if(isFirstClick) {
+    document.getElementById('interface').style.background = `
+    url(https://autononymous.io/wp-content/uploads/2025/05/ReaderInstructions.png) no-repeat top/100%,
+    linear-gradient(
+    to bottom,
+    rgba(21, 21, 21,0.8),
+    rgba(21, 21, 21,0.8)
+    )
+  `
+  } else {
+    document.getElementById('interface').style.background ="none";
+  }
+
+  document.getElementById('fontsize').innerHTML = `${(FontSize*16).toFixed(0)}`;
+  document.getElementById('lineheight').innerHTML = `${LineHeight.toFixed(1)}em`;
+
+  StretchInterface();
+  SetPin(chapter,ThisChapterName);
+
+  localStorage.setItem('AC-Bookmark',ChapterSelected);
+
+}
+
+function clearVisuals() {
+  document.getElementById('leftCtrl').style.backgroundImage = "none";
+  document.getElementById('rightCtrl').style.backgroundImage = "none";
+  document.getElementById('leftCtrl').style.border = "none";
+  document.getElementById('rightCtrl').style.border = "none";
+}
+
+
+
+
+var lastWindowWidth = window.innerWidth;
+
+addEventListener("resize", (event) => { 
+  if (Math.abs(Math.abs(window.innerWidth) - Math.abs(lastWindowWidth)) > 10)  {
+    lastWindowWidth = window.innerWidth;
+    loadStory(ChapterSelected)
+    //console.log(`Window resized to ${lastWindowWidth}px`)
+  };
+  
+});
+
+//loadStory(ChapterSelected);
+
+
+var Bookmark = localStorage.getItem('AC-Bookmark');
+  if (Bookmark) {
+    try {
+      ChapterSelected = parseFloat(Bookmark); // Assuming Bookmark stores ChapterSelected as a JSON string  
+    } catch (error) {
+      console.error("Error parsing Bookmark:", error);
+    }
+  }
+
+loadTOC();
+GoToStart();
+
+</script>
+
+
+
+
+</body>
+</html>
+
+<!--
+This code is protected under the GNU General Public License.
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
+-->
