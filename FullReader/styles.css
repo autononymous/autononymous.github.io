@@ -11,30 +11,26 @@
 
     /*=========={ Theme Variables }==========*/
     --T0_TitleFont:     "";
+    --T0_SubFont:       "";
     --T0_TextFont:      "";
-    --T0_TitleSize:     "";
-    --T0_TextSize:      ""; 
     --T0_Background:    "";
     --T0_Opacity:       0;
 
     --T1_TitleFont:     "";
+    --T1_SubFont:       "";
     --T1_TextFont:      "";
-    --T1_TitleSize:     "";
-    --T1_TextSize:      ""; 
     --T1_Background:    ""; 
     --T1_Opacity:       0;
 
     --T2_TitleFont:     "";
-    --T2_TextFont:      "";
-    --T2_TitleSize:     "";
-    --T2_TextSize:      "";  
+    --T2_SubFont:       "";
+    --T2_TextFont:      ""; 
     --T2_Background:    "";
     --T2_Opacity:       0;
 
     --T3_TitleFont:     "";
+    --T3_SubFont:       "";
     --T3_TextFont:      "";
-    --T3_TitleSize:     "";
-    --T3_TextSize:      "";  
     --T3_Background:    "";
     --T3_Opacity:       0;
 

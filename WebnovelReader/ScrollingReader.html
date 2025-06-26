@@ -697,7 +697,7 @@ div.ChapterDate {
                     </div>
                     -->
                 </div>
-                <div onclick="CurrentChapter=CurrentChapter.Next;PlaceChapter(CurrentChapter);SaveState();" class="Footer-Right"><div class="Centered">&raquo;</div></div>
+                <div onclick="if(CurrentChapter.ChapterNumber < MaximumChapter){CurrentChapter=CurrentChapter.Next;PlaceChapter(CurrentChapter);SaveState();}else{console.warn('Outside range.')}" class="Footer-Right"><div class="Centered">&raquo;</div></div>
             </div>
         </div>
     </div>
@@ -1067,20 +1067,21 @@ function ParseStory(data) {
     //console.debug(data)
 
     let Story = Object.values(data.Manuscript);
+    let eRelease = dSTART;
     //console.log(Story)
     for (let i=0; i<Story.length; i++) {
         // Save story array to 'entry' for easier sightreading.
         let entry = Story[i];
-        let ePerspective="";
+        let ePerspective="";       
 
         // Iterate for each entry of the singular JSON file.
         switch(entry.DocType) {
-        case "Chapter":
-            MaximumChapter++;
+        case "Chapter":            
             let eTitle = (entry.ChapterOverride==""||entry.ChapterOverride==undefined)?entry.AutoNameFull:entry.ChapterOverride;
             let eSubtitle = (entry.GivenName=="")?"":entry.GivenName;
             let eActNumber = entry.ActNum;
             let eChapterNumber = entry.ChapterFull;
+            let eNextPub = 7;
             let eSynopsis = entry.Synopsis;
             let eID = (entry.VerboseOverride==undefined)?(entry.ActNum-1+"."+entry.ChapterFull):entry.VerboseOverride;
             
@@ -1088,11 +1089,15 @@ function ParseStory(data) {
             //console.error(entry.VerboseOverride)
             let prefix = STYLES[ePerspective].Prefix;
             let suffix = STYLES[ePerspective].Suffix;
+            
+            eRelease += eNextPub;
 
-            ThisDate += parseFloat(entry.NextPublish);
-            let eRelease = ThisDate;
+            console.log(`Now is ${dNOW}`)
+            console.log(eRelease);
 
-            //console.log(eTitle);
+            if (eRelease <= dNOW) {
+                MaximumChapter++;
+            }
 
             STORY.push(
             {
@@ -1105,6 +1110,7 @@ function ParseStory(data) {
                 "Body":[],
                 "BodyFormatted":[],
                 "Release":eRelease,
+                "Active":eRelease<=dNOW,
                 "Perspective":ePerspective,
                 "Previous":"",
                 "Next":""
@@ -1282,7 +1288,7 @@ function ChannelSet(CHANNEL) {
     `);
     */
 
-    console.log(LastElement,NextElement)
+    //console.log(LastElement,NextElement)
 
 
     let RED = (LastElement[1]*Progress)+(NextElement[1]*(1-Progress));
@@ -1318,7 +1324,7 @@ function ChannelSet(CHANNEL) {
         IsStartOf = true;
     }
 
-    console.log(ThisStoryTheme)
+    //console.log(ThisStoryTheme)
 
     if((ThisStoryTheme != LastStoryTheme) || IsStartOf) {
 
@@ -1476,14 +1482,19 @@ function PlaceChapter(CHAPTER) {
     StartChapter = CurrentChapter.ChapterNumber;
     // NOTE: Chapter number is (1) ahead of indexing. 
     ePAGE.innerHTML = "";
-    CHAPTER.BodyFormatted.forEach( Line => {
-        ePAGE.innerHTML += Line;
-    }) 
-    //ePAGE.innerHTML += `<div class="EndSpacer"></div>`;
-    eWINDOW.scrollTop = 0;
-    Preferences.StartChapter = CurrentChapter.ChapterNumber-1;
-    SetScrollerEvents();    
-    SetInfo();
+    console.log(CHAPTER.Active)
+    if( CHAPTER.Active ) {
+        CHAPTER.BodyFormatted.forEach( Line => {
+            ePAGE.innerHTML += Line;
+        }) 
+        //ePAGE.innerHTML += `<div class="EndSpacer"></div>`;
+        eWINDOW.scrollTop = 0;
+        Preferences.StartChapter = CurrentChapter.ChapterNumber-1;
+        SetScrollerEvents();    
+        SetInfo();        
+    } else {
+        ePAGE.innerHTML += "Chapter is not active yet. Check back later."
+    }
 }
 
 
