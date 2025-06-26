@@ -552,7 +552,21 @@ div.inactiverow:hover {
     background-color: rgba(255,50,50,0.15);
 }
 div.newrow {
-    background-color: rgba(255,255,40,0.15);
+    background-color: rgba(180,180,40,0.15);
+}
+div.newrow::after {
+    color: var(--TextColor);
+    font-family: var(--ActiveTitle);
+    content:"New!";
+    position:relative;
+    right:20px;
+    top:50%;
+    transform: translateY(-50%);
+    border:1px solid var(--BarColor);
+    border-radius: 3px;
+    height:20px;
+    width: 60px;
+    text-align: center;
 }
 
 div.TOCmarker {
@@ -1092,8 +1106,8 @@ function ParseStory(data) {
             
             eRelease += eNextPub;
 
-            console.log(`Now is ${dNOW}`)
-            console.log(eRelease);
+            //console.log(`Now is ${dNOW}`)
+            //console.log(eRelease);
 
             if (eRelease <= dNOW) {
                 MaximumChapter++;
@@ -1482,7 +1496,7 @@ function PlaceChapter(CHAPTER) {
     StartChapter = CurrentChapter.ChapterNumber;
     // NOTE: Chapter number is (1) ahead of indexing. 
     ePAGE.innerHTML = "";
-    console.log(CHAPTER.Active)
+    //console.log(CHAPTER.Active)
     if( CHAPTER.Active ) {
         CHAPTER.BodyFormatted.forEach( Line => {
             ePAGE.innerHTML += Line;
@@ -1517,7 +1531,7 @@ async function setup() {
     CurrentChapter = STORY[Preferences.StartChapter];
     PlaceChapter(CurrentChapter);
 
-    console.error(Preferences.DisplayMode)
+    //console.error(Preferences.DisplayMode)
 
     runScrollEvents();
 
