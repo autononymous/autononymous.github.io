@@ -1321,7 +1321,10 @@ function ParseStory(data) {
             let eNextPub = 7;
             let eSynopsis = entry.Synopsis;
             let eID = (entry.VerboseOverride==undefined)?(entry.ActNum-1+"."+entry.ChapterFull):entry.VerboseOverride;
-            
+            let ePublishOn = entry.PublishOn;
+
+            console.log(ePublishOn)
+
             ePerspective = ((entry.Perspective=="Mixed")||(entry.Perspective==""))?"Default":entry.Perspective;
             //console.error(entry.VerboseOverride)
             let prefix = STYLES[ePerspective].Prefix;
