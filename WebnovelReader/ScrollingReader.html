@@ -1318,19 +1318,25 @@ function ParseStory(data) {
             let eSubtitle = (entry.GivenName=="")?"":entry.GivenName;
             let eActNumber = entry.ActNum;
             let eChapterNumber = entry.ChapterFull;
-            let eNextPub = 7;
+            let eNextPub = parseFloat(entry.NextPublish);
             let eSynopsis = entry.Synopsis;
             let eID = (entry.VerboseOverride==undefined)?(entry.ActNum-1+"."+entry.ChapterFull):entry.VerboseOverride;
             let ePublishOn = entry.PublishOn;
 
-            console.log(ePublishOn)
+            //console.warn(entry.PublishOn=="")
 
             ePerspective = ((entry.Perspective=="Mixed")||(entry.Perspective==""))?"Default":entry.Perspective;
             //console.error(entry.VerboseOverride)
             let prefix = STYLES[ePerspective].Prefix;
             let suffix = STYLES[ePerspective].Suffix;
             
-            eRelease += eNextPub;
+            if (ePublishOn=="") {
+                eRelease += eNextPub;
+            } else {
+                eRelease = parseFloat(ePublishOn);
+            }
+            //console.log(eRelease)
+            
 
             //console.log(`Now is ${dNOW}`)
             //console.log(eRelease);
@@ -1652,6 +1658,7 @@ async function BuildTOC() {
     let today = parseFloat(yeardate(tNOW));
     let startday = parseFloat(yeardate(tSTART));
     let releaseday = parseFloat(yeardate(tSTART));
+    let lastrelease = releaseday + 0;
 
     //console.log(`${today}, ${startday}, ${releaseday}`)
     let ChapterMaxNumberT = 0;
@@ -1678,7 +1685,15 @@ async function BuildTOC() {
             case "Chapter":
                 //console.info(`${today} ... ${releaseday}`)
                 let NextPush = parcel.NextPublish==undefined?7:parcel.NextPublish;
-                releaseday += parseFloat(NextPush);
+                if (parcel.PublishOn==""){
+                    releaseday += parseFloat(NextPush);
+                } else {
+                    releaseday = parseFloat(parcel.PublishOn);
+                    NextPush = releaseday - lastrelease;
+                }
+
+                console.debug(NextPush)
+                
                 ChapterMaxNumberT++;
                 RelDate = new Date(Date.parse(RelDate) + (86400000*parseFloat(NextPush)));
                 let EntryDateStr = `${pad(RelDate.getMonth()+1,2)}/${pad(RelDate.getDate(),2)}`// /${RelDate.getFullYear().toString().slice(2,4)}`
@@ -1702,7 +1717,8 @@ async function BuildTOC() {
                 VertBar.style.top = `
                 ${((-0.5) - ((1-DatePercentage)/2))*100}%`;
                 
-                startday = releaseday;
+                startday = releaseday + 0;
+                lastrelease = releaseday + 0;
                 break;
         }
     });
