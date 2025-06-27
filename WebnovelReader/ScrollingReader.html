@@ -13,6 +13,8 @@
 <style>
     :root {
 
+    --MenuHeight: 50px;
+
     --TextSetWidthFixed: 40px;
     --TextSetWidthDynamic: 10vw;
     --TextSize: 1.5em;
@@ -189,7 +191,7 @@
     .ContainerHead   { 
         background-color: var(--BackgroundColor);
         grid-area: header;
-        height:100px;        
+        height:var(--MenuHeight);        
         width:auto;
         display: grid;
         grid-template-columns: auto auto auto auto auto;
@@ -197,12 +199,13 @@
     }
         img.Icon {
             position:relative;
-            top:25%;
-            transform: translateY(-50%);
+            top:10px;
             height:40px;
             width: auto;
             cursor: pointer;        
-            filter: var(--IconState);
+            filter: drop-shadow(0 1000px 0 var(--TextColor));
+            transform: translateY(-1000px);
+            
         }    
     .ContainerBody   { 
         grid-area: body;
@@ -309,9 +312,9 @@
     div.Cover {
         position: fixed;
         left:max(calc((100vw - 600px)/2),var(--TextMargin));
-        top:100px;
+        top:var(--MenuHeight);
         width:min(600px, calc( 100vw - (var(--TextMargin) / 2) ));
-        height:calc(100dvh - 100px - min(35vw,120px));
+        height:calc(100dvh - var(--MenuHeight) - min(35vw,120px));
         pointer-events: none;
         background-image: 
             linear-gradient(
@@ -605,9 +608,25 @@ div.TOCmain {
 
 div.FloatName {
     position:absolute;
-    bottom: 0px;
+    bottom: 15px;
     left: 50vw;
     transform: translateX(-50%)
+}
+
+div.AuthorTitle {
+    position:absolute;
+    bottom:12px;
+    left:50%;
+    transform:translateX(-50%);
+}
+div.AuthorTitle:hover {
+    filter:invert(0.2);
+    transition: linear 0.2s;
+}
+img.AuthorTitle {
+    height:15px;
+    filter: drop-shadow(0 -100px 0px var(--BarColor));    
+    transform:translateY(100px);
 }
 
 div.ChapterState {
@@ -688,22 +707,23 @@ div.CoverAnnounce {
 }
 img.StoryCover {
     max-block-size: 400px;
-    block-size: 90vw;
+    block-size: min(100vw,90vh);
     /*width: min(400px,80vw);/**/
     position:absolute;
     left:50%;
-    top:33dvh;/*calc(33dvh + 50px);/**/
+    top:calc(25dvh + 10px);/*calc(33dvh + 50px);/**/
     transform:translate(-50%,-50%);
     box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.6);
     border: 2px solid black;
+    max-height: calc(50dvh - 20px);
 }
 div.Announcements {
     color: black;
     font-family: var(--ActiveSub);
     font-weight: 500;
     position: absolute;
-    bottom: calc(33dvh - 10px);
-    height: calc(33dvh - 60px);/*calc(100dvh - min(800px,60dvh) - 60px - 20px - 90px);/**/
+    bottom: calc(40dvh - 10px);
+    height: calc(40dvh - 60px);/*calc(100dvh - min(800px,60dvh) - 60px - 20px - 90px);/**/
     left: 50%;
     transform: translate(-50%,100%);
     width: min(400px,80vw);
@@ -717,10 +737,10 @@ div.Announcements {
 }
 div.SocialsBar {
     position:absolute;
-    bottom: calc(33dvh + 30px);
+    bottom: calc(40dvh + 25px);
     left:50vw;
     transform: translate(-50%,50%);
-    width: min(400px,80vw);
+    width: min(300px,80vw);
     height:40px;
     padding-left:10px;
     padding-right:10px;
@@ -732,13 +752,24 @@ div.SocialsBar {
 div.SocialsBar > div {
     flex: 1;
     margin:3px;
-    max-width: 100px;
-    height:40px;
+    width: 40px;
+    max-width:60px;
+    height: 40px;
     border-radius: 10px;
-    border: 3px solid black;    
+    border: 3px solid white;    
     align-items:center;
     justify-content:middle;
     text-align:center;
+}
+div.SocialsBar > div:hover {
+    filter:invert(0.1);
+}
+img.SocialIcon {
+    max-width:35px;
+    max-height:35px;
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
 }
 div.CoverAnnounce::after {
     content:"Click anywhere to dismiss.";
@@ -786,10 +817,10 @@ p.Announcements {
     <div class="FullContainer" id="FULL">
         <div class="ContainerLeft Gutter"></div>
         <div class="ContainerHead">
-            <div class="Icon" id="ICON-LINEDN" ><img class="Icon" title="Increase Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineDn.png" alt="&#8853;" onclick="SetPreferences('LineHeight',1)"></div>
-            <div class="Icon" id="ICON-LINEUP" ><img class="Icon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;" onclick="SetPreferences('LineHeight',-1)"></div>
-            <div class="Icon" id="ICON-FONTUP" ><img class="Icon" title="Increase Font Size"" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Larger.png" alt="&#8853;" onclick="SetPreferences('FontSize',1)"></div>
-            <div class="Icon" id="ICON-FONTDN" ><img class="Icon" title="Decrease Font Size" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Smaller.png" alt="&#8854;" onclick="SetPreferences('FontSize',-1)"></div>
+            <div class="Icon" id="ICON-LINEDN" onclick="SetPreferences('LineHeight',1)"><img class="Icon" title="Increase Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineDn.png" alt="&#8853;" ></div>
+            <div class="Icon" id="ICON-LINEUP" onclick="SetPreferences('LineHeight',-1)"><img class="Icon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;" ></div>
+            <div class="Icon" id="ICON-FONTUP" onclick="SetPreferences('FontSize',1)"><img class="Icon" title="Increase Font Size"" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Larger.png" alt="&#8853;" ></div>
+            <div class="Icon" id="ICON-FONTDN" onclick="SetPreferences('FontSize',-1)"><img class="Icon" title="Decrease Font Size" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Smaller.png" alt="&#8854;" ></div>
             <div class="Icon" id="ICON-THEME" onclick="Preferences.DisplayMode=(Preferences.DisplayMode=='Light')?'Dark':'Light';console.log('Changed color to '+Preferences.DisplayMode+'.');InvertIcons();SetScrollerEvents();runScrollEvents();SaveState();">
                 <span style="color: var(--TextColor);font-size: 40px;cursor:pointer;">&#9680;</span></div>
         </div> 
@@ -821,6 +852,9 @@ p.Announcements {
         <div class="FooterContent" id="DATA" title="View Table Of Contents" onclick="ToggleTOC()">
         </div>
     </div>
+    <div class="AuthorTitle" onclick="window.open('https://autononymous.io/authors-and-stories/savantguarde/')">
+        <img class="AuthorTitle" src="https://autononymous.io/wp-content/uploads/2025/06/logo-sg.png"/>
+    </div>
 
     <div class="CoverAnnounce" style="opacity:0;" onclick="DismissAnnouncements();" id="ANNOUNCEBOX">
         <img src="PGISO2.png" class="StoryCover"/>
@@ -828,7 +862,10 @@ p.Announcements {
             Lorem Ipsum Dolor Sit Amet
         </div>
         <div class="SocialsBar">
-            <div><img src=""/></div>
+            <div onclick="window.open('https://archiveofourown.org/users/SavantGuarde')" style="cursor: pointer;"><img src="icons/logo-ao3.png" class="SocialIcon"/></div>
+            <div onclick="window.open('https://bsky.app/profile/savant-guarde.bsky.social')" target="_blank" style="cursor: pointer;"><img src="icons/logo-bs.png" class="SocialIcon"/></div>
+            <div onclick="window.open('https://www.instagram.com/savant.guarde/')" style="cursor: pointer;"><img src="icons/logo-ig.png" class="SocialIcon"/></div>
+            <div onclick="window.open('https://www.tumblr.com/blog/savant-guarde')" style="cursor: pointer;"><img src="icons/logo-t2.png" class="SocialIcon"/></div>
         </div>
     </div>
 
