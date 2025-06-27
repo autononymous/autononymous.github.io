@@ -803,6 +803,7 @@ h3.Announcements {
 p.Announcements {
     font-family: var(--ActiveSub);
     font-weight: 500;
+    padding-left:10px;
 }
 
 </style>
@@ -856,8 +857,8 @@ p.Announcements {
         <img class="AuthorTitle" src="https://autononymous.io/wp-content/uploads/2025/06/logo-sg.png"/>
     </div>
 
-    <div class="CoverAnnounce" style="opacity:0;" onclick="DismissAnnouncements();" id="ANNOUNCEBOX">
-        <img src="PGISO2.png" class="StoryCover"/>
+    <div class="CoverAnnounce" style="opacity:0;" onclick="DismissAnnouncements();clearInterval(parsecovers)" id="ANNOUNCEBOX">
+        <img src="PGISO2.png" class="StoryCover" id="BOOKCOV"/>
         <div class="Announcements" id="ANNOUNCE">
             Lorem Ipsum Dolor Sit Amet
         </div>
@@ -873,6 +874,7 @@ p.Announcements {
 
 // ==========================<{Defining Elements}>============================ //
 
+    const eBOOKCOVER = document.getElementById('BOOKCOV');
     const eSTARTBOX = document.getElementById('ANNOUNCEBOX');
     const eANNOUNCE = document.getElementById('ANNOUNCE');
     const eTOC = document.getElementById('TOC');
@@ -922,6 +924,8 @@ p.Announcements {
     const SrcParams = getParameters();
 
     console.log(SrcParams)
+
+    var parsecovers = setInterval(ChangeCover,10000);
 
     var AuthorMode = SrcParams.get('mode')=="author"?true:false;
 
@@ -1028,6 +1032,8 @@ p.Announcements {
     var PageElementList = [];
     var Position = 0;
 
+    var ShownCover = 1;
+
     ThisStoryTheme = "Default"
     LastStoryTheme = "Default"
 
@@ -1081,8 +1087,8 @@ p.Announcements {
 
     const NewAnnouncements = {
         "06/24/25":"Test Announcement, Please Ignore",       
-        "06/26/25":"If you're reading this right now, it's for only one of two reasons. Either you're one of my trusted friends or family that I've decided to share this with, or you're a lurker on the internet that's early to the show.<br>But either way, I want to thank you for being here and supporting my work. PARAGATE is the second novel I've written that is far more personal to me. The two main characters are manifestations of anxiety and major depression that closely resemble my own struggles with these battles, and I look forward to telling a story about what I've learned in &quot;fighting the good fight&quot; against them when I've been as deep as I though I could go into either of them.<br><br>This is an early release of the story, so not everything is entirely nailed down yet. That being said: if it's posted here, it's in final enough a form that I'm confident to post it."
-    }
+        "06/26/25":`&emsp;If you're reading this right now, it's for only one of two reasons: either you're one of my trusted friends or family that I've decided to share this with, or you've randomly discovered this and you're early to the show. But either way, I want to thank you for being here and supporting my work. <br><br>&emsp;PARAGATE is the second novel I've written; one that is far more personal to me. The two main characters are manifestations of anxiety and major depression that closely resemble my own struggles with these battles, and I look forward to telling you a story about what I've learned in &quot;fighting the good fight&quot; against both of them.<br><br>&emsp;This is an early release of the story, so not everything is entirely nailed down yet &mdash; but it's certainly <em>planned</em>. That being said, if it's posted here, it's in polished enough of a form that I'm confident to post it.<br><br>&emsp;If you enjoy this work, please let me know on social media, and feel free to share it with others. I'm still figuring out this self-publishing thing (and trying to spend more of my time writing than improving this Javascript applet).<br><br>Thanks again for your support.<br><br>With love,<br>&emsp;<span style="font-family:'Brush Script MT', cursive;font-size:1.5em;">Savant-Guarde :)</span>`
+        }
 
 // ==============================<{Functions}>======================== //
 
@@ -1090,7 +1096,7 @@ function LoadAnnouncements() {
     eSTARTBOX.style.opacity="1";
     eANNOUNCE.innerHTML = `<div><h3 class="Announcements"> Announcements </h3></div>`;
     Object.entries(NewAnnouncements).reverse().forEach( ([timestamp,content]) => {
-        eANNOUNCE.innerHTML += `<div> <p class="Announcements"><strong><u>${timestamp}: </u></strong><br> ${content}</p></div>`;
+        eANNOUNCE.innerHTML += `<div> <p><strong><u>${timestamp}: </u></strong></p><p class="Announcements"> ${content}</p></div>`;
     })
 }
 function DismissAnnouncements() {
@@ -1098,7 +1104,23 @@ function DismissAnnouncements() {
     eSTARTBOX.style.animation = '1.0s ease-in-out 0.5s forwards fadeout';
     eSTARTBOX.style.pointerEvents = "none";
 }
-
+function ChangeCover() {
+    ShownCover = ShownCover==4?1:ShownCover+1;
+    switch (ShownCover) {
+        case 1:
+            eBOOKCOVER.src = "https://autononymous.io/wp-content/uploads/2025/06/cover03.png"
+            break;
+        case 2:
+            eBOOKCOVER.src = "https://autononymous.io/wp-content/uploads/2025/03/Untitled-185.png"
+            break;
+        case 3:
+            eBOOKCOVER.src = "https://autononymous.io/wp-content/uploads/2025/06/cover02a-scaled.png"
+            break;
+        default:
+            eBOOKCOVER.src = "PGISO2.png"
+            break;
+    }
+}
 
 //__________________________________________________________________
 //     NAME: | > yeardate
