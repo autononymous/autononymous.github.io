@@ -1,53 +1,153 @@
 :root {
-    --TextColor: black;
-    --BackgroundColor: white;
-    --HoverColor: rgba(12,12,12,0.1);
-    --BarColor: black;
-    --InversionState: invert(1);
+    --TextColor:        black;
+    --BackgroundColor:  white;
+    --HoverColorBack:   rgba(12,12,12,0.1);
+    --HoverColorIcon:   rgb(60,60,60);
+    --BarColor:         black;
+    --InversionState:     invert(1);
+
+    --WidthThreshold:     700px;
+    --HeaderHeight:       80px;
+    --FooterHeight:       100px;
+    --ContentWidth:       min(600px,90vw);
+    --BarHeight:          10px;
+
+    --TextSize:           1.5em;
+    --TextLineHeight:     1.3em;
+    --TextMargin:         1.0em;
 
     --Title: 2.5em;
     --Subtitle: 2.0em;
     --Section: 2.5em;
 
-    /*=========={ Theme Variables }==========*/
-    --T0_TitleFont:     "";
-    --T0_SubFont:       "";
-    --T0_TextFont:      "";
-    --T0_Background:    "";
-    --T0_Opacity:       0;
-
-    --T1_TitleFont:     "";
-    --T1_SubFont:       "";
-    --T1_TextFont:      "";
-    --T1_Background:    ""; 
-    --T1_Opacity:       0;
-
-    --T2_TitleFont:     "";
-    --T2_SubFont:       "";
-    --T2_TextFont:      ""; 
-    --T2_Background:    "";
-    --T2_Opacity:       0;
-
-    --T3_TitleFont:     "";
-    --T3_SubFont:       "";
-    --T3_TextFont:      "";
-    --T3_Background:    "";
-    --T3_Opacity:       0;
-
     /*==========={ Active Items }============*/
-    --ActiveTitleFont:  var(--T0_TitleFont);
-    --ActiveTextFont:   var(--T0_TextFont);
-    --ActiveTitleSize:  var(--T0_TitleSize);
-    --ActiveTextSize:   var(--T0_TextSize);
+    --ActiveTitleFont:  "Times New Roman" sans-serif;
+    --ActiveTextFont:   "Times New Roman" sans-serif;
+    --ActiveTitleSize:  1.5em;
+    --ActiveTextSize:   1.0em;
 
     /*=========={ Message Theming }==========*/
     --MsgFont: "SanFrancisco",'Helvetica Neue','Helvetica';
-    --MsgColorTo: rgba(33, 138, 255, 0.8);
-    --MsgFontColorTo: white;
-    --MsgColorFrom: rgba(216, 216, 216, 0.8);
+    --MsgColorTo:       rgba(33, 138, 255, 0.8);
+    --MsgFontColorTo:   white;
+    --MsgColorFrom:     rgba(216, 216, 216, 0.8);
     --MsgFontColorFrom: black;
 
     /*============{ Note Theming }===========*/
+
+
+}
+/*============{ GENERAL/COMMON STYLES }==============*/
+body {
+    overflow:   hidden;
+}
+h3 {
+    padding:0;
+    margin:0;
+    color: var(--TextColor);
+}
+p {    
+    padding:0;
+    margin:0;
+    color: var(--TextColor);
+}
+div {
+    border: 1px solid red;/**/
+}
+h3.HEADER {
+    text-align:center;
+    font-size: 2.50em;
+}
+h3.SUBHEADER {
+    text-align:center;
+    font-size: 2.20em;
+}
+h3.SECTION {
+    text-align:     center;
+    font-size:      2.00em;
+    padding-top:    30px;
+    padding-bottom: 20px;
+}
+p.BODY {
+    text-align: justify;
+    font-size: var(--TextSize);
+    line-height: var(--TextLineHeight);
+}
+
+div.ALL {
+    width:      100vw;
+    height:     100dvh;
+    position:   absolute;
+    left:       50vw;
+    top:        0;
+    transform:  translateX(-50vw);
+    overflow:   hidden;
+}
+
+div.FULL {
+    position:   absolute;
+    left:       50vw;
+    top:        0;
+    transform:  translateX(-50vw);
+    height:     100dvh;
+    width:      100vw;
+    overflow-y: hidden;
+}
+div.PAD {
+    height:100%;/*calc(100dvh - var(--HeaderHeight) - var(--FooterHeight));/**/
+    pointer-events: none;
+    width: calc( (100vw - var(--ContentWidth)) / 2 )
+}
+div.CONTENT {
+    height:calc(100dvh - var(--HeaderHeight) - var(--FooterHeight) - var(--BarHeight));
+    width: var(--ContentWidth);
+}
+div.FOOTER {
+    height:calc(var(--FooterHeight) - var(--BarHeight));
+}
+@media only screen and (max-width: var(--WidthThreshold)) {
+    div.PAD {
+        
+    }
+    div.CONTENT {
+
+    }
+    div.FOOTER {
+        
+    }
+}
+div.OVERLAY {
+    position:absolute;
+}
+img.Icon {
+    position:relative;
+    top:10px;
+    height:40px;
+    width: auto;
+    cursor: pointer;        
+    filter: drop-shadow(0 1000px 0 var(--TextColor));
+    transform: translateY(-1000px);
+}
+div.TEXTICON {
+    line-height: 70px;
+    padding:0;
+    margin:0;
+}
+div.TEXTICON:hover {
+    color: var(--HoverColorIcon);
+    transition: linear 0.5s;
+}
+div.chapterdata {
+    bottom: calc( var(--FooterHeight) / 2 );
+    left:50vw;
+    transform: translate(-50%,50%)
+
+}
+div.chapterdata:hover {
+    color: var(--HoverColorIcon);
+    border:2px solid var(--HoverColorIcon);
+    border-radius: 3px;
+    transition: linear 0.5s;
 }
 
 /*============{ BACKGROUND STYLES }==============*/
@@ -59,23 +159,98 @@ div.image-background {
     height:             100vh;
     mix-blend-mode:     hard-light;
 }
-div.T0-background {
-    background-image:   var(--T0_Background);
-    opacity:            var(--T0_Opacity); 
-    filter:             var(--InversionState);
+div.canvas-fore {
+    background-image:   url("");
+    opacity:            1;
+    filter:             invert(0);
 }
-div.T1-background {
-    background-image:   var(--T1_Background);
-    opacity:            var(--T1_Opacity); 
-    filter:             var(--InversionState);
+div.canvas-back {
+    background-image:   url("");
+    opacity:            1;
+    filter:             invert(0);
 }
-div.T2-background {
-    background-image:   var(--T2_Background);
-    opacity:            var(--T2_Opacity); 
-    filter:             var(--InversionState);
+
+/*============{ ANNOUNCEMENT STYLES }==============*/
+div.ANNOUNCEMENTS {
+    opacity:0;    
+    pointer-events:none;
 }
-div.T3-background {
-    background-image:   var(--T3_Background);
-    opacity:            var(--T3_Opacity); 
-    filter:             var(--InversionState);
+
+
+/*============{ READER STYLES }==============*/
+div.READER {
+    display: grid;
+    grid-template:
+        'r-leftpad r-header r-rightpad'
+        'r-leftpad  r-body  r-rightpad'
+        'r-leftpad  r-bar   r-rightpad'
+        'r-leftpad r-footer r-rightpad';
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+/*
+@media only screen and (max-width: 700px) {
+div.READER {
+    grid-template:
+        'r-header r-header r-header'
+        'r-leftpad r-body r-rightpad'
+        'r-footer r-footer r-footer';
+}
+}
+*/
+
+div.R-header {
+    height: var(--HeaderHeight);
+    background-color: var(--BackgroundColor);  
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+}
+div.R-leftpad {
+    grid-area: r-leftpad;
+}
+div.R-content {
+    grid-area: r-body;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+div.R-rightpad {
+    grid-area: r-rightpad;
+}
+div.progressbar {
+    grid-area: r-bar;
+    height: var(--BarHeight);
+}
+div.R-footer {
+    grid-area: r-footer;
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc( var(--FooterHeight) - var(--BarHeight) );
+}
+div.previousarrow {
+    font-size: calc( var(--FooterHeight));
+    width:100px;
+    text-align: center;
+    height:100%;
+}
+div.footerspacer {
+    width: calc( var(--ContentWidth) - 300px );
+    pointer-events: none;
+    height:100%;
+}
+div.nextarrow {
+    font-size: calc( var(--FooterHeight));
+    width:100px;
+    text-align: center;
+    height:100%;
+}
+
+
+/*============{ TABLE OF CONTENTS STYLES }==============*/
+div.TABLEOFCONTENTS {
+    opacity:0;
+    pointer-events:none;
 }

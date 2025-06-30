@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Oxanium:wght@200..800&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style type="text/css" id="ConfigStyles">
+  </style>
 </head>
 <body>
   <!-------------{ Initialization Script }-------------->
@@ -15,22 +17,54 @@
   <!--         | into the CSS.                        -->
   <!---------------------------------------------------->
   <script src="init.js"></script>
+  <div class="ALL">
+    <div class="FULL BACKGROUND">
+      <div class="image-background canvas-fore"></div>
+      <div class="image-background canvas-back"></div>
+    </div> 
 
-  <div class="BACKGROUND">
-    <div class="image-background T0-background"></div>
-    <div class="image-background T1-background"></div>
-    <div class="image-background T2-background"></div>
-    <div class="image-background T3-background"></div>
-  </div> 
+    <div class="FULL TABLEOFCONTENTS">
+      <div class="PAD TC-leftpad">TC-leftpad</div>
+      <div class="CONTENT TC-content">
+        TC-content
+      </div>
+      <div class="PAD TC-rightpad">TC-rightpad</div>
+      <div class="FOOTER TC-footer">TC-footer</div> 
+    </div>
 
-  <div class="MIDGROUND">
+    <div class="FULL READER">
+      <div class="R-header">
+        <div class="Icon" id="ICON-LINEDN" onclick="SetPreferences('LineHeight',1)"><img class="Icon" title="Increase Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineDn.png" alt="&#8853;" ></div>
+        <div class="Icon" id="ICON-LINEUP" onclick="SetPreferences('LineHeight',-1)"><img class="Icon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;" ></div>
+        <div class="Icon" id="ICON-FONTUP" onclick="SetPreferences('FontSize',1)"><img class="Icon" title="Increase Font Size"" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Larger.png" alt="&#8853;" ></div>
+        <div class="Icon" id="ICON-FONTDN" onclick="SetPreferences('FontSize',-1)"><img class="Icon" title="Decrease Font Size" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Smaller.png" alt="&#8854;" ></div>
+        <div class="Icon" id="ICON-THEME" onclick="STYLE.Preferences.DisplayMode=(STYLE.Preferences.DisplayMode=='Light')?'Dark':'Light';console.log('Changed color to '+STYLE.Preferences.DisplayMode+'.');InvertIcons();">
+          <span style="color: var(--TextColor);font-size: 40px;cursor:pointer;">&#9680;</span></div>
+      </div> 
+      <div class="PAD R-leftpad"></div>
+      <div class="CONTENT R-content" id="iCONTENT">
+        <div id="SCROLLBOX">
+          
+        </div>
+      </div>
+      <div class="PAD R-rightpad"></div>
+      <div class="progressbar"></div>
+      <div class="FOOTER R-footer">       
+        <div class="TEXTICON previousarrow">&laquo;</div>
+        <div class="footerspacer"></div>
+        <div class="TEXTICON nextarrow">&raquo;</div>
+      </div>
 
+    </div>
+
+    <div class="OVERLAY chapterdata">
+      CHAPTER NUMBER <br> CHAPTER NAME <br> FURTHER DATA
+    </div>
+
+    <div class="FULL ANNOUNCEMENTS">
+
+    </div>
   </div>
-
-  <div class="FOREGROUND">
-
-  </div>
- 
   
   
   <script src="script.js"></script>

@@ -19,17 +19,17 @@
         "Suffix" : " &#10048; ",
         "Header":
         {
-            "Font":"'Cormorant Unicase', serif, 'Lucida Fax', 'Times New Roman';",
+            "Font":"'Cormorant Unicase', serif, 'Lucida Fax', 'Times New Roman'",
             "Weight":500
         },
         "Section":
         {
-            "Font":"'Cormorant Unicase', serif, 'Lucida Fax', 'Times New Roman';",
+            "Font":"'Cormorant Unicase', serif, 'Lucida Fax', 'Times New Roman'",
             "Weight":500
         },
         "Body": 
         {
-            "Font":" 'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman'; ",
+            "Font":" 'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman'",
             "Weight":500
         },
         "BackgroundGradient":
@@ -57,17 +57,17 @@
         "Suffix" : " */ ",
         "Header":
         {
-            "Font":"'Oxanium', sans-serif, 'Bahnscrift','Arial';",
+            "Font":"'Oxanium', sans-serif, 'Bahnscrift','Arial'",
             "Weight":500
         },
         "Section":
         {
-            "Font":"'Oxanium', sans-serif, 'Bahnscrift','Arial';",
+            "Font":"'Oxanium', sans-serif, 'Bahnscrift','Arial'",
             "Weight":500
         },        
         "Body": 
         {
-            "Font":" 'Roboto Flex', sans-serif, 'Bahnschrift', 'Arial'; ",
+            "Font":" 'Roboto Flex', sans-serif, 'Bahnschrift', 'Arial' ",
             "Weight":300
         },
         "BackgroundGradient":
@@ -95,17 +95,17 @@
         "Suffix" : " &#128293; ",
         "Header":
         {
-            "Font":"'Cormorant Unicase', serif, 'Lucida Fax', 'Times New Roman';",
+            "Font":"'Cormorant Unicase', serif, 'Lucida Fax', 'Times New Roman'",
             "Weight":500
         },
         "Section":
         {
-            "Font":"'Cormorant Unicase', serif, 'Lucida Fax', 'Times New Roman';",
+            "Font":"'Cormorant Unicase', serif, 'Lucida Fax', 'Times New Roman'",
             "Weight":500
         },
         "Body": 
         {
-            "Font":" 'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman'; ",
+            "Font":" 'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman' ",
             "Weight":500
         },
         "BackgroundGradient":

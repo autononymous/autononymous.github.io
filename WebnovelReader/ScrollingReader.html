@@ -30,6 +30,10 @@
     --KatiyaText:'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman';
     --KatiyaSize: calc(var(--TextSize) + 0.00em );
 
+    --TitusTitle: "Cormorant Unicase", serif;
+    --TitusText:'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman';
+    --TitusSize: calc(var(--TextSize) + 0.00em );
+
     --ActiveTitle: var(--CodyTitle);
     --ActiveSub: var(--CodyText);
     --ActiveSize: var(--CodySize);
@@ -124,6 +128,20 @@
         font-family: var(--KatiyaTitle);
     }
 
+    .Titus {
+        color: var(--TextColor);
+    }
+    p.Titus {
+        font-family: var(--KatiyaText);
+        font-size: var(--KatiyaSize);
+        font-weight:500;
+        line-height: var(--TextLineHeight);
+        text-align: justify;
+    }
+    h3.Titus {
+        font-family: var(--KatiyaTitle);
+    }
+
     div.imgbg {
         position:absolute;
         top:0;
@@ -146,6 +164,21 @@
         mix-blend-mode: hard-light;
     }
     div.katbg {
+        background-image:             
+            linear-gradient(
+                to right, 
+                rgba(128,128,128,0.2) 0%,
+                rgba(128,128,128,0.9) min(calc(100vw - var(--DefaultWidth) - 100px ), calc(var(--TextMargin) / 2)), 
+                rgba(128,128,128,0.9) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
+                rgba(128,128,128,0.2) 100%
+            ),
+            url("design/bg-kat.jpg");
+        opacity: var(--KatOp);            
+        filter: var(--IconState);
+        mix-blend-mode:hard-light;
+    }
+
+    div.tiebg {
         background-image:             
             linear-gradient(
                 to right, 
@@ -812,6 +845,7 @@ p.Announcements {
 <body>
     <div class="imgbg codybg"></div>
     <div class="imgbg katbg"></div>
+    <div class="imgbg tiebg"></div>
     <div class="TOCmain" id="TOC">     
         
     </div>
@@ -824,7 +858,7 @@ p.Announcements {
             <div class="Icon" id="ICON-FONTDN" onclick="SetPreferences('FontSize',-1)"><img class="Icon" title="Decrease Font Size" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Smaller.png" alt="&#8854;" ></div>
             <div class="Icon" id="ICON-THEME" onclick="Preferences.DisplayMode=(Preferences.DisplayMode=='Light')?'Dark':'Light';console.log('Changed color to '+Preferences.DisplayMode+'.');InvertIcons();SetScrollerEvents();runScrollEvents();SaveState();">
                 <span style="color: var(--TextColor);font-size: 40px;cursor:pointer;">&#9680;</span></div>
-        </div> 
+            </div> 
         <!--  ></div> -->
         <div class="ContainerRight Gutter"></div>
         <div class="ContainerBody" id="BODY">
@@ -890,7 +924,7 @@ p.Announcements {
     // Root directory location for files
     SourceROOT  = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/"
     SourceFILE  = SourceROOT + "/docs/PG05.json";
-    SourceTOC   = SourceROOT + "/docs/PG00TOC.json";
+    //SourceTOC   = SourceROOT + "/docs/PG00TOC.json";
 
     StoryName = "Paragate"
     var isTOCshown = false;
@@ -963,6 +997,23 @@ p.Announcements {
 
     const jSTYLES = ` 
     {
+        "Titus":
+        {
+            "Light":
+            {
+                "Background":[255,220,220,1],
+                "Text": [36 ,18 ,18 ,1],
+                "ProgressBar": [36 ,18 ,18 ,1]
+            },
+            "Dark":
+            {
+                "Background":[36 ,18 ,18 ,1],
+                "Text": [255,200,200,1],
+                "ProgressBar":[255,200,200,1]
+            },
+            "Prefix":" &#10048; ",
+            "Suffix":" &#10048; "
+        },
         "Katiya":
         {
             "Light":
@@ -1296,7 +1347,7 @@ function ParseStory(data) {
         "ShortName":data.Nickname,
         "FullName":data.Project,
         "TotalWords":data.WordCount
-    };    
+    };
 
     // Iteratively load the JSON export file into something more accessible.
     
@@ -1335,12 +1386,7 @@ function ParseStory(data) {
             } else {
                 eRelease = parseFloat(ePublishOn);
             }
-            //console.log(eRelease)
             
-
-            //console.log(`Now is ${dNOW}`)
-            //console.log(eRelease);
-
             if (eRelease <= dNOW || AuthorMode) {
                 MaximumChapter++;
             }
@@ -1560,7 +1606,15 @@ function ChannelSet(CHANNEL) {
 
     let IsStartOf = false;
 
-    ThisStoryTheme = (NextElement[5]=="Cody")&&(LastElement[6]=="Cody")?"Cody":"Katiya"
+    if((NextElement[5]=="Cody")&&(LastElement[6]=="Cody")) {
+        ThisStoryTheme = "Cody";
+    } else if ((NextElement[5]=="Katiya")&&(LastElement[6]=="Katiya")) {
+        ThisStoryTheme = "Katiya";
+    } else if ((NextElement[5]=="Titus")&&(LastElement[6]=="Titus")) {
+        ThisStoryTheme = "Titus";
+    } else {
+        ThisStoryTheme = "Default";
+    }
     
     if ((LastElement[6]=="Default")&&(NextElement[6]=="Default")) {
         ThisStoryTheme = LastElement[5];
@@ -1582,8 +1636,11 @@ function ChannelSet(CHANNEL) {
             ROOT.style.setProperty("--ActiveTitle","var(--KatiyaTitle)")
             ROOT.style.setProperty("--ActiveSub"  ,"var(--KatiyaText )")
             ROOT.style.setProperty("--ActiveSize" ,"1.2em")
+        } else if (ThisStoryTheme == "Titus") {
+            ROOT.style.setProperty("--ActiveTitle","var(--TitusTitle)")
+            ROOT.style.setProperty("--ActiveSub"  ,"var(--TitusText )")
+            ROOT.style.setProperty("--ActiveSize" ,"1.2em")
         } else {
-            
 
         }
     }
