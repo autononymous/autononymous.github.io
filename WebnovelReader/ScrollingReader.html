@@ -41,7 +41,7 @@
             ), 
         linear-gradient(
             to right, 
-            rgba(255, 207, 64, 0.5),
+            rgba(255, 64, 64, 0.5),
             rgba(64,64,255,0.5)
             );
     --CoverFirebrand:
@@ -59,7 +59,7 @@
 
     --WallCody: url("design/bg-cody.jpg");
     --WallKat:  url("design/bg-kat.jpg");
-    --WallTie:  url("design/bg-tie.jpg");
+    --WallTie:  url("design/bg-tie.jpeg");
 
     --ActiveTitle: var(--CodyTitle);
     --ActiveSub: var(--CodyText);
@@ -233,10 +233,10 @@
         background-image:             
             linear-gradient(
                 to right, 
-                rgba(128,128,128,0.2) 0%,
-                rgba(128,128,128,0.9) min(calc(100vw - var(--DefaultWidth) - 100px ), calc(var(--TextMargin) / 2)), 
-                rgba(128,128,128,0.9) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
-                rgba(128,128,128,0.2) 100%
+                rgba(128,128,128,0.20) 0%,
+                rgba(128,128,128,0.90) min(calc(100vw - var(--DefaultWidth) - 100px ), calc(var(--TextMargin) / 2)), 
+                rgba(128,128,128,0.90) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
+                rgba(128,128,128,0.20) 100%
             ),
             var(--WallCody);
         opacity: var(--CodyOp); 
@@ -247,10 +247,10 @@
         background-image:             
             linear-gradient(
                 to right, 
-                rgba(128,128,128,0.2) 0%,
-                rgba(128,128,128,0.9) min(calc(100vw - var(--DefaultWidth) - 100px ), calc(var(--TextMargin) / 2)), 
-                rgba(128,128,128,0.9) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
-                rgba(128,128,128,0.2) 100%
+                rgba(128,128,128,0.20) 0%,
+                rgba(128,128,128,0.92) min(calc(100vw - var(--DefaultWidth) - 100px ), calc(var(--TextMargin) / 2)), 
+                rgba(128,128,128,0.92) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
+                rgba(128,128,128,0.20) 100%
             ),
             var(--WallKat);
         opacity: var(--KatOp);            
@@ -262,10 +262,10 @@
         background-image:             
             linear-gradient(
                 to right, 
-                rgba(128,128,128,0.50) 0%,
-                rgba(128,128,128,1.00) min(calc(100vw - var(--DefaultWidth) - 100px ), calc(var(--TextMargin) / 2)), 
-                rgba(128,128,128,1.00) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
-                rgba(128,128,128,0.50) 100%
+                rgba(128,128,128,0.20) 0%,
+                rgba(128,128,128,0.93) min(calc(100vw - var(--DefaultWidth) - 100px ), calc(var(--TextMargin) / 2)), 
+                rgba(128,128,128,0.93) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
+                rgba(128,128,128,0.20) 100%
             ),
             var(--WallTie);
         opacity: var(--TieOp);            
@@ -1013,7 +1013,7 @@ p.Announcements {
         {
             "Light":
             {
-                "Background":[255,239,227,1],
+                "Background":[240,240,240,1,1],
                 "Text": [36, 24, 18 ,1],
                 "ProgressBar": [36 ,18 ,18 ,1]
             },
@@ -1032,7 +1032,7 @@ p.Announcements {
         {
             "Light":
             {
-                "Background":[255,237,237,1],
+                "Background":[240,240,240,1],
                 "Text": [36 ,18 ,18 ,1],
                 "ProgressBar": [36 ,18 ,18 ,1]
             },
@@ -1051,7 +1051,7 @@ p.Announcements {
         {
             "Light":
             {
-                "Background":[220,220,255,1],
+                "Background":[240,240,240,1],
                 "Text": [18 ,18 ,36 ,1],
                 "ProgressBar": [18 ,18 ,36 ,1]
             },
@@ -2021,6 +2021,7 @@ function ApplyColors() {
     ROOT.style.setProperty("--TOCbackground",`rgba(${CHSET["ProgressBar"][0]},${CHSET["ProgressBar"][1]},${CHSET["ProgressBar"][2]},${0.03})`);
     ROOT.style.setProperty("--CodyOp",CODY_Opacity); /*CHSET["Background"][3]);/**/
     ROOT.style.setProperty("--KatOp",KAT_Opacity); /*1-CHSET["Background"][3]);/**/
+    ROOT.style.setProperty("--TieOp",TIE_Opacity); /*1-CHSET["Background"][3]);/**/
     //console.log(CHSET["Background"][3])
 }
 
