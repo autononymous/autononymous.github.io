@@ -41,7 +41,7 @@
             ), 
         linear-gradient(
             to right, 
-            rgba(255,64,64,0.5),
+            rgba(255, 207, 64, 0.5),
             rgba(64,64,255,0.5)
             );
     --CoverFirebrand:
@@ -51,9 +51,9 @@
             ), 
         linear-gradient(
             to right, 
-            rgba(237,140,28,0.3),
+            rgba(237, 28, 28, 0.3),
             rgba(195,144,212,0.6),
-            rgba(237,140,28,0.3)
+            rgba(237, 28, 28, 0.3)
             );
     --CoverGradient:  var(--CoverParagate);
 
@@ -115,11 +115,7 @@
         text-align: justify;
         font-family: var(--CodyText);
         font-weight:300;
-    }
-    .CodyHand {
-        font-family: "Patrick Hand SC", cursive;
-        color: rgb(0, 0, 94);
-    }
+    }    
     h3.Cody {
         font-family: var(--CodyTitle);
     }
@@ -157,10 +153,6 @@
         line-height: var(--TextLineHeight);
         text-align: justify;
     }
-    .KatiyaHand {
-        font-family: "Montez", cursive;
-        color: rgb(22, 16, 10);
-    }
     h3.Katiya {
         font-family: var(--KatiyaTitle);
     }
@@ -175,13 +167,60 @@
         line-height: var(--TextLineHeight);
         text-align: justify;
     }
-    .TitusHand {
-        font-family: "Caveat", cursive;
-        color: rgb(133, 3, 3);
-    }
+    
     h3.Titus {
         font-family: var(--KatiyaTitle);
     }
+
+
+
+    p.TitusHand {
+        background-image:
+            linear-gradient(
+                rgba(255, 210, 205, 0.8)
+            ),
+            var(--WallTie);
+    }
+    span.TitusHand {
+        font-family: "Caveat", cursive;
+        color: rgb(133, 3, 3);
+        box-shadow: 0px 0px 8px 2px var(--TextColor);
+        border: 2px solid var(--BackgroundColor);
+
+    }
+    p.CodyHand {
+        background-image:
+            linear-gradient(
+                rgba(201, 232, 255, 0.8)
+            ),
+            var(--WallCody);
+        mix-blend-mode: hard-light;
+        box-shadow: 0px 0px 8px 2px var(--TextColor);
+        border: 2px solid var(--BackgroundColor);
+    }
+    span.CodyHand {
+        font-family: "Patrick Hand SC", cursive;
+        color: rgb(0, 0, 43);
+    }
+    p.KatiyaHand {
+        background-image:
+            linear-gradient(
+                rgba(255, 242, 214, 0.8)
+            ),
+            var(--WallKat);
+        box-shadow: 0px 0px 8px 2px var(--TextColor);
+        border: 2px solid var(--BackgroundColor);
+    }
+    span.KatiyaHand {
+        font-family: "Montez", cursive;
+        color: rgb(22, 16, 10);
+    }
+
+
+
+
+
+
 
     div.imgbg {
         position:absolute;
@@ -419,17 +458,16 @@
         }
     }
 
-p.msgnote {
-    background-color: rgb(210, 210, 170);
-    mix-blend-mode: hard-light;
+p.CodyHand, p.KatiyaHand, p.TitusHand {
     margin:20px;
     padding: 10px;
     border-radius: 3px;
-    box-shadow: 0px 0px 8px 8px black;
+    text-align: left;
 }
-span.msgnote {
-    color: black;
+.CodyHand, .KatiyaHand, .TitusHand {
+    text-align: left;
 }
+
 
 p.msgfrom {
     font-family: var(--MsgFont);
@@ -1518,7 +1556,9 @@ function ParseStory(data) {
                     STORY[STORY.length-1].Body.push(passage);
                     if (passage.search("msg") != -1) {
                         let msgtype = 
-                            (passage.search("msgnote") != -1) ? "msgnote" :
+                            (passage.search("CodyHand") != -1) ? "CodyHand" :
+                            (passage.search("KatiyaHand") != -1) ? "KatiyaHand" :
+                            (passage.search("TitusHand") != -1) ? "TitusHand" :
                             (passage.search("msgfromdate") != -1) ? "msgfrom" :
                             (passage.search("msgfrom") != -1) ? "msgfrom" :
                             (passage.search("msgtodate") != -1) ? "msgto" :
