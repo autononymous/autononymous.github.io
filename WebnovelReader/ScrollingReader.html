@@ -6,7 +6,7 @@
     <title>PARAGATE Reader</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Oxanium:wght@200..800&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caveat:wght@400..700&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Montez&family=Oxanium:wght@200..800&family=Patrick+Hand+SC&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 
 </head>
 
@@ -116,6 +116,10 @@
         font-family: var(--CodyText);
         font-weight:300;
     }
+    .CodyHand {
+        font-family: "Patrick Hand SC", cursive;
+        color: rgb(0, 0, 94);
+    }
     h3.Cody {
         font-family: var(--CodyTitle);
     }
@@ -153,6 +157,10 @@
         line-height: var(--TextLineHeight);
         text-align: justify;
     }
+    .KatiyaHand {
+        font-family: "Montez", cursive;
+        color: rgb(22, 16, 10);
+    }
     h3.Katiya {
         font-family: var(--KatiyaTitle);
     }
@@ -166,6 +174,10 @@
         font-weight:500;
         line-height: var(--TextLineHeight);
         text-align: justify;
+    }
+    .TitusHand {
+        font-family: "Caveat", cursive;
+        color: rgb(133, 3, 3);
     }
     h3.Titus {
         font-family: var(--KatiyaTitle);
@@ -406,6 +418,18 @@
             width:100%;
         }
     }
+
+p.msgnote {
+    background-color: rgb(210, 210, 170);
+    mix-blend-mode: hard-light;
+    margin:20px;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px 8px black;
+}
+span.msgnote {
+    color: black;
+}
 
 p.msgfrom {
     font-family: var(--MsgFont);
@@ -1115,11 +1139,9 @@ p.Announcements {
     var isTOCshown = false;
     let FILEname = "";
 
-    console.log
-
     switch (StoryMode) {
     case "1"||"Firebrand":
-        FILEname = "/docs/FB03.json";
+        FILEname = "/docs/FB04.json";
         StoryName = "Firebrand";
         eBOOKCOVER.src = STYLES.Titus.CoverImage;
         ROOT.style.setProperty('--CoverGradient','var(--CoverFirebrand)')
@@ -1496,13 +1518,21 @@ function ParseStory(data) {
                     STORY[STORY.length-1].Body.push(passage);
                     if (passage.search("msg") != -1) {
                         let msgtype = 
+                            (passage.search("msgnote") != -1) ? "msgnote" :
                             (passage.search("msgfromdate") != -1) ? "msgfrom" :
                             (passage.search("msgfrom") != -1) ? "msgfrom" :
                             (passage.search("msgtodate") != -1) ? "msgto" :
                             (passage.search("msgto") != -1) ? "msgto" : "";
+
+                        let writershand = "";
+                        if (msgtype == "msgnote") {
+                            writershand = `${ePerspective}Hand`;
+                            passage = passage.replaceAll("msgnote",`${writershand} msgnote`)
+                        }
+                        
                         if ((WritingMessage == false) || (WritingMessage == true && (passage.search("msgfromdate") != -1 || passage.search("msgtodate") != -1))) {
                             STORY[STORY.length-1].BodyFormatted.push(
-                                `<p id="${entry.ChapterFull}.${entry.SceneFull}.${LineIndex++}" class="${ePerspective} ${msgtype}">`
+                                `<p id="${entry.ChapterFull}.${entry.SceneFull}.${LineIndex++}" class="${ePerspective} ${msgtype} ${writershand}">`
                                 + passage
                             );                   
                             WritingMessage = true;
