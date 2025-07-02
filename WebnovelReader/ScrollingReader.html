@@ -59,7 +59,7 @@
 
     --WallCody: url("design/bg-cody.jpg");
     --WallKat:  url("design/bg-kat.jpg");
-    --WallTie:  url("design/bg-tie.jpeg");
+    --WallTie:  url("design/bg-tie.jpg");
 
     --ActiveTitle: var(--CodyTitle);
     --ActiveSub: var(--CodyText);
@@ -1025,7 +1025,7 @@ p.Announcements {
             },
             "Prefix":" = ",
             "Suffix":" = ",
-            "CoverImage":"https://autononymous.io/wp-content/uploads/2025/04/firebrand__the_frostburn_chronicles_by_savant_guarde_djk23bf-414w-2x.png",
+            "CoverImage":"design/cover-FBC.jpg",
             "WallImage":""
         },
         "Katiya":
@@ -1044,7 +1044,7 @@ p.Announcements {
             },
             "Prefix":" &#10048; ",
             "Suffix":" &#10048; ",
-            "CoverImage":"https://autononymous.io/wp-content/uploads/2025/03/Untitled-185.png",
+            "CoverImage":"design/cover-PG.jpg",
             "WallImage":""
         },
         "Cody":
@@ -1063,7 +1063,7 @@ p.Announcements {
             },
             "Prefix":" /* ",
             "Suffix":" */ ",
-            "CoverImage":"https://autononymous.io/wp-content/uploads/2025/03/Untitled-185.png",
+            "CoverImage":"design/cover-PG.jpg",
             "WallImage":""
         },
         "Default":
@@ -1323,19 +1323,19 @@ function yeardate(date) {
 //      OUT: | > 
 //
 function clearLocalStorage() {
-    localStorage.removeItem('AC_SAVE');
-    localStorage.removeItem('AC_SETTINGS');
-    localStorage.removeItem('AC_PREFS');
+    localStorage.removeItem(`AC_SAVE_${StoryMode}`);
+    localStorage.removeItem(`AC_SETTINGS_${StoryMode}`);
+    localStorage.removeItem(`AC_PREFS_${StoryMode}`);
 }
 
 function SaveState() {    
-    localStorage.setItem('AC_SETTINGS',JSON.stringify(Settings))
-    localStorage.setItem('AC_PREFS',JSON.stringify(Preferences));
+    localStorage.setItem(`AC_SETTINGS_${StoryMode}`,JSON.stringify(Settings))
+    localStorage.setItem(`AC_PREFS_${StoryMode}`,JSON.stringify(Preferences));
     console.debug(' > User preferences saved to internal storage.')
 }
 function LoadPreferences() {
-    let saveprefs = localStorage.getItem('AC_PREFS');
-    let savesettings = localStorage.getItem('AC_SETTINGS');
+    let saveprefs = localStorage.getItem(`AC_PREFS_${StoryMode}`);
+    let savesettings = localStorage.getItem(`AC_SETTINGS_${StoryMode}`);
     if (saveprefs && savesettings) {
         try {
             Preferences = JSON.parse(saveprefs);
@@ -1412,7 +1412,7 @@ function SetPreferences(property,increment) {
 //
 async function fetchJSON() {
     // Check if we already have this saved locally first.
-    let SavedContent = localStorage.getItem('AC_SAVE');
+    let SavedContent = localStorage.getItem(`AC_SAVE_${StoryMode}`);
     if(SavedContent) {
         try {
             let jSavedContent = JSON.parse(SavedContent.replaceAll(/(\r\n|\n|\r)/gm, ''));
@@ -1435,7 +1435,7 @@ async function fetchJSON() {
         let jDATA = JSON.parse(data.replaceAll(/(\r\n|\n|\r)/gm, ''));
         //console.log(jDATA);
         let result = ParseStory(jDATA);
-        localStorage.setItem('AC_SAVE',JSON.stringify(jDATA))
+        localStorage.setItem(`AC_SAVE_${StoryMode}`,JSON.stringify(jDATA))
         debugLog("> Story successfully loaded.\n",true);
         return result;
     } catch (error) {
