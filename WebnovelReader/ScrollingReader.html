@@ -570,9 +570,9 @@ div.PermBox > h3 {
 }
 div.PermBox > p {
     font-family: var(--ActiveSub);
-    font-size: 1rem;
 }
-div.TextComment {
+div.TextComment {    
+    font-size: min(4vw,1rem);
     border: 2px solid darkgray;
     border-radius: 20px;
     background-color:rgba(232, 223, 166, 0.2);
@@ -581,7 +581,7 @@ div.TextComment {
     font-family: 'Lucida Console', monospace;
     color: var(--TextColor);
     opacity: 0.8;
-    text-align: justify;
+    text-align: left;
     
 }
 div.TextComment > p {    
@@ -1240,7 +1240,8 @@ p.Announcements {
         break;
     }
 
-    var StoryMode = SrcParams.get('story');
+    var StoryMode = SrcParams.get('story');    
+
     console.info(StoryMode)
 
 // ==========================<{Constant Variables}>============================ //
@@ -1268,6 +1269,11 @@ p.Announcements {
         break;
     }
 
+    if (SrcParams.get('reset')=="DoReset") {
+        clearLocalStorage();
+        console.warn(`Notice: Local storage was reset for ${StoryName}.`)
+    }
+
     SourceFILE  = SourceROOT + FILEname;
 
     // ************** DEBUG local pull option ************
@@ -1275,15 +1281,9 @@ p.Announcements {
   
     
 
-    console.log(SrcParams)
+    //console.log(SrcParams)
 
     //var parsecovers = setInterval(ChangeCover,10000);
-
-    if(PermLevel >= 2) {
-        console.info("> Running in Author Mode: or Cheater Mode for very perceptive code monkeys that want to preview unfinished releases before they are available.")
-    } else {
-        console.info("> No parameters present.")
-    }
 
     // Date Key for determining the most recent file (****UPDATE!****)
     DATEKEY = "Tuesday, May 13, 2025";
@@ -1307,7 +1307,7 @@ p.Announcements {
     const tNOW = new Date();
     const dNOW = yeardate(tNOW);
 
-    console.debug(`Start date is ${dSTART}.\nToday is ${dNOW}, ${dNOW-dSTART} days later.`)
+    console.info(`Start date is ${dSTART}.\nToday is ${dNOW}, ${dNOW-dSTART} days later.`)
 
     const sTrans2       = 5; //--------------------------------------------------------------
 
@@ -1426,7 +1426,7 @@ function clearLocalStorage() {
 function SaveState() {    
     localStorage.setItem(`AC_SETTINGS_${StoryMode}`,JSON.stringify(Settings))
     localStorage.setItem(`AC_PREFS_${StoryMode}`,JSON.stringify(Preferences));
-    console.debug(' > User preferences saved to internal storage.')
+    console.debug('> User preferences saved to internal storage.')
 }
 function LoadPreferences() {
     let saveprefs = localStorage.getItem(`AC_PREFS_${StoryMode}`);
@@ -1445,9 +1445,9 @@ function LoadPreferences() {
             let newstate = (Preferences.DisplayMode=="Dark")?0:1;
             ROOT.style.setProperty("--IconState",`invert(${newstate})`)
    
-            console.debug(" > User preferences successfully loaded from Local Storage.")
+            console.debug("> User preferences successfully loaded from Local Storage.")
         } catch (error) {
-            console.debug(" > Unable to load user preferences from saved. \n << ERRORTEXT: " + error + " >>")
+            console.debug("> Unable to load user preferences from saved. \n << ERRORTEXT: " + error + " >>")
             // Reset to default.
             Preferences = PreferencesDefault;
             Settings = SettingsDefault;
@@ -1455,8 +1455,8 @@ function LoadPreferences() {
 
         }
     } else {
-        console.debug(" > Preferences have not been set yet.")
-    }
+        console.debug("> Preferences have not been set yet.")
+    }    
 }
 
 
@@ -1590,7 +1590,7 @@ function ParseStory(data) {
             let eRevisionNotes = (entry.RevisionNotes!=true)?((RevisionNotesList[StoryName][eID]==undefined)?undefined:RevisionNotesList[StoryName][eID]):entry.RevisionNotes;
             let ePublishOn = entry.PublishOn;
 
-            console.warn(`For ${eID}:`,RevisionNotesList[StoryName][eID])
+            //console.warn(`For ${eID}:`,RevisionNotesList[StoryName][eID])
 
             ePerspective = ((entry.Perspective=="Mixed")||(entry.Perspective==""))?"Default":entry.Perspective;
             //console.error(entry.VerboseOverride)
@@ -2075,7 +2075,13 @@ async function setup() {
     LoadAnnouncements();
 
     // Set current chapter.
-    CurrentChapter = STORY[Preferences.StartChapter];
+    if ( !isNaN(parseFloat(SrcParams.get('startchapter'))) ) {
+        CurrentChapter = STORY[parseFloat(SrcParams.get('startchapter'))];
+        console.warn(`> Notice: Story "${StoryName}" set from search variables to Chapter ${CurrentChapter}.`)
+    } else {
+        CurrentChapter = STORY[Preferences.StartChapter];
+    }
+    
     PlaceChapter(CurrentChapter);
 
     //console.error(Preferences.DisplayMode)
