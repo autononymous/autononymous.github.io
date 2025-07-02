@@ -548,9 +548,50 @@ span.msgto {
     line-height: 1.25;
 }
 
-
-
-
+div.PermBox {
+    border: 2px solid black;
+    box-shadow: 0px 0px 4px 2px yellow;
+    border-radius: 5px;
+    background-color: rgba(255, 249, 197,0.9);
+    position:absolute;
+    left:50%;
+    top:calc(25dvh + 10px);/*calc(33dvh + 50px);/**/
+    transform:translate(-50%,-50%);
+    width: min(600px,80vw);
+    max-height:150px;
+    padding: 0px 20px 10px 20px;
+    text-align: center;
+}
+div.PermBox > h3 {
+    font-family: var(--ActiveTitle);
+    font-size: min(7vw,2.5rem);
+    line-height:0;
+    text-decoration:underline;
+}
+div.PermBox > p {
+    font-family: var(--ActiveSub);
+    font-size: 1rem;
+}
+div.TextComment {
+    border: 2px solid darkgray;
+    border-radius: 20px;
+    background-color:rgba(232, 223, 166, 0.2);
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Lucida Console', monospace;
+    color: var(--TextColor);
+    opacity: 0.8;
+    text-align: justify;
+    
+}
+div.TextComment > p {    
+    border-left: 5px double whitesmoke;
+    padding-left: 15px;
+}
+div.TextComment > h3 {
+    text-align: center;
+    width:100%;
+}
 
 div.TOC {
     width:100%;
@@ -964,7 +1005,7 @@ p.Announcements {
                     </div>
                     -->
                 </div>
-                <div onclick="if((CurrentChapter.ChapterNumber < MaximumChapter)||(AuthorMode)){CurrentChapter=CurrentChapter.Next;PlaceChapter(CurrentChapter);SaveState();}else{console.warn('Outside range.')}" class="Footer-Right"><div class="Centered">&raquo;</div></div>
+                <div onclick="if((CurrentChapter.ChapterNumber < MaximumChapter)||(PermLevel >= 2)){CurrentChapter=CurrentChapter.Next;PlaceChapter(CurrentChapter);SaveState();}else{console.warn('Outside range.')}" class="Footer-Right"><div class="Centered">&raquo;</div></div>
             </div>
         </div>
     </div>
@@ -1145,6 +1186,19 @@ p.Announcements {
             "07/02/25 // Viewer & Story Beta":`&emsp;If you're reading this right now, it's for only one of two reasons: either you're one of my trusted friends or family that I've decided to share this with, or you've randomly discovered this and you're early to the show. But either way, I want to thank you for being here and supporting my work. <br><br>&emsp;FIREBRAND is the first novel I've ever written. I wrote the bulk of this during a rough time of my life, when I was going to college in a different state: starting entirely from zero and not knowing anyone; allowing loneliness and unmedicated depression to lead me into a long spiral. <br><br>&emsp;But I came out the other side and I survived, making it through the long quarters of my engineering program. The concept of a continuous fight without an end in sight provided the fuel for the thesis of this story: <em>'If you had an unlimited number of attempts to rewrite the past, would it break you, or would you find peace'?</em> It also inspired the main character <strong>Titus</strong>: a suffer-it-alone kind of guy that was a lot like me before I learned my lesson, figuring out how to sincerely open up to people. <br><br>&emsp;This is an early release of the story, but the full story is entirely written: just being progressively edited. But, rest assured, if it's posted here, it's in polished enough a form that I'm confident to post it.<br><br>&emsp;If you enjoy this work, please let me know on social media and feel free to share it with others. I'm still figuring out this self-publishing thing (and trying to spend more of my time writing than improving this Javascript applet).<br><br>Thanks again for your support.<br><br>With love,<br>&emsp;<span style="font-family:'Brush Script MT', cursive;font-size:1.5em;">Savant-Guarde :)</span>`
         }
     }
+    const RevisionNotesList = {
+        "Paragate":
+        {
+            "0.1":"I'm still working on formatting this prologue. Might remove it altogether.",
+            "1.2":"Chapters 'Robot Boy' through 'Surprise Approach' are in the final stage of self-revision. Everything past this is still in a generative revision.",
+            "1.11":"This chapter marks the end of chapters with extensive self-revision. The rest is in a generative state."
+        },
+        "Firebrand":
+        {
+            "0.1":"Unlike the rest of the first act, this prologue is new and still needs some work. The original draft started from Chapter Two.",
+            "1.2":"The rest of this act is pretty well-revised and picked over."
+        }
+    }
     
     // Get parameters from search
 
@@ -1171,7 +1225,21 @@ p.Announcements {
     // Gets all the getParameters
     const SrcParams = getParameters();
 
-    var AuthorMode = SrcParams.get('mode')=="author"?true:false;
+    var PermLevel = 1;
+
+    switch (SrcParams.get('mode')) {
+    case "author":
+    case "3":
+        PermLevel = 3;
+        break;
+    case "editor":
+    case "2":
+        PermLevel = 2;
+        break;
+    default:
+        break;
+    }
+
     var StoryMode = SrcParams.get('story');
     console.info(StoryMode)
 
@@ -1211,7 +1279,7 @@ p.Announcements {
 
     //var parsecovers = setInterval(ChangeCover,10000);
 
-    if(AuthorMode) {
+    if(PermLevel >= 2) {
         console.info("> Running in Author Mode: or Cheater Mode for very perceptive code monkeys that want to preview unfinished releases before they are available.")
     } else {
         console.info("> No parameters present.")
@@ -1280,6 +1348,26 @@ function DismissAnnouncements() {
     //this.outerHTML = "";
     eSTARTBOX.style.animation = '1.0s ease-in-out 0.5s forwards fadeout';
     eSTARTBOX.style.pointerEvents = "none";
+}
+function SetViewerMode() {
+    let p_str = "";
+    switch (PermLevel) {
+    case 3:
+        p_str = `
+        <div class="PermBox">
+            <h3> Author Mode </h3>
+            <p> Or Cheater Mode, for very perceptive code monkeys that want to preview unfinished releases before they are available. </p>
+        </div>`;
+        break;
+    case 2:
+        p_str = `
+        <div class="PermBox">
+            <h3> Editor/Reviewer Mode </h3>
+            <p> You have been given special access to all chapters of the manuscript. Some chapters contain my commentary on the chapter and my vision for the story. </p>
+        </div>`;
+        break;
+    }
+    eSTARTBOX.innerHTML += p_str; 
 }
 /*
 function ChangeCover() {
@@ -1499,9 +1587,10 @@ function ParseStory(data) {
             let eNextPub = parseFloat(entry.NextPublish);
             let eSynopsis = entry.Synopsis;
             let eID = (entry.VerboseOverride==undefined)?(entry.ActNum-1+"."+entry.ChapterFull):entry.VerboseOverride;
+            let eRevisionNotes = (entry.RevisionNotes!=true)?((RevisionNotesList[StoryName][eID]==undefined)?undefined:RevisionNotesList[StoryName][eID]):entry.RevisionNotes;
             let ePublishOn = entry.PublishOn;
 
-            //console.warn(entry.PublishOn=="")
+            console.warn(`For ${eID}:`,RevisionNotesList[StoryName][eID])
 
             ePerspective = ((entry.Perspective=="Mixed")||(entry.Perspective==""))?"Default":entry.Perspective;
             //console.error(entry.VerboseOverride)
@@ -1514,7 +1603,7 @@ function ParseStory(data) {
                 eRelease = parseFloat(ePublishOn);
             }
             
-            if (eRelease <= dNOW || AuthorMode) {
+            if (eRelease <= dNOW || PermLevel >= 2) {
                 MaximumChapter++;
             }
 
@@ -1525,6 +1614,7 @@ function ParseStory(data) {
                 "Act":eActNumber,
                 "ChapterNumber": eChapterNumber,
                 "Synopsis":eSynopsis,
+                "RevNotes":eRevisionNotes,
                 "ID":eID,
                 "Body":[],
                 "BodyFormatted":[],
@@ -1536,7 +1626,11 @@ function ParseStory(data) {
             });
             STORY[STORY.length-1].BodyFormatted.push(`<h3 id="title_${entry.ChapterFull}" class="${ePerspective} Title">${eTitle}</h3>`);
             STORY[STORY.length-1].BodyFormatted.push(`<h3 id="sub_${entry.ChapterFull}" class="${ePerspective} Subtitle">${prefix + eSubtitle + suffix}</h3>`);
-    
+            // If in developer mode, add commentary.
+            if (PermLevel > 1 && eRevisionNotes != undefined) {
+                STORY[STORY.length-1].BodyFormatted.push(`<div class="Default TextComment"><h3>Notes To The Editor:</h3><p>${eRevisionNotes}</p>`);
+            }
+
             // Set 'next' and 'previous' chapters as circular objexts
             if (c==0) {
                 STORY[STORY.length-1].Previous = STORY[STORY.length-1];
@@ -1948,7 +2042,7 @@ function PlaceChapter(CHAPTER) {
     // NOTE: Chapter number is (1) ahead of indexing. 
     ePAGE.innerHTML = "";
     //console.log(CHAPTER.Active)
-    if( CHAPTER.Active || AuthorMode) {
+    if( CHAPTER.Active || PermLevel >= 2) {
         CHAPTER.BodyFormatted.forEach( Line => {
             ePAGE.innerHTML += Line;
         }) 
@@ -1993,6 +2087,8 @@ async function setup() {
     SetMessageState();
 
     BuildTOC();
+
+    SetViewerMode();
     
 }
 
