@@ -1,46 +1,6 @@
 
-// ==========================<{Defining Elements}>============================ //
-   
+
     
-    // Get parameters from search
-
-    getParameters = () => {
-
-        // Address of the current window
-        address = window.location.search
-
-        // Returns a URLSearchParams object instance
-        parameterList = new URLSearchParams(address)
-
-        // Created a map which holds key value pairs
-        let map = new Map()
-
-        // Storing every key value pair in the map
-        parameterList.forEach((value, key) => {
-            map.set(key, value)
-        })
-
-        // Returning the map of GET parameters
-        return map
-    }
-        
-    // Gets all the getParameters
-    const SrcParams = getParameters();
-
-    var PermLevel = 1;
-
-    switch (SrcParams.get('mode')) {
-    case "author":
-    case "3":
-        PermLevel = 3;
-        break;
-    case "editor":
-    case "2":
-        PermLevel = 2;
-        break;
-    default:
-        break;
-    }
 
     var StoryMode = SrcParams.get('story');    
 
@@ -142,7 +102,7 @@
 function LoadAnnouncements() {
     eSTARTBOX.style.opacity="1";
     eANNOUNCE.innerHTML = `<div><h3 class="Announcements"> Announcements </h3></div>`;
-    Object.entries(NewAnnouncements[StoryName]).reverse().forEach( ([timestamp,content]) => {
+    Object.entries(ANNOUNCE[StoryName]).reverse().forEach( ([timestamp,content]) => {
         eANNOUNCE.innerHTML += `<div> <p><strong><u>${timestamp}: </u></strong></p><p class="Announcements"> ${content}</p></div>`;
     })
 }
@@ -153,7 +113,7 @@ function DismissAnnouncements() {
 }
 function SetViewerMode() {
     let p_str = "";
-    switch (PermLevel) {
+    switch (PermissionLevel) {
     case 3:
         p_str = `
         <div class="PermBox">
@@ -226,49 +186,49 @@ function clearLocalStorage() {
 }
 
 function SaveState() {    
-    localStorage.setItem(`AC_SETTINGS_${StoryMode}`,JSON.stringify(Settings))
-    localStorage.setItem(`AC_PREFS_${StoryMode}`,JSON.stringify(Preferences));
-    console.debug('> User preferences saved to internal storage.')
+    localStorage.setItem(`AC_SETTINGS_${StoryMode}`,JSON.stringify(SETTINGS))
+    localStorage.setItem(`AC_PREFS_${StoryMode}`,JSON.stringify(PREFS));
+    console.debug('> User PREFS saved to internal storage.')
 }
 function LoadPreferences() {
     let saveprefs = localStorage.getItem(`AC_PREFS_${StoryMode}`);
     let savesettings = localStorage.getItem(`AC_SETTINGS_${StoryMode}`);
     if (saveprefs && savesettings) {
         try {
-            Preferences = JSON.parse(saveprefs);
-            Settings = JSON.parse(savesettings);
+            PREFS = JSON.parse(saveprefs);
+            SETTINGS = JSON.parse(savesettings);
 
-            Object.values(Settings).forEach( setting  => {                
+            Object.values(SETTINGS).forEach( setting  => {                
                 ROOT.style.setProperty(setting.CSSname,setting.Options[setting.Setting]);
             });      
 
-            CurrentChapter = STORY[Preferences.StartChapter];
+            CurrentChapter = STORY[PREFS.StartChapter];
 
-            let newstate = (Preferences.DisplayMode=="Dark")?0:1;
+            let newstate = (PREFS.DisplayMode=="Dark")?0:1;
             ROOT.style.setProperty("--IconState",`invert(${newstate})`)
    
-            console.debug("> User preferences successfully loaded from Local Storage.")
+            console.debug("> User PREFS successfully loaded from Local Storage.")
         } catch (error) {
-            console.debug("> Unable to load user preferences from saved. \n << ERRORTEXT: " + error + " >>")
+            console.debug("> Unable to load user PREFS from saved. \n << ERRORTEXT: " + error + " >>")
             // Reset to default.
-            Preferences = PreferencesDefault;
-            Settings = SettingsDefault;
+            PREFS = PreferencesDefault;
+            SETTINGS = SettingsDefault;
 
 
         }
     } else {
-        console.debug("> Preferences have not been set yet.")
+        console.debug("> PREFS have not been set yet.")
     }    
 }
 
 
 function InvertIcons() {
-    let newstate = (Preferences.DisplayMode=="Dark")?0:1;
+    let newstate = (PREFS.DisplayMode=="Dark")?0:1;
     ROOT.style.setProperty("--IconState",`invert(${newstate})`)
     SetMessageState();
 }
 function SetMessageState() {
-    let newstate = (Preferences.DisplayMode=="Dark")?0:1;
+    let newstate = (PREFS.DisplayMode=="Dark")?0:1;
     ROOT.style.setProperty("--MsgColorTo",(newstate==0?"rgba(33, 138, 255, 0.8)":"rgba(33, 138, 255, 0.8)"));
     ROOT.style.setProperty("--MsgFontColorTo",(newstate==0?"white":"white"));
     ROOT.style.setProperty("--MsgColorFrom",(newstate==0?"rgba(129, 129, 129, 0.8)":"rgba(235, 235, 235, 0.8)"));//"rgba(216, 216, 216, 0.8)"));
@@ -276,16 +236,16 @@ function SetMessageState() {
 }
 
 function SetPreferences(property,increment) {
-    let Params = Settings[property];
+    let Params = SETTINGS[property];
     let range = [ 0 , Params.Options.length ];
     let current = Params.Setting;
     let queried = current + increment;
 
     if (queried >= range[0] && queried < range[1]) {
         Params.Setting = queried;
-        Preferences[property] = Params.Options[queried];
-        ROOT.style.setProperty(Params.CSSname,Preferences[property])
-        console.info(` > Parameter '${property}' is now set to ${Preferences[property]}.`)
+        PREFS[property] = Params.Options[queried];
+        ROOT.style.setProperty(Params.CSSname,PREFS[property])
+        console.info(` > Parameter '${property}' is now set to ${PREFS[property]}.`)
 
         SaveState();
 
@@ -389,10 +349,10 @@ function ParseStory(data) {
             let eNextPub = parseFloat(entry.NextPublish);
             let eSynopsis = entry.Synopsis;
             let eID = (entry.VerboseOverride==undefined)?(entry.ActNum-1+"."+entry.ChapterFull):entry.VerboseOverride;
-            let eRevisionNotes = (entry.RevisionNotes!=true)?((RevisionNotesList[StoryName][eID]==undefined)?undefined:RevisionNotesList[StoryName][eID]):entry.RevisionNotes;
+            let eRevisionNotes = (entry.RevisionNotes!=true)?((REVNOTES[StoryName][eID]==undefined)?undefined:REVNOTES[StoryName][eID]):entry.RevisionNotes;
             let ePublishOn = entry.PublishOn;
 
-            //console.warn(`For ${eID}:`,RevisionNotesList[StoryName][eID])
+            //console.warn(`For ${eID}:`,REVNOTES[StoryName][eID])
 
             ePerspective = ((entry.Perspective=="Mixed")||(entry.Perspective==""))?"Default":entry.Perspective;
             //console.error(entry.VerboseOverride)
@@ -405,7 +365,7 @@ function ParseStory(data) {
                 eRelease = parseFloat(ePublishOn);
             }
             
-            if (eRelease <= dNOW || PermLevel >= 2) {
+            if (eRelease <= dNOW || PermissionLevel >= 2) {
                 MaximumChapter++;
             }
 
@@ -429,7 +389,7 @@ function ParseStory(data) {
             STORY[STORY.length-1].BodyFormatted.push(`<h3 id="title_${entry.ChapterFull}" class="${ePerspective} Title">${eTitle}</h3>`);
             STORY[STORY.length-1].BodyFormatted.push(`<h3 id="sub_${entry.ChapterFull}" class="${ePerspective} Subtitle">${prefix + eSubtitle + suffix}</h3>`);
             // If in developer mode, add commentary.
-            if (PermLevel > 1 && eRevisionNotes != undefined) {
+            if (PermissionLevel > 1 && eRevisionNotes != undefined) {
                 STORY[STORY.length-1].BodyFormatted.push(`<div class="Default TextComment"><h3>Notes To The Editor:</h3><p>${eRevisionNotes}</p>`);
             }
 
@@ -539,11 +499,11 @@ function SetScrollerEvents() {
 
     // Start on neutral theme.
     let Progress = 0;
-    let Style = STYLES["Default"][Preferences.DisplayMode]
+    let Style = STYLES["Default"][PREFS.DisplayMode]
     MODES.forEach( mode  => {
         Keyframes[mode].push([Progress,Style[mode][0],Style[mode][1],Style[mode][2],Style[mode][3], LastStyle+"", ThisStyle+""]);
-        let last = STYLES[LastStyle][Preferences.DisplayMode][mode]
-        let next = STYLES[ThisStyle][Preferences.DisplayMode][mode]
+        let last = STYLES[LastStyle][PREFS.DisplayMode][mode]
+        let next = STYLES[ThisStyle][PREFS.DisplayMode][mode]
         Previous = [last[0],last[1],last[2],last[3]];
         Next = [next[0],next[1],next[2],next[3]];
         Event_Switch(Keyframes[mode],Progress,Previous,Next,4.00,0.00,2.00, LastStyle+"", ThisStyle+"");
@@ -561,10 +521,10 @@ function SetScrollerEvents() {
             //console.log("Style change.",LastStyle,ThisStyle)
             IsFirstElement = false;
             let Progress = ScrollPosition(element);
-            let Style = STYLES[ThisStyle][Preferences.DisplayMode];
+            let Style = STYLES[ThisStyle][PREFS.DisplayMode];
             MODES.forEach( mode  => {
-                let last = STYLES[LastStyle][Preferences.DisplayMode][mode]
-                let next = STYLES[ThisStyle][Preferences.DisplayMode][mode]
+                let last = STYLES[LastStyle][PREFS.DisplayMode][mode]
+                let next = STYLES[ThisStyle][PREFS.DisplayMode][mode]
                 Previous = [last[0],last[1],last[2],last[3]];
                 Next = [next[0],next[1],next[2],next[3]];
                 Event_Switch(Keyframes[mode],Progress,Previous,Next,sTrans2,sHold,-0.5, LastStyle+"", ThisStyle+"");
@@ -576,11 +536,11 @@ function SetScrollerEvents() {
 
     // End on neutral theme.
     Progress = 100;
-    Style = STYLES["Default"][Preferences.DisplayMode]
+    Style = STYLES["Default"][PREFS.DisplayMode]
     ThisStyle = "Default";
     MODES.forEach( mode  => {
-        let last = STYLES[LastStyle][Preferences.DisplayMode][mode]
-        let next = STYLES[ThisStyle][Preferences.DisplayMode][mode]
+        let last = STYLES[LastStyle][PREFS.DisplayMode][mode]
+        let next = STYLES[ThisStyle][PREFS.DisplayMode][mode]
         Previous = [last[0],last[1],last[2],last[3]];
         Next = [next[0],next[1],next[2],next[3]];
         Event_Switch(Keyframes[mode],Progress,Previous,Next,2.00,0.00,-2.00, LastStyle+"", ThisStyle+"");
@@ -844,13 +804,13 @@ function PlaceChapter(CHAPTER) {
     // NOTE: Chapter number is (1) ahead of indexing. 
     ePAGE.innerHTML = "";
     //console.log(CHAPTER.Active)
-    if( CHAPTER.Active || PermLevel >= 2) {
+    if( CHAPTER.Active || PermissionLevel >= 2) {
         CHAPTER.BodyFormatted.forEach( Line => {
             ePAGE.innerHTML += Line;
         }) 
         //ePAGE.innerHTML += `<div class="EndSpacer"></div>`;
         eWINDOW.scrollTop = 0;
-        Preferences.StartChapter = CurrentChapter.ChapterNumber-1;
+        PREFS.StartChapter = CurrentChapter.ChapterNumber-1;
         SetScrollerEvents();    
         SetInfo();        
     } else {
@@ -878,12 +838,12 @@ async function setup() {
         CurrentChapter = STORY[parseFloat(SrcParams.get('startchapter'))];
         console.warn(`> Notice: Story "${StoryName}" set from search variables to Chapter ${CurrentChapter}.`)
     } else {
-        CurrentChapter = STORY[Preferences.StartChapter];
+        CurrentChapter = STORY[PREFS.StartChapter];
     }
     
     PlaceChapter(CurrentChapter);
 
-    //console.error(Preferences.DisplayMode)
+    //console.error(PREFS.DisplayMode)
 
     runScrollEvents();
 

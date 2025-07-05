@@ -1,3 +1,23 @@
+var DebugItems = [];
+var fname = "initialize.js";
+var ActiveStory = "";
+
+
+
+function DConsole(title,body,flush=false) {
+    DebugItems.push(body);
+    let DebugStr = "";
+    if(flush == true) {
+        DebugStr += `From ${title}:\n`;        
+        DebugItems.forEach ( message => {
+            DebugStr +=  `> ${message}\n`
+        })
+        console.debug(DebugStr);
+        DebugItems = [];
+    }
+    
+}
+
 function yeardate(date) {
     const month = date.getMonth();
     var result = date.getDate();
@@ -27,11 +47,12 @@ function ParseJSON(source) {
     return JSON.parse(source.replaceAll(/(\r\n|\n|\r)/gm, ''));
 }
 
-const StyleSource   = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/FullReader/config.json";
+const StyleSource   = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/ScrivReader/";
 const StorySource   = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/docs/PG05.json";
 
+
 var MODES = ['Background','Text','ProgressBar'];
-    var jSTYLES = `{ 
+    var jSTYLES = { 
         "Default":
         {
             "Light":
@@ -50,8 +71,7 @@ var MODES = ['Background','Text','ProgressBar'];
             "Suffix":" ~ ",
             "CoverImage":"",
             "WallImage":""
-        }}`;
-    var STYLES = ParseJSON(jSTYLES);
+        }};
 
     var PreferencesDefault = {
         "StartChapter":1,
@@ -60,7 +80,7 @@ var MODES = ['Background','Text','ProgressBar'];
         "LineHeight":"1.5em",
         "Margins": "5vw"
     }
-    var Preferences = PreferencesDefault;
+    var PREFS = PreferencesDefault;
     var SettingsDefault = {
         "FontSize":{
             "Setting":3,
@@ -78,30 +98,117 @@ var MODES = ['Background','Text','ProgressBar'];
             "CSSname":"--TextMargin"
         }
     }
-    var Settings = SettingsDefault;
+    var SETTINGS = SettingsDefault;
 
-    ROOT.style.setProperty("--TextSize",Preferences.FontSize);
-    ROOT.style.setProperty("--TextLineHeight",Preferences.LineHeight);
-    ROOT.style.setProperty("--TextMargin",Preferences.Margins);
+    ROOT.style.setProperty("--TextSize",PREFS.FontSize);
+    ROOT.style.setProperty("--TextLineHeight",PREFS.LineHeight);
+    ROOT.style.setProperty("--TextMargin",PREFS.Margins);
     
-    var CHSET = {
+    var CHSET = 
+    {
         "Text":[],
         "Background":[],
         "ProgressBar":[]
     };   
 
-    var Keyframes = {
+    var Keyframes = 
+    {
         "Text":[],
         "Background":[],
         "ProgressBar":[]
     };
 
-    var NewAnnouncements = {};
-    var RevisionNotesList = {};
+    var ANNOUNCE = {};
+    var REVNOTES = {};
 
-async function GetCustomParameters() {
-    jSOURCE = await GetJSONFromSource('StoryConfig.json');
-    SOURCE = ParseJSON(jSOURCE);
+    var LOCATIONS = 
+    {
+        "Default":
+        {
+            "StoryFile":"",
+            "StoryName":"ScrivStory",
+            "CoverImage":"",
+            "WallImage":""
+        }
+    }
+
+async function GetCustomParams() 
+{
+    SOURCE = await GetJSONFromSource(StyleSource + "/StoryConfig.json");
+    
+    STYLES = SOURCE.Styles; DConsole(fname,"Loaded styles from JSON.");
+    PREFS = SOURCE.Preferences; DConsole(fname,"Loaded preferences from JSON.");
+    SETTINGS = SOURCE.Settings; DConsole(fname,"Loaded settings from JSON.");
+    ANNOUNCE = SOURCE.Announcements; DConsole(fname,"Loaded announcements from JSON.");
+    REVNOTES = SOURCE.RevisionNotes; DConsole(fname,"Loaded revision notes from JSON.");
+    LOCATIONS = SOURCE.Locations; DConsole(fname,"Loaded revision notes from JSON.",true);
+}
+async function ParseSearchParams() 
+{
+    getParameters = () => {        
+        // Address of the current window
+        address = window.location.search                
+        parameterList = new URLSearchParams(address)    // Returns a URLSearchParams object instance
+        let map = new Map()                             // Created a map which holds key value pairs
+
+        // Storing every key value pair in the map
+        parameterList.forEach((value, key) => {
+            map.set(key, value)
+        })
+
+        // Returning the map of GET parameters
+        return map
+    }
+    let SrcParams = getParameters();
+
+    PermissionLevel = 1;
+    switch (SrcParams.get('mode')) {
+    case "author":
+    case "3":
+        PermissionLevel = 3;
+        break;
+    case "editor":
+    case "2":
+        PermissionLevel = 2;
+        break;
+    default:
+        break;
+    }
+
+    ActiveStory = LOCATIONS[SrcParams.get('story')]
+    
+    console.log(ActiveStory)
+    /*
+    SourceROOT  = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/"
+    var StoryName = "";
+    var isTOCshown = false;
+    let FILEname = "";
+    switch (StoryMode) {
+    case "1"||"Firebrand":
+        FILEname = "/docs/FB04.json";
+        StoryName = "Firebrand";
+        eBOOKCOVER.src = STYLES.Titus.CoverImage;
+        ROOT.style.setProperty('--CoverGradient','var(--CoverFirebrand)')
+        break;   
+    case "2"||"Paragate": 
+    default:
+        FILEname = "/docs/PG05.json";
+        StoryName = "Paragate";
+        eBOOKCOVER.src = STYLES.Cody.CoverImage;
+        ROOT.style.setProperty('--CoverGradient','var(--CoverParagate)')
+        break;
+    }
+    */
+}
+async function initialization() {
+    await GetCustomParams();
+    await ParseSearchParams();
+    ROOT.style.setProperty("--TextSize",PREFS.FontSize);
+    ROOT.style.setProperty("--TextLineHeight",PREFS.LineHeight);
+    ROOT.style.setProperty("--TextMargin",PREFS.Margins);
 }
 
-GetCustomParameters();
+
+var PermissionLevel = 1;
+initialization();
+
