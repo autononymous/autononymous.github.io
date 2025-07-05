@@ -1,8 +1,14 @@
+const StyleSource   = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/ScrivReader/";
 var DebugItems = [];
 var fname = "initialize.js";
 var ActiveStory = "";
+var SrcParams = [];
 
-
+function clearLocalStorage() {
+    localStorage.removeItem(`AC_SAVE_${StoryMode}`);
+    localStorage.removeItem(`AC_SETTINGS_${StoryMode}`);
+    localStorage.removeItem(`AC_PREFS_${StoryMode}`);
+}
 
 function DConsole(title,body,flush=false) {
     DebugItems.push(body);
@@ -47,12 +53,8 @@ function ParseJSON(source) {
     return JSON.parse(source.replaceAll(/(\r\n|\n|\r)/gm, ''));
 }
 
-const StyleSource   = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/ScrivReader/";
-const StorySource   = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/docs/PG05.json";
-
-
 var MODES = ['Background','Text','ProgressBar'];
-    var jSTYLES = { 
+    var STYLES = { 
         "Default":
         {
             "Light":
@@ -135,7 +137,7 @@ var MODES = ['Background','Text','ProgressBar'];
 async function GetCustomParams() 
 {
     SOURCE = await GetJSONFromSource(StyleSource + "/StoryConfig.json");
-    
+
     STYLES = SOURCE.Styles; DConsole(fname,"Loaded styles from JSON.");
     PREFS = SOURCE.Preferences; DConsole(fname,"Loaded preferences from JSON.");
     SETTINGS = SOURCE.Settings; DConsole(fname,"Loaded settings from JSON.");
@@ -159,7 +161,7 @@ async function ParseSearchParams()
         // Returning the map of GET parameters
         return map
     }
-    let SrcParams = getParameters();
+    SrcParams = getParameters();
 
     PermissionLevel = 1;
     switch (SrcParams.get('mode')) {
@@ -199,10 +201,14 @@ async function ParseSearchParams()
         break;
     }
     */
+    if (SrcParams.get('reset')=="DoReset") {
+        clearLocalStorage();
+        console.warn(`Notice: Local storage was reset for ${StoryName}.`)
+    }
 }
 async function initialization() {
-    await GetCustomParams();
     await ParseSearchParams();
+    await GetCustomParams();
     ROOT.style.setProperty("--TextSize",PREFS.FontSize);
     ROOT.style.setProperty("--TextLineHeight",PREFS.LineHeight);
     ROOT.style.setProperty("--TextMargin",PREFS.Margins);

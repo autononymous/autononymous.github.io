@@ -20,9 +20,7 @@
             "ProgressBar":[255,240,240,1]
         },
         "Prefix":" = ",
-        "Suffix":" = ",
-        "CoverImage":"design/cover-FBC.jpg",
-        "WallImage":""
+        "Suffix":" = "
     },
     "Katiya":
     {
@@ -39,9 +37,7 @@
             "ProgressBar":[255,200,200,1]
         },
         "Prefix":" &#10048; ",
-        "Suffix":" &#10048; ",
-        "CoverImage":"design/cover-PG.jpg",
-        "WallImage":""
+        "Suffix":" &#10048; "
     },
     "Cody":
     {
@@ -58,9 +54,7 @@
             "ProgressBar":[200,200,255,1]
         },
         "Prefix":" /* ",
-        "Suffix":" */ ",
-        "CoverImage":"design/cover-PG.jpg",
-        "WallImage":""
+        "Suffix":" */ "
     },
     "Default":
     {
@@ -77,9 +71,7 @@
             "ProgressBar":[240,240,240,1]
         },
         "Prefix":" ~ ",
-        "Suffix":" ~ ",
-        "CoverImage":"",
-        "WallImage":""
+        "Suffix":" ~ "
     }
 },
 "Preferences": 
@@ -138,6 +130,24 @@
         "0.1":"Unlike the rest of the first act, this prologue is new and still needs some work. The original draft started from Chapter Two.",
         "1.2":"The rest of this act is pretty well-revised and picked over."
     }
+},
+"Locations":
+{
+    "Firebrand":
+    {
+        "StoryRoot":"https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/docs/",
+        "StoryFile":"FB04.json",
+        "StoryName":"Firebrand",
+        "CoverImage":"design/cover-FBC.jpg",
+        "WallImage":""        
+    },
+    "Paragate":
+    {
+        "StoryRoot":"https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/docs/",
+        "StoryFile":"PG05.json",
+        "StoryName":"Paragate",
+        "CoverImage":"design/cover-PG.jpg",
+        "WallImage":""
+    }
 }
-
 }

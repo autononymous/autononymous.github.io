@@ -1,53 +1,7 @@
 
 
-    
-
-    var StoryMode = SrcParams.get('story');    
-
-    console.info(StoryMode)
-
-// ==========================<{Constant Variables}>============================ //
-    // Root directory location for files
-    SourceROOT  = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/"
-    //SourceTOC   = SourceROOT + "/docs/PG00TOC.json";
-
-    var StoryName = "";
-    var isTOCshown = false;
-    let FILEname = "";
-
-    switch (StoryMode) {
-    case "1"||"Firebrand":
-        FILEname = "/docs/FB04.json";
-        StoryName = "Firebrand";
-        eBOOKCOVER.src = STYLES.Titus.CoverImage;
-        ROOT.style.setProperty('--CoverGradient','var(--CoverFirebrand)')
-        break;   
-    case "2"||"Paragate": 
-    default:
-        FILEname = "/docs/PG05.json";
-        StoryName = "Paragate";
-        eBOOKCOVER.src = STYLES.Cody.CoverImage;
-        ROOT.style.setProperty('--CoverGradient','var(--CoverParagate)')
-        break;
-    }
-
-    if (SrcParams.get('reset')=="DoReset") {
-        clearLocalStorage();
-        console.warn(`Notice: Local storage was reset for ${StoryName}.`)
-    }
-
     SourceFILE  = SourceROOT + FILEname;
 
-    // ************** DEBUG local pull option ************
-    //SourceFILE  = `C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/WebnovelReader/docs/PG04.json`;
-  
-    
-
-    //console.log(SrcParams)
-
-    //var parsecovers = setInterval(ChangeCover,10000);
-
-    // Date Key for determining the most recent file (****UPDATE!****)
     DATEKEY = "Tuesday, May 13, 2025";
 
     // Miscellaneous variables
@@ -179,11 +133,6 @@ function yeardate(date) {
 //   MODIFY: | > 
 //      OUT: | > 
 //
-function clearLocalStorage() {
-    localStorage.removeItem(`AC_SAVE_${StoryMode}`);
-    localStorage.removeItem(`AC_SETTINGS_${StoryMode}`);
-    localStorage.removeItem(`AC_PREFS_${StoryMode}`);
-}
 
 function SaveState() {    
     localStorage.setItem(`AC_SETTINGS_${StoryMode}`,JSON.stringify(SETTINGS))
