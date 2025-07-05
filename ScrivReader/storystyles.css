@@ -1,0 +1,194 @@
+:root {
+/*======================================================*/
+/*====={ Title, text, and size variables by story }=====*/
+/*======================================================*/
+
+    /*-----[  Styles for Paragate > Cody  ]-----*/
+    --CodyTitle:"Oxanium", sans-serif, "Bahnscrift",'Arial';
+    --CodyText:"Roboto Flex", sans-serif, 'Bahnschrift', 'Arial';
+    --CodySize: calc( var(--TextSize) - 0.10em );
+
+    /*-----[ Styles for Paragate > Katiya ]-----*/
+    --KatiyaTitle: "Cormorant Unicase", serif;
+    --KatiyaText:'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman';
+    --KatiyaSize: calc(var(--TextSize) + 0.00em );
+
+    /*-----[ Styles for Firebrand > Titus ]-----*/
+    --TitusTitle: "Cormorant Unicase", serif;
+    --TitusText:'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman';
+    --TitusSize: calc(var(--TextSize) + 0.00em );
+
+/*====={ Announcement/cover styling variables }=====*/
+    --CoverParagate: 
+        radial-gradient(
+            rgba(128,128,128,0.8), 
+            rgba(128,128,128,0.4)
+            ), 
+        linear-gradient(
+            to right, 
+            rgba(255, 64, 64, 0.5),
+            rgba(64,64,255,0.5)
+            );
+    --CoverFirebrand:
+        radial-gradient(
+            rgba(243, 229, 83, 0.6), 
+            rgba(245, 72, 72, 0.3)
+            ), 
+        linear-gradient(
+            to right, 
+            rgba(237, 28, 28, 0.3),
+            rgba(195,144,212,0.6),
+            rgba(237, 28, 28, 0.3)
+            );
+    --CoverGradient:  var(--CoverParagate);
+    
+/*====={ Transitioning background styles }=====*/
+/*====={    (vertically-tiled JPEGs)     }=====*/
+    --WallCody: url("design/bg-cody.jpg");
+    --WallKat:  url("design/bg-kat.jpg");
+    --WallTie:  url("design/bg-tie.jpg");
+
+/*====={ Theme channel opacities }=====*/
+    --CodyOp: 1;
+    --KatOp:  1;
+    --TieOp:  1;
+}
+
+/*====={ Story-specific styles }=====*/
+
+/*--[ Cody ]--*/
+.Cody {
+        color: var(--TextColor);
+}
+p.Cody {
+    font-size: var(--CodySize);
+    line-height: var(--TextLineHeight);
+    text-align: justify;
+    font-family: var(--CodyText);
+    font-weight:300;
+}    
+h3.Cody {
+    font-family: var(--CodyTitle);
+}
+p.CodyHand {
+    background-image:
+        linear-gradient(
+            rgba(201, 232, 255, 0.8)
+        ),
+        var(--WallCody);
+    mix-blend-mode: hard-light;
+    box-shadow: 0px 0px 8px 2px var(--TextColor);
+    border: 2px solid var(--BackgroundColor);
+}
+span.CodyHand {
+    font-family: "Patrick Hand SC", cursive;
+    color: rgb(0, 0, 43);
+}
+div.codybg {
+    background-image:             
+        linear-gradient(
+            to right, 
+            rgba(128,128,128,0.20) 0%,
+            rgba(128,128,128,0.90) min(calc(100vw - var(--DefaultWidth) - 100px ), calc(var(--TextMargin) / 2)), 
+            rgba(128,128,128,0.90) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
+            rgba(128,128,128,0.20) 100%
+        ),
+        var(--WallCody);
+    opacity: var(--CodyOp); 
+    filter: var(--IconState);
+    mix-blend-mode: hard-light;
+}
+
+/*--[ Katiya ]--*/
+.Katiya {
+        color: var(--TextColor);
+}
+p.Katiya {
+    font-family: var(--KatiyaText);
+    font-size: var(--KatiyaSize);
+    font-weight:500;
+    line-height: var(--TextLineHeight);
+    text-align: justify;
+}
+h3.Katiya {
+    font-family: var(--KatiyaTitle);
+}
+p.KatiyaHand {
+    background-image:
+        linear-gradient(
+            rgba(255, 242, 214, 0.8)
+        ),
+        var(--WallKat);
+    box-shadow: 0px 0px 8px 2px var(--TextColor);
+    border: 2px solid var(--BackgroundColor);
+}
+span.KatiyaHand {
+    font-family: "Montez", cursive;
+    color: rgb(22, 16, 10);
+}
+div.katbg {
+    background-image:             
+        linear-gradient(
+            to right, 
+            rgba(128,128,128,0.20) 0%,
+            rgba(128,128,128,0.92) min(calc(100vw - var(--DefaultWidth) - 100px ), calc(var(--TextMargin) / 2)), 
+            rgba(128,128,128,0.92) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
+            rgba(128,128,128,0.20) 100%
+        ),
+        var(--WallKat);
+    opacity: var(--KatOp);            
+    filter: var(--IconState);
+    mix-blend-mode:hard-light;
+}
+
+/*--[ Titus ]--*/
+.Titus {
+    color: var(--TextColor);
+}
+p.Titus {
+    font-family: var(--KatiyaText);
+    font-size: var(--KatiyaSize);
+    font-weight:500;
+    line-height: var(--TextLineHeight);
+    text-align: justify;
+}
+h3.Titus {
+    font-family: var(--KatiyaTitle);
+}
+p.TitusHand {
+    background-image:
+        linear-gradient(
+            rgba(255, 210, 205, 0.8)
+        ),
+        var(--WallTie);
+}
+span.TitusHand {
+    font-family: "Caveat", cursive;
+    color: rgb(133, 3, 3);
+    box-shadow: 0px 0px 8px 2px var(--TextColor);
+    border: 2px solid var(--BackgroundColor);
+}
+div.tiebg {
+    background-image:             
+        linear-gradient(
+            to right, 
+            rgba(50,50,50,0.60) 0%,
+            rgba(128,128,128,0.97) min(calc(100vw - var(--DefaultWidth) - 100px ), calc(var(--TextMargin) / 2)), 
+            rgba(128,128,128,0.97) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
+            rgba(50,50,50,0.60) 100%
+        ),
+        var(--WallTie);
+    opacity: var(--TieOp);            
+    filter: var(--IconState);
+    mix-blend-mode:hard-light;
+}
+
+p.CodyHand, p.KatiyaHand, p.TitusHand {
+    margin:20px;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: left;
+}
+.CodyHand, .KatiyaHand, .TitusHand {
+    text-align: left;
+}

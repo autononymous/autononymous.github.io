@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrivReader</title>
+    <link rel="stylesheet" href="mainstyles.css">
+    <link rel="stylesheet" href="storystyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caveat:wght@400..700&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Montez&family=Oxanium:wght@200..800&family=Patrick+Hand+SC&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+</head>
+<script id="HTML_definitions">
+    const eBOOKCOVER = document.getElementById('BOOKCOV');
+    const eSTARTBOX = document.getElementById('ANNOUNCEBOX');
+    const eANNOUNCE = document.getElementById('ANNOUNCE');
+    const eTOC = document.getElementById('TOC');
+    const eFULL = document.getElementById('FULL');
+    const eBODY = document.getElementsByTagName('body')[0];
+    const ePAGE = document.getElementById('PAGE');
+    const eWINDOW = document.getElementById('BODY');
+    const ePROGRESS = document.getElementById('PROGRESS');
+    const ROOT = document.querySelector(':root');
+    const eDATA = document.getElementById('DATA');
+</script>
+<script src="initialize.js" id="InitJS"></script>
+
+
+<body>
+    <div class="imgbg codybg"></div>
+    <div class="imgbg katbg"></div>
+    <div class="imgbg tiebg"></div>
+    <div class="TOCmain" id="TOC">     
+        
+    </div>
+    <div class="FullContainer" id="FULL">
+        <div class="ContainerLeft Gutter"></div>
+        <div class="ContainerHead">
+            <div class="Icon" id="ICON-LINEDN" onclick="SetPreferences('LineHeight',1)"><img class="Icon" title="Increase Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineDn.png" alt="&#8853;" ></div>
+            <div class="Icon" id="ICON-LINEUP" onclick="SetPreferences('LineHeight',-1)"><img class="Icon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;" ></div>
+            <div class="Icon" id="ICON-FONTUP" onclick="SetPreferences('FontSize',1)"><img class="Icon" title="Increase Font Size"" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Larger.png" alt="&#8853;" ></div>
+            <div class="Icon" id="ICON-FONTDN" onclick="SetPreferences('FontSize',-1)"><img class="Icon" title="Decrease Font Size" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Smaller.png" alt="&#8854;" ></div>
+            <div class="Icon" id="ICON-THEME" onclick="Preferences.DisplayMode=(Preferences.DisplayMode=='Light')?'Dark':'Light';console.log('Changed color to '+Preferences.DisplayMode+'.');InvertIcons();SetScrollerEvents();runScrollEvents();SaveState();">
+                <span style="color: var(--TextColor);font-size: 40px;cursor:pointer;">&#9680;</span></div>
+            </div> 
+        <!--  ></div> -->
+        <div class="ContainerRight Gutter"></div>
+        <div class="ContainerBody" id="BODY">
+            <div class="Page" id="PAGE">
+            </div>
+            <div class="Cover" id="COVER">
+            </div>
+        </div>
+        <div class="ContainerFooter">
+            <div class="FooterProgress">
+                <div class="ProgressBar" id="PROGRESS"></div>
+            </div>
+            <div class="FooterInfo">
+                <div onclick="CurrentChapter=CurrentChapter.Previous;PlaceChapter(CurrentChapter);SaveState();" class="Footer-Left"><div class="Centered">&laquo;</div></div>
+                <div class="Footer-Center">
+                    <!-- moved
+                    <div class="FooterContent" id="DATA" title="View Table Of Contents" onclick="ToggleTOC(true)">
+                    </div>
+                    -->
+                </div>
+                <div onclick="if((CurrentChapter.ChapterNumber < MaximumChapter)||(PermLevel >= 2)){CurrentChapter=CurrentChapter.Next;PlaceChapter(CurrentChapter);SaveState();}else{console.warn('Outside range.')}" class="Footer-Right"><div class="Centered">&raquo;</div></div>
+            </div>
+        </div>
+    </div>
+    <div class="FloatName">
+        <div class="FooterContent" id="DATA" title="View Table Of Contents" onclick="ToggleTOC()">
+        </div>
+    </div>
+    <div class="AuthorTitle" onclick="window.open('https://autononymous.io/authors-and-stories/savantguarde/')">
+        <img class="AuthorTitle" src="https://autononymous.io/wp-content/uploads/2025/06/logo-sg.png"/>
+    </div>
+
+    <div class="CoverAnnounce" style="opacity:0;" onclick="DismissAnnouncements();/*clearInterval(parsecovers)*/" id="ANNOUNCEBOX">
+        <img src="PGISO2.png" class="StoryCover" id="BOOKCOV"/>
+        <div class="Announcements" id="ANNOUNCE"></div>
+        <div class="SocialsBar">
+            <div onclick="window.open('https://archiveofourown.org/users/SavantGuarde')" style="cursor: pointer;"><img src="icons/logo-ao3.png" class="SocialIcon"/></div>
+            <div onclick="window.open('https://bsky.app/profile/savant-guarde.bsky.social')" target="_blank" style="cursor: pointer;"><img src="icons/logo-bs.png" class="SocialIcon"/></div>
+            <div onclick="window.open('https://www.instagram.com/savant.guarde/')" style="cursor: pointer;"><img src="icons/logo-ig.png" class="SocialIcon"/></div>
+            <div onclick="window.open('https://www.tumblr.com/blog/savant-guarde')" style="cursor: pointer;"><img src="icons/logo-t2.png" class="SocialIcon"/></div>
+        </div>
+    </div>
+</body>
+<script src="main.js" id="MainJS"></script>
+</html>
+
+<!--Wastebin
+  let MinChapter = 1;
+    let MaxChapter = STORY.length;
+    let ThisChapter = CHAPTER.ChapterNumber;
+
+    if (ThisChapter > MaxChapter) {
+        console.warn(` > Chapter ${ThisChapter} is above maximum chapter of ${MaxChapter}.`);
+        return;
+    } else if (ThisChapter < MinChapter) {
+        console.warn(` > Chapter ${ThisChapter} is below minimum chapter of ${MinChapter}.`);
+        return;
+    } else {
+        console.info(` > Loading Chapter ${ThisChapter}.`)
+    }
+    while
+-->
