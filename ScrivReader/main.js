@@ -679,7 +679,7 @@ async function BuildTOC() {
     DConsole("main.js > BuildTOC",`Release Day By Chapter:`,false);
     DConsole("main.js > BuildTOC",statReleaseDay,true,true);
 }
-function PlaceChapter(CHAPTER) {
+async function PlaceChapter(CHAPTER) {
     StartChapter = CurrentChapter.ChapterNumber;
     // NOTE: Chapter number is (1) ahead of indexing. 
     ePAGE.innerHTML = "";
@@ -712,11 +712,11 @@ async function setup() {
     } else {
         CurrentChapter = STORY[PREFS.StartChapter];
     }    
-    PlaceChapter(CurrentChapter);
+    await PlaceChapter(CurrentChapter);
     runScrollEvents();
-    SetInfo();
+    await SetInfo();
     SetMessageState();
-    BuildTOC();
+    await BuildTOC();
     SetViewerMode();    
 }
 function ScrollPosition(elem) {
@@ -753,7 +753,7 @@ function ApplyColors() {
     ROOT.style.setProperty("--TitusOp",TIE_Opacity); /*1-CHSET["Background"][3]);/**/
     //console.log(CHSET["Background"][3])
 }
-function SetInfo() {
+async function SetInfo() {
     eDATA.innerHTML = 
           "<h4 class='InfoTitle'>" + ActiveStory + " " + CurrentChapter.ID + "</h4><p class='InfoSub'>"
         + CurrentChapter.Title + "<br>"
