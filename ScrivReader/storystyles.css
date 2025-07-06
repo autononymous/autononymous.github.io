@@ -46,7 +46,7 @@
 /*====={    (vertically-tiled JPEGs)     }=====*/
     --WallCody: url("design/bg-cody.jpg");
     --WallKat:  url("design/bg-kat.jpg");
-    --WallTie:  url("design/bg-tie.jpg");
+    --WallTitus:  url("design/bg-tie.jpg");
 
 /*====={ Theme channel opacities }=====*/
     --CodyOp: 1;
@@ -160,7 +160,7 @@ p.TitusHand {
         linear-gradient(
             rgba(255, 210, 205, 0.8)
         ),
-        var(--WallTie);
+        var(--WallTitus);
 }
 span.TitusHand {
     font-family: "Caveat", cursive;
@@ -177,7 +177,7 @@ div.tiebg {
             rgba(128,128,128,0.97) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
             rgba(50,50,50,0.60) 100%
         ),
-        var(--WallTie);
+        var(--WallTitus);
     opacity: var(--TieOp);            
     filter: var(--IconState);
     mix-blend-mode:hard-light;

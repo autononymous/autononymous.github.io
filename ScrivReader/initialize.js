@@ -159,7 +159,7 @@ async function GetCustomParams()
     ActiveStory = LOCATION.StoryName; 
     eBOOKCOVER.src = LOCATION.CoverImage;
     Object.keys(STYLES).forEach( charstyle => {
-        console.log(STYLES[charstyle])
+        ROOT.style.setProperty(`--Wall${charstyle}`, STYLES[charstyle].WallImage);
     })
 }
 async function ParseSearchParams() 
