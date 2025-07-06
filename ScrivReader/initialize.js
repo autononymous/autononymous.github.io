@@ -82,7 +82,6 @@ var MODES = ['Background','Text','ProgressBar'];
             },
             "Prefix":" ~ ",
             "Suffix":" ~ ",
-            "CoverImage":"",
             "WallImage":""
         }};
 
@@ -141,8 +140,7 @@ var MODES = ['Background','Text','ProgressBar'];
             "StoryRoot":"",
             "StoryFile":"",
             "StoryName":"ScrivStory",
-            "CoverImage":"",
-            "WallImage":""
+            "CoverImage":""
         }
     }
 
@@ -160,6 +158,9 @@ async function GetCustomParams()
     LOCATION = LOCATIONS[SrcParams.get('story')]==undefined ? Object.entries(LOCATIONS)[0] : LOCATIONS[SrcParams.get('story')] ;   
     ActiveStory = LOCATION.StoryName; 
     eBOOKCOVER.src = LOCATION.CoverImage;
+    Object.keys(STYLES).forEach( charstyle => {
+        console.log(STYLES[charstyle])
+    })
 }
 async function ParseSearchParams() 
 {

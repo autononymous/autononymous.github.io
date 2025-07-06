@@ -20,7 +20,8 @@
             "ProgressBar":[255,240,240,1]
         },
         "Prefix":" = ",
-        "Suffix":" = "
+        "Suffix":" = ",
+        "WallImage":"design/bg-tie.jpg"     
     },
     "Katiya":
     {
@@ -37,7 +38,8 @@
             "ProgressBar":[255,200,200,1]
         },
         "Prefix":" &#10048; ",
-        "Suffix":" &#10048; "
+        "Suffix":" &#10048; ",
+        "WallImage":"design/bg-kat.jpg"     
     },
     "Cody":
     {
@@ -54,7 +56,8 @@
             "ProgressBar":[200,200,255,1]
         },
         "Prefix":" /* ",
-        "Suffix":" */ "
+        "Suffix":" */ ",
+        "WallImage":"design/bg-cody.jpg"     
     },
     "Default":
     {
@@ -71,7 +74,8 @@
             "ProgressBar":[240,240,240,1]
         },
         "Prefix":" ~ ",
-        "Suffix":" ~ "
+        "Suffix":" ~ ",
+        "WallImage":""     
     }
 },
 "Preferences": 
@@ -138,16 +142,14 @@
         "StoryRoot":"https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/docs/",
         "StoryFile":"FB04.json",
         "StoryName":"Firebrand",
-        "CoverImage":"design/cover-FBC.jpg",
-        "WallImage":""        
+        "CoverImage":"design/cover-FBC.jpg"   
     },
     "Paragate":
     {
         "StoryRoot":"https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/docs/",
         "StoryFile":"PG05.json",
         "StoryName":"Paragate",
-        "CoverImage":"design/cover-PG.jpg",
-        "WallImage":""
+        "CoverImage":"design/cover-PG.jpg"
     }
 }
 }
