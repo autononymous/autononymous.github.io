@@ -1,8 +1,14 @@
-const StyleSource   = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/ScrivReader/";
-var DebugItems = [];
-var fname = "initialize.js";
-var ActiveStory = "";
-var SrcParams = [];
+// Global Variables from Initialization
+// --File Name
+// --Directory containing all files
+    var ScrivReaderSOURCE = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/ScrivReader/";
+// -- 
+    var DebugItems = [];
+    var ActiveStory = "";
+    var SrcParams = [];
+    var LOCATION;
+    var PermissionLevel = 1;
+    var isTOCshown = false;
 
 function clearLocalStorage() {
     localStorage.removeItem(`AC_SAVE_${StoryMode}`);
@@ -10,15 +16,20 @@ function clearLocalStorage() {
     localStorage.removeItem(`AC_PREFS_${StoryMode}`);
 }
 
-function DConsole(title,body,flush=false) {
-    DebugItems.push(body);
+function DConsole(title,body,flush=false,rawpush=false) {
+    DebugItems.push([body,rawpush]);
     let DebugStr = "";
+    let DebugItem = " ";
     if(flush == true) {
-        DebugStr += `From ${title}:\n`;        
-        DebugItems.forEach ( message => {
-            DebugStr +=  `> ${message}\n`
+        DebugStr += `From ${title}:\n`;
+        DebugItems.forEach ( ([message,method]) => {
+            if(method) {
+                DebugItem = message
+            } else {
+                DebugStr +=  `> ${message}\n`
+            }            
         })
-        console.debug(DebugStr);
+        console.debug(DebugStr,DebugItem);
         DebugItems = [];
     }
     
@@ -39,14 +50,14 @@ async function GetJSONFromSource(location)
     try {
         const response = await fetch(location);
         if (!response.ok) {
-            console.error("Error pulling JSON item.")
+            DConsole("initialize.js > GetJSONFromSource","Error pulling JSON item.")
         }
         let data = await response.text();
         let result = JSON.parse(data.replaceAll(/(\r\n|\n|\r)/gm, ''));
         //console.debug("Fetched JSON item.")
         return result;
     } catch (error) {
-        console.error("Error processing JSON item from URL.")
+        DConsole("initialize.js > GetJSONFromSource","Error processing JSON item from URL.")
     }
 }
 function ParseJSON(source) {
@@ -127,6 +138,7 @@ var MODES = ['Background','Text','ProgressBar'];
     {
         "Default":
         {
+            "StoryRoot":"",
             "StoryFile":"",
             "StoryName":"ScrivStory",
             "CoverImage":"",
@@ -136,14 +148,18 @@ var MODES = ['Background','Text','ProgressBar'];
 
 async function GetCustomParams() 
 {
-    SOURCE = await GetJSONFromSource(StyleSource + "/StoryConfig.json");
+    SOURCE = await GetJSONFromSource(ScrivReaderSOURCE + "/StoryConfig.json");
 
-    STYLES = SOURCE.Styles; DConsole(fname,"Loaded styles from JSON.");
-    PREFS = SOURCE.Preferences; DConsole(fname,"Loaded preferences from JSON.");
-    SETTINGS = SOURCE.Settings; DConsole(fname,"Loaded settings from JSON.");
-    ANNOUNCE = SOURCE.Announcements; DConsole(fname,"Loaded announcements from JSON.");
-    REVNOTES = SOURCE.RevisionNotes; DConsole(fname,"Loaded revision notes from JSON.");
-    LOCATIONS = SOURCE.Locations; DConsole(fname,"Loaded revision notes from JSON.",true);
+    STYLES = SOURCE.Styles; DConsole("initialize.js > GetCustomParams","Loaded styles from JSON.");
+    PREFS = SOURCE.Preferences; DConsole("initialize.js > GetCustomParams","Loaded preferences from JSON.");
+    SETTINGS = SOURCE.Settings; DConsole("initialize.js > GetCustomParams","Loaded settings from JSON.");
+    ANNOUNCE = SOURCE.Announcements; DConsole("initialize.js > GetCustomParams","Loaded announcements from JSON.");
+    REVNOTES = SOURCE.RevisionNotes; DConsole("initialize.js > GetCustomParams","Loaded revision notes from JSON.");
+    LOCATIONS = SOURCE.Locations; DConsole("initialize.js > GetCustomParams","Loaded locations from JSON.",true);
+
+    LOCATION = LOCATIONS[SrcParams.get('story')]==undefined ? Object.entries(LOCATIONS)[0] : LOCATIONS[SrcParams.get('story')] ;   
+    ActiveStory = LOCATION.StoryName; 
+    eBOOKCOVER.src = LOCATION.CoverImage;
 }
 async function ParseSearchParams() 
 {
@@ -177,44 +193,17 @@ async function ParseSearchParams()
         break;
     }
 
-    ActiveStory = LOCATIONS[SrcParams.get('story')]
-    
-    console.log(ActiveStory)
-    /*
-    SourceROOT  = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/"
-    var StoryName = "";
-    var isTOCshown = false;
-    let FILEname = "";
-    switch (StoryMode) {
-    case "1"||"Firebrand":
-        FILEname = "/docs/FB04.json";
-        StoryName = "Firebrand";
-        eBOOKCOVER.src = STYLES.Titus.CoverImage;
-        ROOT.style.setProperty('--CoverGradient','var(--CoverFirebrand)')
-        break;   
-    case "2"||"Paragate": 
-    default:
-        FILEname = "/docs/PG05.json";
-        StoryName = "Paragate";
-        eBOOKCOVER.src = STYLES.Cody.CoverImage;
-        ROOT.style.setProperty('--CoverGradient','var(--CoverParagate)')
-        break;
-    }
-    */
     if (SrcParams.get('reset')=="DoReset") {
         clearLocalStorage();
         console.warn(`Notice: Local storage was reset for ${StoryName}.`)
     }
 }
+
 async function initialization() {
     await ParseSearchParams();
     await GetCustomParams();
     ROOT.style.setProperty("--TextSize",PREFS.FontSize);
     ROOT.style.setProperty("--TextLineHeight",PREFS.LineHeight);
-    ROOT.style.setProperty("--TextMargin",PREFS.Margins);
+    ROOT.style.setProperty("--TextMargin",PREFS.Margins); 
 }
-
-
-var PermissionLevel = 1;
-initialization();
 

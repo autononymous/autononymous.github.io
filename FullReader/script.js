@@ -57,7 +57,7 @@ async function GetJSONFromSource(location)
         console.error("Error processing JSON item from URL.")
     }
 }
-async function setup()
+async function main()
 {
     STYLE = await GetJSONFromSource(StyleSource);
     GenerateStyles();
@@ -69,11 +69,7 @@ async function setup()
     PlaceChapter();
     eREADER.addEventListener('scroll',runScrollEvents);
 }
-async function main() 
-{
-    await setup();
-    console.log(STORY)
-}
+
 function ComposeScene(raw,perspective) {
     let scene = raw.replaceAll('<p>','\n').replaceAll('</p>','').split('\n');
     let result = [];
@@ -226,5 +222,3 @@ function runScrollEvents() {
     ScrollProgress = -(ContentRect.y-HeightOffset.y)/(ContentRect.height-HeightOffset.height);
     ScrollProgress = (ScrollProgress > 1) ? 1 : (ScrollProgress < 0) ? 0 : ScrollProgress;
 }
-
-main();

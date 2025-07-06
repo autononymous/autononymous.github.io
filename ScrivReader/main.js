@@ -1,32 +1,16 @@
 
-
-    SourceFILE  = SourceROOT + FILEname;
-
-    DATEKEY = "Tuesday, May 13, 2025";
-
-    // Miscellaneous variables
-    DebugLog = "";
-    function debugLog(text,mode) {
-        DebugLog += text;
-        if (mode) {
-            console.debug(DebugLog);
-            DebugLog = "";
-        }
-    }
-    // Start date from Autononymous release day on March 14, 2025.
+    DATEKEY = "Tuesday, May 13, 2025"; // Start date from Autononymous release day on March 14, 2025.
     const tSTART = new Date("2025-03-14T00:00:00Z"); 
-    //var RelDate = new Date(Date.parse(StartDate) - (86400000*7));
-    const dBEGIN = 56; //************Story release relative date
-    const dSTART = yeardate(tSTART);
-
-    // Current date.
-    const tNOW = new Date();
+    const dBEGIN = 56; //Story release relative date.
+    const dSTART = yeardate(tSTART);    
+    const tNOW = new Date(); // Current date.
     const dNOW = yeardate(tNOW);
 
-    console.info(`Start date is ${dSTART}.\nToday is ${dNOW}, ${dNOW-dSTART} days later.`)
+    DConsole("main.js",`Designated start yeardate is ${dSTART} (${tSTART.toDateString()}).`,false);
+    DConsole("main.js",`Today's yeardate is ${dNOW} (${tNOW.toDateString()}).`,false);
+    DConsole("main.js",`Today is ${dNOW-dSTART} days after start yeardate.`,true)
 
     const sTrans2       = 5; //--------------------------------------------------------------
-
     const sTransition   = .5; //percent
     const sHold         = .5; //percent
     const sOffset       = 0; //percent
@@ -39,6 +23,7 @@
     var ScrollProgress = 0;
     var PageElementList = [];
     var Position = 0;
+    var TOCchapterTARGET = "";
 
     var ShownCover = 1;
 
@@ -53,14 +38,14 @@
 
 // ==============================<{Functions}>======================== //
 
-function LoadAnnouncements() {
+async function LoadAnnouncements() {
     eSTARTBOX.style.opacity="1";
     eANNOUNCE.innerHTML = `<div><h3 class="Announcements"> Announcements </h3></div>`;
-    Object.entries(ANNOUNCE[StoryName]).reverse().forEach( ([timestamp,content]) => {
+    Object.entries(ANNOUNCE[ActiveStory]).reverse().forEach( ([timestamp,content]) => {
         eANNOUNCE.innerHTML += `<div> <p><strong><u>${timestamp}: </u></strong></p><p class="Announcements"> ${content}</p></div>`;
     })
 }
-function DismissAnnouncements() {
+async function DismissAnnouncements() {
     //this.outerHTML = "";
     eSTARTBOX.style.animation = '1.0s ease-in-out 0.5s forwards fadeout';
     eSTARTBOX.style.pointerEvents = "none";
@@ -85,33 +70,6 @@ function SetViewerMode() {
     }
     eSTARTBOX.innerHTML += p_str; 
 }
-/*
-function ChangeCover() {
-    ShownCover = ShownCover==4?1:ShownCover+1;
-    switch (ShownCover) {
-        case 1:
-            eBOOKCOVER.src = "https://autononymous.io/wp-content/uploads/2025/06/cover03.png"
-            break;
-        case 2:
-            eBOOKCOVER.src = "https://autononymous.io/wp-content/uploads/2025/03/Untitled-185.png"
-            break;
-        case 3:
-            eBOOKCOVER.src = "https://autononymous.io/wp-content/uploads/2025/06/cover02a-scaled.png"
-            break;
-        default:
-            eBOOKCOVER.src = "PGISO2.png"
-            break;
-    }
-}
-*/
-//__________________________________________________________________
-//     NAME: | > yeardate
-// CATEGORY: | > Time
-//  PURPOSE: | > Get relative date.
-//       IN: | > Standard formatted date.
-//   MODIFY: | > None.
-//      OUT: | > Integer relative date.
-//
 function yeardate(date) {
     const month = date.getMonth();
     var result = date.getDate();
@@ -121,27 +79,14 @@ function yeardate(date) {
     result += (date.getFullYear()-2025)*365;
     return result;
 }
-
-
-
-
-//__________________________________________________________________
-//     NAME: | > clearLocalStorage
-// CATEGORY: | > Initializing
-//  PURPOSE: | > Function to run in console to test loading files.
-//       IN: | > 
-//   MODIFY: | > 
-//      OUT: | > 
-//
-
 function SaveState() {    
-    localStorage.setItem(`AC_SETTINGS_${StoryMode}`,JSON.stringify(SETTINGS))
-    localStorage.setItem(`AC_PREFS_${StoryMode}`,JSON.stringify(PREFS));
-    console.debug('> User PREFS saved to internal storage.')
+    localStorage.setItem(`AC_SETTINGS_${ActiveStory}`,JSON.stringify(SETTINGS))
+    localStorage.setItem(`AC_PREFS_${ActiveStory}`,JSON.stringify(PREFS));
+    DConsole("main.js > SaveState","User preference changes saved to internal storage.",true)
 }
-function LoadPreferences() {
-    let saveprefs = localStorage.getItem(`AC_PREFS_${StoryMode}`);
-    let savesettings = localStorage.getItem(`AC_SETTINGS_${StoryMode}`);
+async function LoadPreferences() {
+    let saveprefs = localStorage.getItem(`AC_PREFS_${ActiveStory}`);
+    let savesettings = localStorage.getItem(`AC_SETTINGS_${ActiveStory}`);
     if (saveprefs && savesettings) {
         try {
             PREFS = JSON.parse(saveprefs);
@@ -156,9 +101,9 @@ function LoadPreferences() {
             let newstate = (PREFS.DisplayMode=="Dark")?0:1;
             ROOT.style.setProperty("--IconState",`invert(${newstate})`)
    
-            console.debug("> User PREFS successfully loaded from Local Storage.")
+            DConsole("main.js > LoadPreferences","User preferences successfully loaded from Local Storage.",true)
         } catch (error) {
-            console.debug("> Unable to load user PREFS from saved. \n << ERRORTEXT: " + error + " >>")
+            DConsole("main.js > LoadPreferences","Unable to load user PREFS from saved. \n << Error content: " + error + " >>",true)
             // Reset to default.
             PREFS = PreferencesDefault;
             SETTINGS = SettingsDefault;
@@ -166,11 +111,9 @@ function LoadPreferences() {
 
         }
     } else {
-        console.debug("> PREFS have not been set yet.")
-    }    
+        DConsole("main.js > LoadPreferences","Preferences have not been set yet.",true)
+    }
 }
-
-
 function InvertIcons() {
     let newstate = (PREFS.DisplayMode=="Dark")?0:1;
     ROOT.style.setProperty("--IconState",`invert(${newstate})`)
@@ -183,7 +126,6 @@ function SetMessageState() {
     ROOT.style.setProperty("--MsgColorFrom",(newstate==0?"rgba(129, 129, 129, 0.8)":"rgba(235, 235, 235, 0.8)"));//"rgba(216, 216, 216, 0.8)"));
     ROOT.style.setProperty("--MsgFontColorFrom",(newstate==0?"white":"black"));
 }
-
 function SetPreferences(property,increment) {
     let Params = SETTINGS[property];
     let range = [ 0 , Params.Options.length ];
@@ -194,7 +136,7 @@ function SetPreferences(property,increment) {
         Params.Setting = queried;
         PREFS[property] = Params.Options[queried];
         ROOT.style.setProperty(Params.CSSname,PREFS[property])
-        console.info(` > Parameter '${property}' is now set to ${PREFS[property]}.`)
+        DConsole("main.js > SetPreferences",`Parameter '${property}' is now set to ${PREFS[property]}.`)
 
         SaveState();
 
@@ -202,62 +144,43 @@ function SetPreferences(property,increment) {
         runScrollEvents();
 
     } else {
-        console.warn(` > Parameter setting for '${property}' is out of bounds [${range[0]},${range[1]}].`)
+        DConsole("main.js > SetPreferences",`NOTICE: Parameter setting for '${property}' is out of bounds [${range[0]},${range[1]}].`,true)
     }
 
 }
-
-//__________________________________________________________________
-//     NAME: | > fetchJSON
-// CATEGORY: | > Initializing
-//  PURPOSE: | > Either load local save if it exists (to reduce server load),
-//           |   or pull data from server.  Formats data through ParseStory().
-//       IN: | > 
-//   MODIFY: | > 
-//      OUT: | > 
-//
 async function fetchJSON() {
     // Check if we already have this saved locally first.
-    let SavedContent = localStorage.getItem(`AC_SAVE_${StoryMode}`);
+    let SavedContent = localStorage.getItem(`AC_SAVE_${ActiveStory}`);
     if(SavedContent) {
         try {
             let jSavedContent = JSON.parse(SavedContent.replaceAll(/(\r\n|\n|\r)/gm, ''));
             if (jSavedContent.Created == DATEKEY) {
                 let result = ParseStory(jSavedContent);
-                debugLog("> Loaded existing text in local storage.\n",true);
+                DConsole("main.js","Loaded existing text in local storage.\n",false);
                 return result;
             }
         } catch (error) {
-            debugLog("> Error loading existing text in local storage.\n"+error+"\n",false);
+            DConsole("main.js","Error loading existing text in local storage.\n"+error+"\n",false);
         }
     }
     // If not, proceed to load.
     try {
-        const response = await fetch(SourceFILE);
+        const response = await fetch(LOCATION.StoryRoot + LOCATION.StoryFile);
         if (!response.ok) {
-            debugLog("> ERROR: Network response failure for story JSON.\n",false);
+            DConsole("main.js","ERROR: Network response failure for story JSON.\n",false);
         }
         const data = await response.text();
         let jDATA = JSON.parse(data.replaceAll(/(\r\n|\n|\r)/gm, ''));
         //console.log(jDATA);
         let result = ParseStory(jDATA);
-        localStorage.setItem(`AC_SAVE_${StoryMode}`,JSON.stringify(jDATA))
-        debugLog("> Story successfully loaded.\n",true);
+        localStorage.setItem(`AC_SAVE_${ActiveStory}`,JSON.stringify(jDATA))
+        DConsole("main.js > fetchJSON",`Story "${ActiveStory}" successfully loaded.\n`,true);
         return result;
     } catch (error) {
-        debugLog("> Error in fetch process.\n> "+error,false);
+        DConsole("main.js > fetchJSON","Error in fetch process.\n> "+error,false);
     }
-    debugLog("",true);
+    DConsole("main.js > fetchJSON","fetchJSON process completed.",true);
 }
-
-//__________________________________________________________________
-//     NAME: | > ParseStory
-// CATEGORY: | > Initializing
-//  PURPOSE: | > Format the exported JSON file into something more readable.
-//       IN: | > 
-//   MODIFY: | > 
-//      OUT: | > 
-//
 function ParseStory(data) {
 
     // Chapters need to be counted.
@@ -282,11 +205,13 @@ function ParseStory(data) {
 
     let Story = Object.values(data.Manuscript);
     let eRelease = dSTART;
+    let StoryPassageCounter = 0;
     //console.log(Story)
     for (let i=0; i<Story.length; i++) {
         // Save story array to 'entry' for easier sightreading.
         let entry = Story[i];
-        let ePerspective="";       
+        let ePerspective="";      
+        
 
         // Iterate for each entry of the singular JSON file.
         switch(entry.DocType) {
@@ -298,10 +223,10 @@ function ParseStory(data) {
             let eNextPub = parseFloat(entry.NextPublish);
             let eSynopsis = entry.Synopsis;
             let eID = (entry.VerboseOverride==undefined)?(entry.ActNum-1+"."+entry.ChapterFull):entry.VerboseOverride;
-            let eRevisionNotes = (entry.RevisionNotes!=true)?((REVNOTES[StoryName][eID]==undefined)?undefined:REVNOTES[StoryName][eID]):entry.RevisionNotes;
+            let eRevisionNotes = (entry.RevisionNotes!=true)?((REVNOTES[ActiveStory][eID]==undefined)?undefined:REVNOTES[ActiveStory][eID]):entry.RevisionNotes;
             let ePublishOn = entry.PublishOn;
 
-            //console.warn(`For ${eID}:`,REVNOTES[StoryName][eID])
+            //console.warn(`For ${eID}:`,REVNOTES[ActiveStory][eID])
 
             ePerspective = ((entry.Perspective=="Mixed")||(entry.Perspective==""))?"Default":entry.Perspective;
             //console.error(entry.VerboseOverride)
@@ -359,6 +284,7 @@ function ParseStory(data) {
         case "Scene":
             let eBody = entry.Body.replaceAll('<p>','\n').replaceAll('</p>','').split('\n');         
             ePerspective = ((entry.Perspective=="Mixed")||(entry.Perspective==""))?"Default":entry.Perspective;
+            StoryPassageCounter += 1;
 
             let LineIndex = 1;
             let WritingMessage = false; // Generating message div.
@@ -389,10 +315,8 @@ function ParseStory(data) {
                             );                   
                             WritingMessage = true;
                         } else {
-                            //console.log(passage)
                             STORY[STORY.length-1].BodyFormatted[STORY[STORY.length-1].BodyFormatted.length-1] += '<br>' + (passage);
                         }
-                        //console.warn(passage)
                     } else {
                         if(WritingMessage == true) {
                             WritingMessage = false;
@@ -413,9 +337,10 @@ function ParseStory(data) {
             break;
         }
     }
+    DConsole("initialize.js > ParseStory",`Story ${ActiveStory} has been successfully parsed.`,false)
+    DConsole("initialize.js > ParseStory",`This story contains ${STORY[STORY.length-1].ChapterNumber} chapters and ${StoryPassageCounter} passages.`,false)
     return data;
 }
-
 function Event_Pulse( keyframe, progress, previous, next, transition, hold , offset , wasTheme, isTheme) {
     let pStart  = progress - (transition/2) - (hold/2) + offset;
     let pEnd    = progress + (transition/2) + (hold/2) + offset;
@@ -433,8 +358,6 @@ function Event_Switch( keyframe, progress, previous, next, transition, hold , of
 
 
 }
-
-
 function SetScrollerEvents() {
     let PageElements = ePAGE.childNodes;
     let LastStyle = "Default";//PageElements[0].className.split(" ")[0];
@@ -501,8 +424,6 @@ function SetScrollerEvents() {
     //--console.log(LastStyle)
     //--console.debug(Keyframes)
 }
-
-
 function ChannelSet(CHANNEL) {
     LastElement = CHANNEL[0];
     NextElement = CHANNEL[1];
@@ -588,7 +509,7 @@ function ChannelSet(CHANNEL) {
         if(ThisStoryTheme == "Cody") {
             ROOT.style.setProperty("--ActiveTitle","var(--CodyTitle)")
             ROOT.style.setProperty("--ActiveSub"  ,"var(--CodyText )")
-            ROOT.style.setProperty("--ActiveSize" ,"1.1em")
+            ROOT.style.setProperty("--ActiveSize" ,"1.1em")            
         } else if (ThisStoryTheme == "Katiya") {
             ROOT.style.setProperty("--ActiveTitle","var(--KatiyaTitle)")
             ROOT.style.setProperty("--ActiveSub"  ,"var(--KatiyaText )")
@@ -600,6 +521,11 @@ function ChannelSet(CHANNEL) {
         } else {
 
         }
+
+        if(ThisStoryTheme != LastStoryTheme) {
+            DConsole("main.js > ChannelSet",`Transitioning from ${LastStoryTheme} to ${ThisStoryTheme}.`,true)
+        }
+        
     }
     
     LastStoryTheme = ThisStoryTheme + "";
@@ -607,7 +533,6 @@ function ChannelSet(CHANNEL) {
 
     return [RED,GRN,BLU,ALP];
 }
-
 function ToggleTOC() {
     isTOCshown = !isTOCshown    
     eFULL.style.top = (isTOCshown)?  '0'  :  '-110vh'  ;
@@ -618,9 +543,6 @@ function ToggleTOC() {
     eFULL.style.pointerEvents = (isTOCshown)?"none":"all";
        
 }
-
-// Legacy TOC functions ==========================
-var TOCchapterTARGET = "";
 function TOChtmlACT(nAct,name) {
     let result = `
     <div id="TOC-ACT${nAct}" class="TOC Act">
@@ -659,11 +581,9 @@ function pad(num, size) {
     var s = "000000000" + num;
     return s.substr(s.length-size);
 }
-
 function AdjustedIndex(index) {
     return (index < 2)?0:index-2;
 }
-
 async function BuildTOC() {
     //console.debug("Building the Table Of Contents...");
     eTOC.innerHTML = ''; //TOC clear ------------------------//    
@@ -678,6 +598,10 @@ async function BuildTOC() {
     let ChapterMaxNumberT = 0;
       
     let ActCtr = 0;  
+
+    let statChapterTypes = [0,0,0,0];
+    let statReleaseDay = [];
+
     jSTORY.Manuscript.forEach( parcel => {
         let pType = parcel.DocType;
         let pAct = parcel.ActNum;
@@ -705,6 +629,7 @@ async function BuildTOC() {
                     releaseday = parseFloat(parcel.PublishOn);
                     NextPush = releaseday - lastrelease;
                 }
+                statReleaseDay.push([parcel.ChapterFull+0,releaseday+0,parcel.GivenName+""]);
 
                 //console.debug(NextPush)
                 
@@ -723,6 +648,19 @@ async function BuildTOC() {
                 } else {
                     DatePercentage = (today - startday) / (releaseday - startday);
                 }
+
+                // Statistics for nerds.
+                let DaysBetween = today - releaseday
+                if(DaysBetween > 7) {
+                    statChapterTypes[0] += 1; // Out for a while.
+                } else if (DaysBetween >= 0) {
+                    statChapterTypes[1] += 1; // Released within a week.
+                } else if (DaysBetween >= -7) {
+                    statChapterTypes[2] += 1; // Coming this week.
+                } else {
+                    statChapterTypes[3] += 1; // Not here yet.
+                }
+
                 let VertBar = document.getElementById(`TOC-CH${parcel.ChapterFull}-STATE`)
 
                 //console.log(`Release #${ChapterMaxNumberT}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}\n  percentage ${DatePercentage}.`)
@@ -736,18 +674,11 @@ async function BuildTOC() {
                 break;
         }
     });
+    DConsole("main.js > BuildTOC",`Table Of Contents for ${ActiveStory} has been built.`,false);
+    DConsole("main.js > BuildTOC",`Distribution of releases:\n\t      Old Releases  | ${statChapterTypes[0]}\n\t      New Releases  | ${statChapterTypes[1]}\n\t  Coming This Week  | ${statChapterTypes[2]}\n\t          Upcoming  | ${statChapterTypes[3]}`,false);
+    DConsole("main.js > BuildTOC",`Release Day By Chapter:`,false);
+    DConsole("main.js > BuildTOC",statReleaseDay,true,true);
 }
-
-
-
-//__________________________________________________________________
-//     NAME: | > PlaceChapter
-// CATEGORY: | > Init, UI Response
-//  PURPOSE: | > Set chapter text into BODY. Set up scroll events.
-//       IN: | > Chapter number.
-//   MODIFY: | > 
-//      OUT: | > 
-//
 function PlaceChapter(CHAPTER) {
     StartChapter = CurrentChapter.ChapterNumber;
     // NOTE: Chapter number is (1) ahead of indexing. 
@@ -765,47 +696,29 @@ function PlaceChapter(CHAPTER) {
     } else {
         ePAGE.innerHTML += "Chapter is not active yet. Check back later."
     }
+     DConsole("main.js > PlaceChapter",`Chapter ${CurrentChapter.ChapterNumber} "${CHAPTER.Title}" has been placed. \n Here are the contents of the CHAPTER object:`,false,false);
+     DConsole("main.js > PlaceChapter",CHAPTER,true,true)
 }
 
-
-//__________________________________________________________________
-//     NAME: | > Setup
-// CATEGORY: | > Initializing
-//  PURPOSE: | > Initializes all data, loading story and content.
-//       IN: | > 
-//   MODIFY: | > 
-//      OUT: | > 
-//
 async function setup() {
 
     jSTORY = await fetchJSON();
-    LoadPreferences();
-    LoadAnnouncements();
-
+    await LoadPreferences();
+    await LoadAnnouncements();
     // Set current chapter.
     if ( !isNaN(parseFloat(SrcParams.get('startchapter'))) ) {
         CurrentChapter = STORY[parseFloat(SrcParams.get('startchapter'))];
-        console.warn(`> Notice: Story "${StoryName}" set from search variables to Chapter ${CurrentChapter}.`)
+        console.warn(`> Notice: Story "${ActiveStory}" set from search variables to Chapter ${CurrentChapter}.`)
     } else {
         CurrentChapter = STORY[PREFS.StartChapter];
-    }
-    
+    }    
     PlaceChapter(CurrentChapter);
-
-    //console.error(PREFS.DisplayMode)
-
     runScrollEvents();
-
     SetInfo();
-
     SetMessageState();
-
     BuildTOC();
-
-    SetViewerMode();
-    
+    SetViewerMode();    
 }
-
 function ScrollPosition(elem) {
     let PageRect = ePAGE.getBoundingClientRect();
     let ItemRect = elem.getBoundingClientRect();
@@ -828,7 +741,6 @@ function ScrollPosition(elem) {
     */
     return ScrollPos;
 }
-
 function ApplyColors() {
 
     ROOT.style.setProperty("--TextColor",`rgba(${CHSET["Text"][0]},${CHSET["Text"][1]},${CHSET["Text"][2]},${1})`);
@@ -841,15 +753,13 @@ function ApplyColors() {
     ROOT.style.setProperty("--TieOp",TIE_Opacity); /*1-CHSET["Background"][3]);/**/
     //console.log(CHSET["Background"][3])
 }
-
 function SetInfo() {
     eDATA.innerHTML = 
-          "<h4 class='InfoTitle'>" + StoryName + " " + CurrentChapter.ID + "</h4><p class='InfoSub'>"
+          "<h4 class='InfoTitle'>" + ActiveStory + " " + CurrentChapter.ID + "</h4><p class='InfoSub'>"
         + CurrentChapter.Title + "<br>"
         + CurrentChapter.Subtitle + "</p>"
         ; 
 }
-
 function runScrollEvents() {
     Position = ScrollPosition(ePAGE);
     //console.log(ScrollProgress);
@@ -864,10 +774,3 @@ function runScrollEvents() {
     //console.log(CHSET["Background"][3]) /**-*/
     
 }
-
-
-
-// ==========================<{Function Code}>============================ //
-
-eWINDOW.addEventListener('scroll',runScrollEvents);
-setup();

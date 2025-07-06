@@ -11,29 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caveat:wght@400..700&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Montez&family=Oxanium:wght@200..800&family=Patrick+Hand+SC&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 
 </head>
-<script id="HTML_definitions">
-    const eBOOKCOVER = document.getElementById('BOOKCOV');
-    const eSTARTBOX = document.getElementById('ANNOUNCEBOX');
-    const eANNOUNCE = document.getElementById('ANNOUNCE');
-    const eTOC = document.getElementById('TOC');
-    const eFULL = document.getElementById('FULL');
-    const eBODY = document.getElementsByTagName('body')[0];
-    const ePAGE = document.getElementById('PAGE');
-    const eWINDOW = document.getElementById('BODY');
-    const ePROGRESS = document.getElementById('PROGRESS');
-    const ROOT = document.querySelector(':root');
-    const eDATA = document.getElementById('DATA');
-</script>
-<script src="initialize.js" id="InitJS"></script>
-
 
 <body>
     <div class="imgbg codybg"></div>
     <div class="imgbg katbg"></div>
     <div class="imgbg tiebg"></div>
-    <div class="TOCmain" id="TOC">     
-        
-    </div>
+
+    <div class="TOCmain" id="TOC"></div>
+    
     <div class="FullContainer" id="FULL">
         <div class="ContainerLeft Gutter"></div>
         <div class="ContainerHead">
@@ -41,7 +26,7 @@
             <div class="Icon" id="ICON-LINEUP" onclick="SetPreferences('LineHeight',-1)"><img class="Icon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;" ></div>
             <div class="Icon" id="ICON-FONTUP" onclick="SetPreferences('FontSize',1)"><img class="Icon" title="Increase Font Size"" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Larger.png" alt="&#8853;" ></div>
             <div class="Icon" id="ICON-FONTDN" onclick="SetPreferences('FontSize',-1)"><img class="Icon" title="Decrease Font Size" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Smaller.png" alt="&#8854;" ></div>
-            <div class="Icon" id="ICON-THEME" onclick="Preferences.DisplayMode=(Preferences.DisplayMode=='Light')?'Dark':'Light';console.log('Changed color to '+Preferences.DisplayMode+'.');InvertIcons();SetScrollerEvents();runScrollEvents();SaveState();">
+            <div class="Icon" id="ICON-THEME" onclick="PREFS.DisplayMode=(PREFS.DisplayMode=='Light')?'Dark':'Light';console.log('Changed color to '+PREFS.DisplayMode+'.');InvertIcons();SetScrollerEvents();runScrollEvents();SaveState();">
                 <span style="color: var(--TextColor);font-size: 40px;cursor:pointer;">&#9680;</span></div>
             </div> 
         <!--  ></div> -->
@@ -87,7 +72,33 @@
         </div>
     </div>
 </body>
+
+<script id="HTML_definitions">
+    const eBOOKCOVER = document.getElementById('BOOKCOV');
+    const eSTARTBOX = document.getElementById('ANNOUNCEBOX');
+    const eANNOUNCE = document.getElementById('ANNOUNCE');
+    const eTOC = document.getElementById('TOC');
+    const eFULL = document.getElementById('FULL');
+    const eBODY = document.getElementsByTagName('body')[0];
+    const ePAGE = document.getElementById('PAGE');
+    const eWINDOW = document.getElementById('BODY');
+    const ePROGRESS = document.getElementById('PROGRESS');
+    const ROOT = document.querySelector(':root');
+    const eDATA = document.getElementById('DATA');
+</script>
+
+<script src="initialize.js" id="InitJS"></script>
+
 <script src="main.js" id="MainJS"></script>
+
+<script>
+async function ScrivReader() {
+    await initialization();
+    eWINDOW.addEventListener('scroll',runScrollEvents);
+    await setup();
+}
+ScrivReader();
+</script>
 </html>
 
 <!--Wastebin
