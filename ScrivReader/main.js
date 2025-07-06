@@ -17,6 +17,7 @@
 
 // ==========================<{Changing Variables}>============================ //
     var jSTORY;
+    
     var STORY = [];
     var INFO;
     var CurrentChapter;
