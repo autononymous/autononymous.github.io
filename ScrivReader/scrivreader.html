@@ -18,7 +18,7 @@
     <div class="imgbg tiebg"></div>
 
     <div class="TOCmain" id="TOC"></div>
-    
+
     <div class="FullContainer" id="FULL">
         <div class="ContainerLeft Gutter"></div>
         <div class="ContainerHead">
@@ -95,6 +95,7 @@
 async function ScrivReader() {
     await initialization();
     eWINDOW.addEventListener('scroll',runScrollEvents);
+    var jSTORY = await fetchJSON();
     await setup();
 }
 ScrivReader();

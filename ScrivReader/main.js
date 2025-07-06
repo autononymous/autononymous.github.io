@@ -16,6 +16,7 @@
     const sOffset       = 0; //percent
 
 // ==========================<{Changing Variables}>============================ //
+    var jSTORY;
     var STORY = [];
     var INFO;
     var CurrentChapter;
@@ -679,7 +680,7 @@ async function BuildTOC() {
     DConsole("main.js > BuildTOC",`Release Day By Chapter:`,false);
     DConsole("main.js > BuildTOC",statReleaseDay,true,true);
 }
-async function PlaceChapter(CHAPTER) {
+function PlaceChapter(CHAPTER) {
     StartChapter = CurrentChapter.ChapterNumber;
     // NOTE: Chapter number is (1) ahead of indexing. 
     ePAGE.innerHTML = "";
@@ -712,9 +713,9 @@ async function setup() {
     } else {
         CurrentChapter = STORY[PREFS.StartChapter];
     }    
-    await PlaceChapter(CurrentChapter);
+    PlaceChapter(CurrentChapter);
     runScrollEvents();
-    await SetInfo();
+    SetInfo();
     SetMessageState();
     await BuildTOC();
     SetViewerMode();    
@@ -753,7 +754,7 @@ function ApplyColors() {
     ROOT.style.setProperty("--TitusOp",TIE_Opacity); /*1-CHSET["Background"][3]);/**/
     //console.log(CHSET["Background"][3])
 }
-async function SetInfo() {
+function SetInfo() {
     eDATA.innerHTML = 
           "<h4 class='InfoTitle'>" + ActiveStory + " " + CurrentChapter.ID + "</h4><p class='InfoSub'>"
         + CurrentChapter.Title + "<br>"
