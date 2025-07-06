@@ -160,7 +160,6 @@ async function GetCustomParams()
     eBOOKCOVER.src = LOCATION.CoverImage;
     Object.keys(STYLES).forEach( charstyle => {
         ROOT.style.setProperty(`url(--Wall${charstyle})`, STYLES[charstyle].WallImage);
-        console.log(charstyle,STYLES[charstyle].WallImage)
     })
     ROOT.style.setProperty('--CoverGradient',`var(--Cover${ActiveStory})`)
 }
