@@ -749,8 +749,8 @@ function ApplyColors() {
     ROOT.style.setProperty("--HoverColor",`rgba(${CHSET["ProgressBar"][0]},${CHSET["ProgressBar"][1]},${CHSET["ProgressBar"][2]},${0.1})`);
     ROOT.style.setProperty("--TOCbackground",`rgba(${CHSET["ProgressBar"][0]},${CHSET["ProgressBar"][1]},${CHSET["ProgressBar"][2]},${0.03})`);
     ROOT.style.setProperty("--CodyOp",CODY_Opacity); /*CHSET["Background"][3]);/**/
-    ROOT.style.setProperty("--KatOp",KAT_Opacity); /*1-CHSET["Background"][3]);/**/
-    ROOT.style.setProperty("--TieOp",TIE_Opacity); /*1-CHSET["Background"][3]);/**/
+    ROOT.style.setProperty("--KatiyaOp",KAT_Opacity); /*1-CHSET["Background"][3]);/**/
+    ROOT.style.setProperty("--TitusOp",TIE_Opacity); /*1-CHSET["Background"][3]);/**/
     //console.log(CHSET["Background"][3])
 }
 function SetInfo() {

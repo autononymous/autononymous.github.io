@@ -45,13 +45,13 @@
 /*====={ Transitioning background styles }=====*/
 /*====={    (vertically-tiled JPEGs)     }=====*/
     --WallCody: url("design/bg-cody.jpg");
-    --WallKat:  url("design/bg-kat.jpg");
+    --WallKatiya:  url("design/bg-kat.jpg");
     --WallTitus:  url("design/bg-tie.jpg");
 
 /*====={ Theme channel opacities }=====*/
     --CodyOp: 1;
-    --KatOp:  1;
-    --TieOp:  1;
+    --KatiyaOp:  1;
+    --TitusOp:  1;
 }
 
 /*====={ Story-specific styles }=====*/
@@ -118,7 +118,7 @@ p.KatiyaHand {
         linear-gradient(
             rgba(255, 242, 214, 0.8)
         ),
-        var(--WallKat);
+        var(--WallKatiya);
     box-shadow: 0px 0px 8px 2px var(--TextColor);
     border: 2px solid var(--BackgroundColor);
 }
@@ -135,8 +135,8 @@ div.katbg {
             rgba(128,128,128,0.92) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
             rgba(128,128,128,0.20) 100%
         ),
-        var(--WallKat);
-    opacity: var(--KatOp);            
+        var(--WallKatiya);
+    opacity: var(--KatiyaOp);            
     filter: var(--IconState);
     mix-blend-mode:hard-light;
 }
@@ -178,7 +178,7 @@ div.tiebg {
             rgba(50,50,50,0.60) 100%
         ),
         var(--WallTitus);
-    opacity: var(--TieOp);            
+    opacity: var(--TitusOp);            
     filter: var(--IconState);
     mix-blend-mode:hard-light;
 }
