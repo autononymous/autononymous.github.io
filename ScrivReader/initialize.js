@@ -154,8 +154,26 @@ async function GetCustomParams()
     ANNOUNCE = SOURCE.Announcements; DConsole("initialize.js > GetCustomParams","Loaded announcements from JSON.");
     REVNOTES = SOURCE.RevisionNotes; DConsole("initialize.js > GetCustomParams","Loaded revision notes from JSON.");
     LOCATIONS = SOURCE.Locations; DConsole("initialize.js > GetCustomParams","Loaded locations from JSON.",true);
+    console.log(LOCATIONS);
 
-    LOCATION = LOCATIONS[SrcParams.get('story')]==undefined ? Object.entries(LOCATIONS)[0] : LOCATIONS[SrcParams.get('story')] ;   
+    switch (SrcParams.get('story')) {
+        case 1:
+        case "firebrand":
+        case "Firebrand":
+            ActiveStory = "Firebrand";
+            break;
+        case 2:
+        case "paragate":
+        case "Paragate":
+            ActiveStory = "Paragate";
+            break;
+        default:
+            ActiveStory = "Firebrand";
+            break;
+                
+    }
+
+    LOCATION = (LOCATIONS[ActiveStory] == undefined) ? Object.entries(LOCATIONS)[0] : LOCATIONS[ActiveStory] ;   
     ActiveStory = LOCATION.StoryName; 
     eBOOKCOVER.src = LOCATION.CoverImage;
     Object.keys(STYLES).forEach( charstyle => {
@@ -181,7 +199,7 @@ async function ParseSearchParams()
     }
     SrcParams = getParameters();
 
-    PermissionLevel = 1;
+    PermissionLevel = 0;
     switch (SrcParams.get('mode')) {
     case "author":
     case "3":
@@ -193,7 +211,7 @@ async function ParseSearchParams()
         break;
     default:
         break;
-    }
+    }    
 
     if (SrcParams.get('reset')=="DoReset") {
         clearLocalStorage();

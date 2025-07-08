@@ -17,7 +17,7 @@
 
 // ==========================<{Changing Variables}>============================ //
     var jSTORY;
-    
+
     var STORY = [];
     var INFO;
     var CurrentChapter;
@@ -167,7 +167,8 @@ async function fetchJSON() {
     }
     // If not, proceed to load.
     try {
-        const response = await fetch(LOCATION.StoryRoot + LOCATION.StoryFile);
+        let sourcelocation = LOCATION.StoryRoot + LOCATION.StoryFile;
+        const response = await fetch(sourcelocation);
         if (!response.ok) {
             DConsole("main.js","ERROR: Network response failure for story JSON.\n",false);
         }
@@ -179,7 +180,7 @@ async function fetchJSON() {
         DConsole("main.js > fetchJSON",`Story "${ActiveStory}" successfully loaded.\n`,true);
         return result;
     } catch (error) {
-        DConsole("main.js > fetchJSON","Error in fetch process.\n> "+error,false);
+        DConsole("main.js > fetchJSON","Error in fetch process.\n> At location: "+sourcelocation+"\n> "+error,false);
     }
     DConsole("main.js > fetchJSON","fetchJSON process completed.",true);
 }
