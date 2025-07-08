@@ -154,7 +154,7 @@ async function GetCustomParams()
     ANNOUNCE = SOURCE.Announcements; DConsole("initialize.js > GetCustomParams","Loaded announcements from JSON.");
     REVNOTES = SOURCE.RevisionNotes; DConsole("initialize.js > GetCustomParams","Loaded revision notes from JSON.");
     LOCATIONS = SOURCE.Locations; DConsole("initialize.js > GetCustomParams","Loaded locations from JSON.",true);
-    console.log(LOCATIONS);
+    console.log(PREFS);
 
     switch (SrcParams.get('story')) {
         case 1:

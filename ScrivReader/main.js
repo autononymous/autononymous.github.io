@@ -40,6 +40,21 @@
 
 // ==============================<{Functions}>======================== //
 
+function Num2txt(number) {
+    let prefix = "Chapter ";
+    const lownum = ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"];
+    const highnum = ["Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"];
+    if (number <= 0) {
+        return "Prologue";
+    } else if (number > 19) {
+        const tens = Math.floor(number / 10);
+        const ones = number % 10;
+        return prefix + highnum[tens - 2] + (ones > 0 ? " " + lownum[ones] : "");        
+    } else {
+        return prefix + lownum[number];
+    }
+}
+
 async function LoadAnnouncements() {
     eSTARTBOX.style.opacity="1";
     eANNOUNCE.innerHTML = `<div><h3 class="Announcements"> Announcements </h3></div>`;
@@ -92,6 +107,7 @@ async function LoadPreferences() {
     if (saveprefs && savesettings) {
         try {
             PREFS = JSON.parse(saveprefs);
+            PREFS.StartChapter < 0 ? PREFS.StartChapter = 0 : PREFS.StartChapter;
             SETTINGS = JSON.parse(savesettings);
 
             Object.values(SETTINGS).forEach( setting  => {                
@@ -174,7 +190,6 @@ async function fetchJSON() {
         }
         const data = await response.text();
         let jDATA = JSON.parse(data.replaceAll(/(\r\n|\n|\r)/gm, ''));
-        //console.log(jDATA);
         let result = ParseStory(jDATA);
         localStorage.setItem(`AC_SAVE_${ActiveStory}`,JSON.stringify(jDATA))
         DConsole("main.js > fetchJSON",`Story "${ActiveStory}" successfully loaded.\n`,true);
@@ -209,17 +224,18 @@ function ParseStory(data) {
     let Story = Object.values(data.Manuscript);
     let eRelease = dSTART;
     let StoryPassageCounter = 0;
-    //console.log(Story)
+    MaximumChapter = 0;
+    let PrologueChapters = 1; // Number of prologue chapters present in manuscript.
+
     for (let i=0; i<Story.length; i++) {
         // Save story array to 'entry' for easier sightreading.
         let entry = Story[i];
-        let ePerspective="";      
-        
+        let ePerspective="";
 
         // Iterate for each entry of the singular JSON file.
         switch(entry.DocType) {
         case "Chapter":            
-            let eTitle = (entry.ChapterOverride==""||entry.ChapterOverride==undefined)?entry.AutoNameFull:entry.ChapterOverride;
+            let eTitle = (entry.ChapterOverride==""||entry.ChapterOverride==undefined)?Num2txt(entry.ChapterFull - PrologueChapters):entry.ChapterOverride;
             let eSubtitle = (entry.GivenName=="")?"":entry.GivenName;
             let eActNumber = entry.ActNum;
             let eChapterNumber = entry.ChapterFull;
@@ -245,6 +261,9 @@ function ParseStory(data) {
             if (eRelease <= dNOW || PermissionLevel >= 2) {
                 MaximumChapter++;
             }
+
+            // console.log(`${PermissionLevel} - For ${eID}, ${eRelease} vs. ${dNOW} so ${MaximumChapter}`)
+
 
             STORY.push(
             {
@@ -683,6 +702,7 @@ async function BuildTOC() {
     DConsole("main.js > BuildTOC",statReleaseDay,true,true);
 }
 function PlaceChapter(CHAPTER) {
+    console.log(CurrentChapter)
     StartChapter = CurrentChapter.ChapterNumber;
     // NOTE: Chapter number is (1) ahead of indexing. 
     ePAGE.innerHTML = "";
