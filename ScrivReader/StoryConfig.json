@@ -10,8 +10,8 @@
         "Light":
         {
             "Background":[240,240,240,1,1],
-            "Text": [80, 18, 18 ,1],
-            "ProgressBar": [80, 18, 18 ,1]
+            "Text": [18, 18, 18 ,1],
+            "ProgressBar": [18, 18, 18 ,1]
         },
         "Dark":
         {

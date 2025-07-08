@@ -18,7 +18,7 @@
     <div class="imgbg tiebg"></div>
 
     <div class="TOCmain" id="TOC"></div>
-
+    
     <div class="FullContainer" id="FULL">
         <div class="ContainerLeft Gutter"></div>
         <div class="ContainerHead">
@@ -61,6 +61,12 @@
         <img class="AuthorTitle" src="https://autononymous.io/wp-content/uploads/2025/06/logo-sg.png"/>
     </div>
 
+    <div class="InstructionBox" id="INSTRUCTIONBOX" style="opacity:0;">
+        <div> <div class="Instruction">Last Chapter</div> </div>
+        <div> <div class="Instruction">Open Table Of Contents</div> </div>
+        <div> <div class="Instruction">Next Chapter</div> </div>
+    </div>
+
     <div class="CoverAnnounce" style="opacity:0;" onclick="DismissAnnouncements();/*clearInterval(parsecovers)*/" id="ANNOUNCEBOX">
         <img src="PGISO2.png" class="StoryCover" id="BOOKCOV"/>
         <div class="Announcements" id="ANNOUNCE"></div>
@@ -74,6 +80,7 @@
 </body>
 
 <script id="HTML_definitions">
+    const eINSTRUCT = document.getElementById('INSTRUCTIONBOX');
     const eBOOKCOVER = document.getElementById('BOOKCOV');
     const eSTARTBOX = document.getElementById('ANNOUNCEBOX');
     const eANNOUNCE = document.getElementById('ANNOUNCE');
@@ -95,7 +102,6 @@
 async function ScrivReader() {
     await initialization();
     eWINDOW.addEventListener('scroll',runScrollEvents);
-    var jSTORY = await fetchJSON();
     await setup();
 }
 ScrivReader();

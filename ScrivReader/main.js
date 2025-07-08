@@ -65,6 +65,8 @@ async function LoadAnnouncements() {
 }
 async function DismissAnnouncements() {
     //this.outerHTML = "";
+    //eINSTRUCT.style.opacity="1";
+    eINSTRUCT.style.animation = '3.0s ease-in-out 1.0s forwards flashing';
     eSTARTBOX.style.animation = '1.0s ease-in-out 0.5s forwards fadeout';
     eSTARTBOX.style.pointerEvents = "none";
 }
@@ -244,6 +246,7 @@ function ParseStory(data) {
             let eID = (entry.VerboseOverride==undefined)?(entry.ActNum-1+"."+parseFloat(entry.ChapterFull-PrologueChapters)):entry.VerboseOverride;
             let eRevisionNotes = (entry.RevisionNotes!=true)?((REVNOTES[ActiveStory][eID]==undefined)?undefined:REVNOTES[ActiveStory][eID]):entry.RevisionNotes;
             let ePublishOn = entry.PublishOn;
+            let eStatus = entry.Status;
 
             //console.warn(`For ${eID}:`,REVNOTES[ActiveStory][eID])
 
@@ -280,7 +283,9 @@ function ParseStory(data) {
                 "Active":eRelease<=dNOW,
                 "Perspective":ePerspective,
                 "Previous":"",
-                "Next":""
+                "Next":"",
+                "Status":eStatus,
+                "WordCount":0
             });
             STORY[STORY.length-1].BodyFormatted.push(`<h3 id="title_${entry.ChapterFull}" class="${ePerspective} Title">${eTitle}</h3>`);
             STORY[STORY.length-1].BodyFormatted.push(`<h3 id="sub_${entry.ChapterFull}" class="${ePerspective} Subtitle">${prefix + eSubtitle + suffix}</h3>`);
@@ -312,6 +317,8 @@ function ParseStory(data) {
             let WritingMessage = false; // Generating message div.
             STORY[STORY.length-1].BodyFormatted.push(`<h3 id="${entry.ChapterFull}.${entry.SceneFull}" class="${ePerspective} Section">${entry.ScenePart}</h3>`);
             eBody.forEach(passage => {
+                STORY[STORY.length-1].WordCount += passage.split(" ").length - 1;
+                //console.log(`Word Count for ${entry.ChapterFull}.${entry.ScenePart}: ${STORY[STORY.length-1].WordCount}`);
                 if (passage != "") {
                     STORY[STORY.length-1].Body.push(passage);
                     if ((passage.search("msg") != -1)) {
@@ -702,7 +709,6 @@ async function BuildTOC() {
     DConsole("main.js > BuildTOC",statReleaseDay,true,true);
 }
 function PlaceChapter(CHAPTER) {
-    console.log(CurrentChapter)
     StartChapter = CurrentChapter.ChapterNumber;
     // NOTE: Chapter number is (1) ahead of indexing. 
     ePAGE.innerHTML = "";
@@ -710,14 +716,18 @@ function PlaceChapter(CHAPTER) {
     if( CHAPTER.Active || PermissionLevel >= 2) {
         CHAPTER.BodyFormatted.forEach( Line => {
             ePAGE.innerHTML += Line;
-        }) 
+        })         
         //ePAGE.innerHTML += `<div class="EndSpacer"></div>`;
         eWINDOW.scrollTop = 0;
         PREFS.StartChapter = CurrentChapter.ChapterNumber-1;
         SetScrollerEvents();    
-        SetInfo();        
-    } else {
-        ePAGE.innerHTML += "Chapter is not active yet. Check back later."
+        SetInfo();  
+        if(PermissionLevel >= 2) {     
+            ePAGE.innerHTML += `<div class="ChapMeta">Author notes:<br>${CHAPTER.ID}&ensp;|&ensp;${CHAPTER.Status}&ensp;|&ensp;~${Math.round(CHAPTER.WordCount / 100) * 100} words&ensp;|&ensp;${Math.round(CHAPTER.WordCount/250*10)/10} mins</div>`;
+        }
+        } else {
+        StartChapter = 1; ////////////////////////////
+        ePAGE.innerHTML += "<br><br>Chapter is not active yet. Check back later."
     }
      DConsole("main.js > PlaceChapter",`Chapter ${CurrentChapter.ChapterNumber} "${CHAPTER.Title}" has been placed. \n Here are the contents of the CHAPTER object:`,false,false);
      DConsole("main.js > PlaceChapter",CHAPTER,true,true)
