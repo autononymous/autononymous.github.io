@@ -22,6 +22,7 @@
     var INFO;
     var CurrentChapter;
     var MaximumChapter = 0;
+    var PrologueChapters = 1; // Number of prologue chapters present in manuscript.
     var ScrollProgress = 0;
     var PageElementList = [];
     var Position = 0;
@@ -225,7 +226,6 @@ function ParseStory(data) {
     let eRelease = dSTART;
     let StoryPassageCounter = 0;
     MaximumChapter = 0;
-    let PrologueChapters = 1; // Number of prologue chapters present in manuscript.
 
     for (let i=0; i<Story.length; i++) {
         // Save story array to 'entry' for easier sightreading.
@@ -241,7 +241,7 @@ function ParseStory(data) {
             let eChapterNumber = entry.ChapterFull;
             let eNextPub = parseFloat(entry.NextPublish);
             let eSynopsis = entry.Synopsis;
-            let eID = (entry.VerboseOverride==undefined)?(entry.ActNum-1+"."+entry.ChapterFull):entry.VerboseOverride;
+            let eID = (entry.VerboseOverride==undefined)?(entry.ActNum-1+"."+parseFloat(entry.ChapterFull-PrologueChapters)):entry.VerboseOverride;
             let eRevisionNotes = (entry.RevisionNotes!=true)?((REVNOTES[ActiveStory][eID]==undefined)?undefined:REVNOTES[ActiveStory][eID]):entry.RevisionNotes;
             let ePublishOn = entry.PublishOn;
 
@@ -314,7 +314,7 @@ function ParseStory(data) {
             eBody.forEach(passage => {
                 if (passage != "") {
                     STORY[STORY.length-1].Body.push(passage);
-                    if (passage.search("msg") != -1) {
+                    if ((passage.search("msg") != -1)) {
                         let msgtype = 
                             (passage.search("CodyHand") != -1) ? "CodyHand" :
                             (passage.search("KatiyaHand") != -1) ? "KatiyaHand" :
@@ -327,12 +327,12 @@ function ParseStory(data) {
                         let writershand = "";
                         if (msgtype == "msgnote") {
                             writershand = `${ePerspective}Hand`;
-                            passage = passage.replaceAll("msgnote",`${writershand} msgnote`)
+                            passage = passage.replaceAll("msgnote",`${writershand} msgnote`);
                         }
-                        
+                        if (passage.search("Hand") != -1) { console.log(passage)}
                         if ((WritingMessage == false) || (WritingMessage == true && (passage.search("msgfromdate") != -1 || passage.search("msgtodate") != -1))) {
                             STORY[STORY.length-1].BodyFormatted.push(
-                                `<p id="${entry.ChapterFull}.${entry.SceneFull}.${LineIndex++}" class="${ePerspective} ${msgtype} ${writershand}">`
+                                `<p id="${entry.ChapterFull}.${entry.SceneFull}.${LineIndex++}" class="${ePerspective} ${msgtype} ${writershand}" style="line-height: 1.25em;padding-left:20px;padding-right:20px;">`
                                 + passage
                             );                   
                             WritingMessage = true;
@@ -604,7 +604,7 @@ function pad(num, size) {
     return s.substr(s.length-size);
 }
 function AdjustedIndex(index) {
-    return (index < 2)?0:index-2;
+    return (index < 2)?0:index-PrologueChapters;
 }
 async function BuildTOC() {
     //console.debug("Building the Table Of Contents...");
@@ -727,7 +727,13 @@ async function setup() {
 
     jSTORY = await fetchJSON();
     await LoadPreferences();
-    await LoadAnnouncements();
+    if (DoAnnouncements) { 
+        DConsole("main.js > setup","Loading announcements.", true)
+        await LoadAnnouncements(); 
+    } else {        
+        eSTARTBOX.outerHTML = "";
+        DConsole("main.js > setup","Skipping announcements.", true)
+    }
     // Set current chapter.
     if ( !isNaN(parseFloat(SrcParams.get('startchapter'))) ) {
         CurrentChapter = STORY[parseFloat(SrcParams.get('startchapter'))];

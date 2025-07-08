@@ -9,6 +9,7 @@
     var LOCATION;
     var PermissionLevel = 1;
     var isTOCshown = false;
+    var DoAnnouncements = true;
 
 function clearLocalStorage() {
     localStorage.removeItem(`AC_SAVE_${StoryMode}`);
@@ -31,8 +32,7 @@ function DConsole(title,body,flush=false,rawpush=false) {
         })
         console.debug(DebugStr,DebugItem);
         DebugItems = [];
-    }
-    
+    }    
 }
 
 function yeardate(date) {
@@ -154,7 +154,6 @@ async function GetCustomParams()
     ANNOUNCE = SOURCE.Announcements; DConsole("initialize.js > GetCustomParams","Loaded announcements from JSON.");
     REVNOTES = SOURCE.RevisionNotes; DConsole("initialize.js > GetCustomParams","Loaded revision notes from JSON.");
     LOCATIONS = SOURCE.Locations; DConsole("initialize.js > GetCustomParams","Loaded locations from JSON.",true);
-    console.log(PREFS);
 
     switch (SrcParams.get('story')) {
         case 1:
@@ -212,6 +211,16 @@ async function ParseSearchParams()
     default:
         break;
     }    
+
+    switch (SrcParams.get('docover')) {
+    case "0":
+    case "false":
+    case false:
+        DoAnnouncements = false;
+        break;
+    default:
+        break;
+    }
 
     if (SrcParams.get('reset')=="DoReset") {
         clearLocalStorage();

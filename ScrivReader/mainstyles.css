@@ -341,7 +341,7 @@ span.msgfromdate {
 span.msgfrom {
     font-size: 1.25rem;
     word-wrap: break-word;
-    line-height: 1.25;
+    line-height: 1.1em;
 }
 span.msgtodate {    
     font-size: 0.6em;  
@@ -350,7 +350,7 @@ span.msgtodate {
 span.msgto {
     font-size: 1.25rem;
     word-wrap: break-word;
-    line-height: 1.25;
+    line-height: 1.1em;
 }
 
 
