@@ -329,7 +329,7 @@ function ParseStory(data) {
                             writershand = `${ePerspective}Hand`;
                             passage = passage.replaceAll("msgnote",`${writershand} msgnote`);
                         }
-                        if (passage.search("Hand") != -1) { console.log(passage)}
+                        if (passage.search("Titus") != -1) { console.warn(passage)}
                         if ((WritingMessage == false) || (WritingMessage == true && (passage.search("msgfromdate") != -1 || passage.search("msgtodate") != -1))) {
                             STORY[STORY.length-1].BodyFormatted.push(
                                 `<p id="${entry.ChapterFull}.${entry.SceneFull}.${LineIndex++}" class="${ePerspective} ${msgtype} ${writershand}" style="line-height: 1.25em;padding-left:20px;padding-right:20px;">`

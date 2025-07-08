@@ -158,15 +158,15 @@ h3.Titus {
 p.TitusHand {
     background-image:
                         linear-gradient(
-                            rgba(255, 210, 205, 0.8)
+                            rgba(251, 226, 223, 0.95)
                         ),
                         var(--WallTitus);
+    box-shadow:         0px 0px 8px 2px var(--TextColor);
+    border:             2px solid var(--BackgroundColor);
 }
 span.TitusHand {
     font-family:        "Caveat", cursive;
-    color:            rgb(133, 3, 3);
-    box-shadow:         0px 0px 8px 2px var(--TextColor);
-    border:             2px solid var(--BackgroundColor);
+    color:            rgb(78, 2, 2);
 }
 div.tiebg {
     background-image:             
