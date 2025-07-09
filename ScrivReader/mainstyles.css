@@ -864,11 +864,12 @@ div.MapInfoBox {
     left:0;
     width:100vw;
     height:calc(100dvh - var(--ControlHeight) + 20px);
-    /*background-image: linear-gradient( to right, rgba(0,0,0,0.1), rgba(0,0,0,0.1));  /**/
-    /*opacity:0;/**/
+    background-color: var(--BackgroundColor); 
     pointer-events: none;
     transition: top 0.5s ease-in-out;
     border-top: 2px solid var(--TextColor);
+    overflow-x:hidden;
+    overflow-y:scroll;
 }
 
 div.MapInfoBox > div {
@@ -876,15 +877,17 @@ div.MapInfoBox > div {
     position:absolute;
     top:0;/*calc(var(--ControlHeight) - 30px);/**/
     left: 50vw;
-    transform: translateX(-50%);
-    width: 100vw;/*min(600px,90vw);/**/
+    transform: translateX(-50vw);
+    width: calc(100vw - 100px);/*min(600px,90vw);/**/
     height: calc(100dvh - 30px);/*min(70dvh,1200px);/**/
-    background-color: var(--BackgroundColor);
+    background-color: var(--BackgroundColor);  
+    margin-left:50px;
+    margin-right:50px;
 }
 
 img.map {
     position: relative;
-    width: 90%;
+    width: 100%;
     left: 50%;
     top:0;
     transform: translateX(-50%);

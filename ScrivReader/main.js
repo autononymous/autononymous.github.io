@@ -902,6 +902,7 @@ function ToggleInfoWindow() {
     
     let BONUScontent = BONUS[ActiveStory];
     iMAPCONTENT.innerHTML = BONUScontent.Maps; // load only once.
+    iEXTRAS.innerHTML = BONUScontent.Other;
     Object.entries(iMAPCONTENT.getElementsByClassName("map")).forEach( ([index,elem]) => {
         elem.setAttribute("onclick","zoomImage(this);")
     })
