@@ -22,10 +22,11 @@
     <div class="FullContainer" id="FULL">
         <div class="ContainerLeft Gutter"></div>
         <div class="ContainerHead" id="HEAD">
-            <div class="Icon" id="ICON-LINEDN" onclick="SetPreferences('LineHeight',1)"><img class="Icon" title="Increase Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineDn.png" alt="&#8853;" ></div>
-            <div class="Icon" id="ICON-LINEUP" onclick="SetPreferences('LineHeight',-1)"><img class="Icon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;" ></div>
-            <div class="Icon" id="ICON-FONTUP" onclick="SetPreferences('FontSize',1)"><img class="Icon" title="Increase Font Size"" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Larger.png" alt="&#8853;" ></div>
-            <div class="Icon" id="ICON-FONTDN" onclick="SetPreferences('FontSize',-1)"><img class="Icon" title="Decrease Font Size" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Smaller.png" alt="&#8854;" ></div>
+            <div class="Icon" id="ICON-MAPINFO" onclick="ToggleInfoWindow()"><img class="Icon" title="Settings/Map/Lore" src="icons/fbicon-mapinfo.png" alt="&#8853;" ></div>
+            <div class="Icon" id="ICON-LINEDN" onclick="SetPreferences('LineHeight',1)"><img class="Icon" title="Increase Line Spacing" src="icons/fbicon-LineDn.png" alt="&#8853;" ></div>
+            <div class="Icon" id="ICON-LINEUP" onclick="SetPreferences('LineHeight',-1)"><img class="Icon" title="Decrease Line Spacing" src="icons/fbicon-LineUp.png" alt="&#8854;" ></div>
+            <div class="Icon" id="ICON-FONTUP" onclick="SetPreferences('FontSize',1)"><img class="Icon" title="Increase Font Size"" src="icons/fbicon-Larger.png" alt="&#8853;" ></div>
+            <div class="Icon" id="ICON-FONTDN" onclick="SetPreferences('FontSize',-1)"><img class="Icon" title="Decrease Font Size" src="icons/fbicon-Smaller.png" alt="&#8854;" ></div>
             <div class="Icon" id="ICON-THEME" onclick="PREFS.DisplayMode=(PREFS.DisplayMode=='Light')?'Dark':'Light';console.log('Changed color to '+PREFS.DisplayMode+'.');InvertIcons();SetScrollerEvents();runScrollEvents();SaveState();">
                 <span style="color: var(--TextColor);font-size: 40px;cursor:pointer;">&#9680;</span></div>
             </div> 
@@ -67,6 +68,16 @@
         <div> <div class="Instruction">Next Chapter</div> </div>
     </div>
 
+    <div class="MapInfoBox" id="MAPINFO">
+        <div>
+            <h3 class="Title" style="line-height:0.2em;">Bonus Content</h3>
+            <hr>
+            <h3 class="Subtitle" style="line-height:0.2em;">Maps of the World</h3>
+            <div id="MAPCONTENT"></div>
+
+        </div>
+    </div>
+
     <div class="CoverAnnounce" style="opacity:0;" onclick="DismissAnnouncements();/*clearInterval(parsecovers)*/" id="ANNOUNCEBOX">
         <img src="PGISO2.png" class="StoryCover" id="BOOKCOV"/>
         <div class="Announcements" id="ANNOUNCE"></div>
@@ -77,9 +88,13 @@
             <div onclick="window.open('https://www.tumblr.com/blog/savant-guarde')" style="cursor: pointer;"><img src="icons/logo-t2.png" class="SocialIcon"/></div>
         </div>
     </div>
+    <div class="Revision" id="REV"></div>
 </body>
 
 <script id="HTML_definitions">
+    const iMAPCONTENT = document.getElementById('MAPCONTENT');
+    const eMAPINFO = document.getElementById('MAPINFO');
+    const eREVISION = document.getElementById('REV');
     const eBAR = document.getElementById('HEAD');
     const eINSTRUCT = document.getElementById('INSTRUCTIONBOX');
     const eBOOKCOVER = document.getElementById('BOOKCOV');
@@ -104,6 +119,7 @@ async function ScrivReader() {
     await initialization();
     eWINDOW.addEventListener('scroll',runScrollEvents);
     await setup();
+    eREVISION.innerHTML = `<span title="${Object.entries(VersionLog)[Object.keys(VersionLog).length-1][1]}">${Object.keys(VersionLog)[Object.keys(VersionLog).length-1]}</span>`;
 }
 ScrivReader();
 </script>

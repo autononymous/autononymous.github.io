@@ -28,6 +28,8 @@
     var Position = 0;
     var TOCchapterTARGET = "";
 
+    var InfoWindowState = false;
+
     var ShownCover = 1;
 
     ThisStoryTheme = "Default"
@@ -336,7 +338,7 @@ function ParseStory(data) {
                             writershand = `${ePerspective}Hand`;
                             passage = passage.replaceAll("msgnote",`${writershand} msgnote`);
                         }
-                        if (passage.search("Titus") != -1) { console.warn(passage)}
+                        //if (passage.search("Titus") != -1) { console.warn(passage)}
                         if ((WritingMessage == false) || (WritingMessage == true && (passage.search("msgfromdate") != -1 || passage.search("msgtodate") != -1))) {
                             STORY[STORY.length-1].BodyFormatted.push(
                                 `<p id="${entry.ChapterFull}.${entry.SceneFull}.${LineIndex++}" class="${ePerspective} ${msgtype} ${writershand}" style="line-height: 1.25em;padding-left:20px;padding-right:20px;font-family: var(--MsgFont);text-align: left;">`
@@ -451,7 +453,7 @@ function SetScrollerEvents() {
             //console.log("Style change.",LastStyle,ThisStyle)
             IsFirstElement = false;
             let Progress = ItemPosition(element,false,true);
-            console.log(Progress)
+            //console.log(Progress)
             DConsole("main.js > SetScrollerEvents",`\t${LastStyle} > ${ThisStyle} @ ${Math.round(Progress*100)/100}%.`,false);
             MODES.forEach( mode  => {
                 let last = STYLES[LastStyle][PREFS.DisplayMode][mode]
@@ -876,4 +878,14 @@ function runScrollEvents() {
     
     //console.log(CHSET["Background"][3]) /**-*/
     
+}
+
+function ToggleInfoWindow() {
+    InfoWindowState = !InfoWindowState;
+    eMAPINFO.style.opacity = 1 * InfoWindowState;
+    eMAPINFO.style.pointerEvents = InfoWindowState ? "all" : "none";
+    eMAPINFO.style.animation = ("1s ease-in-out 0.25s forwards" + ((InfoWindowState)?" fadein ":" fadeout "));
+    let BONUScontent = Object.entries(BONUS)[ActiveStory];
+    
+    iMAPCONTENT.innerHTML = BONUScontent.Maps;
 }

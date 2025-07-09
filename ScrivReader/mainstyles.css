@@ -125,7 +125,7 @@
         height:var(--MenuHeight);        
         width:auto;
         display: grid;
-        grid-template-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
         text-align: center;
     }
     img.Icon {
@@ -378,10 +378,12 @@ div.PermBox {
     left:50%;
     top:calc(25dvh + 10px);/*calc(33dvh + 50px);/**/
     transform:translate(-50%,-50%);
-    width: min(600px,80vw);
+    width: min(400px,80vw); /*width: min(600px,80vw);/**/
     max-height:150px;
     padding: 0px 20px 10px 20px;
     text-align: center;
+
+    animation: 2.0s ease-in-out 4.0s forwards fadeout;
 }
 div.PermBox > h3 {
     font-family: var(--ActiveTitle);
@@ -845,5 +847,37 @@ div.ChapMeta {
     bottom:calc(-50dvh + 30px);
     left:50%;
     transform:translateX(-50%);
+}
 
+div.Revision {
+    position:absolute;
+    text-align:right;
+    right:10px;
+    bottom:10px;
+    color: var(--TextColor);
+    font-family:'Arial Narrow', Helvetica, sans-serif;
+}
+
+div.MapInfoBox {
+    position:absolute;
+    top:calc(var(--ControlHeight) - 20px);
+    left:0;
+    width:100vw;
+    height:calc(100dvh - var(--ControlHeight) + 20px);
+    background-image: linear-gradient( to right, rgba(0,0,0,0.1), rgba(0,0,0,0.1));  
+    opacity:0;
+    pointer-events: none;
+}
+
+div.MapInfoBox > div {
+    font-family: var(--ActiveSub);
+    position:absolute;
+    top: 30px;/*calc(var(--ControlHeight) - 10px);/**/
+    left: 50vw;
+    transform: translateX(-50%);
+    width: min(600px,90vw);
+    height: min(70dvh,1200px);
+    background-color: var(--BackgroundColor);
+    border-radius:25px;
+    border:2px dotted var(--TextColor);
 }

@@ -156,5 +156,17 @@
         "StoryName":"Paragate",
         "CoverImage":"design/cover-PG.jpg"
     }
+},
+"Bonus":{
+    "Firebrand":
+    {
+        "Maps":"<img class='map' src='https://autononymous.io/wp-content/uploads/2025/04/BLACKWATER_lowres.jpg'/>",
+        "Other":""  
+    },
+    "Paragate":
+    {
+        "Maps":"https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/WebnovelReader/docs/",
+        "Other":""
+    }
 }
 }

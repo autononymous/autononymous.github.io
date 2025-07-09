@@ -11,6 +11,12 @@
     var isTOCshown = false;
     var DoAnnouncements = true;
 
+const VersionLog = {
+    "v1.00":"Reader alpha",
+    "v2.00":"Reader beta",
+    "v2.10":"Add version counter; fix story tag detection"
+}
+
 function clearLocalStorage() {
     localStorage.removeItem(`AC_SAVE_${StoryMode}`);
     localStorage.removeItem(`AC_SETTINGS_${StoryMode}`);
@@ -63,6 +69,8 @@ async function GetJSONFromSource(location)
 function ParseJSON(source) {
     return JSON.parse(source.replaceAll(/(\r\n|\n|\r)/gm, ''));
 }
+
+var BONUS = {};
 
 var THEMEINDEX = {
     "Firebrand":  [ "Titus" ],
@@ -159,6 +167,7 @@ async function GetCustomParams()
             themeStyles.push("Default");
         }
     })
+    BONUS = SOURCE.Bonus; DConsole("initialize.js > GetCustomParams","Loaded bonus window content from JSON.");
     STYLES = SOURCE.Styles; DConsole("initialize.js > GetCustomParams","Loaded styles from JSON.");
     PREFS = SOURCE.Preferences; DConsole("initialize.js > GetCustomParams","Loaded preferences from JSON.");
     SETTINGS = SOURCE.Settings; DConsole("initialize.js > GetCustomParams","Loaded settings from JSON.");
