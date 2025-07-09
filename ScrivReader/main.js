@@ -895,6 +895,7 @@ function zoomImage(elem) {
     //console.log(`${isMapZoom}: Zooming image at ${xd}%, ${yd}%`);
     elem.style.transform = isMapZoom ? `translateX(${xd}%) translateY(${yd}%) scale(3)` : `translateX(-50%) translateY(0%) scale(1)`;
     elem.style.transition = "transform 0.5s ease-in-out";
+    elem.style.zIndex = isMapZoom ? "9999" : "";
 }
 
 function ToggleInfoWindow() {
@@ -904,6 +905,9 @@ function ToggleInfoWindow() {
     iMAPCONTENT.innerHTML = BONUScontent.Maps; // load only once.
     iEXTRAS.innerHTML = BONUScontent.Other;
     Object.entries(iMAPCONTENT.getElementsByClassName("map")).forEach( ([index,elem]) => {
+        elem.setAttribute("onclick","zoomImage(this);")
+    })
+    Object.entries(iEXTRAS.getElementsByClassName("map")).forEach( ([index,elem]) => {
         elem.setAttribute("onclick","zoomImage(this);")
     })
 
