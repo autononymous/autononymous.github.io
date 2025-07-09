@@ -892,7 +892,7 @@ function zoomImage(elem) {
     }
     let xd = -x;
     let yd = 0;
-    console.log(`${isMapZoom}: Zooming image at ${xd}%, ${yd}%`);
+    //console.log(`${isMapZoom}: Zooming image at ${xd}%, ${yd}%`);
     elem.style.transform = isMapZoom ? `translateX(${xd}%) translateY(${yd}%) scale(3)` : `translateX(-50%) translateY(0%) scale(1)`;
     elem.style.transition = "transform 0.5s ease-in-out";
 }
