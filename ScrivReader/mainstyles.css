@@ -283,8 +283,8 @@ p.msgfrom {
     padding-left:20px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left:0;
-    margin-right:0;
+    margin-left:30px;
+    margin-right:0px;
     text-align: left;
     border: 0px solid var(--TextColor);
     border-radius: 10px 10px 10px 0px;
@@ -303,6 +303,20 @@ p.msgfrom::before {
   bottom: 0;
   content: "";
 }
+p.msgfrom::after {
+    content: "";
+    color:black;
+    text-align:middle;
+    position: absolute;
+    left: -55px;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    border-radius:20px;
+    background-image: url("icons/anonythumb.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+}
 
 p.msgto {
     font-family: var(--MsgFont);
@@ -312,8 +326,8 @@ p.msgto {
     padding-right:20px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left:0;
-    margin-right:0;
+    margin-left:0px;
+    margin-right:30px;
     text-align: right;
     border: 0px solid var(--TextColor);
     border-radius: 10px 10px 0px 10px;

@@ -250,7 +250,7 @@ function ParseStory(data) {
 
             //console.warn(`For ${eID}:`,REVNOTES[ActiveStory][eID])
 
-            ePerspective = ((entry.Perspective=="Mixed")||(entry.Perspective==""))?"Default":entry.Perspective;
+            ePerspective = ((entry.Perspective=="Mixed")||(entry.Perspective==""))?Story[i+1].Perspective:entry.Perspective;
             //console.error(entry.VerboseOverride)
             let prefix = STYLES[ePerspective].Prefix;
             let suffix = STYLES[ePerspective].Suffix;
@@ -339,7 +339,7 @@ function ParseStory(data) {
                         if (passage.search("Titus") != -1) { console.warn(passage)}
                         if ((WritingMessage == false) || (WritingMessage == true && (passage.search("msgfromdate") != -1 || passage.search("msgtodate") != -1))) {
                             STORY[STORY.length-1].BodyFormatted.push(
-                                `<p id="${entry.ChapterFull}.${entry.SceneFull}.${LineIndex++}" class="${ePerspective} ${msgtype} ${writershand}" style="line-height: 1.25em;padding-left:20px;padding-right:20px;">`
+                                `<p id="${entry.ChapterFull}.${entry.SceneFull}.${LineIndex++}" class="${ePerspective} ${msgtype} ${writershand}" style="line-height: 1.25em;padding-left:20px;padding-right:20px;font-family: var(--MsgFont);text-align: left;">`
                                 + passage
                             );                   
                             WritingMessage = true;
@@ -392,6 +392,8 @@ function SetScrollerEvents() {
     let LastStyle = "Default";//PageElements[0].className.split(" ")[0];
     let ThisStyle = PageElements[0].className.split(" ")[0];
 
+    let StyleOptions = THEMEINDEX[ActiveStory]==undefined ? "Default" : THEMEINDEX[ActiveStory];
+
     Keyframes = {
         "Text":[],
         "Background":[],
@@ -416,13 +418,19 @@ function SetScrollerEvents() {
         element = PageElements[i];
         // Get previous style and current style.
         LastStyle = ThisStyle + "";
-        ThisStyle = element.className.split(" ")[0];
+        let ThisStyleSet = element.className.split(" ");
+        ThisStyle = ThisStyleSet.forEach( (style) => {
+            if (StyleOptions.includes(style)) {
+                ThisStyle = style;
+            } else {
+                ThisStyle = "Default";
+            }
+        });
 
         if ( (ThisStyle != LastStyle) ) { //|| (IsFirstElement && (element.tagName == "P")) || (i == PageElements.length-5) ) {
             //console.log("Style change.",LastStyle,ThisStyle)
             IsFirstElement = false;
             let Progress = ScrollPosition(element);
-            let Style = STYLES[ThisStyle][PREFS.DisplayMode];
             MODES.forEach( mode  => {
                 let last = STYLES[LastStyle][PREFS.DisplayMode][mode]
                 let next = STYLES[ThisStyle][PREFS.DisplayMode][mode]

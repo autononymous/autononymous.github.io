@@ -3,6 +3,11 @@
 [
     "Background","Text","ProgressBar"
 ],
+"ThemeIndex":
+{
+    "Firebrand":  [ "Titus" ],
+    "Paragate":   [ "Katiya" , "Cody" ]
+},
 "Styles":
 {
     "Titus":

@@ -64,6 +64,11 @@ function ParseJSON(source) {
     return JSON.parse(source.replaceAll(/(\r\n|\n|\r)/gm, ''));
 }
 
+var THEMEINDEX = {
+    "Firebrand":  [ "Titus" ],
+    "Paragate":   [ "Katiya" , "Cody" ]
+};
+
 var MODES = ['Background','Text','ProgressBar'];
     var STYLES = { 
         "Default":
@@ -148,6 +153,7 @@ async function GetCustomParams()
 {
     SOURCE = await GetJSONFromSource(ScrivReaderSOURCE + "/StoryConfig.json");
 
+    THEMEINDEX = SOURCE.ThemeIndex; DConsole("initialize.js > GetCustomParams","Loaded theme indices from JSON.");
     STYLES = SOURCE.Styles; DConsole("initialize.js > GetCustomParams","Loaded styles from JSON.");
     PREFS = SOURCE.Preferences; DConsole("initialize.js > GetCustomParams","Loaded preferences from JSON.");
     SETTINGS = SOURCE.Settings; DConsole("initialize.js > GetCustomParams","Loaded settings from JSON.");
