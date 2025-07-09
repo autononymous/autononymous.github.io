@@ -860,24 +860,41 @@ div.Revision {
 
 div.MapInfoBox {
     position:absolute;
-    top:calc(var(--ControlHeight) - 20px);
+    top:100vh;/*calc(var(--ControlHeight) - 30px);/**/
     left:0;
     width:100vw;
     height:calc(100dvh - var(--ControlHeight) + 20px);
-    background-image: linear-gradient( to right, rgba(0,0,0,0.1), rgba(0,0,0,0.1));  
-    opacity:0;
+    /*background-image: linear-gradient( to right, rgba(0,0,0,0.1), rgba(0,0,0,0.1));  /**/
+    /*opacity:0;/**/
     pointer-events: none;
+    transition: top 0.5s ease-in-out;
+    border-top: 2px solid var(--TextColor);
 }
 
 div.MapInfoBox > div {
     font-family: var(--ActiveSub);
     position:absolute;
-    top: 30px;/*calc(var(--ControlHeight) - 10px);/**/
+    top:0;/*calc(var(--ControlHeight) - 30px);/**/
     left: 50vw;
     transform: translateX(-50%);
-    width: min(600px,90vw);
-    height: min(70dvh,1200px);
+    width: 100vw;/*min(600px,90vw);/**/
+    height: calc(100dvh - 30px);/*min(70dvh,1200px);/**/
     background-color: var(--BackgroundColor);
-    border-radius:25px;
-    border:2px dotted var(--TextColor);
+}
+
+img.map {
+    position: relative;
+    width: 90%;
+    left: 50%;
+    top:0;
+    transform: translateX(-50%);
+}
+
+@keyframes mapzoom {
+    0% {
+        width: 90%;
+    }
+    100% {
+        width:200%;
+    }
 }

@@ -29,6 +29,7 @@
     var TOCchapterTARGET = "";
 
     var InfoWindowState = false;
+    var isMapZoom = false;
 
     var ShownCover = 1;
 
@@ -880,12 +881,43 @@ function runScrollEvents() {
     
 }
 
+function zoomImage(elem) {
+    isMapZoom = !isMapZoom;
+    let x = 0;
+    let y = 0;
+    if (isMapZoom) {
+        const rect = elem.getBoundingClientRect();
+        x = (event.clientX - rect.left) / rect.width * 100;
+        y = (event.clientY - rect.top) / rect.height * 100;
+    }
+    let xd = -x;
+    let yd = 0;
+    console.log(`${isMapZoom}: Zooming image at ${xd}%, ${yd}%`);
+    elem.style.transform = isMapZoom ? `translateX(${xd}%) translateY(${yd}%) scale(3)` : `translateX(-50%) translateY(0%) scale(1)`;
+    elem.style.transition = "transform 0.5s ease-in-out";
+}
+
 function ToggleInfoWindow() {
     InfoWindowState = !InfoWindowState;
-    eMAPINFO.style.opacity = 1 * InfoWindowState;
-    eMAPINFO.style.pointerEvents = InfoWindowState ? "all" : "none";
-    eMAPINFO.style.animation = ("1s ease-in-out 0.25s forwards" + ((InfoWindowState)?" fadein ":" fadeout "));
-    let BONUScontent = Object.entries(BONUS)[ActiveStory];
     
-    iMAPCONTENT.innerHTML = BONUScontent.Maps;
+    let BONUScontent = BONUS[ActiveStory];
+    iMAPCONTENT.innerHTML = BONUScontent.Maps; // load only once.
+    Object.entries(iMAPCONTENT.getElementsByClassName("map")).forEach( ([index,elem]) => {
+        elem.setAttribute("onclick","zoomImage(this);")
+    })
+
+    switch (InfoWindowState) {
+    case true:
+        eMAPINFO.style.top = "calc(var(--ControlHeight) - 30px)";
+        //eMAPINFO.style.opacity = 1;
+        eMAPINFO.style.pointerEvents = "all";
+        //eMAPINFO.style.animation = ("1s ease-in-out 0.25s forwards fadein");
+        break;
+    case false:
+        eMAPINFO.style.top = "100vh";
+        //eMAPINFO.style.opacity = 0;
+        eMAPINFO.style.pointerEvents = "none";
+        //eMAPINFO.style.animation = ("1s ease-in-out 0.25s forwards fadeout");
+    }   
+    
 }
