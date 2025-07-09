@@ -873,7 +873,6 @@ div.MapInfoBox {
 }
 
 div.MapInfoBox > div {
-    font-family: var(--ActiveSub);
     position:absolute;
     top:0;/*calc(var(--ControlHeight) - 30px);/**/
     left: 50vw;
@@ -883,6 +882,12 @@ div.MapInfoBox > div {
     background-color: var(--BackgroundColor);  
     margin-left:50px;
     margin-right:50px;
+}
+
+div.MapInfoBox > div, div.MapInfoBox > div > div {
+    font-family: var(--ActiveSub);
+    color: var(--TextColor);
+    /*font-size: var(--ActiveSize);/**/
 }
 
 img.map {
