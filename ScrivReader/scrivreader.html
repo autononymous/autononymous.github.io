@@ -21,7 +21,7 @@
     
     <div class="FullContainer" id="FULL">
         <div class="ContainerLeft Gutter"></div>
-        <div class="ContainerHead">
+        <div class="ContainerHead" id="HEAD">
             <div class="Icon" id="ICON-LINEDN" onclick="SetPreferences('LineHeight',1)"><img class="Icon" title="Increase Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineDn.png" alt="&#8853;" ></div>
             <div class="Icon" id="ICON-LINEUP" onclick="SetPreferences('LineHeight',-1)"><img class="Icon" title="Decrease Line Spacing" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-LineUp.png" alt="&#8854;" ></div>
             <div class="Icon" id="ICON-FONTUP" onclick="SetPreferences('FontSize',1)"><img class="Icon" title="Increase Font Size"" src="https://autononymous.io/wp-content/uploads/2025/05/fbicon-Larger.png" alt="&#8853;" ></div>
@@ -80,6 +80,7 @@
 </body>
 
 <script id="HTML_definitions">
+    const eBAR = document.getElementById('HEAD');
     const eINSTRUCT = document.getElementById('INSTRUCTIONBOX');
     const eBOOKCOVER = document.getElementById('BOOKCOV');
     const eSTARTBOX = document.getElementById('ANNOUNCEBOX');

@@ -154,6 +154,11 @@ async function GetCustomParams()
     SOURCE = await GetJSONFromSource(ScrivReaderSOURCE + "/StoryConfig.json");
 
     THEMEINDEX = SOURCE.ThemeIndex; DConsole("initialize.js > GetCustomParams","Loaded theme indices from JSON.");
+    Object.entries(THEMEINDEX).forEach( ([themeName, themeStyles]) => {
+        if (!themeStyles.includes("Default")) {
+            themeStyles.push("Default");
+        }
+    })
     STYLES = SOURCE.Styles; DConsole("initialize.js > GetCustomParams","Loaded styles from JSON.");
     PREFS = SOURCE.Preferences; DConsole("initialize.js > GetCustomParams","Loaded preferences from JSON.");
     SETTINGS = SOURCE.Settings; DConsole("initialize.js > GetCustomParams","Loaded settings from JSON.");

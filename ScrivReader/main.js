@@ -385,14 +385,35 @@ function Event_Switch( keyframe, progress, previous, next, transition, hold , of
     keyframe.push([pStart,previous[0],previous[1],previous[2],previous[3], wasTheme, isTheme]);
     keyframe.push([pEnd,next[0],next[1],next[2],next[3], wasTheme, isTheme]);
 
-
 }
-function SetScrollerEvents() {
-    let PageElements = ePAGE.childNodes;
-    let LastStyle = "Default";//PageElements[0].className.split(" ")[0];
-    let ThisStyle = PageElements[0].className.split(" ")[0];
 
-    let StyleOptions = THEMEINDEX[ActiveStory]==undefined ? "Default" : THEMEINDEX[ActiveStory];
+function ReturnStyleMatch( classes ) {
+    result = "Default";
+    THEMEINDEX[ActiveStory].forEach( style => {
+        if (classes.includes(style)) {
+            //console.log(style)
+            result = style;
+        }
+    });
+    return result;
+}
+
+function SetScrollerEvents() {
+    let AllPageElements = ePAGE.childNodes;
+    let StyleOptions = THEMEINDEX[ActiveStory];
+    DConsole("main.js > SetScrollerEvents",`Detecting style changes matching { ${StyleOptions.join(",")} }.`,false);
+    let PageElements = Array.from(AllPageElements).filter( element => {
+        let IsIncludedStyle = false;
+        StyleOptions.forEach( style => {
+            IsIncludedStyle = IsIncludedStyle || (element.className.split(" ").includes(style));
+        });
+        return IsIncludedStyle;
+    });
+
+    //console.debug(PageElements)
+
+    let LastStyle = "Default";//PageElements[0].className.split(" ")[0];
+    let ThisStyle = ReturnStyleMatch(PageElements[0].className.split(" "));
 
     Keyframes = {
         "Text":[],
@@ -403,6 +424,7 @@ function SetScrollerEvents() {
     // Start on neutral theme.
     let Progress = 0;
     let Style = STYLES["Default"][PREFS.DisplayMode]
+    DConsole("main.js > SetScrollerEvents",`\t${LastStyle} > ${ThisStyle} @ ${Math.round(Progress*100)/100}%.`,false);
     MODES.forEach( mode  => {
         Keyframes[mode].push([Progress,Style[mode][0],Style[mode][1],Style[mode][2],Style[mode][3], LastStyle+"", ThisStyle+""]);
         let last = STYLES[LastStyle][PREFS.DisplayMode][mode]
@@ -414,23 +436,23 @@ function SetScrollerEvents() {
 
     let IsFirstElement = true;
 
+    ScrollPosition(ePAGE,true,true)
+
     for (let i=0; i<PageElements.length; i++) {
         element = PageElements[i];
         // Get previous style and current style.
         LastStyle = ThisStyle + "";
-        let ThisStyleSet = element.className.split(" ");
-        ThisStyle = ThisStyleSet.forEach( (style) => {
-            if (StyleOptions.includes(style)) {
-                ThisStyle = style;
-            } else {
-                ThisStyle = "Default";
-            }
-        });
+        let TheseStyles = element.className.split(" ");
+        //console.debug(TheseStyles)
+        ThisStyle = ReturnStyleMatch(TheseStyles);
+        //console.debug(ThisStyle)
 
         if ( (ThisStyle != LastStyle) ) { //|| (IsFirstElement && (element.tagName == "P")) || (i == PageElements.length-5) ) {
             //console.log("Style change.",LastStyle,ThisStyle)
             IsFirstElement = false;
-            let Progress = ScrollPosition(element);
+            let Progress = ItemPosition(element,false,true);
+            console.log(Progress)
+            DConsole("main.js > SetScrollerEvents",`\t${LastStyle} > ${ThisStyle} @ ${Math.round(Progress*100)/100}%.`,false);
             MODES.forEach( mode  => {
                 let last = STYLES[LastStyle][PREFS.DisplayMode][mode]
                 let next = STYLES[ThisStyle][PREFS.DisplayMode][mode]
@@ -446,6 +468,7 @@ function SetScrollerEvents() {
     // End on neutral theme.
     Progress = 100;
     Style = STYLES["Default"][PREFS.DisplayMode]
+    DConsole("main.js > SetScrollerEvents",`\t${LastStyle} > ${ThisStyle} @ ${Math.round(Progress*100)/100}%.`,false);
     ThisStyle = "Default";
     MODES.forEach( mode  => {
         let last = STYLES[LastStyle][PREFS.DisplayMode][mode]
@@ -456,6 +479,7 @@ function SetScrollerEvents() {
         Keyframes[mode].push([Progress,Style[mode][0],Style[mode][1],Style[mode][2],Style[mode][3], LastStyle+"", ThisStyle+""]);
     });
 
+    DConsole("main.js > SetScrollerEvents",PageElements,true,true);
    
     //--console.log(PageElementList);
     //--console.log(LastStyle)
@@ -731,7 +755,7 @@ function PlaceChapter(CHAPTER) {
         SetScrollerEvents();    
         SetInfo();  
         if(PermissionLevel >= 2) {     
-            ePAGE.innerHTML += `<div class="ChapMeta">Author notes:<br>${CHAPTER.ID}&ensp;|&ensp;${CHAPTER.Status}&ensp;|&ensp;~${Math.round(CHAPTER.WordCount / 100) * 100} words&ensp;|&ensp;${Math.round(CHAPTER.WordCount/250*10)/10} mins</div>`;
+            ePAGE.innerHTML += `<div class="Default ChapMeta">Author notes:<br>${CHAPTER.ID}&ensp;|&ensp;${CHAPTER.Status}&ensp;|&ensp;~${Math.round(CHAPTER.WordCount / 100) * 100} words&ensp;|&ensp;${Math.round(CHAPTER.WordCount/250*10)/10} mins</div>`;
         }
         } else {
         StartChapter = 1; ////////////////////////////
@@ -766,27 +790,59 @@ async function setup() {
     await BuildTOC();
     SetViewerMode();    
 }
-function ScrollPosition(elem) {
+function ScrollPosition(elem) {    
     let PageRect = ePAGE.getBoundingClientRect();
     let ItemRect = elem.getBoundingClientRect();
     let BodyRect = eWINDOW.getBoundingClientRect();
-
-    let PageHeight = PageRect.height - BodyRect.height;
+    
+    let PageHeight = BodyRect.height - PageRect.height;
     let PositionHeight = ItemRect.top - BodyRect.top;
-    let ScrollPos = Math.abs(((PositionHeight/PageHeight)*100))
-    ScrollPos = (ScrollPos>=100)?
-                        100:
-                        ((ScrollPos<=0)?
-                            0:
-                            ScrollPos);
-
-    /*
-    console.debug(`
-    Page height is at ${PageRect.height} - ${BodyRect.height} = ${PageHeight}.
-    Position height is at ${ItemRect.top} - ${BodyRect.top} = ${PositionHeight}.
-    `);
-    */
+    
+    let ScrollPos = Math.abs((PositionHeight/PageHeight)*100);
+    ScrollPos = (ScrollPos>=100) ? 100 : ((ScrollPos<=0) ? 0: ScrollPos);
+    
     return ScrollPos;
+}
+
+function ItemPosition(elem,signed=false,notify=false) {
+    let PageRect = ePAGE.getBoundingClientRect();
+    let ItemRect = elem.getBoundingClientRect();
+    //let BodyRect = eWINDOW.getBoundingClientRect();
+    //let BarRect = eBAR.getBoundingClientRect();
+
+    let PageTop = PageRect.top;
+    let PageBottom = PageRect.bottom;
+    let ItemTop = ItemRect.top;
+    //let ItemBottom = ItemRect.bottom;
+    //let BodyTop = BodyRect.top;
+    //let BodyBottom = BodyRect.bottom;
+    //let BarTop = BarRect.top;
+    //let BarBottom = BarRect.bottom;
+
+    let Rel = ItemTop - PageTop
+    let Perc = Rel / (PageBottom - PageTop);
+    let ScrollPos = Math.round(Perc*100);
+    
+    
+    if(notify){console.info(
+  //      `${Math.round(PageTop)},\t${Math.round(PageBottom)}\n`,
+  //      `${Math.round(ItemTop)},\t${Math.round(ItemBottom)}\n`,
+  //      `${Math.round(BodyTop)},\t${Math.round(BodyBottom)}\n`,
+ //       `${Math.round(BarTop)},\t${Math.round(BarBottom)}\n`,
+        `${Math.round(Rel)},\t${Math.round(Perc*100)},\t${Math.round(ScrollPos)}\n`
+    )};
+    
+
+    //let PageHeight = BodyRect.height - PageRect.height;
+    //let PositionHeight = ItemRect.top - BodyRect.top;
+    /*
+    let ScrollPos = signed ? ((PositionHeight/PageHeight)*100) : Math.abs((PositionHeight/PageHeight)*100)
+    if(!signed) {ScrollPos = (ScrollPos>=100) ? 100 : ((ScrollPos<=0) ? 0: ScrollPos);}
+    */
+   
+    /*if(notify){console.info(`For ${elem.id}:\nPage height is at:\n\t${Math.round(BodyRect.height)} - ${Math.round(PageRect.height)} = ${Math.round(PageHeight)}.\nPosition height is at:\n\t${Math.round(ItemRect.top)} - ${Math.round(BodyRect.top)} = ${Math.round(PositionHeight)}.\nScroll position is ${Math.round(ScrollPos)}`);}
+    /**/
+    return ScrollPos < 3 ? 3 : ScrollPos;
 }
 function ApplyColors() {
 
