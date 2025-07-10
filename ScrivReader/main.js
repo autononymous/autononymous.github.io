@@ -201,7 +201,7 @@ async function fetchJSON() {
         DConsole("main.js > fetchJSON",`Story "${ActiveStory}" successfully loaded.\n`,true);
         return result;
     } catch (error) {
-        DConsole("main.js > fetchJSON","Error in fetch process.\n> At location: "+sourcelocation+"\n> "+error,false);
+        DConsole("main.js > fetchJSON","Error in fetch process.\n >"+error,false);
     }
     DConsole("main.js > fetchJSON","fetchJSON process completed.",true);
 }
