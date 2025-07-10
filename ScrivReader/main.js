@@ -175,6 +175,7 @@ function SetPreferences(property,increment) {
 async function fetchJSON() {
     // Check if we already have this saved locally first.
     let SavedContent = null;//localStorage.getItem(`AC_SAVE_${ActiveStory}`);
+    console.info(SavedContent)
     if(SavedContent != null) {
         try {
             let jSavedContent = JSON.parse(SavedContent.replaceAll(/(\r\n|\n|\r)/gm, ''));
