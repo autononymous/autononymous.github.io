@@ -40,6 +40,17 @@
     var KAT_Opacity     = 0.00;
     var TIE_Opacity     = 0.00;
 
+
+    // Message correlations.
+    const MsgMatch = {
+        "Miguel":"Miguel",
+        "Cody":"Cody",
+        "Kei":"Kei",
+        "SAKURA":"Kei",
+        "DUNSMO":"Cody",
+        "BROD":"Reed",
+        "Katiya":"Katiya"
+    }
     
 
 // ==============================<{Functions}>======================== //
@@ -147,7 +158,7 @@ function SetMessageState() {
     let newstate = (PREFS.DisplayMode=="Dark")?0:1;
     ROOT.style.setProperty("--MsgColorTo",(newstate==0?"rgba(33, 138, 255, 0.8)":"rgba(33, 138, 255, 0.8)"));
     ROOT.style.setProperty("--MsgFontColorTo",(newstate==0?"white":"white"));
-    ROOT.style.setProperty("--MsgColorFrom",(newstate==0?"rgba(129, 129, 129, 0.8)":"rgba(235, 235, 235, 0.8)"));//"rgba(216, 216, 216, 0.8)"));
+    ROOT.style.setProperty("--MsgColorFrom",(newstate==0?"rgba(129, 129, 129, 0.8)":"rgba(215, 215, 215, 0.8)"));//"rgba(216, 216, 216, 0.8)"));
     ROOT.style.setProperty("--MsgFontColorFrom",(newstate==0?"white":"black"));
 }
 function SetPreferences(property,increment) {
@@ -341,8 +352,14 @@ function ParseStory(data) {
                         }
                         //if (passage.search("Titus") != -1) { console.warn(passage)}
                         if ((WritingMessage == false) || (WritingMessage == true && (passage.search("msgfromdate") != -1 || passage.search("msgtodate") != -1))) {
+                            let msgsource = "";
+                            Object.entries(MsgMatch).forEach( ([query,result]) => {
+                                if(passage.search(query) != -1) {
+                                    msgsource = result;
+                                }
+                            });
                             STORY[STORY.length-1].BodyFormatted.push(
-                                `<p id="${entry.ChapterFull}.${entry.SceneFull}.${LineIndex++}" class="${ePerspective} ${msgtype} ${writershand}" style="line-height: 1.25em;padding-left:20px;padding-right:20px;font-family: var(--MsgFont);text-align: left;">`
+                                `<p id="${entry.ChapterFull}.${entry.SceneFull}.${LineIndex++}" class="${ePerspective} from${msgsource} ${msgtype} ${writershand}" style="line-height: 1.25em;padding-left:20px;padding-right:20px;font-family: var(--MsgFont);text-align: left;">`
                                 + passage
                             );                   
                             WritingMessage = true;
