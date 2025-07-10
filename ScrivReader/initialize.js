@@ -16,7 +16,7 @@ const VersionLog = {
     "v2.00":"Reader beta",
     "v2.10":"Add version counter; fix story tag detection",
     "v2.20":"Bonus content window added.",
-    "v2.22":"Minor fixes to new info window."
+    "v2.23":"Minor fixes to new info window."
 }
 
 function clearLocalStorage() {
