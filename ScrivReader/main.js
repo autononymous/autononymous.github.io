@@ -118,7 +118,8 @@ function yeardate(date) {
 function SaveState() {    
     localStorage.setItem(`AC_SETTINGS_${ActiveStory}`,JSON.stringify(SETTINGS))
     localStorage.setItem(`AC_PREFS_${ActiveStory}`,JSON.stringify(PREFS));
-    DConsole("main.js > SaveState","User preference changes saved to internal storage.",true)
+    DConsole("main.js > SaveState","User preference changes saved to internal storage.",false)
+    DConsole("main.js > SaveState",`Bookmarked to Chapter ${PREFS.StartChapter}.`,true)
 }
 async function LoadPreferences() {
     let saveprefs = localStorage.getItem(`AC_PREFS_${ActiveStory}`);
@@ -126,7 +127,10 @@ async function LoadPreferences() {
     if (saveprefs && savesettings) {
         try {
             PREFS = JSON.parse(saveprefs);
-            PREFS.StartChapter < 0 ? PREFS.StartChapter = 0 : PREFS.StartChapter;
+
+            console.error(PREFS.StartChapter)
+
+            PREFS.StartChapter = PREFS.StartChapter < 0 ?  0 : PREFS.StartChapter;
             SETTINGS = JSON.parse(savesettings);
 
             Object.values(SETTINGS).forEach( setting  => {                
@@ -840,11 +844,12 @@ function PlaceChapter(CHAPTER) {
 async function PlaceOrOverlay(CHAPTER) {
     let BONUS = "";
     let OverrideContent = CH_OVERRIDES[ActiveStory][CurrentChapter.ID];
-    if(OverrideContent != undefined) {
-        console.warn(OverrideContent)
+    if(OverrideContent != undefined) {        
+        StartChapter = CurrentChapter.ChapterNumber;
+        PREFS.StartChapter = CurrentChapter.ChapterNumber-1;
         BONUS = await GetJSONFromSource(OverrideContent);
         ePAGE.innerHTML = `<div class="bonusitem">${BONUS.Content}</div>`
-        isScrollerEventPage = false;
+        isScrollerEventPage = false;       
         HandleScrollerEvents();
         SaveState();
     } else {

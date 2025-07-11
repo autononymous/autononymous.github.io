@@ -199,24 +199,29 @@ p.CodyHand, p.KatiyaHand, p.TitusHand {
 
 /*====={ Special/uncommon styles }=====*/
 
+:root {
+    --SpecialFont: min(2.2vw,0.9em);
+}
+
 div.bonusitem {  
     width:100%; 
+    overflow: visible;
 }
 td.cody-verse {
     text-align:right;
     font-family: var(--CodyText);
     font-weight: 200;
-    font-size: 2.5vw;
+    font-size: var(--SpecialFont);
     min-width:500px;
-    padding-right:5px;
+    padding-right:10px;
 }
 td.katiya-verse {
     text-align:left;
     font-family: var(--KatiyaText);
     font-weight: 400;
-    font-size: 3.0vw;
+    font-size: calc(var(--SpecialFont) * 1.2);
     min-width:500px;
-    padding-left:5px;
+    padding-left:10px;
     padding-bottom:0.15em;
 }
 table.pgintro {
@@ -227,10 +232,25 @@ table.pgintro {
     top:50px;
     transform:translateX(-50%) scaleX(70%);
     width:100%;
-    background-image: url('c:\Users\rkiss\OneDrive\AUTONONYMOUS\Paragate\MixBGs\background_PG_both.png');
 }
+table.pgintro::before {
+    content:" ";
+    position:absolute;
+    width:100vw;
+    height:1000vh;
+    left:50%;
+    top:-50vh;  
+    transform:translateX(-50%) scaleX(calc( 1 / 0.7));
+    /*
+    background-image: url('design/bg-pg.png');
+    background-position:center;
+    background-repeat: repeat-y;
+    /**/
+    background-image: linear-gradient(to right, var(--BackgroundColor) 10%, rgba(0, 0, 255 ,0.1) 49.9%, rgba(255, 0, 0, 0.1) 50.1%,  var(--BackgroundColor) 90%);    
+    mix-blend-mode:overlay;
+}
+/**/
 
 table.pgintro > tbody > tr > td {
-    padding-top:10px;
-    min-height:10vw;
+    height:var(--SpecialFont);
 }
