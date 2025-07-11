@@ -40,6 +40,8 @@
     var KAT_Opacity     = 0.00;
     var TIE_Opacity     = 0.00;
 
+    var isScrollerEventPage = false;
+
 
     // Message correlations.
     const MsgMatch = {
@@ -432,22 +434,41 @@ function ReturnStyleMatch( classes ) {
     return result;
 }
 
-function SetScrollerEvents() {
-    let AllPageElements = ePAGE.childNodes;
-    let StyleOptions = THEMEINDEX[ActiveStory];
-    DConsole("main.js > SetScrollerEvents",`Detecting style changes matching { ${StyleOptions.join(",")} }.`,false);
-    let PageElements = Array.from(AllPageElements).filter( element => {
-        let IsIncludedStyle = false;
-        StyleOptions.forEach( style => {
-            IsIncludedStyle = IsIncludedStyle || (element.className.split(" ").includes(style));
-        });
-        return IsIncludedStyle;
+function SetDefaultScroller() {
+    Keyframes = 
+    {
+        "Text":[],
+        "Background":[],
+        "ProgressBar":[]
+    };
+    let Style = STYLES["Default"][PREFS.DisplayMode]
+    MODES.forEach( mode  => {
+        Keyframes[mode].push([0,Style[mode][0],Style[mode][1],Style[mode][2],Style[mode][3], "Default", "Default"]);
+        Keyframes[mode].push([100,Style[mode][0],Style[mode][1],Style[mode][2],Style[mode][3], "Default", "Default"]);
     });
+}
 
-    //console.debug(PageElements)
+function SetScrollerEvents(ThemeDivs=true) {
 
-    let LastStyle = "Default";//PageElements[0].className.split(" ")[0];
-    let ThisStyle = ReturnStyleMatch(PageElements[0].className.split(" "));
+    let LastStyle = "Default";
+    let ThisStyle = "Default";
+
+    if(ThemeDivs) {
+        let AllPageElements = ePAGE.childNodes;
+        let StyleOptions = THEMEINDEX[ActiveStory];
+        DConsole("main.js > SetScrollerEvents",`Detecting style changes matching { ${StyleOptions.join(",")} }.`,false);
+        PageElements = Array.from(AllPageElements).filter( element => {
+            let IsIncludedStyle = false;
+            StyleOptions.forEach( style => {
+                IsIncludedStyle = IsIncludedStyle || (element.className.split(" ").includes(style));
+            });
+            return IsIncludedStyle;
+        });   
+
+        LastStyle = "Default";//PageElements[0].className.split(" ")[0];
+        ThisStyle = ReturnStyleMatch(PageElements[0].className.split(" "));
+
+    }
 
     Keyframes = {
         "Text":[],
@@ -472,31 +493,33 @@ function SetScrollerEvents() {
 
     ScrollPosition(ePAGE,true,true)
 
-    for (let i=0; i<PageElements.length; i++) {
-        element = PageElements[i];
-        // Get previous style and current style.
-        LastStyle = ThisStyle + "";
-        let TheseStyles = element.className.split(" ");
-        //console.debug(TheseStyles)
-        ThisStyle = ReturnStyleMatch(TheseStyles);
-        //console.debug(ThisStyle)
+    if(ThemeDivs) {
 
-        if ( (ThisStyle != LastStyle) ) { //|| (IsFirstElement && (element.tagName == "P")) || (i == PageElements.length-5) ) {
-            //console.log("Style change.",LastStyle,ThisStyle)
-            IsFirstElement = false;
-            let Progress = ItemPosition(element,false,true);
-            //console.log(Progress)
-            DConsole("main.js > SetScrollerEvents",`\t${LastStyle} > ${ThisStyle} @ ${Math.round(Progress*100)/100}%.`,false);
-            MODES.forEach( mode  => {
-                let last = STYLES[LastStyle][PREFS.DisplayMode][mode]
-                let next = STYLES[ThisStyle][PREFS.DisplayMode][mode]
-                Previous = [last[0],last[1],last[2],last[3]];
-                Next = [next[0],next[1],next[2],next[3]];
-                Event_Switch(Keyframes[mode],Progress,Previous,Next,sTrans2,sHold,-0.5, LastStyle+"", ThisStyle+"");
-            });
+        for (let i=0; i<PageElements.length; i++) {
+            element = PageElements[i];
+            // Get previous style and current style.
+            LastStyle = ThisStyle + "";
+            let TheseStyles = element.className.split(" ");
+            //console.debug(TheseStyles)
+            ThisStyle = ReturnStyleMatch(TheseStyles);
+            //console.debug(ThisStyle)
+
+            if ( (ThisStyle != LastStyle) ) { //|| (IsFirstElement && (element.tagName == "P")) || (i == PageElements.length-5) ) {
+                //console.log("Style change.",LastStyle,ThisStyle)
+                IsFirstElement = false;
+                let Progress = ItemPosition(element,false,true);
+                //console.log(Progress)
+                DConsole("main.js > SetScrollerEvents",`\t${LastStyle} > ${ThisStyle} @ ${Math.round(Progress*100)/100}%.`,false);
+                MODES.forEach( mode  => {
+                    let last = STYLES[LastStyle][PREFS.DisplayMode][mode]
+                    let next = STYLES[ThisStyle][PREFS.DisplayMode][mode]
+                    Previous = [last[0],last[1],last[2],last[3]];
+                    Next = [next[0],next[1],next[2],next[3]];
+                    Event_Switch(Keyframes[mode],Progress,Previous,Next,sTrans2,sHold,-0.5, LastStyle+"", ThisStyle+"");
+                });
+            }
         }
     }
-
 
 
     // End on neutral theme.
@@ -519,6 +542,20 @@ function SetScrollerEvents() {
     //--console.log(LastStyle)
     //--console.debug(Keyframes)
 }
+function HandleScrollerEvents() {
+
+    let OverrideContent = CH_OVERRIDES[ActiveStory][CurrentChapter.ID];
+    let IsOverride = !(OverrideContent == undefined);
+    if (!IsOverride) {
+        SetScrollerEvents(IsOverride);
+        runScrollEvents();
+    } else {
+        SetDefaultScroller();
+        runScrollEvents();
+    }
+    SetInfo();
+}
+
 function ChannelSet(CHANNEL) {
     LastElement = CHANNEL[0];
     NextElement = CHANNEL[1];
@@ -655,7 +692,7 @@ function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew) {
     //console.info(`${nChap},${name},${synopsis},${pubdate},${nDisplayed},${percent},${isnew}`)
     ChapterIsActive = (nChap <= MaximumChapter);
     //console.info(MaximumChapter)
-    let ChapterInteraction = ChapterIsActive?(`class="TOC ChapterRow activerow ${isnew?'newrow':''}"  onclick="CurrentChapter=STORY[${nChap-1}];PlaceChapter(CurrentChapter);SaveState();ToggleTOC();"`):(`class="TOC ChapterRow inactiverow ${isnew?'newrow':''}"`);
+    let ChapterInteraction = ChapterIsActive?(`class="TOC ChapterRow activerow ${isnew?'newrow':''}"  onclick="CurrentChapter=STORY[${nChap-1}];PlaceOrOverlay(CurrentChapter);SaveState();ToggleTOC();"`):(`class="TOC ChapterRow inactiverow ${isnew?'newrow':''}"`);
 
     let result = `    
         <div id="TOC-CH${nChap}" ${ChapterInteraction}> 
@@ -778,12 +815,7 @@ function PlaceChapter(CHAPTER) {
     StartChapter = CurrentChapter.ChapterNumber;
     // NOTE: Chapter number is (1) ahead of indexing. 
     ePAGE.innerHTML = "";
-    //console.log(CHAPTER.Active)
-
-    let OverrideContent = CH_OVERRIDES[ActiveStory][CurrentChapter.ID];
-    if(OverrideContent != undefined) {
-        ePAGE.innerHTML = fetchText(OverrideContent);
-    }
+    //console.log(CHAPTER.Active)   
 
     if( CHAPTER.Active || PermissionLevel >= 2) {
         CHAPTER.BodyFormatted.forEach( Line => {
@@ -805,6 +837,17 @@ function PlaceChapter(CHAPTER) {
      DConsole("main.js > PlaceChapter",CHAPTER,true,true)
 }
 
+async function PlaceOrOverlay(CHAPTER) {
+    let OverrideContent = CH_OVERRIDES[ActiveStory][CurrentChapter.ID];
+    if(OverrideContent != undefined) {
+        ePAGE.innerHTML = await fetchText(OverrideContent);
+        isScrollerEventPage = false;
+    } else {
+        PlaceChapter(CHAPTER);
+        runScrollEvents();
+    }    
+}
+
 async function setup() {
 
     jSTORY = await fetchJSON();
@@ -823,8 +866,9 @@ async function setup() {
     } else {
         CurrentChapter = STORY[PREFS.StartChapter];
     }    
-    PlaceChapter(CurrentChapter);
-    runScrollEvents();
+    
+    await PlaceOrOverlay(CurrentChapter);
+
     SetInfo();
     SetMessageState();
     await BuildTOC();
