@@ -72,6 +72,8 @@ function ParseJSON(source) {
     return JSON.parse(source.replaceAll(/(\r\n|\n|\r)/gm, ''));
 }
 
+var CH_OVERRIDES = {};
+
 var BONUS = {};
 
 var THEMEINDEX = {
@@ -176,6 +178,7 @@ async function GetCustomParams()
     ANNOUNCE = SOURCE.Announcements; DConsole("initialize.js > GetCustomParams","Loaded announcements from JSON.");
     REVNOTES = SOURCE.RevisionNotes; DConsole("initialize.js > GetCustomParams","Loaded revision notes from JSON.");
     LOCATIONS = SOURCE.Locations; DConsole("initialize.js > GetCustomParams","Loaded locations from JSON.",true);
+    CH_OVERRIDES = SOURCE.ChapterOverrides; DConsole("initialize.js > GetCustomParams","Loaded special chapter overrides from JSON.",true);
 
     switch (SrcParams.get('story')) {
         case 1:

@@ -765,6 +765,9 @@ function PlaceChapter(CHAPTER) {
     // NOTE: Chapter number is (1) ahead of indexing. 
     ePAGE.innerHTML = "";
     //console.log(CHAPTER.Active)
+
+    console.log(CH_OVERRIDES[ActiveStory] != null)
+
     if( CHAPTER.Active || PermissionLevel >= 2) {
         CHAPTER.BodyFormatted.forEach( Line => {
             ePAGE.innerHTML += Line;
