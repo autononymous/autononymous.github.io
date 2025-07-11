@@ -766,7 +766,7 @@ function PlaceChapter(CHAPTER) {
     ePAGE.innerHTML = "";
     //console.log(CHAPTER.Active)
 
-    console.log(CH_OVERRIDES[ActiveStory] != null)
+    console.log(CH_OVERRIDES[ActiveStory])
 
     if( CHAPTER.Active || PermissionLevel >= 2) {
         CHAPTER.BodyFormatted.forEach( Line => {
