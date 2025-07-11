@@ -443,8 +443,8 @@ function SetDefaultScroller() {
     };
     let Style = STYLES["Default"][PREFS.DisplayMode]
     MODES.forEach( mode  => {
-        Keyframes[mode].push([0,Style[mode][0],Style[mode][1],Style[mode][2],Style[mode][3], "Default", "Default"]);
-        Keyframes[mode].push([100,Style[mode][0],Style[mode][1],Style[mode][2],Style[mode][3], "Default", "Default"]);
+        Keyframes[mode].push([-10,Style[mode][0],Style[mode][1],Style[mode][2],Style[mode][3], "Default", "Default"]);
+        Keyframes[mode].push([110,Style[mode][0],Style[mode][1],Style[mode][2],Style[mode][3], "Default", "Default"]);
     });
 }
 
@@ -838,9 +838,12 @@ function PlaceChapter(CHAPTER) {
 }
 
 async function PlaceOrOverlay(CHAPTER) {
+    let BONUS = "";
     let OverrideContent = CH_OVERRIDES[ActiveStory][CurrentChapter.ID];
     if(OverrideContent != undefined) {
-        ePAGE.innerHTML = await fetchText(OverrideContent);
+        console.warn(OverrideContent)
+        BONUS = await GetJSONFromSource(OverrideContent);
+        ePAGE.innerHTML = BONUS.Content
         isScrollerEventPage = false;
     } else {
         PlaceChapter(CHAPTER);
