@@ -274,3 +274,23 @@ img.BonusLogo {
     width:100%;
     filter: var(--IconState);
 }
+
+div.bonuswall {        
+    position:absolute;
+    width:100vw;
+    height:1500vh;
+    left:50%;
+    top:-500vh;  
+    transform:translateX(-50%) scaleX(calc( 1 / 0.8));     
+    background:
+        linear-gradient(
+            to right, 
+            rgba(128,128,128,0.20) 0%,
+            rgba(128,128,128,0.90) min(calc(100vw - var(--DefaultWidth) - 100px ), calc(var(--TextMargin) / 2)), 
+            rgba(128,128,128,0.90) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
+            rgba(128,128,128,0.20) 100%
+        ), 
+        var(--WallCody);  
+    filter: var(--IconState);  
+    background-blend-mode: hard-light;
+}
