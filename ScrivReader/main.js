@@ -183,6 +183,20 @@ function SetPreferences(property,increment) {
     }
 
 }
+async function fetchText(location)
+{
+    try {
+        const response = await fetch(location);
+        if (!response.ok) {
+            DConsole("initialize.js > fetchText","Error pulling text item.")
+        }
+        let result = await response.text();
+        return result;
+    } catch (error) {
+        DConsole("initialize.js > fetchText","Error processing text item from URL.")
+    }
+}
+
 async function fetchJSON() {
     // Check if we already have this saved locally first.
     let SavedContent = localStorage.getItem(`AC_SAVE_${ActiveStory}`);
@@ -766,7 +780,10 @@ function PlaceChapter(CHAPTER) {
     ePAGE.innerHTML = "";
     //console.log(CHAPTER.Active)
 
-    console.log(CH_OVERRIDES[ActiveStory])
+    let OverrideContent = CH_OVERRIDES[ActiveStory][CurrentChapter.ID];
+    if(OverrideContent != undefined) {
+        ePAGE.innerHTML = fetchText(OverrideContent);
+    }
 
     if( CHAPTER.Active || PermissionLevel >= 2) {
         CHAPTER.BodyFormatted.forEach( Line => {
