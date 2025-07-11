@@ -856,6 +856,7 @@ async function PlaceOrOverlay(CHAPTER) {
         PlaceChapter(CHAPTER);
         runScrollEvents();
     }    
+    ROOT.style.setProperty("--SpecialOp",parseFloat(1*(OverrideContent!= undefined)));
 }
 
 async function setup() {
