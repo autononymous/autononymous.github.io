@@ -195,3 +195,42 @@ p.CodyHand, p.KatiyaHand, p.TitusHand {
 .CodyHand, .KatiyaHand, .TitusHand {
     text-align:         left;
 }
+
+
+/*====={ Special/uncommon styles }=====*/
+
+div.bonusitem {  
+    width:100%; 
+}
+td.cody-verse {
+    text-align:right;
+    font-family: var(--CodyText);
+    font-weight: 200;
+    font-size: 2.5vw;
+    min-width:500px;
+    padding-right:5px;
+}
+td.katiya-verse {
+    text-align:left;
+    font-family: var(--KatiyaText);
+    font-weight: 400;
+    font-size: 3.0vw;
+    min-width:500px;
+    padding-left:5px;
+    padding-bottom:0.15em;
+}
+table.pgintro {
+    color: var(--TextColor);
+    white-space: nowrap; 
+    position:relative;
+    left: 50%;
+    top:50px;
+    transform:translateX(-50%) scaleX(70%);
+    width:100%;
+    background-image: url('c:\Users\rkiss\OneDrive\AUTONONYMOUS\Paragate\MixBGs\background_PG_both.png');
+}
+
+table.pgintro > tbody > tr > td {
+    padding-top:10px;
+    min-height:10vw;
+}

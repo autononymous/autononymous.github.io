@@ -843,8 +843,10 @@ async function PlaceOrOverlay(CHAPTER) {
     if(OverrideContent != undefined) {
         console.warn(OverrideContent)
         BONUS = await GetJSONFromSource(OverrideContent);
-        ePAGE.innerHTML = BONUS.Content
+        ePAGE.innerHTML = `<div class="bonusitem">${BONUS.Content}</div>`
         isScrollerEventPage = false;
+        HandleScrollerEvents();
+        SaveState();
     } else {
         PlaceChapter(CHAPTER);
         runScrollEvents();
