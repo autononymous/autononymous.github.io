@@ -272,7 +272,7 @@ table.pgintro > tbody > tr > td {
 
 img.BonusLogo {
     margin-top:100px;
-    width:90%;
+    width: min(80%,500px);
     max-width:500px;
     filter: var(--IconState);
     position:relative;
@@ -293,7 +293,7 @@ div.specialbg-l {
             rgba(128,128,128,1.00) ,             
             rgba(123, 125, 131, 0.85)
         ), 
-        var(--WallCody) ;  
+        var(--WallCody) ;
 }
 div.specialbg-r {
     transform:translateX(51vw);
