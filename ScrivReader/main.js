@@ -128,7 +128,7 @@ async function LoadPreferences() {
         try {
             PREFS = JSON.parse(saveprefs);
 
-            console.error(PREFS.StartChapter)
+            //console.error(PREFS.StartChapter)
 
             PREFS.StartChapter = PREFS.StartChapter < 0 ?  0 : PREFS.StartChapter;
             SETTINGS = JSON.parse(savesettings);

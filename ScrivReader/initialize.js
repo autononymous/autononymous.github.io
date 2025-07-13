@@ -31,7 +31,7 @@ function DConsole(title,body,flush=false,rawpush=false) {
     let DebugStr = "";
     let DebugItem = " ";
     if(flush == true) {
-        DebugStr += `From ${title}:\n`;
+        DebugStr += `==================\nFrom ${title}:\n`;
         DebugItems.forEach ( ([message,method]) => {
             if(method) {
                 DebugItem = message
