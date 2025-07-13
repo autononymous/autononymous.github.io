@@ -349,6 +349,7 @@ function ParseStory(data) {
 
             let LineIndex = 1;
             let WritingMessage = false; // Generating message div.
+            console.warn(entry.DoSceneNum);
             STORY[STORY.length-1].BodyFormatted.push(`<h3 id="${entry.ChapterFull}.${entry.SceneFull}" class="${ePerspective} Section">${entry.ScenePart}</h3>`);
             eBody.forEach(passage => {
                 STORY[STORY.length-1].WordCount += passage.split(" ").length - 1;

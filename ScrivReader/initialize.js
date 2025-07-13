@@ -17,7 +17,8 @@ const VersionLog = {
     "v2.10":"Add version counter; fix story tag detection",
     "v2.20":"Bonus content window added.",
     "v2.23":"Minor fixes to new info window.",
-    "v2.30":"Completion of Paragate introduction with theming."
+    "v2.30":"Completion of Paragate introduction with theming.",
+    "v2.31":"Capacity for custom scene numbering."
 }
 
 function clearLocalStorage() {
