@@ -918,7 +918,7 @@ function ItemPosition(elem,signed=false,notify=false) {
     let Perc = Rel / (PageBottom - PageTop);
     let ScrollPos = Math.round(Perc*100);
     
-    
+    /*
     if(notify){console.info(
   //      `${Math.round(PageTop)},\t${Math.round(PageBottom)}\n`,
   //      `${Math.round(ItemTop)},\t${Math.round(ItemBottom)}\n`,
@@ -926,7 +926,7 @@ function ItemPosition(elem,signed=false,notify=false) {
  //       `${Math.round(BarTop)},\t${Math.round(BarBottom)}\n`,
         `${Math.round(Rel)},\t${Math.round(Perc*100)},\t${Math.round(ScrollPos)}\n`
     )};
-    
+    */
 
     //let PageHeight = BodyRect.height - PageRect.height;
     //let PositionHeight = ItemRect.top - BodyRect.top;
