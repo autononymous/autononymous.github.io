@@ -178,7 +178,7 @@ async function GetCustomParams()
     SETTINGS = SOURCE.Settings; DConsole("initialize.js > GetCustomParams","Loaded settings from JSON.");
     ANNOUNCE = SOURCE.Announcements; DConsole("initialize.js > GetCustomParams","Loaded announcements from JSON.");
     REVNOTES = SOURCE.RevisionNotes; DConsole("initialize.js > GetCustomParams","Loaded revision notes from JSON.");
-    LOCATIONS = SOURCE.Locations; DConsole("initialize.js > GetCustomParams","Loaded locations from JSON.",true);
+    LOCATIONS = SOURCE.Locations; DConsole("initialize.js > GetCustomParams","Loaded locations from JSON.",false);
     CH_OVERRIDES = SOURCE.ChapterOverrides; DConsole("initialize.js > GetCustomParams","Loaded special chapter overrides from JSON.",true);
 
     switch (SrcParams.get('story')) {
@@ -197,6 +197,8 @@ async function GetCustomParams()
             break;
                 
     }
+
+    DConsole("initialize.js > GetCustomParams",`Selected story is ${ActiveStory}. Pulling data from file ${LOCATIONS[ActiveStory].StoryFile} ...`,true);
 
     LOCATION = (LOCATIONS[ActiveStory] == undefined) ? Object.entries(LOCATIONS)[0] : LOCATIONS[ActiveStory] ;   
     ActiveStory = LOCATION.StoryName; 
