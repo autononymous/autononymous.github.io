@@ -21,7 +21,8 @@ const VersionLog = {
     "v2.20":"Bonus content window added.",
     "v2.23":"Minor fixes to new info window.",
     "v2.30":"Completion of Paragate introduction with theming.",
-    "v2.31":"Capacity for custom scene numbering."
+    "v2.31":"Capacity for custom scene numbering.",
+    "v2.32":"Setting callouts option and custom -hr- dividers."
 }
 
 function clearLocalStorage() {
