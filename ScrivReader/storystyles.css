@@ -307,8 +307,8 @@ div.specialbg-r {
 }
 
 img.intro-subimage {
-    width: 400px;
+    width: min(60vw,400px);
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);   
+    transform: translateX(-50%) scaleX(-1);   
 }
