@@ -33,7 +33,7 @@
     --TOCbackground:       rgba(0,0,0,0.1);
 
     --Title:                2.5em;
-    --Subtitle:             min(2.0em,6vw);/*2.0em;/**/
+    --Subtitle:             min(2.0em,max(5.5vw,1.2em));/*2.0em;/**/
     --Section:              2.5em;
 
     --SubtitleAccent:       '  ';
@@ -83,6 +83,7 @@
     h3.Subtitle {
         font-size: var(--Subtitle);
         color: var(--TextColor);
+        white-space: nowrap;
     }
     h3.Section {
         font-size: var(--Section);
@@ -951,15 +952,20 @@ img.map {
 
 div.SettingTag {
     font-weight:600;
-    margin-top:50px;
-    margin-bottom:30px;
     border-left: 2px solid var(--TextColor);
     margin-left:5px;
     padding-left:10px;
     color: var(--TextColor);
+    margin-top:10px;
+    margin-bottom:10px;
+    line-height:1.5em;
+    font-size: 1rem;
 }
 
 div.SettingBox {
-    border-top: 1px solid var(--TextColor);
-    border-bottom: 1px solid var(--TextColor);
+    border-top: 1px dashed var(--TextColor);
+    border-bottom: 1px dashed var(--TextColor);
+    margin-top:50px;
+    margin-bottom:30px;
+    opacity:0.6;
 }
