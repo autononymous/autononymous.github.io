@@ -958,3 +958,8 @@ div.SettingTag {
     padding-left:10px;
     color: var(--TextColor);
 }
+
+div.SettingBox {
+    border-top: 1px solid var(--TextColor);
+    border-bottom: 1px solid var(--TextColor);
+}

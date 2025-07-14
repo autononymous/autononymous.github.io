@@ -331,8 +331,8 @@ function ParseStory(data) {
                 let CharacterName = SOURCE.Shorthands.Names[entry.Perspective]!=undefined ? SOURCE.Shorthands.Names[entry.Perspective] : entry.Perspective;
                 let SettingTime = SOURCE.Shorthands.Timezones[entry.Perspective]!=undefined ? entry.SettingInfo[SOURCE.Shorthands.Timezones[entry.Perspective]] : entry.SettingInfo.ModernTime;
                 let SettingDay = (entry.SettingInfo.StoryDay == "" || entry.SettingInfo.StoryDay == undefined) ? "" : "("+entry.SettingInfo.StoryDay+")";
-                let SettingPlace = (entry.SettingInfo.Setting == undefined || entry.SettingInfo.Setting == "") ? SOURCE.Shorthands.GeneralSettings[entry.Perspective] : entry.SettingInfo.Setting;
-                STORY[STORY.length-1].BodyFormatted.push(`<div class="SettingBox"><div class="SettingTag" style="font-family: var(--${entry.Perspective}Title);"> <span>${CharacterName}</span><br><span>${SettingTime} ${SettingDay} </span><br><span>${SettingPlace}</span></div>/div>`);
+                let SettingPlace = "Place";//(entry.SettingInfo.Setting == undefined || entry.SettingInfo.Setting == "") ? SOURCE.Shorthands.GeneralSettings[entry.Perspective] : entry.SettingInfo.Setting;
+                STORY[STORY.length-1].BodyFormatted.push(`<div class="SettingBox"><div class="SettingTag" style="font-family: var(--${entry.Perspective}Title);"> <span>${CharacterName}</span><br><span>${SettingTime} ${SettingDay} </span><br><span>${SettingPlace}</span></div></div>`);
             }
 
             // Set 'next' and 'previous' chapters as circular objexts
