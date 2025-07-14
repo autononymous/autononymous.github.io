@@ -11,6 +11,7 @@
     --TextLineHeight:       1.5em;
     --TextMargin:           5vw;
     --DefaultWidth:         600px;
+    --SeparatorWidth:       60%;
     
     /* Active theme settings. These are set from   */
     /* the JavaScript program.                     */
@@ -62,6 +63,15 @@
     hr {
         border-top: 3px dashed var(--TextColor);
         width:100px;
+    }
+    img.hrdiv {
+        position:relative;
+        top:0;
+        left: calc( (100% - var(--SeparatorWidth)) / 2 );
+        width: var(--SeparatorWidth);
+        cursor: pointer;        
+        filter: drop-shadow(1000vw 0 var(--TextColor));
+        transform: translateX(-1000vw);
     }
 
     /* Styles common between all character styles */

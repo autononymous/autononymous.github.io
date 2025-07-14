@@ -8,6 +8,22 @@
     "Firebrand":  [ "Titus" ],
     "Paragate":   [ "Katiya" , "Cody" ]
 },
+"Shorthands":
+{
+    "Names":
+    {
+        "Titus":"Titus Berguard",
+        "Cody":"Cody Dunsmore",
+        "Katiya":"Katiya Breakey-Hilde"
+    },
+    "Timezones":
+    {
+        "Titus":"FantasyTime",
+        "Cody":"ModernTime",
+        "Katiya":"FantasyTime"
+    }
+
+},
 "Styles":
 {
     "Titus":

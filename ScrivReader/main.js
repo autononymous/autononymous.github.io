@@ -356,7 +356,7 @@ function ParseStory(data) {
                 if(entry.DoSceneNum=="True"||entry.DoSceneNum==undefined) {
                     STORY[STORY.length-1].BodyFormatted.push(`<h3 id="${entry.ChapterFull}.${entry.SceneFull}" class="${ePerspective} Section">${entry.ScenePart}</h3>`);
                 } else {
-                    STORY[STORY.length-1].BodyFormatted.push(`<br><hr><br>`);
+                    STORY[STORY.length-1].BodyFormatted.push(`<br>${BONUS[ActiveStory].Dividers[entry.Perspective]}<br>`);
                 }
             }
             
