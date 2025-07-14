@@ -21,6 +21,12 @@
         "Titus":"FantasyTime",
         "Cody":"ModernTime",
         "Katiya":"FantasyTime"
+    },
+    "GeneralSettings":
+    {
+        "Titus":"Blackwater North",
+        "Cody":"Colorado, USA",
+        "Katiya":"Gaffesend, Fosroth"
     }
 
 },

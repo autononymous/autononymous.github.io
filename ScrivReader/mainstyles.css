@@ -33,7 +33,7 @@
     --TOCbackground:       rgba(0,0,0,0.1);
 
     --Title:                2.5em;
-    --Subtitle:             2.0em;
+    --Subtitle:             min(2.0em,6vw);/*2.0em;/**/
     --Section:              2.5em;
 
     --SubtitleAccent:       '  ';
@@ -947,4 +947,14 @@ img.map {
     100% {
         width:200%;
     }
+}
+
+div.SettingTag {
+    font-weight:600;
+    margin-top:50px;
+    margin-bottom:30px;
+    border-left: 2px solid var(--TextColor);
+    margin-left:5px;
+    padding-left:10px;
+    color: var(--TextColor);
 }

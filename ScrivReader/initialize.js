@@ -12,6 +12,7 @@
     var DoAnnouncements = true;
 
     const DoSettingTags = true;
+    const DoDivsForNumbers = false;
 
 const VersionLog = {
     "v1.00":"Reader alpha",
@@ -86,84 +87,84 @@ var THEMEINDEX = {
 };
 
 var MODES = ['Background','Text','ProgressBar'];
-    var STYLES = { 
-        "Default":
+var STYLES = { 
+    "Default":
+    {
+        "Light":
         {
-            "Light":
-            {
-                "Background":[240,240,240,1],
-                "Text": [18 ,18 ,18 ,1],
-                "ProgressBar": [18 ,18 ,18 ,1]
-            },
-            "Dark":
-            {
-                "Background":[18 ,18 ,18 ,1],
-                "Text": [240,240,240,1],
-                "ProgressBar":[240,240,240,1]
-            },
-            "Prefix":" ~ ",
-            "Suffix":" ~ ",
-            "WallImage":""
-        }};
-
-    var PreferencesDefault = {
-        "StartChapter":1,
-        "DisplayMode":"Light",
-        "FontSize":"1.5em",
-        "LineHeight":"1.5em",
-        "Margins": "5vw"
-    }
-    var PREFS = PreferencesDefault;
-    var SettingsDefault = {
-        "FontSize":{
-            "Setting":3,
-            "Options":["0.9em","1.1em","1.3em","1.5em","1.7em","1.9em","2.1em"],
-            "CSSname":"--TextSize"
+            "Background":[240,240,240,1],
+            "Text": [18 ,18 ,18 ,1],
+            "ProgressBar": [18 ,18 ,18 ,1]
         },
-        "LineHeight":{
-            "Setting":3,
-            "Options":["0.9em","1.1em","1.3em","1.5em","1.7em","1.9em","2.1em"],
-            "CSSname":"--TextLineHeight"
-        },
-        "Margins":{
-            "Setting":1,
-            "Options":["5vw","10vw","15vw"],
-            "CSSname":"--TextMargin"
-        }
-    }
-    var SETTINGS = SettingsDefault;
-
-    ROOT.style.setProperty("--TextSize",PREFS.FontSize);
-    ROOT.style.setProperty("--TextLineHeight",PREFS.LineHeight);
-    ROOT.style.setProperty("--TextMargin",PREFS.Margins);
-    
-    var CHSET = 
-    {
-        "Text":[],
-        "Background":[],
-        "ProgressBar":[]
-    };   
-
-    var Keyframes = 
-    {
-        "Text":[],
-        "Background":[],
-        "ProgressBar":[]
-    };
-
-    var ANNOUNCE = {};
-    var REVNOTES = {};
-
-    var LOCATIONS = 
-    {
-        "Default":
+        "Dark":
         {
-            "StoryRoot":"",
-            "StoryFile":"",
-            "StoryName":"ScrivStory",
-            "CoverImage":""
-        }
+            "Background":[18 ,18 ,18 ,1],
+            "Text": [240,240,240,1],
+            "ProgressBar":[240,240,240,1]
+        },
+        "Prefix":" ~ ",
+        "Suffix":" ~ ",
+        "WallImage":""
+    }};
+
+var PreferencesDefault = {
+    "StartChapter":1,
+    "DisplayMode":"Light",
+    "FontSize":"1.5em",
+    "LineHeight":"1.5em",
+    "Margins": "5vw"
+}
+var PREFS = PreferencesDefault;
+var SettingsDefault = {
+    "FontSize":{
+        "Setting":3,
+        "Options":["0.9em","1.1em","1.3em","1.5em","1.7em","1.9em","2.1em"],
+        "CSSname":"--TextSize"
+    },
+    "LineHeight":{
+        "Setting":3,
+        "Options":["0.9em","1.1em","1.3em","1.5em","1.7em","1.9em","2.1em"],
+        "CSSname":"--TextLineHeight"
+    },
+    "Margins":{
+        "Setting":1,
+        "Options":["5vw","10vw","15vw"],
+        "CSSname":"--TextMargin"
     }
+}
+var SETTINGS = SettingsDefault;
+
+ROOT.style.setProperty("--TextSize",PREFS.FontSize);
+ROOT.style.setProperty("--TextLineHeight",PREFS.LineHeight);
+ROOT.style.setProperty("--TextMargin",PREFS.Margins);
+
+var CHSET = 
+{
+    "Text":[],
+    "Background":[],
+    "ProgressBar":[]
+};   
+
+var Keyframes = 
+{
+    "Text":[],
+    "Background":[],
+    "ProgressBar":[]
+};
+
+var ANNOUNCE = {};
+var REVNOTES = {};
+
+var LOCATIONS = 
+{
+    "Default":
+    {
+        "StoryRoot":"",
+        "StoryFile":"",
+        "StoryName":"ScrivStory",
+        "CoverImage":""
+    }
+}
 
 async function GetCustomParams() 
 {
