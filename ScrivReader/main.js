@@ -331,9 +331,12 @@ function ParseStory(data) {
                 let SecPerspective = (entry.Perspective == "Mixed" || entry.Perspective == "Both") ? Story[i+1].Perspective : entry.Perspective;
                 let CharacterName = SOURCE.Shorthands.Names[SecPerspective]!=undefined ? SOURCE.Shorthands.Names[SecPerspective] : SecPerspective;
                 let SettingTime = SOURCE.Shorthands.Timezones[SecPerspective]!=undefined ? entry.SettingInfo[SOURCE.Shorthands.Timezones[SecPerspective]] : entry.SettingInfo.ModernTime;
-                let SettingDay = (entry.SettingInfo.StoryDay == "" || entry.SettingInfo.StoryDay == undefined) ? "" : "("+entry.SettingInfo.StoryDay+")";
-                let SettingPlace = (entry.SettingInfo.Setting == undefined || entry.SettingInfo.Setting == "") ? SOURCE.Shorthands.GeneralSettings[SecPerspective] : entry.SettingInfo.Setting;
+                let SettingDay = (entry.SettingInfo.StoryDay == "" || entry.SettingInfo.StoryDay == undefined || entry.SettingInfo.StoryDay == "Undefined") ? "" : "("+entry.SettingInfo.StoryDay+")";
+                let SettingPlace = (entry.SettingInfo.Setting == undefined || entry.SettingInfo.Setting == "") ? entry.SettingInfo.Setting : entry.SettingInfo.Setting + "<br>" + SOURCE.Shorthands.GeneralSettings[SecPerspective];
                 STORY[STORY.length-1].BodyFormatted.push(`<div class="SettingBox"><div class="SettingTag" style="font-family: var(--${SecPerspective}Title);"> <span id="SECPERSP">${CharacterName}</span><br><span>${SettingTime} ${SettingDay} </span><br><span>${SettingPlace}</span></div></div>`);
+            } else {
+                //STORY[STORY.length-1].BodyFormatted.push(`<br>`);
+                STORY[STORY.length-1].BodyFormatted.push(`<br>${BONUS[ActiveStory].Dividers[entry.Perspective]}<br>`);
             }
 
             // Set 'next' and 'previous' chapters as circular objects

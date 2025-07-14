@@ -11,8 +11,8 @@
     var isTOCshown = false;
     var DoAnnouncements = true;
 
-    const DoSettingTags = true;
-    const DoDivsForNumbers = false;
+    const DoSettingTags = false;
+    const DoDivsForNumbers = true;
 
 const VersionLog = {
     "v1.00":"Reader alpha",
