@@ -362,7 +362,7 @@ function ParseStory(data) {
                 document.getElementById('SECPERSP').innerHTML = SOURCE.Shorthands.Names[entry.Perspective];
 
             } catch (error) {
-                console.error("Unable to set perspective.")
+                //console.error("Unable to set perspective.")
             }
 
             let LineIndex = 1;
