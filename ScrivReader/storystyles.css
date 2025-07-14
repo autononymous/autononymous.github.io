@@ -306,3 +306,9 @@ div.specialbg-r {
         var(--WallKatiya) ;  
 }
 
+img.intro-subimage {
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);   
+}
