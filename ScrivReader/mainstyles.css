@@ -59,6 +59,10 @@
     h3 {
         text-align: center;
     }
+    hr {
+        border-top: 3px dashed var(--TextColor);
+        width:100px;
+    }
 
     /* Styles common between all character styles */
     h3.Title {

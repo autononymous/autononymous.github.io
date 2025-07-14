@@ -327,6 +327,9 @@ function ParseStory(data) {
             if (PermissionLevel > 1 && eRevisionNotes != undefined) {
                 STORY[STORY.length-1].BodyFormatted.push(`<div class="Default TextComment"><h3>Notes To The Editor:</h3><p>${eRevisionNotes}</p>`);
             }
+            if (DoSettingTags) {
+                STORY[STORY.length-1].BodyFormatted.push(`<div class="SettingTag"> <span>${entry.Perspective}</span><br><span>${entry.SettingInfo.ModernTime} </div>`);
+            }
 
             // Set 'next' and 'previous' chapters as circular objexts
             if (c==0) {
@@ -349,8 +352,14 @@ function ParseStory(data) {
 
             let LineIndex = 1;
             let WritingMessage = false; // Generating message div.
-            console.warn(entry.DoSceneNum);
-            STORY[STORY.length-1].BodyFormatted.push(`<h3 id="${entry.ChapterFull}.${entry.SceneFull}" class="${ePerspective} Section">${entry.ScenePart}</h3>`);
+            if(entry.ScenePart != 1) {
+                if(entry.DoSceneNum=="True"||entry.DoSceneNum==undefined) {
+                    STORY[STORY.length-1].BodyFormatted.push(`<h3 id="${entry.ChapterFull}.${entry.SceneFull}" class="${ePerspective} Section">${entry.ScenePart}</h3>`);
+                } else {
+                    STORY[STORY.length-1].BodyFormatted.push(`<br><hr><br>`);
+                }
+            }
+            
             eBody.forEach(passage => {
                 STORY[STORY.length-1].WordCount += passage.split(" ").length - 1;
                 //console.log(`Word Count for ${entry.ChapterFull}.${entry.ScenePart}: ${STORY[STORY.length-1].WordCount}`);

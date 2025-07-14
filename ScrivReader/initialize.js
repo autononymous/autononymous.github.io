@@ -11,6 +11,8 @@
     var isTOCshown = false;
     var DoAnnouncements = true;
 
+    const DoSettingTags = true;
+
 const VersionLog = {
     "v1.00":"Reader alpha",
     "v2.00":"Reader beta",
