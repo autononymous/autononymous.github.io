@@ -1,23 +1,55 @@
 :root {
-    --WindowMargin      :   10px;
+    --WindowMargin      :   15px;
     --WindowHeight      :   35dvh;
     --ScrollerHeight    :   50px;
-    --ScrollerWidths    :   60vw;
+    --ScrollerWidths    :   40vw;
     --ScrollItemPad     :   5px;
     --SheetMargin       :   10px;
+    --MainBackgroundRGB :   20, 20, 20;
+    --MainBackground    :   rgb(var(--MainBackgroundRGB));
+
+
+    --SheetColor        :   rgb(34, 34, 34);
+
+    --AccentOne         :   #d83b3b;
+    --AccentOneLight    :   #ff8c8c;
+    --AccentOneDark     :   #7e2130;
+
+    --AccentTwo         :   #3b7ad8;
+    --AccentTwoLight    :   #8bb9ff;
+    --AccentTwoDark     :   #3065b2;
+
+    --AccentThree       :   #e98d30;
+    --AccentThreeLight  :   #ffd07d;
+    --AccentThreeLighter:   #fef3d9;
+    --AccentThreeDark   :   #ba5a32;
 
     --InversionState    :   0;
     --ThemeTextColor    :   black;
 
 }
+body {
+    overflow: hidden;
+}
 
 div.VIEWER {
     position:absolute;
-    left:0;
+    left:-0px;
     top:0;
     width: 100vw;
     height:100dvh;
     overflow-x:hidden;
+    background-image: 
+        linear-gradient(
+            to right,
+            var(--SheetColor)
+        );
+            /* 
+            rgba(var(--MainBackgroundRGB), 0.8)
+        ),url("design/cf.png");/**/
+    background-size: 40px;
+    color: white;
+    scrollbar-width: none;
 }
 
 div {
@@ -34,7 +66,9 @@ div.FOOTER
     text-align          :   center;
     padding-top         :   5px;
     border-top          :   1px solid black;
-    background-color    :   gainsboro;
+    font-size           :   min(3vw,2em);
+    background-color    :   var(--SheetColor);
+    border-top          :   2px solid var(--AccentThree);
 }
 div.HEADER {
     position            :   absolute;
@@ -42,18 +76,19 @@ div.HEADER {
     width               :   100vw;
     left                :   0;
     top                 :   0;
-    background-color    :   gainsboro;
 
 }
 div.HEADERWINDOW {
     position            :   absolute;
     top                 :   var(--WindowMargin);
-    height              :   calc( var(--WindowHeight) - ( 2 * var(--WindowMargin) ) );
+    height              :   calc( var(--WindowHeight) - ( 2.2 * var(--WindowMargin) ) );
     left                :   var(--WindowMargin);
     width               :   calc( 100% - ( var(--WindowMargin) * 2 ) );
     border              :   1px solid black;
-    border-radius       :   20px;
     box-shadow          :   inset 0px 0px 15px 0px black;
+    background-image    :   radial-gradient(var(--AccentTwo)); /*url('design/cover-PG.jpg');/**/
+    background-position :   top center;
+    background-size     :   cover;
 }
 div.HEADERTEXT {
     position            :   absolute;
@@ -63,24 +98,65 @@ div.HEADERTEXT {
     transform           :   translateX(-50%);
 } 
 div.HEADERTEXT > img {
-    width: min(60vw,400px);
-    filter: invert(1) invert( var(--InversionState) );
+    position: relative;
+    top: 8dvh;
+    transform: translateY(-100%);
+    width: min(60vw,300px);
+    filter: 
+        drop-shadow( 1px  0px 2px black)
+        drop-shadow(-1px  0px 2px black)
+        drop-shadow( 0px  1px 2px black)
+        drop-shadow( 0px -1px 2px black)
+        invert(1) 
+        invert( var(--InversionState) ) ;
 }
-div.HEADERTEXT > h3 {
-    color: var(--ThemeTextColor);
-    letter-spacing: 2vw;
-    white-space: nowrap;
+div.HEADERWINDOW > div {
+    position:relative;
+    top: 14dvh;
+    left: 50%;
+    background-color:white;
+    font-size: 1.6em;
+    font-weight: 800;
+    color:black;
+    padding:5px;
+    margin-top:20px;
+    padding-left: 10px;
+    text-align: center;
+    letter-spacing: 1.2vw;/**/
+    white-space: nowrap;    
+    transform: translateX(-50%);
+    mix-blend-mode: screen;
+    opacity: 0.90;
 }
-div.SCROLLER {
-    position:absolute;
+div.SCROLLER {    
+    position:relative;    
     top: var(--WindowHeight);
-    left:0;
-    width:100%;
-    height: var(--ScrollerHeight);
-    border:1px solid black;
+    height: calc( var(--ScrollerHeight) + var(--ScrollItemPad) );
     overflow-x: scroll;
     overflow-y: hidden;
     scrollbar-width: none;
+    background-image: 
+    linear-gradient(/*
+            to right,
+            rgba(0, 0, 0, 0.75) 0px,
+            transparent 80px,
+            transparent calc(100% - 80px),
+            rgba(0, 0, 0, 0.75) 100%
+        ),
+        linear-gradient( */
+            to top,
+            rgba(0, 0, 0, 0.274) 0px,
+            transparent 10px
+            /*var(--AccentTwo)/**/
+        );
+        
+    margin-top: 4px;
+    margin-bottom:4px;    
+    
+    border-bottom: 1px solid var(--AccentThree);
+    /*
+    border-top: 1px solid black;
+    /**/
 }
 div.SLIDEBAR {
     position:relative;
@@ -89,38 +165,44 @@ div.SLIDEBAR {
     justify-content: space-evenly;
     align-content: space-evenly;
     margin-left: calc( ( (100vw - var(--ScrollerWidths) ) / 2 ) - var(--ScrollItemPad));
-    margin-right: calc( ( (100vw - var(--ScrollerWidths) ) / 2 ) - var(--ScrollItemPad));
+    margin-right: calc( ( (100vw - var(--ScrollerWidths) ) / 2 ) - var(--ScrollItemPad));    
 }
 div.SLIDEBAR > div {
+    font-weight: 600;
+    font-size: min(1.4rem,5vw);
+    letter-spacing: 1.5vw;/**/
     flex: auto;
     width: var(--ScrollerWidths);
     /*height: 40px;/**/
-    margin: var(--ScrollItemPad);
+    margin-top: var(--ScrollItemPad);
+    margin-bottom: var(--ScrollItemPad);
     padding-top: 10px;
     padding-bottom:10px;
-    border: 1px solid black;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
     text-align: center;
 }
 div.MAIN
 {
-    position:relative;
-    top:calc( var(--ScrollerHeight) + var(--WindowHeight) );
+    position:absolute;
+    top:calc( var(--ScrollerHeight) + var(--WindowHeight) + var(--ScrollItemPad)*2);
     left:0;
     width:100vw;
 }
 div.MAIN::before
 {
     position: absolute;
-    transform: translate(-50%,-50%) rotate(-45deg);
     left:50%;
+    transform: translate(-100%,-50%) rotate(-45deg);
     top:0;
     content: " ";
-    width:10px;
-    height:10px;
-    background: linear-gradient(45deg,transparent 50%,var(--ThemeTextColor) 50%);
+    width:15px;
+    height:15px;
+    background: linear-gradient(45deg,transparent 50%,var(--AccentThree) 50%);
 }
 div.SHEET
 {
+    background-color: var(--SheetColor);
     width: calc( 100% - ( 2 * var(--SheetMargin) ) );
     padding: var(--SheetMargin);
     position:absolute;
@@ -133,45 +215,56 @@ div.updates
 }
     div.SHEET > h3 {
         width:100%;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        text-align: center;
+        height:1.2em;
+        font-variant: small-caps;
     }
     div.RELEASES {
         width:100%;
         min-height: 20px;
-        border:1px solid black;
-        background:gainsboro;
+        color:black;
     }
     div.RELEASES > div {
         display:grid;
         grid-template:
-            'R-story R-name'
-            'R-body R-body';
-        padding:5px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid black;
+            'R-icon R-story R-name'
+            'R-icon R-body R-body';
+        grid-template-columns: 50px 1fr 1fr;
+        padding:10px;
+        padding-right: 20px;
+        margin-top:10px;        
+        border-top: 1px dashed dimgray;     
+        border-bottom: 1px dashed dimgray;
+        /*
+        border-top: 1px solid black;
+        */
     }
-    div.RELEASES > div:hover {
-        color: darkred;
-    }
-    div.RELEASES > div > div {
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    div.ReleaseFirebrand {
-    
+        div.FirebrandIcon {
+
+        }
+        div.ParagateIcon {
+
+        }
+    div.ReleaseFirebrand {        
+        color: white;
     }
     div.ReleaseParagate {
+        color: white;
+    }
+    div.R-ICON {
+        grid-area: R-icon;
+        width: 50px;
     }
     div.R-STORY {
         grid-area: R-story;
+        text-decoration: underline;
+        padding-bottom: 5px;
     }
     div.R-NAME {
         grid-area: R-name;
         text-align:right;
     }
     div.R-BODY {
-        border-top:1px solid black;
         grid-area: R-body;
     }
 
@@ -183,10 +276,16 @@ div.stories
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        width:100%;
+        width:90%;
         height:100%;
+        row-gap: 10px;
+        column-gap: 30px;
+        margin-top: 20px;
+        position:absolute;
+        left:50%;
+        transform: translateX(-50%);
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 350px) {
     div.BOOKSHELF {
         display: grid;
         grid-template-columns: 1fr;
@@ -197,6 +296,16 @@ div.stories
         border: 1px solid black;
         width: 100%;
         height: 100%;
+        aspect-ratio: 0.7;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position:bottom center;
+        /*border-radius: 8px;/**/
+        box-shadow: 0px 0px 10px 0px black;
+    }
+    div.BOOKSHELF > div:hover {
+        opacity: 0.8;
+        transition: opacity 0.3s ease-in-out 0.05s;
     }
 
 
@@ -204,32 +313,100 @@ div.aboutme
 {
 
 }
+    div.aboutsub { 
+        max-width: 600px;  
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px dashed var(--AccentTwoLight);
+    }
+    div.about-1 {
+        display: grid;
+        grid-template:
+            'abouticon abouttext';     
+    }
+    @media only screen and (max-width: 500px) {
+        div.about-1 {
+        grid-template:
+            'abouticon' 
+            'abouttext';        
+    }
+    }
+    div.about-icon 
+    {
+        grid-area: abouticon;
+    }
+    div.about-icon > img {
+        width: min(80vw,200px);
+        position:relative;
+        left:50%;
+        transform: translateX(-50%);
+        filter: drop-shadow(0px 0px 4px black)
+        drop-shadow(0px 0px 8px black)
+        drop-shadow(0px 0px 10px black);
+        margin: 10px;
+        margin-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    div.about-text 
+    {
+        grid-area: abouttext;
+    }
+    div.about-text > p, div.about-2 > p {
+        text-align: justify;
+        padding-left: 10px;
+        border-left: 1px solid var(--AccentOneLight);
+    }
+    div.about-text > h3, div.about-2 > h3 {
+        background-color:  var(--AccentThreeLight);
+        color: var(--SheetColor);
+        width: fit-content;
+        text-transform:uppercase;
+        letter-spacing: 0.40rem;/**/
+    }
 
 div.WallTitus {    
-    background-image:             
-                        linear-gradient(
-                            to right, 
-                            rgba(128,128,128,0.50)
-                        ),
-                        url("design/bg-tie.jpg");
-    mix-blend-mode:     hard-light;
+    transition: color ease-in-out 0.2s;    
+    background-image:     
+    linear-gradient(
+        to right,
+        transparent 0px,
+        var(--AccentThree) 0px,
+        transparent 40px
+    );
+    
+    /*url("design/bg-tie.jpg");*/
 }
-div.WallCody {    
-    background-image:             
-                        linear-gradient(
-                            to right, 
-                            rgba(128,128,128,0.50)
-                        ),
-                        url("design/bg-cody.jpg");
-    mix-blend-mode:     hard-light;
+div.WallTitus:hover {
+    color: var(--AccentThreeLight);
 }
-div.WallKatiya {    
-    background-image:             
-                        linear-gradient(
-                            to right, 
-                            rgba(128,128,128,0.90)
-                        ),
-                        url("design/bg-kat.jpg");
-    mix-blend-mode:     hard-light;
-
+div.WallCody {
+    transition: color ease-in-out 0.2s;  
+    background-image:     
+    linear-gradient(
+        to right,
+        transparent 0px,
+        var(--AccentTwo) 0px,
+        transparent 40px
+    );
+        /*url("design/bg-cody.jpg");*/
+}
+div.WallCody:hover {
+    color: var(--AccentTwoLight);
+}
+div.WallKatiya {
+    transition: color ease-in-out 0.2s;  
+    background-image:     
+    linear-gradient(
+        to right,
+        transparent 0px,
+        var(--AccentOne) 0px,
+        transparent 40px
+    );   
+        /*url("design/bg-kat.jpg");*/
+}
+div.WallKatiya:hover {
+    color: var(--AccentOneLight);
 }

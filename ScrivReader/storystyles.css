@@ -159,10 +159,12 @@ div.katbg {
     color:              var(--TextColor);
 }
 .TitusHead {
-    font-family: var(--TitusTitle);
+    font-family: var(--TitusTitle);    
+    font-weight:900;
 }
 .TitusBody {
     font-family: var(--TitusText);
+    font-weight:500;
 }
 p.Titus {
     font-family:        var(--KatiyaText);
@@ -203,10 +205,9 @@ div.tiebg {
 }
 
 .CodyHead, .TitusHead, .KatiyaHead {
-    font-weight:900;
+
 }
 .CodyBody, .TitusBody, .KatiyaBody {
-    font-weight:500;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

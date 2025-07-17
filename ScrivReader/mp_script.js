@@ -17,7 +17,10 @@ function ScrollForPage()
         CurrentPage = CheckedPage; 
         CurrentIndex = CheckedIndex;
         Object.entries(SHEETS).forEach( ([index,sheet]) => {
-            sheet.style.opacity = 1 * (index == CheckedIndex);
+            let condition = 1 * (index == CheckedIndex);
+            console.log(index,condition,sheet)
+            sheet.style.setProperty("opacity",condition);
+            sheet.style.setProperty("pointer-events",((condition == 0) ? "none" : "all"));
         })
     }
 }
@@ -81,8 +84,9 @@ async function DeployLatestStories() {
         let link = `scrivreader.html?story=${release.Story}&chapter=${release.ChapterNumber-1}`
         newHTML += `
         <div class="Release${release.Story} Wall${release.Perspective}" onclick="window.location='${link}'  ">
-            <div class="R-STORY ${release.Perspective}Head">${release.Story} ${release.ID}</div>
-            <div class="R-NAME ${release.Perspective}Head">${release.Subtitle}</div>
+            <div class="R-ICON ${release.Story}Icon"></div>
+            <div class="R-STORY ${release.Perspective}Head">${dateyear(release.Release)}&ensp;|&ensp; ${release.Story} ${release.ID}</div>
+            <div class="R-NAME ${release.Perspective}Head"><em>"${release.Subtitle}"</em></div>
             <div class="R-BODY ${release.Perspective}Body">${release.Synopsis}</div>
         </div>
         `
@@ -92,8 +96,9 @@ async function DeployLatestStories() {
 async function DeployStoryTitles() {
     let newHTML = ""
     Object.entries(LOCATIONS).forEach( ([title,data]) => {
+         let link = `scrivreader.html?story=${title}`
         newHTML += `
-        <div id="book-${title}" style="background-image: url(${data.StoryRoot + data.CoverImage});">fb</div>
+        <div id="book-${title}" style="background-image: url(${data.StoryRoot + data.CoverImage});" onclick="window.location='${link}' "></div>
         `;
     });
     eBOOKSHELF.innerHTML = newHTML;
@@ -101,13 +106,13 @@ async function DeployStoryTitles() {
 
 
 async function PopulateMainPage() {
-    await RetrieveLatestStories();
+    await RetrieveLatestStories(5);
     await DeployLatestStories();
     await DeployStoryTitles();
 }
 
 eSLIDER.addEventListener("scroll",ScrollForPage);
-eSLIDER.addEventListener("scrollend",AlignSlider);
+eSLIDER.addEventListener("resize",AlignSlider);
 
 
 

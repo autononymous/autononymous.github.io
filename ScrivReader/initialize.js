@@ -56,6 +56,19 @@ const VersionLog = {
     "v2.32":"Setting callouts option and custom -hr- dividers."
 }
 
+function dateyear(ydate) {
+    const year = 2025 + Math.floor(ydate / 365);
+    let dayOfYear = ydate % 365;
+    if (dayOfYear === 0) dayOfYear = 1;
+    const date = new Date(year, 0, dayOfYear);
+    const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    const dayName = dayNames[date.getDay()];
+    const mm = String(date.getMonth() + 1).padStart(2, '0');
+    const dd = String(date.getDate()).padStart(2, '0');
+    let MMDD = `${mm}/${dd}`;//`${dayName} ${mm}/${dd}`;
+    return MMDD;
+}
+
 function yeardate(date) {
     const month = date.getMonth();
     var result = date.getDate();
