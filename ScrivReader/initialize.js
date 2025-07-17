@@ -3,16 +3,47 @@
 // --Directory containing all files
     var ScrivReaderSOURCE = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/ScrivReader/";
 // -- 
+
+// Initialization Variables
     var DebugItems = [];
     var ActiveStory = "";
-    var SrcParams = [];
+    var SrcParams = null;
     var LOCATION;
     var PermissionLevel = 1;
     var isTOCshown = false;
     var DoAnnouncements = true;
+    var SOURCE;
 
     const DoSettingTags = false;
     const DoDivsForNumbers = true;
+
+// Main Variables
+    var jSTORY;
+
+    var STORY = [];
+    var INFO;
+    var CurrentChapter;
+    var MaximumChapter = 0;
+    var PrologueChapters = 1; // Number of prologue chapters present in manuscript.
+    var ScrollProgress = 0;
+    var PageElementList = [];
+    var Position = 0;
+    var TOCchapterTARGET = "";
+
+    var InfoWindowState = false;
+    var isMapZoom = false;
+
+    var ShownCover = 1;
+
+    ThisStoryTheme = "Default"
+    LastStoryTheme = "Default"
+
+    var CODY_Opacity    = 0.00;
+    var KAT_Opacity     = 0.00;
+    var TIE_Opacity     = 0.00;
+
+    var isScrollerEventPage = false;
+   
 
 const VersionLog = {
     "v1.00":"Reader alpha",
@@ -24,6 +55,40 @@ const VersionLog = {
     "v2.31":"Capacity for custom scene numbering.",
     "v2.32":"Setting callouts option and custom -hr- dividers."
 }
+
+function yeardate(date) {
+    const month = date.getMonth();
+    var result = date.getDate();
+    for (let i = 0 ; i < month ; i++) {
+        result += new Date(date.getFullYear(),i+1,0).getDate();
+    }
+    result += (date.getFullYear()-2025)*365;
+    return result;
+}
+function Num2txt(number) {
+    let prefix = "Chapter ";
+    const lownum = ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"];
+    const highnum = ["Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"];
+    if (number <= 0) {
+        return "Prologue";
+    } else if (number > 19) {
+        const tens = Math.floor(number / 10);
+        const ones = number % 10;
+        return prefix + highnum[tens - 2] + (ones > 0 ? " " + lownum[ones] : "");        
+    } else {
+        return prefix + lownum[number];
+    }
+}
+DATEKEY = "Tuesday, May 13, 2025"; // Start date from Autononymous release day on March 14, 2025.
+const tSTART = new Date("2025-03-14T00:00:00Z"); 
+const dBEGIN = 56; //Story release relative date.
+const dSTART = yeardate(tSTART);    
+const tNOW = new Date(); // Current date.
+const dNOW = yeardate(tNOW);
+
+DConsole("main.js",`Designated start yeardate is ${dSTART} (${tSTART.toDateString()}).`,false);
+DConsole("main.js",`Today's yeardate is ${dNOW} (${tNOW.toDateString()}).`,false);
+DConsole("main.js",`Today is ${dNOW-dSTART} days after start yeardate.`,true)
 
 function clearLocalStorage() {
     localStorage.removeItem(`AC_SAVE_${StoryMode}`);
@@ -186,28 +251,34 @@ async function GetCustomParams()
     LOCATIONS = SOURCE.Locations; DConsole("initialize.js > GetCustomParams","Loaded locations from JSON.",false);
     CH_OVERRIDES = SOURCE.ChapterOverrides; DConsole("initialize.js > GetCustomParams","Loaded special chapter overrides from JSON.",true);
 
-    switch (SrcParams.get('story')) {
-        case 1:
-        case "firebrand":
-        case "Firebrand":
-            ActiveStory = "Firebrand";
-            break;
-        case 2:
-        case "paragate":
-        case "Paragate":
-            ActiveStory = "Paragate";
-            break;
-        default:
-            ActiveStory = "Firebrand";
-            break;
-                
+    if( SrcParams != null ) {
+        switch (SrcParams.get('story')) {
+            case 1:
+            case "firebrand":
+            case "Firebrand":
+                ActiveStory = "Firebrand";
+                break;
+            case 2:
+            case "paragate":
+            case "Paragate":
+                ActiveStory = "Paragate";
+                break;
+            default:
+                ActiveStory = "Firebrand";
+                break;                    
+        }
+    } else {
+        ActiveStory = "Firebrand"
     }
 
     DConsole("initialize.js > GetCustomParams",`Selected story is ${ActiveStory}. Pulling data from file ${LOCATIONS[ActiveStory].StoryFile} ...`,true);
 
     LOCATION = (LOCATIONS[ActiveStory] == undefined) ? Object.entries(LOCATIONS)[0] : LOCATIONS[ActiveStory] ;   
-    ActiveStory = LOCATION.StoryName; 
-    eBOOKCOVER.src = LOCATION.CoverImage;
+    ActiveStory = LOCATION.StoryName;
+    if( INITMODE == "READER")
+    {
+        eBOOKCOVER.src = LOCATION.CoverImage;
+    }
     Object.keys(STYLES).forEach( charstyle => {
         ROOT.style.setProperty(`url(--Wall${charstyle})`, STYLES[charstyle].WallImage);
     })

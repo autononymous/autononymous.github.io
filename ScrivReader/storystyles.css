@@ -61,6 +61,12 @@
 .Cody {
         color:          var(--TextColor);
 }
+.CodyHead {
+    font-family: var(--CodyTitle);
+}
+.CodyBody {
+    font-family: var(--CodyText);
+}
 p.Cody {
     font-size:          var(--CodySize);
     line-height:        var(--TextLineHeight);
@@ -104,6 +110,12 @@ div.codybg {
 .Katiya {
     color:              var(--TextColor);
 }
+.KatiyaHead {
+    font-family: var(--KatiyaTitle);
+}
+.KatiyaBody {
+    font-family: var(--KatiyaText);
+}
 p.Katiya {
     font-family:        var(--KatiyaText);
     font-size:          var(--KatiyaSize);
@@ -146,6 +158,12 @@ div.katbg {
 .Titus {
     color:              var(--TextColor);
 }
+.TitusHead {
+    font-family: var(--TitusTitle);
+}
+.TitusBody {
+    font-family: var(--TitusText);
+}
 p.Titus {
     font-family:        var(--KatiyaText);
     font-size:          var(--KatiyaSize);
@@ -182,6 +200,17 @@ div.tiebg {
     opacity:            var(--TitusOp);            
     filter:             var(--IconState);
     mix-blend-mode:     hard-light;
+}
+
+.CodyHead, .TitusHead, .KatiyaHead {
+    font-weight:900;
+}
+.CodyBody, .TitusBody, .KatiyaBody {
+    font-weight:500;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: justify;
 }
 
 p.CodyHand, p.KatiyaHand, p.TitusHand {

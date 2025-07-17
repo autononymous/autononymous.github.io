@@ -1,0 +1,235 @@
+:root {
+    --WindowMargin      :   10px;
+    --WindowHeight      :   35dvh;
+    --ScrollerHeight    :   50px;
+    --ScrollerWidths    :   60vw;
+    --ScrollItemPad     :   5px;
+    --SheetMargin       :   10px;
+
+    --InversionState    :   0;
+    --ThemeTextColor    :   black;
+
+}
+
+div.VIEWER {
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100vw;
+    height:100dvh;
+    overflow-x:hidden;
+}
+
+div {
+    font-family: Arial, sans-serif;
+}
+
+div.FOOTER 
+{
+    position            :   fixed;
+    bottom              :   0;
+    left                :   0;
+    height              :   30px;
+    width               :   100vw;
+    text-align          :   center;
+    padding-top         :   5px;
+    border-top          :   1px solid black;
+    background-color    :   gainsboro;
+}
+div.HEADER {
+    position            :   absolute;
+    height              :   var(--WindowHeight);
+    width               :   100vw;
+    left                :   0;
+    top                 :   0;
+    background-color    :   gainsboro;
+
+}
+div.HEADERWINDOW {
+    position            :   absolute;
+    top                 :   var(--WindowMargin);
+    height              :   calc( var(--WindowHeight) - ( 2 * var(--WindowMargin) ) );
+    left                :   var(--WindowMargin);
+    width               :   calc( 100% - ( var(--WindowMargin) * 2 ) );
+    border              :   1px solid black;
+    border-radius       :   20px;
+    box-shadow          :   inset 0px 0px 15px 0px black;
+}
+div.HEADERTEXT {
+    position            :   absolute;
+    top                 :   calc(  4.0 * var(--WindowMargin) );
+    text-align          :   center;
+    left                :   50vw;
+    transform           :   translateX(-50%);
+} 
+div.HEADERTEXT > img {
+    width: min(60vw,400px);
+    filter: invert(1) invert( var(--InversionState) );
+}
+div.HEADERTEXT > h3 {
+    color: var(--ThemeTextColor);
+    letter-spacing: 2vw;
+    white-space: nowrap;
+}
+div.SCROLLER {
+    position:absolute;
+    top: var(--WindowHeight);
+    left:0;
+    width:100%;
+    height: var(--ScrollerHeight);
+    border:1px solid black;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+div.SLIDEBAR {
+    position:relative;
+    left:0;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    margin-left: calc( ( (100vw - var(--ScrollerWidths) ) / 2 ) - var(--ScrollItemPad));
+    margin-right: calc( ( (100vw - var(--ScrollerWidths) ) / 2 ) - var(--ScrollItemPad));
+}
+div.SLIDEBAR > div {
+    flex: auto;
+    width: var(--ScrollerWidths);
+    /*height: 40px;/**/
+    margin: var(--ScrollItemPad);
+    padding-top: 10px;
+    padding-bottom:10px;
+    border: 1px solid black;
+    text-align: center;
+}
+div.MAIN
+{
+    position:relative;
+    top:calc( var(--ScrollerHeight) + var(--WindowHeight) );
+    left:0;
+    width:100vw;
+}
+div.MAIN::before
+{
+    position: absolute;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    left:50%;
+    top:0;
+    content: " ";
+    width:10px;
+    height:10px;
+    background: linear-gradient(45deg,transparent 50%,var(--ThemeTextColor) 50%);
+}
+div.SHEET
+{
+    width: calc( 100% - ( 2 * var(--SheetMargin) ) );
+    padding: var(--SheetMargin);
+    position:absolute;
+    top:0;
+    left:0;
+}
+div.updates
+{
+
+}
+    div.SHEET > h3 {
+        width:100%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    div.RELEASES {
+        width:100%;
+        min-height: 20px;
+        border:1px solid black;
+        background:gainsboro;
+    }
+    div.RELEASES > div {
+        display:grid;
+        grid-template:
+            'R-story R-name'
+            'R-body R-body';
+        padding:5px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid black;
+    }
+    div.RELEASES > div:hover {
+        color: darkred;
+    }
+    div.RELEASES > div > div {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    div.ReleaseFirebrand {
+    
+    }
+    div.ReleaseParagate {
+    }
+    div.R-STORY {
+        grid-area: R-story;
+    }
+    div.R-NAME {
+        grid-area: R-name;
+        text-align:right;
+    }
+    div.R-BODY {
+        border-top:1px solid black;
+        grid-area: R-body;
+    }
+
+div.stories
+{
+
+}
+    div.BOOKSHELF {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        width:100%;
+        height:100%;
+    }
+    @media only screen and (max-width: 600px) {
+    div.BOOKSHELF {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }    
+    }
+    div.BOOKSHELF > div {
+        border: 1px solid black;
+        width: 100%;
+        height: 100%;
+    }
+
+
+div.aboutme
+{
+
+}
+
+div.WallTitus {    
+    background-image:             
+                        linear-gradient(
+                            to right, 
+                            rgba(128,128,128,0.50)
+                        ),
+                        url("design/bg-tie.jpg");
+    mix-blend-mode:     hard-light;
+}
+div.WallCody {    
+    background-image:             
+                        linear-gradient(
+                            to right, 
+                            rgba(128,128,128,0.50)
+                        ),
+                        url("design/bg-cody.jpg");
+    mix-blend-mode:     hard-light;
+}
+div.WallKatiya {    
+    background-image:             
+                        linear-gradient(
+                            to right, 
+                            rgba(128,128,128,0.90)
+                        ),
+                        url("design/bg-kat.jpg");
+    mix-blend-mode:     hard-light;
+
+}

@@ -123,7 +123,7 @@
     const ROOT = document.querySelector(':root');
     const eDATA = document.getElementById('DATA');
 </script>
-
+<script src="storyparse.js" id="storyparser"></script>
 <script src="initialize.js" id="InitJS"></script>
 
 <script src="main.js" id="MainJS"></script>
@@ -135,6 +135,7 @@ async function ScrivReader() {
     await setup();
     eREVISION.innerHTML = `<span title="${Object.entries(VersionLog)[Object.keys(VersionLog).length-1][1]}">${Object.keys(VersionLog)[Object.keys(VersionLog).length-1]}</span>`;
 }
+const INITMODE = "READER";
 ScrivReader();
 </script>
 </html>

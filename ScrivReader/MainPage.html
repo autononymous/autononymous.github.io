@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autononymous Collective</title>
+    <link rel="stylesheet" href="mp_styles.css">
+    <link rel="stylesheet" href="storystyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caveat:wght@400..700&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Montez&family=Oxanium:wght@200..800&family=Patrick+Hand+SC&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="VIEWER" class="VIEWER">
+<div id="HEADER" class="HEADER">
+    <div id="HEADERWINDOW" class ="HEADERWINDOW">
+
+    </div>
+    <div class="HEADERTEXT">
+        <img src="https://autononymous.io/wp-content/uploads/2025/06/logo-sg.png">
+        <h3>&CenterDot;STORY COLLECTION&CenterDot;</h3>
+    </div>
+</div>
+<div id="SCROLLER" class="SCROLLER">
+    <div id="SLIDEBAR" class="SLIDEBAR">
+        <div class="PAGENAME">Updates</div>
+        <div class="PAGENAME">Current Stories</div>
+        <div class="PAGENAME">About The Author</div>
+    </div>
+</div>
+<div id="MAIN" class="MAIN">
+        <div id="SHEET-UPDATES" class="SHEET updates">
+            <h3>Latest Story Releases</h3>
+            <div id="RELEASES" class="RELEASES"></div>
+        </div>
+        <div id="SHEET-STORIES" class="SHEET stories" style="opacity:0; pointer-events: none;">
+            <div id="BOOKSHELF" class="BOOKSHELF">                
+            </div>
+        </div>
+        <div id="SHEET-ABOUTME" class="SHEET aboutme" style="opacity:0; pointer-events: none;">
+            about me
+        </div>
+</div>
+<div id="FOOTER" class="FOOTER">
+    Copyright &copy; AUTONONYMOUS 2025. All Rights Reserved.
+</div>
+</div>
+
+
+
+
+</body>
+<script>
+    const ROOT = document.querySelector(':root');
+
+    const eVIEWER       = document.getElementById('VIEWER');
+    const eHEADER       = document.getElementById('HEADER');
+    const eSLIDER       = document.getElementById('SCROLLER');    
+    const eSLIDEBAR     = document.getElementById('SLIDEBAR');
+    const eSHEETS       = document.getElementById('SHEETS');
+    const eRELEASES     = document.getElementById('RELEASES');
+    const pUPDATES      = document.getElementById('SHEET-UPDATES');
+    const pSTORIES      = document.getElementById('SHEET-STORIES');
+    const pABOUTME      = document.getElementById('SHEET-ABOUTME');
+    const eBOOKSHELF     = document.getElementById('BOOKSHELF');
+
+    const SHEETS = document.getElementsByClassName("SHEET");
+    const PAGES = document.getElementsByClassName("PAGENAME");
+</script>
+<script src="initialize.js" id="Data"></script>
+<script src="storyparse.js" id="storyparser"></script>
+<script src="mp_script.js" id="Script"></script>
+<script>
+async function _main_() { 
+    await GetCustomParams();
+    let LocElements = Object.entries(LOCATIONS)
+    for (let i=0; i<LocElements.length; i++) {
+        ActiveStory = LocElements[i][0];
+        let StoryString = LOCATIONS[ActiveStory];
+        STORY = [];
+        await fetchJSON(StoryString);
+        STORIES.push(Object.assign({}, STORY));
+    }
+    await PopulateMainPage();
+}
+const INITMODE = "MAIN";
+var STORIES = [];
+var OrderedReleases = [];
+var LatestReleases = [];
+
+_main_()
+
+</script>
+</html>

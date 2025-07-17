@@ -167,15 +167,15 @@
 {
     "Firebrand":
     {
-        "StoryRoot":"https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/ScrivReader/story/",
-        "StoryFile":"FB-07-11-25.json",
+        "StoryRoot":"https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/ScrivReader/",
+        "StoryFile":"story/FB-07-11-25.json",
         "StoryName":"Firebrand",
         "CoverImage":"design/cover-FBC.jpg"   
     },
     "Paragate":
     {
-        "StoryRoot":"https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/ScrivReader/story/",
-        "StoryFile":"PG-07-14-25.json",
+        "StoryRoot":"https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/ScrivReader/",
+        "StoryFile":"story/PG-07-14-25.json",
         "StoryName":"Paragate",
         "CoverImage":"design/cover-PG.jpg"
     }

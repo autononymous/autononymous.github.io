@@ -1,77 +1,11 @@
 
-    DATEKEY = "Tuesday, May 13, 2025"; // Start date from Autononymous release day on March 14, 2025.
-    const tSTART = new Date("2025-03-14T00:00:00Z"); 
-    const dBEGIN = 56; //Story release relative date.
-    const dSTART = yeardate(tSTART);    
-    const tNOW = new Date(); // Current date.
-    const dNOW = yeardate(tNOW);
-
-    DConsole("main.js",`Designated start yeardate is ${dSTART} (${tSTART.toDateString()}).`,false);
-    DConsole("main.js",`Today's yeardate is ${dNOW} (${tNOW.toDateString()}).`,false);
-    DConsole("main.js",`Today is ${dNOW-dSTART} days after start yeardate.`,true)
-
     const sTrans2       = 5; //--------------------------------------------------------------
     const sTransition   = .5; //percent
     const sHold         = .5; //percent
     const sOffset       = 0; //percent
 
 // ==========================<{Changing Variables}>============================ //
-    var jSTORY;
-
-    var STORY = [];
-    var INFO;
-    var CurrentChapter;
-    var MaximumChapter = 0;
-    var PrologueChapters = 1; // Number of prologue chapters present in manuscript.
-    var ScrollProgress = 0;
-    var PageElementList = [];
-    var Position = 0;
-    var TOCchapterTARGET = "";
-
-    var InfoWindowState = false;
-    var isMapZoom = false;
-
-    var ShownCover = 1;
-
-    ThisStoryTheme = "Default"
-    LastStoryTheme = "Default"
-
-    var CODY_Opacity    = 0.00;
-    var KAT_Opacity     = 0.00;
-    var TIE_Opacity     = 0.00;
-
-    var isScrollerEventPage = false;
-
-
-    // Message correlations.
-    const MsgMatch = {
-        "Miguel":"Miguel",
-        "Cody":"Cody",
-        "Kei":"Kei",
-        "SAKURA":"Kei",
-        "DUNSMO":"Cody",
-        "BROD":"Reed",
-        "Katiya":"Katiya"
-    }
     
-
-// ==============================<{Functions}>======================== //
-
-function Num2txt(number) {
-    let prefix = "Chapter ";
-    const lownum = ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"];
-    const highnum = ["Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"];
-    if (number <= 0) {
-        return "Prologue";
-    } else if (number > 19) {
-        const tens = Math.floor(number / 10);
-        const ones = number % 10;
-        return prefix + highnum[tens - 2] + (ones > 0 ? " " + lownum[ones] : "");        
-    } else {
-        return prefix + lownum[number];
-    }
-}
-
 async function LoadAnnouncements() {
     eSTARTBOX.style.opacity="1";
     eANNOUNCE.innerHTML = `<div><h3 class="Announcements"> Announcements </h3></div>`;
@@ -106,15 +40,6 @@ function SetViewerMode() {
     }
     eSTARTBOX.innerHTML += p_str; 
 }
-function yeardate(date) {
-    const month = date.getMonth();
-    var result = date.getDate();
-    for (let i = 0 ; i < month ; i++) {
-        result += new Date(date.getFullYear(),i+1,0).getDate();
-    }
-    result += (date.getFullYear()-2025)*365;
-    return result;
-}
 function SaveState() {    
     localStorage.setItem(`AC_SETTINGS_${ActiveStory}`,JSON.stringify(SETTINGS))
     localStorage.setItem(`AC_PREFS_${ActiveStory}`,JSON.stringify(PREFS));
@@ -130,14 +55,21 @@ async function LoadPreferences() {
 
             //console.error(PREFS.StartChapter)
 
-            PREFS.StartChapter = PREFS.StartChapter < 0 ?  0 : PREFS.StartChapter;
+            let VarChapter = parseFloat(SrcParams.get('chapter'));
+
+            PREFS.StartChapter = ( isNaN(VarChapter) ) ? PREFS.StartChapter : VarChapter;
+            PREFS.StartChapter = PREFS.StartChapter < 0 ?  0 : PREFS.StartChapter;// (PREFS.StartChapter > MaximumChapter ? MaximumChapter : PREFS.StartChapter);
+            
             SETTINGS = JSON.parse(savesettings);
 
             Object.values(SETTINGS).forEach( setting  => {                
                 ROOT.style.setProperty(setting.CSSname,setting.Options[setting.Setting]);
             });      
 
-            CurrentChapter = STORY[PREFS.StartChapter];
+            
+            CurrentChapter = STORY[VarChapter];
+
+            console.error(CurrentChapter);
 
             let newstate = (PREFS.DisplayMode=="Dark")?0:1;
             ROOT.style.setProperty("--IconState",`invert(${newstate})`)
