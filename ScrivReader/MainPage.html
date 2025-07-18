@@ -29,12 +29,12 @@
 <div id="MAIN
 " class="MAIN">
         <div id="SHEET-UPDATES" class="SHEET updates" style="opacity:1; pointer-events: all;">
-            <h3>Latest Story Releases:</h3>
+            <!-- <h3>Latest Story Releases:</h3> -->
             <div id="RELEASES" class="RELEASES"></div>   
         </div>
         <div id="SHEET-STORIES" class="SHEET stories" style="opacity:0; pointer-events: none;">
-            <div id="BOOKSHELF" class="BOOKSHELF">                
-            </div>
+            <div id="BOOKSHELF" class="BOOKSHELF"></div>
+            <div id="BOOKDATA" class="BOOKDATA"></div>
         </div>
         <div id="SHEET-ABOUTME" class="SHEET aboutme" style="opacity:0; pointer-events: none;">
             <div class="about-1 aboutsub">
@@ -52,9 +52,9 @@
                 <h3>&ensp;SUPPORT&ensp;</h3>
                 <p>Everything you find on this website is free: I'm more concerned with sharing engaging stories with the world than making money from it. But if you want to show your support, you will find a link to my KoFi page below.</p><p>As a newly self-publishing writer, such support means the world to me.</p>
                 <br><br>
-                <!--
+                
                 <iframe id='kofiframe' src='https://ko-fi.com/savantguarde/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;padding:4px;background:#f9f9f9;' height='712' title='savantguarde'></iframe>
-                -->
+
             </div>
         </div>
 </div>
@@ -79,7 +79,8 @@
     const pUPDATES      = document.getElementById('SHEET-UPDATES');
     const pSTORIES      = document.getElementById('SHEET-STORIES');
     const pABOUTME      = document.getElementById('SHEET-ABOUTME');
-    const eBOOKSHELF     = document.getElementById('BOOKSHELF');
+    const eBOOKSHELF    = document.getElementById('BOOKSHELF');
+    const eBOOKDATA     = document.getElementById('BOOKDATA');
 
     const SHEETS = document.getElementsByClassName("SHEET");
     const PAGES = document.getElementsByClassName("PAGENAME");

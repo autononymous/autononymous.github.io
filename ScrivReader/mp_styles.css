@@ -2,6 +2,7 @@
     --WindowMargin      :   15px;
     --WindowHeight      :   35dvh;
     --ScrollerHeight    :   50px;
+    --FooterHeight      :   30px;
     --ScrollerWidths    :   40vw;
     --ScrollItemPad     :   5px;
     --SheetMargin       :   10px;
@@ -41,7 +42,7 @@ div.VIEWER {
     position:absolute;
     left:-0px;
     top:0;
-    width: 100vw;
+    width: 100%;
     height:100dvh;
     overflow-x:hidden;
     background-image: 
@@ -49,9 +50,6 @@ div.VIEWER {
             to right,
             var(--SheetColor)
         );
-            /* 
-            rgba(var(--MainBackgroundRGB), 0.8)
-        ),url("design/cf.png");/**/
     background-size: 40px;
     color: white;
     scrollbar-width: none;
@@ -66,14 +64,20 @@ div.FOOTER
     position            :   fixed;
     bottom              :   0;
     left                :   0;
-    height              :   30px;
+    height              :   var(--FooterHeight);
     width               :   100vw;
     text-align          :   center;
     padding-top         :   5px;
     border-top          :   1px solid black;
-    font-size           :   min(3vw,2em);
+    font-size           :   min(3vw,1.0em);
+    color               :   dimgray;
     background-color    :   var(--SheetColor);
     border-top          :   2px solid var(--AccentThree);
+    background-image    :   linear-gradient(
+                                to bottom,
+                                rgba(0, 0, 0, 0.420) 0px,
+                                transparent 30px
+                            );
 }
 div.HEADER {
     position            :   absolute;
@@ -141,18 +145,10 @@ div.SCROLLER {
     overflow-y: hidden;
     scrollbar-width: none;
     background-image: 
-    linear-gradient(/*
-            to right,
-            rgba(0, 0, 0, 0.75) 0px,
-            transparent 80px,
-            transparent calc(100% - 80px),
-            rgba(0, 0, 0, 0.75) 100%
-        ),
-        linear-gradient( */
+        linear-gradient(
             to top,
-            rgba(0, 0, 0, 0.274) 0px,
-            transparent 10px
-            /*var(--AccentTwo)/**/
+            rgba(0, 0, 0, 0.420) 0px,
+            transparent 50px
         );
         
     margin-top: 4px;
@@ -211,6 +207,7 @@ div.SHEET
     width: calc( 100% - ( 2 * var(--SheetMargin) ) );
     padding: var(--SheetMargin);
     position:absolute;
+    height: fit-content;
     top:0;
     left:0;
 }
@@ -224,12 +221,53 @@ div.updates
         height:1.2em;
         font-variant: small-caps;
     }
+    div.RELEASEBIN {
+        height: 80px;
+        overflow: hidden;
+    }
+    div.WallInactiveTag {
+        position:relative;
+        width:fit-content;
+        left:50%;
+        top:-45px;
+        transform: translateX(-50%);
+        background-color: gray;
+        color: var(--SheetColor);
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        opacity:0.7;
+        padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+        margin: 0.0rem 0.3rem 0.0rem 0.3rem;
+        border-radius: 8px;
+    }
+    hr.nowHR {
+        border-bottom: 2px solid var(--AccentThreeLight);
+        position: relative;
+        top:8px;
+    }
+    div.nowDIV {
+        position:relative;
+        width:fit-content;
+        left:50%;
+        transform: translateX(-50%);
+        background-color: var(--AccentThreeLight);
+        color: var(--SheetColor);
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+        margin: -0.6rem 0.3rem 0.3rem 0.3rem;
+        border-radius: 8px;
+    }
     div.RELEASES {
         width:100%;
-        min-height: 20px;
+        height:calc( 100dvh - ( var(--ScrollerHeight) + var(--WindowHeight) + var(--ScrollItemPad)*2 + var(--FooterHeight)));
+        overflow-y: scroll;
+        overflow-x: hidden;
         color:black;
     }
-    div.RELEASES > div {
+    div.RELEASE {
         display:grid;
         grid-template:
             'R-icon R-story R-name'
@@ -244,6 +282,23 @@ div.updates
         border-top: 1px solid black;
         */
     }
+    div.RELEASES::after {
+        content:" ";
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        background-image: 
+            linear-gradient(
+                to bottom,
+                var(--SheetColor) 0px,
+                transparent 50px,
+                transparent 60%,
+                var(--SheetColor) 95%
+            );
+        pointer-events: none;
+    }
         div.FirebrandIcon {
 
         }
@@ -256,53 +311,143 @@ div.updates
     div.ReleaseParagate {
         color: white;
     }
+    div.R-INACTIVE {
+        color: dimgray;
+    }
     div.R-ICON {
         grid-area: R-icon;
         width: 50px;
+    }
+    div.R-ICON > img {
+        height:50px;
+        position:relative;
+        left:-10px;
     }
     div.R-STORY {
         grid-area: R-story;
         /*text-decoration: underline;/**/
         padding-bottom: 5px;
         font-variant: normal;
+        white-space: nowrap;
     }
     div.R-NAME {
         grid-area: R-name;
         text-align:right;
         font-variant: small-caps;
+        white-space: nowrap;
     }
     div.R-BODY {
-        grid-area: R-body;
+        grid-area: R-body;        
+        white-space: nowrap;        
+        text-overflow: ellipsis;
+    }
+    span.NEWBADGE {
+        background-color: var(--AccentThreeLight);
+        color: var(--SheetColor);
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+        margin: 0.0rem 0.3rem 0.0rem 0.3rem;
+        border-radius: 8px;
     }
 
 div.stories
 {
-
+    height: 150dvh;
 }
+    div.BOOKDATA {
+        width:min(80vw,500px);
+        background-color: var(--AccentThreeLighter);
+        position:relative;
+        left:50%;
+        top: 70vw;/*calc( ( var(--ScrollerHeight) + var(--WindowHeight) + var(--ScrollItemPad)*2 + var(--FooterHeight)));/**/
+        transform: translateX(-50%);
+        margin: 10px 0px 10px 0px;
+        color: black;
+        display: grid;
+        grid-template: 'vimage vsynop';
+        height:fit-content;
+        transition: height 3.0s ease-in-out;
+    }
+    @media only screen and (max-width: 500px) {
+    div.BOOKDATA {
+        grid-template: 'vimage' 'vsynop';
+    }
+    }
+        div.ViewedImage {
+            grid-area: vimage;
+            width:100%;
+        }
+        div.ViewedImage > img {
+            border: 1px solid black;
+            height: 200px;
+            aspect-ratio: 0.7;
+            box-shadow: 0px 0px 10px 0px black;
+            margin: 20px;
+        }
+        div.ViewedSynopsis {
+            grid-area: vsynop;
+            text-align: justify;
+            margin-top: 80px;
+        }
+        div.ViewedSynopsis > p {            
+            margin-right:20px;           
+            margin-left:20px;
+        }
+        a.readbutton {
+            position:absolute;
+            width:50%;
+            left:50%;
+            top:0;
+            transform: translateX(-50%);
+            background-image: 
+                linear-gradient(
+                    45deg,
+                    var(--AccentOne),
+                    var(--AccentThree)
+                );
+            font-size: min(6vw,1.5rem);
+            font-weight: 600;
+            text-align: center;
+            padding: 18px;
+            border-radius: 9999px;
+            margin-top: 20px;
+            text-decoration:none;
+            color: white;
+            font-family: "Arial", sans-serif;            
+            border: 1px solid var(--AccentThreeLight);
+        }
+        a.readbutton:hover {
+            border: 5px solid var(--AccentThreeLight);
+            margin-top: 16px;
+        }
     div.BOOKSHELF {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         width:90%;
-        height:100%;
         row-gap: 10px;
         column-gap: 30px;
         margin-top: 20px;
         position:absolute;
         left:50%;
         transform: translateX(-50%);
+        height:fit-content;
     }
     @media only screen and (max-width: 350px) {
     div.BOOKSHELF {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-    }    
+    }  
+    div.BOOKDATA {
+        top: 280vw;
+        margin: 4px 0px 4px 0px;
+    }  
     }
     div.BOOKSHELF > div {
         border: 1px solid black;
         width: 100%;
-        height: 100%;
         aspect-ratio: 0.7;
         background-size:cover;
         background-repeat: no-repeat;
@@ -373,23 +518,18 @@ div.aboutme
         text-transform:uppercase;
         letter-spacing: 0.40rem;/**/
     }
-
-div.WallTitus {    
-    transition: color ease-in-out 0.2s;    
-    background-image:     
+div.WallInactive {
+    color: dimgray;
+     background-image:     
     linear-gradient(
         to right,
         transparent 0px,
-        var(--AccentThree) 0px,
+        rgb(67, 67, 67) 0px,
         transparent 40px
     );
-    
-    /*url("design/bg-tie.jpg");*/
 }
-div.WallTitus:hover {
-    color: var(--AccentThreeLight);
-}
-div.WallCody {
+
+div.WallParagate {
     transition: color ease-in-out 0.2s;  
     background-image:     
     linear-gradient(
@@ -400,10 +540,10 @@ div.WallCody {
     );
         /*url("design/bg-cody.jpg");*/
 }
-div.WallCody:hover {
+div.WallParagate:hover {
     color: var(--AccentTwoLight);
 }
-div.WallKatiya {
+div.WallFirebrand {
     transition: color ease-in-out 0.2s;  
     background-image:     
     linear-gradient(
@@ -414,6 +554,6 @@ div.WallKatiya {
     );   
         /*url("design/bg-kat.jpg");*/
 }
-div.WallKatiya:hover {
+div.WallFirebrand:hover {
     color: var(--AccentOneLight);
 }

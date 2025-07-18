@@ -209,9 +209,12 @@ div.tiebg {
 }
 .CodyBody, .TitusBody, .KatiyaBody {
     overflow: hidden;
+    font-family:'Arial Light', Helvetica, sans-serif;
+    font-weight: 100;
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: justify;
+    width:100%;
 }
 
 p.CodyHand, p.KatiyaHand, p.TitusHand {
