@@ -88,7 +88,7 @@ def ScrPostProcess(filename):
                 "Story":JS[i]["StoryName"],
                 "Title":"Chapter " + ChapterFullName,
                 "Subtitle":JS[i]["GivenName"],
-                "Act":JS[i]["ActNum"],
+                "Act":int(JS[i]["ActNum"])-1,
                 "ChapterNumber": JS[i]["ChapterFull"],
                 "Synopsis":JS[i]["Synopsis"],
                 "RevNotes":"",

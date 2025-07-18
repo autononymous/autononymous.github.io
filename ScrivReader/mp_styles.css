@@ -31,6 +31,11 @@
 body {
     overflow: hidden;
 }
+.datenum {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
 
 div.VIEWER {
     position:absolute;
@@ -257,12 +262,14 @@ div.updates
     }
     div.R-STORY {
         grid-area: R-story;
-        text-decoration: underline;
+        /*text-decoration: underline;/**/
         padding-bottom: 5px;
+        font-variant: normal;
     }
     div.R-NAME {
         grid-area: R-name;
         text-align:right;
+        font-variant: small-caps;
     }
     div.R-BODY {
         grid-area: R-body;

@@ -57,9 +57,9 @@ function AlignSlider()
 }
 
 async function RetrieveTableOfContents() {
-    TableOfContents = await GetJSONFromSource('process/MasterTOC.JSON')
+    TableOfContents = await GetJSONFromSource(ScrivReaderSOURCE+'story/process/MasterTOC.JSON')
 }
-
+/*
 async function RetrieveLatestStories(count = 5) { 
     let HighestRelease = 0;
     STORIES.forEach( story => {
@@ -82,6 +82,7 @@ async function RetrieveLatestStories(count = 5) {
     }
     console.log(LatestReleases)
 }
+    
 async function DeployLatestStories() {
     let newHTML = "";
     LatestReleases.forEach( release => {
@@ -97,6 +98,24 @@ async function DeployLatestStories() {
     })
     eRELEASES.innerHTML = newHTML;
 }
+    */
+async function DeployTableOfCcontents() {
+    let newHTML = ""
+    TableOfContents.reverse().forEach(release => {
+        let perspective = (Object.keys(SOURCE.Shorthands.Names).includes(release.Perspective)) ? release.Perspective : "Cody";
+        let link = `scrivreader.html?story=${release.Story}&chapter=${release.ChapterNumber-1}`
+        newHTML += `
+        <div class="Release${release.Story} Wall${perspective}" onclick="window.location='${link}'  ">
+            <div class="R-ICON ${release.Story}Icon"></div>
+            <div class="R-STORY ${perspective}Head"><span class="datenum">${dateyear(release.Release)}</span>&ensp;|&ensp; ${release.Story} ${release.ID}</div>
+            <div class="R-NAME ${perspective}Head"><em>"${release.Subtitle}"</em></div>
+            <div class="R-BODY ${perspective}Body">${release.Synopsis}</div>
+        </div>
+        `
+    });
+    eRELEASES.innerHTML = newHTML;
+}
+
 async function DeployStoryTitles() {
     let newHTML = ""
     Object.entries(LOCATIONS).forEach( ([title,data]) => {
@@ -111,8 +130,9 @@ async function DeployStoryTitles() {
 
 async function PopulateMainPage() {
     await RetrieveTableOfContents();
-    await RetrieveLatestStories(5);
-    await DeployLatestStories();
+    //await RetrieveLatestStories(5);
+    //await DeployLatestStories();
+    await DeployTableOfCcontents();
     await DeployStoryTitles();
 }
 
