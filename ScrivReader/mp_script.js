@@ -5,6 +5,8 @@ var CurrentIndex = 0;
 var CurrentPage = PAGES[CurrentIndex];
 var ScrollIdlePos = 0;
 
+var TableOfContents = {};
+
 function ScrollForPage()
 {
     if (Math.abs(eSLIDER.scrollLeft - ScrollIdlePos) < 10) {
@@ -54,7 +56,9 @@ function AlignSlider()
     eSLIDER.scrollLeft = ScrollIdlePos;
 }
 
-
+async function RetrieveTableOfContents() {
+    TableOfContents = await GetJSONFromSource('process/MasterTOC.JSON')
+}
 
 async function RetrieveLatestStories(count = 5) { 
     let HighestRelease = 0;
@@ -106,6 +110,7 @@ async function DeployStoryTitles() {
 
 
 async function PopulateMainPage() {
+    await RetrieveTableOfContents();
     await RetrieveLatestStories(5);
     await DeployLatestStories();
     await DeployStoryTitles();
@@ -113,6 +118,4 @@ async function PopulateMainPage() {
 
 eSLIDER.addEventListener("scroll",ScrollForPage);
 eSLIDER.addEventListener("resize",AlignSlider);
-
-
 

@@ -28,6 +28,20 @@ def DateYear(num):
     target_date = base_date + timedelta(days=int(num))
     return [target_date.strftime("%m"), target_date.strftime("%d"), target_date.strftime("%Y"), str(target_date)]
 
+def MasterTOC(storynames):
+    unsorted = [];
+    for i in range(len(storynames)):
+        with open(export_path + str(storynames[i]) + "/TOC.JSON", 'r', encoding='utf-8') as file:
+            content = file.read().replace('\n','');
+            loaded = js.loads(content)
+            for key, value in loaded.items():
+                #print(key, value)
+                unsorted.append(value)
+    unsorted.sort(key=lambda rls: rls["Release"])
+    with open(export_path + "MasterTOC.JSON", "w") as f:
+        f.write(js.dumps(unsorted));
+            
+
 def ScrPostProcess(filename):    
     with open(import_path + str(filename), 'r', encoding='utf-8') as file:
         content = file.read().replace('\n','');
@@ -116,3 +130,5 @@ def ScrPostProcess(filename):
         f.write(js.dumps(TOCdict));    
     
     print('> Scrivener-exported story "' + str(StoryName) + '" has been post-processed.\n  |\tEntries:\t'+ str(i) + "\n  |\tChapters:\t" + str(infoCountChapter) + "\n  |\tScenes: \t" + str(infoCountScene) + "\n> There are an average of " + str(round(infoCountScene/infoCountChapter,2)) + " scenes per chapter.")
+    
+MasterTOC(['Firebrand','Paragate'])

@@ -127,16 +127,6 @@ function DConsole(title,body,flush=false,rawpush=false) {
     }    
 }
 
-function yeardate(date) {
-    const month = date.getMonth();
-    var result = date.getDate();
-    for (let i = 0 ; i < month ; i++) {
-        result += new Date(date.getFullYear(),i+1,0).getDate();
-    }
-    result += (date.getFullYear()-2025)*365;
-    return result;
-}
-
 async function GetJSONFromSource(location)
 {
     try {
