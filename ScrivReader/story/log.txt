@@ -1,0 +1,13 @@
+
+> Running from scriv.
+FILEIN ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/test.json
+> Accepted argument "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/test.json".
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> Running from ScrivenerExport.
+FILEIN ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/test3.json
+> Accepted argument "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/test3.json".
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].

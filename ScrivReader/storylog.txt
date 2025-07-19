@@ -1,0 +1,123 @@
+
+> Running from scriv.
+FILEIN ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/w.json
+> Accepted argument "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/w.json".
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> Running from scriv.
+FILEIN ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/tst.json
+> Accepted argument "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/tst.json".
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story\w.json
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story\w.json
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story\w.json
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story\w.json
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story\w.json
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story\w.json
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story\w.json
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story\w.json
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story\w.json
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story\w.json
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story\w.json
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story\w.json
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> Running from scriv.
+FILEIN ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/t.json
+> Accepted argument "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/t.json".
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> Running from scriv.
+FILEIN ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-250719.json
+> Accepted argument "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-250719.json".
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> Running from scriv.
+FILEIN ARGS:
+test.json
+> Accepted argument "test.json".
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> Running from scriv.
+FILEIN ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/test2.json
+> Accepted argument "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/test2.json".
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story\test2.json
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story\test2.json
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story\test2.json
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> Running from scriv.
+FILEIN ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/test2.json
+> Accepted argument "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/test2.json".
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story\test2.json
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].

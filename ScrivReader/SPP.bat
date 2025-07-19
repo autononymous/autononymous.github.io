@@ -1,0 +1,1 @@
+python C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\ScrivReader\ScrivPostProcess.py %* >> history.log
