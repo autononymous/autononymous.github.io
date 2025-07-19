@@ -1,9 +1,12 @@
 import json as js
 import os
 from datetime import datetime, timedelta
+import sys
+import glob
+import time
 
-import_path = "story/";
-export_path = "story/process/"
+import_path = "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/";
+export_path = "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/process/"
 
 
 OnesNames = ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen","Twenty"]
@@ -43,8 +46,32 @@ def MasterTOC(storynames):
             
 
 def ScrPostProcess(filename):    
-    with open(import_path + str(filename), 'r', encoding='utf-8') as file:
-        content = file.read().replace('\n','');
+    # Wait until the file exists before opening
+    timeout = 10  # seconds
+    waited = 0
+    while not os.path.exists(filename) and waited < timeout:
+        time.sleep(0.5)
+        waited += 0.5
+        print(" . ");
+    if not os.path.exists(filename):
+        print(f'ERROR: File "{filename}" not found after waiting.')
+        return
+    try:        
+        print("> Trying fullname path for " + str(filename) + ".")
+        with open(filename, 'r', encoding='ISO-8859-1') as file:
+            content = file.read().replace('\n','');
+        print('Filename '+str(filename)+' was direct path.')
+            
+    except Exception as error:  
+        try:
+            print("> Error was: \n" + str(error) +"\n\n> Trying shorthand path.")
+            with open(import_path + str(filename), 'r', encoding='ISO-8859-1') as file:
+                content = file.read().replace('\n','');
+            print('Filename '+str(filename)+' was shortened path.')
+        except Exception as error:
+            print('> Unable to resolve path "'+str(filename)+'".\n Error is: ' + str(error) + "\n\n")
+            return
+    
     loaded = js.loads(content)
     JS = loaded["Manuscript"];
     
@@ -131,4 +158,41 @@ def ScrPostProcess(filename):
     
     print('> Scrivener-exported story "' + str(StoryName) + '" has been post-processed.\n  |\tEntries:\t'+ str(i) + "\n  |\tChapters:\t" + str(infoCountChapter) + "\n  |\tScenes: \t" + str(infoCountScene) + "\n> There are an average of " + str(round(infoCountScene/infoCountChapter,2)) + " scenes per chapter.")
     
-MasterTOC(['Firebrand','Paragate'])
+    
+def GetFolders(arg):
+    result = []
+    for item in arg:
+        if not ("." in item):
+            result.append(item)
+    return result
+
+def LogProcess(string):
+    print(string);
+    with open(import_path + "log.txt", "a") as f:
+        f.write("\n" + string);  
+    
+#LogProcess("\n========" + datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "========\n")
+
+if __name__ == "__main__":
+    try:
+        arg_FileIn = sys.argv[1]
+        try:
+            LogProcess("> Running from "+ str(sys.argv[2]) + ".")
+        except:
+            LogProcess("> Running from undeclared process.")
+        LogProcess("FILEIN ARGS:\n" + str(arg_FileIn));
+        LogProcess('> Accepted argument "' + arg_FileIn +'".')
+        ScrPostProcess(arg_FileIn)
+    except:        
+        LogProcess('> No arguments presented in command line.')
+        list_of_files = glob.glob(import_path+'/*.json')
+        latest_file = max(list_of_files, key=os.path.getctime).replace("\\","/")       
+        LogProcess("LATESTFILE ARGS:\n" + str(latest_file));
+        ScrPostProcess(latest_file) 
+     
+LogProcess('> Compiling existing files into Master Table Of Contents...');   
+StoryFolders = GetFolders(os.listdir('C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/process'))
+MasterTOC(StoryFolders);
+
+LogProcess("> Completed for "+str(StoryFolders)+".")
+

@@ -113,7 +113,7 @@ async function DeployTableOfContents() {
     let InactiveCount = 0;
     let FirstNew = true;
     TableOfContents.reverse().forEach(release => {
-        let perspective = (Object.keys(SOURCE.Shorthands.Names).includes(release.Perspective)) ? release.Perspective : "Cody";
+        let perspective = (Object.keys(SOURCE.Shorthands.Names).includes(release.Perspective)) ? release.Perspective : "Mixed";
         let link = `scrivreader.html?story=${release.Story}&chapter=${release.ChapterNumber-1}`
         let newbadge = parseInt(release.Release) >= (dNOW - WhatIsANewRelease) ? "<span class='NEWBADGE'>NEW</span>" : "";
         if (parseInt(release.Release) <= dNOW) {
