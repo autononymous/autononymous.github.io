@@ -1,1 +1,2 @@
 python C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\ScrivReader\ScrivPostProcess.py %* >> history.log
+git commit -am %date:~-10,2%_%date:~-7,2%_%time:~-11,2%_%time:~-8,2%StoryUpdate && git push origin master >> history.log

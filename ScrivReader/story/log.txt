@@ -11,3 +11,8 @@ C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/stor
 > Accepted argument "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/test3.json".
 > Compiling existing files into Master Table Of Contents...
 > Completed for ['Firebrand', 'Paragate'].
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/test3.json
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
