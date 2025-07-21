@@ -504,7 +504,6 @@ function SetScrollerEvents(ThemeDivs=true) {
     //--console.debug(Keyframes)
 }
 function HandleScrollerEvents() {
-
     let OverrideContent = CH_OVERRIDES[ActiveStory][CurrentChapter.ID];
     let IsOverride = !(OverrideContent == undefined);
     if (!IsOverride) {
@@ -816,32 +815,6 @@ async function PlaceOrOverlay(CHAPTER) {
     ROOT.style.setProperty("--SpecialOp",parseFloat(1*(OverrideContent!= undefined)));
 }
 
-async function setup() {
-
-    jSTORY = await fetchJSON();
-    await LoadPreferences();
-    if (DoAnnouncements) { 
-        DConsole("main.js > setup","Loading announcements.", true)
-        await LoadAnnouncements(); 
-    } else {        
-        eSTARTBOX.outerHTML = "";
-        DConsole("main.js > setup","Skipping announcements.", true)
-    }
-    // Set current chapter.
-    if ( !isNaN(parseFloat(SrcParams.get('startchapter'))) ) {
-        CurrentChapter = STORY[parseFloat(SrcParams.get('startchapter'))];
-        console.warn(`> Notice: Story "${ActiveStory}" set from search variables to Chapter ${CurrentChapter}.`)
-    } else {
-        CurrentChapter = STORY[PREFS.StartChapter];
-    }    
-    
-    await PlaceOrOverlay(CurrentChapter);
-
-    SetInfo();
-    SetMessageState();
-    await BuildTOC();
-    SetViewerMode();    
-}
 function ScrollPosition(elem) {    
     let PageRect = ePAGE.getBoundingClientRect();
     let ItemRect = elem.getBoundingClientRect();
@@ -974,4 +947,30 @@ function ToggleInfoWindow() {
         //eMAPINFO.style.animation = ("1s ease-in-out 0.25s forwards fadeout");
     }   
     
+}
+
+async function setup() {
+    jSTORY = await fetchJSON();
+    await LoadPreferences();
+    if (DoAnnouncements) { 
+        DConsole("main.js > setup","Loading announcements.", true)
+        await LoadAnnouncements(); 
+    } else {        
+        eSTARTBOX.outerHTML = "";
+        DConsole("main.js > setup","Skipping announcements.", true)
+    }
+    // Set current chapter.
+    if ( !isNaN(parseFloat(SrcParams.get('startchapter'))) ) {
+        CurrentChapter = STORY[parseFloat(SrcParams.get('startchapter'))];
+        console.warn(`> Notice: Story "${ActiveStory}" set from search variables to Chapter ${CurrentChapter}.`)
+    } else {
+        CurrentChapter = STORY[PREFS.StartChapter];
+    }    
+    
+    await PlaceOrOverlay(CurrentChapter);
+
+    SetInfo();
+    SetMessageState();
+    await BuildTOC();
+    SetViewerMode();    
 }

@@ -5,14 +5,57 @@ import sys
 import glob
 import time
 
+# @file ScrivPostProcess.py
+# 
+# @brief Organizes exported JSON Scrivener files for use in a webnovel platform.
+
+
+# Global Constants
+## Defined full import path for accessing the exported file.
 import_path = "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/";
+## Defined full export path for placing completed files.
 export_path = "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/process/"
 
 
 OnesNames = ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen","Twenty"]
 TensNames = ["err","err","Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"]
 
+
+def DateYear(yeardate):
+    """! Converts a numerical yeardate (X out of 365) into a full date.
+    
+    @param yeardate Number representing day of the year out of 365.
+    
+    @return Array containing [month, date, year, full date].
+    """
+    base_date = datetime(2025, 1, 1)
+    target_date = base_date + timedelta(days=int(yeardate))
+    return [target_date.strftime("%m"), target_date.strftime("%d"), target_date.strftime("%Y"), str(target_date)]
+
+
+def YearDate(date):
+    parts = date.split('/')
+    if len(parts) == 3:
+        month, day, year = int(parts[0]), int(parts[1]), int(parts[2])
+        # Assume 20xx for 2-digit years
+        year += 2000 if year < 100 else 0
+    else:
+        month, day = int(parts[0]), int(parts[1])
+        year = 2025  # Default year if not provided
+
+    dt = datetime(year, month, day)
+    return dt.timetuple().tm_yday
+
+
 def PushChapter(data,storyname):
+    """! Creates or accesses relevant directories and pushes chapter contents.
+    
+    @param data The generated JSON object.
+    @param storyname The name of the story being processed.
+    
+    @return No returns.   
+    """
+    
     storypath = export_path + str(storyname) + '/'
     newpath = storypath + str(data['Act']) + '/'
     try:
@@ -24,12 +67,8 @@ def PushChapter(data,storyname):
     except FileExistsError:
         pass
     with open(newpath + '/' + str(data['ChapterNumber']) + ".JSON", "w") as f:
-        f.write(js.dumps(data));
+        f.write(js.dumps(data,indent=2));
     
-def DateYear(num):
-    base_date = datetime(2025, 1, 1)
-    target_date = base_date + timedelta(days=int(num))
-    return [target_date.strftime("%m"), target_date.strftime("%d"), target_date.strftime("%Y"), str(target_date)]
 
 def MasterTOC(storynames):
     unsorted = [];
@@ -149,16 +188,23 @@ def ScrPostProcess(filename):
         elif (ThisType == "Scene"):
             ChapDict["Body"].append(JS[i]["Body"]);
             infoCountScene += 1;
-            
+            Sentences = JS[i]["Body"].replace("</p>","</p>\n").split("\n")
+            Section = [];
+            for Sentence in Sentences:
+                if not ('<p>' in Sentence):
+                    pass
+                    #print(js.dumps(ChapDict["BodyFormatted"],indent=2))
+                    #print(Sentence)
+                else:
+                    Section.append(Sentence)            
+            ChapDict["BodyFormatted"].append(Section)     
         WasType = ThisType;
     PushChapter(ChapDict,StoryName);
-    
     with open(export_path + str(StoryName) + "/TOC.JSON", "w") as f:
-        f.write(js.dumps(TOCdict));    
-    
+        f.write(js.dumps(TOCdict));
     print('> Scrivener-exported story "' + str(StoryName) + '" has been post-processed.\n  |\tEntries:\t'+ str(i) + "\n  |\tChapters:\t" + str(infoCountChapter) + "\n  |\tScenes: \t" + str(infoCountScene) + "\n> There are an average of " + str(round(infoCountScene/infoCountChapter,2)) + " scenes per chapter.")
     
-    
+    print(js.dumps(ChapDict["BodyFormatted"],indent=2))
 def GetFolders(arg):
     result = []
     for item in arg:

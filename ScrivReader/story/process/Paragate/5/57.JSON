@@ -1,1 +1,32 @@
-{"Story": "Paragate", "Title": "Chapter Fifty-Seven", "Subtitle": "Threaded Echoes", "Act": 5, "ChapterNumber": 57, "Synopsis": "Titus enocunters someone he thought he lost.", "RevNotes": "", "ID": "5.57", "Body": ["", "", ""], "BodyFormatted": [], "Release": 527, "ReleaseDate": ["06", "12", "2026", "2026-06-12 00:00:00"], "Active": false, "Perspective": "Default", "Status": "No Status", "WordCount": 0, "Summary": ""}
+{
+  "Story": "Paragate",
+  "Title": "Chapter Fifty-Seven",
+  "Subtitle": "Threaded Echoes",
+  "Act": 5,
+  "ChapterNumber": 57,
+  "Synopsis": "Titus enocunters someone he thought he lost.",
+  "RevNotes": "",
+  "ID": "5.57",
+  "Body": [
+    "",
+    "",
+    ""
+  ],
+  "BodyFormatted": [
+    [],
+    [],
+    []
+  ],
+  "Release": 527,
+  "ReleaseDate": [
+    "06",
+    "12",
+    "2026",
+    "2026-06-12 00:00:00"
+  ],
+  "Active": false,
+  "Perspective": "Default",
+  "Status": "No Status",
+  "WordCount": 0,
+  "Summary": ""
+}

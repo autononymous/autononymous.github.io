@@ -1,1 +1,30 @@
-{"Story": "Paragate", "Title": "Chapter Fifty-One", "Subtitle": "Liftoff", "Act": 4, "ChapterNumber": 51, "Synopsis": "The Aerospace team entertains Cody&apos;s idea.", "RevNotes": "", "ID": "4.51", "Body": ["", ""], "BodyFormatted": [], "Release": 485, "ReleaseDate": ["05", "01", "2026", "2026-05-01 00:00:00"], "Active": false, "Perspective": "Default", "Status": "No Status", "WordCount": 0, "Summary": ""}
+{
+  "Story": "Paragate",
+  "Title": "Chapter Fifty-One",
+  "Subtitle": "Liftoff",
+  "Act": 4,
+  "ChapterNumber": 51,
+  "Synopsis": "The Aerospace team entertains Cody&apos;s idea.",
+  "RevNotes": "",
+  "ID": "4.51",
+  "Body": [
+    "",
+    ""
+  ],
+  "BodyFormatted": [
+    [],
+    []
+  ],
+  "Release": 485,
+  "ReleaseDate": [
+    "05",
+    "01",
+    "2026",
+    "2026-05-01 00:00:00"
+  ],
+  "Active": false,
+  "Perspective": "Default",
+  "Status": "No Status",
+  "WordCount": 0,
+  "Summary": ""
+}

@@ -1,1 +1,34 @@
-{"Story": "Paragate", "Title": "Chapter Twenty-Seven", "Subtitle": "Friendly Fire", "Act": 2, "ChapterNumber": 27, "Synopsis": "They lash out at each other at the bottom of their rope.", "RevNotes": "", "ID": "2.27", "Body": ["", "", "", ""], "BodyFormatted": [], "Release": 317, "ReleaseDate": ["11", "14", "2025", "2025-11-14 00:00:00"], "Active": false, "Perspective": "Default", "Status": "No Status", "WordCount": 0, "Summary": ""}
+{
+  "Story": "Paragate",
+  "Title": "Chapter Twenty-Seven",
+  "Subtitle": "Friendly Fire",
+  "Act": 2,
+  "ChapterNumber": 27,
+  "Synopsis": "They lash out at each other at the bottom of their rope.",
+  "RevNotes": "",
+  "ID": "2.27",
+  "Body": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "BodyFormatted": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "Release": 317,
+  "ReleaseDate": [
+    "11",
+    "14",
+    "2025",
+    "2025-11-14 00:00:00"
+  ],
+  "Active": false,
+  "Perspective": "Default",
+  "Status": "No Status",
+  "WordCount": 0,
+  "Summary": ""
+}
