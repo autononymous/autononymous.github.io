@@ -137,6 +137,7 @@ async function fetchText(location)
 
 async function fetchJSON() {
     // Check if we already have this saved locally first.
+    /*
     let SavedContent = localStorage.getItem(`AC_SAVE_${ActiveStory}`);
     if(SavedContent != null) {
         try {
@@ -150,7 +151,11 @@ async function fetchJSON() {
             DConsole("main.js","Error loading existing text in local storage.\n"+error+"\n",false);
         }
     }
+    */
     // If not, proceed to load.
+
+
+    
     try {
         let sourcelocation = LOCATION.StoryRoot + LOCATION.StoryFile;
         const response = await fetch(sourcelocation);
