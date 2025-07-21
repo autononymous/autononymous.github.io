@@ -27,24 +27,33 @@ function CLS()
 //    IN > flush - Print all saved to display.
 //    IN > rawpush - Push raw item such as an object.
 //
-function DConsole(title,body,flush=false,rawpush=false) 
+class DebugConsole
 {
-    DebugItems.push([body,rawpush]);
-    let DebugStr = "";
-    let DebugItem = " ";
-    if(flush == true) {
-        DebugStr += `==================\nFrom ${title}:\n`;
-        DebugItems.forEach ( ([message,method]) => {
-            if(method) {
-                DebugItem = message
-            } else {
-                DebugStr +=  `> ${message}\n`
-            }            
-        })
-        console.debug(DebugStr,DebugItem);
-        DebugItems = [];
-    }    
+    DebugItems = [];
+    
+    DConsole(title,body,flush=false,rawpush=false) 
+    {
+        DebugItems.push([body,rawpush]);
+        let DebugStr = "";
+        let DebugItem = " ";
+        if(flush == true) {
+            DebugStr += `==================\nFrom ${title}:\n`;
+            DebugItems.forEach ( ([message,method]) => {
+                if(method) {
+                    DebugItem = message
+                } else {
+                    DebugStr +=  `> ${message}\n`
+                }            
+            })
+            console.debug(DebugStr,DebugItem);
+            DebugItems = [];
+        }    
+    }
+    constructor(){
+        pass
+    }
 }
+
 
 // ----------------------------------------------- //
 // File Receiving and Processing
@@ -60,12 +69,12 @@ async function GetFile(address)
     try {
         const response = await fetch(address)
         if(!response.ok) {
-            DConsole(`init.js > GetFile","Error pulling file from address.\n\t Address: ${address}`)
+            //DConsole(`init.js > GetFile","Error pulling file from address.\n\t Address: ${address}`)
         }
         let data = await response.text();
         return data;
     } catch (error) {
-        DConsole(`init.js > GetFile","Error processing file.\n\t Error: ${error}`)
+        //DConsole(`init.js > GetFile","Error processing file.\n\t Error: ${error}`)
     }
 }
 //
@@ -75,7 +84,7 @@ async function GetFile(address)
 //
 async function ParseJSON(text) 
 {
-    return JSON.parse(text.replaceAll(/(\r\n|\n|\r)/gm, ''));
+    return JSON.parse(text.replaceAll(/(\r\n|\n|\r)/gm,''));
 }
 //
 // GETJSON - Return file from address and parse into JSON.
@@ -192,36 +201,42 @@ function Num2txt(number)
 // Gathering Data From Defined Sources
 // ----------------------------------------------- //
 
-class StoryBook 
+
+var STORY_LIST,TOC_STORY,TOC_MASTER,CONFIG;
+async function init() 
 {
-    ReturnStories(url) {
-        return fetch(url)
-            .then(response => response.text())
-            .then(html => {
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, "text/html");
-            const folders = [];
-            doc.querySelectorAll('a').forEach(link => {
-                const href = link.getAttribute('href');
-                if (href && href.endsWith('/') && href !== '../') {
-                folders.push(href.replace(/\/$/, ''));
-                }
-            });
-            return folders;
-            })
-            .catch(error => {
-            DConsole("StoryBook > ReturnStories", `Error fetching directory: ${error}`);
-            return [];
-            });
+    // Get the master table of contents.
+    TOC_MASTER = await GetJSON(`${URL_ROOT}/story/process/MasterTOC.JSON`);
+    
+    // Return a list of all existing stories from master TOC.
+    STORY_LIST = [];
+    TOC_MASTER.forEach(entry => {
+        if( !STORY_LIST.includes(entry.Story)) 
+        {
+            STORY_LIST.push(entry.Story);
+        }
+    });
+
+    // Return a dictionary of TOCs for each story.
+    TOC_STORY = {};
+    for (let i=0; i<STORY_LIST.length; i++) {
+        let storyname = STORY_LIST[i]
+        let location =  `${URL_ROOT}/story/process/${storyname}/`;
+        let storyTOC = await GetJSON(`${URL_ROOT}/story/process/${storyname}/TOC.JSON`);
+        TOC_STORY[storyname] = {};
+        TOC_STORY[storyname]['toc'] = storyTOC;
+        TOC_STORY[storyname]['loc'] = location;
     }
-    constructor(root_address) {
-        this.StoryList = this.ReturnStories(root_address + 'stories/');
-    }
+
+    CONFIG = await GetJSON(`${URL_ROOT}/config.JSON`);
+
+
+    return
 }
-
-
 
 // Release date of Autononymous website.
 const dSTART = new YearDate(14,3,25);
-STORIES = new StoryBook(URL_ROOT);
+init();
+
+console.log(STORY_LIST,TOC_STORY,TOC_MASTER,CONFIG)
 
