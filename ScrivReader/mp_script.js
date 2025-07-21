@@ -37,7 +37,7 @@ function ScrollForPage()
 }
 function ReturnPage()
 {
-    MiddleOfPage = eVIEWER.getBoundingClientRect().width/2;
+    MiddleOfPage = eALL.getBoundingClientRect().width/2;
     let SelectedPage = PAGES[0];
     let SelectedIndex = 0;
     let MinDistance = Infinity;
@@ -196,4 +196,13 @@ async function PopulateMainPage() {
 
 eSLIDER.addEventListener("scroll",ScrollForPage);
 eSLIDER.addEventListener("resize",AlignSlider);
+eSLIDER.addEventListener("wheel", function(e) {
+    if (e.deltaY !== 0) {
+        e.preventDefault();
+        eSLIDER.scrollTo({
+            left: eSLIDER.scrollLeft + (e.deltaY*0.99),
+            behavior: "smooth"
+        });
+    }
+}, { passive: false });
 

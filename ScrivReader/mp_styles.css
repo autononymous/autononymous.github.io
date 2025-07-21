@@ -3,7 +3,7 @@
     --WindowHeight      :   35dvh;
     --ScrollerHeight    :   50px;
     --FooterHeight      :   30px;
-    --ScrollerWidths    :   40vw;
+    --ScrollerWidths    :   350px;
     --ScrollItemPad     :   5px;
     --SheetMargin       :   10px;
     --MainBackgroundRGB :   20, 20, 20;
@@ -31,6 +31,8 @@
 }
 body {
     overflow: hidden;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.70)),url('design/cf.png');
+    background-size: 75px;
 }
 .datenum {
     font-family:Arial, Helvetica, sans-serif;
@@ -38,11 +40,17 @@ body {
     font-size: 1rem;
 }
 
+div.ALL {
+    width:100vw;
+    height:100dvh;
+}
+
 div.VIEWER {
     position:absolute;
-    left:-0px;
+    left:50vw;
     top:0;
-    width: 100%;
+    transform: translateX(-50%);
+    width: min(100%,800px);
     height:100dvh;
     overflow-x:hidden;
     background-image: 
@@ -53,6 +61,9 @@ div.VIEWER {
     background-size: 40px;
     color: white;
     scrollbar-width: none;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    box-shadow: 0px 0px 20px 4px black;
 }
 
 div {
@@ -65,7 +76,7 @@ div.FOOTER
     bottom              :   0;
     left                :   0;
     height              :   var(--FooterHeight);
-    width               :   100vw;
+    width               :   100%;
     text-align          :   center;
     padding-top         :   5px;
     border-top          :   1px solid black;
@@ -82,7 +93,7 @@ div.FOOTER
 div.HEADER {
     position            :   absolute;
     height              :   var(--WindowHeight);
-    width               :   100vw;
+    width               :   100%;
     left                :   0;
     top                 :   0;
 
@@ -103,14 +114,14 @@ div.HEADERTEXT {
     position            :   absolute;
     top                 :   calc(  4.0 * var(--WindowMargin) );
     text-align          :   center;
-    left                :   50vw;
+    left                :   50%;
     transform           :   translateX(-50%);
 } 
 div.HEADERTEXT > img {
     position: relative;
     top: 8dvh;
     transform: translateY(-100%);
-    width: min(60vw,300px);
+    width: min(300px);
     filter: 
         drop-shadow( 1px  0px 2px black)
         drop-shadow(-1px  0px 2px black)
@@ -165,13 +176,13 @@ div.SLIDEBAR {
     display: inline-flex;
     justify-content: space-evenly;
     align-content: space-evenly;
-    margin-left: calc( ( (100vw - var(--ScrollerWidths) ) / 2 ) - var(--ScrollItemPad));
-    margin-right: calc( ( (100vw - var(--ScrollerWidths) ) / 2 ) - var(--ScrollItemPad));    
+    margin-left: calc( ( (100% - var(--ScrollerWidths) ) / 2 ) - var(--ScrollItemPad));
+    margin-right: calc( ( (100% - var(--ScrollerWidths) ) / 2 ) - var(--ScrollItemPad));    
 }
 div.SLIDEBAR > div {
     font-weight: 600;
     font-size: min(1.4rem,5vw);
-    letter-spacing: 1.5vw;/**/
+    letter-spacing: 40%;/**/
     flex: auto;
     width: var(--ScrollerWidths);
     /*height: 40px;/**/
@@ -188,7 +199,7 @@ div.MAIN
     position:absolute;
     top:calc( var(--ScrollerHeight) + var(--WindowHeight) + var(--ScrollItemPad)*2);
     left:0;
-    width:100vw;
+    width:100%;
 }
 div.MAIN::before
 {
@@ -441,7 +452,7 @@ div.stories
         grid-template-rows: auto;
     }  
     div.BOOKDATA {
-        top: 280vw;
+        top: 280%;
         margin: 4px 0px 4px 0px;
     }  
     }

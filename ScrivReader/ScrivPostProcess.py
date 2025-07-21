@@ -67,8 +67,7 @@ def PushChapter(data,storyname):
     except FileExistsError:
         pass
     with open(newpath + '/' + str(data['ChapterNumber']) + ".JSON", "w") as f:
-        f.write(js.dumps(data,indent=2));
-    
+        f.write(js.dumps(data,indent=2));    
 
 def MasterTOC(storynames):
     unsorted = [];
@@ -81,8 +80,7 @@ def MasterTOC(storynames):
                 unsorted.append(value)
     unsorted.sort(key=lambda rls: rls["Release"])
     with open(export_path + "MasterTOC.JSON", "w") as f:
-        f.write(js.dumps(unsorted));
-            
+        f.write(js.dumps(unsorted));            
 
 def ScrPostProcess(filename):    
     # Wait until the file exists before opening
