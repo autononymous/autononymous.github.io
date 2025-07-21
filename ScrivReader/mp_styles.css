@@ -50,7 +50,7 @@ div.VIEWER {
     left:50vw;
     top:0;
     transform: translateX(-50%);
-    width: min(100%,800px);
+    width: min(100%,700px);
     height:100dvh;
     overflow-x:hidden;
     background-image: 
@@ -121,7 +121,7 @@ div.HEADERTEXT > img {
     position: relative;
     top: 8dvh;
     transform: translateY(-100%);
-    width: min(300px);
+    width: min(300px,70vw);
     filter: 
         drop-shadow( 1px  0px 2px black)
         drop-shadow(-1px  0px 2px black)
@@ -135,7 +135,7 @@ div.HEADERWINDOW > div {
     top: 14dvh;
     left: 50%;
     background-color:white;
-    font-size: 1.6em;
+    font-size: min(1.6em,5vw);
     font-weight: 800;
     color:black;
     padding:5px;
@@ -169,6 +169,18 @@ div.SCROLLER {
     /*
     border-top: 1px solid black;
     /**/
+}
+div.SCROLLER::after {
+    content: " ";    
+    width: min(100%,700px);
+    height:calc( var(--ScrollerHeight) + var(--ScrollItemPad) + 1px);
+    position:fixed;
+    left:0;
+    top: var(--WindowHeight);
+    border-bottom: 2px solid var(--AccentThree);
+    border-top: 2px solid var(--AccentThree);
+    pointer-events: none;
+    background-image: linear-gradient(to right, black 0%, transparent 20%, transparent 80%, black 100%)
 }
 div.SLIDEBAR {
     position:relative;
@@ -273,7 +285,7 @@ div.updates
     }
     div.RELEASES {
         width:100%;
-        height:calc( 100dvh - ( var(--ScrollerHeight) + var(--WindowHeight) + var(--ScrollItemPad)*2 + var(--FooterHeight)));
+        height: calc( 100dvh - ( var(--ScrollerHeight) + var(--WindowHeight) + var(--ScrollItemPad)*2 + var(--FooterHeight)));
         overflow-y: scroll;
         overflow-x: hidden;
         color:black;

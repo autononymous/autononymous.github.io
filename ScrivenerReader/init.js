@@ -1,0 +1,227 @@
+
+// FUNDAMENTAL DATA LOCATIONS:
+
+// Root location of all files...
+const URL_ROOT = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/ScrivenerReader/";
+
+
+
+
+
+
+// ----------------------------------------------- //
+// Internal/Meta Functions
+// ----------------------------------------------- //
+
+function CLS() 
+{
+    localStorage.removeItem(`AC_SAVE_${StoryMode}`);
+    localStorage.removeItem(`AC_SETTINGS_${StoryMode}`);
+    localStorage.removeItem(`AC_PREFS_${StoryMode}`);
+}
+
+//
+// DCONSOLE - Gathers data and prints for debug.
+//    IN > title - Title of console entry.
+//    IN > body - Line of text to print.
+//    IN > flush - Print all saved to display.
+//    IN > rawpush - Push raw item such as an object.
+//
+function DConsole(title,body,flush=false,rawpush=false) 
+{
+    DebugItems.push([body,rawpush]);
+    let DebugStr = "";
+    let DebugItem = " ";
+    if(flush == true) {
+        DebugStr += `==================\nFrom ${title}:\n`;
+        DebugItems.forEach ( ([message,method]) => {
+            if(method) {
+                DebugItem = message
+            } else {
+                DebugStr +=  `> ${message}\n`
+            }            
+        })
+        console.debug(DebugStr,DebugItem);
+        DebugItems = [];
+    }    
+}
+
+// ----------------------------------------------- //
+// File Receiving and Processing
+// ----------------------------------------------- //
+
+//
+// GETFILE - Returns file from address.
+//   IN > address - URL of file location, with extension.
+//   OUT> Resulting text of file retrieved.
+//
+async function GetFile(address) 
+{
+    try {
+        const response = await fetch(address)
+        if(!response.ok) {
+            DConsole(`init.js > GetFile","Error pulling file from address.\n\t Address: ${address}`)
+        }
+        let data = await response.text();
+        return data;
+    } catch (error) {
+        DConsole(`init.js > GetFile","Error processing file.\n\t Error: ${error}`)
+    }
+}
+//
+// PARSEJSON - Parse text into a JSON object.
+//    IN > text - Raw text to turn into JSON.
+//    OUT> Resulting JSON file.
+//
+async function ParseJSON(text) 
+{
+    return JSON.parse(text.replaceAll(/(\r\n|\n|\r)/gm, ''));
+}
+//
+// GETJSON - Return file from address and parse into JSON.
+//    IN > address - URL of file location, with extension.
+//    OUT> Resulting JSON file.
+//
+async function GetJSON(address) 
+{
+    let text = await GetFile(address);
+    return await ParseJSON(text);
+}
+
+// ----------------------------------------------- //
+// Time Handling
+// ----------------------------------------------- //
+
+class YearDate 
+{
+    dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    //
+    // DATEYEAR - Return date from YEARDATE.
+    //    IN > address - URL of file location, with extension.
+    //    OUT> Resulting JSON file.
+    //
+    get_dateyear(ydate) 
+    {
+        const year = 2025 + Math.floor(ydate / 365);
+        let dayOfYear = ydate % 365;
+        if (dayOfYear === 0) dayOfYear = 1;
+        const date = new Date(year, 0, dayOfYear);
+        
+        const dayName = dayNames[date.getDay()];
+        const mm = String(date.getMonth() + 1).padStart(2, '0');
+        const dd = String(date.getDate()).padStart(2, '0');
+        let MMDD = `${mm}/${dd}`;//`${dayName} ${mm}/${dd}`;
+        return MMDD;
+    }
+    //
+    // YEARDATE - Return yeardate from a date.
+    //    IN > address - URL of file location, with extension.
+    //    OUT> Resulting JSON file.
+    //
+    get_yeardate(date) 
+    {
+        const month = date.getMonth();
+        var result = date.getDate();
+        for (let i = 0 ; i < month ; i++) {
+            result += new Date(date.getFullYear(),i+1,0).getDate();
+        }
+        result += (date.getFullYear()-2025)*365;
+        return result;
+    }
+    constructor(day,month,year=2025) {
+        if (year === 0) year = 1;
+        if(year < 1000) year += 2000;
+        if (month==undefined) {
+        // Given yeardate, return other date info
+            this.ydate      = day;
+            this.year       = year + Math.floor(year / 365);
+            this.date       = new Date(year, 0, day);
+            this.month      = this.date.getMonth();
+            this.day        = this.date.getDay();
+        } else {
+        // Given day, month, year, return yeardate
+            if (month > 12) month = 12;
+            this.date       = new Date(year, month-1, day);
+            this.year       = year;
+            this.month      = month;
+            this.day        = day;
+            this.ydate      = day;
+            for (let i = 0 ; i < month ; i++) {
+                this.ydate += new Date(this.date.getFullYear(),i+1,0).getDate();
+            }
+        }
+        this.string = {
+            "mm"    : String(this.date.getMonth() + 1).padStart(2, '0'),
+            "dd"    : String(this.date.getDate()).padStart(2, '0'),
+            "YY"    : String(this.year).slice(-2),   
+            "YYYY"  : String(this.year),
+            "day"   : this.dayNames[this.date.getDay()]
+        }
+        this.now = this.get_yeardate(new Date());
+        this.since = this.now - this.ydate;
+    }
+
+}
+
+// ----------------------------------------------- //
+// Formatting Data
+// ----------------------------------------------- //
+
+//
+// NUM2TXT - Return a word representation of a number.
+//    IN > Number.
+//    OUT> String representation.
+//
+function Num2txt(number) 
+{
+    let prefix = "Chapter ";
+    const lownum = ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"];
+    const highnum = ["Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"];
+    if (number <= 0) {
+        return "Prologue";
+    } else if (number > 19) {
+        const tens = Math.floor(number / 10);
+        const ones = number % 10;
+        return prefix + highnum[tens - 2] + (ones > 0 ? " " + lownum[ones] : "");        
+    } else {
+        return prefix + lownum[number];
+    }
+}
+
+// ----------------------------------------------- //
+// Gathering Data From Defined Sources
+// ----------------------------------------------- //
+
+class StoryBook 
+{
+    ReturnStories(url) {
+        return fetch(url)
+            .then(response => response.text())
+            .then(html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, "text/html");
+            const folders = [];
+            doc.querySelectorAll('a').forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && href.endsWith('/') && href !== '../') {
+                folders.push(href.replace(/\/$/, ''));
+                }
+            });
+            return folders;
+            })
+            .catch(error => {
+            DConsole("StoryBook > ReturnStories", `Error fetching directory: ${error}`);
+            return [];
+            });
+    }
+    constructor(root_address) {
+        this.StoryList = this.ReturnStories(root_address + 'stories/');
+    }
+}
+
+
+
+// Release date of Autononymous website.
+const dSTART = new YearDate(14,3,25);
+STORIES = new StoryBook(URL_ROOT);
+
