@@ -367,11 +367,11 @@ div.stories
     height: 150dvh;
 }
     div.BOOKDATA {
-        width:min(80vw,500px);
+        width:min(95%,600px);
         background-color: var(--AccentThreeLighter);
         position:relative;
         left:50%;
-        top: 70vw;/*calc( ( var(--ScrollerHeight) + var(--WindowHeight) + var(--ScrollItemPad)*2 + var(--FooterHeight)));/**/
+        top: 550px;/*calc( ( var(--ScrollerHeight) + var(--WindowHeight) + var(--ScrollItemPad)*2 + var(--FooterHeight)));/**/
         transform: translateX(-50%);
         margin: 10px 0px 10px 0px;
         color: black;
@@ -380,9 +380,9 @@ div.stories
         height:fit-content;
         transition: height 3.0s ease-in-out;
     }
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 800px) {
     div.BOOKDATA {
-        grid-template: 'vimage' 'vsynop';
+        top: calc( calc( 0.68 * 100vw) );
     }
     }
         div.ViewedImage {
@@ -452,7 +452,7 @@ div.stories
         grid-template-rows: auto;
     }  
     div.BOOKDATA {
-        top: 280%;
+        top: 280vw;
         margin: 4px 0px 4px 0px;
     }  
     }
@@ -477,7 +477,6 @@ div.aboutme
 
 }
     div.aboutsub { 
-        max-width: 600px;  
         margin-left: 20px;
         margin-right: 20px;
         padding-bottom: 20px;
