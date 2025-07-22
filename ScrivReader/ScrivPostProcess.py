@@ -202,6 +202,12 @@ def ScrPostProcess(filename):
         f.write(js.dumps(TOCdict));
     print('> Scrivener-exported story "' + str(StoryName) + '" has been post-processed.\n  |\tEntries:\t'+ str(i) + "\n  |\tChapters:\t" + str(infoCountChapter) + "\n  |\tScenes: \t" + str(infoCountScene) + "\n> There are an average of " + str(round(infoCountScene/infoCountChapter,2)) + " scenes per chapter.")
     
+    LogProcess('> Generating "LATEST" file...');   
+    with open(import_path + 'latest/' + str(StoryName) + ".JSON", "w") as f:
+        f.write(js.dumps(loaded,indent=2));
+
+    
+    
     print(js.dumps(ChapDict["BodyFormatted"],indent=2))
 def GetFolders(arg):
     result = []

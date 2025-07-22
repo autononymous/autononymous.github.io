@@ -19,9 +19,7 @@ function SetPreferences(property,increment) {
     } else {
         DConsole("main.js > SetPreferences",`NOTICE: Parameter setting for '${property}' is out of bounds [${range[0]},${range[1]}].`,true)
     }
-
 }
-
 
 async function main() 
 {
