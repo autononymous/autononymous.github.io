@@ -307,9 +307,26 @@ async function PullChapter(num) {
 }
 async function PlaceChapter(chapter) {
     console.log(chapter)
-    chapter.BodyFormatted.forEach( scene => { scene.forEach( line => {
-        ePAGE.innerHTML += line.replaceAll('<p>',`<p class="${chapter.Perspective}">`);
-    }); });
+    let IsFirstScene= true;
+    let SceneNum = 0;
+
+    ePAGE.innerHTML += `<h3 id="title_${chapter.ChapterNumber}" class="${chapter.Perspective} Title">${chapter.Title}</h3>`;
+    ePAGE.innerHTML +=`<h3 id="sub_${chapter.ChapterNumber}" class="${chapter.Perspective} Subtitle">${CONFIG.Styles[chapter.Perspective].Prefix + chapter.Subtitle + CONFIG.Styles[chapter.Perspective].Suffix}</h3><br>`;
+
+    if (parseFloat(PARAMS.PermissionLevel) > 1 && (chapter.RevNotes != undefined && chapter.RevNotes != "")) {
+        ePAGE.innerHTML +=`<div class="Default TextComment"><h3>Notes To The Editor:</h3><p>${chapter.RevNotes}</p>`;
+    }
+
+    chapter.BodyFormatted.forEach( scene => { 
+        let Spacer = CONFIG.Styles[chapter.Perspective].Spacer
+        if(!IsFirstScene) ePAGE.innerHTML += (Spacer == "") ? 
+            `<h3 id="${chapter.ChapterNumber}.${SceneNum++}" class="${chapter.Perspective} Section">${SceneNum}</h3>` : 
+            `<img class="hrdiv" src="${Spacer}"/>`;
+            IsFirstScene = false;
+        scene.forEach( line => {
+            ePAGE.innerHTML += line.replaceAll('<p>',`<p class="${chapter.Perspective}">`);
+        }); 
+    });
 }
 async function LoadInChapter(num) {
     let chapter = await PullChapter(num);
@@ -361,16 +378,14 @@ function TOChtmlACT(nAct,name) {
     TOCchapterTARGET = `TOC-ACT${nAct}-CHAPTERS`;
     return result;
 }
-function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew) {
-    //console.info(`${nChap},${name},${synopsis},${pubdate},${nDisplayed},${percent},${isnew}`)
-    ChapterIsActive = (nChap <= MaximumChapter);
+function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew,active) {
     //console.info(MaximumChapter)
-    let ChapterInteraction = ChapterIsActive?(`class="TOC ChapterRow activerow ${isnew?'newrow':''}"  onclick="CurrentChapter=STORY[${nChap-1}];PlaceOrOverlay(CurrentChapter);SaveState();ToggleTOC();"`):(`class="TOC ChapterRow inactiverow ${isnew?'newrow':''}"`);
+    let ChapterInteraction = active?(`class="TOC ChapterRow activerow ${isnew?'newrow':''}"  onclick="CurrentChapter=STORY[${nChap-1}];PlaceOrOverlay(CurrentChapter);SaveState();ToggleTOC();"`):(`class="TOC ChapterRow inactiverow ${isnew?'newrow':''}"`);
 
     let result = `    
         <div id="TOC-CH${nChap}" ${ChapterInteraction}> 
             <div id="TOC-CH${nChap}-DATE" class="TOC ChapterDate">${pubdate}</div>
-            <div class="TOCmarker" ${ChapterIsActive?'style="background-color: rgba(var(--ColorSecondary),1"':''}></div>
+            <div class="TOCmarker" ${active?'style="background-color: rgba(var(--ColorSecondary),1"':''}></div>
             <div id="TOC-CH${nChap}-STATE" class="ChapterState" style="height:${percent}%"></div>
             <div id="TOC-CH${nChap}-NUM" class="TOC ChapterNumber"><span>${('00'+nDisplayed).slice(-2)}</span></div>
             <div id="TOC-CH${nChap}-DESC" class="TOC ChapterDescription">
@@ -407,8 +422,27 @@ async function BuildTOC() {
     let statChapterTypes = [0,0,0,0];
     let statReleaseDay = [];
 
-    Object.entries(TOC_STORY[PARAMS.Story]['toc']).forEach( ([index,chapter]) => {
+    let lastAct = -1;
+    let toc = TOC_STORY[PARAMS.Story]['toc'];
 
+    Object.entries(toc).forEach( ([index,chapter]) => {
+        if(lastAct != chapter.Act) eTOC.innerHTML += TOChtmlACT(
+                                chapter.Act,
+                                `Act ${chapter.Act}`
+                            );
+        lastAct = chapter.Act;
+        let DatePercentage = (today - startday) / (releaseday - startday);
+        DatePercentage = (DatePercentage > 1) ? 1 : (DatePercentage < 0) ? 0 : DatePercentage;
+        eTOC.innerHTML += TOChtmlCHAPTER(
+                                chapter.ChapterNumber,
+                                chapter.Subtitle,
+                                chapter.Synopsis,
+                                `${chapter.ReleaseDate[0]}/${chapter.ReleaseDate[1]},${chapter.ReleaseDate[2].slice(2,4)}`,
+                                AdjustedIndex(chapter.ChapterNumber),
+                                DatePercentage,
+                                ((today >= releaseday)&&(today <= (releaseday+7) )),
+                                chapter.Active
+                            );
     });
 
     /*

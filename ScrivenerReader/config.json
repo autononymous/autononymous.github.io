@@ -217,5 +217,16 @@
     {
         "0.0":"https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/ScrivenerReader/story/PG-intro.JSON"
     }
+},
+"Parameters":
+{
+    "Firebrand":
+    {
+        "PrologueChapters":2
+    },
+    "Paragate":
+    {
+        "PrologueChapters":1
+    }
 }
 }
