@@ -1,0 +1,972 @@
+    :root {
+
+    /* Setting the height of the interface/menu bar */
+    --MenuHeight:           50px;
+    --ControlHeight:        min(25vw,100px);
+
+    /* Text configurations */
+    --TextSetWidthFixed:    40px;
+    --TextSetWidthDynamic:  10vw;
+    --TextSize:             1.5em;
+    --TextLineHeight:       1.5em;
+    --TextMargin:           5vw;
+    --DefaultWidth:         600px;
+    --SeparatorWidth:       60%;
+    
+    /* Active theme settings. These are set from   */
+    /* the JavaScript program.                     */
+    --ActiveTitle:          var(--CodyTitle);
+    --ActiveSub:            var(--CodyText);
+    --ActiveSize:           var(--CodySize);
+    --TextColor:           black;
+    --BackgroundColor:    white;
+    --HoverColor:         rgba(12,12,12,0.1);
+    --BarColor:           black;
+    --IconState:            invert(1);
+
+    /* (legacy) Active color theming */
+    --ActivePrimary:        189, 0, 28;
+    --ActiveSecondary:      156, 121, 33;
+
+    /* Table-of-contents configurations */
+    --TOCEntryHeight:      80px;
+    --TOCbackground:       rgba(0,0,0,0.1);
+
+    --Title:                2.5em;
+    --Subtitle:             min(2.0em,max(5.5vw,1.2em));/*2.0em;/**/
+    --Section:              2.5em;
+
+    --SubtitleAccent:       '  ';
+    --SectionAccent:        ' - ';
+
+    /* Special theming: Message bubbles */
+    --MsgFont:              "SanFrancisco",'Helvetica Neue','Helvetica';
+    --MsgColorTo:         rgba(33, 138, 255, 0.8);
+    --MsgFontColorTo:     white;
+    --MsgColorFrom:       rgba(216, 216, 216, 0.8);
+    --MsgFontColorFrom:   black;
+    }
+
+    /* Global styles */
+    body {
+        overflow:hidden;
+        background-color: var(--BackgroundColor);/**/
+        background-image: url("design/bg-cody.png");
+    }
+    div {
+        border: none;/*1px solid black;*/
+    }
+
+    h3 {
+        text-align: center;
+    }
+    hr {
+        border-top: 3px dashed var(--TextColor);
+        width:100px;
+    }
+    img.hrdiv {
+        position:relative;
+        top:0;
+        left: calc( (100% - var(--SeparatorWidth)) / 2 );
+        width: var(--SeparatorWidth);
+        cursor: pointer;        
+        filter: drop-shadow(1000vw 0 var(--TextColor));
+        transform: translateX(-1000vw);
+    }
+
+    /* Styles common between all character styles */
+    h3.Title {
+        font-size: var(--Title);
+        color: var(--TextColor);
+        text-decoration: underline;
+    }
+    h3.Subtitle {
+        font-size: var(--Subtitle);
+        color: var(--TextColor);
+        white-space: nowrap;
+    }
+    h3.Section {
+        font-size: var(--Section);
+        color: var(--TextColor);
+    }
+    h3.Section::before{
+        content:var(--SectionAccent);
+    }
+    h3.Section::after{
+        content:var(--SectionAccent);
+    }
+
+    /* Background image for active theme */
+    div.imgbg {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100vw;
+        height:100vh;
+    }
+
+    /* Layout and design of content container */
+    div.FullContainer {
+        display: grid;
+        grid-template:
+            'leftmargin header header header rightmargin'
+            'leftmargin body body body rightmargin'
+            'leftmargin footer footer footer rightmargin';
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        position:absolute;
+        width:100vw;
+        height:100dvh;
+        left:-50vw;
+        top:0;
+        transform: translateX(50vw);
+        overflow:hidden;
+    } 
+
+    div.Gutter {
+        width: max(calc((100vw - var(--DefaultWidth))/2),var(--TextMargin))
+    }
+    .ContainerLeft   { 
+        grid-area: leftmargin;
+        /*background-color: var(--BackgroundColor);*/
+    }
+    .ContainerRight  { 
+        grid-area: rightmargin;
+        /*background-color: var(--BackgroundColor);*/
+    }
+    .ContainerHead   { 
+        background-color: var(--BackgroundColor);
+        grid-area: header;
+        height:var(--MenuHeight);        
+        width:auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        text-align: center;
+    }
+    img.Icon {
+        position:relative;
+        top:10px;
+        height:40px;
+        width: auto;
+        cursor: pointer;        
+        filter: drop-shadow(0 1000px 0 var(--TextColor));
+        transform: translateY(-1000px);
+        
+    }    
+    .ContainerBody   { 
+        grid-area: body;
+        height: calc(100dvh - 100px - min(35vw,120px));
+        width: min(var(--DefaultWidth), calc( 100vw - (var(--TextMargin) * 2) ));
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+    .ContainerFooter {
+        grid-area: footer;
+        display: inline-flex;
+        flex-direction: column;
+        height:min(35vw,120px);
+    }
+        .FooterProgress {
+            height:min(10vw,20px);
+            background-color: var(--BackgroundColor);/**/
+        }
+            .ProgressBar {
+                position:relative;
+                top: min(2vw,2px);
+                left: 0; /**/
+                width:0px; /**/
+                height: min(6vw,14px);
+                background-color: var(--BarColor);
+            }
+        .FooterInfo {             
+            height: var(--ControlHeight);
+            width:100%;
+            display: inline-flex;
+            flex-direction: row;
+        }
+            .Footer-Left {
+                width:min(25vw,100px);
+                font-size: min(30vw,120px);
+                line-height: 0;
+                cursor:pointer;
+                color: var(--BarColor);
+            }
+            .Footer-Center {
+                width: calc( 100% - min(50vw,200px) );
+                pointer-events: none;
+            }
+                .FooterContent {                
+                    color: var(--BarColor);
+                    text-align: center;                
+                    line-height:1em;
+                    position:relative;
+                    left:50%;
+                    top:50%;
+                    transform: translate(-50%,-50%);                
+                    transition: linear 0.2s;
+                }
+                .FooterContent > p {
+                    padding:0;
+                    margin:0;
+                }
+                
+                .FooterContent:hover {
+                    color: gray;
+                    cursor:help;
+                    border: 1px solid gray;
+                    border-radius: 5px;
+                    transition: linear 0.2s;
+                }
+            .InfoTitle {
+                padding:0;
+                margin:0;
+                line-height:1em;
+                font-family: var(--ActiveTitle);
+                font-size: var(--ActiveSize);
+            }
+            .InfoSub {
+                font-family: var(--ActiveSub);
+                font-size: var(--ActiveSize);
+            }
+            .Footer-Right {
+                width: min(25vw,100px);
+                font-size: min(30vw,120px);
+                line-height: 0;   
+                cursor:pointer;    
+                color: var(--BarColor);
+                
+            }
+    div.Page {
+        position:relative;
+        left: min(var(--TextSetWidthFixed), var(--TextSetWidthDynamic));
+        width:max(calc(100% - (var(--TextSetWidthFixed)*2)), calc(100% - (var(--TextSetWidthDynamic)*2)));
+        padding-bottom: 50dvh; /*calc(50dvh - 100px - min(35vw,120px));*/
+    }
+        div.EndSpacer {
+            height:100vw;
+        }
+    div.Centered {
+        position: relative;
+        left:50%;
+        top:min(10vw,35px);
+        transform: translate(-50%,-50%);
+        text-align: center;
+        pointer-events: none;
+    }    
+    div.Cover {
+        position: fixed;
+        left:max(calc((100vw - 600px)/2),var(--TextMargin));
+        top:var(--MenuHeight);
+        width:min(600px, calc( 100vw - (var(--TextMargin) / 2) ));
+        height:calc(100dvh - var(--MenuHeight) - min(35vw,120px));
+        pointer-events: none;
+        background-image: 
+            linear-gradient(
+                to bottom,
+                var(--BackgroundColor) 3%,
+                transparent 8%,
+                transparent 92%,
+                var(--BackgroundColor) 97%
+            )
+    }
+    
+    @media only screen and (max-width: 600px) {
+        div.FullContainer {
+            grid-template:
+                'header header header'
+                'leftmargin body rightmargin'
+                'footer footer footer';
+        }
+        div.Gutter {
+            width:0px;
+        }
+        div.ContainerBody {
+            width:100%;
+        }
+        div.Cover {
+            left:0;
+            width:100%;
+        }
+    }
+
+p.msgfrom {
+    font-family: var(--MsgFont);
+    text-indent: 0;
+    line-height:1.5rem;
+    padding: 10px;
+    padding-left:20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:30px;
+    margin-right:0px;
+    text-align: left;
+    border: 0px solid var(--TextColor);
+    border-radius: 10px 10px 10px 0px;
+    position: relative;
+    width: fit-content;
+    max-width: 350px;
+    background-image: linear-gradient(var(--MsgColorFrom));
+    color: var(--MsgFontColorFrom);
+}
+p.msgfrom::before {
+  width: 10px;
+  height: 10px;
+  background-image: linear-gradient(-45deg,var(--MsgColorFrom) 50%,transparent 50%);
+  position: absolute;
+  left: -10px;
+  bottom: 0;
+  content: "";
+}
+p.msgfrom::after {
+    content: "";
+    color:black;
+    text-align:middle;
+    position: absolute;
+    left: -55px;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    border-radius:20px;
+    background-image: url("icons/anonythumb.jpg");
+    border: 1px solid var(--TextColor);
+    background-size: 100% 100%;
+    background-position: center;
+}
+p.fromMiguel::after {
+    background-image: url("profiles/miggy.png");
+}
+p.fromKei::after {
+    background-image: url("profiles/kei.png");
+}
+p.fromReed::after {
+    background-image: url("profiles/reed.png");
+}
+p.fromCody::after {
+    background-image: url("profiles/cody.png");
+}
+
+p.msgto {
+    font-family: var(--MsgFont);
+    text-indent: 0;
+    line-height:1.5rem;
+    padding: 10px;
+    padding-right:20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:0px;
+    margin-right:30px;
+    text-align: right;
+    border: 0px solid var(--TextColor);
+    border-radius: 10px 10px 0px 10px;
+    position: relative;
+    width: fit-content;
+    right: calc(-100% + 30px);
+    transform: translateX(-100%);
+    max-width: 350px;
+    background-image: linear-gradient(var(--MsgColorTo));
+    color: var(--MsgFontColorTo);
+}
+p.msgto::before {
+  width: 10px;
+  height: 10px;
+  background-image: linear-gradient(45deg,var(--MsgColorTo) 50%,transparent 50%);
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  content: "";
+}
+p.msgto::after {
+    content: "";
+    color:black;
+    text-align:middle;
+    position: absolute;
+    right: -55px;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    border-radius:20px;
+    border: 1px solid var(--TextColor);
+    background-image: url("profiles/cody.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+span.msgfromdate {    
+    font-size: 0.6em;
+    font-style: italic;
+}
+span.msgfrom {
+    font-size: 1.25rem;
+    word-wrap: break-word;
+    line-height: 1.1em;
+}
+span.msgtodate {    
+    font-size: 0.6em;  
+    font-style: italic;  
+}
+span.msgto {
+    font-size: 1.25rem;
+    word-wrap: break-word;
+    line-height: 1.1em;
+}
+
+
+div.PermBox {
+    border: 2px solid black;
+    box-shadow: 0px 0px 4px 2px yellow;
+    border-radius: 5px;
+    background-color: rgba(255, 249, 197,0.9);
+    position:absolute;
+    left:50%;
+    top:calc(25dvh + 10px);/*calc(33dvh + 50px);/**/
+    transform:translate(-50%,-50%);
+    width: min(400px,80vw); /*width: min(600px,80vw);/**/
+    max-height:150px;
+    padding: 0px 20px 10px 20px;
+    text-align: center;
+
+    animation: 2.0s ease-in-out 4.0s forwards fadeout;
+}
+div.PermBox > h3 {
+    font-family: var(--ActiveTitle);
+    font-size: min(7vw,2.5rem);
+    line-height:0;
+    text-decoration:underline;
+}
+div.PermBox > p {
+    font-family: var(--ActiveSub);
+}
+
+
+div.InstructionBox {
+    position:absolute;
+    bottom: calc(var(--ControlHeight) + 10px);
+    left:50vw;
+    transform: translateX(-50%);
+    display: flex;
+    align-content: space-evenly;
+    justify-content: space-between;
+    width: min(600px,95vw);
+    font-size: min(4vw,1.25em);
+}
+div.Instruction {
+    margin:10px;
+    padding-left:5px;
+    padding-right:5px;
+    text-align: center;
+    flex:1;
+    background-color:cornsilk;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: middle;
+    justify-content:center;
+    font-family: var(--ActiveSub);
+    opacity:0.6;
+    pointer-events: none;
+    box-shadow: 0px 0px 10px 2px whitesmoke;
+}
+div.Instruction > div {
+    height: 100%;
+    align-content:center;
+    vertical-align: middle;
+}
+
+div.TextComment {    
+    font-size: min(4vw,1rem);
+    border: 2px solid darkgray;
+    border-radius: 20px;
+    background-color:rgba(232, 223, 166, 0.2);
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Lucida Console', monospace;
+    color: var(--TextColor);
+    opacity: 0.8;
+    text-align: left;
+    
+}
+div.TextComment > p {    
+    border-left: 5px double whitesmoke;
+    padding-left: 15px;
+}
+div.TextComment > h3 {
+    text-align: center;
+    width:100%;
+}
+
+
+div.TOC {
+    width:100%;
+    height:100%;
+    color: var(--TextColor);/*rgba(var(--ActivePrimary),1);*/
+}
+div.Table {
+    display:inline-flex;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: center;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+div.Act {
+    width:100%;
+    height:auto;
+    display:inline-flex;
+    flex-direction: column;
+}
+div.ActRow {
+    width:100%;
+    height: 40px;
+    /*background-color: rgba(var(--ColorPrimary),0.1);*/
+    font-family: var(--ActiveTitle);
+    font-size: 2em;
+    text-align: center;
+    border-top:2px solid rgba(var(--TextColor),1);
+    border-bottom: 2px solid rgba(var(--TextColor),1);
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.5);
+}
+div.ChapterSet {
+    overflow:hidden;
+    height:auto;
+}
+div.ChapterRow {
+    display: inline-flex;
+    flex-direction: row;
+    height: var(--TOCEntryHeight);
+    justify-items: left;
+}
+@keyframes flasherror {
+    0% {
+        background-color: transparent;
+    } 
+    30% {
+        background-color: rgba(237, 146, 146, 0.3);
+    }
+    70% {
+        background-color: rgba(237, 146, 146, 0.3);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        opacity:1;  
+        top: 0;
+        pointer-events: all;
+    } 
+    60% {
+        top: -110vh;
+        pointer-events: none;
+        opacity:0;  
+    }
+    100% {
+        top: -110vh;
+        opacity:0;  
+    }
+}
+@keyframes slide-down {
+    0% {
+        opacity:0;  
+        top: -110vh;
+        pointer-events: all;
+    } 
+    60% {
+        top: 0;
+        pointer-events: none;
+        opacity:1;  
+    }
+    100% {
+        top: 0;
+        opacity:1;  
+    }
+}
+@keyframes fadein {
+    0% {
+        opacity:0;  
+        pointer-events: none;
+    } 
+    40% {
+        pointer-events: all;
+        opacity:0;  
+    }
+    100% {
+        opacity:1;  
+    }
+}
+@keyframes fadeout {
+    0% {
+        opacity:1;
+        pointer-events: all;
+    } 
+    40% {
+        pointer-events: none;
+        opacity:0;  
+    }
+    100% {
+        opacity:0;  
+    }
+}
+@keyframes flashing {
+    0% {
+        opacity:0;
+    }
+    40% {
+        opacity:1;
+    }
+    90% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+div.activerow {
+    transition: background-color 0.3s ease-in-out 0.05s;
+}
+div.activerow:hover {
+    background-color: var(--HoverColor)
+}
+div.inactiverow {
+    transition: background-color 0.3s ease-in-out 0.05s;
+    background-color: rgba(128,128,128,0.15);
+}
+div.inactiverow:hover {
+    background-color: rgba(255,50,50,0.15);
+}
+div.newrow {
+    background-color: rgba(180,180,40,0.15);
+}
+div.newrow::after {
+    color: var(--TextColor);
+    font-family: var(--ActiveTitle);
+    content:"New!";
+    position:relative;
+    right:20px;
+    top:50%;
+    transform: translateY(-50%);
+    border:1px solid var(--BarColor);
+    border-radius: 3px;
+    height:20px;
+    width: 60px;
+    text-align: center;
+}
+
+div.TOCmarker {
+  position: relative;
+  height: 12px;
+  width: 12px;
+  background-color: none;
+  border: 1px solid var(--TextColor);/*rgba(var(--ActivePrimary),1);*/
+  border-radius: 50%;
+  margin-left: calc(4vw + 3px);
+  transform: translate(-50%,0);
+  margin-top: calc( (var(--TOCEntryHeight)/2) - 9px);
+}
+@media only screen and (max-width: 600px) {
+    div.TOCmain {
+        grid-template:
+            'tocgutter tocbody tocgutter'
+            'tocfooter tocfooter tocfooter';
+    }
+}
+
+div.TOCmain {
+    position:absolute;
+    left:50vw;
+    top:0;
+    transform: translateX(-50%);
+    width: min(600px, 100vw);/*calc( 100vw - (var(--TextMargin) / 2) ));*/
+    height: calc(100dvh - 120px);
+    position: absolute;
+    overflow-y:scroll;    
+    scrollbar-width: none;
+    background: var(--TOCbackground);
+    opacity:0;
+}   
+
+div.FloatName {
+    position:absolute;
+    bottom: 15px;
+    left: 50vw;
+    transform: translateX(-50%)
+}
+
+div.AuthorTitle {
+    position:absolute;
+    bottom:12px;
+    left:50%;
+    transform:translateX(-50%);
+}
+div.AuthorTitle:hover {
+    filter:invert(0.2);
+    transition: linear 0.2s;
+}
+img.AuthorTitle {
+    height:15px;
+    filter: drop-shadow(0 -100px 0px var(--BarColor));    
+    transform:translateY(100px);
+}
+
+div.ChapterState {
+    margin-left: 4vw;
+    margin-right:2vw;
+    position: relative;
+    background-color: var(--TextColor);/*rgba(var(--ActivePrimary),1);*/
+    width: 4px;
+    top: 0;
+    height: 100%;
+    /*transform: translate(0%, -50%);*/
+    left: calc(-4vw - 15px);
+}
+
+div.ChapterNumber {
+    width:40px;
+    font-size: 2.0em;
+    padding-right:2px;
+    text-align: left;
+    font-family: var(--ActiveTitle);
+    margin-top:25px;
+    transform: translate(-50%,0);
+}
+div.ChapterDescription {
+    max-width:80vw;
+    flex:5;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    left: -10px;
+    border-left: 1px dashed var(--BarColor);/*rgba(var(--ActivePrimary),;*/
+    padding-left: 15px;
+    font-weight: 500;
+}
+div.ChapterName {
+    flex:1;
+    height:30px;
+    text-align: left;
+    font-size: 1.2em;
+    font-family: var(--ActiveTitle);
+    white-space: nowrap;
+    margin-top:5px;
+}
+div.ChapterSynopsis {
+    flex:4;
+    text-align: left;
+    text-emphasis: italic;
+    font-size:0.8em;
+    opacity:0.6;
+    font-family: var(--ActiveSub);
+    overflow-y: hidden;
+    margin-bottom:5px;
+}
+div.ChapterDate {  
+    position:relative;
+    transform: rotate(-90deg) translate(-5px,calc(4vw + 25px));
+    width: 20px;
+    opacity:0.3;
+}
+
+
+
+div.CoverAnnounce {
+    position:absolute;
+    left:50vw;
+    top:50vh;
+    transform: translate(-50%,-50%);
+    width: 100vw;
+    height:100vh;
+    background-image: var(--CoverGradient);
+    animation: 0.5s ease-in-out 0.2s forwards fadein;
+}
+img.StoryCover {
+    max-block-size: 400px;
+    block-size: min(100vw,90vh);
+    /*width: min(400px,80vw);/**/
+    position:absolute;
+    left:50%;
+    top:calc(25dvh + 10px);/*calc(33dvh + 50px);/**/
+    transform:translate(-50%,-50%);
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.6);
+    border: 2px solid black;
+    max-height: calc(50dvh - 20px);
+}
+div.Announcements {
+    color: black;
+    font-family: var(--ActiveSub);
+    font-weight: 500;
+    position: absolute;
+    bottom: calc(40dvh - 10px);
+    height: calc(40dvh - 60px);/*calc(100dvh - min(800px,60dvh) - 60px - 20px - 90px);/**/
+    left: 50%;
+    transform: translate(-50%,100%);
+    width: min(400px,80vw);
+    border: 2px solid black;
+    border-radius:3px;
+    background-color: rgba(232, 223, 166, 0.75);
+    padding-left:10px;
+    padding-right:10px;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 10px 0px inset;
+}
+div.SocialsBar {
+    position:absolute;
+    bottom: calc(40dvh + 25px);
+    left:50vw;
+    transform: translate(-50%,50%);
+    width: min(300px,80vw);
+    height:40px;
+    padding-left:10px;
+    padding-right:10px;
+    display: inline-flex;
+    align-items:center;
+    justify-content:space-between;
+
+}
+div.SocialsBar > div {
+    flex: 1;
+    margin:3px;
+    width: 40px;
+    max-width:60px;
+    height: 40px;
+    border-radius: 10px;
+    border: 3px solid white;    
+    align-items:center;
+    justify-content:middle;
+    text-align:center;
+}
+div.SocialsBar > div:hover {
+    filter:invert(0.1);
+}
+img.SocialIcon {
+    max-width:35px;
+    max-height:35px;
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+}
+div.CoverAnnounce::after {
+    content:"Click anywhere to dismiss.";
+    position:absolute;
+    bottom:15px;
+    left:50vw;
+    width:100%;
+    text-align: center;
+    transform:translateX(-50%);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    font-family: var(--CodyText);
+    text-shadow: 0px 0px 8px black;
+    
+}
+div.Announcements > div {
+    /*padding-top:10px;/**/
+    /*padding-bottom:10px;/**/
+    border-top: 1px dashed black;
+}
+h3.Announcements {
+    font-family: var(--ActiveTitle);
+    font-weight: 500;
+    font-size: 2rem;
+    line-height:0;
+    margin:0;
+    margin-top:1em;
+    margin-bottom:0.5em;
+}
+p.Announcements {
+    font-family: var(--ActiveSub);
+    font-weight: 500;
+    padding-left:10px;
+}
+
+div.ChapMeta {
+    text-align: center;
+    width: 100%;
+    color: var(--TextColor);
+    opacity:0.4;
+    position:relative;
+    bottom:calc(-50dvh + 30px);
+    left:50%;
+    transform:translateX(-50%);
+}
+
+div.Revision {
+    position:absolute;
+    text-align:right;
+    right:10px;
+    bottom:10px;
+    color: var(--TextColor);
+    font-family:'Arial Narrow', Helvetica, sans-serif;
+}
+
+div.MapInfoBox {
+    position:absolute;
+    top:100vh;/*calc(var(--ControlHeight) - 30px);/**/
+    left:0;
+    width:100vw;
+    height:calc(100dvh - var(--ControlHeight) + 20px);
+    background-color: var(--BackgroundColor); 
+    pointer-events: none;
+    transition: top 0.5s ease-in-out;
+    border-top: 2px solid var(--TextColor);
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+
+div.MapInfoBox > div {
+    position:absolute;
+    top:0;/*calc(var(--ControlHeight) - 30px);/**/
+    left: 50vw;
+    transform: translateX(-50vw);
+    width: calc(100vw - 100px);/*min(600px,90vw);/**/
+    height: calc(100dvh - 30px);/*min(70dvh,1200px);/**/
+    background-color: var(--BackgroundColor);  
+    margin-left:50px;
+    margin-right:50px;
+}
+
+div.MapInfoBox > div, div.MapInfoBox > div > div {
+    font-family: var(--ActiveSub);
+    color: var(--TextColor);
+    /*font-size: var(--ActiveSize);/**/
+}
+
+img.map {
+    position: relative;
+    width: 100%;
+    left: 50%;
+    top:0;
+    transform: translateX(-50%);
+}
+
+@keyframes mapzoom {
+    0% {
+        width: 90%;
+    }
+    100% {
+        width:200%;
+    }
+}
+
+div.SettingTag {
+    font-weight:600;
+    border-left: 2px solid var(--TextColor);
+    margin-left:5px;
+    padding-left:10px;
+    color: var(--TextColor);
+    margin-top:10px;
+    margin-bottom:10px;
+    line-height:1.3em;
+    font-size: 1rem;
+}
+
+div.SettingBox {
+    border-top: 1px dashed var(--TextColor);
+    border-bottom: 1px dashed var(--TextColor);
+    margin-top:50px;
+    margin-bottom:30px;
+    opacity:0.8;
+    transform: scaleY(90%);
+};

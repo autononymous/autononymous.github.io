@@ -1,0 +1,581 @@
+:root {
+    --WindowMargin      :   15px;
+    --WindowHeight      :   35dvh;
+    --ScrollerHeight    :   50px;
+    --FooterHeight      :   30px;
+    --ScrollerWidths    :   350px;
+    --ScrollItemPad     :   5px;
+    --SheetMargin       :   10px;
+    --MainBackgroundRGB :   20, 20, 20;
+    --MainBackground    :   rgb(var(--MainBackgroundRGB));
+
+
+    --SheetColor        :   rgb(34, 34, 34);
+
+    --AccentOne         :   #d83b3b;
+    --AccentOneLight    :   #ff8c8c;
+    --AccentOneDark     :   #7e2130;
+
+    --AccentTwo         :   #3b7ad8;
+    --AccentTwoLight    :   #8bb9ff;
+    --AccentTwoDark     :   #3065b2;
+
+    --AccentThree       :   #e98d30;
+    --AccentThreeLight  :   #ffd07d;
+    --AccentThreeLighter:   #fef3d9;
+    --AccentThreeDark   :   #ba5a32;
+
+    --InversionState    :   0;
+    --ThemeTextColor    :   black;
+
+}
+body {
+    overflow: hidden;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.70)),url('design/cf.png');
+    background-size: 75px;
+}
+.datenum {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+div.ALL {
+    width:100vw;
+    height:100dvh;
+}
+
+div.VIEWER {
+    position:absolute;
+    left:50vw;
+    top:0;
+    transform: translateX(-50%);
+    width: min(100%,700px);
+    height:100dvh;
+    overflow-x:hidden;
+    background-image: 
+        linear-gradient(
+            to right,
+            var(--SheetColor)
+        );
+    background-size: 40px;
+    color: white;
+    scrollbar-width: none;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    box-shadow: 0px 0px 20px 4px black;
+}
+
+div {
+    font-family: Arial, sans-serif;
+}
+
+div.FOOTER 
+{
+    position            :   fixed;
+    bottom              :   0;
+    left                :   0;
+    height              :   var(--FooterHeight);
+    width               :   100%;
+    text-align          :   center;
+    padding-top         :   5px;
+    border-top          :   1px solid black;
+    font-size           :   min(3vw,1.0em);
+    color               :   dimgray;
+    background-color    :   var(--SheetColor);
+    border-top          :   2px solid var(--AccentThree);
+    background-image    :   linear-gradient(
+                                to bottom,
+                                rgba(0, 0, 0, 0.420) 0px,
+                                transparent 30px
+                            );
+}
+div.HEADER {
+    position            :   absolute;
+    height              :   var(--WindowHeight);
+    width               :   100%;
+    left                :   0;
+    top                 :   0;
+
+}
+div.HEADERWINDOW {
+    position            :   absolute;
+    top                 :   var(--WindowMargin);
+    height              :   calc( var(--WindowHeight) - ( 2.2 * var(--WindowMargin) ) );
+    left                :   var(--WindowMargin);
+    width               :   calc( 100% - ( var(--WindowMargin) * 2 ) );
+    border              :   1px solid black;
+    box-shadow          :   inset 0px 0px 15px 0px black;
+    background-image    :   radial-gradient(var(--AccentTwo)); /*url('design/cover-PG.jpg');/**/
+    background-position :   top center;
+    background-size     :   cover;
+}
+div.HEADERTEXT {
+    position            :   absolute;
+    top                 :   calc(  4.0 * var(--WindowMargin) );
+    text-align          :   center;
+    left                :   50%;
+    transform           :   translateX(-50%);
+} 
+div.HEADERTEXT > img {
+    position: relative;
+    top: 8dvh;
+    transform: translateY(-100%);
+    width: min(300px,70vw);
+    filter: 
+        drop-shadow( 1px  0px 2px black)
+        drop-shadow(-1px  0px 2px black)
+        drop-shadow( 0px  1px 2px black)
+        drop-shadow( 0px -1px 2px black)
+        invert(1) 
+        invert( var(--InversionState) ) ;
+}
+div.HEADERWINDOW > div {
+    position:relative;
+    top: 14dvh;
+    left: 50%;
+    background-color:white;
+    font-size: min(1.6em,5vw);
+    font-weight: 800;
+    color:black;
+    padding:5px;
+    margin-top:20px;
+    padding-left: 10px;
+    text-align: center;
+    letter-spacing: 1.2vw;/**/
+    white-space: nowrap;    
+    transform: translateX(-50%);
+    mix-blend-mode: screen;
+    opacity: 0.90;
+}
+div.SCROLLER {    
+    position:relative;    
+    top: var(--WindowHeight);
+    height: calc( var(--ScrollerHeight) + var(--ScrollItemPad) );
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    background-image: 
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.420) 0px,
+            transparent 50px
+        );
+        
+    margin-top: 4px;
+    margin-bottom:4px;    
+    
+    border-bottom: 1px solid var(--AccentThree);
+    /*
+    border-top: 1px solid black;
+    /**/
+}
+div.SCROLLER::after {
+    content: " ";    
+    width: min(100%,700px);
+    height:calc( var(--ScrollerHeight) + var(--ScrollItemPad) + 1px);
+    position:fixed;
+    left:0;
+    top: var(--WindowHeight);
+    border-bottom: 2px solid var(--AccentThree);
+    border-top: 2px solid var(--AccentThree);
+    pointer-events: none;
+    background-image: linear-gradient(to right, black 0%, transparent 20%, transparent 80%, black 100%)
+}
+div.SLIDEBAR {
+    position:relative;
+    left:0;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    margin-left: calc( ( (100% - var(--ScrollerWidths) ) / 2 ) - var(--ScrollItemPad));
+    margin-right: calc( ( (100% - var(--ScrollerWidths) ) / 2 ) - var(--ScrollItemPad));    
+}
+div.SLIDEBAR > div {
+    font-weight: 600;
+    font-size: min(1.4rem,5vw);
+    letter-spacing: 40%;/**/
+    flex: auto;
+    width: var(--ScrollerWidths);
+    /*height: 40px;/**/
+    margin-top: var(--ScrollItemPad);
+    margin-bottom: var(--ScrollItemPad);
+    padding-top: 10px;
+    padding-bottom:10px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    text-align: center;
+}
+div.MAIN
+{
+    position:absolute;
+    top:calc( var(--ScrollerHeight) + var(--WindowHeight) + var(--ScrollItemPad)*2);
+    left:0;
+    width:100%;
+}
+div.MAIN::before
+{
+    position: absolute;
+    left:50%;
+    transform: translate(-100%,-50%) rotate(-45deg);
+    top:0;
+    content: " ";
+    width:15px;
+    height:15px;
+    background: linear-gradient(45deg,transparent 50%,var(--AccentThree) 50%);
+}
+div.SHEET
+{
+    background-color: var(--SheetColor);
+    width: calc( 100% - ( 2 * var(--SheetMargin) ) );
+    padding: var(--SheetMargin);
+    position:absolute;
+    height: fit-content;
+    top:0;
+    left:0;
+}
+div.updates
+{
+
+}
+    div.SHEET > h3 {
+        width:100%;
+        text-align: center;
+        height:1.2em;
+        font-variant: small-caps;
+    }
+    div.RELEASEBIN {
+        height: 80px;
+        overflow: hidden;
+    }
+    div.WallInactiveTag {
+        position:relative;
+        width:fit-content;
+        left:50%;
+        top:-45px;
+        transform: translateX(-50%);
+        background-color: gray;
+        color: var(--SheetColor);
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        opacity:0.7;
+        padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+        margin: 0.0rem 0.3rem 0.0rem 0.3rem;
+        border-radius: 8px;
+    }
+    hr.nowHR {
+        border-bottom: 2px solid var(--AccentThreeLight);
+        position: relative;
+        top:8px;
+    }
+    div.nowDIV {
+        position:relative;
+        width:fit-content;
+        left:50%;
+        transform: translateX(-50%);
+        background-color: var(--AccentThreeLight);
+        color: var(--SheetColor);
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+        margin: -0.6rem 0.3rem 0.3rem 0.3rem;
+        border-radius: 8px;
+    }
+    div.RELEASES {
+        width:100%;
+        height: calc( 100dvh - ( var(--ScrollerHeight) + var(--WindowHeight) + var(--ScrollItemPad)*2 + var(--FooterHeight)));
+        overflow-y: scroll;
+        overflow-x: hidden;
+        color:black;
+    }
+    div.RELEASE {
+        display:grid;
+        grid-template:
+            'R-icon R-story R-name'
+            'R-icon R-body R-body';
+        grid-template-columns: 50px 1fr 1fr;
+        padding:10px;
+        padding-right: 20px;
+        margin-top:10px;        
+        border-top: 1px dashed dimgray;     
+        border-bottom: 1px dashed dimgray;
+        /*
+        border-top: 1px solid black;
+        */
+    }
+    div.RELEASES::after {
+        content:" ";
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        background-image: 
+            linear-gradient(
+                to bottom,
+                var(--SheetColor) 0px,
+                transparent 50px,
+                transparent 60%,
+                var(--SheetColor) 95%
+            );
+        pointer-events: none;
+    }
+        div.FirebrandIcon {
+
+        }
+        div.ParagateIcon {
+
+        }
+    div.ReleaseFirebrand {        
+        color: white;
+    }
+    div.ReleaseParagate {
+        color: white;
+    }
+    div.R-INACTIVE {
+        color: dimgray;
+    }
+    div.R-ICON {
+        grid-area: R-icon;
+        width: 50px;
+    }
+    div.R-ICON > img {
+        height:50px;
+        position:relative;
+        left:-10px;
+    }
+    div.R-STORY {
+        grid-area: R-story;
+        /*text-decoration: underline;/**/
+        padding-bottom: 5px;
+        font-variant: normal;
+        white-space: nowrap;
+    }
+    div.R-NAME {
+        grid-area: R-name;
+        text-align:right;
+        font-variant: small-caps;
+        white-space: nowrap;
+    }
+    div.R-BODY {
+        grid-area: R-body;        
+        white-space: nowrap;        
+        text-overflow: ellipsis;
+    }
+    span.NEWBADGE {
+        background-color: var(--AccentThreeLight);
+        color: var(--SheetColor);
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+        margin: 0.0rem 0.3rem 0.0rem 0.3rem;
+        border-radius: 8px;
+    }
+
+div.stories
+{
+    height: 150dvh;
+}
+    div.BOOKDATA {
+        width:min(95%,600px);
+        background-color: var(--AccentThreeLighter);
+        position:relative;
+        left:50%;
+        top: 550px;/*calc( ( var(--ScrollerHeight) + var(--WindowHeight) + var(--ScrollItemPad)*2 + var(--FooterHeight)));/**/
+        transform: translateX(-50%);
+        margin: 10px 0px 10px 0px;
+        color: black;
+        display: grid;
+        grid-template: 'vimage vsynop';
+        height:fit-content;
+        transition: height 3.0s ease-in-out;
+    }
+    @media only screen and (max-width: 800px) {
+    div.BOOKDATA {
+        top: calc( calc( 0.68 * 100vw) );
+    }
+    }
+        div.ViewedImage {
+            grid-area: vimage;
+            width:100%;
+        }
+        div.ViewedImage > img {
+            border: 1px solid black;
+            height: 200px;
+            aspect-ratio: 0.7;
+            box-shadow: 0px 0px 10px 0px black;
+            margin: 20px;
+        }
+        div.ViewedSynopsis {
+            grid-area: vsynop;
+            text-align: justify;
+            margin-top: 80px;
+        }
+        div.ViewedSynopsis > p {            
+            margin-right:20px;           
+            margin-left:20px;
+        }
+        a.readbutton {
+            position:absolute;
+            width:50%;
+            left:50%;
+            top:0;
+            transform: translateX(-50%);
+            background-image: 
+                linear-gradient(
+                    45deg,
+                    var(--AccentOne),
+                    var(--AccentThree)
+                );
+            font-size: min(6vw,1.5rem);
+            font-weight: 600;
+            text-align: center;
+            padding: 18px;
+            border-radius: 9999px;
+            margin-top: 20px;
+            text-decoration:none;
+            color: white;
+            font-family: "Arial", sans-serif;            
+            border: 1px solid var(--AccentThreeLight);
+        }
+        a.readbutton:hover {
+            border: 5px solid var(--AccentThreeLight);
+            margin-top: 16px;
+        }
+    div.BOOKSHELF {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        width:90%;
+        row-gap: 10px;
+        column-gap: 30px;
+        margin-top: 20px;
+        position:absolute;
+        left:50%;
+        transform: translateX(-50%);
+        height:fit-content;
+    }
+    @media only screen and (max-width: 350px) {
+    div.BOOKSHELF {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }  
+    div.BOOKDATA {
+        top: 280vw;
+        margin: 4px 0px 4px 0px;
+    }  
+    }
+    div.BOOKSHELF > div {
+        border: 1px solid black;
+        width: 100%;
+        aspect-ratio: 0.7;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position:bottom center;
+        /*border-radius: 8px;/**/
+        box-shadow: 0px 0px 10px 0px black;
+    }
+    div.BOOKSHELF > div:hover {
+        opacity: 0.8;
+        transition: opacity 0.3s ease-in-out 0.05s;
+    }
+
+
+div.aboutme
+{
+
+}
+    div.aboutsub { 
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px dashed var(--AccentTwoLight);
+    }
+    div.about-1 {
+        display: grid;
+        grid-template:
+            'abouticon abouttext';     
+    }
+    @media only screen and (max-width: 500px) {
+        div.about-1 {
+        grid-template:
+            'abouticon' 
+            'abouttext';        
+    }
+    }
+    div.about-icon 
+    {
+        grid-area: abouticon;
+    }
+    div.about-icon > img {
+        width: min(80vw,200px);
+        position:relative;
+        left:50%;
+        transform: translateX(-50%);
+        filter: drop-shadow(0px 0px 4px black)
+        drop-shadow(0px 0px 8px black)
+        drop-shadow(0px 0px 10px black);
+        margin: 10px;
+        margin-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    div.about-text 
+    {
+        grid-area: abouttext;
+    }
+    div.about-text > p, div.about-2 > p {
+        text-align: justify;
+        padding-left: 10px;
+        border-left: 1px solid var(--AccentOneLight);
+    }
+    div.about-text > h3, div.about-2 > h3 {
+        background-color:  var(--AccentThreeLight);
+        color: var(--SheetColor);
+        width: fit-content;
+        text-transform:uppercase;
+        letter-spacing: 0.40rem;/**/
+    }
+div.WallInactive {
+    color: dimgray;
+     background-image:     
+    linear-gradient(
+        to right,
+        transparent 0px,
+        rgb(67, 67, 67) 0px,
+        transparent 40px
+    );
+}
+
+div.WallParagate {
+    transition: color ease-in-out 0.2s;  
+    background-image:     
+    linear-gradient(
+        to right,
+        transparent 0px,
+        var(--AccentTwo) 0px,
+        transparent 40px
+    );
+        /*url("design/bg-cody.jpg");*/
+}
+div.WallParagate:hover {
+    color: var(--AccentTwoLight);
+}
+div.WallFirebrand {
+    transition: color ease-in-out 0.2s;  
+    background-image:     
+    linear-gradient(
+        to right,
+        transparent 0px,
+        var(--AccentOne) 0px,
+        transparent 40px
+    );   
+        /*url("design/bg-kat.jpg");*/
+}
+div.WallFirebrand:hover {
+    color: var(--AccentOneLight);
+}

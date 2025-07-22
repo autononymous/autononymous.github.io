@@ -125,16 +125,19 @@
     
 </script>
 
-<script src="init.js" id="storyparser"></script>
+<script src="init.js" id="init"></script>
+<script src="main.js" id="main"></script>
 
 <script>
 async function ScrivReader() {
-    await initialization();
-    eWINDOW.addEventListener('scroll',runScrollEvents);
-    await setup();
-    eREVISION.innerHTML = `<span title="${Object.entries(VersionLog)[Object.keys(VersionLog).length-1][1]}">${Object.keys(VersionLog)[Object.keys(VersionLog).length-1]}</span>`;
+    const dSTART = new YearDate(14,3,25);
+    await init();
+    //eWINDOW.addEventListener('scroll',runScrollEvents);
+    await main();
+    //eREVISION.innerHTML = `<span title="${Object.entries(VersionLog)[Object.keys(VersionLog).length-1][1]}">${Object.keys(VersionLog)[Object.keys(VersionLog).length-1]}</span>`;
 }
 const INITMODE = "READER";
+ScrivReader();
 </script>
 </html>
 

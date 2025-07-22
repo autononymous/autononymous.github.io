@@ -1,0 +1,347 @@
+:root {
+/*======================================================*/
+/*====={ Title, text, and size variables by story }=====*/
+/*======================================================*/
+
+    /*-----[  Styles for Paragate > Cody  ]-----*/
+    --CodyTitle:        "Oxanium", sans-serif, "Bahnscrift",'Arial';
+    --CodyText:         "Roboto Flex", sans-serif, 'Bahnschrift', 'Arial';
+    --CodySize:         calc( var(--TextSize) - 0.10em );
+
+    /*-----[ Styles for Paragate > Katiya ]-----*/
+    --KatiyaTitle:      "Cormorant Unicase", serif;
+    --KatiyaText:       'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman';
+    --KatiyaSize:       calc(var(--TextSize) + 0.00em );
+
+    /*-----[ Styles for Firebrand > Titus ]-----*/
+    --TitusTitle:       "Cormorant Unicase", serif;
+    --TitusText:        'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman';
+    --TitusSize:        calc(var(--TextSize) + 0.00em );
+
+/*====={ Announcement/cover styling variables }=====*/
+    --CoverParagate: 
+                        radial-gradient(
+                            rgba(128,128,128,0.8), 
+                            rgba(128,128,128,0.4)
+                            ), 
+                        linear-gradient(
+                            to right, 
+                            rgba(255, 64, 64, 0.5),
+                            rgba(64,64,255,0.5)
+                            );
+    --CoverFirebrand:
+                        radial-gradient(
+                            rgba(243, 229, 83, 0.6), 
+                            rgba(245, 72, 72, 0.3)
+                            ), 
+                        linear-gradient(
+                            to right, 
+                            rgba(237, 28, 28, 0.3),
+                            rgba(195,144,212,0.6),
+                            rgba(237, 28, 28, 0.3)
+                            );
+    --CoverGradient:    var(--CoverParagate);
+    
+/*====={ Transitioning background styles }=====*/
+/*====={    (vertically-tiled JPEGs)     }=====*/
+    --WallCody:         url("design/bg-cody.jpg");
+    --WallKatiya:       url("design/bg-kat.jpg");
+    --WallTitus:        url("design/bg-tie.jpg");
+
+/*====={ Theme channel opacities }=====*/
+    --CodyOp:           1.00;
+    --KatiyaOp:         1.00;
+    --TitusOp:          1.00;
+    --SpecialOp:        0.00;
+}
+
+/*====={ Story-specific styles }=====*/
+
+/*--[ Cody ]--*/
+.Cody {
+        color:          var(--TextColor);
+}
+.CodyHead {
+    font-family: var(--CodyTitle);
+}
+.CodyBody {
+    font-family: var(--CodyText);
+}
+p.Cody {
+    font-size:          var(--CodySize);
+    line-height:        var(--TextLineHeight);
+    text-align:         justify;
+    font-family:        var(--CodyText);
+    font-weight:        300;
+}    
+h3.Cody {
+    font-family:        var(--CodyTitle);
+}
+p.CodyHand {
+    background-image:
+                        linear-gradient(
+                            rgba(201, 232, 255, 0.8)
+                        ),
+                        var(--WallCody);
+    mix-blend-mode:     hard-light;
+    box-shadow:         0px 0px 8px 2px var(--TextColor);
+    border:             2px solid var(--BackgroundColor);
+}
+span.CodyHand {
+    font-family:        "Patrick Hand SC", cursive;
+    color:            rgb(0, 0, 43);
+}
+div.codybg {
+    background-image:             
+                        linear-gradient(
+                            to right, 
+                            rgba(128,128,128,0.20) 0%,
+                            rgba(128,128,128,0.90) min(calc(100vw - var(--DefaultWidth) - 100px ), calc(var(--TextMargin) / 2)), 
+                            rgba(128,128,128,0.90) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
+                            rgba(128,128,128,0.20) 100%
+                        ),
+                        var(--WallCody);
+    opacity:            var(--CodyOp); 
+    filter:             var(--IconState);
+    mix-blend-mode:     hard-light;
+}
+
+/*--[ Katiya ]--*/
+.Katiya {
+    color:              var(--TextColor);
+}
+.KatiyaHead {
+    font-family: var(--KatiyaTitle);
+}
+.KatiyaBody {
+    font-family: var(--KatiyaText);
+}
+p.Katiya {
+    font-family:        var(--KatiyaText);
+    font-size:          var(--KatiyaSize);
+    font-weight:        500;
+    line-height:        var(--TextLineHeight);
+    text-align:         justify;
+}
+h3.Katiya {
+    font-family:        var(--KatiyaTitle);
+}
+p.KatiyaHand {
+    background-image:
+                        linear-gradient(
+                            rgba(255, 242, 214, 0.8)
+                        ),
+                        var(--WallKatiya);
+    box-shadow:         0px 0px 8px 2px var(--TextColor);
+    border:             2px solid var(--BackgroundColor);
+}
+span.KatiyaHand {
+    font-family:        "Montez", cursive;
+    color:            rgb(22, 16, 10);
+}
+div.katbg {
+    background-image:             
+                        linear-gradient(
+                            to right, 
+                            rgba(128,128,128,0.20) 0%,
+                            rgba(128,128,128,0.92) min(calc(100vw - var(--DefaultWidth) - 100px ), calc(var(--TextMargin) / 2)), 
+                            rgba(128,128,128,0.92) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
+                            rgba(128,128,128,0.20) 100%
+                        ),
+                        var(--WallKatiya);
+    opacity:            var(--KatiyaOp);            
+    filter:             var(--IconState);
+    mix-blend-mode:     hard-light;
+}
+
+/*--[ Titus ]--*/
+.Titus {
+    color:              var(--TextColor);
+}
+.TitusHead {
+    font-family: var(--TitusTitle);    
+    font-weight:900;
+}
+.TitusBody {
+    font-family: var(--TitusText);
+    font-weight:500;
+}
+p.Titus {
+    font-family:        var(--KatiyaText);
+    font-size:          var(--KatiyaSize);
+    font-weight:        500;
+    line-height:        var(--TextLineHeight);
+    text-align:         justify;
+}
+h3.Titus {
+    font-family:        var(--KatiyaTitle);
+}
+p.TitusHand {
+    background-image:
+                        linear-gradient(
+                            rgba(251, 226, 223, 0.95)
+                        ),
+                        var(--WallTitus);
+    box-shadow:         0px 0px 8px 2px var(--TextColor);
+    border:             2px solid var(--BackgroundColor);
+}
+span.TitusHand {
+    font-family:        "Caveat", cursive;
+    color:            rgb(78, 2, 2);
+}
+div.tiebg {
+    background-image:             
+                        linear-gradient(
+                            to right, 
+                            rgba(50,50,50,0.60) 0%,
+                            rgba(128,128,128,0.97) min(calc(100vw - var(--DefaultWidth) - 100px ), calc(var(--TextMargin) / 2)), 
+                            rgba(128,128,128,0.97) max(var(--DefaultWidth) + 100px, 100% - calc( var(--TextMargin) / 2)), 
+                            rgba(50,50,50,0.60) 100%
+                        ),
+                        var(--WallTitus);
+    opacity:            var(--TitusOp);            
+    filter:             var(--IconState);
+    mix-blend-mode:     hard-light;
+}
+
+.CodyHead, .TitusHead, .KatiyaHead {
+
+}
+.CodyBody, .TitusBody, .KatiyaBody {
+    overflow: hidden;
+    font-family:'Arial Light', Helvetica, sans-serif;
+    font-weight: 100;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: justify;
+    width:100%;
+}
+
+p.CodyHand, p.KatiyaHand, p.TitusHand {
+    margin-left:        -10px;
+    margin-right:       -10px;
+    margin-top:         10px;
+    margin-bottom:      10px;
+    padding:            10px;
+    border-radius:      3px;
+    text-align:         left;
+}
+.CodyHand, .KatiyaHand, .TitusHand {
+    text-align:         left;
+}
+
+
+/*====={ Special/uncommon styles }=====*/
+
+:root {
+    --SpecialFont: min(2.2vw,0.9em);
+}
+
+div.bonusitem {  
+    width:150%; 
+    overflow: visible;
+    transform:translateX(-16%);
+    
+}
+td.cody-verse {
+    text-align:right;
+    font-family: var(--CodyText);
+    font-weight: 200;
+    font-size: var(--SpecialFont);
+    min-width:1000px;
+    padding-right:15px;
+}
+td.katiya-verse {
+    text-align:left;
+    font-family: var(--KatiyaText);
+    font-weight: 400;
+    font-size: calc(var(--SpecialFont) * 1.2);
+    min-width:1000px;
+    padding-left:15px;
+    padding-bottom:0.15em;
+}
+table.pgintro {
+    color: var(--TextColor);
+    white-space: nowrap; 
+    position:relative;
+    left: 50%;
+    transform:translateX(-50%) scaleX(80%);
+    width:100%;
+}
+table.pgintro::after {
+    content:" ";
+    position:absolute;
+    width:100vw;
+    height:1500vh;
+    left:50%;
+    top:-500vh;  
+    transform:translateX(-50%) scaleX(calc( 1 / 0.8));
+    /*
+    background-image: url('design/bg-pg.png');
+    background-position:center;
+    background-repeat: repeat-y;
+    /**/
+    background: 
+        linear-gradient(
+            to right, 
+            transparent 10%, 
+            rgba(0, 0, 150 ,0.2) 49.5%, 
+            rgba(150, 0, 0, 0.2) 50.5%,  
+            transparent 90%);  
+}
+table.pgintro::after {
+    content:" ";
+    position:absolute;
+    width:100vw;
+    height:1500vh;
+    left:50%;
+    top:-500vh;
+}
+/**/
+
+table.pgintro > tbody > tr > td {
+    height:var(--SpecialFont);
+}
+
+img.BonusLogo {
+    margin-top:100px;
+    width: min(80%,500px);
+    max-width:500px;
+    filter: var(--IconState);
+    position:relative;
+    left:50%;
+    transform:translateX(calc(-50% - 3px));
+}
+
+div.specialbg-l, div.specialbg-r {    
+    filter: var(--IconState);  
+    opacity: var(--SpecialOp);
+    mix-blend-mode: hard-light;
+}
+div.specialbg-l {
+    transform:translateX(-49vw);
+    background:
+        linear-gradient(
+            to right, 
+            rgba(128,128,128,1.00) ,             
+            rgba(123, 125, 131, 0.85)
+        ), 
+        var(--WallCody) ;
+}
+div.specialbg-r {
+    transform:translateX(51vw);
+    background:
+        linear-gradient(
+            to right,             
+            rgba(131, 123, 123, 0.85),
+            rgba(128,128,128,1.00)
+        ), 
+        var(--WallKatiya) ;  
+}
+
+img.intro-subimage {
+    width: min(60vw,400px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleX(-1);   
+}

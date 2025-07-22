@@ -4,7 +4,17 @@
 // Root location of all files...
 const URL_ROOT = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/ScrivenerReader/";
 
-
+const VersionLog = {
+    "v1.00":"Reader alpha",
+    "v2.00":"Reader beta",
+    "v2.10":"Add version counter; fix story tag detection",
+    "v2.20":"Bonus content window added.",
+    "v2.23":"Minor fixes to new info window.",
+    "v2.30":"Completion of Paragate introduction with theming.",
+    "v2.31":"Capacity for custom scene numbering.",
+    "v2.32":"Setting callouts option and custom -hr- dividers.",
+    "v3.00":"New viewer with new retrieval process."
+}
 
 
 
@@ -15,9 +25,9 @@ const URL_ROOT = "https://raw.githubusercontent.com/autononymous/autononymous.gi
 
 function CLS() 
 {
-    localStorage.removeItem(`AC_SAVE_${StoryMode}`);
-    localStorage.removeItem(`AC_SETTINGS_${StoryMode}`);
-    localStorage.removeItem(`AC_PREFS_${StoryMode}`);
+    localStorage.removeItem(`AC_SAVE`);
+    localStorage.removeItem(`AC_SETTINGS`);
+    localStorage.removeItem(`AC_PREFS`);
 }
 
 //
@@ -27,33 +37,25 @@ function CLS()
 //    IN > flush - Print all saved to display.
 //    IN > rawpush - Push raw item such as an object.
 //
-class DebugConsole
+DebugItems = [];
+function DConsole(title,body,flush=false,rawpush=false) 
 {
-    DebugItems = [];
-    
-    DConsole(title,body,flush=false,rawpush=false) 
-    {
-        DebugItems.push([body,rawpush]);
-        let DebugStr = "";
-        let DebugItem = " ";
-        if(flush == true) {
-            DebugStr += `==================\nFrom ${title}:\n`;
-            DebugItems.forEach ( ([message,method]) => {
-                if(method) {
-                    DebugItem = message
-                } else {
-                    DebugStr +=  `> ${message}\n`
-                }            
-            })
-            console.debug(DebugStr,DebugItem);
-            DebugItems = [];
-        }    
-    }
-    constructor(){
-        pass
-    }
+    DebugItems.push([body,rawpush]);
+    let DebugStr = "";
+    let DebugItem = " ";
+    if(flush == true) {
+        DebugStr += `==================\nFrom ${title}:\n`;
+        DebugItems.forEach ( ([message,method]) => {
+            if(method) {
+                DebugItem = message
+            } else {
+                DebugStr +=  `> ${message}\n`
+            }            
+        })
+        console.debug(DebugStr,DebugItem);
+        DebugItems = [];
+    }    
 }
-
 
 // ----------------------------------------------- //
 // File Receiving and Processing
@@ -95,6 +97,95 @@ async function GetJSON(address)
 {
     let text = await GetFile(address);
     return await ParseJSON(text);
+}
+//
+// SAVELOCALDATA - Save preferences and settings to Local Storage.
+//    IN > preferences - Optional direct argument.
+//    IN > settings - Optional direct argument.
+//
+async function SaveLocalData(preferences,settings)
+{
+    if (preferences == undefined) preferences = PREFERENCES;
+    localStorage.setItem('AC_PREFS',JSON.stringify(preferences));
+    if (settings == undefined) settings = SETTINGS;
+    localStorage.setItem('AC_SETTINGS',JSON.stringify(settings));
+}
+//
+// RETRIEVELOCALDATA - Load preferences and settings from Local Storage. Otherwise, apply defaults.
+//    IN > standard - Default settings.
+//
+async function RetrieveLocalData(standard)
+{
+    let preferences, settings = {};
+    let Jpreferences = localStorage.getItem('AC_PREFS');
+    if( Jpreferences == undefined ) {
+        preferences = Object.assign( {}, standard.Preferences );        
+    } else {
+        try {
+            preferences = JSON.parse(Jpreferences);
+        } catch (error) {
+            preferences = Object.assign( {}, standard.Preferences );
+        }
+    }
+    let Jsettings = localStorage.getItem('AC_SETTINGS');
+    if( Jsettings == undefined ) {
+        settings = Object.assign( {}, standard.Settings );        
+    } else {
+        try {
+            settings = JSON.parse(Jsettings);
+        } catch (error) {
+            settings = Object.assign( {}, standard.Settings );
+        }
+    }
+    SaveLocalData(preferences,settings);
+    return [preferences,settings]
+}
+//
+// PARSESEARCHPARAMS - Convert search variables into a map of values.
+//
+function SearchMap(map, key, inputs, outputs) 
+{
+    let value = map.get(key);
+    for(let i=0; i<inputs.length; i++ )
+    {
+        if (value == inputs[i])
+        {
+            return outputs[i];
+        } 
+    }
+    return outputs[inputs.length];
+}
+async function ParseSearchParams()
+{
+    // Address of the current window
+    let address = window.location.search;
+    let parameterList = new URLSearchParams(address);
+    let map = new Map()
+
+    // Store every key value pair in the map
+    parameterList.forEach((value,key) => {
+        map.set(key,value);
+    });
+    
+    // Active search parameters
+    SearchParameters = 
+    {
+        "PermissionLevel" : SearchMap(map, 'mode', 
+                                ["author",  "3","editor","2"],
+                                [3,3,2,2,1]),
+        "DoAnnouncements" : SearchMap(map, 'intro',
+                                ["false","skip"],
+                                [false,false,true]),
+        "DoReset"         : SearchMap(map, 'reset',
+                                ["true","reset","doreset"],
+                                [true,true,true,false]),
+        "Story"           : SearchMap(map, 'story',
+                                ["Firebrand","firebrand","fb","FB","1","Paragate","paragate","pg","PG","2"],
+                                ["Firebrand","Firebrand","Firebrand","Firebrand","Firebrand","Paragate","Paragate","Paragate","Paragate","Paragate","Firebrand"]),
+        "ChapterNumber"   : isNaN(parseFloat(map.get("chapter"))) ? undefined : parseFloat(map.get("chapter"))
+    }
+
+    return SearchParameters
 }
 
 // ----------------------------------------------- //
@@ -169,7 +260,6 @@ class YearDate
         this.now = this.get_yeardate(new Date());
         this.since = this.now - this.ydate;
     }
-
 }
 
 // ----------------------------------------------- //
@@ -198,16 +288,167 @@ function Num2txt(number)
 }
 
 // ----------------------------------------------- //
-// Gathering Data From Defined Sources
+// Loading In Chapters
 // ----------------------------------------------- //
+function SetInfo(chapter) {
+    eDATA.innerHTML = 
+          "<h4 class='InfoTitle'>" + PARAMS.Story + " " + chapter.ID + "</h4><p class='InfoSub'>"
+        + chapter.Title + "<br>"
+        + chapter.Subtitle + "</p>"
+        ; 
+}
+async function PullChapter(num) {
+    // Retrieve the story TOC item with all the chapters.
+    let StoryEntry = Object.values(TOC_STORY[PARAMS.Story]['toc']);
+    let StoryURL = TOC_STORY[PARAMS.Story]['loc']
+    let StoryChapter = StoryEntry[num];
+    if(StoryChapter == undefined) StoryChapter = StoryEntry[0];    
+    return await GetJSON(StoryURL + StoryChapter.Act + '/' + StoryChapter.ChapterNumber + '.JSON')
+}
+async function PlaceChapter(chapter) {
+    console.log(chapter)
+    chapter.BodyFormatted.forEach( scene => { scene.forEach( line => {
+        ePAGE.innerHTML += line;
+    }); });
+}
+async function LoadInChapter(num) {
+    let chapter = await PullChapter(num);
+    await PlaceChapter(chapter);
+    SetInfo(chapter);  
+    return chapter
+}
 
+// ----------------------------------------------- //
+// Handling Announcements
+// ----------------------------------------------- //
+async function LoadAnnouncements(story) {
+    eSTARTBOX.style.opacity="1";
+    eANNOUNCE.innerHTML = `<div><h3 class="Announcements"> Announcements </h3></div>`;
+    Object.entries(CONFIG.Announcements[story]).reverse().forEach( ([timestamp,content]) => {
+        eANNOUNCE.innerHTML += `<div> <p><strong><u>${timestamp}: </u></strong></p><p class="Announcements"> ${content}</p></div>`;
+    })
+}
+async function DismissAnnouncements() {
+    //this.outerHTML = "";
+    //eINSTRUCT.style.opacity="1";
+    eINSTRUCT.style.animation = '3.0s ease-in-out 1.0s forwards flashing';
+    eSTARTBOX.style.animation = '1.0s ease-in-out 0.5s forwards fadeout';
+    eSTARTBOX.style.pointerEvents = "none";
+}
 
-var STORY_LIST,TOC_STORY,TOC_MASTER,CONFIG;
+// ----------------------------------------------- //
+// Building Table of Contents
+// ----------------------------------------------- //
+async function BuildTOC() {
+    //console.debug("Building the Table Of Contents...");
+    eTOC.innerHTML = ''; //TOC clear ------------------------//     
+
+    let RelDate = dSTART.date;
+    let today = dSTART.now;
+    let startday = dSTART.ydate;
+    let releaseday = dCHAPTER.date;
+    let lastrelease = releaseday + 0;
+
+    /*
+    //console.log(`${today}, ${startday}, ${releaseday}`)
+    let ChapterMaxNumberT = 0;
+      
+    let ActCtr = 0;  
+
+    let statChapterTypes = [0,0,0,0];
+    let statReleaseDay = [];
+
+    jSTORY.Manuscript.forEach( parcel => {
+        let pType = parcel.DocType;
+        let pAct = parcel.ActNum;
+        let pChapter = parcel.ChapterFull;
+        let pScene = parcel.SceneFull;   
+        
+        let ChapterIsActive = true;
+
+        let DatePercentage = 1;    
+        
+        //console.warn(`${pType},${pAct},${pChapter},${pScene}`)
+
+        switch (pType) {
+            case "Act":
+                ActCtr++;
+                //console.log("Act "+ActCtr)
+                eTOC.innerHTML += TOChtmlACT(ActCtr,parcel.DocName);
+                break;
+            case "Chapter":
+                //console.info(`${today} ... ${releaseday}`)
+                let NextPush = parcel.NextPublish==undefined?7:parcel.NextPublish;
+                if (parcel.PublishOn==""){
+                    releaseday += parseFloat(NextPush);
+                } else {
+                    releaseday = parseFloat(parcel.PublishOn);
+                    NextPush = releaseday - lastrelease;
+                }
+                statReleaseDay.push([parcel.ChapterFull+0,releaseday+0,parcel.GivenName+""]);
+
+                //console.debug(NextPush)
+                
+                ChapterMaxNumberT++;
+                RelDate = new Date(Date.parse(RelDate) + (86400000*parseFloat(NextPush)));
+                let EntryDateStr = `${pad(RelDate.getMonth()+1,2)}/${pad(RelDate.getDate(),2)}`// /${RelDate.getFullYear().toString().slice(2,4)}`
+                //console.warn(EntryDateStr)
+                document.getElementById(TOCchapterTARGET).innerHTML += TOChtmlCHAPTER(parcel.ChapterFull,parcel.GivenName,parcel.Synopsis,EntryDateStr,AdjustedIndex(parcel.ChapterFull),DatePercentage,
+                ((today >= releaseday)&&(today <= (releaseday+7) )) )
+                // Calculating height of date progress bar:                  
+
+                if (today >= releaseday) {
+                    DatePercentage = 1;
+                } else if (today <= startday) {
+                    DatePercentage = 0;
+                } else {
+                    DatePercentage = (today - startday) / (releaseday - startday);
+                }
+
+                // Statistics for nerds.
+                let DaysBetween = today - releaseday
+                if(DaysBetween > 7) {
+                    statChapterTypes[0] += 1; // Out for a while.
+                } else if (DaysBetween >= 0) {
+                    statChapterTypes[1] += 1; // Released within a week.
+                } else if (DaysBetween >= -7) {
+                    statChapterTypes[2] += 1; // Coming this week.
+                } else {
+                    statChapterTypes[3] += 1; // Not here yet.
+                }
+
+                let VertBar = document.getElementById(`TOC-CH${parcel.ChapterFull}-STATE`)
+
+                //console.log(`Release #${ChapterMaxNumberT}\n  starts ${startday},\n  now is ${today},\n  ends ${releaseday}\n  percentage ${DatePercentage}.`)
+                
+                VertBar.style.height = `${DatePercentage * 100}%`;
+                VertBar.style.top = `
+                ${((-0.5) - ((1-DatePercentage)/2))*100}%`;
+                
+                startday = releaseday + 0;
+                lastrelease = releaseday + 0;
+                break;
+        }
+    });
+    DConsole("main.js > BuildTOC",`Table Of Contents for ${ActiveStory} has been built.`,false);
+    DConsole("main.js > BuildTOC",`Distribution of releases:\n\t      Old Releases  | ${statChapterTypes[0]}\n\t      New Releases  | ${statChapterTypes[1]}\n\t  Coming This Week  | ${statChapterTypes[2]}\n\t          Upcoming  | ${statChapterTypes[3]}`,false);
+    DConsole("main.js > BuildTOC",`Release Day By Chapter:`,false);
+    DConsole("main.js > BuildTOC",statReleaseDay,true,true);
+    /**/
+}
+
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- //
+// Main Initialization Code
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- //
+
+var STORY_LIST,TOC_STORY,TOC_MASTER,CONFIG,PREFERENCES,SETTINGS,PARAMS,ACTIVE_CHAPTER;
+var dSTART,dCHAPTER;
 async function init() 
 {
-    // Get the master table of contents.
-    TOC_MASTER = await GetJSON(`${URL_ROOT}/story/process/MasterTOC.JSON`);
+    dSTART = new YearDate(14,3,25);
     
+    // Get the master table of contents.
+    TOC_MASTER = await GetJSON(`${URL_ROOT}/story/process/MasterTOC.JSON`);    
     // Return a list of all existing stories from master TOC.
     STORY_LIST = [];
     TOC_MASTER.forEach(entry => {
@@ -216,7 +457,6 @@ async function init()
             STORY_LIST.push(entry.Story);
         }
     });
-
     // Return a dictionary of TOCs for each story.
     TOC_STORY = {};
     for (let i=0; i<STORY_LIST.length; i++) {
@@ -228,15 +468,35 @@ async function init()
         TOC_STORY[storyname]['loc'] = location;
     }
 
-    CONFIG = await GetJSON(`${URL_ROOT}/config.JSON`);
+    // Retrieve configuration parameters.
+    CONFIG = await GetJSON(`${URL_ROOT}/config.json`);
 
+    // Retrieve preferences and settings if in Local Storage, otherwise apply defaults.
+    let local = await RetrieveLocalData(CONFIG);
+    PREFERENCES = local[0];
+    SETTINGS = local[1];
+    ROOT.style.setProperty("--TextSize",PREFERENCES.FontSize);
+    ROOT.style.setProperty("--TextLineHeight",PREFERENCES.LineHeight);
+    ROOT.style.setProperty("--TextMargin",PREFERENCES.Margins); 
 
+    // Retrieve the first chapter to be read, depending on URL params and previous data.
+    PARAMS = await ParseSearchParams();
+    if (PARAMS.ChapterNumber != undefined) PREFERENCES.StartChapter = PARAMS.ChapterNumber;
+    ACTIVE_CHAPTER = await LoadInChapter(PREFERENCES.StartChapter);
+
+    dCHAPTER = new YearDate(ACTIVE_CHAPTER.Release)
+
+    // If announcements are active, load announcements.
+    if (PARAMS.DoAnnouncements) { 
+        DConsole("main.js > setup","Loading announcements.", true)
+        await LoadAnnouncements(PARAMS.Story); 
+    } else {        
+        eSTARTBOX.outerHTML = "";
+        DConsole("main.js > setup","Skipping announcements.", true)
+    }
+
+    await BuildTOC();
+
+    console.log(STORY_LIST,TOC_STORY,TOC_MASTER,CONFIG,PREFERENCES,SETTINGS,PARAMS)
     return
 }
-
-// Release date of Autononymous website.
-const dSTART = new YearDate(14,3,25);
-init();
-
-console.log(STORY_LIST,TOC_STORY,TOC_MASTER,CONFIG)
-

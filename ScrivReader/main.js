@@ -784,6 +784,7 @@ function PlaceChapter(CHAPTER) {
 
     if( CHAPTER.Active || PermissionLevel >= 2) {
         CHAPTER.BodyFormatted.forEach( Line => {
+            console.log(Line)
             ePAGE.innerHTML += Line;
         })         
         //ePAGE.innerHTML += `<div class="EndSpacer"></div>`;
