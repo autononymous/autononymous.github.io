@@ -29,7 +29,7 @@
             <div class="Icon" id="ICON-LINEUP" onclick="SetPreferences('LineHeight',-1)"><img class="Icon" title="Decrease Line Spacing" src="icons/fbicon-LineUp.png" alt="&#8854;" ></div>
             <div class="Icon" id="ICON-FONTUP" onclick="SetPreferences('FontSize',1)"><img class="Icon" title="Increase Font Size"" src="icons/fbicon-Larger.png" alt="&#8853;" ></div>
             <div class="Icon" id="ICON-FONTDN" onclick="SetPreferences('FontSize',-1)"><img class="Icon" title="Decrease Font Size" src="icons/fbicon-Smaller.png" alt="&#8854;" ></div>
-            <div class="Icon" id="ICON-THEME" onclick="PREFS.DisplayMode=(PREFS.DisplayMode=='Light')?'Dark':'Light';console.log('Changed color to '+PREFS.DisplayMode+'.');InvertIcons();HandleScrollerEvents();SaveState();">
+            <div class="Icon" id="ICON-THEME" onclick="PREFERENCES.DisplayMode=(PREFERENCES.DisplayMode=='Light')?'Dark':'Light';console.log('Changed color to '+PREFERENCES.DisplayMode+'.');InvertIcons();HandleScrollerEvents(ACTIVE_CHAPTER);SetScrollerEvents();runScrollEvents();SaveLocalData();">
                 <span style="color: var(--TextColor);font-size: 40px;cursor:pointer;">&#9680;</span></div>
             </div> 
         <!--  ></div> -->
@@ -45,14 +45,14 @@
                 <div class="ProgressBar" id="PROGRESS"></div>
             </div>
             <div class="FooterInfo">
-                <div onclick="CurrentChapter=CurrentChapter.Previous;PlaceOrOverlay(CurrentChapter);SetInfo();SaveState();" class="Footer-Left"><div class="Centered">&laquo;</div></div>
+                <div onclick="ACTIVE_CHAPTER = AdvanceChapter(-1)" class="Footer-Left"><div class="Centered">&laquo;</div></div>
                 <div class="Footer-Center">
                     <!-- moved
                     <div class="FooterContent" id="DATA" title="View Table Of Contents" onclick="ToggleTOC(true)">
                     </div>
                     -->
                 </div>
-                <div onclick="if((CurrentChapter.ChapterNumber < MaximumChapter)||(PermLevel >= 2)){CurrentChapter=CurrentChapter.Next;PlaceOrOverlay(CurrentChapter);SetInfo();SaveState();}else{console.warn('Outside range.')}" class="Footer-Right"><div class="Centered">&raquo;</div></div>
+                <div onclick="ACTIVE_CHAPTER = AdvanceChapter(1)" class="Footer-Right"><div class="Centered">&raquo;</div></div>
             </div>
         </div>
     </div>
@@ -129,12 +129,11 @@
 <script src="main.js" id="main"></script>
 
 <script>
-async function ScrivReader() {
-    const dSTART = new YearDate(14,3,25);
+async function ScrivReader() {    
     await init();
-    //eWINDOW.addEventListener('scroll',runScrollEvents);
+    eWINDOW.addEventListener('scroll',runScrollEvents);
     await main();
-    //eREVISION.innerHTML = `<span title="${Object.entries(VersionLog)[Object.keys(VersionLog).length-1][1]}">${Object.keys(VersionLog)[Object.keys(VersionLog).length-1]}</span>`;
+    eREVISION.innerHTML = `<span title="${Object.entries(VersionLog)[Object.keys(VersionLog).length-1][1]}">${Object.keys(VersionLog)[Object.keys(VersionLog).length-1]}</span>`;
 }
 const INITMODE = "READER";
 ScrivReader();

@@ -153,8 +153,6 @@ async function fetchJSON() {
     }
     */
     // If not, proceed to load.
-
-
     
     try {
         let sourcelocation = LOCATION.StoryRoot + LOCATION.StoryFile;
@@ -531,25 +529,6 @@ function ChannelSet(CHANNEL) {
         }
     }      
     let Progress = (NextElement[0]-Position)/(NextElement[0]-LastElement[0])
-    
-    /*
-    console.debug(`
-    Last Element: ${LastElement[0]},${LastElement[1]},${LastElement[2]},${LastElement[3]}\n
-    Next Element: ${NextElement[0]},${NextElement[1]},${NextElement[2]},${NextElement[3]}\n
-    Position: ${Position}\n
-    Progress: ${Progress}
-    `);
-    */
-
-    //console.log(LastElement,NextElement)
-
-    /*
-    console.info(`
-    LAST:\t${LastElement[5]}\t${LastElement[6]}\n
-    NEXT:\t${NextElement[5]}\t${NextElement[6]}\n
-    ${Progress}
-    `)
-    */
 
     let RED = (LastElement[1]*Progress)+(NextElement[1]*(1-Progress));
     let GRN = (LastElement[2]*Progress)+(NextElement[2]*(1-Progress));
@@ -561,23 +540,12 @@ function ChannelSet(CHANNEL) {
     let StartEndOff = StartEndPerc-(100*FadeThresh)
     let StartEndMul = StartEndOff<0 ? 1 : 1-(StartEndOff/(100-(100*FadeThresh)))
 
-    //console.log(StartEndMul)
-
-    //CODY_Opacity = ALP * StartEndMul;
-    //KAT_Opacity = (1-ALP) * StartEndMul;
-
     let State1 = `${LastElement[5]}${LastElement[6]}`;
     let State2 = `${NextElement[5]}${NextElement[6]}`;
 
     CODY_Opacity = ((NextElement[5]=="Cody") * Progress)  + ((LastElement[6]=="Cody") * (1-Progress));
     KAT_Opacity = ((NextElement[5]=="Katiya") * Progress) + ((LastElement[6]=="Katiya") * (1-Progress));
     TIE_Opacity = ((NextElement[5]=="Titus") * Progress)  + ((LastElement[6]=="Titus") * (1-Progress));
-
-    /*
-    if( ((LastElement[6]=="Default") && (NextElement[6]=="Default")) || ((LastElement[5]=="Default") && (NextElement[5]=="Default"))) {
-        CODY_Opacity = KAT_Opacity = 0;
-    }
-    */
 
     let IsStartOf = false;
 
@@ -598,8 +566,6 @@ function ChannelSet(CHANNEL) {
         ThisStoryTheme = NextElement[6];
         IsStartOf = true;
     }
-
-    //console.log(ThisStoryTheme)
 
     if((ThisStoryTheme != LastStoryTheme) || IsStartOf) {
 
@@ -637,8 +603,7 @@ function ToggleTOC() {
     eTOC.style.animation = ("1s ease-in-out 0.25s forwards" + ((isTOCshown)?" fadein ":" fadeout "));
     eFULL.style.opacity = (isTOCshown)?  1  :  0  ;
     eTOC.style.opacity  = (isTOCshown)?  1  :  0  ;     
-    eFULL.style.pointerEvents = (isTOCshown)?"none":"all";
-       
+    eFULL.style.pointerEvents = (isTOCshown)?"none":"all";       
 }
 function TOChtmlACT(nAct,name) {
     let result = `
@@ -784,7 +749,6 @@ function PlaceChapter(CHAPTER) {
 
     if( CHAPTER.Active || PermissionLevel >= 2) {
         CHAPTER.BodyFormatted.forEach( Line => {
-            console.log(Line)
             ePAGE.innerHTML += Line;
         })         
         //ePAGE.innerHTML += `<div class="EndSpacer"></div>`;
@@ -896,17 +860,11 @@ function SetInfo() {
 }
 function runScrollEvents() {
     Position = ScrollPosition(ePAGE);
-    //console.log(ScrollProgress);
-    ePROGRESS.style.width = `${Position}%`;   
-
+    ePROGRESS.style.width = `${Position}%`;  
     MODES.forEach( mode => {
         CHSET[mode] = ChannelSet(Keyframes[mode])
     })
-
-    ApplyColors();
-    
-    //console.log(CHSET["Background"][3]) /**-*/
-    
+    ApplyColors();    
 }
 
 function zoomImage(elem) {
@@ -956,15 +914,15 @@ function ToggleInfoWindow() {
 }
 
 async function setup() {
-    jSTORY = await fetchJSON();
-    await LoadPreferences();
-    if (DoAnnouncements) { 
-        DConsole("main.js > setup","Loading announcements.", true)
-        await LoadAnnouncements(); 
-    } else {        
-        eSTARTBOX.outerHTML = "";
-        DConsole("main.js > setup","Skipping announcements.", true)
-    }
+    jSTORY = await fetchJSON();//
+    await LoadPreferences();//
+    if (DoAnnouncements) { //
+        DConsole("main.js > setup","Loading announcements.", true)//
+        await LoadAnnouncements(); //
+    } else {        //
+        eSTARTBOX.outerHTML = "";//
+        DConsole("main.js > setup","Skipping announcements.", true)//
+    }//
     // Set current chapter.
     if ( !isNaN(parseFloat(SrcParams.get('startchapter'))) ) {
         CurrentChapter = STORY[parseFloat(SrcParams.get('startchapter'))];
@@ -972,8 +930,8 @@ async function setup() {
     } else {
         CurrentChapter = STORY[PREFS.StartChapter];
     }    
-    
     await PlaceOrOverlay(CurrentChapter);
+    SetScrollerEvents();
 
     SetInfo();
     SetMessageState();
