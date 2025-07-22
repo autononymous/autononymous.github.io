@@ -16,7 +16,7 @@ const VersionLog = {
     "v3.00":"New viewer with new retrieval process."
 }
 
-
+var isTOCshown = true;
 
 
 // ----------------------------------------------- //
@@ -308,7 +308,7 @@ async function PullChapter(num) {
 async function PlaceChapter(chapter) {
     console.log(chapter)
     chapter.BodyFormatted.forEach( scene => { scene.forEach( line => {
-        ePAGE.innerHTML += line;
+        ePAGE.innerHTML += line.replaceAll('<p>',`<p class="${chapter.Perspective}">`);
     }); });
 }
 async function LoadInChapter(num) {
@@ -339,6 +339,56 @@ async function DismissAnnouncements() {
 // ----------------------------------------------- //
 // Building Table of Contents
 // ----------------------------------------------- //
+function ToggleTOC() {
+    isTOCshown = !isTOCshown    
+    eFULL.style.top = (isTOCshown)?  '0'  :  '-110vh'  ;
+    eFULL.style.animation = ("1s ease-in-out 0.25s forwards" + ((isTOCshown)?" slide-up ":" slide-down "));
+    eTOC.style.animation = ("1s ease-in-out 0.25s forwards" + ((isTOCshown)?" fadein ":" fadeout "));
+    eFULL.style.opacity = (isTOCshown)?  1  :  0  ;
+    eTOC.style.opacity  = (isTOCshown)?  1  :  0  ;     
+    eFULL.style.pointerEvents = (isTOCshown)?"none":"all";       
+}
+function TOChtmlACT(nAct,name) {
+    let result = `
+    <div id="TOC-ACT${nAct}" class="TOC Act">
+        <div id="TOC-ACT${nAct}-ROW" class="TOC ActRow">          
+            ${name} 
+        </div>
+        <div class="ChapterSet" id="TOC-ACT${nAct}-CHAPTERS">
+        </div>
+    </div>
+    `
+    TOCchapterTARGET = `TOC-ACT${nAct}-CHAPTERS`;
+    return result;
+}
+function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew) {
+    //console.info(`${nChap},${name},${synopsis},${pubdate},${nDisplayed},${percent},${isnew}`)
+    ChapterIsActive = (nChap <= MaximumChapter);
+    //console.info(MaximumChapter)
+    let ChapterInteraction = ChapterIsActive?(`class="TOC ChapterRow activerow ${isnew?'newrow':''}"  onclick="CurrentChapter=STORY[${nChap-1}];PlaceOrOverlay(CurrentChapter);SaveState();ToggleTOC();"`):(`class="TOC ChapterRow inactiverow ${isnew?'newrow':''}"`);
+
+    let result = `    
+        <div id="TOC-CH${nChap}" ${ChapterInteraction}> 
+            <div id="TOC-CH${nChap}-DATE" class="TOC ChapterDate">${pubdate}</div>
+            <div class="TOCmarker" ${ChapterIsActive?'style="background-color: rgba(var(--ColorSecondary),1"':''}></div>
+            <div id="TOC-CH${nChap}-STATE" class="ChapterState" style="height:${percent}%"></div>
+            <div id="TOC-CH${nChap}-NUM" class="TOC ChapterNumber"><span>${('00'+nDisplayed).slice(-2)}</span></div>
+            <div id="TOC-CH${nChap}-DESC" class="TOC ChapterDescription">
+                <div id="TOC-CH${nChap}-NAME" class="TOC ChapterName">${name}</div>
+                <div id="TOC-CH${nChap}-SYN" class="TOC ChapterSynopsis">${synopsis}</div>
+            </div>            
+        </div>
+    `;
+    return result;
+}
+
+function pad(num, size) {
+    var s = "000000000" + num;
+    return s.substr(s.length-size);
+}
+function AdjustedIndex(index) {
+    return (index < 2)?0:index-PrologueChapters;
+}
 async function BuildTOC() {
     //console.debug("Building the Table Of Contents...");
     eTOC.innerHTML = ''; //TOC clear ------------------------//     
@@ -349,7 +399,6 @@ async function BuildTOC() {
     let releaseday = dCHAPTER.date;
     let lastrelease = releaseday + 0;
 
-    /*
     //console.log(`${today}, ${startday}, ${releaseday}`)
     let ChapterMaxNumberT = 0;
       
@@ -358,6 +407,12 @@ async function BuildTOC() {
     let statChapterTypes = [0,0,0,0];
     let statReleaseDay = [];
 
+    Object.entries(TOC_STORY[PARAMS.Story]['toc']).forEach( ([index,chapter]) => {
+
+    });
+
+    /*
+    
     jSTORY.Manuscript.forEach( parcel => {
         let pType = parcel.DocType;
         let pAct = parcel.ActNum;
