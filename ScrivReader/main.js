@@ -69,7 +69,7 @@ async function LoadPreferences() {
             
             CurrentChapter = STORY[VarChapter];
 
-            console.error(CurrentChapter);
+            //console.error(CurrentChapter);
 
             let newstate = (PREFS.DisplayMode=="Dark")?0:1;
             ROOT.style.setProperty("--IconState",`invert(${newstate})`)
@@ -213,7 +213,7 @@ function ParseStory(data) {
             let eNextPub = parseFloat(entry.NextPublish);
             let eSynopsis = entry.Synopsis;
             let eID = (entry.VerboseOverride==undefined)?(entry.ActNum-1+"."+parseFloat(entry.ChapterFull-PrologueChapters)):entry.VerboseOverride;
-            let eRevisionNotes = (entry.RevisionNotes!=true)?((REVNOTES[ActiveStory][eID]==undefined)?undefined:REVNOTES[ActiveStory][eID]):entry.RevisionNotes;
+            let eRevisionNotes = (entry.AuthorNotes!="")?entry.AuthorNotes:undefined;/*((REVNOTES[ActiveStory][eID]==undefined)?undefined:REVNOTES[ActiveStory][eID]):entry.RevisionNotes;/**/
             let ePublishOn = entry.PublishOn;
             let eStatus = entry.Status;
 
@@ -638,7 +638,7 @@ function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew,sta
                                                                                                                  .replaceAll("First Draft","First")
                                                                                                                  .replaceAll("Revised Draft","Second")
                                                                                                                  .replaceAll("Final Draft","Final")} ${PercentComplete}</div>`;
-    console.warn(WorkState)
+    //console.warn(WorkState)
     let result = `    
         <div id="TOC-CH${nChap}" ${ChapterInteraction}> 
             <div id="TOC-CH${nChap}-DATE" class="TOC ChapterDate">${pubdate}</div>
