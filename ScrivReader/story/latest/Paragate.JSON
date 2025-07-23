@@ -36,6 +36,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "100",
       "GivenName": "An Introduction (In Parts)",
       "NextPublish": "7",
       "PublishOn": "",
@@ -51,7 +52,7 @@
       "AuthorNotes": "",
       "Index": 2,
       "Label": "Paragate",
-      "Status": "Final Draft",
+      "Status": "Completed",
       "Keywords": "",
       "UUID": "1",
       "Synopsis": "A split prologue between Cody and Katiya.",
@@ -70,6 +71,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "100",
       "AutoNamePart": 1,
       "AutoNameFull": 1,
       "ActNum": 1,
@@ -83,7 +85,7 @@
       "DoSceneNum": "True",
       "Index": 3,
       "Label": "Paragate&mdash;Bonus",
-      "Status": "No Status",
+      "Status": "Completed",
       "Keywords": "",
       "UUID": "2",
       "Synopsis": "",
@@ -130,6 +132,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "95",
       "GivenName": "Robot Boy",
       "NextPublish": "7",
       "PublishOn": "",
@@ -164,6 +167,7 @@
     {
       "DocType": "Scene",
       "GivenName": "Robot Boy",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 2,
       "ActNum": 2,
@@ -195,6 +199,7 @@
     {
       "DocType": "Scene",
       "GivenName": "Robot Boy",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 3,
       "ActNum": 2,
@@ -226,6 +231,7 @@
     {
       "DocType": "Scene",
       "GivenName": "Robot Boy",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 4,
       "ActNum": 2,
@@ -256,6 +262,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "95",
       "GivenName": "Tiger Girl",
       "NextPublish": "7",
       "PublishOn": "",
@@ -290,6 +297,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 5,
       "ActNum": 2,
@@ -321,6 +329,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 6,
       "ActNum": 2,
@@ -352,6 +361,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 7,
       "ActNum": 2,
@@ -383,6 +393,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 8,
       "ActNum": 2,
@@ -413,6 +424,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "95",
       "GivenName": "Firsthand Home",
       "NextPublish": "7",
       "PublishOn": "",
@@ -447,6 +459,7 @@
     {
       "DocType": "Scene",
       "GivenName": "Firsthand Home",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 9,
       "ActNum": 2,
@@ -478,6 +491,7 @@
     {
       "DocType": "Scene",
       "GivenName": "Firsthand Home",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 10,
       "ActNum": 2,
@@ -509,6 +523,7 @@
     {
       "DocType": "Scene",
       "GivenName": "Firsthand Home",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 11,
       "ActNum": 2,
@@ -539,6 +554,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "95",
       "GivenName": "Secondhand Cottage",
       "NextPublish": "7",
       "PublishOn": "",
@@ -573,6 +589,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 12,
       "ActNum": 2,
@@ -604,6 +621,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 13,
       "ActNum": 2,
@@ -635,6 +653,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 14,
       "ActNum": 2,
@@ -666,6 +685,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 15,
       "ActNum": 2,
@@ -696,6 +716,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "92",
       "GivenName": "A Past Outgrown",
       "NextPublish": "7",
       "PublishOn": "",
@@ -730,6 +751,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 16,
       "ActNum": 2,
@@ -761,6 +783,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 17,
       "ActNum": 2,
@@ -791,6 +814,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "90",
       "GivenName": "A Future Foretold",
       "NextPublish": "7",
       "PublishOn": "",
@@ -825,6 +849,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 18,
       "ActNum": 2,
@@ -856,6 +881,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 19,
       "ActNum": 2,
@@ -887,6 +913,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 20,
       "ActNum": 2,
@@ -917,6 +944,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "92",
       "GivenName": "Strangers To Enemies",
       "NextPublish": "7",
       "PublishOn": "",
@@ -951,6 +979,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 21,
       "ActNum": 2,
@@ -982,6 +1011,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 22,
       "ActNum": 2,
@@ -1012,6 +1042,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "92",
       "GivenName": "Enemies To Combatants",
       "NextPublish": "7",
       "PublishOn": "",
@@ -1046,6 +1077,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 23,
       "ActNum": 2,
@@ -1077,6 +1109,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 24,
       "ActNum": 2,
@@ -1108,6 +1141,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 25,
       "ActNum": 2,
@@ -1139,6 +1173,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 26,
       "ActNum": 2,
@@ -1169,6 +1204,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "92",
       "GivenName": "Strategic Retreat",
       "NextPublish": "7",
       "PublishOn": "",
@@ -1203,6 +1239,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 27,
       "ActNum": 2,
@@ -1234,6 +1271,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 28,
       "ActNum": 2,
@@ -1265,6 +1303,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 29,
       "ActNum": 2,
@@ -1295,6 +1334,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "90",
       "GivenName": "Surprise Approach",
       "NextPublish": "7",
       "PublishOn": "",
@@ -1329,6 +1369,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 30,
       "ActNum": 2,
@@ -1360,6 +1401,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 31,
       "ActNum": 2,
@@ -1390,6 +1432,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "80",
       "GivenName": "Anxiety and Avoidance",
       "NextPublish": "7",
       "PublishOn": "212",
@@ -1424,6 +1467,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 32,
       "ActNum": 2,
@@ -1455,6 +1499,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 33,
       "ActNum": 2,
@@ -1485,6 +1530,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "75",
       "GivenName": "Ennui and Excoriation",
       "NextPublish": "7",
       "PublishOn": "",
@@ -1519,6 +1565,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 34,
       "ActNum": 2,
@@ -1550,6 +1597,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 35,
       "ActNum": 2,
@@ -1581,6 +1629,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 36,
       "ActNum": 2,
@@ -1611,6 +1660,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "75",
       "GivenName": "Knocking At The Door",
       "NextPublish": "7",
       "PublishOn": "",
@@ -1645,6 +1695,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 37,
       "ActNum": 2,
@@ -1676,6 +1727,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 38,
       "ActNum": 2,
@@ -1736,6 +1788,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "60",
       "GivenName": "The Sleeping Knight",
       "NextPublish": "7",
       "PublishOn": "",
@@ -1770,6 +1823,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 39,
       "ActNum": 3,
@@ -1801,6 +1855,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 40,
       "ActNum": 3,
@@ -1831,6 +1886,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "45",
       "GivenName": "Luddite By Chance",
       "NextPublish": "7",
       "PublishOn": "",
@@ -1865,6 +1921,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 41,
       "ActNum": 3,
@@ -1896,6 +1953,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 42,
       "ActNum": 3,
@@ -1927,6 +1985,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 43,
       "ActNum": 3,
@@ -1957,6 +2016,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "45",
       "GivenName": "Technophile By Choice",
       "NextPublish": "7",
       "PublishOn": "",
@@ -1991,6 +2051,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 44,
       "ActNum": 3,
@@ -2022,6 +2083,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 45,
       "ActNum": 3,
@@ -2053,6 +2115,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 46,
       "ActNum": 3,
@@ -2083,6 +2146,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "40",
       "GivenName": "Back To Business",
       "NextPublish": "7",
       "PublishOn": "",
@@ -2117,6 +2181,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 47,
       "ActNum": 3,
@@ -2148,6 +2213,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 48,
       "ActNum": 3,
@@ -2179,6 +2245,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 49,
       "ActNum": 3,
@@ -2209,6 +2276,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "30",
       "GivenName": "Bonus&mdash;Overnight",
       "NextPublish": "7",
       "PublishOn": "",
@@ -2243,6 +2311,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 50,
       "ActNum": 3,
@@ -2274,6 +2343,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 51,
       "ActNum": 3,
@@ -2305,6 +2375,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 52,
       "ActNum": 3,
@@ -2335,6 +2406,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "40",
       "GivenName": "Onward To Chaos",
       "NextPublish": "7",
       "PublishOn": "",
@@ -2369,6 +2441,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 53,
       "ActNum": 3,
@@ -2400,6 +2473,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 54,
       "ActNum": 3,
@@ -2431,6 +2505,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 55,
       "ActNum": 3,
@@ -2462,6 +2537,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 56,
       "ActNum": 3,
@@ -2492,6 +2568,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "50",
       "GivenName": "Civillian Combat",
       "NextPublish": "7",
       "PublishOn": "",
@@ -2526,6 +2603,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 57,
       "ActNum": 3,
@@ -2557,6 +2635,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 58,
       "ActNum": 3,
@@ -2587,6 +2666,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "50",
       "GivenName": "Warrior Business",
       "NextPublish": "7",
       "PublishOn": "",
@@ -2621,6 +2701,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 59,
       "ActNum": 3,
@@ -2652,6 +2733,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 60,
       "ActNum": 3,
@@ -2683,6 +2765,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 61,
       "ActNum": 3,
@@ -2714,6 +2797,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 62,
       "ActNum": 3,
@@ -2744,6 +2828,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "45",
       "GivenName": "Domestic Relations",
       "NextPublish": "7",
       "PublishOn": "",
@@ -2778,6 +2863,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 63,
       "ActNum": 3,
@@ -2809,6 +2895,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 64,
       "ActNum": 3,
@@ -2840,6 +2927,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 65,
       "ActNum": 3,
@@ -2870,6 +2958,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "45",
       "GivenName": "Foreign Affairs",
       "NextPublish": "7",
       "PublishOn": "",
@@ -2904,6 +2993,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 66,
       "ActNum": 3,
@@ -2935,6 +3025,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 67,
       "ActNum": 3,
@@ -2966,6 +3057,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 68,
       "ActNum": 3,
@@ -2997,6 +3089,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 69,
       "ActNum": 3,
@@ -3028,6 +3121,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 5,
       "AutoNameFull": 70,
       "ActNum": 3,
@@ -3059,6 +3153,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 6,
       "AutoNameFull": 71,
       "ActNum": 3,
@@ -3089,6 +3184,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Losing To Fear",
       "NextPublish": "7",
       "PublishOn": "",
@@ -3123,6 +3219,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 72,
       "ActNum": 3,
@@ -3154,6 +3251,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 73,
       "ActNum": 3,
@@ -3185,6 +3283,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 74,
       "ActNum": 3,
@@ -3215,6 +3314,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Failing To Launch",
       "NextPublish": "7",
       "PublishOn": "",
@@ -3249,6 +3349,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 75,
       "ActNum": 3,
@@ -3280,6 +3381,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 76,
       "ActNum": 3,
@@ -3311,6 +3413,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 77,
       "ActNum": 3,
@@ -3342,6 +3445,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 78,
       "ActNum": 3,
@@ -3372,6 +3476,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Friendly Fire",
       "NextPublish": "7",
       "PublishOn": "",
@@ -3406,6 +3511,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 79,
       "ActNum": 3,
@@ -3437,6 +3543,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 80,
       "ActNum": 3,
@@ -3468,6 +3575,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 81,
       "ActNum": 3,
@@ -3499,6 +3607,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 82,
       "ActNum": 3,
@@ -3529,6 +3638,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "A House Divided",
       "NextPublish": "7",
       "PublishOn": "",
@@ -3563,6 +3673,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 83,
       "ActNum": 3,
@@ -3594,6 +3705,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 84,
       "ActNum": 3,
@@ -3625,6 +3737,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 85,
       "ActNum": 3,
@@ -3656,6 +3769,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 86,
       "ActNum": 3,
@@ -3716,6 +3830,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Cold War",
       "NextPublish": "7",
       "PublishOn": "",
@@ -3750,6 +3865,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 87,
       "ActNum": 4,
@@ -3781,6 +3897,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 88,
       "ActNum": 4,
@@ -3812,6 +3929,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 89,
       "ActNum": 4,
@@ -3843,6 +3961,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 90,
       "ActNum": 4,
@@ -3873,6 +3992,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Warm Solitude",
       "NextPublish": "7",
       "PublishOn": "",
@@ -3907,6 +4027,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 91,
       "ActNum": 4,
@@ -3938,6 +4059,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 92,
       "ActNum": 4,
@@ -3969,6 +4091,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 93,
       "ActNum": 4,
@@ -3999,6 +4122,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Prometheus",
       "NextPublish": "7",
       "PublishOn": "",
@@ -4033,6 +4157,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 94,
       "ActNum": 4,
@@ -4064,6 +4189,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 95,
       "ActNum": 4,
@@ -4095,6 +4221,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 96,
       "ActNum": 4,
@@ -4125,6 +4252,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Once Lovers",
       "NextPublish": "7",
       "PublishOn": "",
@@ -4159,6 +4287,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 97,
       "ActNum": 4,
@@ -4190,6 +4319,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 98,
       "ActNum": 4,
@@ -4221,6 +4351,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 99,
       "ActNum": 4,
@@ -4252,6 +4383,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 100,
       "ActNum": 4,
@@ -4282,6 +4414,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Once Rivals",
       "NextPublish": "7",
       "PublishOn": "",
@@ -4316,6 +4449,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 101,
       "ActNum": 4,
@@ -4347,6 +4481,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 102,
       "ActNum": 4,
@@ -4378,6 +4513,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 103,
       "ActNum": 4,
@@ -4408,6 +4544,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Cold Sweat",
       "NextPublish": "7",
       "PublishOn": "",
@@ -4442,6 +4579,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 104,
       "ActNum": 4,
@@ -4473,6 +4611,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 105,
       "ActNum": 4,
@@ -4504,6 +4643,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 106,
       "ActNum": 4,
@@ -4535,6 +4675,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 107,
       "ActNum": 4,
@@ -4565,6 +4706,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Heating Up",
       "NextPublish": "7",
       "PublishOn": "",
@@ -4599,6 +4741,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 108,
       "ActNum": 4,
@@ -4630,6 +4773,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 109,
       "ActNum": 4,
@@ -4661,6 +4805,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 110,
       "ActNum": 4,
@@ -4691,6 +4836,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Forced Reunion",
       "NextPublish": "7",
       "PublishOn": "",
@@ -4725,6 +4871,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 111,
       "ActNum": 4,
@@ -4756,6 +4903,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 112,
       "ActNum": 4,
@@ -4787,6 +4935,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 113,
       "ActNum": 4,
@@ -4818,6 +4967,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 114,
       "ActNum": 4,
@@ -4848,6 +4998,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Firebrands",
       "NextPublish": "7",
       "PublishOn": "",
@@ -4882,6 +5033,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 115,
       "ActNum": 4,
@@ -4913,6 +5065,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 116,
       "ActNum": 4,
@@ -4944,6 +5097,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 117,
       "ActNum": 4,
@@ -4974,6 +5128,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Professional Death",
       "NextPublish": "7",
       "PublishOn": "",
@@ -5008,6 +5163,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 118,
       "ActNum": 4,
@@ -5039,6 +5195,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 119,
       "ActNum": 4,
@@ -5070,6 +5227,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 120,
       "ActNum": 4,
@@ -5100,6 +5258,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Physical Demise",
       "NextPublish": "7",
       "PublishOn": "",
@@ -5134,6 +5293,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 121,
       "ActNum": 4,
@@ -5165,6 +5325,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 122,
       "ActNum": 4,
@@ -5196,6 +5357,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 123,
       "ActNum": 4,
@@ -5227,6 +5389,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 124,
       "ActNum": 4,
@@ -5257,6 +5420,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Without You",
       "NextPublish": "7",
       "PublishOn": "",
@@ -5291,6 +5455,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 125,
       "ActNum": 4,
@@ -5322,6 +5487,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 126,
       "ActNum": 4,
@@ -5353,6 +5519,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 127,
       "ActNum": 4,
@@ -5383,6 +5550,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Without Me",
       "NextPublish": "7",
       "PublishOn": "",
@@ -5417,6 +5585,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 128,
       "ActNum": 4,
@@ -5448,6 +5617,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 129,
       "ActNum": 4,
@@ -5479,6 +5649,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 130,
       "ActNum": 4,
@@ -5510,6 +5681,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 131,
       "ActNum": 4,
@@ -5570,6 +5742,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Bottoming Out",
       "NextPublish": "7",
       "PublishOn": "",
@@ -5604,6 +5777,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 132,
       "ActNum": 5,
@@ -5635,6 +5809,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 133,
       "ActNum": 5,
@@ -5666,6 +5841,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 134,
       "ActNum": 5,
@@ -5697,6 +5873,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 135,
       "ActNum": 5,
@@ -5727,6 +5904,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Crossing Over",
       "NextPublish": "7",
       "PublishOn": "",
@@ -5761,6 +5939,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 136,
       "ActNum": 5,
@@ -5792,6 +5971,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 137,
       "ActNum": 5,
@@ -5822,6 +6002,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Reaching Up",
       "NextPublish": "7",
       "PublishOn": "",
@@ -5856,6 +6037,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 138,
       "ActNum": 5,
@@ -5887,6 +6069,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 139,
       "ActNum": 5,
@@ -5918,6 +6101,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 140,
       "ActNum": 5,
@@ -5949,6 +6133,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 141,
       "ActNum": 5,
@@ -5979,6 +6164,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Radio StaticHarsh Noise",
       "NextPublish": "7",
       "PublishOn": "",
@@ -6013,6 +6199,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 142,
       "ActNum": 5,
@@ -6044,6 +6231,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 143,
       "ActNum": 5,
@@ -6075,6 +6263,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 144,
       "ActNum": 5,
@@ -6105,6 +6294,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Eutectic Point",
       "NextPublish": "7",
       "PublishOn": "",
@@ -6139,6 +6329,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 145,
       "ActNum": 5,
@@ -6170,6 +6361,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 146,
       "ActNum": 5,
@@ -6201,6 +6393,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 147,
       "ActNum": 5,
@@ -6231,6 +6424,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Annealment",
       "NextPublish": "7",
       "PublishOn": "",
@@ -6265,6 +6459,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 148,
       "ActNum": 5,
@@ -6296,6 +6491,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 149,
       "ActNum": 5,
@@ -6326,6 +6522,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "In Loving Memory",
       "NextPublish": "7",
       "PublishOn": "",
@@ -6360,6 +6557,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 150,
       "ActNum": 5,
@@ -6391,6 +6589,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 151,
       "ActNum": 5,
@@ -6422,6 +6621,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 152,
       "ActNum": 5,
@@ -6452,6 +6652,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "In Future Grief",
       "NextPublish": "7",
       "PublishOn": "",
@@ -6486,6 +6687,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 153,
       "ActNum": 5,
@@ -6517,6 +6719,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 154,
       "ActNum": 5,
@@ -6548,6 +6751,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 155,
       "ActNum": 5,
@@ -6578,6 +6782,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Legacy Hire",
       "NextPublish": "7",
       "PublishOn": "",
@@ -6612,6 +6817,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 156,
       "ActNum": 5,
@@ -6643,6 +6849,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 157,
       "ActNum": 5,
@@ -6674,6 +6881,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 158,
       "ActNum": 5,
@@ -6704,6 +6912,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Liftoff",
       "NextPublish": "7",
       "PublishOn": "",
@@ -6738,6 +6947,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 159,
       "ActNum": 5,
@@ -6769,6 +6979,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 160,
       "ActNum": 5,
@@ -6799,6 +7010,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Oscar Mike",
       "NextPublish": "7",
       "PublishOn": "",
@@ -6833,6 +7045,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 161,
       "ActNum": 5,
@@ -6864,6 +7077,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 162,
       "ActNum": 5,
@@ -6895,6 +7109,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 163,
       "ActNum": 5,
@@ -6925,6 +7140,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Counter-Strike",
       "NextPublish": "7",
       "PublishOn": "",
@@ -6959,6 +7175,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 164,
       "ActNum": 5,
@@ -6990,6 +7207,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 165,
       "ActNum": 5,
@@ -7020,6 +7238,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Apotheosis",
       "NextPublish": "7",
       "PublishOn": "",
@@ -7054,6 +7273,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 166,
       "ActNum": 5,
@@ -7085,6 +7305,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 167,
       "ActNum": 5,
@@ -7115,6 +7336,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Visions Of Fire",
       "NextPublish": "7",
       "PublishOn": "",
@@ -7149,6 +7371,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 168,
       "ActNum": 5,
@@ -7180,6 +7403,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 169,
       "ActNum": 5,
@@ -7211,6 +7435,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 170,
       "ActNum": 5,
@@ -7271,6 +7496,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Parasmagate",
       "NextPublish": "7",
       "PublishOn": "",
@@ -7305,6 +7531,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 171,
       "ActNum": 6,
@@ -7336,6 +7563,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 172,
       "ActNum": 6,
@@ -7367,6 +7595,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 173,
       "ActNum": 6,
@@ -7398,6 +7627,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 4,
       "AutoNameFull": 174,
       "ActNum": 6,
@@ -7428,6 +7658,7 @@
     },
     {
       "DocType": "Chapter",
+      "PercentComplete": "",
       "GivenName": "Threaded Echoes",
       "NextPublish": "7",
       "PublishOn": "",
@@ -7462,6 +7693,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 1,
       "AutoNameFull": 175,
       "ActNum": 6,
@@ -7493,6 +7725,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 2,
       "AutoNameFull": 176,
       "ActNum": 6,
@@ -7524,6 +7757,7 @@
     {
       "DocType": "Scene",
       "GivenName": "",
+      "PercentComplete": "",
       "AutoNamePart": 3,
       "AutoNameFull": 177,
       "ActNum": 6,
@@ -7557,5 +7791,5 @@
   "Author": "SavantGuarde",
   "Project": "Main Title",
   "Nickname": "Short Title",
-  "WordCount": "112,751"
+  "WordCount": "113,008"
 }

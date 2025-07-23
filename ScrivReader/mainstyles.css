@@ -971,7 +971,7 @@ div.SettingBox {
     transform: scaleY(90%);
 }
 
-div.DebugStatus {
+.DebugStatus {
     position:relative;
     right: 15px;
     top:50%;
@@ -990,18 +990,21 @@ div.DebugStatus {
     /*box-shadow: 0px 0px 5px 1px black;/**/
     font-weight: 600;
 }
-div.NoStatus, div.Unwritten {
+.DS-NoStatus, .DS-Unwritten {
     background-color: dimgray;
 }
-div.ToDo, div.InProgress {
+.DS-ToDo, .DS-InProgress {
     background-color: red;
 }
-div.FirstDraft {
+.DS-FirstDraft {
     background-color: orangered;
 }
-div.RevisedDraft {
+.DS-RevisedDraft {
     background-color: orange;
 }
-div.FinalDraft, div.Done {
+.DS-FinalDraft {
+    background-color: rgb(123, 191, 71);
+}
+.DS-Completed {
     background-color: green;
 }

@@ -257,6 +257,13 @@ function ParseStory(data) {
                 "WordCount":0
             });
             STORY[STORY.length-1].BodyFormatted.push(`<h3 id="title_${entry.ChapterFull}" class="${ePerspective} Title">${eTitle}</h3>`);
+
+            let PercentComplete = parseFloat(entry.PercentComplete)
+            PercentComplete = isNaN(PercentComplete) ? 0 : PercentComplete < 0 ? 0 : PercentComplete > 100 ? 100 : Math.round(PercentComplete);
+            STORY[STORY.length-1].BodyFormatted.push( (PermissionLevel <= 1) ? "" : `<div style="width:fit-content;position:relative;left:50%;transform:translateX(-50%);font-size:1.2em;border: 1px solid var(--TextColor); padding:8px; border-radius: 10px;"><span style="font-size:1.2em;color:var(--TextColor);font-family:var(--ActiveTitle);margin:20px;">Revision: </span><span class="DebugStatus DS-${entry.Status.replaceAll(" ","")}" style="font-size:1em;">${entry.Status.replaceAll("No Status","Unwritten")
+                                                                                                                 .replaceAll("First Draft","First")
+                                                                                                                 .replaceAll("Revised Draft","Second")
+                                                                                                                 .replaceAll("Final Draft","Final")}</span> <span class="DebugStatus DS-${entry.Status.replaceAll(" ","")}" style="font-size:1em;">${PercentComplete}</span></div>`);
             STORY[STORY.length-1].BodyFormatted.push(`<h3 id="sub_${entry.ChapterFull}" class="${ePerspective} Subtitle">${prefix + eSubtitle + suffix}</h3>`);
             // If in developer mode, add commentary.
             if (PermissionLevel > 1 && eRevisionNotes != undefined) {
@@ -624,7 +631,13 @@ function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew,sta
     //console.info(MaximumChapter)
     let ChapterInteraction = ChapterIsActive?(`class="TOC ChapterRow activerow ${isnew?'newrow':''}"  onclick="CurrentChapter=STORY[${nChap-1}];PlaceOrOverlay(CurrentChapter);SaveState();ToggleTOC();"`):(`class="TOC ChapterRow inactiverow ${isnew?'newrow':''}"`);
 
-    let WorkState = (PermissionLevel <= 1) ? "" : `<div class="DebugStatus ${status.replaceAll(" ","")}">${status.replaceAll("No Status","Unwritten")}</div>`;
+    let PercentComplete = parseFloat(status.PercentComplete)
+    PercentComplete = isNaN(PercentComplete) ? 0 : PercentComplete < 0 ? 0 : PercentComplete > 100 ? 100 : Math.round(PercentComplete);
+            
+    let WorkState = (PermissionLevel <= 1) ? "" : `<div class="DebugStatus DS-${status.replaceAll(" ","")}">${status.replaceAll("No Status","Unwritten")
+                                                                                                                 .replaceAll("First Draft","First")
+                                                                                                                 .replaceAll("Revised Draft","Second")
+                                                                                                                 .replaceAll("Final Draft","Final")} ${PercentComplete}</div>`;
     console.warn(WorkState)
     let result = `    
         <div id="TOC-CH${nChap}" ${ChapterInteraction}> 
