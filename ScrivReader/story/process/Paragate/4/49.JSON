@@ -6,7 +6,7 @@
   "ChapterNumber": 49,
   "Synopsis": "Katiya reveals the truth to her family.",
   "RevNotes": "",
-  "ID": "4.49",
+  "ID": "4.48",
   "Body": [
     "",
     "",
@@ -17,6 +17,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 471,
   "ReleaseDate": [
     "04",

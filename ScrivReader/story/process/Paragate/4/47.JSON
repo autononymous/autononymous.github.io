@@ -6,7 +6,7 @@
   "ChapterNumber": 47,
   "Synopsis": "Cody and Katiya test something that will aid both of them.",
   "RevNotes": "",
-  "ID": "4.47",
+  "ID": "4.46",
   "Body": [
     "",
     ""
@@ -15,6 +15,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 457,
   "ReleaseDate": [
     "04",

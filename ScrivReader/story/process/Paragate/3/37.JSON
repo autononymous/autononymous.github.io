@@ -6,7 +6,7 @@
   "ChapterNumber": 37,
   "Synopsis": "Chaos erupts in Blackwater: Katiya responds.",
   "RevNotes": "",
-  "ID": "3.37",
+  "ID": "3.36",
   "Body": [
     "",
     "",
@@ -17,6 +17,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 387,
   "ReleaseDate": [
     "01",

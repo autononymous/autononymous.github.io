@@ -6,7 +6,7 @@
   "ChapterNumber": 27,
   "Synopsis": "They lash out at each other at the bottom of their rope.",
   "RevNotes": "",
-  "ID": "2.27",
+  "ID": "2.26",
   "Body": [
     "",
     "",
@@ -19,6 +19,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 317,
   "ReleaseDate": [
     "11",

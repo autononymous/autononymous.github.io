@@ -6,7 +6,7 @@
   "ChapterNumber": 55,
   "Synopsis": "Gaffesend is a city in flames. Winter has come.",
   "RevNotes": "",
-  "ID": "4.55",
+  "ID": "4.54",
   "Body": [
     "",
     "",
@@ -17,6 +17,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 513,
   "ReleaseDate": [
     "05",

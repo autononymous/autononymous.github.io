@@ -6,7 +6,7 @@
   "ChapterNumber": 25,
   "Synopsis": "Katiya&apos;s performance takes a dive.",
   "RevNotes": "",
-  "ID": "2.25",
+  "ID": "2.24",
   "Body": [
     "",
     "",
@@ -17,6 +17,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 303,
   "ReleaseDate": [
     "10",

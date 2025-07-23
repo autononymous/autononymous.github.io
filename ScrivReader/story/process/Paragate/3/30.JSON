@@ -6,7 +6,7 @@
   "ChapterNumber": 30,
   "Synopsis": "Decades earlier, Katiya plays with Bertram.",
   "RevNotes": "",
-  "ID": "3.30",
+  "ID": "3.29",
   "Body": [
     "",
     "",
@@ -17,6 +17,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 338,
   "ReleaseDate": [
     "12",

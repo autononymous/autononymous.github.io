@@ -6,7 +6,7 @@
   "ChapterNumber": 46,
   "Synopsis": "Cody refines his last chance.",
   "RevNotes": "",
-  "ID": "4.46",
+  "ID": "4.45",
   "Body": [
     "",
     "",
@@ -17,6 +17,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 450,
   "ReleaseDate": [
     "03",

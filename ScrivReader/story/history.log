@@ -8979,3 +8979,43 @@ Filename C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivRe
 ]
 > Compiling existing files into Master Table Of Contents...
 > Completed for ['Firebrand', 'Paragate'].
+> Running from ScrivenerExport.
+FILEIN ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-250722.json
+> Accepted argument "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-250722.json".
+> Trying fullname path for C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-250722.json.
+Filename C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-250722.json was direct path.
+> Scrivener-exported story "Paragate" has been post-processed.
+  |	Entries:	236
+  |	Chapters:	57
+  |	Scenes: 	173
+> There are an average of 3.04 scenes per chapter.
+> Generating "LATEST" file...
+[
+  [],
+  [],
+  []
+]
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> Running from ScrivenerExport.
+FILEIN ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-250723.json
+> Accepted argument "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-250723.json".
+> Trying fullname path for C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-250723.json.
+Filename C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-250723.json was direct path.
+> Scrivener-exported story "Paragate" has been post-processed.
+  |	Entries:	237
+  |	Chapters:	57
+  |	Scenes: 	174
+> There are an average of 3.05 scenes per chapter.
+> Generating "LATEST" file of unprocessed data...
+> Generating "RELEASED" file of processed data...
+> Generating "FULL" file of processed data...
+[
+  [],
+  [],
+  []
+]
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].

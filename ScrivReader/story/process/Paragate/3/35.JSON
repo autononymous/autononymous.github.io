@@ -6,7 +6,7 @@
   "ChapterNumber": 35,
   "Synopsis": "The two discover something new in their relationship.",
   "RevNotes": "",
-  "ID": "3.35",
+  "ID": "3.34",
   "Body": [
     "",
     "",
@@ -17,6 +17,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 373,
   "ReleaseDate": [
     "01",

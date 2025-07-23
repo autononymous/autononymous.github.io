@@ -6,7 +6,7 @@
   "ChapterNumber": 52,
   "Synopsis": "Both protagonists gear up for physical war.",
   "RevNotes": "",
-  "ID": "4.52",
+  "ID": "4.51",
   "Body": [
     "",
     "",
@@ -17,6 +17,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 492,
   "ReleaseDate": [
     "05",

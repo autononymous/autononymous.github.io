@@ -6,7 +6,7 @@
   "ChapterNumber": 32,
   "Synopsis": "Katiya confronts her boyfriend.",
   "RevNotes": "",
-  "ID": "3.32",
+  "ID": "3.31",
   "Body": [
     "",
     "",
@@ -19,6 +19,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 352,
   "ReleaseDate": [
     "12",

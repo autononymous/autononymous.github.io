@@ -6,7 +6,7 @@
   "ChapterNumber": 28,
   "Synopsis": "Blame makes them enemies once again.",
   "RevNotes": "",
-  "ID": "2.28",
+  "ID": "2.27",
   "Body": [
     "",
     "",
@@ -19,6 +19,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 324,
   "ReleaseDate": [
     "11",

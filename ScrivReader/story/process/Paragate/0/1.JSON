@@ -6,19 +6,20 @@
   "ChapterNumber": 1,
   "Synopsis": "A split prologue between Cody and Katiya.",
   "RevNotes": "",
-  "ID": "0.1",
+  "ID": "0.0",
   "Body": [
     "This is a custom section that runs on HTML."
   ],
   "BodyFormatted": [
     []
   ],
-  "Release": 73,
+  "IsPrologue": true,
+  "Release": 7,
   "ReleaseDate": [
-    "03",
-    "15",
+    "01",
+    "08",
     "2025",
-    "2025-03-15 00:00:00"
+    "2025-01-08 00:00:00"
   ],
   "Active": true,
   "Perspective": "Default",

@@ -6,7 +6,7 @@
   "ChapterNumber": 45,
   "Synopsis": "Denied by the town, Katiya must act alone, together.",
   "RevNotes": "",
-  "ID": "4.45",
+  "ID": "4.44",
   "Body": [
     "",
     "",
@@ -17,6 +17,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 443,
   "ReleaseDate": [
     "03",

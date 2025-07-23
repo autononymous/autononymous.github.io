@@ -6,7 +6,7 @@
   "ChapterNumber": 54,
   "Synopsis": "Katiya has a chance to reconcile a past defeat.",
   "RevNotes": "",
-  "ID": "4.54",
+  "ID": "4.53",
   "Body": [
     "",
     ""
@@ -15,6 +15,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 506,
   "ReleaseDate": [
     "05",

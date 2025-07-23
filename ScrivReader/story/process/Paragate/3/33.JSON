@@ -6,7 +6,7 @@
   "ChapterNumber": 33,
   "Synopsis": "Reed convinces Cody to do bro stuff.",
   "RevNotes": "",
-  "ID": "3.33",
+  "ID": "3.32",
   "Body": [
     "",
     "",
@@ -17,6 +17,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 359,
   "ReleaseDate": [
     "12",

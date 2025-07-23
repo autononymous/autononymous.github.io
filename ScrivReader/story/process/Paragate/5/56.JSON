@@ -6,7 +6,7 @@
   "ChapterNumber": 56,
   "Synopsis": "The survivors hold fast to the aftermath.",
   "RevNotes": "",
-  "ID": "5.56",
+  "ID": "5.55",
   "Body": [
     "",
     "",
@@ -19,6 +19,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 520,
   "ReleaseDate": [
     "06",

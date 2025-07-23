@@ -6,7 +6,7 @@
   "ChapterNumber": 40,
   "Synopsis": "Cody&apos;s dream hangs by a thread.",
   "RevNotes": "",
-  "ID": "3.40",
+  "ID": "3.39",
   "Body": [
     "",
     "",
@@ -17,6 +17,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 408,
   "ReleaseDate": [
     "02",

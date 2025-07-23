@@ -120,13 +120,23 @@ def ScrPostProcess(filename):
     TOCdict = {};
     StoryName = "";
     
+    DictReleased = [];
+    DictFull = [];
+    
+    TrueChapterNum = 0;
+    TrueSceneNum = 0;
+    
     infoCountChapter = 0;
     infoCountScene = 0;
     
     ThisType = "";
     WasType = "";
     
-    for i in range(nEntries):        
+    for i in range(nEntries):    
+        
+        if (i>0):
+            ScenePerspective = JS[i]["Perspective"] if ((JS[i]["Perspective"] != "Mixed") and (JS[i]["Perspective"] != "")) else JS[i-1]["Perspective"];
+        
         ThisType = JS[i]["DocType"]
         if (ThisType == "Act"):
             if (WasType == "Scene"): # This means Chapter Scene collection is over.
@@ -135,11 +145,7 @@ def ScrPostProcess(filename):
                 TOCdict.update({JS[i-1]["ChapterFull"]:TOCentry})
             pass
         elif (ThisType == "Chapter"):
-            if (WasType == "Scene"): # This means Chapter Scene collection is over.
-                StoryName = JS[i]["StoryName"]
-                PushChapter(ChapDict,StoryName);
-                TOCdict.update({JS[i-1]["ChapterFull"]:TOCentry})
-                
+            
             TensName = TensNames[int((int(JS[i]["ChapterFull"])  - int(JS[i]["ChapterFull"]) % 10)/10)]
             OnesName = OnesNames[int(JS[i]["ChapterFull"]) % 10]
             
@@ -147,6 +153,20 @@ def ScrPostProcess(filename):
             ChapterFullName = OnesNames[int(JS[i]["ChapterFull"])] if int(JS[i]["ChapterFull"]) <= 20 else (TensName + "-" + OnesName if OnesName != "Zero" else TensName)
             ReleaseYearDay = (int(JS[i]["NextPublish"]) + ReleaseYearDay) if (JS[i]["PublishOn"] == "") else int(JS[i]["PublishOn"])
             infoCountChapter = JS[i]["ChapterFull"];
+            TrueSceneNum = 0;
+            
+            if (WasType == "Scene"): # This means Chapter Scene collection is over.
+                StoryName = JS[i]["StoryName"]
+                PushChapter(ChapDict,StoryName);
+                TOCdict.update({JS[i-1]["ChapterFull"]:TOCentry})  
+                if(IsActive):
+                    DictReleased.append(ChapDict);
+                    DictFull.append(ChapDict);
+                else:
+                    DictFull.append(ChapDict);
+            
+            if(JS[i]["IsPrologue"] != "Yes"):
+                TrueChapterNum += 1;   
             
             ChapDict = {
                 "Story":JS[i]["StoryName"],
@@ -156,13 +176,14 @@ def ScrPostProcess(filename):
                 "ChapterNumber": JS[i]["ChapterFull"],
                 "Synopsis":JS[i]["Synopsis"],
                 "RevNotes":"",
-                "ID":str(int(JS[i]["ActNum"])-1) + "." + str(JS[i]["ChapterFull"]),
+                "ID":str(int(JS[i]["ActNum"])-1) + "." + str(TrueChapterNum),
                 "Body":[],
                 "BodyFormatted":[],
+                "IsPrologue":(JS[i]["IsPrologue"]=="Yes"),
                 "Release":ReleaseYearDay,
                 "ReleaseDate":DateYear(ReleaseYearDay),
                 "Active":IsActive,
-                "Perspective": JS[i]["Perspective"] if ((JS[i]["Perspective"] != "Mixed") and (JS[i]["Perspective"] != "")) else JS[i-1]["Perspective"],
+                "Perspective": ScenePerspective,
                 "Status":JS[i]["Status"],
                 "WordCount":0,
                 "Summary" : JS[i]["Summary"]
@@ -175,10 +196,11 @@ def ScrPostProcess(filename):
                 "ChapterNumber": JS[i]["ChapterFull"],
                 "Synopsis":JS[i]["Synopsis"],
                 "ID":str(int(JS[i]["ActNum"])-1) + "." + str(JS[i]["ChapterFull"]),
+                "IsPrologue":(JS[i]["IsPrologue"]=="Yes"),
                 "Release":ReleaseYearDay,
                 "ReleaseDate":DateYear(ReleaseYearDay),
                 "Active":IsActive,
-                "Perspective": JS[i]["Perspective"] if ((JS[i]["Perspective"] != "Mixed") and (JS[i]["Perspective"] != "")) else JS[i-1]["Perspective"],
+                "Perspective": ScenePerspective,
                 "Status":JS[i]["Status"],
                 "Summary" : JS[i]["Summary"]
             }
@@ -188,13 +210,18 @@ def ScrPostProcess(filename):
             infoCountScene += 1;
             Sentences = JS[i]["Body"].replace("</p>","</p>\n").split("\n")
             Section = [];
+            TrueSentenceNum = 0;
+            TrueSceneNum += 1;
             for Sentence in Sentences:
                 if not ('<p>' in Sentence):
                     pass
                     #print(js.dumps(ChapDict["BodyFormatted"],indent=2))
                     #print(Sentence)
                 else:
-                    Section.append(Sentence)            
+                    TrueSentenceNum += 1;
+                    
+                    FormattedSentence = Sentence.replace("<p>",'<p id="' + str(int(JS[i]["ActNum"])-1) + "." + str(JS[i]["ChapterFull"]) + "." + str(TrueSceneNum) + "." + str(TrueSentenceNum) + '" class="' + str(ScenePerspective) + '">' );
+                    Section.append(FormattedSentence)            
             ChapDict["BodyFormatted"].append(Section)     
         WasType = ThisType;
     PushChapter(ChapDict,StoryName);
@@ -202,9 +229,17 @@ def ScrPostProcess(filename):
         f.write(js.dumps(TOCdict));
     print('> Scrivener-exported story "' + str(StoryName) + '" has been post-processed.\n  |\tEntries:\t'+ str(i) + "\n  |\tChapters:\t" + str(infoCountChapter) + "\n  |\tScenes: \t" + str(infoCountScene) + "\n> There are an average of " + str(round(infoCountScene/infoCountChapter,2)) + " scenes per chapter.")
     
-    LogProcess('> Generating "LATEST" file...');   
+    LogProcess('> Generating "LATEST" file of unprocessed data...');   
     with open(import_path + 'latest/' + str(StoryName) + ".JSON", "w") as f:
         f.write(js.dumps(loaded,indent=2));
+        
+    LogProcess('> Generating "RELEASED" file of processed data...');   
+    with open(import_path + 'latest/' + str(StoryName) + "_R.JSON", "w") as f:
+        f.write(js.dumps(DictReleased,indent=2));
+        
+    LogProcess('> Generating "FULL" file of processed data...');   
+    with open(import_path + 'latest/' + str(StoryName) + "_F.JSON", "w") as f:
+        f.write(js.dumps(DictFull,indent=2));
 
     
     

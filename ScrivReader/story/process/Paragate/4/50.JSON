@@ -6,7 +6,7 @@
   "ChapterNumber": 50,
   "Synopsis": "Cody takes his shot from the bottom.",
   "RevNotes": "",
-  "ID": "4.50",
+  "ID": "4.49",
   "Body": [
     "",
     "",
@@ -17,6 +17,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 478,
   "ReleaseDate": [
     "04",

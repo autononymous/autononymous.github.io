@@ -6,7 +6,7 @@
   "ChapterNumber": 43,
   "Synopsis": "Refugees from Blackwater stay with Katiya.",
   "RevNotes": "",
-  "ID": "4.43",
+  "ID": "4.42",
   "Body": [
     "",
     ""
@@ -15,6 +15,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 429,
   "ReleaseDate": [
     "03",

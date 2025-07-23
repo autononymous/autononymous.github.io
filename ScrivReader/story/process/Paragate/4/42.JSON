@@ -6,7 +6,7 @@
   "ChapterNumber": 42,
   "Synopsis": "New revelations change the circumstances.",
   "RevNotes": "",
-  "ID": "4.42",
+  "ID": "4.41",
   "Body": [
     "",
     "",
@@ -19,6 +19,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 422,
   "ReleaseDate": [
     "02",

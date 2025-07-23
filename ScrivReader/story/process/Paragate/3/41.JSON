@@ -6,7 +6,7 @@
   "ChapterNumber": 41,
   "Synopsis": "The two debate escaping into the other&apos;s world forever.",
   "RevNotes": "",
-  "ID": "3.41",
+  "ID": "3.40",
   "Body": [
     "",
     "",
@@ -19,6 +19,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 415,
   "ReleaseDate": [
     "02",

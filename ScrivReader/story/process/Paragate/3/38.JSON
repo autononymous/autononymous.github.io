@@ -6,7 +6,7 @@
   "ChapterNumber": 38,
   "Synopsis": "Cody&apos;s workplace investigates an anomaly.",
   "RevNotes": "",
-  "ID": "3.38",
+  "ID": "3.37",
   "Body": [
     "",
     "",
@@ -17,6 +17,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 394,
   "ReleaseDate": [
     "01",

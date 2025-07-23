@@ -6,7 +6,7 @@
   "ChapterNumber": 53,
   "Synopsis": "An unnerving detail complicates Katiya&apos;s plan.",
   "RevNotes": "",
-  "ID": "4.53",
+  "ID": "4.52",
   "Body": [
     "",
     ""
@@ -15,6 +15,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 499,
   "ReleaseDate": [
     "05",

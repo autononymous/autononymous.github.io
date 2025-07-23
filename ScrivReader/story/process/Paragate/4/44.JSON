@@ -6,7 +6,7 @@
   "ChapterNumber": 44,
   "Synopsis": "Cody&apos;s friends arrive with an idea.",
   "RevNotes": "",
-  "ID": "4.44",
+  "ID": "4.43",
   "Body": [
     "",
     "",
@@ -19,6 +19,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 436,
   "ReleaseDate": [
     "03",

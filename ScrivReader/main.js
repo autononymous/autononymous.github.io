@@ -864,7 +864,8 @@ function runScrollEvents() {
     MODES.forEach( mode => {
         CHSET[mode] = ChannelSet(Keyframes[mode])
     })
-    ApplyColors();    
+    ApplyColors();
+    
 }
 
 function zoomImage(elem) {
@@ -930,8 +931,8 @@ async function setup() {
     } else {
         CurrentChapter = STORY[PREFS.StartChapter];
     }    
+    
     await PlaceOrOverlay(CurrentChapter);
-    SetScrollerEvents();
 
     SetInfo();
     SetMessageState();

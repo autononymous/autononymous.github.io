@@ -6,7 +6,7 @@
   "ChapterNumber": 34,
   "Synopsis": "Katiya&apos;s self-loathing puts Cody in danger.",
   "RevNotes": "",
-  "ID": "3.34",
+  "ID": "3.33",
   "Body": [
     "",
     "",
@@ -19,6 +19,7 @@
     [],
     []
   ],
+  "IsPrologue": false,
   "Release": 366,
   "ReleaseDate": [
     "01",
