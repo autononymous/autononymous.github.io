@@ -625,13 +625,13 @@ function TOChtmlACT(nAct,name) {
     TOCchapterTARGET = `TOC-ACT${nAct}-CHAPTERS`;
     return result;
 }
-function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew,status) {
+function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew,status,perc) {
     //console.info(`${nChap},${name},${synopsis},${pubdate},${nDisplayed},${percent},${isnew}`)
     ChapterIsActive = (nChap <= MaximumChapter);
     //console.info(MaximumChapter)
     let ChapterInteraction = ChapterIsActive?(`class="TOC ChapterRow activerow ${isnew?'newrow':''}"  onclick="CurrentChapter=STORY[${nChap-1}];PlaceOrOverlay(CurrentChapter);SaveState();ToggleTOC();"`):(`class="TOC ChapterRow inactiverow ${isnew?'newrow':''}"`);
 
-    let PercentComplete = parseFloat(status.PercentComplete)
+    let PercentComplete = parseFloat(perc)
     PercentComplete = isNaN(PercentComplete) ? 0 : PercentComplete < 0 ? 0 : PercentComplete > 100 ? 100 : Math.round(PercentComplete);
             
     let WorkState = (PermissionLevel <= 1) ? "" : `<div class="DebugStatus DS-${status.replaceAll(" ","")}">${status.replaceAll("No Status","Unwritten")
@@ -724,7 +724,8 @@ async function BuildTOC() {
                                                                             AdjustedIndex(parcel.ChapterFull),
                                                                             DatePercentage,
                                                                             ((today >= releaseday)&&(today <= (releaseday+7) )),
-                                                                            parcel.Status
+                                                                            parcel.Status,
+                                                                            parcel.PercentComplete
                                                                         );
                 // Calculating height of date progress bar:                  
 
