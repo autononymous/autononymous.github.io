@@ -618,12 +618,14 @@ function TOChtmlACT(nAct,name) {
     TOCchapterTARGET = `TOC-ACT${nAct}-CHAPTERS`;
     return result;
 }
-function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew) {
+function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew,status) {
     //console.info(`${nChap},${name},${synopsis},${pubdate},${nDisplayed},${percent},${isnew}`)
     ChapterIsActive = (nChap <= MaximumChapter);
     //console.info(MaximumChapter)
     let ChapterInteraction = ChapterIsActive?(`class="TOC ChapterRow activerow ${isnew?'newrow':''}"  onclick="CurrentChapter=STORY[${nChap-1}];PlaceOrOverlay(CurrentChapter);SaveState();ToggleTOC();"`):(`class="TOC ChapterRow inactiverow ${isnew?'newrow':''}"`);
 
+    let WorkState = (PermissionLevel <= 1) ? "" : `<div class="DebugStatus ${status.replaceAll(" ","")}">${status.replaceAll("No Status","Unwritten")}</div>`;
+    console.warn(WorkState)
     let result = `    
         <div id="TOC-CH${nChap}" ${ChapterInteraction}> 
             <div id="TOC-CH${nChap}-DATE" class="TOC ChapterDate">${pubdate}</div>
@@ -633,9 +635,11 @@ function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew) {
             <div id="TOC-CH${nChap}-DESC" class="TOC ChapterDescription">
                 <div id="TOC-CH${nChap}-NAME" class="TOC ChapterName">${name}</div>
                 <div id="TOC-CH${nChap}-SYN" class="TOC ChapterSynopsis">${synopsis}</div>
-            </div>            
+            </div> 
+            ${WorkState}           
         </div>
     `;
+
     return result;
 }
 
@@ -699,8 +703,16 @@ async function BuildTOC() {
                 RelDate = new Date(Date.parse(RelDate) + (86400000*parseFloat(NextPush)));
                 let EntryDateStr = `${pad(RelDate.getMonth()+1,2)}/${pad(RelDate.getDate(),2)}`// /${RelDate.getFullYear().toString().slice(2,4)}`
                 //console.warn(EntryDateStr)
-                document.getElementById(TOCchapterTARGET).innerHTML += TOChtmlCHAPTER(parcel.ChapterFull,parcel.GivenName,parcel.Synopsis,EntryDateStr,AdjustedIndex(parcel.ChapterFull),DatePercentage,
-                ((today >= releaseday)&&(today <= (releaseday+7) )) )
+                document.getElementById(TOCchapterTARGET).innerHTML += TOChtmlCHAPTER(
+                                                                            parcel.ChapterFull,
+                                                                            parcel.GivenName,
+                                                                            parcel.Synopsis,
+                                                                            EntryDateStr,
+                                                                            AdjustedIndex(parcel.ChapterFull),
+                                                                            DatePercentage,
+                                                                            ((today >= releaseday)&&(today <= (releaseday+7) )),
+                                                                            parcel.Status
+                                                                        );
                 // Calculating height of date progress bar:                  
 
                 if (today >= releaseday) {
@@ -733,6 +745,12 @@ async function BuildTOC() {
                 
                 startday = releaseday + 0;
                 lastrelease = releaseday + 0;
+
+                if(PermissionLevel > 1) {
+
+                }
+
+
                 break;
         }
     });

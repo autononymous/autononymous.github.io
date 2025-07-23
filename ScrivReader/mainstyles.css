@@ -969,4 +969,39 @@ div.SettingBox {
     margin-bottom:30px;
     opacity:0.8;
     transform: scaleY(90%);
-};
+}
+
+div.DebugStatus {
+    position:relative;
+    right: 15px;
+    top:50%;
+    height:fit-content;
+    /*background-color: var(--TextColor);/**/
+    color: var(--BackgroundColor);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    white-space:nowrap;
+    font-family: 'Arial Narrow';
+    font-size: 0.8em;
+    transform: translateY(-0.5em);
+    opacity:0.7;
+    /*border: 1px solid var(--TextColor);/**/
+    /*box-shadow: 0px 0px 5px 1px black;/**/
+    font-weight: 600;
+}
+div.NoStatus, div.Unwritten {
+    background-color: dimgray;
+}
+div.ToDo, div.InProgress {
+    background-color: red;
+}
+div.FirstDraft {
+    background-color: orangered;
+}
+div.RevisedDraft {
+    background-color: orange;
+}
+div.FinalDraft, div.Done {
+    background-color: green;
+}

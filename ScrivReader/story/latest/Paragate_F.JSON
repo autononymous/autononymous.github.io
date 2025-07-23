@@ -1847,7 +1847,7 @@
     ],
     "Active": false,
     "Perspective": "Cody",
-    "Status": "Revised Draft",
+    "Status": "First Draft",
     "WordCount": 0,
     "Summary": ""
   },
@@ -2028,7 +2028,7 @@
     ],
     "Active": false,
     "Perspective": "Cody",
-    "Status": "Revised Draft",
+    "Status": "First Draft",
     "WordCount": 0,
     "Summary": ""
   },
@@ -2227,7 +2227,7 @@
     ],
     "Active": false,
     "Perspective": "Cody",
-    "Status": "Revised Draft",
+    "Status": "First Draft",
     "WordCount": 0,
     "Summary": ""
   },
@@ -2375,7 +2375,7 @@
     ],
     "Active": false,
     "Perspective": "Cody",
-    "Status": "Revised Draft",
+    "Status": "First Draft",
     "WordCount": 0,
     "Summary": ""
   },
@@ -2720,7 +2720,7 @@
     ],
     "Active": false,
     "Perspective": "Katiya",
-    "Status": "Revised Draft",
+    "Status": "First Draft",
     "WordCount": 0,
     "Summary": ""
   },
@@ -2861,7 +2861,7 @@
     ],
     "Active": false,
     "Perspective": "Cody",
-    "Status": "Revised Draft",
+    "Status": "First Draft",
     "WordCount": 0,
     "Summary": ""
   },
@@ -3075,7 +3075,7 @@
     ],
     "Active": false,
     "Perspective": "Katiya",
-    "Status": "Revised Draft",
+    "Status": "First Draft",
     "WordCount": 0,
     "Summary": ""
   },
@@ -3225,7 +3225,7 @@
     ],
     "Active": false,
     "Perspective": "Cody",
-    "Status": "No Status",
+    "Status": "First Draft",
     "WordCount": 0,
     "Summary": ""
   },
@@ -3400,8 +3400,8 @@
       "2025-10-24 00:00:00"
     ],
     "Active": false,
-    "Perspective": "Default",
-    "Status": "No Status",
+    "Perspective": "Katiya",
+    "Status": "First Draft",
     "WordCount": 0,
     "Summary": ""
   },
@@ -3433,7 +3433,7 @@
       "2025-10-31 00:00:00"
     ],
     "Active": false,
-    "Perspective": "Default",
+    "Perspective": "Katiya",
     "Status": "No Status",
     "WordCount": 0,
     "Summary": ""
