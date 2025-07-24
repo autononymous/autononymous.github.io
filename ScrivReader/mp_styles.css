@@ -77,7 +77,7 @@ div.FOOTER
     left                :   0;
     height              :   var(--FooterHeight);
     width               :   100%;
-    text-align          :   center;
+    text-align          :   right;
     padding-top         :   5px;
     border-top          :   1px solid black;
     font-size           :   min(3vw,1.0em);
@@ -90,6 +90,19 @@ div.FOOTER
                                 transparent 30px
                             );
 }
+
+img.ACLOGO {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:70px;
+    filter:invert(0.9);
+    transition: filter 0.2s ease-in-out;
+}
+img.ACLOGO:hover {
+    filter:invert(0.8);
+}
+
 div.HEADER {
     position            :   absolute;
     height              :   var(--WindowHeight);
@@ -98,17 +111,27 @@ div.HEADER {
     top                 :   0;
 
 }
-div.HEADERWINDOW {
+div.HEADER > div {    
+    background-color    :   var(--AccentTwo);
     position            :   absolute;
     top                 :   var(--WindowMargin);
     height              :   calc( var(--WindowHeight) - ( 2.2 * var(--WindowMargin) ) );
     left                :   var(--WindowMargin);
     width               :   calc( 100% - ( var(--WindowMargin) * 2 ) );
+}
+div.HEADERWINDOW {
+    position            :   relative;
+    top                 :   0;/*var(--WindowMargin);/**/
+    height              :   calc( var(--WindowHeight) - ( 2.2 * var(--WindowMargin) ) );
+    left                :   0;/*var(--WindowMargin);/**/
+    width               :   100%;/* calc( 100% - ( var(--WindowMargin) * 2 ) );/**/
     border              :   1px solid black;
     box-shadow          :   inset 0px 0px 15px 0px black;
-    background-image    :   radial-gradient(var(--AccentTwo)); /*url('design/cover-PG.jpg');/**/
+    background-image    :   /*radial-gradient(var(--AccentTwo));*/ url('design/previewgif.GIF');/**/
+    mix-blend-mode      :   luminosity;
     background-position :   top center;
     background-size     :   cover;
+    opacity             :   0.2;
 }
 div.HEADERTEXT {
     position            :   absolute;
@@ -130,10 +153,11 @@ div.HEADERTEXT > img {
         invert(1) 
         invert( var(--InversionState) ) ;
 }
-div.HEADERWINDOW > div {
-    position:relative;
-    top: 14dvh;
+div.HEADERCAPTION {
+    position:absolute;
+    top: 16dvh;
     left: 50%;
+    width: min(100vw,670px);
     background-color:white;
     font-size: min(1.6em,5vw);
     font-weight: 800;
