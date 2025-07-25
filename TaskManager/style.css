@@ -54,6 +54,52 @@ div.FOOTER > div {
 div.T-TITLE {
     font-size:1.5em;
     font-weight:600;
-    border:1px solid var(--ItemOne);
-    color: var(--ItemOne);
+    border:1px solid;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+div.T-BOXES {
+    height:40px;
+    width:100px;
+    display:inline-flex;
+    border-right: 2px solid;
+}
+div.T-BOX {
+    height:20px;
+    max-width:20px;
+    flex:1;
+    margin:5px;
+    border:1px solid;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 10px;
+}
+div.T-SLIDER {
+    height:20px;
+    width:100%;
+    flex:1;
+    margin:5px;
+    border:1px solid;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 10px;
+}
+div.T-ITEM {
+    display: grid;
+    grid-template-columns: 100px 1fr 20fr;
+}
+div.T-ITEM > div {
+    grid: 1;
+    align-self: center;
+    white-space: nowrap;
+    margin-right:10px;
+}
+div.T-ITEMTITLE {
+    width: fit-content;
+    font-weight: 600;
+    padding-left: 10px;
+}
+div.T-ITEMSUB {
+
 }
