@@ -1,0 +1,59 @@
+
+:root {
+    --LineColor : black;
+    --elemColor:  gainsboro;
+    --ItemOne: crimson;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input,select {
+    background-color: transparent;
+    border: none;
+    width:100%;
+    margin:10px;
+    height:30px;
+}
+
+input {    
+    border-bottom: 1px solid black;
+}
+select {
+
+}
+
+div.FOOTER {
+    position:fixed;
+    bottom:0;
+    left:0;
+    height:50px;
+    width:100vw;
+    border-top: 2px solid var(--LineColor);
+}
+div.FOOTER > div {
+    display: grid;
+    grid-template-columns: 10fr 5fr 10fr 10fr 3fr 3fr;
+    height:100%;
+}
+    div.SELECTED {
+        background-color: var(--elemColor);
+        grid:1;
+    }
+    div.SETPARAM {
+        background-color: var(--elemColor);
+        grid:1;
+    }
+    div.CHANGEITEM, div.ADDITEM {
+        background-color: var(--elemColor);
+        grid:1;
+        font-size:40px;
+    }
+
+div.T-TITLE {
+    font-size:1.5em;
+    font-weight:600;
+    border:1px solid var(--ItemOne);
+    color: var(--ItemOne);
+}

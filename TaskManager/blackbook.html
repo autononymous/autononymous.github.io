@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blackbook Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Blackbook</h1>
+    <hr>
+    <div id="TASKS" class="TASKS">
+        <div id="0-0000" class="T-CATEGORY">
+            <div id="T-0000" class="T-TITLE" onclick="ChooseItem(this)">Category Name</div>
+        </div>
+    </div>
+
+
+    <div class="FOOTER" id="FOOTER">
+        <div>
+            <div class="SELECTED">
+                <span id="SELECTED" class="SELECTED">ID=</span>
+            </div>
+            <div id="P-TYPE" class="SETPARAM">
+                <select name="name" id="TYPE">
+                    <option value="0">Header</option>
+                    <option value="1">1-Box</option>
+                    <option value="2">2-Box</option>
+                    <option value="3">3-Box</option>
+                    <option value="4">Slider</option>
+                </select>
+            </div>
+            <div id="P-TITLE" class="SETPARAM">
+                <input type="text" id="TITLE" name="name">
+            </div>
+            <div id="P-SUB" class="SETPARAM">
+                <input type="text" id="SUB" name="name">
+            </div>
+            <div class="CHANGEITEM" onclick="ModifyItem();">&raquo;</div>
+            <div class="ADDITEM" onclick="AppendItem();">&raquo;</div>
+        </div>
+    </div>
+    <script>
+        const eIDBOX = document.getElementById("SELECTED");
+        const eTYPE  = document.getElementById("P-TYPE");
+        const sTYPE  = document.getElementById("TYPE");
+        const eTITLE = document.getElementById("P-TITLE");
+        const sTITLE = document.getElementById("TITLE");
+        const eSUB   = document.getElementById("P-SUB");
+        const sSUB   =  document.getElementById("SUB");
+    </script>
+    <script src="task.js"></script>
+    
+</body>
+</html>
