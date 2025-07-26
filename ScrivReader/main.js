@@ -4,6 +4,8 @@
     const sHold         = .5; //percent
     const sOffset       = 0; //percent
 
+    const RevLum = 50;
+
 // ==========================<{Changing Variables}>============================ //
     
 async function LoadAnnouncements() {
@@ -260,10 +262,10 @@ function ParseStory(data) {
 
             let PercentComplete = parseFloat(entry.PercentComplete)
             PercentComplete = isNaN(PercentComplete) ? 0 : PercentComplete < 0 ? 0 : PercentComplete > 100 ? 100 : Math.round(PercentComplete);
-            STORY[STORY.length-1].BodyFormatted.push( (PermissionLevel <= 1) ? "" : `<div style="width:fit-content;position:relative;left:50%;transform:translateX(-50%);font-size:1.2em;border: 1px solid var(--TextColor); padding:8px; border-radius: 10px;"><span style="font-size:1.2em;color:var(--TextColor);font-family:var(--ActiveTitle);margin:20px;">Revision: </span><span class="DebugStatus DS-${entry.Status.replaceAll(" ","")}" style="font-size:1em; background-color: hsl(${Math.round((Math.pow(PercentComplete/100,3)) * 100 * (120/100))},${((PercentComplete!=0))*80}%,50%);">${entry.Status.replaceAll("No Status","Unwritten")
+            STORY[STORY.length-1].BodyFormatted.push( (PermissionLevel <= 1) ? "" : `<div style="width:fit-content;position:relative;left:50%;transform:translateX(-50%);font-size:1.2em;border: 1px solid var(--TextColor); padding:8px; border-radius: 10px;"><span style="font-size:1.2em;color:var(--TextColor);font-family:var(--ActiveTitle);margin:20px;">Revision: </span><span class="DebugStatus DS-${entry.Status.replaceAll(" ","")}" style="font-size:1em; background-color: hsl(${Math.round((Math.pow(PercentComplete/100,3)) * 100 * (120/100))},${((PercentComplete!=0))*RevLum}%,50%);">${entry.Status.replaceAll("No Status","Unwritten")
                                                                                                                  .replaceAll("First Draft","First")
                                                                                                                  .replaceAll("Revised Draft","Second")
-                                                                                                                 .replaceAll("Final Draft","Final")}</span> <span class="DebugStatus DS-${entry.Status.replaceAll(" ","")}" style="font-size:1em; background-color: hsl(${Math.round((Math.pow(PercentComplete/100,3)) * 100 * (120/100))},${((PercentComplete!=0))*80}%,50%);">${PercentComplete}</span></div>`);
+                                                                                                                 .replaceAll("Final Draft","Final")}</span> <span class="DebugStatus DS-${entry.Status.replaceAll(" ","")}" style="font-size:1em; background-color: hsl(${Math.round((Math.pow(PercentComplete/100,3)) * 100 * (120/100))},${((PercentComplete!=0))*RevLum}%,50%);">${PercentComplete}</span></div>`);
             STORY[STORY.length-1].BodyFormatted.push(`<h3 id="sub_${entry.ChapterFull}" class="${ePerspective} Subtitle">${prefix + eSubtitle + suffix}</h3>`);
             // If in developer mode, add commentary.
             if (PermissionLevel > 1 && eRevisionNotes != undefined) {
@@ -579,7 +581,7 @@ function ChannelSet(CHANNEL) {
         if(ThisStoryTheme == "Cody") {
             ROOT.style.setProperty("--ActiveTitle","var(--CodyTitle)")
             ROOT.style.setProperty("--ActiveSub"  ,"var(--CodyText )")
-            ROOT.style.setProperty("--ActiveSize" ,"1.1em")            
+            ROOT.style.setProperty("--ActiveSize" ,"1.1em") 
         } else if (ThisStoryTheme == "Katiya") {
             ROOT.style.setProperty("--ActiveTitle","var(--KatiyaTitle)")
             ROOT.style.setProperty("--ActiveSub"  ,"var(--KatiyaText )")
@@ -592,8 +594,12 @@ function ChannelSet(CHANNEL) {
 
         }
 
+        let FaviconLoc = STYLES[ThisStoryTheme].Favicon+".png";
+        changeFavicon(FaviconLoc);
+
         if(ThisStoryTheme != LastStoryTheme) {
-            DConsole("main.js > ChannelSet",`Transitioning from ${LastStoryTheme} to ${ThisStoryTheme}.`,true)
+            DConsole("main.js > ChannelSet",`Transitioning from ${LastStoryTheme} to ${ThisStoryTheme}.`,false)
+            DConsole("main.js > ChannelSet",`Favicon set to ${FaviconLoc}.`,true)
         }
         
     }
@@ -634,7 +640,7 @@ function TOChtmlCHAPTER(nChap,name,synopsis,pubdate,nDisplayed,percent,isnew,sta
     let PercentComplete = parseFloat(perc)
     PercentComplete = isNaN(PercentComplete) ? 0 : PercentComplete < 0 ? 0 : PercentComplete > 100 ? 100 : Math.round(PercentComplete);
             
-    let WorkState = (PermissionLevel <= 1) ? "" : `<div class="DebugStatus DS-${status.replaceAll(" ","")}" style="background-color: hsl(${Math.round((Math.pow(PercentComplete/100,3)) * 100 * (120/100))},${((PercentComplete!=0))*80}%,50%);">${status.replaceAll("No Status","Unwritten")
+    let WorkState = (PermissionLevel <= 1) ? "" : `<div class="DebugStatus DS-${status.replaceAll(" ","")}" style="background-color: hsl(${Math.round((Math.pow(PercentComplete/100,3)) * 100 * (120/100))},${((PercentComplete!=0))*RevLum}%,50%);">${status.replaceAll("No Status","Unwritten")
                                                                                                                  .replaceAll("First Draft","First")
                                                                                                                  .replaceAll("Revised Draft","Second")
                                                                                                                  .replaceAll("Final Draft","Final")} ${PercentComplete}</div>`;
@@ -944,6 +950,27 @@ function ToggleInfoWindow() {
         //eMAPINFO.style.animation = ("1s ease-in-out 0.25s forwards fadeout");
     }   
     
+}
+
+/*!
+ * Dynamically changing favicons with JavaScript
+ * Works in all A-grade browsers except Safari and Internet Explorer
+ * Demo: http://mathiasbynens.be/demo/dynamic-favicons
+ */
+
+// HTML5™, baby! http://mathiasbynens.be/notes/document-head
+document.head = document.head || document.getElementsByTagName('head')[0];
+
+function changeFavicon(src) {
+ var link = document.createElement('link'),
+     oldLink = document.getElementById('dynamic-favicon');
+ link.id = 'dynamic-favicon';
+ link.rel = 'shortcut icon';
+ link.href = src;
+ if (oldLink) {
+  document.head.removeChild(oldLink);
+ }
+ document.head.appendChild(link);
 }
 
 async function setup() {
