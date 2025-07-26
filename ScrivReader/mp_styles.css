@@ -473,7 +473,8 @@ div.stories
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        width:90%;
+        width:90%;        
+        max-width:90vw;
         row-gap: 10px;
         column-gap: 30px;
         margin-top: 20px;
