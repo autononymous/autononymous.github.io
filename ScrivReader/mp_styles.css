@@ -497,6 +497,7 @@ div.stories
     div.BOOKSHELF > div {
         border: 1px solid black;
         width: 100%;
+        max-width:100vw;
         aspect-ratio: 0.7;
         background-size:cover;
         background-repeat: no-repeat;
