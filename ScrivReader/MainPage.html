@@ -6,7 +6,7 @@
     <title>Autononymous Collective</title>
     <link rel="stylesheet" href="mp_styles.css">
     <link rel="stylesheet" href="storystyles.css">
-    <link rel="icon" type="image/x-icon" href="/icons/favicon.png">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caveat:wght@400..700&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Montez&family=Oxanium:wght@200..800&family=Patrick+Hand+SC&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -58,7 +58,7 @@
                 <p>Everything you find on this website is free: I'm more concerned with sharing engaging stories with the world than making money from it. But if you want to show your support, you will find a link to my KoFi page below.</p><p>As a newly self-publishing writer, such support means the world to me.</p>
                 <br><br>
                 
-                <iframe id='kofiframe' src='https://ko-fi.com/savantguarde/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:fit-content;padding:4px;border-radius:25px;background:black;box-shadow: 0px 0px 20px 8px black;position:relative;left:50%;transform:translateX(-50%);' height='600' title='savantguarde'></iframe>
+                <!-- <iframe id='kofiframe' src='https://ko-fi.com/savantguarde/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:fit-content;padding:4px;border-radius:25px;background:black;box-shadow: 0px 0px 20px 8px black;position:relative;left:50%;transform:translateX(-50%);' height='600' title='savantguarde'></iframe> -->
 
             </div>
         </div>
@@ -112,6 +112,8 @@ const INITMODE = "MAIN";
 var STORIES = [];
 var OrderedReleases = [];
 var LatestReleases = [];
+
+console.info("Last modified:", document.lastModified);
 
 _main_()
 

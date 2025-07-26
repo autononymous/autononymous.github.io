@@ -28,7 +28,7 @@ function ScrollForPage()
         CurrentIndex = CheckedIndex;
         Object.entries(SHEETS).forEach( ([index,sheet]) => {
             let condition = 1 * (index == CheckedIndex);
-            console.log(index,condition,sheet)
+            //console.log(index,condition,sheet)
             sheet.style.setProperty("opacity",condition);
             sheet.style.setProperty("pointer-events",((condition == 0) ? "none" : "all"));
             sheet.style.setProperty("height",((condition == 0) ? "0px" : ""));
@@ -89,7 +89,7 @@ async function RetrieveLatestStories(count = 5) {
             break
         }
     }
-    console.log(LatestReleases)
+    //console.log(LatestReleases)
 }
     
 async function DeployLatestStories() {
@@ -176,7 +176,7 @@ function ViewedStory(elem,title,url) {
     /*<div id="ViewedImage" class="ViewedImage"><img src="${url}"/></div>*/   
 
     Object.values(eBOOKSHELF.getElementsByTagName('DIV')).forEach(cover => {
-        console.log(cover)
+        //console.log(cover)
         cover.style.setProperty("border","");
         cover.style.setProperty("box-shadow","");
     })
