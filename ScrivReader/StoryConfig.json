@@ -48,7 +48,8 @@
         },
         "Prefix":" = ",
         "Suffix":" = ",
-        "WallImage":"design/bg-tie.jpg"     
+        "WallImage":"design/bg-tie.jpg",
+        "Favicon":"icons/logo-Firebrand"
     },
     "Katiya":
     {
@@ -66,7 +67,8 @@
         },
         "Prefix":" &#10048; ",
         "Suffix":" &#10048; ",
-        "WallImage":"design/bg-kat.jpg"     
+        "WallImage":"design/bg-kat.jpg",
+        "Favicon":"icons/logo-Katiya"     
     },
     "Cody":
     {
@@ -84,7 +86,8 @@
         },
         "Prefix":" /* ",
         "Suffix":" */ ",
-        "WallImage":"design/bg-cody.jpg"     
+        "WallImage":"design/bg-cody.jpg",
+        "Favicon":"icons/logo-Cody"     
     },
     "Default":
     {
