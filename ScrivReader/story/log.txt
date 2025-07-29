@@ -374,3 +374,13 @@ C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/stor
 > No arguments presented in command line.
 LATESTFILE ARGS:
 C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-250725.json
+> Running from ScrivenerExport.
+FILEIN ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/GF-250729.json
+> Accepted argument "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/GF-250729.json".
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/GF-250729.json
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/GF-250729.json

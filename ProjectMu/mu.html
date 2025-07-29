@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mu.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectMu</title>
+</head>
+<body>
+    <div class="SLIDE" id="SLIDE">
+        <div class="MAIN" id="MAIN"></div>
+        <div class="ELEV" id="ELEV"></div>
+        <div class="CHAR" id="CHAR"></div>
+    </div>
+    <div class="SLIDE" id="TEXTSCR">
+        <div class="DATA" id="DATA"></div>
+        <div class="CONSOLE" id="CONSOLE"></div>
+        <div class="TYPE">&raquo;<input type="text" id="TEXT"></div>
+    </div>
+    
+</body>
+    <script>
+        const eMAIN = document.getElementById('MAIN');
+        const eELEV = document.getElementById('ELEV');
+        const eCHAR = document.getElementById('CHAR');
+        const eTEXT = document.getElementById('TEXT');         
+        const eSCR = document.getElementById('TEXTSCR'); 
+        const eCONSOLE = document.getElementById('CONSOLE'); 
+        eTEXT.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                Proceed(this.value);
+                console.log('Enter pressed');
+            }
+        });
+    </script>
+    <script src="mu.js"></script>
+    
+</html>

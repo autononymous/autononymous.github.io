@@ -567,7 +567,28 @@ div.aboutme
         text-transform:uppercase;
         letter-spacing: 0.40rem;/**/
     }
-div.WallInactive {
+div.journal {
+
+}
+    div.JOURNALPAD {
+        width: min(500px,90%);
+        position:absolute;
+        left:50%;
+        top: 20px;
+        padding: 10px;
+        
+    }
+    div.JOURNALPAD > div {
+        border-left: 1px solid var(--AccentOne);
+        border-right: 1px solid var(--AccentOne);
+        transform: translateX(-50%);
+        height: max-content;
+    }
+
+
+
+
+    div.WallInactive {
     color: dimgray;
      background-image:     
     linear-gradient(

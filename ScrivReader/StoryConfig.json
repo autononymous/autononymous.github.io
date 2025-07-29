@@ -6,7 +6,8 @@
 "ThemeIndex":
 {
     "Firebrand":  [ "Titus" ],
-    "Paragate":   [ "Katiya" , "Cody" ]
+    "Paragate":   [ "Katiya" , "Cody" ],
+    "Goldenfur":  [ "Jade"]
 },
 "Shorthands":
 {
@@ -14,19 +15,22 @@
     {
         "Titus":"Titus Berguard",
         "Cody":"Cody Dunsmore",
-        "Katiya":"Katiya Breakey-Hilde"
+        "Katiya":"Katiya Breakey-Hilde",
+        "Jade":"Ja'ada &quot;Jade&quot; Akhnali"
     },
     "Timezones":
     {
         "Titus":"FantasyTime",
         "Cody":"ModernTime",
-        "Katiya":"FantasyTime"
+        "Katiya":"FantasyTime",
+        "Jade":"FantasyTime"
     },
     "GeneralSettings":
     {
         "Titus":"Blackwater North",
         "Cody":"Colorado, USA",
-        "Katiya":"Gaffesend, Fosroth"
+        "Katiya":"Gaffesend, Fosroth",
+        "Jade":"Melenia City, Fosroth"
     }
 
 },
@@ -36,7 +40,7 @@
     {
         "Light":
         {
-            "Background":[240,240,240,1,1],
+            "Background":[240,240,240,1],
             "Text": [18, 18, 18 ,1],
             "ProgressBar": [18, 18, 18 ,1]
         },
@@ -88,6 +92,25 @@
         "Suffix":" */ ",
         "WallImage":"design/bg-cody.jpg",
         "Favicon":"icons/logo-Cody"     
+    },
+    "Jade":
+    {
+        "Light":
+        {
+            "Background":[240,240,240,1],
+            "Text": [18, 80, 18 ,1],
+            "ProgressBar": [18, 80, 18 ,1]
+        },
+        "Dark":
+        {
+            "Background":[18 ,80 ,18 ,1],
+            "Text": [240,255,240,1],
+            "ProgressBar":[240,255,240,1]
+        },
+        "Prefix":" &laquo; ",
+        "Suffix":" &raquo; ",
+        "WallImage":"design/bg-jade.jpg",
+        "Favicon":"icons/logo-Goldenfur"
     },
     "Default":
     {
@@ -150,6 +173,10 @@
         "03/14/25 // Site Release":"Today marks the release of <a href='https://autononymous.io/'>Autononymous.io</a>! Check out our main page for story updates.",
         "04/27/25 // First Act Release":"Hey Readers! Since I&apos;ve made extra progress with Firebrand, I decided to release the <strong>entire first act</strong>. Should get the story rolling a little better. Further updates of Acts 2 ~ 4 will continue per the standard weekly release. Thanks for your support!",
         "07/02/25 // Viewer & Story Beta":"&emsp;If you&apos;re reading this right now, it&apos;s for only one of two reasons: either you&apos;re one of my trusted friends or family that I&apos;ve decided to share this with, or you&apos;ve randomly discovered this and you&apos;re early to the show. But either way, I want to thank you for being here and supporting my work. <br><br>&emsp;FIREBRAND is the first novel I&apos;ve ever written. I wrote the bulk of this during a rough time of my life, when I was going to college in a different state: starting entirely from zero and not knowing anyone; allowing loneliness and unmedicated depression to lead me into a long spiral. <br><br>&emsp;But I came out the other side and I survived, making it through the long quarters of my engineering program. The concept of a continuous fight without an end in sight provided the fuel for the thesis of this story: <em>&apos;If you had an unlimited number of attempts to rewrite the past, would it break you, or would you find peace&apos;?</em> It also inspired the main character <strong>Titus</strong>: a suffer-it-alone kind of guy that was a lot like me before I learned my lesson, figuring out how to sincerely open up to people. <br><br>&emsp;This is an early release of the story, but the full story is entirely written: just being progressively edited. But, rest assured, if it&apos;s posted here, it&apos;s in polished enough a form that I&apos;m confident to post it.<br><br>&emsp;If you enjoy this work, please let me know on social media and feel free to share it with others. I&apos;m still figuring out this self-publishing thing (and trying to spend more of my time writing than improving this Javascript applet).<br><br>Thanks again for your support.<br><br>With love,<br>&emsp;<span style='font-family:Brush Script MT, cursive;font-size:1.5em;'>Savant-Guarde :)</span>"
+    },
+    "Goldenfur":
+    {
+        "07/27/25 // Breaking Ground":"Story process begins today!"
     }
 },
 "RevisionNotes":
@@ -181,6 +208,13 @@
         "StoryFile":"story/latest/Paragate.JSON",
         "StoryName":"Paragate",
         "CoverImage":"design/cover-PG.jpg"
+    },
+    "Goldenfur":
+    {
+        "StoryRoot":"https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/ScrivReader/",
+        "StoryFile":"story/latest/Goldenfur.JSON",
+        "StoryName":"Goldenfur",
+        "CoverImage":"design/cover-GF.jpg"
     }
 },
 "Bonus":{
@@ -204,6 +238,15 @@
             "Cody":"<img src='dividers/hr-cody.png' class='hrdiv'>",
             "Mixed":"<img src='dividers/hr-katcody.png' class='hrdiv'>"
         }
+    },
+    "Goldenfur":
+    {
+        "Maps":"<p></p><p class='Jade'>TBD</p>",
+        "Other":"<h3 class='Subtitle'>Acknowledgements</h3><p class='Jade'>I dedicate this work to the following people:</p><ul class='Jade'><li>Lillie, my life partner</li><li>Karl R, my closest friend</li><li>The version of me I left in the third year of college: that might have never been brave enough to fight for my mental health, and to believe in the possibility of love</li><li>YOU, the person giving this story a shot (and I hope you enjoy it).</li></ul><br>",  
+        "Dividers":
+        {
+            "Jade":"<img src='dividers/hr-jade.png' class='hrdiv'>"
+        }
     }
 },
 "ChapterOverrides":
@@ -215,6 +258,10 @@
     "Paragate":
     {
         "0.0":"https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/ScrivReader/story/PG-intro.JSON"
+    },
+    "Goldenfur":
+    {
+        "none":"none"
     }
 }
 }
