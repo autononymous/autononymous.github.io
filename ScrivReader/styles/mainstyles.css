@@ -51,7 +51,7 @@
     body {
         overflow:hidden;
         background-color: var(--BackgroundColor);/**/
-        background-image: url("design/bg-cody.png");
+        background-image: url("../design/bg-cody.png");
     }
     div {
         border: none;/*1px solid black;*/
@@ -328,22 +328,22 @@ p.msgfrom::after {
     width: 40px;
     height: 40px;
     border-radius:20px;
-    background-image: url("icons/anonythumb.jpg");
+    background-image: url("../icons/anonythumb.jpg");
     border: 1px solid var(--TextColor);
     background-size: 100% 100%;
     background-position: center;
 }
 p.fromMiguel::after {
-    background-image: url("profiles/miggy.png");
+    background-image: url("../profiles/miggy.png");
 }
 p.fromKei::after {
-    background-image: url("profiles/kei.png");
+    background-image: url("../profiles/kei.png");
 }
 p.fromReed::after {
-    background-image: url("profiles/reed.png");
+    background-image: url("../profiles/reed.png");
 }
 p.fromCody::after {
-    background-image: url("profiles/cody.png");
+    background-image: url("../profiles/cody.png");
 }
 
 p.msgto {
@@ -387,7 +387,7 @@ p.msgto::after {
     height: 40px;
     border-radius:20px;
     border: 1px solid var(--TextColor);
-    background-image: url("profiles/cody.png");
+    background-image: url("../profiles/cody.png");
     background-size: 100% 100%;
     background-position: center;
 }

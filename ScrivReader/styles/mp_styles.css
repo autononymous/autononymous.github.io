@@ -31,7 +31,7 @@
 }
 body {
     overflow: hidden;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.70)),url('design/cf.png');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.70)),url('../design/cf.png');
     background-size: 75px;
 }
 .datenum {
@@ -127,7 +127,7 @@ div.HEADERWINDOW {
     width               :   100%;/* calc( 100% - ( var(--WindowMargin) * 2 ) );/**/
     border              :   1px solid black;
     box-shadow          :   inset 0px 0px 15px 0px black;
-    background-image    :   /*radial-gradient(var(--AccentTwo));*/ url('design/previewgif.GIF');/**/
+    background-image    :   /*radial-gradient(var(--AccentTwo));*/ url('../design/previewgif.GIF');/**/
     mix-blend-mode      :   luminosity;
     background-position :   top center;
     background-size     :   cover;
@@ -608,7 +608,7 @@ div.WallParagate {
         var(--AccentTwo) 0px,
         transparent 40px
     );
-        /*url("design/bg-cody.jpg");*/
+        /*url("../design/bg-cody.jpg");*/
 }
 div.WallParagate:hover {
     color: var(--AccentTwoLight);
@@ -622,7 +622,7 @@ div.WallFirebrand {
         var(--AccentOne) 0px,
         transparent 40px
     );   
-        /*url("design/bg-kat.jpg");*/
+        /*url("../design/bg-kat.jpg");*/
 }
 div.WallFirebrand:hover {
     color: var(--AccentOneLight);
