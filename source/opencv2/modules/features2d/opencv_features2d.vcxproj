@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations" />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EB7C9BCF-6E10-3A6E-B8BE-23CD022F7BE5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_features2d</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <CustomBuild Include="\CMakeFiles\d68226ad03f475efaba5fcab74ed1dd2\opencl_kernels_features2d.cpp.rule">
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\OpenCV\modules\features2d\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\features2d\CMakeFiles\opencv_features2d.dir\cmake_pch.cxx" />
+    <ClInclude Include="C:\OpenCV\modules\features2d\include\opencv2\features2d.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\features2d\include\opencv2\features2d\features2d.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\features2d\include\opencv2\features2d\hal\interface.h" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\affine_feature.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\agast.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\agast_score.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\akaze.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\bagofwords.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\blobdetector.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\brisk.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\draw.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\dynamic.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\evaluation.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\fast.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\fast_score.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\feature2d.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\gftt.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\kaze.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\kaze\AKAZEFeatures.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\kaze\KAZEFeatures.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\kaze\fed.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\kaze\nldiffusion_functions.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\keypoint.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\main.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\matchers.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\mser.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\orb.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\features2d\src\sift.dispatch.cpp" />
+    <None Include="C:\OpenCV\modules\features2d\src\opencl\akaze.cl" />
+    <None Include="C:\OpenCV\modules\features2d\src\opencl\brute_force_match.cl" />
+    <None Include="C:\OpenCV\modules\features2d\src\opencl\fast.cl" />
+    <None Include="C:\OpenCV\modules\features2d\src\opencl\orb.cl" />
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\features2d\opencl_kernels_features2d.cpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\features2d\opencl_kernels_features2d.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\features2d\src\agast_score.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\features2d\src\fast.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\features2d\src\fast_score.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\features2d\src\hal_replacement.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\features2d\src\kaze\AKAZEConfig.h" />
+    <ClInclude Include="C:\OpenCV\modules\features2d\src\kaze\AKAZEFeatures.h" />
+    <ClInclude Include="C:\OpenCV\modules\features2d\src\kaze\KAZEConfig.h" />
+    <ClInclude Include="C:\OpenCV\modules\features2d\src\kaze\KAZEFeatures.h" />
+    <ClInclude Include="C:\OpenCV\modules\features2d\src\kaze\TEvolution.h" />
+    <ClInclude Include="C:\OpenCV\modules\features2d\src\kaze\fed.h" />
+    <ClInclude Include="C:\OpenCV\modules\features2d\src\kaze\nldiffusion_functions.h" />
+    <ClInclude Include="C:\OpenCV\modules\features2d\src\kaze\utils.h" />
+    <ClInclude Include="C:\OpenCV\modules\features2d\src\precomp.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\features2d\src\sift.simd.hpp" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\features2d\opencv_features2d_SSE4_1.dir\$(Configuration)\sift.sse4_1.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\features2d\opencv_features2d_AVX2.dir\$(Configuration)\fast.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\features2d\opencv_features2d_AVX2.dir\$(Configuration)\sift.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\features2d\opencv_features2d_AVX512_SKX.dir\$(Configuration)\sift.avx512_skx.obj" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\cvconfig.h" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\opencv2\opencv_modules.hpp" />
+    <ResourceCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\features2d\vs_version.rc" />
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\features2d\opencv_features2d_main.cpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\features2d\CMakeFiles\opencv_features2d.dir\cmake_pch.hxx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\ZERO_CHECK.vcxproj">
+      <Project>{88AD6D21-1BE3-3361-AED9-F84450C1C9FA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\hal\ipp\ipphal.vcxproj">
+      <Project>{F4B1E634-7D15-3F97-88F6-CAA7B7A64770}</Project>
+      <Name>ipphal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\ippiw\ippiw.vcxproj">
+      <Project>{AAD9C648-1FDD-3A69-9E96-B3827A4DFB6D}</Project>
+      <Name>ippiw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core.vcxproj">
+      <Project>{A1AB47E7-ADF8-3F3D-A84A-E8BFC791FE6C}</Project>
+      <Name>opencv_core</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\features2d\opencv_features2d_AVX2.vcxproj">
+      <Project>{285A3B6F-9ABE-321D-9151-CA04AEF95796}</Project>
+      <Name>opencv_features2d_AVX2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\features2d\opencv_features2d_AVX512_SKX.vcxproj">
+      <Project>{2FBD7496-42C4-30E5-BE70-3E49E18DBB7B}</Project>
+      <Name>opencv_features2d_AVX512_SKX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\features2d\opencv_features2d_SSE4_1.vcxproj">
+      <Project>{9CADF2E7-4E48-3A29-829A-39718815A877}</Project>
+      <Name>opencv_features2d_SSE4_1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\flann\opencv_flann.vcxproj">
+      <Project>{C095F40E-D66D-3683-A6FB-9F299DDC461C}</Project>
+      <Name>opencv_flann</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc.vcxproj">
+      <Project>{F2B52B5E-100A-3A91-B88A-6C8D81E40B6E}</Project>
+      <Name>opencv_imgproc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

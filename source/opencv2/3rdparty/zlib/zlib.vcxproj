@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations" />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9FB8B74A-97F6-3457-8A96-B510D9CF941F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>zlib</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\OpenCV\3rdparty\zlib\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\OpenCV\3rdparty\zlib\adler32.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\zlib\compress.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\zlib\crc32.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\zlib\deflate.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\zlib\gzclose.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\zlib\gzlib.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\zlib\gzread.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\zlib\gzwrite.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\zlib\inflate.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\zlib\infback.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\zlib\inftrees.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\zlib\inffast.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\zlib\trees.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\zlib\uncompr.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\zlib\zutil.c" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\zlib\zconf.h" />
+    <ClInclude Include="C:\OpenCV\3rdparty\zlib\zlib.h" />
+    <ClInclude Include="C:\OpenCV\3rdparty\zlib\crc32.h" />
+    <ClInclude Include="C:\OpenCV\3rdparty\zlib\deflate.h" />
+    <ClInclude Include="C:\OpenCV\3rdparty\zlib\gzguts.h" />
+    <ClInclude Include="C:\OpenCV\3rdparty\zlib\inffast.h" />
+    <ClInclude Include="C:\OpenCV\3rdparty\zlib\inffixed.h" />
+    <ClInclude Include="C:\OpenCV\3rdparty\zlib\inflate.h" />
+    <ClInclude Include="C:\OpenCV\3rdparty\zlib\inftrees.h" />
+    <ClInclude Include="C:\OpenCV\3rdparty\zlib\trees.h" />
+    <ClInclude Include="C:\OpenCV\3rdparty\zlib\zutil.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\ZERO_CHECK.vcxproj">
+      <Project>{88AD6D21-1BE3-3361-AED9-F84450C1C9FA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

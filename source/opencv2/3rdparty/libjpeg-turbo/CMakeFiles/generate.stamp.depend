@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/OpenCV/3rdparty/libjpeg-turbo/CMakeLists.txt
+C:/OpenCV/3rdparty/libjpeg-turbo/jconfig.h.in
+C:/OpenCV/3rdparty/libjpeg-turbo/jconfigint.h.in
+C:/OpenCV/3rdparty/libjpeg-turbo/jversion.h.in
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake

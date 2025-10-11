@@ -1,0 +1,75 @@
+div {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+}
+input {
+    width:calc(100% - 5em);
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+div.taskitem {
+    display: grid;
+    grid-template: 
+        't-box      t-progress  t-progress  t-progress  t-progress'
+        't-box      t-title     t-title     t-desc      t-desc'
+        't-box      t-subject   t-subject   t-desc      t-desc'
+        't-box      t-diff      t-imp       t-due       t-days'
+    ;
+    grid-template-columns: 100px 1fr 1fr 1fr 1fr;
+    width: 100%;
+    margin-bottom: 30px;
+}
+div.ti {
+    min-height: 25px;
+}
+div.ti > span {
+    margin: 0.5em; 
+    border: 1px solid red;
+}
+div.t_box {
+    grid: 1;
+    grid-area: t-box;
+    aspect-ratio: 1;
+}
+div.t_progress {
+    grid: 1;
+    grid-area: t-progress;
+}
+div.t_title {
+    grid: 1;
+    grid-area: t-title;
+    font-weight: 600;
+}
+div.t_desc {
+    grid: 1;
+    grid-area: t-desc;
+}
+div.t_subject {
+    grid-area: t-subject;
+    font-style: italic;
+}
+div.t_desc {
+    grid-area: t-desc;
+}
+div.t_diff {
+    grid-area: t-diff;
+}
+div.t_imp {
+    grid-area: t-imp;
+}
+div.t_due {
+    grid-area: t-due;
+}
+div.t_days {
+    grid-area: t-days;
+}
+
+div.command-box {
+    position: absolute;
+    top:calc( 100dvh - 50px );
+    left:50vw;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations" />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0E2C1A07-B2AB-39D4-AB66-7F95CAF1E132}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>libjpeg-turbo</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\OpenCV\3rdparty\libjpeg-turbo\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jcapistd.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jccolor.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jcdiffct.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jclossls.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jcmainct.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jcprepct.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jcsample.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdapistd.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdcolor.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jddiffct.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdlossls.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdmainct.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdpostct.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdsample.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jutils.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jccoefct.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jcdctmgr.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdcoefct.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jddctmgr.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdmerge.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jfdctfst.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jfdctint.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jidctflt.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jidctfst.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jidctint.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jidctred.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jquant1.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jquant2.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jcapimin.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jchuff.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jcicc.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jcinit.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jclhuff.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jcmarker.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jcmaster.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jcomapi.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jcparam.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jcphuff.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jctrans.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdapimin.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdatadst.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdatasrc.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdhuff.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdicc.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdinput.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdlhuff.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdmarker.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdmaster.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdphuff.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdtrans.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jerror.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jfdctflt.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jmemmgr.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jmemnobs.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jpeg_nbits.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jaricom.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jcarith.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\libjpeg-turbo\src\jdarith.c" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jcapistd.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jccolor.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jcdiffct.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jclossls.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jcmainct.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jcprepct.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jcsample.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jdapistd.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jdcolor.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jddiffct.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jdlossls.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jdmainct.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jdpostct.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jdsample.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jutils.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jccoefct.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jcdctmgr.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jdcoefct.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jddctmgr.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jdmerge.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jfdctfst.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jfdctint.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jidctflt.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jidctfst.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jidctint.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jidctred.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jquant1.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.dir\$(Configuration)\jquant2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg16-static.dir\$(Configuration)\jcapistd.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg16-static.dir\$(Configuration)\jccolor.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg16-static.dir\$(Configuration)\jcdiffct.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg16-static.dir\$(Configuration)\jclossls.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg16-static.dir\$(Configuration)\jcmainct.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg16-static.dir\$(Configuration)\jcprepct.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg16-static.dir\$(Configuration)\jcsample.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg16-static.dir\$(Configuration)\jdapistd.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg16-static.dir\$(Configuration)\jdcolor.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg16-static.dir\$(Configuration)\jddiffct.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg16-static.dir\$(Configuration)\jdlossls.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg16-static.dir\$(Configuration)\jdmainct.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg16-static.dir\$(Configuration)\jdpostct.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg16-static.dir\$(Configuration)\jdsample.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg16-static.dir\$(Configuration)\jutils.obj" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\ZERO_CHECK.vcxproj">
+      <Project>{88AD6D21-1BE3-3361-AED9-F84450C1C9FA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg12-static.vcxproj">
+      <Project>{6AF7F82E-A2D3-355F-8E06-205C3F4BCBB1}</Project>
+      <Name>jpeg12-static</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\jpeg16-static.vcxproj">
+      <Project>{017F001E-6416-301B-BEAF-3B9A0E1E814C}</Project>
+      <Name>jpeg16-static</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

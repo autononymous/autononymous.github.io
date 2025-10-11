@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations" />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{51D7DB20-1F55-358D-92F4-FECCA8044E6E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_ml</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <CustomBuild Include="C:\OpenCV\modules\ml\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\ml\CMakeFiles\opencv_ml.dir\cmake_pch.cxx" />
+    <ClInclude Include="C:\OpenCV\modules\ml\include\opencv2\ml.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\ml\include\opencv2\ml\ml.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\ml\include\opencv2\ml\ml.inl.hpp" />
+    <ClCompile Include="C:\OpenCV\modules\ml\src\ann_mlp.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\ml\src\boost.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\ml\src\data.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\ml\src\em.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\ml\src\gbt.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\ml\src\inner_functions.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\ml\src\kdtree.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\ml\src\knearest.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\ml\src\lr.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\ml\src\nbayes.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\ml\src\rtrees.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\ml\src\svm.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\ml\src\svmsgd.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\ml\src\testset.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\ml\src\tree.cpp" />
+    <ClInclude Include="C:\OpenCV\modules\ml\src\kdtree.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\ml\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\cvconfig.h" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\opencv2\opencv_modules.hpp" />
+    <ResourceCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\ml\vs_version.rc" />
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\ml\opencv_ml_main.cpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\ml\CMakeFiles\opencv_ml.dir\cmake_pch.hxx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\ZERO_CHECK.vcxproj">
+      <Project>{88AD6D21-1BE3-3361-AED9-F84450C1C9FA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\hal\ipp\ipphal.vcxproj">
+      <Project>{F4B1E634-7D15-3F97-88F6-CAA7B7A64770}</Project>
+      <Name>ipphal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\ippiw\ippiw.vcxproj">
+      <Project>{AAD9C648-1FDD-3A69-9E96-B3827A4DFB6D}</Project>
+      <Name>ippiw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core.vcxproj">
+      <Project>{A1AB47E7-ADF8-3F3D-A84A-E8BFC791FE6C}</Project>
+      <Name>opencv_core</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="\CMakeFiles\0a52e39fe3d55d3ea6e3852df972bdd6\bindings.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="\CMakeFiles\f3c7a1f4a29aba7622f3eb8ff9c78431\gen_opencv_js_source.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\OpenCV\modules\js\generator\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\OpenCV\modules\js\src\core_bindings.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\OpenCV\modules\js\generator\embindgen.py" />
+    <None Include="C:\OpenCV\modules\js\generator\templates.py" />
+    <None Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\js_bindings_generator\CMakeFiles\gen_opencv_js_source" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{10D4A8B5-0E1B-3F7B-9CD7-F2AD99490CB9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{43979194-D4C6-36BB-B025-E3CABE3021B9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

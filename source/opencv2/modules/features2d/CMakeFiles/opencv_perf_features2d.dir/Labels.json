@@ -1,0 +1,84 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/source/opencv2/modules/features2d/CMakeFiles/opencv_perf_features2d.dir/cmake_pch.cxx"
+		},
+		{
+			"file" : "C:/OpenCV/modules/features2d/perf/opencl/perf_brute_force_matcher.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_features2d",
+				"PerfTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/features2d/perf/opencl/perf_feature2d.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_features2d",
+				"PerfTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/features2d/perf/perf_batchDistance.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_features2d",
+				"PerfTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/features2d/perf/perf_feature2d.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_features2d",
+				"PerfTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/features2d/perf/perf_main.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_features2d",
+				"PerfTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/features2d/perf/perf_feature2d.hpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_features2d",
+				"PerfTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/features2d/perf/perf_precomp.hpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_features2d",
+				"PerfTest"
+			]
+		},
+		{
+			"file" : "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/source/opencv2/modules/features2d/CMakeFiles/opencv_perf_features2d.dir/cmake_pch.hxx"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Main",
+			"opencv_features2d",
+			"PerfTest"
+		],
+		"name" : "opencv_perf_features2d"
+	}
+}

@@ -1,0 +1,3 @@
+# CMake generation dependency list for this directory.
+C:/OpenCV/cmake/templates/vs_version.rc.in
+C:/OpenCV/modules/core/CMakeLists.txt

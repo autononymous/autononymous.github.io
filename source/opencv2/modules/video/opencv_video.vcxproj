@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations" />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A0D9FEC1-DFA4-3D06-8A13-B60992DFE07B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_video</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <CustomBuild Include="\CMakeFiles\f2aad47ad44e9254afcf656b26499f59\opencl_kernels_video.cpp.rule">
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\OpenCV\modules\video\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\video\CMakeFiles\opencv_video.dir\cmake_pch.cxx" />
+    <ClInclude Include="C:\OpenCV\modules\video\include\opencv2\video.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\video\include\opencv2\video\background_segm.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\video\include\opencv2\video\detail\tracking.detail.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\video\include\opencv2\video\legacy\constants_c.h" />
+    <ClInclude Include="C:\OpenCV\modules\video\include\opencv2\video\tracking.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\video\include\opencv2\video\video.hpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\bgfg_KNN.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\bgfg_gaussmix2.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\camshift.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\dis_flow.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\ecc.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\kalman.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\lkpyramid.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\optflowgf.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\optical_flow_io.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\tracking\detail\tracker_feature.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\tracking\detail\tracker_feature_set.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\tracking\detail\tracker_mil_model.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\tracking\detail\tracker_mil_state.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\tracking\detail\tracker_model.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\tracking\detail\tracker_sampler.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\tracking\detail\tracker_sampler_algorithm.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\tracking\detail\tracker_state_estimator.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\tracking\detail\tracking_feature.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\tracking\detail\tracking_online_mil.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\tracking\tracker.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\tracking\tracker_dasiamrpn.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\tracking\tracker_goturn.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\tracking\tracker_mil.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\tracking\tracker_nano.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\tracking\tracker_vit.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\video\src\variational_refinement.cpp" />
+    <None Include="C:\OpenCV\modules\video\src\opencl\bgfg_knn.cl" />
+    <None Include="C:\OpenCV\modules\video\src\opencl\bgfg_mog2.cl" />
+    <None Include="C:\OpenCV\modules\video\src\opencl\dis_flow.cl" />
+    <None Include="C:\OpenCV\modules\video\src\opencl\optical_flow_farneback.cl" />
+    <None Include="C:\OpenCV\modules\video\src\opencl\pyrlk.cl" />
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\video\opencl_kernels_video.cpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\video\opencl_kernels_video.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\video\src\hal_replacement.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\video\src\lkpyramid.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\video\src\precomp.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\video\src\tracking\detail\tracker_feature_haar.impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\video\src\tracking\detail\tracker_mil_model.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\video\src\tracking\detail\tracker_mil_state.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\video\src\tracking\detail\tracking_feature.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\video\src\tracking\detail\tracking_online_mil.hpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\cvconfig.h" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\opencv2\opencv_modules.hpp" />
+    <ResourceCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\video\vs_version.rc" />
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\video\opencv_video_main.cpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\video\CMakeFiles\opencv_video.dir\cmake_pch.hxx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\ZERO_CHECK.vcxproj">
+      <Project>{88AD6D21-1BE3-3361-AED9-F84450C1C9FA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\hal\ipp\ipphal.vcxproj">
+      <Project>{F4B1E634-7D15-3F97-88F6-CAA7B7A64770}</Project>
+      <Name>ipphal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\ippiw\ippiw.vcxproj">
+      <Project>{AAD9C648-1FDD-3A69-9E96-B3827A4DFB6D}</Project>
+      <Name>ippiw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\calib3d\opencv_calib3d.vcxproj">
+      <Project>{98E72595-0A06-3F7D-9F50-8C6E69AB854F}</Project>
+      <Name>opencv_calib3d</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core.vcxproj">
+      <Project>{A1AB47E7-ADF8-3F3D-A84A-E8BFC791FE6C}</Project>
+      <Name>opencv_core</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn.vcxproj">
+      <Project>{8F4937CA-884E-387F-98F2-61FA27BF8CF7}</Project>
+      <Name>opencv_dnn</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\features2d\opencv_features2d.vcxproj">
+      <Project>{EB7C9BCF-6E10-3A6E-B8BE-23CD022F7BE5}</Project>
+      <Name>opencv_features2d</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\flann\opencv_flann.vcxproj">
+      <Project>{C095F40E-D66D-3683-A6FB-9F299DDC461C}</Project>
+      <Name>opencv_flann</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc.vcxproj">
+      <Project>{F2B52B5E-100A-3A91-B88A-6C8D81E40B6E}</Project>
+      <Name>opencv_imgproc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

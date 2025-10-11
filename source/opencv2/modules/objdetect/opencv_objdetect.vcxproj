@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations" />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{39835506-DAF6-3AA1-BFDD-6703237702DC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_objdetect</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <CustomBuild Include="\CMakeFiles\759466f6ad16fd8d8d9d32dae31fd456\opencl_kernels_objdetect.cpp.rule">
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\OpenCV\modules\objdetect\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\objdetect\CMakeFiles\opencv_objdetect.dir\cmake_pch.cxx" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\include\opencv2\objdetect.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\include\opencv2\objdetect\aruco_board.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\include\opencv2\objdetect\aruco_detector.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\include\opencv2\objdetect\aruco_dictionary.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\include\opencv2\objdetect\barcode.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\include\opencv2\objdetect\charuco_detector.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\include\opencv2\objdetect\detection_based_tracker.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\include\opencv2\objdetect\face.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\include\opencv2\objdetect\graphical_code_detector.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\include\opencv2\objdetect\objdetect.hpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\aruco\apriltag\apriltag_quad_thresh.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\aruco\apriltag\zmaxheap.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\aruco\aruco_board.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\aruco\aruco_detector.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\aruco\aruco_dictionary.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\aruco\aruco_utils.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\aruco\charuco_detector.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\barcode.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\barcode_decoder\abs_decoder.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\barcode_decoder\common\hybrid_binarizer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\barcode_decoder\common\super_scale.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\barcode_decoder\common\utils.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\barcode_decoder\ean13_decoder.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\barcode_decoder\ean8_decoder.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\barcode_decoder\upcean_decoder.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\barcode_detector\bardetect.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\cascadedetect.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\cascadedetect_convert.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\detection_based_tracker.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\face_detect.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\face_recognize.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\graphical_code_detector.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\hog.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\main.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\qrcode.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\objdetect\src\qrcode_encoder.cpp" />
+    <None Include="C:\OpenCV\modules\objdetect\src\opencl\cascadedetect.cl" />
+    <None Include="C:\OpenCV\modules\objdetect\src\opencl\objdetect_hog.cl" />
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\objdetect\opencl_kernels_objdetect.cpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\objdetect\opencl_kernels_objdetect.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\aruco\apriltag\apriltag_quad_thresh.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\aruco\apriltag\predefined_dictionaries_apriltag.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\aruco\apriltag\unionfind.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\aruco\apriltag\zarray.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\aruco\apriltag\zmaxheap.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\aruco\aruco_utils.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\aruco\predefined_dictionaries.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\barcode_decoder\abs_decoder.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\barcode_decoder\common\hybrid_binarizer.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\barcode_decoder\common\super_scale.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\barcode_decoder\common\utils.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\barcode_decoder\ean13_decoder.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\barcode_decoder\ean8_decoder.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\barcode_decoder\upcean_decoder.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\barcode_detector\bardetect.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\cascadedetect.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\graphical_code_detector_impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\precomp.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\objdetect\src\qrcode_encoder_table.inl.hpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\cvconfig.h" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\opencv2\opencv_modules.hpp" />
+    <ResourceCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\objdetect\vs_version.rc" />
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\objdetect\opencv_objdetect_main.cpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\objdetect\CMakeFiles\opencv_objdetect.dir\cmake_pch.hxx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\ZERO_CHECK.vcxproj">
+      <Project>{88AD6D21-1BE3-3361-AED9-F84450C1C9FA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\hal\ipp\ipphal.vcxproj">
+      <Project>{F4B1E634-7D15-3F97-88F6-CAA7B7A64770}</Project>
+      <Name>ipphal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\ippiw\ippiw.vcxproj">
+      <Project>{AAD9C648-1FDD-3A69-9E96-B3827A4DFB6D}</Project>
+      <Name>ippiw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\calib3d\opencv_calib3d.vcxproj">
+      <Project>{98E72595-0A06-3F7D-9F50-8C6E69AB854F}</Project>
+      <Name>opencv_calib3d</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core.vcxproj">
+      <Project>{A1AB47E7-ADF8-3F3D-A84A-E8BFC791FE6C}</Project>
+      <Name>opencv_core</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn.vcxproj">
+      <Project>{8F4937CA-884E-387F-98F2-61FA27BF8CF7}</Project>
+      <Name>opencv_dnn</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\features2d\opencv_features2d.vcxproj">
+      <Project>{EB7C9BCF-6E10-3A6E-B8BE-23CD022F7BE5}</Project>
+      <Name>opencv_features2d</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\flann\opencv_flann.vcxproj">
+      <Project>{C095F40E-D66D-3683-A6FB-9F299DDC461C}</Project>
+      <Name>opencv_flann</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc.vcxproj">
+      <Project>{F2B52B5E-100A-3A91-B88A-6C8D81E40B6E}</Project>
+      <Name>opencv_imgproc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

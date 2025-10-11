@@ -1,0 +1,111 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/source/opencv2/modules/stitching/CMakeFiles/opencv_test_stitching.dir/cmake_pch.cxx"
+		},
+		{
+			"file" : "C:/OpenCV/modules/stitching/test/ocl/test_warpers.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_stitching",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/stitching/test/test_blenders.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_stitching",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/stitching/test/test_blenders.cuda.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_stitching",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/stitching/test/test_exposure_compensate.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_stitching",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/stitching/test/test_main.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_stitching",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/stitching/test/test_matchers.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_stitching",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/stitching/test/test_reprojection.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_stitching",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/stitching/test/test_stitcher.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_stitching",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/stitching/test/test_wave_correction.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_stitching",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/stitching/test/test_precomp.hpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_stitching",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/source/opencv2/modules/stitching/CMakeFiles/opencv_test_stitching.dir/cmake_pch.hxx"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Main",
+			"opencv_stitching",
+			"AccuracyTest"
+		],
+		"name" : "opencv_test_stitching"
+	}
+}

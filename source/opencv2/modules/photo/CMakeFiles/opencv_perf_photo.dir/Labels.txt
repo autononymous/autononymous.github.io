@@ -1,0 +1,31 @@
+# Target labels
+ Main
+ opencv_photo
+ PerfTest
+# Source files and their labels
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/source/opencv2/modules/photo/CMakeFiles/opencv_perf_photo.dir/cmake_pch.cxx
+C:/OpenCV/modules/photo/perf/opencl/perf_denoising.cpp
+ Main
+ opencv_photo
+ PerfTest
+C:/OpenCV/modules/photo/perf/perf_cuda.cpp
+ Main
+ opencv_photo
+ PerfTest
+C:/OpenCV/modules/photo/perf/perf_hdr.cpp
+ Main
+ opencv_photo
+ PerfTest
+C:/OpenCV/modules/photo/perf/perf_inpaint.cpp
+ Main
+ opencv_photo
+ PerfTest
+C:/OpenCV/modules/photo/perf/perf_main.cpp
+ Main
+ opencv_photo
+ PerfTest
+C:/OpenCV/modules/photo/perf/perf_precomp.hpp
+ Main
+ opencv_photo
+ PerfTest
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/source/opencv2/modules/photo/CMakeFiles/opencv_perf_photo.dir/cmake_pch.hxx

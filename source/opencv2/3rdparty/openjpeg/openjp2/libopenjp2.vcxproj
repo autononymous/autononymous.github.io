@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations" />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{29FF3B32-C2FE-34DB-907C-6440FD730247}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>libopenjp2</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\OpenCV\3rdparty\openjpeg\openjp2\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\thread.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\bio.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\cio.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\dwt.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\event.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\ht_dec.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\image.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\invert.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\j2k.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\jp2.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\mct.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\mqc.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\openjpeg.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\opj_clock.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\pi.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\t1.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\t2.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\tcd.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\tgt.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\function_list.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\opj_malloc.c" />
+    <ClCompile Include="C:\OpenCV\3rdparty\openjpeg\openjp2\sparse_array.c" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\ZERO_CHECK.vcxproj">
+      <Project>{88AD6D21-1BE3-3361-AED9-F84450C1C9FA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

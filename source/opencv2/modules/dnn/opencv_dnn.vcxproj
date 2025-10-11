@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations" />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8F4937CA-884E-387F-98F2-61FA27BF8CF7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_dnn</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <CustomBuild Include="\CMakeFiles\52d26e0b85efe0722ab20824fa907125\opencl_kernels_dnn.cpp.rule">
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\OpenCV\modules\dnn\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\CMakeFiles\opencv_dnn.dir\cmake_pch.cxx" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\include\opencv2\dnn.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\include\opencv2\dnn\all_layers.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\include\opencv2\dnn\dict.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\include\opencv2\dnn\dnn.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\include\opencv2\dnn\dnn.inl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\include\opencv2\dnn\layer.details.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\include\opencv2\dnn\layer.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\include\opencv2\dnn\layer_reg.private.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\include\opencv2\dnn\shape_utils.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\include\opencv2\dnn\utils\debug_utils.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\include\opencv2\dnn\utils\inference_engine.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\include\opencv2\dnn\version.hpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\misc\caffe\opencv-caffe.pb.cc" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\misc\onnx\opencv-onnx.pb.cc" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\misc\tensorflow\attr_value.pb.cc" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\misc\tensorflow\function.pb.cc" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\misc\tensorflow\graph.pb.cc" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\misc\tensorflow\op_def.pb.cc" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\misc\tensorflow\tensor.pb.cc" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\misc\tensorflow\tensor_shape.pb.cc" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\misc\tensorflow\types.pb.cc" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\misc\tensorflow\versions.pb.cc" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\backend.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\caffe\caffe_importer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\caffe\caffe_io.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\caffe\caffe_shrinker.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\darknet\darknet_importer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\darknet\darknet_io.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\debug_utils.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\dnn.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\dnn_params.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\dnn_read.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\dnn_utils.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\graph_simplifier.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\halide_scheduler.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\ie_ngraph.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\init.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\int8layers\batch_norm_layer.cpp">
+      <ObjectFileName>$(IntDir)/src/int8layers/batch_norm_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\int8layers\convolution_layer.cpp">
+      <ObjectFileName>$(IntDir)/src/int8layers/convolution_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\int8layers\elementwise_layers.cpp">
+      <ObjectFileName>$(IntDir)/src/int8layers/elementwise_layers.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\int8layers\eltwise_layer.cpp">
+      <ObjectFileName>$(IntDir)/src/int8layers/eltwise_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\int8layers\fully_connected_layer.cpp">
+      <ObjectFileName>$(IntDir)/src/int8layers/fully_connected_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\int8layers\layers_rvp052.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\int8layers\pooling_layer.cpp">
+      <ObjectFileName>$(IntDir)/src/int8layers/pooling_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\int8layers\quantization_utils.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\int8layers\scale_layer.cpp">
+      <ObjectFileName>$(IntDir)/src/int8layers/scale_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\int8layers\softmax_layer.cpp">
+      <ObjectFileName>$(IntDir)/src/int8layers/softmax_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layer_factory.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\accum_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\arg_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\attention_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\batch_norm_layer.cpp">
+      <ObjectFileName>$(IntDir)/src/layers/batch_norm_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\blank_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\concat_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\const_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\convolution_layer.cpp">
+      <ObjectFileName>$(IntDir)/src/layers/convolution_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\correlation_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\cpu_kernels\conv_depthwise.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\cpu_kernels\conv_winograd_f63.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\cpu_kernels\conv_winograd_f63.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\cpu_kernels\convolution.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\cpu_kernels\fast_gemm.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\cpu_kernels\fast_norm.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\cpu_kernels\softmax.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\crop_and_resize_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\cumsum_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\depth_space_ops_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\detection_output_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\einsum_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\elementwise_layers.cpp">
+      <ObjectFileName>$(IntDir)/src/layers/elementwise_layers.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\eltwise_layer.cpp">
+      <ObjectFileName>$(IntDir)/src/layers/eltwise_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\expand_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\flatten_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\flow_warp_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\fully_connected_layer.cpp">
+      <ObjectFileName>$(IntDir)/src/layers/fully_connected_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\gather_elements_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\gather_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\gemm_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\group_norm_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\instance_norm_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\layer_norm.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\layers_common.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\lrn_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\matmul_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\max_unpooling_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\mvn_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\nary_eltwise_layers.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\normalize_bbox_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\not_implemented_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\padding_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\permute_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\pooling_layer.cpp">
+      <ObjectFileName>$(IntDir)/src/layers/pooling_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\prior_box_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\proposal_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\recurrent_layers.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\reduce_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\region_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\reorg_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\reshape_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\resize_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\scale_layer.cpp">
+      <ObjectFileName>$(IntDir)/src/layers/scale_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\scatterND_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\scatter_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\shuffle_channel_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\slice_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\softmax_layer.cpp">
+      <ObjectFileName>$(IntDir)/src/layers/softmax_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\split_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\tile_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\layers\topk_layer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\legacy_backend.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\model.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\net.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\net_cann.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\net_impl.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\net_impl_backend.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\net_impl_fuse.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\net_openvino.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\net_quantization.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\nms.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\ocl4dnn\src\common.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\ocl4dnn\src\math_functions.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\ocl4dnn\src\ocl4dnn_conv_spatial.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\ocl4dnn\src\ocl4dnn_inner_product.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\ocl4dnn\src\ocl4dnn_lrn.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\ocl4dnn\src\ocl4dnn_pool.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\ocl4dnn\src\ocl4dnn_softmax.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\onnx\onnx_graph_simplifier.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\onnx\onnx_importer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\op_cann.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\op_cuda.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\op_halide.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\op_inf_engine.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\op_timvx.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\op_vkcom.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\op_webnn.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\registry.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\tensorflow\tf_graph_simplifier.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\tensorflow\tf_importer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\tensorflow\tf_io.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\tflite\tflite_importer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\torch\THDiskFile.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\torch\THFile.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\torch\THGeneral.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\torch\torch_importer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\shader\conv_1x1_fast_spv.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\shader\conv_depthwise_3x3_spv.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\shader\conv_depthwise_spv.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\shader\conv_implicit_gemm_spv.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\shader\gemm_spv.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\shader\nary_eltwise_binary_forward_spv.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\shader\spv_shader.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\src\buffer.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\src\command.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\src\context.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\src\fence.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\src\internal.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\src\op_base.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\src\op_conv.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\src\op_matmul.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\src\op_naryEltwise.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\src\pipeline.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\src\tensor.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\vulkan\vk_functions.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\dnn\src\vkcom\vulkan\vk_loader.cpp" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\activations.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\batchnorm.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\col2im.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\concat.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\conv_layer_spatial.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\conv_spatial_helper.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\detection_output.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\dummy.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\eltwise.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\gemm_buffer.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\gemm_image.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\im2col.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\lrn.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\math.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\matvec_mul.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\mvn.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\ocl4dnn_lrn.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\ocl4dnn_pooling.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\permute.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\pooling.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\prior_box.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\region.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\slice.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\softmax.cl" />
+    <None Include="C:\OpenCV\modules\dnn\src\opencl\softmax_loss.cl" />
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencl_kernels_dnn.cpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencl_kernels_dnn.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\backend.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\caffe\caffe_io.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\caffe\glog_emulator.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\cuda\array.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\cuda\atomics.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\cuda\bbox_utils.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\cuda\block_stride_range.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\cuda\execution.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\cuda\functors.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\cuda\grid_stride_range.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\cuda\index_helpers.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\cuda\kernel_dispatcher.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\cuda\limits.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\cuda\math.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\cuda\memory.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\cuda\types.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\cuda\vector_traits.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\darknet\darknet_io.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\dnn_common.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\factory.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\graph_simplifier.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\halide_scheduler.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\ie_ngraph.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\int8layers\layers_common.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\int8layers\layers_common.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\int8layers\layers_rvp052.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\layer_internals.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\layers\cpu_kernels\conv_block.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\layers\cpu_kernels\conv_depthwise.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\layers\cpu_kernels\conv_winograd_f63.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\layers\cpu_kernels\convolution.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\layers\cpu_kernels\fast_gemm.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\layers\cpu_kernels\fast_gemm_kernels.default.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\layers\cpu_kernels\fast_gemm_kernels.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\layers\cpu_kernels\fast_norm.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\layers\cpu_kernels\softmax.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\layers\layers_common.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\layers\layers_common.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\legacy_backend.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\math_utils.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\net_impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\nms.inl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\ocl4dnn\include\common.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\ocl4dnn\include\default_kernel_config.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\ocl4dnn\include\math_functions.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\ocl4dnn\include\ocl4dnn.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\onnx\onnx_graph_simplifier.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\op_cann.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\op_cuda.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\op_halide.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\op_inf_engine.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\op_timvx.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\op_vkcom.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\op_webnn.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\plugin_api.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\plugin_wrapper.impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\precomp.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\tensorflow\tf_graph_simplifier.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\tensorflow\tf_io.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\tflite\builtin_op_data.h" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\torch\THDiskFile.h" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\torch\THFile.h" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\torch\THFilePrivate.h" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\torch\THGeneral.h" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\vkcom\include\buffer.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\vkcom\include\command.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\vkcom\include\context.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\vkcom\include\fence.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\vkcom\include\op_base.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\vkcom\include\op_conv.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\vkcom\include\op_matmul.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\vkcom\include\op_naryeltwise.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\vkcom\include\pipeline.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\vkcom\include\tensor.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\vkcom\include\vkcom.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\vkcom\shader\spv_shader.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\vkcom\src\internal.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\vkcom\vulkan\function_list.inl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\vkcom\vulkan\vk_functions.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\dnn\src\vkcom\vulkan\vk_loader.hpp" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn_AVX.dir\$(Configuration)\layers_common.avx.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn_AVX.dir\$(Configuration)\conv_block.avx.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn_AVX.dir\$(Configuration)\conv_depthwise.avx.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn_AVX.dir\$(Configuration)\conv_winograd_f63.avx.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn_AVX.dir\$(Configuration)\fast_gemm_kernels.avx.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn_AVX2.dir\$(Configuration)\layers\layers_common.avx2.cpp.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn_AVX2.dir\$(Configuration)\int8layers\layers_common.avx2.cpp.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn_AVX2.dir\$(Configuration)\conv_block.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn_AVX2.dir\$(Configuration)\conv_depthwise.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn_AVX2.dir\$(Configuration)\conv_winograd_f63.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn_AVX2.dir\$(Configuration)\fast_gemm_kernels.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn_AVX512_SKX.dir\$(Configuration)\layers\layers_common.avx512_skx.cpp.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn_AVX512_SKX.dir\$(Configuration)\int8layers\layers_common.avx512_skx.cpp.obj" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\cvconfig.h" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\opencv2\opencv_modules.hpp" />
+    <ResourceCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\vs_version.rc" />
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn_main.cpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\CMakeFiles\opencv_dnn.dir\cmake_pch.hxx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\ZERO_CHECK.vcxproj">
+      <Project>{88AD6D21-1BE3-3361-AED9-F84450C1C9FA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\hal\ipp\ipphal.vcxproj">
+      <Project>{F4B1E634-7D15-3F97-88F6-CAA7B7A64770}</Project>
+      <Name>ipphal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\ippiw\ippiw.vcxproj">
+      <Project>{AAD9C648-1FDD-3A69-9E96-B3827A4DFB6D}</Project>
+      <Name>ippiw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\protobuf\libprotobuf.vcxproj">
+      <Project>{95729199-06CF-3769-A6BA-971F771B4DCA}</Project>
+      <Name>libprotobuf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core.vcxproj">
+      <Project>{A1AB47E7-ADF8-3F3D-A84A-E8BFC791FE6C}</Project>
+      <Name>opencv_core</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn_AVX.vcxproj">
+      <Project>{33B4900D-B4CA-32EB-B4E1-5297434D7004}</Project>
+      <Name>opencv_dnn_AVX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn_AVX2.vcxproj">
+      <Project>{9F12A185-D4F6-361E-9ADC-209C1877109F}</Project>
+      <Name>opencv_dnn_AVX2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\dnn\opencv_dnn_AVX512_SKX.vcxproj">
+      <Project>{1A32646B-9B11-34C6-BC4A-EBDF6141EBF5}</Project>
+      <Name>opencv_dnn_AVX512_SKX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc.vcxproj">
+      <Project>{F2B52B5E-100A-3A91-B88A-6C8D81E40B6E}</Project>
+      <Name>opencv_imgproc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

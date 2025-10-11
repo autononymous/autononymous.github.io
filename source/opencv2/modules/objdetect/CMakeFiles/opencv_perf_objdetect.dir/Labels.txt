@@ -1,0 +1,35 @@
+# Target labels
+ Main
+ opencv_objdetect
+ PerfTest
+# Source files and their labels
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/source/opencv2/modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/cmake_pch.cxx
+C:/OpenCV/modules/objdetect/perf/opencl/perf_cascades.cpp
+ Main
+ opencv_objdetect
+ PerfTest
+C:/OpenCV/modules/objdetect/perf/opencl/perf_hogdetect.cpp
+ Main
+ opencv_objdetect
+ PerfTest
+C:/OpenCV/modules/objdetect/perf/perf_aruco.cpp
+ Main
+ opencv_objdetect
+ PerfTest
+C:/OpenCV/modules/objdetect/perf/perf_barcode.cpp
+ Main
+ opencv_objdetect
+ PerfTest
+C:/OpenCV/modules/objdetect/perf/perf_main.cpp
+ Main
+ opencv_objdetect
+ PerfTest
+C:/OpenCV/modules/objdetect/perf/perf_qrcode_pipeline.cpp
+ Main
+ opencv_objdetect
+ PerfTest
+C:/OpenCV/modules/objdetect/perf/perf_precomp.hpp
+ Main
+ opencv_objdetect
+ PerfTest
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/source/opencv2/modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/cmake_pch.hxx

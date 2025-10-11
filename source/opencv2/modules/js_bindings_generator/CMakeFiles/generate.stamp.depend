@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/OpenCV/cmake/OpenCVBindingsPreprocessorDefinitions.cmake
+C:/OpenCV/modules/js/common.cmake
+C:/OpenCV/modules/js/generator/CMakeLists.txt

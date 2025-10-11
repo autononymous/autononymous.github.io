@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/OpenCV/cmake/OpenCVBindingsPreprocessorDefinitions.cmake
+C:/OpenCV/modules/core/misc/java/src/java/core+Core.jcode.in
+C:/OpenCV/modules/java/common.cmake
+C:/OpenCV/modules/java/generator/CMakeLists.txt
+C:/OpenCV/modules/java/generator/android/java/org/opencv/android/OpenCVLoader.java.in
+C:/OpenCV/modules/java/generator/src/java/org/opencv/osgi/OpenCVNativeLoader.java.in

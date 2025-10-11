@@ -1,0 +1,58 @@
+{
+    "appName": "Stolle PACT",
+    "version": "1.0.0",
+    "settings": 
+    {
+        "theme": "light",
+        "language": "en"
+    },
+    "window":[1200,800],
+    "scheme": 
+    {
+        "light":{
+            "text": 
+            {
+                "p": "#DFE1E2",
+                "h1": "#FFFFFF",
+                "h2": "#999999"
+            },
+            "background": 
+            {
+                "layer0": "#19232D",
+                "layer1": "#222B35",
+                "layer2": "#292D3E",
+                "layer3": "#3a424a"
+            },
+            "light":
+            {
+                "red":"#EE6772",
+                "orange":"#FAB16C",
+                "yellow":"#FAED5C",
+                "green":"#B0E686",
+                "blue":"#57D6E4",
+                "violet":"#C670E0",
+                "stolle":"#005CB9"
+            },
+            "dark":
+            {
+                "red":"#FF4340",
+                "green":"#0BBE0B",
+                "blue":"#179AE0"
+            },
+            "condition":
+            {
+                "true":"#0BBE0B",
+                "false":"#FF4340",
+                "warn":"#FFB800",
+                "info":"#0095FF"
+            },
+            "logo":"logo_white.png",
+            "fonts":
+            {
+                "p":  [ "Helvetica", 12, "normal", "roman" , 0 ],
+                "h1": [ "Helvetica", 16, "bold"  , "italic", 1 ],
+                "h2": [ "Helvetica", 14, "normal", "italic", 1 ]
+            }
+        }
+    }
+}

@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations" />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F2B52B5E-100A-3A91-B88A-6C8D81E40B6E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_imgproc</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <CustomBuild Include="\CMakeFiles\1c23c40af41cbf951053b3f00b304869\opencl_kernels_imgproc.cpp.rule">
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\OpenCV\modules\imgproc\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\CMakeFiles\opencv_imgproc.dir\cmake_pch.cxx" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\include\opencv2\imgproc.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\include\opencv2\imgproc\bindings.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\include\opencv2\imgproc\detail\gcgraph.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\include\opencv2\imgproc\detail\legacy.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\include\opencv2\imgproc\hal\hal.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\include\opencv2\imgproc\hal\interface.h" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\include\opencv2\imgproc\imgproc.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\include\opencv2\imgproc\imgproc_c.h" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\include\opencv2\imgproc\segmentation.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\include\opencv2\imgproc\types_c.h" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\accum.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\accum.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\approx.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\bilateral_filter.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\blend.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\box_filter.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\canny.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\clahe.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\color.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\color_hsv.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\color_lab.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\color_rgb.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\color_yuv.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\colormap.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\connectedcomponents.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\contours.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\contours_approx.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\contours_common.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\contours_link.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\contours_new.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\convhull.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\corner.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\cornersubpix.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\demosaicing.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\deriv.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\distransform.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\drawing.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\emd.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\emd_new.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\featureselect.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\filter.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\floodfill.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\gabor.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\generalized_hough.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\geometry.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\grabcut.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\hershey_fonts.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\histogram.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\hough.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\imgwarp.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\intelligent_scissors.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\intersection.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\linefit.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\lsd.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\main.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\matchcontours.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\median_blur.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\min_enclosing_triangle.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\moments.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\morph.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\phasecorr.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\pyramids.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\resize.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\rotcalipers.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\samplers.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\segmentation.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\shapedescr.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\smooth.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\spatialgradient.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\stackblur.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\subdivision2d.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\sumpixels.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\tables.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\templmatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\thresh.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgproc\src\utils.cpp" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\accumulate.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\bilateral.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\blend_linear.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\boxFilter.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\boxFilter3x3.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\calc_back_project.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\canny.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\clahe.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\color_hsv.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\color_lab.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\color_rgb.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\color_yuv.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\corner.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\covardata.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\filter2D.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\filter2DSmall.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\filterSepCol.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\filterSepRow.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\filterSep_singlePass.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\filterSmall.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\gaussianBlur3x3.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\gaussianBlur5x5.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\gftt.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\histogram.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\hough_lines.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\integral_sum.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\laplacian3.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\laplacian5.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\linearPolar.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\logPolar.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\match_template.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\medianFilter.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\moments.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\morph.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\morph3x3.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\precornerdetect.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\pyr_down.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\pyr_up.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\pyramid_up.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\remap.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\resize.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\sepFilter3x3.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\threshold.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\threshold_mask.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\warp_affine.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\warp_perspective.cl" />
+    <None Include="C:\OpenCV\modules\imgproc\src\opencl\warp_transform.cl" />
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencl_kernels_imgproc.cpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencl_kernels_imgproc.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\_geom.h" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\accum.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\bilateral_filter.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\box_filter.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\ccl_bolelli_forest.inc.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\ccl_bolelli_forest_firstline.inc.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\ccl_bolelli_forest_lastline.inc.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\ccl_bolelli_forest_singleline.inc.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\color.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\color.simd_helpers.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\color_hsv.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\color_rgb.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\color_yuv.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\contours_blockstorage.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\contours_common.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\corner.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\filter.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\filter.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\filterengine.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\fixedpoint.inl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\hal_replacement.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\imgwarp.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\median_blur.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\morph.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\precomp.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\resize.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\smooth.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\sumpixels.avx512_skx.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgproc\src\sumpixels.simd.hpp" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_SSE4_1.dir\$(Configuration)\imgwarp.sse4_1.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_SSE4_1.dir\$(Configuration)\resize.sse4_1.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_SSE4_1.dir\$(Configuration)\accum.sse4_1.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_SSE4_1.dir\$(Configuration)\box_filter.sse4_1.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_SSE4_1.dir\$(Configuration)\filter.sse4_1.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_SSE4_1.dir\$(Configuration)\color_hsv.sse4_1.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_SSE4_1.dir\$(Configuration)\color_rgb.sse4_1.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_SSE4_1.dir\$(Configuration)\color_yuv.sse4_1.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_SSE4_1.dir\$(Configuration)\median_blur.sse4_1.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_SSE4_1.dir\$(Configuration)\morph.sse4_1.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_SSE4_1.dir\$(Configuration)\smooth.sse4_1.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX.dir\$(Configuration)\corner.avx.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX.dir\$(Configuration)\accum.avx.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX2.dir\$(Configuration)\imgwarp.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX2.dir\$(Configuration)\resize.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX2.dir\$(Configuration)\accum.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX2.dir\$(Configuration)\bilateral_filter.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX2.dir\$(Configuration)\box_filter.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX2.dir\$(Configuration)\filter.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX2.dir\$(Configuration)\color_hsv.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX2.dir\$(Configuration)\color_rgb.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX2.dir\$(Configuration)\color_yuv.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX2.dir\$(Configuration)\median_blur.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX2.dir\$(Configuration)\morph.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX2.dir\$(Configuration)\smooth.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX2.dir\$(Configuration)\sumpixels.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX512_SKX.dir\$(Configuration)\median_blur.avx512_skx.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX512_SKX.dir\$(Configuration)\sumpixels.avx512_skx.obj" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\cvconfig.h" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\opencv2\opencv_modules.hpp" />
+    <ResourceCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\vs_version.rc" />
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_main.cpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\CMakeFiles\opencv_imgproc.dir\cmake_pch.hxx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\ZERO_CHECK.vcxproj">
+      <Project>{88AD6D21-1BE3-3361-AED9-F84450C1C9FA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\hal\ipp\ipphal.vcxproj">
+      <Project>{F4B1E634-7D15-3F97-88F6-CAA7B7A64770}</Project>
+      <Name>ipphal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\ippiw\ippiw.vcxproj">
+      <Project>{AAD9C648-1FDD-3A69-9E96-B3827A4DFB6D}</Project>
+      <Name>ippiw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core.vcxproj">
+      <Project>{A1AB47E7-ADF8-3F3D-A84A-E8BFC791FE6C}</Project>
+      <Name>opencv_core</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX.vcxproj">
+      <Project>{E944AD0F-CE41-3EB9-9C97-5CF43BDC371D}</Project>
+      <Name>opencv_imgproc_AVX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX2.vcxproj">
+      <Project>{A3F3DDA0-25C4-321F-9443-D4EE30D89FA5}</Project>
+      <Name>opencv_imgproc_AVX2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_AVX512_SKX.vcxproj">
+      <Project>{B22EBA24-D9DE-38AA-A450-DC2A154B1A92}</Project>
+      <Name>opencv_imgproc_AVX512_SKX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc_SSE4_1.vcxproj">
+      <Project>{34AB5338-7E48-362E-9942-4135A36CF6BB}</Project>
+      <Name>opencv_imgproc_SSE4_1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

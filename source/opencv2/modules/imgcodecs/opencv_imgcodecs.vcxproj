@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations" />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{27F3C70F-CF0A-3930-A42F-2230C862B870}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_imgcodecs</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <CustomBuild Include="C:\OpenCV\modules\imgcodecs\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgcodecs\CMakeFiles\opencv_imgcodecs.dir\cmake_pch.cxx" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\include\opencv2\imgcodecs.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\include\opencv2\imgcodecs\imgcodecs.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\include\opencv2\imgcodecs\imgcodecs_c.h" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\include\opencv2\imgcodecs\ios.h" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\include\opencv2\imgcodecs\legacy\constants_c.h" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\include\opencv2\imgcodecs\macosx.h" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\loadsave.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\utils.cpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\precomp.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\utils.hpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_avif.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_base.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_bmp.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_exr.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_gdal.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_gdcm.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_gif.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_hdr.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_jpeg.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_jpeg2000.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_jpeg2000_openjpeg.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_jpegxl.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_pam.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_pfm.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_png.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_pxm.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_spng.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_sunras.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_tiff.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\grfmt_webp.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\bitstrm.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\rgbe.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\imgcodecs\src\exif.cpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_avif.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_base.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_bmp.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_exr.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_gdal.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_gdcm.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_gif.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_hdr.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_jpeg.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_jpeg2000.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_jpeg2000_openjpeg.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_jpegxl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_pam.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_pfm.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_png.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_pxm.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_spng.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_sunras.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_tiff.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmt_webp.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\grfmts.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\bitstrm.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\rgbe.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\imgcodecs\src\exif.hpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\cvconfig.h" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\opencv2\opencv_modules.hpp" />
+    <ResourceCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgcodecs\vs_version.rc" />
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgcodecs\opencv_imgcodecs_main.cpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgcodecs\CMakeFiles\opencv_imgcodecs.dir\cmake_pch.hxx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\ZERO_CHECK.vcxproj">
+      <Project>{88AD6D21-1BE3-3361-AED9-F84450C1C9FA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\openexr\IlmImf.vcxproj">
+      <Project>{28E2D7A4-30BC-398A-8B0E-18BC36559660}</Project>
+      <Name>IlmImf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\hal\ipp\ipphal.vcxproj">
+      <Project>{F4B1E634-7D15-3F97-88F6-CAA7B7A64770}</Project>
+      <Name>ipphal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\ippiw\ippiw.vcxproj">
+      <Project>{AAD9C648-1FDD-3A69-9E96-B3827A4DFB6D}</Project>
+      <Name>ippiw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libjpeg-turbo\libjpeg-turbo.vcxproj">
+      <Project>{0E2C1A07-B2AB-39D4-AB66-7F95CAF1E132}</Project>
+      <Name>libjpeg-turbo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\openjpeg\openjp2\libopenjp2.vcxproj">
+      <Project>{29FF3B32-C2FE-34DB-907C-6440FD730247}</Project>
+      <Name>libopenjp2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libpng\libpng.vcxproj">
+      <Project>{38B61AD7-F3C4-3572-A5D4-814324593257}</Project>
+      <Name>libpng</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libtiff\libtiff.vcxproj">
+      <Project>{9BA4B7A2-07F2-3787-B9D6-2BB29B1D240E}</Project>
+      <Name>libtiff</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\libwebp\libwebp.vcxproj">
+      <Project>{5BA06A4B-758E-3B77-BFD5-D5A4719DD4B0}</Project>
+      <Name>libwebp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core.vcxproj">
+      <Project>{A1AB47E7-ADF8-3F3D-A84A-E8BFC791FE6C}</Project>
+      <Name>opencv_core</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc.vcxproj">
+      <Project>{F2B52B5E-100A-3A91-B88A-6C8D81E40B6E}</Project>
+      <Name>opencv_imgproc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\zlib\zlib.vcxproj">
+      <Project>{9FB8B74A-97F6-3457-8A96-B510D9CF941F}</Project>
+      <Name>zlib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,14 @@
+# CMake generation dependency list for this directory.
+C:/OpenCV/cmake/OpenCVBindingsPreprocessorDefinitions.cmake
+C:/OpenCV/modules/core/misc/python/package/mat_wrapper/__init__.py
+C:/OpenCV/modules/core/misc/python/package/utils/__init__.py
+C:/OpenCV/modules/gapi/misc/python/package/gapi/__init__.py
+C:/OpenCV/modules/python/bindings/CMakeLists.txt
+C:/OpenCV/modules/python/package/cv2/__init__.py
+C:/OpenCV/modules/python/package/cv2/load_config_py2.py
+C:/OpenCV/modules/python/package/cv2/load_config_py3.py
+C:/OpenCV/modules/python/package/extra_modules/misc/__init__.py
+C:/OpenCV/modules/python/package/extra_modules/misc/version.py
+C:/OpenCV/modules/python/package/setup.py
+C:/OpenCV/modules/python/package/template/config.py.in
+C:/OpenCV/modules/python/python_loader.cmake

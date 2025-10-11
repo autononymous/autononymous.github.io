@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/OpenCV/3rdparty/openexr/CMakeLists.txt
+C:/OpenCV/3rdparty/openexr/IlmBaseConfig.h.cmakein
+C:/OpenCV/3rdparty/openexr/OpenEXRConfig.h.cmakein

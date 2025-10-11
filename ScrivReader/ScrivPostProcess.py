@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 import sys
 import glob
 import time
+import csv
 
 # @file ScrivPostProcess.py
 # 
@@ -108,7 +109,7 @@ def ScrPostProcess(filename):
         except Exception as error:
             print('> Unable to resolve path "'+str(filename)+'".\n Error is: ' + str(error) + "\n\n")
             return
-    
+    print(content)
     loaded = js.loads(content)
     JS = loaded["Manuscript"];
     
@@ -123,11 +124,19 @@ def ScrPostProcess(filename):
     DictReleased = [];
     DictFull = [];
     
+    TrueActNum = 0;
     TrueChapterNum = 0;
     TrueSceneNum = 0;
     
     infoCountChapter = 0;
     infoCountScene = 0;
+    
+    ThisChapterTitle = "";
+    ThisChapterSub = "";
+    ThisSynopsis = "";
+    ThisRelease = "";
+    
+    CSVdata = [];
     
     ThisType = "";
     WasType = "";
@@ -140,6 +149,7 @@ def ScrPostProcess(filename):
         ThisType = JS[i]["DocType"]
         if (ThisType == "Act"):
             if (WasType == "Scene"): # This means Chapter Scene collection is over.
+                TrueActNum += 1;
                 StoryName = JS[i]["StoryName"]
                 PushChapter(ChapDict,StoryName);
                 TOCdict.update({JS[i-1]["ChapterFull"]:TOCentry})
@@ -204,14 +214,20 @@ def ScrPostProcess(filename):
                 "Status":JS[i]["Status"],
                 "Summary" : JS[i]["Summary"]
             }
+            ThisChapterTitle = TOCentry["Title"];
+            ThisChapterSub = TOCentry["Subtitle"];
+            ThisSynopsis = TOCentry["Synopsis"];
+            ThisRelease = TOCentry["Release"];
             
         elif (ThisType == "Scene"):
+            SceneWordCount = 0;
             ChapDict["Body"].append(JS[i]["Body"]);
             infoCountScene += 1;
             Sentences = JS[i]["Body"].replace("</p>","</p>\n").split("\n")
             Section = [];
             TrueSentenceNum = 0;
-            TrueSceneNum += 1;
+            TrueSceneNum += 1;       
+            
             for Sentence in Sentences:
                 if not ('<p>' in Sentence):
                     pass
@@ -219,9 +235,14 @@ def ScrPostProcess(filename):
                     #print(Sentence)
                 else:
                     TrueSentenceNum += 1;
-                    
+                    SceneWordCount += len(Sentence.split(" "))+1;
                     FormattedSentence = Sentence.replace("<p>",'<p id="' + str(int(JS[i]["ActNum"])-1) + "." + str(JS[i]["ChapterFull"]) + "." + str(TrueSceneNum) + "." + str(TrueSentenceNum) + '" class="' + str(ScenePerspective) + '">' );
-                    Section.append(FormattedSentence)            
+                    Section.append(FormattedSentence)   
+                    
+            CSVentry = [ TrueActNum , TrueChapterNum, TrueSceneNum, ThisChapterTitle, ThisChapterSub, ThisSynopsis, ThisRelease, SceneWordCount, JS[i]["Body"].replace("</p>","\n").replace("<p>","").replace("&emsp;","").replace("&quot;",'"')[0:499]+"..."  ]
+            CSVdata.append(CSVentry);    
+                    
+                    
             ChapDict["BodyFormatted"].append(Section)     
         WasType = ThisType;
     PushChapter(ChapDict,StoryName);
@@ -240,8 +261,14 @@ def ScrPostProcess(filename):
     LogProcess('> Generating "FULL" file of processed data...');   
     with open(import_path + 'latest/' + str(StoryName) + "_F.JSON", "w") as f:
         f.write(js.dumps(DictFull,indent=2));
-
     
+    filename = import_path + "csv/storycsv_" + StoryName + ".csv"
+
+    with open(filename, 'w', newline='') as file:
+        writer = csv.writer(file)
+
+        for row in CSVdata:
+            writer.writerow(row)    
     
     print(js.dumps(ChapDict["BodyFormatted"],indent=2))
 def GetFolders(arg):

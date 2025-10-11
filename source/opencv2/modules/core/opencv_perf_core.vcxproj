@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations" />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BEDB93F8-3E56-37FA-A0BD-51B318453623}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_perf_core</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\OpenCV\modules\core\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\CMakeFiles\opencv_perf_core.dir\cmake_pch.cxx" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\cuda\perf_gpumat.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\opencl\perf_arithm.cpp">
+      <ObjectFileName>$(IntDir)/perf/opencl/perf_arithm.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\core\perf\opencl\perf_bufferpool.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\opencl\perf_channels.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\opencl\perf_dxt.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\opencl\perf_gemm.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\opencl\perf_matop.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\opencl\perf_usage_flags.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_abs.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_addWeighted.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_allocation.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_arithm.cpp">
+      <ObjectFileName>$(IntDir)/perf/perf_arithm.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_bitwise.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_compare.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_convertTo.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_cvround.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_dft.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_dot.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_flip.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_inRange.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_io_base64.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_lut.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_main.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_mat.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_math.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_merge.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_minmaxloc.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_norm.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_reduce.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_sort.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_split.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_stat.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\perf\perf_umat.cpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\perf\perf_precomp.hpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\CMakeFiles\opencv_perf_core.dir\cmake_pch.hxx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\ZERO_CHECK.vcxproj">
+      <Project>{88AD6D21-1BE3-3361-AED9-F84450C1C9FA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\hal\ipp\ipphal.vcxproj">
+      <Project>{F4B1E634-7D15-3F97-88F6-CAA7B7A64770}</Project>
+      <Name>ipphal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\ippiw\ippiw.vcxproj">
+      <Project>{AAD9C648-1FDD-3A69-9E96-B3827A4DFB6D}</Project>
+      <Name>ippiw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core.vcxproj">
+      <Project>{A1AB47E7-ADF8-3F3D-A84A-E8BFC791FE6C}</Project>
+      <Name>opencv_core</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\highgui\opencv_highgui.vcxproj">
+      <Project>{037E9CEA-AA3F-3173-9CCE-047F2B006191}</Project>
+      <Name>opencv_highgui</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\opencv_highgui_plugins.vcxproj">
+      <Project>{1404E802-196E-3010-8CAB-36E3E705ED00}</Project>
+      <Name>opencv_highgui_plugins</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgcodecs\opencv_imgcodecs.vcxproj">
+      <Project>{27F3C70F-CF0A-3930-A42F-2230C862B870}</Project>
+      <Name>opencv_imgcodecs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\imgproc\opencv_imgproc.vcxproj">
+      <Project>{F2B52B5E-100A-3A91-B88A-6C8D81E40B6E}</Project>
+      <Name>opencv_imgproc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\ts\opencv_ts.vcxproj">
+      <Project>{D8618EF1-9A7C-3F81-88A7-8952241E2410}</Project>
+      <Name>opencv_ts</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\videoio\opencv_videoio.vcxproj">
+      <Project>{5965FF8E-05C7-33A9-9E12-0B11612DF489}</Project>
+      <Name>opencv_videoio</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\.firstpass\videoio\opencv_videoio_plugins.vcxproj">
+      <Project>{80CDF203-3531-38D7-A709-C072B6C787DB}</Project>
+      <Name>opencv_videoio_plugins</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

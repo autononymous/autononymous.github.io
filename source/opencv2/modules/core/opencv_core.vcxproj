@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations" />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A1AB47E7-ADF8-3F3D-A84A-E8BFC791FE6C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_core</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <CustomBuild Include="\CMakeFiles\1b9dfa23dce351ab8d84ab6e4fe0de08\opencl_kernels_core.cpp.rule">
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\OpenCV\modules\core\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\CMakeFiles\opencv_core.dir\cmake_pch.cxx" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\affine.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\async.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\base.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\bindings_utils.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\bufferpool.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\check.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\core.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\core_c.h" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda.inl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\block.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\border_interpolate.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\color.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\common.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\datamov_utils.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\detail\color_detail.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\detail\reduce.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\detail\reduce_key_val.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\detail\transform_detail.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\detail\type_traits_detail.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\detail\vec_distance_detail.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\dynamic_smem.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\emulation.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\filters.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\funcattrib.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\functional.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\limits.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\reduce.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\saturate_cast.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\scan.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\simd_functions.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\transform.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\type_traits.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\utility.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\vec_distance.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\vec_math.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\vec_traits.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\warp.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\warp_reduce.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda\warp_shuffle.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda_stream_accessor.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cuda_types.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cv_cpu_dispatch.h" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cv_cpu_helper.h" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cvdef.h" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cvstd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cvstd.inl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\cvstd_wrapper.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\detail\async_promise.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\detail\dispatch_helper.impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\detail\exception_ptr.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\directx.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\dualquaternion.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\dualquaternion.inl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\eigen.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\fast_math.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\hal.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\interface.h" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\intrin.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\intrin_avx.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\intrin_avx512.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\intrin_cpp.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\intrin_forward.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\intrin_lasx.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\intrin_legacy_ops.h" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\intrin_lsx.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\intrin_math.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\intrin_msa.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\intrin_neon.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\intrin_rvv071.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\intrin_rvv_scalable.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\intrin_sse.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\intrin_sse_em.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\intrin_vsx.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\intrin_wasm.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\msa_macros.h" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\hal\simd_utils.impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\mat.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\mat.inl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\matx.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\matx.inl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\neon_utils.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\ocl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\ocl_genbase.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\ocl_defs.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\opencl_info.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\opencl_svm.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_clblas.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_clfft.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_core.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_core_wrappers.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_gl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_gl_wrappers.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\runtime\opencl_clblas.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\runtime\opencl_clfft.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\runtime\opencl_core.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\runtime\opencl_core_wrappers.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\runtime\opencl_gl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\runtime\opencl_gl_wrappers.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\runtime\opencl_svm_20.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\runtime\opencl_svm_definitions.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opencl\runtime\opencl_svm_hsa_extension.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\opengl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\operations.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\optim.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\ovx.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\parallel\backend\parallel_for.openmp.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\parallel\backend\parallel_for.tbb.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\parallel\parallel_backend.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\persistence.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\private.cuda.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\private.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\quaternion.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\quaternion.inl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\saturate.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\simd_intrinsics.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\softfloat.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\sse_utils.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\traits.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\types.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\types_c.h" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utility.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utils\allocator_stats.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utils\allocator_stats.impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utils\buffer_area.private.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utils\configuration.private.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utils\filesystem.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utils\filesystem.private.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utils\fp_control.private.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utils\fp_control_utils.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utils\instrumentation.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utils\lock.private.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utils\logger.defines.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utils\logger.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utils\logtag.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utils\plugin_loader.private.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utils\tls.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utils\trace.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\utils\trace.private.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\va_intel.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\version.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\include\opencv2\core\vsx_utils.hpp" />
+    <None Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\version_string.inc" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\algorithm.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\alloc.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\arithm.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\arithm.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\array.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\async.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\batch_distance.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\bindings_utils.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\buffer_area.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\channels.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\check.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\command_line_parser.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\conjugate_gradient.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\convert.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\convert_c.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\convert_scale.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\copy.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\count_non_zero.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\cuda_gpu_mat.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\cuda_gpu_mat_nd.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\cuda_host_mem.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\cuda_info.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\cuda_stream.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\datastructs.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\directx.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\downhill_simplex.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\dxt.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\gl_core_3_1.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\glob.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\hal_internal.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\has_non_zero.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\kmeans.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\lapack.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\lda.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\logger.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\lpsolver.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\lut.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\mathfuncs.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\mathfuncs_core.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\matmul.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\matrix.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\matrix_c.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\matrix_decomp.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\matrix_expressions.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\matrix_iterator.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\matrix_operations.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\matrix_sparse.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\matrix_transform.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\matrix_wrap.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\mean.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\merge.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\minmax.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\norm.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\ocl.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\opencl\runtime\opencl_clblas.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\opencl\runtime\opencl_clfft.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\opencl\runtime\opencl_core.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\opengl.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\out.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\ovx.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\parallel.cpp">
+      <ObjectFileName>$(IntDir)/src/parallel.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\core\src\parallel\parallel.cpp">
+      <ObjectFileName>$(IntDir)/src/parallel/parallel.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\OpenCV\modules\core\src\parallel\parallel_openmp.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\parallel\parallel_tbb.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\parallel_impl.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\pca.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\persistence.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\persistence_base64_encoding.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\persistence_json.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\persistence_types.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\persistence_xml.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\persistence_yml.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\rand.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\softfloat.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\split.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\stat.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\stat_c.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\stl.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\sum.dispatch.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\system.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\tables.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\trace.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\types.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\umatrix.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\utils\datafile.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\utils\filesystem.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\utils\logtagconfigparser.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\utils\logtagmanager.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\utils\samples.cpp" />
+    <ClCompile Include="C:\OpenCV\modules\core\src\va_intel.cpp" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\arithm.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\convert.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\copymakeborder.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\copyset.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\cvtclr_dx.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\fft.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\flip.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\gemm.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\halfconvert.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\inrange.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\intel_gemm.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\lut.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\meanstddev.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\minmaxloc.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\mixchannels.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\mulspectrums.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\normalize.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\reduce.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\reduce2.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\repeat.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\set_identity.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\split_merge.cl" />
+    <None Include="C:\OpenCV\modules\core\src\opencl\transpose.cl" />
+    <ClCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencl_kernels_core.cpp" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencl_kernels_core.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\arithm.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\arithm_ipp.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\bufferpool.impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\convert.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\convert.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\convert_scale.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\count_non_zero.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\directx.inc.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\gl_core_3_1.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\hal_internal.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\hal_replacement.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\has_non_zero.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\intel_gpu_gemm.inl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\mathfuncs.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\mathfuncs_core.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\matmul.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\mean.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\merge.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\norm.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\ocl_disabled.impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\opencl\runtime\autogenerated\opencl_clblas_impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\opencl\runtime\autogenerated\opencl_clfft_impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\opencl\runtime\autogenerated\opencl_core_impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\opencl\runtime\autogenerated\opencl_core_static_impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\opencl\runtime\autogenerated\opencl_gl_impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\opencl\runtime\autogenerated\opencl_gl_static_impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\opencl\runtime\runtime_common.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\parallel\factory_parallel.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\parallel\parallel.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\parallel\plugin_parallel_api.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\parallel\plugin_parallel_wrapper.impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\parallel\registry_parallel.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\parallel\registry_parallel.impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\parallel_impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\persistence.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\persistence_base64_encoding.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\persistence_impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\precomp.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\split.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\stat.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\stat.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\sum.simd.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\umatrix.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\utils\logtagconfig.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\utils\logtagconfigparser.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\utils\logtagmanager.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\utils\plugin_loader.impl.hpp" />
+    <ClInclude Include="C:\OpenCV\modules\core\src\va_wrapper.impl.hpp" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_SSE4_1.dir\$(Configuration)\arithm.sse4_1.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_SSE4_1.dir\$(Configuration)\matmul.sse4_1.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_SSE4_1.dir\$(Configuration)\norm.sse4_1.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_SSE4_2.dir\$(Configuration)\stat.sse4_2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX.dir\$(Configuration)\mathfuncs_core.avx.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX.dir\$(Configuration)\norm.avx.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX2.dir\$(Configuration)\mathfuncs_core.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX2.dir\$(Configuration)\stat.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX2.dir\$(Configuration)\arithm.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX2.dir\$(Configuration)\convert.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX2.dir\$(Configuration)\convert_scale.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX2.dir\$(Configuration)\count_non_zero.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX2.dir\$(Configuration)\has_non_zero.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX2.dir\$(Configuration)\matmul.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX2.dir\$(Configuration)\mean.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX2.dir\$(Configuration)\merge.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX2.dir\$(Configuration)\split.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX2.dir\$(Configuration)\sum.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX2.dir\$(Configuration)\norm.avx2.obj" />
+    <Object Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX512_SKX.dir\$(Configuration)\matmul.avx512_skx.obj" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\cvconfig.h" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\opencv2\opencv_modules.hpp" />
+    <ResourceCompile Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\vs_version.rc" />
+    <ClInclude Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\CMakeFiles\opencv_core.dir\cmake_pch.hxx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\ZERO_CHECK.vcxproj">
+      <Project>{88AD6D21-1BE3-3361-AED9-F84450C1C9FA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\hal\ipp\ipphal.vcxproj">
+      <Project>{F4B1E634-7D15-3F97-88F6-CAA7B7A64770}</Project>
+      <Name>ipphal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\ippiw\ippiw.vcxproj">
+      <Project>{AAD9C648-1FDD-3A69-9E96-B3827A4DFB6D}</Project>
+      <Name>ippiw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\ittnotify\ittnotify.vcxproj">
+      <Project>{897D44F8-E69D-3AF2-B13E-945A6048914E}</Project>
+      <Name>ittnotify</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX.vcxproj">
+      <Project>{8BAE72A0-9A33-3619-9B55-EF4F27A64BD4}</Project>
+      <Name>opencv_core_AVX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX2.vcxproj">
+      <Project>{B1F011B9-CF1B-3D09-895F-E663AF1514D6}</Project>
+      <Name>opencv_core_AVX2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_AVX512_SKX.vcxproj">
+      <Project>{821D1326-6A53-3D9C-B682-D087DFA14B9A}</Project>
+      <Name>opencv_core_AVX512_SKX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_SSE4_1.vcxproj">
+      <Project>{05D9C24D-DE35-3C7E-A544-7EA7F5125D65}</Project>
+      <Name>opencv_core_SSE4_1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\modules\core\opencv_core_SSE4_2.vcxproj">
+      <Project>{16014F85-727B-3BD0-9170-31DF4017FBA3}</Project>
+      <Name>opencv_core_SSE4_2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rkiss\OneDrive\Documents\GitHub\autononymous.github.io\source\opencv2\3rdparty\zlib\zlib.vcxproj">
+      <Project>{9FB8B74A-97F6-3457-8A96-B510D9CF941F}</Project>
+      <Name>zlib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

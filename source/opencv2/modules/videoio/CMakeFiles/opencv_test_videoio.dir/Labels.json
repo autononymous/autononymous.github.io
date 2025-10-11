@@ -1,0 +1,156 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/source/opencv2/modules/videoio/CMakeFiles/opencv_test_videoio.dir/cmake_pch.cxx"
+		},
+		{
+			"file" : "C:/OpenCV/modules/videoio/test/test_audio.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_videoio",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/videoio/test/test_camera.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_videoio",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/videoio/test/test_container_avi.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_videoio",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/videoio/test/test_dynamic.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_videoio",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/videoio/test/test_ffmpeg.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_videoio",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/videoio/test/test_gstreamer.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_videoio",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/videoio/test/test_images.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_videoio",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/videoio/test/test_main.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_videoio",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/videoio/test/test_mfx.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_videoio",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/videoio/test/test_microphone.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_videoio",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/videoio/test/test_orientation.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_videoio",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/videoio/test/test_plugins.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_videoio",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/videoio/test/test_v4l2.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_videoio",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/videoio/test/test_video_io.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_videoio",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/OpenCV/modules/videoio/test/test_precomp.hpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_videoio",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/source/opencv2/modules/videoio/CMakeFiles/opencv_test_videoio.dir/cmake_pch.hxx"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Main",
+			"opencv_videoio",
+			"AccuracyTest"
+		],
+		"name" : "opencv_test_videoio"
+	}
+}
