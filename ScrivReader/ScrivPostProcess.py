@@ -109,8 +109,18 @@ def ScrPostProcess(filename):
         except Exception as error:
             print('> Unable to resolve path "'+str(filename)+'".\n Error is: ' + str(error) + "\n\n")
             return
-    print(content)
-    loaded = js.loads(content)
+    #print(content)
+    try:
+        loaded = js.loads(content)
+    except ValueError as e:
+        ERRline = e.lineno
+        ERRcol = e.colno
+        
+        err_str = "> Error in compilation of the JSON file.\n Exception occured at LINE " + str(ERRline) + ", COL " + str(ERRcol) + ".\nError occured aroundhere:\n\n"
+        err_str += content[ERRcol-50:ERRcol-5] + "    --->" + content[ERRcol-4:ERRcol+4] + " <---    " + content[ERRcol+5:ERRcol+50]
+        print(err_str)
+        raise Exception()
+        
     JS = loaded["Manuscript"];
     
     nEntries = len(JS);
@@ -270,7 +280,7 @@ def ScrPostProcess(filename):
         for row in CSVdata:
             writer.writerow(row)    
     
-    print(js.dumps(ChapDict["BodyFormatted"],indent=2))
+    #print(js.dumps(ChapDict["BodyFormatted"],indent=2))
 def GetFolders(arg):
     result = []
     for item in arg:
