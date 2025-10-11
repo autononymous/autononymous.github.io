@@ -891,7 +891,7 @@ function ApplyColors() {
 }
 function SetInfo() {
     eDATA.innerHTML = 
-          "<h4 class='InfoTitle'>" + ActiveStory + " " + CurrentChapter.ID + "</h4><p class='InfoSub'>"
+          `<h4 class='InfoTitle'> ${ActiveStory} ${CurrentChapter.Act}.${CurrentChapter.ChapterNumber} </h4><p class='InfoSub'>`
         + CurrentChapter.Title + "<br>"
         + CurrentChapter.Subtitle + "</p>"
         ; 
