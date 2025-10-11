@@ -518,7 +518,7 @@ function SetScrollerEvents(ThemeDivs=true) {
 function HandleScrollerEvents() {
     let OverrideContent = CH_OVERRIDES[ActiveStory][CurrentChapter.ID];
     let IsOverride = !(OverrideContent == undefined);
-    if (!IsOverride) {
+    if (!IsOverride && false) {  // ****************[2025-10-11: CHANGED SINCE NO PROLOGUE POEM]
         SetScrollerEvents(IsOverride);
         runScrollEvents();
     } else {
@@ -808,7 +808,7 @@ function PlaceChapter(CHAPTER) {
 async function PlaceOrOverlay(CHAPTER) {
     let BONUS = "";
     let OverrideContent = CH_OVERRIDES[ActiveStory][CurrentChapter.ID];
-    if(OverrideContent != undefined) {        
+    if(OverrideContent != undefined && false) {  // ****************[2025-10-11: CHANGED SINCE NO PROLOGUE POEM]
         StartChapter = CurrentChapter.ChapterNumber;
         PREFS.StartChapter = CurrentChapter.ChapterNumber-1;
         BONUS = await GetJSONFromSource(OverrideContent);

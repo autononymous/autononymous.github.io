@@ -166,7 +166,8 @@
     {
         "03/14/25 // Site Release":"Today marks the release of <a href='https://autononymous.io/'>Autononymous.io</a>! Check out our main page for story updates.",       
         "07/02/25 // Viewer & Story Beta":"&emsp;If you&apos;re reading this right now, it&apos;s for only one of two reasons: either you&apos;re one of my trusted friends or family that I&apos;ve decided to share this with, or you&apos;ve randomly discovered this and you&apos;re early to the show. But either way, I want to thank you for being here and supporting my work. <br><br>&emsp;PARAGATE is the second novel I&apos;ve written; one that is far more personal to me. The two main characters are manifestations of anxiety and major depression that closely resemble my own struggles with these battles, and I look forward to telling you a story about what I&apos;ve learned in &quot;fighting the good fight&quot; against both of them.<br><br>&emsp;This is an early release of the story, so not everything is entirely nailed down yet &mdash; but it&apos;s certainly <em>planned</em>. That being said, if it&apos;s posted here, it&apos;s in polished enough of a form that I&apos;m confident to post it.<br><br>&emsp;If you enjoy this work, please let me know on social media, and feel free to share it with others. I&apos;m still figuring out this self-publishing thing (and trying to spend more of my time writing than improving this Javascript applet).<br><br>Thanks again for your support.<br><br>With love,<br>&emsp;<span style='font-family:Brush Script MT, cursive;font-size:1.5em;'>Savant-Guarde :)</span>",
-        "07/11/25 // Prologue Update":"Finished the split prologue for PARAGATE. Was pretty tough to make the damn thing read across and down most of the time, like a word puzzle or something."
+        "07/11/25 // Prologue Update":"Finished the split prologue for PARAGATE. Was pretty tough to make the damn thing read across and down most of the time, like a word puzzle or something.",
+        "10/11/25 // Story Restructuring":"Pushed preview of COMPLETELY NEW story structure."
     },
     "Firebrand":
     {
@@ -184,7 +185,6 @@
     "Paragate":
     {
         "0.1":"I&apos;m still working on formatting this prologue. Might remove it altogether.",
-        "1.2":"Chapters &apos;Robot Boy&apos; through &apos;Surprise Approach&apos; are in the final stage of self-revision. Everything past this is still in a generative revision.",
         "1.11":"This chapter marks the end of chapters with extensive self-revision. The rest is in a generative state."
     },
     "Firebrand":
@@ -257,7 +257,7 @@
     },
     "Paragate":
     {
-        "0.0":"https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/ScrivReader/story/PG-intro.JSON"
+        "none":"none"
     },
     "Goldenfur":
     {
