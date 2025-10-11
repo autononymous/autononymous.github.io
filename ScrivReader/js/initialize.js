@@ -54,7 +54,8 @@ const VersionLog = {
     "v2.30":"Completion of Paragate introduction with theming.",
     "v2.31":"Capacity for custom scene numbering.",
     "v2.32":"Setting callouts option and custom -hr- dividers.",
-    "v2.40":"More debug information for author and reviewer."
+    "v2.40":"More debug information for author and reviewer.",
+    "v3.00":"Major changes to structure of Paragate."
 }
 
 function dateyear(ydate) {
