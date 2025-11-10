@@ -75,7 +75,9 @@ class PACT_Cam(VideoCapture):
         processed = []
         overlay = []
         composited = []
-        frozen = []        
+        frozen = []      
+        selectionbool = []
+        selection = []
     norm = []; 
     ang = []; 
     mag = []; 
@@ -129,8 +131,11 @@ class PACT_Cam(VideoCapture):
         self.KERNEL = 4
         self.THRESHOLD = 40 # out of 255 on Alpha transparency layer
         self.FREEZE_ALPHA = 0.4
+        self.DO_BOOL_MASK = False
+        self.BOOL_THRESHOLD = 100 # out of 255
+        self.BOOL_SPAN = 1
         
-        self.ImageScale = [480,480]
+        self.ImageScale = [360,360]
         
         self.F_newGrab = ConditionFlag(False)
         self.F_newRead = ConditionFlag(False)
@@ -222,7 +227,18 @@ class PACT_Cam(VideoCapture):
         i_crop = self.cropImage(i_color, self.ImageSize)
         i_resize = cv2.resize(i_crop,self.ImageScale)
         i_blur = cv2.blur(i_resize, (self.KERNEL,self.KERNEL))
-        self.image.processed = i_blur
+        if self.DO_BOOL_MASK is True:
+            upper = self.BOOL_THRESHOLD + self.BOOL_SPAN
+            lower = self.BOOL_THRESHOLD - self.BOOL_SPAN
+            is_inrange = (i_blur >= lower) * (i_blur <= upper) 
+            i_bool = np.array(
+                (i_blur * 0)
+                + ((i_blur - lower) * (255/(self.BOOL_SPAN*2))) * is_inrange #128 * is_inrange
+                + (i_blur >= upper) * 255
+                , dtype='uint8')
+            self.image.processed = i_bool
+        else:            
+            self.image.processed = i_blur
         self.F_newProc.activate()
         return
     
@@ -324,8 +340,17 @@ class PACT_Cam(VideoCapture):
         self.F_newFull.activate()        
         return 
     
+    def SelectionVolume(self, array=None, mode=None, rgb=[0,0,30], spandim=50):
+        if array is None: array = self.image.processed
+        h,w = array.shape[:2]
+        cv2.circle(self.image.processed,[int(h/2),int(w/2)],spandim,rgb)
+        self.image.selection = self.image.processed          
+        return
+            
+                        
+    
 if __name__ == "__main__":
-    PC0 = PACT_Cam(2)
+    PC0 = PACT_Cam(1)
     #PC1 = PACT_Cam(1)
     #PC2 = PACT_Cam(2)    
     print("-----------------------")

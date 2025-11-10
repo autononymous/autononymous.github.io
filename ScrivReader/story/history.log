@@ -9227,3 +9227,72 @@ Filename C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivRe
 > Generating "FULL" file of processed data...
 > Compiling existing files into Master Table Of Contents...
 > Completed for ['Firebrand', 'Paragate'].
+> Running from ScrivenerExport.
+FILEIN ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-101125.json
+> Accepted argument "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-101125.json".
+> Trying fullname path for C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-101125.json.
+Filename C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-101125.json was direct path.
+> Scrivener-exported story "Paragate" has been post-processed.
+  |	Entries:	46
+  |	Chapters:	12
+  |	Scenes: 	33
+> There are an average of 2.75 scenes per chapter.
+> Generating "LATEST" file of unprocessed data...
+> Generating "RELEASED" file of processed data...
+> Generating "FULL" file of processed data...
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> Running from ScrivenerExport.
+FILEIN ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-101125.json
+> Accepted argument "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-101125.json".
+> Trying fullname path for C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-101125.json.
+Filename C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-101125.json was direct path.
+> Scrivener-exported story "Paragate" has been post-processed.
+  |	Entries:	217
+  |	Chapters:	53
+  |	Scenes: 	159
+> There are an average of 3.0 scenes per chapter.
+> Generating "LATEST" file of unprocessed data...
+> Generating "RELEASED" file of processed data...
+> Generating "FULL" file of processed data...
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].
+> Running from ScrivenerExport.
+FILEIN ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-111025.json
+> Accepted argument "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-111025.json".
+> Trying fullname path for C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-111025.json.
+Filename C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-111025.json was direct path.
+> Error in compilation of the JSON file.
+ Exception occured at LINE 1, COL 916589.
+Error occured aroundhere:
+
+ then flip it, and it fits, and then the driv    ---> J:\ pop <---     up in the file explorer: labeled &quot;AX.&q
+> No arguments presented in command line.
+LATESTFILE ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-111025.json
+> Trying fullname path for C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-111025.json.
+Filename C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-111025.json was direct path.
+> Error in compilation of the JSON file.
+ Exception occured at LINE 1, COL 916589.
+Error occured aroundhere:
+
+ then flip it, and it fits, and then the driv    ---> J:\ pop <---     up in the file explorer: labeled &quot;AX.&q
+> Running from ScrivenerExport.
+FILEIN ARGS:
+C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-251110.json
+> Accepted argument "C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-251110.json".
+> Trying fullname path for C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-251110.json.
+Filename C:/Users/rkiss/OneDrive/Documents/GitHub/autononymous.github.io/ScrivReader/story/PG-251110.json was direct path.
+> Scrivener-exported story "Paragate" has been post-processed.
+  |	Entries:	214
+  |	Chapters:	53
+  |	Scenes: 	156
+> There are an average of 2.94 scenes per chapter.
+> Generating "LATEST" file of unprocessed data...
+> Generating "RELEASED" file of processed data...
+> Generating "FULL" file of processed data...
+> Compiling existing files into Master Table Of Contents...
+> Completed for ['Firebrand', 'Paragate'].

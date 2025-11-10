@@ -85,12 +85,14 @@ from pact_mastermind import ConditionFlag
 ##|      def  -:-    SetFreezeAlpha : Set alpha freeze value on slider.     |##
 ##|-------------------------------------------------------------------------|##
 class PACT_UI:    
-    isInit = False
+    isInit = False    
+    BOOLTHRESH = 32
     
     def window_exit(self):
-    #     close = tk.messagebox.askyesno("Exit?", "Are you sure you want to exit?")
-    #     if close:
-        self.ROOT.destroy()  
+        close = tk.messagebox.askyesno("Exit?", "Are you sure you want to exit?")
+        if close:
+            self.RUNNING = False
+            self.ROOT.destroy()  
     
     ## |----------------------------------------------------------------------|
     ## |                         SETTER FUNCTIONS    
@@ -133,7 +135,43 @@ class PACT_UI:
         if value < 0: value = 0.0;
         if value > 1: value = 1.0
         self.WIDGETS[self.WI['freeze']][0].set(value)
-     
+        
+    def GetBlur(self) -> int:
+        return self.WIDGETS[self.WI['blur']][0].get()
+    
+    def SetBlur(self,value) -> None:
+        if value < 0: value = 0;
+        if value > 12: value = 12
+        self.WIDGETS[self.WI['blur']][0].set(value)    
+        
+    def IsBoolMode(self) -> bool:           
+        return 'selected' in self.WIDGETS[self.WI['doBool']][0].state()
+    
+    
+    def SetBoolMode(self,value) -> None:
+        self.WIDGETS[self.WI['blur']][0].set(value and True)
+        
+    def GetBoolThresh(self) -> int:
+        value = self.WIDGETS[self.WI['bool']][0].get()   
+        return 1 if value < 1 else (254 if value > 254 else value)
+        
+    def SetBoolThresh(self,value) -> None:
+        if value < self.BOOLTHRESH: value = self.BOOLTHRESH;
+        if value > 255-self.BOOLTHRESH: value = 255-self.BOOLTHRESH;
+        self.WIDGETS[self.WI['bool']][0].set(value) 
+        
+    def BoundBoolSpan(self):
+        # limit to bounds of 0 to 255 with respect to current bool thresh value        
+        BOOL_THRESH = self.WIDGETS[self.WI['bool']][0].get() 
+        limiter = int(min(254-BOOL_THRESH, BOOL_THRESH+1))
+        
+    def GetBoolSpan(self) -> int:
+        return self.WIDGETS[self.WI['boolSpan']][0].get()
+        
+    def SetBoolSpan(self,value) -> None:        
+        self.WIDGETS[self.WI['boolSpan']][0].set(1 if value < 1 else (self.BOOLTHRESH if value > self.BOOLTHRESH else value))
+        
+        
     ##|---------------------------------------------------------------------|##
     ##|                 >> EXPORTING IMAGE TO TK FORMAT <<                  |##
     ##|---------------------------------------------------------------------|##
@@ -286,7 +324,62 @@ class PACT_UI:
                         tickinterval=0.25,
                         orient  = tk.HORIZONTAL,
                         bg      = self.S.L2,
-                        fg      = self.S.p,),6,1,2,1,"nsew",'freeze']
+                        fg      = self.S.p,),6,1,2,1,"nsew",'freeze'],
+            [tk.Label(   master  = parent,
+                        text    = "Image Blurring ",
+                        font    = self.F.h2(),
+                        bg      = self.S.L2,
+                        fg      = self.S.h2),7,0,1,1,"w",None],
+            [tk.Scale(   master  = parent,
+                        sliderlength = 20,
+                        from_   = 1,
+                        to      = 12,
+                        length  = 150,
+                        resolution=1,
+                        tickinterval=1,
+                        orient  = tk.HORIZONTAL,
+                        bg      = self.S.L2,
+                        fg      = self.S.p,),7,1,2,1,"nsew",'blur'],
+            [tk.Label(   master  = parent, 
+                        text    = "Image Control", 
+                        bg      = self.S.L3, 
+                        fg      = self.S.h1,
+                        font    = self.F.h2() ),8,0,3,1,"nsew",None],
+            [tk.Label(   master  = parent,
+                        text    = "Boolean Mode?  ",
+                        font    = self.F.h2(),
+                        bg      = self.S.L2,
+                        fg      = self.S.h2),9,0,1,1,"w",None],
+            [ttk.Checkbutton( master = parent),9,1,2,1,"w","doBool"],
+            [tk.Label(   master  = parent,
+                        text    = "Boolean Level ",
+                        font    = self.F.h2(),
+                        bg      = self.S.L2,
+                        fg      = self.S.h2),10,0,1,1,"w",None],
+            [tk.Scale(   master  = parent,
+                        sliderlength = 20,
+                        from_   = self.BOOLTHRESH,
+                        to      = 255-self.BOOLTHRESH,
+                        length  = 150,
+                        resolution=1,
+                        orient  = tk.HORIZONTAL,
+                        bg      = self.S.L2,
+                        fg      = self.S.p,),10,1,2,1,"nsew",'bool'],
+            [tk.Label(   master  = parent,
+                        text    = "Boolean Span   ",
+                        font    = self.F.h2(),
+                        bg      = self.S.L2,
+                        fg      = self.S.h2),11,0,1,1,"w",None],
+            [tk.Scale(   master  = parent,
+                        sliderlength = 20,
+                        from_   = 1,
+                        to      = self.BOOLTHRESH,
+                        length  = 150,
+                        resolution=1,
+                        orient  = tk.HORIZONTAL,
+                        bg      = self.S.L2,
+                        fg      = self.S.p,),11,1,2,1,"nsew",'boolSpan']
+            
             ]; elem = self.WIDGETS   
         
         self.WI = {}
@@ -400,6 +493,8 @@ class PACT_UI:
         
         self.CONFIG = CONFIG
         self.loadConfig()                                            # Load theme into STYLE.
+        
+        self.RUNNING = True
         
         self.buildProgram()           
         
