@@ -348,7 +348,7 @@ class PACT_Cam(VideoCapture):
         return
             
                         
-    
+     
 if __name__ == "__main__":
     PC0 = PACT_Cam(1)
     #PC1 = PACT_Cam(1)

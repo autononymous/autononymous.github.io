@@ -32,7 +32,10 @@
 ##|            :                                                            |##
 ##|    AUTHOR <|> Ryan Kissinger                                            |##
 ##|            :                                                            |##
-##|   VERSION <|> '-' - 09/29/25                                            |##
+##|   VERSION <|> '-' - 11/20/25                                            |##
+##|            :    > "Initial project demo for approval from management.   |##
+##|            :    >  Contains basic UI elements and Normal overlay,       |##
+##|            :    >  as well as Boolean Mode, Freeze, and Blur."          |##
 ##|            :                                                            |##
 ##|-------------------------------------------------------------------------|##
 ##|            :                                                            |##

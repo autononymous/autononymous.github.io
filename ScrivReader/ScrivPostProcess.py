@@ -128,11 +128,15 @@ def ScrPostProcess(filename):
     
     ChapDict = {};
     TOCentry = {};
+    BriefSummary = {};
     TOCdict = {};
     StoryName = "";
     
     DictReleased = [];
+    DictAnalyz = [];
     DictFull = [];
+    
+    SentenceSection = [];
     
     TrueActNum = 0;
     TrueChapterNum = 0;
@@ -151,6 +155,8 @@ def ScrPostProcess(filename):
     ThisType = "";
     WasType = "";
     
+    IsActive = True
+    
     for i in range(nEntries):    
         
         if (i>0):
@@ -163,7 +169,22 @@ def ScrPostProcess(filename):
                 StoryName = JS[i]["StoryName"]
                 PushChapter(ChapDict,StoryName);
                 TOCdict.update({JS[i-1]["ChapterFull"]:TOCentry})
-            pass
+                if(IsActive):
+                    DictReleased.append(ChapDict);
+                    DictAnalyz.append(BriefSummary);
+                    DictFull.append(ChapDict);
+                else:
+                    DictFull.append(ChapDict);                    
+                    DictAnalyz.append(BriefSummary);                   
+                  
+                try:
+                    chn = int(JS[i]["ChapterFull"])-1
+                except:
+                    chn = "XX"
+                with open(import_path + 'latest/' + str(JS[i]["StoryName"]) + "_GPTs/GPT_" + str(chn) + ".JSON", "w") as f:        
+                    f.write(js.dumps(BriefSummary,indent=2));
+                
+                
         elif (ThisType == "Chapter"):
             
             TensName = TensNames[int((int(JS[i]["ChapterFull"])  - int(JS[i]["ChapterFull"]) % 10)/10)]
@@ -181,9 +202,18 @@ def ScrPostProcess(filename):
                 TOCdict.update({JS[i-1]["ChapterFull"]:TOCentry})  
                 if(IsActive):
                     DictReleased.append(ChapDict);
+                    DictAnalyz.append(BriefSummary);
                     DictFull.append(ChapDict);
                 else:
-                    DictFull.append(ChapDict);
+                    DictFull.append(ChapDict);                    
+                    DictAnalyz.append(BriefSummary);
+                    
+                try:
+                    chn = int(JS[i]["ChapterFull"])-1
+                except:
+                    chn = "XX"
+                with open(import_path + 'latest/' + str(JS[i]["StoryName"]) + "_GPTs/GPT_" + str(chn) + ".JSON", "w") as f:        
+                    f.write(js.dumps(BriefSummary,indent=2));
             
             if(JS[i]["IsPrologue"] != "Yes"):
                 TrueChapterNum += 1;   
@@ -224,6 +254,14 @@ def ScrPostProcess(filename):
                 "Status":JS[i]["Status"],
                 "Summary" : JS[i]["Summary"]
             }
+            BriefSummary = {
+                "Title":"Chapter " + ChapterFullName,
+                "Subtitle":JS[i]["GivenName"],
+                "ActNumber":int(JS[i]["ActNum"]), # not -1, indexing for this one not at zero
+                "ChapterNumber": JS[i]["ChapterFull"],
+                "Body":[]
+                
+            }
             ThisChapterTitle = TOCentry["Title"];
             ThisChapterSub = TOCentry["Subtitle"];
             ThisSynopsis = TOCentry["Synopsis"];
@@ -235,6 +273,7 @@ def ScrPostProcess(filename):
             infoCountScene += 1;
             Sentences = JS[i]["Body"].replace("</p>","</p>\n").split("\n")
             Section = [];
+            SentenceSection = [];
             TrueSentenceNum = 0;
             TrueSceneNum += 1;       
             
@@ -247,10 +286,14 @@ def ScrPostProcess(filename):
                     TrueSentenceNum += 1;
                     SceneWordCount += len(Sentence.split(" "))+1;
                     FormattedSentence = Sentence.replace("<p>",'<p id="' + str(int(JS[i]["ActNum"])-1) + "." + str(JS[i]["ChapterFull"]) + "." + str(TrueSceneNum) + "." + str(TrueSentenceNum) + '" class="' + str(ScenePerspective) + '">' );
+                    PlainSentence = Sentence.replace("<p>","").replace("</p>","").replace(". . .","&hellip;").replace("...","&hellip;")               
+                    SentenceSection.append(PlainSentence)
                     Section.append(FormattedSentence)   
                     
             CSVentry = [ TrueActNum , TrueChapterNum, TrueSceneNum, ThisChapterTitle, ThisChapterSub, ThisSynopsis, ThisRelease, SceneWordCount, JS[i]["Body"].replace("</p>","\n").replace("<p>","").replace("&emsp;","").replace("&quot;",'"')[0:499]+"..."  ]
-            CSVdata.append(CSVentry);    
+            CSVdata.append(CSVentry);               
+            
+            BriefSummary["Body"].append(SentenceSection);
                     
                     
             ChapDict["BodyFormatted"].append(Section)     
@@ -271,6 +314,10 @@ def ScrPostProcess(filename):
     LogProcess('> Generating "FULL" file of processed data...');   
     with open(import_path + 'latest/' + str(StoryName) + "_F.JSON", "w") as f:
         f.write(js.dumps(DictFull,indent=2));
+    
+    LogProcess('> Generating analyzable file of processed data...');   
+    with open(import_path + 'latest/' + str(StoryName) + "_GPT.JSON", "w") as f:        
+        f.write(js.dumps(DictAnalyz,indent=2));
     
     filename = import_path + "csv/storycsv_" + StoryName + ".csv"
 

@@ -1,9 +1,9 @@
 {
     "User": null,
-    "AlphaLevel": 104,
-    "FreezeLevel": 0.55,
-    "BlurLevel": 6,
-    "BoolLevel": 119,
+    "AlphaLevel": 209,
+    "FreezeLevel": 0.5,
+    "BlurLevel": 7,
+    "BoolLevel": 74,
     "DoBool": false,
-    "BoolSpan": 5
+    "BoolSpan": 7
 }
