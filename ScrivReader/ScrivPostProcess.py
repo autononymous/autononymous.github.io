@@ -23,10 +23,8 @@ TensNames = ["err","err","Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Ei
 
 
 def DateYear(yeardate):
-    """! Converts a numerical yeardate (X out of 365) into a full date.
-    
-    @param yeardate Number representing day of the year out of 365.
-    
+    """! Converts a numerical yeardate (X out of 365) into a full date.    
+    @param yeardate Number representing day of the year out of 365.    
     @return Array containing [month, date, year, full date].
     """
     base_date = datetime(2025, 1, 1)
@@ -49,11 +47,9 @@ def YearDate(date):
 
 
 def PushChapter(data,storyname):
-    """! Creates or accesses relevant directories and pushes chapter contents.
-    
+    """! Creates or accesses relevant directories and pushes chapter contents.    
     @param data The generated JSON object.
-    @param storyname The name of the story being processed.
-    
+    @param storyname The name of the story being processed.    
     @return No returns.   
     """
     

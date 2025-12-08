@@ -46,7 +46,11 @@
                 "warn":"#FFB800",
                 "info":"#0095FF"
             },
-            "logo":"logo_white.png",
+            "logo":"PACT_header_lite.png",
+            "tab1":"icon/tab_control.png",
+            "tab2":"icon/tab_vision.png",
+            "tab3":"icon/tab_guides.png",
+            "tab4":"icon/tab_other.png",
             "fonts":
             {
                 "p":  [ "Helvetica", 12, "normal", "roman" , 0 ],

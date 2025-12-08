@@ -101,8 +101,7 @@ class FSM_PACT():
     isInit = False
     isRunning = True       
     
-    class Profile:        
-                    
+    class Profile:  
         def saveProfile(self,dic=None):
             if dic is None: dic = self.PROFILE;
             json_str = json.dumps(dic, indent=4)
