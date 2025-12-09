@@ -324,12 +324,13 @@ def SaveSectionedCopy(storyDict,indentLevel=None):
             chapters.append(entry['Chapter'])
             actchap[entry['Act']].append(entry['Chapter'])
     # Make a folder for each act in the Story Name folder.
+    print(actchap)
     for act, chapterlist in actchap.items():
         actpath = f"/sectioned/{storyDict[0]['Story']}/{act}"
         MakeDirIfNotExists(actpath)
         for chapter in chapterlist:
             with open(os.getcwd() + actpath + f"/{chapter}.json", "w") as f:
-                f.write(js.dumps(storyDict[chapter]['Body'],ensure_ascii=True,indent=indentLevel))    
+                f.write(js.dumps(storyDict[chapter-1]['Body'],ensure_ascii=True,indent=indentLevel))    
 
 def SaveTableOfContents(manuscriptDict,indentLevel=None):
     '''! Generate a Table Of Contents file that will guide other programs

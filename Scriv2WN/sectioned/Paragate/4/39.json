@@ -1,642 +1,587 @@
 [
    [
       [
-         "BodyKatiya",
-         "&quot;This is a candy store,&quot; I say. &quot;We can&apos;t get distracted by sweets! We&apos;re making our plan of attack.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;No, this is a shop that sells coffee,&quot; Cody says. &quot;Starbucks. People come here to get work done.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I gesture to a lady eating a round, decorated sweet roll on a stick, as she types on her machine. &quot;Why do your people have to reward themselves for doing work? You just do it,&quot; I say.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Just wait until your world industrializes,&quot; Cody says. &quot;You&apos;ll have more time than you know what to do with.&quot; He hands me his phone. I find several pictures of beverages on the screen, and when I scroll, I see loads of options.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;What is this?&quot; I ask.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;You look like a white girl, but you&apos;re sure-as-hell the opposite. So order on here. Pick one that looks good: what kind of flavor do you like?&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Flavor?&quot; I think of what&apos;s at the guardpost: the only control we have over the taste is how far we dilute it with water, and I just drink it straight from the pot.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;How about Pumpkin Spice? It&apos;s nearly out-of-season.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;I want black, please,&quot; I tell him.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Black what?&quot; He scrolls the menu.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Just black. None of the other stuff.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Like an Americano? With at least a little water in there, or&mdash;&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;I want it straight,&quot; I tell him.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Straight, then,&quot; he repeats. &quot;Hot or cold?&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Why would you drink it cold?&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Sometimes it&apos;s better that way,&quot; Cody says. &quot;As long as they don&apos;t rip you off by filling a full cup of ice.&quot; He scrolls between options on his phone, choosing for me. &quot;I&apos;ll give you a little bit of room so you can add something. Suffering seems to be your M.O., but it&apos;s okay to enjoy your life every once in a while, you know?&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I try to glare at him, but he&apos;s too busy choosing his own drink. He gestures to an empty table facing the window, and when we sit, I can feel the air drop a few degrees from the light dusting of snow outside the window.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "He sits across from me, turning his phone upside-down and placing it on the table. We both watch as civilians pass on the sidewalk, and behind them, the steel shell of Cody&apos;s car struggles to melt off the snow with the leftover heat from the engine.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;I thought it would be different,&quot; I say.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;What&apos;s that?&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;The way people walk when they&apos;re between two places. Work and home, or home and work, or doing some short-list of chores between the two. It&apos;s the same as my world. They have the same expression. Same gait, same anxiety.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;I&apos;d think they&apos;d be more anxious in ",
-         false
-      ],
-      [
-         "Emphasis",
-         "your",
-         false
-      ],
-      [
-         "Body",
-         " world,&quot; Cody says.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;So did I,&quot; I say, &quot;with a war going on.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "He hunches over to rest his head in his hands. &quot;Sometimes I think that nothing could be going on at all, and people would feel that discomfort all the same. When less happens, you think more. And when more happens, you think less &mdash; but the strain of all that catches up.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;But shouldn&apos;t ",
-         false
-      ],
-      [
-         "Emphasis",
-         "less",
-         false
-      ],
-      [
-         "Body",
-         " give you more time to be lazy?&quot; I ask.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;It makes you feel guilty, like you should always be doing something. I finished college, and I still dream of facing exams and tests I haven&apos;t studied for.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;But it&apos;s just an adjustment, though, isn&apos;t it? Most Royal Guards that retire have a hard time finding peace after they turn in the crest, but they eventually get there.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Maybe for one person, but what about a whole people?&quot; Cody asks. &quot;My world made it to the point that one press of a button could destroy a whole continent, so we don&apos;t press the limits much anymore. And if we are fighting, we&apos;re controlling machines a thousand miles away.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Then why is there all this anger?&quot; I ask, gesturing to my phone. &quot;Feels like I&apos;m watching my own world, a hundred years from now. You&apos;re all humans, the SAME race, yet people always seem to be yelling at each other. If you&apos;ve solved war by taking it as far as it can go, then where is the peace?&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Peace isn&apos;t profitable,&quot; Cody says. &quot;And it&apos;s not that comfortable either. If life is still hard, and prices are still high, and you don&apos;t have something that everybody can agree is worth fighting, I think people start to turn on each other.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;So hardship is the default,&quot; I say.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "Someone shouts his name.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;I guess,&quot; he says.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "Cody gets up from the table, and moments later, he returns with two drastically-different drinks. One is blacker than Chymaeran tar in a clear glass with cubes of ice floating around. The other is light brown and cloudy, with foam and a sugary drizzle on the top.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "He sets the drinks at exactly halfway across the table, refusing to push one further towards me than the other.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;So I got the dark one,&quot; I say.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Yeah,&quot; Cody says. He watches me hesitate, and a mischievous smile splits across his face. &quot;You got the dark one. And you&apos;re right we can&apos;t get &apos;distracted by sweets:&apos; I guess I just broke the rule, right?&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Well,&quot; I say, feeling my cold stoicism slowly thaw with the warmth of my desire. &quot;Well . . . I&apos;m going to try this one,&quot; I say, snatching the sugary one.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "He frowns. &quot;But you ordered this one!&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Well, you left yourself that &apos;room,&apos; didn&apos;t you?&quot; I ask, taking a loud slurp through the straw, tasting something so sweet and rapturous that it&apos;s hard to contain my bliss.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "He grumbles before he takes a sip. &quot;Like fuckin&apos; dirt,&quot; he says. &quot;And you drink this? Are they trying to prepare you to die by taking all the smallest joys from you?&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I&apos;m too busy sucking down the flavors. He grumbles again, then pours in two sugar packets, then takes a sip that twists his face again, and then pours in some milk.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "Once he&apos;s satisfied, he takes a long sip, punctuated by a few words.",
-         true
-      ],
-      [
-         "Body",
-         "&quot;Don&apos;t get distracted now,&quot; he orders. &quot;We still have a plan to . . . uh, plan.&quot;",
-         true
-      ]
-   ],
-   [
-      [
          "BodyCody",
-         "He turns the grande-sized drink around in his calloused hands, probably struggling to believe that the cup isn&apos;t glass. He finds his name scrawled in Sharpie, and it reads TIEDUS <3 in a girl&apos;s handwriting.",
+         "My own snore awakes me though Katiya is still fast asleep. I check my smartwatch: no texts show in the feed yet, but the digitally-analog hands read 3:40.",
          true
       ],
       [
          "BodyCody",
-         "&quot;Just don&apos;t think too hard about any of it. Just try it. And you too,&quot; Katiya says, motioning to Rayna and Sylvia: she ordered for the three of them before we left.",
+         "She leans against my shoulder, drooling on my shirt, her hair still disheveled with grass and leaves between the strands, and after I gently lower her to the thin cushions of the IKEA couch &mdash; wrapping her in a tasseled throw blanket called VINTERFINT &mdash; there&apos;s an unsettling energy that rises in my nerves.",
          true
       ],
       [
          "BodyCody",
-         "I find the most amusement watching Titus, trying to mask his enjoyment as the &quot;strong, silent type&quot; while he guzzles the first half of it, looking panicked when he realizes it&apos;s halfway empty. We got Sylvia something cherry-flavored since she seems to really like the color red, and Rayna has the same drink Katiya stole from me.",
+         "I feel the urge to either run home, or grab Katiya&apos;s greatsword instead of my lacrosse stick, and though I&apos;m so much weaker than anyone else in this world, I feel the urge to protect her.",
          true
       ],
       [
          "BodyCody",
-         "The injection-molded Starbucks cups are out of place in a world with rough edges everywhere. Sylvia takes Titus and Rayna&apos;s cup, heading to Katiya&apos;s sink to rinse it, but I protest before she leaves the couch.",
+         "I think I catch a glance of crimson eyes peering through the window glass, as if searching for something within me, but the figure quickly moves from sight. The back window was repaired a couple days ago after a whole cat-man was thrown through it, and when I check it, I think I see a different figure watching me.",
          true
       ],
       [
          "BodyCody",
-         "&quot;Throw it away?&quot; Sylvia asks. &quot;But isn&apos;t that such a waste? And look how perfect it is: it even has my name on it, in your world&apos;s writing.&quot;",
+         "I stare longingly at the door, wanting so badly to run and hide, but there&apos;s a stronger desire that keeps me there.",
          true
       ],
       [
          "BodyCody",
-         "The cup reads SALVIA :).",
+         "&quot;Katiya,&quot; I begin to say, quietly, and then louder, as I walk away from safety in my modern world. I don&apos;t notice the unlocked back window sliding open so slowly as a guy gestures signals with his other hand: nor do I notice the front door was picked by the same man several minutes earlier, hiding a different stranger at the threshold.",
          true
       ],
       [
          "BodyCody",
-         "&quot;I mean, sure, you can keep it,&quot; I say, so she stacks them together, adding the cups to their pile of possessions. ",
+         "She stirs awake as I stand halfway between Katiya and my escape, tensioned between two emotional anchors that threaten to split me apart. And before I can react, I feel an incredible energy flood my body from somewhere nearby, stiffening every muscle in my body as I struggle to fight the immense power.",
          true
       ],
       [
          "BodyCody",
-         "Katiya starts. &quot;So I hope we&apos;re ready to make a plan: Cody and I started the conversation, at least.&quot;",
+         "A dark-haired man with piercing, black eyes intercepts me as a girl enters the front door with her hand extended. The man looks younger than I do, but holds such gallantry behind his expression that I&apos;m convinced he&apos;s lived a thousand lifetimes. ",
          true
       ],
       [
          "BodyCody",
-         "&quot;Okay,&quot; Titus says. He scratches at his beard, missing a tuft with caramel cold foam still stuck to it. &quot;We&apos;re here to earn our keep, so let&apos;s hear it.&quot;",
+         "The girl&apos;s eyes glow with crimson light, matching the tips of her dark bangs. My heart seizes in my chest and stops beating, feeling like the plasma in my blood evaporates inside my body. I try to call to Katiya, but words are no longer privileged to me &mdash; and when I&apos;m locked out of the use of every muscle, I collapse to the floor as the man pins me by the shoulders.",
          true
       ],
       [
          "BodyCody",
-         "Katiya and I stand together with our backs to the window, and it feels like I&apos;m getting another design review. &quot;So we talked about our problems, and it seems they actually have a lot of overlap,&quot; I say. &quot;My chance comes first, in a little more than a week. And Katiya meets with Rayna&apos;s contact tomorrow, where she&apos;ll get more information. And the through line is this.&quot; I tap my toe against the only other perfect shape in the room beyond the Starbucks cups: a Pelican case, holding the prototype for my drone I shelved almost half a decade ago.",
+         "I can feel the collision in my bones, but not even my nerves will communicate. They won&apos;t even tell me the flesh of my right arm contacted the sharp end of Katiya&apos;s greatsword, leaving a gash that even hesitates to bleed. ",
          true
       ],
       [
          "BodyCody",
-         "The focus of our small audience is entirely absorbed by the contents of the box. From the windowsill behind me, I retrieve two batteries: one I bought from a hobby store, and another that got me in loads of trouble.",
+         "it feels as if that magical power surges for a moment within my own body &mdash; without the circuits in my biology to to reabsorb it &mdash; and given  the experience of Essence for the first time, I&apos;m struck with a sudden horror at the incredible energy that emanates from the two strangers.",
          true
       ],
       [
          "BodyCody",
-         "I say, &quot;I&apos;m told that the southern fields of Gaffesend are open and sparsely populated. That means it might be the perfect place to test some technology that might give us an advantage.&quot; I lift the non-magic battery. &quot;I&apos;ll test on this battery to get some data for the interview. But this one,&quot; I lift the Essenced one, &quot;will run the drone when it&apos;s in operation on your side.&quot;",
+         "The girl rushes over to Katiya, and since my stiff body is posed with my head cocked toward the couch, I fear whatever retribution they seek in hurting her.",
          true
       ],
       [
          "BodyCody",
-         "They still look confused.",
+         "But she says her name.",
          true
       ],
       [
          "BodyCody",
-         "Titus asks, &quot;so what is it? A drone, you call it?&quot;",
+         "&quot;Katiya,&quot; the girl says, as she finally rises from the couch. &quot;Did you leave your door unlocked? There was a stranger without human Essence!&quot;",
          true
       ],
       [
          "BodyCody",
-         "I flip open the latches, feeling a lot like my brother. The drone is the same as I left it, minus the layer of dust I polished off. I lift it in my hands, and knowing Titus is a gearhead, he approaches to inspect it.",
+         "&quot;The back window was unlocked,&quot; the man says, still pinning me to the floor. &quot;I think this Chymaeran got in through there.&quot; But he looks me over further, sensing the energy from the other assailant&apos;s attack as it flushes from my body. &quot;Or any Essence for that matter. How is that possible?&quot;",
          true
       ],
       [
          "BodyCody",
-         "&quot;I flew something bigger than this once. It didn&apos;t go over well,&quot; he says.",
+         "Katiya springs to her feet, rushing over to the two of us. &quot;Dear Khiras above . . . Cody,&quot; she mutters, still delirious from such an awakening.",
          true
       ],
       [
          "BodyCody",
-         "Sylvia turns to him. &quot;What do you mean?&quot;",
+         "Katiya panics while the others remain perfectly calm.",
          true
       ],
       [
          "BodyCody",
-         "&quot;A story for another time,&quot; he says, then holds it up to me. &quot;But what kind of information are you supposed to get from this if you can&apos;t ride it?&quot; He squints. &quot;I mean . . . you can&apos;t, right?&quot;",
+         "&quot;You know this man?&quot; the girl asks. &quot;Then where did he come from?&quot;",
          true
       ],
       [
          "BodyCody",
-         "&quot;It lets you see through it, like you&apos;re looking through the eyes of the bird. But you control it, and you can see what it&apos;s looking at from a long ways away. You&apos;ll have to set me up somewhere in your world, but for whatever&apos;s coming, you&apos;ll have all the information you need.&quot;",
+         "&quot;Like I said, he&apos;s not Essenced,&quot; the guy says, looking over the slice with his piercing eyes. &quot;And not like the outwallers in Blackwater, Sylvia. He has nothing at all.&quot;",
          true
       ],
       [
          "BodyCody",
-         "Rayna asks, &quot;and how will you tell us if you&apos;re already out there? Flares? You can&apos;t fire them in the town.&quot;",
+         "Sylvia states the facts without hesitation when she approaches me. &quot;Deep laceration, six inches. Muscle layer exposed. No arterial spray, but his pressure&apos;s dropping.&quot;",
          true
       ],
       [
          "BodyCody",
-         "&quot;Short-range radio,&quot; Katiya says. She holds up her phone, and though she&apos;s wrong, I&apos;m proud of all she&apos;s learned.",
+         "&quot;What?&quot; I manage.",
          true
       ],
       [
          "BodyCody",
-         "&quot;The other one,&quot; I say.",
+         "&quot;I don&apos;t have that kind of &mdash; healing,&quot; Katiya says. &quot;We need medical. But in his world, Gods above, we need to call&mdash;&quot;",
          true
       ],
       [
          "BodyCody",
-         "&quot;Oh.&quot; She reaches for the plastic shape with the antenna on the window sill. &quot;A walking talker.&quot;",
+         "Sylvia touches Katiya&apos;s shoulder. &quot;He&apos;s going to be fine,&quot; she says, then turns to me. &quot;I&apos;m re-aligning the tissue, Cody. Titus here is holding you in place. Don&apos;t fight it. You&apos;ll feel heat, then pulling, then nothing. Keep breathing.&quot;",
          true
       ],
       [
          "BodyCody",
-         "&quot;Walkie-talkie,&quot; I say, then realize I&apos;m mansplaining when she glares at me. &quot;Sorry.&quot;",
+         "I gasp for breaths after my heart returns to motion. I feel the scalding again &mdash; as if the tendrils of some energy spread across the cells of my body. From inside my flesh, the channel of energy ignites when the first tendril reaches the deep cut, aligning all the other stray, searching strands, and I feel the sensation of a heat my nerves can&apos;t fully register &mdash; like in welding class, when I didn&apos;t know I had a hole in my glove.",
          true
       ],
       [
          "BodyCody",
-         "&quot;You can talk at any range. Like radio with the music and the talkies, but it&apos;s personal.&quot;",
+         "But it&apos;s not just the deep slice. I feel the energy connect in places I couldn&apos;t register, because they were spread across a lifetime of small accidents and dangerous choices, and when I lift myself from the floor, feeling more energized than if I slept for a whole weekend. I can&apos;t find a trace of the deep cut, or any other scar, for that matter: the four marks from the endoscopic surgery for pyloric stenosis; the graze on my wrist I took from Jackson&apos;s BB gun when we were playing war in a forest; the scrape on my leg I got ten years ago at Daniels Park when I smoked with Miguel.",
          true
       ],
       [
          "BodyCody",
-         "Then Titus points at the last item leaning against the wall behind me, still charred around the muzzle from erupting with megajoules of energy. &quot;So comms and overwatch are covered, but what&apos;s that?&quot;",
+         "I&apos;d feel the best I ever had in my life if the weight of what&apos;s coming wasn&apos;t still so heavy. The two strangers lift me to my feet with a thousand apologies.",
          true
       ],
       [
          "BodyCody",
-         "&quot;An experiment,&quot; I say. &quot;One that&apos;s far too dangerous to test in my world, but I think if we get the ratios right &mdash; and buy the ammunition in bulk from Costco &mdash; it could give you a serious leg-up.&quot;",
+         "I turn to Katiya. &quot;Are you subletting now? Or is this house a hotel?&quot; I catch my breath though I don&apos;t need it: I can breathe through both nostrils for the first time in ages, and hell, I think even my vision is a little better. &quot;Where do you find these people?&quot;",
          true
       ],
       [
          "BodyCody",
-         "It&apos;s hard to contain my excitement when I feel like one of the Mythbusters that&apos;s been spirited to a magical land.",
+         "&quot;I&apos;m sorry,&quot; Titus says, &quot;really. But you have to understand how close the dangers are now to this town. Miss Katiya agreed to take us in, and our instinct was to protect her.&quot;",
          true
       ],
       [
          "BodyCody",
-         "&quot;So weapons, intel, and communication. A week to get everything together,&quot; Titus says, &quot;but there&apos;s just the four of us, plus anyone else Rayna&apos;s envoy decides to send. Katiya, what resources do you have here?&quot;",
+         "I can&apos;t be that angry when I&apos;m almost sure I can push back the physical with my doctor for another year. I didn&apos;t even have a moment to feel the pain before my layers of flesh were annealed.",
          true
       ],
       [
          "BodyCody",
-         "&quot;I have some reconciling to do, but once it&apos;s over, I trust they&apos;ll have my back,&quot; she says.",
+         "&quot;It&apos;s fine,&quot; I manage.",
          true
       ],
       [
          "BodyCody",
-         "&quot;And we&apos;ll keep an eye out for some of our own allies. They&apos;re making the journey a little while after us,&quot; Sylvia says.",
+         "The man scratches his beard, looking around the foyer as if he&apos;s scanning for every tactical exit. Then he extends his hand. &quot;My name is Titus Berguard. And this is Sylvia. We&apos;re refugees from Blackwater to the north.&quot;",
          true
       ],
       [
          "BodyCody",
-         "Rayna adds, &quot;and I was under the impression that this wasn&apos;t just some information drop. This Ahkvasan and her friends are powerful and invested in how this plays out.&quot;",
+         "I shake his hand. It seems to be a common custom between our worlds. And I turn to Sylvia, a girl that stands as tall as I do. &quot;And Sylvia. Just Sylvia?&quot;",
          true
       ],
       [
          "BodyCody",
-         "&quot;So it looks like my side is covered,&quot; Katiya says. &quot;But rebuilding that machine will be no small feat. What do you have?&quot; She asks me.",
+         "&quot;Just Sylvia,&quot; she repeats. &quot;And I&apos;m sorry, but are you human?&quot;",
          true
       ],
       [
          "BodyCody",
-         "&quot;I can help,&quot; Titus says. &quot;I might be a tactician, but I also studied to be an engine-master.&quot;",
+         "&quot;Yeah. But not by your definition. I don&apos;t have Essence,&quot; I start, and I look to Katiya to judge whether we&apos;re really roping in another couple strangers to our situation. &quot;No Essence in my world.&quot;",
          true
       ],
       [
          "BodyCody",
-         "&quot;Sure,&quot; I say, &quot;and like Katiya, I&apos;ve already started my own tour of reaching out. I have enough friends that can help &mdash; and if they can&apos;t design, at least they can keep us all awake.&quot;",
+         "I gesture to the door. The two stare at all the unfamiliar shapes on the other side, just like Katiya did all those months ago, but somehow, the strangeness doesn&apos;t even phase them.",
          true
       ],
       [
          "BodyCody",
-         "Katiya rolls her eyes when his face flashes in her mind. &quot;You&apos;re inviting him?&quot;",
+         "It&apos;s something else that interests them.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;It&apos;s an Essence Event that made this door,&quot; Just Sylvia says.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;An Essence Event?&quot; Katiya says. But isn&apos;t that only possible to create by a Mask of the Gods? How could you even know in the first place, if you weren&apos;t&mdash;",
+         true
+      ],
+      [
+         "BodyCody",
+         "Her words cut off, as if afraid to speak. Titus adjusts the sleeve of his coat, covering the threaded scars or tattoos I noticed when I shook his hand.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;It&apos;s a long story that&apos;s too fresh to remember,&quot; Titus says. &quot;We&apos;re just passing through, but rest assured: we&apos;ll protect you as long as we&apos;re here.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "I think we&apos;ve found a breath as Titus adjusts his jacket, but then the three of their heads turn to the front door, sensing something that I can&apos;t.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Ellie,&quot; Titus mutters.",
+         true
+      ],
+      [
+         "BodyCody",
+         " He looks up the stairs, and his expression glazes over. He suddenly looks like he&apos;s ready to die for something, until Sylvia approaches to reassure him.",
+         true
+      ],
+      [
+         "BodyCody",
+         "Katiya approaches the door without caution after five patterned knocks.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;It&apos;s over, Titus,&quot; Sylvia says. &quot;There&apos;s nothing more to save.&quot;",
          true
       ]
    ],
    [
       [
          "BodyKatiya",
-         "&quot;This isn&apos;t a party, dude,&quot; Cody says.",
+         "&quot;There was so much more to say,&quot; Rayna says, &quot;but we didn&apos;t have the time. She said so little of who she was, but when we were captured together &mdash; sent to a certain death for betraying the Den &mdash; she used such tremendous power to save us that there&apos;s no doubt in my mind.&quot;",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;A kickback isn&apos;t a party,&quot; says Miguel. &quot;It means the alcohol is only making some of the decisions.&quot; Rayna and I watch from the threshold of the doorway as he sets a box of cans on the coffee table. &quot;You nerds would get too bored without me here. You&apos;d fall asleep before you got anything done!&quot;",
+         "&quot;Doubt about what?&quot; I ask.",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;Yeah?&quot; Cody laughs. &quot;And what are you going to do?&quot;",
+         "&quot;That she&apos;s a Mask of the Ahkvasa. She didn&apos;t just stop time. She weaponized it,&quot; Rayna says. She sits on the couch in the same place Cody was, feeling the odd textures in the immaculately-stitched fabric. Cody went home to sleep, but the two refugees sit across from us, listening intently.",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;I built a car with my dad, you know,&quot; he says. &quot;You losers might have the computer shit on lock, but you probably suck at building stuff.&quot;",
+         "&quot;Go back to before the break-in,&quot; Titus says. &quot;So you escaped their capture, and then they tracked you here?&quot; Titus asks.",
          true
       ],
       [
          "BodyKatiya",
-         " &quot;Remind me,&quot; Cody says, &quot;did it ever run?&quot;",
+         "&quot;I knew where a spare key was. I used to live here, you know,&quot; Rayna says. &quot;But I got here a little too late to evade them. They saw me enter. We fought. And then Katiya came and scared them off.&quot;",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;Fuck you,&quot; Miguel replies, tearing the side of the cardboard box to retrieve a can, and cracks it open. &quot;Say, where&apos;s the drone thing? You only ever showed me the video from the news.&quot;",
+         "&quot;Us?&quot; Sylvia asks.",
          true
       ],
       [
          "BodyKatiya",
-         "Cody points to the Pelican case at Miguel&apos;s feet.",
+         "&quot;Yeah. Me and that . . . other guy. Cody,&quot; she recalls. &quot;Poor lad, is our world ever going to stop  tormenting him?&quot;",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;Oh,&quot; Miguel says. He takes a sip and turns to us, leaning back against Cody&apos;s entryway as the door is still ajar. &quot;This guy was in the news, can you believe that? In the &apos;heroes&apos; section of People Magazine &mdash; not in print, but online. And he&apos;s still available, I&apos;ll have you know.&quot;",
+         "The two refugees duck their heads.",
          true
       ],
       [
          "BodyKatiya",
-         "Cody punches his arm. &quot;This isn&apos;t some club in Denver, you jackass! You don&apos;t have to rizz me up.&quot;",
+         "&quot;I wasn&apos;t just coming here to run away,&quot; Rayna says. &quot;When Katiya gave me another chance, it made me realize that I still owe a debt here. I mean, why else would I return to hide out in a town that&apos;s cast me out? My contact said there was something coming to Gaffesend.&quot;",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;Oh, what, are you not available anymore?&quot; He laughs. Then he looks at me, then Cody, then me, then laughs again. &quot;Ah, I get it, so it&apos;s you two.&quot; He turns back to Cody, and mutters, &quot;I always thought you&apos;d end up with&mdash;&quot;",
+         "&quot;She knew about the Essence event up north?&quot; I ask.",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;You mind moving?&quot; A female voice says. &quot;It&apos;s freezing out here.&quot;",
+         "&quot;Her friend certainly did: a Verdalan. With their command of space, she sensed an enormous energy between dimensions, and left to investigate it.&quot; She pauses. &quot;Oh. But no, that has nothing to do with what&apos;s coming.&quot;",
          true
       ],
       [
          "BodyKatiya",
-         "Kei pushes Miguel out of the doorway, unwrapping her scarf as Reed carries in both of their backpacks. Miguel shifts to the black faux-leather futon, and while Kei debates whether to remove her pink, woven beanie, Reed shakes Cody&apos;s hand, exchanging pleasantries over some inside joke.",
+         "&quot;The Chymaera, then,&quot; I say. &quot;But we know that. The Purgatory Line&apos;s been in the same place to the east for centuries.&quot;",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;Surprised to see you here,&quot; Kei tells me. &quot;Are you here to help, or to drink?&quot;",
+         "&quot;And it&apos;s not east,&quot; Rayna says. &quot;That&apos;s not it either.&quot;",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;Neither for now,&quot; I say, as I lean back through the portal to find Titus and Sylvia looking over Gaffesend&apos;s map, circling a few points of interest in red ink. &quot;I&apos;ve got my own project I&apos;m working on.&quot;",
+         "My stomach drops. I consider the north, but it&apos;s just ice up there: ice and refugees, both displaced by that large eruption. The south is the capital of Northaven. And to the east are our allies, the Ahkvasa, so any of those three answers would surprise me.",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;Cool,&quot; Reed says. &quot;Is it the cosplay thing?&quot;",
+         "&quot;How fast does information travel around here?&quot; Rayna asks. &quot;Maybe you don&apos;t know about the changes in the Ahkvasan capital.&quot;",
          true
       ],
       [
          "BodyKatiya",
-         "Maybe a few months later I&apos;d flatly reject the question. They were fighting words the first time I met Cody, but instead, I just shrug. &quot;Yeah, something like that.&quot;",
+         "&quot;Melenia,&quot; I say.",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;Well, good luck,&quot; Reed says.",
+         "&quot;A change of royalty that was staged as a coup,&quot; Rayna says, then turns to Mr. &quot;All I know is that something&apos;s coming, and with you as a Royal Guard that&apos;s about to cross over &mdash; not making the same mistake that I did &mdash; I think you&apos;re the only person that they&apos;ll listen to. And all she asked of me was to establish a contact and a meeting point.&quot;",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;Thanks.&quot;",
+         "My stomach turns a little as I assemble the words to tell her.",
          true
       ],
       [
          "BodyKatiya",
-         "Miguel snaps open the big case as Kei demands he &quot;handle it carefully.&quot; Rayna crosses back to see what Titus and Sylvia are looking at. And as Reed bends a knee to get a first look at the project, Cody approaches me.",
+         "Sylvia says, &quot;so you left to give her a meeting point.&quot;",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;So you&apos;re good?&quot; He asks.",
+         "&quot;Why the cloak and dagger?&quot; Titus asks.",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;As good as I can be,&quot; I say. &quot;If it&apos;s not, I know you&apos;re close by.&quot;",
+         "&quot;Because her identity would shake the entire kingdom,&quot; Rayna says. She turns to me again. &quot;So your mission &mdash; and I can&apos;t draft this up on one of those quest sheets &mdash; is to meet her in the courtyard of the old castle.&quot;",
          true
       ],
       [
          "BodyKatiya",
-         "He puts up his fists and takes a couple practice swings, getting several things wrong in the span of a couple seconds. &quot;My track record isn&apos;t great over there, but I swear &mdash; I&apos;ll die for you.&quot;",
+         "&quot;I&apos;m not the right person,&quot; I say.",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;Save your breath,&quot; I say, retreating through the door though we still face each other, separated only by the miasmic veil between worlds. I look up at his lips. He looks down at mine, and though I think for just a second that something might happen, something crashes, and Miguel calls him over.",
+         "&quot;What do you mean?&quot; Rayna says. &quot;You&apos;re just relaying a message.&quot;",
          true
       ],
       [
          "BodyKatiya",
-         "Cody laughs. I feel his warm breath while his face is inches from mine.",
+         "&quot;No, it&apos;s not that I have doubts about whether or not I can do it.&quot; I pause, finding no better combination of words. &quot;It&apos;s that I&apos;m no longer going to be a Guard.&quot;",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;Goddamnit, Miguel!&quot; Kei says. &quot;What did I tell you?&quot;",
+         "Rayna is flabbergasted. She tries to tread lightly, but the surprise gets the best of her. &quot;What in Khiras&apos; name happened, since what, a couple days?&quot;",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;It&apos;s not my fault it was loose,&quot; he whines. &quot;Where do you even find screws this small?&quot;",
+         "&quot;It wasn&apos;t cowardice. It was an outright failure,&quot; I say. &quot;But I&apos;ve got people I can relay the message to. I know that Aryn&mdash;&quot;",
          true
       ],
       [
          "BodyKatiya",
-         "He turns to me one last time as he grasps the edge of his door. &quot;Save your world and shit, yeah?&quot;",
+         "&quot;No,&quot; Rayna says. &quot;She&apos;s too smart. She&apos;ll ask, and then she&apos;ll find out about me. It&apos;s better if she thinks I&apos;m dying in the war.&quot;",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;Yeah,&quot; I say.",
+         "&quot;But she&apos;s your sister,&quot; Titus says.",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;I . . . look forward to that tomorrow. Let&apos;s see how much we can get done today.&quot;",
+         "&quot;She hates me for how I failed,&quot; Rayna says.",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;Of course,&quot; I say.",
+         "Titus leans in. &quot;Trust me. It&apos;s never too late to reconcile with her,&quot; he says. &quot;Family is the most important thing you have.&quot;",
          true
       ],
       [
          "BodyKatiya",
-         "He lingers one more second, hesitates, then softly closes the door behind him. I lock my side, then turn to join my small militia of outcasts.",
+         "&quot;Maybe,&quot; Rayna says.",
          true
       ],
       [
          "BodyKatiya",
-         "We spend an hour reviewing every detail of the map with the foreigners. The two moons hang just above the horizon across the lake, providing just enough light to see the map with the curtains drawn.",
+         "I find the space to think in their awkward mismatch of passion between them. Maybe if she came a day earlier, I wouldn&apos;t have felt that itch for something more return to me. If I hadn&apos;t talked to another man suffering a similar fate, to feel I still deserved the warmth of a certain love after all had fallen apart.",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;It&apos;s still just so hard to believe,&quot; Titus says, looking down at his grandfather&apos;s hand-drawn map of Blackwater, trying to hold it northwards at the right distance from Gaffesend. ",
+         "But I think about Stella, and Erik, and my unborn sibling, and all the things I have to lose, and I can no longer resist the call when I don&apos;t trust anyone else to truly listen.",
          true
       ],
       [
          "BodyKatiya",
-         "&quot;We were taught that the world was ice,&quot; Sylvia adds. &quot;That all of Fosroth was frozen after the fall of Northaven!&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;So what made you go south?&quot; I ask. &quot;Was it just a lucky guess?&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;It&apos;s where the tracks run,&quot; Titus says.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;With the all produce,&quot; Rayna says. &quot;And where does that all come from?&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "Titus&apos; gaze becomes distant. He looks down at his wrist with all the threaded scars. I think Sylvia might turn to console him, but she seems just as lost as her partner.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;It&apos;s no longer there,&quot; Titus says. &quot;But I have to believe that what I . . . that what happened was for the better.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;It was,&quot; Sylvia says. &quot;They&apos;re free to step into the light now, just like we are.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Yeah,&quot; he mutters. His eyes soften after they return from infinity. &quot;So anyways. We don&apos;t have the information we need yet, but at least I have a better idea of Gaffesend&apos;s defenses.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I feel the presence of something watching us from behind the front windows. Something shifts, but this time, the stranger&apos;s smart enough to use their voice.",
+         "I remember the two lines of a text that I read over Cody&apos;s shoulder, finding that my next words sound so similar.",
          true
       ],
       [
          "Body",
-         "&quot;Katiya,&quot; Aryn calls, as Rayna hastily leaps behind the couch. Aryn&apos;s fist pounds against the door, as several other junior guards stand behind her.",
+         "&quot;I&apos;ll give it a shot,&quot; I say. &quot;But for whatever comes next, I&apos;ll need all the help I can get.&quot;",
+         true
+      ]
+   ],
+   [
+      [
+         "BodyCody",
+         "&quot;I can&apos;t help you. No . . . but seriously, Katiya, I can&apos;t help you if you do this,&quot; I tell her. My face flushes from all the people that turn their heads.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;But I refuse,&quot; she says. &quot;You either give all or give up, or else you leave no space to improve.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;You&apos;ve left no space for more weights,&quot; I say, gesturing to the end of the barbell loaded with more plates than a gym rat might use on leg press. &quot;This is enough for bench press: most girls your size do a five, or a ten on each side.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;The girls in your world are soft because this gym doesn&apos;t even have combat training,&quot; Katiya says. After adding the fourth 45-pound plate, she crunches the weight collar in her hands until the ends meet, sliding it easily across the barbell. She points to the squat area. &quot;See, Cody? What do they get all the weight?&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Those are men. And they&apos;re powerlifters. And they&apos;re doing hang cleans and deadlifts,&quot; I say, waving awkwardly as they look over. &quot;I meant for this, uh . . . date, to be a metaphor for us building strength. To talk a plan, not&mdash;&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Actually do work?&quot; Katiya asks: she slides beneath the bar until she&apos;s flat on the bench, then arches her back. She wears the expensive, branded workout clothes my gym sells in the pro shop. Beneath the sports bra, the definition in her core is carved in distinctive lines across her abs: the only other lines in the light, silhouetted scars from whatever her &quot;real&quot; training forced from her.",
+         true
+      ],
+      [
+         "BodyCody",
+         "She lifts the bar off the rack before I can even get into position. Two other gym rats from another bench leap to the sides in fear, ready to squat a-hundred-and-eighty pounds per side in an instant of things go south, but they&apos;re astonished when the bar holds steady at full height.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;So what progress have you made on your side?&quot; Katiya asks. &quot;That drone &mdash; is it ready to go, more or less, or are you adding more?&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Well, it&apos;s from five years ago when...&quot; I watch the bar rise and fall as my hands rest lazily on the top. &quot;When my project happened, but tech in my world...&quot; she approaches eight, and I wonder if she plans to stop. &quot;It&apos;s exponential growth, so stuff gets old fast, and&mdash;you only have to do ten, we have two more sets!&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "She places the bar on the rack. A light sweat crests her forehead. &quot;So that&apos;s all?&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;For the first set,&quot; I say.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;No, like that&apos;s all you have to do for the project?&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;I have to present it, too. I already applied to an aerospace opening for entry-level work. But this presentation is what gives me a shot with an early interview, so to speak, and it has to be perfect.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "We&apos;re lucky no one pulled their phones out to take a video. She gestures to the bench now, as if I could lift the same anoint of weight.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;No,&quot; I say.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;I&apos;ll cover you.&quot; Katiya says.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;It&apos;s &apos;spot.&apos; And no.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;What, you want three instead?&quot; She asks, flashing a grin. &quot;Upstaged by a girl?&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;I do one of those and a twenty-five to start,&quot; I say, but my ego&apos;s hurt enough with all the attention. &quot;Just . . . make it two, and make it look like I&apos;m able to kinda do it, alright?&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Sure,&quot; she says, and I slide beneath the bar at my one-rep max. ",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;You sure you got it?&quot; I ask.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Well, I told Rayna I&apos;d meet her contact,&quot; she says.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;No. The bar,&quot; I say. &quot;From that angle.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "She lifts it up with two hands in response. With so little ego left, I lift the bar off and immediately struggle.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;But you were right. I don&apos;t know: I just started thinking in that moment of everything I wanted on the other side of all of this. So long I spent thinking of the obstacles in front of me without the hope of what&apos;s on the other side.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "I manage one, and already feel exasperated, unable to get the bar on both sides of the bracket, and feel it slowly sink down..",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;But you have that dream too, Cody. And there&apos;s something for the both of us,&quot; she says. &quot;Maybe we can talk about how we, uh . . . feel, and all, when this is over.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Can&apos;t,&quot; I sputter.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;But you can,&quot; she says. &quot;We can.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "The bar flexes my sternum, testing the resilience of my cartilage more than the might left in my muscles. It takes a few seconds before Katiya returns from her dream, curling a hand under the middle of the bar and lifting it.",
+         true
+      ],
+      [
+         "BodyCody",
+         "I cough. &quot;I gotta . . . live long enough to try.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;You will. And you&apos;re not done,&quot; Katiya says, refusing to let me rack the bar, though she still takes some of the weight off with her strength. The muscles in her arms tense. &quot;You&apos;ve got nine left.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Nine?&quot; I ask: most of the time Miguel and I only lift to have an excuse to talk. My arms tremble. She makes every rep burn, but I feel a long-forgotten sense of wholeness in just the strain of exertion itself.",
+         true
+      ],
+      [
+         "BodyCody",
+         "I could never lift this much alone, and I was stupid to ever think I could. And once I&apos;m done, after I catch my breath, before reminding Katiya we have other exercises to burn ourselves out, I sincerely ask her.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;We can talk about the details later,&quot; she says.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Then how about we make this into . . . a date?&quot; I ask.",
          true
       ]
    ]

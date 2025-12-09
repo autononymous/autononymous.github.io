@@ -1,774 +1,562 @@
 [
    [
       [
-         "BodyKatiya",
-         " I refuse to let in a chance for anything to happen, and that&apos;s why I rise early. Earlier than the knocker that comes to wake me. Earlier than the sun: early enough that the morning hours mask my presence while I wear the hood of my uniform, tucking my golden locks of braided hair beneath the fabric.",
+         "BodyCody",
+         "&quot;I think that will work just fine,&quot; Reed says. &quot;What do you think?&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "There&apos;s still the early risers that do their training in the mornings, and with the approach of our first competencies that all city guards are required to take, the training fields and the alleys between the barracks bustle with far more sweaty servicemen.",
+         "BodyCody",
+         "But he&apos;s not talking to me. He&apos;s approached almost every engineer in the office to ask their opinion about his design choices, and now he&apos;s back there with Wilbur, preventing him from dozing back off into his &quot;wake apnea&quot;.",
          true
       ],
       [
-         "BodyKatiya",
-         "So it&apos;s no surprise when the cover of dusk no longer hides me. I hear their whispers when I pass &mdash; or maybe half the time I think I hear them &mdash; calling me &quot;choke&quot; and making a gagging motion, or asking again why I even bothered, some even saying I&apos;d be better suited &quot;for the shady brothels where I could at least be paid to choke on something.&quot; Gossip is easy. Giving up is easy, too: but when I feel the weight of the house key in my pocket, trying to estimate how much heavier it was before the first cadet failed their trials, I remember the other choice is death, and it&apos;s a much stronger wind in my sails than whatever storm these troglodytes can throw at me.",
+         "BodyCody",
+         "I scratch away at the yellow engineering pad, sketching my own ideas instead of relying on others all the damn time. It&apos;s easy to draw in 3D when it&apos;s just a plate with a few holes in it: far different from the radical ideas my adversary is coming up with.",
          true
       ],
       [
-         "BodyKatiya",
-         "My shoulder scrapes the left wall as I take every narrow alley I can. It&apos;s the first day I&apos;ve decided to visit him, because for the last two weeks, I&apos;ve rued the thought of leaving the infirmary to face their ridicule in broad daylight, though none of them have ever faced anything close to what I&apos;ve fought.",
+         "BodyCody",
+         "&quot;What&apos;s up with all the rounds?&quot; Wilbur asks. &quot;It costs a lot of money to ask the machinist to clean up every edge like that.&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "His messages told me that he&apos;d crack the back door of his room in the single-story medical building, and when I find some old, thick tome called FEAR THE CHYMAERA wedged in one of the doors, I cautiously creak it open.",
+         "BodyCody",
+         "&quot;Huh. I never thought about that,&quot; Reed says.",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;So you finally came to check on me,&quot; Bertram says. Despite his graze with death, he&apos;s the clearest example of why the Royal Guard juice their soldiers on heavy Essence. &quot;You saved me just in time. The medic said my organs would start shutting down, one by one, if you arrived any later.&quot;",
+         "BodyCody",
+         "Because he&apos;s never been in a machine shop, I think to myself.",
          true
       ],
       [
-         "BodyKatiya",
-         "He gets up from the bed in his white hospital gown labeled HARLOWE-B, stretching with a few twists before he approaches. Despite the pallidness of his skin, and the darkened marks on his extremities from where the Chymaeran Curse seized his body, he seems no less capable than any day I&apos;ve seen him before.",
+         "BodyCody",
+         "Wilbur rambles for another thirty minutes about the history of drafting. Reed eagerly nods his head, and I think it&apos;s beyond the level where he&apos;s just listening until he can escape. All the while, I consider the different ways I can design the enclosure, sketching several different designs between scrolls through social media to keep up on the people I used to know.",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;So why are you still here?&quot; I ask.",
+         "BodyCody",
+         "He pops up like a jump-scare when I have my head down, trying to skip an ad about a freemium game. &quot;What have you come up with so far?&quot; Reed asks.",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;The damage is inside, and it will take a while to heal,&quot; Bertram says. &quot;My outside is as handsome as ever, but that assassin did a number on my insides. Said I can&apos;t start training again for another two weeks or so.&quot;",
+         "BodyCody",
+         "&quot;Not much, really.&quot; He should probably learn on his own that designing for aesthetics gets you shot down harder than a Russian jet over American airspace. &quot;Mostly just figuring out how to enclose the thing.&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;Oh,&quot; I say. I sit at the chair next to the window. Between the gravel lot outside and the brutal concrete walls, it feels more like a prison infirmary than anything else. &quot;I think I&apos;d get sicker just by staying in this room,&quot; I say. &quot;Do you get to walk around outside, at least?&quot;",
+         "BodyCody",
+         "&quot;Huh,&quot; he says. He turns his new computer over to me, showing his model of parts that aren&apos;t put together yet. &quot;I&apos;m not very good at assembling things yet with this new software.&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;Not really,&quot; he says. &quot;But thinking of the effort you guys put into saving me, it makes me feel full.&quot;",
+         "BodyCody",
+         "&quot;Too familiar with SolidWorks?&quot; I ask.",
          true
       ],
       [
-         "BodyKatiya",
-         "I smile. &quot;You&apos;re worth it. Plus, I kind of owed you for a while.&quot;",
+         "BodyCody",
+         "&quot;How did you know?&quot; He asks.",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;I wish I could have a cool scar like you,&quot; he says, tracing a finger across his face from brow to cheek. &quot;You must be celebrated out there for all that. Have you paid for a single drink at the bar since then?&quot;",
+         "BodyCody",
+         "&quot;Who isn&apos;t,&quot; I say. &quot;I hate this software. But I&apos;ve been forced to use it for so long I&apos;ve used it ten times as much as all the SolidWorks in undergrad.&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "My smile fades. &quot;It&apos;s easier to talk poorly about people than to praise them. And I choked a little too much.&quot;",
+         "BodyCody",
+         "&quot;You&apos;re smart for a relatively new guy,&quot; Reed says, laying the compliments on thick like he does with damn near everyone. &quot;We&apos;ll be fast friends,&quot; he says.",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;But a noble is alive because of you!&quot;",
+         "BodyCody",
+         "Sure, I think.",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;But the wife won&apos;t forgive me. She made a whole show of it at the town hall before they left. Blamed it all on me, though I didn&apos;t pull the trigger.&quot; I sigh. &quot;But at least Aldrin knows the worth of my efforts.&quot;",
+         "BodyCody",
+         "&quot;Sure,&quot; I say, amicably.",
          true
       ],
       [
-         "BodyKatiya",
-         "He rummages under his bed. &quot;Well, it might have been a while ago, but I think I can be the first,&quot; he says. I hear the clatter of glass as he tears through his meager possessions that they let him hold on to. A drawing of the two of us floats across the floor, and I recognize the artistry from my father.",
+         "BodyCody",
+         "&quot;So what did you do over the weekend?&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;When was this?&quot; I ask. &quot;And why was it here?&quot;",
+         "BodyCody",
+         "I talk like the other middle-aged men, minus the stuff about the yard I don&apos;t have. &quot;Not much, just went to Costco and went on a run.&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "He blushes: the first sign of life I&apos;ve seen on his pallid face as he holds two bottles. &quot;Just remembering the ones that got me through it,&quot; he says, and then he hands me one. &quot;Ryder and Pax and Naya came by last week. They smuggled in a six-pack, so we had four of them. But I saved two for the day you came back.&quot;",
+         "BodyCody",
+         "&quot;We missed you at the work social,&quot; Reed says. &quot;Is it true you&apos;ve never been to one of them?&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "I laugh, looking around cautiously as I grasp the neck of the bottle. The Essenced heat of my hands heats the metal cap enough for it to expand, popping off with a light thunk, and we cheers over half-a-success and half-a-failure. ",
+         "BodyCody",
+         "&quot;I just get tired easy.&quot; And then I whisper, &quot;I get enough home improvement and little-league talk in the stand-up meetings.&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "But I can tell something is still on his mind. And after he wets his mouth a couple times with the ale, quickly chugging so we can hide the evidence, he finally speaks.",
+         "BodyCody",
+         "&quot;Even Kei made it,&quot; Reed says. &quot;She said she tried to call you.&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;You know, I thought about some stuff when I was on the edge,&quot; he says, sitting on the left side of the hospital bed in his white gown. &quot;I thought about all the things I hadn&apos;t done yet. That I regretted putting off.&quot;",
+         "BodyCody",
+         "&quot;Yeah. I just wasn&apos;t feeling too great.&quot; I start sketching on the yellow pad to try to look busy enough to get him to leave.",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;I understand that fear completely,&quot; I say, as I sit beside him. &quot;The world is so random and chaotic, sometimes it makes you wonder if the Gods stopped watching a long time ago. But you&apos;ve been blessed with more time.&quot;",
+         "BodyCody",
+         "&quot;Well I hope I&apos;ll see you next time,&quot; Reed says. He exits to the floor, off to bother some underpaid union technicians with even more stuff they&apos;ll have to assemble. I continue sketching on the notepad, returning the headphones to my ears I bought after I lost Jackson&apos;s iPod Classic.",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;More time to express my feelings,&quot; he says: a look of hesitation on his face. &quot;In the week I was on the brink of death, I wrote letters in case I didn&apos;t make it. But then I survived. I started healing quickly, and with a second shot, I decided I should go back to the place it all began.&quot;",
+         "BodyCody",
+         "&quot;Quite the eager fella,&quot; Wilbur says.",
          true
       ],
       [
-         "BodyKatiya",
-         "My stomach twists at the thought. &quot;You&apos;ve lived don&apos;t mean&mdash;&quot;",
+         "BodyCody",
+         "&quot;Yeah,&quot; I say. &quot;I guess it hasn&apos;t gotten to him yet.&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;And not alone,&quot; he says. &quot;I want to go back to the place our lives changed forever. I want to go to Hillfar with you, and I want to tell you something. And that&apos;s why,&quot; he reaches behind his back to retrieve two familiar forms, &quot;I insisted that the guildscribes make it official.&quot;",
+         "BodyCody",
+         "I see him peek his head from the divider into the narrow alley: a balding Asian man with glasses and light wrinkles. &quot;Has it gotten to you?&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;Going back there. I mean&mdash;&quot; I stammer.",
+         "BodyCody",
+         "&quot;I don&apos;t know,&quot; I say. The rusted wall fan makes enough noise that only Wilbur can hear my words, so I feel like I&apos;m able to speak openly. &quot;I think I just had a different idea of what engineering was. I liked designing things. But it was when something happened to me &mdash; or to someone in my family, I guess &mdash; that really made me chase it.&quot; I look at the 3D-printed mini model on my desk that I made to show my brother all those years ago. He was amazed by it: so similar to the tech he got to use in the military.",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;If you&apos;re not ready yet, I get it. But I think it would be good for us, and I just wanted you to be aware, so you can prepare yourself.&quot;",
+         "BodyCody",
+         "&quot;So I&apos;m guessing it wasn&apos;t batteries,&quot; he says, narrowing his eyes in a sagacious smile.",
          true
       ],
       [
-         "BodyKatiya",
-         "I look at the quest form: neatly written in the script of the guildscribes. A high-value, four-star quest, with the purpose written in Bertram&apos;s block script that reads FACING A FORMIDABLE PAST.",
+         "BodyCody",
+         "&quot;More so flying things. But smaller. And not for people,&quot; I say.",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;Those days in Hillfar cross my thoughts every day,&quot; I say. &quot;I thought time would dull them, but I still feel like I&apos;m there right now.&quot;",
+         "BodyCody",
+         "&quot;Drones,&quot; he says. And when he answers right, I hand him the little geometric prototype. &quot;This is really cool! When did you make this? And did you make a full-size one?&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;Of course,&quot; he says, looking down at his own sheet.",
+         "BodyCody",
+         "&quot;Yeah,&quot; I say. &quot;For Senior Design: after the incident, they let me pretty much be my own sponsor if I could fork the cash.&quot; I feel a rare sense of passion flood my body, and for a moment, I feel almost like Reed. &quot;I led the team to develop it: they let me take on some junior engineers at the school. And you see those gears?&quot; I point at a small pattern in the lines of PLA plastic.",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;The quest involves going there. And I feel like I have to fully convince myself I&apos;ve left before I go back.&quot;",
+         "BodyCody",
+         " &quot;Yeah. Heck &mdash; if this is like 1:10 scale, those must have been really small,&quot; Wilbur says.",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;Then I&apos;ll be patiently waiting,&quot; he assures me. He reaches to grab my hand. &quot;You&apos;re the strongest person I know.&quot;",
+         "BodyCody",
+         "&quot;Took us damn near a month to find a solution for that. Bevel gears? And that small, with a D-shaft that didn&apos;t fit any existing gears we could order?&quot; My chest runs with the excitement of those days as my tongue spouts off with jargon. &quot;You wouldn&apos;t believe what we had to do to make it work. Last month of a senior project we had a whole year for, and that was the last thing we had to resolve.&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "I tension his hand in mine on a spark of courage. &quot;But I swear to Khiras that I&apos;ll find it in me before this ends. By the end of this season,&quot; I tell him, &quot;I promise you and I will return.&quot;",
+         "BodyCody",
+         "&quot;Gearbox design is fun,&quot; he muses. &quot;So how did you do it?&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "Bertram&apos;s smile creases with the dimples he&apos;s had since he was a child, taking my quest form to return it to the folder. ",
+         "BodyCody",
+         "&quot;Get this: one of the teammates&apos; moms knew another mom that ran a jewelry company. They did lost wax castings&mdash; you know, where they pour in the molten metal to take the shape of the wax?&quot; I pause, realizing I&apos;m talking to a lifer. &quot;No, I&apos;m stupid. Of course you know that.&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;And if you can do that, then maybe I can find the courage, too,&quot; he says.",
+         "BodyCody",
+         "Wilbur laughs, egging me on.",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;To go there?&quot; I ask.",
+         "BodyCody",
+         "&quot;Anyways, we got this jewelry company to make our gears. Arrived the last week: only a single shot to get them right. And they were perfect: each wrapped in an individually-wrapped vellum bag as if we&apos;d put them on stings and wear them around our neck,&quot; I say, out of breath with excitement, and when I realize the fan has been off for a while, I find Nav and Kei standing at the other end of the cube.",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;More than that,&quot; he replies. &quot;But it doesn&apos;t matter yet. It seems you&apos;re the one that will have to be brave first.&quot;",
+         "BodyCody",
+         "&quot;That&apos;s really awesome, Cody,&quot; Naveen says. &quot;Why did you never tell us about that before?&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "We leave the challenge at that. Another ten minutes pass before we hear the nurses start to make their morning rounds, so I stuff the two bottles in my rucksack neck-up, along with the thick paper doorstop.",
+         "BodyCody",
+         "&quot;And you didn&apos;t even tell the best part,&quot; Kei says.",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;So you&apos;re going on a local quest with double-L, huh?&quot; Bertram asks, reclining back in his bed as he opens an illustrated book about Blackwater. &quot;He must have had his come-to-Khiras moment about you. Or maybe he feels like he&apos;s in trouble.&quot;",
+         "BodyCody",
+         "My face flushes with humiliation, always uncomfortable when I&apos;m the center of attention. &quot;I don&apos;t know,&quot; I mutter, &quot;which part?&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;No&mdash;he just has the first group of friends he&apos;s ever had,&quot; I say. &quot;I want him to enjoy them. Because I know he&apos;ll come back.&quot;",
+         "BodyCody",
+         "&quot;He won best in show for his year,&quot; Kei said.",
          true
       ],
       [
-         "BodyKatiya",
-         "&quot;With an apology, I hope,&quot; Bertram says.",
+         "BodyCody",
+         "&quot;Oh, please,&quot; I beg. &quot;I had an uplifting story. And they have a reputation to uphold&mdash;&quot;",
          true
       ],
       [
-         "BodyKatiya",
-         "I disappear through the door just as the nurse announces his name. The lock clicks in place as I draw my hood, dissolving back between the alleys as morning turns to day.",
+         "BodyCody",
+         "&quot;&mdash;And the president of the university took him on a little tour to speak on campus. The press got involved. And he got his story in the Los Angeles Times, can you believe that?&quot; ",
          true
-      ]
-   ],
-   [
-      [
-         "BodyKatiya",
-         "&quot;I want to apologize to you,&quot; Jullian says.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "He takes my hand as we swelter inside the guard tent. I thought an open-air bazaar meant a cooling breeze might flow through every once in a while&mdash;or that the tattered tarp above our heads might block the rays&mdash;but the air scalds our lungs like sitting in a kiln.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "He parts his chapped lips, and his eyes trace the floor in the same tick of nervousness he&apos;s had since I met him. But there are still signs we&apos;ve grown together. And when he takes another pull off his second fill of the canteen, his eyes meet mine, and he doesn&apos;t hesitate to speak his mind.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;I&apos;m sorry because I feel like I&apos;ve gotten carried away,&quot; he says. &quot;Away from all the burdens of the old days: days we spent taking care of our siblings when our moms were working to put food on the table, and now that I have the chance to make my first group of friends, it&apos;s like taking off ankle weights. And all I want to do is run.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;As long as you don&apos;t run away,&quot; I say. I tension my sweaty fingers in his, and he returns my strength. &quot;You should have fun during this please. We should both enjoy it: we gave so much of our lives to be here.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "He nods.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I say, &quot;And I want to enjoy it together with you.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Of course&mdash;&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;&mdash;And you&apos;ve just been so far away,&quot; I say: careful to distill my emotions through the joy of a love I feel so strongly. &quot;We promised to be candid to each other, and . . . when you leave so early in the morning, before I can even wake to see you or touch you, it just makes me feel so alone.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;And I&apos;m sorry,&quot; he says.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Why do you have to leave all the time?&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "He stands up, approaching the edge of the canvas window. &quot;I don&apos;t know.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;You don&apos;t know?&quot; I approach, refusing to let him escape again. &quot;How can you not know?&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;It&apos;s just . . . I&apos;ve spent my whole life living for others. For my siblings, my family&mdash;almost like a good childhood skipped me&mdash;and I was forced to give it all away to the ones that came after. And now,&quot; he says, &quot;I have this freedom I&apos;ve never had before, and I don&apos;t know what to do with it. And any time I wake up sitting there, just standing still, I feel like I&apos;m spending the last seconds of my youth before I get too old to live it, just full of regret.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;But you weren&apos;t there,&quot; I tell him. He struggles to look at me, but I can sense the pain of loneliness no different than mine. &quot;Why didn&apos;t you stand up for me, or at least come to visit in the days after the attempt on that noble&apos;s life? Were you . . . ashamed of me?&quot; I remember when he couldn&apos;t even return my gaze when we entered the hall with Bertram. It might have been the first event that precipitated this long spiral.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;I had a moment of weakness,&quot; he says. &quot;I should have been there, but every second I wasn&apos;t, this guilt just kept getting greater and greater, until the point that I was afraid of facing you. That you&apos;d think I deserted you.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;But you did,&quot; I say.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;And I&apos;ve been terrified of this moment ever since,&quot; he says. He brushes a strand of stray hair over my ear. His gauntlets grasp the side of my head, tracing his thumb on my cheek. &quot;I&apos;ve always hated this weakness I&apos;ve felt my entire life. This cowardice, of a boy that never made friends, made fun of, and was so scared and unchallenged that he never tried to fly.&quot; He tears up a little. &quot;And I guess I&apos;ve taken for granted the one thing I&apos;ve thought I would always have, supporting me through it all. You,&quot; he says.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "The anger and sorrow mix at just a level that I feel them rest at a stalemate. &quot;I want to be there for you, Jullian. But I need you to try, just try, to be there for me. And to stay,&quot; I tell him.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I tension my arms around his waist, ducking my head beneath his neck as he buries his head into my hair. I mumble something into his chestplate that he doesn&apos;t hear.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;What&apos;s that?&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;I said, this isn&apos;t very comfortable,&quot; I say. ",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "We share a laugh, glancing out across the bustling market: a mosaic of merchants and shoppers browsing and bartering beneath the thin linen.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "His mouth curls in a grin after he finds the space to relax again. &quot;You know I love you, right?&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;I know that,&quot; I tell him.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;I just thought about what that guy you were with the other day said, you know.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;The &apos;science guy?&apos;&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Yeah. I bet he&apos;s just jealous,&quot; he says. A familiar glare of envy glazes in his eyes. &quot;I think when this is over, we should ditch the armor and&mdash;&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "A sudden commotion stirs beneath one of the tents when we hear shouts far louder than usual.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;&mdash;I mean, we should ditch the armor and&mdash;&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Where is that coming from?&quot; I look at today&apos;s vendor map, counting three rows over as an assailant wrangles something from beneath a table. My finger traces the map as my other hand finds the marching tent. It&apos;s one of the high-end Essence technology-dealing tables.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;We need to get over there,&quot; I say. The cable lines are in place, spanning across the market from the top of the tower. And my hand can take the heat of the friction.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;It&apos;s not your job, Katiya,&quot; he says. &quot;We just wire it in to Command, and they dispatch the experienced guards!&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I feel something twist inside me. &quot;But it will be too late. And we have the height to&mdash;&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;I just don&apos;t want you to get hurt again,&quot; he says. ",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "The thief is already running across the market. And I see the span of cable that can take me to intercept. ",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "He adds, &quot;Just stop trying to be a hero and stay close to me!&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;You don&apos;t get it,&quot; I say, leaping out the window before he can grab the back of my cloak, before my mind can catch up on what I&apos;m doing, as I withdraw the channeled metal hand-hold and put my full weight on the wire from two stories up.",
-         true
-      ]
-   ],
-   [
-      [
-         "BodyKatiya",
-         "I&apos;m lucky my panic catches when I&apos;m two stories off the ground: gravity doesn&apos;t hinder my hesitation, but only aids it. The panic makes me hold fast to the metal contact: siphoning the friction of the Essence into my circuits in a rejuvenating reversal.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "The energy cycles through my body from my arms to my legs, and though my blood freezes with the initial surge of panic, my circuits are scalding with power. The vibrations in the tether rattle the bones in my arms, casting sparks of hot iron, and when I&apos;m close enough to drop and run, I use the force of the fall to dig the toe of my boots between cobblestones. And with all the energy I&apos;ve stored from letting the blood pool in my legs for four hours&mdash;sitting in tight, padded pants&mdash;all I want to do is run.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "The stones shift their alignment when my boots break the ground. The assailant runs west, crossing back through the market, and though they&apos;re a few rows over, shrouded in a tattered crimson hood with an Essence Tool beneath their arm, I&apos;m still the closest to catching them.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "We weave between crowds at different speeds. While I waste momentum weaving around civilians, they cut straight through them&mdash;but still, they&apos;re uncommonly quick for a human, and it&apos;s when the wind sheds their disguise that I see the cat ears. Long locks of black hair trail behind them, and in the absence of short fur, it means they&apos;re a half-blood, dipping into their gift of Ahkvan Essence to accelerate time around them.",
-         true
-      ],
-      [
-         "Internal",
-         "She almost looks familiar",
-         false
-      ],
-      [
-         "BodyKatiya",
-         ", I think.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I vault over the table of a turquoise tent where Kine changes hands. Now the thief is right ahead of me, and instead of shouting, I save my breath to run faster. Time dilates ever-so-slightly around them, casting their shaded features in blue, but I wager that their abilities are nothing compared to my compass.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "But all my running has prepared me for this. As they break the edge of the market, approaching the thin line of houses separating the industrial district and old Gaffesend Castle, it seems they&apos;re familiar with Gaffesend&apos;s best abandoned places to hide.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "Jullian shouts something behind me, straining his voice trying to get me to stop, as several other guards give chase. But as we weave between narrow alleys of the tenement homes, I&apos;m the only one that can see the half-blood thief.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "The edge of the district is coming near, where a long wooden fence partitions the district from all the abandoned spaces. The assailant takes their time to amble over the edge with the Essenced artifact, and by the time their feet land on the other side, I charge my Essence enough to directly blast myself straight through the wood, casting charred chips of timber toward the abandoned buildings, knowing I&apos;ll be paying for it later with another domestic quest.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I can see them clearer now that we&apos;re neck-and-neck, and I recognize the tattered cloak looks familiar as it billows behind her. Three steps behind, we approach the old castle shed, separated from the grounds of the Estate. To a layman, it would be a dead end&mdash;but for someone with knowledge of the Royal Guards&mdash;it&apos;s an ancient egress point, and when she enters the small storeroom lined with aged tools from centuries ago, she knows to slip beneath the busted trapdoor to drop down into the ancient tunnels.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "If only I had this much adrenaline during the parade, maybe the outcome would be different, because from all the energy coursing through my circuits and veins, I don&apos;t think twice about dropping down into the old escape tunnels. Her boots splash in the murky water, crunching the bones of forgotten skeletons that fought the front lines  five hundred years ago. When I land in the calf-high sludge, I cast a plume of fire that bounces between the walls, lighting the lines of the long earthen tomb until it sizzles in the water, just long enough to see her silhouette shrink down the straightaway.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "But I&apos;m not letting her go.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "A persistent flame materializes above my head, flickering with the musty air as I trudge-run through the roughly-hewn tunnel. The splashing gets louder as I gain on her, turning right, then left, then left again, as I try to remember the maps from the briefing all those months ago.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "My race&apos;s skill with healing means I&apos;m sensitive to others&mdash;and when I attenuate her vitals, I can feel her exhaustion, fighting for breath as we approach what looks like a dead end, only to burst through a door to a stairwell that takes us up into the castle courtyard.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I find the energy to yell. &quot;You&apos;re not getting away from me,&quot; I shout, and when we break the threshold of the courtyard, we find drifters and vagrants making camp with tattered sheets, stoking fires with their meager Essence. She scales the stairs of the main edifice, and I wonder why she gains height when it only means she&apos;s getting further from the ground.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I&apos;m close enough now that I can feel the wind she displaces. She grabs for a steaming pot and launches it at me, casting a spray of boiling soup, but I duck out of the way, regathering my footing as she tries throwing down debris to trip me.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "But she wasted too much on the offense. I grab her cloak as we crest the stairs of the old hall, so crumbled from war and the elements that sunlight streams through the ceiling and walls.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Enough,&quot; I shout.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "But she tears out a shortsword with her other hand, slicing through the fabric as I stumble. With the Essence Tool still cradled in her arm, she draws her weapon to face me. I drop the scrap of fabric, realizing from touch that it&apos;s a guard cloak.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "Her sharp blue eyes catch the trainee insignia on my armor, along with my identifying number. &quot;A replacement,&quot; she says.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "We circle around a table. &quot;You stole that cloak from a guard,&quot; I say, as I draw my sword. &quot;Reinforcements are right behind me. You have nowhere to go!&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;You&apos;re as disposable as I was,&quot; she says. &quot;Your number. Starting with eighty-four means they have you in the house with the lake view.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;How could you know that?&quot; I ask, but I don&apos;t let her mind games shake me.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Because your name is coming off that damn key just like mine was, and you&apos;ll have nothing,&quot; she shouts, ripping the table aside as she takes her first swing at me.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "We trade blows, fighting in a hall that the old Knights once trained in, clashing our swords with echoes of an ancient past. I remember Derry, the baker, and a name that crests my lips as I try to remember.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "Our circling runs me into the edge of a table, and unable to evade, she drives at me with a powerful blow, buffeting me with the Essence Tool. I stumble, nearly dropping my sword as she slices across my breastplate, catching metal instead of flesh.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Rayna,&quot; I say. &quot;Why do you do this?&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "She pauses for a moment, as if she&apos;d really give an answer. But then she runs for the spiral staircase to the upper floors, and I give chase, just as I hear the other lagging guards approach the hall.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I take two steps at a time, casting sparks as my steel pauldtons scrape the side of the stairwell. I can hear her footfalls directly above me as we get higher and higher and higher, until we reach the very top. ",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "She&apos;s running out of avenues to escape. All that&apos;s left are the buildings of the old industrial district that border the castle, and when we&apos;re four stories up, running across ramparts that look out to a stark cliffside bordering the forest, I doubt she has anywhere to go.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "But then she jumps onto a roof of a wooden building in the servants&apos; quarter. She yelps when her foot crashes through the ceiling, withdrawing as I decide to approach from the other side, aiming for the central beam of the frame instead of the eaves.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "We&apos;re neck-and-neck as she lumbers with the stolen tool and I struggle with my armor, not quite in grabbing distance when the fall is too much of a consequence. She&apos;s heading for the other side of the castle rampart bordering the industrial warehouses, and when I think I&apos;m about to grab her, she channels all her Essence into accelerating for one final sprint.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "My breath tastes like poison when it leaves my lungs. Falling further behind, I watch as she runs directly for the edge of the castle wall, as if to jump to her death. But without hesitation, she clambers onto a straightaway of stone slabs, managing seven strides before she launches herself over the edge.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "She vanishes from sight. And I wager she&apos;s planned this all from the start: planning to live and steal another day, so before the hesitation seizes my muscles, I take the same seven steps and launch myself over the edge.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I can feel the turbulence of wind as gravity comes to collect on my four-story climb. Behind me, I hear Jullian cry my name, and beneath me, a yawning gap spans a thousand years of progress between the old castle and the tall industrial building.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "We float in the air at the same time, flying like the Auvryan angels of their floating lands. Her Ahkvan reflexes give her just shy of nine lives to land. I hinge my legs in anticipation of crashing into the gravel roof, and after she rolls off her fall, I thrust myself with a plume of flames to break my speed enough to twist myself into a barrel roll.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "The roof is small, high, and flat, surrounded by the stark eaves of industrial buildings that are unnavigable. Out of breath, she rushes for the roof access door, only to find it locked, desperately jimmying the round handle as she groans in exasperation.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Drop it, Rayna,&quot; I tell her.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "She complies, placing the artifact on the ground. &quot;As soon as I failed that test, I was always destined to die. So do whatever you have to do with me.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I quickly glance to the edge of the castle wall, so much higher than I remember. All the guards descended the stairs, running around to reconvene inside the warehouse. And I make a decision. ",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I reach past her, tensioning my fingers against the knob as it glows with scalding heat.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;What are you doing? But aren&apos;t you going to take me in? I&apos;m a part of the Den Of Thieves now!&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;You and I aren&apos;t that different. Just separated by time, I fear.&quot; I gesture for the door, quoting the report I&apos;ll write later. &quot;She got away. But she dropped the high-value tool she might have used to aid the enemy.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "A look of shameful relief flushes her face. Sweat mixes with tears she refuses to allow to break the threshold of her eyes. &quot;I never wanted it to end up this way,&quot; she says. &quot;Aren&apos;t you afraid they&apos;ll send you to die? And then what will you do?&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;I don&apos;t know,&quot; I tell her. &quot;But you can choose something else.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "She makes for the stairway as I hear a dozen footfalls reach the gravel lot below. Then she hesitates. &quot;There&apos;s something brewing from the East, I hear,&quot; she says. &quot;Melenia&apos;s had a dangerous change in its royalty. And I&apos;ve heard things.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Heard what?&quot; I ask.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;Just stay aware,&quot; she says. &quot;Watch the East. And . . . tell my sister, that I&apos;m still alive.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "Then she disappears past the threshold. My hands clasp the Essence Tool as I give three seconds before I chase her again, but without wares to weigh her down, I find she&apos;s already gone.",
-         true
-      ]
-   ],
-   [
-      [
-         "BodyKatiya",
-         "&quot;That wasn&apos;t our job! That was stupid and senseless,&quot; Jullian says. He looks at the bare flesh of my arm, scratched enough from rolling on roof stones that it bleeds in a staccato of open cuts. ",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I can feel his power mend my flesh as we walk back across the abandoned fields, warming the skin and coaxing it to join again.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;I thought you&apos;d react differently,&quot; I say, cradling the artifact in my good arm.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;I think that was reckless, and you could have gotten yourself killed.&quot; He looks at the ground with the same expression he wore when Cody called him out. &quot;You&apos;re not supposed to do all that hero stuff. You were supposed wait for the real guards.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;The real guards? We are real guards,&quot; I say.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;But not yet.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I ball my fists in my gauntlets. &quot;But how can you say that, after I succeeded at that?&quot; I ask.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;But she got away,&quot; he says.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;But I recovered the stolen item,&quot; I argue.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "He sighs. &quot;Yeah. You did. And no, I guess I&apos;m wrong &mdash; you did something well this time.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;This time?&quot; I ask. The cereal grasses crunch beneath our boots for the last span of nature until we reach the scalding hole in the fence.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "He tries to take my hand, and I let him, but there&apos;s little energy behind it. He gestures to the huge hole in the wall. &quot;At least your father worked with wood. I hope he taught you enough to fix this mess.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "I usher a laugh.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;But hey, it&apos;s cool that you got your moment. I wish more people saw it, though &mdash; and not just the homeless that live out there in the ruins.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;I didn&apos;t do it for the recognition,&quot; I say. &quot;But I hope it helps my case.&quot;",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "&quot;I&apos;m sure it will,&quot; he says.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "We walk through the same twist of alleyways before returning the item to the shopkeeper at the tent. They add an addendum to my quest form with a page-long note about my efforts, and I enthusiastically fold the pages together, burying them in the pocket of my padded pants.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "When we re-emerge in the part of town that hasn&apos;t heard of my recent exploits, Jullian tries to flirt with me, but I feel distant. I look down at my battered hands. I think of the fear inside the eyes of that girl, Aleena, just a year older than I was, so consumed by the thought of life after failure that I feel nothing when Jullian kisses me goodbye at the door, refusing again to stay the night.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "A sweet smell greets me when I return. I find a small dessert sitting on a polished plate that&apos;s obviously not from my world.",
-         true
-      ],
-      [
-         "BodyKatiya",
-         "It&apos;s a cookie.",
-         true
       ],
       [
-         "BodyKatiya",
-         "And scrawled in neat letters that aren&apos;t from my world either, I find a small note written on a yellow sticky square in dark black ink:",
+         "BodyCody",
+         "She points to the article that hangs on the wall of my cubicle:",
          true
       ],
       [
          "NoteCody",
-         "FOR THE BRAVE KNIGHT NEXT DOOR: </span></p>{[NoteCody]}I MADE EXTRA. </span></p>{[NoteCody]}YOUR TENTATIVE FRIEND. CODY</span></p>",
+         "BROTHER OF FALLEN SOLDIER DESIGNS THE FUTURE</span></p>{[BodyCody]}Beneath the big font on the front page are two pictures: one of Jackson and I when we were kids, and a photo of me directing my team in a suit &mdash; that last hour of the project when we were rushing in full suits and dresses, wearing smocks over our formal clothes, spray-painting the prototype black.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Yeah. It was fun. And that&apos;s why I&apos;m here,&quot; I say. But the high from that memory leaves when reality returns: I freeze my face in the genuine smile I had a minute ago not to lose it, to insist redlines for battery enclosures shouldn&apos;t be any different.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;I sure was proud of my boy,&quot; a voice says.",
+         true
+      ],
+      [
+         "BodyCody",
+         "I realize it&apos;s lunchtime. ",
+         true
+      ],
+      [
+         "BodyCody",
+         "My father Alan, a technician, steps between Kei and Nav.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;That&apos;s right. You told us a little about Cody before the interview,&quot; Nav says.",
+         true
+      ],
+      [
+         "BodyCody",
+         "Dad scratches his salt-and-pepper beard. &quot;Yeah. He used to build things with me in the garage. Now he just designs things on that computer, thinking that&apos;s the real world and all!&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Alright, that&apos;s enough, Dad,&quot; I say.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;You didn&apos;t even finish my redline. The one with your name on the drawing? Those two damn 5/16-18 hex screws that are so close they can&apos;t fit a ratchet on them? I put a toolbox together for you.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Alright,&quot; I repeat, grabbing my keys.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;&mdash;Not that Harbor Freight shit. I&apos;m talking Snap-On, Gear Wrench, and you must not even touch that stuff if you&apos;re that blind to it!&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "The three engineers laugh as I rush to push my greasy father out the door.",
+         true
+      ]
+   ],
+   [
+      [
+         "BodyCody",
+         "We&apos;re snaking down the switchbacks of Shaleborough Canyon when he decides to take another dig at me.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;I don&apos;t think I&apos;ve ever seen your car this clean.&quot; He drags one of his dirty fingers across the dashboard.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;It&apos;ll only get dirtier if you get your greasy paws all over it,&quot; I tell him.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Did a girl finally make it into your life? Sweet Jesus, I thought you&apos;d be stuck in that game room of yours playing the Nintendo forever,&quot; he says.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Maybe I did,&quot; I say. &quot;Or maybe some girl in my complex wanted to use me for my Costco card.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "He sniffs and does a dad cough before offering some fatherly wisdom. &quot;You see, son, women are like raccoons. They&apos;ll tear through all the trash you have to offer until you give them something shiny that keeps their interest.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;So Mom is a raccoon,&quot; I say, expecting him to relent.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Well, your mother had the deepest bags under her eyes when she was teaching in the Los Angeles school district. If a woman can handle a gaggle of rats that try to kill her every day, then you know she&apos;s tough enough to handle someone like me,&quot; he says.",
+         true
+      ],
+      [
+         "BodyCody",
+         "He rambles on about living life at my age in the poor part of Los Angeles, and after a couple more turns, we pull into the only lot that gives us enough time to get him back on union time. He says some choice words about the people around him. Then the gossip from the floor, saying how the men he works with whine more than &quot;any of those housewife shows the stay-at-home moms watch.&quot; And by the time we walk in the door of the Wendy&apos;s, he&apos;s silent enough for us to order and sit in one of the plastic booths, wetting his hands with a bottle of Purell before wiping the sullied table with his dirtier work shirt.",
+         true
+      ],
+      [
+         "BodyCody",
+         "I glance at the play structure from the nineties that I used to play in, when my father drove down the canyon to meet the rest of our family, spending no longer than the time we have now to check in with us. He worked two shifts for the overtime, to give my brother and I enough to flourish with a full childhood, and when he catches me lost in that memory, he gestures to one of the structure&apos;s cross-bars zip-tied to a pool noodle.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;You almost broke your nose on that damn thing,&quot; my father says. &quot;You remember?&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Oh, I remember,&quot; I tell him. &quot;Chasing Jackson down the slide. He ducked and I didn&apos;t see it, then I spouted so much damn blood&mdash;&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Like a fountain. And your mother was so panicked,&quot; he laughs, &quot;tearing a whole stack of napkins one-by-one out of the dispenser, while I was smart enough to ask the front for a whole roll of paper towels!&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "I chuckle. &quot;Those were times.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Good times?&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Good enough to remember,&quot; I tell him, just as the tray arrives with our dollar-menu burgers.",
+         true
+      ],
+      [
+         "BodyCody",
+         "He picks the pickles out of one of his, then takes a deep bite before rubbing his mouth with a napkin. I bite into mine just as he opens his mouth to speak, halfway through a mouthful. &quot;You know I meant what I said back there.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;About the redlines.&quot; I dip my fries in ketchup.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;No, doofus,&quot; he says, staring at me with piercing eyes like mine. &quot;About the project.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;The drone,&quot; I say.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Yeah.&quot; He takes another bite, and hunger blocks his next thought for another thirty seconds or so. &quot;You made me so proud that day. I hope you still have that project.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;I do,&quot; I say.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Have you worked any further on it since you moved out? You have the tools now,&quot; he says. &quot;And now you know enough to really finish it.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;I&apos;m not sure it would even fly anymore,&quot; I tell him.",
+         true
+      ],
+      [
+         "BodyCody",
+         "He shakes a fry at me.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;That&apos;s a shame.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;I just had a lot of energy I had to put somewhere in a really short period of time. After the service at Fort Dietz. After I read that last letter, I had burning purpose, you know? If I didn&apos;t stop, I think that truth would break me entirely.&quot; I sink my teeth into the burger again, distracting myself enough with something savory to prevent the habit of those feelings from coming back.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;We each had our own ways of dealing with it,&quot; my father says. &quot;You either channel that empty feeling or it snags you. Catching up in every little moment of those habits he shaped in us.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Yeah,&quot; I say. ",
+         true
+      ],
+      [
+         "BodyCody",
+         "We closed his bedroom door for months, petrified the exact way he left it. And we were too afraid to open it, just saving that last experience of throwing open the door like the last voicemails on our phones.",
+         true
+      ],
+      [
+         "BodyCody",
+         "Because once the door was opened, he&apos;d remain nothing more than a memory, forever.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;You reminded me a little of him today,&quot; he says.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Oh yeah?&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Well, you&apos;re the age he was now. Your voices sound alike. And when I was done with that soyboy man-bun kid, ragging me over with questions about some stupid enclosure design&mdash;&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "I laugh. &quot;You mean Reed?&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Yeah, whatever. But anyways, when I came up the metal stairs to the room with all the office pukes, I almost thought I heard your brother.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Huh.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;I just never hear you passionate like that, son,&quot; he says.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Yeah. Redlines are shit.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;But you&apos;re not like any of them. Maybe besides that legacy hire friend of yours.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;You really think?&quot; I pull down my eyelid after wiping the salt from my fingers, rolling my right eye into the back of my skull. &quot;Can you see it? Is there a soul still in there?&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Cody, I mean it,&quot; he insists. &quot;I&apos;ve been working here for a long time, and I&apos;ve come to understand there&apos;s two types of engineers.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;And what&apos;s that?&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;There&apos;s the ones that do it for the money. The lifers: satisfied with slow work that never changes, with such tribal knowledge that they&apos;d take the whole company down with them if they died.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;That sounds like me without the experience,&quot; I say. ",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;But you&apos;re not,&quot; Dad says, shaking another fry at me. &quot;You have passion! You&apos;re going to design rockets one day. You&apos;re the dreaming type that wants more.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;All I dream of is not fucking up,&quot; I tell him. &quot;Type two in theory, type one in practice. And I feel like I&apos;m barely surviving the cuts.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Cuts or not, I just don&apos;t want you to lose that part of you that makes you special,&quot; he says. &quot;My sons both have . . . had the same spark that I had. The knack. And I want you to live by it the rest of your life.&quot;",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;I&apos;m working on it. With the job you have, you should know nothing&apos;s ideal more than anyone,&quot; I say.",
+         true
+      ],
+      [
+         "BodyCody",
+         "We grab the trays, tilting them into the trash as we sip from a second refill. Having exhausted two weeks&apos; worth of real conversation at a man level, he rambles further about floor gossip all the way back, telling me to &quot;finish his damn redlines&quot; as he opens the shop door for me to get back to work.",
+         true
+      ]
+   ],
+   [
+      [
+         "BodyCody",
+         "The rest of the day passes slowly when everybody else is gone: everybody besides Kei and I. The lifers leave early: forced to come in when it&apos;s still dark out so they can take care of their teenagers &mdash; or if they don&apos;t have kids, maybe drink at the bar or something. The young type-A engineers leave a little after so they can make the most of summer&apos;s long evenings, whether it&apos;s running or biking  out on the trails in the open fields between the housing developments, or finding the motivation somewhere to run a load of laundry.",
+         true
+      ],
+      [
+         "BodyCody",
+         "Then Nav leaves, and Reed and Kei say goodbye to him. Then Reed tries to talk to Kei, the only one left in the section, who responds with short yes-and-no answers unless he throws a free-response question at her. Then Reed drags a bunch of virtual cards around his computer, playing Solitaire for almost an hour until he can clock out half an hour longer than eight hours. Then he says goodbye to Kei, then it&apos;s absolutely silent for an hour beyond Kei&apos;s mouse clicks, and when 5:00 rolls around, I shoulder my bag and wave goodbye to the workaholic girl I have a crush on, reminding her that there&apos;s still a world out there.",
+         true
+      ],
+      [
+         "BodyCody",
+         "But this time, it felt different. And it&apos;s consistently felt a little different. Maybe Dad is right that I&apos;ve changed, because instead of leaving the long dragging hours of boredom to find respite in inaction, there&apos;s a part of me that wonders what&apos;s happening on the other side of the door.",
+         true
+      ],
+      [
+         "BodyCody",
+         "But it isn&apos;t much, and ever since I photocopied the rule sheet that Katiya and I wrote up, the first and last rule catch my eye every time I reach to open the door. Maybe it&apos;s just the prospect of that mystical threshold that fills me with excitement. Maybe it&apos;s the images and feelings she&apos;s left me with that I still fight like hell to resist. Or maybe it&apos;s fear of what could happen, overriding the boredom of modern life that comes when you get on the other side of adolescence.",
+         true
+      ],
+      [
+         "BodyCody",
+         "The house is silent when I pull in: the garage door groans as its panels screech back in place. Sometimes I imagine finding her sitting there with a bag of my chips in her combat armor, watching Netflix, but she&apos;s been so busy the last week or so, and even though I haven&apos;t found a reason to unlock my side of the door since we last went for that run, I feel the urge to let in a chance for something to happen.",
          true
       ]
    ]
