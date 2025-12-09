@@ -15,7 +15,6 @@ from datetime import datetime, timedelta
 OnesNames = ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen","Twenty"]
 TensNames = ["err","err","Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"]
 
-  
 class DebugLog:
     '''! A class that handles debug messages, and stores them until deployment
          is requested.'''
@@ -240,12 +239,22 @@ def InterpretJSON(js,info=True):
     # Now, we interpret the dictionary created from the JSON file.
     ThisChapter = -1
     ThisChapterName = ''
+    ThisActName = ''
     for entry in js['Manuscript']:
+        if entry['DocType'] == "Act":
+            ThisActName = entry['DocName']
+        # The data we pull here from the CHAPTER will be supplanted into
+        # each following chapter.
         if entry['DocType'] == 'Chapter':
             ThisChapter += 1
             ThisChapterName = entry['GivenName']
             STORY[ThisChapter] = {'Name':ThisChapterName}
+            # Friendly name for what we will be modifying.
             ChapterData = STORY[ThisChapter]
+            ChapterData['ChapterName'] = entry['GivenName']
+            ChapterData['Completion'] = entry['PercentComplete']
+            ChapterData['Summary'] = entry['Summary']
+            ChapterData['Blurb'] = entry['Synopsis']
             ChapterData['Scenes'] = 0
             ChapterData['Body'] = []
             ChapterData['POV'] = []        
@@ -254,6 +263,7 @@ def InterpretJSON(js,info=True):
         if entry['DocType'] == 'Scene':
             ChapterData['Story'] = entry['StoryName']
             ChapterData['Act'] = int(entry['ActNum'])
+            ChapterData['ActName'] = ThisActName
             ChapterData['Chapter'] = int(entry['ChapterFull'])
             ChapterData['ChapterNumber'] = GetNumberName(int(entry['ChapterFull']))
             ChapterData['Scenes'] += 1
@@ -283,10 +293,16 @@ def SaveMasterCopy(manuscriptDict,indentLevel=None):
     '''! Save the full, reformatted JSON content.
     @param manuscript  Manuscript dictionary for full export.
     @param indentLevel  The prettyprint indent level for export.'''
+    storyDict = manuscriptDict['Story']
     # Let's make sure the exporting directory exists.
-    MakeDirIfNotExists('/output')
-    with open(os.getcwd() + '/output/' + f"MasterTOC_{manuscriptDict['Story'][0]['Story']}.json", "w") as f:
+    for path in ['/output',f"/output/{storyDict[0]['Story']}"]:
+        MakeDirIfNotExists(path)
+    # Get timestamp
+    now = datetime.now().strftime("%Y%m%d_%H%M")
+    with open(os.getcwd() + f"/output/{storyDict[0]['Story']}/" + f"MC_{now}.json", "w") as f:        
         f.write(js.dumps(manuscriptDict,ensure_ascii=True,indent=indentLevel));  
+    with open(os.getcwd() + f"/output/{storyDict[0]['Story']}/" + "MC_Latest.json", "w") as f:
+        f.write(js.dumps(manuscriptDict,ensure_ascii=True,indent=indentLevel)); 
     
 def SaveSectionedCopy(storyDict,indentLevel=None):
     '''! Separate into JSON files separated by chapter in directories labeled
@@ -315,6 +331,33 @@ def SaveSectionedCopy(storyDict,indentLevel=None):
             with open(os.getcwd() + actpath + f"/{chapter}.json", "w") as f:
                 f.write(js.dumps(storyDict[chapter]['Body'],ensure_ascii=True,indent=indentLevel))    
 
+def SaveTableOfContents(manuscriptDict,indentLevel=None):
+    '''! Generate a Table Of Contents file that will guide other programs
+         in navigating the file structure.
+         @param storyDict  Story dictionary (meta stuff doesn't matter here)
+         @param indentLevel  The prettyprint indent level for export.'''
+    MakeDirIfNotExists('/TOC')     
+    TOCdict = {'Metadata':{},'ChapterList':[]}
+    TOCdict['Metadata'] = manuscriptDict['Metadata']
+    TOCdict['ChapterList'] = []    
+    storyDict = manuscriptDict['Story']
+    for entry in storyDict.values():
+        ChapterEntry = {
+            "Act"           : entry['Act'],
+            "ActName"       : entry['ActName'],
+            "Chapter"       : entry['Chapter'],
+            "ChapterName"   : entry['ChapterName'],
+            "ChapterNumber" : entry['ChapterNumber'],
+            "Character"     : entry['POV'],
+            "Summary"       : entry['Summary'],
+            "Blurb"         : entry['Blurb'],
+            "Written"       : entry['Written'],
+            "Location"      : f"/sectioned/{entry['Story']}/{entry['Act']}/{entry['Chapter']}.json"
+            }
+        TOCdict['ChapterList'].append(ChapterEntry)
+    with open(os.getcwd() + '/TOC/' + f"TOC_{manuscriptDict['Story'][0]['Story']}.json", "w") as f:
+        f.write(js.dumps(TOCdict,ensure_ascii=True,indent=indentLevel));  
+
 # Standalone execution of this file.
 if __name__ == "__main__":        
     debug = DebugLog(1)
@@ -322,6 +365,7 @@ if __name__ == "__main__":
     MANUSCRIPT = InterpretJSON(JS,True)
     SaveMasterCopy(MANUSCRIPT,indentLevel=3)
     SaveSectionedCopy(MANUSCRIPT['Story'] ,indentLevel=3)
+    SaveTableOfContents(MANUSCRIPT, indentLevel=3)
     
     
     

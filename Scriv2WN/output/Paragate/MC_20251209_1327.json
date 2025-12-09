@@ -2,6 +2,10 @@
    "Story": {
       "0": {
          "Name": "Strangers To Enemies (Part One)",
+         "ChapterName": "Strangers To Enemies (Part One)",
+         "Completion": "92",
+         "Summary": "Cody celebrates his first home, drunkenly stumbles through the adjoining door into another world, is healed by strangers, and fixates on the &quot;cosplayer&quot; girl on the other side.",
+         "Blurb": "A housewarming goes sideways when Cody opens the wrong door&mdash;and stumbles into a world that shouldn&apos;t exist.",
          "Scenes": 4,
          "Body": [
             [
@@ -923,12 +927,17 @@
          ],
          "Story": "Paragate",
          "Act": 1,
+         "ActName": "Act One: Spring",
          "Chapter": 1,
          "ChapterNumber": "One",
          "Written": true
       },
       "1": {
          "Name": "The Knight Before",
+         "ChapterName": "The Knight Before",
+         "Completion": "95",
+         "Summary": "Katiya&apos;s intro: she struggles to relax, Aldrin frames trainee expectations, and she reconnects with Jullian as they &quot;christen&quot; her new place.",
+         "Blurb": "Katiya tries to unwind, but duty&mdash;and an old flame&mdash;won&apos;t let her rest.",
          "Scenes": 3,
          "Body": [
             [
@@ -1480,12 +1489,17 @@
          ],
          "Story": "Paragate",
          "Act": 1,
+         "ActName": "Act One: Spring",
          "Chapter": 2,
          "ChapterNumber": "Two",
          "Written": true
       },
       "2": {
          "Name": "The Day After",
+         "ChapterName": "The Day After",
+         "Completion": "95",
+         "Summary": "Cody&apos;s bleak office day: roasted for late redlines, awkward beat with Kei, then family unpacking with Miguel queued up for drinks.",
+         "Blurb": "Another soul-numbing office day pushes Cody toward a choice he&apos;s not ready to make.",
          "Scenes": 3,
          "Body": [
             [
@@ -2472,12 +2486,17 @@
          ],
          "Story": "Paragate",
          "Act": 1,
+         "ActName": "Act One: Spring",
          "Chapter": 3,
          "ChapterNumber": "Three",
          "Written": true
       },
       "3": {
          "Name": "Secondhand Cottage",
+         "ChapterName": "Secondhand Cottage",
+         "Completion": "95",
+         "Summary": "Katiya&apos;s trauma baseline: nightmares of Hillfar; she self-stabilizes, starts her day, meets Derry & Carmen (Rayna foreshadow), and heads to base with Bertram.",
+         "Blurb": "Nightmares, neighbors, and a base run: Katiya fights panic with routine until routine fights back.",
          "Scenes": 3,
          "Body": [
             [
@@ -2944,12 +2963,17 @@
          ],
          "Story": "Paragate",
          "Act": 1,
+         "ActName": "Act One: Spring",
          "Chapter": 4,
          "ChapterNumber": "Four",
          "Written": true
       },
       "4": {
          "Name": "Firsthand Home",
+         "ChapterName": "Firsthand Home",
+         "Completion": "95",
+         "Summary": "Cody + Miguel bro out, drink hard; Miguel crashes, Cody stays up.",
+         "Blurb": "Drinks with a best friend turn into confessions&mdash;and an idea Cody should ignore.",
          "Scenes": 2,
          "Body": [
             [
@@ -3536,12 +3560,17 @@
          ],
          "Story": "Paragate",
          "Act": 1,
+         "ActName": "Act One: Spring",
          "Chapter": 5,
          "ChapterNumber": "Five",
          "Written": true
       },
       "5": {
          "Name": "Insurgency",
+         "ChapterName": "Insurgency",
+         "Completion": "90",
+         "Summary": "Katiya&apos;s first day ends in panic when a distant light (Firebrand tie-in) appears; town responds; on returning home she finds an intruder&mdash;Cody&mdash;and ambushes him.",
+         "Blurb": "A distant light rattles Gaffesend; Katiya&apos;s first day ends with an intruder at home.",
          "Scenes": 3,
          "Body": [
             [
@@ -4178,12 +4207,17 @@
          ],
          "Story": "Paragate",
          "Act": 1,
+         "ActName": "Act One: Spring",
          "Chapter": 6,
          "ChapterNumber": "Six",
          "Written": true
       },
       "6": {
          "Name": "Exfiltration",
+         "ChapterName": "Exfiltration",
+         "Completion": "92",
+         "Summary": "Prologue re-seen through Katiya: she crosses into the modern world and recoils, landing back through the door&mdash;mirror of Cody&apos;s intro.",
+         "Blurb": "Through Katiya&apos;s eyes: a door, a modern nightmare, and a blur she can&apos;t unsee. and violence.",
          "Scenes": 2,
          "Body": [
             [
@@ -4720,12 +4754,17 @@
          ],
          "Story": "Paragate",
          "Act": 1,
+         "ActName": "Act One: Spring",
          "Chapter": 7,
          "ChapterNumber": "Seven",
          "Written": true
       },
       "7": {
          "Name": "Strangers To Enemies",
+         "ChapterName": "Strangers To Enemies",
+         "Completion": "92",
+         "Summary": "Third clash: Katiya (assuming Auvryan assassin) and Cody fight to another misunderstanding; she drives him back through the door.",
+         "Blurb": "Misread motives turn their encounter into a full-on clash.",
          "Scenes": 2,
          "Body": [
             [
@@ -5127,12 +5166,17 @@
          ],
          "Story": "Paragate",
          "Act": 1,
+         "ActName": "Act One: Spring",
          "Chapter": 8,
          "ChapterNumber": "Eight",
          "Written": true
       },
       "8": {
          "Name": "Surprise Approach",
+         "ChapterName": "Surprise Approach",
+         "Completion": "90",
+         "Summary": "Cody tries to rationalize it away (no wound); barricades the door; nearly late to work; meets foil Reed.",
+         "Blurb": "Cody barricades more than a door as reality refuses to make sense.",
          "Scenes": 2,
          "Body": [
             [
@@ -5624,12 +5668,17 @@
          ],
          "Story": "Paragate",
          "Act": 1,
+         "ActName": "Act One: Spring",
          "Chapter": 9,
          "ChapterNumber": "Nine",
          "Written": true
       },
       "9": {
          "Name": "Strategic Retreat",
+         "ChapterName": "Strategic Retreat",
+         "Completion": "92",
+         "Summary": "Katiya cleans to stave off panic, studies Cody&apos;s device; time skip: a month later she hesitates during a royal escort, barely averts disaster, is berated, and runs to find Bertram.",
+         "Blurb": "A month later, a public moment goes wrong&mdash;and Katiya can&apos;t shake the blame.",
          "Scenes": 4,
          "Body": [
             [
@@ -6026,12 +6075,17 @@
          ],
          "Story": "Paragate",
          "Act": 1,
+         "ActName": "Act One: Spring",
          "Chapter": 10,
          "ChapterNumber": "Ten",
          "Written": true
       },
       "10": {
          "Name": "Ennui and Excoriation",
+         "ChapterName": "Ennui and Excoriation",
+         "Completion": "75",
+         "Summary": "Another month later: Cody is bored while Reed earns praise; Nav spins up a new project; Cody ghosts social invites, but hears pleading through the door at home.",
+         "Blurb": "Praise falls on the wrong desk. At home, Cody hears a voice on the other side.",
          "Scenes": 3,
          "Body": [
             [
@@ -6428,12 +6482,17 @@
          ],
          "Story": "Paragate",
          "Act": 1,
+         "ActName": "Act One: Spring",
          "Chapter": 11,
          "ChapterNumber": "Eleven",
          "Written": true
       },
       "11": {
          "Name": "Anxiety and Avoidance",
+         "ChapterName": "Anxiety and Avoidance",
+         "Completion": "80",
+         "Summary": "FOUR WEEK TIME SKIPKatiya, Ryder, and Paxton rescue near-dead Bertram; she&apos;s blamed and shut out&mdash;her only remaining lifeline is Cody.",
+         "Blurb": "With help scarce, Katiya runs toward the only lifeline left.",
          "Scenes": 2,
          "Body": [
             [
@@ -6750,12 +6809,17 @@
          ],
          "Story": "Paragate",
          "Act": 1,
+         "ActName": "Act One: Spring",
          "Chapter": 12,
          "ChapterNumber": "Twelve",
          "Written": true
       },
       "12": {
          "Name": "The Sleeping Knight",
+         "ChapterName": "The Sleeping Knight",
+         "Completion": "70",
+         "Summary": "Katiya crosses mid-panic; Cody calms her and lets her sleep; awkward breakfast; they agree to &quot;no interfering&quot; (both intend to break it).",
+         "Blurb": "A midnight crossing. A stranger&apos;s kindness. Rules they&apos;ll both pretend to follow.",
          "Scenes": 2,
          "Body": [
             [
@@ -7372,12 +7436,17 @@
          ],
          "Story": "Paragate",
          "Act": 2,
+         "ActName": "Act Two: Summer",
          "Chapter": 13,
          "ChapterNumber": "Thirteen",
          "Written": true
       },
       "13": {
          "Name": "Luddite By Chance",
+         "ChapterName": "Luddite By Chance",
+         "Completion": "70",
+         "Summary": "Cody gives her a gentle orientation day: first car ride (terrifying), Costco errand gauntlet&mdash;Katiya is overwhelmed by the future.",
+         "Blurb": "&quot;Welcome to the future.&quot; A car ride and a big-box errand become an emotional obstacle course.",
          "Scenes": 3,
          "Body": [
             [
@@ -8079,12 +8148,17 @@
          ],
          "Story": "Paragate",
          "Act": 2,
+         "ActName": "Act Two: Summer",
          "Chapter": 14,
          "ChapterNumber": "Fourteen",
          "Written": true
       },
       "14": {
          "Name": "Technophile By Choice",
+         "ChapterName": "Technophile By Choice",
+         "Completion": "70",
+         "Summary": "Cody runs Katiya&apos;s route in Gaffesend; she tours him as &quot;royal inventor&quot;; awkward Jullian moment; tavern hang where Cody fits in.",
+         "Blurb": "Cody tours Katiya&apos;s world&mdash;and fits in a little too well.",
          "Scenes": 3,
          "Body": [
             [
@@ -8926,12 +9000,17 @@
          ],
          "Story": "Paragate",
          "Act": 2,
+         "ActName": "Act Two: Summer",
          "Chapter": 15,
          "ChapterNumber": "Fifteen",
          "Written": true
       },
       "15": {
          "Name": "Back To Business",
+         "ChapterName": "Back To Business",
+         "Completion": "70",
+         "Summary": "Cody&apos;s spark flickers: nostalgia and lunch with Alan (Jackson talk); he returns hoping for an open door.",
+         "Blurb": "A lunch with Dad. A memory of a brother. A door that might be open tonight.",
          "Scenes": 3,
          "Body": [
             [
@@ -9513,12 +9592,17 @@
          ],
          "Story": "Paragate",
          "Act": 2,
+         "ActName": "Act Two: Summer",
          "Chapter": 16,
          "ChapterNumber": "Sixteen",
          "Written": true
       },
       "16": {
          "Name": "Onward To Chaos",
+         "ChapterName": "Onward To Chaos",
+         "Completion": "70",
+         "Summary": "Katiya visits Bertram in the hospital (promises Hillfar); market duty goes sideways; she chases and collars Rayna (Ahkvasan half-blood); Jullian downplays her leap; Cody leaves a treat.",
+         "Blurb": "Katiya chases a thief and a ghost from her past&mdash;while promises tug her toward tomorrow.",
          "Scenes": 4,
          "Body": [
             [
@@ -10315,12 +10399,17 @@
          ],
          "Story": "Paragate",
          "Act": 2,
+         "ActName": "Act Two: Summer",
          "Chapter": 17,
          "ChapterNumber": "Seventeen",
          "Written": true
       },
       "17": {
          "Name": "Civillian Combat",
+         "ChapterName": "Civillian Combat",
+         "Completion": "70",
+         "Summary": "Cody&apos;s volunteer training day: Katiya teases, his mistake catches Aldrin&apos;s eye; later he chooses friendship over victory in a challenge&mdash;character beat.",
+         "Blurb": "A training mishap puts Cody on someone important&apos;s radar for all the wrong reasons.",
          "Scenes": 2,
          "Body": [
             [
@@ -10882,12 +10971,17 @@
          ],
          "Story": "Paragate",
          "Act": 2,
+         "ActName": "Act Two: Summer",
          "Chapter": 18,
          "ChapterNumber": "Eighteen",
          "Written": true
       },
       "18": {
          "Name": "Warrior Business",
+         "ChapterName": "Warrior Business",
+         "Completion": "70",
+         "Summary": "Open house at Cody&apos;s work: meet Reed & Kei; Cody geeks out, Katiya meets Alan & Kim; they overhear Reed/Kei on Cody missing from the &quot;Future Talent&quot; wall.",
+         "Blurb": "Open house at work: new faces, old history, and a wall Cody isn&apos;t on.",
          "Scenes": 3,
          "Body": [
             [
@@ -11689,12 +11783,17 @@
          ],
          "Story": "Paragate",
          "Act": 2,
+         "ActName": "Act Two: Summer",
          "Chapter": 19,
          "ChapterNumber": "Nineteen",
          "Written": true
       },
       "19": {
          "Name": "Domestic Relations",
+         "ChapterName": "Domestic Relations",
+         "Completion": "70",
+         "Summary": "Katiya engineers a Cody&mdash;Kei date; in parallel she and Jullian go to hot springs and bristle; Cody&apos;s date feels off and foggy&mdash;he insists he&apos;s &quot;fine.&quot;",
+         "Blurb": "Double dates, mixed signals, and the uneasy question: are we still who we were?",
          "Scenes": 4,
          "Body": [
             [
@@ -12461,12 +12560,17 @@
          ],
          "Story": "Paragate",
          "Act": 2,
+         "ActName": "Act Two: Summer",
          "Chapter": 20,
          "ChapterNumber": "Twenty",
          "Written": true
       },
       "20": {
          "Name": "Foreign Affairs",
+         "ChapterName": "Foreign Affairs",
+         "Completion": "70",
+         "Summary": "Katiya extracts an uncomfortable truth from Jullian; intercut meltdown date beats (both couples misfire); Cody & Kei hook up but it lands as empty.",
+         "Blurb": "Cold water and hard truths&mdash;two relationships strain to the breaking point.",
          "Scenes": 6,
          "Body": [
             [
@@ -13218,12 +13322,17 @@
          ],
          "Story": "Paragate",
          "Act": 2,
+         "ActName": "Act Two: Summer",
          "Chapter": 21,
          "ChapterNumber": "Twenty-One",
          "Written": true
       },
       "21": {
          "Name": "Losing To Fear",
+         "ChapterName": "Losing To Fear",
+         "Completion": "70",
+         "Summary": "Katiya passes core exams but shoots poorly; Aryn is unflappable; Cody and Reed clash about what a Level-1 is; Katiya insists on leading the next team exam, feeling off her game.",
+         "Blurb": "Tests expose strengths, flaws, and a calm rival who never seems to miss.",
          "Scenes": 3,
          "Body": [
             [
@@ -14095,12 +14204,17 @@
          ],
          "Story": "Paragate",
          "Act": 2,
+         "ActName": "Act Two: Summer",
          "Chapter": 22,
          "ChapterNumber": "Twenty-Two",
          "Written": true
       },
       "22": {
          "Name": "Failing To Launch",
+         "ChapterName": "Failing To Launch",
+         "Completion": "70",
+         "Summary": "Cody presents and gets hammered; Reed&apos;s allies redirect the room; Katiya&apos;s plan withers, Bertram is &quot;killed&quot; in exercise, she barges the opposing house&mdash;bad optics.",
+         "Blurb": "A tough room for Cody. A tougher match for Katiya. Plans buckle under pressure.",
          "Scenes": 2,
          "Body": [
             [
@@ -14842,12 +14956,17 @@
          ],
          "Story": "Paragate",
          "Act": 2,
+         "ActName": "Act Two: Summer",
          "Chapter": 23,
          "ChapterNumber": "Twenty-Three",
          "Written": true
       },
       "23": {
          "Name": "Friendly Fire",
+         "ChapterName": "Friendly Fire",
+         "Completion": "70",
+         "Summary": "Reed&apos;s presentation wins; Cody&apos;s mild critique is spun as jealousy and he snaps publicly; Katiya loses to Aryn, is told she&apos;s below the line, and learns her family&apos;s already in Gaffesend.",
+         "Blurb": "One wins the crowd; the other loses control. Lines are drawn on both sides.",
          "Scenes": 2,
          "Body": [
             [
@@ -15454,12 +15573,17 @@
          ],
          "Story": "Paragate",
          "Act": 2,
+         "ActName": "Act Two: Summer",
          "Chapter": 24,
          "ChapterNumber": "Twenty-Four",
          "Written": true
       },
       "24": {
          "Name": "A House Divided",
+         "ChapterName": "A House Divided",
+         "Completion": "70",
+         "Summary": "Cody spirals home; Katiya waits on his couch; their mutual failures ignite a bitter fight&mdash;door slammed shut again.",
+         "Blurb": "Back at the house, two people who need comfort get conflict instead.",
          "Scenes": 2,
          "Body": [
             [
@@ -15801,12 +15925,17 @@
          ],
          "Story": "Paragate",
          "Act": 2,
+         "ActName": "Act Two: Summer",
          "Chapter": 25,
          "ChapterNumber": "Twenty-Five",
          "Written": true
       },
       "25": {
          "Name": "Cold War",
+         "ChapterName": "Cold War",
+         "Completion": "70",
+         "Summary": "Jackson&apos;s &quot;Operation Bluewings&quot; flashback: drone crash, mission abort, and his sacrificial call to Overwatch in the storm.",
+         "Blurb": "Years earlier, in a storm of ice and static, a mission hangs by a thread.",
          "Scenes": 3,
          "Body": [
             [
@@ -16338,12 +16467,17 @@
          ],
          "Story": "Paragate",
          "Act": 3,
+         "ActName": "Act Three: Fall",
          "Chapter": 26,
          "ChapterNumber": "Twenty-Six",
          "Written": true
       },
       "26": {
          "Name": "Warm Solitude",
+         "ChapterName": "Warm Solitude",
+         "Completion": "70",
+         "Summary": "Katiya&apos;s origin trauma: childhood game ? treehouse collapse ? Raph&apos;s death; she hides in a corpse pit; the Chymaeran lie brands her forever.",
+         "Blurb": "Long before today, a childhood dare turned into a scar that never closed.",
          "Scenes": 3,
          "Body": [
             [
@@ -17050,12 +17184,17 @@
          ],
          "Story": "Paragate",
          "Act": 3,
+         "ActName": "Act Three: Fall",
          "Chapter": 27,
          "ChapterNumber": "Twenty-Seven",
          "Written": true
       },
       "27": {
          "Name": "Prometheus",
+         "ChapterName": "Prometheus",
+         "Completion": "70",
+         "Summary": "Months later: Naveen notes Cody&apos;s improvement but deeper ennui; company lunch where Reed is promoted; Reed asks Cody to help fix his flawed prototype (they bond); that night Cody, riding the high, uses Essence as flux&mdash;batteries &quot;fire&quot; and spark his next idea.",
+         "Blurb": "Small progress, big disappointment&mdash;until a late-night spark hints at a dangerous idea.",
          "Scenes": 3,
          "Body": [
             [
@@ -17532,12 +17671,17 @@
          ],
          "Story": "Paragate",
          "Act": 3,
+         "ActName": "Act Three: Fall",
          "Chapter": 28,
          "ChapterNumber": "Twenty-Eight",
          "Written": true
       },
       "28": {
          "Name": "Once Lovers",
+         "ChapterName": "Once Lovers",
+         "Completion": "70",
+         "Summary": "",
+         "Blurb": "Family news brightens the table, but Katiya&apos;s hands won&apos;t stop shaking. A walk with Erik ends at a tavern door&mdash;and a choice she should&apos;ve made months ago.",
          "Scenes": 4,
          "Body": [
             [
@@ -18119,12 +18263,17 @@
          ],
          "Story": "Paragate",
          "Act": 3,
+         "ActName": "Act Three: Fall",
          "Chapter": 29,
          "ChapterNumber": "Twenty-Nine",
          "Written": true
       },
       "29": {
          "Name": "Cold Sweat",
+         "ChapterName": "Cold Sweat",
+         "Completion": "70",
+         "Summary": "",
+         "Blurb": "New alliances form while an ominous email threatens Cody&apos;s career.",
          "Scenes": 4,
          "Body": [
             [
@@ -18546,12 +18695,17 @@
          ],
          "Story": "Paragate",
          "Act": 3,
+         "ActName": "Act Three: Fall",
          "Chapter": 30,
          "ChapterNumber": "Thirty",
          "Written": true
       },
       "30": {
          "Name": "Heating Up",
+         "ChapterName": "Heating Up",
+         "Completion": "70",
+         "Summary": "",
+         "Blurb": "A collapse, a break-in, and a rescue drag Katiya and Cody violently back together.",
          "Scenes": 3,
          "Body": [
             [
@@ -19258,12 +19412,17 @@
          ],
          "Story": "Paragate",
          "Act": 3,
+         "ActName": "Act Three: Fall",
          "Chapter": 31,
          "ChapterNumber": "Thirty-One",
          "Written": true
       },
       "31": {
          "Name": "Fantastic Modernity",
+         "ChapterName": "Fantastic Modernity",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "Katiya&apos;s first peaceful sleep leads straight into chaotic, sword-filled &quot;fantasy&quot; tourism on Earth.",
          "Scenes": 3,
          "Body": [
             [
@@ -19830,12 +19989,17 @@
          ],
          "Story": "Paragate",
          "Act": 3,
+         "ActName": "Act Three: Fall",
          "Chapter": 32,
          "ChapterNumber": "Thirty-Two",
          "Written": true
       },
       "32": {
          "Name": "Modern Fantasy",
+         "ChapterName": "Modern Fantasy",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "Tournament glory and a stolen moment of closeness are shattered with sudden news from the north.",
          "Scenes": 3,
          "Body": [
             [
@@ -20422,12 +20586,17 @@
          ],
          "Story": "Paragate",
          "Act": 3,
+         "ActName": "Act Three: Fall",
          "Chapter": 33,
          "ChapterNumber": "Thirty-Three",
          "Written": true
       },
       "33": {
          "Name": "Professional Death",
+         "ChapterName": "Professional Death",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "At work, a meeting becomes a reckoning. Someone steps forward, and the cost is real.",
          "Scenes": 3,
          "Body": [
             [
@@ -20874,12 +21043,17 @@
          ],
          "Story": "Paragate",
          "Act": 3,
+         "ActName": "Act Three: Fall",
          "Chapter": 34,
          "ChapterNumber": "Thirty-Four",
          "Written": true
       },
       "34": {
          "Name": "Physical Demise",
+         "ChapterName": "Physical Demise",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "Desperation pulls Katiya beyond the walls, where duty, grief, and old ghosts converge.",
          "Scenes": 3,
          "Body": [
             [
@@ -21506,12 +21680,17 @@
          ],
          "Story": "Paragate",
          "Act": 3,
+         "ActName": "Act Three: Fall",
          "Chapter": 35,
          "ChapterNumber": "Thirty-Five",
          "Written": true
       },
       "35": {
          "Name": "Holding On",
+         "ChapterName": "Holding On",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "Kindness and rediscovery of an old passion dare Cody to care again.",
          "Scenes": 3,
          "Body": [
             [
@@ -22288,12 +22467,17 @@
          ],
          "Story": "Paragate",
          "Act": 3,
+         "ActName": "Act Three: Fall",
          "Chapter": 36,
          "ChapterNumber": "Thirty-Six",
          "Written": true
       },
       "36": {
          "Name": "Letting Go",
+         "ChapterName": "Letting Go",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "Shame, buried memories, and unexpected visitors push both worlds toward a new kind of war.",
          "Scenes": 4,
          "Body": [
             [
@@ -23090,12 +23274,17 @@
          ],
          "Story": "Paragate",
          "Act": 3,
+         "ActName": "Act Three: Fall",
          "Chapter": 37,
          "ChapterNumber": "Thirty-Seven",
          "Written": true
       },
       "37": {
          "Name": "Bottoming Out",
+         "ChapterName": "Bottoming Out",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "This time, Katiya and Cody come together instead of shutting each other out.",
          "Scenes": 2,
          "Body": [
             [
@@ -23497,12 +23686,17 @@
          ],
          "Story": "Paragate",
          "Act": 4,
+         "ActName": "Act Four: Winter",
          "Chapter": 38,
          "ChapterNumber": "Thirty-Eight",
          "Written": true
       },
       "38": {
          "Name": "Crossing Over",
+         "ChapterName": "Crossing Over",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "",
          "Scenes": 3,
          "Body": [
             [
@@ -24109,12 +24303,17 @@
          ],
          "Story": "Paragate",
          "Act": 4,
+         "ActName": "Act Four: Winter",
          "Chapter": 39,
          "ChapterNumber": "Thirty-Nine",
          "Written": true
       },
       "39": {
          "Name": "Reaching Up",
+         "ChapterName": "Reaching Up",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "Stories from another road change the map. A cross-world conversation reframes what &quot;winning&quot; could mean.",
          "Scenes": 3,
          "Body": [
             [
@@ -24776,12 +24975,17 @@
          ],
          "Story": "Paragate",
          "Act": 4,
+         "ActName": "Act Four: Winter",
          "Chapter": 40,
          "ChapterNumber": "Forty",
          "Written": true
       },
       "40": {
          "Name": "Radio StaticHarsh Noise",
+         "ChapterName": "Radio StaticHarsh Noise",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "An abandoned project stops being a joke.",
          "Scenes": 4,
          "Body": [
             [
@@ -25222,12 +25426,17 @@
          ],
          "Story": "Paragate",
          "Act": 4,
+         "ActName": "Act Four: Winter",
          "Chapter": 41,
          "ChapterNumber": "Forty-One",
          "Written": false
       },
       "41": {
          "Name": "Eutectic Point",
+         "ChapterName": "Eutectic Point",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "Turned away by authority, Katiya and her new allies make a plan anyway&mdash;three days, no permission, no safety net.",
          "Scenes": 3,
          "Body": [
             [],
@@ -25251,12 +25460,17 @@
          ],
          "Story": "Paragate",
          "Act": 4,
+         "ActName": "Act Four: Winter",
          "Chapter": 42,
          "ChapterNumber": "Forty-Two",
          "Written": false
       },
       "42": {
          "Name": "Annealment",
+         "ChapterName": "Annealment",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "Cody raids parts bins and old code; the prototype finally breathes&mdash;then crosses into a world where failure isn&apos;t theoretical.",
          "Scenes": 2,
          "Body": [
             [],
@@ -25276,12 +25490,17 @@
          ],
          "Story": "Paragate",
          "Act": 4,
+         "ActName": "Act Four: Winter",
          "Chapter": 43,
          "ChapterNumber": "Forty-Three",
          "Written": false
       },
       "43": {
          "Name": "In Loving Memory",
+         "ChapterName": "In Loving Memory",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "Cody confronts his father about a resurrected dream.",
          "Scenes": 3,
          "Body": [
             [],
@@ -25305,12 +25524,17 @@
          ],
          "Story": "Paragate",
          "Act": 4,
+         "ActName": "Act Four: Winter",
          "Chapter": 44,
          "ChapterNumber": "Forty-Four",
          "Written": false
       },
       "44": {
          "Name": "In Future Grief",
+         "ChapterName": "In Future Grief",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "Katiya tells her family the whole truth. A journal from the past points her toward who she has to be now.",
          "Scenes": 3,
          "Body": [
             [],
@@ -25334,12 +25558,17 @@
          ],
          "Story": "Paragate",
          "Act": 4,
+         "ActName": "Act Four: Winter",
          "Chapter": 45,
          "ChapterNumber": "Forty-Five",
          "Written": false
       },
       "45": {
          "Name": "Legacy Hire",
+         "ChapterName": "Legacy Hire",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "Suit pressed, nerves frayed: Cody walks into the room that could end him&mdash;or open a door.",
          "Scenes": 3,
          "Body": [
             [],
@@ -25363,12 +25592,17 @@
          ],
          "Story": "Paragate",
          "Act": 4,
+         "ActName": "Act Four: Winter",
          "Chapter": 46,
          "ChapterNumber": "Forty-Six",
          "Written": false
       },
       "46": {
          "Name": "Liftoff",
+         "ChapterName": "Liftoff",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "Proof flies. A name lands. The verdict doesn&apos;t.dea.",
          "Scenes": 2,
          "Body": [
             [],
@@ -25388,12 +25622,17 @@
          ],
          "Story": "Paragate",
          "Act": 4,
+         "ActName": "Act Four: Winter",
          "Chapter": 47,
          "ChapterNumber": "Forty-Seven",
          "Written": false
       },
       "47": {
          "Name": "Oscar Mike",
+         "ChapterName": "Oscar Mike",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "Dawn, a promise, and zero guarantees. The team rolls out while Cody watches the horizon for what no one else believes.",
          "Scenes": 3,
          "Body": [
             [],
@@ -25417,12 +25656,17 @@
          ],
          "Story": "Paragate",
          "Act": 4,
+         "ActName": "Act Four: Winter",
          "Chapter": 48,
          "ChapterNumber": "Forty-Eight",
          "Written": false
       },
       "48": {
          "Name": "Counter-Strike",
+         "ChapterName": "Counter-Strike",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "Fire buys time&mdash;then runs out. A second danger moves where no one is looking.",
          "Scenes": 2,
          "Body": [
             [],
@@ -25442,12 +25686,17 @@
          ],
          "Story": "Paragate",
          "Act": 4,
+         "ActName": "Act Four: Winter",
          "Chapter": 49,
          "ChapterNumber": "Forty-Nine",
          "Written": false
       },
       "49": {
          "Name": "Apotheosis",
+         "ChapterName": "Apotheosis",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "Winter arrives with teeth. Something old stirs, and Katiya gets a chance to reconcile the past.",
          "Scenes": 2,
          "Body": [
             [],
@@ -25467,12 +25716,17 @@
          ],
          "Story": "Paragate",
          "Act": 4,
+         "ActName": "Act Four: Winter",
          "Chapter": 50,
          "ChapterNumber": "Fifty",
          "Written": false
       },
       "50": {
          "Name": "Visions Of Fire",
+         "ChapterName": "Visions Of Fire",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "With the city burning, Katiya chooses action.",
          "Scenes": 3,
          "Body": [
             [],
@@ -25496,12 +25750,17 @@
          ],
          "Story": "Paragate",
          "Act": 4,
+         "ActName": "Act Four: Winter",
          "Chapter": 51,
          "ChapterNumber": "Fifty-One",
          "Written": false
       },
       "51": {
          "Name": "Parasmagate",
+         "ChapterName": "Parasmagate",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "New halls, old stairs. A photo in a locker. On the western tower, two silhouettes face what&apos;s next.",
          "Scenes": 4,
          "Body": [
             [],
@@ -25529,12 +25788,17 @@
          ],
          "Story": "Paragate",
          "Act": 5,
+         "ActName": "Epilogue",
          "Chapter": 52,
          "ChapterNumber": "Fifty-Two",
          "Written": false
       },
       "52": {
          "Name": "Threaded Echoes",
+         "ChapterName": "Threaded Echoes",
+         "Completion": "",
+         "Summary": "",
+         "Blurb": "Titus enocunters someone he thought he lost.",
          "Scenes": 3,
          "Body": [
             [],
@@ -25558,6 +25822,7 @@
          ],
          "Story": "Paragate",
          "Act": 5,
+         "ActName": "Epilogue",
          "Chapter": 53,
          "ChapterNumber": "Fifty-Three",
          "Written": false
