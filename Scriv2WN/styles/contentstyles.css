@@ -1,0 +1,144 @@
+:root {
+    /* Layout Characteristics */
+    --MenuHeight:           50px;
+    --MenuPad:              10px;    
+    --FooterHeight:         80px;
+    --FooterPad:            10px;
+    --BodyStart:            calc(var(--MenuHeight) + var(--MenuPad));
+    --BodyHeight:           calc(100dvh - var(--MenuHeight) - var(--MenuPad) - var(--FooterHeight) - var(--FooterPad));
+    --ContentWidth:         min(800px,100vw);
+    --TypesetMargin:        50px;
+
+    /*  */
+}
+
+body {
+    /* no scrolling */
+    overflow: hidden;
+    margin: 0;
+}
+
+div {
+    border: 1px solid black;
+}
+div > div {
+    border: 1px solid red;
+}
+div.BACKGROUND {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100dvh;
+}
+
+div.HEADER {
+    position: absolute;
+    top:0;
+    left:50vw;
+    transform: translateX(-50%);
+    width: var(--ContentWidth);
+    height: var(--MenuHeight); 
+}
+div.BODY {
+    position: absolute;
+    top: var(--BodyStart);
+    left:50vw;
+    transform: translateX(-50%);
+    width: var(--ContentWidth);
+    height: var(--BodyHeight);
+    overflow-x: hidden;
+    overflow-y: scroll;    
+    /*
+    background-color: var(--BackgroundColor);
+    background-image: url("../styles/bg-cody.jpg");
+    background-size: 100vw auto;
+    background-repeat:repeat;
+    background-position:top center;
+    */
+}
+div.TYPESET {
+    position: relative;
+    width: calc(100% - (var(--TypesetMargin) * 2));
+    left: calc( 0.5 * var(--ContentWidth));
+    transform: translateX(-50%);
+}
+div.FOOTER {
+    position: absolute;
+    bottom:0;
+    left:50vw;
+    transform: translateX(-50%);
+    width: var(--ContentWidth);
+    height: var(--FooterHeight); 
+}
+
+/*
+div._FULL {
+    display: grid;
+    grid-template:
+            'a_left a_head a_head a_head a_right'
+            'a_left a_body a_body a_body a_right'
+            'a_left a_foot a_foot a_foot a_right';
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position:absolute;
+    width:100vw;
+    height:100dvh;
+    left:-50vw;
+    top:0;
+    transform: translateX(50vw);
+    overflow:hidden;
+}
+div._HEADER {
+    grid-area: a_head;
+    background-color: var(--BackgroundColor);
+    height:var(--MenuHeight);        
+    width:auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    text-align: center;
+}
+div._LEFT {
+    grid-area: a_left;
+    position: relative;
+    left:0px;
+}
+div._RIGHT {
+    grid-area: a_right;
+    position: relative;
+    right:0px;
+}
+div._LEFT, div._RIGHT {
+    width: max(calc((100vw - var(--DefaultWidth))/2),var(--TextMargin))
+}
+div._FOOTER {
+    grid-area: a_foot;
+    display: inline-flex;
+    flex-direction: column;
+    height:min(35vw,120px);
+}
+div._BODY {
+    grid-area: a_body;
+    height: calc(100dvh - 100px - min(35vw,120px));
+    width: min(var(--DefaultWidth), calc( 100vw - (var(--TextMargin) * 2) ));
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+@media only screen and (max-width: 600px) {
+        div._FULL {
+            grid-template:
+                'a_head a_head a_head'
+                'a_left a_body a_right'
+                'a_foot a_foot a_foot';
+        }
+        div._LEFT div._RIGHT {
+
+            width:5px;
+        }
+        div._BODY {
+            width:100%;
+        }
+    }
+
+    */

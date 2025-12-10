@@ -8,6 +8,33 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+class StoryConfig {
+    constructor(config) {
+        /**
+         * @param config Full Story Config data.
+         */
+        this.config = config;
+    }
+    static initialize(rootURL) {
+        return __awaiter(this, void 0, void 0, function* () {
+            /**
+             * This is the access point for creating a StoryConfig instance.
+             * @param rootURL Base URL for fetching resources.
+             * StoryConfig.json should be in the root directory.
+             * @return Manuscript instance with fetched data.
+             */
+            const response = yield fetch(`${rootURL}/StoryConfig.json`);
+            if (!response.ok) {
+                console.debug("Manuscript.initialize", "Error fetching manuscript from URL.");
+            }
+            else {
+                console.debug("Manuscript.initialize", "Successfully fetched manuscript from URL.");
+            }
+            this.data = yield response.json();
+            return new StoryConfig(this.data);
+        });
+    }
+}
 class Manuscript {
     constructor(rootURL, storyName, script) {
         /**
@@ -153,53 +180,104 @@ class ChapterBinder {
             return false;
         });
     }
-    DeployOnPage(requestedChapter, targetElementID) {
-        return __awaiter(this, void 0, void 0, function* () {
+    DeployOnPage(requestedChapter_1, targetElementID_1) {
+        return __awaiter(this, arguments, void 0, function* (requestedChapter, targetElementID, purgeContent = true) {
             /**
              * Deploys the requested chapter's content onto the specified HTML element.
              * @param requestedChapter Chapter number being requested.
              * @param targetElementID ID of the HTML element to deploy content to.
              */
+            // Is it on the whitelist per user's permissions?
             if (!this.doWhitelist(requestedChapter)) {
                 console.warn("ChapterBinder.DeployOnPage", "Chapter is not on the whitelist.");
                 return false;
             }
+            // Is it in the binder already? If not, pull it in.
             let isInBinder = yield this.pullRequest(requestedChapter);
             if (!isInBinder) {
                 console.warn("ChapterBinder.DeployOnPage", "Error fetching chapter for deployment.");
                 return false;
             }
+            // Was a target element for this HTML correctly defined?
             let targetElement = document.getElementById(targetElementID);
             if (!targetElement) {
                 console.warn("ChapterBinder.DeployOnPage", "Target HTML element not found.");
                 return false;
             }
+            if (purgeContent) {
+                targetElement.innerHTML = "";
+            }
+            // By this point, we have the chapter in the binder and a valid target element.
             console.info("ChapterBinder.DeployOnPage", "Deploying chapter on page.");
-            let ticker = this.SessionBinder[requestedChapter];
+            // Get chapter content from the Session Binder.
+            let chapter = this.SessionBinder[requestedChapter];
+            // Chapter content (HTML) starts empty.
             let chapterContent = "";
-            ticker.forEach((section) => {
+            // Enumerate sections since forEach doesn't iterate over a for loop index.
+            let thisSection = 0;
+            // Each chapter holds a section.
+            chapter.forEach((section) => {
+                // Get chapter info from TOC for this chapter.
+                let ChapterInfo = this.TOC[requestedChapter - 1];
+                // Define a Section ID for this section.
+                let SectionID = `${requestedChapter}.${thisSection + 1}`;
+                // Start with a <div> element. @TODO may change this later.
+                chapterContent += `<div class='section' id='${SectionID}'>`;
+                // Get the three datums in every feedline: [style, body text, is End Of Line]
+                let wasEOL = true; // start true to get first <p> tag
+                let thisLine = 0;
+                let thisFragment = 0;
+                // Each section holds multiple fragments. The End Of Line indicator defines the end of a Line.
+                // It is in fragments, because a line may have multiple styles within it as <span>s.
                 section.forEach((feedline) => {
+                    // The Section Style is an array containing the perspective of each section e.g. [Cody, Katiya, Titus, ...]
+                    let SectionStyle = ChapterInfo.Character[thisSection];
+                    // Chapter.Section.Line
+                    let LineID = `${requestedChapter}.${thisSection + 1}.${thisLine + 1}`;
                     let style = feedline[0];
                     let text = feedline[1];
-                    let isEOL = feedline[2];
-                    console.log(style);
+                    let isEOL = Boolean(feedline[2]);
+                    // New line means new <p> tag.
+                    if (wasEOL) {
+                        chapterContent += `<p class='Body${SectionStyle}' id='${LineID}'>`;
+                        thisFragment = 0;
+                    }
+                    // Chapter.Section.Line.Fragment
+                    let FragmentID = `${LineID}.${thisFragment + 1}`;
+                    // Here is the actual TEXT addition.
+                    chapterContent += `<span class='${style}' id='${FragmentID}'>${text}</span>`;
+                    // End of line means closing </p> tag.
+                    if (isEOL) {
+                        chapterContent += "</p>";
+                        thisLine += 1;
+                    }
+                    thisFragment += 1;
+                    wasEOL = isEOL;
                 });
+                // End of section. Close out with </div>.
+                chapterContent += "</div>";
+                thisSection += 1;
             });
+            // Actual deployment of chapter content to target element.
             targetElement.innerHTML = chapterContent;
             return true;
         });
     }
 }
+//                          //
+//  MAIN PROGRAM EXECUTION  //
+//                          //
 function buildManuscript(rootURL, storyName) {
     return __awaiter(this, void 0, void 0, function* () {
-        prgmScript = yield Manuscript.initialize(rootURL, storyName);
+        // I gotta do this in here because if I do it outside, the await won't work.
+        prgmConfig = yield StoryConfig.initialize(rootURL);
         prgmBinder = yield ChapterBinder.initialize(rootURL, storyName);
-        prgmBinder.DeployOnPage(1, "content");
+        prgmBinder.DeployOnPage(1, "TYPESET");
         return;
     });
 }
-var prgmScript;
+var prgmConfig;
 var prgmBinder;
+// @TODO this will be defined by a JSON config file.
 var rootURL = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/Scriv2WN";
 buildManuscript(rootURL, 'Paragate');
-console.log(prgmScript);

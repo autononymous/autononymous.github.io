@@ -1,0 +1,296 @@
+:root {
+/*======================================================*/
+/*====={ Title, text, and size variables by story }=====*/
+/*======================================================*/
+
+    /*-----[  Styles for Paragate > Cody  ]-----*/
+    --CodyTitle:        "Oxanium", sans-serif, "Bahnscrift",'Arial';
+    --CodyText:         "Roboto Flex", sans-serif, 'Bahnschrift', 'Arial';
+    --CodySize:         calc( var(--TextSize) - 0.10em );
+
+    /*-----[ Styles for Paragate > Katiya ]-----*/
+    --KatiyaTitle:      "Cormorant Unicase", serif;
+    --KatiyaText:       'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman';
+    --KatiyaSize:       calc(var(--TextSize) + 0.00em );
+
+    /*-----[ Styles for Firebrand > Titus ]-----*/
+    --TitusTitle:       "Cormorant Unicase", serif;
+    --TitusText:        'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman';
+    --TitusSize:        calc(var(--TextSize) + 0.00em );
+
+/*====={ Announcement/cover styling variables }=====*/
+    --CoverParagate: 
+                        radial-gradient(
+                            rgba(128,128,128,0.8), 
+                            rgba(128,128,128,0.4)
+                            ), 
+                        linear-gradient(
+                            to right, 
+                            rgba(255, 64, 64, 0.5),
+                            rgba(64,64,255,0.5)
+                            );
+    --CoverFirebrand:
+                        radial-gradient(
+                            rgba(243, 229, 83, 0.6), 
+                            rgba(245, 72, 72, 0.3)
+                            ), 
+                        linear-gradient(
+                            to right, 
+                            rgba(237, 28, 28, 0.3),
+                            rgba(195,144,212,0.6),
+                            rgba(237, 28, 28, 0.3)
+                            );
+    --CoverGradient:    var(--CoverParagate);
+    
+/*====={ Transitioning background styles }=====*/
+/*====={    (vertically-tiled JPEGs)     }=====*/
+    --WallCody:         url("../design/bg-cody.jpg");
+    --WallKatiya:       url("../design/bg-kat.jpg");
+    --WallTitus:        url("../design/bg-tie.jpg");
+
+/*====={ Theme channel opacities }=====*/
+    --CodyOp:           1.00;
+    --KatiyaOp:         1.00;
+    --TitusOp:          1.00;
+    --SpecialOp:        0.00;
+}
+
+.Block {
+
+}
+.Body {
+
+}
+
+/* ====================={ Body Styles }==================== */
+p.BodyCody {
+    font-family:        var(--CodyText);  
+    font-size:          var(--CodySize);
+    line-height:        var(--TextLineHeight);
+    text-align:         justify;
+    font-family:        var(--CodyText);
+    font-weight:        300;
+}
+span.BodyCody {  
+}
+p.BodyKatiya, p.BodyJade {
+    font-family:        var(--KatiyaText);
+    font-family:        var(--KatiyaText);
+    font-size:          var(--KatiyaSize);
+    font-weight:        500;
+    line-height:        var(--TextLineHeight);
+    text-align:         justify;
+}
+span.BodyKatiya, span.BodyJade {
+}
+p.BodyTitus {
+    font-family:        var(--TitusText);
+    font-family:        var(--KatiyaText);
+    font-size:          var(--KatiyaSize);
+    font-weight:        500;
+    line-height:        var(--TextLineHeight);
+    text-align:         justify;
+}
+span.BodyTitus {
+}
+/*
+span.BodyCody, span.BodyTitus, span.BodyKatiya {
+    overflow: hidden;
+    font-family:'Arial Light', Helvetica, sans-serif;
+    font-weight: 100;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: justify;
+    width:100%;
+}
+*/
+.Comment {
+
+}
+.Heading1 {
+
+}
+.Heading2 {
+
+}
+
+/* ====================={ Note Styles }==================== */
+p.NoteCody {
+    background-image:   linear-gradient(
+                            rgba(201, 232, 255, 0.8)
+                        ),
+                        var(--WallCody);
+    mix-blend-mode:     hard-light;
+    box-shadow:         0px 0px 8px 2px var(--TextColor);
+    border:             2px solid var(--BackgroundColor);
+}
+span.NoteCody {
+    font-family:        "Patrick Hand SC", cursive;
+    color:            rgb(0, 0, 43);
+}
+p.NoteKatiya, p.NoteJade {
+    background-image:   linear-gradient(
+                            rgba(255, 242, 214, 0.8)
+                        ),
+                        var(--WallKatiya);
+    box-shadow:         0px 0px 8px 2px var(--TextColor);
+    border:             2px solid var(--BackgroundColor);
+}
+span.NoteKatiya, span.NoteJade {
+    font-family:        "Montez", cursive;
+    color:            rgb(22, 16, 10);
+}
+p.NoteTitus {
+    background-image:
+                        linear-gradient(
+                            rgba(251, 226, 223, 0.95)
+                        ),
+                        var(--WallTitus);
+    box-shadow:         0px 0px 8px 2px var(--TextColor);
+    border:             2px solid var(--BackgroundColor);
+}
+span.NoteTitus {
+    font-family:        "Caveat", cursive;
+    color:            rgb(78, 2, 2);
+}
+p.NoteCody, p.NoteKatiya, p.NoteTitus {
+    margin-left:        -10px;
+    margin-right:       -10px;
+    margin-top:         10px;
+    margin-bottom:      10px;
+    padding:            10px;
+    border-radius:      3px;
+    text-align:         left;
+}
+.NoteCody, .NoteKatiya, .NoteTitus {
+    text-align:         left;
+}
+
+
+p.MessageFrom {
+    font-family: var(--MsgFont);
+    text-indent: 0;
+    line-height:1.5rem;
+    padding: 10px;
+    padding-left:20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:30px;
+    margin-right:0px;
+    text-align: left;
+    border: 0px solid var(--TextColor);
+    border-radius: 10px 10px 10px 0px;
+    position: relative;
+    width: fit-content;
+    max-width: 350px;
+    background-image: linear-gradient(var(--MsgColorFrom));
+    color: var(--MsgFontColorFrom);
+}
+p.MessageFrom::before {
+  width: 10px;
+  height: 10px;
+  background-image: linear-gradient(-45deg,var(--MsgColorFrom) 50%,transparent 50%);
+  position: absolute;
+  left: -10px;
+  bottom: 0;
+  content: "";
+}
+p.MessageFrom::after {
+    content: "";
+    color:black;
+    text-align:middle;
+    position: absolute;
+    left: -55px;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    border-radius:20px;
+    background-image: url("../icons/anonythumb.jpg");
+    border: 1px solid var(--TextColor);
+    background-size: 100% 100%;
+    background-position: center;
+}
+p.fromMiguel::after {
+    background-image: url("../profiles/miggy.png");
+}
+p.fromKei::after {
+    background-image: url("../profiles/kei.png");
+}
+p.fromReed::after {
+    background-image: url("../profiles/reed.png");
+}
+p.fromCody::after {
+    background-image: url("../profiles/cody.png");
+}
+
+p.MessageTo {
+    font-family: var(--MsgFont);
+    text-indent: 0;
+    line-height:1.5rem;
+    padding: 10px;
+    padding-right:20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:0px;
+    margin-right:30px;
+    text-align: right;
+    border: 0px solid var(--TextColor);
+    border-radius: 10px 10px 0px 10px;
+    position: relative;
+    width: fit-content;
+    right: calc(-100% + 30px);
+    transform: translateX(-100%);
+    max-width: 350px;
+    background-image: linear-gradient(var(--MsgColorTo));
+    color: var(--MsgFontColorTo);
+}
+p.MessageTo::before {
+  width: 10px;
+  height: 10px;
+  background-image: linear-gradient(45deg,var(--MsgColorTo) 50%,transparent 50%);
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  content: "";
+}
+p.MessageTo::after {
+    content: "";
+    color:black;
+    text-align:middle;
+    position: absolute;
+    right: -55px;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    border-radius:20px;
+    border: 1px solid var(--TextColor);
+    background-image: url("../profiles/cody.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+span.MessageFromDate {    
+    font-size: 0.6em;
+    font-style: italic;
+}
+span.MessageFrom {
+    font-size: 1.25rem;
+    word-wrap: break-word;
+    line-height: 1.1em;
+}
+span.MessageToDate {    
+    font-size: 0.6em;  
+    font-style: italic;  
+}
+span.MessageTo {
+    font-size: 1.25rem;
+    word-wrap: break-word;
+    line-height: 1.1em;
+}
+.Emphasis {
+    font-style: italic;
+}
+.Internal {
+    font-style: italic;
+    /*color: dimgray;*/
+}
