@@ -271,7 +271,7 @@ class PACT_UI:
         self.WIDGETS = [
         # >> Stolle Logo...
             [tk.Label(   master  = parent, 
-                        image   = self.logo, 
+                       # image   = self.logo, 
                         bg      = self.S.L2),0,0,3,1,"nsew",None],
         # >> Program Identifier (Subtitle)...
             [tk.Label(   master  = parent, 

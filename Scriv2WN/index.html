@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>Scriv2WN</title>
-    <link rel="stylesheet" href="styles/textstyles.css">
     <link rel="stylesheet" href="styles/contentstyles.css">
+    <link rel="stylesheet" href="styles/textstyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caveat:wght@400..700&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Montez&family=Oxanium:wght@200..800&family=Patrick+Hand+SC&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
@@ -18,16 +18,20 @@
     <div class="BODY" id="BODY">
         <div class="TYPESET" id="TYPESET">asdf</div>
     </div>
-    <div class="FOOTER" id="FOOTER">footer</div>
+    <div class="FOOTER" id="FOOTER">
+        <div class="PROGRESS" id="PROGRESS"></div>
+        <div class="DEBUG" id="DEBUG"></div>asdf</div>
+    </div>
 </body>
 
 <script id="HTML_definitions">
     function GEBID(name) { return document.getElementById(name)}
-    const eImageBackground      = GEBID('BACKGROUND')
+    const eBACKGROUND           = GEBID('BACKGROUND')
     const eHEADER               = GEBID('HEADER')
-    const eLEFT                 = GEBID('LEFT')
-    const eRIGHT                = GEBID('RIGHT')
-    const eFOOTER               = GEBID('FOOTER')
     const eBODY                 = GEBID('BODY')
+    const eTYPESET              = GEBID('TYPESET')
 </script>
 <script src="main.js" id="js_main"></script>
+<script>    
+    eBODY.addEventListener('scroll',runScrollEvents);
+</script>

@@ -1,4 +1,15 @@
 :root {
+    /* Active theme settings. These are set from   */
+    /* the JavaScript program.                     */
+    --ActiveTitle:          var(--CodyTitle);
+    --ActiveSub:            var(--CodyText);
+    --ActiveSize:           var(--CodySize);
+    --TextColor:           black;
+    --BackgroundColor:    white;
+    --HoverColor:         rgba(12,12,12,0.1);
+    --BarColor:           black;
+    --IconState:            invert(1);
+
     /* Layout Characteristics */
     --MenuHeight:           50px;
     --MenuPad:              10px;    
@@ -9,7 +20,60 @@
     --ContentWidth:         min(800px,100vw);
     --TypesetMargin:        50px;
 
-    /*  */
+    /*============================================*/
+/*====={ Title, text, and size variables by story }=====*/
+/*======================================================*/
+
+    /*-----[  Styles for Paragate > Cody  ]-----*/
+    --CodyTitle:        "Oxanium", sans-serif, "Bahnscrift",'Arial';
+    --CodyText:         "Roboto Flex", sans-serif, 'Bahnschrift', 'Arial';
+    --CodySize:         calc( var(--TextSize) - 0.10em );
+
+    /*-----[ Styles for Paragate > Katiya ]-----*/
+    --KatiyaTitle:      "Cormorant Unicase", serif;
+    --KatiyaText:       'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman';
+    --KatiyaSize:       calc(var(--TextSize) + 0.00em );
+
+    /*-----[ Styles for Firebrand > Titus ]-----*/
+    --TitusTitle:       "Cormorant Unicase", serif;
+    --TitusText:        'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman';
+    --TitusSize:        calc(var(--TextSize) + 0.00em );
+
+/*====={ Announcement/cover styling variables }=====*/
+    --CoverParagate: 
+                        radial-gradient(
+                            rgba(128,128,128,0.8), 
+                            rgba(128,128,128,0.4)
+                            ), 
+                        linear-gradient(
+                            to right, 
+                            rgba(255, 64, 64, 0.5),
+                            rgba(64,64,255,0.5)
+                            );
+    --CoverFirebrand:
+                        radial-gradient(
+                            rgba(243, 229, 83, 0.6), 
+                            rgba(245, 72, 72, 0.3)
+                            ), 
+                        linear-gradient(
+                            to right, 
+                            rgba(237, 28, 28, 0.3),
+                            rgba(195,144,212,0.6),
+                            rgba(237, 28, 28, 0.3)
+                            );
+    --CoverGradient:    var(--CoverParagate);
+    
+/*====={ Transitioning background styles }=====*/
+/*====={    (vertically-tiled JPEGs)     }=====*/
+    --WallCody:         url("../design/bg-cody.jpg");
+    --WallKatiya:       url("../design/bg-kat.jpg");
+    --WallTitus:        url("../design/bg-tie.jpg");
+
+/*====={ Theme channel opacities }=====*/
+    --CodyOp:           1.00;
+    --KatiyaOp:         1.00;
+    --TitusOp:          1.00;
+    --SpecialOp:        0.00;
 }
 
 body {
@@ -30,6 +94,7 @@ div.BACKGROUND {
     left:0;
     width:100vw;
     height:100dvh;
+    background-color: var(--BackgroundColor);
 }
 
 div.HEADER {
