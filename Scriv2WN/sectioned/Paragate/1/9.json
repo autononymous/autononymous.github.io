@@ -6,9 +6,9 @@
          true
       ],
       [
-         "MessageFromDate",
+         "Timestamp",
          "Miguel Ruelas // 06:37",
-         true
+         false
       ],
       [
          "MessageFrom",
@@ -16,9 +16,9 @@
          true
       ],
       [
-         "MessageFromDate",
+         "Timestamp",
          "Miguel Ruelas // 07:13",
-         true
+         false
       ],
       [
          "MessageFrom",
@@ -26,9 +26,9 @@
          true
       ],
       [
-         "MessageFromDate",
+         "Timestamp",
          "Miguel Ruelas // 07:14",
-         true
+         false
       ],
       [
          "MessageFrom",
@@ -41,9 +41,9 @@
          true
       ],
       [
-         "MessageToDate",
+         "Timestamp",
          "Cody Dunsmore // 11:12",
-         true
+         false
       ],
       [
          "MessageTo",
@@ -161,9 +161,9 @@
          true
       ],
       [
-         "MessageFromDate",
+         "Timestamp",
          "SAKURA_KEI 09:02:15:",
-         true
+         false
       ],
       [
          "MessageFrom",
@@ -176,9 +176,9 @@
          true
       ],
       [
-         "MessageToDate",
+         "Timestamp",
          "DUNSMO_COD 09:02:43:",
-         true
+         false
       ],
       [
          "MessageTo",

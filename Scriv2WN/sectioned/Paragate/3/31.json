@@ -61,9 +61,9 @@
          true
       ],
       [
-         "MessageFromDate",
+         "Timestamp",
          "Cody Dunsmore // 20:18",
-         true
+         false
       ],
       [
          "MessageFrom",
@@ -71,19 +71,19 @@
          true
       ],
       [
-         "MessageFromDate",
+         "Timestamp",
          "Cody Dunsmore // 20:21",
-         true
+         false
       ],
       [
          "MessageFrom",
-         "Also heard something loud next door u alright?",
+         "Also heard something loud next door u alright? ",
          true
       ],
       [
-         "MessageFromDate",
+         "Timestamp",
          "Cody Dunsmore // 20:32",
-         true
+         false
       ],
       [
          "MessageFrom",
@@ -263,9 +263,9 @@
          true
       ],
       [
-         "MessageToDate",
+         "Timestamp",
          "Cody Dunsmore // 08:18",
-         true
+         false
       ],
       [
          "MessageTo",
@@ -278,9 +278,9 @@
          true
       ],
       [
-         "MessageTo",
+         "Timestamp",
          "Cody Dunsmore // 08:21",
-         true
+         false
       ],
       [
          "MessageTo",
@@ -343,9 +343,9 @@
          true
       ],
       [
-         "MessageToDate",
+         "Timestamp",
          "Cody Dunsmore // 08:32",
-         true
+         false
       ],
       [
          "BodyCody",

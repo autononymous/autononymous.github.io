@@ -14,24 +14,26 @@
 <body>
     <!-- This element handles the backgrounds, and takes up the entire  -->
     <div class="BACKGROUND" id="BACKGROUND"></div>
-    <div class="HEADER" id="HEADER">header</div>
+    <div class="imgbg layer1" id="LAYER1"></div>
+    <div class="imgbg layer2" id="LAYER2"></div>
+    <div class="HEADER" id="HEADER"></div>
     <div class="BODY" id="BODY">
-        <div class="TYPESET" id="TYPESET">asdf</div>
+        <div class="TYPESET" id="TYPESET"></div>
     </div>
     <div class="FOOTER" id="FOOTER">
-        <div class="PROGRESS" id="PROGRESS"></div>
-        <div class="DEBUG" id="DEBUG"></div>asdf</div>
+        <div class="PROGRESS" id="PROGRESS">
+            <div class="BARBG" id="BARBG">
+                <div class="BARFG" id="BARFG"></div>
+            </div>
+            
+        </div>
+        <div class="CONTROLS" id="CONTROLS">
+            <div class="IDCHAPTER" id="IDCHAPTER">Chapter</div>
+            <div class="IDNAME" id="IDNAME">Name</div>
+        </div>
+        <div class="PREVIOUS" id="PREVIOUS" onclick="BIND.DeployOnPage('PREV',DEPLOY);SRC.SaveLocalStorage()">&laquo;&ensp;PREV</div>
+        <div class="NEXT" id="NEXT" onclick="BIND.DeployOnPage('NEXT',DEPLOY);SRC.SaveLocalStorage()">NEXT&ensp;&raquo;</div>
     </div>
 </body>
 
-<script id="HTML_definitions">
-    function GEBID(name) { return document.getElementById(name)}
-    const eBACKGROUND           = GEBID('BACKGROUND')
-    const eHEADER               = GEBID('HEADER')
-    const eBODY                 = GEBID('BODY')
-    const eTYPESET              = GEBID('TYPESET')
-</script>
 <script src="main.js" id="js_main"></script>
-<script>    
-    eBODY.addEventListener('scroll',runScrollEvents);
-</script>

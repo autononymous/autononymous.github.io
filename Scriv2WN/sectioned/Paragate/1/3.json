@@ -503,9 +503,9 @@
          true
       ],
       [
-         "MessageFromDate",
+         "Timestamp",
          "SAKURA_KEI 16:57:12:",
-         true
+         false
       ],
       [
          "MessageFrom",
@@ -518,9 +518,9 @@
          true
       ],
       [
-         "MessageToDate",
+         "Timestamp",
          "DUNSMO_COD 16:58:21:",
-         true
+         false
       ],
       [
          "MessageTo",

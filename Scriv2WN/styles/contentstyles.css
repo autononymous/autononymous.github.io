@@ -1,6 +1,21 @@
 :root {
+        /* Setting the height of the interface/menu bar */
+    --MenuHeight:           50px;
+    --ControlHeight:        min(25vw,100px);
+
+    /* Text configurations */
+    --TextSetWidthFixed:    40px;
+    --TextSetWidthDynamic:  10vw;
+    --TextSize:             1.5em;
+    --TextLineHeight:       1.5em;
+    --TextMargin:           5vw;
+    --DefaultWidth:         600px;
+    --SeparatorWidth:       60%;
+    
     /* Active theme settings. These are set from   */
     /* the JavaScript program.                     */
+    --FallbackTitle:        var(--CodyTitle);
+    --FallbackText:          var(--CodyText);
     --ActiveTitle:          var(--CodyTitle);
     --ActiveSub:            var(--CodyText);
     --ActiveSize:           var(--CodySize);
@@ -8,7 +23,34 @@
     --BackgroundColor:    white;
     --HoverColor:         rgba(12,12,12,0.1);
     --BarColor:           black;
+    --BarLength:            0%;
     --IconState:            invert(1);
+
+    /* (legacy) Active color theming */
+    --ActivePrimary:        189, 0, 28;
+    --ActiveSecondary:      156, 121, 33;
+
+    /* Table-of-contents configurations */
+    --TOCEntryHeight:      80px;
+    --TOCbackground:       rgba(0,0,0,0.1);
+
+    --Title:                2.5em;
+    --Subtitle:             min(2.0em,max(5.5vw,1.2em));/*2.0em;/**/
+    --Section:              2.5em;
+
+    --SubtitleAccent:       '  ';
+    --SectionAccent:        ' - ';
+
+    /* Special theming: Message bubbles */
+    --MsgFont:              "SanFrancisco",'Helvetica Neue','Helvetica';
+    --MsgColorTo:         rgba(33, 138, 255, 0.8);
+    --MsgFontColorTo:     white;
+    --MsgColorFrom:       rgba(216, 216, 216, 0.8);
+    --MsgFontColorFrom:   black;
+
+    --ImageWallFore:        None;
+    --ImageWallBack:        None;
+
 
     /* Layout Characteristics */
     --MenuHeight:           50px;
@@ -81,13 +123,14 @@ body {
     overflow: hidden;
     margin: 0;
 }
-
+/*
 div {
     border: 1px solid black;
 }
 div > div {
     border: 1px solid red;
 }
+    */
 div.BACKGROUND {
     position:absolute;
     top:0;
@@ -128,13 +171,112 @@ div.TYPESET {
     left: calc( 0.5 * var(--ContentWidth));
     transform: translateX(-50%);
 }
+
+img.hrdiv {
+    position:relative;
+    top:0;    
+    left: 25%;
+    width: min(50%,300px);
+    cursor: pointer;        
+    filter: drop-shadow(1000vw 0 var(--TextColor));
+    transform: translateX(-1000vw);
+}
+
+/* Background image for active theme */
+div.imgbg {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;        
+    opacity:10%;
+}
+div.layer1 {
+    background-image: var(--ImageWallFore);      
+    filter:             var(--IconState);
+    mix-blend-mode:     hard-light;
+}
+div.layer2 {
+    background-image: var(--ImageWallBack);      
+    filter:             var(--IconState);
+    mix-blend-mode:     hard-light;
+}
+
 div.FOOTER {
+    display: grid;
+    grid-template:
+        'progress progress progress'
+        'left info right';
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-columns: 100px auto 100px;
+    width:auto;
     position: absolute;
     bottom:0;
     left:50vw;
     transform: translateX(-50%);
     width: var(--ContentWidth);
     height: var(--FooterHeight); 
+    text-align: center;
+}
+div.PROGRESS {
+    grid-area: progress;    
+    height:10px;
+}
+    div.BARBG, div.BARFG {
+        border-radius: 5px;
+    }
+    div.BARBG {
+        position:relative;
+        padding-top: 10px;
+        left:50%;
+        transform: translateX(-50%);
+        width:90%;
+        height:100%;
+        background-color: var(--BackgroundColor);
+    }
+    div.BARFG {
+        position: relative;
+        height:100%;
+        left: 0;
+        width: max(10px,var(--BarLength));
+        background-color: var(--BarColor);
+    }
+div.CONTROLS {
+    grid-area: info;
+    display: grid;
+    grid-template:
+        'chapter'
+        'chname';
+}
+    div.IDCHAPTER, div.IDNAME {
+        color: var(--TextColor);
+        white-space: nowrap;
+    }
+    div.IDCHAPTER {
+        grid-area: chapter;        
+        font-family: var(--ActiveSub); 
+        font-size: 1em;
+
+    }
+    div.IDNAME {
+        grid-area: chname;        
+        font-family: var(--ActiveTitle);  
+        font-size: 1em;
+    }
+
+div.PREVIOUS, div.NEXT {
+    color: var(--TextColor);
+    font-family: var(--ActiveTitle);
+    white-space: nowrap;
+}
+div.PREVIOUS {
+    grid-area: left;
+    margin: auto;
+}
+div.NEXT {
+    grid-area: right;
+    margin: auto;
 }
 
 /*

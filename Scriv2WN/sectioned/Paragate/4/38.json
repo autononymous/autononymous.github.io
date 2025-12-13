@@ -373,12 +373,12 @@
          true
       ],
       [
-         "MessageFromDate",
-         "Cody Dunsmore // 02:57",
-         true
+         "Timestamp",
+         "Cody Dunsmore // 02:57:",
+         false
       ],
       [
-         "MessageFrom",
+         "MessageTo",
          "I&apos;m going to give it a shot. But I need your help.",
          true
       ]

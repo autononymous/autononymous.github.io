@@ -2006,12 +2006,12 @@
                   true
                ],
                [
-                  "Timestamp",
-                  "SAKURA_KEI 16:57:12:",
+                  "BodyCody",
+                  "{{MessageTimestamp}}SAKURA_KEI 16:57:12:",
                   false
                ],
                [
-                  "MessageFrom",
+                  "BodyCody",
                   "Got a minute?",
                   true
                ],
@@ -2021,12 +2021,12 @@
                   true
                ],
                [
-                  "Timestamp",
-                  "DUNSMO_COD 16:58:21:",
+                  "BodyCody",
+                  "{{MessageTimestamp}}DUNSMO_COD 16:58:21:",
                   false
                ],
                [
-                  "MessageTo",
+                  "BodyCody",
                   "&#128077; ",
                   true
                ],
@@ -5186,32 +5186,32 @@
                   true
                ],
                [
-                  "Timestamp",
-                  "Miguel Ruelas // 06:37",
+                  "BodyCody",
+                  "{{MessageTimestamp}}Miguel Ruelas // 06:37",
                   false
                ],
                [
-                  "MessageFrom",
+                  "BodyCody",
                   "u gotta tell me whassup with that wack cosplay chick. neighbor? break-in? u invite rollplay hookers over when i was asleep?",
                   true
                ],
                [
-                  "Timestamp",
-                  "Miguel Ruelas // 07:13",
+                  "BodyCody",
+                  "{{MessageTimestamp}}Miguel Ruelas // 07:13",
                   false
                ],
                [
-                  "MessageFrom",
+                  "BodyCody",
                   "or shit maybe I dreamt it, doesnt explain the bruise on my leg unless something happened that i forgot",
                   true
                ],
                [
-                  "Timestamp",
-                  "Miguel Ruelas // 07:14",
+                  "BodyCody",
+                  "{{MessageTimestamp}}Miguel Ruelas // 07:14",
                   false
                ],
                [
-                  "MessageFrom",
+                  "BodyCody",
                   "anyways congrats bro on the house. lets catch up next week im off to church. cleaned up some of the mess. love u bro",
                   true
                ],
@@ -5221,12 +5221,12 @@
                   true
                ],
                [
-                  "Timestamp",
-                  "Cody Dunsmore // 11:12",
+                  "BodyCody",
+                  "{{MessageTimestamp}}Cody Dunsmore // 11:12",
                   false
                ],
                [
-                  "MessageTo",
+                  "BodyCody",
                   "Thanks for cleaning up dude, you didn&apos;t have to do that! Let&apos;s chill next weekend. Not much else to do when everyone moved away :/",
                   true
                ],
@@ -5341,12 +5341,12 @@
                   true
                ],
                [
-                  "Timestamp",
-                  "SAKURA_KEI 09:02:15:",
+                  "BodyCody",
+                  "{{MessageTimestamp}}SAKURA_KEI 09:02:15:",
                   false
                ],
                [
-                  "MessageFrom",
+                  "BodyCody",
                   "I thought I had tenure?",
                   true
                ],
@@ -5356,12 +5356,12 @@
                   true
                ],
                [
-                  "Timestamp",
-                  "DUNSMO_COD 09:02:43:",
+                  "BodyCody",
+                  "{{MessageTimestamp}}DUNSMO_COD 09:02:43:",
                   false
                ],
                [
-                  "MessageTo",
+                  "BodyCody",
                   "Guess not.",
                   true
                ],
@@ -18770,32 +18770,32 @@
                   true
                ],
                [
-                  "Timestamp",
-                  "Cody Dunsmore // 20:18",
+                  "BodyKatiya",
+                  "{{MessageTimestamp}}Cody Dunsmore // 20:18",
                   false
                ],
                [
-                  "MessageFrom",
+                  "BodyKatiya",
                   "How do you have blue messages? ",
                   true
                ],
                [
-                  "Timestamp",
-                  "Cody Dunsmore // 20:21",
+                  "BodyKatiya",
+                  "{{MessageTimestamp}}Cody Dunsmore // 20:21",
                   false
                ],
                [
-                  "MessageFrom",
+                  "BodyKatiya",
                   "Also heard something loud next door u alright? ",
                   true
                ],
                [
-                  "Timestamp",
-                  "Cody Dunsmore // 20:32",
+                  "BodyKatiya",
+                  "{{MessageTimestamp}}Cody Dunsmore // 20:32",
                   false
                ],
                [
-                  "MessageFrom",
+                  "BodyKatiya",
                   "HELP",
                   true
                ]
@@ -18972,12 +18972,12 @@
                   true
                ],
                [
-                  "Timestamp",
-                  "Cody Dunsmore // 08:18",
+                  "BodyCody",
+                  "{{MessageTimestamp}}Cody Dunsmore // 08:18",
                   false
                ],
                [
-                  "MessageTo",
+                  "BodyCody",
                   "How do you have blue messages? ",
                   true
                ],
@@ -18987,12 +18987,12 @@
                   true
                ],
                [
-                  "Timestamp",
-                  "Cody Dunsmore // 08:21",
+                  "BodyCody",
+                  "{{MessageTimestamp}}Cody Dunsmore // 08:21",
                   false
                ],
                [
-                  "MessageTo",
+                  "BodyCody",
                   "Also heard something loud next door u alright?",
                   true
                ],
@@ -19052,8 +19052,8 @@
                   true
                ],
                [
-                  "Timestamp",
-                  "Cody Dunsmore // 08:32",
+                  "BodyCody",
+                  "{{MessageTimestamp}}Cody Dunsmore // 08:32",
                   false
                ],
                [
@@ -19569,32 +19569,32 @@
                   true
                ],
                [
-                  "Timestamp",
-                  "Kei Sakurashima // 09:00",
+                  "BodyCody",
+                  "{{MessageTimestamp}}Kei Sakurashima // 09:00",
                   false
                ],
                [
-                  "MessageFrom",
+                  "BodyCody",
                   "Departing my house in thirty. Will arrive around 10:00 or so.",
                   true
                ],
                [
-                  "Timestamp",
-                  "Miguel Valdez-Ruelas // 09:35",
+                  "BodyCody",
+                  "{{MessageTimestamp}}Miguel Valdez-Ruelas // 09:35",
                   false
                ],
                [
-                  "MessageFrom",
+                  "BodyCody",
                   "oh fuck that things today with the fantasy stuff rite? on my way be there soon dont leave yet hoss",
                   true
                ],
                [
-                  "Timestamp",
-                  "Reed Broderick // 09:40",
+                  "BodyCody",
+                  "{{MessageTimestamp}}Reed Broderick // 09:40",
                   false
                ],
                [
-                  "MessageFrom",
+                  "BodyCody",
                   "Thanks again for the invite bro! On the way there now, should get there around 10 or so.",
                   true
                ],
@@ -22354,12 +22354,12 @@
                   true
                ],
                [
-                  "Timestamp",
-                  "Alan Dunsmore // 22:53",
+                  "BodyCody",
+                  "{{MessageTimestamp}}Alan Dunsmore // 22:53",
                   false
                ],
                [
-                  "MessageFrom",
+                  "BodyCody",
                   "HAPPY BITRHDAY I LOVE YOU SON ",
                   true
                ],
@@ -22876,12 +22876,12 @@
                   true
                ],
                [
-                  "Timestamp",
-                  "Cody Dunsmore // 12:38",
+                  "BodyCody",
+                  "{{MessageTimestamp}}Cody Dunsmore // 12:38",
                   false
                ],
                [
-                  "MessageTo",
+                  "BodyCody",
                   "Love you too, Dad. Talk soon.",
                   true
                ],
@@ -23661,12 +23661,12 @@
                   true
                ],
                [
-                  "Timestamp",
-                  "Cody Dunsmore // 02:57:",
+                  "BodyKatiya",
+                  "{{MessageTimestamp}}Cody Dunsmore // 02:57:",
                   false
                ],
                [
-                  "MessageTo",
+                  "BodyKatiya",
                   "I&apos;m going to give it a shot. But I need your help.",
                   true
                ]

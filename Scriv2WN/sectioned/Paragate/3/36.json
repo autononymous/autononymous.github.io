@@ -660,9 +660,9 @@
          true
       ],
       [
-         "MessageFromDate",
+         "Timestamp",
          "Alan Dunsmore // 22:53",
-         true
+         false
       ],
       [
          "MessageFrom",

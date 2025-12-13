@@ -144,10 +144,11 @@ StringTypeDict = {
     "NoteJade"      : "NoteJade",
     "MessageFrom"   : "MessageFrom",
     "MessageTo"     : "MessageTo",
-    "MessageFromDate":"MessageFromDate",
-    "MessageToDate" : "MessageToDate",
+    "MessageFromDate":"Timestamp", # deprecated
+    "MessageToDate" : "Timestamp", # deprecated
     "em"            : "Emphasis",
-    "Internal"      : "Internal"
+    "Internal"      : "Internal",
+    "MessageTimestamp":"Timestamp"
     }    
 # If an orphaned type, default to this section's body style.
 PerspectiveDefaults = {
@@ -172,6 +173,8 @@ def getLineMetadata(Sentence,Perspective="Default"):
     # Split sentence character styles (e.g. italics, internal monologue)
     fragments = Sentence.replace('%%','%/%').split('%/%')
     n_frags = len(fragments)
+    # Default needs to be different if this is a message line.
+    DefaultClass = PerspectiveDefaults[Perspective]
     for i in range(n_frags):
         # Find prefix and suffix containing style name identifier
         prefix = fragments[i].find("{[")
@@ -180,6 +183,10 @@ def getLineMetadata(Sentence,Perspective="Default"):
         if (prefix != -1) and (suffix != -1) and (suffix > prefix):
             lineclass = StringTypeDict[fragments[i][prefix+2:suffix]]
             line = fragments[i][suffix+2:len(Sentence)]
+            # Set default to a MessageType if this is a MESSAGE LINE.
+            if (lineclass == "MessageFrom" or lineclass == "MessageTo"):
+                print(line)
+                DefaultClass = lineclass
         # Otherwise, read the fragment as just a line.
         else:
             lineclass = None
@@ -191,7 +198,7 @@ def getLineMetadata(Sentence,Perspective="Default"):
     for newline in newlines:
         # Orphaned text without identifier gets section default body style.
         if newline[0] is None:
-            newline[0] = PerspectiveDefaults[Perspective]
+            newline[0] = DefaultClass
     # Set last entry in the sentence as the End Of Line (EOL)
     newlines[-1][2] = True
     # Return newlines as array [[style,text,isEndOfLine],[...]]

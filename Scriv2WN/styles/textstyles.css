@@ -1,9 +1,45 @@
 
-.Block {
 
+body {
+    background-color: black;
 }
-.Body {
 
+h3.Title {
+    font-size: var(--Title);
+    color: var(--TextColor);
+    text-decoration: underline;
+    text-align: center;
+}
+h3.Subtitle {
+    font-size: var(--Subtitle);
+    color: var(--TextColor);
+    white-space: nowrap;
+    text-align: center;
+}
+h3.Section {
+    font-size: var(--Section);
+    color: var(--TextColor);
+}
+h3.Section::before{
+    content:var(--SectionAccent);
+}
+h3.Section::after{
+    content:var(--SectionAccent);
+}
+
+
+
+.KatiyaHead, .CodyHead, .TitusHead {
+    color:              var(--TextColor);
+}
+.KatiyaHead {
+    font-family: var(--KatiyaTitle);
+}
+.CodyHead {
+    font-family: var(--CodyTitle);
+}
+.TitusHead {
+    font-family: var(--TitusTitle);
 }
 
 /* ====================={ Body Styles }==================== */
@@ -159,17 +195,24 @@ p.MessageFrom::after {
     background-size: 100% 100%;
     background-position: center;
 }
-p.fromMiguel::after {
+
+p.byKatiya::after {
+    background-image: url("../profiles/kat.png");
+}
+p.byMiguel::after {
     background-image: url("../profiles/miggy.png");
 }
-p.fromKei::after {
+p.byKei::after {
     background-image: url("../profiles/kei.png");
 }
-p.fromReed::after {
+p.byReed::after {
     background-image: url("../profiles/reed.png");
 }
-p.fromCody::after {
+p.byCody::after {
     background-image: url("../profiles/cody.png");
+}
+p.byAnon::after {
+    background-image: url("../profiles/anon.png");
 }
 
 p.MessageTo {
