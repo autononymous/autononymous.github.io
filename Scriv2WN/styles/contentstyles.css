@@ -1,11 +1,14 @@
 :root {
         /* Setting the height of the interface/menu bar */
-    --MenuHeight:           50px;
+    --MenuHeight:           80px;
     --ControlHeight:        min(25vw,100px);
 
     /* Position of reader whether or not TOC or other things are shown.*/
-    --READERPOSITION:       0px;
+    --READER_TOCOFFSET:     0px;
+    --READER_EXTRAOFFSET:   0px;
+    --READER_FULLOFFSET:    calc( var(--READER_TOCOFFSET) + var(--READER_EXTRAOFFSET) );
     --TOCWIDTH:             min(500px,80vw);
+    --EXTRAWIDTH:           min(500px,80vw);
 
     /* TOC identifier images */
     --TitleImageTOC:        url("../design/Paragate_logo.png");
@@ -71,7 +74,7 @@
     --FooterPad:            10px;
     --BodyStart:            calc(var(--MenuHeight) + var(--MenuPad));
     --BodyHeight:           calc(100dvh - var(--MenuHeight) - var(--MenuPad) - var(--FooterHeight) - var(--FooterPad));
-    --ContentWidth:         calc(100vw - 40px);
+    --ContentWidth:         min(800px,calc(100%));
     --TypesetMargin:        40px;
 
     /*============================================*/
@@ -145,14 +148,35 @@ div > div {
     */
 div.TOC {
     position:absolute;
-    left:0;
     top:0;
     width: var(--TOCWIDTH);
     height: 100dvh;
     background: var(--MidgroundColor);
     color: var(--TextColor);
     overflow-x: hidden;
+    overflow-y: scroll;    
+    left: var(--READER_EXTRAOFFSET);
+    transition: left 0.8s ease-in-out;
+}
+div.EXTRAS {
+    position:absolute;
+    top:0;
+    width: var(--EXTRAWIDTH);
+    height: 100dvh;
+    background: var(--MidgroundColor);
+    color: var(--TextColor);
+    overflow-x: hidden;
     overflow-y: scroll;
+    right: calc( -1 * var(--READER_TOCOFFSET) );
+    transition: right 0.8s ease-in-out;
+}
+div.EXTRACONTENT {
+    position:relative;
+    width:calc( 100% - 40px );
+    left: 20px;
+    top:20px;
+    border: 1px solid white;
+    min-height: 500px;
 }
 div.TOCwall {
     position: relative;
@@ -165,9 +189,7 @@ div.TOCwall {
     background-position: center;
     background-repeat: no-repeat;
     transform: translateX(-50%);
-    /*border: 1px solid black;*/
     border-radius: 0px;
-    /*box-shadow: 0px 0px 10px black;*/
 }
 div.TOClogo {
     position: absolute;
@@ -188,7 +210,8 @@ div.TOCthischapter {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: calc(100% - 20px);
+    width: max(var(--TOCWIDTH), 300px);
+    overflow:hidden;
     grid-template:
         'ttc_header'
         'ttc_id'
@@ -201,7 +224,20 @@ div.TOCwindow {
     left: 50%;
     transform: translateX(-50%);
 }
-
+div.EXwindow {
+    font-family: var(--ActiveTitle);
+    font-size: var(--TextSize);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max(var(--TOCWIDTH), 300px);
+    overflow:hidden;
+}
+div.TEX_HEAD {
+    margin-top: 10px;
+    text-align: center;
+    font-size: calc(var(--TextSize) * 0.75 );
+}
 div.TTC_HEADER {
     margin-top: 10px;
     text-align: center;
@@ -241,6 +277,9 @@ div.TOC-act {
     padding-bottom: 5px;
     text-decoration: underline;
     text-align: center;
+    background-color: var(--TextColor);
+    color: var(--BackgroundColor);
+    font-weight:600;
 }
 div.TOC-chapcontainer {
     border: 0px solid var(--TextColor);
@@ -248,11 +287,12 @@ div.TOC-chapcontainer {
     grid-template:
         'Tchap Tname Tdate'
         'Tblurb Tblurb Tblurb';
-    grid-template-columns: 56px auto 100px;
+    grid-template-columns: 40px auto 100px;
     font-family: var(--ActiveText);
     color: var(--BooleanColor);
     padding: 5px 0px 5px 0px;
     transition: background-color 0.3s ease-in-out, padding 0.5s ease-in-out;
+    border-left: 2px solid var(--MidgroundColor);
 }
 div.TOC-chapcontainer > div {
     /*border: 1px solid var(--BooleanColor);*/
@@ -272,6 +312,9 @@ div.TOC-num {
     margin-bottom: auto;
     grid-area: Tchap;
     text-align:center;
+    background-color: var(--TextColor);
+    color: var(--BackgroundColor);
+    font-weight:600;
 }
 div.TOC-name {
     padding-top: 10px;
@@ -298,12 +341,39 @@ div.TOC-date {
     text-align: right;
     padding-right: 10px;
 }
+div.lockedSel {
+    position: absolute;
+    /*background-color: hsla(43, 76%, 49%, 1.00);*/
+    background-image: radial-gradient(circle, #FFD700, #FFA500, #B8860B);
+    left: 50%;
+    transform: translateX(-50%) translateY(30px);
+    width: 100px;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: var(--BackgroundColor);
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px black;
+    font-weight:700;
+}
+div.lockedSel::before {
+    content: "Ï";
+    font-family: 'Webdings';
+    font-size: 1.2em;
+}
+div.lockedSel::after {
+    content: " d";
+}
+div.lockedEntry {
+  opacity: 0.6;
+}
 
 div.READER {
     position:absolute;
     width: 100vw;
     height:100dvh;
-    left: var(--READERPOSITION);
+    left: var(--READER_FULLOFFSET);
     transition: left 0.8s ease-in-out;
     top:0px;
     /*border: 2px solid dimgray;*/
@@ -325,6 +395,11 @@ div.HEADER {
     transform: translateX(-50%);
     width: var(--ContentWidth);
     height: var(--MenuHeight); 
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out;
+}
+div.HEADER:hover {
+    background-color: var(--MidgroundColor);
 }
 div.BODY {
     position: absolute;
@@ -366,10 +441,16 @@ div.TOGGLE:hover {
 div.TOGGLETOC {
     position:absolute;
     left:0;
-    /*left: var(--READERPOSITION);
-    transition: left 0.8s ease-in-out;*/
     top:50dvh;
     transform: translateX(calc(-50% + 30px)) translateY(50%) rotate(270deg);
+    color: var(--TextColor);
+    font-size: 1.2em;
+}
+div.TOGGLEINFO {
+    position:absolute;
+    right:0;
+    top:50dvh;
+    transform: translateX(calc(50% - 30px)) translateY(50%) rotate(90deg);
     color: var(--TextColor);
     font-size: 1.2em;
 }

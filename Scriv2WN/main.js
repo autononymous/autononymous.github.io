@@ -17,6 +17,69 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 //  ██  ██ ██▄▄██   ██   ██▄▄██   ██████ ██▄▄██ ██ ▀▄██ ██  ██ ██     ██ ██ ▀▄██ ██  ▄▄▄ 
 //  ████▀  ██  ██   ██   ██  ██   ██  ██ ██  ██ ██   ██ ████▀  ██████ ██ ██   ██  ▀███▀  
 //  
+class StoryExtrasWindow {
+    constructor(storyName, rootURL, containerID) {
+        this.Story = null;
+        this.Container = null;
+        this.rootURL = "";
+        this.Content = "";
+        this.Story = storyName;
+        this.rootURL = rootURL;
+        this.Container = document.getElementById(containerID);
+        if (!this.Container) {
+            console.warn("StoryExtrasWindow.constructor", `Container element with ID "${containerID}" not found.`);
+        }
+    }
+    static initialize(storyName, rootURL, containerID) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return new StoryExtrasWindow(storyName, rootURL, containerID);
+        });
+    }
+    loadContent() {
+        return __awaiter(this, arguments, void 0, function* (filePath = null) {
+            try {
+                let url = "";
+                if (filePath == null) {
+                    url = `${this.rootURL}/extra/extras_${this.Story}.html`;
+                }
+                else {
+                    url = `${this.rootURL}/${filePath}`;
+                }
+                const response = yield fetch(url);
+                if (!response.ok) {
+                    console.error("StoryExtrasWindow.loadContent", `Error fetching content from ${url}.`);
+                    return false;
+                }
+                this.Content = yield response.text();
+                return true;
+            }
+            catch (error) {
+                console.error("StoryExtrasWindow.loadContent", `Failed to load content: ${error}`);
+                return false;
+            }
+        });
+    }
+    deployContent() {
+        if (!this.Container) {
+            console.warn("StoryExtrasWindow.deployContent", "Container element not found.");
+            return false;
+        }
+        if (!this.Content) {
+            console.warn("StoryExtrasWindow.deployContent", "No content loaded.");
+            return false;
+        }
+        this.Container.innerHTML = this.Content;
+        return true;
+    }
+    deploy(filePath) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const loaded = yield this.loadContent(filePath);
+            if (!loaded)
+                return false;
+            return this.deployContent();
+        });
+    }
+}
 class LocalStorageAndSrcVars {
     constructor(binder) {
         //  Search variables take priority over Local Storage.
@@ -85,19 +148,25 @@ class LocalStorageAndSrcVars {
             console.error("LSASV.ParseSrcVars", "Unable to parse: not retrieved yet.");
             return false;
         }
+        let doPermissions = false;
         switch (this.Map.get("mode")) {
             case "author":
             case "3":
                 this.Binder.Permissions = 3;
                 console.info("Access level 3 / Author.");
+                doPermissions = true;
                 break;
             case "editor":
             case "2":
                 this.Binder.Permissions = 2;
                 console.info("Access level 2 / Reviewer.");
+                doPermissions = true;
                 break;
             default:
                 break;
+        }
+        if (doPermissions) {
+            BIND.HandlePermissions(true);
         }
         let doURLchap = isNaN(Number(this.Map.get("chapter")));
         if (!doURLchap) {
@@ -193,6 +262,7 @@ class ChapterDataCard {
         this.eTOC_ID = document.getElementById('TTC_ID');
         this.eTOC_NAME = document.getElementById('TTC_name');
         this.eTOC_BLURB = document.getElementById('TTC_blurb');
+        this.eEXTRAHEAD = document.getElementById('EXhead');
     }
     updateTOCinfo() {
         let actRoman = { 0: "Prologue", 1: "Act I", 2: "Act II", 3: "Act III", 4: "Act IV" };
@@ -202,6 +272,7 @@ class ChapterDataCard {
         this.Data.TOC.Character.forEach((element) => { ChapterView = ChapterView == element ? ChapterView : "Mixed"; console.log(element); });
         this.eTOC_NAME.innerHTML = `${ChapterView} &mdash; <em>${this.Data.TOC.ChapterName}</em>`;
         this.eTOC_BLURB.innerHTML = `<p>"${this.Data.TOC.Blurb}"</p>`;
+        this.eEXTRAHEAD.innerHTML = `${this.Story} Extras`;
     }
     toggleNightMode(doReport = true) {
         this.NightMode = !this.NightMode;
@@ -308,11 +379,13 @@ class Manuscript {
 class TableOfContents {
     constructor(toc) {
         this.TOCstate = false;
+        this.EXTRAstate = true;
         /**
          * @param toc Full Table Of Contents data.
          */
         this.list = toc;
         this.ToggleDisplay(this.TOCstate);
+        this.ToggleInfo(this.EXTRAstate);
         this.TOClocation = document.getElementById("TOCwindow");
         this.DeployTOC();
     }
@@ -338,6 +411,10 @@ class TableOfContents {
         });
     }
     ToggleDisplay(setState = null) {
+        if (this.EXTRAstate) {
+            console.error("Unable to activate TOC while Special Window is active.");
+            return;
+        }
         if (setState == null) {
             this.TOCstate = !this.TOCstate;
         }
@@ -346,7 +423,22 @@ class TableOfContents {
         }
         console.log("TableOfContents.ToggleDisplay", `Table Of Contents is now ${this.TOCstate ? "shown" : "hidden"}.`);
         // Changing width of TOC? Set --TOCWIDTH in contentstyles.css
-        ROOT.style.setProperty("--READERPOSITION", this.TOCstate ? "var(--TOCWIDTH)" : "0px");
+        ROOT.style.setProperty("--READER_TOCOFFSET", this.TOCstate ? "var(--TOCWIDTH)" : "0px");
+    }
+    ToggleInfo(setState = null) {
+        if (this.TOCstate) {
+            console.error("Unable to activate Special Window while TOC is active.");
+            return;
+        }
+        if (setState == null) {
+            this.EXTRAstate = !this.EXTRAstate;
+        }
+        else {
+            this.EXTRAstate = setState;
+        }
+        console.log("TableOfContents.ToggleInfo", `Special Window is now ${this.EXTRAstate ? "shown" : "hidden"}.`);
+        // Changing width of TOC? Set --TOCWIDTH in contentstyles.css
+        ROOT.style.setProperty("--READER_EXTRAOFFSET", this.EXTRAstate ? "calc( -1 * var(--EXTRAWIDTH))" : "0px");
     }
     DeployTOC() {
         let chapters = this.list.ChapterList;
@@ -361,12 +453,12 @@ class TableOfContents {
             // Creating act entries
             //console.warn(chapter)
             let relID = `${chapter.Act}.${chapter.Chapter}`;
-            TOChtml += `
+            TOChtml += `            
             <div id="T.${relID}" class="TOC-chapcontainer" onclick="BIND.DeployOnPage(${chapter.Chapter},DEPLOY);SRC.SaveLocalStorage()">
                 <div id="num.${relID}" class="TOC-num">${String(chapter.Chapter).padStart(2, '0')}</div>
                 <div id="name.${relID}" class="TOC-name">${chapter.ChapterName}</div>
                 <div id="blurb.${relID}" class="TOC-blurb">${chapter.Blurb}</div>
-                <div id="date.${relID}" class="TOC-date">XX/XX/XX</div>
+                <div id="date.${relID}" class="TOC-date">${chapter.Release}</div>
             </div>`;
         });
         this.TOClocation.innerHTML = TOChtml;
@@ -376,7 +468,68 @@ class TableOfContents {
 //  ██     ██████ ██▄▄██ ██▄▄█▀   ██   ██▄▄   ██▄▄██▄ ▀▀▀▄▄▄ 
 //  ▀█████ ██  ██ ██  ██ ██       ██   ██▄▄▄▄ ██   ██ █████▀ 
 class ChapterBinder {
-    constructor(rootURL, storyName, prgmConfig, source, permissions = 0, dataCard, elementID = "", doDeployment = 1) {
+    LockUp() {
+        // Add locked messages.
+        this.TOC.forEach((chapter) => {
+            let relID = `T.${chapter.Act}.${chapter.Chapter}`;
+            if (!chapter.AccessGranted) {
+                let elem = document.getElementById(relID);
+                elem.style.pointerEvents = 'none';
+                elem.childNodes.forEach(node => {
+                    if (node.nodeType === Node.ELEMENT_NODE) {
+                        node.classList.add("lockedEntry");
+                    }
+                });
+                elem.innerHTML += `<div class="lockedSel">${chapter.DaysUntil.toFixed(0)}</div>`;
+            }
+        });
+    }
+    HandlePermissions(doReport = true) {
+        this.ChapterBounds = { active: [], whitelist: [], full: [] };
+        // This is where access list is assembled. ***********ACCESS***************
+        let lastRelease;
+        let today = new Date();
+        this.TOC.forEach((chapter) => {
+            chapter["AccessGranted"] = false;
+            if (chapter.Release) {
+                const [month, day, year] = chapter.Release.split('/').map(Number);
+                lastRelease = new Date(2000 + year, month - 1, day);
+                if ((lastRelease.getTime() > today.getTime()) && (chapter.Chapter != 1)) {
+                    //console.log(`Chapter ${chapter.Chapter} not ready by ${lastRelease}`)  
+                }
+                else {
+                    //console.log(`Chapter ${chapter.Chapter} ready for ${lastRelease}`)   
+                    this.ChapterBounds.whitelist.push(chapter.Chapter);
+                }
+            }
+            chapter["DaysUntil"] = ((lastRelease.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+            this.ChapterBounds.full.push(chapter.Chapter);
+        });
+        //console.error(this.source)
+        // No hack please!!!
+        switch (this.Permissions) {
+            case 2: // Admin.
+                console.log("Permissions at ADMIN level.");
+                this.ChapterBounds.active = this.ChapterBounds.full;
+                break;
+            case 1: // Reviewer.
+                console.log("Permissions at REVIEWER level.");
+                this.ChapterBounds.active = this.ChapterBounds.full;
+                break;
+            default: // Base user.
+                console.log("Permissions at GUEST level.");
+                this.ChapterBounds.active = this.ChapterBounds.whitelist;
+                break;
+        }
+        this.ChapterBounds.active.forEach((chapnum) => {
+            // recall: chapnum vs chapter indexing
+            this.TOC[chapnum - 1]["AccessGranted"] = true;
+        });
+        if (doReport) {
+            console.log(`--- User access report: ---\n > Today is ${today.getUTCDate()}.\n > Access level is ${["GUEST", "REVIEWER", "ADMIN"][this.Permissions]} (${this.Permissions}).\n> User has access to: `, this.ChapterBounds.active);
+        }
+    }
+    constructor(rootURL, storyName, prgmConfig, source, permissions = 0, dataCard, elementID = "", doDeployment = 1, doReport = true) {
         this.rootURL = "";
         this.storyName = "";
         this.SessionBinder = {};
@@ -402,21 +555,7 @@ class ChapterBinder {
         this.Config = prgmConfig;
         // Establish accessible chapters per user criterion.
         this.ChapterBounds = { active: [], whitelist: [], full: [] };
-        this.TOC.forEach((chapter) => {
-            this.ChapterBounds.whitelist.push(chapter.Chapter);
-            this.ChapterBounds.full.push(chapter.Chapter);
-        });
-        //console.error(this.source)
-        // No hack please!!!
-        switch (this.Permissions) {
-            case 0: // Base user.
-                this.ChapterBounds.active = this.ChapterBounds.whitelist;
-            case 1: // Reviewer.
-                this.ChapterBounds.active = this.ChapterBounds.full;
-            case 2: // Admin.
-                this.ChapterBounds.active = this.ChapterBounds.full;
-            // @TODO: Implement permission levels. Will change how chapters are whitelisted.
-        }
+        this.HandlePermissions();
         // Link the DataCard back to this binder.
         this.DataCard.setBinder(this);
         // Deploy a chapter on build.
@@ -1015,9 +1154,12 @@ function buildManuscript(rootURL_1, storyName_1) {
         SRC = yield LocalStorageAndSrcVars.initialize(BIND);
         //BIND.DeployOnPage(CARD.Data.TOC.Chapter,DEPLOY)
         THEME = new ThemeDriver(CFG.config, DEPLOY, CARD, eBackground, eText, eProgressBar, true);
-        console.log(SRC.Local.chapter);
+        //console.log(SRC.Local.chapter)
         yield BIND.DeployOnPage(SRC.Local.chapter, DEPLOY);
+        EXTRAS = yield StoryExtrasWindow.initialize(storyName, rootURL, EXTRAID);
         THEME.deployTheming();
+        BIND.LockUp();
+        yield EXTRAS.loadContent();
         return;
     });
 }
@@ -1048,12 +1190,14 @@ const eTYPESET = GEBID('TYPESET');
 const eIDCHAPTER = GEBID('IDCHAPTER');
 const eIDNAME = GEBID('IDNAME');
 const DEPLOY = "TYPESET";
+const EXTRAID = "EXTRACONTENT";
 var StartChapter = 9;
 var CARD;
 var CFG;
 var BIND;
 var THEME;
 var SRC;
+var EXTRAS;
 var eBackground = document.getElementById("BACKGROUND");
 var eText = document.getElementById("BODY");
 var eProgressBar = document.getElementById("PROGRESS");
