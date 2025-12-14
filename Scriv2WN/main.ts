@@ -39,13 +39,12 @@ class LocalStorageAndSrcVars {
     private constructor(binder:ChapterBinder) {
         this.Map = this.PollSrcVars()
         this.Binder = binder;
-        this.ParseSrcVars();
         let localprefs = localStorage.getItem('SG_Bookmark')
         if (localprefs) {
             try {
                 this.Local = JSON.parse(localprefs)
-                if (this.requestedChapter != null) {
-                    console.info("LSASV.ParseSrcVars","Setting chapter from search parameter variables.")
+                if (this.ParseSrcVars()) {
+                    console.info("LSASV.ParseSrcVars",`Setting chapter to ${this.requestedChapter} from search parameter variables.`)
                     this.Local.chapter = this.requestedChapter;
                     localStorage.setItem('SG_Bookmark',JSON.stringify(this.Local))
                 }
@@ -105,10 +104,10 @@ class LocalStorageAndSrcVars {
             default:
                 break;
         }
-        if (typeof(this.Map.get("chapter")) == "number") {
-            this.requestedChapter = Number(this.Map.get("chapter").toFixed(0))
-            this.Binder.DeployOnPage(this.requestedChapter,DEPLOY)
-            this.requestedChapter = this.Binder.DataCard.currentChapter()
+        let doURLchap = isNaN(Number(this.Map.get("chapter")))
+        if (!doURLchap) {
+            this.requestedChapter = Math.round(Number(this.Map.get("chapter")))
+            console.error("LSASV.ParseSrcVars",`Chapter specified in URL as ${this.requestedChapter}.`)
             return true
         }
         return false
@@ -319,6 +318,7 @@ class TableOfContents {
      */
     public list: any;                      // Full TOC data.
     public static data: any;               // Program data retrieved from the source.
+    public TOCstate:boolean = false;
 
     private constructor(toc: any) {
         /**
@@ -327,7 +327,7 @@ class TableOfContents {
         this.list = toc;
     }
 
-    static async initialize(sourceURL: string) {
+    static async initialize(sourceURL: string, storyName: string) {
         /**
          * This is the access point for creating a TableOfContents instance.
          * @param sourceURL URL to fetch the TOC JSON from.
@@ -335,13 +335,28 @@ class TableOfContents {
          */
         const response = await fetch(sourceURL);
         if (!response.ok) {
-            console.debug("Manuscript.initialize","Error fetching manuscript from URL.")
+            console.debug("TableOfContents.initialize","Error fetching manuscript from URL.")
         } else {
-            console.debug("Manuscript.initialize","Successfully fetched manuscript from URL.")
+            console.debug("TableOfContents.initialize","Successfully fetched manuscript from URL.")
         }
         this.data = await response.json();
+        
+
+        // ....and now initialization of the Table Of Contents panel.
+        ROOT.style.setProperty("--TitleImageTOC", `url("../design/${storyName}_logo.png")`)
+        ROOT.style.setProperty("--WallImageTOC", `url("../design/${storyName}_wall.jpg")`)
+
+
         return new TableOfContents(this.data);
     }
+
+    ToggleDisplay() {
+        this.TOCstate = !this.TOCstate;
+        console.log("TableOfContents.ToggleDisplay",`Table Of Contents is now ${this.TOCstate ? "shown" : "hidden"}.`)
+        // Changing width of TOC? Set --TOCWIDTH in contentstyles.css
+        ROOT.style.setProperty("--READERPOSITION", this.TOCstate ? "var(--TOCWIDTH)" : "0px")
+    }
+
 }
 
 //  ▄█████ ██  ██ ▄████▄ █████▄ ██████ ██████ █████▄  ▄█████ 
@@ -386,7 +401,8 @@ class ChapterBinder {
             "DUNSMO":"Cody",
             "BROD":"Reed",
             "Kat":"Katiya",
-            "Alan":"Alan"
+            "Alan":"Alan",
+            "Reed":"Reed"
         }
 
     private constructor(rootURL : string, storyName: string, prgmConfig : StoryConfig, source : any, permissions: number = 0, dataCard: ChapterDataCard, elementID: string = "", doDeployment : number = 1) {
@@ -426,7 +442,7 @@ class ChapterBinder {
     }
     static async initialize(rootURL: string, storyName: string, prgmConfig : StoryConfig, permissions: number = 0, dataCard: ChapterDataCard, elementID: string = "", doDeployment : number = 1) {
         let sourceURL = `${rootURL}/TOC/TOC_${storyName}.json`
-        let source = await TableOfContents.initialize(sourceURL)        
+        let source = await TableOfContents.initialize(sourceURL,storyName)        
         return new ChapterBinder(rootURL, storyName, prgmConfig, source, permissions, dataCard, elementID, doDeployment);
     }
     private doWhitelist(requestedChapter: number) {
@@ -500,7 +516,7 @@ class ChapterBinder {
         }
         // Save to local storage configurations.
         SRC.SetSavedChapter(requestedChapter)
-
+        eBODY.scrollTo(0, 0);
         // Is it in the binder already? If not, pull it in.
         let isInBinder: boolean = await this.pullRequest(requestedChapter);
         if (!isInBinder) {
@@ -615,33 +631,39 @@ class ChapterBinder {
     console.warn(sectionStyle,ParagraphStyle)
     // Determine line style by analyzing each line's reported local style.
     lineContent.forEach( ([style,line]) => {
-        if ( style.includes("Message") && (!isSpecial) ) {
-            isSpecial = true
-            ParagraphStyle = style.replace("Date","");
-            if ( style.includes("Date") ) { // This predicates the text message.
-                this.lastMessenger = this.WhoIsSender(line)
-                doEndP = false
+         if ( style.includes("Timestamp") ) { // This predicates the text message.
+                let sender = this.WhoIsSender(line)
+                console.log("Sender is",sender)
+                this.lastMessenger = sender
+                //doEndP = false
             } else {
-                doStartP = false
+                //doStartP = false
+                extraStyles = ""
             }
             extraStyles += ` by${this.lastMessenger}`
+        if ( style.includes("Message") && (!isSpecial) ) {
+            isSpecial = true
+            ParagraphStyle = style;
         } else if ( style.includes("Note") && (!isSpecial) ) {      
             isSpecial = true          
             ParagraphStyle = style        
         } else {
-            extraStyles = ""
         }
         // @TODO add other important styles to segregate
     });
-    let fullLine = doStartP ? `<p class="${ParagraphStyle + extraStyles}" id="${lineID}}">` : "";
+    let fullLine = `<p class="${ParagraphStyle + extraStyles}" id="${lineID}}">`;
     let fragStyle = "";
     let fragEnum = 1
-    lineContent.forEach( ([style,line]) => {
-        fragStyle = doStartP ? style : isSpecial? ParagraphStyle : style + doStartP ;
-        fullLine += `<span class="${fragStyle}" id="${lineID}.${fragEnum}">${line}</span>`;
+    lineContent.forEach( ([style,line]) => {   
+        let addBR = ""     
+        if ( style.includes("Timestamp")) {
+            addBR = "<br>"
+        }
+        fragStyle = doStartP ? style : isSpecial? ParagraphStyle : style + doStartP;
+        fullLine += `<span class="${fragStyle}" id="${lineID}.${fragEnum}">${line}</span> ${addBR}`;
         fragEnum += 1
     });
-        return fullLine + (doEndP ? "</p>" : "<br>")
+        return fullLine + "</p>"
     }
 }
 

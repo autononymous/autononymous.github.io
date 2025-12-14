@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: black;
+    background-color: maroon;
 }
 
 h3.Title {
@@ -43,18 +43,24 @@ h3.Section::after{
 }
 
 /* ====================={ Body Styles }==================== */
+p.BodyDefault {
+    font-family:        Arial, sans-serif;
+    font-size:          var(--CodySize);
+    line-height:        var(--TextLineHeight);
+    text-align:         justify;
+    color:              #ffffff;
+    font-weight:        300;
+}
 p.BodyCody {
     font-family:        var(--CodyText);  
     font-size:          var(--CodySize);
     line-height:        var(--TextLineHeight);
     text-align:         justify;
-    font-family:        var(--CodyText);
     font-weight:        300;
 }
 span.BodyCody {  
 }
 p.BodyKatiya, p.BodyJade {
-    font-family:        var(--KatiyaText);
     font-family:        var(--KatiyaText);
     font-size:          var(--KatiyaSize);
     font-weight:        500;
@@ -65,7 +71,6 @@ span.BodyKatiya, span.BodyJade {
 }
 p.BodyTitus {
     font-family:        var(--TitusText);
-    font-family:        var(--KatiyaText);
     font-size:          var(--KatiyaSize);
     font-weight:        500;
     line-height:        var(--TextLineHeight);
@@ -190,30 +195,33 @@ p.MessageFrom::after {
     width: 40px;
     height: 40px;
     border-radius:20px;
-    background-image: url("../icons/anonythumb.jpg");
     border: 1px solid var(--TextColor);
     background-size: 100% 100%;
     background-position: center;
 }
 
 p.byKatiya::after {
-    background-image: url("../profiles/kat.png");
+    background-image: url("../profiles/katiya.jpg");
 }
 p.byMiguel::after {
-    background-image: url("../profiles/miggy.png");
+    background-image: url("../profiles/miggy.jpg");
 }
 p.byKei::after {
-    background-image: url("../profiles/kei.png");
+    background-image: url("../profiles/kei.jpg");
 }
 p.byReed::after {
-    background-image: url("../profiles/reed.png");
+    background-image: url("../profiles/reed.jpg");
 }
 p.byCody::after {
-    background-image: url("../profiles/cody.png");
+    background-image: url("../profiles/cody.jpg");
+}
+p.byAlan::after {
+    background-image: url("../profiles/alan.jpg");
 }
 p.byAnon::after {
-    background-image: url("../profiles/anon.png");
+    background-image: url("../profiles/anon.jpg");
 }
+
 
 p.MessageTo {
     font-family: var(--MsgFont);
@@ -256,7 +264,6 @@ p.MessageTo::after {
     height: 40px;
     border-radius:20px;
     border: 1px solid var(--TextColor);
-    background-image: url("../profiles/cody.png");
     background-size: 100% 100%;
     background-position: center;
 }

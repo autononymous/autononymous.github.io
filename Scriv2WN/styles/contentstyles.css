@@ -3,6 +3,14 @@
     --MenuHeight:           50px;
     --ControlHeight:        min(25vw,100px);
 
+    /* Position of reader whether or not TOC or other things are shown.*/
+    --READERPOSITION:       0px;
+    --TOCWIDTH:             max(400px,60vw);
+
+    /* TOC identifier images */
+    --TitleImageTOC:        url("../design/");
+    --WallImageTOC:         url("../design/");
+
     /* Text configurations */
     --TextSetWidthFixed:    40px;
     --TextSetWidthDynamic:  10vw;
@@ -15,7 +23,7 @@
     /* Active theme settings. These are set from   */
     /* the JavaScript program.                     */
     --FallbackTitle:        var(--CodyTitle);
-    --FallbackText:          var(--CodyText);
+    --FallbackText:         var(--CodyText);
     --ActiveTitle:          var(--CodyTitle);
     --ActiveSub:            var(--CodyText);
     --ActiveSize:           var(--CodySize);
@@ -60,7 +68,7 @@
     --BodyStart:            calc(var(--MenuHeight) + var(--MenuPad));
     --BodyHeight:           calc(100dvh - var(--MenuHeight) - var(--MenuPad) - var(--FooterHeight) - var(--FooterPad));
     --ContentWidth:         min(800px,100vw);
-    --TypesetMargin:        50px;
+    --TypesetMargin:        80px;
 
     /*============================================*/
 /*====={ Title, text, and size variables by story }=====*/
@@ -131,6 +139,25 @@ div > div {
     border: 1px solid red;
 }
     */
+div.TOC {
+    position:fixed;
+    left:0;
+    top:0;
+    width: var(--TOCWIDTH);
+    height: 100dvh;
+    background-color: green;
+}
+
+div.READER {
+    position:absolute;
+    width: 100vw;
+    height:100dvh;
+    left: var(--READERPOSITION);
+    transition: left 0.8s ease-in-out;
+    top:0px;
+    /*border: 2px solid dimgray;*/
+    box-shadow: 0px 0px 20px black;
+}
 div.BACKGROUND {
     position:absolute;
     top:0;
@@ -170,6 +197,29 @@ div.TYPESET {
     width: calc(100% - (var(--TypesetMargin) * 2));
     left: calc( 0.5 * var(--ContentWidth));
     transform: translateX(-50%);
+}
+div.TOGGLE {
+    opacity:0.2;
+}
+div.TOGGLE::before {
+    content: "::: "
+}
+div.TOGGLE::after {
+    content: " :::"
+}
+div.TOGGLE:hover {
+    opacity:0.8;
+    transition: opacity 0.2s ease-in-out;
+}
+div.TOGGLETOC {
+    position:absolute;
+    left:0;
+    /*left: var(--READERPOSITION);
+    transition: left 0.8s ease-in-out;*/
+    top:50dvh;
+    transform: translateX(calc(-50% + 30px)) translateY(50%) rotate(270deg);
+    color: var(--TextColor);
+    font-size: 1.2em;
 }
 
 img.hrdiv {
