@@ -674,16 +674,14 @@ class ChapterBinder {
     console.warn(sectionStyle,ParagraphStyle)
     // Determine line style by analyzing each line's reported local style.
     lineContent.forEach( ([style,line]) => {
-         if ( style.includes("Timestamp") ) { // This predicates the text message.
-                let sender = this.WhoIsSender(line)
-                console.log("Sender is",sender)
-                this.lastMessenger = sender
-                //doEndP = false
-            } else {
-                //doStartP = false
-                extraStyles = ""
-            }
+        if ( style.includes("Timestamp") ) { // This predicates the text message.
+            let sender = this.WhoIsSender(line)
+            console.log("Sender is",sender)
+            this.lastMessenger = sender
             extraStyles += ` by${this.lastMessenger}`
+        } else if(!style.includes("Message")) {
+            extraStyles = ""
+        }            
         if ( style.includes("Message") && (!isSpecial) ) {
             isSpecial = true
             ParagraphStyle = style;

@@ -247,7 +247,7 @@ div.TOC-chapcontainer {
     display:grid;
     grid-template:
         'Tchap Tname Tdate'
-        'Tchap Tblurb Tblurb';
+        'Tblurb Tblurb Tblurb';
     grid-template-columns: 56px auto 100px;
     font-family: var(--ActiveText);
     color: var(--BooleanColor);

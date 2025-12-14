@@ -185,7 +185,7 @@ def getLineMetadata(Sentence,Perspective="Default"):
             line = fragments[i][suffix+2:len(Sentence)]
             # Set default to a MessageType if this is a MESSAGE LINE.
             if (lineclass == "MessageFrom" or lineclass == "MessageTo"):
-                print(line)
+                #print(line)
                 DefaultClass = lineclass
         # Otherwise, read the fragment as just a line.
         else:
@@ -246,9 +246,15 @@ def InterpretJSON(js,info=True):
     # Now, we interpret the dictionary created from the JSON file.
     ThisChapter = -1
     ThisChapterName = ''
+    ThisAct = 0;
     ThisActName = ''
+    doWarnPOV = False; ############################################################## CHECKING POV DATA.
+    noPOVwarnings = True;
+    PubDate = ""
+    PubDateLog = f"Publication dates of {MANUSCRIPT['Story']} are computed as follows:\n"
     for entry in js['Manuscript']:
         if entry['DocType'] == "Act":
+            ThisAct += 1;
             ThisActName = entry['DocName']
         # The data we pull here from the CHAPTER will be supplanted into
         # each following chapter.
@@ -262,6 +268,10 @@ def InterpretJSON(js,info=True):
             ChapterData['Completion'] = entry['PercentComplete']
             ChapterData['Summary'] = entry['Summary']
             ChapterData['Blurb'] = entry['Synopsis']
+            # Pubilshing information.  
+            PubDate = (datetime.strptime(entry['PublishOn'], '%m/%d/%y').date()) if (entry['PublishOn'] != "") else PubDate + timedelta(days=int(entry['NextPublish']))
+            ChapterData['NextPublish'] = PubDate.strftime('%m/%d/%y')
+            PubDateLog +=  f"\n{ChapterData['NextPublish']}|\t{ThisAct}.{ThisChapter+1}|\t {ChapterData['ChapterName']}|\t{entry['Synopsis'][0:150]} ..."
             ChapterData['Scenes'] = 0
             ChapterData['Body'] = []
             ChapterData['POV'] = []        
@@ -274,7 +284,18 @@ def InterpretJSON(js,info=True):
             ChapterData['Chapter'] = int(entry['ChapterFull'])
             ChapterData['ChapterNumber'] = GetNumberName(int(entry['ChapterFull']))
             ChapterData['Scenes'] += 1
-            ChapterData['POV'].append(entry['Perspective'])
+            if (entry['Perspective'] == "Default") and (doWarnPOV):
+                noPOVwarnings = False
+                errscene = f"{entry['ActNum']}.{entry['ChapterFull']}.{ChapterData['Scenes']}"
+                POVinput = ""
+                print(f"UNSPECIFIED POV IN SCENE {errscene}")
+                POVinput = input(f"What character perspective is in this scene?\n{(entry['Body'])[0:100]} ...\nHit ENTER to stop searching for error.\n > ")
+                if POVinput == "":
+                    doWarnPOV = False
+                else:
+                    ChapterData['POV'].append(POVinput)
+            else:
+                ChapterData['POV'].append(entry['Perspective'])
             ChapterData['IDs'].append(entry['VerboseID'])
             ChapterData['Written'] = len(entry['Body']) > 10
             ChapterData['Body'].append([])
@@ -286,6 +307,9 @@ def InterpretJSON(js,info=True):
                     for Fragment in Fragments:
                         ChapterData['Body'][-1].append(Fragment)
                         ChapterData['WCs'][-1] += len(Fragment[1].split(" "))
+            PubDateLog += f"|\t{ChapterData['WCs'][-1]}"
+    if noPOVwarnings: print("No POV errors found in manuscript. Good work.")
+    print(f"\n{PubDateLog}\n")
     return MANUSCRIPT
 
 def MakeDirIfNotExists(path):
@@ -331,7 +355,7 @@ def SaveSectionedCopy(storyDict,indentLevel=None):
             chapters.append(entry['Chapter'])
             actchap[entry['Act']].append(entry['Chapter'])
     # Make a folder for each act in the Story Name folder.
-    print(actchap)
+    #print(actchap)
     for act, chapterlist in actchap.items():
         actpath = f"/sectioned/{storyDict[0]['Story']}/{act}"
         MakeDirIfNotExists(actpath)

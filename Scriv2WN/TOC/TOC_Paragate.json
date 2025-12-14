@@ -5,7 +5,7 @@
       "SceneCount": 156,
       "WrittenCount": 122,
       "UnwrittenCount": 34,
-      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 183,524.\n > There are 5 acts, 53 chapters, and 156 scenes.\n > This manuscript averages:\n   - 1176 words per scene.\n   - 3462 words per chapter.\n   - 2.94 scenes per chapter.\n > Out of 156 planned scenes, 122 are written.\n > So the Zero Draft is approximately 78.2% complete.\n"
+      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 183,536.\n > There are 5 acts, 53 chapters, and 156 scenes.\n > This manuscript averages:\n   - 1176 words per scene.\n   - 3462 words per chapter.\n   - 2.94 scenes per chapter.\n > Out of 156 planned scenes, 122 are written.\n > So the Zero Draft is approximately 78.2% complete.\n"
    },
    "ChapterList": [
       {
@@ -510,7 +510,7 @@
          "ChapterName": "Fantastic Modernity",
          "ChapterNumber": "Thirty-Two",
          "Character": [
-            "Default",
+            "Katiya",
             "Cody",
             "Cody"
          ],
@@ -623,8 +623,8 @@
          "ChapterNumber": "Thirty-Nine",
          "Character": [
             "Cody",
-            "Default",
-            "Default"
+            "Katiya",
+            "Cody"
          ],
          "Summary": "",
          "Blurb": "",
@@ -638,9 +638,9 @@
          "ChapterName": "Reaching Up",
          "ChapterNumber": "Forty",
          "Character": [
-            "Default",
-            "Default",
-            "Default"
+            "Katiya",
+            "Cody",
+            "Katiya"
          ],
          "Summary": "",
          "Blurb": "Stories from another road change the map. A cross-world conversation reframes what &quot;winning&quot; could mean.",
@@ -654,8 +654,8 @@
          "ChapterName": "Radio StaticHarsh Noise",
          "ChapterNumber": "Forty-One",
          "Character": [
-            "Default",
-            "Default",
+            "Cody",
+            "Katiya",
             "Default",
             "Default"
          ],

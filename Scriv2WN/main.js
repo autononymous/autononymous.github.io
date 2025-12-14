@@ -362,7 +362,7 @@ class TableOfContents {
             console.warn(chapter);
             let relID = `${chapter.Act}.${chapter.Chapter}`;
             TOChtml += `
-            <div id="T.${relID}" class="TOC-chapcontainer" onclick="BIND.DeployOnPage(${chapter.Chapter},DEPLOY)">
+            <div id="T.${relID}" class="TOC-chapcontainer" onclick="BIND.DeployOnPage(${chapter.Chapter},DEPLOY);SRC.SaveLocalStorage()">
                 <div id="num.${relID}" class="TOC-num">${String(chapter.Chapter).padStart(2, '0')}</div>
                 <div id="name.${relID}" class="TOC-name">${chapter.ChapterName}</div>
                 <div id="blurb.${relID}" class="TOC-blurb">${chapter.Blurb}</div>
@@ -624,13 +624,11 @@ class ChapterBinder {
                 let sender = this.WhoIsSender(line);
                 console.log("Sender is", sender);
                 this.lastMessenger = sender;
-                //doEndP = false
+                extraStyles += ` by${this.lastMessenger}`;
             }
-            else {
-                //doStartP = false
+            else if (!style.includes("Message")) {
                 extraStyles = "";
             }
-            extraStyles += ` by${this.lastMessenger}`;
             if (style.includes("Message") && (!isSpecial)) {
                 isSpecial = true;
                 ParagraphStyle = style;
