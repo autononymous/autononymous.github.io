@@ -5,7 +5,7 @@
 
     /* Position of reader whether or not TOC or other things are shown.*/
     --READERPOSITION:       0px;
-    --TOCWIDTH:             max(400px,60vw);
+    --TOCWIDTH:             min(400px,60vw);
 
     /* TOC identifier images */
     --TitleImageTOC:        url("../Scriv2WN/design/Paragate_logo.png");
