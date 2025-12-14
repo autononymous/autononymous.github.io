@@ -8,8 +8,8 @@
     --TOCWIDTH:             min(500px,60vw);
 
     /* TOC identifier images */
-    --TitleImageTOC:        url("../Scriv2WN/design/Paragate_logo.png");
-    --WallImageTOC:         url("../Scriv2WN/design/");
+    --TitleImageTOC:        url("../design/Paragate_logo.png");
+    --WallImageTOC:         url("../design/");
 
     /* Text configurations */
     --TextSetWidthFixed:    40px;
