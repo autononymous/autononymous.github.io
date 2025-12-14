@@ -8,8 +8,8 @@
     --TOCWIDTH:             max(400px,60vw);
 
     /* TOC identifier images */
-    --TitleImageTOC:        url("../design/");
-    --WallImageTOC:         url("../design/");
+    --TitleImageTOC:        url("../Scriv2WN/design/Paragate_logo.png");
+    --WallImageTOC:         url("../Scriv2WN/design/");
 
     /* Text configurations */
     --TextSetWidthFixed:    40px;
@@ -26,13 +26,17 @@
     --FallbackText:         var(--CodyText);
     --ActiveTitle:          var(--CodyTitle);
     --ActiveSub:            var(--CodyText);
+    --ActiveText:           var(--CodyText);
     --ActiveSize:           var(--CodySize);
     --TextColor:           black;
-    --BackgroundColor:    white;
-    --HoverColor:         rgba(12,12,12,0.1);
-    --BarColor:           black;
+    --BackgroundColor:     white;
+    --MidgroundColor:      black;
+    --ElementColor:        dimgray;
+    --HoverColor:          rgba(12,12,12,0.1);
+    --BarColor:            black;
     --BarLength:            0%;
     --IconState:            invert(1);
+    --BooleanColor:         black;
 
     /* (legacy) Active color theming */
     --ActivePrimary:        189, 0, 28;
@@ -140,12 +144,159 @@ div > div {
 }
     */
 div.TOC {
-    position:fixed;
+    position:absolute;
     left:0;
     top:0;
     width: var(--TOCWIDTH);
     height: 100dvh;
-    background-color: green;
+    background: var(--MidgroundColor);
+    color: var(--TextColor);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+div.TOCwall {
+    position: relative;
+    left: 50%;
+    top: 10px;
+    width: calc(var(--TOCWIDTH) - 20px);
+    height: 150px;
+    background-image: var(--WallImageTOC);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+    /*border: 1px solid black;*/
+    border-radius: 0px;
+    /*box-shadow: 0px 0px 10px black;*/
+}
+div.TOClogo {
+    position: absolute;
+    left:5%;
+    width: 90%;
+    height: 100%;
+    background-image: var(--TitleImageTOC);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*filter: drop-shadow(0 0 2rem black) drop-shadow(0 0 0.1rem black)*/
+    filter: drop-shadow(1000vw 0 var(--TextColor));
+    transform: translateX(-1000vw);
+}
+div.TOCthischapter {
+    font-family: var(--ActiveTitle);
+    font-size: var(--TextSize);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px);
+    grid-template:
+        'ttc_header'
+        'ttc_id'
+        'ttc_blurb'
+        ;
+}
+div.TOCwindow {
+    width: min(450px,calc(100% - 20px));
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div.TTC_HEADER {
+    margin-top: 10px;
+    text-align: center;
+    grid-area: ttc_header;
+    font-size: calc(var(--TextSize) * 0.75 );
+}
+div.TTC_elem {
+    background-color: var(--ElementColor);
+    text-align: center;
+    font-family: var(--ActiveSub);
+    font-size: calc(var(--TextSize) * 0.5);
+    border: 1px solid var(--TextColor);    
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 50px);
+    padding-top: 8px;
+    padding-bottom: 8px;    
+    color: var(--BooleanColor);
+}
+div.TTC_ID {
+    margin-top: 10px;
+    grid-area: ttc_id
+}
+div.TTC_blurb {    
+    grid-area: ttc_blurb;
+    font-size: calc(var(--TextSize) * 0.5);
+    text-align: justify;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+div.TTC_blurb > p {
+    margin: 0px 25px 0px 25px;
+}
+div.TOC-act {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    text-align: center;
+}
+div.TOC-chapcontainer {
+    border: 0px solid var(--TextColor);
+    display:grid;
+    grid-template:
+        'Tchap Tname Tdate'
+        'Tchap Tblurb Tblurb';
+    grid-template-columns: 56px auto 100px;
+    font-family: var(--ActiveText);
+    color: var(--BooleanColor);
+    padding: 5px 0px 5px 0px;
+    transition: background-color 0.3s ease-in-out, padding 0.5s ease-in-out;
+}
+div.TOC-chapcontainer > div {
+    /*border: 1px solid var(--BooleanColor);*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+div.TOC-chapcontainer:hover {
+    background-color: var(--BackgroundColor);
+    padding: 10px 0px 10px 0px;
+    border-left: 2px solid var(--TextColor);
+}
+div.TOC-chapcontainer:active {
+    background-color: rgba(255, 248, 220,0.4);
+}
+div.TOC-num {
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-area: Tchap;
+    text-align:center;
+}
+div.TOC-name {
+    padding-top: 10px;
+    grid-area: Tname;
+    font-size: calc(var(--TextSize) * 0.5);
+    padding-left: 10px;
+    font-variant: small-caps;
+    font-weight: 500;
+}
+div.TOC-blurb {
+    grid-area: Tblurb; 
+    font-size: calc(var(--TextSize) * 0.5);
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 25px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    border-top: 1px solid var(--TextColor);  
+}
+div.TOC-date {
+    padding-top: 10px;
+    grid-area: Tdate;
+    font-size: calc(var(--TextSize) * 0.5);
+    text-align: right;
+    padding-right: 10px;
 }
 
 div.READER {
@@ -183,7 +334,8 @@ div.BODY {
     width: var(--ContentWidth);
     height: var(--BodyHeight);
     overflow-x: hidden;
-    overflow-y: scroll;    
+    overflow-y: scroll;   
+    scrollbar-width: none; 
     /*
     background-color: var(--BackgroundColor);
     background-image: url("../styles/bg-cody.jpg");

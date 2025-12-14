@@ -143,6 +143,7 @@ class ChapterDataCard {
             Written? ${this.Data.TOC.Written}
             `);
         }
+        this.updateTOCinfo();
         this.updateDataBar();
         return;
     }
@@ -189,10 +190,23 @@ class ChapterDataCard {
         this.ThemeDriver = null; // Pointer to the ThemeDriver object.
         this.NightMode = false; // Is Night Mode active?
         this.Story = StoryName;
+        this.eTOC_ID = document.getElementById('TTC_ID');
+        this.eTOC_NAME = document.getElementById('TTC_name');
+        this.eTOC_BLURB = document.getElementById('TTC_blurb');
+    }
+    updateTOCinfo() {
+        let actRoman = { 0: "Prologue", 1: "Act I", 2: "Act II", 3: "Act III", 4: "Act IV" };
+        let actnum = Number(this.Data.TOC.Act);
+        this.eTOC_ID.innerHTML = `${actRoman[actnum]}, Chapter ${this.Data.TOC.ChapterNumber}`;
+        let ChapterView = this.Data.TOC.Character[0];
+        this.Data.TOC.Character.forEach((element) => { ChapterView = ChapterView == element ? ChapterView : "Mixed"; console.log(element); });
+        this.eTOC_NAME.innerHTML = `${ChapterView} &mdash; <em>${this.Data.TOC.ChapterName}</em>`;
+        this.eTOC_BLURB.innerHTML = `<p>"${this.Data.TOC.Blurb}"</p>`;
     }
     toggleNightMode(doReport = true) {
         this.NightMode = !this.NightMode;
         ROOT.style.setProperty("--IconState", `invert(${this.NightMode})`);
+        ROOT.style.setProperty("--BooleanColor", `${this.NightMode ? "white" : "black"}`);
         console.info(`Night mode is now ${this.NightMode ? "on" : "off"}.`);
         return this.NightMode;
     }
@@ -293,11 +307,14 @@ class Manuscript {
 }
 class TableOfContents {
     constructor(toc) {
-        this.TOCstate = false;
+        this.TOCstate = true;
         /**
          * @param toc Full Table Of Contents data.
          */
         this.list = toc;
+        this.ToggleDisplay(this.TOCstate);
+        this.TOClocation = document.getElementById("TOCwindow");
+        this.DeployTOC();
     }
     static initialize(sourceURL, storyName) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -315,16 +332,44 @@ class TableOfContents {
             }
             this.data = yield response.json();
             // ....and now initialization of the Table Of Contents panel.
-            ROOT.style.setProperty("--TitleImageTOC", `url("../design/${storyName}_logo.png")`);
-            ROOT.style.setProperty("--WallImageTOC", `url("../design/${storyName}_wall.jpg")`);
+            ROOT.style.setProperty("--TitleImageTOC", `url(../design/${storyName}_logo.png)`);
+            //ROOT.style.setProperty("--WallImageTOC", `url(../design/${storyName}_wall.jpg)`)
             return new TableOfContents(this.data);
         });
     }
-    ToggleDisplay() {
-        this.TOCstate = !this.TOCstate;
+    ToggleDisplay(setState = null) {
+        if (setState == null) {
+            this.TOCstate = !this.TOCstate;
+        }
+        else {
+            this.TOCstate = setState;
+        }
         console.log("TableOfContents.ToggleDisplay", `Table Of Contents is now ${this.TOCstate ? "shown" : "hidden"}.`);
         // Changing width of TOC? Set --TOCWIDTH in contentstyles.css
         ROOT.style.setProperty("--READERPOSITION", this.TOCstate ? "var(--TOCWIDTH)" : "0px");
+    }
+    DeployTOC() {
+        let chapters = this.list.ChapterList;
+        let lastAct = 0;
+        let TOChtml = "";
+        chapters.forEach((chapter) => {
+            // Creating act headers
+            if (chapter.Act != lastAct) {
+                TOChtml += `<div class="TOC-act" id="TOC-A${chapter.Act}">${chapter.ActName}</div>`;
+                lastAct = chapter.Act;
+            }
+            // Creating act entries
+            console.warn(chapter);
+            let relID = `${chapter.Act}.${chapter.Chapter}`;
+            TOChtml += `
+            <div id="T.${relID}" class="TOC-chapcontainer" onclick="BIND.DeployOnPage(${chapter.Chapter},DEPLOY)">
+                <div id="num.${relID}" class="TOC-num">${String(chapter.Chapter).padStart(2, '0')}</div>
+                <div id="name.${relID}" class="TOC-name">${chapter.ChapterName}</div>
+                <div id="blurb.${relID}" class="TOC-blurb">${chapter.Blurb}</div>
+                <div id="date.${relID}" class="TOC-date">XX/XX/XX</div>
+            </div>`;
+        });
+        this.TOClocation.innerHTML = TOChtml;
     }
 }
 //  ▄█████ ██  ██ ▄████▄ █████▄ ██████ ██████ █████▄  ▄█████ 
@@ -933,6 +978,16 @@ class ThemeDriver {
                         var(--Wall${this.CurrentWall.ToCharacter})`;
         ROOT.style.setProperty("--TextColor", `rgba(${this.CurrentFrame["Text"][0]},${this.CurrentFrame["Text"][1]},${this.CurrentFrame["Text"][2]},${1})`);
         ROOT.style.setProperty("--BackgroundColor", `rgba(${this.CurrentFrame["Background"][0]},${this.CurrentFrame["Background"][1]},${this.CurrentFrame["Background"][2]},${1})`);
+        let PercentOff = 0.80;
+        let CalcRGBA = [((255 * (1 - PercentOff) * 0.5) + ((Number(this.CurrentFrame["Background"][0]) * PercentOff))),
+            ((255 * (1 - PercentOff) * 0.5) + ((Number(this.CurrentFrame["Background"][1]) * PercentOff))),
+            ((255 * (1 - PercentOff) * 0.5) + ((Number(this.CurrentFrame["Background"][2]) * PercentOff)))];
+        ROOT.style.setProperty("--MidgroundColor", `rgba(${CalcRGBA[0]},${CalcRGBA[1]},${CalcRGBA[2]},${1})`);
+        PercentOff = 0.60;
+        CalcRGBA = [((255 * (1 - PercentOff) * 0.5) + ((Number(this.CurrentFrame["Background"][0]) * PercentOff))),
+            ((255 * (1 - PercentOff) * 0.5) + ((Number(this.CurrentFrame["Background"][1]) * PercentOff))),
+            ((255 * (1 - PercentOff) * 0.5) + ((Number(this.CurrentFrame["Background"][2]) * PercentOff)))];
+        ROOT.style.setProperty("--ElementColor", `rgba(${CalcRGBA[0]},${CalcRGBA[1]},${CalcRGBA[2]},${1})`);
         ROOT.style.setProperty("--BarColor", `rgba(${this.CurrentFrame["ProgressBar"][0]},${this.CurrentFrame["ProgressBar"][1]},${this.CurrentFrame["ProgressBar"][2]},${1})`);
         ROOT.style.setProperty("--HoverColor", `rgba(${this.CurrentFrame["ProgressBar"][0]},${this.CurrentFrame["ProgressBar"][1]},${this.CurrentFrame["ProgressBar"][2]},${0.1})`);
         ROOT.style.setProperty("--TOCbackground", `rgba(${this.CurrentFrame["ProgressBar"][0]},${this.CurrentFrame["ProgressBar"][1]},${this.CurrentFrame["ProgressBar"][2]},${0.03})`);
@@ -942,6 +997,8 @@ class ThemeDriver {
         let TextStyle = this.CurrentWall.FromCharacter == "Default" ? this.CurrentWall.ToCharacter : this.CurrentWall.FromCharacter == "" ? "Fallback" : this.CurrentWall.FromCharacter;
         ROOT.style.setProperty("--ActiveTitle", `var(--${TextStyle}Title)`);
         ROOT.style.setProperty("--ActiveSub", `var(--${TextStyle}Text)`);
+        ROOT.style.setProperty("--ActiveSize", `var(--${TextStyle}Size)`);
+        ROOT.style.setProperty("--ActiveText", `var(--${TextStyle}Text)`);
         return;
     }
 }
