@@ -336,7 +336,7 @@ class TableOfContents {
      */
     public list: any;                      // Full TOC data.
     public static data: any;               // Program data retrieved from the source.
-    public TOCstate:boolean = true;
+    public TOCstate:boolean = false;
     public TOClocation:HTMLElement;
 
     private constructor(toc: any) {
