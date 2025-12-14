@@ -41,6 +41,11 @@ class StoryExtrasWindow {
     static async initialize(storyName: string, rootURL: string, containerID: string) {
         return new StoryExtrasWindow(storyName, rootURL, containerID);
     }
+    async loadInExtras(filePath: string|null = null) {
+        if(!await this.loadContent(filePath)) {
+            console.error("StoryExtrasWindow.loadInExtras", `Error loading content..`);
+        }
+    }
     async loadContent(filePath: string|null = null): Promise<boolean> {
         try {
             let url = ""
