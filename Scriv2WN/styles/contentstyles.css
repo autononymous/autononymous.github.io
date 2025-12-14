@@ -72,7 +72,7 @@
     --BodyStart:            calc(var(--MenuHeight) + var(--MenuPad));
     --BodyHeight:           calc(100dvh - var(--MenuHeight) - var(--MenuPad) - var(--FooterHeight) - var(--FooterPad));
     --ContentWidth:         calc(100vw - 40px);
-    --TypesetMargin:        80px;
+    --TypesetMargin:        40px;
 
     /*============================================*/
 /*====={ Title, text, and size variables by story }=====*/
