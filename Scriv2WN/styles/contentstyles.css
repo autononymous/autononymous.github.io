@@ -9,7 +9,7 @@
 
     /* TOC identifier images */
     --TitleImageTOC:        url("../design/Paragate_logo.png");
-    --WallImageTOC:         url("../design/");
+    /*--WallImageTOC:         url("../design/Paragate_wall.jpg");*/  /* Commented out - causes excessive GET requests to /design/ */
 
     /* Text configurations */
     --TextSetWidthFixed:    40px;

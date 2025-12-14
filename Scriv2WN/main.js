@@ -333,7 +333,7 @@ class TableOfContents {
             this.data = yield response.json();
             // ....and now initialization of the Table Of Contents panel.
             ROOT.style.setProperty("--TitleImageTOC", `url(../design/${storyName}_logo.png)`);
-            //ROOT.style.setProperty("--WallImageTOC", `url(../design/${storyName}_wall.jpg)`)
+            ROOT.style.setProperty("--WallImageTOC", `url()`);
             return new TableOfContents(this.data);
         });
     }
@@ -359,7 +359,7 @@ class TableOfContents {
                 lastAct = chapter.Act;
             }
             // Creating act entries
-            console.warn(chapter);
+            //console.warn(chapter)
             let relID = `${chapter.Act}.${chapter.Chapter}`;
             TOChtml += `
             <div id="T.${relID}" class="TOC-chapcontainer" onclick="BIND.DeployOnPage(${chapter.Chapter},DEPLOY);SRC.SaveLocalStorage()">
@@ -617,12 +617,12 @@ class ChapterBinder {
         let extraStyles = "";
         let doStartP = true;
         let doEndP = true;
-        console.warn(sectionStyle, ParagraphStyle);
+        //console.warn(sectionStyle,ParagraphStyle)
         // Determine line style by analyzing each line's reported local style.
         lineContent.forEach(([style, line]) => {
             if (style.includes("Timestamp")) { // This predicates the text message.
                 let sender = this.WhoIsSender(line);
-                console.log("Sender is", sender);
+                //console.log("Sender is",sender)
                 this.lastMessenger = sender;
                 extraStyles += ` by${this.lastMessenger}`;
             }
@@ -892,7 +892,7 @@ class ThemeDriver {
             index += 1;
         }
         if (currentKey == null) {
-            console.warn("ThemeDriver.getFrame", "No keyframe found for scroll position:", scrollPosition);
+            //console.warn("ThemeDriver.getFrame","No keyframe found for scroll position:",scrollPosition)
             return;
         }
         let KeyProgress = (scrollPosition - currentKey.min) / (currentKey.max - currentKey.min);

@@ -384,6 +384,7 @@ def SaveTableOfContents(manuscriptDict,indentLevel=None):
             "Summary"       : entry['Summary'],
             "Blurb"         : entry['Blurb'],
             "Written"       : entry['Written'],
+            "Release"       : entry['NextPublish'],
             "Location"      : f"/sectioned/{entry['Story']}/{entry['Act']}/{entry['Chapter']}.json"
             }
         TOCdict['ChapterList'].append(ChapterEntry)
