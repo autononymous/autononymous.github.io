@@ -182,7 +182,7 @@ class ChapterDataCard {
         
         // Notify ThemeDriver of chapter change for scroll break recalculation.
         if (this.ThemeDriver != null) {
-            this.ThemeDriver.getScrollBreaks();
+            this.ThemeDriver.getScrollBreaks(); 
         }
         if (doReport) {
             console.log(`
@@ -196,8 +196,8 @@ class ChapterDataCard {
             Written? ${this.Data.TOC.Written}
             `)
         }
-        this.updateTOCinfo()
-        this.updateDataBar()
+        this.updateTOCinfo();
+        this.updateDataBar();
         return
     }
     constructor(StoryName: string) {
