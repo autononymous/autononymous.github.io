@@ -307,7 +307,7 @@ class Manuscript {
 }
 class TableOfContents {
     constructor(toc) {
-        this.TOCstate = true;
+        this.TOCstate = false;
         /**
          * @param toc Full Table Of Contents data.
          */
