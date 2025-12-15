@@ -35,6 +35,13 @@ class StoryExtrasWindow {
             return new StoryExtrasWindow(storyName, rootURL, containerID);
         });
     }
+    loadInExtras() {
+        return __awaiter(this, arguments, void 0, function* (filePath = null) {
+            if (!(yield this.loadContent(filePath))) {
+                console.error("StoryExtrasWindow.loadInExtras", `Error loading content..`);
+            }
+        });
+    }
     loadContent() {
         return __awaiter(this, arguments, void 0, function* (filePath = null) {
             try {
@@ -51,6 +58,7 @@ class StoryExtrasWindow {
                     return false;
                 }
                 this.Content = yield response.text();
+                console.info("StoryExtrasWindow.loadContent", `Content loaded from ${url}:`, this.Content);
                 return true;
             }
             catch (error) {
@@ -1159,7 +1167,8 @@ function buildManuscript(rootURL_1, storyName_1) {
         EXTRAS = yield StoryExtrasWindow.initialize(storyName, rootURL, EXTRAID);
         THEME.deployTheming();
         BIND.LockUp();
-        yield EXTRAS.loadContent();
+        yield EXTRAS.loadInExtras();
+        EXTRAS.deployContent();
         return;
     });
 }

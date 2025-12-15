@@ -44,7 +44,7 @@ class StoryExtrasWindow {
     async loadInExtras(filePath: string|null = null) {
         if(!await this.loadContent(filePath)) {
             console.error("StoryExtrasWindow.loadInExtras", `Error loading content..`);
-        }
+        }        
     }
     async loadContent(filePath: string|null = null): Promise<boolean> {
         try {
@@ -61,6 +61,7 @@ class StoryExtrasWindow {
                 return false;
             }
             this.Content = await response.text();
+            console.info("StoryExtrasWindow.loadContent", `Content loaded from ${url}:`,this.Content);
             return true;
         } catch (error) {
             console.error("StoryExtrasWindow.loadContent", `Failed to load content: ${error}`);
@@ -1214,7 +1215,8 @@ async function buildManuscript(rootURL: string, storyName: string, startChapter 
     EXTRAS = await StoryExtrasWindow.initialize(storyName,rootURL,EXTRAID)
     THEME.deployTheming();
     BIND.LockUp();
-    await EXTRAS.loadContent()
+    await EXTRAS.loadInExtras()
+    EXTRAS.deployContent();
     return
 }
 
