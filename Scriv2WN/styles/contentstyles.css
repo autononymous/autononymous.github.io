@@ -172,12 +172,51 @@ div.EXTRAS {
 }
 div.EXTRACONTENT {
     position:relative;
-    width:calc( 100% - 40px );
-    left: 20px;
+    width:calc( 100% - 80px );
+    left: 40px;
     top:20px;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     min-height: 500px;
+    border-top: 1px solid var(--BooleanColor);
 }
+div.EXTRACONTENT > h1 {
+    border-left: 2px solid var(--TextColor);
+    padding-left: 10px;
+    font-family: var(--ActiveTitle);
+    font-size: calc(var(--TextSize) * 1.50 );
+}
+div.EXTRACONTENT > h2 {
+    border-left: 1px dashed  var(--TextColor);
+    padding-left: 10px;
+    font-family: var(--ActiveSub);
+    font-size: calc(var(--TextSize) * 1.00 );
+}
+div.EXTRACONTENT > p {
+    font-family: var(--ActiveSub);
+    line-height: 1.50em;
+    font-size: calc(var(--TextSize) * 0.80 );
+    text-align: justify;
+}
+div.EXTRACONTENT > img {
+    border: 1px solid var(--TextColor);
+}
+div.EXTRACONTENT > hr {    
+    border: none;
+    border-top: 1px solid var(--TextColor);
+    margin: 40px 0;
+}
+div.EXTRACONTENT > blockquote {
+    border-left: 4px solid var(--ElementColor);
+    border-right: 4px solid var(--ElementColor);
+    padding-left: 15px;
+    margin: 20px 0;
+    font-family: var(--ActiveText);
+    font-size: calc(var(--TextSize) * 0.95);
+    font-style: italic;
+    color: var(--TextColor);
+    opacity: 0.85;
+}
+
 div.TOCwall {
     position: relative;
     left: 50%;
@@ -295,7 +334,6 @@ div.TOC-chapcontainer {
     border-left: 2px solid var(--MidgroundColor);
 }
 div.TOC-chapcontainer > div {
-    /*border: 1px solid var(--BooleanColor);*/
     padding-top: 5px;
     padding-bottom: 5px;
 }

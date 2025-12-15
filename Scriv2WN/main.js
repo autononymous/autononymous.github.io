@@ -1168,7 +1168,7 @@ function buildManuscript(rootURL_1, storyName_1) {
         THEME.deployTheming();
         BIND.LockUp();
         yield EXTRAS.loadInExtras();
-        EXTRAS.deployContent();
+        //EXTRAS.deployContent();
         return;
     });
 }

@@ -1216,7 +1216,7 @@ async function buildManuscript(rootURL: string, storyName: string, startChapter 
     THEME.deployTheming();
     BIND.LockUp();
     await EXTRAS.loadInExtras()
-    EXTRAS.deployContent();
+    //EXTRAS.deployContent();
     return
 }
 
