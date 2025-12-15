@@ -465,12 +465,13 @@ div.TYPESET {
 }
 div.TOGGLE {
     opacity:0.2;
+    background-color: rgba(128, 128, 128, 0.500);
 }
 div.TOGGLE::before {
-    content: "::: "
+    content: " ::: "
 }
 div.TOGGLE::after {
-    content: " :::"
+    content: " Pane ::: "
 }
 div.TOGGLE:hover {
     opacity:0.8;
@@ -480,17 +481,17 @@ div.TOGGLETOC {
     position:absolute;
     left:0;
     top:50dvh;
-    transform: translateX(calc(-50% + 30px)) translateY(50%) rotate(270deg);
+    transform: translateX(calc(-50% + 20px)) translateY(50%) rotate(270deg);
     color: var(--TextColor);
-    font-size: 1.2em;
+    font-size: 1.35em;
 }
 div.TOGGLEINFO {
     position:absolute;
     right:0;
     top:50dvh;
-    transform: translateX(calc(50% - 30px)) translateY(50%) rotate(90deg);
+    transform: translateX(calc(50% - 20px)) translateY(50%) rotate(90deg);
     color: var(--TextColor);
-    font-size: 1.2em;
+    font-size: 1.35em;
 }
 
 img.hrdiv {
