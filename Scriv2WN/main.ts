@@ -1,3 +1,8 @@
+// Future Michael:
+// I spent a lot of time commenting this shit so you don't have to do 
+// it a third time. I even used that Undertale font you like. Just 
+// modify what exists.
+// - Michael
 
 //  ██ ███  ██ ██████ ██████ █████▄  ██████ ▄████▄ ▄█████ ██████ ▄█████ 
 //  ██ ██ ▀▄██   ██   ██▄▄   ██▄▄██▄ ██▄▄   ██▄▄██ ██     ██▄▄   ▀▀▀▄▄▄ 

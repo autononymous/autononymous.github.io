@@ -363,6 +363,46 @@ def SaveSectionedCopy(storyDict,indentLevel=None):
             with open(os.getcwd() + actpath + f"/{chapter}.json", "w") as f:
                 f.write(js.dumps(storyDict[chapter-1]['Body'],ensure_ascii=True,indent=indentLevel))    
 
+def SaveBasicCopy(storyDict, indentLevel=None):
+    acts = []
+    chapters = []
+    actchap = {"Instructions":"This JSON file contains the story for analysis. \
+               The numbered FIRST LEVEL KEYS are the ACTS of the story. SECOND LEVEL KEYS \
+               are the CHAPTERS of the story."}
+    MakeDirIfNotExists('/GPT')
+    for entry in storyDict.values():
+        if entry['Act'] not in acts:
+            acts.append(entry['Act'])
+            # actchap[entry['Act']] = {}
+        if entry['Chapter'] not in chapters and entry['Written'] is True:
+            chapters.append(entry['Chapter'])
+            chname = f"{entry['Chapter']}"
+            actchap[chname] = {}
+            actchap[chname]['POV Character enumerated by Scene'] = entry["POV"]
+            actchap[chname][f"Chapter {entry['Chapter']} Scenes"] = {}
+            actchap[chname]["Chapter"] = entry['Chapter'];
+            actchap[chname]["This chapter's Act"] = entry['Act']
+            actchap[chname]["Name"] = entry['ChapterName']
+            scenenum = 0;
+            for scene in entry['Body']:  
+                scenenum += 1;
+                actchap[chname][f"Chapter {entry['Chapter']} Scenes"][f"Chapter {entry['Chapter']} Scene {scenenum}"] = []
+                for line in scene:
+                    actchap[chname][f"Chapter {entry['Chapter']} Scenes"][f"Chapter {entry['Chapter']} Scene {scenenum}"].append(line[1])
+            # actchap[entry['Act']][entry['Chapter']] = {}
+            # actchap[entry['Act']][entry['Chapter']]['POV Character'] = entry["POV"]
+            # actchap[entry['Act']][entry['Chapter']]['Scenes'] = []
+            # for scene in entry['Body']:  
+            #     actchap[entry['Act']][entry['Chapter']]['Scenes'].append([])
+            #     for line in scene:
+            #         actchap[entry['Act']][entry['Chapter']]['Scenes'][-1].append(line[1])
+            # actchapnum += 1
+    with open(os.getcwd() + f"/GPT/{storyDict[0]['Story']}_GPT.json", "w") as f:
+        f.write(js.dumps(actchap,ensure_ascii=True,indent=indentLevel))  
+    print(" > Created GPT copy.")
+    return
+    
+
 def SaveTableOfContents(manuscriptDict,indentLevel=None):
     '''! Generate a Table Of Contents file that will guide other programs
          in navigating the file structure.
@@ -399,6 +439,7 @@ if __name__ == "__main__":
     SaveMasterCopy(MANUSCRIPT,indentLevel=3)
     SaveSectionedCopy(MANUSCRIPT['Story'] ,indentLevel=3)
     SaveTableOfContents(MANUSCRIPT, indentLevel=3)
+    SaveBasicCopy(MANUSCRIPT['Story'], indentLevel=3)
     
     
     

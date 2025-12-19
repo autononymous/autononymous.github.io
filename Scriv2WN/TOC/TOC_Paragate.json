@@ -3,9 +3,9 @@
       "ActCount": 5,
       "ChapterCount": 53,
       "SceneCount": 156,
-      "WrittenCount": 122,
-      "UnwrittenCount": 34,
-      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 183,536.\n > There are 5 acts, 53 chapters, and 156 scenes.\n > This manuscript averages:\n   - 1176 words per scene.\n   - 3462 words per chapter.\n   - 2.94 scenes per chapter.\n > Out of 156 planned scenes, 122 are written.\n > So the Zero Draft is approximately 78.2% complete.\n"
+      "WrittenCount": 128,
+      "UnwrittenCount": 28,
+      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 192,744.\n > There are 5 acts, 53 chapters, and 156 scenes.\n > This manuscript averages:\n   - 1235 words per scene.\n   - 3636 words per chapter.\n   - 2.94 scenes per chapter.\n > Out of 156 planned scenes, 128 are written.\n > So the Zero Draft is approximately 82.0% complete.\n"
    },
    "ChapterList": [
       {
@@ -691,17 +691,16 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 41,
-         "ChapterName": "Radio StaticHarsh Noise",
+         "ChapterName": "AnnealmentHarsh Noise",
          "ChapterNumber": "Forty-One",
          "Character": [
             "Cody",
             "Katiya",
-            "Default",
-            "Default"
+            "Katiya"
          ],
          "Summary": "",
          "Blurb": "An abandoned project stops being a joke.",
-         "Written": false,
+         "Written": true,
          "Release": "01/07/27",
          "Location": "/sectioned/Paragate/4/41.json"
       },
@@ -712,13 +711,13 @@
          "ChapterName": "Eutectic Point",
          "ChapterNumber": "Forty-Two",
          "Character": [
-            "Default",
-            "Default",
-            "Default"
+            "Katiya",
+            "Cody",
+            "Katiya"
          ],
          "Summary": "",
          "Blurb": "Turned away by authority, Katiya and her new allies make a plan anyway&mdash;three days, no permission, no safety net.",
-         "Written": false,
+         "Written": true,
          "Release": "01/14/27",
          "Location": "/sectioned/Paragate/4/42.json"
       },
@@ -726,15 +725,16 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 43,
-         "ChapterName": "Annealment",
+         "ChapterName": "Harsh Noise",
          "ChapterNumber": "Forty-Three",
          "Character": [
+            "Default",
             "Default",
             "Default"
          ],
          "Summary": "",
          "Blurb": "Cody raids parts bins and old code; the prototype finally breathes&mdash;then crosses into a world where failure isn&apos;t theoretical.",
-         "Written": false,
+         "Written": true,
          "Release": "01/21/27",
          "Location": "/sectioned/Paragate/4/43.json"
       },
@@ -767,7 +767,7 @@
             "Default"
          ],
          "Summary": "",
-         "Blurb": "Katiya tells her family the whole truth. A journal from the past points her toward who she has to be now.",
+         "Blurb": "Katiya tells her family the whole truth.",
          "Written": false,
          "Release": "02/04/27",
          "Location": "/sectioned/Paragate/4/45.json"
