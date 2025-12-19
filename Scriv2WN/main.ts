@@ -881,6 +881,10 @@ class ChapterBinder {
                 let style : string = feedline[0];
                 let text : string = feedline[1];
                 let isEOL : boolean = Boolean(feedline[2]);
+                //let isEOM : boolean = () && ();
+                //if (style.includes('Note')) {
+                //    isEOL = false;
+                //}
                 
                 lineContent.push([style,text]);
                 // End of line means closing </p> tag.

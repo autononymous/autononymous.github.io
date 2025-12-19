@@ -830,6 +830,10 @@ class ChapterBinder {
                     let style = feedline[0];
                     let text = feedline[1];
                     let isEOL = Boolean(feedline[2]);
+                    //let isEOM : boolean = () && ();
+                    if (style.includes('Note')) {
+                        isEOL = false;
+                    }
                     lineContent.push([style, text]);
                     // End of line means closing </p> tag.
                     if (isEOL) {
@@ -904,8 +908,8 @@ class ChapterBinder {
                 ParagraphStyle = style;
             }
             else if (style.includes("Note") && (!isSpecial)) {
-                isSpecial = true;
-                ParagraphStyle = style;
+                //isSpecial = true          
+                //ParagraphStyle = style        
             }
             else {
             }

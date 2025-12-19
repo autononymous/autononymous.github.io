@@ -222,7 +222,12 @@
       ],
       [
          "NoteCody",
-         "BROTHER OF FALLEN SOLDIER DESIGNS THE FUTURE</span></p>{[BodyCody]}Beneath the big font on the front page are two pictures: one of Jackson and I when we were kids, and a photo of me directing my team in a suit &mdash; that last hour of the project when we were rushing in full suits and dresses, wearing smocks over our formal clothes, spray-painting the prototype black.",
+         "BROTHER OF FALLEN SOLDIER DESIGNS THE FUTURE",
+         true
+      ],
+      [
+         "BodyCody",
+         "Beneath the big font on the front page are two pictures: one of Jackson and I when we were kids, and a photo of me directing my team in a suit &mdash; that last hour of the project when we were rushing in full suits and dresses, wearing smocks over our formal clothes, spray-painting the prototype black.",
          true
       ],
       [

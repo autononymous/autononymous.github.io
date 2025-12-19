@@ -77,7 +77,27 @@
       ],
       [
          "NoteCody",
-         "LOVE YOU JACKIE D</span></p>{[NoteCody]}FROM CODY 2010</span></p>{[NoteCody]}MERRY CHRISTMAS</span></p>{[NoteCody]}160 GB</span></p>{[BodyKatiya]}A set of long, slender wires snake from the bottom of it, ending with white buds that look like they could grow into flowers. Does it work with electricity? Because it&apos;s certainly not plugged in to anything.",
+         "LOVE YOU JACKIE D",
+         true
+      ],
+      [
+         "NoteCody",
+         "FROM CODY 2010",
+         true
+      ],
+      [
+         "NoteCody",
+         "MERRY CHRISTMAS",
+         true
+      ],
+      [
+         "NoteCody",
+         "160 GB",
+         true
+      ],
+      [
+         "BodyKatiya",
+         "A set of long, slender wires snake from the bottom of it, ending with white buds that look like they could grow into flowers. Does it work with electricity? Because it&apos;s certainly not plugged in to anything.",
          true
       ],
       [

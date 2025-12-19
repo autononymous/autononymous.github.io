@@ -476,7 +476,12 @@
       ],
       [
          "NoteCody",
-         "A DESIGN IN LOVING MEMORY</span></p>{[BodyCody]}It&apos;s a picture of me smiling as I demonstrate its use, when I discussed the cold-weather protections. The expression feels so foreign, like a deepfake I made of myself.",
+         "A DESIGN IN LOVING MEMORY",
+         true
+      ],
+      [
+         "BodyCody",
+         "It&apos;s a picture of me smiling as I demonstrate its use, when I discussed the cold-weather protections. The expression feels so foreign, like a deepfake I made of myself.",
          true
       ],
       [

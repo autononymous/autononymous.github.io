@@ -152,7 +152,12 @@
       ],
       [
          "NoteCody",
-         "01. Never depend on the other world&apos;s things.</span></p>{[BodyCody]}&quot;You haven&apos;t been introduced to any of my world&apos;s amenities yet,&quot; she says.",
+         "01. Never depend on the other world&apos;s things.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;You haven&apos;t been introduced to any of my world&apos;s amenities yet,&quot; she says.",
          true
       ],
       [
@@ -172,7 +177,12 @@
       ],
       [
          "NoteCody",
-         "02. Never spend the night in the other world.</span></p>{[BodyCody]}&quot;Why all capital letters? Are you writing in the voice of an angry god, giving commandments?&quot;",
+         "02. Never spend the night in the other world.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;Why all capital letters? Are you writing in the voice of an angry god, giving commandments?&quot;",
          true
       ],
       [
@@ -182,7 +192,47 @@
       ],
       [
          "NoteCody",
-         "03. No one else can cross the threshold.</span></p>{[NoteCody]}04. No one else can know about the door.</span></p>{[NoteCody]}She adds another one about loud music and sound, as if I didn&apos;t already live around old people. And I add one about using my utilities excessively. And bringing weapons in here. She adds one about being in her world dressed as strangely as I am now, and I counter with a corollary saying she can&apos;t dress like an e-girl unless it&apos;s Halloween or the Renaissance Faire. She says not to go out in Gaffesend without her. I say she doesn&apos;t have a license, so she shouldn&apos;t go out in my world either.</span></p>{[NoteCody]}05. No loud music or sound, especially at night.</span></p>{[NoteCody]}06. Don&apos;t burn a hole in Cody&apos;s wallet using his utilities.</span></p>{[NoteCody]}07. No weapons in Cody&apos;s world.</span></p>{[NoteCody]}08. Thou shalt dress like a commoner when in the other person&apos;s world. No out-of-place clothes.</span></p>{[NoteCody]}09. NEVER go out alone in the other world.</span></p>{[BodyCody]}&quot;And last of all,&quot; she says, thirty minutes later, &quot;is the most important.&quot; I have space for one more before I&apos;d have to flip over the page. &quot;Our worlds are meant to be apart. So we can&apos;t ever get together.&quot;",
+         "03. No one else can cross the threshold.",
+         true
+      ],
+      [
+         "NoteCody",
+         "04. No one else can know about the door.",
+         true
+      ],
+      [
+         "NoteCody",
+         "She adds another one about loud music and sound, as if I didn&apos;t already live around old people. And I add one about using my utilities excessively. And bringing weapons in here. She adds one about being in her world dressed as strangely as I am now, and I counter with a corollary saying she can&apos;t dress like an e-girl unless it&apos;s Halloween or the Renaissance Faire. She says not to go out in Gaffesend without her. I say she doesn&apos;t have a license, so she shouldn&apos;t go out in my world either.",
+         true
+      ],
+      [
+         "NoteCody",
+         "05. No loud music or sound, especially at night.",
+         true
+      ],
+      [
+         "NoteCody",
+         "06. Don&apos;t burn a hole in Cody&apos;s wallet using his utilities.",
+         true
+      ],
+      [
+         "NoteCody",
+         "07. No weapons in Cody&apos;s world.",
+         true
+      ],
+      [
+         "NoteCody",
+         "08. Thou shalt dress like a commoner when in the other person&apos;s world. No out-of-place clothes.",
+         true
+      ],
+      [
+         "NoteCody",
+         "09. NEVER go out alone in the other world.",
+         true
+      ],
+      [
+         "BodyCody",
+         "&quot;And last of all,&quot; she says, thirty minutes later, &quot;is the most important.&quot; I have space for one more before I&apos;d have to flip over the page. &quot;Our worlds are meant to be apart. So we can&apos;t ever get together.&quot;",
          true
       ],
       [
@@ -212,7 +262,12 @@
       ],
       [
          "NoteCody",
-         "10. Never fall for each other. Ever.</span></p>{[BodyCody]} &quot;Okay. Is that enough?&quot;",
+         "10. Never fall for each other. Ever.",
+         true
+      ],
+      [
+         "BodyCody",
+         " &quot;Okay. Is that enough?&quot;",
          true
       ],
       [

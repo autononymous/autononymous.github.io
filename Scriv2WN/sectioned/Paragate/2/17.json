@@ -768,7 +768,17 @@
       ],
       [
          "NoteCody",
-         "FOR THE BRAVE KNIGHT NEXT DOOR: </span></p>{[NoteCody]}I MADE EXTRA. </span></p>{[NoteCody]}YOUR TENTATIVE FRIEND. CODY</span></p>",
+         "FOR THE BRAVE KNIGHT NEXT DOOR: ",
+         true
+      ],
+      [
+         "NoteCody",
+         "I MADE EXTRA. ",
+         true
+      ],
+      [
+         "NoteCody",
+         "YOUR TENTATIVE FRIEND. CODY",
          true
       ]
    ]
