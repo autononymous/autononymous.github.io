@@ -47,7 +47,7 @@ p.BodyDefault {
     font-family:        Arial, sans-serif;
     font-size:          var(--CodySize);
     line-height:        var(--TextLineHeight);
-    text-align:         justify;
+    text-align:         var(--TextAlignment);
     color:              #ffffff;
     font-weight:        300;
 }
@@ -55,7 +55,7 @@ p.BodyCody {
     font-family:        var(--CodyText);  
     font-size:          var(--CodySize);
     line-height:        var(--TextLineHeight);
-    text-align:         justify;
+    text-align:         var(--TextAlignment);
     font-weight:        300;
 }
 span.BodyCody {  
@@ -65,7 +65,7 @@ p.BodyKatiya, p.BodyJade {
     font-size:          var(--KatiyaSize);
     font-weight:        500;
     line-height:        var(--TextLineHeight);
-    text-align:         justify;
+    text-align:         var(--TextAlignment);
 }
 span.BodyKatiya, span.BodyJade {
 }
@@ -74,7 +74,7 @@ p.BodyTitus {
     font-size:          var(--KatiyaSize);
     font-weight:        500;
     line-height:        var(--TextLineHeight);
-    text-align:         justify;
+    text-align:         var(--TextAlignment);
 }
 span.BodyTitus {
 }

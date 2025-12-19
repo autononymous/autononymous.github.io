@@ -90,6 +90,87 @@ class StoryExtrasWindow {
     }
 }
 class ControlBar {
+    constructor(LocalStorage, DataCard) {
+        this.ThemeState = false;
+        this.DoJustify = false;
+        this.FontSize = {
+            "Setting": 3,
+            "Options": ["0.9em", "1.1em", "1.3em", "1.5em", "1.7em", "1.9em", "2.1em"],
+            "CSSname": "--TextSize"
+        };
+        this.LineHeight = {
+            "Setting": 3,
+            "Options": ["0.9em", "1.1em", "1.3em", "1.5em", "1.7em", "1.9em", "2.1em"],
+            "CSSname": "--TextLineHeight"
+        };
+        this.Margins = {
+            "Setting": 1,
+            "Options": ["5vw", "10vw", "15vw"],
+            "CSSname": "--TextMargin"
+        };
+        this.LocalStorage = LocalStorage;
+        this.DataCard = DataCard;
+        this.eLineDown = document.getElementById('ICON-LINEDN');
+        this.eLineUp = document.getElementById('ICON-LINEUP');
+        this.eFontSizeDown = document.getElementById('ICON-FONTUP');
+        this.eFontSizeUp = document.getElementById('ICON-FONTUP');
+        this.eThemeToggle = document.getElementById('ICON-THEME');
+        this.GetAndSet(DataCard, false);
+    }
+    setter(change, setting) {
+        change = Math.round(change);
+        change = change >= 1 ? 1 : change <= -1 ? -1 : 0;
+        let n_Options = setting.Options.length - 1;
+        let newSetting = setting.Setting + change;
+        newSetting = newSetting > n_Options ? 0 : newSetting < 0 ? n_Options : newSetting;
+        setting.Setting = newSetting;
+    }
+    setFontSize(change, doReport = true) {
+        this.setter(change, this.FontSize);
+        ROOT.style.setProperty(this.FontSize.CSSname, this.FontSize.Options[this.FontSize.Setting]);
+        this.LocalStorage.Local.fontsetting = this.FontSize.Setting;
+        this.LocalStorage.SaveLocalStorage();
+        if (doReport) {
+            console.info("ControlBar.setFontSize", `Parameter ${this.FontSize.CSSname} set to option ${this.FontSize.Setting}, ${this.FontSize.Options[this.FontSize.Setting]}. Local Storage also set to ${this.LocalStorage.Local.fontsetting}.`);
+        }
+    }
+    setLineHeight(change, doReport = true) {
+        this.setter(change, this.LineHeight);
+        ROOT.style.setProperty(this.LineHeight.CSSname, this.LineHeight.Options[this.LineHeight.Setting]);
+        this.LocalStorage.Local.linesetting = this.LineHeight.Setting;
+        this.LocalStorage.SaveLocalStorage();
+        if (doReport) {
+            console.info("ControlBar.setLineHeight", `Parameter ${this.LineHeight.CSSname} set to option ${this.LineHeight.Setting}, ${this.LineHeight.Options[this.LineHeight.Setting]}. Local Storage also set to ${this.LocalStorage.Local.linesetting}.`);
+        }
+    }
+    setTheme(datacard, doReport = true) {
+        this.ThemeState = !this.ThemeState;
+        datacard.toggleNightMode(this.ThemeState, false);
+        this.LocalStorage.Local.themesetting = this.ThemeState;
+        this.LocalStorage.SaveLocalStorage();
+        if (doReport) {
+            console.info("ControlBar.setTheme", `Night mode is now ${this.ThemeState ? "on/dark" : "off/light"}. Local Storage also set to ${this.LocalStorage.Local.themesetting ? "on" : "off"}.`);
+        }
+    }
+    setJustify(state, doReport = true) {
+        this.LocalStorage.Local.dojustify = state;
+        this.DoJustify = this.LocalStorage.Local.dojustify;
+        this.LocalStorage.SaveLocalStorage();
+        ROOT.style.setProperty('--TextAlignment', `${state ? 'Justify' : 'Left'}`);
+        if (doReport) {
+            console.info("ControlBar.setJustify", `Body text alignment is now ${this.DoJustify ? 'Justify' : 'Left'}. Local Storage also set to ${this.LocalStorage.Local.dojustify ? 'Justify' : 'Left'}.`);
+        }
+    }
+    GetAndSet(datacard, doReport = true) {
+        this.FontSize.Setting = this.LocalStorage.Local.fontsetting;
+        this.LineHeight.Setting = this.LocalStorage.Local.linesetting;
+        this.ThemeState = this.LocalStorage.Local.themesetting;
+        this.DoJustify = this.LocalStorage.Local.dojustify;
+        ROOT.style.setProperty(this.FontSize.CSSname, this.FontSize.Options[this.FontSize.Setting]);
+        ROOT.style.setProperty(this.LineHeight.CSSname, this.LineHeight.Options[this.LineHeight.Setting]);
+        this.setJustify(this.DoJustify);
+        datacard.toggleNightMode(this.ThemeState, false);
+    }
 }
 class LocalStorageAndSrcVars {
     constructor(binder) {
@@ -98,7 +179,11 @@ class LocalStorageAndSrcVars {
         this.Map = null;
         this.requestedChapter = null;
         this.default = {
-            "chapter": 1
+            "chapter": 1,
+            "fontsetting": 3,
+            "linesetting": 3,
+            "themesetting": true,
+            "dojustify": true
         };
         // Default local setup.
         this.Local = Object.create(this.default);
@@ -285,8 +370,13 @@ class ChapterDataCard {
         this.eTOC_BLURB.innerHTML = `<p>"${this.Data.TOC.Blurb}"</p>`;
         this.eEXTRAHEAD.innerHTML = `${this.Story} Extras`;
     }
-    toggleNightMode(doReport = true) {
-        this.NightMode = !this.NightMode;
+    toggleNightMode(newState = null, doReport = true) {
+        if (newState != null) {
+            this.NightMode = newState;
+        }
+        else {
+            this.NightMode = !this.NightMode;
+        }
         ROOT.style.setProperty("--IconState", `invert(${this.NightMode})`);
         ROOT.style.setProperty("--BooleanColor", `${this.NightMode ? "white" : "black"}`);
         console.info(`Night mode is now ${this.NightMode ? "on" : "off"}.`);
@@ -890,6 +980,7 @@ class ThemeDriver {
         this.CurrentFrame.Background = this.FadeStyle.Background = [BGelem, BGelem, BGelem, 1];
         this.CurrentFrame.Text = this.FadeStyle.Text = [FGelem, FGelem, FGelem, 1];
         this.CurrentFrame.ProgressBar = this.FadeStyle.ProgressBar = [FGelem, FGelem, FGelem, 1];
+        this.BarFFG = document.getElementById('BARFFG');
     }
     set Transition(width) {
         width = width < 200 ? 200 : width > 800 ? 800 : width;
@@ -907,7 +998,7 @@ class ThemeDriver {
         //     FADERS  |<-->:         :    |    :         :    |    :         :    |    :         :<-->|
         //             |    :         :    |    :         :    |    :         :    |    :         :    |
         //             |    :         :    |    :         :    |    :         :    |    :         :    |
-        // Have scroll breaks even been deined yet?
+        // Have scroll breaks even been defined yet?
         if (this.ScrollBreaks.length == 0) {
             console.warn("ThemeDriver.setKeyframes", "Scroll breaks have not been defined. Cannot set keyframes.");
             return;
@@ -1024,7 +1115,7 @@ class ThemeDriver {
                 this.ScrollBreaks.push({ Theme: this.DataCard.Data.TOC.Character[i], atPercent: ScrollPosition, atPoint: SceneHeightSum });
             }
             // Push the final value, at the bottom of the travel. Will have same theme as last entry to ensure constant end.
-            this.ScrollBreaks.push({ Theme: this.DataCard.Data.TOC.Character[SceneDims.length - 1], atPercent: 0, atPoint: this.TravelHeight });
+            this.ScrollBreaks.push({ Theme: this.DataCard.Data.TOC.Character[SceneDims.length - 1], atPercent: 100, atPoint: this.TravelHeight });
             // For debug report.
             if (doReport) {
                 let report = `ThemeDriver.getScrollBreaks Report for :
@@ -1036,7 +1127,30 @@ class ThemeDriver {
                 console.log(report, this.ScrollBreaks);
             }
             this.setKeyframes();
+            this.ProgressBarSplits();
             return;
+        });
+    }
+    ProgressBarSplits() {
+        this.BarFFG.innerHTML = "";
+        let SB_index = 0;
+        let SB_lim = this.ScrollBreaks.length - 1;
+        let lastBreak = 0;
+        let thisBreak = 0;
+        let theme = "";
+        this.ScrollBreaks.forEach((sbreak) => {
+            lastBreak = thisBreak;
+            thisBreak = sbreak.atPercent;
+            console.log(thisBreak);
+            if (SB_index > 0) {
+                this.BarFFG.innerHTML += `<div class="barsection bs${theme}" style="flex:${thisBreak - lastBreak}"></div>`;
+                if (SB_index < SB_lim) {
+                    this.BarFFG.innerHTML += `<div class="barblank"></div>`;
+                }
+            }
+            theme = sbreak.Theme;
+            //console.error(sbreak)
+            SB_index += 1;
         });
     }
     getFrame(scrollPosition = null) {
@@ -1193,6 +1307,7 @@ function buildManuscript(rootURL_1, storyName_1) {
         CARD.toggleNightMode(false); // Start in Night Mode.
         BIND = yield ChapterBinder.initialize(rootURL, storyName, CFG, 0, CARD, DEPLOY, 0);
         SRC = yield LocalStorageAndSrcVars.initialize(BIND);
+        CTRL = new ControlBar(SRC, CARD);
         //BIND.DeployOnPage(CARD.Data.TOC.Chapter,DEPLOY)
         THEME = new ThemeDriver(CFG.config, DEPLOY, CARD, eBackground, eText, eProgressBar, true);
         //console.log(SRC.Local.chapter)
@@ -1204,6 +1319,11 @@ function buildManuscript(rootURL_1, storyName_1) {
         EXTRAS.deployContent();
         return;
     });
+}
+function doThemeChange() {
+    CTRL.setTheme(CARD);
+    THEME.setKeyframes();
+    runScrollEvents();
 }
 function runScrollEvents() {
     THEME.getFrame();
@@ -1240,6 +1360,7 @@ var BIND;
 var THEME;
 var SRC;
 var EXTRAS;
+var CTRL;
 var eBackground = document.getElementById("BACKGROUND");
 var eText = document.getElementById("BODY");
 var eProgressBar = document.getElementById("PROGRESS");

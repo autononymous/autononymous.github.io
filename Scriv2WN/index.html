@@ -38,11 +38,16 @@
         </div>
     </div>
     <div class="CONTROLLER" id="CONTROLLER">
-        <div class="Icon" id="ICON-LINEDN" onclick=""><img class="Icon" title="Increase Line Spacing" src="icons/fbicon-LineDn.png" alt="&#8853;" ></div>
-            <div class="Icon" id="ICON-LINEUP" onclick=""><img class="Icon" title="Decrease Line Spacing" src="icons/fbicon-LineUp.png" alt="&#8854;" ></div>
-            <div class="Icon" id="ICON-FONTUP" onclick=""><img class="Icon" title="Increase Font Size"" src="icons/fbicon-Larger.png" alt="&#8853;" ></div>
-            <div class="Icon" id="ICON-FONTDN" onclick=""><img class="Icon" title="Decrease Font Size" src="icons/fbicon-Smaller.png" alt="&#8854;" ></div>
-            <div class="Icon" id="ICON-THEME" onclick="">
+        <div class="ICONS">
+            <div class="Icon" id="ICON-LINEDN" onclick="CTRL.setLineHeight(1)"><img class="Icon" title="Increase Line Spacing" src="icons/fbicon-LineDn.png" style="cursor:pointer;" alt="&#8853;" ></div>
+            <div class="Icon" id="ICON-LINEUP" onclick="CTRL.setLineHeight(-1)"><img class="Icon" title="Decrease Line Spacing" src="icons/fbicon-LineUp.png" style="cursor:pointer;" alt="&#8854;" ></div>
+            <div class="Icon" id="ICON-FONTUP" onclick="CTRL.setFontSize(1)"><img class="Icon" title="Increase Font Size" src="icons/fbicon-Larger.png" style="cursor:pointer;" alt="&#8853;" ></div>
+            <div class="Icon" id="ICON-FONTDN" onclick="CTRL.setFontSize(-1)"><img class="Icon" title="Decrease Font Size" src="icons/fbicon-Smaller.png" style="cursor:pointer;" alt="&#8854;" ></div>
+            <div class="Icon" id="ICON-THEME" onclick="doThemeChange();"><span style="color: var(--TextColor);font-size: 40px;cursor:pointer;">&#9680;</span></div>
+        </div>
+        <div class="SETTINGTEXT" id="SETTINGTEXT">
+            <input type="checkbox" id="justify" name="justify" checked onclick="CTRL.setJustify(this.checked);" /> Text is justified <br>
+        </div>
     </div>
     <div class="READER" id="READER">
         <div class="BACKGROUND" id="BACKGROUND"></div>
@@ -59,6 +64,7 @@
             <div class="PROGRESS" id="PROGRESS">
                 <div class="BARBG" id="BARBG">
                     <div class="BARFG" id="BARFG"></div>
+                    <div class="BARFFG" id="BARFFG"></div>
                 </div>                
             </div>
             <div class="CONTROLS" id="CONTROLS">
