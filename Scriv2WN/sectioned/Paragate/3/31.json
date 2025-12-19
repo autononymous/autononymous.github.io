@@ -348,8 +348,13 @@
          false
       ],
       [
-         "BodyCody",
+         "MessageTo",
          "HELP",
+         true
+      ],
+      [
+         "BodyCody",
+         " ",
          true
       ]
    ],

@@ -3,6 +3,11 @@
 body {
     background-color: maroon;
 }
+h1 {
+    font-size: var(--Title);
+    color: var(--TextColor);
+    text-align: center;
+}
 
 h3.Title {
     font-size: var(--Title);
@@ -113,6 +118,7 @@ p.NoteCody {
     mix-blend-mode:     hard-light;
     box-shadow:         0px 0px 8px 2px var(--TextColor);
     border:             2px solid var(--BackgroundColor);
+    font-size:          var(--CodySize);
 }
 span.NoteCody {
     font-family:        "Patrick Hand SC", cursive;
@@ -125,6 +131,7 @@ p.NoteKatiya, p.NoteJade {
                         var(--WallKatiya);
     box-shadow:         0px 0px 8px 2px var(--TextColor);
     border:             2px solid var(--BackgroundColor);
+    font-size:          var(--KatiyaSize);
 }
 span.NoteKatiya, span.NoteJade {
     font-family:        "Montez", cursive;
@@ -138,6 +145,7 @@ p.NoteTitus {
                         var(--WallTitus);
     box-shadow:         0px 0px 8px 2px var(--TextColor);
     border:             2px solid var(--BackgroundColor);
+    font-size:          var(--TitusSize);
 }
 span.NoteTitus {
     font-family:        "Caveat", cursive;

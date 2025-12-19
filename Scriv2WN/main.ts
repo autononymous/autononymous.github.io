@@ -872,7 +872,9 @@ class ChapterBinder {
             // It is in fragments, because a line may have multiple styles within it as <span>s.
             let sectionContent : string = "";
             let lineContent : any[] = [];
+            let wasNote : boolean  = false;
             section.forEach( (feedline: any[]) => {
+                
                 // Store content of this individual line.
                 // The Section Style is an array containing the perspective of each section e.g. [Cody, Katiya, Titus, ...]
                 let SectionStyle : string = ChapterInfo.Character[thisSection];                
@@ -882,9 +884,18 @@ class ChapterBinder {
                 let text : string = feedline[1];
                 let isEOL : boolean = Boolean(feedline[2]);
                 //let isEOM : boolean = () && ();
-                //if (style.includes('Note')) {
-                //    isEOL = false;
-                //}
+                // This fixes note behavior @OPTIMIZE                
+                if (style.includes('Note')) {
+                    isEOL = false;
+                    text += '<br>'
+                }                
+                if (wasNote && (!style.includes('Note'))) {
+                    thisLine += 1;
+                    // Append resolved line to section
+                    sectionContent += this.ResolveThisLine(lineContent,LineID,SectionStyle)
+                    // flush lineContent
+                    lineContent = [];
+                }
                 
                 lineContent.push([style,text]);
                 // End of line means closing </p> tag.
@@ -895,10 +906,11 @@ class ChapterBinder {
                     // flush lineContent
                     lineContent = [];
                 }
-                wasEOL = isEOL;                
+                wasEOL = isEOL;         
+                wasNote = style.includes('Note');       
             });            
             chapterContent += `<div class='section' id='${SectionID}'> ${sectionContent} </div>`;
-            thisSection += 1;
+            thisSection += 1;            
         });
         // Actual deployment of chapter content to target element.
         targetElement.innerHTML = chapterContent;
@@ -959,9 +971,10 @@ class ChapterBinder {
         if ( style.includes("Message") && (!isSpecial) ) {
             isSpecial = true
             ParagraphStyle = style;
-        } else if ( style.includes("Note") && (!isSpecial) ) {      
-            isSpecial = true          
-            ParagraphStyle = style        
+        } else if ( style.includes("Note") && (!isSpecial) ) {     
+            console.warn(style) 
+            isSpecial = true
+            ParagraphStyle = style
         } else {
         }
         // @TODO add other important styles to segregate

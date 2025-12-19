@@ -821,6 +821,7 @@ class ChapterBinder {
                 // It is in fragments, because a line may have multiple styles within it as <span>s.
                 let sectionContent = "";
                 let lineContent = [];
+                let wasNote = false;
                 section.forEach((feedline) => {
                     // Store content of this individual line.
                     // The Section Style is an array containing the perspective of each section e.g. [Cody, Katiya, Titus, ...]
@@ -831,8 +832,17 @@ class ChapterBinder {
                     let text = feedline[1];
                     let isEOL = Boolean(feedline[2]);
                     //let isEOM : boolean = () && ();
+                    // This fixes note behavior @OPTIMIZE                
                     if (style.includes('Note')) {
                         isEOL = false;
+                        text += '<br>';
+                    }
+                    if (wasNote && (!style.includes('Note'))) {
+                        thisLine += 1;
+                        // Append resolved line to section
+                        sectionContent += this.ResolveThisLine(lineContent, LineID, SectionStyle);
+                        // flush lineContent
+                        lineContent = [];
                     }
                     lineContent.push([style, text]);
                     // End of line means closing </p> tag.
@@ -844,6 +854,7 @@ class ChapterBinder {
                         lineContent = [];
                     }
                     wasEOL = isEOL;
+                    wasNote = style.includes('Note');
                 });
                 chapterContent += `<div class='section' id='${SectionID}'> ${sectionContent} </div>`;
                 thisSection += 1;
@@ -908,8 +919,9 @@ class ChapterBinder {
                 ParagraphStyle = style;
             }
             else if (style.includes("Note") && (!isSpecial)) {
-                //isSpecial = true          
-                //ParagraphStyle = style        
+                console.warn(style);
+                isSpecial = true;
+                ParagraphStyle = style;
             }
             else {
             }
