@@ -85,12 +85,15 @@ class StoryExtrasWindow {
         this.Container.innerHTML = this.Content;
         return true;
     }
-
     async deploy(filePath: string): Promise<boolean> {
         const loaded = await this.loadContent(filePath);
         if (!loaded) return false;
         return this.deployContent();
     }
+}
+
+class ControlBar {
+// The top bar configuring reader settings.
 }
 
 class LocalStorageAndSrcVars {
@@ -415,8 +418,10 @@ class TableOfContents {
      */
     public list: any;                      // Full TOC data.
     public static data: any;               // Program data retrieved from the source.
+    // States of slide panels.
     public TOCstate:boolean = false;
-    public EXTRAstate:boolean = true;
+    public EXTRAstate:boolean = false;
+    public CTRLstate:boolean = false;
     public TOClocation:HTMLElement;
 
     private constructor(toc: any) {
@@ -426,6 +431,7 @@ class TableOfContents {
         this.list = toc;
         this.ToggleDisplay(this.TOCstate);   
         this.ToggleInfo(this.EXTRAstate);
+        this.ToggleControls(this.CTRLstate);
         this.TOClocation = document.getElementById("TOCwindow") as HTMLElement;    
         this.DeployTOC()
     }
@@ -450,7 +456,10 @@ class TableOfContents {
     }
     ToggleDisplay(setState:boolean|null = null) {
         if (this.EXTRAstate) {
-            console.error("Unable to activate TOC while Special Window is active.");
+            console.error("Unable to activate TOC while EXTRAS is active.");
+            return
+        } else if (this.CTRLstate) {
+            console.error("Unable to activate TOC while CONTROL is active.");
             return
         }
         if (setState == null) {
@@ -464,7 +473,10 @@ class TableOfContents {
     }
     ToggleInfo(setState:boolean|null = null) {
         if (this.TOCstate) {
-            console.error("Unable to activate Special Window while TOC is active.");
+            console.error("Unable to activate EXTRAS while TOC is active.");
+            return
+        } else if (this.CTRLstate) {
+            console.error("Unable to activate EXTRAS while CONTROL is active.");
             return
         }
         if (setState == null) {
@@ -475,6 +487,23 @@ class TableOfContents {
         console.log("TableOfContents.ToggleInfo",`Special Window is now ${this.EXTRAstate ? "shown" : "hidden"}.`)
         // Changing width of TOC? Set --TOCWIDTH in contentstyles.css
         ROOT.style.setProperty("--READER_EXTRAOFFSET", this.EXTRAstate ? "calc( -1 * var(--EXTRAWIDTH))" : "0px")
+    }
+    ToggleControls(setState:boolean|null = null) {
+        if (this.TOCstate) {
+            console.error("Unable to activate CONTROL while TOC is active.");
+            return
+        } else if (this.EXTRAstate) {
+            console.error("Unable to activate CONTROL while EXTRAS is active.");
+            return
+        }
+        if (setState == null) {
+            this.CTRLstate = !this.CTRLstate;
+        } else {
+            this.CTRLstate = setState;
+        }
+        console.log("TableOfContents.ToggleControls",`Special Window is now ${this.CTRLstate ? "shown" : "hidden"}.`)
+        // Changing width of TOC? Set --TOCWIDTH in contentstyles.css
+        ROOT.style.setProperty("--READER_CTRLOFFSET", this.CTRLstate ? "var(--CTRLWIDTH)" : "0px")
     }
     DeployTOC() {
         let chapters = this.list.ChapterList

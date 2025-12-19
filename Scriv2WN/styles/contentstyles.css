@@ -6,9 +6,12 @@
     /* Position of reader whether or not TOC or other things are shown.*/
     --READER_TOCOFFSET:     0px;
     --READER_EXTRAOFFSET:   0px;
-    --READER_FULLOFFSET:    calc( var(--READER_TOCOFFSET) + var(--READER_EXTRAOFFSET) );
+    --READER_CTRLOFFSET:    0px;
+    --READER_X_OFFSET:      calc( var(--READER_TOCOFFSET) + var(--READER_EXTRAOFFSET) );
+    --READER_Y_OFFSET:      var(--READER_CTRLOFFSET);
     --TOCWIDTH:             min(500px,80vw);
     --EXTRAWIDTH:           min(500px,80vw);
+    --CTRLWIDTH:            var(--MenuHeight);
 
     /* TOC identifier images */
     --TitleImageTOC:        url("../design/Paragate_logo.png");
@@ -68,7 +71,6 @@
 
 
     /* Layout Characteristics */
-    --MenuHeight:           50px;
     --MenuPad:              10px;    
     --FooterHeight:         80px;
     --FooterPad:            10px;
@@ -148,7 +150,7 @@ div > div {
     */
 div.TOC {
     position:absolute;
-    top:0;
+    top: var(--READER_CTRLOFFSET);
     width: var(--TOCWIDTH);
     height: 100dvh;
     background: var(--MidgroundColor);
@@ -156,11 +158,11 @@ div.TOC {
     overflow-x: hidden;
     overflow-y: scroll;    
     left: var(--READER_EXTRAOFFSET);
-    transition: left 0.8s ease-in-out;
+    transition: left 0.8s ease-in-out, top 0.2s ease-in-out;
 }
 div.EXTRAS {
     position:absolute;
-    top:0;
+    top: var(--READER_CTRLOFFSET);
     width: var(--EXTRAWIDTH);
     height: 100dvh;
     background: var(--MidgroundColor);
@@ -168,8 +170,21 @@ div.EXTRAS {
     overflow-x: hidden;
     overflow-y: scroll;
     right: calc( -1 * var(--READER_TOCOFFSET) );
-    transition: right 0.8s ease-in-out;
+    transition: right 0.8s ease-in-out, top 0.2s ease-in-out;
 }
+div.CONTROLLER {
+    position:absolute;
+    top: 0;
+    width: 100vw;
+    height: var(--MenuHeight);
+    background: var(--MidgroundColor);
+    color: var(--TextColor);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    left: calc( ( var(--READER_TOCOFFSET) ) + var(--READER_EXTRAOFFSET) );
+    transition: left 0.8s ease-in-out;
+}
+
 div.EXTRACONTENT {
     position:relative;
     width:calc( 100% - 80px );
@@ -411,9 +426,9 @@ div.READER {
     position:absolute;
     width: 100vw;
     height:100dvh;
-    left: var(--READER_FULLOFFSET);
-    transition: left 0.8s ease-in-out;
-    top:0px;
+    left: var(--READER_X_OFFSET);
+    transition: left 0.8s ease-in-out, top 0.8s ease-in-out;
+    top:var(--READER_Y_OFFSET);
     /*border: 2px solid dimgray;*/
     box-shadow: 0px 0px 20px black;
 }
@@ -436,9 +451,10 @@ div.HEADER {
     background-color: transparent;
     transition: background-color 0.2s ease-in-out;
 }
+/*
 div.HEADER:hover {
     background-color: var(--MidgroundColor);
-}
+}*/
 div.BODY {
     position: absolute;
     top: var(--BodyStart);
@@ -490,6 +506,14 @@ div.TOGGLEINFO {
     right:0;
     top:50dvh;
     transform: translateX(calc(50% - 20px)) translateY(50%) rotate(90deg);
+    color: var(--TextColor);
+    font-size: 1.35em;
+}
+div.TOGGLECTRL {
+    position:absolute;
+    right:50vw;
+    top:0;
+    transform: translateY(calc(50% + 10px)) translateX(50%);
     color: var(--TextColor);
     font-size: 1.35em;
 }
