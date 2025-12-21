@@ -59,7 +59,7 @@ class StoryExtrasWindow {
                     return false;
                 }
                 this.Content = yield response.text();
-                console.info("StoryExtrasWindow.loadContent", `Content loaded from ${url}:`, this.Content);
+                console.info("StoryExtrasWindow.loadContent", `Content loaded from ${url}.`);
                 return true;
             }
             catch (error) {
@@ -660,7 +660,7 @@ class ChapterBinder {
             console.log(`--- User access report: ---\n > Today is ${today.getUTCDate()}.\n > Access level is ${["GUEST", "REVIEWER", "ADMIN"][this.Permissions]} (${this.Permissions}).\n> User has access to: `, this.ChapterBounds.active);
         }
     }
-    constructor(rootURL, storyName, prgmConfig, source, permissions = 0, dataCard, elementID = "", doDeployment = 1, doReport = true) {
+    constructor(rootURL, storyName, prgmConfig, source, permissions = 0, dataCard, elementID = "", doDeployment = 1, doReport = true, IncludeSettingTags) {
         this.rootURL = "";
         this.storyName = "";
         this.SessionBinder = {};
@@ -684,6 +684,7 @@ class ChapterBinder {
         this.Permissions = permissions;
         this.DataCard = dataCard;
         this.Config = prgmConfig;
+        this.SHOW_STARTER_TAGS = IncludeSettingTags;
         // Establish accessible chapters per user criterion.
         this.ChapterBounds = { active: [], whitelist: [], full: [] };
         this.HandlePermissions();
@@ -698,10 +699,10 @@ class ChapterBinder {
         return;
     }
     static initialize(rootURL_1, storyName_1, prgmConfig_1) {
-        return __awaiter(this, arguments, void 0, function* (rootURL, storyName, prgmConfig, permissions = 0, dataCard, elementID = "", doDeployment = 1) {
+        return __awaiter(this, arguments, void 0, function* (rootURL, storyName, prgmConfig, permissions = 0, dataCard, elementID = "", doDeployment = 1, IncludeSettingTags = false) {
             let sourceURL = `${rootURL}/TOC/TOC_${storyName}.json`;
             let source = yield TableOfContents.initialize(sourceURL, storyName);
-            return new ChapterBinder(rootURL, storyName, prgmConfig, source, permissions, dataCard, elementID, doDeployment);
+            return new ChapterBinder(rootURL, storyName, prgmConfig, source, permissions, dataCard, elementID, doDeployment, false, IncludeSettingTags);
         });
     }
     doWhitelist(requestedChapter) {
@@ -793,11 +794,12 @@ class ChapterBinder {
                 targetElement.innerHTML = "";
             }
             // By this point, we have the chapter in the binder and a valid target element.
-            console.info("ChapterBinder.DeployOnPage", "Deploying chapter on page.");
+            console.info("ChapterBinder.DeployOnPage", `Deploying chapter on page. This chapter ${this.SHOW_STARTER_TAGS ? "DOES" : "DOES NOT"} include setting tags.`);
             // Get chapter content from the Session Binder.
             let chapter = this.SessionBinder[requestedChapter];
             // Chapter content (HTML) starts empty.
             let chapterContent = "";
+            let starterTag = "";
             // Get chapter info from TOC for this chapter.
             let ChapterInfo = this.TOC[requestedChapter - 1];
             // CHAPTER HEADER:
@@ -822,6 +824,12 @@ class ChapterBinder {
                 let sectionContent = "";
                 let lineContent = [];
                 let wasNote = false;
+                // Handle story starter tags.
+                if (this.SHOW_STARTER_TAGS) {
+                    console.debug(ChapterInfo.Character[thisSection]);
+                    starterTag = `<p class="Body${ChapterInfo.Character[thisSection]} StarterTag">${ChapterInfo.Character[thisSection]}</p>`;
+                }
+                chapterContent += starterTag;
                 section.forEach((feedline) => {
                     // Store content of this individual line.
                     // The Section Style is an array containing the perspective of each section e.g. [Cody, Katiya, Titus, ...]
@@ -831,22 +839,14 @@ class ChapterBinder {
                     let style = feedline[0];
                     let text = feedline[1];
                     let isEOL = Boolean(feedline[2]);
-                    //let isEOM : boolean = () && ();
-                    // This fixes note behavior @OPTIMIZE                
-                    if (style.includes('Note')) {
-                        isEOL = false;
+                    let doPB = Boolean(feedline[3]); // do paragraph break instead of </p>     
+                    let isRawHTML = Boolean(feedline[4]); // this is a special, raw HTML section.
+                    if (doPB) {
                         text += '<br>';
-                    }
-                    if (wasNote && (!style.includes('Note'))) {
-                        thisLine += 1;
-                        // Append resolved line to section
-                        sectionContent += this.ResolveThisLine(lineContent, LineID, SectionStyle);
-                        // flush lineContent
-                        lineContent = [];
                     }
                     lineContent.push([style, text]);
                     // End of line means closing </p> tag.
-                    if (isEOL) {
+                    if (isEOL && (!doPB)) {
                         thisLine += 1;
                         // Append resolved line to section
                         sectionContent += this.ResolveThisLine(lineContent, LineID, SectionStyle);
@@ -854,7 +854,6 @@ class ChapterBinder {
                         lineContent = [];
                     }
                     wasEOL = isEOL;
-                    wasNote = style.includes('Note');
                 });
                 chapterContent += `<div class='section' id='${SectionID}'> ${sectionContent} </div>`;
                 thisSection += 1;
@@ -1321,7 +1320,7 @@ function buildManuscript(rootURL_1, storyName_1) {
         CFG = yield StoryConfig.initialize(rootURL, storyName);
         CARD = new ChapterDataCard(storyName);
         CARD.toggleNightMode(false); // Start in Night Mode.
-        BIND = yield ChapterBinder.initialize(rootURL, storyName, CFG, 0, CARD, DEPLOY, 0);
+        BIND = yield ChapterBinder.initialize(rootURL, storyName, CFG, 0, CARD, DEPLOY, 0, IncludeSettingTags);
         SRC = yield LocalStorageAndSrcVars.initialize(BIND);
         CTRL = new ControlBar(SRC, CARD);
         //BIND.DeployOnPage(CARD.Data.TOC.Chapter,DEPLOY)
@@ -1377,6 +1376,7 @@ var THEME;
 var SRC;
 var EXTRAS;
 var CTRL;
+var IncludeSettingTags = true;
 var eBackground = document.getElementById("BACKGROUND");
 var eText = document.getElementById("BODY");
 var eProgressBar = document.getElementById("PROGRESS");

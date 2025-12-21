@@ -148,7 +148,8 @@ StringTypeDict = {
     "MessageToDate" : "Timestamp", # deprecated
     "em"            : "Emphasis",
     "Internal"      : "Internal",
-    "MessageTimestamp":"Timestamp"
+    "MessageTimestamp":"Timestamp",
+    "RawHTML"       : "RawHTML"
     }    
 # If an orphaned type, default to this section's body style.
 PerspectiveDefaults = {
@@ -181,7 +182,11 @@ def getLineMetadata(Sentence,Perspective="Default"):
         suffix = fragments[i].find("]}")
         # Both must exist to read identifier and body text, respectively
         if (prefix != -1) and (suffix != -1) and (suffix > prefix):
-            lineclass = StringTypeDict[fragments[i][prefix+2:suffix]]
+            try:
+                lineclass = StringTypeDict[fragments[i][prefix+2:suffix]]
+            except:
+                print(f"ERROR parsing line style {fragments[i][prefix+2:suffix]}. Defaulting to {DefaultClass}.")
+                lineclass = DefaultClass
             line = fragments[i][suffix+2:len(Sentence)]
             # Set default to a MessageType if this is a MESSAGE LINE.
             if (lineclass == "MessageFrom" or lineclass == "MessageTo"):
@@ -193,13 +198,20 @@ def getLineMetadata(Sentence,Perspective="Default"):
             line = fragments[i]
         # Identifier with no line is not appended: disregard.
         if len(line) > 0:
-            newlines.append([lineclass,line,False,False]) 
-            # Order:    | CLASS  |  LINE TEXT  |  isEOL (end of <p>)  |  do PB instead of </p>  |
+            newlines.append([lineclass,line,False,False,False]) 
+            # Order:    [1] CLASS  
+            #           [2] LINE TEXT 
+            #           [3] isEOL (end of <p>)
+            #           [4] do PB instead of </p>
+            #           [5] Raw HTML?
             # Note: EOL set FALSE but last entry set TRUE later.
     for newline in newlines:
         # Orphaned text without identifier gets section default body style.
         if newline[0] is None:
             newline[0] = DefaultClass
+        # Is this raw HTML code?
+        if newline[0] == "RawHTML":
+            newline[4] = True
     # Set last entry in the sentence as the End Of Line (EOL)
     newlines[-1][2] = True
     # Return newlines as array [[style,text,isEndOfLine],[...]]
@@ -316,9 +328,11 @@ def InterpretJSON(js,info=True):
     for indexChapter in range(len(STORY)):
         for Scene in STORY[indexChapter]['Body']:
             SceneCount = len(Scene);
-            Scene.append(['EndOfScene',' ',True,False])
+            Scene.append(['EndOfScene',' ',True,False,False])
             for indexLine in range(SceneCount):
-                if ( (Scene[indexLine][0].find('Note') != -1) and (Scene[indexLine+1][0].find('Note') != -1)):
+                NotLastLineOfNote = (Scene[indexLine][0].find('Note') != -1) and (Scene[indexLine+1][0].find('Note') != -1)
+                
+                if (NotLastLineOfNote ):
                     Scene[indexLine][3] = True;
                     
     if noPOVwarnings: print("No POV errors found in manuscript. Good work.")
