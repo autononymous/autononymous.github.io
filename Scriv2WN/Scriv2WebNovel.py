@@ -193,7 +193,8 @@ def getLineMetadata(Sentence,Perspective="Default"):
             line = fragments[i]
         # Identifier with no line is not appended: disregard.
         if len(line) > 0:
-            newlines.append([lineclass,line,False]) 
+            newlines.append([lineclass,line,False,False]) 
+            # Order:    | CLASS  |  LINE TEXT  |  isEOL (end of <p>)  |  do PB instead of </p>  |
             # Note: EOL set FALSE but last entry set TRUE later.
     for newline in newlines:
         # Orphaned text without identifier gets section default body style.
@@ -306,10 +307,23 @@ def InterpretJSON(js,info=True):
                 if Fragments is not None:
                     for Fragment in Fragments:
                         ChapterData['Body'][-1].append(Fragment)
-                        ChapterData['WCs'][-1] += len(Fragment[1].split(" "))
+                        ChapterData['WCs'][-1] += len(Fragment[1].split(" "))    
             PubDateLog += f"|\t{ChapterData['WCs'][-1]}"
+    # Some lines require line breaks instead of paragraph tags: the current
+    #   example is when a NOTE type is present -- if the next style is also
+    #   a NOTE, it should only be a line break instead of a paragraph break,
+    #   or else the appearance will be segmented.
+    for indexChapter in range(len(STORY)):
+        for Scene in STORY[indexChapter]['Body']:
+            SceneCount = len(Scene);
+            Scene.append(['EndOfScene',' ',True,False])
+            for indexLine in range(SceneCount):
+                if ( (Scene[indexLine][0].find('Note') != -1) and (Scene[indexLine+1][0].find('Note') != -1)):
+                    Scene[indexLine][3] = True;
+                    
     if noPOVwarnings: print("No POV errors found in manuscript. Good work.")
     print(f"\n{PubDateLog}\n")
+    
     return MANUSCRIPT
 
 def MakeDirIfNotExists(path):
