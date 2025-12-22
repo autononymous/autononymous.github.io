@@ -227,7 +227,7 @@ div.EXTRACONTENT {
     top:20px;
     /*border: 1px solid white;*/
     min-height: 500px;
-    border-top: 1px solid var(--BooleanColor);
+    /*border-top: 1px solid var(--BooleanColor);/**/
 }
 div.EXTRACONTENT > h1 {
     border-left: 2px solid var(--TextColor);
@@ -341,7 +341,12 @@ div.EXwindow {
 div.TEX_HEAD {
     margin-top: 10px;
     text-align: center;
-    font-size: 1.125em;/*calc(var(--TextSize) * 0.75);/**/
+    font-size: 1.125em;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: linear-gradient(to right, transparent 20px,var(--BackgroundColor) 80px,var(--BackgroundColor) calc(100% - 80px),transparent calc(100% - 20px));
 }
 div.TTC_HEADER {
     margin-top: 10px;
