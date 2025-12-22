@@ -1500,9 +1500,11 @@ function LoadOtherStory(otherstory:string) {
             default:
                 break;
         }
+        let origin:string = location.origin != 'null' ? location.origin : "";
+        let path:string   = location.pathname
+        let hash:string   = location.hash
 
-
-    window.open(location.origin + location.pathname + location.hash + '?story=Firebrand' + varargin,'_top')
+    window.open(origin + path + hash + `?story=${otherstory}` + varargin,'_top')
 }
 
 

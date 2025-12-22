@@ -1439,7 +1439,10 @@ function LoadOtherStory(otherstory) {
         default:
             break;
     }
-    window.open(location.origin + location.pathname + location.hash + '?story=Firebrand' + varargin, '_top');
+    let origin = location.origin != 'null' ? location.origin : "";
+    let path = location.pathname;
+    let hash = location.hash;
+    window.open(origin + path + hash + `?story=${otherstory}` + varargin, '_top');
 }
 //  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 //
