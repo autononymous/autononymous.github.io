@@ -224,7 +224,7 @@ class LocalStorageAndSrcVars {
         });
     }
     SaveLocalStorage() {
-        localStorage.setItem('SG_Bookmark', JSON.stringify(this.Local));
+        localStorage.setItem(this.SaveName, JSON.stringify(this.Local));
         console.info("LSASV.ParseSrcVars", "Saved local storage:", this.Local);
     }
     SetSavedChapter(chapter) {
