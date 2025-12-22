@@ -1474,6 +1474,21 @@ var eText = document.getElementById("BODY");
 var eProgressBar = document.getElementById("PROGRESS");
 // @TODO this will be defined by a JSON config file.
 var rootURL = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/Scriv2WN";
+// Append provided tags to document <head>
+const iconaddress = `icons/favicon-${ACTIVESTORY}.png`;
+(() => {
+    const head = document.head || document.getElementsByTagName('head')[0];
+    const linkDefs = [
+        { rel: "icon", href: iconaddress, type: "image/x-icon" },
+        { rel: "icon", href: iconaddress, type: "image/png", sizes: "32x32" },
+        { rel: "apple-touch-icon", href: "icons/apple-touch-icon.png" }
+    ];
+    linkDefs.forEach(def => {
+        const link = document.createElement("link");
+        Object.entries(def).forEach(([k, v]) => link.setAttribute(k, v));
+        head.appendChild(link);
+    });
+})();
 buildManuscript(rootURL, ACTIVESTORY, StartChapter);
 eBODY.addEventListener('scroll', runScrollEvents);
 addEventListener("resize", runResizeEvents);
