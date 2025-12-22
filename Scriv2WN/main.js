@@ -405,7 +405,8 @@ class ChapterDataCard {
         else {
             this.NightMode = !this.NightMode;
         }
-        ROOT.style.setProperty("--IconState", `invert(${this.NightMode})`);
+        ROOT.style.setProperty("--IconState", `invert(${Number(this.NightMode)})`);
+        ROOT.style.setProperty("--IconReverse", `invert(${Number(!this.NightMode)})`);
         ROOT.style.setProperty("--BooleanColor", `${this.NightMode ? "white" : "black"}`);
         console.info(`Night mode is now ${this.NightMode ? "on" : "off"}.`);
         return this.NightMode;
