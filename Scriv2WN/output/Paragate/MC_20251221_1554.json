@@ -1306,32 +1306,28 @@
          ],
          "Settings": [
             {
-               "Date": "2026-04-24",
-               "Time": "22:00:00",
-               "ISO": "2026-04-24T22:00:00Z",
-               "Region": "Hearthland Ridge",
-               "Area": ""
+               "ModernTime": "04/25/26",
+               "FantasyTime": "2A-128, 54th of Verdantide",
+               "StoryDay": "Saturday",
+               "Setting": "Hearthland Ridge Estates"
             },
             {
-               "Date": "2026-04-24",
-               "Time": "22:20:00",
-               "ISO": "2026-04-24T22:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/25/26",
+               "FantasyTime": "2A-128, 54th of Verdantide",
+               "StoryDay": "Saturday",
+               "Setting": "Hearthland Ridge Estates"
             },
             {
-               "Date": "2026-04-25",
-               "Time": "22:40:00",
-               "ISO": "2026-04-25T22:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/25/26",
+               "FantasyTime": "2A-128, 54th of Verdantide",
+               "StoryDay": "Saturday",
+               "Setting": "Hearthland Ridge Estates"
             },
             {
-               "Date": "2026-04-25",
-               "Time": "23:15:00",
-               "ISO": "2026-04-25T23:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/25/26",
+               "FantasyTime": "2A-128, 54th of Verdantide",
+               "StoryDay": "Saturday",
+               "Setting": "Hearthland Ridge Estates"
             }
          ],
          "WCs": [
@@ -2131,25 +2127,22 @@
          ],
          "Settings": [
             {
-               "Date": "2026-04-23",
-               "Time": "14:30:00",
-               "ISO": "2026-04-23T14:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/24/26",
+               "FantasyTime": "2A-128, 53rd of Verdantide",
+               "StoryDay": "Friday",
+               "Setting": "Last Gaffe Tavern"
             },
             {
-               "Date": "2026-04-23",
-               "Time": "15:00:00",
-               "ISO": "2026-04-23T15:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/24/26",
+               "FantasyTime": "2A-128, 53rd of Verdantide",
+               "StoryDay": "Friday",
+               "Setting": "Last Gaffe Tavern"
             },
             {
-               "Date": "2026-04-23",
-               "Time": "17:30:00",
-               "ISO": "2026-04-23T17:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/24/26",
+               "FantasyTime": "2A-128, 53rd of Verdantide",
+               "StoryDay": "Friday",
+               "Setting": "Last Gaffe Tavern"
             }
          ],
          "WCs": [
@@ -3557,25 +3550,22 @@
          ],
          "Settings": [
             {
-               "Date": "2026-04-24",
-               "Time": "16:30:00",
-               "ISO": "2026-04-24T16:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/24/26",
+               "FantasyTime": "2A-128, 53rd of Verdantide",
+               "StoryDay": "Friday",
+               "Setting": "Navidson-Monroe Battery Division"
             },
             {
-               "Date": "2026-04-24",
-               "Time": "16:55:00",
-               "ISO": "2026-04-24T16:55:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/24/26",
+               "FantasyTime": "2A-128, 53rd of Verdantide",
+               "StoryDay": "Friday",
+               "Setting": "Navidson-Monroe Battery Division"
             },
             {
-               "Date": "2026-04-24",
-               "Time": "19:45:00",
-               "ISO": "2026-04-24T19:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/24/26",
+               "FantasyTime": "2A-128, 53rd of Verdantide",
+               "StoryDay": "Friday",
+               "Setting": "Navidson-Monroe Battery Division"
             }
          ],
          "WCs": [
@@ -4255,25 +4245,22 @@
          ],
          "Settings": [
             {
-               "Date": "2026-04-24",
-               "Time": "03:00:00",
-               "ISO": "2026-04-24T03:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/25/26",
+               "FantasyTime": "2A-128, 54th of Verdantide",
+               "StoryDay": "Saturday",
+               "Setting": "Knights&apos; Quarter"
             },
             {
-               "Date": "2026-04-24",
-               "Time": "04:00:00",
-               "ISO": "2026-04-24T04:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/25/26",
+               "FantasyTime": "2A-128, 54th of Verdantide",
+               "StoryDay": "Saturday",
+               "Setting": "Knights&apos; Quarter"
             },
             {
-               "Date": "2026-04-24",
-               "Time": "04:15:00",
-               "ISO": "2026-04-24T04:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/25/26",
+               "FantasyTime": "2A-128, 54th of Verdantide",
+               "StoryDay": "Saturday",
+               "Setting": "Knights&apos; Quarter"
             }
          ],
          "WCs": [
@@ -5117,18 +5104,16 @@
          ],
          "Settings": [
             {
-               "Date": "2026-04-24",
-               "Time": "18:15:00",
-               "ISO": "2026-04-24T18:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/24/26",
+               "FantasyTime": "2A-128, 53rd of Verdantide",
+               "StoryDay": "Friday",
+               "Setting": "Navidson-Monroe Aerospace"
             },
             {
-               "Date": "2026-04-24",
-               "Time": "21:45:00",
-               "ISO": "2026-04-24T21:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/24/26",
+               "FantasyTime": "2A-128, 53rd of Verdantide",
+               "StoryDay": "Friday",
+               "Setting": "Navidson-Monroe Aerospace"
             }
          ],
          "WCs": [
@@ -6045,25 +6030,22 @@
          ],
          "Settings": [
             {
-               "Date": "2026-04-24",
-               "Time": "20:15:00",
-               "ISO": "2026-04-24T20:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/25/26",
+               "FantasyTime": "2A-128, 54th of Verdantide",
+               "StoryDay": "Saturday",
+               "Setting": "Southern Fields"
             },
             {
-               "Date": "2026-04-24",
-               "Time": "20:35:00",
-               "ISO": "2026-04-24T20:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/25/26",
+               "FantasyTime": "2A-128, 54th of Verdantide",
+               "StoryDay": "Saturday",
+               "Setting": "Southern Fields"
             },
             {
-               "Date": "2026-04-24",
-               "Time": "21:15:00",
-               "ISO": "2026-04-24T21:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/25/26",
+               "FantasyTime": "2A-128, 54th of Verdantide",
+               "StoryDay": "Saturday",
+               "Setting": "Southern Fields"
             }
          ],
          "WCs": [
@@ -6837,18 +6819,16 @@
          ],
          "Settings": [
             {
-               "Date": "2026-04-25",
-               "Time": "22:20:00",
-               "ISO": "2026-04-25T22:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/25/26",
+               "FantasyTime": "2A-128, 54th of Verdantide",
+               "StoryDay": "Saturday",
+               "Setting": "Unknown Location"
             },
             {
-               "Date": "2026-04-25",
-               "Time": "22:40:00",
-               "ISO": "2026-04-25T22:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/25/26",
+               "FantasyTime": "2A-128, 54th of Verdantide",
+               "StoryDay": "Saturday",
+               "Setting": "Unknown Location"
             }
          ],
          "WCs": [
@@ -7432,18 +7412,16 @@
          ],
          "Settings": [
             {
-               "Date": "2026-04-25",
-               "Time": "23:15:00",
-               "ISO": "2026-04-25T23:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/25/26",
+               "FantasyTime": "2A-128, 54th of Verdantide",
+               "StoryDay": "Saturday",
+               "Setting": "Unknown Location"
             },
             {
-               "Date": "2026-04-26",
-               "Time": "00:10:00",
-               "ISO": "2026-04-26T00:10:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/25/26",
+               "FantasyTime": "2A-128, 54th of Verdantide",
+               "StoryDay": "Saturday",
+               "Setting": "Unknown Location"
             }
          ],
          "WCs": [
@@ -8153,18 +8131,16 @@
          ],
          "Settings": [
             {
-               "Date": "2026-04-26",
-               "Time": "08:52:00",
-               "ISO": "2026-04-26T08:52:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/27/26",
+               "FantasyTime": "2A-128, 56th of Verdantide",
+               "StoryDay": "Undefined",
+               "Setting": "Hearthland Ridge Estates"
             },
             {
-               "Date": "2026-04-26",
-               "Time": "09:01:12",
-               "ISO": "2026-04-26T09:01:12Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/27/26",
+               "FantasyTime": "2A-128, 56th of Verdantide",
+               "StoryDay": "Undefined",
+               "Setting": "Hearthland Ridge Estates"
             }
          ],
          "WCs": [
@@ -8766,25 +8742,22 @@
          ],
          "Settings": [
             {
-               "Date": "2026-04-25",
-               "Time": "01:15:00",
-               "ISO": "2026-04-25T01:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/27/26",
+               "FantasyTime": "2A-128, 56th of Verdantide",
+               "StoryDay": "Undefined",
+               "Setting": "Knights&apos; Quarter"
             },
             {
-               "Date": "2026-05-22",
-               "Time": "19:45:00",
-               "ISO": "2026-05-22T19:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/27/26",
+               "FantasyTime": "2A-128, 56th of Verdantide",
+               "StoryDay": "Undefined",
+               "Setting": "Knights&apos; Quarter"
             },
             {
-               "Date": "2026-05-22",
-               "Time": "20:30:00",
-               "ISO": "2026-05-22T20:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "04/27/26",
+               "FantasyTime": "2A-128, 56th of Verdantide",
+               "StoryDay": "Undefined",
+               "Setting": "Knights&apos; Quarter"
             }
          ],
          "WCs": [
@@ -9366,25 +9339,22 @@
          ],
          "Settings": [
             {
-               "Date": "2026-05-22",
-               "Time": "12:30:00",
-               "ISO": "2026-05-22T12:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "05/22/26",
+               "FantasyTime": "",
+               "StoryDay": "Friday",
+               "Setting": "Navidson-Monroe Battery Division"
             },
             {
-               "Date": "2026-05-22",
-               "Time": "12:50:00",
-               "ISO": "2026-05-22T12:50:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "05/22/26",
+               "FantasyTime": "",
+               "StoryDay": "Friday",
+               "Setting": "Navidson-Monroe Battery Division"
             },
             {
-               "Date": "2026-05-22",
-               "Time": "17:45:00",
-               "ISO": "2026-05-22T17:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "05/22/26",
+               "FantasyTime": "",
+               "StoryDay": "Friday",
+               "Setting": "Navidson-Monroe Battery Division"
             }
          ],
          "WCs": [
@@ -9850,18 +9820,16 @@
          ],
          "Settings": [
             {
-               "Date": "2026-05-22",
-               "Time": "20:35:00",
-               "ISO": "2026-05-22T20:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "05/22/26",
+               "FantasyTime": "2A-128, 81st of Suntide",
+               "StoryDay": "Friday",
+               "Setting": "Southern Fields"
             },
             {
-               "Date": "2026-05-22",
-               "Time": "21:15:00",
-               "ISO": "2026-05-22T21:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "05/22/26",
+               "FantasyTime": "2A-128, 81st of Suntide",
+               "StoryDay": "Friday",
+               "Setting": "Southern Fields"
             }
          ],
          "WCs": [
@@ -10327,14 +10295,14 @@
                   false
                ],
                [
-                  "NoteCody",
+                  "BodyCody",
                   "STU GOV KING + QUEEN",
                   true,
-                  true,
+                  false,
                   false
                ],
                [
-                  "NoteCody",
+                  "BodyCody",
                   "2016",
                   true,
                   false,
@@ -10746,18 +10714,16 @@
          ],
          "Settings": [
             {
-               "Date": "2026-05-23",
-               "Time": "02:23:00",
-               "ISO": "2026-05-23T02:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "05/22/26",
+               "FantasyTime": "2A-128, 81st of Suntide",
+               "StoryDay": "Friday",
+               "Setting": "Hearthland Ridge Estates"
             },
             {
-               "Date": "2026-05-23",
-               "Time": "07:15:00",
-               "ISO": "2026-05-23T07:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "05/22/26",
+               "FantasyTime": "2A-128, 81st of Suntide",
+               "StoryDay": "Friday",
+               "Setting": "Hearthland Ridge Estates"
             }
          ],
          "WCs": [
@@ -11842,25 +11808,22 @@
          ],
          "Settings": [
             {
-               "Date": "2026-05-23",
-               "Time": "08:15:00",
-               "ISO": "2026-05-23T08:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "05/23/26",
+               "FantasyTime": "2A-128, 82nd of Suntide",
+               "StoryDay": "Saturday",
+               "Setting": "Hearthland Ridge Estates"
             },
             {
-               "Date": "2026-05-23",
-               "Time": "08:23:00",
-               "ISO": "2026-05-23T08:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "05/23/26",
+               "FantasyTime": "2A-128, 82nd of Suntide",
+               "StoryDay": "Saturday",
+               "Setting": "Hearthland Ridge Estates"
             },
             {
-               "Date": "2026-05-23",
-               "Time": "08:58:00",
-               "ISO": "2026-05-23T08:58:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "05/23/26",
+               "FantasyTime": "2A-128, 82nd of Suntide",
+               "StoryDay": "Saturday",
+               "Setting": "Hearthland Ridge Estates"
             }
          ],
          "WCs": [
@@ -13065,25 +13028,22 @@
          ],
          "Settings": [
             {
-               "Date": "2026-05-24",
-               "Time": "04:56:37",
-               "ISO": "2026-05-24T04:56:37Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "05/24/26",
+               "FantasyTime": "2A-128, 83rd of Suntide",
+               "StoryDay": "Sunday",
+               "Setting": "Knights&apos; Quarter"
             },
             {
-               "Date": "2026-05-24",
-               "Time": "04:59:00",
-               "ISO": "2026-05-24T04:59:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "05/24/26",
+               "FantasyTime": "2A-128, 83rd of Suntide",
+               "StoryDay": "Sunday",
+               "Setting": "Knights&apos; Quarter"
             },
             {
-               "Date": "2026-05-24",
-               "Time": "10:12:00",
-               "ISO": "2026-05-24T10:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "05/24/26",
+               "FantasyTime": "2A-128, 83rd of Suntide",
+               "StoryDay": "Sunday",
+               "Setting": "Knights&apos; Quarter"
             }
          ],
          "WCs": [
@@ -13931,25 +13891,22 @@
          ],
          "Settings": [
             {
-               "Date": "2026-05-25",
-               "Time": "11:26:00",
-               "ISO": "2026-05-25T11:26:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/11/26",
+               "FantasyTime": "2A-128, 84th of Suntide",
+               "StoryDay": "Thursday",
+               "Setting": "Navidson-Monroe Battery Division"
             },
             {
-               "Date": "2026-05-25",
-               "Time": "11:43:00",
-               "ISO": "2026-05-25T11:43:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/11/26",
+               "FantasyTime": "2A-128, 84th of Suntide",
+               "StoryDay": "Thursday",
+               "Setting": "Navidson-Monroe Battery Division"
             },
             {
-               "Date": "2026-05-25",
-               "Time": "16:12:00",
-               "ISO": "2026-05-25T16:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/11/26",
+               "FantasyTime": "2A-128, 84th of Suntide",
+               "StoryDay": "Thursday",
+               "Setting": "Navidson-Monroe Battery Division"
             }
          ],
          "WCs": [
@@ -15109,32 +15066,28 @@
          ],
          "Settings": [
             {
-               "Date": "2026-05-26",
-               "Time": "06:23:00",
-               "ISO": "2026-05-26T06:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/12/26",
+               "FantasyTime": "2A-128, 9th of Suntide",
+               "StoryDay": "Wednesday",
+               "Setting": "Knights&apos; Quarter"
             },
             {
-               "Date": "2026-05-26",
-               "Time": "08:23:00",
-               "ISO": "2026-05-26T08:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/12/26",
+               "FantasyTime": "2A-128, 9th of Suntide",
+               "StoryDay": "Wednesday",
+               "Setting": "Knights&apos; Quarter"
             },
             {
-               "Date": "2026-05-26",
-               "Time": "08:29:00",
-               "ISO": "2026-05-26T08:29:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/12/26",
+               "FantasyTime": "2A-128, 9th of Suntide",
+               "StoryDay": "Wednesday",
+               "Setting": "Knights&apos; Quarter"
             },
             {
-               "Date": "2026-05-26",
-               "Time": "09:26:00",
-               "ISO": "2026-05-26T09:26:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/12/26",
+               "FantasyTime": "2A-128, 9th of Suntide",
+               "StoryDay": "Wednesday",
+               "Setting": "Knights&apos; Quarter"
             }
          ],
          "WCs": [
@@ -15944,18 +15897,16 @@
          ],
          "Settings": [
             {
-               "Date": "2026-06-27",
-               "Time": "08:27:00",
-               "ISO": "2026-06-27T08:27:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/14/26",
+               "FantasyTime": "2A-128, 13rd of Suntide",
+               "StoryDay": "Sunday",
+               "Setting": "Hearthland Ridge Estates"
             },
             {
-               "Date": "2026-06-27",
-               "Time": "11:02:00",
-               "ISO": "2026-06-27T11:02:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/14/26",
+               "FantasyTime": "2A-128, 13rd of Suntide",
+               "StoryDay": "Sunday",
+               "Setting": "Hearthland Ridge Estates"
             }
          ],
          "WCs": [
@@ -17103,25 +17054,22 @@
          ],
          "Settings": [
             {
-               "Date": "2026-06-28",
-               "Time": "09:23:00",
-               "ISO": "2026-06-28T09:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/15/26",
+               "FantasyTime": "2A-128, 14th of Suntide",
+               "StoryDay": "Monday",
+               "Setting": "Hearthland Ridge Estates"
             },
             {
-               "Date": "2026-06-28",
-               "Time": "10:20:00",
-               "ISO": "2026-06-28T10:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/15/26",
+               "FantasyTime": "2A-128, 14th of Suntide",
+               "StoryDay": "Monday",
+               "Setting": "Hearthland Ridge Estates"
             },
             {
-               "Date": "2026-06-28",
-               "Time": "12:03:00",
-               "ISO": "2026-06-28T12:03:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/15/26",
+               "FantasyTime": "2A-128, 14th of Suntide",
+               "StoryDay": "Monday",
+               "Setting": "Hearthland Ridge Estates"
             }
          ],
          "WCs": [
@@ -18225,32 +18173,28 @@
          ],
          "Settings": [
             {
-               "Date": "2026-06-28",
-               "Time": "13:57:00",
-               "ISO": "2026-06-28T13:57:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/24/26",
+               "FantasyTime": "2A-128, 23rd of Suntide",
+               "StoryDay": "Wednesday",
+               "Setting": "Hearthland Ridge Estates"
             },
             {
-               "Date": "2026-06-29",
-               "Time": "11:04:00",
-               "ISO": "2026-06-29T11:04:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/24/26",
+               "FantasyTime": "2A-128, 23rd of Suntide",
+               "StoryDay": "Wednesday",
+               "Setting": "Hearthland Ridge Estates"
             },
             {
-               "Date": "2026-06-29",
-               "Time": "11:05:00",
-               "ISO": "2026-06-29T11:05:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/24/26",
+               "FantasyTime": "2A-128, 23rd of Suntide",
+               "StoryDay": "Wednesday",
+               "Setting": "Hearthland Ridge Estates"
             },
             {
-               "Date": "2026-06-29",
-               "Time": "15:32:00",
-               "ISO": "2026-06-29T15:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/24/26",
+               "FantasyTime": "2A-128, 23rd of Suntide",
+               "StoryDay": "Wednesday",
+               "Setting": "Hearthland Ridge Estates"
             }
          ],
          "WCs": [
@@ -19342,46 +19286,40 @@
          ],
          "Settings": [
             {
-               "Date": "2026-06-29",
-               "Time": "15:33:00",
-               "ISO": "2026-06-29T15:33:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/24/26",
+               "FantasyTime": "2A-128, 23rd of Suntide",
+               "StoryDay": "Wednesday",
+               "Setting": ""
             },
             {
-               "Date": "2026-06-29",
-               "Time": "17:09:00",
-               "ISO": "2026-06-29T17:09:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/24/26",
+               "FantasyTime": "2A-128, 23rd of Suntide",
+               "StoryDay": "Wednesday",
+               "Setting": ""
             },
             {
-               "Date": "2026-06-29",
-               "Time": "15:42:00",
-               "ISO": "2026-06-29T15:42:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/24/26",
+               "FantasyTime": "2A-128, 23rd of Suntide",
+               "StoryDay": "Wednesday",
+               "Setting": ""
             },
             {
-               "Date": "2026-06-29",
-               "Time": "17:24:00",
-               "ISO": "2026-06-29T17:24:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/24/26",
+               "FantasyTime": "2A-128, 23rd of Suntide",
+               "StoryDay": "Wednesday",
+               "Setting": ""
             },
             {
-               "Date": "2026-06-29",
-               "Time": "15:51:00",
-               "ISO": "2026-06-29T15:51:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/24/26",
+               "FantasyTime": "2A-128, 23rd of Suntide",
+               "StoryDay": "Wednesday",
+               "Setting": ""
             },
             {
-               "Date": "2026-06-29",
-               "Time": "18:23:00",
-               "ISO": "2026-06-29T18:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "06/24/26",
+               "FantasyTime": "2A-128, 23rd of Suntide",
+               "StoryDay": "Wednesday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -20631,25 +20569,22 @@
          ],
          "Settings": [
             {
-               "Date": "2026-07-07",
-               "Time": "08:26:00",
-               "ISO": "2026-07-07T08:26:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "07/06/26",
+               "FantasyTime": "2A-128, 35th of Suntide",
+               "StoryDay": "Monday",
+               "Setting": ""
             },
             {
-               "Date": "2026-07-07",
-               "Time": "13:40:00",
-               "ISO": "2026-07-07T13:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "07/06/26",
+               "FantasyTime": "2A-128, 35th of Suntide",
+               "StoryDay": "Monday",
+               "Setting": ""
             },
             {
-               "Date": "2026-07-07",
-               "Time": "17:21:00",
-               "ISO": "2026-07-07T17:21:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "07/06/26",
+               "FantasyTime": "2A-128, 35th of Suntide",
+               "StoryDay": "Monday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -21710,18 +21645,16 @@
          ],
          "Settings": [
             {
-               "Date": "2026-07-07",
-               "Time": "14:04:00",
-               "ISO": "2026-07-07T14:04:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "07/06/26",
+               "FantasyTime": "2A-128, 35th of Suntide",
+               "StoryDay": "Monday",
+               "Setting": ""
             },
             {
-               "Date": "2026-07-07",
-               "Time": "17:30:00",
-               "ISO": "2026-07-07T17:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "07/06/26",
+               "FantasyTime": "2A-128, 35th of Suntide",
+               "StoryDay": "Monday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -22592,18 +22525,16 @@
          ],
          "Settings": [
             {
-               "Date": "2026-07-07",
-               "Time": "14:12:00",
-               "ISO": "2026-07-07T14:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "07/06/26",
+               "FantasyTime": "2A-128, 35th of Suntide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             },
             {
-               "Date": "2026-07-07",
-               "Time": "17:37:00",
-               "ISO": "2026-07-07T17:37:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "07/06/26",
+               "FantasyTime": "2A-128, 35th of Suntide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -23103,18 +23034,16 @@
          ],
          "Settings": [
             {
-               "Date": "2026-07-07",
-               "Time": "16:48:00",
-               "ISO": "2026-07-07T16:48:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "07/07/26",
+               "FantasyTime": "2A-128, 36th of Suntide",
+               "StoryDay": "Tuesday",
+               "Setting": ""
             },
             {
-               "Date": "2026-07-07",
-               "Time": "17:35:00",
-               "ISO": "2026-07-07T17:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "07/07/26",
+               "FantasyTime": "2A-128, 36th of Suntide",
+               "StoryDay": "Tuesday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -23520,7 +23449,7 @@
                ],
                [
                   "BodyCody",
-                  "Then the feed flicks back: only for moments, flashing with the white-hot ruminations of a gathering of tangos, so close that he can distinguish the heat from each of their fingers. ",
+                  "Then tthe feed flicks back: only for moments, flashing with the white-hot ruminations of a gathering of tangos, so close that he can distinguish the heat from each of their fingers. ",
                   true,
                   false,
                   false
@@ -23884,25 +23813,22 @@
          ],
          "Settings": [
             {
-               "Date": "2015-10-03",
-               "Time": "02:23:00",
-               "ISO": "2015-10-03T02:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "09/11/26",
+               "FantasyTime": "2A-128, 10th of Wanetide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "2015-10-03",
-               "Time": "03:52:00",
-               "ISO": "2015-10-03T03:52:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "09/11/26",
+               "FantasyTime": "2A-128, 10th of Wanetide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "2015-10-03",
-               "Time": "06:28:05",
-               "ISO": "2015-10-03T06:28:05Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "09/11/26",
+               "FantasyTime": "2A-128, 10th of Wanetide",
+               "StoryDay": "Friday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -24918,25 +24844,22 @@
          ],
          "Settings": [
             {
-               "Date": "2005-08-23",
-               "Time": "15:20:00",
-               "ISO": "2005-08-23T15:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "10/27/26",
+               "FantasyTime": "2A-128, 56th of Wanetide",
+               "StoryDay": "Tuesday",
+               "Setting": ""
             },
             {
-               "Date": "2005-08-23",
-               "Time": "16:12:00",
-               "ISO": "2005-08-23T16:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "10/27/26",
+               "FantasyTime": "2A-128, 56th of Wanetide",
+               "StoryDay": "Tuesday",
+               "Setting": ""
             },
             {
-               "Date": "2005-08-23",
-               "Time": "23:57:00",
-               "ISO": "2005-08-23T23:57:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "10/27/26",
+               "FantasyTime": "2A-128, 56th of Wanetide",
+               "StoryDay": "Tuesday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -25267,13 +25190,6 @@
                [
                   "BodyCody",
                   "I thought approaching the table to congratulate my rival would be the last I&apos;d have to see him today. I left before he got the new insignia for his cubicle&apos;s nametag, before all the other strangers could approach him and offer their praise.",
-                  true,
-                  false,
-                  false
-               ],
-               [
-                  "BodyCody",
-                  "But when I saw the large, crumpled box labeled MCMASTER-CARR on his desk, taped with a manifest from the machinists&apos; cell with REWORK emblazoned in a large red stamp, I should have known he&apos;d suffer quietly for another thirty minutes after he returned.",
                   true,
                   false,
                   false
@@ -25637,30 +25553,27 @@
          ],
          "Settings": [
             {
-               "Date": "2026-11-25",
-               "Time": "11:00:00",
-               "ISO": "2026-11-25T11:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/25/26",
+               "FantasyTime": "2A-128, 84th of Wanetide",
+               "StoryDay": "Wednesday",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-25",
-               "Time": "12:17:00",
-               "ISO": "2026-11-25T12:17:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/25/26",
+               "FantasyTime": "2A-128, 84th of Wanetide",
+               "StoryDay": "Wednesday",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-25",
-               "Time": "22:01:00",
-               "ISO": "2026-11-25T22:01:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/25/26",
+               "FantasyTime": "2A-128, 84th of Wanetide",
+               "StoryDay": "Wednesday",
+               "Setting": ""
             }
          ],
          "WCs": [
             1334,
-            1219,
+            1176,
             597
          ],
          "Story": "Paragate",
@@ -26500,32 +26413,28 @@
          ],
          "Settings": [
             {
-               "Date": "2026-11-26",
-               "Time": "16:07:00",
-               "ISO": "2026-11-26T16:07:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/26/26",
+               "FantasyTime": "2A-128, 85th of Wanetide",
+               "StoryDay": "Thursday",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-26",
-               "Time": "17:49:00",
-               "ISO": "2026-11-26T17:49:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/26/26",
+               "FantasyTime": "2A-128, 85th of Wanetide",
+               "StoryDay": "Thursday",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-26",
-               "Time": "17:56:00",
-               "ISO": "2026-11-26T17:56:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/26/26",
+               "FantasyTime": "2A-128, 85th of Wanetide",
+               "StoryDay": "Thursday",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-26",
-               "Time": "18:31:25",
-               "ISO": "2026-11-26T18:31:25Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/26/26",
+               "FantasyTime": "2A-128, 85th of Wanetide",
+               "StoryDay": "Thursday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -27147,32 +27056,28 @@
          ],
          "Settings": [
             {
-               "Date": "2026-11-27",
-               "Time": "09:47:00",
-               "ISO": "2026-11-27T09:47:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/27/26",
+               "FantasyTime": "2A-128, 86th of Wanetide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-27",
-               "Time": "06:48:00",
-               "ISO": "2026-11-27T06:48:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/27/26",
+               "FantasyTime": "2A-128, 86th of Wanetide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-27",
-               "Time": "11:12:00",
-               "ISO": "2026-11-27T11:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/27/26",
+               "FantasyTime": "2A-128, 86th of Wanetide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-27",
-               "Time": "07:10:00",
-               "ISO": "2026-11-27T07:10:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/27/26",
+               "FantasyTime": "2A-128, 86th of Wanetide",
+               "StoryDay": "Friday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -28196,25 +28101,22 @@
          ],
          "Settings": [
             {
-               "Date": "2026-11-28",
-               "Time": "16:45:00",
-               "ISO": "2026-11-28T16:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/27/26",
+               "FantasyTime": "2A-128, 86th of Wanetide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-28",
-               "Time": "15:23:00",
-               "ISO": "2026-11-28T15:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/27/26",
+               "FantasyTime": "2A-128, 86th of Wanetide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-28",
-               "Time": "20:35:00",
-               "ISO": "2026-11-28T20:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/27/26",
+               "FantasyTime": "2A-128, 86th of Wanetide",
+               "StoryDay": "Friday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -29034,25 +28936,22 @@
          ],
          "Settings": [
             {
-               "Date": "2026-11-29",
-               "Time": "05:13:00",
-               "ISO": "2026-11-29T05:13:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/28/26",
+               "FantasyTime": "2A-128, 87th of Wanetide",
+               "StoryDay": "Saturday",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-29",
-               "Time": "09:31:00",
-               "ISO": "2026-11-29T09:31:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/28/26",
+               "FantasyTime": "2A-128, 87th of Wanetide",
+               "StoryDay": "Saturday",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-29",
-               "Time": "10:12:00",
-               "ISO": "2026-11-29T10:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/28/26",
+               "FantasyTime": "2A-128, 87th of Wanetide",
+               "StoryDay": "Saturday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -29900,25 +29799,22 @@
          ],
          "Settings": [
             {
-               "Date": "2026-11-29",
-               "Time": "14:10:00",
-               "ISO": "2026-11-29T14:10:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/29/26",
+               "FantasyTime": "2A-128, 88th of Wanetide",
+               "StoryDay": "Sunday",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-29",
-               "Time": "14:53:00",
-               "ISO": "2026-11-29T14:53:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/29/26",
+               "FantasyTime": "2A-128, 88th of Wanetide",
+               "StoryDay": "Sunday",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-29",
-               "Time": "22:12:00",
-               "ISO": "2026-11-29T22:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/29/26",
+               "FantasyTime": "2A-128, 88th of Wanetide",
+               "StoryDay": "Sunday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -29945,7 +29841,7 @@
             [
                [
                   "BodyCody",
-                  "When I rose from four hours of sleep, I found that same feeling of dread I found in college when the world finally caught up with me, when I remembered it was a heavy day of finals. But this was a test I couldn&apos;t study for.",
+                  "When I rise from four hours of sleep, I find that same feeling of dread I found in college when the world finally caught up with me, when I remembered it was a heavy day of finals. But this was a test I couldn&apos;t study for.",
                   true,
                   false,
                   false
@@ -30570,25 +30466,22 @@
          ],
          "Settings": [
             {
-               "Date": "2026-11-30",
-               "Time": "06:00:03",
-               "ISO": "2026-11-30T06:00:03Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "",
+               "FantasyTime": "2A-128, 89th of Wanetide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-30",
-               "Time": "07:00:02",
-               "ISO": "2026-11-30T07:00:02Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "",
+               "FantasyTime": "2A-128, 89th of Wanetide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-30",
-               "Time": "08:12:00",
-               "ISO": "2026-11-30T08:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "",
+               "FantasyTime": "2A-128, 89th of Wanetide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -31492,25 +31385,22 @@
          ],
          "Settings": [
             {
-               "Date": "2026-11-30",
-               "Time": "10:21:00",
-               "ISO": "2026-11-30T10:21:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/30/26",
+               "FantasyTime": "2A-128, 89th of Wanetide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-30",
-               "Time": "10:54:00",
-               "ISO": "2026-11-30T10:54:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/30/26",
+               "FantasyTime": "2A-128, 89th of Wanetide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-30",
-               "Time": "12:42:00",
-               "ISO": "2026-11-30T12:42:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/30/26",
+               "FantasyTime": "2A-128, 89th of Wanetide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -32624,25 +32514,22 @@
          ],
          "Settings": [
             {
-               "Date": "2026-11-30",
-               "Time": "13:02:00",
-               "ISO": "2026-11-30T13:02:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/30/26",
+               "FantasyTime": "2A-128, 89th of Wanetide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-30",
-               "Time": "17:49:00",
-               "ISO": "2026-11-30T17:49:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/30/26",
+               "FantasyTime": "2A-128, 89th of Wanetide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             },
             {
-               "Date": "2026-11-30",
-               "Time": "19:40:00",
-               "ISO": "2026-11-30T19:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/30/26",
+               "FantasyTime": "2A-128, 89th of Wanetide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -33795,32 +33682,28 @@
          ],
          "Settings": [
             {
-               "Date": "2026-12-01",
-               "Time": "16:53:00",
-               "ISO": "2026-12-01T16:53:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/30/26",
+               "FantasyTime": "2A-128, 89th of Wanetide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             },
             {
-               "Date": "2026-12-01",
-               "Time": "17:32:00",
-               "ISO": "2026-12-01T17:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/30/26",
+               "FantasyTime": "2A-128, 89th of Wanetide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             },
             {
-               "Date": "2026-12-01",
-               "Time": "23:32:00",
-               "ISO": "2026-12-01T23:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/30/26",
+               "FantasyTime": "2A-128, 89th of Wanetide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             },
             {
-               "Date": "2026-12-06",
-               "Time": "12:09:00",
-               "ISO": "2026-12-06T12:09:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "11/30/26",
+               "FantasyTime": "2A-128, 89th of Wanetide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -34406,18 +34289,16 @@
          ],
          "Settings": [
             {
-               "Date": "2026-12-08",
-               "Time": "00:00:00",
-               "ISO": "2026-12-08T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/04/26",
+               "FantasyTime": "2A-128, 3rd of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "2026-12-08",
-               "Time": "00:12:00",
-               "ISO": "2026-12-08T00:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/04/26",
+               "FantasyTime": "2A-128, 3rd of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -35292,25 +35173,22 @@
          ],
          "Settings": [
             {
-               "Date": "",
-               "Time": "03:39:47",
-               "ISO": "T03:39:47Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/04/26",
+               "FantasyTime": "2A-128, 3rd of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "00:00:00",
-               "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/04/26",
+               "FantasyTime": "2A-128, 3rd of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "00:00:00",
-               "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/04/26",
+               "FantasyTime": "2A-128, 3rd of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -36263,25 +36141,22 @@
          ],
          "Settings": [
             {
-               "Date": "",
-               "Time": "00:00:00",
-               "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/04/26",
+               "FantasyTime": "2A-128, 3rd of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "00:00:00",
-               "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/04/26",
+               "FantasyTime": "2A-128, 3rd of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "00:00:00",
-               "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/04/26",
+               "FantasyTime": "2A-128, 3rd of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -37122,25 +36997,22 @@
          ],
          "Settings": [
             {
-               "Date": "",
-               "Time": "00:00:00",
-               "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/04/26",
+               "FantasyTime": "2A-128, 3rd of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "00:00:00",
-               "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/04/26",
+               "FantasyTime": "2A-128, 3rd of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "00:00:00",
-               "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/04/26",
+               "FantasyTime": "2A-128, 3rd of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -37834,25 +37706,22 @@
          ],
          "Settings": [
             {
-               "Date": "",
-               "Time": "00:00:00",
-               "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/05/26",
+               "FantasyTime": "2A-128, 4th of Frostide",
+               "StoryDay": "Saturday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "00:00:00",
-               "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/05/26",
+               "FantasyTime": "2A-128, 4th of Frostide",
+               "StoryDay": "Saturday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "00:00:00",
-               "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/05/26",
+               "FantasyTime": "2A-128, 4th of Frostide",
+               "StoryDay": "Saturday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -38917,25 +38786,22 @@
          ],
          "Settings": [
             {
-               "Date": "",
-               "Time": "00:00:00",
-               "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/06/26",
+               "FantasyTime": "2A-128, 5th of Frostide",
+               "StoryDay": "Sunday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "00:00:00",
-               "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/06/26",
+               "FantasyTime": "2A-128, 5th of Frostide",
+               "StoryDay": "Sunday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "00:00:00",
-               "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/06/26",
+               "FantasyTime": "2A-128, 5th of Frostide",
+               "StoryDay": "Sunday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -38999,25 +38865,22 @@
          ],
          "Settings": [
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/06/26",
+               "FantasyTime": "2A-128, 5th of Frostide",
+               "StoryDay": "Sunday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/06/26",
+               "FantasyTime": "2A-128, 5th of Frostide",
+               "StoryDay": "Sunday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/06/26",
+               "FantasyTime": "2A-128, 5th of Frostide",
+               "StoryDay": "Sunday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -39081,25 +38944,22 @@
          ],
          "Settings": [
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/06/26",
+               "FantasyTime": "2A-128, 5th of Frostide",
+               "StoryDay": "Sunday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/06/26",
+               "FantasyTime": "2A-128, 5th of Frostide",
+               "StoryDay": "Sunday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/06/26",
+               "FantasyTime": "2A-128, 5th of Frostide",
+               "StoryDay": "Sunday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -39163,25 +39023,22 @@
          ],
          "Settings": [
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/07/26",
+               "FantasyTime": "2A-128, 6th of Frostide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/07/26",
+               "FantasyTime": "2A-128, 6th of Frostide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/07/26",
+               "FantasyTime": "2A-128, 6th of Frostide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -39234,18 +39091,16 @@
          ],
          "Settings": [
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/07/26",
+               "FantasyTime": "2A-128, 6th of Frostide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/07/26",
+               "FantasyTime": "2A-128, 6th of Frostide",
+               "StoryDay": "Undefined",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -39308,25 +39163,22 @@
          ],
          "Settings": [
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/08/26",
+               "FantasyTime": "2A-128, 7th of Frostide",
+               "StoryDay": "Tuesday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/08/26",
+               "FantasyTime": "2A-128, 7th of Frostide",
+               "StoryDay": "Tuesday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/08/26",
+               "FantasyTime": "2A-128, 7th of Frostide",
+               "StoryDay": "Tuesday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -39379,18 +39231,16 @@
          ],
          "Settings": [
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/08/26",
+               "FantasyTime": "2A-128, 7th of Frostide",
+               "StoryDay": "Tuesday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/08/26",
+               "FantasyTime": "2A-128, 7th of Frostide",
+               "StoryDay": "Tuesday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -39442,18 +39292,16 @@
          ],
          "Settings": [
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/08/26",
+               "FantasyTime": "2A-128, 7th of Frostide",
+               "StoryDay": "Tuesday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/08/26",
+               "FantasyTime": "2A-128, 7th of Frostide",
+               "StoryDay": "Tuesday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -39516,25 +39364,22 @@
          ],
          "Settings": [
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/08/26",
+               "FantasyTime": "2A-128, 7th of Frostide",
+               "StoryDay": "Tuesday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/08/26",
+               "FantasyTime": "2A-128, 7th of Frostide",
+               "StoryDay": "Tuesday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/08/26",
+               "FantasyTime": "2A-128, 7th of Frostide",
+               "StoryDay": "Tuesday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -39609,32 +39454,28 @@
          ],
          "Settings": [
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/25/26",
+               "FantasyTime": "2A-128, 24th of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/25/26",
+               "FantasyTime": "2A-128, 24th of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/25/26",
+               "FantasyTime": "2A-128, 24th of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/25/26",
+               "FantasyTime": "2A-128, 24th of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -39699,25 +39540,22 @@
          ],
          "Settings": [
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/18/26",
+               "FantasyTime": "2A-128, 17th of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/18/26",
+               "FantasyTime": "2A-128, 17th of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             },
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ModernTime": "12/18/26",
+               "FantasyTime": "2A-128, 17th of Frostide",
+               "StoryDay": "Friday",
+               "Setting": ""
             }
          ],
          "WCs": [
@@ -39739,6 +39577,6 @@
       "SceneCount": 155,
       "WrittenCount": 127,
       "UnwrittenCount": 28,
-      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 193,179.\n > There are 5 acts, 53 chapters, and 155 scenes.\n > This manuscript averages:\n   - 1246 words per scene.\n   - 3644 words per chapter.\n   - 2.92 scenes per chapter.\n > Out of 155 planned scenes, 127 are written.\n > So the Zero Draft is approximately 81.9% complete.\n"
+      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 192,636.\n > There are 5 acts, 53 chapters, and 155 scenes.\n > This manuscript averages:\n   - 1242 words per scene.\n   - 3634 words per chapter.\n   - 2.92 scenes per chapter.\n > Out of 155 planned scenes, 127 are written.\n > So the Zero Draft is approximately 81.9% complete.\n"
    }
 }

@@ -32,6 +32,12 @@ h3.Section::after{
     content:var(--SectionAccent);
 }
 
+p.StarterTag {
+    border-left: 2px solid var(--TextColor);
+    margin-left: 5px;
+    padding-left: 15px;
+}
+
 
 
 .KatiyaHead, .CodyHead, .TitusHead {

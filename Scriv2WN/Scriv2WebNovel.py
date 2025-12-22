@@ -11,6 +11,7 @@ Created on Sat Dec  6 17:03:54 2025
 import json as js
 import os, sys, glob, time, csv
 from datetime import datetime, timedelta
+from paragate_gpt_parse import GPT_Parse
 
 OnesNames = ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen","Twenty"]
 TensNames = ["err","err","Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"]
@@ -202,7 +203,7 @@ def getLineMetadata(Sentence,Perspective="Default"):
             # Order:    [1] CLASS  
             #           [2] LINE TEXT 
             #           [3] isEOL (end of <p>)
-            #           [4] do PB instead of </p>
+            #           [4] do PB instead of </p> if isEOL
             #           [5] Raw HTML?
             # Note: EOL set FALSE but last entry set TRUE later.
     for newline in newlines:
@@ -289,6 +290,8 @@ def InterpretJSON(js,info=True):
             ChapterData['Body'] = []
             ChapterData['POV'] = []        
             ChapterData['IDs'] = []
+            ChapterData['Settings'] = [];
+            DefaultStorySetting = entry['SettingInfo'];
             ChapterData['WCs'] = []
         if entry['DocType'] == 'Scene':
             ChapterData['Story'] = entry['StoryName']
@@ -312,6 +315,10 @@ def InterpretJSON(js,info=True):
             ChapterData['IDs'].append(entry['VerboseID'])
             ChapterData['Written'] = len(entry['Body']) > 10
             ChapterData['Body'].append([])
+            if entry['SettingInfo']['ISO'] == "":
+                ChapterData['Settings'].append(DefaultStorySetting)
+            else:
+                ChapterData['Settings'].append(entry['SettingInfo'])
             ChapterData['WCs'].append(0)
             Sentences = entry["Body"].replace("</>","\n").replace("<>","").split("\n")
             for Sentence in Sentences:
@@ -394,9 +401,7 @@ def SaveSectionedCopy(storyDict,indentLevel=None):
 def SaveBasicCopy(storyDict, indentLevel=None):
     acts = []
     chapters = []
-    actchap = {"Instructions":"This JSON file contains the story for analysis. \
-               The numbered FIRST LEVEL KEYS are the ACTS of the story. SECOND LEVEL KEYS \
-               are the CHAPTERS of the story."}
+    actchap = []
     MakeDirIfNotExists('/GPT')
     for entry in storyDict.values():
         if entry['Act'] not in acts:
@@ -404,30 +409,32 @@ def SaveBasicCopy(storyDict, indentLevel=None):
             # actchap[entry['Act']] = {}
         if entry['Chapter'] not in chapters and entry['Written'] is True:
             chapters.append(entry['Chapter'])
-            chname = f"{entry['Chapter']}"
-            actchap[chname] = {}
-            actchap[chname]['POV Character enumerated by Scene'] = entry["POV"]
-            actchap[chname][f"Chapter {entry['Chapter']} Scenes"] = {}
-            actchap[chname]["Chapter"] = entry['Chapter'];
-            actchap[chname]["This chapter's Act"] = entry['Act']
-            actchap[chname]["Name"] = entry['ChapterName']
+            actchap.append({})
+            Perspectives = entry["POV"]
+            actchap[-1]["Scenes"] = []
+            actchap[-1]["SceneLocation"] = []
+            actchap[-1]["Chapter"] = entry['Chapter'];
+            actchap[-1]["Act"] = entry['Act']
+            actchap[-1]["Chapter Name"] = entry['ChapterName']
             scenenum = 0;
             for scene in entry['Body']:  
                 scenenum += 1;
-                actchap[chname][f"Chapter {entry['Chapter']} Scenes"][f"Chapter {entry['Chapter']} Scene {scenenum}"] = []
+                actchap[-1]["Scenes"].append({"Perspective":Perspectives[scenenum-1],"Text":[""]})
+                actchap[-1]["SceneLocation"].append(entry['Settings'])
                 for line in scene:
-                    actchap[chname][f"Chapter {entry['Chapter']} Scenes"][f"Chapter {entry['Chapter']} Scene {scenenum}"].append(line[1])
-            # actchap[entry['Act']][entry['Chapter']] = {}
-            # actchap[entry['Act']][entry['Chapter']]['POV Character'] = entry["POV"]
-            # actchap[entry['Act']][entry['Chapter']]['Scenes'] = []
-            # for scene in entry['Body']:  
-            #     actchap[entry['Act']][entry['Chapter']]['Scenes'].append([])
-            #     for line in scene:
-            #         actchap[entry['Act']][entry['Chapter']]['Scenes'][-1].append(line[1])
-            # actchapnum += 1
+                    actchap[-1]["Scenes"][-1]["Text"][-1] += line[1]
+                    if line[2] == True:
+                        actchap[-1]["Scenes"][-1]["Text"].append("")
+                        
+                        
     with open(os.getcwd() + f"/GPT/{storyDict[0]['Story']}_GPT.json", "w") as f:
         f.write(js.dumps(actchap,ensure_ascii=True,indent=indentLevel))  
     print(" > Created GPT copy.")
+    with open(os.getcwd() + f"/GPT/{storyDict[0]['Story']}_GPT.json", "r", encoding="utf-8") as f:
+        obj = js.load(f)
+    out = GPT_Parse(obj, source_name="Paragate_GPT.json")
+    with open(os.getcwd() +f"/GPT/{storyDict[0]['Story']}_GPT_index.json", "w", encoding="utf-8") as f:
+        js.dump(out, f, ensure_ascii=False, indent=2)
     return
     
 

@@ -442,14 +442,14 @@
          false
       ],
       [
-         "BodyCody",
+         "NoteCody",
          "STU GOV KING + QUEEN",
          true,
-         false,
+         true,
          false
       ],
       [
-         "BodyCody",
+         "NoteCody",
          "2016",
          true,
          false,

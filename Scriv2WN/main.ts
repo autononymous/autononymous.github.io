@@ -456,9 +456,9 @@ class StoryConfig {
          */   
         const response = await fetch(`${rootURL}/StoryConfig.json`);
         if (!response.ok) {
-            console.debug("StoryConfig.initialize","Error fetching manuscript from URL.")
+            console.debug("StoryConfig.initialize","Error fetching config from URL.")
         } else {
-            console.debug("StoryConfig.initialize","Successfully fetched manuscript from URL.")
+            console.debug("StoryConfig.initialize",`Successfully fetched config from URL at ${rootURL}/StoryConfig.json.`)
         }
         this.data = await response.json();
         return new StoryConfig(this.data, storyName);
@@ -495,9 +495,9 @@ class Manuscript {
         let sourceURL = `${rootURL}/output/${storyName}/MC_Latest.json`
         const response = await fetch(sourceURL);
         if (!response.ok) {
-            console.debug("Manuscript.initialize","Error fetching manuscript from URL.")
+            console.error("Manuscript.initialize","Error fetching manuscript from URL.")
         } else {
-            console.debug("Manuscript.initialize","Successfully fetched manuscript from URL.")
+            console.info("Manuscript.initialize",`Successfully fetched manuscript from URL at ${rootURL}/MC_Latest.json.`)
         }
         this.data = await response.json();
         return new Manuscript(rootURL, storyName, this.data);
@@ -536,9 +536,9 @@ class TableOfContents {
          */
         const response = await fetch(sourceURL);
         if (!response.ok) {
-            console.debug("TableOfContents.initialize","Error fetching manuscript from URL.")
+            console.error("TableOfContents.initialize","Error fetching manuscript from URL.")
         } else {
-            console.debug("TableOfContents.initialize","Successfully fetched manuscript from URL.")
+            console.info("TableOfContents.initialize",`Successfully fetched manuscript from URL at ${sourceURL}.`)
         }
         this.data = await response.json();
         // ....and now initialization of the Table Of Contents panel.
@@ -877,11 +877,10 @@ class ChapterBinder {
             // It is in fragments, because a line may have multiple styles within it as <span>s.
             let sectionContent : string = "";
             let lineContent : any[] = [];
-            let wasNote : boolean  = false;
             // Handle story starter tags.
             if (this.SHOW_STARTER_TAGS) {
                 console.debug(ChapterInfo.Character[thisSection])
-                starterTag = `<p class="Body${ChapterInfo.Character[thisSection]} StarterTag">${ChapterInfo.Character[thisSection]}</p>`
+                starterTag = `<p class="Body${ChapterInfo.Character[thisSection]} StarterTag">${this.Config.getFullName(ChapterInfo.Character[thisSection])}</p>`
             }
             chapterContent += starterTag;
 
@@ -960,6 +959,7 @@ class ChapterBinder {
     let extraStyles = "";
     let doStartP = true;
     let doEndP = true;
+    let isCustomHTML = false;
     //console.warn(sectionStyle,ParagraphStyle)
     // Determine line style by analyzing each line's reported local style.
     lineContent.forEach( ([style,line]) => {
@@ -981,21 +981,36 @@ class ChapterBinder {
         } else {
         }
         // @TODO add other important styles to segregate
-    });
-    let fullLine = `<p class="${ParagraphStyle + extraStyles}" id="${lineID}}">`;
-    let fragStyle = "";
-    let fragEnum = 1
-    lineContent.forEach( ([style,line]) => {   
-        let addBR = ""     
-        if ( style.includes("Timestamp")) {
-            addBR = "<br>"
+        if (style.includes("RawHTML")) {
+            console.log(style)
+            isCustomHTML = true;
         }
-        fragStyle = doStartP ? style : isSpecial? ParagraphStyle : style + doStartP;
-        fullLine += `<span class="${fragStyle}" id="${lineID}.${fragEnum}">${line}</span> ${addBR}`;
-        fragEnum += 1
     });
-        return fullLine + "</p>"
-    }
+    let fullLine = "";
+    if (isCustomHTML) {      
+        fullLine = `<div style="CustomHTMLsection" id="${lineID}">`
+        lineContent.forEach( ([style,line]) => {    
+            fullLine += `${line}`;
+        });
+        fullLine += `</div>`;
+    } else {
+        fullLine = `<p class="${ParagraphStyle + extraStyles}" id="${lineID}">`;
+        let fragStyle = "";
+        let fragEnum = 1
+        lineContent.forEach( ([style,line]) => {   
+            let addBR = ""     
+            if ( style.includes("Timestamp")) {
+                addBR = "<br>"
+            }
+            fragStyle = doStartP ? style : isSpecial? ParagraphStyle : style + doStartP;
+            fullLine += `<span class="${fragStyle}" id="${lineID}.${fragEnum}">${line}</span> ${addBR}`;
+            fragEnum += 1
+        });
+        fullLine += "</p>"
+        }
+    return fullLine 
+    }   
+    
 }
 
 //
