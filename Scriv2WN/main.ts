@@ -355,7 +355,7 @@ class ChapterDataCard {
     public eTOC_NAME: HTMLElement;
     public eTOC_BLURB: HTMLElement;
 
-    public eEXTRAHEAD: HTMLElement;
+    //public eEXTRAHEAD: HTMLElement;
 
     currentChapter() {
         return this.Data.TOC.Chapter;
@@ -401,7 +401,7 @@ class ChapterDataCard {
         this.eTOC_ID = document.getElementById('TTC_ID') as HTMLElement;
         this.eTOC_NAME = document.getElementById('TTC_name') as HTMLElement;
         this.eTOC_BLURB = document.getElementById('TTC_blurb') as HTMLElement;
-        this.eEXTRAHEAD = document.getElementById('EXhead') as HTMLElement;
+        //this.eEXTRAHEAD = document.getElementById('EXhead') as HTMLElement;
     }
     updateTOCinfo() {
         let actRoman = {0:"Prologue",1:"Act I",2:"Act II",3:"Act III",4:"Act IV"}
@@ -411,7 +411,7 @@ class ChapterDataCard {
         this.Data.TOC.Character.forEach( (element: string) => { ChapterView = ChapterView == element ? ChapterView : "Mixed";console.log(element) });
         this.eTOC_NAME.innerHTML = `${ChapterView} &mdash; <em>${this.Data.TOC.ChapterName}</em>`
         this.eTOC_BLURB.innerHTML = `<p>"${this.Data.TOC.Blurb}"</p>`
-        this.eEXTRAHEAD.innerHTML = `${this.Story} Extras`
+        //this.eEXTRAHEAD.innerHTML = `${this.Story} Extras`
     }
     toggleNightMode(newState:boolean|null=null, doReport: boolean = true) {
         if (newState != null) {

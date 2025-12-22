@@ -293,6 +293,18 @@ div.TOClogo {
     filter: drop-shadow(1000vw 0 var(--TextColor));
     transform: translateX(-1000vw);
 }
+div.OtherStory {
+    position: absolute;
+    left:5%;
+    width: 90%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*filter: drop-shadow(0 0 2rem black) drop-shadow(0 0 0.1rem black)*/
+    filter: drop-shadow(1000vw 0 var(--TextColor));
+    transform: translateX(-1000vw);
+}
 div.TOCthischapter {
     font-family: var(--ActiveTitle);
     /*font-size: 0.75em;/*calc(var(--TextSize) * 0.5);/**/
