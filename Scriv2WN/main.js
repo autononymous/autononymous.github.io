@@ -615,6 +615,18 @@ class ChapterBinder {
             }
         });
     }
+    ToggleStarterTags(setstate = null) {
+        if (setstate == null) {
+            this.SHOW_STARTER_TAGS = !this.SHOW_STARTER_TAGS;
+        }
+        else {
+            this.SHOW_STARTER_TAGS = setstate;
+        }
+        ;
+        this.DeployOnPage('', DEPLOY);
+        //@TODO save into Local Storage the state of this.
+        return;
+    }
     HandlePermissions(doReport = true) {
         this.ChapterBounds = { active: [], whitelist: [], full: [] };
         // This is where access list is assembled. ***********ACCESS***************
@@ -825,8 +837,22 @@ class ChapterBinder {
                 let lineContent = [];
                 // Handle story starter tags.
                 if (this.SHOW_STARTER_TAGS) {
+                    let sceneDate = this.TOC[requestedChapter - 1].Settings[thisSection].ISO;
                     console.debug(ChapterInfo.Character[thisSection]);
-                    starterTag = `<p class="Body${ChapterInfo.Character[thisSection]} StarterTag">${this.Config.getFullName(ChapterInfo.Character[thisSection])}</p>`;
+                    // Format ISO date to "Weekday, Month Date"
+                    starterTag = (() => {
+                        let formatted = sceneDate;
+                        const dt = new Date(sceneDate);
+                        if (!isNaN(dt.getTime())) {
+                            const datePart = new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric' }).format(dt);
+                            const timePart = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute: '2-digit', /* second: '2-digit',*/ hour12: false }).format(dt);
+                            formatted = `${datePart} <br> ${timePart}`;
+                        }
+                        return `<p class="Body${ChapterInfo.Character[thisSection]} StarterTag" style="font-size: var(--TagFontSize);">
+                ${this.Config.getFullName(ChapterInfo.Character[thisSection])} <br>
+                ${formatted}                
+                </p>`;
+                    })();
                 }
                 chapterContent += starterTag;
                 section.forEach((feedline) => {
@@ -1391,7 +1417,7 @@ var THEME;
 var SRC;
 var EXTRAS;
 var CTRL;
-var IncludeSettingTags = true;
+var IncludeSettingTags = false;
 var eBackground = document.getElementById("BACKGROUND");
 var eText = document.getElementById("BODY");
 var eProgressBar = document.getElementById("PROGRESS");

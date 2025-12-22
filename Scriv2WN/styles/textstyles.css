@@ -36,9 +36,8 @@ p.StarterTag {
     border-left: 2px solid var(--TextColor);
     margin-left: 5px;
     padding-left: 15px;
+    font-size: var(--TagFontSize);
 }
-
-
 
 .KatiyaHead, .CodyHead, .TitusHead {
     color:              var(--TextColor);

@@ -1,7 +1,7 @@
 :root {
         /* Setting the height of the interface/menu bar */
     --MenuHeightStatic:     40px;
-    --MenuHeight:           120px;
+    --MenuHeight:           150px;
     --ControlHeight:        min(25vw,100px);
 
     /* Position of reader whether or not TOC or other things are shown.*/
@@ -15,6 +15,8 @@
     --CTRLWIDTH:            var(--MenuHeight);
 
     --TextAlignment:        justify;
+
+    --TagFontSize:          calc( var(--TextSize) * 0.7 );
 
     /* TOC identifier images */
     --TitleImageTOC:        url("../design/Paragate_logo.png");
