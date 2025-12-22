@@ -1,0 +1,1868 @@
+{
+   "Metadata": {
+      "ActCount": 6,
+      "ChapterCount": 57,
+      "SceneCount": 118,
+      "WrittenCount": 118,
+      "UnwrittenCount": 0,
+      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Firebrand\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 203,755.\n > There are 6 acts, 57 chapters, and 118 scenes.\n > This manuscript averages:\n   - 1726 words per scene.\n   - 3574 words per chapter.\n   - 2.07 scenes per chapter.\n > Out of 118 planned scenes, 118 are written.\n > So the Zero Draft is approximately 100.0% complete.\n"
+   },
+   "ChapterList": [
+      {
+         "Act": 1,
+         "ActName": "Prologue",
+         "Chapter": 1,
+         "ChapterName": "Beginning From The End",
+         "ChapterNumber": "One",
+         "Character": [
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus confronts another inevitable end.",
+         "Written": true,
+         "Release": "12/22/25",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/1/1.json"
+      },
+      {
+         "Act": 1,
+         "ActName": "Prologue",
+         "Chapter": 2,
+         "ChapterName": "Valedictorian",
+         "ChapterNumber": "Two",
+         "Character": [
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "36|Reward/The Mask",
+         "Written": true,
+         "Release": "12/29/25",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/1/2.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 3,
+         "ChapterName": "Snowdrifter",
+         "ChapterNumber": "Three",
+         "Character": [
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus and his friend Romin explore the outer wastes of Blackwater.",
+         "Written": true,
+         "Release": "01/05/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Blackwater",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/3.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 4,
+         "ChapterName": "Deliverance",
+         "ChapterNumber": "Four",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "The two friends approach the fated location on Titus&apos; map.",
+         "Written": true,
+         "Release": "01/12/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/4.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 5,
+         "ChapterName": "First Blight",
+         "ChapterNumber": "Five",
+         "Character": [
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "An unfathomable scene quickly overrides the premise of their trip.",
+         "Written": true,
+         "Release": "01/19/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/5.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 6,
+         "ChapterName": "Maleficence",
+         "ChapterNumber": "Six",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus presents the results of his expedition at his father&apos;s rummage store.",
+         "Written": true,
+         "Release": "01/26/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/6.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 7,
+         "ChapterName": "Innocence",
+         "ChapterNumber": "Seven",
+         "Character": [
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus tends to his lonely younger sister.",
+         "Written": true,
+         "Release": "02/02/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/7.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 8,
+         "ChapterName": "Solitude",
+         "ChapterNumber": "Eight",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus finds an uncomfortable breadth of stillness, but still prefers the cold.",
+         "Written": true,
+         "Release": "02/09/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/8.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 9,
+         "ChapterName": "Getting Even",
+         "ChapterNumber": "Nine",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "There are always consequences for improper uses of Essence.",
+         "Written": true,
+         "Release": "02/16/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/9.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 10,
+         "ChapterName": "Fellowship",
+         "ChapterNumber": "Ten",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Romin, Valentina, and Sylvia join Titus in one last celebration.",
+         "Written": true,
+         "Release": "02/23/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/10.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 11,
+         "ChapterName": "Firestarter",
+         "ChapterNumber": "Eleven",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "All it takes is one little spark to set the last capital on fire.",
+         "Written": true,
+         "Release": "03/02/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/11.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 12,
+         "ChapterName": "Pretense",
+         "ChapterNumber": "Twelve",
+         "Character": [
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "The fractured Berguard family faces an unspeakable fate.",
+         "Written": true,
+         "Release": "03/09/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/12.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 13,
+         "ChapterName": "Ascension",
+         "ChapterNumber": "Thirteen",
+         "Character": [
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus ascends the foothills of the Afterlife.",
+         "Written": true,
+         "Release": "03/16/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/13.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 14,
+         "ChapterName": "Endogeny",
+         "ChapterNumber": "Fourteen",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "The party discovers a sinister Chymaeran agent.",
+         "Written": true,
+         "Release": "03/23/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/14.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 15,
+         "ChapterName": "First Wall",
+         "ChapterNumber": "Fifteen",
+         "Character": [
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "The fractured group reaches the first inner wall.",
+         "Written": true,
+         "Release": "03/30/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/15.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 16,
+         "ChapterName": "Remember Me",
+         "ChapterNumber": "Sixteen",
+         "Character": [
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "The party can only watch as Romin&apos;s ego expends lives.",
+         "Written": true,
+         "Release": "04/06/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/16.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 17,
+         "ChapterName": "Summit",
+         "ChapterNumber": "Seventeen",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus reaches the end of his journey.",
+         "Written": true,
+         "Release": "04/13/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/17.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 18,
+         "ChapterName": "Valensend",
+         "ChapterNumber": "Eighteen",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus encounters Ullrich for a second time.",
+         "Written": true,
+         "Release": "04/20/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/18.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 19,
+         "ChapterName": "Vainglory",
+         "ChapterNumber": "Nineteen",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Tomorrow marks the advent of a golden age!&apos;",
+         "Written": true,
+         "Release": "04/27/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/19.json"
+      },
+      {
+         "Act": 2,
+         "ActName": "Act One",
+         "Chapter": 20,
+         "ChapterName": "Liquidation",
+         "ChapterNumber": "Twenty",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "May their souls find rest in the Reservoir.",
+         "Written": true,
+         "Release": "05/04/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/2/20.json"
+      },
+      {
+         "Act": 3,
+         "ActName": "Act Two",
+         "Chapter": 21,
+         "ChapterName": "Premonition",
+         "ChapterNumber": "Twenty-One",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "The thread says that none of this was ever a dream.",
+         "Written": true,
+         "Release": "05/11/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/3/21.json"
+      },
+      {
+         "Act": 3,
+         "ActName": "Act Two",
+         "Chapter": 22,
+         "ChapterName": "Lyra",
+         "ChapterNumber": "Twenty-Two",
+         "Character": [
+            "Titus",
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus makes an abrasive, tentative ally.",
+         "Written": true,
+         "Release": "05/18/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/3/22.json"
+      },
+      {
+         "Act": 3,
+         "ActName": "Act Two",
+         "Chapter": 23,
+         "ChapterName": "Strategic Retreat",
+         "ChapterNumber": "Twenty-Three",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus resists inevitability.",
+         "Written": true,
+         "Release": "05/25/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/3/23.json"
+      },
+      {
+         "Act": 3,
+         "ActName": "Act Two",
+         "Chapter": 24,
+         "ChapterName": "Explanation",
+         "ChapterNumber": "Twenty-Four",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus&apos; friends arrive for answers to his strange behavior.",
+         "Written": true,
+         "Release": "06/01/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/3/24.json"
+      },
+      {
+         "Act": 3,
+         "ActName": "Act Two",
+         "Chapter": 25,
+         "ChapterName": "Everlasting Moment",
+         "ChapterNumber": "Twenty-Five",
+         "Character": [
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus lives a near eternity in a single moment.",
+         "Written": true,
+         "Release": "06/08/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/3/25.json"
+      },
+      {
+         "Act": 3,
+         "ActName": "Act Two",
+         "Chapter": 26,
+         "ChapterName": "Beneath",
+         "ChapterNumber": "Twenty-Six",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "It was the only way we could survive.",
+         "Written": true,
+         "Release": "06/15/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/3/26.json"
+      },
+      {
+         "Act": 3,
+         "ActName": "Act Two",
+         "Chapter": 27,
+         "ChapterName": "Breaking The Habit",
+         "ChapterNumber": "Twenty-Seven",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus sees his father in a different light.",
+         "Written": true,
+         "Release": "06/22/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/3/27.json"
+      },
+      {
+         "Act": 3,
+         "ActName": "Act Two",
+         "Chapter": 28,
+         "ChapterName": "Egress",
+         "ChapterNumber": "Twenty-Eight",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Snowdrifters drift by steel this time.",
+         "Written": true,
+         "Release": "06/29/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/3/28.json"
+      },
+      {
+         "Act": 3,
+         "ActName": "Act Two",
+         "Chapter": 29,
+         "ChapterName": "Slaughter",
+         "ChapterNumber": "Twenty-Nine",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "The survivors realize the ultimate purpose of the unexceptional graduates.",
+         "Written": true,
+         "Release": "07/06/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/3/29.json"
+      },
+      {
+         "Act": 3,
+         "ActName": "Act Two",
+         "Chapter": 30,
+         "ChapterName": "Backwoods",
+         "ChapterNumber": "Thirty",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "The furthest snowdrifitng expedition.",
+         "Written": true,
+         "Release": "07/13/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/3/30.json"
+      },
+      {
+         "Act": 3,
+         "ActName": "Act Two",
+         "Chapter": 31,
+         "ChapterName": "Outpost",
+         "ChapterNumber": "Thirty-One",
+         "Character": [
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "There is a stronghold far beyond the limits.",
+         "Written": true,
+         "Release": "07/20/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/3/31.json"
+      },
+      {
+         "Act": 3,
+         "ActName": "Act Two",
+         "Chapter": 32,
+         "ChapterName": "Unsettled Glory",
+         "ChapterNumber": "Thirty-Two",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "They worship themselves in unpaid glory.",
+         "Written": true,
+         "Release": "07/27/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/3/32.json"
+      },
+      {
+         "Act": 3,
+         "ActName": "Act Two",
+         "Chapter": 33,
+         "ChapterName": "Craven Denial",
+         "ChapterNumber": "Thirty-Three",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "The First Red refuse the premise of their purpose.",
+         "Written": true,
+         "Release": "08/03/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/3/33.json"
+      },
+      {
+         "Act": 4,
+         "ActName": "Act Three",
+         "Chapter": 34,
+         "ChapterName": "Deployment",
+         "ChapterNumber": "Thirty-Four",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus deploys for service with the underachieving classes.",
+         "Written": true,
+         "Release": "08/10/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/4/34.json"
+      },
+      {
+         "Act": 4,
+         "ActName": "Act Three",
+         "Chapter": 35,
+         "ChapterName": "Timeless",
+         "ChapterNumber": "Thirty-Five",
+         "Character": [
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus finds himself deep within the Undercroft.",
+         "Written": true,
+         "Release": "08/17/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/4/35.json"
+      },
+      {
+         "Act": 4,
+         "ActName": "Act Three",
+         "Chapter": 36,
+         "ChapterName": "Pulling Punches",
+         "ChapterNumber": "Thirty-Six",
+         "Character": [
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus contemplates the value of his humanity. A stranger solicits him.",
+         "Written": true,
+         "Release": "08/24/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/4/36.json"
+      },
+      {
+         "Act": 4,
+         "ActName": "Act Three",
+         "Chapter": 37,
+         "ChapterName": "No Holds",
+         "ChapterNumber": "Thirty-Seven",
+         "Character": [
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus decides a piece of himself is no longer useful.",
+         "Written": true,
+         "Release": "08/31/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/4/37.json"
+      },
+      {
+         "Act": 4,
+         "ActName": "Act Three",
+         "Chapter": 38,
+         "ChapterName": "Reward/The Vassal",
+         "ChapterNumber": "Thirty-Eight",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus reaches an unexpected end.",
+         "Written": true,
+         "Release": "09/07/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/4/38.json"
+      },
+      {
+         "Act": 4,
+         "ActName": "Act Three",
+         "Chapter": 39,
+         "ChapterName": "Revelation",
+         "ChapterNumber": "Thirty-Nine",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "A vicious enemy unmasks themselves.",
+         "Written": true,
+         "Release": "09/14/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/4/39.json"
+      },
+      {
+         "Act": 4,
+         "ActName": "Act Three",
+         "Chapter": 40,
+         "ChapterName": "Forced Rehabilitation",
+         "ChapterNumber": "Forty",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus is forced to receive compassion.",
+         "Written": true,
+         "Release": "09/21/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/4/40.json"
+      },
+      {
+         "Act": 4,
+         "ActName": "Act Three",
+         "Chapter": 41,
+         "ChapterName": "Rememberance",
+         "ChapterNumber": "Forty-One",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus recalls the horrors of what his anger set in motion.",
+         "Written": true,
+         "Release": "09/28/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/4/41.json"
+      },
+      {
+         "Act": 4,
+         "ActName": "Act Three",
+         "Chapter": 42,
+         "ChapterName": "Atonement",
+         "ChapterNumber": "Forty-Two",
+         "Character": [
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "A powerful ally centers Titus in one final effort.",
+         "Written": true,
+         "Release": "10/05/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/4/42.json"
+      },
+      {
+         "Act": 5,
+         "ActName": "Act Four",
+         "Chapter": 43,
+         "ChapterName": "Special Pleading",
+         "ChapterNumber": "Forty-Three",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus recognizes the strength in his beloved friends.",
+         "Written": true,
+         "Release": "10/12/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/5/43.json"
+      },
+      {
+         "Act": 5,
+         "ActName": "Act Four",
+         "Chapter": 44,
+         "ChapterName": "Late Confession",
+         "ChapterNumber": "Forty-Four",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus digs deep and confronts one of his fears.",
+         "Written": true,
+         "Release": "10/19/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/5/44.json"
+      },
+      {
+         "Act": 5,
+         "ActName": "Act Four",
+         "Chapter": 45,
+         "ChapterName": "Snowdrifters (Plural)",
+         "ChapterNumber": "Forty-Five",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus and his plurality of friends explore the outer wastes of Blackwater.",
+         "Written": true,
+         "Release": "10/26/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/5/45.json"
+      },
+      {
+         "Act": 5,
+         "ActName": "Act Four",
+         "Chapter": 46,
+         "ChapterName": "Saving Face",
+         "ChapterNumber": "Forty-Six",
+         "Character": [
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Something is different this time. Can you feel it?",
+         "Written": true,
+         "Release": "11/02/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/5/46.json"
+      },
+      {
+         "Act": 5,
+         "ActName": "Act Four",
+         "Chapter": 47,
+         "ChapterName": "Firequencher",
+         "ChapterNumber": "Forty-Seven",
+         "Character": [
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "They ambush the ambush on future intelligence.",
+         "Written": true,
+         "Release": "11/09/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/5/47.json"
+      },
+      {
+         "Act": 5,
+         "ActName": "Act Four",
+         "Chapter": 48,
+         "ChapterName": "Vermillion Family Reunion",
+         "ChapterNumber": "Forty-Eight",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "The catgirl crashes back into her neglectul family&quot;s life.",
+         "Written": true,
+         "Release": "11/16/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/5/48.json"
+      },
+      {
+         "Act": 5,
+         "ActName": "Act Four",
+         "Chapter": 49,
+         "ChapterName": "Tentative Allies",
+         "ChapterNumber": "Forty-Nine",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "How in Khiras&quot; name did they get together?",
+         "Written": true,
+         "Release": "11/23/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/5/49.json"
+      },
+      {
+         "Act": 5,
+         "ActName": "Act Four",
+         "Chapter": 50,
+         "ChapterName": "Reunion/Separation",
+         "ChapterNumber": "Fifty",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus wishes his story could have ended here, but there is still so much more that needs to be done.",
+         "Written": true,
+         "Release": "11/30/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/5/50.json"
+      },
+      {
+         "Act": 5,
+         "ActName": "Act Four",
+         "Chapter": 51,
+         "ChapterName": "Liftoff",
+         "ChapterNumber": "Fifty-One",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "The Carmine-Merlot master plan is set in motion.",
+         "Written": true,
+         "Release": "12/07/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/5/51.json"
+      },
+      {
+         "Act": 5,
+         "ActName": "Act Four",
+         "Chapter": 52,
+         "ChapterName": "Afterlives",
+         "ChapterNumber": "Fifty-Two",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "What would happen if the Vermillions made it there?",
+         "Written": true,
+         "Release": "12/14/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/5/52.json"
+      },
+      {
+         "Act": 5,
+         "ActName": "Act Four",
+         "Chapter": 53,
+         "ChapterName": "Rolling Downhill",
+         "ChapterNumber": "Fifty-Three",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "One of the Vermillion girls tries driving.",
+         "Written": true,
+         "Release": "12/21/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/5/53.json"
+      },
+      {
+         "Act": 5,
+         "ActName": "Act Four",
+         "Chapter": 54,
+         "ChapterName": "Purgatory Line",
+         "ChapterNumber": "Fifty-Four",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "The Lower City converges on the Afterlife.",
+         "Written": true,
+         "Release": "12/28/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/5/54.json"
+      },
+      {
+         "Act": 5,
+         "ActName": "Act Four",
+         "Chapter": 55,
+         "ChapterName": "Losing My Perfection",
+         "ChapterNumber": "Fifty-Five",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "Titus takes ownership for a world he was only reborn into.",
+         "Written": true,
+         "Release": "01/04/27",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/5/55.json"
+      },
+      {
+         "Act": 5,
+         "ActName": "Act Four",
+         "Chapter": 56,
+         "ChapterName": "The Last Firebrand",
+         "ChapterNumber": "Fifty-Six",
+         "Character": [
+            "Titus",
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "There is no salvation from failure this time. Titus and his adversary fight through the fabric of time itself.",
+         "Written": true,
+         "Release": "01/11/27",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/5/56.json"
+      },
+      {
+         "Act": 6,
+         "ActName": "Epilogue",
+         "Chapter": 57,
+         "ChapterName": "",
+         "ChapterNumber": "Fifty-Seven",
+         "Character": [
+            "Titus"
+         ],
+         "Summary": "",
+         "Blurb": "",
+         "Written": true,
+         "Release": "01/18/27",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
+         "Location": "/sectioned/Firebrand/6/57.json"
+      }
+   ]
+}

@@ -1,0 +1,1354 @@
+[
+   [
+      [
+         "Body",
+         "&quot;How do you know that? Do you think this is some kind of joke?&quot; She says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;No, of course not . . . But I have to go,&quot; I tell her.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;No. You&apos;re not going anywhere.&quot; Her two bodyguards restrain my wrists, undoubtedly brothers of the First Red. &quot;Drag him in the alley,&quot; Lyra commands.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Please, you don&apos;t understand!&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;I don&apos;t think you understand,&quot; she says. &quot;There&apos;s a reason we keep everything airtight. Now tell me: who told you?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I strain my memory over anything useful: this is exactly why I went into Intelligence in the Academy. And I figure the only way I can get myself out is by digging deeper. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Are you stupid, Lyra?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "The question surprises her.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;What in Gods&apos; name did you just say?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "When her guards tension their fingers into my wrist, I feel a familiar amethyst energy sting inside my nerves.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;I said you&apos;re stupid and brash! Just because you&apos;re the daughter of Ullrich doesn&apos;t mean you&apos;re special. Dragging First Red operatives, on assignment, right off the street?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;What&apos;s your name, then?&quot; She asks. &quot;Why have I never seen you?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;You should know better than anyone we try to distance ourselves from each other,&quot; I wager. &quot;I was sent here on detail to the Twelfth District.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "She still doesn&apos;t fully believe me. She turns to her First Red companions ready to beat me to a pulp. &quot;Can you tell? Is he Chymaeran?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "They shake their heads.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;His Essence is weak, too. No way he comes from Lionshead.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I take a deep breath.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;But that also means he probably doesn&apos;t come from us.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "The right one punches me in the stomach, knocking the wind from my exhausted lungs.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Amazing what the power of a name is, isn&apos;t it?&quot; Lyra says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "She&apos;s right. I just need to use the right name.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;You bitch,&quot; I say. &quot;Weak Essence is the perfect cover! I&apos;m on assignment to stop something huge from happening.&quot; I catch my breath between curses. &quot;Some guy named Fletcher that Raine sent me to.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "The second guard twists my arm and readies himself to knee me in the stomach, but Lyra stops him first. I should know the power of estranged family more than anyone.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;What was the last name you said?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Raine? The dark-skinned one?&quot; I say, baiting her.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Before that.&quot; It&apos;s dark in the alley, but I can sense the change in her body language. Now that I found a seam, I pull it with all I have.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Fletcher.&quot; But where would I have met him? &quot;Raine sent for me to meet him here in the city.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;In the city?&quot; She scoffs before mumbling to herself. &quot;A decade alongside them, and the Elders still have their secrets.&quot; But I see a relief in her, as if the question of his survival has burned within her for years.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;What&apos;s your relationship to him?&quot; I ask, anxious by the passage of time, every second bringing me closer to that phone call from my father.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;My brother,&quot; she says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I&apos;m in control now. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Well, I need your help . . . Lyra,&quot; I tell her. &quot;Leave your two friends behind. Your brother wants me to stop something terrible before it sets all of Blackwater ablaze. It will spark riots far worse than the one two decades ago.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;What did Fletcher tell you?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;There&apos;s no time for that. I&apos;ll show you, instead,&quot; I tell her.",
+         true,
+         false,
+         false
+      ],
+      [
+         "EndOfScene",
+         " ",
+         true,
+         false,
+         false
+      ]
+   ],
+   [
+      [
+         "Body",
+         "I caught a glimpse of my father across the street -- the single light on, stacks and stacks of papers, and the reflection of his reading glasses through the window, but his focus wasn&apos;t on the storehouse.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Lyra was livid. &quot;The Amulet, Titus? Are you kidding me? Why didn&apos;t you tell me this before? They probably beat up those Carmine for the information. I could see the glow of that column of light from my house. It almost broke through the clouds.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;It wasn&apos;t really my focus right then and there, Lyra. I wasn&apos;t expecting it, either,&quot; I said.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;The Afterlife is going to kill us for it! They have all the records of the Academy. They know where you live. They know where those Carmine brothers were headed. They probably even know how you like your eggs for breakfast, it&apos;s written somewhere. Now where the hell did you leave it?&quot; Lyra said.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;I hid it in a vent beneath the bathroom sink.&quot; The one tried-and-true spot even my mother couldn&apos;t find my things growing up.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Idiot,&quot; Lyra said, &quot;keep it on you. They&apos;ll tear down your whole house to find it. Then they&apos;ll pin it on you as an act of arson, and you&apos;ll be thrown in jail, or worse.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Gods,&quot; I said, &quot;it&apos;s only been two days. How would they know I have it?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;They control all the city&apos;s documents. How else,&quot; Lyra asked. &quot;Now, let&apos;s get this over with so we can go back. Have you been here before?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;It&apos;s been years since last time,&quot; I said. &quot;Everett took me in here sometimes when he had to take care of me while he was on the job. Last time I saw the place was when it was a smoldering mess, and that&apos;s tomorrow morning.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Who do you think it was?&quot; Lyra said. The streets were empty, but Lyra made sure, before sneaking around the corner with her shoulder against the storehouse walls.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;The news reports said it was Merlot. The storehouse is Carmine property now. My father sold it behind my back to try to keep his shop alive. There are gonna be some Carmine kids in there lifting boxes, probably trying to move them in and make some allowance money.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;And what if they see us?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Then Romin&apos;s gonna have even more to ask, especially after he finds out about the Carmine brothers I blinded,&quot; I said. &quot;It&apos;s not our deed anymore, so beyond that, then things would get legal with the city. Then the Afterlife would find out. Then we&apos;d be on the run.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "The storm cellar doors were on the right side of the building facing the back. I remembered from my father&apos;s eyewitness report that he saw them exit through there.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "If only our circuits weren&apos;t drained of essence,&quot; Lyra said, &quot;this damn city and all its hate for the &apos;weak-bloods.&apos; Otherwise I&apos;d get these chains off real easy.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;That&apos;s why we invented garden shears,&quot; I said, &quot;ever seen these before?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;More than you have,&quot; Lyra said. &quot;What kinda garden can you keep in this frostbitten hell?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "The chains snipped off the lock. I looked around. The streets were still silent. My father still sifted through his papers, running numbers. In the warehouse, I heard the thump and drag of boxes. The kids must have already started.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Let&apos;s get this over with as fast as we can,&quot; I said, &quot;then let&apos;s get out of here before they show up.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;And let those kids die? Are you kidding me? That&apos;ll start the biggest gang war in city history, if the Carmine think it&apos;s Merlot.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Okay, then what&apos;s your plan?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Scan the basement, find clues to what they&apos;re after, then . . . we&apos;ll figure it out,&quot; she said.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Figure it out? Figure it out now,&quot; I said, &quot;or else we&apos;ll be burning in here with them.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;We just have to get them out of the storehouse,&quot; I said. We sunk into the cellar: the only access from a dimly-lit stairwell across the room, and the side-access from the storm doors. The reverberations of young voices, laughter, footsteps, and dragging boxes could be heard above.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I kept thinking about the news report. It wasn&apos;t just burnt bodies. There were stab wounds. There was more to this than just coincidentally lighting the place on fire to burn the evidence.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Gods, I should have known,&quot; I said, just as Lyra was sifting through the shelves, &quot;the Carmine kids don&apos;t just die on accident, they&apos;re deliberately attacked!&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;What do you mean, Titus?&quot; she asked.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;It means they were killed before they even got down here,&quot; I said.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Shit. Shit, that changes things,&quot; Lyra said.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "We&apos;d have to wait until they arrived. We&apos;d have to save the children first. Or else we&apos;d have to be really quick, scan through the shelves. But everything was so empty in the basement: boxes, papers scattered across the floor, spiderwebs, and trashed piled in the corners, and books on the shelves.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "This is an important story, Titus, one I hope you will never forget. Even if the city has long forgotten us, Everett said. I could feel the inkling of a distant memory. Something was familiar about this place: the cross-lattice of the beam architecture, the books on the walls, and it felt as if a memory I had tried to suppress.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "My fingers fumbled for something to check. I couldn&apos;t stop thinking of the children above, dragging boxes, probably rambling about what teachers they hated in pre-Academy or complaining about their parents, completely unaware of the gruesomeness that would follow in moments. In the anxiety, I felt myself reach for a crimson tome with a worn spine. I could remember -- or imagine -- Everett turning the pages, reading them to me as a child, and as I removed it from the shelf, I felt the tension of a string release something from behind the wall, followed by a high-pitched squeak behind me.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "The stone floor was creased in a lattice pattern, almost like a flower: petals surrounding a central column of cement. I felt the rumble of the ground beneath my feet as the pedals descended, exposing a circular stairwell.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Lyra fell backwards down the stairs, barely catching her scream, the fumbling and spilling of all the trinkets in her backpack across the stairs until she finally came to a rest at the bottom.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Gods, Titus! At least warn me before you pull the damn--&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;I&apos;m sorry,&quot; I said, &quot;I&apos;m sorry, I didn&apos;t know it was there. I feel like I&apos;ve been here before. That book felt familiar. I think Everett once read it to me when I was . . .&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I didn&apos;t hear a reply.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Lyra?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "No answer.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I rushed down the stairs to find her there, holding her head, glancing into the next room as if entranced by a single light that hung from the ceiling, setting a lone table aglow, scattered with papers. I looked over her shoulder. Essenced lamps ignited automatically, in an instant: an item long outlawed by the city, an ancient item I had only heard of, and I wondered how long this place had remained untouched for.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "It wasn&apos;t until I stepped past her that I saw what froze her.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;What the . . . fuck . . .&quot; Lyra said, pointing to the large glass chamber in the corner, marked with the words FILL LINE, dried crimson caked on the sides of what I could only assume was once filled with blood.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "This place felt familiar. The feelings it brought were almost . . . painful. I could hear Everett&apos;s voice still haunting this room with its frighteningly calm intonation:",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "It&apos;s alright, Titus, I&apos;m not going to hurt you. Stop resisting. There was the chair in the corner -- desperate fingernail scratches at the end of the arms carved into the polished oak.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Did you know that the Human body holds one-point-five gallons of blood, Titus?",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "And the desperate, black scratches swiping away from the feet of the chair on the stone floor.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "And a child&apos;s can hold three-quarters. But we&apos;ll need more than that. And we&apos;re almost there.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "The wrist restraints were lined with sheepskin for comfort. I remembered my seminary boots had black, rubber soles like dress shoes, the cheapest ones Clint could buy. The first few times, I could remember kicking the floor . . .",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "This isn&apos;t about you, or me, Titus. This is about the future of the Humans. This is about protecting us from those bastards up there, and from those Chymaeran psychopaths beyond the walls, this is about our last reach in creating ... something, something that can save us . . .",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I could see his face, decaying with age, the amber in the whites of his eyes matched in his pallid flesh like a walking corpse, the faint glow of amethyst in the veins of his skin, and the incredible arthritic pain he winced at, kept alive by a single mission and a stronger pain that never went away.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         ". . . Just like last time, son, you won&apos;t remember any of this. I&apos;ll carry you home. I&apos;ll tell Clint and Moira that you fell asleep on my couch, they won&apos;t expect it. They wouldn&apos;t understand . . .",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I could see the ghastly tension in his eyes from a trauma still fresh in his mind, piercing through me harder each day as his insanity overtook him.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         ". . . They would never understand what happened to her, what happened to you . . .",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I saw Lyra inspecting a metal tray with needles. A plastic tube ran all the way from the chair into the vat, and I was amazed at how high the dried blood had reached in the chamber.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "And you&apos;ll forget the next time, too. And the time after that . . .",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I saw all the papers scattered across the table, illuminated by a single light. We could no longer hear the children upstairs. Our focus was blindsided, and just as I was too consumed by the voice of my grandfather in the imagery, Lyra was too surprised by a letter on the table, addressed with her name on it. The papers were marked with furious scribbles, held to the table by a jar of ashes, and I could tell by the difference in script how quickly Everett had lost his mind. The scratchings read with frightening imagery: words of THE ULTIMATE VASSAL, of PROJECT PURGATORY, along with two crests: a crimson one I recognized as the crest of the Humans&apos; Goddess, and the other amethyst, one I could only assume was the Chymaerans&apos;.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Across another page ran intensively detailed family trees: circled on the page was a second box produced from CLINT and MOIRA alongside me, not yet filled out.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Using the blood of the Chosen, Titus! She&apos;ll be of your blood, of our blood. She&apos;ll unite us. She&apos;ll purge the cancer of the Chymaerans. She&apos;s the one that will bring us back to the golden age, don&apos;t you understand?",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I found the amethyst crest again on the jar of ashes, holding to the table a page detailed PURGATORY PLAN, but that was all I could make out from the illegible scribbles of a mentally-decaying man. Everett remarked his plans to host the blood of Chymaeran royalty within him though it would literally dissolve his brain to mush in a matter of years: the plan to combine the essence of both Gods and both Chosen in an unholy concoction.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Vera&apos;s finger tore the vellum of the envelope, pulling a letter from within that still held legible scribbles, dated a near decade ago, crumpled in wet splotches of what I could only assume was either snowfall or tears.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "As soon as I saw a familiar name on the last legible page, I heard Lyra&apos;s voice speak the first words of the three-page letter.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Dearest Lyra. I don&apos;t expect you to forgive me, but I only pray to the Gods one day you&apos;ll understand the gravity of what I&apos;ve done . . .",
+         true,
+         false,
+         false
+      ],
+      [
+         "EndOfScene",
+         " ",
+         true,
+         false,
+         false
+      ]
+   ],
+   [
+      [
+         "Body",
+         "I kneel for a glance over Lyra&apos;s shoulder. She barely has to duck her head. The short archway spills out to a downward slope, dipping several feet before it offers enough clearance to stand fully upright. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I can tell the room runs deep. And I doubt it&apos;s vacant like the space above: when my try my voice it doesn&apos;t echo, catching on whatever shape of shelves and tables in the pitch darkness.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Move,&quot; I demand of her. Tight spaces remind me too much of my early childhood. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Lyra snaps her fingers. The wall lamps light with a crackle, burning ages-old Essence with a sinister red glow. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "She chuckles. &quot;How do you think he got all this furniture down here?&quot; Lyra asks. &quot;Gods. Poor bastard probably took it all apart and rebuilt it at the bottom. You know, if it were me, I&apos;d just buy everything &apos;C&apos;-shaped and jam it down that stairwell.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Funny,&quot; I say. Her routine fades as I retreat further into the darkness, to the spaces where the lanterns don&apos;t catch. I squint&mdash;maybe it&apos;s just my eyes begging to be relieved of the color red, but a sliver of light looks yellow, as if a small tributary of lighttime glistens through.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "My hands feel for walls when my unadjusted eyes can&apos;t accommodate the landscape. Maybe this warehouse was built atop a cavern, the way fine rocks clatter, scatter, and scrape when my boots drag. And as I approach the distant wall, raising my silhouetted fingers to find the light distinguishing them from pitch black, realizing its a cave entrance sealed by large rocks, I feel something rigid and dry crack beneath me like dry leaves.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "The jarring crunch is enough to give me a start, like stomping on branches of a petrified tree: offering only the faintest give before they splinter. I call Lyra&apos;s name and she rushes over, muttering something about my weakness before bathing the space with Essenced light.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I can feel the jagged edges. I smell the faintest odor of decay through my stuffed nose. And when I press, and the hard cartilage springs on the remaining ribs, it&apos;s then that I realize what lies before me.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;By the Gods above,&quot; Lyra says. &quot;They&apos;re dead.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I remember Everett&apos;s kindness and charity. All the hours we spent together, either playing games in the main room of his warehouse, or reading together his home. When I&apos;d fall asleep so easily when he read to me, and I&apos;d wake up at home in my bed. &quot;He can&apos;t be a murderer. This has to be someone else.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Like who?&quot; Lyra asks. I&apos;m surprised how little everything fazes her.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;He wouldn&apos;t do such a thing. He was a gentle man.&quot; I try to distinguish any features I can from the body before me. It looks like the corpse has been here for ages: stripped of all its clothing. The left hand is missing its ring finger. And at the base of the skull, two silver-and-sapphire earrings that appear purple under the light.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "This person must have had long hair: hiding their ears when the perpetrator removed their clothes. The jewelry almost reminds me of an anecdote of my past, feeling familiar but impossible, so I keep searching.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Between the cracks of the floor, Lyra digs for something, trying to pinch between such a narrow space. She remarks the fiber binding the beads of whatever it was has dissolved: the easeful, cheap workings of a child&apos;s craft, leaving nothing but ceramic beads embellished with the letters I, A, R, M.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "They look like some easy craft the orphanage would provide to the children every weekend. I remember a box of those letters mixed in with the kit of colored beads and twine, because I spent so many hours volunteering with Sylvia when we started at the Academy.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;RAIM? MAIR? ARMI?&quot; Lyra tries, doing us no service.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;There&apos;s a missing letter, I&apos;m sure of it,&quot; I say. The jagged cave floor makes sweeping this grand space a waste of time, so I know it&apos;s still here. But I remember something before my time as a volunteer. The details get hazy with early youth. All I remember is the birthday, her smile, and then it comes to me, just as Lyra lifts the missing bead.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;You&apos;re right. Letter &apos;O&apos;,&quot; she says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;MOIRA,&quot; I exclaim, and it baffles me. &quot;My mother! But she ran away in panic the last night I saw her,&quot; I tell her. So much doesn&apos;t make sense. Everett was in a late state of decay by then, mostly bedridden. We never found her. Her disappearance is a mystery that&apos;s haunted me ever since, so for her to end up here . . .",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "The memory is clearer now. The smile of when I gave her the necklace. I thought she lost it&mdash;that night so long ago when she said she was mugged and beaten, forced to relinquish all her jewelry. She said they beat her within an inch of her life. She said the muggers bashed her head against the ground when she refused, and for two weeks her memory was weak, never leaving the master bedroom.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I&apos;m almost certain this bracelet and those earrings were among the stolen items.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Hold on a minute. What is this Everett&apos;s relation to you, then?&quot; She asks, and I realize in the passion of the moment I let another thing slide.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Nothing,&quot; I convince her. &quot;But this is my mother. She disappeared ages ago.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Lyra drops it. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;I have something else I found,&quot; she says, &quot;so long as it doesn&apos;t twist your stomach.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I rise to my feet. Those feelings of grief and loss are so far behind me that I&apos;m surprised when I feel nothing.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;I&apos;m sorry about your mother,&quot; she offers. &quot;I didn&apos;t even know mine. I was far too young when it happened, so if it&apos;s any consolation&mdash;&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Thanks,&quot; I tell her.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;I&apos;d let you mope here a while longer, but you told me there&apos;s little time.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Mope? I ask myself, wondering how she could be so ill-adjusted in human relations: pitying me one second and chastising me the other, but I don&apos;t have time to let it bother me. I&apos;ll leave her as soon as we&apos;re done here anyway.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;What&apos;s that face for? Come look at this, Titus,&quot; she says, grasping my forearm, ushering me through a brief stretch of darkness before we weave between half-empty metal shelves.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "There&apos;s an open space partitioned by the shelves across from the stairwell. The two tables stand at awkward angles, wherever the four equal legs would dance the least on the uneven surface, shimmed with flat rocks jammed between cracks. A rucksack carpet lines the floor with splotches of something I can&apos;t discern in the colored light. A chair with custom arm restraints lined with sheepskin. And a cabinet much like an old-style icebox, it&apos;s doors hinged open, filled with vials of viscous liquid that dried long ago.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;What do you make of this? Was he some sick torturer?&quot; Lyra asks me. I try sitting in the chair, but it&apos;s tight. Child-sized.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "She opens one of the corked vials and sniffs inside, gagging. &quot;I know what this is. It&apos;s blood!&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I look at the floor in front of the chair: the makeshift rucksack carpet torn in a space where the victim&apos;s feet must have thrashed unwittingly.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Just then, we hear a commotion upstairs beyond the faint laughter and dragging of boxes. A change in the rhythm of words from lighthearted jest to statements of fact, and I can tell someone else has entered.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "We let the minutes pass us far too easily.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;They&apos;re here,&quot; I tell Lyra.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;We can&apos;t leave now! This information is far more valuable. Something big happened here,&quot; Lyra says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Children are going to die,&quot; I tell Lyra. &quot;And then they&apos;re going to burn this place to the ground!&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;These documents have the crest of the First Red,&quot; she says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;That doesn&apos;t matter. Innocent Carmine kids&mdash;&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;A couple of lives versus something that could help our entire cause?&quot; She says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Damn it, Lyra! This isn&apos;t up for debate,&quot; I say, and I leave her, rushing up the stairwell.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Heavy footfalls can be heard above. They&apos;re still talking to each other. That sight of five charred bodies is forever branded in my mind, the sight of hardy Romin weeping at the loss as he trembles in anger, their families distraught and infuriated at the audacity of the false Merlot.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Lyra doesn&apos;t know what this will change. I scour the dimly-lit basement for anything that might aid me. I dress in Lyra&apos;s small Carmine cloak. A surplus of rusted rifles rest in the corner: aged by the broken window above dusting constant dashings of snow on the metal. Even as a prop, I grab it anyway, and swiftly rush up the far stairwell to greet the sight of whatever awaits me.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I take a deep breath, then throw open the cellar door to confront the Royal Guard disguised as Merlot, and the five kids whose faces will melt to bone from the heat.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;What&apos;s going on up here?&quot; I say. &quot;Those rats are supposed to be working. What are you highlanders bothering them for?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "EndOfScene",
+         " ",
+         true,
+         false,
+         false
+      ]
+   ],
+   [
+      [
+         "Body",
+         "&quot;We were passing through when we noticed the lights were on. We thought it was theft at first, but these kids are out long past curfew!&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "The kids look more confused than scared now: relieved that a Carmine adult is present.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Curfew? Gods, gentlemen, can&apos;t you see that these kids are indoors? We&apos;re paying them by the hour. The Festival of Departure is soon. Their brothers and sisters are graduating beyond the walls, and you want to take away their chance to buy something nice for them?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "It&apos;s just like the night I watched my father die: the same body language in these impostors with no reason to be here, not expecting any resistance.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I eye the children. &quot;Go in the basement. Quit lollygaging and finish a room for once. You should be done by now!&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "They&apos;re not familiar with my face, but they don&apos;t question authority. &quot;Yes, Brother,&quot; they tell me, about to file past before one of the faux-Merlot bastards digs their nails into a child&apos;s shoulder.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;We&apos;re not done here,&quot; he says. &quot;We&apos;ve had noise complaints from the neighbors, from the fella across the street.&quot; But Clint is so hard-of-hearing from his service, I don&apos;t believe that for a second. &quot;These kids are in trouble. And those damn Carmine shitbloods &mdash; they need to learn their place.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "The air&apos;s so thick I could cut it with the knife in my holster. I jumped in to this without planning, but I can feel my anger rise when I imagine the guilt I&apos;d feel in failing them again.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Lyra approaches behind me with a bag slung behind her shoulder, speaking for me.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Well, what are you going to do, you uppity pureblood shits?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "And at that, they make their true purpose for being here entirely known.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "The closest one withdraws her Merlotan sickle-blade.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;No, please,&quot; I beg&mdash;but before I can exchange any more pleading words, the curved edge carves through the first cadet&apos;s chest. It arcs upwards before she rips it back and the first victim collapses to the floor, dead before they hit the ground.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Two children rush through the basement door before the Merlot restrain the others. We stand with our backs to that door, while the four impostors withdraw the few tools they brought to ignite the greatest street war in this city&apos;s history.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Lyra melts the door handle with her Essence, fusing the lock: It&apos;s doubtful anything less than a fire axe could bash it.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;The other kids, Lyra!&quot; I tell her.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Would you rather save two, or none of them?&quot; She asks.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "The two children are held at sickle-point as hostages, necks inside the twisted arc. &quot;Leave now and live, or else we&apos;ll kill them right in front of you!&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;We both know you&apos;re not here to protect. You&apos;re going to kill them anyway,&quot; Lyra says. Her plume of fire blasts clean through the first impostor&apos;s head. Charred flesh and bone are all that remain, without the chance to raise their hands and ward the attack. The sickle blade clatters to the ground, and terrified, the young boy runs to us, kicking the serrated edge of the sickle before nearly stumbling to his feet.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Lyra rushes left. I duck to reach for the blade, and when I return to raise my eyes, a sharp cry is silenced by a single slice.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Talia!&quot; The child behind me cries. I imagine them as the sister I failed to protect, and it feels me with enough righteous rage to overcome the overwhelming fear.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Stay behind me. Grab my shirt,&quot; I tell her, as I test the inertia of the blade. Timed explosives eviscerate the walls of the trade building: they should have reached the end of their fuse long after the kids were all skewered. And as the three back walls collapse to smoke and incinerating blazes, the fourth front wall is all that stands.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "The first one lunges to disembowel me, but I parry, and when they lose their balance, a large cross-beam crashes to the ground between us, severing a wide split a full story down to the empty basement. I distract myself in looking for the children below, praying for the Gods&apos; hands to guide them in finding the exit. I withdraw as a sickle nearly removes my head, and I jump to the other side, always facing my back to the last survivor that&apos;s crying and cowering in the last remaining corner.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Another broad slice misses me by inches. I catch their blade on the crest of mine, twisting it downwards, and I trace their blade in sparks before the serrated edge stops at the hilt.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I kick them into flaming piles of debris, only to be bodied by another attacker trying to push me into the pit. I jump, and my body is cast back across the gap, bashed into the crumbling bordering wall still spanning across the gorge.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Lyra summons plumes of flame from her hands to distract her adversary&apos;s vision as she reaches for an iron shovel in the corner. I feel a nudge behind me. The child returns the blade to my hand.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Sensing a shadow flicker in flames above me, I roll sideways. The Royal Guard jumping the gap stabs his blade into the wooden floor, expecting to carve me in half, not anticipating this span of flooring would carve off with him instead.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "He screams on the way down until another scalding log follows and puts him to permanent rest. The wreckage spans all the way to the cavern, and after untwisting my stomach, I leap to the other side where Lyra fends off the remaining two. This side of the room is no longer safe. I can feel the floorboards give on this island, so without a warning, I drag the child with me to the other side.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "The second Royal Guardsmen is just about to land a surprise blow on Lyra when I catch his blade with my open-faced sickle, and I jerk it backwards, flinging it out of his hand. His body follows, bashing me to the ground, my upper back and head suspended directly over the crevasse.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "Like all the other sick bastards above, he&apos;d rather make me suffer than let me die an unceremonious death. With his gloves charred off from kicking him into the flaming debris, he tries to dig his thumbs into the sockets of my eyes, but quickly gives up, unable to get the leverage he needs to crush them in my skull. I feel an amethyst anguish ravage my brain instead: his brute force crushing my head as I helplessly thrash over the divide.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "But I thank the Carmine they embellish their children with tombstone courage. A loud, hollow thunk resonates the crackling air as this intruder&apos;s eyes roll into his sockets, and he collapses forward, rolling directly off me as the last remaining child stands over me with a shovel.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;For Talia,&quot; the young cadet says. He reaches to try to catch me as I slide from the edge, and reclined backwards, I realize there&apos;s nothing my arms can reach, trying to twist and grasp the edge when inertia longs to drag me to my brimstone demise.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;You stupid rat,&quot; a voice exclaims, as I slide off the edge and into the ravine to join my mother. But the hood of Lyra&apos;s Carmine cloak snares on the sharp edge of a cast-iron pipe, suspending me there helplessly beneath the floor like an upright spit-roast.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I hear a short cry before the tearing of flesh and bone. A wetness saturates the cloak, dripping beneath the floorboards and across my soot-stained flesh, blinding my eyes.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I claw at my eyes, too late to see the two figures float past me before being impaled on the metal shelf two stories below: one tall, one short. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "The fourth wall finally gives. All that&apos;s left is this peninsula of splintered, charred wood one-and-a-half stories above the basement, reinforced by the thick iron pipes that once led to the washbasin, draining scalding city water on the floorboards. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "A hand reaches from above the floor. It&apos;s also the first time I hear the sound of anything beyond this warehouse, all the onlookers gathered there to just stand and watch as Lyra throws a rope.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;We need to get out of here,&quot; she says. I lift myself back to the surface, my hands black and red and slit with fresh blood, riding the last wave of adrenaline that staves off all this pain. &quot;Nobody can know we were here. Or else all of this, and I mean everything that happened tonight, will be our fault!&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I cough black mucus from my lungs, drawing pained and trembling breaths, most of my clothes charred off. By either an act of the Gods or selfishness, Lyra still has the bag slung over her shoulder. While I chose the last child to defend, she wasted her chance to defend my grandfather&apos;s last secrets.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "She coughs as she tensions her grasp around my wrist again. We make off into the woods behind the gaping hole of refuse, just as the real Merlotan guards turn the corner.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "I hear a familiar voice behind me. It&apos;s booming and bewildered.",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "&quot;Titus? Titus, what are you doing here?&quot; Romin cries. &quot;Stop!&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "Body",
+         "But we&apos;ve already disappeared into the woods. Without a chance to shake off Lyra, our fates are bound now. There is only one place we can go, and together&mdash;just as lighttime flashes in the street lamps.",
+         true,
+         false,
+         false
+      ],
+      [
+         "EndOfScene",
+         " ",
+         true,
+         false,
+         false
+      ]
+   ]
+]

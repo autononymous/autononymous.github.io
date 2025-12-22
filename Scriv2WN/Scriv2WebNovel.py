@@ -143,6 +143,7 @@ StringTypeDict = {
     "NoteCody"      : "NoteCody",
     "NoteKatiya"    : "NoteKatiya",
     "NoteJade"      : "NoteJade",
+    "NoteTitus"     : "NoteTitus",
     "MessageFrom"   : "MessageFrom",
     "MessageTo"     : "MessageTo",
     "MessageFromDate":"Timestamp", # deprecated
@@ -283,7 +284,10 @@ def InterpretJSON(js,info=True):
             ChapterData['Summary'] = entry['Summary']
             ChapterData['Blurb'] = entry['Synopsis']
             # Pubilshing information.  
-            PubDate = (datetime.strptime(entry['PublishOn'], '%m/%d/%y').date()) if (entry['PublishOn'] != "") else PubDate + timedelta(days=int(entry['NextPublish']))
+            try:
+                PubDate = (datetime.strptime(entry['PublishOn'], '%m/%d/%y').date()) if (entry['PublishOn'] != "") else PubDate + timedelta(days=int(entry['NextPublish']))
+            except:
+                PubDate = datetime.now()
             ChapterData['NextPublish'] = PubDate.strftime('%m/%d/%y')
             PubDateLog +=  f"\n{ChapterData['NextPublish']}|\t{ThisAct}.{ThisChapter+1}|\t {ChapterData['ChapterName']}|\t{entry['Synopsis'][0:150]} ..."
             ChapterData['Scenes'] = 0
