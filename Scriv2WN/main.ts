@@ -185,8 +185,9 @@ class LocalStorageAndSrcVars {
 //  Search variables take priority over Local Storage.
     public Parameters : URLSearchParams|null = null
     public Map : any = null;
-    public Binder : ChapterBinder;
+    public Binder : ChapterBinder|null = null;
     public requestedChapter : number|null = null;
+    public storyName : string;
     private default : any = {
         "chapter":1,
         "fontsetting":3,
@@ -196,34 +197,38 @@ class LocalStorageAndSrcVars {
     }
     // Default local setup.
     public Local : any = Object.create(this.default);
+    public SaveName : string;
+    private PermLevel : number;
 
-    private constructor(binder:ChapterBinder) {
+    private constructor(storyName:string) {
         this.Map = this.PollSrcVars()
-        this.Binder = binder;
-        let localprefs = localStorage.getItem('SG_Bookmark')
+        this.storyName = storyName;
+        this.PermLevel = 1;
+        this.SaveName = `SG_Bookmark_${this.storyName}`;
+        let localprefs = localStorage.getItem(this.SaveName)
         if (localprefs) {
             try {
                 this.Local = JSON.parse(localprefs)
                 if (this.ParseSrcVars()) {
-                    console.info("LSASV.ParseSrcVars",`Setting chapter to ${this.requestedChapter} from search parameter variables.`)
+                    console.info("LSASV.ParseSrcVars",`Setting chapter to ${this.requestedChapter} from search parameter variables in ${this.SaveName}.`)
                     this.Local.chapter = this.requestedChapter;
-                    localStorage.setItem('SG_Bookmark',JSON.stringify(this.Local))
+                    localStorage.setItem(this.SaveName,JSON.stringify(this.Local))
                 }
             } catch {
-                console.error("LSASV.ParseSrcVars","Issue reading LocalStorage save. Creating new save.")
-                localStorage.setItem('SG_Bookmark',JSON.stringify(this.default))
-                let get = localStorage.getItem('SG_Bookmark') as string
+                console.error("LSASV.ParseSrcVars",`Issue reading LocalStorage save. Creating new save as "${this.SaveName}".`)
+                localStorage.setItem(this.SaveName,JSON.stringify(this.default))
+                let get = localStorage.getItem(this.SaveName) as string
                 this.Local = JSON.parse(get)
             }
         } else {
-            console.warn("LSASV.ParseSrcVars","LocalStorage save does not exist yet. Creating new save.")
-            localStorage.setItem('SG_Bookmark',JSON.stringify(this.default))
-            let get = localStorage.getItem('SG_Bookmark') as string
+            console.warn("LSASV.ParseSrcVars",`LocalStorage save does not exist yet. Creating new save as "${this.SaveName}".`)
+            localStorage.setItem(this.SaveName,JSON.stringify(this.default))
+            let get = localStorage.getItem(this.SaveName) as string
             this.Local = JSON.parse(get)
         }    
     }
-    static async initialize(binder:ChapterBinder) {
-        return new LocalStorageAndSrcVars(binder)
+    static async initialize(storyName:string) {
+        return new LocalStorageAndSrcVars(storyName)
     }
     SaveLocalStorage() {
         localStorage.setItem('SG_Bookmark',JSON.stringify(this.Local))
@@ -246,6 +251,10 @@ class LocalStorageAndSrcVars {
         }
         return map;
     }
+    AttachBinder(binder:ChapterBinder) {
+        this.Binder = binder;
+        this.Binder.Permissions = this.PermLevel;
+    }
     ParseSrcVars(doReport:boolean=true) {
         if (this.Map == null) {
             console.error("LSASV.ParseSrcVars","Unable to parse: not retrieved yet.")
@@ -255,17 +264,35 @@ class LocalStorageAndSrcVars {
         switch( this.Map.get("mode") ) {
             case "author":
             case "3":
-                this.Binder.Permissions = 3;
+                this.PermLevel = 3;
                 console.info("Access level 3 / Author.")
                 doPermissions = true;
                 break;
             case "editor":
             case "2":
-                this.Binder.Permissions = 2;
+                this.PermLevel = 2;
                 console.info("Access level 2 / Reviewer.")
                 doPermissions = true;
                 break;
             default:
+                break;
+        }
+        switch( this.Map.get("story") ) {
+            case "paragate":
+            case "Paragate":
+            case "2":                
+                this.storyName = "Paragate"
+                console.info("LSASV.ParseSrcVars","Loading Paragate.")
+                break;
+            case "firebrand":
+            case "Firebrand":
+            case "1":
+                this.storyName = "Firebrand"
+                console.info("LSASV.ParseSrcVars","Loading Firebrand.")
+                break;
+            default:
+                this.storyName = "Paragate"
+                console.info("LSASV.ParseSrcVars","No story specified. Loading Paragate as default.")
                 break;
         }
         if (doPermissions) {
@@ -408,14 +435,14 @@ class StoryConfig {
 //  It is an asynchronous class using a factory function constructor.
 //  
 //  
-    public story: string;     // Story name.
+    public storyName: string;     // Story name.
     public config: any;       // Full config data.
     public themes: string[]   // All possible themes.
     public static data: any;  // Program data retrieved from the source.    
 
     private constructor(cfg: any, storyName: string) { 
         this.config = cfg;        
-        this.story = storyName;
+        this.storyName = storyName;
         this.themes = (this.getAllPossibleThemes())
         return
     }    
@@ -431,7 +458,7 @@ class StoryConfig {
         return Object.keys(this.config.Styles)
     }
     ThemesInStory() { // List themes present in this story.
-        return this.config.ThemeIndex[this.story];
+        return this.config.ThemeIndex[this.storyName];
     }
     getFullName(characterName:string) { // Return character's full name.
         if (!this.doesThemeExist(characterName)) {           
@@ -1414,18 +1441,18 @@ class ThemeDriver {
 //
 
 async function buildManuscript(rootURL: string, storyName: string, startChapter : number = 1) {
-    // I gotta do this in here because if I do it outside, the await won't work.
-    CFG = await StoryConfig.initialize(rootURL,storyName);
-    CARD = new ChapterDataCard(storyName);
+    SRC = await LocalStorageAndSrcVars.initialize(storyName); 
+    CFG = await StoryConfig.initialize(rootURL,SRC.storyName);
+    CARD = new ChapterDataCard(SRC.storyName);
     CARD.toggleNightMode(false); // Start in Night Mode.
-    BIND = await ChapterBinder.initialize(rootURL, storyName, CFG, 0, CARD, DEPLOY, 0, IncludeSettingTags);
-    SRC = await LocalStorageAndSrcVars.initialize(BIND);
+    BIND = await ChapterBinder.initialize(rootURL, SRC.storyName, CFG, 0, CARD, DEPLOY, 0, IncludeSettingTags);   
+    SRC.AttachBinder(BIND);  
     CTRL = new ControlBar(SRC,CARD);
     //BIND.DeployOnPage(CARD.Data.TOC.Chapter,DEPLOY)
     THEME = new ThemeDriver(CFG.config, DEPLOY, CARD, eBackground, eText, eProgressBar, true);
     //console.log(SRC.Local.chapter)
     await BIND.DeployOnPage(SRC.Local.chapter,DEPLOY)
-    EXTRAS = await StoryExtrasWindow.initialize(storyName,rootURL,EXTRAID)
+    EXTRAS = await StoryExtrasWindow.initialize(SRC.storyName,rootURL,EXTRAID)
     THEME.deployTheming();
     BIND.LockUp();
     await EXTRAS.loadInExtras()
@@ -1484,6 +1511,8 @@ var SRC: LocalStorageAndSrcVars;
 var EXTRAS: StoryExtrasWindow;
 var CTRL: ControlBar;
 
+var ACTIVESTORY = "Firebrand"
+
 var IncludeSettingTags = false;
 
 var eBackground = document.getElementById("BACKGROUND") as HTMLElement;
@@ -1493,6 +1522,6 @@ var eProgressBar = document.getElementById("PROGRESS") as HTMLElement;
 // @TODO this will be defined by a JSON config file.
 var rootURL = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/Scriv2WN"
 
-buildManuscript(rootURL,'Paragate', StartChapter);
+buildManuscript(rootURL,ACTIVESTORY, StartChapter);
 eBODY.addEventListener('scroll',runScrollEvents);
 addEventListener("resize", runResizeEvents)
