@@ -1419,6 +1419,28 @@ function runResizeEvents() {
     runScrollEvents();
     console.debug("runResizeEvents", "A resize event has taken place.");
 }
+function LoadOtherStory(otherstory) {
+    let address = window.location.search;
+    let Parameters = new URLSearchParams(address);
+    let dmap = new Map();
+    Parameters.forEach((value, key) => {
+        dmap.set(key, value);
+    });
+    let varargin = "";
+    switch (dmap.get("mode")) {
+        case "author":
+        case "3":
+            varargin += '&mode=3';
+            break;
+        case "editor":
+        case "2":
+            varargin += '&mode=2';
+            break;
+        default:
+            break;
+    }
+    window.open(location.origin + location.pathname + location.hash + '?story=Firebrand' + varargin, '_top');
+}
 //  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 //
 //  █████▄ █████▄   ▄████  ██▄  ▄██   ██████ ██  ██ ██████ ▄█████ 
