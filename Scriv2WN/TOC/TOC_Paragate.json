@@ -24,6 +24,36 @@
          "Blurb": "A housewarming goes sideways when Cody opens the wrong door&mdash;and stumbles into a world that shouldn&apos;t exist.",
          "Written": true,
          "Release": "04/02/26",
+         "Settings": [
+            {
+               "Date": "2026-04-24",
+               "Time": "22:00:00",
+               "ISO": "2026-04-24T22:00:00Z",
+               "Region": "Hearthland Ridge",
+               "Area": ""
+            },
+            {
+               "Date": "2026-04-24",
+               "Time": "22:20:00",
+               "ISO": "2026-04-24T22:20:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-04-25",
+               "Time": "22:40:00",
+               "ISO": "2026-04-25T22:40:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-04-25",
+               "Time": "23:15:00",
+               "ISO": "2026-04-25T23:15:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/1/1.json"
       },
       {
@@ -41,6 +71,29 @@
          "Blurb": "Katiya tries to unwind, but duty&mdash;and an old flame&mdash;won&apos;t let her rest.",
          "Written": true,
          "Release": "04/09/26",
+         "Settings": [
+            {
+               "Date": "2026-04-23",
+               "Time": "14:30:00",
+               "ISO": "2026-04-23T14:30:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-04-23",
+               "Time": "15:00:00",
+               "ISO": "2026-04-23T15:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-04-23",
+               "Time": "17:30:00",
+               "ISO": "2026-04-23T17:30:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/1/2.json"
       },
       {
@@ -58,6 +111,29 @@
          "Blurb": "Another soul-numbing office day pushes Cody toward a choice he&apos;s not ready to make.",
          "Written": true,
          "Release": "04/16/26",
+         "Settings": [
+            {
+               "Date": "2026-04-24",
+               "Time": "16:30:00",
+               "ISO": "2026-04-24T16:30:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-04-24",
+               "Time": "16:55:00",
+               "ISO": "2026-04-24T16:55:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-04-24",
+               "Time": "19:45:00",
+               "ISO": "2026-04-24T19:45:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/1/3.json"
       },
       {
@@ -75,6 +151,29 @@
          "Blurb": "Nightmares, neighbors, and a base run: Katiya fights panic with routine until routine fights back.",
          "Written": true,
          "Release": "04/23/26",
+         "Settings": [
+            {
+               "Date": "2026-04-24",
+               "Time": "03:00:00",
+               "ISO": "2026-04-24T03:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-04-24",
+               "Time": "04:00:00",
+               "ISO": "2026-04-24T04:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-04-24",
+               "Time": "04:15:00",
+               "ISO": "2026-04-24T04:15:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/1/4.json"
       },
       {
@@ -91,6 +190,22 @@
          "Blurb": "Drinks with a best friend turn into confessions&mdash;and an idea Cody should ignore.",
          "Written": true,
          "Release": "04/30/26",
+         "Settings": [
+            {
+               "Date": "2026-04-24",
+               "Time": "18:15:00",
+               "ISO": "2026-04-24T18:15:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-04-24",
+               "Time": "21:45:00",
+               "ISO": "2026-04-24T21:45:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/1/5.json"
       },
       {
@@ -108,6 +223,29 @@
          "Blurb": "A distant light rattles Gaffesend; Katiya&apos;s first day ends with an intruder at home.",
          "Written": true,
          "Release": "05/07/26",
+         "Settings": [
+            {
+               "Date": "2026-04-24",
+               "Time": "20:15:00",
+               "ISO": "2026-04-24T20:15:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-04-24",
+               "Time": "20:35:00",
+               "ISO": "2026-04-24T20:35:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-04-24",
+               "Time": "21:15:00",
+               "ISO": "2026-04-24T21:15:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/1/6.json"
       },
       {
@@ -124,6 +262,22 @@
          "Blurb": "Through Katiya&apos;s eyes: a door, a modern nightmare, and a blur she can&apos;t unsee. and violence.",
          "Written": true,
          "Release": "05/14/26",
+         "Settings": [
+            {
+               "Date": "2026-04-25",
+               "Time": "22:20:00",
+               "ISO": "2026-04-25T22:20:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-04-25",
+               "Time": "22:40:00",
+               "ISO": "2026-04-25T22:40:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/1/7.json"
       },
       {
@@ -140,6 +294,22 @@
          "Blurb": "Misread motives turn their encounter into a full-on clash.",
          "Written": true,
          "Release": "05/21/26",
+         "Settings": [
+            {
+               "Date": "2026-04-25",
+               "Time": "23:15:00",
+               "ISO": "2026-04-25T23:15:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-04-26",
+               "Time": "00:10:00",
+               "ISO": "2026-04-26T00:10:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/1/8.json"
       },
       {
@@ -156,6 +326,22 @@
          "Blurb": "Cody barricades more than a door as reality refuses to make sense.",
          "Written": true,
          "Release": "05/28/26",
+         "Settings": [
+            {
+               "Date": "2026-04-26",
+               "Time": "08:52:00",
+               "ISO": "2026-04-26T08:52:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-04-26",
+               "Time": "09:01:12",
+               "ISO": "2026-04-26T09:01:12Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/1/9.json"
       },
       {
@@ -173,6 +359,29 @@
          "Blurb": "A month later, a public moment goes wrong&mdash;and Katiya can&apos;t shake the blame.",
          "Written": true,
          "Release": "06/04/26",
+         "Settings": [
+            {
+               "Date": "2026-04-25",
+               "Time": "01:15:00",
+               "ISO": "2026-04-25T01:15:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-05-22",
+               "Time": "19:45:00",
+               "ISO": "2026-05-22T19:45:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-05-22",
+               "Time": "20:30:00",
+               "ISO": "2026-05-22T20:30:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/1/10.json"
       },
       {
@@ -190,6 +399,29 @@
          "Blurb": "Praise falls on the wrong desk. At home, Cody hears a voice on the other side.",
          "Written": true,
          "Release": "06/11/26",
+         "Settings": [
+            {
+               "Date": "2026-05-22",
+               "Time": "12:30:00",
+               "ISO": "2026-05-22T12:30:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-05-22",
+               "Time": "12:50:00",
+               "ISO": "2026-05-22T12:50:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-05-22",
+               "Time": "17:45:00",
+               "ISO": "2026-05-22T17:45:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/1/11.json"
       },
       {
@@ -206,6 +438,22 @@
          "Blurb": "With help scarce, Katiya runs toward the only lifeline left.",
          "Written": true,
          "Release": "06/18/26",
+         "Settings": [
+            {
+               "Date": "2026-05-22",
+               "Time": "20:35:00",
+               "ISO": "2026-05-22T20:35:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-05-22",
+               "Time": "21:15:00",
+               "ISO": "2026-05-22T21:15:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/1/12.json"
       },
       {
@@ -222,6 +470,22 @@
          "Blurb": "A midnight crossing. A stranger&apos;s kindness. Rules they&apos;ll both pretend to follow.",
          "Written": true,
          "Release": "06/25/26",
+         "Settings": [
+            {
+               "Date": "2026-05-23",
+               "Time": "02:23:00",
+               "ISO": "2026-05-23T02:23:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-05-23",
+               "Time": "07:15:00",
+               "ISO": "2026-05-23T07:15:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/2/13.json"
       },
       {
@@ -239,6 +503,29 @@
          "Blurb": "&quot;Welcome to the future.&quot; A car ride and a big-box errand become an emotional obstacle course.",
          "Written": true,
          "Release": "07/02/26",
+         "Settings": [
+            {
+               "Date": "2026-05-23",
+               "Time": "08:15:00",
+               "ISO": "2026-05-23T08:15:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-05-23",
+               "Time": "08:23:00",
+               "ISO": "2026-05-23T08:23:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-05-23",
+               "Time": "08:58:00",
+               "ISO": "2026-05-23T08:58:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/2/14.json"
       },
       {
@@ -256,6 +543,29 @@
          "Blurb": "Cody tours Katiya&apos;s world&mdash;and fits in a little too well.",
          "Written": true,
          "Release": "07/09/26",
+         "Settings": [
+            {
+               "Date": "2026-05-24",
+               "Time": "04:56:37",
+               "ISO": "2026-05-24T04:56:37Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-05-24",
+               "Time": "04:59:00",
+               "ISO": "2026-05-24T04:59:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-05-24",
+               "Time": "10:12:00",
+               "ISO": "2026-05-24T10:12:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/2/15.json"
       },
       {
@@ -273,6 +583,29 @@
          "Blurb": "A lunch with Dad. A memory of a brother. A door that might be open tonight.",
          "Written": true,
          "Release": "07/16/26",
+         "Settings": [
+            {
+               "Date": "2026-05-25",
+               "Time": "11:26:00",
+               "ISO": "2026-05-25T11:26:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-05-25",
+               "Time": "11:43:00",
+               "ISO": "2026-05-25T11:43:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-05-25",
+               "Time": "16:12:00",
+               "ISO": "2026-05-25T16:12:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/2/16.json"
       },
       {
@@ -291,6 +624,36 @@
          "Blurb": "Katiya chases a thief and a ghost from her past&mdash;while promises tug her toward tomorrow.",
          "Written": true,
          "Release": "07/23/26",
+         "Settings": [
+            {
+               "Date": "2026-05-26",
+               "Time": "06:23:00",
+               "ISO": "2026-05-26T06:23:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-05-26",
+               "Time": "08:23:00",
+               "ISO": "2026-05-26T08:23:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-05-26",
+               "Time": "08:29:00",
+               "ISO": "2026-05-26T08:29:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-05-26",
+               "Time": "09:26:00",
+               "ISO": "2026-05-26T09:26:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/2/17.json"
       },
       {
@@ -307,6 +670,22 @@
          "Blurb": "A training mishap puts Cody on someone important&apos;s radar for all the wrong reasons.",
          "Written": true,
          "Release": "07/30/26",
+         "Settings": [
+            {
+               "Date": "2026-06-27",
+               "Time": "08:27:00",
+               "ISO": "2026-06-27T08:27:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-06-27",
+               "Time": "11:02:00",
+               "ISO": "2026-06-27T11:02:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/2/18.json"
       },
       {
@@ -324,6 +703,29 @@
          "Blurb": "Open house at work: new faces, old history, and a wall Cody isn&apos;t on.",
          "Written": true,
          "Release": "08/06/26",
+         "Settings": [
+            {
+               "Date": "2026-06-28",
+               "Time": "09:23:00",
+               "ISO": "2026-06-28T09:23:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-06-28",
+               "Time": "10:20:00",
+               "ISO": "2026-06-28T10:20:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-06-28",
+               "Time": "12:03:00",
+               "ISO": "2026-06-28T12:03:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/2/19.json"
       },
       {
@@ -342,6 +744,36 @@
          "Blurb": "Double dates, mixed signals, and the uneasy question: are we still who we were?",
          "Written": true,
          "Release": "08/13/26",
+         "Settings": [
+            {
+               "Date": "2026-06-28",
+               "Time": "13:57:00",
+               "ISO": "2026-06-28T13:57:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-06-29",
+               "Time": "11:04:00",
+               "ISO": "2026-06-29T11:04:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-06-29",
+               "Time": "11:05:00",
+               "ISO": "2026-06-29T11:05:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-06-29",
+               "Time": "15:32:00",
+               "ISO": "2026-06-29T15:32:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/2/20.json"
       },
       {
@@ -362,6 +794,50 @@
          "Blurb": "Cold water and hard truths&mdash;two relationships strain to the breaking point.",
          "Written": true,
          "Release": "08/20/26",
+         "Settings": [
+            {
+               "Date": "2026-06-29",
+               "Time": "15:33:00",
+               "ISO": "2026-06-29T15:33:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-06-29",
+               "Time": "17:09:00",
+               "ISO": "2026-06-29T17:09:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-06-29",
+               "Time": "15:42:00",
+               "ISO": "2026-06-29T15:42:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-06-29",
+               "Time": "17:24:00",
+               "ISO": "2026-06-29T17:24:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-06-29",
+               "Time": "15:51:00",
+               "ISO": "2026-06-29T15:51:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-06-29",
+               "Time": "18:23:00",
+               "ISO": "2026-06-29T18:23:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/2/21.json"
       },
       {
@@ -379,6 +855,29 @@
          "Blurb": "Tests expose strengths, flaws, and a calm rival who never seems to miss.",
          "Written": true,
          "Release": "08/27/26",
+         "Settings": [
+            {
+               "Date": "2026-07-07",
+               "Time": "08:26:00",
+               "ISO": "2026-07-07T08:26:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-07-07",
+               "Time": "13:40:00",
+               "ISO": "2026-07-07T13:40:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-07-07",
+               "Time": "17:21:00",
+               "ISO": "2026-07-07T17:21:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/2/22.json"
       },
       {
@@ -395,6 +894,22 @@
          "Blurb": "A tough room for Cody. A tougher match for Katiya. Plans buckle under pressure.",
          "Written": true,
          "Release": "09/03/26",
+         "Settings": [
+            {
+               "Date": "2026-07-07",
+               "Time": "14:04:00",
+               "ISO": "2026-07-07T14:04:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-07-07",
+               "Time": "17:30:00",
+               "ISO": "2026-07-07T17:30:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/2/23.json"
       },
       {
@@ -411,6 +926,22 @@
          "Blurb": "One wins the crowd; the other loses control. Lines are drawn on both sides.",
          "Written": true,
          "Release": "09/10/26",
+         "Settings": [
+            {
+               "Date": "2026-07-07",
+               "Time": "14:12:00",
+               "ISO": "2026-07-07T14:12:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-07-07",
+               "Time": "17:37:00",
+               "ISO": "2026-07-07T17:37:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/2/24.json"
       },
       {
@@ -427,6 +958,22 @@
          "Blurb": "Back at the house, two people who need comfort get conflict instead.",
          "Written": true,
          "Release": "09/17/26",
+         "Settings": [
+            {
+               "Date": "2026-07-07",
+               "Time": "16:48:00",
+               "ISO": "2026-07-07T16:48:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-07-07",
+               "Time": "17:35:00",
+               "ISO": "2026-07-07T17:35:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/2/25.json"
       },
       {
@@ -444,6 +991,29 @@
          "Blurb": "Years earlier, in a storm of ice and static, a mission hangs by a thread.",
          "Written": true,
          "Release": "09/24/26",
+         "Settings": [
+            {
+               "Date": "2015-10-03",
+               "Time": "02:23:00",
+               "ISO": "2015-10-03T02:23:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2015-10-03",
+               "Time": "03:52:00",
+               "ISO": "2015-10-03T03:52:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2015-10-03",
+               "Time": "06:28:05",
+               "ISO": "2015-10-03T06:28:05Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/3/26.json"
       },
       {
@@ -461,6 +1031,29 @@
          "Blurb": "Long before today, a childhood dare turned into a scar that never closed.",
          "Written": true,
          "Release": "10/01/26",
+         "Settings": [
+            {
+               "Date": "2005-08-23",
+               "Time": "15:20:00",
+               "ISO": "2005-08-23T15:20:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2005-08-23",
+               "Time": "16:12:00",
+               "ISO": "2005-08-23T16:12:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2005-08-23",
+               "Time": "23:57:00",
+               "ISO": "2005-08-23T23:57:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/3/27.json"
       },
       {
@@ -478,6 +1071,29 @@
          "Blurb": "Small progress, big disappointment&mdash;until a late-night spark hints at a dangerous idea.",
          "Written": true,
          "Release": "10/08/26",
+         "Settings": [
+            {
+               "Date": "2026-11-25",
+               "Time": "11:00:00",
+               "ISO": "2026-11-25T11:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-25",
+               "Time": "12:17:00",
+               "ISO": "2026-11-25T12:17:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-25",
+               "Time": "22:01:00",
+               "ISO": "2026-11-25T22:01:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/3/28.json"
       },
       {
@@ -496,6 +1112,36 @@
          "Blurb": "Family news brightens the table, but Katiya&apos;s hands won&apos;t stop shaking. A walk with Erik ends at a tavern door&mdash;and a choice she should&apos;ve made months ago.",
          "Written": true,
          "Release": "10/15/26",
+         "Settings": [
+            {
+               "Date": "2026-11-26",
+               "Time": "16:07:00",
+               "ISO": "2026-11-26T16:07:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-26",
+               "Time": "17:49:00",
+               "ISO": "2026-11-26T17:49:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-26",
+               "Time": "17:56:00",
+               "ISO": "2026-11-26T17:56:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-26",
+               "Time": "18:31:25",
+               "ISO": "2026-11-26T18:31:25Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/3/29.json"
       },
       {
@@ -514,6 +1160,36 @@
          "Blurb": "New alliances form while an ominous email threatens Cody&apos;s career.",
          "Written": true,
          "Release": "10/22/26",
+         "Settings": [
+            {
+               "Date": "2026-11-27",
+               "Time": "09:47:00",
+               "ISO": "2026-11-27T09:47:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-27",
+               "Time": "06:48:00",
+               "ISO": "2026-11-27T06:48:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-27",
+               "Time": "11:12:00",
+               "ISO": "2026-11-27T11:12:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-27",
+               "Time": "07:10:00",
+               "ISO": "2026-11-27T07:10:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/3/30.json"
       },
       {
@@ -531,6 +1207,29 @@
          "Blurb": "A collapse, a break-in, and a rescue drag Katiya and Cody violently back together.",
          "Written": true,
          "Release": "10/29/26",
+         "Settings": [
+            {
+               "Date": "2026-11-28",
+               "Time": "16:45:00",
+               "ISO": "2026-11-28T16:45:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-28",
+               "Time": "15:23:00",
+               "ISO": "2026-11-28T15:23:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-28",
+               "Time": "20:35:00",
+               "ISO": "2026-11-28T20:35:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/3/31.json"
       },
       {
@@ -548,6 +1247,29 @@
          "Blurb": "Katiya&apos;s first peaceful sleep leads straight into chaotic, sword-filled &quot;fantasy&quot; tourism on Earth.",
          "Written": true,
          "Release": "11/05/26",
+         "Settings": [
+            {
+               "Date": "2026-11-29",
+               "Time": "05:13:00",
+               "ISO": "2026-11-29T05:13:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-29",
+               "Time": "09:31:00",
+               "ISO": "2026-11-29T09:31:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-29",
+               "Time": "10:12:00",
+               "ISO": "2026-11-29T10:12:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/3/32.json"
       },
       {
@@ -565,6 +1287,29 @@
          "Blurb": "Tournament glory and a stolen moment of closeness are shattered with sudden news from the north.",
          "Written": true,
          "Release": "11/12/26",
+         "Settings": [
+            {
+               "Date": "2026-11-29",
+               "Time": "14:10:00",
+               "ISO": "2026-11-29T14:10:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-29",
+               "Time": "14:53:00",
+               "ISO": "2026-11-29T14:53:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-29",
+               "Time": "22:12:00",
+               "ISO": "2026-11-29T22:12:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/3/33.json"
       },
       {
@@ -582,6 +1327,29 @@
          "Blurb": "At work, a meeting becomes a reckoning. Someone steps forward, and the cost is real.",
          "Written": true,
          "Release": "11/19/26",
+         "Settings": [
+            {
+               "Date": "2026-11-30",
+               "Time": "06:00:03",
+               "ISO": "2026-11-30T06:00:03Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-30",
+               "Time": "07:00:02",
+               "ISO": "2026-11-30T07:00:02Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-30",
+               "Time": "08:12:00",
+               "ISO": "2026-11-30T08:12:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/3/34.json"
       },
       {
@@ -599,6 +1367,29 @@
          "Blurb": "Desperation pulls Katiya beyond the walls, where duty, grief, and old ghosts converge.",
          "Written": true,
          "Release": "11/26/26",
+         "Settings": [
+            {
+               "Date": "2026-11-30",
+               "Time": "10:21:00",
+               "ISO": "2026-11-30T10:21:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-30",
+               "Time": "10:54:00",
+               "ISO": "2026-11-30T10:54:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-30",
+               "Time": "12:42:00",
+               "ISO": "2026-11-30T12:42:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/3/35.json"
       },
       {
@@ -616,6 +1407,29 @@
          "Blurb": "Kindness and rediscovery of an old passion dare Cody to care again.",
          "Written": true,
          "Release": "12/03/26",
+         "Settings": [
+            {
+               "Date": "2026-11-30",
+               "Time": "13:02:00",
+               "ISO": "2026-11-30T13:02:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-30",
+               "Time": "17:49:00",
+               "ISO": "2026-11-30T17:49:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-11-30",
+               "Time": "19:40:00",
+               "ISO": "2026-11-30T19:40:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/3/36.json"
       },
       {
@@ -634,6 +1448,36 @@
          "Blurb": "Shame, buried memories, and unexpected visitors push both worlds toward a new kind of war.",
          "Written": true,
          "Release": "12/10/26",
+         "Settings": [
+            {
+               "Date": "2026-12-01",
+               "Time": "16:53:00",
+               "ISO": "2026-12-01T16:53:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-12-01",
+               "Time": "17:32:00",
+               "ISO": "2026-12-01T17:32:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-12-01",
+               "Time": "23:32:00",
+               "ISO": "2026-12-01T23:32:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-12-06",
+               "Time": "12:09:00",
+               "ISO": "2026-12-06T12:09:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/3/37.json"
       },
       {
@@ -650,6 +1494,22 @@
          "Blurb": "This time, Katiya and Cody come together instead of shutting each other out.",
          "Written": true,
          "Release": "12/17/26",
+         "Settings": [
+            {
+               "Date": "2026-12-08",
+               "Time": "00:00:00",
+               "ISO": "2026-12-08T00:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "2026-12-08",
+               "Time": "00:12:00",
+               "ISO": "2026-12-08T00:12:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/4/38.json"
       },
       {
@@ -667,6 +1527,29 @@
          "Blurb": "",
          "Written": true,
          "Release": "12/24/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "03:39:47",
+               "ISO": "T03:39:47Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/4/39.json"
       },
       {
@@ -684,6 +1567,29 @@
          "Blurb": "Stories from another road change the map. A cross-world conversation reframes what &quot;winning&quot; could mean.",
          "Written": true,
          "Release": "12/31/26",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/4/40.json"
       },
       {
@@ -701,6 +1607,29 @@
          "Blurb": "An abandoned project stops being a joke.",
          "Written": true,
          "Release": "01/07/27",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/4/41.json"
       },
       {
@@ -718,6 +1647,29 @@
          "Blurb": "Turned away by authority, Katiya and her new allies make a plan anyway&mdash;three days, no permission, no safety net.",
          "Written": true,
          "Release": "01/14/27",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/4/42.json"
       },
       {
@@ -735,6 +1687,29 @@
          "Blurb": "Cody raids parts bins and old code; the prototype finally breathes&mdash;then crosses into a world where failure isn&apos;t theoretical.",
          "Written": true,
          "Release": "01/21/27",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/4/43.json"
       },
       {
@@ -752,6 +1727,29 @@
          "Blurb": "Cody confronts his father about a resurrected dream.",
          "Written": false,
          "Release": "01/28/27",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/4/44.json"
       },
       {
@@ -769,6 +1767,29 @@
          "Blurb": "Katiya tells her family the whole truth.",
          "Written": false,
          "Release": "02/04/27",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/4/45.json"
       },
       {
@@ -786,6 +1807,29 @@
          "Blurb": "Suit pressed, nerves frayed: Cody walks into the room that could end him&mdash;or open a door.",
          "Written": false,
          "Release": "02/11/27",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/4/46.json"
       },
       {
@@ -802,6 +1846,22 @@
          "Blurb": "Proof flies. A name lands. The verdict doesn&apos;t.dea.",
          "Written": false,
          "Release": "02/18/27",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/4/47.json"
       },
       {
@@ -819,6 +1879,29 @@
          "Blurb": "Dawn, a promise, and zero guarantees. The team rolls out while Cody watches the horizon for what no one else believes.",
          "Written": false,
          "Release": "02/25/27",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/4/48.json"
       },
       {
@@ -835,6 +1918,22 @@
          "Blurb": "Fire buys time&mdash;then runs out. A second danger moves where no one is looking.",
          "Written": false,
          "Release": "03/04/27",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/4/49.json"
       },
       {
@@ -851,6 +1950,22 @@
          "Blurb": "Winter arrives with teeth. Something old stirs, and Katiya gets a chance to reconcile the past.",
          "Written": false,
          "Release": "03/11/27",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/4/50.json"
       },
       {
@@ -868,6 +1983,29 @@
          "Blurb": "With the city burning, Katiya chooses action.",
          "Written": false,
          "Release": "03/18/27",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/4/51.json"
       },
       {
@@ -886,6 +2024,36 @@
          "Blurb": "New halls, old stairs. A photo in a locker. On the western tower, two silhouettes face what&apos;s next.",
          "Written": false,
          "Release": "03/25/27",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/5/52.json"
       },
       {
@@ -903,6 +2071,29 @@
          "Blurb": "Titus enocunters someone he thought he lost.",
          "Written": false,
          "Release": "04/01/27",
+         "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "TZ",
+               "Region": "Unknown",
+               "Area": ""
+            }
+         ],
          "Location": "/sectioned/Paragate/5/53.json"
       }
    ]
