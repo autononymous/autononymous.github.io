@@ -15,6 +15,9 @@
     --CTRLWIDTH:            var(--MenuHeight);
 
     --TextAlignment:        justify;
+    --TabMargin:            calc( var(--TextSize) * 0.6);
+    --ParagraphSpacing:     0em;
+    --TypesetMargin:        60px;
 
     --TagFontSize:          calc( var(--TextSize) * 0.7 );
 
@@ -83,7 +86,6 @@
     --BodyStart:            calc(var(--MenuHeightStatic) + var(--MenuPad));
     --BodyHeight:           calc(100dvh - var(--MenuHeightStatic) - var(--MenuPad) - var(--FooterHeight) - var(--FooterPad));
     --ContentWidth:         min(800px,calc(100%));
-    --TypesetMargin:        40px;
 
     /*============================================*/
 /*====={ Title, text, and size variables by story }=====*/

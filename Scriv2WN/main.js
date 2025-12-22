@@ -405,7 +405,7 @@ class ChapterDataCard {
         else {
             this.NightMode = !this.NightMode;
         }
-        ROOT.style.setProperty("--IconState", `invert(${Number(this.NightMode)})`);
+        ROOT.style.setProperty("--IconState", `invert(${Number(!this.NightMode)})`);
         ROOT.style.setProperty("--IconReverse", `invert(${Number(!this.NightMode)})`);
         ROOT.style.setProperty("--BooleanColor", `${this.NightMode ? "white" : "black"}`);
         console.info(`Night mode is now ${this.NightMode ? "on" : "off"}.`);
@@ -956,6 +956,7 @@ class ChapterBinder {
         let doStartP = true;
         let doEndP = true;
         let isCustomHTML = false;
+        let spacerContent = "";
         //console.warn(sectionStyle,ParagraphStyle)
         // Determine line style by analyzing each line's reported local style.
         lineContent.forEach(([style, line]) => {
@@ -977,7 +978,8 @@ class ChapterBinder {
                 isSpecial = true;
                 ParagraphStyle = style;
             }
-            else {
+            else if (!style.includes("Note") && !style.includes("Message")) {
+                spacerContent = '<span class="textspace"></span>';
             }
             // @TODO add other important styles to segregate
             if (style.includes("RawHTML")) {
@@ -994,7 +996,7 @@ class ChapterBinder {
             fullLine += `</div>`;
         }
         else {
-            fullLine = `<p class="${ParagraphStyle + extraStyles}" id="${lineID}">`;
+            fullLine = `<p class="${ParagraphStyle + extraStyles}" id="${lineID}">${spacerContent}`;
             let fragStyle = "";
             let fragEnum = 1;
             lineContent.forEach(([style, line]) => {

@@ -38,6 +38,9 @@ p.StarterTag {
     padding-left: 15px;
     font-size: var(--TagFontSize);
 }
+span.textspace {
+  padding-left: var(--TabMargin);
+}
 
 .KatiyaHead, .CodyHead, .TitusHead {
     color:              var(--TextColor);
@@ -91,6 +94,7 @@ span.BodyTitus {
 
 p.BodyCody, p.BodyKatiya, p.BodyTitus, p.BodyJade {
     color: var(--TextColor);
+    margin: var(--ParagraphSpacing);
 }
 
 /*
@@ -157,13 +161,13 @@ span.NoteTitus {
     color:            rgb(78, 2, 2);
 }
 p.NoteCody, p.NoteKatiya, p.NoteTitus {
-    margin-left:        -10px;
-    margin-right:       -10px;
-    margin-top:         10px;
-    margin-bottom:      10px;
-    padding:            10px;
-    border-radius:      3px;
-    text-align:         left;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
 }
 .NoteCody, .NoteKatiya, .NoteTitus {
     text-align:         left;
