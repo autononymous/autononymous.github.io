@@ -69,16 +69,18 @@ class StoryExtrasWindow {
         });
     }
     deployContent() {
+        let resultingState = false;
         if (!this.Container) {
             console.warn("StoryExtrasWindow.deployContent", "Container element not found.");
-            return false;
         }
         if (!this.Content) {
             console.warn("StoryExtrasWindow.deployContent", "No content loaded.");
-            return false;
         }
-        this.Container.innerHTML = this.Content;
-        return true;
+        if (this.Container && this.Content) {
+            this.Container.innerHTML = this.Content;
+            resultingState = true;
+        }
+        return resultingState;
     }
     deploy(filePath) {
         return __awaiter(this, void 0, void 0, function* () {

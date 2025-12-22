@@ -78,16 +78,18 @@ class StoryExtrasWindow {
         }
     }
     deployContent(): boolean {
+        let resultingState = false;
         if (!this.Container) {
             console.warn("StoryExtrasWindow.deployContent", "Container element not found.");
-            return false;
         }
         if (!this.Content) {
             console.warn("StoryExtrasWindow.deployContent", "No content loaded.");
-            return false;
         }
-        this.Container.innerHTML = this.Content;
-        return true;
+        if (this.Container && this.Content) {
+            this.Container.innerHTML = this.Content;
+            resultingState = true;
+        }        
+        return resultingState;
     }
     async deploy(filePath: string): Promise<boolean> {
         const loaded = await this.loadContent(filePath);
