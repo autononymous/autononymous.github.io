@@ -202,8 +202,8 @@ class LocalStorageAndSrcVars {
                     localStorage.setItem(this.SaveName, JSON.stringify(this.Local));
                 }
             }
-            catch (_a) {
-                console.error("LSASV.ParseSrcVars", `Issue reading LocalStorage save. Creating new save as "${this.SaveName}".`);
+            catch (error) {
+                console.error("LSASV.ParseSrcVars", `Issue reading LocalStorage save. Creating new save as "${this.SaveName}".`, error);
                 localStorage.setItem(this.SaveName, JSON.stringify(this.default));
                 let get = localStorage.getItem(this.SaveName);
                 this.Local = JSON.parse(get);

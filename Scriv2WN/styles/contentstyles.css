@@ -577,7 +577,7 @@ div.TOGGLECTRL {
 img.hrdiv {
     position:relative;
     top:0;    
-    left: 25%;
+    left: calc(50% - ( 0.5* min(50%,300px) ));
     width: min(50%,300px);
     cursor: pointer;        
     filter: drop-shadow(1000vw 0 var(--TextColor));
