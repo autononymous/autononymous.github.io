@@ -1386,7 +1386,7 @@ function buildManuscript(rootURL_1, storyName_1) {
         CFG = yield StoryConfig.initialize(rootURL, SRC.storyName);
         CARD = new ChapterDataCard(SRC.storyName);
         CARD.toggleNightMode(false); // Start in Night Mode.
-        BIND = yield ChapterBinder.initialize(rootURL, SRC.storyName, CFG, 0, CARD, DEPLOY, 0, IncludeSettingTags);
+        BIND = yield ChapterBinder.initialize(rootURL, SRC.storyName, CFG, SRC.PermLevel, CARD, DEPLOY, 0, IncludeSettingTags);
         SRC.AttachBinder(BIND);
         CTRL = new ControlBar(SRC, CARD);
         //BIND.DeployOnPage(CARD.Data.TOC.Chapter,DEPLOY)

@@ -198,7 +198,7 @@ class LocalStorageAndSrcVars {
     // Default local setup.
     public Local : any = Object.create(this.default);
     public SaveName : string;
-    private PermLevel : number;
+    public PermLevel : number;
 
     private constructor(storyName:string) {
         this.Map = this.PollSrcVars()
@@ -1445,7 +1445,7 @@ async function buildManuscript(rootURL: string, storyName: string, startChapter 
     CFG = await StoryConfig.initialize(rootURL,SRC.storyName);
     CARD = new ChapterDataCard(SRC.storyName);
     CARD.toggleNightMode(false); // Start in Night Mode.
-    BIND = await ChapterBinder.initialize(rootURL, SRC.storyName, CFG, 0, CARD, DEPLOY, 0, IncludeSettingTags);   
+    BIND = await ChapterBinder.initialize(rootURL, SRC.storyName, CFG, SRC.PermLevel, CARD, DEPLOY, 0, IncludeSettingTags);   
     SRC.AttachBinder(BIND);  
     CTRL = new ControlBar(SRC,CARD);
     //BIND.DeployOnPage(CARD.Data.TOC.Chapter,DEPLOY)
