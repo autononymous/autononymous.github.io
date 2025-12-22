@@ -295,9 +295,9 @@ class LocalStorageAndSrcVars {
                 console.info("LSASV.ParseSrcVars","No story specified. Loading Paragate as default.")
                 break;
         }
-        if (doPermissions) {
-            BIND.HandlePermissions(true)
-        }
+        //if (doPermissions) {
+        //    BIND.HandlePermissions(true)
+        //}
         let doURLchap = isNaN(Number(this.Map.get("chapter")))
         if (!doURLchap) {
             this.requestedChapter = Math.round(Number(this.Map.get("chapter")))
