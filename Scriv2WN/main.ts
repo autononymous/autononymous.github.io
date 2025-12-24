@@ -38,13 +38,19 @@ class StoryExtrasWindow {
     public Container: HTMLElement | null = null;
     public rootURL: string = "";
     public Content: string = "";
+    public Announcements: any | null = null;
+    public AnnounceContainer: HTMLElement | null = null;
 
     private constructor(storyName: string, rootURL: string, containerID: string) {
         this.Story = storyName;
         this.rootURL = rootURL;
-        this.Container = document.getElementById(containerID);
+        this.Container = document.getElementById(containerID) as HTMLElement;
+        this.AnnounceContainer = document.getElementById('ANNOUNCE') as HTMLElement;
         if (!this.Container) {
-            console.warn("StoryExtrasWindow.constructor", `Container element with ID "${containerID}" not found.`);
+            console.warn("StoryExtrasWindow.constructor\n", `Container element with ID "${containerID}" not found.`);
+        }
+        if (!this.Container) {
+            console.warn("StoryExtrasWindow.constructor\n", `Announcement container not found.`);
         }
     }
     static async initialize(storyName: string, rootURL: string, containerID: string) {
@@ -52,7 +58,7 @@ class StoryExtrasWindow {
     }
     async loadInExtras(filePath: string|null = null) {
         if(!await this.loadContent(filePath)) {
-            console.error("StoryExtrasWindow.loadInExtras", `Error loading content..`);
+            console.error("StoryExtrasWindow.loadInExtras\n", `Error loading content.`);
         }        
     }
     async loadContent(filePath: string|null = null): Promise<boolean> {
@@ -66,29 +72,58 @@ class StoryExtrasWindow {
             
             const response = await fetch(url);
             if (!response.ok) {
-                console.error("StoryExtrasWindow.loadContent", `Error fetching content from ${url}.`);
+                console.error("StoryExtrasWindow.loadContent\n", `Error fetching content from ${url}.`);
                 return false;
             }
             this.Content = await response.text();
-            console.info("StoryExtrasWindow.loadContent", `Content loaded from ${url}.`);
+            console.log("StoryExtrasWindow.loadContent\n", `Content loaded from ${url}.`);
             return true;
         } catch (error) {
-            console.error("StoryExtrasWindow.loadContent", `Failed to load content: ${error}`);
+            console.error("StoryExtrasWindow.loadContent\n", `Failed to load content: ${error}`);
             return false;
         }
     }
+
+    async parseAnnouncements(announce:JSON) {
+        return `<p> asdf </p>`
+    }
+
+    async loadAnnouncements(): Promise<boolean> {
+        try {
+            let url = `${this.rootURL}/Announcements.json`;            
+            const response = await fetch(url);
+
+            if (!response.ok) {
+                console.error("StoryExtrasWindow.loadContent\n", `Error fetching announcements from ${url}.`);
+                return false;
+            }
+            let FullAnnouncements = await response.json();
+            this.Announcements = await this.parseAnnouncements(FullAnnouncements);
+            console.log("StoryExtrasWindow.loadContent\n", `Announcements loaded from ${url}.`,this.Announcements);
+            return true;
+        } catch (error) {
+            console.error("StoryExtrasWindow.loadContent\n", `Failed to load announcements: ${error}`);
+            return false;
+        }
+    }
+
     deployContent(): boolean {
         let resultingState = false;
         if (!this.Container) {
-            console.warn("StoryExtrasWindow.deployContent", "Container element not found.");
+            console.warn("StoryExtrasWindow.deployContent\n", "Container element not found.");
         }
         if (!this.Content) {
-            console.warn("StoryExtrasWindow.deployContent", "No content loaded.");
+            console.warn("StoryExtrasWindow.deployContent\n", "No content loaded.");
         }
         if (this.Container && this.Content) {
             this.Container.innerHTML = this.Content;
             resultingState = true;
         }        
+        if (this.AnnounceContainer) {
+            this.AnnounceContainer.innerHTML = this.Announcements;
+        } else {
+            console.error('No announcements.')
+        }
         return resultingState;
     }
     async deploy(filePath: string): Promise<boolean> {
@@ -148,28 +183,28 @@ class ControlBar {
         ROOT.style.setProperty(this.FontSize.CSSname, this.FontSize.Options[this.FontSize.Setting])
         this.LocalStorage.Local.fontsetting = this.FontSize.Setting
         this.LocalStorage.SaveLocalStorage()
-        if (doReport) { console.info("ControlBar.setFontSize",`Parameter ${this.FontSize.CSSname} set to option ${this.FontSize.Setting}, ${this.FontSize.Options[this.FontSize.Setting]}. Local Storage also set to ${this.LocalStorage.Local.fontsetting}.`) }
+        if (doReport) { console.log("ControlBar.setFontSize\n",`Parameter ${this.FontSize.CSSname} set to option ${this.FontSize.Setting}, ${this.FontSize.Options[this.FontSize.Setting]}. Local Storage also set to ${this.LocalStorage.Local.fontsetting}.`) }
     }
     setLineHeight(change:number,doReport:boolean=true) {
         this.setter(change,this.LineHeight)
         ROOT.style.setProperty(this.LineHeight.CSSname, this.LineHeight.Options[this.LineHeight.Setting])
         this.LocalStorage.Local.linesetting = this.LineHeight.Setting
         this.LocalStorage.SaveLocalStorage()
-        if (doReport) { console.info("ControlBar.setLineHeight",`Parameter ${this.LineHeight.CSSname} set to option ${this.LineHeight.Setting}, ${this.LineHeight.Options[this.LineHeight.Setting]}. Local Storage also set to ${this.LocalStorage.Local.linesetting}.`) }
+        if (doReport) { console.log("ControlBar.setLineHeight\n",`Parameter ${this.LineHeight.CSSname} set to option ${this.LineHeight.Setting}, ${this.LineHeight.Options[this.LineHeight.Setting]}. Local Storage also set to ${this.LocalStorage.Local.linesetting}.`) }
     }
     setTheme(datacard:ChapterDataCard,doReport:boolean=true) {
         this.ThemeState = !this.ThemeState;
         datacard.toggleNightMode(this.ThemeState,false)
         this.LocalStorage.Local.themesetting = this.ThemeState
         this.LocalStorage.SaveLocalStorage()
-        if (doReport) {console.info("ControlBar.setTheme",`Night mode is now ${this.ThemeState ? "on/dark" : "off/light"}. Local Storage also set to ${this.LocalStorage.Local.themesetting ? "on" : "off"}.`) }
+        if (doReport) {console.log("ControlBar.setTheme\n",`Night mode is now ${this.ThemeState ? "on/dark" : "off/light"}. Local Storage also set to ${this.LocalStorage.Local.themesetting ? "on" : "off"}.`) }
     }
     setJustify(state:boolean, doReport:boolean=true) {
         this.LocalStorage.Local.dojustify = state;           
         this.DoJustify = this.LocalStorage.Local.dojustify;     
         this.LocalStorage.SaveLocalStorage()
         ROOT.style.setProperty('--TextAlignment', `${state ? 'Justify' : 'Left'}`)
-        if (doReport) {console.info("ControlBar.setJustify",`Body text alignment is now ${this.DoJustify ? 'Justify' : 'Left'}. Local Storage also set to ${this.LocalStorage.Local.dojustify ? 'Justify' : 'Left'}.`); }
+        if (doReport) {console.log("ControlBar.setJustify\n",`Body text alignment is now ${this.DoJustify ? 'Justify' : 'Left'}. Local Storage also set to ${this.LocalStorage.Local.dojustify ? 'Justify' : 'Left'}.`); }
     }
     GetAndSet(datacard:ChapterDataCard,doReport:boolean=true) {
         this.FontSize.Setting = this.LocalStorage.Local.fontsetting;
@@ -190,55 +225,71 @@ class LocalStorageAndSrcVars {
     public Binder : ChapterBinder|null = null;
     public requestedChapter : number|null = null;
     public storyName : string;
+    public hasSearchVars : boolean = false;
+    public hasLocalStorage : boolean = false;
+    public RetrievedData : any;
     private default : any = {
         "chapter":1,
+        "permlevel":0,
         "fontsetting":3,
         "linesetting":3,
         "themesetting":true,
         "dojustify":true
     }
     // Default local setup.
-    public Local : any = Object.create(this.default);
+    public Local : any;
     public SaveName : string;
-    public PermLevel : number;
 
     private constructor(storyName:string) {
+        this.Local = Object.assign(this.default);
         this.Map = this.PollSrcVars()
         this.storyName = storyName;
-        this.PermLevel = 1;
         this.SaveName = `SG_Bookmark_${this.storyName}`;
         let localprefs = localStorage.getItem(this.SaveName)
         if (localprefs) {
             try {
-                this.Local = JSON.parse(localprefs)
+            // Try retrieving preferences from Local Storage.
+                // The system initialized with a new copy of the settings.
+                this.RetrievedData = JSON.parse(localprefs);
+                // If local saved data contains settings, overwrite the copy data.
+                Object.entries(this.RetrievedData).forEach(([k, v]) => {
+                    if (Object.prototype.hasOwnProperty.call(this.Local, k)) {
+                        this.Local[k] = v;
+                        //console.info("LSASV.constructor\n", `Restored "${k}" from saved prefs.`);
+                    }
+                });
+                this.hasLocalStorage = true
+                // If there are search variables, these take preference over existing Local Storage settings.
                 if (this.ParseSrcVars()) {
-                    console.info("LSASV.ParseSrcVars",`Setting chapter to ${this.requestedChapter} from search parameter variables in ${this.SaveName}.`)
+                    console.info("LSASV.ParseSrcVars\n",`Setting chapter to ${this.requestedChapter} from search parameter variables in ${this.SaveName}.`)
                     this.Local.chapter = this.requestedChapter;
                     localStorage.setItem(this.SaveName,JSON.stringify(this.Local))
                 }
             } catch (error) {
-                console.error("LSASV.ParseSrcVars",`Issue reading LocalStorage save. Creating new save as "${this.SaveName}".`,error)
+            // If there's an error, create a new instance.
+                console.error("LSASV.ParseSrcVars\n",`Issue reading LocalStorage save. Creating new save as "${this.SaveName}".`,error)
                 localStorage.setItem(this.SaveName,JSON.stringify(this.default))
                 let get = localStorage.getItem(this.SaveName) as string
                 this.Local = JSON.parse(get)
             }
         } else {
-            console.warn("LSASV.ParseSrcVars",`LocalStorage save does not exist yet. Creating new save as "${this.SaveName}".`)
+            console.info("LSASV.ParseSrcVars\n",`LocalStorage save does not exist yet. Creating new save as "${this.SaveName}".`)
             localStorage.setItem(this.SaveName,JSON.stringify(this.default))
             let get = localStorage.getItem(this.SaveName) as string
             this.Local = JSON.parse(get)
         }    
+        this.StatusReport()
     }
     static async initialize(storyName:string) {
         return new LocalStorageAndSrcVars(storyName)
     }
     SaveLocalStorage() {
         localStorage.setItem(this.SaveName,JSON.stringify(this.Local))
-        console.info("LSASV.ParseSrcVars","Saved local storage:",this.Local)
+        console.log("LSASV.ParseSrcVars\n","Saved local storage:",this.Local)
     }
     SetSavedChapter(chapter:number) {
         this.Local.chapter = chapter
-        console.info("LSASV.SetSavedChapter",`Last position saved as ${chapter}.`,this.Local)
+        console.debug("LSASV.SetSavedChapter\n",`Last position saved as ${chapter}.`,this.Local)
         this.SaveLocalStorage()
     }
     PollSrcVars(doReport:boolean=true) {
@@ -249,32 +300,36 @@ class LocalStorageAndSrcVars {
             map.set(key,value)
         });
         if (doReport && map.size != 0) {
-            console.info(`Variables are present in search bar:`,map)
+            //console.debug(`Variables are present in search bar:`,map)
         }
         return map;
     }
     AttachBinder(binder:ChapterBinder) {
         this.Binder = binder;
-        this.Binder.Permissions = this.PermLevel;
+        this.Binder.Permissions = this.Local.permlevel;
     }
     ParseSrcVars(doReport:boolean=true) {
         if (this.Map == null) {
-            console.error("LSASV.ParseSrcVars","Unable to parse: not retrieved yet.")
+            console.error("LSASV.ParseSrcVars\n","Unable to parse: not retrieved yet.")
             return false
         }
         let doPermissions = false
         switch( this.Map.get("mode") ) {
             case "author":
-            case "3":
-                this.PermLevel = 3;
-                console.info("Access level 3 / Author.")
-                doPermissions = true;
+            case "Author":
+                this.Local.permlevel = 2;
+                console.debug("LSASV.ParseSrcVars\n",`AUTHOR level set from srcvars at L${this.Local.permlevel}.`)
+                doPermissions = true;                
+                this.hasSearchVars = true;
                 break;
             case "editor":
-            case "2":
-                this.PermLevel = 2;
-                console.info("Access level 2 / Reviewer.")
-                doPermissions = true;
+            case "Editor":
+            case "Reviewer":
+            case "reviewer":
+                this.Local.permlevel = 1;
+                console.debug("LSASV.ParseSrcVars\n",`REVIEWER level set from srcvars at L${this.Local.permlevel}.`)
+                doPermissions = true;           
+                this.hasSearchVars = true;
                 break;
             default:
                 break;
@@ -284,17 +339,19 @@ class LocalStorageAndSrcVars {
             case "Paragate":
             case "2":                
                 this.storyName = "Paragate"
-                console.info("LSASV.ParseSrcVars","Loading Paragate.")
+                console.debug("LSASV.ParseSrcVars\n","Loading Paragate.")           
+                this.hasSearchVars = true;
                 break;
             case "firebrand":
             case "Firebrand":
             case "1":
                 this.storyName = "Firebrand"
-                console.info("LSASV.ParseSrcVars","Loading Firebrand.")
+                console.debug("LSASV.ParseSrcVars\n","Loading Firebrand.")           
+                this.hasSearchVars = true;
                 break;
             default:
                 this.storyName = "Paragate"
-                console.info("LSASV.ParseSrcVars","No story specified. Loading Paragate as default.")
+                console.debug("LSASV.ParseSrcVars\n","No story specified. Loading Paragate as default.")
                 break;
         }
         //if (doPermissions) {
@@ -303,13 +360,25 @@ class LocalStorageAndSrcVars {
         let doURLchap = isNaN(Number(this.Map.get("chapter")))
         if (!doURLchap) {
             this.requestedChapter = Math.round(Number(this.Map.get("chapter")))
-            console.error("LSASV.ParseSrcVars",`Chapter specified in URL as ${this.requestedChapter}.`)
+            console.info("LSASV.ParseSrcVars\n",`Chapter specified in URL as ${this.requestedChapter}.`)           
+            this.hasSearchVars = true;
             return true
         }
         return false
     }
+    StatusReport() {
+        console.info('----==== REPORT FOR LOCAL STORAGE AND SEARCH VARS ====----\n'
+                   + `\t > Settings retrieved from search? . . . ${this.hasSearchVars}\n`
+                   + `\t > Variables in Local Storage? . . . . . ${this.hasLocalStorage}\n`
+                   + `\t > Story to load?  . . . . . . . . . . . ${this.storyName}\n`
+                   + `Current settings are:\n`
+                   , this.Local
+                   , `\n\nParameters in search bar:`
+                   , this.Parameters
+        );
+    }
 }
-
+this
 class ChapterDataCard {
 //  The class ChapterDataCard is an actively-updated class variable that holds 
 //  all relevant information on the current chapter loaded into the Canvas.
@@ -370,9 +439,9 @@ class ChapterDataCard {
         // Set the ThemeDriver location: ChapterDataCard is created first.
         this.ThemeDriver = themeDriver;
     }
-    Update(chapterNumber: number, doReport: boolean = true) {
+    Update(chapterNumber: number, doReport: boolean = false) {
         if (this.Binder == null) {
-            console.warn("ChapterDataCard.Update","No ChapterBinder paired to DataCard. Cannot update data.")
+            console.warn("ChapterDataCard.Update\n","No ChapterBinder paired to DataCard. Cannot update data.")
             return
         }
         this.Data.TOC = this.Binder.TOC[chapterNumber - 1];       
@@ -424,7 +493,7 @@ class ChapterDataCard {
         ROOT.style.setProperty("--IconState",`invert(${Number(!this.NightMode)})`);
         ROOT.style.setProperty("--IconReverse",`invert(${Number(!this.NightMode)})`);
         ROOT.style.setProperty("--BooleanColor",`${this.NightMode ? "white" : "black" }`);        
-        console.info(`Night mode is now ${this.NightMode ? "on" : "off"}.`)
+        console.log("ChapterDataCard.toggleNightMode\n",`Night mode is now ${this.NightMode ? "on" : "off"}.`)
         return this.NightMode
     }
     updateDataBar() {
@@ -453,7 +522,7 @@ class StoryConfig {
         if (this.themes.includes(characterName) && ( !(characterName=="Default" && ignoreDefault))) {
             return true
         } else {
-            console.warn("StoryConfig.doesThemeExist",`Character ${characterName} is not a theme name, so it is not a POV character.`)
+            console.warn("StoryConfig.doesThemeExist\n",`Character ${characterName} is not a theme name, so it is not a POV character.`)
             return false
         }
     }
@@ -472,7 +541,7 @@ class StoryConfig {
     getCharacterStyle(characterName:string, item:string) {
         if (!this.doesThemeExist(characterName)) { return false }
         else if (!this.config["Styles"][characterName].contains(item)) {
-            console.warn("StoryConfig.getCharacterStyle",`${item} is not a theme object.`)
+            console.warn("StoryConfig.getCharacterStyle\n",`${item} is not a theme object.`)
             return false
         }
         return this.config["Styles"][characterName][item]
@@ -486,9 +555,9 @@ class StoryConfig {
          */   
         const response = await fetch(`${rootURL}/StoryConfig.json`);
         if (!response.ok) {
-            console.debug("StoryConfig.initialize","Error fetching config from URL.")
+            console.error("StoryConfig.initialize\n","Error fetching config from URL.")
         } else {
-            console.debug("StoryConfig.initialize",`Successfully fetched config from URL at ${rootURL}/StoryConfig.json.`)
+            console.debug("StoryConfig.initialize\n",`Successfully fetched config from URL at ${rootURL}/StoryConfig.json.`)
         }
         this.data = await response.json();
         return new StoryConfig(this.data, storyName);
@@ -525,9 +594,9 @@ class Manuscript {
         let sourceURL = `${rootURL}/output/${storyName}/MC_Latest.json`
         const response = await fetch(sourceURL);
         if (!response.ok) {
-            console.error("Manuscript.initialize","Error fetching manuscript from URL.")
+            console.error("Manuscript.initialize\n","Error fetching manuscript from URL.")
         } else {
-            console.info("Manuscript.initialize",`Successfully fetched manuscript from URL at ${rootURL}/MC_Latest.json.`)
+            console.log("Manuscript.initialize\n",`Successfully fetched manuscript from URL at ${rootURL}/MC_Latest.json.`)
         }
         this.data = await response.json();
         return new Manuscript(rootURL, storyName, this.data);
@@ -566,9 +635,9 @@ class TableOfContents {
          */
         const response = await fetch(sourceURL);
         if (!response.ok) {
-            console.error("TableOfContents.initialize","Error fetching manuscript from URL.")
+            console.error("TableOfContents.initialize\n","Error fetching manuscript from URL.")
         } else {
-            console.info("TableOfContents.initialize",`Successfully fetched manuscript from URL at ${sourceURL}.`)
+            console.log("TableOfContents.initialize\n",`Successfully fetched manuscript from URL at ${sourceURL}.`)
         }
         this.data = await response.json();
         // ....and now initialization of the Table Of Contents panel.
@@ -579,10 +648,10 @@ class TableOfContents {
     }
     ToggleDisplay(setState:boolean|null = null) {
         if (this.EXTRAstate) {
-            console.error("Unable to activate TOC while EXTRAS is active.");
+            console.error("TableOfContents.ToggleDisplay\n","Unable to activate TOC while EXTRAS is active.");
             return
         } else if (this.CTRLstate) {
-            console.error("Unable to activate TOC while CONTROL is active.");
+            console.error("TableOfContents.ToggleDisplay\n","Unable to activate TOC while CONTROL is active.");
             return
         }
         if (setState == null) {
@@ -590,16 +659,16 @@ class TableOfContents {
         } else {
             this.TOCstate = setState;
         }
-        console.log("TableOfContents.ToggleDisplay",`Table Of Contents is now ${this.TOCstate ? "shown" : "hidden"}.`)
+        console.log("TableOfContents.ToggleDisplay\n",`Table Of Contents is now ${this.TOCstate ? "shown" : "hidden"}.`)
         // Changing width of TOC? Set --TOCWIDTH in contentstyles.css
         ROOT.style.setProperty("--READER_TOCOFFSET", this.TOCstate ? "var(--TOCWIDTH)" : "0px")
     }
     ToggleInfo(setState:boolean|null = null) {
         if (this.TOCstate) {
-            console.error("Unable to activate EXTRAS while TOC is active.");
+            console.error("TableOfContents.ToggleInfo\n","Unable to activate EXTRAS while TOC is active.");
             return
         } else if (this.CTRLstate) {
-            console.error("Unable to activate EXTRAS while CONTROL is active.");
+            console.error("TableOfContents.ToggleInfo\n","Unable to activate EXTRAS while CONTROL is active.");
             return
         }
         if (setState == null) {
@@ -607,16 +676,16 @@ class TableOfContents {
         } else {
             this.EXTRAstate = setState;
         }
-        console.log("TableOfContents.ToggleInfo",`Special Window is now ${this.EXTRAstate ? "shown" : "hidden"}.`)
+        console.log("TableOfContents.ToggleInfo\n",`Special Window is now ${this.EXTRAstate ? "shown" : "hidden"}.`)
         // Changing width of TOC? Set --TOCWIDTH in contentstyles.css
         ROOT.style.setProperty("--READER_EXTRAOFFSET", this.EXTRAstate ? "calc( -1 * var(--EXTRAWIDTH))" : "0px")
     }
     ToggleControls(setState:boolean|null = null) {
         if (this.TOCstate) {
-            console.error("Unable to activate CONTROL while TOC is active.");
+            console.error("TableOfContents.ToggleControls\n","Unable to activate CONTROL while TOC is active.");
             return
         } else if (this.EXTRAstate) {
-            console.error("Unable to activate CONTROL while EXTRAS is active.");
+            console.error("TableOfContents.ToggleControls\n","Unable to activate CONTROL while EXTRAS is active.");
             return
         }
         if (setState == null) {
@@ -624,7 +693,7 @@ class TableOfContents {
         } else {
             this.CTRLstate = setState;
         }
-        console.log("TableOfContents.ToggleControls",`Special Window is now ${this.CTRLstate ? "shown" : "hidden"}.`)
+        console.log("TableOfContents.ToggleControls\n",`Special Window is now ${this.CTRLstate ? "shown" : "hidden"}.`)
         // Changing width of TOC? Set --TOCWIDTH in contentstyles.css
         ROOT.style.setProperty("--READER_CTRLOFFSET", this.CTRLstate ? "var(--CTRLWIDTH)" : "0px")
     }
@@ -749,15 +818,15 @@ class ChapterBinder {
         // No hack please!!!
         switch (this.Permissions) {
             case 2: // Admin.
-                console.log("Permissions at ADMIN level.")
+                console.info("ChapterBinder.HandlePermissions\n","Permissions at ADMIN level.")
                 this.ChapterBounds.active = this.ChapterBounds.full;
                 break
             case 1: // Reviewer.
-                console.log("Permissions at REVIEWER level.")
+                console.info("ChapterBinder.HandlePermissions\n","Permissions at REVIEWER level.")
                 this.ChapterBounds.active = this.ChapterBounds.full;
                 break
             default: // Base user.
-                console.log("Permissions at GUEST level.")
+                console.info("ChapterBinder.HandlePermissions\n","Permissions at GUEST level.")
                 this.ChapterBounds.active = this.ChapterBounds.whitelist;
                 break
         }
@@ -767,7 +836,11 @@ class ChapterBinder {
         } )    
 
         if(doReport) {
-            console.log( `--- User access report: ---\n > Today is ${today.getUTCDate()}.\n > Access level is ${["GUEST","REVIEWER","ADMIN"][this.Permissions]} (${this.Permissions}).\n> User has access to: `,this.ChapterBounds.active)
+            console.info( 
+                  `----==== USER ACCESS REPORT (ChapterBinder) ====----\n`
+                + ` > Today is ${today.getUTCDate()}.\n`
+                + ` > Access level is ${["GUEST","REVIEWER","ADMIN"][this.Permissions]} (${this.Permissions}).\n`
+                + ` > User has access to: \n`,this.ChapterBounds.active)
         }
     }
 
@@ -789,7 +862,7 @@ class ChapterBinder {
         // Deploy a chapter on build.
         if (doDeployment != 0) {
             let openingChapter = doDeployment < 1 ? 1 : this.ChapterBounds.active.includes(doDeployment) ? doDeployment : 1;
-            console.info("ChapterBinder.initialize","Deploying initial chapter to DataCard.")
+            console.log("ChapterBinder.initialize\n","Deploying initial chapter to DataCard.")
             this.DeployOnPage(openingChapter, elementID);
         }
         return
@@ -801,7 +874,7 @@ class ChapterBinder {
     }
     private doWhitelist(requestedChapter: number) {
         if (!this.ChapterBounds.active.includes(requestedChapter)) {
-            console.warn("ChapterBinder.pullRequest",`Requested chapter is out of bounds of access for permission level ${this.Permissions}.`) 
+            console.warn("ChapterBinder.pullRequest\n",`Requested chapter is out of bounds of access for permission level ${this.Permissions}.`) 
             return false
         }
        
@@ -813,14 +886,14 @@ class ChapterBinder {
     //  @return True if chapter was fetched and added to binder, false otherwise.
     //
         if (!this.doWhitelist(requestedChapter)) {
-            console.info("ChapterBinder.pullRequest",`Requested chapter ${requestedChapter} is not on whitelist.`)
+            console.warn("ChapterBinder.pullRequest\n",`Requested chapter ${requestedChapter} is not on whitelist.`)
             return false
         }
         
         let isInBinder: boolean = false;
         Object.entries(this.SessionBinder).forEach(([chapter, contents]) => {
             if (Number(chapter) == requestedChapter) {
-                console.info("ChapterBinder.pullRequest",`Requested chapter ${requestedChapter} is already in binder.`)
+                console.log("ChapterBinder.pullRequest\n",`Requested chapter ${requestedChapter} is already in binder.`)
                 isInBinder = true;
             }
         });     
@@ -829,10 +902,10 @@ class ChapterBinder {
             let chapterURL = `${this.rootURL}/sectioned/${this.storyName}/${actnum}/${requestedChapter}.json`;
             const response = await fetch(chapterURL);
             if (!response.ok) {
-                console.debug(`ChapterBinder.pullRequest","Error fetching manuscript from URL at ${chapterURL}.`)
+                console.debug(`ChapterBinder.pullRequest\n","Error fetching manuscript from URL at ${chapterURL}.`)
                 return false
             } else {
-                console.debug("ChapterBinder.pullRequest","Successfully fetched manuscript from URL.")
+                console.debug("ChapterBinder.pullRequest\n","Successfully fetched manuscript from URL.")
             }
             this.SessionBinder[requestedChapter] = await response.json();
             return true
@@ -850,22 +923,22 @@ class ChapterBinder {
         switch (requestedChapter) {
             case "PREV":
                 requestedChapter = Number(this.DataCard.currentChapter() - 1)
-                console.info("ChapterBinder.DeployOnPage",`Retrieveing Chapter ${requestedChapter}.`)
+                console.log("ChapterBinder.DeployOnPage\n",`Retrieving Chapter ${requestedChapter}.`)
                 break
             case "NEXT":
                 requestedChapter = Number(this.DataCard.currentChapter() + 1)
-                console.info("ChapterBinder.DeployOnPage",`Retrieveing Chapter ${requestedChapter}.`)
+                console.log("ChapterBinder.DeployOnPage\n",`Retrieving Chapter ${requestedChapter}.`)
                 break
             default:
                 if (!(typeof(requestedChapter) == "number")) {
-                    console.warn("ChapterBinder.DeployOnPage",`Chapter ${requestedChapter} is not a valid string.`)
+                    console.warn("ChapterBinder.DeployOnPage\n",`Chapter ${requestedChapter} is not a valid string.`)
                     requestedChapter = 1
                 }
                 break                
         }
         // Is it on the whitelist per user's permissions?
         if (!this.doWhitelist(requestedChapter)) {
-            console.warn("ChapterBinder.DeployOnPage",`Chapter ${requestedChapter} is not on the whitelist.`)
+            console.warn("ChapterBinder.DeployOnPage\n",`Chapter ${requestedChapter} is not on the whitelist.`)
             return false
         }
         // Save to local storage configurations.
@@ -874,18 +947,20 @@ class ChapterBinder {
         // Is it in the binder already? If not, pull it in.
         let isInBinder: boolean = await this.pullRequest(requestedChapter);
         if (!isInBinder) {
-            console.warn("ChapterBinder.DeployOnPage","Error fetching chapter for deployment.")
+            console.error("ChapterBinder.DeployOnPage\n","Error fetching chapter for deployment.")
             return false
         }
         // Was a target element for this HTML correctly defined?
         let targetElement = document.getElementById(targetElementID);
         if (!targetElement) {
-            console.warn("ChapterBinder.DeployOnPage","Target HTML element not found.")
+            console.error("ChapterBinder.DeployOnPage\n","Target HTML element not found.")
             return false
         }
         if (purgeContent) { targetElement.innerHTML = ""; }
         // By this point, we have the chapter in the binder and a valid target element.
-        console.info("ChapterBinder.DeployOnPage",`Deploying chapter on page. This chapter ${this.SHOW_STARTER_TAGS ? "DOES" : "DOES NOT"} include setting tags.`)
+        console.info("ChapterBinder.DeployOnPage\n"
+                   , `Deploying chapter on page.`
+                   , `This chapter ${this.SHOW_STARTER_TAGS ? "DOES" : "DOES NOT"} include setting tags.`)
         // Get chapter content from the Session Binder.
         let chapter = this.SessionBinder[requestedChapter];
         // Chapter content (HTML) starts empty.
@@ -1028,7 +1103,7 @@ class ChapterBinder {
             isSpecial = true
             ParagraphStyle = style;
         } else if ( style.includes("Note") && (!isSpecial) ) {     
-            console.warn(style) 
+            //console.warn(style) 
             isSpecial = true
             ParagraphStyle = style
         } else if ( !style.includes("Note") && !style.includes("Message")) {
@@ -1036,7 +1111,7 @@ class ChapterBinder {
         }
         // @TODO add other important styles to segregate
         if (style.includes("RawHTML")) {
-            console.log(style)
+            //console.log(style)
             isCustomHTML = true;
         }
     });
@@ -1146,7 +1221,7 @@ class ThemeDriver {
     //             |    :         :    |    :         :    |    :         :    |    :         :    |
         // Have scroll breaks even been defined yet?
         if (this.ScrollBreaks.length == 0) {
-            console.warn("ThemeDriver.setKeyframes","Scroll breaks have not been defined. Cannot set keyframes.")
+            console.error("ThemeDriver.setKeyframes\n","Scroll breaks have not been defined. Cannot set keyframes.")
             return }
         // Minimum possible value for ScrollBreaks length is 2 (start and end).
         let FrameCount = 2 + (this.ScrollBreaks.length - 2) * 2
@@ -1221,17 +1296,17 @@ class ThemeDriver {
 
         // Check for valid arguments, and valid HTML setup.
         if (!this.TextContainer) { 
-            console.warn("ThemeDriver.getScrollBreaks","Text container not found.")
+            console.warn("ThemeDriver.getScrollBreaks\n","Text container not found.")
             return [] }
         if (this.TextContainer.childNodes.length == 0) {
-            console.warn("ThemeDriver.getScrollBreaks","Text container has no child nodes.")
+            console.warn("ThemeDriver.getScrollBreaks\n","Text container has no child nodes.")
             return [] }
         if (!this.StaticContainer) { 
-            console.warn("ThemeDriver.getScrollBreaks","Text container parent not found.")
+            console.warn("ThemeDriver.getScrollBreaks\n","Text container parent not found.")
             return [] }
         let BoundingDims = this.StaticContainer.getBoundingClientRect();
         if (!BoundingDims) {
-            console.warn("ThemeDriver.getScrollBreaks","Text container parent has no bounding dimensions.")
+            console.warn("ThemeDriver.getScrollBreaks\n","Text container parent has no bounding dimensions.")
             return [] }
         // Return vertical size of container holding text (that scrolls inside the scene container).
         let TotalDims = this.TextContainer.getBoundingClientRect();
@@ -1258,12 +1333,16 @@ class ThemeDriver {
         this.ScrollBreaks.push({Theme:this.DataCard.Data.TOC.Character[SceneDims.length - 1],atPercent:100,atPoint:this.TravelHeight});
         // For debug report.
         if (doReport) {
-            let report = `ThemeDriver.getScrollBreaks Report for :
-    Bounding Dimensions:      Height = ${BoundingDims.height.toFixed(2)} px
-    Total Dimensions:         Height = ${TotalDims.height.toFixed(2)} px
-    Travel Height:            ${this.TravelHeight.toFixed(2)} px
-    Number of Scenes:         ${SceneDims.length}
-    Scroll Breaks (%):`; console.log(report,this.ScrollBreaks); }
+            console.log( `----==== Scroll Break Report ====----`
+                        + `Bounding Dimensions:      Height = ${BoundingDims.height.toFixed(2)} px`
+                        + `Total Dimensions:         Height = ${TotalDims.height.toFixed(2)} px`
+                        + `Travel Height:            ${this.TravelHeight.toFixed(2)} px`
+                        + `Number of Scenes:         ${SceneDims.length}`
+                        + `Scroll Breaks (%):\n`
+                        ,  this.ScrollBreaks
+                        , "\n\n"
+            ); 
+        }
         this.setKeyframes()
         this.ProgressBarSplits()
         return
@@ -1279,7 +1358,7 @@ class ThemeDriver {
         this.ScrollBreaks.forEach( (sbreak:any) => {
             lastBreak = thisBreak;
             thisBreak = sbreak.atPercent
-            console.log(thisBreak)
+            //console.log(thisBreak)
             if (SB_index > 0) {
                 this.BarFFG.innerHTML += `<div class="barsection bs${theme}" style="flex:${thisBreak-lastBreak}"></div>`
                 if (SB_index < SB_lim) {
@@ -1303,10 +1382,10 @@ class ThemeDriver {
         // Check for problematic values.
         if (scrollPosition == null) {
             if (!this.TextContainer) { 
-                console.warn("ThemeDriver.getFrame","Text container not found. Cannot get scroll position.")
+                console.warn("ThemeDriver.getFrame\n","Text container not found. Cannot get scroll position.")
                 return }
             if (!this.StaticContainer) { 
-                console.warn("ThemeDriver.getFrame","Static container not found. Cannot get scroll position.")
+                console.warn("ThemeDriver.getFrame\n","Static container not found. Cannot get scroll position.")
                 return }
             scrollPosition = this.StaticContainer.getBoundingClientRect().top - this.TextContainer.getBoundingClientRect().top;            
         }
@@ -1385,7 +1464,7 @@ class ThemeDriver {
          *  Set the theme: apply to CSS ROOT variables.
          */
         if (ROOT == null) {
-            console.warn("ThemeDriver.deployTheming","Root HTML element not found. Cannot deploy colors.")
+            console.warn("ThemeDriver.deployTheming\n","Root HTML element not found. Cannot deploy colors.")
             return
         }    
         let t1 = this.CurrentWall.Progress
@@ -1450,7 +1529,7 @@ async function buildManuscript(rootURL: string, storyName: string, startChapter 
     CFG = await StoryConfig.initialize(rootURL,SRC.storyName);
     CARD = new ChapterDataCard(SRC.storyName);
     CARD.toggleNightMode(false); // Start in Night Mode.
-    BIND = await ChapterBinder.initialize(rootURL, SRC.storyName, CFG, SRC.PermLevel, CARD, DEPLOY, 0, IncludeSettingTags);   
+    BIND = await ChapterBinder.initialize(rootURL, SRC.storyName, CFG, SRC.Local.permlevel, CARD, DEPLOY, 0, IncludeSettingTags);   
     SRC.AttachBinder(BIND);  
     CTRL = new ControlBar(SRC,CARD);
     //BIND.DeployOnPage(CARD.Data.TOC.Chapter,DEPLOY)
@@ -1459,8 +1538,9 @@ async function buildManuscript(rootURL: string, storyName: string, startChapter 
     await BIND.DeployOnPage(SRC.Local.chapter,DEPLOY)
     EXTRAS = await StoryExtrasWindow.initialize(SRC.storyName,rootURL,EXTRAID)
     THEME.deployTheming();
-    BIND.LockUp();
-    await EXTRAS.loadInExtras()
+    BIND.LockUp();    
+    await EXTRAS.loadAnnouncements();
+    await EXTRAS.loadInExtras();
     EXTRAS.deployContent();
     return
 }
@@ -1480,7 +1560,7 @@ function runScrollEvents() {
 function runResizeEvents() {
     THEME.getScrollBreaks();
     runScrollEvents()
-    console.debug("runResizeEvents","A resize event has taken place.")
+    console.log("runResizeEvents","\nA resize event has taken place.")
 }
 
 function LoadOtherStory(otherstory:string) {
@@ -1534,7 +1614,7 @@ const eIDNAME               = GEBID('IDNAME')
 const DEPLOY = "TYPESET";
 const EXTRAID = "EXTRACONTENT";
 
-var StartChapter = 9;
+var StartChapter = 1;
 var CARD : ChapterDataCard;
 var CFG: StoryConfig;
 var BIND: ChapterBinder;
@@ -1543,7 +1623,7 @@ var SRC: LocalStorageAndSrcVars;
 var EXTRAS: StoryExtrasWindow;
 var CTRL: ControlBar;
 
-var ACTIVESTORY = "Firebrand"
+var ACTIVESTORY = "Paragate"
 
 var IncludeSettingTags = false;
 
