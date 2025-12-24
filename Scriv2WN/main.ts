@@ -40,6 +40,7 @@ class StoryExtrasWindow {
     public Content: string = "";
     public Announcements: any | null = null;
     public AnnounceContainer: HTMLElement | null = null;
+    public AnnounceJSON: any | null = null;
 
     private constructor(storyName: string, rootURL: string, containerID: string) {
         this.Story = storyName;
@@ -84,8 +85,38 @@ class StoryExtrasWindow {
         }
     }
 
-    async parseAnnouncements(announce:JSON) {
-        return `<p> asdf </p>`
+    async parseAnnouncements() {
+        let HTMLannounce = "";
+        if (!this.AnnounceJSON) {
+            console.error("StoryExtrasWindow.parseAnnouncements\n", `AnnounceJSON does not exist.`);
+        } else {
+            let storyAnnounce = this.AnnounceJSON[`${this.Story}`];
+            Object.entries(storyAnnounce).forEach( ([k, v]:any) => {
+                let announceday = (() => {
+                    const key = String(k);
+                    const dt = new Date(key);
+                    if (isNaN(dt.getTime())) return key;
+                    //const weekday = ""//new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(dt);
+                    //const month = new Intl.DateTimeFormat('en-US', { month: '2-digit' }).format(dt);
+                    //const day = String(dt.getDate()).padStart(2, '0');
+                    return new Intl.DateTimeFormat('en-us', {month: '2-digit', day: 'numeric'}).format(dt)//`${weekday}${month}/${day}`;
+                })();
+                let announceTitle = v['title'] ? v['title'] : "";
+                HTMLannounce = `<div class="EXwindow" id="EXwindow">`
+                             +   `<div class="TEX_HEAD" id="EXextras">${this.Story} Announcements</div>`
+                             + `</div>`
+                             + `<div class="Announcement">`
+                             +   `<div class="AnnounceHead">`
+                             +     `<span class="adate">${announceday}</span>&emsp;<span class="atitle">${announceTitle}</span>`
+                             +   `</div>`
+                             +   `<div class="AnnounceBody">`
+                             +     `${v['message'] ? v['message'] : ""}`
+                             +   `</div>`
+                             + `</div>`
+                             ;
+            });
+        }
+        return HTMLannounce
     }
 
     async loadAnnouncements(): Promise<boolean> {
@@ -97,8 +128,8 @@ class StoryExtrasWindow {
                 console.error("StoryExtrasWindow.loadContent\n", `Error fetching announcements from ${url}.`);
                 return false;
             }
-            let FullAnnouncements = await response.json();
-            this.Announcements = await this.parseAnnouncements(FullAnnouncements);
+            this.AnnounceJSON = await response.json();
+            this.Announcements = await this.parseAnnouncements();
             console.log("StoryExtrasWindow.loadContent\n", `Announcements loaded from ${url}.`,this.Announcements);
             return true;
         } catch (error) {

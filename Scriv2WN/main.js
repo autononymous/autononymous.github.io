@@ -26,6 +26,7 @@ class StoryExtrasWindow {
         this.Content = "";
         this.Announcements = null;
         this.AnnounceContainer = null;
+        this.AnnounceJSON = null;
         this.Story = storyName;
         this.rootURL = rootURL;
         this.Container = document.getElementById(containerID);
@@ -74,9 +75,40 @@ class StoryExtrasWindow {
             }
         });
     }
-    parseAnnouncements(announce) {
+    parseAnnouncements() {
         return __awaiter(this, void 0, void 0, function* () {
-            return `<p> asdf </p>`;
+            let HTMLannounce = "";
+            if (!this.AnnounceJSON) {
+                console.error("StoryExtrasWindow.parseAnnouncements\n", `AnnounceJSON does not exist.`);
+            }
+            else {
+                let storyAnnounce = this.AnnounceJSON[`${this.Story}`];
+                Object.entries(storyAnnounce).forEach(([k, v]) => {
+                    let announceday = (() => {
+                        const key = String(k);
+                        const dt = new Date(key);
+                        if (isNaN(dt.getTime()))
+                            return key;
+                        //const weekday = ""//new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(dt);
+                        //const month = new Intl.DateTimeFormat('en-US', { month: '2-digit' }).format(dt);
+                        //const day = String(dt.getDate()).padStart(2, '0');
+                        return new Intl.DateTimeFormat('en-us', { month: '2-digit', day: 'numeric' }).format(dt); //`${weekday}${month}/${day}`;
+                    })();
+                    let announceTitle = v['title'] ? v['title'] : "";
+                    HTMLannounce = `<div class="EXwindow" id="EXwindow">`
+                        + `<div class="TEX_HEAD" id="EXextras">${this.Story} Announcements</div>`
+                        + `</div>`
+                        + `<div class="Announcement">`
+                        + `<div class="AnnounceHead">`
+                        + `<span class="adate">${announceday}</span>&emsp;<span class="atitle">${announceTitle}</span>`
+                        + `</div>`
+                        + `<div class="AnnounceBody">`
+                        + `${v['message'] ? v['message'] : ""}`
+                        + `</div>`
+                        + `</div>`;
+                });
+            }
+            return HTMLannounce;
         });
     }
     loadAnnouncements() {
@@ -88,8 +120,8 @@ class StoryExtrasWindow {
                     console.error("StoryExtrasWindow.loadContent\n", `Error fetching announcements from ${url}.`);
                     return false;
                 }
-                let FullAnnouncements = yield response.json();
-                this.Announcements = yield this.parseAnnouncements(FullAnnouncements);
+                this.AnnounceJSON = yield response.json();
+                this.Announcements = yield this.parseAnnouncements();
                 console.log("StoryExtrasWindow.loadContent\n", `Announcements loaded from ${url}.`, this.Announcements);
                 return true;
             }

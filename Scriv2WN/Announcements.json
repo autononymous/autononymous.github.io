@@ -1,14 +1,53 @@
 {
-    "Paragate": {
-        "2025-12-24": {
-            "title": "Paragate Launch Update",
-            "message": "Paragate will enter beta on 2026-01-15. Sign up for early access."
+    "Paragate":
+    {
+        "03/14/25": 
+        {
+            "title":"Site Release",
+            "content":"Today marks the release of <a href='https://autononymous.io/'>Autononymous.io</a>! Check out our main page for story updates."       
+        },
+        "07/02/25":
+        {
+            "title":"Viewer & Story Alpha",
+            "content":"&emsp;If you&apos;re reading this right now, it&apos;s for only one of two reasons: either you&apos;re one of my trusted friends or family that I&apos;ve decided to share this with, or you&apos;ve randomly discovered this and you&apos;re early to the show. But either way, I want to thank you for being here and supporting my work. <br><br>&emsp;PARAGATE is the second novel I&apos;ve written; one that is far more personal to me. The two main characters are manifestations of anxiety and major depression that closely resemble my own struggles with these battles, and I look forward to telling you a story about what I&apos;ve learned in &quot;fighting the good fight&quot; against both of them.<br><br>&emsp;This is an early release of the story, so not everything is entirely nailed down yet &mdash; but it&apos;s certainly <em>planned</em>. That being said, if it&apos;s posted here, it&apos;s in polished enough of a form that I&apos;m confident to post it.<br><br>&emsp;If you enjoy this work, please let me know on social media, and feel free to share it with others. I&apos;m still figuring out this self-publishing thing (and trying to spend more of my time writing than improving this Javascript applet).<br><br>Thanks again for your support.<br><br>With love,<br>&emsp;<span style='font-family:Brush Script MT, cursive;font-size:1.5em;'>Savant-Guarde :)</span>"
+        },
+        "07/11/25":
+        {
+            "title":"Prologue Update",
+            "content":"Finished the split prologue for PARAGATE. Was pretty tough to make the damn thing read across and down most of the time, like a word puzzle or something."
+        },
+        "10/11/25":
+        {
+            "title":"Story Restructure",
+            "content":"Hey there! <br>If you're actually reading this, not only am I surprised, but I'm very thankful for your support. <br>As you should know, Paragate is still in a preliminary state. Over the course of the last few months, I've decided to restructure the story's order to make it more compelling out of the gate: with an 'in medias res' opening. <br> I've also made loads of progress on the story: already halfway into the third act of four, with everything planned out. <br> Can't tell you how excited I am to share this story with you. And if you're reading this, and I actually have readers out there, reach out to me on <a href='https://bsky.app/profile/savant-guarde.bsky.social'> BlueSky <a>, or send me a message on Discord @SavantGuarde#8032 :)<br>Thanks again for your support!<br><br>With love,<br>&emsp;<span style='font-family:Brush Script MT, cursive;font-size:1.5em;'>Savant-Guarde :)</span>"
+
+        }       
+        
+    },
+    "Firebrand":
+    {
+        "03/14/25": 
+        {
+            "title":"Site Release",
+            "content":"Today marks the release of <a href='https://autononymous.io/'>Autononymous.io</a>! Check out our main page for story updates."
+        },
+        "04/27/25": 
+        {
+            "title":"First Act Release",
+            "content":"Hey Readers! Since I&apos;ve made extra progress with Firebrand, I decided to release the <strong>entire first act</strong>. Should get the story rolling a little better. Further updates of Acts 2 ~ 4 will continue per the standard weekly release. Thanks for your support!"
+        },
+        "07/02/25": 
+        {
+            "title":"Viewer & Story Beta",
+            "content":"&emsp;If you&apos;re reading this right now, it&apos;s for only one of two reasons: either you&apos;re one of my trusted friends or family that I&apos;ve decided to share this with, or you&apos;ve randomly discovered this and you&apos;re early to the show. But either way, I want to thank you for being here and supporting my work. <br><br>&emsp;FIREBRAND is the first novel I&apos;ve ever written. I wrote the bulk of this during a rough time of my life, when I was going to college in a different state: starting entirely from zero and not knowing anyone; allowing loneliness and unmedicated depression to lead me into a long spiral. <br><br>&emsp;But I came out the other side and I survived, making it through the long quarters of my engineering program. The concept of a continuous fight without an end in sight provided the fuel for the thesis of this story: <em>&apos;If you had an unlimited number of attempts to rewrite the past, would it break you, or would you find peace&apos;?</em> It also inspired the main character <strong>Titus</strong>: a suffer-it-alone kind of guy that was a lot like me before I learned my lesson, figuring out how to sincerely open up to people. <br><br>&emsp;This is an early release of the story, but the full story is entirely written: just being progressively edited. But, rest assured, if it&apos;s posted here, it&apos;s in polished enough a form that I&apos;m confident to post it.<br><br>&emsp;If you enjoy this work, please let me know on social media and feel free to share it with others. I&apos;m still figuring out this self-publishing thing (and trying to spend more of my time writing than improving this Javascript applet).<br><br>Thanks again for your support.<br><br>With love,<br>&emsp;<span style='font-family:Brush Script MT, cursive;font-size:1.5em;'>Savant-Guarde :)</span>"
         }
     },
-    "Firebrand": {
-        "2025-12-24": {
-            "title": "Firebrand Maintenance",
-            "message": "Scheduled maintenance on 2025-12-28 from 02:00–04:00 UTC."
+    "Goldenfur":
+    {
+        "07/27/25": 
+        {
+            "title":"Breaking Ground",
+            "content":"Story process begins today!"
         }
     }
 }
