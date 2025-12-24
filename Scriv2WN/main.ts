@@ -86,37 +86,36 @@ class StoryExtrasWindow {
     }
 
     async parseAnnouncements() {
+        let HTMLstart    = `<div class="EXwindow" id="EXwindow">`
+                         +   `<div class="TEX_HEAD" id="EXextras">${this.Story} Announcements</div>`
+                         + `</div>`;
         let HTMLannounce = "";
         if (!this.AnnounceJSON) {
             console.error("StoryExtrasWindow.parseAnnouncements\n", `AnnounceJSON does not exist.`);
         } else {
             let storyAnnounce = this.AnnounceJSON[`${this.Story}`];
-            Object.entries(storyAnnounce).forEach( ([k, v]:any) => {
+            let announceByDate:any = {}
+            Object.entries(storyAnnounce).reverse().forEach( ([k, v]:any) => {
                 let announceday = (() => {
                     const key = String(k);
                     const dt = new Date(key);
                     if (isNaN(dt.getTime())) return key;
-                    //const weekday = ""//new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(dt);
-                    //const month = new Intl.DateTimeFormat('en-US', { month: '2-digit' }).format(dt);
-                    //const day = String(dt.getDate()).padStart(2, '0');
-                    return new Intl.DateTimeFormat('en-us', {month: '2-digit', day: 'numeric'}).format(dt)//`${weekday}${month}/${day}`;
+                    return new Intl.DateTimeFormat('en-us', {month: '2-digit', day: '2-digit', year: '2-digit'}).format(dt)
                 })();
                 let announceTitle = v['title'] ? v['title'] : "";
-                HTMLannounce = `<div class="EXwindow" id="EXwindow">`
-                             +   `<div class="TEX_HEAD" id="EXextras">${this.Story} Announcements</div>`
-                             + `</div>`
-                             + `<div class="Announcement">`
-                             +   `<div class="AnnounceHead">`
-                             +     `<span class="adate">${announceday}</span>&emsp;<span class="atitle">${announceTitle}</span>`
-                             +   `</div>`
-                             +   `<div class="AnnounceBody">`
-                             +     `${v['message'] ? v['message'] : ""}`
-                             +   `</div>`
-                             + `</div>`
-                             ;
+                announceByDate[announceday] = `<div class="Announcement">`
+                              +   `<div class="AnnounceHead">`
+                              +     `<span class="adate">${announceday}</span>&emsp;<span class="atitle">${announceTitle}</span>`
+                              +   `</div>`
+                              +   `<div class="AnnounceBody">`
+                              +     `${v['content'] ? v['content'] : ""}`
+                              +   `</div>`
+                              + `</div>`;
+                HTMLannounce += announceByDate[announceday];
             });
+            
         }
-        return HTMLannounce
+        return HTMLstart + HTMLannounce
     }
 
     async loadAnnouncements(): Promise<boolean> {
