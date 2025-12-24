@@ -103,15 +103,17 @@ class StoryExtrasWindow {
                     return new Intl.DateTimeFormat('en-us', {month: '2-digit', day: '2-digit', year: '2-digit'}).format(dt)
                 })();
                 let announceTitle = v['title'] ? v['title'] : "";
-                announceByDate[announceday] = `<div class="Announcement">`
+                HTMLannounce += `<div class="Announcement">`
                               +   `<div class="AnnounceHead">`
                               +     `<span class="adate">${announceday}</span>&emsp;<span class="atitle">${announceTitle}</span>`
                               +   `</div>`
-                              +   `<div class="AnnounceBody">`
-                              +     `${v['content'] ? v['content'] : ""}`
-                              +   `</div>`
+                              +   `<div class="AnnounceBody">`;
+                (v['content']).forEach( (line:string) => {
+                HTMLannounce +=     `<p class="aline">${line ? line : ""}</p>`;
+                });
+
+                HTMLannounce +=   `</div>`
                               + `</div>`;
-                HTMLannounce += announceByDate[announceday];
             });
             
         }
