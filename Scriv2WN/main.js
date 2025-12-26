@@ -502,6 +502,7 @@ class ChapterDataCard {
         this.Binder = null; // Pointer to the ChapterBinder object.
         this.ThemeDriver = null; // Pointer to the ThemeDriver object.
         this.NightMode = false; // Is Night Mode active?
+        this.CurrentVoice = null;
         this.Story = StoryName;
         this.eTOC_ID = document.getElementById('TTC_ID');
         this.eTOC_NAME = document.getElementById('TTC_name');
@@ -534,6 +535,17 @@ class ChapterDataCard {
     updateDataBar() {
         eIDCHAPTER.innerHTML = `<span>Chapter ${this.Data.TOC.ChapterNumber}</span>`;
         eIDNAME.innerHTML = `<span>${this.Data.TOC.ChapterName}</span>`;
+    }
+    lookingAt(scrolldata) {
+        let progress = Number(scrolldata[1]);
+        let voice = ((scrolldata[0] == null) ? (progress < 50 ? this.Data.TOC.Character[0] : this.Data.TOC.Character[-1]) : scrolldata[0]);
+        let changeEvent = false;
+        if (this.CurrentVoice != voice) {
+            this.CurrentVoice = voice;
+            console.log("ChapterDataCard.lookingAt\n", `Narrative voice is now ${this.CurrentVoice}. Transitioned at ${progress}%.`);
+            changeEvent = true;
+        }
+        return changeEvent;
     }
 }
 class StoryConfig {
@@ -632,6 +644,7 @@ class TableOfContents {
         this.TOCstate = false;
         this.EXTRAstate = false;
         this.CTRLstate = false;
+        this.MAPstate = false;
         /**
          * @param toc Full Table Of Contents data.
          */
@@ -639,6 +652,7 @@ class TableOfContents {
         this.ToggleDisplay(this.TOCstate);
         this.ToggleInfo(this.EXTRAstate);
         this.ToggleControls(this.CTRLstate);
+        this.ToggleMap(this.MAPstate);
         this.TOClocation = document.getElementById("TOCwindow");
         this.DeployTOC();
     }
@@ -664,61 +678,80 @@ class TableOfContents {
         });
     }
     ToggleDisplay(setState = null) {
-        if (this.EXTRAstate) {
-            console.error("TableOfContents.ToggleDisplay\n", "Unable to activate TOC while EXTRAS is active.");
-            return;
+        if (this.isToggleOkay('TOC')) {
+            if (setState == null) {
+                this.TOCstate = !this.TOCstate;
+            }
+            else {
+                this.TOCstate = setState;
+            }
+            console.log("TableOfContents.ToggleDisplay\n", `Table Of Contents is now ${this.TOCstate ? "shown" : "hidden"}.`);
+            // Changing width of TOC? Set --TOCWIDTH in contentstyles.css
+            ROOT.style.setProperty("--READER_TOCOFFSET", this.TOCstate ? "var(--TOCWIDTH)" : "0px");
         }
-        else if (this.CTRLstate) {
-            console.error("TableOfContents.ToggleDisplay\n", "Unable to activate TOC while CONTROL is active.");
-            return;
-        }
-        if (setState == null) {
-            this.TOCstate = !this.TOCstate;
-        }
-        else {
-            this.TOCstate = setState;
-        }
-        console.log("TableOfContents.ToggleDisplay\n", `Table Of Contents is now ${this.TOCstate ? "shown" : "hidden"}.`);
-        // Changing width of TOC? Set --TOCWIDTH in contentstyles.css
-        ROOT.style.setProperty("--READER_TOCOFFSET", this.TOCstate ? "var(--TOCWIDTH)" : "0px");
     }
     ToggleInfo(setState = null) {
-        if (this.TOCstate) {
-            console.error("TableOfContents.ToggleInfo\n", "Unable to activate EXTRAS while TOC is active.");
-            return;
+        if (this.isToggleOkay('EXTRA')) {
+            if (setState == null) {
+                this.EXTRAstate = !this.EXTRAstate;
+            }
+            else {
+                this.EXTRAstate = setState;
+            }
+            console.log("TableOfContents.ToggleInfo\n", `Special Window is now ${this.EXTRAstate ? "shown" : "hidden"}.`);
+            // Changing width of TOC? Set --TOCWIDTH in contentstyles.css
+            ROOT.style.setProperty("--READER_EXTRAOFFSET", this.EXTRAstate ? "calc( -1 * var(--EXTRAWIDTH))" : "0px");
         }
-        else if (this.CTRLstate) {
-            console.error("TableOfContents.ToggleInfo\n", "Unable to activate EXTRAS while CONTROL is active.");
-            return;
-        }
-        if (setState == null) {
-            this.EXTRAstate = !this.EXTRAstate;
-        }
-        else {
-            this.EXTRAstate = setState;
-        }
-        console.log("TableOfContents.ToggleInfo\n", `Special Window is now ${this.EXTRAstate ? "shown" : "hidden"}.`);
-        // Changing width of TOC? Set --TOCWIDTH in contentstyles.css
-        ROOT.style.setProperty("--READER_EXTRAOFFSET", this.EXTRAstate ? "calc( -1 * var(--EXTRAWIDTH))" : "0px");
     }
     ToggleControls(setState = null) {
-        if (this.TOCstate) {
-            console.error("TableOfContents.ToggleControls\n", "Unable to activate CONTROL while TOC is active.");
-            return;
+        if (this.isToggleOkay('CTRL')) {
+            if (setState == null) {
+                this.CTRLstate = !this.CTRLstate;
+            }
+            else {
+                this.CTRLstate = setState;
+            }
+            console.log("TableOfContents.ToggleControls\n", `Special Window is now ${this.CTRLstate ? "shown" : "hidden"}.`);
+            // Changing width of TOC? Set --TOCWIDTH in contentstyles.css
+            ROOT.style.setProperty("--READER_CTRLOFFSET", this.CTRLstate ? "var(--CTRLWIDTH)" : "0px");
         }
-        else if (this.EXTRAstate) {
-            console.error("TableOfContents.ToggleControls\n", "Unable to activate CONTROL while EXTRAS is active.");
-            return;
+    }
+    ToggleMap(setState = null) {
+        if (this.isToggleOkay('MAP')) {
+            if (setState == null) {
+                this.MAPstate = !this.MAPstate;
+            }
+            else {
+                this.MAPstate = setState;
+            }
+            console.log("TableOfContents.ToggleControls\n", `Special Window is now ${this.MAPstate ? "shown" : "hidden"}.`);
+            // Changing width of TOC? Set --TOCWIDTH in contentstyles.css
+            ROOT.style.setProperty("--READER_MAPOFFSET", this.MAPstate ? "var(--MAPWIDTH)" : "0px");
         }
-        if (setState == null) {
-            this.CTRLstate = !this.CTRLstate;
+    }
+    isToggleOkay(mode) {
+        let okToDeploy = true;
+        let requested = "";
+        if ((this.TOCstate) && (mode != "TOC")) {
+            okToDeploy = false;
+            requested = "TOC";
         }
-        else {
-            this.CTRLstate = setState;
+        if ((this.EXTRAstate) && (mode != "EXTRA")) {
+            okToDeploy = false;
+            requested = "EXTRA";
         }
-        console.log("TableOfContents.ToggleControls\n", `Special Window is now ${this.CTRLstate ? "shown" : "hidden"}.`);
-        // Changing width of TOC? Set --TOCWIDTH in contentstyles.css
-        ROOT.style.setProperty("--READER_CTRLOFFSET", this.CTRLstate ? "var(--CTRLWIDTH)" : "0px");
+        if ((this.CTRLstate) && (mode != "CTRL")) {
+            okToDeploy = false;
+            requested = "CTRL";
+        }
+        if ((this.MAPstate) && (mode != "MAP")) {
+            okToDeploy = false;
+            requested = "MAP";
+        }
+        if (!okToDeploy) {
+            console.error("TableOfContents.isToggleOkay\n", `Unable to activate ${mode} while ${requested} is active.`);
+        }
+        return okToDeploy;
     }
     DeployTOC() {
         let chapters = this.list.ChapterList;
@@ -1372,15 +1405,16 @@ class ThemeDriver {
         if (scrollPosition == null) {
             if (!this.TextContainer) {
                 console.warn("ThemeDriver.getFrame\n", "Text container not found. Cannot get scroll position.");
-                return;
+                return null;
             }
             if (!this.StaticContainer) {
                 console.warn("ThemeDriver.getFrame\n", "Static container not found. Cannot get scroll position.");
-                return;
+                return null;
             }
             scrollPosition = this.StaticContainer.getBoundingClientRect().top - this.TextContainer.getBoundingClientRect().top;
         }
-        ROOT.style.setProperty("--BarLength", `${(100 * scrollPosition / this.TravelHeight).toFixed(2)}%`);
+        let scrollPercent = (100 * scrollPosition / this.TravelHeight).toFixed(2);
+        ROOT.style.setProperty("--BarLength", `${scrollPercent}%`);
         // @OPTIMIZE does this need updates this frequently???
         // this.DataCard.updateDataBar()
         // Dark theming will determine color palette.
@@ -1396,7 +1430,7 @@ class ThemeDriver {
         }
         if (currentKey == null) {
             //console.warn("ThemeDriver.getFrame","No keyframe found for scroll position:",scrollPosition)
-            return;
+            return [null, scrollPercent];
         }
         let KeyProgress = (scrollPosition - currentKey.min) / (currentKey.max - currentKey.min);
         //let debug = document.getElementById("DEBUG");        
@@ -1412,7 +1446,7 @@ class ThemeDriver {
                 FromCharacter: currentKey.startTheme,
                 ToCharacter: currentKey.endTheme
             };
-            return;
+            return [currentKey.startTheme, scrollPercent];
         }
         // if (debug != null) {
         //    debug.innerHTML = `<span style="color: white">Interpolating keyframe for scroll position ${scrollPosition.toFixed(0)} at ${(KeyProgress*100).toFixed(2)}% <br>From theme "${currentKey.startTheme}" to "${currentKey.endTheme}.<br> ${currentKey.min.toFixed(0)} to ${currentKey.max.toFixed(0)}"</span>`
@@ -1447,7 +1481,7 @@ class ThemeDriver {
             FromCharacter: currentKey.startTheme,
             ToCharacter: currentKey.endTheme
         };
-        return;
+        return [currentKey.startTheme == "Default" ? currentKey.endTheme : currentKey.startTheme, scrollPercent];
     }
     deployTheming() {
         /**
@@ -1536,8 +1570,9 @@ function doThemeChange() {
     runScrollEvents();
 }
 function runScrollEvents() {
-    THEME.getFrame();
+    let ScrollData = THEME.getFrame();
     THEME.deployTheming();
+    CARD.lookingAt(ScrollData);
     return;
 }
 function runResizeEvents() {

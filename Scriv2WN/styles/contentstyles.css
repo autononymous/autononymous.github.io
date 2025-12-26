@@ -2,17 +2,20 @@
         /* Setting the height of the interface/menu bar */
     --MenuHeightStatic:     40px;
     --MenuHeight:           150px;
+    --MapHeight:            600px;
     --ControlHeight:        min(25vw,100px);
 
     /* Position of reader whether or not TOC or other things are shown.*/
     --READER_TOCOFFSET:     0px;
     --READER_EXTRAOFFSET:   0px;
     --READER_CTRLOFFSET:    0px;
+    --READER_MAPOFFSET:     0px;
     --READER_X_OFFSET:      calc( var(--READER_TOCOFFSET) + var(--READER_EXTRAOFFSET) );
-    --READER_Y_OFFSET:      var(--READER_CTRLOFFSET);
+    --READER_Y_OFFSET:      calc( var(--READER_CTRLOFFSET) + var(--READER_MAPOFFSET) );
     --TOCWIDTH:             min(500px,80vw);
     --EXTRAWIDTH:           min(500px,80vw);
     --CTRLWIDTH:            var(--MenuHeight);
+    --MAPWIDTH:             var(--MapHeight);
 
     --TextAlignment:        justify;
     --TabMargin:            calc( var(--TextSize) * 0.6);
@@ -158,7 +161,7 @@ div > div {
     */
 div.TOC {
     position:absolute;
-    top: var(--READER_CTRLOFFSET);
+    top: calc(var(--READER_CTRLOFFSET) + var(--READER_MAPOFFSET));
     width: var(--TOCWIDTH);
     height: 100dvh;
     background: var(--MidgroundColor);
@@ -170,7 +173,7 @@ div.TOC {
 }
 div.EXTRAS {
     position:absolute;
-    top: var(--READER_CTRLOFFSET);
+    top:  calc(var(--READER_CTRLOFFSET) + var(--READER_MAPOFFSET)) ;
     width: var(--EXTRAWIDTH);
     height: 100dvh;
     background: var(--MidgroundColor);
@@ -182,7 +185,7 @@ div.EXTRAS {
 }
 div.CONTROLLER {
     position:absolute;
-    top: 0;
+    top: var(--READER_MAPOFFSET);
     width: 100vw;
     height: var(--MenuHeight);
     background: var(--MidgroundColor);
@@ -190,8 +193,21 @@ div.CONTROLLER {
     overflow-x: hidden;
     overflow-y: scroll;
     left: calc( ( var(--READER_TOCOFFSET) ) + var(--READER_EXTRAOFFSET) );
-    transition: left 0.8s ease-in-out;
+    transition: left 0.8s ease-in-out, top 0.8s ease-in-out;
     grid-area: header;
+}
+div.STORYMAP {
+    position:absolute;
+    top:0;
+    width:100vw;
+    height: var(--MapHeight);
+    background: var(--MidgroundColor);
+    color: var(--TextColor);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 div.ICONS {      
     width: min(100%,var(--ContentWidth));
@@ -223,6 +239,9 @@ div.SETTINGTEXT {
     font-size: 1.125em;/*calc(var(--TextSize) * 0.75);/**/
 } 
 
+div.BCOVER {
+    padding: 25px;
+}
 div.EXTRACONTENT {
     position:relative;
     width:calc( 100% - 80px );
@@ -236,7 +255,7 @@ div.EXTRACONTENT > h1 {
     border-left: 2px solid var(--TextColor);
     padding-left: 10px;
     font-family: var(--ActiveTitle);
-    font-size: calc(1.5em * 1.50 ); /*var(--TextSize)*/
+    font-size: calc(1. 5em * 1.50 ); /*var(--TextSize)*/
 }
 div.EXTRACONTENT > h2 {
     border-left: 1px dashed  var(--TextColor);
@@ -544,10 +563,12 @@ div.TOGGLE {
     background-color: rgba(128, 128, 128, 0.500);
 }
 div.TOGGLE::before {
-    content: " ::: "
+    content: " ::: ";
+    white-space: nowrap;
 }
 div.TOGGLE::after {
-    content: " Pane ::: "
+    content: " Pane ::: ";
+    white-space: nowrap;
 }
 div.TOGGLE:hover {
     opacity:0.8;
@@ -568,10 +589,20 @@ div.TOGGLEINFO {
     transform: translateX(calc(50% - 20px)) translateY(50%) rotate(90deg);
     color: var(--TextColor);
     font-size: 1.35em;
+    white-space: nowrap;
 }
 div.TOGGLECTRL {
     position:absolute;
-    right:50vw;
+    right: calc(50vw + 100px);
+    top:0;
+    transform: translateY(calc(50% + 0px)) translateX(50%);
+    color: var(--TextColor);
+    font-size: 1.35em;
+    white-space: nowrap;
+}
+div.TOGGLEMAP {
+    position:absolute;
+    right: calc(50vw - 100px);
     top:0;
     transform: translateY(calc(50% + 0px)) translateX(50%);
     color: var(--TextColor);
