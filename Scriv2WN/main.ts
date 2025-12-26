@@ -1123,6 +1123,7 @@ class ChapterBinder {
         targetElement.innerHTML = chapterContent;
         // Update the DataCard with current chapter info.
         this.DataCard.Update(requestedChapter);
+        this.placeWorldMap(ChapterInfo.Character[0])
 
         return true
     }
@@ -1136,6 +1137,10 @@ class ChapterBinder {
         });
         //console.log(line,msgsource)
         return msgsource
+    }
+
+    placeWorldMap(character:string) {
+        eMAP.style.backgroundImage = `url(../maps/map${character}.jpg)`;
     }
 
     ResolveThisLine( lineContent:any[], lineID:string, sectionStyle:string ) {
@@ -1631,10 +1636,14 @@ function doThemeChange() {
 }
 
 function runScrollEvents() {
-    let ScrollData = THEME.getFrame()
+    let ScrollData: any|null = THEME.getFrame()
     THEME.deployTheming()
-    if ( CARD.lookingAt(ScrollData) && (ScrollData != null) ) {
-        eMAP.style.setProperty('backgroundImage',`url(../maps/map${ScrollData[0]}.jpg)`);
+    if ( CARD.lookingAt(ScrollData[0])) {
+        let characterName = CARD.Data.TOC.Character[0]
+        if (!ScrollData[0]) {
+            characterName = ScrollData[0]
+        }
+        BIND.placeWorldMap(characterName);
     };
     return
 }

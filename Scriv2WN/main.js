@@ -537,6 +537,7 @@ class ChapterDataCard {
         eIDNAME.innerHTML = `<span>${this.Data.TOC.ChapterName}</span>`;
     }
     lookingAt(scrolldata) {
+        // Return if perspective changes, and update active speaker.
         let progress = Number(scrolldata[1]);
         let voice = ((scrolldata[0] == null) ? (progress < 50 ? this.Data.TOC.Character[0] : this.Data.TOC.Character[-1]) : scrolldata[0]);
         let changeEvent = false;
@@ -1072,6 +1073,7 @@ class ChapterBinder {
             targetElement.innerHTML = chapterContent;
             // Update the DataCard with current chapter info.
             this.DataCard.Update(requestedChapter);
+            this.placeWorldMap(ChapterInfo.Character[0]);
             return true;
         });
     }
@@ -1084,6 +1086,9 @@ class ChapterBinder {
         });
         //console.log(line,msgsource)
         return msgsource;
+    }
+    placeWorldMap(character) {
+        eMAP.style.backgroundImage = `url(../maps/map${character}.jpg)`;
     }
     ResolveThisLine(lineContent, lineID, sectionStyle) {
         // Generate the next paragraph <p> line for deployment.
@@ -1572,7 +1577,14 @@ function doThemeChange() {
 function runScrollEvents() {
     let ScrollData = THEME.getFrame();
     THEME.deployTheming();
-    CARD.lookingAt(ScrollData);
+    if (CARD.lookingAt(ScrollData[0])) {
+        let characterName = CARD.Data.TOC.Character[0];
+        if (!ScrollData[0]) {
+            characterName = ScrollData[0];
+        }
+        BIND.placeWorldMap(characterName);
+    }
+    ;
     return;
 }
 function runResizeEvents() {
@@ -1621,6 +1633,7 @@ const eBODY = GEBID('BODY');
 const eTYPESET = GEBID('TYPESET');
 const eIDCHAPTER = GEBID('IDCHAPTER');
 const eIDNAME = GEBID('IDNAME');
+const eMAP = GEBID('STORYMAP');
 const DEPLOY = "TYPESET";
 const EXTRAID = "EXTRACONTENT";
 var StartChapter = 1;
