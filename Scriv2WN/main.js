@@ -27,15 +27,20 @@ class StoryExtrasWindow {
         this.Announcements = null;
         this.AnnounceContainer = null;
         this.AnnounceJSON = null;
+        this.CoverContainer = null;
         this.Story = storyName;
         this.rootURL = rootURL;
         this.Container = document.getElementById(containerID);
         this.AnnounceContainer = document.getElementById('ANNOUNCE');
+        this.CoverContainer = document.getElementById('BCOVER');
         if (!this.Container) {
             console.warn("StoryExtrasWindow.constructor\n", `Container element with ID "${containerID}" not found.`);
         }
-        if (!this.Container) {
+        if (!this.AnnounceContainer) {
             console.warn("StoryExtrasWindow.constructor\n", `Announcement container not found.`);
+        }
+        if (!this.CoverContainer) {
+            console.warn("StoryExtrasWindow.constructor\n", `Cover container not found.`);
         }
     }
     static initialize(storyName, rootURL, containerID) {
@@ -149,6 +154,22 @@ class StoryExtrasWindow {
         }
         else {
             console.error('No announcements.');
+        }
+        if (this.CoverContainer) {
+            let story = "";
+            if (this.Story == 'Paragate') {
+                story = "PG";
+            }
+            else if (this.Story == 'Firebrand') {
+                story = "FBC";
+            }
+            this.CoverContainer.innerHTML = `<img
+                src="https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/Scriv2WN/design/cover-${story}.jpg"
+                alt="${this.Story} cover"
+                loading="lazy"
+                style="display:block;width:min(70%,820px);height:auto;position:relative;left:50%;transform:translateX(-50%);border:2px solid var(--TextColor);box-shadow:0px 0px 10px black;border-radius:6px;"
+            >
+            <br>`;
         }
         return resultingState;
     }

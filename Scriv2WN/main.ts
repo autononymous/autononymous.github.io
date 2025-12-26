@@ -41,17 +41,22 @@ class StoryExtrasWindow {
     public Announcements: any | null = null;
     public AnnounceContainer: HTMLElement | null = null;
     public AnnounceJSON: any | null = null;
+    public CoverContainer: any | null = null;
 
     private constructor(storyName: string, rootURL: string, containerID: string) {
         this.Story = storyName;
         this.rootURL = rootURL;
         this.Container = document.getElementById(containerID) as HTMLElement;
         this.AnnounceContainer = document.getElementById('ANNOUNCE') as HTMLElement;
+        this.CoverContainer = document.getElementById('BCOVER') as HTMLElement;
         if (!this.Container) {
             console.warn("StoryExtrasWindow.constructor\n", `Container element with ID "${containerID}" not found.`);
         }
-        if (!this.Container) {
+        if (!this.AnnounceContainer) {
             console.warn("StoryExtrasWindow.constructor\n", `Announcement container not found.`);
+        }
+        if (!this.CoverContainer) {
+            console.warn("StoryExtrasWindow.constructor\n", `Cover container not found.`);
         }
     }
     static async initialize(storyName: string, rootURL: string, containerID: string) {
@@ -156,6 +161,21 @@ class StoryExtrasWindow {
                          + this.AnnounceContainer.outerHTML;
         } else {
             console.error('No announcements.')
+        }
+        if(this.CoverContainer) { 
+            let story = "";     
+            if (this.Story == 'Paragate') {
+                story = "PG"
+            } else if (this.Story == 'Firebrand') {
+                story = "FBC"
+            }
+            this.CoverContainer.innerHTML = `<img
+                src="https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/Scriv2WN/design/cover-${story}.jpg"
+                alt="${this.Story} cover"
+                loading="lazy"
+                style="display:block;width:min(70%,820px);height:auto;position:relative;left:50%;transform:translateX(-50%);border:2px solid var(--TextColor);box-shadow:0px 0px 10px black;border-radius:6px;"
+            >
+            <br>`
         }
         return resultingState;
     }
@@ -268,7 +288,7 @@ class LocalStorageAndSrcVars {
         "linesetting":3,
         "themesetting":true,
         "dojustify":true
-    }
+    };
     // Default local setup.
     public Local : any;
     public SaveName : string;
