@@ -5,9 +5,10 @@ div.ANNOUNCE {
     left: 10px;
     font-family: var(--ActiveText);
     color: var(--TextColor);
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;/**/
     overflow-x: hidden;
     overflow-y: scroll;
+    background-image: linear-gradient(rgba(255,255,0,0.1));
 }
 div.Announcement {
     margin: 25px 25px 25px 25px;

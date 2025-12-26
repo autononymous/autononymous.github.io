@@ -227,7 +227,7 @@ div.EXTRACONTENT {
     position:relative;
     width:calc( 100% - 80px );
     left: 40px;
-    top:20px;
+    top:0px;
     /*border: 1px solid white;*/
     min-height: 500px;
     /*border-top: 1px solid var(--BooleanColor);/**/
@@ -236,18 +236,18 @@ div.EXTRACONTENT > h1 {
     border-left: 2px solid var(--TextColor);
     padding-left: 10px;
     font-family: var(--ActiveTitle);
-    font-size: calc(var(--TextSize) * 1.50 );
+    font-size: calc(1.5em * 1.50 ); /*var(--TextSize)*/
 }
 div.EXTRACONTENT > h2 {
     border-left: 1px dashed  var(--TextColor);
     padding-left: 10px;
     font-family: var(--ActiveSub);
-    font-size: calc(var(--TextSize) * 1.00 );
+    font-size: calc(1.5em * 1.00 ); /*var(--TextSize)*/
 }
 div.EXTRACONTENT > p {
     font-family: var(--ActiveSub);
     line-height: 1.50em;
-    font-size: calc(var(--TextSize) * 0.80 );
+    font-size: calc(1.5em * 0.80 ); /*var(--TextSize)*/
     text-align: justify;
 }
 div.EXTRACONTENT > img {

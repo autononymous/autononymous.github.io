@@ -86,9 +86,6 @@ class StoryExtrasWindow {
     }
 
     async parseAnnouncements() {
-        let HTMLstart    = `<div class="EXwindow" id="EXwindow">`
-                         +   `<div class="TEX_HEAD" id="EXextras">${this.Story} Announcements</div>`
-                         + `</div>`;
         let HTMLannounce = "";
         if (!this.AnnounceJSON) {
             console.error("StoryExtrasWindow.parseAnnouncements\n", `AnnounceJSON does not exist.`);
@@ -117,7 +114,7 @@ class StoryExtrasWindow {
             });
             
         }
-        return HTMLstart + HTMLannounce
+        return HTMLannounce
     }
 
     async loadAnnouncements(): Promise<boolean> {
@@ -153,6 +150,10 @@ class StoryExtrasWindow {
         }        
         if (this.AnnounceContainer) {
             this.AnnounceContainer.innerHTML = this.Announcements;
+            this.AnnounceContainer.outerHTML =  `<div class="EXwindow" id="EXwindow">`
+                         +   `<div class="TEX_HEAD" id="EXextras">${this.Story} Announcements</div>`
+                         + `</div>`
+                         + this.AnnounceContainer.outerHTML;
         } else {
             console.error('No announcements.')
         }
