@@ -536,10 +536,10 @@ class ChapterDataCard {
         eIDCHAPTER.innerHTML = `<span>Chapter ${this.Data.TOC.ChapterNumber}</span>`;
         eIDNAME.innerHTML = `<span>${this.Data.TOC.ChapterName}</span>`;
     }
-    lookingAt(scrolldata) {
+    lookingAt(LookingAt) {
         // Return if perspective changes, and update active speaker.
-        let progress = Number(scrolldata[1]);
-        let voice = ((scrolldata[0] == null) ? (progress < 50 ? this.Data.TOC.Character[0] : this.Data.TOC.Character[-1]) : scrolldata[0]);
+        let progress = LookingAt.position;
+        let voice = LookingAt.voice;
         let changeEvent = false;
         if (this.CurrentVoice != voice) {
             this.CurrentVoice = voice;
@@ -864,6 +864,8 @@ class ChapterBinder {
         this.SessionBinder = {};
         this.Permissions = 0;
         this.lastMessenger = "Anon";
+        this.CURRENT_SCENE = [0, 0, 0, 0];
+        this.LAST_SCENE = [0, 0, 0, 0];
         this.MsgMatch = {
             "Miguel": "Miguel",
             "Cody": "Cody",
@@ -1011,6 +1013,7 @@ class ChapterBinder {
             chapter.forEach((section) => {
                 // Define a Section ID for this section.
                 let SectionID = `${requestedChapter}.${thisSection + 1}`;
+                this.CURRENT_SCENE = [ChapterInfo.Act, requestedChapter, thisSection, 0];
                 if (thisSection != 0 || true) {
                     chapterContent += `${this.Config.config["Bonus"][this.storyName]["Dividers"][ChapterInfo.Character[thisSection]]}<br>`;
                 }
@@ -1088,7 +1091,8 @@ class ChapterBinder {
         return msgsource;
     }
     placeWorldMap(character) {
-        eMAP.style.backgroundImage = `url(../maps/map${character}.jpg)`;
+        eMAP.style.backgroundImage = `url(../Scriv2WN/maps/map${character}.jpg)`;
+        //this.CURRENT_SCENE[2]
     }
     ResolveThisLine(lineContent, lineID, sectionStyle) {
         // Generate the next paragraph <p> line for deployment.
@@ -1260,13 +1264,15 @@ class ThemeDriver {
         let end = 0;
         let start_theme = "";
         let end_theme = "";
+        let sceneNumber = 1;
         // If fading, add a keyframe for the start transitioning from DEFAULT to the first theme.
         if (this.doFading) {
             start = 0;
             end = 0 + (this.TransitionWidth / 2);
             start_theme = "Default";
             end_theme = this.ScrollBreaks[0].Theme;
-            this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end });
+            sceneNumber = this.ScrollBreaks[0].scenenum;
+            this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end, scenenum: sceneNumber });
             start = end;
             // If not, STATIC until first transition.
         }
@@ -1276,7 +1282,8 @@ class ThemeDriver {
         end = this.ScrollBreaks[1].atPoint - (this.TransitionWidth / 2);
         start_theme = this.ScrollBreaks[0].Theme;
         end_theme = this.ScrollBreaks[0].Theme;
-        this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end });
+        sceneNumber = this.ScrollBreaks[0].scenenum;
+        this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end, scenenum: sceneNumber });
         //console.error(`${start} to ${end} from ${start_theme} to ${end_theme} as STATIC START`)
         // Iterations in the middle will all be the same.
         for (let i = 1; i < this.ScrollBreaks.length - 1; i++) {
@@ -1285,14 +1292,16 @@ class ThemeDriver {
             end = this.ScrollBreaks[i].atPoint + (this.TransitionWidth / 2);
             start_theme = this.ScrollBreaks[i - 1].Theme;
             end_theme = this.ScrollBreaks[i].Theme;
-            this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end });
+            sceneNumber = this.ScrollBreaks[i].scenenum;
+            this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end, scenenum: sceneNumber });
             //console.error(`${start} to ${end} from ${start_theme} to ${end_theme} as DYNAMIC`)
             // This is an intermediate STATIC transition.
             start = end;
             end = this.ScrollBreaks[i + 1].atPoint - (this.TransitionWidth / 2);
             start_theme = this.ScrollBreaks[i].Theme;
             end_theme = this.ScrollBreaks[i].Theme;
-            this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end });
+            sceneNumber = this.ScrollBreaks[i].scenenum;
+            this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end, scenenum: sceneNumber });
             //console.error(`${start} to ${end} from ${start_theme} to ${end_theme} as STATIC`)
         }
         start = end;
@@ -1301,7 +1310,8 @@ class ThemeDriver {
         if (this.doFading) {
             end = this.ScrollBreaks[this.ScrollBreaks.length - 1].atPoint - (this.TransitionWidth / 2);
             end_theme = this.ScrollBreaks[this.ScrollBreaks.length - 1].Theme;
-            this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end });
+            sceneNumber = this.ScrollBreaks[this.ScrollBreaks.length - 1].scenenum;
+            this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end, scenenum: sceneNumber });
             start = end;
             end = this.ScrollBreaks[this.ScrollBreaks.length - 1].atPoint;
             start_theme = end_theme;
@@ -1311,8 +1321,9 @@ class ThemeDriver {
         else {
             end = this.ScrollBreaks[this.ScrollBreaks.length - 1].atPoint; // @TODO black fade out
             end_theme = this.ScrollBreaks[this.ScrollBreaks.length - 1].Theme;
+            sceneNumber = this.ScrollBreaks[this.ScrollBreaks.length - 1].scenenum;
         }
-        this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end });
+        this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end, scenenum: sceneNumber });
         return;
     }
     getScrollBreaks() {
@@ -1347,6 +1358,7 @@ class ThemeDriver {
             let SceneContainers = Array.from(this.TextContainer.getElementsByClassName('section'));
             // Aggregate each of the heights of the scene <div> containers. Start with an empty array, and append values.
             let SceneDims = [];
+            let sceneNumber = 1; // Track number of this div scene.
             SceneContainers.forEach((sceneContainer) => {
                 SceneDims.push(sceneContainer.getBoundingClientRect());
             });
@@ -1354,16 +1366,17 @@ class ThemeDriver {
             this.TravelHeight = TotalDims.height - BoundingDims.height;
             // First scroll break is set at zero. The theme will be the first character.
             // IMPORTANT NOTE: Denotation of the character for each LINE BREAK defines the theme for the NEXT section.
-            this.ScrollBreaks = [{ Theme: this.DataCard.Data.TOC.Character[0], atPercent: 0, atPoint: 0 }];
+            this.ScrollBreaks = [{ Theme: this.DataCard.Data.TOC.Character[0], atPercent: 0, atPoint: 0, scenenum: sceneNumber }];
             // Sum the heights of each of the containers. This will define the SCROLL BREAK points.
             let SceneHeightSum = 0;
             for (let i = 1; i < SceneDims.length; i++) {
+                sceneNumber += 1;
                 SceneHeightSum += SceneDims[i - 1].height;
                 let ScrollPosition = (SceneHeightSum / this.TravelHeight) * 100;
-                this.ScrollBreaks.push({ Theme: this.DataCard.Data.TOC.Character[i], atPercent: ScrollPosition, atPoint: SceneHeightSum });
+                this.ScrollBreaks.push({ Theme: this.DataCard.Data.TOC.Character[i], atPercent: ScrollPosition, atPoint: SceneHeightSum, scenenum: sceneNumber });
             }
             // Push the final value, at the bottom of the travel. Will have same theme as last entry to ensure constant end.
-            this.ScrollBreaks.push({ Theme: this.DataCard.Data.TOC.Character[SceneDims.length - 1], atPercent: 100, atPoint: this.TravelHeight });
+            this.ScrollBreaks.push({ Theme: this.DataCard.Data.TOC.Character[SceneDims.length - 1], atPercent: 100, atPoint: this.TravelHeight, scenenum: sceneNumber });
             // For debug report.
             if (doReport) {
                 console.log(`----==== Scroll Break Report ====----`
@@ -1407,18 +1420,25 @@ class ThemeDriver {
          * @return Keyframe object that applies to this scroll position.
          */
         // Check for problematic values.
+        let FrameInfo = {
+            voice: "Default",
+            position: 0,
+            progress: 0,
+            scene: 1
+        };
         if (scrollPosition == null) {
             if (!this.TextContainer) {
                 console.warn("ThemeDriver.getFrame\n", "Text container not found. Cannot get scroll position.");
-                return null;
+                return FrameInfo;
             }
             if (!this.StaticContainer) {
                 console.warn("ThemeDriver.getFrame\n", "Static container not found. Cannot get scroll position.");
-                return null;
+                return FrameInfo;
             }
             scrollPosition = this.StaticContainer.getBoundingClientRect().top - this.TextContainer.getBoundingClientRect().top;
         }
         let scrollPercent = (100 * scrollPosition / this.TravelHeight).toFixed(2);
+        FrameInfo.position = Number(scrollPercent);
         ROOT.style.setProperty("--BarLength", `${scrollPercent}%`);
         // @OPTIMIZE does this need updates this frequently???
         // this.DataCard.updateDataBar()
@@ -1429,15 +1449,18 @@ class ThemeDriver {
         for (let i = 0; i < this.Keyframes.length; i++) {
             if (scrollPosition >= this.Keyframes[i].min && scrollPosition <= this.Keyframes[i].max) {
                 currentKey = this.Keyframes[i];
+                FrameInfo.scene = this.Keyframes[i].scenenum;
                 break;
             }
             index += 1;
         }
         if (currentKey == null) {
             //console.warn("ThemeDriver.getFrame","No keyframe found for scroll position:",scrollPosition)
-            return [null, scrollPercent];
+            FrameInfo.voice = this.DataCard.Data.TOC.Character[0];
+            return FrameInfo;
         }
         let KeyProgress = (scrollPosition - currentKey.min) / (currentKey.max - currentKey.min);
+        FrameInfo.progress = KeyProgress;
         //let debug = document.getElementById("DEBUG");        
         if (currentKey.startTheme == currentKey.endTheme) {
             // if (debug != null) {
@@ -1451,7 +1474,8 @@ class ThemeDriver {
                 FromCharacter: currentKey.startTheme,
                 ToCharacter: currentKey.endTheme
             };
-            return [currentKey.startTheme, scrollPercent];
+            FrameInfo.voice = currentKey.endTheme;
+            return FrameInfo;
         }
         // if (debug != null) {
         //    debug.innerHTML = `<span style="color: white">Interpolating keyframe for scroll position ${scrollPosition.toFixed(0)} at ${(KeyProgress*100).toFixed(2)}% <br>From theme "${currentKey.startTheme}" to "${currentKey.endTheme}.<br> ${currentKey.min.toFixed(0)} to ${currentKey.max.toFixed(0)}"</span>`
@@ -1486,7 +1510,8 @@ class ThemeDriver {
             FromCharacter: currentKey.startTheme,
             ToCharacter: currentKey.endTheme
         };
-        return [currentKey.startTheme == "Default" ? currentKey.endTheme : currentKey.startTheme, scrollPercent];
+        FrameInfo.voice = currentKey.startTheme == "Default" ? currentKey.endTheme : currentKey.startTheme;
+        return FrameInfo;
     }
     deployTheming() {
         /**
@@ -1575,16 +1600,16 @@ function doThemeChange() {
     runScrollEvents();
 }
 function runScrollEvents() {
-    let ScrollData = THEME.getFrame();
+    LookingAt = THEME.getFrame();
+    // contains voice, position, progress, scene
     THEME.deployTheming();
-    if (CARD.lookingAt(ScrollData[0])) {
-        let characterName = CARD.Data.TOC.Character[0];
-        if (!ScrollData[0]) {
-            characterName = ScrollData[0];
-        }
-        BIND.placeWorldMap(characterName);
+    if (CARD.lookingAt(LookingAt)) {
+        BIND.placeWorldMap(LookingAt.voice);
     }
     ;
+    BIND.CURRENT_SCENE[2] = LookingAt.scene;
+    BIND.CURRENT_SCENE[3] = Number(LookingAt.progress.toFixed(2));
+    console.log(BIND.CURRENT_SCENE);
     return;
 }
 function runResizeEvents() {
@@ -1644,6 +1669,12 @@ var THEME;
 var SRC;
 var EXTRAS;
 var CTRL;
+var LookingAt = {
+    voice: "Default",
+    position: 0,
+    progress: 0,
+    scene: 1
+};
 var ACTIVESTORY = "Paragate";
 var IncludeSettingTags = false;
 var eBackground = document.getElementById("BACKGROUND");

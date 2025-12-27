@@ -249,19 +249,104 @@
         }
     }
 },
-"ChapterOverrides":
+"Atlas":
 {
-    "Firebrand":
-    {
-        "none":"none"
+    "Blackwater":
+    {        
+        "Province 13":
+        {
+            "Unknown":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""
+            }
+        }
     },
-    "Paragate":
+    "Valenseia": 
     {
-        "none":"none"
+        "Northaven":
+        {
+            "Unknown":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""
+            }
+        },
+        "Gaffesend":
+        {
+            "Unknown":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""
+            }
+        },
+        "Hillfar":
+        {
+            "Unknown":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""
+            }
+        }
     },
-    "Goldenfur":
+    "Melenia": 
     {
-        "none":"none"
+        "Palace":
+        {
+            "Unknown":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""
+            }
+        }
+    },
+    "Colorado": 
+    {
+        "Hearthland Ridge":
+        {
+            "Unknown":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""
+            }
+        },
+        "Shaleborough":
+        {
+            "Unknown":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""
+            }
+        },
+        "Evergreen Estates":
+        {
+            "Cody's House": {
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""
+            }
+        },
+        "Denver":
+        {
+            "Unknown":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""
+            }
+        },
+        "Dietz Park":
+        {
+            "Unknown":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""
+            }
+        },
+        "Littlepine":
+        {
+            "Unknown":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""
+            }
+        },
+        "Englefield":
+        {
+            "Unknown":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""
+            }
+        }        
     }
 }
+
 }
