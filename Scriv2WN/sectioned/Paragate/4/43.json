@@ -594,7 +594,7 @@
    [
       [
          "BodyCody",
-         "I return home exhausted and well-satiated, with a lot of scrap, and a clean, new replacement part. They send me home with expensive, glass Tupperware containers that &quot;you can send home with Reed,&quot; packed with cuts of tri-tip Geoffrey seared and grilled.",
+         "I return home full and exhausted with a lot of scrap, and a clean, new replacement part. They send me home with expensive, glass Tupperware containers that &quot;you can send home with Reed,&quot; packed with cuts of tri-tip Geoffrey seared and grilled.",
          true,
          false,
          false
@@ -615,7 +615,14 @@
       ],
       [
          "BodyCody",
-         "So instead I grab the leftovers, inching the door open slowly with a container to not invoke the wrath of another mysterious character. I think it&apos;s Rayna at first glance, but then there&apos;s a copy of her, and they both look like Rayna. The doppelg&0228;nger doesn&apos;t cry: she just stares at her reflection blankly with piercing blue eyes.",
+         "So instead I grab the leftovers, inching my way through Katiya&apos;s door with a container, slow enough to not invoke the wrath of another stranger. I think it&apos;s Rayna at first glance, sitting on Katiya&apos;s couch in her foyer, but then there&apos;s a copy of her. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "They both look like Rayna. The double doesn&apos;t cry: she just stares at her reflection with piercing blue eyes.",
          true,
          false,
          false
@@ -636,7 +643,7 @@
       ],
       [
          "BodyCody",
-         "&quot;Cody,&quot; Rayna says. The name brings her copy to lower her weapon. ",
+         "&quot;Cody,&quot; Rayna says. The name brings the other to lower her weapon. ",
          true,
          false,
          false
@@ -650,7 +657,7 @@
       ],
       [
          "BodyCody",
-         "&quot;This is Aryn,&quot; Rayna says, &quot;my si&mdash;&quot;",
+         "&quot;This is Aryn,&quot; Rayna says, &quot;my&mdash;&quot;",
          true,
          false,
          false
@@ -748,7 +755,7 @@
       ],
       [
          "BodyCody",
-         "Aryn still hesitates. It&apos;s hard to convince cats to do anything, so I act indifferent, rushing in to close my shades to forestall a deluge of difficult questions. They enter a few steps at a time, then quietly deposit themselves on the couch, as Aryn gears up to deliver another verbal lashing, forestalled by the oddness of my world, and it&apos;s a distraction that I hinge on.",
+         "Aryn still hesitates. It&apos;s hard to convince cats to do anything, so I act indifferent, rushing in to shutter my shades to forestall a deluge of difficult questions. They enter my world with a few steps at a time, then quietly deposit themselves on the couch, as Aryn gears up to deliver another verbal lashing, forestalled by the oddness of my world, and it&apos;s a distraction that I hinge on.",
          true,
          false,
          false
@@ -811,21 +818,35 @@
       ],
       [
          "BodyCody",
-         "&quot;I deserted them, Rayna: I deserted my unit. I vanished to the underworld of the Den of Thieves in Melenia &mdash; the only place that would take a coward and a failure, and I even deserted them.&quot;",
+         "&quot;I deserted them, Rayna: I deserted my unit. I vanished to the underworld of the Den of Thieves in Melenia &mdash; the only place that would take a coward and a failure.&quot;",
          true,
          false,
          false
       ],
       [
          "BodyCody",
-         "&quot;Then why did you return,&quot; Aryn asks. &quot;What brought you back to where it all happened?&quot;",
+         "&quot;You&apos;re neither of those things!&quot;",
          true,
          false,
          false
       ],
       [
          "BodyCody",
-         "&quot;A job that went wrong, and went wrong in the best way possible. I spent my whole life running until I got caught one day, and it was by someone with the grace and courage to let me go, to have a second chance. And that was&mdash;&quot;",
+         "&quot;And later, I even deserted them,&quot; Rayna adds.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Then why did you return to the place that refused you?&quot; Aryn asks.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;A job that went wrong,&quot; Rayna says. &quot;I spent my whole life running until I got caught one day. And it was by someone with the grace and courage to give me a second chance.&quot;",
          true,
          false,
          false
@@ -839,21 +860,21 @@
       ],
       [
          "BodyCody",
-         "&quot;She gave me a debt to pay and a sense of courage. And when I found the courage to run again, I ran back to pay my debts.&quot;",
+         "&quot;She gave me a debt to pay, and when I found the courage to run again, I ran back to pay my debts.&quot;",
          true,
          false,
          false
       ],
       [
          "BodyCody",
-         "&quot;Paying how?&quot;",
+         "&quot;With what?&quot;",
          true,
          false,
          false
       ],
       [
          "BodyCody",
-         "&quot;With a horrible truth. I&apos;m giving Katiya a chance to prove herself, because I think she&apos;s capable, and she has that thing &mdash; that spark, that thing that&apos;s never in the service, that thing that brings people together, which is the only way this can work.&quot;",
+         "&quot;With a horrible truth,&quot; Rayna says. &quot;I&apos;m giving Katiya a chance to prove herself, because I think she&apos;s capable, and she has that thing &mdash; that spark, that thing that&apos;s never in the service, that thing that brings people together, which is the only way this can work.&quot;",
          true,
          false,
          false
@@ -909,7 +930,7 @@
       ],
       [
          "BodyCody",
-         "&quot;And neither did I,&quot; Aryn says. She swirls the drink in the glass, then takes a sip to show she accepts my hospitality, and then asks, &quot;so what will you honor them?&quot;",
+         "&quot;And neither did I,&quot; Aryn says. She swirls the drink in the glass, then takes a sip to show she accepts my hospitality, and then asks, &quot;so what will you do to honor them?&quot;",
          true,
          false,
          false
@@ -923,98 +944,42 @@
       ],
       [
          "BodyCody",
-         "We sit around for about another half hour, and right about when my body begins to drag my eyelids shut, dipping my head against the couch as Aryn and Rayna finally circle around to their childhood memories, I hear a door open on the other side of the world.",
+         "We sit around for about another half hour, and right about when my body begins to drag my eyelids shut, Aryn and Rayna finally circle around to recounting their childhood memories.",
          true,
          false,
          false
       ],
       [
          "BodyCody",
-         "The two instinctively jump to my defense. It&apos;s more than one set of footsteps that creak the floorboards, and before Rayna peeks through the other side, she calls Katiya&apos;s name.",
+         "My head slides further down the couch the more the exhaustion of all my toil catches up to me, and as they ramble further &mdash; around ten minutes after ai add my last word &mdash; I finally give out, around the time they make the decision to leave together.",
          true,
          false,
          false
       ],
       [
          "BodyCody",
-         "&quot;I&apos;m back,&quot; Katiya says. ",
+         "Through heavy eyelids, I watch as Rayna takes a sheet from the same pad I wrote the rules on, tearing quietly along the perforations, and while she scribbles something with a pen, Aryn gingerly lifts my head before stuffing one of my mom&apos;s old decorative Christmas pillows in between.",
          true,
          false,
          false
       ],
       [
          "BodyCody",
-         "I shamble over to see where she&apos;s been, rubbing hard at the crescents beneath my eyes so she doesn&apos;t worry about me.",
+         "I don&apos;t resist when the weight of my tired body adheres to the fake leather like flies to honeyed paper, and as sleep muddles conscious thought into peaceful nonsense, Aryn whispers in my ear.",
          true,
          false,
          false
       ],
       [
          "BodyCody",
-         "&quot;It&apos;s you,&quot; Rayna says. &quot;I thought you weren&apos;t safe here?&quot;",
-         true,
-         false,
-         false
-      ],
-      [
-         "BodyCody",
-         "&quot;That was before our forces doubled,&quot; an unfamiliar voice rasps. &quot;We&apos;re setting a return point, and then it&apos;s back through space a hundred miles north.&quot;",
-         true,
-         false,
-         false
-      ],
-      [
-         "BodyCody",
-         "Something changes hands. I decide not to enter.",
-         true,
-         false,
-         false
-      ],
-      [
-         "BodyCody",
-         "&quot;You&apos;re giving me this?&quot; Katiya asks. &quot;But won&apos;t you need it?&quot;",
-         true,
-         false,
-         false
-      ],
-      [
-         "BodyCody",
-         "&quot;You&apos;re the great connector. You&apos;re the hub of this entire operation,&quot; another voice says, and it sounds like it speaks while breathing in. &quot;I&apos;ll return with this anchor.&quot;",
-         true,
-         false,
-         false
-      ],
-      [
-         "BodyCody",
-         "&quot;And Rayna can stay with me for now,&quot; Aryn volunteers, stepping through the door.",
-         true,
-         false,
-         false
-      ],
-      [
-         "BodyCody",
-         "&quot;Aryn?&quot; Katiya says. &quot;Why are you here?&quot;",
-         true,
-         false,
-         false
-      ],
-      [
-         "BodyCody",
-         "The confusion exhausts me too much to bear. I grab the phone from my pocket, making sure to set several alarms in case I pass out &mdash; tomorrow&apos;s a day I&apos;ve set for unpaid time off, but I&apos;m going to be spending all of it preparing my creation.",
-         true,
-         false,
-         false
-      ],
-      [
-         "BodyCody",
-         "I don&apos;t even make it to the stairs before I decide to collapse on the couch, my feet kicked up like Miguel during my first night here.",
+         "&quot;I know you&apos;ll honor him well,&quot; she says, her nails tracing tufts of my unkempt, shaggy hair from covering my face.",
          true,
          false,
          false
       ],
       [
          "Body",
-         "I feel something warm wrap around me before I fade from consciousness, with the feeling of something wet on my forehead. She whispers a couple words, and after the door closes, the house is finally silent.",
+         "The two sisters leave my world and disappear back through Katiya&apos;s front door, leaving the click of the latch as the last sound I hear.",
          true,
          false,
          false

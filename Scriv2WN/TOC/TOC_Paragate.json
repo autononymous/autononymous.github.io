@@ -2,17 +2,17 @@
    "Metadata": {
       "ActCount": 5,
       "ChapterCount": 53,
-      "SceneCount": 155,
+      "SceneCount": 154,
       "WrittenCount": 127,
-      "UnwrittenCount": 28,
-      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 193,179.\n > There are 5 acts, 53 chapters, and 155 scenes.\n > This manuscript averages:\n   - 1246 words per scene.\n   - 3644 words per chapter.\n   - 2.92 scenes per chapter.\n > Out of 155 planned scenes, 127 are written.\n > So the Zero Draft is approximately 81.9% complete.\n"
+      "UnwrittenCount": 27,
+      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 194,739.\n > There are 5 acts, 53 chapters, and 154 scenes.\n > This manuscript averages:\n   - 1264 words per scene.\n   - 3674 words per chapter.\n   - 2.9 scenes per chapter.\n > Out of 154 planned scenes, 127 are written.\n > So the Zero Draft is approximately 82.4% complete.\n"
    },
    "ChapterList": [
       {
          "Act": 1,
          "ActName": "Act One: Spring",
          "Chapter": 1,
-         "ChapterName": "Strangers To Enemies (Part One)",
+         "ChapterName": "Strangers To Enemies I",
          "ChapterNumber": "One",
          "Character": [
             "Cody",
@@ -29,29 +29,41 @@
                "Date": "2026-04-24",
                "Time": "22:00:00",
                "ISO": "2026-04-24T22:00:00Z",
-               "Region": "Hearthland Ridge",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "22:20:00",
                "ISO": "2026-04-24T22:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-25",
                "Time": "22:40:00",
                "ISO": "2026-04-25T22:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-25",
                "Time": "23:15:00",
                "ISO": "2026-04-25T23:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/1/1.json"
@@ -76,22 +88,31 @@
                "Date": "2026-04-23",
                "Time": "14:30:00",
                "ISO": "2026-04-23T14:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-23",
                "Time": "15:00:00",
                "ISO": "2026-04-23T15:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-23",
                "Time": "17:30:00",
                "ISO": "2026-04-23T17:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/1/2.json"
@@ -116,22 +137,31 @@
                "Date": "2026-04-24",
                "Time": "16:30:00",
                "ISO": "2026-04-24T16:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-04-24",
                "Time": "16:55:00",
                "ISO": "2026-04-24T16:55:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-04-24",
                "Time": "19:45:00",
                "ISO": "2026-04-24T19:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/1/3.json"
@@ -156,22 +186,31 @@
                "Date": "2026-04-24",
                "Time": "03:00:00",
                "ISO": "2026-04-24T03:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "04:00:00",
                "ISO": "2026-04-24T04:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "04:15:00",
                "ISO": "2026-04-24T04:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/1/4.json"
@@ -195,15 +234,21 @@
                "Date": "2026-04-24",
                "Time": "18:15:00",
                "ISO": "2026-04-24T18:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "21:45:00",
                "ISO": "2026-04-24T21:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/1/5.json"
@@ -228,22 +273,31 @@
                "Date": "2026-04-24",
                "Time": "20:15:00",
                "ISO": "2026-04-24T20:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Southern Fields",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "20:35:00",
                "ISO": "2026-04-24T20:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "21:15:00",
                "ISO": "2026-04-24T21:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/1/6.json"
@@ -267,15 +321,21 @@
                "Date": "2026-04-25",
                "Time": "22:20:00",
                "ISO": "2026-04-25T22:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-25",
                "Time": "22:40:00",
                "ISO": "2026-04-25T22:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/1/7.json"
@@ -299,15 +359,21 @@
                "Date": "2026-04-25",
                "Time": "23:15:00",
                "ISO": "2026-04-25T23:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-26",
                "Time": "00:10:00",
                "ISO": "2026-04-26T00:10:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/1/8.json"
@@ -331,15 +397,21 @@
                "Date": "2026-04-26",
                "Time": "08:52:00",
                "ISO": "2026-04-26T08:52:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-26",
                "Time": "09:01:12",
                "ISO": "2026-04-26T09:01:12Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             }
          ],
          "Location": "/sectioned/Paragate/1/9.json"
@@ -364,22 +436,31 @@
                "Date": "2026-04-25",
                "Time": "01:15:00",
                "ISO": "2026-04-25T01:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-22",
                "Time": "19:45:00",
                "ISO": "2026-05-22T19:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Southern Fields",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-22",
                "Time": "20:30:00",
                "ISO": "2026-05-22T20:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/1/10.json"
@@ -404,22 +485,31 @@
                "Date": "2026-05-22",
                "Time": "12:30:00",
                "ISO": "2026-05-22T12:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-05-22",
                "Time": "12:50:00",
                "ISO": "2026-05-22T12:50:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-05-22",
                "Time": "17:45:00",
                "ISO": "2026-05-22T17:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Legacy Systems Annex"
             }
          ],
          "Location": "/sectioned/Paragate/1/11.json"
@@ -443,15 +533,21 @@
                "Date": "2026-05-22",
                "Time": "20:35:00",
                "ISO": "2026-05-22T20:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-22",
                "Time": "21:15:00",
                "ISO": "2026-05-22T21:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/1/12.json"
@@ -475,15 +571,21 @@
                "Date": "2026-05-23",
                "Time": "02:23:00",
                "ISO": "2026-05-23T02:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-23",
                "Time": "07:15:00",
                "ISO": "2026-05-23T07:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/2/13.json"
@@ -508,22 +610,31 @@
                "Date": "2026-05-23",
                "Time": "08:15:00",
                "ISO": "2026-05-23T08:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-23",
                "Time": "08:23:00",
                "ISO": "2026-05-23T08:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-23",
                "Time": "08:58:00",
                "ISO": "2026-05-23T08:58:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Costco #8137",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/2/14.json"
@@ -548,22 +659,31 @@
                "Date": "2026-05-24",
                "Time": "04:56:37",
                "ISO": "2026-05-24T04:56:37Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-24",
                "Time": "04:59:00",
                "ISO": "2026-05-24T04:59:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Lake Garrison",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-24",
                "Time": "10:12:00",
                "ISO": "2026-05-24T10:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/2/15.json"
@@ -588,22 +708,31 @@
                "Date": "2026-05-25",
                "Time": "11:26:00",
                "ISO": "2026-05-25T11:26:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-05-25",
                "Time": "11:43:00",
                "ISO": "2026-05-25T11:43:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Monroe Canyon Rd",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-25",
                "Time": "16:12:00",
                "ISO": "2026-05-25T16:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             }
          ],
          "Location": "/sectioned/Paragate/2/16.json"
@@ -629,29 +758,41 @@
                "Date": "2026-05-26",
                "Time": "06:23:00",
                "ISO": "2026-05-26T06:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-26",
                "Time": "08:23:00",
                "ISO": "2026-05-26T08:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-26",
                "Time": "08:29:00",
                "ISO": "2026-05-26T08:29:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-26",
                "Time": "09:26:00",
                "ISO": "2026-05-26T09:26:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/2/17.json"
@@ -675,15 +816,21 @@
                "Date": "2026-06-27",
                "Time": "08:27:00",
                "ISO": "2026-06-27T08:27:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-27",
                "Time": "11:02:00",
                "ISO": "2026-06-27T11:02:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/2/18.json"
@@ -708,22 +855,31 @@
                "Date": "2026-06-28",
                "Time": "09:23:00",
                "ISO": "2026-06-28T09:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-28",
                "Time": "10:20:00",
                "ISO": "2026-06-28T10:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Advanced Systems Building"
             },
             {
                "Date": "2026-06-28",
                "Time": "12:03:00",
                "ISO": "2026-06-28T12:03:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Advanced Systems Building"
             }
          ],
          "Location": "/sectioned/Paragate/2/19.json"
@@ -749,29 +905,41 @@
                "Date": "2026-06-28",
                "Time": "13:57:00",
                "ISO": "2026-06-28T13:57:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "11:04:00",
                "ISO": "2026-06-29T11:04:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Mineral Station",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "11:05:00",
                "ISO": "2026-06-29T11:05:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Southern Fields",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:32:00",
                "ISO": "2026-06-29T15:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "16th Street Mall",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/2/20.json"
@@ -799,43 +967,61 @@
                "Date": "2026-06-29",
                "Time": "15:33:00",
                "ISO": "2026-06-29T15:33:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "17:09:00",
                "ISO": "2026-06-29T17:09:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "16th Street Mall",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:42:00",
                "ISO": "2026-06-29T15:42:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "17:24:00",
                "ISO": "2026-06-29T17:24:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:51:00",
                "ISO": "2026-06-29T15:51:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "18:23:00",
                "ISO": "2026-06-29T18:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/2/21.json"
@@ -860,22 +1046,31 @@
                "Date": "2026-07-07",
                "Time": "08:26:00",
                "ISO": "2026-07-07T08:26:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-07-07",
                "Time": "13:40:00",
                "ISO": "2026-07-07T13:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-07-07",
                "Time": "17:21:00",
                "ISO": "2026-07-07T17:21:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/2/22.json"
@@ -899,15 +1094,21 @@
                "Date": "2026-07-07",
                "Time": "14:04:00",
                "ISO": "2026-07-07T14:04:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-07-07",
                "Time": "17:30:00",
                "ISO": "2026-07-07T17:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/2/23.json"
@@ -931,15 +1132,21 @@
                "Date": "2026-07-07",
                "Time": "14:12:00",
                "ISO": "2026-07-07T14:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-07-07",
                "Time": "17:37:00",
                "ISO": "2026-07-07T17:37:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/2/24.json"
@@ -963,15 +1170,21 @@
                "Date": "2026-07-07",
                "Time": "16:48:00",
                "ISO": "2026-07-07T16:48:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-07-07",
                "Time": "17:35:00",
                "ISO": "2026-07-07T17:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/2/25.json"
@@ -996,22 +1209,31 @@
                "Date": "2015-10-03",
                "Time": "02:23:00",
                "ISO": "2015-10-03T02:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2015-10-03",
                "Time": "03:52:00",
                "ISO": "2015-10-03T03:52:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2015-10-03",
                "Time": "06:28:05",
                "ISO": "2015-10-03T06:28:05Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/3/26.json"
@@ -1036,22 +1258,31 @@
                "Date": "2005-08-23",
                "Time": "15:20:00",
                "ISO": "2005-08-23T15:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "The Shortwall",
+               "Place": "Unspecified"
             },
             {
                "Date": "2005-08-23",
                "Time": "16:12:00",
                "ISO": "2005-08-23T16:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
             },
             {
                "Date": "2005-08-23",
                "Time": "23:57:00",
                "ISO": "2005-08-23T23:57:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/3/27.json"
@@ -1076,22 +1307,31 @@
                "Date": "2026-11-25",
                "Time": "11:00:00",
                "ISO": "2026-11-25T11:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-11-25",
                "Time": "12:17:00",
                "ISO": "2026-11-25T12:17:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-25",
                "Time": "22:01:00",
                "ISO": "2026-11-25T22:01:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/3/28.json"
@@ -1117,29 +1357,41 @@
                "Date": "2026-11-26",
                "Time": "16:07:00",
                "ISO": "2026-11-26T16:07:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Hilde Cottage",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-26",
                "Time": "17:49:00",
                "ISO": "2026-11-26T17:49:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Hilde Cottage",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-26",
                "Time": "17:56:00",
                "ISO": "2026-11-26T17:56:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-26",
                "Time": "18:31:25",
                "ISO": "2026-11-26T18:31:25Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             }
          ],
          "Location": "/sectioned/Paragate/3/29.json"
@@ -1165,29 +1417,41 @@
                "Date": "2026-11-27",
                "Time": "09:47:00",
                "ISO": "2026-11-27T09:47:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Lake Garrison",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-27",
                "Time": "06:48:00",
                "ISO": "2026-11-27T06:48:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "FirstChoice Fitness",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-27",
                "Time": "11:12:00",
                "ISO": "2026-11-27T11:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Lake Garrison",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-27",
                "Time": "07:10:00",
                "ISO": "2026-11-27T07:10:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "FirstChoice Fitness",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/3/30.json"
@@ -1212,22 +1476,31 @@
                "Date": "2026-11-28",
                "Time": "16:45:00",
                "ISO": "2026-11-28T16:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-28",
                "Time": "15:23:00",
                "ISO": "2026-11-28T15:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-11-28",
                "Time": "20:35:00",
                "ISO": "2026-11-28T20:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/3/31.json"
@@ -1252,22 +1525,31 @@
                "Date": "2026-11-29",
                "Time": "05:13:00",
                "ISO": "2026-11-29T05:13:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-29",
                "Time": "09:31:00",
                "ISO": "2026-11-29T09:31:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-29",
                "Time": "10:12:00",
                "ISO": "2026-11-29T10:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/3/32.json"
@@ -1292,22 +1574,31 @@
                "Date": "2026-11-29",
                "Time": "14:10:00",
                "ISO": "2026-11-29T14:10:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Rocky Mountain National Forest",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-29",
                "Time": "14:53:00",
                "ISO": "2026-11-29T14:53:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Rocky Mountain National Forest",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-29",
                "Time": "22:12:00",
                "ISO": "2026-11-29T22:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Rocky Mountain National Forest",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/3/33.json"
@@ -1332,22 +1623,31 @@
                "Date": "2026-11-30",
                "Time": "06:00:03",
                "ISO": "2026-11-30T06:00:03Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-11-30",
                "Time": "07:00:02",
                "ISO": "2026-11-30T07:00:02Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-30",
                "Time": "08:12:00",
                "ISO": "2026-11-30T08:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             }
          ],
          "Location": "/sectioned/Paragate/3/34.json"
@@ -1372,22 +1672,31 @@
                "Date": "2026-11-30",
                "Time": "10:21:00",
                "ISO": "2026-11-30T10:21:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-30",
                "Time": "10:54:00",
                "ISO": "2026-11-30T10:54:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-30",
                "Time": "12:42:00",
                "ISO": "2026-11-30T12:42:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Village Outskirts",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/3/35.json"
@@ -1412,22 +1721,31 @@
                "Date": "2026-11-30",
                "Time": "13:02:00",
                "ISO": "2026-11-30T13:02:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-11-30",
                "Time": "17:49:00",
                "ISO": "2026-11-30T17:49:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-30",
                "Time": "19:40:00",
                "ISO": "2026-11-30T19:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/3/36.json"
@@ -1453,29 +1771,41 @@
                "Date": "2026-12-01",
                "Time": "16:53:00",
                "ISO": "2026-12-01T16:53:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-01",
                "Time": "17:32:00",
                "ISO": "2026-12-01T17:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Village Outskirts",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-01",
                "Time": "23:32:00",
                "ISO": "2026-12-01T23:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-06",
                "Time": "12:09:00",
                "ISO": "2026-12-06T12:09:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/3/37.json"
@@ -1499,15 +1829,21 @@
                "Date": "2026-12-08",
                "Time": "00:00:00",
                "ISO": "2026-12-08T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-08",
                "Time": "00:12:00",
                "ISO": "2026-12-08T00:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/4/38.json"
@@ -1532,22 +1868,31 @@
                "Date": "",
                "Time": "03:39:47",
                "ISO": "T03:39:47Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "FirstChoice Fitness",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/4/39.json"
@@ -1572,22 +1917,31 @@
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/4/40.json"
@@ -1612,22 +1966,31 @@
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/4/41.json"
@@ -1652,22 +2015,31 @@
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Backwoods",
+               "Location": "",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dietz Park Estates",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/4/42.json"
@@ -1692,22 +2064,31 @@
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dietz Park Estates",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/4/43.json"
@@ -1720,7 +2101,6 @@
          "ChapterNumber": "Forty-Four",
          "Character": [
             "Default",
-            "Default",
             "Default"
          ],
          "Summary": "",
@@ -1732,22 +2112,21 @@
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/4/44.json"
@@ -1772,22 +2151,31 @@
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/4/45.json"
@@ -1812,22 +2200,31 @@
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/4/46.json"
@@ -1851,15 +2248,21 @@
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/4/47.json"
@@ -1884,22 +2287,31 @@
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/4/48.json"
@@ -1923,15 +2335,21 @@
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/4/49.json"
@@ -1955,15 +2373,21 @@
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/4/50.json"
@@ -1988,22 +2412,31 @@
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/4/51.json"
@@ -2029,29 +2462,41 @@
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/5/52.json"
@@ -2076,22 +2521,31 @@
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "",
                "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/5/53.json"

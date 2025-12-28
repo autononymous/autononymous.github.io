@@ -197,29 +197,41 @@
                "Date": "2026-04-24",
                "Time": "22:00:00",
                "ISO": "2026-04-24T22:00:00Z",
-               "Region": "Hearthland Ridge",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "22:20:00",
                "ISO": "2026-04-24T22:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-25",
                "Time": "22:40:00",
                "ISO": "2026-04-25T22:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-25",
                "Time": "23:15:00",
                "ISO": "2026-04-25T23:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -227,29 +239,41 @@
                "Date": "2026-04-24",
                "Time": "22:00:00",
                "ISO": "2026-04-24T22:00:00Z",
-               "Region": "Hearthland Ridge",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "22:20:00",
                "ISO": "2026-04-24T22:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-25",
                "Time": "22:40:00",
                "ISO": "2026-04-25T22:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-25",
                "Time": "23:15:00",
                "ISO": "2026-04-25T23:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -257,29 +281,41 @@
                "Date": "2026-04-24",
                "Time": "22:00:00",
                "ISO": "2026-04-24T22:00:00Z",
-               "Region": "Hearthland Ridge",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "22:20:00",
                "ISO": "2026-04-24T22:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-25",
                "Time": "22:40:00",
                "ISO": "2026-04-25T22:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-25",
                "Time": "23:15:00",
                "ISO": "2026-04-25T23:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -287,35 +323,47 @@
                "Date": "2026-04-24",
                "Time": "22:00:00",
                "ISO": "2026-04-24T22:00:00Z",
-               "Region": "Hearthland Ridge",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "22:20:00",
                "ISO": "2026-04-24T22:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-25",
                "Time": "22:40:00",
                "ISO": "2026-04-25T22:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-25",
                "Time": "23:15:00",
                "ISO": "2026-04-25T23:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             }
          ]
       ],
       "Chapter": 1,
       "Act": 1,
-      "Chapter Name": "Strangers To Enemies (Part One)"
+      "Chapter Name": "Strangers To Enemies I"
    },
    {
       "Scenes": [
@@ -452,22 +500,31 @@
                "Date": "2026-04-23",
                "Time": "14:30:00",
                "ISO": "2026-04-23T14:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-23",
                "Time": "15:00:00",
                "ISO": "2026-04-23T15:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-23",
                "Time": "17:30:00",
                "ISO": "2026-04-23T17:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -475,22 +532,31 @@
                "Date": "2026-04-23",
                "Time": "14:30:00",
                "ISO": "2026-04-23T14:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-23",
                "Time": "15:00:00",
                "ISO": "2026-04-23T15:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-23",
                "Time": "17:30:00",
                "ISO": "2026-04-23T17:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -498,22 +564,31 @@
                "Date": "2026-04-23",
                "Time": "14:30:00",
                "ISO": "2026-04-23T14:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-23",
                "Time": "15:00:00",
                "ISO": "2026-04-23T15:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-23",
                "Time": "17:30:00",
                "ISO": "2026-04-23T17:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -741,22 +816,31 @@
                "Date": "2026-04-24",
                "Time": "16:30:00",
                "ISO": "2026-04-24T16:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-04-24",
                "Time": "16:55:00",
                "ISO": "2026-04-24T16:55:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-04-24",
                "Time": "19:45:00",
                "ISO": "2026-04-24T19:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -764,22 +848,31 @@
                "Date": "2026-04-24",
                "Time": "16:30:00",
                "ISO": "2026-04-24T16:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-04-24",
                "Time": "16:55:00",
                "ISO": "2026-04-24T16:55:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-04-24",
                "Time": "19:45:00",
                "ISO": "2026-04-24T19:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -787,22 +880,31 @@
                "Date": "2026-04-24",
                "Time": "16:30:00",
                "ISO": "2026-04-24T16:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-04-24",
                "Time": "16:55:00",
                "ISO": "2026-04-24T16:55:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-04-24",
                "Time": "19:45:00",
                "ISO": "2026-04-24T19:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -928,22 +1030,31 @@
                "Date": "2026-04-24",
                "Time": "03:00:00",
                "ISO": "2026-04-24T03:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "04:00:00",
                "ISO": "2026-04-24T04:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "04:15:00",
                "ISO": "2026-04-24T04:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -951,22 +1062,31 @@
                "Date": "2026-04-24",
                "Time": "03:00:00",
                "ISO": "2026-04-24T03:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "04:00:00",
                "ISO": "2026-04-24T04:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "04:15:00",
                "ISO": "2026-04-24T04:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -974,22 +1094,31 @@
                "Date": "2026-04-24",
                "Time": "03:00:00",
                "ISO": "2026-04-24T03:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "04:00:00",
                "ISO": "2026-04-24T04:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "04:15:00",
                "ISO": "2026-04-24T04:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -1133,15 +1262,21 @@
                "Date": "2026-04-24",
                "Time": "18:15:00",
                "ISO": "2026-04-24T18:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "21:45:00",
                "ISO": "2026-04-24T21:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -1149,15 +1284,21 @@
                "Date": "2026-04-24",
                "Time": "18:15:00",
                "ISO": "2026-04-24T18:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "21:45:00",
                "ISO": "2026-04-24T21:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -1317,22 +1458,31 @@
                "Date": "2026-04-24",
                "Time": "20:15:00",
                "ISO": "2026-04-24T20:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Southern Fields",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "20:35:00",
                "ISO": "2026-04-24T20:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "21:15:00",
                "ISO": "2026-04-24T21:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -1340,22 +1490,31 @@
                "Date": "2026-04-24",
                "Time": "20:15:00",
                "ISO": "2026-04-24T20:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Southern Fields",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "20:35:00",
                "ISO": "2026-04-24T20:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "21:15:00",
                "ISO": "2026-04-24T21:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -1363,22 +1522,31 @@
                "Date": "2026-04-24",
                "Time": "20:15:00",
                "ISO": "2026-04-24T20:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Southern Fields",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "20:35:00",
                "ISO": "2026-04-24T20:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-24",
                "Time": "21:15:00",
                "ISO": "2026-04-24T21:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -1512,15 +1680,21 @@
                "Date": "2026-04-25",
                "Time": "22:20:00",
                "ISO": "2026-04-25T22:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-25",
                "Time": "22:40:00",
                "ISO": "2026-04-25T22:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -1528,15 +1702,21 @@
                "Date": "2026-04-25",
                "Time": "22:20:00",
                "ISO": "2026-04-25T22:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-25",
                "Time": "22:40:00",
                "ISO": "2026-04-25T22:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -1643,15 +1823,21 @@
                "Date": "2026-04-25",
                "Time": "23:15:00",
                "ISO": "2026-04-25T23:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-26",
                "Time": "00:10:00",
                "ISO": "2026-04-26T00:10:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -1659,15 +1845,21 @@
                "Date": "2026-04-25",
                "Time": "23:15:00",
                "ISO": "2026-04-25T23:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-26",
                "Time": "00:10:00",
                "ISO": "2026-04-26T00:10:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -1786,15 +1978,21 @@
                "Date": "2026-04-26",
                "Time": "08:52:00",
                "ISO": "2026-04-26T08:52:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-26",
                "Time": "09:01:12",
                "ISO": "2026-04-26T09:01:12Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             }
          ],
          [
@@ -1802,15 +2000,21 @@
                "Date": "2026-04-26",
                "Time": "08:52:00",
                "ISO": "2026-04-26T08:52:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-04-26",
                "Time": "09:01:12",
                "ISO": "2026-04-26T09:01:12Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             }
          ]
       ],
@@ -1925,22 +2129,31 @@
                "Date": "2026-04-25",
                "Time": "01:15:00",
                "ISO": "2026-04-25T01:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-22",
                "Time": "19:45:00",
                "ISO": "2026-05-22T19:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Southern Fields",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-22",
                "Time": "20:30:00",
                "ISO": "2026-05-22T20:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -1948,22 +2161,31 @@
                "Date": "2026-04-25",
                "Time": "01:15:00",
                "ISO": "2026-04-25T01:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-22",
                "Time": "19:45:00",
                "ISO": "2026-05-22T19:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Southern Fields",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-22",
                "Time": "20:30:00",
                "ISO": "2026-05-22T20:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -1971,22 +2193,31 @@
                "Date": "2026-04-25",
                "Time": "01:15:00",
                "ISO": "2026-04-25T01:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-22",
                "Time": "19:45:00",
                "ISO": "2026-05-22T19:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Southern Fields",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-22",
                "Time": "20:30:00",
                "ISO": "2026-05-22T20:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -2098,22 +2329,31 @@
                "Date": "2026-05-22",
                "Time": "12:30:00",
                "ISO": "2026-05-22T12:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-05-22",
                "Time": "12:50:00",
                "ISO": "2026-05-22T12:50:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-05-22",
                "Time": "17:45:00",
                "ISO": "2026-05-22T17:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Legacy Systems Annex"
             }
          ],
          [
@@ -2121,22 +2361,31 @@
                "Date": "2026-05-22",
                "Time": "12:30:00",
                "ISO": "2026-05-22T12:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-05-22",
                "Time": "12:50:00",
                "ISO": "2026-05-22T12:50:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-05-22",
                "Time": "17:45:00",
                "ISO": "2026-05-22T17:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Legacy Systems Annex"
             }
          ],
          [
@@ -2144,22 +2393,31 @@
                "Date": "2026-05-22",
                "Time": "12:30:00",
                "ISO": "2026-05-22T12:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-05-22",
                "Time": "12:50:00",
                "ISO": "2026-05-22T12:50:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-05-22",
                "Time": "17:45:00",
                "ISO": "2026-05-22T17:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Legacy Systems Annex"
             }
          ]
       ],
@@ -2249,15 +2507,21 @@
                "Date": "2026-05-22",
                "Time": "20:35:00",
                "ISO": "2026-05-22T20:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-22",
                "Time": "21:15:00",
                "ISO": "2026-05-22T21:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -2265,15 +2529,21 @@
                "Date": "2026-05-22",
                "Time": "20:35:00",
                "ISO": "2026-05-22T20:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-22",
                "Time": "21:15:00",
                "ISO": "2026-05-22T21:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -2423,15 +2693,21 @@
                "Date": "2026-05-23",
                "Time": "02:23:00",
                "ISO": "2026-05-23T02:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-23",
                "Time": "07:15:00",
                "ISO": "2026-05-23T07:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -2439,15 +2715,21 @@
                "Date": "2026-05-23",
                "Time": "02:23:00",
                "ISO": "2026-05-23T02:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-23",
                "Time": "07:15:00",
                "ISO": "2026-05-23T07:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -2631,22 +2913,31 @@
                "Date": "2026-05-23",
                "Time": "08:15:00",
                "ISO": "2026-05-23T08:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-23",
                "Time": "08:23:00",
                "ISO": "2026-05-23T08:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-23",
                "Time": "08:58:00",
                "ISO": "2026-05-23T08:58:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Costco #8137",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -2654,22 +2945,31 @@
                "Date": "2026-05-23",
                "Time": "08:15:00",
                "ISO": "2026-05-23T08:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-23",
                "Time": "08:23:00",
                "ISO": "2026-05-23T08:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-23",
                "Time": "08:58:00",
                "ISO": "2026-05-23T08:58:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Costco #8137",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -2677,22 +2977,31 @@
                "Date": "2026-05-23",
                "Time": "08:15:00",
                "ISO": "2026-05-23T08:15:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-23",
                "Time": "08:23:00",
                "ISO": "2026-05-23T08:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-23",
                "Time": "08:58:00",
                "ISO": "2026-05-23T08:58:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Costco #8137",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -2893,22 +3202,31 @@
                "Date": "2026-05-24",
                "Time": "04:56:37",
                "ISO": "2026-05-24T04:56:37Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-24",
                "Time": "04:59:00",
                "ISO": "2026-05-24T04:59:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Lake Garrison",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-24",
                "Time": "10:12:00",
                "ISO": "2026-05-24T10:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -2916,22 +3234,31 @@
                "Date": "2026-05-24",
                "Time": "04:56:37",
                "ISO": "2026-05-24T04:56:37Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-24",
                "Time": "04:59:00",
                "ISO": "2026-05-24T04:59:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Lake Garrison",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-24",
                "Time": "10:12:00",
                "ISO": "2026-05-24T10:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -2939,22 +3266,31 @@
                "Date": "2026-05-24",
                "Time": "04:56:37",
                "ISO": "2026-05-24T04:56:37Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-24",
                "Time": "04:59:00",
                "ISO": "2026-05-24T04:59:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Lake Garrison",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-24",
                "Time": "10:12:00",
                "ISO": "2026-05-24T10:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -3104,22 +3440,31 @@
                "Date": "2026-05-25",
                "Time": "11:26:00",
                "ISO": "2026-05-25T11:26:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-05-25",
                "Time": "11:43:00",
                "ISO": "2026-05-25T11:43:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Monroe Canyon Rd",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-25",
                "Time": "16:12:00",
                "ISO": "2026-05-25T16:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             }
          ],
          [
@@ -3127,22 +3472,31 @@
                "Date": "2026-05-25",
                "Time": "11:26:00",
                "ISO": "2026-05-25T11:26:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-05-25",
                "Time": "11:43:00",
                "ISO": "2026-05-25T11:43:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Monroe Canyon Rd",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-25",
                "Time": "16:12:00",
                "ISO": "2026-05-25T16:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             }
          ],
          [
@@ -3150,22 +3504,31 @@
                "Date": "2026-05-25",
                "Time": "11:26:00",
                "ISO": "2026-05-25T11:26:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-05-25",
                "Time": "11:43:00",
                "ISO": "2026-05-25T11:43:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Monroe Canyon Rd",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-25",
                "Time": "16:12:00",
                "ISO": "2026-05-25T16:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             }
          ]
       ],
@@ -3364,29 +3727,41 @@
                "Date": "2026-05-26",
                "Time": "06:23:00",
                "ISO": "2026-05-26T06:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-26",
                "Time": "08:23:00",
                "ISO": "2026-05-26T08:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-26",
                "Time": "08:29:00",
                "ISO": "2026-05-26T08:29:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-26",
                "Time": "09:26:00",
                "ISO": "2026-05-26T09:26:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -3394,29 +3769,41 @@
                "Date": "2026-05-26",
                "Time": "06:23:00",
                "ISO": "2026-05-26T06:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-26",
                "Time": "08:23:00",
                "ISO": "2026-05-26T08:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-26",
                "Time": "08:29:00",
                "ISO": "2026-05-26T08:29:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-26",
                "Time": "09:26:00",
                "ISO": "2026-05-26T09:26:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -3424,29 +3811,41 @@
                "Date": "2026-05-26",
                "Time": "06:23:00",
                "ISO": "2026-05-26T06:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-26",
                "Time": "08:23:00",
                "ISO": "2026-05-26T08:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-26",
                "Time": "08:29:00",
                "ISO": "2026-05-26T08:29:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-26",
                "Time": "09:26:00",
                "ISO": "2026-05-26T09:26:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -3454,29 +3853,41 @@
                "Date": "2026-05-26",
                "Time": "06:23:00",
                "ISO": "2026-05-26T06:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-26",
                "Time": "08:23:00",
                "ISO": "2026-05-26T08:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-26",
                "Time": "08:29:00",
                "ISO": "2026-05-26T08:29:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-05-26",
                "Time": "09:26:00",
                "ISO": "2026-05-26T09:26:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -3615,15 +4026,21 @@
                "Date": "2026-06-27",
                "Time": "08:27:00",
                "ISO": "2026-06-27T08:27:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-27",
                "Time": "11:02:00",
                "ISO": "2026-06-27T11:02:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -3631,15 +4048,21 @@
                "Date": "2026-06-27",
                "Time": "08:27:00",
                "ISO": "2026-06-27T08:27:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-27",
                "Time": "11:02:00",
                "ISO": "2026-06-27T11:02:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -3832,22 +4255,31 @@
                "Date": "2026-06-28",
                "Time": "09:23:00",
                "ISO": "2026-06-28T09:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-28",
                "Time": "10:20:00",
                "ISO": "2026-06-28T10:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Advanced Systems Building"
             },
             {
                "Date": "2026-06-28",
                "Time": "12:03:00",
                "ISO": "2026-06-28T12:03:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Advanced Systems Building"
             }
          ],
          [
@@ -3855,22 +4287,31 @@
                "Date": "2026-06-28",
                "Time": "09:23:00",
                "ISO": "2026-06-28T09:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-28",
                "Time": "10:20:00",
                "ISO": "2026-06-28T10:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Advanced Systems Building"
             },
             {
                "Date": "2026-06-28",
                "Time": "12:03:00",
                "ISO": "2026-06-28T12:03:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Advanced Systems Building"
             }
          ],
          [
@@ -3878,22 +4319,31 @@
                "Date": "2026-06-28",
                "Time": "09:23:00",
                "ISO": "2026-06-28T09:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-28",
                "Time": "10:20:00",
                "ISO": "2026-06-28T10:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Advanced Systems Building"
             },
             {
                "Date": "2026-06-28",
                "Time": "12:03:00",
                "ISO": "2026-06-28T12:03:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Advanced Systems Building"
             }
          ]
       ],
@@ -4071,29 +4521,41 @@
                "Date": "2026-06-28",
                "Time": "13:57:00",
                "ISO": "2026-06-28T13:57:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "11:04:00",
                "ISO": "2026-06-29T11:04:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Mineral Station",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "11:05:00",
                "ISO": "2026-06-29T11:05:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Southern Fields",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:32:00",
                "ISO": "2026-06-29T15:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "16th Street Mall",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -4101,29 +4563,41 @@
                "Date": "2026-06-28",
                "Time": "13:57:00",
                "ISO": "2026-06-28T13:57:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "11:04:00",
                "ISO": "2026-06-29T11:04:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Mineral Station",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "11:05:00",
                "ISO": "2026-06-29T11:05:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Southern Fields",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:32:00",
                "ISO": "2026-06-29T15:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "16th Street Mall",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -4131,29 +4605,41 @@
                "Date": "2026-06-28",
                "Time": "13:57:00",
                "ISO": "2026-06-28T13:57:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "11:04:00",
                "ISO": "2026-06-29T11:04:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Mineral Station",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "11:05:00",
                "ISO": "2026-06-29T11:05:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Southern Fields",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:32:00",
                "ISO": "2026-06-29T15:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "16th Street Mall",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -4161,29 +4647,41 @@
                "Date": "2026-06-28",
                "Time": "13:57:00",
                "ISO": "2026-06-28T13:57:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "11:04:00",
                "ISO": "2026-06-29T11:04:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Mineral Station",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "11:05:00",
                "ISO": "2026-06-29T11:05:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Southern Fields",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:32:00",
                "ISO": "2026-06-29T15:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "16th Street Mall",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -4378,43 +4876,61 @@
                "Date": "2026-06-29",
                "Time": "15:33:00",
                "ISO": "2026-06-29T15:33:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "17:09:00",
                "ISO": "2026-06-29T17:09:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "16th Street Mall",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:42:00",
                "ISO": "2026-06-29T15:42:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "17:24:00",
                "ISO": "2026-06-29T17:24:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:51:00",
                "ISO": "2026-06-29T15:51:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "18:23:00",
                "ISO": "2026-06-29T18:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -4422,43 +4938,61 @@
                "Date": "2026-06-29",
                "Time": "15:33:00",
                "ISO": "2026-06-29T15:33:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "17:09:00",
                "ISO": "2026-06-29T17:09:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "16th Street Mall",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:42:00",
                "ISO": "2026-06-29T15:42:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "17:24:00",
                "ISO": "2026-06-29T17:24:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:51:00",
                "ISO": "2026-06-29T15:51:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "18:23:00",
                "ISO": "2026-06-29T18:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -4466,43 +5000,61 @@
                "Date": "2026-06-29",
                "Time": "15:33:00",
                "ISO": "2026-06-29T15:33:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "17:09:00",
                "ISO": "2026-06-29T17:09:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "16th Street Mall",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:42:00",
                "ISO": "2026-06-29T15:42:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "17:24:00",
                "ISO": "2026-06-29T17:24:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:51:00",
                "ISO": "2026-06-29T15:51:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "18:23:00",
                "ISO": "2026-06-29T18:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -4510,43 +5062,61 @@
                "Date": "2026-06-29",
                "Time": "15:33:00",
                "ISO": "2026-06-29T15:33:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "17:09:00",
                "ISO": "2026-06-29T17:09:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "16th Street Mall",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:42:00",
                "ISO": "2026-06-29T15:42:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "17:24:00",
                "ISO": "2026-06-29T17:24:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:51:00",
                "ISO": "2026-06-29T15:51:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "18:23:00",
                "ISO": "2026-06-29T18:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -4554,43 +5124,61 @@
                "Date": "2026-06-29",
                "Time": "15:33:00",
                "ISO": "2026-06-29T15:33:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "17:09:00",
                "ISO": "2026-06-29T17:09:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "16th Street Mall",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:42:00",
                "ISO": "2026-06-29T15:42:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "17:24:00",
                "ISO": "2026-06-29T17:24:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:51:00",
                "ISO": "2026-06-29T15:51:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "18:23:00",
                "ISO": "2026-06-29T18:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -4598,43 +5186,61 @@
                "Date": "2026-06-29",
                "Time": "15:33:00",
                "ISO": "2026-06-29T15:33:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "17:09:00",
                "ISO": "2026-06-29T17:09:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "16th Street Mall",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:42:00",
                "ISO": "2026-06-29T15:42:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "17:24:00",
                "ISO": "2026-06-29T17:24:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "15:51:00",
                "ISO": "2026-06-29T15:51:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-06-29",
                "Time": "18:23:00",
                "ISO": "2026-06-29T18:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -4834,22 +5440,31 @@
                "Date": "2026-07-07",
                "Time": "08:26:00",
                "ISO": "2026-07-07T08:26:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-07-07",
                "Time": "13:40:00",
                "ISO": "2026-07-07T13:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-07-07",
                "Time": "17:21:00",
                "ISO": "2026-07-07T17:21:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -4857,22 +5472,31 @@
                "Date": "2026-07-07",
                "Time": "08:26:00",
                "ISO": "2026-07-07T08:26:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-07-07",
                "Time": "13:40:00",
                "ISO": "2026-07-07T13:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-07-07",
                "Time": "17:21:00",
                "ISO": "2026-07-07T17:21:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -4880,22 +5504,31 @@
                "Date": "2026-07-07",
                "Time": "08:26:00",
                "ISO": "2026-07-07T08:26:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-07-07",
                "Time": "13:40:00",
                "ISO": "2026-07-07T13:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-07-07",
                "Time": "17:21:00",
                "ISO": "2026-07-07T17:21:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -5066,15 +5699,21 @@
                "Date": "2026-07-07",
                "Time": "14:04:00",
                "ISO": "2026-07-07T14:04:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-07-07",
                "Time": "17:30:00",
                "ISO": "2026-07-07T17:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -5082,15 +5721,21 @@
                "Date": "2026-07-07",
                "Time": "14:04:00",
                "ISO": "2026-07-07T14:04:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-07-07",
                "Time": "17:30:00",
                "ISO": "2026-07-07T17:30:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -5238,15 +5883,21 @@
                "Date": "2026-07-07",
                "Time": "14:12:00",
                "ISO": "2026-07-07T14:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-07-07",
                "Time": "17:37:00",
                "ISO": "2026-07-07T17:37:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -5254,15 +5905,21 @@
                "Date": "2026-07-07",
                "Time": "14:12:00",
                "ISO": "2026-07-07T14:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-07-07",
                "Time": "17:37:00",
                "ISO": "2026-07-07T17:37:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -5355,15 +6012,21 @@
                "Date": "2026-07-07",
                "Time": "16:48:00",
                "ISO": "2026-07-07T16:48:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-07-07",
                "Time": "17:35:00",
                "ISO": "2026-07-07T17:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -5371,15 +6034,21 @@
                "Date": "2026-07-07",
                "Time": "16:48:00",
                "ISO": "2026-07-07T16:48:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-07-07",
                "Time": "17:35:00",
                "ISO": "2026-07-07T17:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -5518,22 +6187,31 @@
                "Date": "2015-10-03",
                "Time": "02:23:00",
                "ISO": "2015-10-03T02:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2015-10-03",
                "Time": "03:52:00",
                "ISO": "2015-10-03T03:52:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2015-10-03",
                "Time": "06:28:05",
                "ISO": "2015-10-03T06:28:05Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -5541,22 +6219,31 @@
                "Date": "2015-10-03",
                "Time": "02:23:00",
                "ISO": "2015-10-03T02:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2015-10-03",
                "Time": "03:52:00",
                "ISO": "2015-10-03T03:52:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2015-10-03",
                "Time": "06:28:05",
                "ISO": "2015-10-03T06:28:05Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -5564,22 +6251,31 @@
                "Date": "2015-10-03",
                "Time": "02:23:00",
                "ISO": "2015-10-03T02:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2015-10-03",
                "Time": "03:52:00",
                "ISO": "2015-10-03T03:52:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2015-10-03",
                "Time": "06:28:05",
                "ISO": "2015-10-03T06:28:05Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -5753,22 +6449,31 @@
                "Date": "2005-08-23",
                "Time": "15:20:00",
                "ISO": "2005-08-23T15:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "The Shortwall",
+               "Place": "Unspecified"
             },
             {
                "Date": "2005-08-23",
                "Time": "16:12:00",
                "ISO": "2005-08-23T16:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
             },
             {
                "Date": "2005-08-23",
                "Time": "23:57:00",
                "ISO": "2005-08-23T23:57:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -5776,22 +6481,31 @@
                "Date": "2005-08-23",
                "Time": "15:20:00",
                "ISO": "2005-08-23T15:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "The Shortwall",
+               "Place": "Unspecified"
             },
             {
                "Date": "2005-08-23",
                "Time": "16:12:00",
                "ISO": "2005-08-23T16:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
             },
             {
                "Date": "2005-08-23",
                "Time": "23:57:00",
                "ISO": "2005-08-23T23:57:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -5799,22 +6513,31 @@
                "Date": "2005-08-23",
                "Time": "15:20:00",
                "ISO": "2005-08-23T15:20:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "The Shortwall",
+               "Place": "Unspecified"
             },
             {
                "Date": "2005-08-23",
                "Time": "16:12:00",
                "ISO": "2005-08-23T16:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
             },
             {
                "Date": "2005-08-23",
                "Time": "23:57:00",
                "ISO": "2005-08-23T23:57:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -5943,22 +6666,31 @@
                "Date": "2026-11-25",
                "Time": "11:00:00",
                "ISO": "2026-11-25T11:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-11-25",
                "Time": "12:17:00",
                "ISO": "2026-11-25T12:17:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-25",
                "Time": "22:01:00",
                "ISO": "2026-11-25T22:01:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -5966,22 +6698,31 @@
                "Date": "2026-11-25",
                "Time": "11:00:00",
                "ISO": "2026-11-25T11:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-11-25",
                "Time": "12:17:00",
                "ISO": "2026-11-25T12:17:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-25",
                "Time": "22:01:00",
                "ISO": "2026-11-25T22:01:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -5989,22 +6730,31 @@
                "Date": "2026-11-25",
                "Time": "11:00:00",
                "ISO": "2026-11-25T11:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-11-25",
                "Time": "12:17:00",
                "ISO": "2026-11-25T12:17:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-25",
                "Time": "22:01:00",
                "ISO": "2026-11-25T22:01:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -6159,29 +6909,41 @@
                "Date": "2026-11-26",
                "Time": "16:07:00",
                "ISO": "2026-11-26T16:07:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Hilde Cottage",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-26",
                "Time": "17:49:00",
                "ISO": "2026-11-26T17:49:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Hilde Cottage",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-26",
                "Time": "17:56:00",
                "ISO": "2026-11-26T17:56:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-26",
                "Time": "18:31:25",
                "ISO": "2026-11-26T18:31:25Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             }
          ],
          [
@@ -6189,29 +6951,41 @@
                "Date": "2026-11-26",
                "Time": "16:07:00",
                "ISO": "2026-11-26T16:07:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Hilde Cottage",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-26",
                "Time": "17:49:00",
                "ISO": "2026-11-26T17:49:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Hilde Cottage",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-26",
                "Time": "17:56:00",
                "ISO": "2026-11-26T17:56:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-26",
                "Time": "18:31:25",
                "ISO": "2026-11-26T18:31:25Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             }
          ],
          [
@@ -6219,29 +6993,41 @@
                "Date": "2026-11-26",
                "Time": "16:07:00",
                "ISO": "2026-11-26T16:07:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Hilde Cottage",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-26",
                "Time": "17:49:00",
                "ISO": "2026-11-26T17:49:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Hilde Cottage",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-26",
                "Time": "17:56:00",
                "ISO": "2026-11-26T17:56:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-26",
                "Time": "18:31:25",
                "ISO": "2026-11-26T18:31:25Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             }
          ],
          [
@@ -6249,29 +7035,41 @@
                "Date": "2026-11-26",
                "Time": "16:07:00",
                "ISO": "2026-11-26T16:07:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Hilde Cottage",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-26",
                "Time": "17:49:00",
                "ISO": "2026-11-26T17:49:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Hilde Cottage",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-26",
                "Time": "17:56:00",
                "ISO": "2026-11-26T17:56:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-26",
                "Time": "18:31:25",
                "ISO": "2026-11-26T18:31:25Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             }
          ]
       ],
@@ -6285,8 +7083,7 @@
             "Perspective": "Katiya",
             "Text": [
                "They say to never challenge an Ahkvasan to a foot race: you might be faster, but you still won&apos;t get there in time. ",
-               "I must be fortunate that she decided for us to walk instead of run, because even if she has half the blood of the Ahkva, I can feel time slow ever so slightly ",
-               "when I&apos;m near her&mdash;and not as a figure of speech. Maybe she slows the world around us because she needs more time to unscrew all the bottled thoughts she has: the gentle ones; the ones she couldn&apos;t spill to her hearty band of brothers.",
+               "I must be fortunate that she decided for us to walk instead of run, because even if she has half the blood of the Ahkva, I can feel time slow ever so slightly when I&apos;m near her&mdash;and not as a figure of speech. Maybe she slows the world around us because she needs more time to unscrew all the bottled thoughts she has: the gentle ones; the ones she couldn&apos;t spill to her hearty band of brothers.",
                "The dormant grasses crunch beneath our feet on a nearby trail as the morning sun filters through the falling leaves, and I wonder if she&apos;s dropped a second since we left.",
                "&quot;You know, I&apos;ve followed you for a while,&quot; Aryn says, and yet my first instinct is to think of the smartphone in my pocket: the one I&apos;ve been charging in my hand with Essence, still secretly siphoning that invisible &quot;cloud&quot; from Cody&apos;s place.",
                "&quot;On which application?&quot; I ask.",
@@ -6394,29 +7191,41 @@
                "Date": "2026-11-27",
                "Time": "09:47:00",
                "ISO": "2026-11-27T09:47:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Lake Garrison",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-27",
                "Time": "06:48:00",
                "ISO": "2026-11-27T06:48:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "FirstChoice Fitness",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-27",
                "Time": "11:12:00",
                "ISO": "2026-11-27T11:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Lake Garrison",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-27",
                "Time": "07:10:00",
                "ISO": "2026-11-27T07:10:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "FirstChoice Fitness",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -6424,29 +7233,41 @@
                "Date": "2026-11-27",
                "Time": "09:47:00",
                "ISO": "2026-11-27T09:47:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Lake Garrison",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-27",
                "Time": "06:48:00",
                "ISO": "2026-11-27T06:48:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "FirstChoice Fitness",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-27",
                "Time": "11:12:00",
                "ISO": "2026-11-27T11:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Lake Garrison",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-27",
                "Time": "07:10:00",
                "ISO": "2026-11-27T07:10:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "FirstChoice Fitness",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -6454,29 +7275,41 @@
                "Date": "2026-11-27",
                "Time": "09:47:00",
                "ISO": "2026-11-27T09:47:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Lake Garrison",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-27",
                "Time": "06:48:00",
                "ISO": "2026-11-27T06:48:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "FirstChoice Fitness",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-27",
                "Time": "11:12:00",
                "ISO": "2026-11-27T11:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Lake Garrison",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-27",
                "Time": "07:10:00",
                "ISO": "2026-11-27T07:10:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "FirstChoice Fitness",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -6484,29 +7317,41 @@
                "Date": "2026-11-27",
                "Time": "09:47:00",
                "ISO": "2026-11-27T09:47:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Lake Garrison",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-27",
                "Time": "06:48:00",
                "ISO": "2026-11-27T06:48:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "FirstChoice Fitness",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-27",
                "Time": "11:12:00",
                "ISO": "2026-11-27T11:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Lake Garrison",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-27",
                "Time": "07:10:00",
                "ISO": "2026-11-27T07:10:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "FirstChoice Fitness",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -6675,22 +7520,31 @@
                "Date": "2026-11-28",
                "Time": "16:45:00",
                "ISO": "2026-11-28T16:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-28",
                "Time": "15:23:00",
                "ISO": "2026-11-28T15:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-11-28",
                "Time": "20:35:00",
                "ISO": "2026-11-28T20:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -6698,22 +7552,31 @@
                "Date": "2026-11-28",
                "Time": "16:45:00",
                "ISO": "2026-11-28T16:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-28",
                "Time": "15:23:00",
                "ISO": "2026-11-28T15:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-11-28",
                "Time": "20:35:00",
                "ISO": "2026-11-28T20:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -6721,22 +7584,31 @@
                "Date": "2026-11-28",
                "Time": "16:45:00",
                "ISO": "2026-11-28T16:45:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-28",
                "Time": "15:23:00",
                "ISO": "2026-11-28T15:23:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-11-28",
                "Time": "20:35:00",
                "ISO": "2026-11-28T20:35:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -6879,22 +7751,31 @@
                "Date": "2026-11-29",
                "Time": "05:13:00",
                "ISO": "2026-11-29T05:13:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-29",
                "Time": "09:31:00",
                "ISO": "2026-11-29T09:31:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-29",
                "Time": "10:12:00",
                "ISO": "2026-11-29T10:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -6902,22 +7783,31 @@
                "Date": "2026-11-29",
                "Time": "05:13:00",
                "ISO": "2026-11-29T05:13:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-29",
                "Time": "09:31:00",
                "ISO": "2026-11-29T09:31:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-29",
                "Time": "10:12:00",
                "ISO": "2026-11-29T10:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -6925,22 +7815,31 @@
                "Date": "2026-11-29",
                "Time": "05:13:00",
                "ISO": "2026-11-29T05:13:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-29",
                "Time": "09:31:00",
                "ISO": "2026-11-29T09:31:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-29",
                "Time": "10:12:00",
                "ISO": "2026-11-29T10:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -7090,22 +7989,31 @@
                "Date": "2026-11-29",
                "Time": "14:10:00",
                "ISO": "2026-11-29T14:10:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Rocky Mountain National Forest",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-29",
                "Time": "14:53:00",
                "ISO": "2026-11-29T14:53:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Rocky Mountain National Forest",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-29",
                "Time": "22:12:00",
                "ISO": "2026-11-29T22:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Rocky Mountain National Forest",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -7113,22 +8021,31 @@
                "Date": "2026-11-29",
                "Time": "14:10:00",
                "ISO": "2026-11-29T14:10:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Rocky Mountain National Forest",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-29",
                "Time": "14:53:00",
                "ISO": "2026-11-29T14:53:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Rocky Mountain National Forest",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-29",
                "Time": "22:12:00",
                "ISO": "2026-11-29T22:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Rocky Mountain National Forest",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -7136,22 +8053,31 @@
                "Date": "2026-11-29",
                "Time": "14:10:00",
                "ISO": "2026-11-29T14:10:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Rocky Mountain National Forest",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-29",
                "Time": "14:53:00",
                "ISO": "2026-11-29T14:53:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Rocky Mountain National Forest",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-29",
                "Time": "22:12:00",
                "ISO": "2026-11-29T22:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Rocky Mountain National Forest",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -7273,22 +8199,31 @@
                "Date": "2026-11-30",
                "Time": "06:00:03",
                "ISO": "2026-11-30T06:00:03Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-11-30",
                "Time": "07:00:02",
                "ISO": "2026-11-30T07:00:02Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-30",
                "Time": "08:12:00",
                "ISO": "2026-11-30T08:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             }
          ],
          [
@@ -7296,22 +8231,31 @@
                "Date": "2026-11-30",
                "Time": "06:00:03",
                "ISO": "2026-11-30T06:00:03Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-11-30",
                "Time": "07:00:02",
                "ISO": "2026-11-30T07:00:02Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-30",
                "Time": "08:12:00",
                "ISO": "2026-11-30T08:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             }
          ],
          [
@@ -7319,22 +8263,31 @@
                "Date": "2026-11-30",
                "Time": "06:00:03",
                "ISO": "2026-11-30T06:00:03Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-11-30",
                "Time": "07:00:02",
                "ISO": "2026-11-30T07:00:02Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-30",
                "Time": "08:12:00",
                "ISO": "2026-11-30T08:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             }
          ]
       ],
@@ -7492,22 +8445,31 @@
                "Date": "2026-11-30",
                "Time": "10:21:00",
                "ISO": "2026-11-30T10:21:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-30",
                "Time": "10:54:00",
                "ISO": "2026-11-30T10:54:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-30",
                "Time": "12:42:00",
                "ISO": "2026-11-30T12:42:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Village Outskirts",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -7515,22 +8477,31 @@
                "Date": "2026-11-30",
                "Time": "10:21:00",
                "ISO": "2026-11-30T10:21:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-30",
                "Time": "10:54:00",
                "ISO": "2026-11-30T10:54:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-30",
                "Time": "12:42:00",
                "ISO": "2026-11-30T12:42:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Village Outskirts",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -7538,22 +8509,31 @@
                "Date": "2026-11-30",
                "Time": "10:21:00",
                "ISO": "2026-11-30T10:21:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-30",
                "Time": "10:54:00",
                "ISO": "2026-11-30T10:54:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-30",
                "Time": "12:42:00",
                "ISO": "2026-11-30T12:42:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Village Outskirts",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -7740,22 +8720,31 @@
                "Date": "2026-11-30",
                "Time": "13:02:00",
                "ISO": "2026-11-30T13:02:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-11-30",
                "Time": "17:49:00",
                "ISO": "2026-11-30T17:49:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-30",
                "Time": "19:40:00",
                "ISO": "2026-11-30T19:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -7763,22 +8752,31 @@
                "Date": "2026-11-30",
                "Time": "13:02:00",
                "ISO": "2026-11-30T13:02:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-11-30",
                "Time": "17:49:00",
                "ISO": "2026-11-30T17:49:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-30",
                "Time": "19:40:00",
                "ISO": "2026-11-30T19:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -7786,22 +8784,31 @@
                "Date": "2026-11-30",
                "Time": "13:02:00",
                "ISO": "2026-11-30T13:02:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
             },
             {
                "Date": "2026-11-30",
                "Time": "17:49:00",
                "ISO": "2026-11-30T17:49:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-11-30",
                "Time": "19:40:00",
                "ISO": "2026-11-30T19:40:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -7999,29 +9006,41 @@
                "Date": "2026-12-01",
                "Time": "16:53:00",
                "ISO": "2026-12-01T16:53:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-01",
                "Time": "17:32:00",
                "ISO": "2026-12-01T17:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Village Outskirts",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-01",
                "Time": "23:32:00",
                "ISO": "2026-12-01T23:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-06",
                "Time": "12:09:00",
                "ISO": "2026-12-06T12:09:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -8029,29 +9048,41 @@
                "Date": "2026-12-01",
                "Time": "16:53:00",
                "ISO": "2026-12-01T16:53:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-01",
                "Time": "17:32:00",
                "ISO": "2026-12-01T17:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Village Outskirts",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-01",
                "Time": "23:32:00",
                "ISO": "2026-12-01T23:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-06",
                "Time": "12:09:00",
                "ISO": "2026-12-06T12:09:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -8059,29 +9090,41 @@
                "Date": "2026-12-01",
                "Time": "16:53:00",
                "ISO": "2026-12-01T16:53:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-01",
                "Time": "17:32:00",
                "ISO": "2026-12-01T17:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Village Outskirts",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-01",
                "Time": "23:32:00",
                "ISO": "2026-12-01T23:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-06",
                "Time": "12:09:00",
                "ISO": "2026-12-06T12:09:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -8089,29 +9132,41 @@
                "Date": "2026-12-01",
                "Time": "16:53:00",
                "ISO": "2026-12-01T16:53:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-01",
                "Time": "17:32:00",
                "ISO": "2026-12-01T17:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Village Outskirts",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-01",
                "Time": "23:32:00",
                "ISO": "2026-12-01T23:32:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-06",
                "Time": "12:09:00",
                "ISO": "2026-12-06T12:09:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -8217,15 +9272,21 @@
                "Date": "2026-12-08",
                "Time": "00:00:00",
                "ISO": "2026-12-08T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-08",
                "Time": "00:12:00",
                "ISO": "2026-12-08T00:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -8233,15 +9294,21 @@
                "Date": "2026-12-08",
                "Time": "00:00:00",
                "ISO": "2026-12-08T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "2026-12-08",
                "Time": "00:12:00",
                "ISO": "2026-12-08T00:12:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -8395,22 +9462,31 @@
                "Date": "",
                "Time": "03:39:47",
                "ISO": "T03:39:47Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "FirstChoice Fitness",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -8418,22 +9494,31 @@
                "Date": "",
                "Time": "03:39:47",
                "ISO": "T03:39:47Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "FirstChoice Fitness",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -8441,22 +9526,31 @@
                "Date": "",
                "Time": "03:39:47",
                "ISO": "T03:39:47Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "FirstChoice Fitness",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -8617,22 +9711,31 @@
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -8640,22 +9743,31 @@
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -8663,22 +9775,31 @@
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -8827,22 +9948,31 @@
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -8850,22 +9980,31 @@
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -8873,22 +10012,31 @@
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -9016,22 +10164,31 @@
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Backwoods",
+               "Location": "",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dietz Park Estates",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -9039,22 +10196,31 @@
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Backwoods",
+               "Location": "",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dietz Park Estates",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -9062,22 +10228,31 @@
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Backwoods",
+               "Location": "",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dietz Park Estates",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -9186,15 +10361,16 @@
          {
             "Perspective": "Default",
             "Text": [
-               "I return home exhausted and well-satiated, with a lot of scrap, and a clean, new replacement part. They send me home with expensive, glass Tupperware containers that &quot;you can send home with Reed,&quot; packed with cuts of tri-tip Geoffrey seared and grilled.",
+               "I return home full and exhausted with a lot of scrap, and a clean, new replacement part. They send me home with expensive, glass Tupperware containers that &quot;you can send home with Reed,&quot; packed with cuts of tri-tip Geoffrey seared and grilled.",
                "It has a whole two shelves of space to breathe in my fridge, besides a Costco trip from mom, Katiya&apos;s Chinese leftovers, and a rack of Pabst Blue Ribbon that gives me a taste of college.",
                "My muscles ache from the chatter of the machines. Micro-abrasions on my fingers sting with hand sanitizer, and I&apos;m about to head up to take a shower when I hear the sound of crying next door. ",
-               "So instead I grab the leftovers, inching the door open slowly with a container to not invoke the wrath of another mysterious character. I think it&apos;s Rayna at first glance, but then there&apos;s a copy of her, and they both look like Rayna. The doppelg&0228;nger doesn&apos;t cry: she just stares at her reflection blankly with piercing blue eyes.",
+               "So instead I grab the leftovers, inching my way through Katiya&apos;s door with a container, slow enough to not invoke the wrath of another stranger. I think it&apos;s Rayna at first glance, sitting on Katiya&apos;s couch in her foyer, but then there&apos;s a copy of her. ",
+               "They both look like Rayna. The double doesn&apos;t cry: she just stares at her reflection with piercing blue eyes.",
                "I knock on the door lightly, yet the two catgirls jump.",
                "&quot;Intruder!&quot; The stoic one says.",
-               "&quot;Cody,&quot; Rayna says. The name brings her copy to lower her weapon. ",
+               "&quot;Cody,&quot; Rayna says. The name brings the other to lower her weapon. ",
                "&quot;What&apos;s happening this time? Did you duplicate yourself?&quot;",
-               "&quot;This is Aryn,&quot; Rayna says, &quot;my si&mdash;&quot;",
+               "&quot;This is Aryn,&quot; Rayna says, &quot;my&mdash;&quot;",
                "&quot;Who are you?&quot; Aryn asks, but she squints harder. &quot;Wait, I remember you &mdash; you were outside this house. The noble. That Royal Inventor that got the slice on the hand.&quot;",
                "&quot;That&apos;s me,&quot; I say, while Rayna sniffles, twitching her ears. &quot;I heard crying next door. What&apos;s going on?&quot;",
                "&quot;An unexpected reunion,&quot; Aryn says. &quot;A dead girl walked into my town, and I found out that she&apos;s my sister. Now we&apos;re in her old home &mdash; was Katiya hiding you here the whole time? Is that why she was so secretive? I thought she was mourning! I trusted her, and she used that trust to hide this from me.&quot;",
@@ -9208,7 +10384,7 @@
                "&quot;Let&apos;s continue next door,&quot; I say. &quot;Have something to eat: you two look famished.&quot;",
                "Aryn looks at my dirty hands. &quot;Are you a farm boy, or an inventor? I&apos;m not&mdash;&quot; I open the lid, and her expression quickly changes. &quot;I guess we could. But I&apos;m not even close to done with her.&quot;",
                "&quot;That&apos;s fine,&quot; I say, wedging the door back open with my foot as I accept it&apos;s going to be a long night. &quot;Warm meat and a cold beer makes anything feel better. Sit down on the couch, and I&apos;ll prepare something for you.&quot;",
-               "Aryn still hesitates. It&apos;s hard to convince cats to do anything, so I act indifferent, rushing in to close my shades to forestall a deluge of difficult questions. They enter a few steps at a time, then quietly deposit themselves on the couch, as Aryn gears up to deliver another verbal lashing, forestalled by the oddness of my world, and it&apos;s a distraction that I hinge on.",
+               "Aryn still hesitates. It&apos;s hard to convince cats to do anything, so I act indifferent, rushing in to shutter my shades to forestall a deluge of difficult questions. They enter my world with a few steps at a time, then quietly deposit themselves on the couch, as Aryn gears up to deliver another verbal lashing, forestalled by the oddness of my world, and it&apos;s a distraction that I hinge on.",
                "I toss the glassware in the microwave. I crack the last two of my craft beers in the back, and pour them in glass mugs from the freezer, taking a PBR for myself. I think of all those things I wanted to tell him, the things that used to be so fresh in my mind that they were almost practiced, and when I set them on the coffee table, I address Aryn first.",
                "I sit in a folding chair. ",
                "&quot;It hurts, you know &mdash; all the time you spend counting those shared experiences that were robbed from you. There&apos;s all the joys you thought you&apos;d share. That feeling for them you still want to give,&quot; I say, remembering the empty seat that shouldered the military fatigues at my graduation party: the party my dad spoke at, and I could only feel like something was missing.",
@@ -9217,13 +10393,15 @@
                "&quot;That&apos;s not true,&quot; Aryn says.",
                "&quot;I was better off dead to you, because it would make you a whole lot greater than I could ever be.&quot;",
                "&quot;Better off dead? I don&apos;t want&mdash;&quot;",
-               "&quot;I deserted them, Rayna: I deserted my unit. I vanished to the underworld of the Den of Thieves in Melenia &mdash; the only place that would take a coward and a failure, and I even deserted them.&quot;",
-               "&quot;Then why did you return,&quot; Aryn asks. &quot;What brought you back to where it all happened?&quot;",
-               "&quot;A job that went wrong, and went wrong in the best way possible. I spent my whole life running until I got caught one day, and it was by someone with the grace and courage to let me go, to have a second chance. And that was&mdash;&quot;",
+               "&quot;I deserted them, Rayna: I deserted my unit. I vanished to the underworld of the Den of Thieves in Melenia &mdash; the only place that would take a coward and a failure.&quot;",
+               "&quot;You&apos;re neither of those things!&quot;",
+               "&quot;And later, I even deserted them,&quot; Rayna adds.",
+               "&quot;Then why did you return to the place that refused you?&quot; Aryn asks.",
+               "&quot;A job that went wrong,&quot; Rayna says. &quot;I spent my whole life running until I got caught one day. And it was by someone with the grace and courage to give me a second chance.&quot;",
                "&quot;Katiya,&quot; Aryn says, &quot;wait: you mean that was you on the roof?&quot;",
-               "&quot;She gave me a debt to pay and a sense of courage. And when I found the courage to run again, I ran back to pay my debts.&quot;",
-               "&quot;Paying how?&quot;",
-               "&quot;With a horrible truth. I&apos;m giving Katiya a chance to prove herself, because I think she&apos;s capable, and she has that thing &mdash; that spark, that thing that&apos;s never in the service, that thing that brings people together, which is the only way this can work.&quot;",
+               "&quot;She gave me a debt to pay, and when I found the courage to run again, I ran back to pay my debts.&quot;",
+               "&quot;With what?&quot;",
+               "&quot;With a horrible truth,&quot; Rayna says. &quot;I&apos;m giving Katiya a chance to prove herself, because I think she&apos;s capable, and she has that thing &mdash; that spark, that thing that&apos;s never in the service, that thing that brings people together, which is the only way this can work.&quot;",
                "The microwave chirps, startling Aryn again. I return with the rest of my leftovers, and though they hunger to speak longer, they hunger more for what I&apos;ve served them. Aryn finds a stillness in the silence &mdash; I know that even hearing my brother chewing would be enough to make me cry.",
                "&quot;So what is your business here?&quot; Aryn asks me.",
                "&quot;I lost a sibling too. But I saw their body, and from the state it was in, I know I won&apos;t ever get a chance like you have.&quot;",
@@ -9231,22 +10409,14 @@
                "&quot;Yeah,&quot; I say.",
                "She reads my face, finding familiarity in the contours of my grief. &quot;I&apos;m sorry.&quot;",
                "&quot;It&apos;s alright,&quot; I say. &quot;It happened a while ago. I didn&apos;t witness it.&quot;",
-               "&quot;And neither did I,&quot; Aryn says. She swirls the drink in the glass, then takes a sip to show she accepts my hospitality, and then asks, &quot;so what will you honor them?&quot;",
+               "&quot;And neither did I,&quot; Aryn says. She swirls the drink in the glass, then takes a sip to show she accepts my hospitality, and then asks, &quot;so what will you do to honor them?&quot;",
                "&quot;I&apos;ll fix what killed him,&quot; I say.",
-               "We sit around for about another half hour, and right about when my body begins to drag my eyelids shut, dipping my head against the couch as Aryn and Rayna finally circle around to their childhood memories, I hear a door open on the other side of the world.",
-               "The two instinctively jump to my defense. It&apos;s more than one set of footsteps that creak the floorboards, and before Rayna peeks through the other side, she calls Katiya&apos;s name.",
-               "&quot;I&apos;m back,&quot; Katiya says. ",
-               "I shamble over to see where she&apos;s been, rubbing hard at the crescents beneath my eyes so she doesn&apos;t worry about me.",
-               "&quot;It&apos;s you,&quot; Rayna says. &quot;I thought you weren&apos;t safe here?&quot;",
-               "&quot;That was before our forces doubled,&quot; an unfamiliar voice rasps. &quot;We&apos;re setting a return point, and then it&apos;s back through space a hundred miles north.&quot;",
-               "Something changes hands. I decide not to enter.",
-               "&quot;You&apos;re giving me this?&quot; Katiya asks. &quot;But won&apos;t you need it?&quot;",
-               "&quot;You&apos;re the great connector. You&apos;re the hub of this entire operation,&quot; another voice says, and it sounds like it speaks while breathing in. &quot;I&apos;ll return with this anchor.&quot;",
-               "&quot;And Rayna can stay with me for now,&quot; Aryn volunteers, stepping through the door.",
-               "&quot;Aryn?&quot; Katiya says. &quot;Why are you here?&quot;",
-               "The confusion exhausts me too much to bear. I grab the phone from my pocket, making sure to set several alarms in case I pass out &mdash; tomorrow&apos;s a day I&apos;ve set for unpaid time off, but I&apos;m going to be spending all of it preparing my creation.",
-               "I don&apos;t even make it to the stairs before I decide to collapse on the couch, my feet kicked up like Miguel during my first night here.",
-               "I feel something warm wrap around me before I fade from consciousness, with the feeling of something wet on my forehead. She whispers a couple words, and after the door closes, the house is finally silent.",
+               "We sit around for about another half hour, and right about when my body begins to drag my eyelids shut, Aryn and Rayna finally circle around to recounting their childhood memories.",
+               "My head slides further down the couch the more the exhaustion of all my toil catches up to me, and as they ramble further &mdash; around ten minutes after ai add my last word &mdash; I finally give out, around the time they make the decision to leave together.",
+               "Through heavy eyelids, I watch as Rayna takes a sheet from the same pad I wrote the rules on, tearing quietly along the perforations, and while she scribbles something with a pen, Aryn gingerly lifts my head before stuffing one of my mom&apos;s old decorative Christmas pillows in between.",
+               "I don&apos;t resist when the weight of my tired body adheres to the fake leather like flies to honeyed paper, and as sleep muddles conscious thought into peaceful nonsense, Aryn whispers in my ear.",
+               "&quot;I know you&apos;ll honor him well,&quot; she says, her nails tracing tufts of my unkempt, shaggy hair from covering my face.",
+               "The two sisters leave my world and disappear back through Katiya&apos;s front door, leaving the click of the latch as the last sound I hear.",
                " ",
                ""
             ]
@@ -9258,22 +10428,31 @@
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dietz Park Estates",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -9281,22 +10460,31 @@
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dietz Park Estates",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ],
          [
@@ -9304,22 +10492,31 @@
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dietz Park Estates",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
             },
             {
                "Date": "",
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
-               "Region": "Unknown",
-               "Area": ""
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
             }
          ]
       ],
