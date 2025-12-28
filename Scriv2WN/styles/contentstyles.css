@@ -620,6 +620,12 @@ div.TOGGLEMAP {
     color: var(--TextColor);
     font-size: 1.35em;
 }
+img.MAP {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 img.hrdiv {
     position:relative;

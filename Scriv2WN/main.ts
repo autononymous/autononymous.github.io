@@ -1163,7 +1163,8 @@ class ChapterBinder {
     }
 
     placeWorldMap(character:string) {
-        eMAP.style.backgroundImage = `url(../Scriv2WN/maps/map${character}.jpg)`;
+        let eIMG:HTMLImageElement = eMAP as HTMLImageElement
+        eIMG.src = `../Scriv2WN/maps/map${character}.jpg`;
         //this.CURRENT_SCENE[2]
     }
 
@@ -1749,7 +1750,7 @@ const eBODY                 = GEBID('BODY')
 const eTYPESET              = GEBID('TYPESET')
 const eIDCHAPTER            = GEBID('IDCHAPTER')
 const eIDNAME               = GEBID('IDNAME')
-const eMAP                  = GEBID('STORYMAP')
+const eMAP                  = GEBID('MAP')
 
 const DEPLOY = "TYPESET";
 const EXTRAID = "EXTRACONTENT";
@@ -1800,3 +1801,28 @@ const iconaddress = `icons/favicon-${ACTIVESTORY}.png`;
 buildManuscript(rootURL,ACTIVESTORY, StartChapter);
 eBODY.addEventListener('scroll',runScrollEvents);
 addEventListener("resize", runResizeEvents)
+
+function getMousePosInImage(img: HTMLImageElement, ev: MouseEvent) {
+    const r = img.getBoundingClientRect();
+    const x = ev.clientX - r.left;
+    const y = ev.clientY - r.top;
+    const px = r.width > 0 ? Math.max(0, Math.min(1, x / r.width)) : 0;
+    const py = r.height > 0 ? Math.max(0, Math.min(1, y / r.height)) : 0;
+    const percentX = px * 100;
+    const percentY = py * 100;
+    return { x, y, px, py, percentX, percentY, bounds: r };
+}
+
+if (eMAP instanceof HTMLImageElement) {
+    eMAP.addEventListener('mousedown', (ev: MouseEvent) => {
+        const pos = getMousePosInImage(eMAP, ev);
+        // Example usage: expose as CSS vars or log
+        ROOT.style.setProperty('--img-mouse-x', `${(pos.px * 100).toFixed(2)}%`);
+        ROOT.style.setProperty('--img-mouse-y', `${(pos.py * 100).toFixed(2)}%`);
+        console.debug('Image mouse pos', `[${pos.percentX},${pos.percentY}]`);
+    });
+    eMAP.addEventListener('mouseleave', () => {
+        ROOT.style.removeProperty('--img-mouse-x');
+        ROOT.style.removeProperty('--img-mouse-y');
+    });
+}

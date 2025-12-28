@@ -252,100 +252,165 @@
 "Atlas":
 {
     "Blackwater":
-    {        
-        "Province 13":
-        {
-            "Unknown":{
+    {   "Province XII":
+        {   "Location":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""}
+        },
+        "The Afterlife":
+        {   "Location":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""}
+        },
+        "City Outskirts":
+        {   "Location":{
                 "MapLocation":[0.00,0.00,0.00],
                 "Description":""
-            }
-        }
+        }}
     },
     "Valenseia": 
-    {
-        "Northaven":
-        {
-            "Unknown":{
+    {   "Gaffesend":
+        {   "Katiya's House":{
                 "MapLocation":[0.00,0.00,0.00],
-                "Description":""
-            }
-        },
-        "Gaffesend":
-        {
-            "Unknown":{
+                "Description":""},
+            "Guards' Quarter":{
                 "MapLocation":[0.00,0.00,0.00],
-                "Description":""
-            }
+                "Description":""},
+            "Gaffe's End Tavern":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Gaffe Royal Base":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Lake Garrison":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "The Old Castle":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Southern Fields":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Market Street":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Village Outskirts":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Outskirts":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Hilde Cottage":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""}
         },
         "Hillfar":
-        {
-            "Unknown":{
+        {   "Village Outskirts":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "The Shortwall":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Breakey Cottage":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Outskirts":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""}
+        },
+        "Northaven":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""}
+        },
+        "Holmfirth":
+        {   "Firtholm Hot Springs":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Outskirts":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Village Outskirts":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""}
+        },
+        "Outer Lands":
+        {   "Unspecified":{
                 "MapLocation":[0.00,0.00,0.00],
                 "Description":""
-            }
-        }
+        }}
     },
     "Melenia": 
-    {
-        "Palace":
-        {
-            "Unknown":{
+    {   "Palace":
+        {   "Unspecified":{
                 "MapLocation":[0.00,0.00,0.00],
                 "Description":""
-            }
-        }
+        }}
+    },
+    "Outer Wastes": 
+    {   "The Backwoods":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""
+        }}
     },
     "Colorado": 
-    {
-        "Hearthland Ridge":
-        {
-            "Unknown":{
+    {   "Hearthland Ridge":
+        {   "Mineral Station":{
                 "MapLocation":[0.00,0.00,0.00],
-                "Description":""
-            }
+                "Description":""},
+            "Costco #8137":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Starbucks":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Dunsmore Home":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""}
         },
         "Shaleborough":
-        {
-            "Unknown":{
+        {   "Navidson-Monroe Aerospace":{
                 "MapLocation":[0.00,0.00,0.00],
-                "Description":""
-            }
+                "Description":""},  
+            "Rocky Mountain National Forest":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Monroe Canyon Rd":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""}
         },
         "Evergreen Estates":
-        {
-            "Cody's House": {
+        {   "Cody's House":{
                 "MapLocation":[0.00,0.00,0.00],
-                "Description":""
-            }
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[0.00,0.00,0.00],
+                "Description":""}
         },
         "Denver":
-        {
-            "Unknown":{
+        {   "16th Street Mall":{
                 "MapLocation":[0.00,0.00,0.00],
-                "Description":""
-            }
-        },
-        "Dietz Park":
-        {
-            "Unknown":{
+                "Description":""},
+            "Unspecified":{
                 "MapLocation":[0.00,0.00,0.00],
-                "Description":""
-            }
-        },
-        "Littlepine":
-        {
-            "Unknown":{
-                "MapLocation":[0.00,0.00,0.00],
-                "Description":""
-            }
-        },
-        "Englefield":
-        {
-            "Unknown":{
-                "MapLocation":[0.00,0.00,0.00],
-                "Description":""
-            }
-        }        
+                "Description":""}
+        }
     }
 }
 
