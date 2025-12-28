@@ -866,6 +866,7 @@ class ChapterBinder {
         this.lastMessenger = "Anon";
         this.CURRENT_SCENE = [0, 0, 0, 0];
         this.LAST_SCENE = [0, 0, 0, 0];
+        this.doSpecificName = false;
         this.MsgMatch = {
             "Miguel": "Miguel",
             "Cody": "Cody",
@@ -945,6 +946,15 @@ class ChapterBinder {
             }
             return true;
         });
+    }
+    ToggleSpecificName(setting = null) {
+        if (setting != null) {
+            this.doSpecificName = setting;
+        }
+        else {
+            this.doSpecificName = !this.doSpecificName;
+        }
+        this.DeployOnPage('', DEPLOY);
     }
     DeployOnPage(requestedChapter_1, targetElementID_1) {
         return __awaiter(this, arguments, void 0, function* (requestedChapter, targetElementID, purgeContent = true) {
@@ -1027,6 +1037,9 @@ class ChapterBinder {
                 // Handle story starter tags.
                 if (this.SHOW_STARTER_TAGS) {
                     let sceneDate = this.TOC[requestedChapter - 1].Settings[thisSection].ISO;
+                    let sceneSetting = this.TOC[requestedChapter - 1].Settings[thisSection];
+                    let RegionName = `${sceneSetting.Area == "Unspecified" ? "" : (sceneSetting.Area + ", ")}${sceneSetting.Region}`;
+                    let PlaceName = `${sceneSetting.Location == "Unspecified" ? "" : sceneSetting.Location}`;
                     console.debug(ChapterInfo.Character[thisSection]);
                     // Format ISO date to "Weekday, Month Date"
                     starterTag = (() => {
@@ -1035,11 +1048,12 @@ class ChapterBinder {
                         if (!isNaN(dt.getTime())) {
                             const datePart = new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric' }).format(dt);
                             const timePart = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute: '2-digit', /* second: '2-digit',*/ hour12: false }).format(dt);
-                            formatted = `${datePart} <br> ${timePart}`;
+                            formatted = `${datePart}, ${timePart}`;
                         }
-                        return `<p class="Body${ChapterInfo.Character[thisSection]} StarterTag" style="font-size: var(--TagFontSize);">
+                        return `<p class="StarterTag Body${ChapterInfo.Character[thisSection]}" style="font-size: var(--TagFontSize); margin-bottom: 20px;">
                 ${this.Config.getFullName(ChapterInfo.Character[thisSection])} <br>
-                ${formatted}                
+                ${formatted} <br>
+                ${RegionName}  ${((PlaceName == "") || (!this.doSpecificName)) ? "" : "<br>" + PlaceName}             
                 </p>`;
                     })();
                 }

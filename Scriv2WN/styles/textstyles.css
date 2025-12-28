@@ -34,9 +34,11 @@ h3.Section::after{
 
 p.StarterTag {
     border-left: 2px solid var(--TextColor);
-    margin-left: 5px;
     padding-left: 15px;
+    /*padding-bottom: 10px;/**/
+    /*padding-top: 10px;/**/
     font-size: var(--TagFontSize);
+    opacity:0.8;
 }
 span.textspace {
   padding-left: var(--TabMargin);
@@ -166,7 +168,7 @@ p.NoteCody, p.NoteKatiya, p.NoteTitus {
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 3px; 
     text-align: center;
 }
 .NoteCody, .NoteKatiya, .NoteTitus {
