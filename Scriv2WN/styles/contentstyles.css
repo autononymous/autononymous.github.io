@@ -5,6 +5,8 @@
     --MapHeight:            min(400px,66.7vw);
     --ControlHeight:        min(25vw,100px);
 
+    --placeName:            "place";
+
     /* Position of reader whether or not TOC or other things are shown.*/
     --READER_TOCOFFSET:     0px;
     --READER_EXTRAOFFSET:   0px;
@@ -48,6 +50,7 @@
     --TextColor:           black;
     --BackgroundColor:     white;
     --MidgroundColor:      black;
+    --CharacterColor:      green;
     --ElementColor:        dimgray;
     --HoverColor:          rgba(12,12,12,0.1);
     --BarColor:            black;
@@ -214,12 +217,30 @@ div.STORYPIN {
     left:0;
     top:0;
     transform: translateX(-50%), translateY(-50%);
-    width: 6px;
-    height:6px;
-    background-color: red;
-    border:1px solid white;
-    border-radius: 6px;
+    width: 8px;
+    height:8px;
+    background-color: var(--CharacterColor);
+    border:2px solid white;
+    border-radius: 8px;
     transition: left 0.8s ease-in-out, top 0.8s ease-in-out, background-color 1.0s linear;
+    opacity: 1.0;
+}
+div.STORYPIN::before {
+    content: var(--placeName);
+    width: max-content;
+    height: min-content;
+    position: absolute;
+    text-align: center;
+    padding: 3px;
+    border-radius: calc( var(--TextSize) * 0.5 * 0.5 );
+    left: 15px;
+    font-size: calc( var(--TextSize) * 0.5 );
+    transform: translateY( calc( -1 * var(--TextSize) * 0.5 ) );
+    background-color: var(--TextColor);
+    color: var(--BackgroundColor);
+    opacity: 1.0;
+    font-family: var(--ActiveText);
+    font-weight: 800;
 }
 div.ICONS {      
     width: min(100%,var(--ContentWidth));

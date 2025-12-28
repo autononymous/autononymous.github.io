@@ -1186,26 +1186,35 @@ class ChapterBinder {
         return msgsource
     }   
 
-    placeWorldMap(character:string) {
-        let eIMG:HTMLImageElement = eMAP as HTMLImageElement
-        let Setting = this.CurrentChapter.Settings[LookingAt.scene-1];
-        let atlas:any = this.Config.config.Atlas;
-        let sceneChar = atlas[Setting.Region]['MapSource']       
-        eIMG.src = `../Scriv2WN/maps/map${sceneChar}.jpg`;
-        let Region = decodeEntities(Setting.Region);
-        let Area = decodeEntities(Setting.Area);
-        let Location = decodeEntities(Setting.Location);           
-        let maparray = atlas[Region][Area][Location]['MapLocation'];
-        console.info(`----==== MAP REPORT ====----\nQuerying scene ${LookingAt.scene} of ${character}'s scene in ${sceneChar}'s region.`
-            ,`Region is "${Region}", area is "${Area}", location is "${Location}".`
-            ,`Map position of Scene ${LookingAt.scene} is ${maparray[0]}%X and ${maparray[1]}%Y.`,
-        ) 
-        this.eMAPPIN.style.setProperty('left',`${maparray[0]}%`)
-        this.eMAPPIN.style.setProperty('top',`${maparray[1]}%`)
-        let CharColor = this.Config.config.Styles[character]["CharacterTheme"];
-        CharColor = (!CharColor) ? [255,50,50] : CharColor;
-        this.eMAPPIN.style.backgroundColor = `rgb(${CharColor[0]},${CharColor[1]},${CharColor[2]})`
-        console.log("ChapterBinder.placeWorldMap\n","World map updated.")
+    placeWorldMap(la:LookingAtThis) {
+        try {
+            let character = la.voice
+            let eIMG:HTMLImageElement = eMAP as HTMLImageElement
+            let Setting = this.CurrentChapter.Settings[la.scene-1];
+            let atlas:any = this.Config.config.Atlas;
+            let sceneChar = atlas[Setting.Region]['MapSource']       
+            eIMG.src = `../Scriv2WN/maps/map${sceneChar}.jpg`;
+            let Region = decodeEntities(Setting.Region);
+            let Area = decodeEntities(Setting.Area);
+            let Location = decodeEntities(Setting.Location);           
+            let maparray = atlas[Region][Area][Location]['MapLocation'];
+            console.info(`----==== MAP REPORT ====----\nQuerying scene ${la.scene-1} of ${character}'s scene in ${sceneChar}'s region.`
+                ,`Region is "${Region}", area is "${Area}", location is "${Location}".`
+                ,`Map position of Scene ${LookingAt.scene} is ${maparray[0]}%X and ${maparray[1]}%Y.`,
+                this.CURRENT_SCENE
+            ) 
+            this.eMAPPIN.style.setProperty('left',`${maparray[0]}%`)
+            this.eMAPPIN.style.setProperty('top',`${maparray[1]}%`)
+            let CharColor = this.Config.config.Styles[character]["CharacterTheme"];
+            CharColor = (!CharColor) ? [255,50,50] : CharColor;
+            //this.eMAPPIN.style.backgroundColor = `rgb(${CharColor[0]},${CharColor[1]},${CharColor[2]})`
+            ROOT.style.setProperty("--placeName",`"${Location}"`);
+            console.log("ChapterBinder.placeWorldMap\n","World map updated.")
+        } catch {
+            console.warn('Unable to load world map at this time.')
+        }
+
+        
     }
 
     ResolveThisLine( lineContent:any[], lineID:string, sectionStyle:string ) {
@@ -1663,6 +1672,17 @@ class ThemeDriver {
 
         ROOT.style.setProperty("--TextColor",`rgba(${this.CurrentFrame["Text"][0]},${this.CurrentFrame["Text"][1]},${this.CurrentFrame["Text"][2]},${1})`);
         ROOT.style.setProperty("--BackgroundColor",`rgba(${this.CurrentFrame["Background"][0]},${this.CurrentFrame["Background"][1]},${this.CurrentFrame["Background"][2]},${1})`);
+        //console.error(this.ThemeData,this.CurrentWall.FromCharacter)
+        let TextStyle = this.CurrentWall.FromCharacter == "Default" ? this.CurrentWall.ToCharacter : this.CurrentWall.FromCharacter == "" ? "Fallback" : this.CurrentWall.FromCharacter
+        let voice = this.DataCard.CurrentVoice == null ? this.CurrentWall.ToCharacter : this.DataCard.CurrentVoice
+        if (this.ThemeData[voice] == undefined) {
+            ROOT.style.setProperty("--CharacterColor",`rgba(0,0,0,1)`);
+        } else {
+            let charRGB = this.ThemeData[voice]["CharacterTheme"]       
+            charRGB = charRGB == undefined ? `rgba(0,0,0,1)` : charRGB;
+            ROOT.style.setProperty("--CharacterColor",`rgba(${charRGB[0]},${charRGB[1]},${charRGB[2]},${1})`);
+        }
+        
         
         let PercentOff = 0.80;
         let CalcRGBA =      [((255*(1-PercentOff)*0.5)+((Number(this.CurrentFrame["Background"][0])*PercentOff))),
@@ -1681,7 +1701,7 @@ class ThemeDriver {
         ROOT.style.setProperty("--ImageWallFore",WallCSS1);
         ROOT.style.setProperty("--ImageWallBack",WallCSS2);
         // Make sure it never sets it to Default style which is nothing.
-        let TextStyle = this.CurrentWall.FromCharacter == "Default" ? this.CurrentWall.ToCharacter : this.CurrentWall.FromCharacter == "" ? "Fallback" : this.CurrentWall.FromCharacter
+        
         ROOT.style.setProperty("--ActiveTitle",`var(--${TextStyle}Title)`)
         ROOT.style.setProperty("--ActiveSub",`var(--${TextStyle}Text)`)
         ROOT.style.setProperty("--ActiveSize",`var(--${TextStyle}Size)`)
@@ -1728,12 +1748,19 @@ function runScrollEvents() {
     LookingAt = THEME.getFrame()
     // contains voice, position, progress, scene
     THEME.deployTheming()
+    /*
     if ( CARD.lookingAt(LookingAt)) {
-        BIND.placeWorldMap(LookingAt.voice);
-    };
+        BIND.placeWorldMap(LookingAt);
+    };/**/
     BIND.CURRENT_SCENE[2] = LookingAt.scene
     BIND.CURRENT_SCENE[3] = Number(LookingAt.progress.toFixed(2))
-    //console.log(BIND.CURRENT_SCENE)
+    if ( (lastScene[0] != BIND.CURRENT_SCENE[1]) || (lastScene[1] != BIND.CURRENT_SCENE[2]) ) {
+        BIND.placeWorldMap(LookingAt);
+        lastScene[0] = BIND.CURRENT_SCENE[1]
+        lastScene[1] = BIND.CURRENT_SCENE[2]
+    }
+
+    //console.info("Current scene is:\n",BIND.CURRENT_SCENE)
     return
 }
 
@@ -1810,6 +1837,7 @@ var LookingAt : LookingAtThis = {
     progress: 0,
     scene: 1
 }
+var lastScene = [0, 0]
 
 var ACTIVESTORY = "Paragate"
 
