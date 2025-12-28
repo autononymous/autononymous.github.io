@@ -840,6 +840,8 @@ class ChapterBinder {
     public lastMessenger : string = "Anon";
     public CURRENT_SCENE : number[] = [0,0,0,0];
     public LAST_SCENE : number[] = [0,0,0,0];
+    public CurrentChapter : any = [];
+    public eMAPPIN : HTMLElement = document.getElementById('STORYPIN') as HTMLElement
 
     public doSpecificName : boolean = false;
 
@@ -1065,6 +1067,7 @@ class ChapterBinder {
 
         // Get chapter info from TOC for this chapter.
         let ChapterInfo = this.TOC[requestedChapter - 1]
+        this.CurrentChapter = ChapterInfo;
         // CHAPTER HEADER:
         let prefix = this.Config.config["Styles"][ChapterInfo.Character[0]]["Prefix"]
         let suffix = this.Config.config["Styles"][ChapterInfo.Character[0]]["Suffix"]
@@ -1165,7 +1168,14 @@ class ChapterBinder {
     placeWorldMap(character:string) {
         let eIMG:HTMLImageElement = eMAP as HTMLImageElement
         eIMG.src = `../Scriv2WN/maps/map${character}.jpg`;
-        //this.CURRENT_SCENE[2]
+        console.error(`Querying scene ${LookingAt.scene} of ${character}'s scene...`)
+        let Setting = this.CurrentChapter.Settings[LookingAt.scene-1];
+        let atlas:any = this.Config.config.Atlas;
+        let maparray = atlas[Setting.Region][Setting.Area][Setting.Location];
+        //this.eMAPPIN.style.setProperty('left',`${maparray[0]}%`)
+        //this.eMAPPIN.style.setProperty('top',`${maparray[1]}%`)
+        console.log("ChapterBinder.placeWorldMap\n","World map updated.")
+        console.error('MapDataUpdate\n',Setting.Region,Setting.Area,Setting.Location)
     }
 
     ResolveThisLine( lineContent:any[], lineID:string, sectionStyle:string ) {
@@ -1693,7 +1703,7 @@ function runScrollEvents() {
     };
     BIND.CURRENT_SCENE[2] = LookingAt.scene
     BIND.CURRENT_SCENE[3] = Number(LookingAt.progress.toFixed(2))
-    console.log(BIND.CURRENT_SCENE)
+    //console.log(BIND.CURRENT_SCENE)
     return
 }
 
@@ -1802,6 +1812,7 @@ buildManuscript(rootURL,ACTIVESTORY, StartChapter);
 eBODY.addEventListener('scroll',runScrollEvents);
 addEventListener("resize", runResizeEvents)
 
+/*
 function getMousePosInImage(img: HTMLImageElement, ev: MouseEvent) {
     const r = img.getBoundingClientRect();
     const x = ev.clientX - r.left;
@@ -1826,3 +1837,4 @@ if (eMAP instanceof HTMLImageElement) {
         ROOT.style.removeProperty('--img-mouse-y');
     });
 }
+/**/

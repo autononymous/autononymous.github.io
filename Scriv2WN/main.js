@@ -866,6 +866,8 @@ class ChapterBinder {
         this.lastMessenger = "Anon";
         this.CURRENT_SCENE = [0, 0, 0, 0];
         this.LAST_SCENE = [0, 0, 0, 0];
+        this.CurrentChapter = [];
+        this.eMAPPIN = document.getElementById('STORYPIN');
         this.doSpecificName = false;
         this.MsgMatch = {
             "Miguel": "Miguel",
@@ -1012,6 +1014,7 @@ class ChapterBinder {
             let starterTag = "";
             // Get chapter info from TOC for this chapter.
             let ChapterInfo = this.TOC[requestedChapter - 1];
+            this.CurrentChapter = ChapterInfo;
             // CHAPTER HEADER:
             let prefix = this.Config.config["Styles"][ChapterInfo.Character[0]]["Prefix"];
             let suffix = this.Config.config["Styles"][ChapterInfo.Character[0]]["Suffix"];
@@ -1107,7 +1110,14 @@ class ChapterBinder {
     placeWorldMap(character) {
         let eIMG = eMAP;
         eIMG.src = `../Scriv2WN/maps/map${character}.jpg`;
-        //this.CURRENT_SCENE[2]
+        console.error(`Querying scene ${LookingAt.scene} of ${character}'s scene...`);
+        let Setting = this.CurrentChapter.Settings[LookingAt.scene - 1];
+        let atlas = this.Config.config.Atlas;
+        let maparray = atlas[Setting.Region][Setting.Area][Setting.Location];
+        //this.eMAPPIN.style.setProperty('left',`${maparray[0]}%`)
+        //this.eMAPPIN.style.setProperty('top',`${maparray[1]}%`)
+        console.log("ChapterBinder.placeWorldMap\n", "World map updated.");
+        console.error('MapDataUpdate\n', Setting.Region, Setting.Area, Setting.Location);
     }
     ResolveThisLine(lineContent, lineID, sectionStyle) {
         // Generate the next paragraph <p> line for deployment.
@@ -1624,7 +1634,7 @@ function runScrollEvents() {
     ;
     BIND.CURRENT_SCENE[2] = LookingAt.scene;
     BIND.CURRENT_SCENE[3] = Number(LookingAt.progress.toFixed(2));
-    console.log(BIND.CURRENT_SCENE);
+    //console.log(BIND.CURRENT_SCENE)
     return;
 }
 function runResizeEvents() {
@@ -1715,7 +1725,8 @@ const iconaddress = `icons/favicon-${ACTIVESTORY}.png`;
 buildManuscript(rootURL, ACTIVESTORY, StartChapter);
 eBODY.addEventListener('scroll', runScrollEvents);
 addEventListener("resize", runResizeEvents);
-function getMousePosInImage(img, ev) {
+/*
+function getMousePosInImage(img: HTMLImageElement, ev: MouseEvent) {
     const r = img.getBoundingClientRect();
     const x = ev.clientX - r.left;
     const y = ev.clientY - r.top;
@@ -1725,8 +1736,9 @@ function getMousePosInImage(img, ev) {
     const percentY = py * 100;
     return { x, y, px, py, percentX, percentY, bounds: r };
 }
+
 if (eMAP instanceof HTMLImageElement) {
-    eMAP.addEventListener('mousedown', (ev) => {
+    eMAP.addEventListener('mousedown', (ev: MouseEvent) => {
         const pos = getMousePosInImage(eMAP, ev);
         // Example usage: expose as CSS vars or log
         ROOT.style.setProperty('--img-mouse-x', `${(pos.px * 100).toFixed(2)}%`);
@@ -1738,3 +1750,4 @@ if (eMAP instanceof HTMLImageElement) {
         ROOT.style.removeProperty('--img-mouse-y');
     });
 }
+/**/ 

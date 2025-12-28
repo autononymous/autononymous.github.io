@@ -271,7 +271,8 @@
         {   "Unspecified":{
                 "MapLocation":[0.00,0.00],
                 "Description":""}
-        }
+        },
+        "MapSource":"Titus"
     },
     "Valenseia": 
     {   "Gaffesend":
@@ -357,7 +358,8 @@
         {   "Unspecified":{
                 "MapLocation":[0.00,0.00],
                 "Description":""}
-        }
+        },
+        "MapSource":"Katiya"
     },
     "Melenia": 
     {   "Palace":
@@ -369,7 +371,8 @@
         {   "Unspecified":{
                 "MapLocation":[0.00,0.00],
                 "Description":""}
-        }
+        },
+        "MapSource":"Jade"
     },
     "Outer Wastes": 
     {   "The Backwoods":
@@ -381,7 +384,8 @@
         {   "Unspecified":{
                 "MapLocation":[0.00,0.00],
                 "Description":""}
-        }
+        },
+        "MapSource":"Titus"
     },
     "Colorado": 
     {   "Hearthland Ridge":
@@ -435,7 +439,8 @@
         {   "Unspecified":{
                 "MapLocation":[0.00,0.00],
                 "Description":""}
-        }
+        },
+        "MapSource":"Cody"
     }
 }
 
