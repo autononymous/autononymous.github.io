@@ -1731,7 +1731,7 @@ if (eMAP instanceof HTMLImageElement) {
         // Example usage: expose as CSS vars or log
         ROOT.style.setProperty('--img-mouse-x', `${(pos.px * 100).toFixed(2)}%`);
         ROOT.style.setProperty('--img-mouse-y', `${(pos.py * 100).toFixed(2)}%`);
-        console.debug('Image mouse pos', `[${pos.percentX},${pos.percentY}]`);
+        console.debug('Image mouse pos', `[${pos.percentX.toFixed(2)},${pos.percentY.toFixed(2)}],`);
     });
     eMAP.addEventListener('mouseleave', () => {
         ROOT.style.removeProperty('--img-mouse-x');

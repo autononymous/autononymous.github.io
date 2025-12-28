@@ -254,161 +254,186 @@
     "Blackwater":
     {   "Province XII":
         {   "Location":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[0.00,0.00],
                 "Description":""}
         },
         "The Afterlife":
         {   "Location":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[0.00,0.00],
                 "Description":""}
         },
         "City Outskirts":
         {   "Location":{
-                "MapLocation":[0.00,0.00,0.00],
-                "Description":""
-        }}
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        },
+        "Unspecified":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        }
     },
     "Valenseia": 
     {   "Gaffesend":
         {   "Katiya's House":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[57.86,47.25],
                 "Description":""},
             "Guards' Quarter":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[58.70,45.75],
                 "Description":""},
             "Gaffe's End Tavern":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[52.86,55.50],
                 "Description":""},
             "Gaffe Royal Base":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[54.36,37.50],
                 "Description":""},
             "Lake Garrison":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[58.20,61.00],
                 "Description":""},
             "The Old Castle":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[42.70,40.00],
                 "Description":""},
             "Southern Fields":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[43.20,64.50],
                 "Description":""},
             "Market Street":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[54.03,47.00],
                 "Description":""},
             "Village Outskirts":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[37.53,49.75],
                 "Description":""},
             "Outskirts":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[41.36,59.50],
                 "Description":""},
             "Hilde Cottage":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[46.03,48.75],
                 "Description":""},
             "Unspecified":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[47.53,45.50],
                 "Description":""}
         },
         "Hillfar":
         {   "Village Outskirts":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[89.86,64.00],
                 "Description":""},
             "The Shortwall":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[88.86,57.25],
                 "Description":""},
             "Breakey Cottage":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[86.03,56.50],
                 "Description":""},
             "Outskirts":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[92.20,51.00],
                 "Description":""},
             "Unspecified":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[87.53,56.25],
                 "Description":""}
         },
         "Northaven":
         {   "Unspecified":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[0.00,0.00],
                 "Description":""}
         },
         "Holmfirth":
         {   "Firtholm Hot Springs":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[20.03,90.00],
                 "Description":""},
             "Outskirts":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[28.86,67.75],
                 "Description":""},
             "Village Outskirts":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[28.86,67.75],
                 "Description":""},
             "Unspecified":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[24.53,82.00],
                 "Description":""}
         },
         "Outer Lands":
         {   "Unspecified":{
-                "MapLocation":[0.00,0.00,0.00],
-                "Description":""
-        }}
+                "MapLocation":[59.03,0.50],
+                "Description":""}
+        },
+        "Unspecified":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        }
     },
     "Melenia": 
     {   "Palace":
         {   "Unspecified":{
-                "MapLocation":[0.00,0.00,0.00],
-                "Description":""
-        }}
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        },
+        "Unspecified":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        }
     },
     "Outer Wastes": 
     {   "The Backwoods":
         {   "Unspecified":{
-                "MapLocation":[0.00,0.00,0.00],
-                "Description":""
-        }}
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        },
+        "Unspecified":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        }
     },
     "Colorado": 
     {   "Hearthland Ridge":
         {   "Mineral Station":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[59.03,73.75],
                 "Description":""},
             "Costco #8137":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[50.03,69.00],
                 "Description":""},
             "Starbucks":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[55.86,74.50],
                 "Description":""},
             "Dunsmore Home":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[29.03,75.00],
                 "Description":""},
             "Unspecified":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[28.70,85.25],
                 "Description":""}
         },
         "Shaleborough":
         {   "Navidson-Monroe Aerospace":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[43.20,13.25],
                 "Description":""},  
             "Rocky Mountain National Forest":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[32.70,8.00],
                 "Description":""},
             "Monroe Canyon Rd":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[42.03,12.00],
                 "Description":""},
             "Unspecified":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[35.53,22.75],
                 "Description":""}
         },
         "Evergreen Estates":
         {   "Cody's House":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[53.20,48.75],
                 "Description":""},
             "Unspecified":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[45.03,48.25],
                 "Description":""}
         },
         "Denver":
         {   "16th Street Mall":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[93.86,97.50],
                 "Description":""},
             "Unspecified":{
-                "MapLocation":[0.00,0.00,0.00],
+                "MapLocation":[93.86,97.50],
+                "Description":""}
+        },
+        "Unspecified":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00],
                 "Description":""}
         }
     }
