@@ -1208,7 +1208,8 @@ class ChapterBinder {
             let CharColor = this.Config.config.Styles[character]["CharacterTheme"];
             CharColor = (!CharColor) ? [255,50,50] : CharColor;
             //this.eMAPPIN.style.backgroundColor = `rgb(${CharColor[0]},${CharColor[1]},${CharColor[2]})`
-            ROOT.style.setProperty("--placeName",`"${Location}"`);
+            let placeName = Location == "Unspecified" ? Area : Location
+            ROOT.style.setProperty("--placeName",`"${placeName}"`);
             console.log("ChapterBinder.placeWorldMap\n","World map updated.")
         } catch {
             console.warn('Unable to load world map at this time.')
