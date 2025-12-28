@@ -38,6 +38,27 @@ interface LookingAtThis {
 //  ██  ██ ██▄▄██   ██   ██▄▄██   ██████ ██▄▄██ ██ ▀▄██ ██  ██ ██     ██ ██ ▀▄██ ██  ▄▄▄ 
 //  ████▀  ██  ██   ██   ██  ██   ██  ██ ██  ██ ██   ██ ████▀  ██████ ██ ██   ██  ▀███▀  
 //  
+
+var decodeEntities = (function() {
+  // this prevents any overhead from creating the object each time
+  var element = document.createElement('div');
+
+  function decodeHTMLEntities (str:string) {
+    if(str && typeof str === 'string') {
+      // strip script/html tags
+      str = str.replace(/<script[^>]*>([\S\s]*?)<\/script>/gmi, '');
+      str = str.replace(/<\/?\w(?:[^"'>]|"[^"]*"|'[^']*')*>/gmi, '');
+      element.innerHTML = str;
+      str = element.textContent;
+      element.textContent = '';
+    }
+
+    return str;
+  }
+
+  return decodeHTMLEntities;
+})();
+
 class StoryExtrasWindow {
     public Story: string | null = null;
     public Container: HTMLElement | null = null;
@@ -1163,19 +1184,28 @@ class ChapterBinder {
         });
         //console.log(line,msgsource)
         return msgsource
-    }
+    }   
 
     placeWorldMap(character:string) {
         let eIMG:HTMLImageElement = eMAP as HTMLImageElement
-        eIMG.src = `../Scriv2WN/maps/map${character}.jpg`;
-        console.error(`Querying scene ${LookingAt.scene} of ${character}'s scene...`)
         let Setting = this.CurrentChapter.Settings[LookingAt.scene-1];
         let atlas:any = this.Config.config.Atlas;
-        let maparray = atlas[Setting.Region][Setting.Area][Setting.Location];
-        //this.eMAPPIN.style.setProperty('left',`${maparray[0]}%`)
-        //this.eMAPPIN.style.setProperty('top',`${maparray[1]}%`)
+        let sceneChar = atlas[Setting.Region]['MapSource']       
+        eIMG.src = `../Scriv2WN/maps/map${sceneChar}.jpg`;
+        let Region = decodeEntities(Setting.Region);
+        let Area = decodeEntities(Setting.Area);
+        let Location = decodeEntities(Setting.Location);           
+        let maparray = atlas[Region][Area][Location]['MapLocation'];
+        console.info(`----==== MAP REPORT ====----\nQuerying scene ${LookingAt.scene} of ${character}'s scene in ${sceneChar}'s region.`
+            ,`Region is "${Region}", area is "${Area}", location is "${Location}".`
+            ,`Map position of Scene ${LookingAt.scene} is ${maparray[0]}%X and ${maparray[1]}%Y.`,
+        ) 
+        this.eMAPPIN.style.setProperty('left',`${maparray[0]}%`)
+        this.eMAPPIN.style.setProperty('top',`${maparray[1]}%`)
+        let CharColor = this.Config.config.Styles[character]["CharacterTheme"];
+        CharColor = (!CharColor) ? [255,50,50] : CharColor;
+        this.eMAPPIN.style.backgroundColor = `rgb(${CharColor[0]},${CharColor[1]},${CharColor[2]})`
         console.log("ChapterBinder.placeWorldMap\n","World map updated.")
-        console.error('MapDataUpdate\n',Setting.Region,Setting.Area,Setting.Location)
     }
 
     ResolveThisLine( lineContent:any[], lineID:string, sectionStyle:string ) {
@@ -1812,7 +1842,7 @@ buildManuscript(rootURL,ACTIVESTORY, StartChapter);
 eBODY.addEventListener('scroll',runScrollEvents);
 addEventListener("resize", runResizeEvents)
 
-/*
+
 function getMousePosInImage(img: HTMLImageElement, ev: MouseEvent) {
     const r = img.getBoundingClientRect();
     const x = ev.clientX - r.left;

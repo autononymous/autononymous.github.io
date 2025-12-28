@@ -53,7 +53,8 @@
         "Prefix":" = ",
         "Suffix":" = ",
         "WallImage":"design/bg-tie.jpg",
-        "Favicon":"icons/logo-Firebrand"
+        "Favicon":"icons/logo-Firebrand",
+        "CharacterTheme":[245, 149, 66]
     },
     "Katiya":
     {
@@ -72,7 +73,8 @@
         "Prefix":" &#10048; ",
         "Suffix":" &#10048; ",
         "WallImage":"design/bg-kat.jpg",
-        "Favicon":"icons/logo-Katiya"     
+        "Favicon":"icons/logo-Katiya",
+        "CharacterTheme":[255, 61, 61]    
     },
     "Cody":
     {
@@ -91,7 +93,8 @@
         "Prefix":" /* ",
         "Suffix":" */ ",
         "WallImage":"design/bg-cody.jpg",
-        "Favicon":"icons/logo-Cody"     
+        "Favicon":"icons/logo-Cody",
+        "CharacterTheme":[61, 100, 255]      
     },
     "Jade":
     {
@@ -110,7 +113,8 @@
         "Prefix":" &laquo; ",
         "Suffix":" &raquo; ",
         "WallImage":"design/bg-jade.jpg",
-        "Favicon":"icons/logo-Goldenfur"
+        "Favicon":"icons/logo-Goldenfur",
+        "CharacterTheme":[142, 255, 61]
     },
     "Default":
     {

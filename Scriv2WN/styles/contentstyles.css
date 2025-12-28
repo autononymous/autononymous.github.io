@@ -2,7 +2,7 @@
         /* Setting the height of the interface/menu bar */
     --MenuHeightStatic:     40px;
     --MenuHeight:           150px;
-    --MapHeight:            400px;
+    --MapHeight:            min(400px,66.7vw);
     --ControlHeight:        min(25vw,100px);
 
     /* Position of reader whether or not TOC or other things are shown.*/
@@ -211,15 +211,15 @@ div.STORYMAP {
 }
 div.STORYPIN {
     position: absolute;
-    left:50%;
-    top:50%;
+    left:0;
+    top:0;
     transform: translateX(-50%), translateY(-50%);
-    width: 10px;
-    height:10px;
+    width: 6px;
+    height:6px;
     background-color: red;
-    border:2px solid white;
+    border:1px solid white;
     border-radius: 6px;
-    transition: left 0.8s ease-in-out, top 0.8s ease-in-out;
+    transition: left 0.8s ease-in-out, top 0.8s ease-in-out, background-color 1.0s linear;
 }
 div.ICONS {      
     width: min(100%,var(--ContentWidth));
@@ -624,6 +624,14 @@ img.MAP {
     height: 100%;
     position: absolute;
     left: 50%;
+    transform: translateX(-50%);
+}
+div.MAPBOUND{
+    position: absolute;
+    width: calc( 1.5 * var(--MapHeight));
+    height: var(--MapHeight);
+    left: 50%;
+    top:0;
     transform: translateX(-50%);
 }
 
