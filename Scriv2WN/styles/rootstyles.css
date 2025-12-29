@@ -1,0 +1,150 @@
+:root {
+        /* Setting the height of the interface/menu bar */
+    --MenuHeightStatic:     40px;
+    --MenuHeight:           150px;
+    --MapHeight:            min(400px,66.7vw);
+    --ControlHeight:        min(25vw,100px);
+
+    --placeName:            "place";
+
+    /* Position of reader whether or not TOC or other things are shown.*/
+    --READER_TOCOFFSET:     0px;
+    --READER_EXTRAOFFSET:   0px;
+    --READER_CTRLOFFSET:    0px;
+    --READER_MAPOFFSET:     0px;
+    --READER_X_OFFSET:      calc( var(--READER_TOCOFFSET) + var(--READER_EXTRAOFFSET) );
+    --READER_Y_OFFSET:      calc( var(--READER_CTRLOFFSET) + var(--READER_MAPOFFSET) );
+    --TOCWIDTH:             min(500px,80vw);
+    --EXTRAWIDTH:           min(500px,80vw);
+    --CTRLWIDTH:            var(--MenuHeight);
+    --MAPWIDTH:             var(--MapHeight);
+
+    --TextAlignment:        justify;
+    --TabMargin:            calc( var(--TextSize) * 0.6);
+    --ParagraphSpacing:     0em;
+    --TypesetMargin:        60px;
+
+    --TagFontSize:          calc( var(--TextSize) * 0.7 );
+
+    /* TOC identifier images */
+    --TitleImageTOC:        url("../design/Paragate_logo.png");
+    /*--WallImageTOC:         url("../design/Paragate_wall.jpg");*/  /* Commented out - causes excessive GET requests to /design/ */
+
+    /* Text configurations */
+    --TextSetWidthFixed:    40px;
+    --TextSetWidthDynamic:  10vw;
+    --TextSize:             1.5em;
+    --TextLineHeight:       1.5em;
+    --TextMargin:           5vw;
+    --DefaultWidth:         600px;
+    --SeparatorWidth:       60%;
+    
+    /* Active theme settings. These are set from   */
+    /* the JavaScript program.                     */
+    --FallbackTitle:        var(--CodyTitle);
+    --FallbackText:         var(--CodyText);
+    --ActiveTitle:          var(--CodyTitle);
+    --ActiveSub:            var(--CodyText);
+    --ActiveText:           var(--CodyText);
+    --ActiveSize:           var(--CodySize);
+    --TextColor:           black;
+    --BackgroundColor:     white;
+    --MidgroundColor:      black;
+    --CharacterColor:      green;
+    --ElementColor:        dimgray;
+    --HoverColor:          rgba(12,12,12,0.1);
+    --BarColor:            black;
+    --BarLength:            0%;
+    --IconState:            invert(1);
+    --IconReverse:          invert(0);
+    --BooleanColor:         black;
+
+    /* (legacy) Active color theming */
+    --ActivePrimary:        189, 0, 28;
+    --ActiveSecondary:      156, 121, 33;
+
+    /* Table-of-contents configurations */
+    --TOCEntryHeight:      80px;
+    --TOCbackground:       rgba(0,0,0,0.1);
+
+    --Title:                2.5em;
+    --Subtitle:             min(2.0em,max(5.5vw,1.2em));/*2.0em;/**/
+    --Section:              2.5em;
+
+    --SubtitleAccent:       '  ';
+    --SectionAccent:        ' - ';
+
+    /* Special theming: Message bubbles */
+    --MsgFont:              "SanFrancisco",'Helvetica Neue','Helvetica';
+    --MsgColorTo:         rgba(33, 138, 255, 0.8);
+    --MsgFontColorTo:     white;
+    --MsgColorFrom:       rgba(216, 216, 216, 0.8);
+    --MsgFontColorFrom:   black;
+
+    --ImageWallFore:        None;
+    --ImageWallBack:        None;
+
+
+    /* Layout Characteristics */
+    --MenuPad:              10px;    
+    --FooterHeight:         80px;
+    --FooterPad:            10px;
+    --BodyStart:            calc(var(--MenuHeightStatic) + var(--MenuPad));
+    --BodyHeight:           calc(100dvh - var(--MenuHeightStatic) - var(--MenuPad) - var(--FooterHeight) - var(--FooterPad));
+    --ContentWidth:         min(800px,calc(100%));
+
+    /*============================================*/
+/*====={ Title, text, and size variables by story }=====*/
+/*======================================================*/
+
+    /*-----[  Styles for Paragate > Cody  ]-----*/
+    --CodyTitle:        "Oxanium", sans-serif, "Bahnscrift",'Arial';
+    --CodyText:         "Roboto Flex", sans-serif, 'Bahnschrift', 'Arial';
+    --CodySize:         calc( var(--TextSize) - 0.10em );
+
+    /*-----[ Styles for Paragate > Katiya ]-----*/
+    --KatiyaTitle:      "Cormorant Unicase", serif;
+    --KatiyaText:       'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman';
+    --KatiyaSize:       calc(var(--TextSize) + 0.00em );
+
+    /*-----[ Styles for Firebrand > Titus ]-----*/
+    --TitusTitle:       "Cormorant Unicase", serif;
+    --TitusText:        'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman';
+    --TitusSize:        calc(var(--TextSize) + 0.00em );
+
+/*====={ Announcement/cover styling variables }=====*/
+    --CoverParagate: 
+                        radial-gradient(
+                            rgba(128,128,128,0.8), 
+                            rgba(128,128,128,0.4)
+                            ), 
+                        linear-gradient(
+                            to right, 
+                            rgba(255, 64, 64, 0.5),
+                            rgba(64,64,255,0.5)
+                            );
+    --CoverFirebrand:
+                        radial-gradient(
+                            rgba(243, 229, 83, 0.6), 
+                            rgba(245, 72, 72, 0.3)
+                            ), 
+                        linear-gradient(
+                            to right, 
+                            rgba(237, 28, 28, 0.3),
+                            rgba(195,144,212,0.6),
+                            rgba(237, 28, 28, 0.3)
+                            );
+    --CoverGradient:    var(--CoverParagate);
+    
+/*====={ Transitioning background styles }=====*/
+/*====={    (vertically-tiled JPEGs)     }=====*/
+    --WallCody:         url("../design/bg-cody.jpg");
+    --WallKatiya:       url("../design/bg-kat.jpg");
+    --WallTitus:        url("../design/bg-tie.jpg");
+
+/*====={ Theme channel opacities }=====*/
+    --CodyOp:           1.00;
+    --KatiyaOp:         1.00;
+    --TitusOp:          1.00;
+    --SpecialOp:        0.00;
+}
