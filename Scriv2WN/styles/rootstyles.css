@@ -5,6 +5,8 @@
     --MapHeight:            min(400px,66.7vw);
     --ControlHeight:        min(25vw,100px);
 
+    --HeaderImageHeight:    300px;
+
     --placeName:            "place";
 
     /* Position of reader whether or not TOC or other things are shown.*/

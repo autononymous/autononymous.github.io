@@ -55,6 +55,7 @@
         </div>
         <div class="SETTINGTEXT" id="SETTINGTEXT">
             <input type="checkbox" id="justify" name="justify" checked onclick="CTRL.setJustify(this.checked);" /> Text is justified <br>
+            <input type="checkbox" id="sih" name="sih" checked onclick="BIND.ShowImageHeaders(this.checked);" /> Do image headers <br>
             <input type="checkbox" id="dth" name="dth" onclick="BIND.ToggleStarterTags(this.checked);" /> Scenes have datetime headers <br>
             <input type="checkbox" id="tsn" name="tsn" onclick="BIND.ToggleSpecificName(this.checked);" /> Do specific header <br>
             <input type="checkbox" id="bs" name="bs" checked onclick="console.info('You ' + (this.checked? 'not ' : '') + 'stupid.')" /> Optimize Bumpscosity <br>

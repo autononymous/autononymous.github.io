@@ -425,8 +425,15 @@ if (this.ParseSrcVars(false) && this.requestedChapter != null) {
         switch( this.Map.get("mode") ) {
             case "author":
             case "Author":
-                this.Local.permlevel = 2;
+                this.Local.permlevel = 3;
                 console.debug("LSASV.ParseSrcVars\n",`AUTHOR level set from srcvars at L${this.Local.permlevel}.`)
+                doPermissions = true;                
+                this.hasSearchVars = true;
+                break;
+            case "special":
+            case "Special":
+                this.Local.permlevel = 2;
+                console.debug("LSASV.ParseSrcVars\n",`SPECIAL level set from srcvars at L${this.Local.permlevel}.`)
                 doPermissions = true;                
                 this.hasSearchVars = true;
                 break;
@@ -437,6 +444,13 @@ if (this.ParseSrcVars(false) && this.requestedChapter != null) {
                 this.Local.permlevel = 1;
                 console.debug("LSASV.ParseSrcVars\n",`REVIEWER level set from srcvars at L${this.Local.permlevel}.`)
                 doPermissions = true;           
+                this.hasSearchVars = true;
+                break;
+            case "reader":
+            case "Reader":
+                this.Local.permlevel = 0;
+                console.debug("LSASV.ParseSrcVars\n",`READER level set from srcvars at L${this.Local.permlevel}.`)
+                doPermissions = false;           
                 this.hasSearchVars = true;
                 break;
             default:
@@ -887,11 +901,14 @@ class ChapterBinder {
     public storyName : string = ""; 
     public SessionBinder : any = {}; 
     public ChapterBounds : {active:number[], whitelist:number[], full:number[]};
+    // Manually configure allowed preview chapters.
+    public ManualChapters : number[] = [1,2,3,4,5];
     public Permissions : number = 0; 
     public DataCard : ChapterDataCard;  
     public Config : StoryConfig;
     public lastMessenger : string = "Anon";
     public CURRENT_SCENE : number[] = [0,0,0,0];
+    public SHOW_IMAGE_HEADERS : boolean = true;
     public LAST_SCENE : number[] = [0,0,0,0];
     public CurrentChapter : any = [];
     public eMAPPIN : HTMLElement = document.getElementById('STORYPIN') as HTMLElement
@@ -959,9 +976,13 @@ class ChapterBinder {
         //console.error(this.source)
         // No hack please!!!
         switch (this.Permissions) {
-            case 2: // Admin.
+            case 3: // Admin.
                 console.info("ChapterBinder.HandlePermissions\n","Permissions at ADMIN level.")
                 this.ChapterBounds.active = this.ChapterBounds.full;
+                break
+            case 2: // Special selection.
+                console.info("ChapterBinder.HandlePermissions\n","Permissions at SPECIAL level.")
+                this.ChapterBounds.active = this.ManualChapters;
                 break
             case 1: // Reviewer.
                 console.info("ChapterBinder.HandlePermissions\n","Permissions at REVIEWER level.")
@@ -1122,10 +1143,12 @@ class ChapterBinder {
         let ChapterInfo = this.TOC[requestedChapter - 1]
         this.CurrentChapter = ChapterInfo;
         // CHAPTER HEADER:
-        let prefix = this.Config.config["Styles"][ChapterInfo.Character[0]]["Prefix"]
-        let suffix = this.Config.config["Styles"][ChapterInfo.Character[0]]["Suffix"]
-        chapterContent += `<h3 id="title_${ChapterInfo.ChapterFull}" class="${ChapterInfo.Character[0]}Head Title">${ChapterInfo.ChapterNumber}</h3>`
-        chapterContent += `<h3 id="sub_${ChapterInfo.ChapterFull}" class="${ChapterInfo.Character[0]}Head Subtitle">${prefix + ChapterInfo.ChapterName + suffix}</h3>`
+        targetElement.innerHTML = `<div class="HeaderCanvas" id="imheader">${this.ImageHeaderSnippet(this.storyName)}</div>`;
+        this.ShowImageHeaders(this.SHOW_IMAGE_HEADERS);
+        //let prefix = this.Config.config["Styles"][ChapterInfo.Character[0]]["Prefix"]
+        //let suffix = this.Config.config["Styles"][ChapterInfo.Character[0]]["Suffix"]
+        //chapterContent += `<h3 id="title_${ChapterInfo.ChapterFull}" class="${ChapterInfo.Character[0]}Head Title">${ChapterInfo.ChapterNumber}</h3>`
+        //chapterContent += `<h3 id="sub_${ChapterInfo.ChapterFull}" class="${ChapterInfo.Character[0]}Head Subtitle">${prefix + ChapterInfo.ChapterName + suffix}</h3>`
         // Enumerate sections since forEach doesn't iterate over a for loop index.
         let thisSection : number = 0;
         // Each chapter holds a section.
@@ -1149,7 +1172,7 @@ class ChapterBinder {
                 let sceneSetting = this.TOC[requestedChapter-1].Settings[thisSection]
                 let RegionName = `${sceneSetting.Area == "Unspecified" ? "" : (sceneSetting.Area + ", ")}${sceneSetting.Region}`
                 let PlaceName = `${sceneSetting.Location == "Unspecified" ? "" : sceneSetting.Location}`
-                console.debug(ChapterInfo.Character[thisSection])
+                //console.debug(ChapterInfo.Character[thisSection])
                 // Format ISO date to "Weekday, Month Date"
                 starterTag = (() => {
                     let formatted = sceneDate;
@@ -1199,13 +1222,14 @@ class ChapterBinder {
             thisSection += 1;            
         });
         // Actual deployment of chapter content to target element.
-        targetElement.innerHTML = chapterContent;
+        targetElement.innerHTML += chapterContent;
         // Update the DataCard with current chapter info.
         this.DataCard.Update(requestedChapter);
         this.placeWorldMap(ChapterInfo.Character[0])
 
         return true
     }
+
 
     WhoIsSender( line:string ) : string {
         let msgsource = "Anon";
@@ -1217,6 +1241,46 @@ class ChapterBinder {
         //console.log(line,msgsource)
         return msgsource
     }   
+    
+    ImageHeaderSnippet(story:string) {
+        const dict:any = {
+            "Paragate":"PG",
+            "Firebrand":"FB",
+            "Goldenfur":"GF"
+        }
+        const ChapterImages:any = 
+        {
+            "Paragate":[1],
+            "Firebrand":[],
+            "Goldenfur":[]
+        }
+
+        let snippet = ""
+        let thisChapter = Number(this.CurrentChapter.Chapter);
+        let ChapterInfo = this.TOC[thisChapter - 1]
+        let prefix = this.Config.config["Styles"][ChapterInfo.Character[0]]["Prefix"]
+        let suffix = this.Config.config["Styles"][ChapterInfo.Character[0]]["Suffix"]
+
+        if ((dict[story] != undefined) && (this.SHOW_IMAGE_HEADERS) && (ChapterImages[story].includes(thisChapter))) {
+            let storytag:string = dict[story]
+            let url:string = `headers/${storytag}-HL${String(thisChapter).padStart(2, "0")}.png`;
+            snippet += `<img class="HeaderImg" src="${url}"/>`;
+            snippet += `<div id="subtext" class="HeaderAlt">${prefix}<span class="HeaderAltTitle">${ChapterInfo.ChapterNumber}</span><span class="HeaderAltSub"> - ${ChapterInfo.ChapterName}</span>${suffix}</div>`;
+            return snippet
+        } else {            
+            snippet += `<h3 id="title_${ChapterInfo.ChapterFull}" class="${ChapterInfo.Character[0]}Head Title">${ChapterInfo.ChapterNumber}</h3>`
+            snippet += `<h3 id="sub_${ChapterInfo.ChapterFull}" class="${ChapterInfo.Character[0]}Head Subtitle">${prefix + ChapterInfo.ChapterName + suffix}</h3>`
+            return snippet
+        }
+    }
+
+    ShowImageHeaders(setstate:boolean|null = null) { 
+        if( setstate==null ) {this.SHOW_IMAGE_HEADERS = !this.SHOW_IMAGE_HEADERS} 
+        else {this.SHOW_IMAGE_HEADERS = setstate}; 
+        let ImgHeader : HTMLDivElement = document.getElementById('imheader') as HTMLDivElement;
+        ImgHeader.innerHTML = this.ImageHeaderSnippet(this.storyName);
+        ImgHeader.style.height = this.SHOW_IMAGE_HEADERS ? "inherit" : "unset"
+    }
 
     placeWorldMap(la:LookingAtThis) {
         try {

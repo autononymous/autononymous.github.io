@@ -12,13 +12,12 @@ div > div {
 }
     */
 div.HeaderCanvas {
-    height: 300px;
-    position: relative;
-    background-color: var(--BackgroundColor);
-    top: 0;
-    width: 100vw;
-    transform: translateX(-50%);
+    overflow:hidden;
+    width: 100%;
+    position:relative;
+    height:var(--HeaderImageHeight);
     left: 50%;
+    transform: translateX(-50%);
 }
 div.Header {
     height: 300px;
@@ -32,6 +31,27 @@ div.Header {
     left: 50%;
     mix-blend-mode: hard-light;
     filter: var(--IconState);
+}
+img.HeaderImg {
+    position: relative;
+    top:0;
+    left: calc( (-0.5 * var(--HeaderImageHeight) * (2500/800)) + 50% );
+    filter: drop-shadow(1000vw 0 var(--TextColor));
+    transform: translateX(-1000vw);
+    height: var(--HeaderImageHeight);
+}
+div.HeaderAlt {
+    font-size: calc( var(--TextSize) * 1.3);
+    color: var(--TextColor);
+    font-family: var(--ActiveTitle);
+    text-align: center;
+    padding: 15px 0px 10px 0px;
+}
+span.HeaderAltTitle {
+    font-weight: 700;
+}
+span.HeaderAltSub {
+    font-weight: 400;
 }
 div.TOC {
     position:absolute;
