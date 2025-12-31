@@ -33,27 +33,6 @@ interface LookingAtThis {
     progress: number,
     scene: number }
 
-/**
- * A single breakpoint where the theme should switch based on scroll position.
- */
-interface ScrollBreak {
-    Theme: string;
-    atPercent: number;
-    atPoint: number;
-    scenenum: number;
-}
-
-/**
- * A scroll window defining either a STATIC theme or a DYNAMIC transition.
- */
-interface ThemeKeyframe {
-    startTheme: string;
-    endTheme: string;
-    min: number;
-    max: number;
-    scenenum: number;
-}
-
 //
 //  ████▄  ▄████▄ ██████ ▄████▄   ██  ██ ▄████▄ ███  ██ ████▄  ██     ██ ███  ██  ▄████  
 //  ██  ██ ██▄▄██   ██   ██▄▄██   ██████ ██▄▄██ ██ ▀▄██ ██  ██ ██     ██ ██ ▀▄██ ██  ▄▄▄ 
@@ -263,7 +242,7 @@ class ControlBar {
         this.DataCard       = DataCard;
         this.eLineDown      = document.getElementById('ICON-LINEDN') as HTMLElement;
         this.eLineUp        = document.getElementById('ICON-LINEUP') as HTMLElement;
-        this.eFontSizeDown  = document.getElementById('ICON-FONTDN') as HTMLElement;
+        this.eFontSizeDown  = document.getElementById('ICON-FONTUP') as HTMLElement;
         this.eFontSizeUp    = document.getElementById('ICON-FONTUP') as HTMLElement;
         this.eThemeToggle   = document.getElementById('ICON-THEME')  as HTMLElement;
         this.GetAndSet(DataCard,false);
@@ -378,14 +357,6 @@ class LocalStorageAndSrcVars {
             let get = localStorage.getItem(this.SaveName) as string
             this.Local = JSON.parse(get)
         }    
-// Always apply URL overrides (story/mode/chapter), even on first run.
-// This is intentionally after LocalStorage has been loaded/created.
-if (this.ParseSrcVars(false) && this.requestedChapter != null) {
-    console.info("LSASV.ParseSrcVars\n", `Setting chapter to ${this.requestedChapter} from URL search parameters in ${this.SaveName}.`)
-    this.Local.chapter = this.requestedChapter;
-    localStorage.setItem(this.SaveName, JSON.stringify(this.Local));
-}
-
         this.StatusReport()
     }
     static async initialize(storyName:string) {
@@ -458,12 +429,8 @@ if (this.ParseSrcVars(false) && this.requestedChapter != null) {
                 this.hasSearchVars = true;
                 break;
             default:
-                // If no story is specified, keep the constructor-provided default.
-                // If a story IS specified but unknown, fall back to whatever we already have.
-                if (!this.storyName) this.storyName = "Paragate"
-                if (this.Map.get("story") != undefined) {
-                    console.debug("LSASV.ParseSrcVars\n",`Unrecognized story "${this.Map.get("story")}". Falling back to "${this.storyName}".`)
-                }
+                this.storyName = "Paragate"
+                console.debug("LSASV.ParseSrcVars\n","No story specified. Loading Paragate as default.")
                 break;
         }
         //if (doPermissions) {
@@ -490,6 +457,7 @@ if (this.ParseSrcVars(false) && this.requestedChapter != null) {
         );
     }
 }
+
 class ChapterDataCard {
 //  The class ChapterDataCard is an actively-updated class variable that holds 
 //  all relevant information on the current chapter loaded into the Canvas.
@@ -1341,600 +1309,406 @@ class ChapterBinder {
 class ThemeDriver {
     /**
      * Manages dynamic theming for manuscript reading.
-     *
-     * @remarks
-     * This class is called on every scroll tick, so it aggressively avoids layout-thrashing.
-     * For your HTML layout, the scroll position should be sourced from `#BODY.scrollTop`
-     * and passed into {@link ThemeDriver.getFrame} (or let it fall back to `scrollTop`).
      */
-    public Story: string | null = null;
-
-    /** Theme index from the story config (structure is config-defined). */
-    public ThemeIndex: any;
-
-    /** Theme style data from the story config (structure is config-defined). */
-    public ThemeData: any;
-
-    /** DOM elements that receive theme styling. */
+    public Story: string | null = null
+    public ThemeIndex: any
+    public ThemeData: any
     public ThemeElements: ThemeElements;
-
-    /** The element that contains the scene sections (for your HTML: `#TYPESET`). */
-    public TextContainer: HTMLElement | null = null;
-
-    /**
-     * The scrolling viewport element (for your HTML: `#BODY`).
-     * This is used to read `scrollTop` without forcing layout.
-     */
-    public StaticContainer: HTMLElement | null = null;
-
-    /** Chapter data card used for metadata (voices, night mode, TOC, etc.). */
-    public DataCard: ChapterDataCard;
-
-    /** Scroll breakpoints per scene section (computed by {@link getScrollBreaks}). */
-    public ScrollBreaks: ScrollBreak[] = [];
-
-    /** Keyframes used for interpolation (computed by {@link setKeyframes}). */
-    public Keyframes: ThemeKeyframe[] = [];
-
-    /** Whether to fade to/from "Default" at the top/bottom. */
-    public doFading: boolean = false;
-
-    /** Frame used when fading to/from "Default". */
+    public TextContainer: HTMLElement | null = null
+    public StaticContainer: HTMLElement | null = null
+    public DataCard: ChapterDataCard
+    public ScrollBreaks : any = []
+    public Keyframes: any = []
+    public doFading: boolean = false
     public FadeStyle: DisplayFrame = {
-        Background: [0, 0, 0, 1],
-        Text: [0, 0, 0, 1],
-        ProgressBar: [0, 0, 0, 1],
-    };
-
-    /** Current interpolated frame. */
+        Background: [0,0,0,1],
+        Text: [0,0,0,1],
+        ProgressBar: [0,0,0,1] } 
+    private TransitionWidth: number = 400 // pixels
     public CurrentFrame: DisplayFrame = {
-        Background: [0, 0, 0, 1],
-        Text: [0, 0, 0, 1],
-        ProgressBar: [0, 0, 0, 1],
-    };
-
-    /** Current wall blending info (used by {@link deployTheming}). */
+        Background: [0,0,0,1],
+        Text: [0,0,0,1],
+        ProgressBar: [0,0,0,1] } 
     public CurrentWall: WallFrame = {
         FromImage: "",
         ToImage: "",
         Progress: 0,
         FromCharacter: "",
-        ToCharacter: "",
-    };
+        ToCharacter: "" }
+    public TravelHeight : number = 1;
+    public BarFFG:HTMLElement;
 
-    /** Total scroll travel in pixels (maximum `scrollTop`). */
-    public TravelHeight: number = 1;
-
-    /** Progress bar foreground container (`#BARFFG`). */
-    public BarFFG: HTMLElement;
-
-    /** Width of each transition window in pixels. */
-    private TransitionWidth: number = 400;
-
-    /** Cache: last keyframe index hit, used to avoid a full scan every scroll tick. */
-    private lastKeyIndex: number = 0;
-
-    /** Cache: last progress percent written to CSS. */
-    private lastBarPercent: number = -1;
-
-    /** Cache: last voice used to compute `--CharacterColor`. */
-    private lastVoiceForCharacterColor: string | null = null;
-
-    /** Cache: last text style applied to `--Active*` vars. */
-    private lastTextStyle: string | null = null;
-
-    /**
-     * Creates a ThemeDriver.
-     *
-     * @param config Theme config block (from {@link StoryConfig}).
-     * @param textContainer ID of the element containing scene sections (typically `"TYPESET"`).
-     * @param datacard Active chapter data card.
-     * @param eBackground Background element (`#BACKGROUND`).
-     * @param eTextCanvas Text canvas element (`#BODY`).
-     * @param eProgressBar Progress bar element (`#PROGRESS`).
-     * @param doFading Whether to fade at start/end.
-     */
-    constructor(
-        config: any,
-        textContainer: string,
-        datacard: ChapterDataCard,
-        eBackground: HTMLElement,
-        eTextCanvas: HTMLElement,
-        eProgressBar: HTMLElement,
-        doFading: boolean = true,
-    ) {
-        this.Story = datacard.Story;
-        this.ThemeIndex = config["ThemeIndex"];
-        this.ThemeData = config["Styles"];
+    constructor(config : any, textContainer : string, datacard: ChapterDataCard, eBackground:HTMLElement, eTextCanvas:HTMLElement, eProgressBar:HTMLElement, doFading : boolean = true) {
+        this.Story = datacard.Story
+        this.ThemeIndex = config["ThemeIndex"]
+        this.ThemeData = config["Styles"]
         this.ThemeElements = {
             Background: eBackground,
             Text: eTextCanvas,
-            ProgressBar: eProgressBar,
-        };
-
-        this.TextContainer = document.getElementById(textContainer);
-        this.StaticContainer = this.TextContainer?.parentElement || null;
-
-        datacard.setThemeDriver(this);
-        this.DataCard = datacard;
-
-        this.doFading = doFading;
-
-        // Initialize the frame immediately based on the starting night mode.
-        const bg = 255 * Number(!this.DataCard.NightMode);
-        const fg = 255 * Number(this.DataCard.NightMode);
-
-        this.CurrentFrame.Background = this.FadeStyle.Background = [bg, bg, bg, 1];
-        this.CurrentFrame.Text = this.FadeStyle.Text = [fg, fg, fg, 1];
-        this.CurrentFrame.ProgressBar = this.FadeStyle.ProgressBar = [fg, fg, fg, 1];
-
-        const bar = document.getElementById("BARFFG");
-        if (!bar) {
-            console.warn("ThemeDriver.constructor\n", "BARFFG not found; progress splits will be disabled.");
-            // Create a harmless placeholder so downstream code doesn't explode.
-            this.BarFFG = document.createElement("div");
-        } else {
-            this.BarFFG = bar as HTMLElement;
+            ProgressBar: eProgressBar
         }
+        this.TextContainer = document.getElementById(textContainer)
+        this.StaticContainer = this.TextContainer?.parentElement || null
+        datacard.setThemeDriver(this)
+        this.DataCard = datacard
+        this.doFading = doFading
+        let BGelem = 255*Number(!this.DataCard.NightMode)
+        let FGelem = 255*Number(this.DataCard.NightMode)
+        this.CurrentFrame.Background = this.FadeStyle.Background = [BGelem,BGelem,BGelem,1];
+        this.CurrentFrame.Text = this.FadeStyle.Text = [FGelem,FGelem,FGelem,1];
+        this.CurrentFrame.ProgressBar = this.FadeStyle.ProgressBar = [FGelem,FGelem,FGelem,1];
+        this.BarFFG = document.getElementById('BARFFG') as HTMLElement;
+        
     }
-
-    /**
-     * Sets the transition width for theme interpolation.
-     *
-     * @param width Transition width in pixels. Clamped to [200, 800].
-     */
     set Transition(width: number) {
-        width = width < 200 ? 200 : width > 800 ? 800 : width;
-        this.TransitionWidth = width;
+        width = width < 200 ? 200 : width > 800 ? 800 : width
+        this.TransitionWidth = width
     }
 
-    /**
-     * Builds a list of keyframes from {@link ScrollBreaks}.
-     *
-     * @remarks
-     * Keyframes are alternating STATIC and DYNAMIC windows, like:
-     * - STATIC: startTheme === endTheme
-     * - DYNAMIC: startTheme !== endTheme
-     */
-    setKeyframes(): void {
-        if (this.ScrollBreaks.length === 0) {
-            console.error("ThemeDriver.setKeyframes\n", "Scroll breaks have not been defined. Cannot set keyframes.");
-            return;
-        }
-
+    setKeyframes() {
+    // EXAMPLE of a four-scene system with or without fading: (STATIC shows both)
+    //             |    :         :    |    :         :    |    :         :    |    :         :    |
+    //             |    :         :    |    :         :    |    :         :    |    :         :    |
+    //     SCROLL [0]   :         :   [1]   :         :   [2]   :         :   [3]   :         :   [4]
+    //        KEY [0]   :        [1]   |   [2]       [3]   |   [4]       [5]   |   [6]        :   [7]
+    //   KEY+FADE [0]  [1]       [2]       [3]       [4]   |   [5]       [6]   |   [7]       [8]  [9]
+    //     STATIC  |<---:<------->:    |    :<------->:    |    :<------->:    |    :<------->:--->|
+    // TRANSITION  |    :         :<------->:         :<------->:         :<------->:         :    |
+    //     FADERS  |<-->:         :    |    :         :    |    :         :    |    :         :<-->|
+    //             |    :         :    |    :         :    |    :         :    |    :         :    |
+    //             |    :         :    |    :         :    |    :         :    |    :         :    |
+        // Have scroll breaks even been defined yet?
+        if (this.ScrollBreaks.length == 0) {
+            console.error("ThemeDriver.setKeyframes\n","Scroll breaks have not been defined. Cannot set keyframes.")
+            return }
+        // Minimum possible value for ScrollBreaks length is 2 (start and end).
+        let FrameCount = 2 + (this.ScrollBreaks.length - 2) * 2
+        //console.debug("ThemeDriver.setKeyframes",`Setting ${FrameCount} keyframes...`)
         this.Keyframes = [];
-        this.lastKeyIndex = 0;
-
+        // DEFINING TRANSITIONS
         let start = 0;
         let end = 0;
         let start_theme = "";
         let end_theme = "";
         let sceneNumber = 1;
-
-        // If fading, add a keyframe for transitioning from DEFAULT into the first theme.
+        // If fading, add a keyframe for the start transitioning from DEFAULT to the first theme.
         if (this.doFading) {
-            start = 0;
-            end = 0 + this.TransitionWidth / 2;
-            start_theme = "Default";
-            end_theme = this.ScrollBreaks[0].Theme;
-            sceneNumber = this.ScrollBreaks[0].scenenum;
-            this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end, scenenum: sceneNumber });
-            start = end;
+            start = 0
+            end = 0 + (this.TransitionWidth / 2)
+            start_theme = "Default"
+            end_theme = this.ScrollBreaks[0].Theme                
+            sceneNumber = this.ScrollBreaks[0].scenenum; 
+            this.Keyframes.push({startTheme:start_theme,endTheme:end_theme,min:start,max:end,scenenum:sceneNumber})  
+            start = end;     
+        // If not, STATIC until first transition.
         } else {
             start = 0;
-        }
-
-        // STATIC segment for the first theme until the first transition window.
-        end = this.ScrollBreaks[1].atPoint - this.TransitionWidth / 2;
-        if (end < start) end = start;
-        start_theme = this.ScrollBreaks[0].Theme;
-        end_theme = this.ScrollBreaks[0].Theme;
-        sceneNumber = this.ScrollBreaks[0].scenenum;
-        this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end, scenenum: sceneNumber });
-
-        // Middle segments: (DYNAMIC -> STATIC) repeating.
-        for (let i = 1; i < this.ScrollBreaks.length - 1; i++) {
-            // DYNAMIC transition into theme i.
+        }        
+        end = this.ScrollBreaks[1].atPoint - (this.TransitionWidth / 2);
+        start_theme = this.ScrollBreaks[0].Theme
+        end_theme = this.ScrollBreaks[0].Theme                
+        sceneNumber = this.ScrollBreaks[0].scenenum; 
+        this.Keyframes.push({startTheme:start_theme,endTheme:end_theme,min:start,max:end,scenenum:sceneNumber})
+        //console.error(`${start} to ${end} from ${start_theme} to ${end_theme} as STATIC START`)
+        // Iterations in the middle will all be the same.
+        for (let i = 1; i < this.ScrollBreaks.length-1; i++) {
+            // This is an intermediate DYNAMIC transition.
             start = end;
-            end = this.ScrollBreaks[i].atPoint + this.TransitionWidth / 2;
-            if (end < start) end = start;
-            start_theme = this.ScrollBreaks[i - 1].Theme;
-            end_theme = this.ScrollBreaks[i].Theme;
-            sceneNumber = this.ScrollBreaks[i].scenenum;
-            this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end, scenenum: sceneNumber });
-
-            // STATIC hold on theme i until next transition.
-            start = end;
-            end = this.ScrollBreaks[i + 1].atPoint - this.TransitionWidth / 2;
-            if (end < start) end = start;
-            start_theme = this.ScrollBreaks[i].Theme;
-            end_theme = this.ScrollBreaks[i].Theme;
-            sceneNumber = this.ScrollBreaks[i].scenenum;
-            this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end, scenenum: sceneNumber });
+            end = this.ScrollBreaks[i].atPoint + (this.TransitionWidth / 2);
+            start_theme = this.ScrollBreaks[i-1].Theme
+            end_theme = this.ScrollBreaks[i].Theme                
+            sceneNumber = this.ScrollBreaks[i].scenenum; 
+            this.Keyframes.push({startTheme:start_theme,endTheme:end_theme,min:start,max:end,scenenum:sceneNumber})
+            //console.error(`${start} to ${end} from ${start_theme} to ${end_theme} as DYNAMIC`)
+            // This is an intermediate STATIC transition.
+            start = end;            
+            end = this.ScrollBreaks[i+1].atPoint - (this.TransitionWidth / 2);
+            start_theme = this.ScrollBreaks[i].Theme
+            end_theme = this.ScrollBreaks[i].Theme                  
+            sceneNumber = this.ScrollBreaks[i].scenenum; 
+            this.Keyframes.push({startTheme:start_theme,endTheme:end_theme,min:start,max:end,scenenum:sceneNumber})
+            //console.error(`${start} to ${end} from ${start_theme} to ${end_theme} as STATIC`)
         }
-
-        // Final segment.
         start = end;
-        start_theme = this.ScrollBreaks[this.ScrollBreaks.length - 1].Theme;
-
+        start_theme = this.ScrollBreaks[this.ScrollBreaks.length - 1].Theme
+        // If fading, set the STATIC breakpoint early and do a DYNAMIC transition.
         if (this.doFading) {
-            // STATIC segment close to the end, then DYNAMIC fade to Default.
-            end = this.ScrollBreaks[this.ScrollBreaks.length - 1].atPoint - this.TransitionWidth / 2;
-            if (end < start) end = start;
-            end_theme = this.ScrollBreaks[this.ScrollBreaks.length - 1].Theme;
-            sceneNumber = this.ScrollBreaks[this.ScrollBreaks.length - 1].scenenum;
-            this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end, scenenum: sceneNumber });
-
+            end = this.ScrollBreaks[this.ScrollBreaks.length - 1].atPoint - (this.TransitionWidth / 2)
+            end_theme = this.ScrollBreaks[this.ScrollBreaks.length - 1].Theme        
+            sceneNumber = this.ScrollBreaks[this.ScrollBreaks.length - 1].scenenum; 
+            this.Keyframes.push({startTheme:start_theme,endTheme:end_theme,min:start,max:end,scenenum:sceneNumber})
             start = end;
             end = this.ScrollBreaks[this.ScrollBreaks.length - 1].atPoint;
-            if (end < start) end = start;
-            start_theme = end_theme;
+            start_theme = end_theme
             end_theme = "Default";
+        // Otherwise, STATIC transition until the end.
         } else {
-            end = this.ScrollBreaks[this.ScrollBreaks.length - 1].atPoint;
-            if (end < start) end = start;
-            end_theme = this.ScrollBreaks[this.ScrollBreaks.length - 1].Theme;
-            sceneNumber = this.ScrollBreaks[this.ScrollBreaks.length - 1].scenenum;
-        }
-
-        this.Keyframes.push({ startTheme: start_theme, endTheme: end_theme, min: start, max: end, scenenum: sceneNumber });
+            end = this.ScrollBreaks[this.ScrollBreaks.length - 1].atPoint; // @TODO black fade out
+            end_theme = this.ScrollBreaks[this.ScrollBreaks.length - 1].Theme        
+            sceneNumber = this.ScrollBreaks[this.ScrollBreaks.length - 1].scenenum; 
+        }       
+        this.Keyframes.push({startTheme:start_theme,endTheme:end_theme,min:start,max:end,scenenum:sceneNumber})
+        return
     }
 
-    /**
-     * Computes scroll breakpoints by measuring each `.section` element inside the text container.
-     *
-     * @param doReport If true, logs a debug report to the console.
-     * @returns The computed {@link ScrollBreaks}.
-     */
-    getScrollBreaks(doReport: boolean = true): ScrollBreak[] {
-        if (!this.TextContainer) {
-            console.warn("ThemeDriver.getScrollBreaks\n", "Text container not found.");
-            return [];
-        }
-        if (this.TextContainer.childNodes.length === 0) {
-            console.warn("ThemeDriver.getScrollBreaks\n", "Text container has no child nodes.");
-            return [];
-        }
-        if (!this.StaticContainer) {
-            console.warn("ThemeDriver.getScrollBreaks\n", "Text container parent not found.");
-            return [];
-        }
+    async getScrollBreaks(doReport: boolean = true) {
+    // Assume that HTML layout is [text container] => [<div> of scene] => ...
+        // BoundingDims: Dimensions of the container sized to viewer window (100dvh less menu and footer)
+        // TotalDims: Full dimensions of the text container with all content.
+        // SceneDims[]: Array of bounding dimensions for each scene container.
+        // Definition of "true scrolling position":
+        //    - Full TotalDims height - (2 * (0.5 * BoundingDims height)) is total scrolling travel.
 
-        const bounding = this.StaticContainer.getBoundingClientRect();
-        const total = this.TextContainer.getBoundingClientRect();
-
-        // Clamp travel height to a sane minimum to avoid divide-by-zero.
-        this.TravelHeight = Math.max(1, total.height - bounding.height);
-
-        // Scene containers are the <div class="section"> children inside TYPESET.
-        const sceneContainers = Array.from(this.TextContainer.getElementsByClassName("section")) as HTMLElement[];
-        if (sceneContainers.length === 0) {
-            console.warn("ThemeDriver.getScrollBreaks\n", "No .section nodes found under the text container.");
-            return [];
-        }
-
-        // IMPORTANT NOTE: The character tag for each break defines the theme for the NEXT section.
-        this.ScrollBreaks = [{ Theme: this.DataCard.Data.TOC.Character[0], atPercent: 0, atPoint: 0, scenenum: 1 }];
-
-        let sceneHeightSum = 0;
-        let sceneNumber = 1;
-
-        for (let i = 1; i < sceneContainers.length; i++) {
-            sceneNumber += 1;
-            sceneHeightSum += sceneContainers[i - 1].getBoundingClientRect().height;
-
-            const scrollPercent = (sceneHeightSum / this.TravelHeight) * 100;
-            this.ScrollBreaks.push({
-                Theme: this.DataCard.Data.TOC.Character[i],
-                atPercent: scrollPercent,
-                atPoint: sceneHeightSum,
-                scenenum: sceneNumber,
-            });
-        }
-
-        // Push the final value at the end of travel (constant theme).
-        this.ScrollBreaks.push({
-            Theme: this.DataCard.Data.TOC.Character[sceneContainers.length - 1],
-            atPercent: 100,
-            atPoint: this.TravelHeight,
-            scenenum: sceneNumber,
+        // Check for valid arguments, and valid HTML setup.
+        if (!this.TextContainer) { 
+            console.warn("ThemeDriver.getScrollBreaks\n","Text container not found.")
+            return [] }
+        if (this.TextContainer.childNodes.length == 0) {
+            console.warn("ThemeDriver.getScrollBreaks\n","Text container has no child nodes.")
+            return [] }
+        if (!this.StaticContainer) { 
+            console.warn("ThemeDriver.getScrollBreaks\n","Text container parent not found.")
+            return [] }
+        let BoundingDims = this.StaticContainer.getBoundingClientRect();
+        if (!BoundingDims) {
+            console.warn("ThemeDriver.getScrollBreaks\n","Text container parent has no bounding dimensions.")
+            return [] }
+        // Return vertical size of container holding text (that scrolls inside the scene container).
+        let TotalDims = this.TextContainer.getBoundingClientRect();
+        // Get each of the <div> child elements of the TextContainer, which are each of the scene <div> containers.
+        let SceneContainers = Array.from(this.TextContainer.getElementsByClassName('section'));
+        // Aggregate each of the heights of the scene <div> containers. Start with an empty array, and append values.
+        let SceneDims : any = [];        
+        let sceneNumber = 1; // Track number of this div scene.
+        SceneContainers.forEach( (sceneContainer: any) => {
+            SceneDims.push(sceneContainer.getBoundingClientRect());
         });
-
-        if (doReport) {
-            console.log(
-                `----==== Scroll Break Report ====----` +
-                    `Bounding Dimensions:      Height = ${bounding.height.toFixed(2)} px` +
-                    `Total Dimensions:         Height = ${total.height.toFixed(2)} px` +
-                    `Travel Height:            ${this.TravelHeight.toFixed(2)} px` +
-                    `Number of Scenes:         ${sceneContainers.length}` +
-                    `Scroll Breaks (%):\n`,
-                this.ScrollBreaks,
-                "\n\n",
-            );
+        // Return the total travel height of scrolling: the total container height minus both halves of the view/bounding container.
+        this.TravelHeight = TotalDims.height - BoundingDims.height;
+        // First scroll break is set at zero. The theme will be the first character.
+        // IMPORTANT NOTE: Denotation of the character for each LINE BREAK defines the theme for the NEXT section.
+        this.ScrollBreaks = [{Theme:this.DataCard.Data.TOC.Character[0],atPercent:0,atPoint:0,scenenum:sceneNumber}];
+        // Sum the heights of each of the containers. This will define the SCROLL BREAK points.
+        let SceneHeightSum : number = 0;
+        for (let i = 1; i < SceneDims.length; i++) {
+            sceneNumber += 1;
+            SceneHeightSum += SceneDims[i-1].height;
+            let ScrollPosition = (SceneHeightSum / this.TravelHeight) * 100;
+            this.ScrollBreaks.push({Theme:this.DataCard.Data.TOC.Character[i],atPercent:ScrollPosition,atPoint:SceneHeightSum,scenenum:sceneNumber});
         }
+        // Push the final value, at the bottom of the travel. Will have same theme as last entry to ensure constant end.
+        this.ScrollBreaks.push({Theme:this.DataCard.Data.TOC.Character[SceneDims.length - 1],atPercent:100,atPoint:this.TravelHeight,scenenum:sceneNumber});
+        // For debug report.
+        if (doReport) {
+            console.log( `----==== Scroll Break Report ====----`
+                        + `Bounding Dimensions:      Height = ${BoundingDims.height.toFixed(2)} px`
+                        + `Total Dimensions:         Height = ${TotalDims.height.toFixed(2)} px`
+                        + `Travel Height:            ${this.TravelHeight.toFixed(2)} px`
+                        + `Number of Scenes:         ${SceneDims.length}`
+                        + `Scroll Breaks (%):\n`
+                        ,  this.ScrollBreaks
+                        , "\n\n"
+            ); 
+        }
+        this.setKeyframes()
+        this.ProgressBarSplits()
+        return
+    }   
 
-        this.setKeyframes();
-        this.ProgressBarSplits();
-        return this.ScrollBreaks;
-    }
-
-    /**
-     * Builds the split markers in the progress bar to match {@link ScrollBreaks}.
-     *
-     * @remarks
-     * This is not called on every scroll tick, so we favor clarity over micro-optimizations.
-     */
-    ProgressBarSplits(): void {
-        if (!this.BarFFG) return;
-
-        this.BarFFG.textContent = "";
-
-        const frag = document.createDocumentFragment();
-        const sbLim = this.ScrollBreaks.length - 1;
-
+    ProgressBarSplits() {
+        this.BarFFG.innerHTML = ""
+        let SB_index = 0;
+        let SB_lim = this.ScrollBreaks.length-1
         let lastBreak = 0;
+        let thisBreak = 0;
         let theme = "";
-
-        this.ScrollBreaks.forEach((sbreak, index) => {
-            const thisBreak = sbreak.atPercent;
-
-            if (index > 0) {
-                const section = document.createElement("div");
-                section.className = `barsection bs${theme}`;
-                section.style.flex = String(thisBreak - lastBreak);
-                frag.appendChild(section);
-
-                if (index < sbLim) {
-                    const blank = document.createElement("div");
-                    blank.className = "barblank";
-                    frag.appendChild(blank);
+        this.ScrollBreaks.forEach( (sbreak:any) => {
+            lastBreak = thisBreak;
+            thisBreak = sbreak.atPercent
+            //console.log(thisBreak)
+            if (SB_index > 0) {
+                this.BarFFG.innerHTML += `<div class="barsection bs${theme}" style="flex:${thisBreak-lastBreak}"></div>`
+                if (SB_index < SB_lim) {
+                    this.BarFFG.innerHTML += `<div class="barblank"></div>`
                 }
             }
-
-            lastBreak = thisBreak;
-            theme = sbreak.Theme;
-        });
-
-        this.BarFFG.appendChild(frag);
+            theme = sbreak.Theme
+            
+            //console.error(sbreak)
+            SB_index += 1;            
+        })
+        
     }
 
-    /**
-     * Finds the keyframe that contains the given scroll position.
-     *
-     * @param scrollPosition Scroll position in pixels (typically `#BODY.scrollTop`).
-     * @returns The active keyframe, or null if none match.
-     */
-    private findKeyframe(scrollPosition: number): ThemeKeyframe | null {
-        const keys = this.Keyframes;
-        if (keys.length === 0) return null;
+    getFrame(scrollPosition: number | null = null) {
+        /**
+         * Given a scroll position, interpolate for the correct display characteristics.
+         * @param scrollPosition Current scroll position in pixels.
+         * @return Keyframe object that applies to this scroll position.
+         */
+        // Check for problematic values.
 
-        // Fast path: last hit.
-        const last = keys[this.lastKeyIndex];
-        if (last && scrollPosition >= last.min && scrollPosition <= last.max) return last;
-
-        // Binary search by min/max (keys are sorted by min).
-        let lo = 0;
-        let hi = keys.length - 1;
-
-        while (lo <= hi) {
-            const mid = (lo + hi) >> 1;
-            const k = keys[mid];
-
-            if (scrollPosition < k.min) {
-                hi = mid - 1;
-            } else if (scrollPosition > k.max) {
-                lo = mid + 1;
-            } else {
-                this.lastKeyIndex = mid;
-                return k;
-            }
-        }
-        return null;
-    }
-
-    /**
-     * Computes the theme frame at a given scroll position.
-     *
-     * @param scrollPosition Scroll position in pixels. Prefer passing `#BODY.scrollTop` from your scroll handler.
-     * @returns A {@link LookingAtThis} info object (voice, percent, keyframe progress, scene index).
-     */
-    getFrame(scrollPosition: number | null = null): LookingAtThis {
-        const frameInfo: LookingAtThis = {
+        let FrameInfo : LookingAtThis = {
             voice: "Default",
             position: 0,
             progress: 0,
-            scene: 1,
+            scene: 1
         };
 
-        // Avoid forcing layout: default to scrollTop if possible.
         if (scrollPosition == null) {
-            const scroller = this.StaticContainer as HTMLElement | null;
-            scrollPosition = scroller ? scroller.scrollTop : 0;
+            if (!this.TextContainer) { 
+                console.warn("ThemeDriver.getFrame\n","Text container not found. Cannot get scroll position.")
+                return FrameInfo}
+            if (!this.StaticContainer) { 
+                console.warn("ThemeDriver.getFrame\n","Static container not found. Cannot get scroll position.")
+                return FrameInfo}
+            scrollPosition = this.StaticContainer.getBoundingClientRect().top - this.TextContainer.getBoundingClientRect().top;            
         }
-
-        // Clamp to [0, TravelHeight]
-        scrollPosition = Math.max(0, Math.min(this.TravelHeight, scrollPosition));
-
-        const scrollPercent = (scrollPosition / this.TravelHeight) * 100;
-        frameInfo.position = Number(scrollPercent.toFixed(2));
-
-        // Only write when it actually changed (prevents redundant style invalidations).
-        if (Math.abs(frameInfo.position - this.lastBarPercent) >= 0.01) {
-            ROOT.style.setProperty("--BarLength", `${frameInfo.position}%`);
-            this.lastBarPercent = frameInfo.position;
+        let scrollPercent = (100*scrollPosition/this.TravelHeight).toFixed(2)
+        FrameInfo.position = Number(scrollPercent);
+        ROOT.style.setProperty("--BarLength",`${scrollPercent}%`)
+        // @OPTIMIZE does this need updates this frequently???
+        // this.DataCard.updateDataBar()
+        
+        // Dark theming will determine color palette.
+        let darkTheme = this.DataCard.NightMode ? "Dark" : "Light"
+        let currentKey = null;
+        let index = 0;
+        for (let i = 0; i < this.Keyframes.length; i++) {
+            if (scrollPosition >= this.Keyframes[i].min && scrollPosition <= this.Keyframes[i].max) {
+                currentKey = this.Keyframes[i];
+                FrameInfo.scene = this.Keyframes[i].scenenum;
+                break
+            }
+            index += 1;
         }
-
-        const darkTheme = this.DataCard.NightMode ? "Dark" : "Light";
-        const currentKey = this.findKeyframe(scrollPosition);
-
         if (currentKey == null) {
-            frameInfo.voice = this.DataCard.Data.TOC.Character[0];
-            return frameInfo;
+            //console.warn("ThemeDriver.getFrame","No keyframe found for scroll position:",scrollPosition)
+            FrameInfo.voice = this.DataCard.Data.TOC.Character[0];
+            return FrameInfo
         }
 
-        frameInfo.scene = currentKey.scenenum;
-
-        const denom = currentKey.max - currentKey.min;
-        const keyProgress = denom <= 0 ? 0 : (scrollPosition - currentKey.min) / denom;
-        frameInfo.progress = keyProgress;
-
-        // STATIC keyframe: direct lookup.
-        if (currentKey.startTheme === currentKey.endTheme) {
-            this.CurrentFrame = this.ThemeData[currentKey.startTheme][darkTheme];
-
+        let KeyProgress = (scrollPosition - currentKey.min) / (currentKey.max - currentKey.min);
+        FrameInfo.progress = KeyProgress;
+        //let debug = document.getElementById("DEBUG");        
+        if (currentKey.startTheme == currentKey.endTheme) {
+            // if (debug != null) {
+            //     debug.innerHTML = `<span style="color: white">Static keyframe found for scroll position ${scrollPosition.toFixed(0)} at ${(KeyProgress*100).toFixed(2)}% <br> This is ${currentKey.startTheme} at index ${index}.<br> ${currentKey.min.toFixed(0)} to ${currentKey.max.toFixed(0)}</span>`
+            // }
+            this.CurrentFrame = this.ThemeData[currentKey.startTheme][darkTheme]
             this.CurrentWall = {
                 FromImage: this.ThemeData[currentKey.startTheme]["WallImage"],
                 ToImage: this.ThemeData[currentKey.endTheme]["WallImage"],
                 Progress: 0.5,
                 FromCharacter: currentKey.startTheme,
-                ToCharacter: currentKey.endTheme,
-            };
-
-            frameInfo.voice = currentKey.endTheme;
-            return frameInfo;
-        }
-
-        // DYNAMIC keyframe: interpolate between two theme frames.
-        const startFrame = this.ThemeData[currentKey.startTheme][darkTheme];
-        const endFrame = this.ThemeData[currentKey.endTheme][darkTheme];
-
+                ToCharacter: currentKey.endTheme
+            }
+            FrameInfo.voice = currentKey.endTheme;
+            return FrameInfo;
+        }        
+        // if (debug != null) {
+        //    debug.innerHTML = `<span style="color: white">Interpolating keyframe for scroll position ${scrollPosition.toFixed(0)} at ${(KeyProgress*100).toFixed(2)}% <br>From theme "${currentKey.startTheme}" to "${currentKey.endTheme}.<br> ${currentKey.min.toFixed(0)} to ${currentKey.max.toFixed(0)}"</span>`
+        // }
+        let startFrame = this.ThemeData[currentKey.startTheme][darkTheme]
+        let endFrame = this.ThemeData[currentKey.endTheme][darkTheme]
         this.CurrentFrame = {
             Background: [
-                startFrame.Background[0] + (endFrame.Background[0] - startFrame.Background[0]) * keyProgress,
-                startFrame.Background[1] + (endFrame.Background[1] - startFrame.Background[1]) * keyProgress,
-                startFrame.Background[2] + (endFrame.Background[2] - startFrame.Background[2]) * keyProgress,
-                startFrame.Background[3] + (endFrame.Background[3] - startFrame.Background[3]) * keyProgress,
+                startFrame.Background[0] + (endFrame.Background[0] - startFrame.Background[0]) * KeyProgress,
+                startFrame.Background[1] + (endFrame.Background[1] - startFrame.Background[1]) * KeyProgress,
+                startFrame.Background[2] + (endFrame.Background[2] - startFrame.Background[2]) * KeyProgress,
+                startFrame.Background[3] + (endFrame.Background[3] - startFrame.Background[3]) * KeyProgress,
             ],
             Text: [
-                startFrame.Text[0] + (endFrame.Text[0] - startFrame.Text[0]) * keyProgress,
-                startFrame.Text[1] + (endFrame.Text[1] - startFrame.Text[1]) * keyProgress,
-                startFrame.Text[2] + (endFrame.Text[2] - startFrame.Text[2]) * keyProgress,
-                startFrame.Text[3] + (endFrame.Text[3] - startFrame.Text[3]) * keyProgress,
+                startFrame.Text[0] + (endFrame.Text[0] - startFrame.Text[0]) * KeyProgress,
+                startFrame.Text[1] + (endFrame.Text[1] - startFrame.Text[1]) * KeyProgress,
+                startFrame.Text[2] + (endFrame.Text[2] - startFrame.Text[2]) * KeyProgress,
+                startFrame.Text[3] + (endFrame.Text[3] - startFrame.Text[3]) * KeyProgress,
             ],
             ProgressBar: [
-                startFrame.ProgressBar[0] + (endFrame.ProgressBar[0] - startFrame.ProgressBar[0]) * keyProgress,
-                startFrame.ProgressBar[1] + (endFrame.ProgressBar[1] - startFrame.ProgressBar[1]) * keyProgress,
-                startFrame.ProgressBar[2] + (endFrame.ProgressBar[2] - startFrame.ProgressBar[2]) * keyProgress,
-                startFrame.ProgressBar[3] + (endFrame.ProgressBar[3] - startFrame.ProgressBar[3]) * keyProgress,
+                startFrame.ProgressBar[0] + (endFrame.ProgressBar[0] - startFrame.ProgressBar[0]) * KeyProgress,
+                startFrame.ProgressBar[1] + (endFrame.ProgressBar[1] - startFrame.ProgressBar[1]) * KeyProgress,
+                startFrame.ProgressBar[2] + (endFrame.ProgressBar[2] - startFrame.ProgressBar[2]) * KeyProgress,
+                startFrame.ProgressBar[3] + (endFrame.ProgressBar[3] - startFrame.ProgressBar[3]) * KeyProgress,
             ],
-        };
-
+        }
+        // @TODO image manipulation
         this.CurrentWall = {
             FromImage: this.ThemeData[currentKey.startTheme]["WallImage"],
             ToImage: this.ThemeData[currentKey.endTheme]["WallImage"],
-            Progress: keyProgress,
+            Progress: KeyProgress,
             FromCharacter: currentKey.startTheme,
-            ToCharacter: currentKey.endTheme,
-        };
-
-        frameInfo.voice = currentKey.startTheme === "Default" ? currentKey.endTheme : currentKey.startTheme;
-        return frameInfo;
+            ToCharacter: currentKey.endTheme
+        }
+        FrameInfo.voice = currentKey.startTheme == "Default" ? currentKey.endTheme : currentKey.startTheme;
+        return FrameInfo
     }
-
-    /**
-     * Applies the current theme frame to CSS root variables.
-     *
-     * @remarks
-     * This should be called after {@link getFrame} updates {@link CurrentFrame}.
-     */
-    deployTheming(): void {
+    deployTheming() {
+        /**
+         *  Set the theme: apply to CSS ROOT variables.
+         */
         if (ROOT == null) {
-            console.warn("ThemeDriver.deployTheming\n", "Root HTML element not found. Cannot deploy colors.");
-            return;
-        }
-
-        const t1 = this.CurrentWall.Progress;
-        const t2 = 1.0 - t1;
-
-        const edges = 0.45;
-        const centers = 0.8;
-
-        const wallCSS1 = `linear-gradient(
-                            to right,
-                            rgba(128,128,128,${t1 * edges}) 0%,
-                            rgba(128,128,128,${t1 * centers}) calc((( 100vw - var(--ContentWidth) ) * 0.5) + 20px),
-                            rgba(128,128,128,${t1 * centers}) calc((( 100vw - var(--ContentWidth) ) * 0.5) +  var(--ContentWidth) - 20px),
-                            rgba(128,128,128,${t1 * edges}) 100%
+            console.warn("ThemeDriver.deployTheming\n","Root HTML element not found. Cannot deploy colors.")
+            return
+        }    
+        let t1 = this.CurrentWall.Progress
+        let t2 = 1.00 - t1;
+        let edges = 0.450
+        let centers = 0.800
+        let WallCSS1 = `linear-gradient(
+                            to right, 
+                            rgba(128,128,128,${t1*edges}) 0%,
+                            rgba(128,128,128,${t1*centers}) calc((( 100vw - var(--ContentWidth) ) * 0.5) + 20px),
+                            rgba(128,128,128,${t1*centers}) calc((( 100vw - var(--ContentWidth) ) * 0.5) +  var(--ContentWidth) - 20px),
+                            rgba(128,128,128,${t1*edges}) 100%
                         ),
-                        var(--Wall${this.CurrentWall.FromCharacter})`;
-
-        const wallCSS2 = `linear-gradient(
-                            to right,
-                            rgba(128,128,128,${t2 * edges}) 0%,
-                            rgba(128,128,128,${t2 * centers}) calc((( 100vw - var(--ContentWidth) ) * 0.5) + 20px),
-                            rgba(128,128,128,${t2 * centers}) calc((( 100vw - var(--ContentWidth) ) * 0.5) +  var(--ContentWidth) - 20px),
-                            rgba(128,128,128,${t2 * edges}) 100%
+                        var(--Wall${this.CurrentWall.FromCharacter})`
+        let WallCSS2 = `linear-gradient(
+                            to right, 
+                            rgba(128,128,128,${t2*edges}) 0%,
+                            rgba(128,128,128,${t2*centers}) calc((( 100vw - var(--ContentWidth) ) * 0.5) + 20px),
+                            rgba(128,128,128,${t2*centers}) calc((( 100vw - var(--ContentWidth) ) * 0.5) +  var(--ContentWidth) - 20px),
+                            rgba(128,128,128,${t2*edges}) 100%
                         ),
-                        var(--Wall${this.CurrentWall.ToCharacter})`;
+                        var(--Wall${this.CurrentWall.ToCharacter})`
 
-        ROOT.style.setProperty("--TextColor", `rgba(${this.CurrentFrame.Text[0]},${this.CurrentFrame.Text[1]},${this.CurrentFrame.Text[2]},1)`);
-        ROOT.style.setProperty(
-            "--BackgroundColor",
-            `rgba(${this.CurrentFrame.Background[0]},${this.CurrentFrame.Background[1]},${this.CurrentFrame.Background[2]},1)`,
-        );
-
-        // Character highlight color.
-        const voice = this.DataCard.CurrentVoice == null ? this.CurrentWall.ToCharacter : this.DataCard.CurrentVoice;
-
-        if (voice !== this.lastVoiceForCharacterColor) {
-            if (this.ThemeData[voice] == undefined) {
-                ROOT.style.setProperty("--CharacterColor", `rgba(0,0,0,1)`);
-            } else {
-                let charRGB = this.ThemeData[voice]["CharacterTheme"];
-                charRGB = charRGB == undefined ? `rgba(0,0,0,1)` : charRGB;
-                ROOT.style.setProperty("--CharacterColor", `rgba(${charRGB[0]},${charRGB[1]},${charRGB[2]},1)`);
-            }
-            this.lastVoiceForCharacterColor = voice;
+        ROOT.style.setProperty("--TextColor",`rgba(${this.CurrentFrame["Text"][0]},${this.CurrentFrame["Text"][1]},${this.CurrentFrame["Text"][2]},${1})`);
+        ROOT.style.setProperty("--BackgroundColor",`rgba(${this.CurrentFrame["Background"][0]},${this.CurrentFrame["Background"][1]},${this.CurrentFrame["Background"][2]},${1})`);
+        //console.error(this.ThemeData,this.CurrentWall.FromCharacter)
+        let TextStyle = this.CurrentWall.FromCharacter == "Default" ? this.CurrentWall.ToCharacter : this.CurrentWall.FromCharacter == "" ? "Fallback" : this.CurrentWall.FromCharacter
+        let voice = this.DataCard.CurrentVoice == null ? this.CurrentWall.ToCharacter : this.DataCard.CurrentVoice
+        if (this.ThemeData[voice] == undefined) {
+            ROOT.style.setProperty("--CharacterColor",`rgba(0,0,0,1)`);
+        } else {
+            let charRGB = this.ThemeData[voice]["CharacterTheme"]       
+            charRGB = charRGB == undefined ? `rgba(0,0,0,1)` : charRGB;
+            ROOT.style.setProperty("--CharacterColor",`rgba(${charRGB[0]},${charRGB[1]},${charRGB[2]},${1})`);
         }
-
-        // Midground / element colors: derived from background.
-        let percentOff = 0.8;
-        let calcRGBA = [
-            255 * (1 - percentOff) * 0.5 + Number(this.CurrentFrame.Background[0]) * percentOff,
-            255 * (1 - percentOff) * 0.5 + Number(this.CurrentFrame.Background[1]) * percentOff,
-            255 * (1 - percentOff) * 0.5 + Number(this.CurrentFrame.Background[2]) * percentOff,
-        ];
-        ROOT.style.setProperty("--MidgroundColor", `rgba(${calcRGBA[0]},${calcRGBA[1]},${calcRGBA[2]},1)`);
-
-        percentOff = 0.6;
-        calcRGBA = [
-            255 * (1 - percentOff) * 0.5 + Number(this.CurrentFrame.Background[0]) * percentOff,
-            255 * (1 - percentOff) * 0.5 + Number(this.CurrentFrame.Background[1]) * percentOff,
-            255 * (1 - percentOff) * 0.5 + Number(this.CurrentFrame.Background[2]) * percentOff,
-        ];
-        ROOT.style.setProperty("--ElementColor", `rgba(${calcRGBA[0]},${calcRGBA[1]},${calcRGBA[2]},1)`);
-
-        ROOT.style.setProperty(
-            "--BarColor",
-            `rgba(${this.CurrentFrame.ProgressBar[0]},${this.CurrentFrame.ProgressBar[1]},${this.CurrentFrame.ProgressBar[2]},1)`,
-        );
-        ROOT.style.setProperty(
-            "--HoverColor",
-            `rgba(${this.CurrentFrame.ProgressBar[0]},${this.CurrentFrame.ProgressBar[1]},${this.CurrentFrame.ProgressBar[2]},0.1)`,
-        );
-        ROOT.style.setProperty(
-            "--TOCbackground",
-            `rgba(${this.CurrentFrame.ProgressBar[0]},${this.CurrentFrame.ProgressBar[1]},${this.CurrentFrame.ProgressBar[2]},0.03)`,
-        );
-
-        ROOT.style.setProperty("--ImageWallFore", wallCSS1);
-        ROOT.style.setProperty("--ImageWallBack", wallCSS2);
-
-        // Activate the font/style variables based on the currently visible voice.
-        const textStyle =
-            this.CurrentWall.FromCharacter == "Default"
-                ? this.CurrentWall.ToCharacter
-                : this.CurrentWall.FromCharacter == ""
-                  ? "Fallback"
-                  : this.CurrentWall.FromCharacter;
-
-        if (textStyle !== this.lastTextStyle) {
-            ROOT.style.setProperty("--ActiveTitle", `var(--${textStyle}Title)`);
-            ROOT.style.setProperty("--ActiveSub", `var(--${textStyle}Text)`);
-            ROOT.style.setProperty("--ActiveSize", `var(--${textStyle}Size)`);
-            ROOT.style.setProperty("--ActiveText", `var(--${textStyle}Text)`);
-            this.lastTextStyle = textStyle;
-        }
+        
+        
+        let PercentOff = 0.80;
+        let CalcRGBA =      [((255*(1-PercentOff)*0.5)+((Number(this.CurrentFrame["Background"][0])*PercentOff))),
+                             ((255*(1-PercentOff)*0.5)+((Number(this.CurrentFrame["Background"][1])*PercentOff))),
+                             ((255*(1-PercentOff)*0.5)+((Number(this.CurrentFrame["Background"][2])*PercentOff)))]
+        ROOT.style.setProperty("--MidgroundColor",`rgba(${CalcRGBA[0]},${CalcRGBA[1]},${CalcRGBA[2]},${1})`);
+        PercentOff = 0.60;
+        CalcRGBA =          [((255*(1-PercentOff)*0.5)+((Number(this.CurrentFrame["Background"][0])*PercentOff))),
+                             ((255*(1-PercentOff)*0.5)+((Number(this.CurrentFrame["Background"][1])*PercentOff))),
+                             ((255*(1-PercentOff)*0.5)+((Number(this.CurrentFrame["Background"][2])*PercentOff)))]
+        ROOT.style.setProperty("--ElementColor",`rgba(${CalcRGBA[0]},${CalcRGBA[1]},${CalcRGBA[2]},${1})`);
+        
+        ROOT.style.setProperty("--BarColor",`rgba(${this.CurrentFrame["ProgressBar"][0]},${this.CurrentFrame["ProgressBar"][1]},${this.CurrentFrame["ProgressBar"][2]},${1})`);
+        ROOT.style.setProperty("--HoverColor",`rgba(${this.CurrentFrame["ProgressBar"][0]},${this.CurrentFrame["ProgressBar"][1]},${this.CurrentFrame["ProgressBar"][2]},${0.1})`);
+        ROOT.style.setProperty("--TOCbackground",`rgba(${this.CurrentFrame["ProgressBar"][0]},${this.CurrentFrame["ProgressBar"][1]},${this.CurrentFrame["ProgressBar"][2]},${0.03})`);
+        ROOT.style.setProperty("--ImageWallFore",WallCSS1);
+        ROOT.style.setProperty("--ImageWallBack",WallCSS2);
+        // Make sure it never sets it to Default style which is nothing.
+        
+        ROOT.style.setProperty("--ActiveTitle",`var(--${TextStyle}Title)`)
+        ROOT.style.setProperty("--ActiveSub",`var(--${TextStyle}Text)`)
+        ROOT.style.setProperty("--ActiveSize",`var(--${TextStyle}Size)`)
+        ROOT.style.setProperty("--ActiveText",`var(--${TextStyle}Text)`)
+        
+        return
     }
 }
 
@@ -1944,188 +1718,147 @@ class ThemeDriver {
 //  ██     ▀████▀ ██   ██ ▀█████   ██   ██ ▀████▀ ██   ██ █████▀ 
 //
 
-/**
- * Builds and deploys the manuscript viewer.
- *
- * @param rootURL Base URL where story JSON/assets live.
- * @param storyName Story identifier (e.g., `"Paragate"`, `"Firebrand"`).
- * @param startChapter Optional chapter index to begin on.
- */
-async function buildManuscript(rootURL: string, storyName: string, startChapter: number = 1): Promise<void> {
-    SRC = await LocalStorageAndSrcVars.initialize(storyName);
-    CFG = await StoryConfig.initialize(rootURL, SRC.storyName);
-
+async function buildManuscript(rootURL: string, storyName: string, startChapter : number = 1) {
+    SRC = await LocalStorageAndSrcVars.initialize(storyName); 
+    CFG = await StoryConfig.initialize(rootURL,SRC.storyName);
     CARD = new ChapterDataCard(SRC.storyName);
     CARD.toggleNightMode(false); // Start in Night Mode.
-
-    BIND = await ChapterBinder.initialize(rootURL, SRC.storyName, CFG, SRC.Local.permlevel, CARD, DEPLOY, 0, IncludeSettingTags);
-    SRC.AttachBinder(BIND);
-
-    CTRL = new ControlBar(SRC, CARD);
-
-    THEME = new ThemeDriver(CFG.config, DEPLOY, CARD, eBACKGROUND, eBODY, ePROGRESS, true);
-
-    // Deploy initial chapter.
-    await BIND.DeployOnPage(SRC.Local.chapter, DEPLOY);
-
-    EXTRAS = await StoryExtrasWindow.initialize(SRC.storyName, rootURL, EXTRAID);
-
+    BIND = await ChapterBinder.initialize(rootURL, SRC.storyName, CFG, SRC.Local.permlevel, CARD, DEPLOY, 0, IncludeSettingTags);   
+    SRC.AttachBinder(BIND);  
+    CTRL = new ControlBar(SRC,CARD);
+    //BIND.DeployOnPage(CARD.Data.TOC.Chapter,DEPLOY)
+    THEME = new ThemeDriver(CFG.config, DEPLOY, CARD, eBackground, eText, eProgressBar, true);
+    //console.log(SRC.Local.chapter)
+    await BIND.DeployOnPage(SRC.Local.chapter,DEPLOY)
+    EXTRAS = await StoryExtrasWindow.initialize(SRC.storyName,rootURL,EXTRAID)
     THEME.deployTheming();
-    BIND.LockUp();
-
+    BIND.LockUp();    
     await EXTRAS.loadAnnouncements();
     await EXTRAS.loadInExtras();
     EXTRAS.deployContent();
+    return
 }
 
-/**
- * Toggles theme and refreshes derived theme data.
- */
-function doThemeChange(): void {
-    if (!CTRL || !THEME || !CARD) return;
+function doThemeChange() {
     CTRL.setTheme(CARD);
     THEME.setKeyframes();
     runScrollEvents();
 }
 
-/**
- * Runs scroll-driven updates (theme interpolation + scene tracking).
- *
- * @remarks
- * This is called through a `requestAnimationFrame` throttle. Keep this fast.
- */
-function runScrollEvents(): void {
-    if (!THEME || !BIND) return;
-
-    // Use the scroll container's scrollTop (avoids expensive getBoundingClientRect reads).
-    const scrollTop = eBODY.scrollTop;
-    LookingAt = THEME.getFrame(scrollTop);
-
+function runScrollEvents() {
+    LookingAt = THEME.getFrame()
     // contains voice, position, progress, scene
-    THEME.deployTheming();
-
-    BIND.CURRENT_SCENE[2] = LookingAt.scene;
-    BIND.CURRENT_SCENE[3] = Number(LookingAt.progress.toFixed(2));
-
-    // Only do expensive map work if scene actually changed.
-    if (lastScene[0] !== BIND.CURRENT_SCENE[1] || lastScene[1] !== BIND.CURRENT_SCENE[2]) {
+    THEME.deployTheming()
+    /*
+    if ( CARD.lookingAt(LookingAt)) {
         BIND.placeWorldMap(LookingAt);
-        lastScene[0] = BIND.CURRENT_SCENE[1];
-        lastScene[1] = BIND.CURRENT_SCENE[2];
+    };/**/
+    BIND.CURRENT_SCENE[2] = LookingAt.scene
+    BIND.CURRENT_SCENE[3] = Number(LookingAt.progress.toFixed(2))
+    if ( (lastScene[0] != BIND.CURRENT_SCENE[1]) || (lastScene[1] != BIND.CURRENT_SCENE[2]) ) {
+        BIND.placeWorldMap(LookingAt);
+        lastScene[0] = BIND.CURRENT_SCENE[1]
+        lastScene[1] = BIND.CURRENT_SCENE[2]
     }
+
+    //console.info("Current scene is:\n",BIND.CURRENT_SCENE)
+    return
 }
 
-/**
- * Recomputes scroll breaks/keyframes after a resize.
- */
-function runResizeEvents(): void {
-    if (!THEME) return;
-    THEME.getScrollBreaks(false);
-    runScrollEvents();
-    console.log("runResizeEvents", "\nA resize event has taken place.");
+function runResizeEvents() {
+    THEME.getScrollBreaks();
+    runScrollEvents()
+    console.log("runResizeEvents","\nA resize event has taken place.")
 }
 
-/**
- * Loads a different story by updating the URL query parameters.
- *
- * @param otherstory Story identifier (e.g., `"Paragate"`, `"Firebrand"`).
- */
-function LoadOtherStory(otherstory: string): void {
-    const address = window.location.search;
-    const params = new URLSearchParams(address);
-    const dmap = new Map<string, string>();
-    params.forEach((value, key) => dmap.set(key, value));
-
+function LoadOtherStory(otherstory:string) {
+    let address = window.location.search
+    let Parameters = new URLSearchParams(address)
+    let dmap = new Map()
+    Parameters.forEach((value,key) => {
+        dmap.set(key,value)
+    });
     let varargin = "";
-    switch (dmap.get("mode")) {
-        case "author":
-        case "3":
-            varargin += "&mode=3";
-            break;
-        case "editor":
-        case "2":
-            varargin += "&mode=2";
-            break;
-        default:
-            break;
-    }
+    switch( dmap.get("mode") ) {
+            case "author":
+            case "3":
+                varargin += '&mode=3'
+                break;
+            case "editor":
+            case "2":                
+                varargin += '&mode=2'
+                break;
+            default:
+                break;
+        }
+        let origin:string = location.origin != 'null' ? location.origin : "";
+        let path:string   = location.pathname
+        let hash:string   = location.hash
 
-    const origin: string = location.origin !== "null" ? location.origin : "";
-    const path: string = location.pathname;
-    const hash: string = location.hash;
-
-    window.open(origin + path + hash + `?story=${otherstory}` + varargin, "_top");
+    window.open(origin + path + hash + `?story=${otherstory}` + varargin,'_top')
 }
+
 
 //  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
-/**
- * The code that interacts with the classes and variables.
- * Runs at init in the HTML script.
- */
-document.getElementsByTagName("body")[0].style.backgroundColor = "black";
+//
+//  █████▄ █████▄   ▄████  ██▄  ▄██   ██████ ██  ██ ██████ ▄█████ 
+//  ██▄▄█▀ ██▄▄██▄ ██  ▄▄▄ ██ ▀▀ ██   ██▄▄    ████  ██▄▄   ██     
+//  ██     ██   ██  ▀███▀  ██    ██   ██▄▄▄▄ ██  ██ ██▄▄▄▄ ▀█████ 
+//  The code that interacts with the classes and variables.
+//  Runs at init in the HTML script.
 
-/** Root element used for CSS variable theming. */
-const ROOT = document.querySelector(":root") as HTMLElement;
+document.getElementsByTagName('body')[0].style.backgroundColor = "black"
 
-/**
- * Gets an element by ID and throws if it doesn't exist (fail fast).
- *
- * @param id HTML element ID.
- */
-function GEBID<T extends HTMLElement = HTMLElement>(id: string): T {
-    const el = document.getElementById(id);
-    if (!el) throw new Error(`Missing required element: #${id}`);
-    return el as T;
-}
-
-const eBACKGROUND = GEBID("BACKGROUND");
-const eHEADER = GEBID("HEADER");
-const eBODY = GEBID<HTMLDivElement>("BODY");
-const eTYPESET = GEBID("TYPESET");
-const eIDCHAPTER = GEBID("IDCHAPTER");
-const eIDNAME = GEBID("IDNAME");
-const eMAP = GEBID("MAP");
-const ePROGRESS = GEBID("PROGRESS");
+const ROOT = document.querySelector(':root') as HTMLElement;
+function GEBID(name:string) { return document.getElementById(name) as HTMLElement}
+const eBACKGROUND           = GEBID('BACKGROUND')
+const eHEADER               = GEBID('HEADER')
+const eBODY                 = GEBID('BODY')
+const eTYPESET              = GEBID('TYPESET')
+const eIDCHAPTER            = GEBID('IDCHAPTER')
+const eIDNAME               = GEBID('IDNAME')
+const eMAP                  = GEBID('MAP')
 
 const DEPLOY = "TYPESET";
 const EXTRAID = "EXTRACONTENT";
 
-let StartChapter = 1;
-let CARD!: ChapterDataCard;
-let CFG!: StoryConfig;
-let BIND!: ChapterBinder;
-let THEME!: ThemeDriver;
-let SRC!: LocalStorageAndSrcVars;
-let EXTRAS!: StoryExtrasWindow;
-let CTRL!: ControlBar;
+var StartChapter = 1;
+var CARD : ChapterDataCard;
+var CFG: StoryConfig;
+var BIND: ChapterBinder;
+var THEME: ThemeDriver;
+var SRC: LocalStorageAndSrcVars;
+var EXTRAS: StoryExtrasWindow;
+var CTRL: ControlBar;
 
-let LookingAt: LookingAtThis = {
+var LookingAt : LookingAtThis = {
     voice: "Default",
     position: 0,
     progress: 0,
-    scene: 1,
-};
+    scene: 1
+}
+var lastScene = [0, 0]
 
-let lastScene: [number, number] = [0, 0];
+var ACTIVESTORY = "Paragate"
 
-// Read story from URL first so LocalStorage uses the right save namespace.
-const urlParams = new URLSearchParams(window.location.search);
-let ACTIVESTORY = urlParams.get("story") ?? "Paragate";
+var IncludeSettingTags = false;
 
-let IncludeSettingTags = false;
+var eBackground = document.getElementById("BACKGROUND") as HTMLElement;
+var eText = document.getElementById("BODY") as HTMLElement;
+var eProgressBar = document.getElementById("PROGRESS") as HTMLElement;
 
 // @TODO this will be defined by a JSON config file.
-const rootURL = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/Scriv2WN";
+var rootURL = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/Scriv2WN";
 
 // Append provided tags to document <head>
 const iconaddress = `icons/favicon-${ACTIVESTORY}.png`;
 (() => {
-    const head = document.head || document.getElementsByTagName("head")[0];
-    const linkDefs: Array<Record<string, string>> = [
+    const head = document.head || document.getElementsByTagName('head')[0];
+    const linkDefs: Array<Record<string,string>> = [
         { rel: "icon", href: iconaddress, type: "image/x-icon" },
         { rel: "icon", href: iconaddress, type: "image/png", sizes: "32x32" },
-        { rel: "apple-touch-icon", href: "icons/apple-touch-icon.png" },
+        { rel: "apple-touch-icon", href: "icons/apple-touch-icon.png" }
     ];
     linkDefs.forEach(def => {
         const link = document.createElement("link");
@@ -2134,28 +1867,33 @@ const iconaddress = `icons/favicon-${ACTIVESTORY}.png`;
     });
 })();
 
-// Scroll/resize throttling (keeps you to ~1 update per animation frame).
-let scrollRAF: number | null = null;
-function onScroll(): void {
-    if (scrollRAF != null) return;
-    scrollRAF = requestAnimationFrame(() => {
-        scrollRAF = null;
-        runScrollEvents();
-    });
+buildManuscript(rootURL,ACTIVESTORY, StartChapter);
+eBODY.addEventListener('scroll',runScrollEvents);
+addEventListener("resize", runResizeEvents)
+
+/*
+function getMousePosInImage(img: HTMLImageElement, ev: MouseEvent) {
+    const r = img.getBoundingClientRect();
+    const x = ev.clientX - r.left;
+    const y = ev.clientY - r.top;
+    const px = r.width > 0 ? Math.max(0, Math.min(1, x / r.width)) : 0;
+    const py = r.height > 0 ? Math.max(0, Math.min(1, y / r.height)) : 0;
+    const percentX = px * 100;
+    const percentY = py * 100;
+    return { x, y, px, py, percentX, percentY, bounds: r };
 }
 
-let resizeRAF: number | null = null;
-function onResize(): void {
-    if (resizeRAF != null) cancelAnimationFrame(resizeRAF);
-    resizeRAF = requestAnimationFrame(() => {
-        resizeRAF = null;
-        runResizeEvents();
+if (eMAP instanceof HTMLImageElement) {
+    eMAP.addEventListener('mousedown', (ev: MouseEvent) => {
+        const pos = getMousePosInImage(eMAP, ev);
+        // Example usage: expose as CSS vars or log
+        ROOT.style.setProperty('--img-mouse-x', `${(pos.px * 100).toFixed(2)}%`);
+        ROOT.style.setProperty('--img-mouse-y', `${(pos.py * 100).toFixed(2)}%`);
+        console.debug('Image mouse pos', `[${pos.percentX.toFixed(2)},${pos.percentY.toFixed(2)}],`);
+    });
+    eMAP.addEventListener('mouseleave', () => {
+        ROOT.style.removeProperty('--img-mouse-x');
+        ROOT.style.removeProperty('--img-mouse-y');
     });
 }
-
-// Kick everything off.
-void buildManuscript(rootURL, ACTIVESTORY, StartChapter);
-
-// Events.
-eBODY.addEventListener("scroll", onScroll, { passive: true });
-addEventListener("resize", onResize);
+/**/
