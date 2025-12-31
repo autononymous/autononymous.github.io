@@ -180,7 +180,7 @@ class StoryExtrasWindow {
             }
             this.AnnounceJSON = await response.json();
             this.Announcements = await this.parseAnnouncements();
-            console.log("StoryExtrasWindow.loadContent\n", `Announcements loaded from ${url}.`,this.Announcements);
+            console.log("StoryExtrasWindow.loadContent\n", `Announcements loaded from ${url}.`);//,this.Announcements);
             return true;
         } catch (error) {
             console.error("StoryExtrasWindow.loadContent\n", `Failed to load announcements: ${error}`);

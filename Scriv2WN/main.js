@@ -141,7 +141,7 @@ class StoryExtrasWindow {
                 }
                 this.AnnounceJSON = yield response.json();
                 this.Announcements = yield this.parseAnnouncements();
-                console.log("StoryExtrasWindow.loadContent\n", `Announcements loaded from ${url}.`, this.Announcements);
+                console.log("StoryExtrasWindow.loadContent\n", `Announcements loaded from ${url}.`); //,this.Announcements);
                 return true;
             }
             catch (error) {
