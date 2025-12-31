@@ -569,7 +569,7 @@ class ChapterDataCard {
             this.NightMode = !this.NightMode;
         }
         ROOT.style.setProperty("--IconState", `invert(${Number(!this.NightMode)})`);
-        ROOT.style.setProperty("--IconReverse", `invert(${Number(!this.NightMode)})`);
+        ROOT.style.setProperty("--IconReverse", `invert(${Number(this.NightMode)})`);
         ROOT.style.setProperty("--BooleanColor", `${this.NightMode ? "white" : "black"}`);
         console.log("ChapterDataCard.toggleNightMode\n", `Night mode is now ${this.NightMode ? "on" : "off"}.`);
         return this.NightMode;
@@ -1831,6 +1831,13 @@ function buildManuscript(rootURL_1, storyName_1) {
         yield EXTRAS.loadAnnouncements();
         yield EXTRAS.loadInExtras();
         EXTRAS.deployContent();
+        if (shouldDisableMegaDropShadow()) {
+            const s = document.documentElement.style;
+            s.setProperty("--MegaShadowFilter", `var(--IconState)`);
+            s.setProperty("--MegaShadowTransformX", "none");
+            console.warn('Compatibility for drop shadow trick is poor. Disabling drop shadows.');
+            //BIND.ShowImageHeaders(false);
+        }
     });
 }
 /**
@@ -1993,3 +2000,17 @@ void buildManuscript(rootURL, ACTIVESTORY, StartChapter);
 // Events.
 eBODY.addEventListener("scroll", onScroll, { passive: true });
 addEventListener("resize", onResize);
+// This handles drop shadow compatibilities.
+function shouldDisableMegaDropShadow() {
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
+    // "Touch-ish" devices (common proxy for mobile/tablet)
+    const touchLike = (_c = (_b = (_a = window.matchMedia) === null || _a === void 0 ? void 0 : _a.call(window, "(hover: none) and (pointer: coarse)")) === null || _b === void 0 ? void 0 : _b.matches) !== null && _c !== void 0 ? _c : false;
+    // Narrow screens (optional extra guard)
+    const smallScreen = (_f = (_e = (_d = window.matchMedia) === null || _d === void 0 ? void 0 : _d.call(window, "(max-width: 768px)")) === null || _e === void 0 ? void 0 : _e.matches) !== null && _f !== void 0 ? _f : false;
+    // Feature detect: does this browser understand drop-shadow at all?
+    const supportsDropShadow = ((_j = (_h = (_g = window.CSS) === null || _g === void 0 ? void 0 : _g.supports) === null || _h === void 0 ? void 0 : _h.call(_g, "filter", "drop-shadow(1px 0 0 #000)")) !== null && _j !== void 0 ? _j : false);
+    const doNoShadows = touchLike || smallScreen || !supportsDropShadow;
+    console.info("----==== Shadow Compatibility Report ====----", `touchLike? . . . . . . ${touchLike}`, `smallScreen? . . . . . ${smallScreen}`, `supportsDropShadow?. . ${supportsDropShadow}`, `Therefore system ${doNoShadows ? "will NOT" : "WILL"} do shadow rendering.`);
+    return doNoShadows;
+}
+window.addEventListener("resize", shouldDisableMegaDropShadow);
