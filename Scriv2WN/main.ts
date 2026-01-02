@@ -338,7 +338,7 @@ class LocalStorageAndSrcVars {
         "dojustify":true,
         "doimgheaders":true,
         "dodatetimeheaders":true,
-        "dospecificheader":true
+        "dospecificheader":false
     };
     // Default local setup.
     public Local : any;
