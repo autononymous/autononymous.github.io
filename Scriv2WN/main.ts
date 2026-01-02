@@ -1366,9 +1366,10 @@ class ChapterBinder {
             "Firebrand":"FB",
             "Goldenfur":"GF"
         }
+        // @UPDATE @TODO Available Headers Enumerated Here **********************************************************************************************************
         const ChapterImages:any = 
         {
-            "Paragate":[1],
+            "Paragate":[1,2,3,4,5,6,7],
             "Firebrand":[],
             "Goldenfur":[]
         }

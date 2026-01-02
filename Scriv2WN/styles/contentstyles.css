@@ -13,11 +13,18 @@ div > div {
     */
 div.HeaderCanvas {
     overflow:hidden;
-    width: max(100%,100vw);
+    width: max(100%,calc(800px - (var(--TypesetMargin) * 2))); 
+    /*width: 100%;/*calc(100% - (var(--TypesetMargin) * 2));/**/
     position:relative;
     height:var(--HeaderImageHeight);
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media (max-width:680px) {
+   div.HeaderCanvas {
+        width: 100vw;
+   }
 }
 div.Header {
     height: 300px;
@@ -35,10 +42,11 @@ div.Header {
 img.HeaderImg {
     position: relative;
     top:0;
-    left: calc( (-0.5 * var(--HeaderImageHeight) * var(--HeaderImageRatio)) + 50% );
+    /*left: calc( (-0.5 * var(--HeaderImageHeight) * var(--HeaderImageRatio)) + 50% );/**/
     filter: var(--MegaShadowFilter);
     transform: var(--MegaShadowTransformX);
-    height: var(--HeaderImageHeight);
+    /*height: var(--HeaderImageHeight); /**/
+    width: 100%;
 }
 div.HeaderAlt {
     font-size: calc( var(--TextSize) * 1.3);
