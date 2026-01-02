@@ -1285,9 +1285,12 @@ class ChapterBinder {
         };
         // @UPDATE @TODO Available Headers Enumerated Here **********************************************************************************************************
         const ChapterImages = {
-            "Paragate": [1, 2, 3, 4, 5, 6, 7],
-            "Firebrand": [],
+            "Paragate": [1, 2, 3, 4, 5, 6, 7], //  8 ,  9 , 10 , 
+            // 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20
+            "Firebrand": [1, 2, 3, 4, 5], //  , 6  ,  7 ,  8 ,  9 , 10 , 
+            // 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20
             "Goldenfur": []
+            // 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20
         };
         let snippet = "";
         let thisChapter = Number(this.CurrentChapter.Chapter);
