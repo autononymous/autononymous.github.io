@@ -282,6 +282,83 @@ class ControlBar {
         datacard.toggleNightMode(this.ThemeState, false);
     }
 }
+class Announcer {
+    constructor() {
+        this.MsgActive = "calc( 100dvh - 10dvh)"; // for BOTTOM css
+        this.MsgInactive = "105dvh"; //for BOTTOM css
+        this.eBOX = document.getElementById('NOTIFY');
+        this.eICON = document.getElementById('NOTIFY-ICON');
+        this.eMSG = document.getElementById('NOTIFY-MSG');
+        this.light = {
+            "info": ["#0B2F4C", "#DCEEFF"],
+            "warn": ["#4A2B00", "#FFF3C4"],
+            "error": ["#4C1010", "#FFE0E0"],
+            "success": ["#0F3D1D", "#DFF9E6"],
+            "neutral": ["#1F2937", "#F3F4F6"],
+            "muted": ["#111827", "#E5E7EB"],
+            "accent": ["#3D1A66", "#F2E7FF"],
+            "mention": ["#063A3B", "#D1FAF5"],
+            "link": ["#0A3D7A", "#D8ECFF"],
+            "debug": ["#3B1745", "#F8E7FF"]
+        };
+        this.dark = {
+            "info": ["#DCEEFF", "#0B2F4C"],
+            "warn": ["#FFF3C4", "#4A2B00"],
+            "error": ["#FFE0E0", "#4C1010"],
+            "success": ["#DFF9E6", "#0F3D1D"],
+            "neutral": ["#F3F4F6", "#1F2937"],
+            "muted": ["#E5E7EB", "#111827"],
+            "accent": ["#F2E7FF", "#3D1A66"],
+            "mention": ["#D1FAF5", "#063A3B"],
+            "link": ["#D8ECFF", "#0A3D7A"],
+            "debug": ["#F8E7FF", "#3B1745"]
+        };
+        this.icon = {
+            "info": ["&#x24D8;", 1.0],
+            "warn": ["&#x26A0;", 1.0],
+            "error": ["&#x2716;", 0.90],
+            "success": ["&#x2714;", 1.05],
+            "neutral": ["&#x25FB;", 1.0],
+            "muted": ["&#x25CC;", 1.1],
+            "accent": ["&#x2726;", 1.05],
+            "mention": ["&#xFF20;", 0.95],
+            "link": ["&#x27F2;", 1.05],
+            "debug": ["&#x2699;", 1.05]
+        };
+        this.activeTheme = CARD.NightMode ? this.dark : this.light;
+        if (BIND.Permissions != 0) {
+            this.PopIn(`Permission level is "${BIND.PermissionName}".`, "info");
+        }
+    }
+    SetMessage(message, themeStyle = "info") {
+        if (!Object.keys(this.dark).includes(themeStyle)) {
+            console.warn("Announcer.SetMessage\n", `Theme "${themeStyle}" does not exist. Defaulting to "info" style.`);
+            themeStyle = "info";
+        }
+        this.activeTheme = CARD.NightMode ? this.dark : this.light;
+        this.eMSG.innerHTML = message;
+        this.eICON.style.transform = `scale( ${this.icon[themeStyle][1]} )`;
+        this.eICON.innerHTML = this.icon[themeStyle][0];
+        this.eBOX.style.backgroundColor = this.activeTheme[themeStyle][1];
+        [this.eBOX, this.eICON, this.eMSG].forEach(element => {
+            element.style.color = element.style.borderColor = this.activeTheme[themeStyle][0];
+        });
+    }
+    PopIn(message = "", themeStyle = "info") {
+        if (message != "") {
+            this.SetMessage(message, themeStyle);
+        }
+        //this.eBOX.style.setProperty('bottom',this.MsgActive)
+        this.eBOX.style.animation = "none";
+        this.eBOX.offsetHeight;
+        this.eBOX.style.animation = "";
+    }
+    PopOut() {
+        //this.eBOX.style.setProperty('bottom',this.MsgInactive)
+        this.eBOX.style.animation = "none";
+        this.eBOX.offsetHeight;
+    }
+}
 class LocalStorageAndSrcVars {
     constructor(storyName) {
         //  Search variables take priority over Local Storage.
@@ -301,7 +378,7 @@ class LocalStorageAndSrcVars {
             "dojustify": true,
             "doimgheaders": true,
             "dodatetimeheaders": true,
-            "dospecificheader": true
+            "dospecificheader": false
         };
         this.Local = Object.assign(this.default);
         this.Map = this.PollSrcVars();
@@ -880,22 +957,25 @@ class ChapterBinder {
         // No hack please!!!
         switch (this.Permissions) {
             case 3: // Admin.
-                console.info("ChapterBinder.HandlePermissions\n", "Permissions at ADMIN level.");
                 this.ChapterBounds.active = this.ChapterBounds.full;
+                this.PermissionName = "Author";
                 break;
             case 2: // Special selection.
                 console.info("ChapterBinder.HandlePermissions\n", "Permissions at SPECIAL level.");
                 this.ChapterBounds.active = this.ManualChapters;
+                this.PermissionName = "Special";
                 break;
             case 1: // Reviewer.
                 console.info("ChapterBinder.HandlePermissions\n", "Permissions at REVIEWER level.");
                 this.ChapterBounds.active = this.ChapterBounds.full;
+                this.PermissionName = "Reviewer";
                 break;
             default: // Base user.
-                console.info("ChapterBinder.HandlePermissions\n", "Permissions at GUEST level.");
                 this.ChapterBounds.active = this.ChapterBounds.whitelist;
+                this.PermissionName = "Reader";
                 break;
         }
+        console.info("ChapterBinder.HandlePermissions\n", `Permissions at ${this.PermissionName} level.`);
         this.ChapterBounds.active.forEach((chapnum) => {
             // recall: chapnum vs chapter indexing
             this.TOC[chapnum - 1]["AccessGranted"] = true;
@@ -914,6 +994,7 @@ class ChapterBinder {
         // Manually configure allowed preview chapters.
         this.ManualChapters = [1, 2, 3, 4, 5];
         this.Permissions = 0;
+        this.PermissionName = "Reader";
         this.lastMessenger = "Anon";
         this.CURRENT_SCENE = [0, 0, 0, 0];
         this.SHOW_IMAGE_HEADERS = SRC.Local.doimgheaders;
@@ -963,6 +1044,9 @@ class ChapterBinder {
     doWhitelist(requestedChapter) {
         if (!this.ChapterBounds.active.includes(requestedChapter)) {
             console.warn("ChapterBinder.pullRequest\n", `Requested chapter is out of bounds of access for permission level ${this.Permissions}.`);
+            if (requestedChapter > 0) {
+                ANN.PopIn(`Chapter ${requestedChapter} is not available yet.`, 'error');
+            }
             return false;
         }
         return true;
@@ -1846,6 +1930,7 @@ function buildManuscript(rootURL_1, storyName_1) {
         SRC.AttachBinder(BIND);
         CTRL = new ControlBar(SRC, CARD);
         THEME = new ThemeDriver(CFG.config, DEPLOY, CARD, eBACKGROUND, eBODY, ePROGRESS, true);
+        ANN = new Announcer();
         // Deploy initial chapter.
         yield BIND.DeployOnPage(SRC.Local.chapter, DEPLOY);
         EXTRAS = yield StoryExtrasWindow.initialize(SRC.storyName, rootURL, EXTRAID);
@@ -1971,6 +2056,7 @@ let THEME;
 let SRC;
 let EXTRAS;
 let CTRL;
+let ANN;
 let LookingAt = {
     voice: "Default",
     position: 0,

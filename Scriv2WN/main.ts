@@ -318,6 +318,90 @@ class ControlBar {
     }
 }
 
+class Announcer {
+    private MsgActive:string = "calc( 100dvh - 10dvh)"; // for BOTTOM css
+    private MsgInactive:string = "105dvh"; //for BOTTOM css
+    private eBOX:HTMLDivElement = document.getElementById('NOTIFY') as HTMLDivElement;
+    private eICON:HTMLDivElement = document.getElementById('NOTIFY-ICON') as HTMLDivElement;
+    private eMSG:HTMLDivElement = document.getElementById('NOTIFY-MSG') as HTMLDivElement;
+    private light:any = {
+        "info":    ["#0B2F4C", "#DCEEFF"],
+        "warn":    ["#4A2B00", "#FFF3C4"],
+        "error":   ["#4C1010", "#FFE0E0"],
+        "success": ["#0F3D1D", "#DFF9E6"],
+
+        "neutral": ["#1F2937", "#F3F4F6"],
+        "muted":   ["#111827", "#E5E7EB"],
+
+        "accent":  ["#3D1A66", "#F2E7FF"],
+        "mention": ["#063A3B", "#D1FAF5"],
+        "link":    ["#0A3D7A", "#D8ECFF"],
+        "debug":   ["#3B1745", "#F8E7FF"]
+    }
+    private dark:any = {
+        "info":    ["#DCEEFF", "#0B2F4C"],
+        "warn":    ["#FFF3C4", "#4A2B00"],
+        "error":   ["#FFE0E0", "#4C1010"],
+        "success": ["#DFF9E6", "#0F3D1D"],
+
+        "neutral": ["#F3F4F6", "#1F2937"],
+        "muted":   ["#E5E7EB", "#111827"],
+
+        "accent":  ["#F2E7FF", "#3D1A66"],
+        "mention": ["#D1FAF5", "#063A3B"],
+        "link":    ["#D8ECFF", "#0A3D7A"],
+        "debug":   ["#F8E7FF", "#3B1745"]
+    }
+    private icon:any = {
+        "info": ["&#x24D8;", 1.0],
+        "warn": ["&#x26A0;", 1.0],
+        "error": ["&#x2716;", 0.90],
+        "success": ["&#x2714;", 1.05],
+        "neutral": ["&#x25FB;", 1.0],
+        "muted": ["&#x25CC;", 1.1],
+        "accent": ["&#x2726;", 1.05],
+        "mention": ["&#xFF20;", 0.95],
+        "link": ["&#x27F2;", 1.05],
+        "debug": ["&#x2699;", 1.05]
+    }
+    private activeTheme = CARD.NightMode ? this.dark : this.light;
+    
+    constructor() {
+        if (BIND.Permissions != 0) {
+            this.PopIn(`Permission level is "${BIND.PermissionName}".`,"info")
+        }
+    }
+    SetMessage(message:string,themeStyle:string="info") {
+        if (!Object.keys(this.dark).includes(themeStyle)) {
+            console.warn("Announcer.SetMessage\n",`Theme "${themeStyle}" does not exist. Defaulting to "info" style.`);
+            themeStyle = "info";
+        }
+        this.activeTheme = CARD.NightMode ? this.dark : this.light;
+        this.eMSG.innerHTML = message;
+        this.eICON.style.transform = `scale( ${this.icon[themeStyle][1]} )`;
+        this.eICON.innerHTML = this.icon[themeStyle][0];
+        this.eBOX.style.backgroundColor = this.activeTheme[themeStyle][1];
+        [this.eBOX, this.eICON, this.eMSG].forEach( element => {
+            element.style.color = element.style.borderColor = this.activeTheme[themeStyle][0];
+        })
+       
+    }
+    PopIn(message:string="",themeStyle:string="info") {
+        if (message != "") {
+            this.SetMessage(message, themeStyle);
+        }
+        //this.eBOX.style.setProperty('bottom',this.MsgActive)
+        this.eBOX.style.animation = "none";
+        this.eBOX.offsetHeight;
+        this.eBOX.style.animation = "";
+    }
+    PopOut() {
+        //this.eBOX.style.setProperty('bottom',this.MsgInactive)
+        this.eBOX.style.animation = "none";
+        this.eBOX.offsetHeight;
+    }
+}
+
 class LocalStorageAndSrcVars {
 //  Search variables take priority over Local Storage.
     public Parameters : URLSearchParams|null = null
@@ -918,6 +1002,7 @@ class ChapterBinder {
     // Manually configure allowed preview chapters.
     public ManualChapters : number[] = [1,2,3,4,5];
     public Permissions : number = 0; 
+    public PermissionName : string = "Reader";
     public DataCard : ChapterDataCard;  
     public Config : StoryConfig;
     public lastMessenger : string = "Anon";
@@ -983,22 +1068,25 @@ class ChapterBinder {
         // No hack please!!!
         switch (this.Permissions) {
             case 3: // Admin.
-                console.info("ChapterBinder.HandlePermissions\n","Permissions at ADMIN level.")
                 this.ChapterBounds.active = this.ChapterBounds.full;
+                this.PermissionName = "Author";
                 break
             case 2: // Special selection.
                 console.info("ChapterBinder.HandlePermissions\n","Permissions at SPECIAL level.")
                 this.ChapterBounds.active = this.ManualChapters;
+                this.PermissionName = "Special";
                 break
             case 1: // Reviewer.
                 console.info("ChapterBinder.HandlePermissions\n","Permissions at REVIEWER level.")
                 this.ChapterBounds.active = this.ChapterBounds.full;
+                this.PermissionName = "Reviewer";
                 break
             default: // Base user.
-                console.info("ChapterBinder.HandlePermissions\n","Permissions at GUEST level.")
                 this.ChapterBounds.active = this.ChapterBounds.whitelist;
+                this.PermissionName = "Reader";
                 break
-        }
+        }        
+        console.info("ChapterBinder.HandlePermissions\n",`Permissions at ${this.PermissionName} level.`)
         this.ChapterBounds.active.forEach( (chapnum:number) => {            
             // recall: chapnum vs chapter indexing
             this.TOC[chapnum-1]["AccessGranted"] = true
@@ -1044,6 +1132,9 @@ class ChapterBinder {
     private doWhitelist(requestedChapter: number) {
         if (!this.ChapterBounds.active.includes(requestedChapter)) {
             console.warn("ChapterBinder.pullRequest\n",`Requested chapter is out of bounds of access for permission level ${this.Permissions}.`) 
+            if (requestedChapter > 0) {
+                ANN.PopIn(`Chapter ${requestedChapter} is not available yet.`,'error');
+            }            
             return false
         }       
         return true
@@ -2048,6 +2139,8 @@ async function buildManuscript(rootURL: string, storyName: string, startChapter:
 
     THEME = new ThemeDriver(CFG.config, DEPLOY, CARD, eBACKGROUND, eBODY, ePROGRESS, true);
 
+    ANN = new Announcer();
+
     // Deploy initial chapter.
     await BIND.DeployOnPage(SRC.Local.chapter, DEPLOY);
 
@@ -2190,6 +2283,7 @@ let THEME!: ThemeDriver;
 let SRC!: LocalStorageAndSrcVars;
 let EXTRAS!: StoryExtrasWindow;
 let CTRL!: ControlBar;
+let ANN!: Announcer;
 
 let LookingAt: LookingAtThis = {
     voice: "Default",

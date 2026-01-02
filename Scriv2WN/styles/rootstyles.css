@@ -1,9 +1,15 @@
 :root {
         /* Setting the height of the interface/menu bar */
     --MenuHeightStatic:     40px;
-    --MenuHeight:           150px;
+    --MenuHeight:           225px;
     --MapHeight:            min(400px,66.7vw);
     --ControlHeight:        min(25vw,100px);
+
+    /* Notification Controller /**/
+    --NotifyPosition:       105dvh;
+    --AnnouncementHeight:   max(10dvh,200px);
+    --AnnounceDuration:     4s;
+    --AnnounceIconSize:     90px;
 
     /* Regulating drop shadow trick controls /**/
     --MegaShadowFilter: drop-shadow(1000vw 0 var(--TextColor));

@@ -41,3 +41,51 @@ span.atitle {
     font-weight: 600;
     font-size: 1.125em;/*calc( var(--TextSize) * 1.0);/**/
 }
+
+@keyframes announcer {
+    0%      {bottom: 105dvh;}
+    10%     {bottom: calc( var(--NotifyPosition) - var(--AnnouncementHeight));}
+    90%     {bottom: calc( var(--NotifyPosition) - var(--AnnouncementHeight));}
+    100%    {bottom: 105dvh;}
+}
+
+div.NOTIFY {
+    position: absolute;
+    left:50vw;
+    bottom: var(--NotifyPosition);
+    transform: translateX(-50%);
+    width: min(60vw,800px);
+    min-height: 100px;
+    background-color: var(--MidgroundColor);
+    /* transition: bottom 0.6s ease-in-out; /**/
+    display:inline-flex;
+    flex-direction: row;  
+    border: 2px solid var(--TextColor);
+    border-radius: 20px;
+    animation-name: announcer;
+    animation-duration: var(--AnnounceDuration);
+}
+div.NOTIFY-ICON {
+    width: 120px;
+    height:100%;
+    /* border: 1px solid white; /**/
+    margin: auto;    
+    color: var(--TextColor);
+    font-size: var(--AnnounceIconSize);
+    margin: 0;
+    margin-left: 0px;
+    line-height: 1em;
+    margin-left: 10px;
+    padding: 5px;
+
+
+}
+div.NOTIFY-MSG {
+    flex: 1;
+    height:100%;
+    /* border: 1px solid white; /**/
+    margin:auto;
+    font-family:var(--ActiveText);
+    font-size: 1.125em;
+    color: var(--TextColor);
+}
