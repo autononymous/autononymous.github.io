@@ -9,7 +9,8 @@
     --MegaShadowFilter: drop-shadow(1000vw 0 var(--TextColor));
     --MegaShadowTransformX: translateX(-1000vw);
 
-    --HeaderImageHeight:    300px;
+    --HeaderImageHeight:    400px;
+    --HeaderImageRatio:     (4/3);
 
     --placeName:            "place";
 

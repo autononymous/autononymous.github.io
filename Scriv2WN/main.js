@@ -297,7 +297,11 @@ class LocalStorageAndSrcVars {
             "fontsetting": 3,
             "linesetting": 3,
             "themesetting": true,
-            "dojustify": true
+            // Header Settings
+            "dojustify": true,
+            "doimgheaders": true,
+            "dodatetimeheaders": true,
+            "dospecificheader": true
         };
         this.Local = Object.assign(this.default);
         this.Map = this.PollSrcVars();
@@ -345,6 +349,7 @@ class LocalStorageAndSrcVars {
             this.Local.chapter = this.requestedChapter;
             localStorage.setItem(this.SaveName, JSON.stringify(this.Local));
         }
+        this.UpdateHeaderSettings();
         this.StatusReport();
     }
     static initialize(storyName) {
@@ -360,6 +365,16 @@ class LocalStorageAndSrcVars {
         this.Local.chapter = chapter;
         console.debug("LSASV.SetSavedChapter\n", `Last position saved as ${chapter}.`, this.Local);
         this.SaveLocalStorage();
+    }
+    UpdateHeaderSettings() {
+        let showImageHeader = document.getElementById('showimageheader');
+        let doTimeHeader = document.getElementById('dotimeheader');
+        let doSpecificHeader = document.getElementById('dospecificheader');
+        // @TODO Update with additional settings.
+        showImageHeader.checked = this.Local.doimgheaders;
+        doTimeHeader.checked = this.Local.dodatetimeheaders;
+        doSpecificHeader.checked = this.Local.dospecificheader;
+        console.info("LSASV.UpdateHeaderSettings\n", "Header Settings have been updated according to 'Local':", this.Local);
     }
     PollSrcVars(doReport = true) {
         let address = window.location.search;
@@ -840,18 +855,6 @@ class ChapterBinder {
             }
         });
     }
-    ToggleStarterTags(setstate = null) {
-        if (setstate == null) {
-            this.SHOW_STARTER_TAGS = !this.SHOW_STARTER_TAGS;
-        }
-        else {
-            this.SHOW_STARTER_TAGS = setstate;
-        }
-        ;
-        this.DeployOnPage('', DEPLOY);
-        //@TODO save into Local Storage the state of this.
-        return;
-    }
     HandlePermissions(doReport = true) {
         this.ChapterBounds = { active: [], whitelist: [], full: [] };
         // This is where access list is assembled. ***********ACCESS***************
@@ -913,11 +916,11 @@ class ChapterBinder {
         this.Permissions = 0;
         this.lastMessenger = "Anon";
         this.CURRENT_SCENE = [0, 0, 0, 0];
-        this.SHOW_IMAGE_HEADERS = true;
+        this.SHOW_IMAGE_HEADERS = SRC.Local.doimgheaders;
         this.LAST_SCENE = [0, 0, 0, 0];
         this.CurrentChapter = [];
         this.eMAPPIN = document.getElementById('STORYPIN');
-        this.doSpecificName = false;
+        this.doSpecificName = SRC.Local.dospecificheader;
         this.MsgMatch = {
             "Miguel": "Miguel",
             "Cody": "Cody",
@@ -1006,6 +1009,38 @@ class ChapterBinder {
             this.doSpecificName = !this.doSpecificName;
         }
         this.DeployOnPage('', DEPLOY);
+        SRC.Local.dospecificheader = this.doSpecificName;
+        console.warn(SRC.Local);
+        SRC.SaveLocalStorage();
+    }
+    ToggleStarterTags(setstate = null) {
+        if (setstate == null) {
+            this.SHOW_STARTER_TAGS = !this.SHOW_STARTER_TAGS;
+        }
+        else {
+            this.SHOW_STARTER_TAGS = setstate;
+        }
+        ;
+        this.DeployOnPage('', DEPLOY);
+        SRC.Local.dodatetimeheaders = this.SHOW_STARTER_TAGS;
+        console.warn(SRC.Local);
+        SRC.SaveLocalStorage();
+        return;
+    }
+    ShowImageHeaders(setstate = null) {
+        if (setstate == null) {
+            this.SHOW_IMAGE_HEADERS = !this.SHOW_IMAGE_HEADERS;
+        }
+        else {
+            this.SHOW_IMAGE_HEADERS = setstate;
+        }
+        ;
+        let ImgHeader = document.getElementById('imheader');
+        ImgHeader.innerHTML = this.ImageHeaderSnippet(this.storyName);
+        ImgHeader.style.height = this.SHOW_IMAGE_HEADERS ? "inherit" : "unset";
+        SRC.Local.doimgheaders = this.SHOW_IMAGE_HEADERS;
+        console.warn(SRC.Local);
+        SRC.SaveLocalStorage();
     }
     DeployOnPage(requestedChapter_1, targetElementID_1) {
         return __awaiter(this, arguments, void 0, function* (requestedChapter, targetElementID, purgeContent = true) {
@@ -1186,18 +1221,6 @@ class ChapterBinder {
             snippet += `<h3 id="sub_${ChapterInfo.ChapterFull}" class="${ChapterInfo.Character[0]}Head Subtitle">${prefix + ChapterInfo.ChapterName + suffix}</h3>`;
             return snippet;
         }
-    }
-    ShowImageHeaders(setstate = null) {
-        if (setstate == null) {
-            this.SHOW_IMAGE_HEADERS = !this.SHOW_IMAGE_HEADERS;
-        }
-        else {
-            this.SHOW_IMAGE_HEADERS = setstate;
-        }
-        ;
-        let ImgHeader = document.getElementById('imheader');
-        ImgHeader.innerHTML = this.ImageHeaderSnippet(this.storyName);
-        ImgHeader.style.height = this.SHOW_IMAGE_HEADERS ? "inherit" : "unset";
     }
     placeWorldMap(la) {
         try {
@@ -1819,7 +1842,7 @@ function buildManuscript(rootURL_1, storyName_1) {
         CFG = yield StoryConfig.initialize(rootURL, SRC.storyName);
         CARD = new ChapterDataCard(SRC.storyName);
         CARD.toggleNightMode(false); // Start in Night Mode.
-        BIND = yield ChapterBinder.initialize(rootURL, SRC.storyName, CFG, SRC.Local.permlevel, CARD, DEPLOY, 0, IncludeSettingTags);
+        BIND = yield ChapterBinder.initialize(rootURL, SRC.storyName, CFG, SRC.Local.permlevel, CARD, DEPLOY, 0, SRC.Local.dodatetimeheaders);
         SRC.AttachBinder(BIND);
         CTRL = new ControlBar(SRC, CARD);
         THEME = new ThemeDriver(CFG.config, DEPLOY, CARD, eBACKGROUND, eBODY, ePROGRESS, true);
@@ -1958,7 +1981,7 @@ let lastScene = [0, 0];
 // Read story from URL first so LocalStorage uses the right save namespace.
 const urlParams = new URLSearchParams(window.location.search);
 let ACTIVESTORY = (_a = urlParams.get("story")) !== null && _a !== void 0 ? _a : "Paragate";
-let IncludeSettingTags = false;
+//let IncludeSettingTags = false;
 // @TODO this will be defined by a JSON config file.
 const rootURL = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/Scriv2WN";
 // Append provided tags to document <head>

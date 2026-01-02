@@ -35,7 +35,7 @@ div.Header {
 img.HeaderImg {
     position: relative;
     top:0;
-    left: calc( (-0.5 * var(--HeaderImageHeight) * (2500/800)) + 50% );
+    left: calc( (-0.5 * var(--HeaderImageHeight) * var(--HeaderImageRatio)) + 50% );
     filter: var(--MegaShadowFilter);
     transform: var(--MegaShadowTransformX);
     height: var(--HeaderImageHeight);

@@ -70,7 +70,7 @@ var decodeEntities = (function() {
       str = str.replace(/<script[^>]*>([\S\s]*?)<\/script>/gmi, '');
       str = str.replace(/<\/?\w(?:[^"'>]|"[^"]*"|'[^']*')*>/gmi, '');
       element.innerHTML = str;
-      str = element.textContent;
+      str = element.textContent as string;
       element.textContent = '';
     }
 
@@ -334,7 +334,11 @@ class LocalStorageAndSrcVars {
         "fontsetting":3,
         "linesetting":3,
         "themesetting":true,
-        "dojustify":true
+        // Header Settings
+        "dojustify":true,
+        "doimgheaders":true,
+        "dodatetimeheaders":true,
+        "dospecificheader":true
     };
     // Default local setup.
     public Local : any;
@@ -378,15 +382,15 @@ class LocalStorageAndSrcVars {
             let get = localStorage.getItem(this.SaveName) as string
             this.Local = JSON.parse(get)
         }    
-// Always apply URL overrides (story/mode/chapter), even on first run.
-// This is intentionally after LocalStorage has been loaded/created.
-if (this.ParseSrcVars(false) && this.requestedChapter != null) {
-    console.info("LSASV.ParseSrcVars\n", `Setting chapter to ${this.requestedChapter} from URL search parameters in ${this.SaveName}.`)
-    this.Local.chapter = this.requestedChapter;
-    localStorage.setItem(this.SaveName, JSON.stringify(this.Local));
-}
-
-        this.StatusReport()
+        // Always apply URL overrides (story/mode/chapter), even on first run.
+        // This is intentionally after LocalStorage has been loaded/created.
+        if (this.ParseSrcVars(false) && this.requestedChapter != null) {
+            console.info("LSASV.ParseSrcVars\n", `Setting chapter to ${this.requestedChapter} from URL search parameters in ${this.SaveName}.`)
+            this.Local.chapter = this.requestedChapter;
+            localStorage.setItem(this.SaveName, JSON.stringify(this.Local));
+        }
+            this.UpdateHeaderSettings()
+            this.StatusReport()
     }
     static async initialize(storyName:string) {
         return new LocalStorageAndSrcVars(storyName)
@@ -399,6 +403,16 @@ if (this.ParseSrcVars(false) && this.requestedChapter != null) {
         this.Local.chapter = chapter
         console.debug("LSASV.SetSavedChapter\n",`Last position saved as ${chapter}.`,this.Local)
         this.SaveLocalStorage()
+    }
+    UpdateHeaderSettings() {
+        let showImageHeader:HTMLInputElement = document.getElementById('showimageheader') as HTMLInputElement;
+        let doTimeHeader:HTMLInputElement = document.getElementById('dotimeheader') as HTMLInputElement;
+        let doSpecificHeader:HTMLInputElement = document.getElementById('dospecificheader') as HTMLInputElement;
+        // @TODO Update with additional settings.
+        showImageHeader.checked = this.Local.doimgheaders;
+        doTimeHeader.checked = this.Local.dodatetimeheaders;
+        doSpecificHeader.checked = this.Local.dospecificheader;
+        console.info("LSASV.UpdateHeaderSettings\n","Header Settings have been updated according to 'Local':",this.Local)
     }
     PollSrcVars(doReport:boolean=true) {
         let address = window.location.search
@@ -908,12 +922,12 @@ class ChapterBinder {
     public Config : StoryConfig;
     public lastMessenger : string = "Anon";
     public CURRENT_SCENE : number[] = [0,0,0,0];
-    public SHOW_IMAGE_HEADERS : boolean = true;
+    public SHOW_IMAGE_HEADERS : boolean = SRC.Local.doimgheaders;
     public LAST_SCENE : number[] = [0,0,0,0];
     public CurrentChapter : any = [];
     public eMAPPIN : HTMLElement = document.getElementById('STORYPIN') as HTMLElement
 
-    public doSpecificName : boolean = false;
+    public doSpecificName : boolean = SRC.Local.dospecificheader;
 
     public SHOW_STARTER_TAGS : boolean;
 
@@ -943,14 +957,6 @@ class ChapterBinder {
             elem.innerHTML += `<div class="lockedSel">${chapter.DaysUntil.toFixed(0)}</div>`;
         }
     });
-    }
-
-    ToggleStarterTags(setstate:boolean|null = null) { 
-        if( setstate==null ) {this.SHOW_STARTER_TAGS = !this.SHOW_STARTER_TAGS} 
-        else {this.SHOW_STARTER_TAGS = setstate}; 
-        this.DeployOnPage('',DEPLOY)
-        //@TODO save into Local Storage the state of this.
-        return
     }
 
     HandlePermissions(doReport:boolean = true) {
@@ -1039,8 +1045,7 @@ class ChapterBinder {
         if (!this.ChapterBounds.active.includes(requestedChapter)) {
             console.warn("ChapterBinder.pullRequest\n",`Requested chapter is out of bounds of access for permission level ${this.Permissions}.`) 
             return false
-        }
-       
+        }       
         return true
     }
     async pullRequest(requestedChapter: number) {
@@ -1082,7 +1087,29 @@ class ChapterBinder {
         } else {
             this.doSpecificName = !this.doSpecificName
         }
-        this.DeployOnPage('',DEPLOY)
+        this.DeployOnPage('',DEPLOY)        
+        SRC.Local.dospecificheader = this.doSpecificName;
+        console.warn(SRC.Local);
+        SRC.SaveLocalStorage();
+    }  
+    ToggleStarterTags(setstate:boolean|null = null) { 
+        if( setstate==null ) {this.SHOW_STARTER_TAGS = !this.SHOW_STARTER_TAGS} 
+        else {this.SHOW_STARTER_TAGS = setstate}; 
+        this.DeployOnPage('',DEPLOY);
+        SRC.Local.dodatetimeheaders = this.SHOW_STARTER_TAGS;
+        console.warn(SRC.Local);
+        SRC.SaveLocalStorage();
+        return
+    }
+     ShowImageHeaders(setstate:boolean|null = null) { 
+        if( setstate==null ) {this.SHOW_IMAGE_HEADERS = !this.SHOW_IMAGE_HEADERS} 
+        else {this.SHOW_IMAGE_HEADERS = setstate}; 
+        let ImgHeader : HTMLDivElement = document.getElementById('imheader') as HTMLDivElement;
+        ImgHeader.innerHTML = this.ImageHeaderSnippet(this.storyName);
+        ImgHeader.style.height = this.SHOW_IMAGE_HEADERS ? "inherit" : "unset"
+        SRC.Local.doimgheaders = this.SHOW_IMAGE_HEADERS;
+        console.warn(SRC.Local);
+        SRC.SaveLocalStorage();
     }
 
     async DeployOnPage(requestedChapter: number|string, targetElementID: string, purgeContent: boolean = true) {
@@ -1272,15 +1299,7 @@ class ChapterBinder {
             snippet += `<h3 id="sub_${ChapterInfo.ChapterFull}" class="${ChapterInfo.Character[0]}Head Subtitle">${prefix + ChapterInfo.ChapterName + suffix}</h3>`
             return snippet
         }
-    }
-
-    ShowImageHeaders(setstate:boolean|null = null) { 
-        if( setstate==null ) {this.SHOW_IMAGE_HEADERS = !this.SHOW_IMAGE_HEADERS} 
-        else {this.SHOW_IMAGE_HEADERS = setstate}; 
-        let ImgHeader : HTMLDivElement = document.getElementById('imheader') as HTMLDivElement;
-        ImgHeader.innerHTML = this.ImageHeaderSnippet(this.storyName);
-        ImgHeader.style.height = this.SHOW_IMAGE_HEADERS ? "inherit" : "unset"
-    }
+    }  
 
     placeWorldMap(la:LookingAtThis) {
         try {
@@ -2022,7 +2041,7 @@ async function buildManuscript(rootURL: string, storyName: string, startChapter:
     CARD = new ChapterDataCard(SRC.storyName);
     CARD.toggleNightMode(false); // Start in Night Mode.
 
-    BIND = await ChapterBinder.initialize(rootURL, SRC.storyName, CFG, SRC.Local.permlevel, CARD, DEPLOY, 0, IncludeSettingTags);
+    BIND = await ChapterBinder.initialize(rootURL, SRC.storyName, CFG, SRC.Local.permlevel, CARD, DEPLOY, 0, SRC.Local.dodatetimeheaders);
     SRC.AttachBinder(BIND);
 
     CTRL = new ControlBar(SRC, CARD);
@@ -2185,7 +2204,7 @@ let lastScene: [number, number] = [0, 0];
 const urlParams = new URLSearchParams(window.location.search);
 let ACTIVESTORY = urlParams.get("story") ?? "Paragate";
 
-let IncludeSettingTags = false;
+//let IncludeSettingTags = false;
 
 // @TODO this will be defined by a JSON config file.
 const rootURL = "https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/Scriv2WN";
