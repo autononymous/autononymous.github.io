@@ -422,7 +422,8 @@ class LocalStorageAndSrcVars {
         "dojustify":true,
         "doimgheaders":true,
         "dodatetimeheaders":true,
-        "dospecificheader":false
+        "dospecificheader":false,
+        "dofadein":true
     };
     // Default local setup.
     public Local : any;
@@ -492,10 +493,12 @@ class LocalStorageAndSrcVars {
         let showImageHeader:HTMLInputElement = document.getElementById('showimageheader') as HTMLInputElement;
         let doTimeHeader:HTMLInputElement = document.getElementById('dotimeheader') as HTMLInputElement;
         let doSpecificHeader:HTMLInputElement = document.getElementById('dospecificheader') as HTMLInputElement;
+        let doFadeIn:HTMLInputElement = document.getElementById('doblackfade') as HTMLInputElement;
         // @TODO Update with additional settings.
         showImageHeader.checked = this.Local.doimgheaders;
         doTimeHeader.checked = this.Local.dodatetimeheaders;
         doSpecificHeader.checked = this.Local.dospecificheader;
+        doFadeIn.checked = this.Local.dofadein;
         console.info("LSASV.UpdateHeaderSettings\n","Header Settings have been updated according to 'Local':",this.Local)
     }
     PollSrcVars(doReport:boolean=true) {
@@ -717,7 +720,7 @@ class ChapterDataCard {
         ROOT.style.setProperty("--IconState",`invert(${Number(!this.NightMode)})`);
         ROOT.style.setProperty("--IconReverse",`invert(${Number(this.NightMode)})`);
         ROOT.style.setProperty("--BooleanColor",`${this.NightMode ? "white" : "black" }`);        
-        console.log("ChapterDataCard.toggleNightMode\n",`Night mode is now ${this.NightMode ? "on" : "off"}.`)
+        console.log("ChapterDataCard.toggleNightMode\n",`Night mode is now ${this.NightMode ? "on" : "off"}.`)        
         return this.NightMode
     }
     updateDataBar() {
@@ -1369,23 +1372,34 @@ class ChapterBinder {
         // @UPDATE @TODO Available Headers Enumerated Here **********************************************************************************************************
         const ChapterImages:any = 
         {
-            "Paragate"  :[ 1  , 2  , 3  , 4  , 5  , 6  , 7],//  8 ,  9 , 10 , 
+            "Paragate"  :[ 1  , 2  , 3  , 4  , 5  ,  6 ,  7],//  8 ,  9 , 10 , 
                         // 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20
-            "Firebrand" :[ 1  , 2  , 3  , 4  , 5],//  , 6  ,  7 ,  8 ,  9 , 10 , 
+            "Firebrand" :[ 1  ,      3  , 4  , 5  ,  6 ,  7 ,  8 ,  9 , 10],// , 
                         // 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20
             "Goldenfur" :[   ]
                         // 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20
         }
-
+        const DarkImages:any = 
+        {
+            "Paragate"  :[                                 ],//  8 ,  9 , 10 , 
+                        // 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20
+            "Firebrand" :[                                7 ,  8 ,  9 , 10],// , 
+                        // 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20
+            "Goldenfur" :[   ]
+                        // 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20 
+        }        
         let snippet = ""
         let thisChapter = Number(this.CurrentChapter.Chapter);
         let ChapterInfo = this.TOC[thisChapter - 1]
+        
         let prefix = this.Config.config["Styles"][ChapterInfo.Character[0]]["Prefix"]
         let suffix = this.Config.config["Styles"][ChapterInfo.Character[0]]["Suffix"]
 
+        let imgsuffix:string = (this.DataCard.NightMode && DarkImages[story].includes(thisChapter)) ? 'D' : '';
+
         if ((dict[story] != undefined) && (this.SHOW_IMAGE_HEADERS) && (ChapterImages[story].includes(thisChapter))) {
             let storytag:string = dict[story]
-            let url:string = `headers/${storytag}-HL${String(thisChapter).padStart(2, "0")}.png`;
+            let url:string = `headers/${storytag}-HL${String(thisChapter).padStart(2, "0")}${imgsuffix}.png`;
             snippet += `<img class="HeaderImg" src="${url}"/>`;
             snippet += `<div id="subtext" class="HeaderAlt">${prefix}<span class="HeaderAltTitle">${ChapterInfo.ChapterNumber}</span><span class="HeaderAltSub"> - ${ChapterInfo.ChapterName}</span>${suffix}</div>`;
             return snippet
@@ -1555,7 +1569,7 @@ class ThemeDriver {
     public Keyframes: ThemeKeyframe[] = [];
 
     /** Whether to fade to/from "Default" at the top/bottom. */
-    public doFading: boolean = false;
+    public doFading: boolean;
 
     /** Frame used when fading to/from "Default". */
     public FadeStyle: DisplayFrame = {
@@ -1619,7 +1633,6 @@ class ThemeDriver {
         eBackground: HTMLElement,
         eTextCanvas: HTMLElement,
         eProgressBar: HTMLElement,
-        doFading: boolean = true,
     ) {
         this.Story = datacard.Story;
         this.ThemeIndex = config["ThemeIndex"];
@@ -1636,7 +1649,7 @@ class ThemeDriver {
         datacard.setThemeDriver(this);
         this.DataCard = datacard;
 
-        this.doFading = doFading;
+        this.doFading = SRC.Local.dofadein;
 
         // Initialize the frame immediately based on the starting night mode.
         const bg = 255 * Number(!this.DataCard.NightMode);
@@ -1666,6 +1679,17 @@ class ThemeDriver {
         this.TransitionWidth = width;
     }
 
+    ToggleFadeIn(setting:boolean|null=null) {
+        if (setting != null) {
+            this.doFading = setting
+        } else {
+            this.doFading = !this.doFading
+        }
+        BIND.DeployOnPage(this.DataCard.currentChapter(),DEPLOY)        
+        SRC.Local.dofadein = this.doFading;
+        console.warn(SRC.Local);
+        SRC.SaveLocalStorage();
+    }
     /**
      * Builds a list of keyframes from {@link ScrollBreaks}.
      *
@@ -2141,7 +2165,7 @@ async function buildManuscript(rootURL: string, storyName: string, startChapter:
 
     CTRL = new ControlBar(SRC, CARD);
 
-    THEME = new ThemeDriver(CFG.config, DEPLOY, CARD, eBACKGROUND, eBODY, ePROGRESS, true);
+    THEME = new ThemeDriver(CFG.config, DEPLOY, CARD, eBACKGROUND, eBODY, ePROGRESS);
 
     ANN = new Announcer();
 
@@ -2173,6 +2197,7 @@ function doThemeChange(): void {
     if (!CTRL || !THEME || !CARD) return;
     CTRL.setTheme(CARD);
     THEME.setKeyframes();
+    BIND.ShowImageHeaders(BIND.SHOW_IMAGE_HEADERS);
     runScrollEvents();
 }
 

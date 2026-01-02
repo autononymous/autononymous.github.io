@@ -378,7 +378,8 @@ class LocalStorageAndSrcVars {
             "dojustify": true,
             "doimgheaders": true,
             "dodatetimeheaders": true,
-            "dospecificheader": false
+            "dospecificheader": false,
+            "dofadein": true
         };
         this.Local = Object.assign(this.default);
         this.Map = this.PollSrcVars();
@@ -447,10 +448,12 @@ class LocalStorageAndSrcVars {
         let showImageHeader = document.getElementById('showimageheader');
         let doTimeHeader = document.getElementById('dotimeheader');
         let doSpecificHeader = document.getElementById('dospecificheader');
+        let doFadeIn = document.getElementById('doblackfade');
         // @TODO Update with additional settings.
         showImageHeader.checked = this.Local.doimgheaders;
         doTimeHeader.checked = this.Local.dodatetimeheaders;
         doSpecificHeader.checked = this.Local.dospecificheader;
+        doFadeIn.checked = this.Local.dofadein;
         console.info("LSASV.UpdateHeaderSettings\n", "Header Settings have been updated according to 'Local':", this.Local);
     }
     PollSrcVars(doReport = true) {
@@ -1287,19 +1290,28 @@ class ChapterBinder {
         const ChapterImages = {
             "Paragate": [1, 2, 3, 4, 5, 6, 7], //  8 ,  9 , 10 , 
             // 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20
-            "Firebrand": [1, 2, 3, 4, 5], //  , 6  ,  7 ,  8 ,  9 , 10 , 
+            "Firebrand": [1, 3, 4, 5, 6, 7, 8, 9, 10], // , 
             // 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20
             "Goldenfur": []
             // 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20
+        };
+        const DarkImages = {
+            "Paragate": [], //  8 ,  9 , 10 , 
+            // 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20
+            "Firebrand": [7, 8, 9, 10], // , 
+            // 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20
+            "Goldenfur": []
+            // 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20 
         };
         let snippet = "";
         let thisChapter = Number(this.CurrentChapter.Chapter);
         let ChapterInfo = this.TOC[thisChapter - 1];
         let prefix = this.Config.config["Styles"][ChapterInfo.Character[0]]["Prefix"];
         let suffix = this.Config.config["Styles"][ChapterInfo.Character[0]]["Suffix"];
+        let imgsuffix = (this.DataCard.NightMode && DarkImages[story].includes(thisChapter)) ? 'D' : '';
         if ((dict[story] != undefined) && (this.SHOW_IMAGE_HEADERS) && (ChapterImages[story].includes(thisChapter))) {
             let storytag = dict[story];
-            let url = `headers/${storytag}-HL${String(thisChapter).padStart(2, "0")}.png`;
+            let url = `headers/${storytag}-HL${String(thisChapter).padStart(2, "0")}${imgsuffix}.png`;
             snippet += `<img class="HeaderImg" src="${url}"/>`;
             snippet += `<div id="subtext" class="HeaderAlt">${prefix}<span class="HeaderAltTitle">${ChapterInfo.ChapterNumber}</span><span class="HeaderAltSub"> - ${ChapterInfo.ChapterName}</span>${suffix}</div>`;
             return snippet;
@@ -1437,7 +1449,7 @@ class ThemeDriver {
      * @param eProgressBar Progress bar element (`#PROGRESS`).
      * @param doFading Whether to fade at start/end.
      */
-    constructor(config, textContainer, datacard, eBackground, eTextCanvas, eProgressBar, doFading = true) {
+    constructor(config, textContainer, datacard, eBackground, eTextCanvas, eProgressBar) {
         var _a;
         /**
          * Manages dynamic theming for manuscript reading.
@@ -1459,8 +1471,6 @@ class ThemeDriver {
         this.ScrollBreaks = [];
         /** Keyframes used for interpolation (computed by {@link setKeyframes}). */
         this.Keyframes = [];
-        /** Whether to fade to/from "Default" at the top/bottom. */
-        this.doFading = false;
         /** Frame used when fading to/from "Default". */
         this.FadeStyle = {
             Background: [0, 0, 0, 1],
@@ -1505,7 +1515,7 @@ class ThemeDriver {
         this.StaticContainer = ((_a = this.TextContainer) === null || _a === void 0 ? void 0 : _a.parentElement) || null;
         datacard.setThemeDriver(this);
         this.DataCard = datacard;
-        this.doFading = doFading;
+        this.doFading = SRC.Local.dofadein;
         // Initialize the frame immediately based on the starting night mode.
         const bg = 255 * Number(!this.DataCard.NightMode);
         const fg = 255 * Number(this.DataCard.NightMode);
@@ -1530,6 +1540,18 @@ class ThemeDriver {
     set Transition(width) {
         width = width < 200 ? 200 : width > 800 ? 800 : width;
         this.TransitionWidth = width;
+    }
+    ToggleFadeIn(setting = null) {
+        if (setting != null) {
+            this.doFading = setting;
+        }
+        else {
+            this.doFading = !this.doFading;
+        }
+        BIND.DeployOnPage(this.DataCard.currentChapter(), DEPLOY);
+        SRC.Local.dofadein = this.doFading;
+        console.warn(SRC.Local);
+        SRC.SaveLocalStorage();
     }
     /**
      * Builds a list of keyframes from {@link ScrollBreaks}.
@@ -1933,7 +1955,7 @@ function buildManuscript(rootURL_1, storyName_1) {
         BIND = yield ChapterBinder.initialize(rootURL, SRC.storyName, CFG, SRC.Local.permlevel, CARD, DEPLOY, 0, SRC.Local.dodatetimeheaders);
         SRC.AttachBinder(BIND);
         CTRL = new ControlBar(SRC, CARD);
-        THEME = new ThemeDriver(CFG.config, DEPLOY, CARD, eBACKGROUND, eBODY, ePROGRESS, true);
+        THEME = new ThemeDriver(CFG.config, DEPLOY, CARD, eBACKGROUND, eBODY, ePROGRESS);
         ANN = new Announcer();
         // Deploy initial chapter.
         yield BIND.DeployOnPage(SRC.Local.chapter, DEPLOY);
@@ -1960,6 +1982,7 @@ function doThemeChange() {
         return;
     CTRL.setTheme(CARD);
     THEME.setKeyframes();
+    BIND.ShowImageHeaders(BIND.SHOW_IMAGE_HEADERS);
     runScrollEvents();
 }
 /**
