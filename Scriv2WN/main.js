@@ -1224,7 +1224,13 @@ class ChapterBinder {
                         if (!isNaN(dt.getTime())) {
                             const datePart = new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric' }).format(dt);
                             const timePart = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute: '2-digit', /* second: '2-digit',*/ hour12: false }).format(dt);
-                            formatted = `${datePart}, ${timePart}`;
+                            // No time with date?
+                            if (sceneDate.includes(':')) {
+                                formatted = `${datePart}, ${timePart}`;
+                            }
+                            else {
+                                formatted = `${datePart}`;
+                            }
                         }
                         return `<p class="StarterTag Body${ChapterInfo.Character[thisSection]}" style="font-size: var(--TagFontSize); margin-bottom: 20px;">
                 ${this.Config.getFullName(ChapterInfo.Character[thisSection])} <br>

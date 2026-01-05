@@ -54,7 +54,15 @@
         "Suffix":" = ",
         "WallImage":"design/bg-tie.jpg",
         "Favicon":"icons/logo-Firebrand",
-        "CharacterTheme":[245, 149, 66]
+        "CharacterTheme":[245, 149, 66],
+        "SettingTagPrefs": 
+        {
+            "doName":false,
+            "doDate":true,
+            "doTime":false,
+            "doSetting":true,
+            "TimeZone":"Fosroth"
+        }
     },
     "Katiya":
     {
@@ -74,7 +82,15 @@
         "Suffix":" &#10048; ",
         "WallImage":"design/bg-kat.jpg",
         "Favicon":"icons/logo-Katiya",
-        "CharacterTheme":[255, 61, 61]    
+        "CharacterTheme":[255, 61, 61],
+        "SettingTagPrefs": 
+        {
+            "doName":true,
+            "doDate":true,
+            "doTime":true,
+            "doSetting":true,
+            "TimeZone":"Fosroth"
+        }   
     },
     "Cody":
     {
@@ -94,7 +110,15 @@
         "Suffix":" */ ",
         "WallImage":"design/bg-cody.jpg",
         "Favicon":"icons/logo-Cody",
-        "CharacterTheme":[61, 100, 255]      
+        "CharacterTheme":[61, 100, 255],
+        "SettingTagPrefs": 
+        {
+            "doName":true,
+            "doDate":true,
+            "doTime":true,
+            "doSetting":true,
+            "TimeZone":"Earth"
+        }
     },
     "Jade":
     {
@@ -114,7 +138,15 @@
         "Suffix":" &raquo; ",
         "WallImage":"design/bg-jade.jpg",
         "Favicon":"icons/logo-Goldenfur",
-        "CharacterTheme":[142, 255, 61]
+        "CharacterTheme":[142, 255, 61],
+        "SettingTagPrefs": 
+        {
+            "doName":false,
+            "doDate":true,
+            "doTime":false,
+            "doSetting":true,
+            "TimeZone":"Fosroth"
+        }
     },
     "Default":
     {
