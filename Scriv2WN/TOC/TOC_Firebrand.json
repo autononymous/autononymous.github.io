@@ -2,10 +2,10 @@
    "Metadata": {
       "ActCount": 6,
       "ChapterCount": 57,
-      "SceneCount": 118,
-      "WrittenCount": 118,
+      "SceneCount": 114,
+      "WrittenCount": 114,
       "UnwrittenCount": 0,
-      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Firebrand\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 203,755.\n > There are 6 acts, 57 chapters, and 118 scenes.\n > This manuscript averages:\n   - 1726 words per scene.\n   - 3574 words per chapter.\n   - 2.07 scenes per chapter.\n > Out of 118 planned scenes, 118 are written.\n > So the Zero Draft is approximately 100.0% complete.\n"
+      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Firebrand\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 200,076.\n > There are 6 acts, 57 chapters, and 114 scenes.\n > This manuscript averages:\n   - 1755 words per scene.\n   - 3510 words per chapter.\n   - 2.0 scenes per chapter.\n > Out of 114 planned scenes, 114 are written.\n > So the Zero Draft is approximately 100.0% complete.\n"
    },
    "ChapterList": [
       {
@@ -20,14 +20,17 @@
          "Summary": "",
          "Blurb": "Titus confronts another inevitable end.",
          "Written": true,
-         "Release": "12/22/25",
+         "Release": "01/01/26",
          "Settings": [
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/1/1.json"
@@ -44,14 +47,17 @@
          "Summary": "",
          "Blurb": "36|Reward/The Mask",
          "Written": true,
-         "Release": "12/29/25",
+         "Release": "01/08/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-20",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Great Coliseum",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/1/2.json"
@@ -68,14 +74,17 @@
          "Summary": "",
          "Blurb": "Titus and his friend Romin explore the outer wastes of Blackwater.",
          "Written": true,
-         "Release": "01/05/26",
+         "Release": "01/15/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Blackwater",
-               "Area": ""
+               "ISO": "2026-11-20",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/2/3.json"
@@ -93,21 +102,27 @@
          "Summary": "",
          "Blurb": "The two friends approach the fated location on Titus&apos; map.",
          "Written": true,
-         "Release": "01/12/26",
+         "Release": "01/22/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-21",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-21",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-22",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-22",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Safehouse Foxtrot",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/2/4.json"
@@ -126,28 +141,37 @@
          "Summary": "",
          "Blurb": "An unfathomable scene quickly overrides the premise of their trip.",
          "Written": true,
-         "Release": "01/19/26",
+         "Release": "01/29/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-22",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-22",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Abandoned Cabin",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-22",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-22",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Abandoned Cabin",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-23",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-23",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Abandoned Cabin",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/2/5.json"
@@ -165,21 +189,27 @@
          "Summary": "",
          "Blurb": "Titus presents the results of his expedition at his father&apos;s rummage store.",
          "Written": true,
-         "Release": "01/26/26",
+         "Release": "02/05/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Snowdrift Traders",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/2/6.json"
@@ -196,14 +226,17 @@
          "Summary": "",
          "Blurb": "Titus tends to his lonely younger sister.",
          "Written": true,
-         "Release": "02/02/26",
+         "Release": "02/12/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/2/7.json"
@@ -221,21 +254,27 @@
          "Summary": "",
          "Blurb": "Titus finds an uncomfortable breadth of stillness, but still prefers the cold.",
          "Written": true,
-         "Release": "02/09/26",
+         "Release": "02/19/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             },
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             }
          ],
          "Location": "/sectioned/Firebrand/2/8.json"
@@ -253,21 +292,27 @@
          "Summary": "",
          "Blurb": "There are always consequences for improper uses of Essence.",
          "Written": true,
-         "Release": "02/16/26",
+         "Release": "02/26/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             },
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             }
          ],
          "Location": "/sectioned/Firebrand/2/9.json"
@@ -285,21 +330,27 @@
          "Summary": "",
          "Blurb": "Romin, Valentina, and Sylvia join Titus in one last celebration.",
          "Written": true,
-         "Release": "02/23/26",
+         "Release": "03/05/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Vermillion Boulevard",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Vermillion Boulevard",
+               "Location": "Club Vermillion",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/2/10.json"
@@ -317,21 +368,27 @@
          "Summary": "",
          "Blurb": "All it takes is one little spark to set the last capital on fire.",
          "Written": true,
-         "Release": "03/02/26",
+         "Release": "03/12/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             }
          ],
          "Location": "/sectioned/Firebrand/2/11.json"
@@ -348,14 +405,17 @@
          "Summary": "",
          "Blurb": "The fractured Berguard family faces an unspeakable fate.",
          "Written": true,
-         "Release": "03/09/26",
+         "Release": "03/19/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/2/12.json"
@@ -368,34 +428,32 @@
          "ChapterNumber": "Thirteen",
          "Character": [
             "Titus",
-            "Titus",
             "Titus"
          ],
          "Summary": "",
          "Blurb": "Titus ascends the foothills of the Afterlife.",
          "Written": true,
-         "Release": "03/16/26",
+         "Release": "03/26/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/2/13.json"
@@ -413,21 +471,27 @@
          "Summary": "",
          "Blurb": "The party discovers a sinister Chymaeran agent.",
          "Written": true,
-         "Release": "03/23/26",
+         "Release": "04/02/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/2/14.json"
@@ -440,34 +504,32 @@
          "ChapterNumber": "Fifteen",
          "Character": [
             "Titus",
-            "Titus",
             "Titus"
          ],
          "Summary": "",
          "Blurb": "The fractured group reaches the first inner wall.",
          "Written": true,
-         "Release": "03/30/26",
+         "Release": "04/09/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Verdant Slope",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Inner Wall Checkpoint",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/2/15.json"
@@ -479,35 +541,22 @@
          "ChapterName": "Remember Me",
          "ChapterNumber": "Sixteen",
          "Character": [
-            "Titus",
-            "Titus",
-            "Titus"
+            "Default"
          ],
          "Summary": "",
          "Blurb": "The party can only watch as Romin&apos;s ego expends lives.",
          "Written": true,
-         "Release": "04/06/26",
+         "Release": "04/16/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-30",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-30",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Inner Wall Checkpoint",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/2/16.json"
@@ -525,21 +574,27 @@
          "Summary": "",
          "Blurb": "Titus reaches the end of his journey.",
          "Written": true,
-         "Release": "04/13/26",
+         "Release": "04/23/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Recovery Center",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/2/17.json"
@@ -557,21 +612,27 @@
          "Summary": "",
          "Blurb": "Titus encounters Ullrich for a second time.",
          "Written": true,
-         "Release": "04/20/26",
+         "Release": "04/30/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Recovery Center",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Capitol Building",
+               "Place": "Reception Hall"
             }
          ],
          "Location": "/sectioned/Firebrand/2/18.json"
@@ -589,21 +650,27 @@
          "Summary": "",
          "Blurb": "Tomorrow marks the advent of a golden age!&apos;",
          "Written": true,
-         "Release": "04/27/26",
+         "Release": "05/07/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Capitol Building",
+               "Place": "Reception Hall"
             },
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Underhold",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/2/19.json"
@@ -621,21 +688,27 @@
          "Summary": "",
          "Blurb": "May their souls find rest in the Reservoir.",
          "Written": true,
-         "Release": "05/04/26",
+         "Release": "05/14/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Underhold",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Capitol Grounds",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/2/20.json"
@@ -653,21 +726,27 @@
          "Summary": "",
          "Blurb": "The thread says that none of this was ever a dream.",
          "Written": true,
-         "Release": "05/11/26",
+         "Release": "05/21/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Academy Streets",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/3/21.json"
@@ -687,35 +766,47 @@
          "Summary": "",
          "Blurb": "Titus makes an abrasive, tentative ally.",
          "Written": true,
-         "Release": "05/18/26",
+         "Release": "05/28/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Foothills",
+               "Location": "Academy Lift",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/3/22.json"
@@ -733,21 +824,27 @@
          "Summary": "",
          "Blurb": "Titus resists inevitability.",
          "Written": true,
-         "Release": "05/25/26",
+         "Release": "06/04/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/3/23.json"
@@ -765,21 +862,27 @@
          "Summary": "",
          "Blurb": "Titus&apos; friends arrive for answers to his strange behavior.",
          "Written": true,
-         "Release": "06/01/26",
+         "Release": "06/11/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/3/24.json"
@@ -798,28 +901,37 @@
          "Summary": "",
          "Blurb": "Titus lives a near eternity in a single moment.",
          "Written": true,
-         "Release": "06/08/26",
+         "Release": "06/18/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/3/25.json"
@@ -837,21 +949,27 @@
          "Summary": "",
          "Blurb": "It was the only way we could survive.",
          "Written": true,
-         "Release": "06/15/26",
+         "Release": "06/25/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Snowdrift Traders",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/3/26.json"
@@ -869,21 +987,27 @@
          "Summary": "",
          "Blurb": "Titus sees his father in a different light.",
          "Written": true,
-         "Release": "06/22/26",
+         "Release": "07/02/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Snowdrift Traders",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Snowdrift Traders",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/3/27.json"
@@ -901,21 +1025,27 @@
          "Summary": "",
          "Blurb": "Snowdrifters drift by steel this time.",
          "Written": true,
-         "Release": "06/29/26",
+         "Release": "07/09/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Outwallers&apos; Shanty",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Railcar S",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/3/28.json"
@@ -933,21 +1063,27 @@
          "Summary": "",
          "Blurb": "The survivors realize the ultimate purpose of the unexceptional graduates.",
          "Written": true,
-         "Release": "07/06/26",
+         "Release": "07/16/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Railcar S",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Railcar S",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/3/29.json"
@@ -965,21 +1101,27 @@
          "Summary": "",
          "Blurb": "The furthest snowdrifitng expedition.",
          "Written": true,
-         "Release": "07/13/26",
+         "Release": "07/23/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/3/30.json"
@@ -996,14 +1138,17 @@
          "Summary": "",
          "Blurb": "There is a stronghold far beyond the limits.",
          "Written": true,
-         "Release": "07/20/26",
+         "Release": "07/30/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/3/31.json"
@@ -1021,21 +1166,27 @@
          "Summary": "",
          "Blurb": "They worship themselves in unpaid glory.",
          "Written": true,
-         "Release": "07/27/26",
+         "Release": "08/06/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-30",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-30",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/3/32.json"
@@ -1053,21 +1204,27 @@
          "Summary": "",
          "Blurb": "The First Red refuse the premise of their purpose.",
          "Written": true,
-         "Release": "08/03/26",
+         "Release": "08/13/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/3/33.json"
@@ -1085,21 +1242,27 @@
          "Summary": "",
          "Blurb": "Titus deploys for service with the underachieving classes.",
          "Written": true,
-         "Release": "08/10/26",
+         "Release": "08/20/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-30",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-30",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-30",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-30",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/4/34.json"
@@ -1118,28 +1281,37 @@
          "Summary": "",
          "Blurb": "Titus finds himself deep within the Undercroft.",
          "Written": true,
-         "Release": "08/17/26",
+         "Release": "08/27/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-30",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-30",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Floor Thousandth",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Floor Hundredth",
+               "Place": "Victory Row"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Central Void",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/4/35.json"
@@ -1158,28 +1330,37 @@
          "Summary": "",
          "Blurb": "Titus contemplates the value of his humanity. A stranger solicits him.",
          "Written": true,
-         "Release": "08/24/26",
+         "Release": "09/03/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Floor Hundredth",
+               "Place": "Victory Row"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/4/36.json"
@@ -1198,28 +1379,37 @@
          "Summary": "",
          "Blurb": "Titus decides a piece of himself is no longer useful.",
          "Written": true,
-         "Release": "08/31/26",
+         "Release": "09/10/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/4/37.json"
@@ -1237,21 +1427,27 @@
          "Summary": "",
          "Blurb": "Titus reaches an unexpected end.",
          "Written": true,
-         "Release": "09/07/26",
+         "Release": "09/17/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Unknown",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/4/38.json"
@@ -1269,21 +1465,27 @@
          "Summary": "",
          "Blurb": "A vicious enemy unmasks themselves.",
          "Written": true,
-         "Release": "09/14/26",
+         "Release": "09/24/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "First Red Ampitheatre",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/4/39.json"
@@ -1301,21 +1503,27 @@
          "Summary": "",
          "Blurb": "Titus is forced to receive compassion.",
          "Written": true,
-         "Release": "09/21/26",
+         "Release": "10/01/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-20",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/4/40.json"
@@ -1333,21 +1541,27 @@
          "Summary": "",
          "Blurb": "Titus recalls the horrors of what his anger set in motion.",
          "Written": true,
-         "Release": "09/28/26",
+         "Release": "10/08/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-12-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-20",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-20",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/4/41.json"
@@ -1364,14 +1578,17 @@
          "Summary": "",
          "Blurb": "A powerful ally centers Titus in one final effort.",
          "Written": true,
-         "Release": "10/05/26",
+         "Release": "10/15/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-12-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-20",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/4/42.json"
@@ -1389,21 +1606,27 @@
          "Summary": "",
          "Blurb": "Titus recognizes the strength in his beloved friends.",
          "Written": true,
-         "Release": "10/12/26",
+         "Release": "10/22/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-20",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Great Coliseum",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-20",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Great Coliseum",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/5/43.json"
@@ -1421,21 +1644,27 @@
          "Summary": "",
          "Blurb": "Titus digs deep and confronts one of his fears.",
          "Written": true,
-         "Release": "10/19/26",
+         "Release": "10/29/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-20",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-20",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/5/44.json"
@@ -1453,21 +1682,27 @@
          "Summary": "",
          "Blurb": "Titus and his plurality of friends explore the outer wastes of Blackwater.",
          "Written": true,
-         "Release": "10/26/26",
+         "Release": "11/05/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-21",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-21",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Safehouse Foxtrot",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-22",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-22",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/5/45.json"
@@ -1486,28 +1721,37 @@
          "Summary": "",
          "Blurb": "Something is different this time. Can you feel it?",
          "Written": true,
-         "Release": "11/02/26",
+         "Release": "11/12/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-23",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-23",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-23",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-23",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-23",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-23",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/5/46.json"
@@ -1526,28 +1770,37 @@
          "Summary": "",
          "Blurb": "They ambush the ambush on future intelligence.",
          "Written": true,
-         "Release": "11/09/26",
+         "Release": "11/19/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Carmine Compound",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/5/47.json"
@@ -1565,21 +1818,27 @@
          "Summary": "",
          "Blurb": "The catgirl crashes back into her neglectul family&quot;s life.",
          "Written": true,
-         "Release": "11/16/26",
+         "Release": "11/26/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/5/48.json"
@@ -1597,21 +1856,27 @@
          "Summary": "",
          "Blurb": "How in Khiras&quot; name did they get together?",
          "Written": true,
-         "Release": "11/23/26",
+         "Release": "12/03/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Carmine Compound",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/5/49.json"
@@ -1629,21 +1894,27 @@
          "Summary": "",
          "Blurb": "Titus wishes his story could have ended here, but there is still so much more that needs to be done.",
          "Written": true,
-         "Release": "11/30/26",
+         "Release": "12/10/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/5/50.json"
@@ -1661,21 +1932,27 @@
          "Summary": "",
          "Blurb": "The Carmine-Merlot master plan is set in motion.",
          "Written": true,
-         "Release": "12/07/26",
+         "Release": "12/17/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Distribution Hall",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/5/51.json"
@@ -1693,21 +1970,27 @@
          "Summary": "",
          "Blurb": "What would happen if the Vermillions made it there?",
          "Written": true,
-         "Release": "12/14/26",
+         "Release": "12/24/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Ullrich&apos;s Loft",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Profaned Chapel",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/5/52.json"
@@ -1725,21 +2008,27 @@
          "Summary": "",
          "Blurb": "One of the Vermillion girls tries driving.",
          "Written": true,
-         "Release": "12/21/26",
+         "Release": "12/31/26",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Profaned Chapel",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/5/53.json"
@@ -1757,21 +2046,27 @@
          "Summary": "",
          "Blurb": "The Lower City converges on the Afterlife.",
          "Written": true,
-         "Release": "12/28/26",
+         "Release": "01/07/27",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Verdant Slope",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/5/54.json"
@@ -1789,21 +2084,27 @@
          "Summary": "",
          "Blurb": "Titus takes ownership for a world he was only reborn into.",
          "Written": true,
-         "Release": "01/04/27",
+         "Release": "01/14/27",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Marble Streets",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/5/55.json"
@@ -1821,21 +2122,27 @@
          "Summary": "",
          "Blurb": "There is no salvation from failure this time. Titus and his adversary fight through the fabric of time itself.",
          "Written": true,
-         "Release": "01/11/27",
+         "Release": "01/21/27",
          "Settings": [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/5/56.json"
@@ -1852,14 +2159,17 @@
          "Summary": "",
          "Blurb": "",
          "Written": true,
-         "Release": "01/18/27",
+         "Release": "01/28/27",
          "Settings": [
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "Date": "2026-12-06",
+               "Time": "12:09:00",
+               "ISO": "2026-12-06T12:09:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Firebrand/6/57.json"

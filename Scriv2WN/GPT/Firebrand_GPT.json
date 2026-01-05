@@ -25,9 +25,12 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -43,7 +46,7 @@
                "&quot;&mdash;say that if there is anything, dear Firebrands, that you take from this speech, I want you to remember one thing. Your sacrifice is what allows the acolytes of the Afterlife to barter with the Gods,&quot; General Ullrich says. &quot;We have always had just enough to feed everyone. The Gods satiate us with sustenance for our prayers. And from sacrifice, we have just enough to protect the last bastion of our people against the evil of the Chymaerans. But this is always just barely enough. Just enough, because of the courage of these young cadets, to fight for our dreams of another Golden Age!&quot;",
                "An applause circulates the stadium like cracking ice. We are enclaved by the vast unknown of the lifeless, frozen wasteland: our race fording a frozen river we should have fallen into ages ago. Every year we treat graduation as if it were the last, because all we&apos;ve ever hoped for is just a way to stay alive.",
                "The grand auditorium of the Academy is open to the impossibly warm air. The ashen smog is too thin here to obscure our sight and poison our lungs. Many see the sky for the first time in years, migrating up the mountainside to visit their children in this moment of bittersweet celebration.",
-               "&quot;Twelve thousand students in this graduating class of northern Blackwater. Only two hundred of you will defend the Afterlife as Royal Guards. Five thousand more will defend the lower city. And the rest will fight to defend our frostbitten foothold as soldiers on the front lines, fighting the Chymaera. But I want you to think of the others that never even joined: toiling as power-workers and miners that never see this glorious purpose thorugh. To the fighting Firebrands on the front lines, I want you all to remember: you are the greatest asset our people have.&quot;",
+               "&quot;Twelve thousand students in this graduating class of northern Blackwater. Only two hundred of you will defend the Afterlife as Royal Guards. Five thousand more will defend the lower city. And the rest will fight to defend our frostbitten foothold as soldiers on the front lines, fighting the Chymaera. But I want you to think of the others that never even joined: toiling as power-workers and miners that never see this glorious purpose thorugh. To the fighting Firebrands on the front lines, I want you all to remember: you are the greatest asset our people have.&quot; ",
                "Ullrich&apos;s eyes fall to the span of seats roughly sixty-percent back, notably dotted with absent chairs. It&apos;s no wonder us cadets are called suicide scholars: either signed on by family that birthed them for the stipend, or by the passionate tales in Seminary motivating them to sign away their life &mdash; as early as they learn how to write the letters of their name.",
                "Several cadets far behind us retch into the bags tucked beneath their seats, masked over by the fanfare of instruments stationed directly behind them. Curious, my fingers fumble beneath my seat to find there is nothing there &mdash; but I&apos;m close enough to touch the stage. ",
                "Ullrich continues, as the orchestra finds the perfect balance, between muting out the cries of panic and allowing Ullrich&apos;s words to resound in hallowed glory.",
@@ -82,11 +85,14 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-20",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Great Coliseum",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -179,11 +185,14 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Blackwater",
-               "Area": ""
+               "ISO": "2026-11-20",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -277,34 +286,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-21",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-21",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-22",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-22",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Safehouse Foxtrot",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-21",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-21",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-22",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-22",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Safehouse Foxtrot",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -391,12 +412,16 @@
                "I wrap myself in two blankets before I crack the spine of the book. The darkness makes it difficult to discern the black font from the vellum. I light a candle, primed with a pinch of Romin&apos;s Essence, and it throws crimson light on the walls of the foyer, illuminating the pages.",
                "Before I could read, I looked upon Everett&apos;s books in his library in awe of their black-ink artistry&mdash;scribed in forbidden ink. The weathered pages made me wonder their age, and Everett told me they recorded the world before the Fall of Nordhaven, before the moment that the Chymaeran extremists liquidated our capital city, killing the original royal family and forcing us to retreat to the city of Blackwater.",
                "This book is so similar. Illustrations of a feline race called the Ahkvas line the pages: drawings of landscapes with plants so tall you can&apos;t see the sky from the ground, and another race of creatures with wings, another like plants, and so many others I can&apos;t distinguish. Fine-gritted rocks stretch over endless landscapes in places so dry they don&apos;t get any water. There are bodies of water filled with salt that stretch so far you can&apos;t see the end of them&mdash;to imagine salt as something so common!",
-               "But it&apos;s towards the end that the illustrations surprise me. The chapter reads AND NOW, THE GREAT CITY OF BLACKWATER. ",
+               "But it&apos;s towards the end that the illustrations surprise me. The chapter read:",
+               "AND NOW, THE GREAT CITY OF BLACKWATER. ",
                "The illustrations are indiscernible. Luscious landscapes stretch just beyond the city. Vines cascade from the city walls: I recognize them as the center walls, the original bounds of the city before the Fall forced our people to expand. And in the center are the great peaks of The Afterlife: shrouded in clouds, in great mystery to anyone living below them. After all, the only contact to those Acolytes who connect with the Gods are the Merlot, Valentina&apos;s folk; the city&apos;s active government officials who carry out Their commands and distribute Their gifts.",
-               "At first, I think I see the Chymaerans attacking the Humans in the following pages. But I&apos;m wrong. They&apos;re tending fields together. They&apos;re working in cooperation with the Humans. Captions read THE UNION OF LIFE AND DEATH and BLACKWATER: UNION IN DICHOTOMY.",
+               "At first, I think I see the Chymaerans attacking the Humans in the following pages. But I&apos;m wrong. They&apos;re tending fields together. They&apos;re working in cooperation with the Humans. Captions read:",
+               "THE UNION OF LIFE AND DEATH",
+               "BLACKWATER: UNION IN DICHOTOMY.",
                "I wish such stories survived to stir the souls of our citizens, not burned en-masse in the great book burnings. The Merlot tell us of the strength in severing ourselves from that past, making ourselves stronger, raising our children to fight and defend the last foothold of the Humans so the Chymaera can&apos;t extinguish our people and our light. They tell us there is no space for fairy tales &mdash; that they distract us from true purpose, from the calling to forge a new golden age for our people.",
                "Romin&apos;s snore pulls me back to the present moment. The Essence we lined in all the candles runs low, and I pray the heat will last us the rest of the night. I think of Ellie and Sylvia. I imagine their disheartened faces if I failed to return.",
-               "My eyes grow heavy as my fingers reach to close the book. It catches itself on the last page of an inscription addressed in ink. To Ullrich, Evella, young Fletcher and Lyra: the next golden age lies in our blood.",
+               "My eyes grow heavy as my fingers reach to close the book. It catches itself on the last page of an inscription addressed in ink. ",
+               "To Ullrich, Evella, young Fletcher and Lyra: the next golden age lies in our blood.",
                "With love, Everett.",
                " ",
                ""
@@ -437,71 +462,98 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-22",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-22",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Abandoned Cabin",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-22",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-22",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Abandoned Cabin",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-23",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-23",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Abandoned Cabin",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-22",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-22",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Abandoned Cabin",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-22",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-22",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Abandoned Cabin",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-23",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-23",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Abandoned Cabin",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-22",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-22",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Abandoned Cabin",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-22",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-22",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Abandoned Cabin",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-23",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-23",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Abandoned Cabin",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -623,34 +675,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Snowdrift Traders",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Snowdrift Traders",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -771,11 +835,14 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -855,34 +922,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             },
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             },
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             }
          ]
       ],
@@ -995,34 +1074,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             },
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             },
             {
-               "Date": "",
+               "Date": "2026-11-25",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-25",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             }
          ]
       ],
@@ -1150,34 +1241,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Vermillion Boulevard",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Vermillion Boulevard",
+               "Location": "Club Vermillion",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Vermillion Boulevard",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Vermillion Boulevard",
+               "Location": "Club Vermillion",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -1275,34 +1378,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             }
          ]
       ],
@@ -1399,11 +1514,14 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -1455,51 +1573,6 @@
          {
             "Perspective": "Titus",
             "Text": [
-               "Valentina always talks about her life in pompousness, from the clothes on her back to the jewelry on her wrists and fingers. It is a stark contrast to her room in the cellar. ",
-               "Yes. Her bedroom, in the cellar.",
-               "Frigid stone walls hold spiderwebs tucked in the corners. The only color comes from the bright vermilion bed with the golden &apos;V&apos; crest on the headboard, swallowing all the color from the room, as if transplanted there like a fresh heart into the chest of a dying body.",
-               "&quot;They just moved me here. But it&apos;s temporary, since I&apos;m away for a while,&quot; Valentina says. Clothes scatter across the ground in a disheveled mess, with a sea of so many hats I lose count of all the peaks. Every day she wears one. Now I finally see how many she really has.",
-               "&quot;Just temporary. Father&apos;s working on upgrading my room to celebrate graduation.&quot;",
-               "Sylvia and I watch her. She knows the disbelief is beginning to overtake us.",
-               "&quot;Painters. Designers. Maids, you know,&quot; Valentina says. She&apos;s a good actor and a better liar&mdash; but now, she lacks the energy to carry her image.",
-               "&quot;Just temporary. And . . . Gods, I can&apos;t take it anymore!&quot; She bursts into tears, grasping at her cramped stomach with manicured claws as if her lies have finally come to infect her. She dabs her eyes with a crimson scarf, and I begin to put the pieces together: that jealous glare that always consumed her when her sister Vera was around; their competition over appearance. But now, all that remains is a hollow thousand-yard stare that traces through all her memories of loneliness and shame.",
-               "I&apos;m at a loss for words&mdash;just to say something that wouldn&apos;t shatter her pride further. Envelopes stack on the dresser, dated for each week, stamped with the title WEEKLY GUEST PROVISIONS, half of them still unopened, addressed to just &quot;Valentina&quot; with the last name excerpted from their covers. Just the fact that this basement was entirely separated from the main house was enough to feel so perverse, the tension of some insidious hatred that Val buried for years.",
-               "The dam crumbles, and the truth pours out, a discomfort she&apos;s hidden for years without telling us. I wonder if Romin knew anything of this.",
-               "&quot;So you&apos;ve been cut off for the last three years?&quot; Sylvia asks. &quot;What do you mean? Why didn&apos;t you tell us?&quot;",
-               "&quot;Because if the truth got out, then I&apos;d be severed for good,&quot; Valentina says. &quot;It was only four years ago that my mother found out the truth, thinking I was adopted from another branch of our family. She took me in so lovingly all those years. That damn letter . . .&quot; she says, voice shaking. &quot;That damn letter from my estranged mother, and I wonder if my father even tried to hide it. Does he really care? Does he ever even stand up for me against her, that vile bitch? Gods, it&apos;s not my fault for being born!&quot;",
-               "The strength of Valentina&apos;s words escapes her. Sylvia speaks her name, trying to soothe her with her voice.",
-               "&quot;But I wasn&apos;t the best daughter either, you know,&quot; she says. &quot;You know, I think I just asked too much, too stuck-up, so I don&apos;t think she was wrong, there was just always this feeling of guilt that came over me again and again, and, and&mdash;&quot;",
-               "I say, &quot;Val, Val. Don&apos;t think for a second&mdash;&quot;",
-               "&quot;&mdash;-and, and Father would just stand there every time she&apos;d say all those things, and I&apos;d wait for him to cut in, I&apos;d wait for him to say it was all wrong but he&apos;d turn his eyes from me, and Sister would stay away from us until Mother ran out of words to pour her anger . . .&quot;",
-               "&quot;But you&apos;re here!&quot; I say, &quot;You&apos;re with us, here, and&mdash;&quot;",
-               "&quot;I&apos;m a mistake. I was never meant to be born in this world,&quot; she cries.",
-               "The reverberations of distant catastrophe echo through the cellar, bringing out the most delicate parts within each of us. I feel the vulnerable part of myself strangled by the hands of a distant pain, something I can&apos;t release, even though Sylvia so freely voices her own feelings of pain. Sylvia sits next to her, but I can&apos;t understand. I don&apos;t know what to do. I feel so uncomfortable, not knowing what to say, still so stuck in my recent past that empathy is unreachable.",
-               "I just stand there. ",
-               "&quot;Have you ever wanted to meet her?&quot; Sylvia says, trying to derail her train of thoughts.",
-               "&quot;Her? My mother?&quot; Valentina asked.",
-               "&quot;Your real mother. I&apos;m sure she loves you so deeply.&quot;",
-               "&quot;It&apos;s the one thought that&apos;s always held me here,&quot; she whispers, reclining on the bed as Sylvia lays next to her. &quot;If that one day I&apos;d just worn a hat like always . . .&quot;",
-               "&quot;What do you mean?&quot; Sylvia asks.",
-               "&quot;The shame. The physical representation of my father&apos;s sin. Proof that there&apos;s such a big world out there hidden from all of us, of other peoples and other allegiances. The secret I&apos;ve hidden since long before we first met, always there just to remind me of my dirty blood.&quot;",
-               "&quot;Titus and I are always open if you want to tell us,&quot; she whispers. I nod, unable to play the right notes to match the melody of the moment.",
-               "She purses her lips, sucking the bright red from the sparkling lip gloss caked across them, and the words teeter on the edge of her lips. ",
-               "But it&apos;s more an action than a sentence. ",
-               "Her hand reaches for the top of her hat. &quot;My mother was a stop on that trip that Daddy took to the other lands. He never expected me to be born, never wanted me to be born. And one day he learned that I was alive. He came back to get me: not from a place of love, but a place of fear, afraid of his reputation, of how it might affect him if he didn&apos;t silence the truth. I still remember that day he gave me a hat. He told me to wear it forever, because it was lucky, because it was our secret, and&mdash;&quot;",
-               "She pulls the hat away, and the sight speaks volumes on its own. ",
-               "Twitching blond peaks dial to the sounds of the room. My memory flashes to Everett&apos;s tales from my early childhood: the folk tales, and the word AHKVASAN is the first realization that crosses my mind. ",
-               "I&apos;m in awe. The blonde peaks of her ears softly twitch at the deep intonation of my voice.",
-               "&quot;That&apos;s incredible!&quot; I say. The words escape before I can stop them. Sylvia jumps. Valentina still tenses in anticipation of our reactions, but slowly loosens, and I know she couldn&apos;t ever conceive of my response. &quot;That&apos;s incredible, are you kidding me? All these years of Everett&apos;s stories, and all those fairy tales, the Carmine, me thinking he was crazy saying it was all real, and . . .&quot; I laugh, too elated to speak.",
-               "She blushes. For the first time in days, I watched her crack a smile as she began to laugh, too, and soon the entire chamber echoes with laughter until she is crying tears in good humor.",
-               "&quot;I love you even more now, if I didn&apos;t already love you before,&quot; Sylvia says, as Valentina gains the light of a realization she&apos;s missed for far too long.",
-               "&quot;I&apos;ve lived my whole life afraid of myself. Now that I&apos;m no longer silenced by the threat of being severed from this family, everything feels a little bit lighter,&quot; Valentina says. &quot;I haven&apos;t stopped thinking about your speech at graduation, Titus, and I know those words came from your soul. We have to let go. Of everything. Of all that pain and feel into it.&quot; ",
-               "It hurts to know the words were nothing to me, just projections of a higher truth others wanted to hear. But if it can give her genuine strength, I find that&apos;s all that matters.",
-               " ",
-               ""
-            ]
-         },
-         {
-            "Perspective": "Titus",
-            "Text": [
                "We find a strange peace that night. While others camp outside in tents just beyond the property, the three of us remain inside the claustrophobic shed. Sylvia sleeps in the bed with Valentina. I sleep on a bed of hats to keep warm.",
                "The dreams grow stronger, and I&apos;m no longer plagued by the same recurring dream. I dream of the coldness of my father&apos;s figure, still sprawled across the floor somewhere in a pool of his own blood, his glance forever fixed beyond the door I left open. I can feel the regret of his thoughts. From miles away I can sense his soul still wandering the halls of that house he tried to forget, forever waking to open the door of my sister&apos;s room to find she&apos;s been lost. The depth of the red puddle grows. It catches my ankles as I stand over him, and as if it were stretching the edge of a deep lake, I fall into it, unable to paddle.",
                "I suffocate in his crimson shadow.",
@@ -1516,71 +1589,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            }
-         ],
-         [
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -1679,34 +1727,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -1767,129 +1827,51 @@
                " ",
                ""
             ]
-         },
-         {
-            "Perspective": "Titus",
-            "Text": [
-               "&quot;Just so we&apos;re clear, I&apos;m in command here,&quot; Romin tells Jarrett. &quot;This is District Twelve, not District Seven.&quot;",
-               "&quot;Sure. Whatever,&quot; Jarrett says.",
-               "We sit in a makeshift command tent on the dirt-trodden main path. The stumps of four logs make chairs. A wooden board makes a table.",
-               "&quot;Where is Valentina?&quot; Romin demands.",
-               "&quot;She didn&apos;t make it. She&mdash;&quot; Isla starts, but she&apos;s cut off by Romin. ",
-               "&quot;I wasn&apos;t asking you,&quot; Romin says. &quot;Titus.&quot; I notice that he tries to dry out the friendliness from his voice, but it wavers just a little. &quot;What happened to her?&quot;",
-               "I want to shout the incendiary accusation that waits on my tongue and burns my heart. But I&apos;m slightly better at controlling my anger than he is.",
-               "&quot;She didn&apos;t make it, Romin. She saved our lives. It was the only way we survived down there,&quot; I say. &quot;And don&apos;t cut off Isla. Just because you run this boys&apos; club here doesn&apos;t mean you can forget where you came from.&quot;",
-               "&quot;Rank isn&apos;t anything anymore,&quot; he says. His eyes constantly pass between the guards standing at the front of the tent, noticing how they listen in, knowing he must put on a good show regardless of the cost, thinking it&apos;s the only way he can hold on to whatever he has. &quot;Nothing is left of that past world. All we have is this.&quot;",
-               "&quot;It&apos;s been three days, Romin! It&apos;s way too early to dive into total anarchy. Let us lead together.&quot;",
-               "He cringes at that last word, as if I were a lesser wolf threatening his leadership of the pack. There is no pack, just a bunch of stranded idiots. &quot;Don&apos;t challenge me. We still don&apos;t know if you&apos;re Chymaerans or not. Don&apos;t forget that,&quot; he says, and a twinge of resentment sounds in his voice that only I can notice, but he hushes that sound in fear that all the others can hear.",
-               "He looks again to his &apos;guards&apos; in front of the tent &mdash; I notice he pinned two of the Dragon Class rubies from his mark on their chest. I scoff: no matter what, ego and honor always win.",
-               "&quot;In fact, I want you to take these three away,&quot; Romin says, pointing to the rest of our surrogate fireteam. His eyes don&apos;t even meet Sylvia&apos;s. I can tell his faade is breaking, and he doesn&apos;t want the others to witness it.",
-               "&quot;But don&apos;t you know them?&quot; the &apos;guard&apos; asks.",
-               "&quot;Don&apos;t question my authority. We&apos;ve already established it,&quot; he says. &quot;This cadet will be the one to either prove or deny. If they fail, they&apos;ll be sent back to the lower city.&quot;",
-               "&quot;Understood,&quot; his minion says. The three refuse to protest &mdash; they know the sheer volume of frightened soldiers that would jump at anything to take commands, to feel even a fraction of direction.",
-               "&quot;Good luck defusing his power trip,&quot; Jarrett says. &quot;Romin. You bring shame to the First Blood of the Carmine.&quot; He spits, but Romin&apos;s face is resolute, staring directly at me. New &apos;guards&apos; cycle to the front of the tent, but he dismisses them.",
-               "&quot;Leave us,&quot; Romin commands. They follow his orders without hesitation.",
-               "I lean over the table. It tilts in my direction, balanced only by three makeshift legs. I look him dead in the eyes, more certain than I&apos;ve ever been in my life. ",
-               "&quot;Romin. You know that we&apos;re not Chymaerans. You and I both know this charade isn&apos;t about that.&quot;",
-               "He doesn&apos;t respond. He&apos;s already made up his mind, and though his bottom lip quivers, he doesn&apos;t want to waver.",
-               "&quot;How the fridging hell did you even get here?&quot; I ask him. &quot;You never came to the Academy. We were so worried about you.&quot;",
-               "&quot;You left me, just to replace me with them. Am I that replaceable?&quot; he asks. &quot;Am I that forgettable?&quot; Like a toddler abandoned by his parents for several minutes, craving attention.",
-               "&quot;Romin. You never came to us. We were separated. What else were we supposed to do? Wait for you? When you don&apos;t even know where we were? We&apos;d die out there&mdash;&quot;",
-               "He slams his fist on the makeshift table. &quot;Shut up,&quot; he says. &quot;You&apos;ll have to live with it.&quot;",
-               "I scoff. &quot;Live with what, Romin?&quot;",
-               "But he continues on. &quot;My mission was assigned down in the city. In fact &mdash; we all were. As the only Dragon Class cadet there, the leadership decided that I was in charge. We defend this foothold of the Upper Lands. Against anyone.&quot;",
-               "&quot;So why do you treat us like this? We&apos;ve been friends for years. You explored beyond the walls with me. You saved me from my room, days ago, when I was too depressed to leave. You&apos;re the one who&apos;s acting the impostor.&quot;",
-               "&quot;To lead men, you have to rule with an iron fist. You have to do the unspeakable things that no one else will do. You have to show that strength to them, that resiliency to moral nature in the interest of protection, and reinforce it in them, so that they never question you. We&apos;ve entered a time of war. There is no Carmine anymore. There is no Merlot. No . . . Valentina,&quot; his voice wavers, but he corrects it as soon as he can. &quot;All that&apos;s left is the wolves and the sheep. And I am their shepherd.&quot;",
-               "I remember the non-Chymaeran bodies just past the gates, and my stomach twists. &quot;It was you, then. You had those innocent cadets killed! Why?&quot;",
-               "&quot;Because it&apos;s us versus them.&quot;",
-               "&quot;What is that supposed to mean?&quot;",
-               "&quot;It needs to be us versus them. With no them, there&apos;s no us. The enemy needs a face. These weak soldiers need a &apos;them.&apos; And if that means . . .&quot; he says.",
-               "&quot;Killing innocent cadets? Sentencing them to death just because you&apos;re afraid? Creating a wild witch hunt to stir chaos, and make them need a leader? That makes you a coward.&quot;",
-               "&quot;No,&quot; Romin says. &quot;It makes me smart. Fear is the strongest emotion, and if my soldiers rest on the precipice of that fear of death, they will never question me. Only then do they find unity.&quot;",
-               "&quot;You&apos;re just an egotistical coward,&quot; I tell him. I bend over the wooden board, and he stands up in response. &quot;Let us lead together. Please, Romin. You don&apos;t have to do this alone.&quot; ",
-               "&quot;I finally have what I&apos;ve always wanted, and you just want to take it away!&quot; His face screws up, as if he&apos;s on the verge of tears. He regains control when his anger wins over, and he hushes his voice before the distant cadets can hear the weakness in his outburst. &quot;I don&apos;t want to have to decide between the both of you.&quot;",
-               "&quot;You don&apos;t have to, Romin,&quot; I say. &quot;You can have both. You can have leadership and friends. Great leaders are loved.&quot;",
-               "&quot;Great leaders are feared,&quot; he says. A quick onset of panic rises when he notices his minions have turned around, catching him in a moment of weakness. &quot;And I&apos;m sorry I have to do this.&quot;",
-               "I only manage a single world. &quot;You&mdash;&quot;",
-               "He draws his fist, erupting it across my face at full force in a cheap shot before I can anticipate. I taste iron as I crumple to the ground.",
-               "&quot;Take this . . . Chymaeran . . . to the prison,&quot; he says, refusing to look me in the eyes as blood spouts from my nose.",
-               "The guard pauses. &quot;But shouldn&apos;t we just desert them out there? If they&apos;re Chymaerans? That makes no sense.&quot;",
-               "&quot;Just do it.&quot;",
-               "In my anger, I can only manage that single string of words I had been saving to tear at him. Now I can believe it.",
-               "&quot;It was your Gods-damn fault she died, Romin! You and your people killed her!&quot;",
-               " ",
-               ""
-            ]
          }
       ],
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Verdant Slope",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Inner Wall Checkpoint",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Verdant Slope",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            }
-         ],
-         [
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Inner Wall Checkpoint",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -1900,7 +1882,7 @@
    {
       "Scenes": [
          {
-            "Perspective": "Titus",
+            "Perspective": "Default",
             "Text": [
                "Hours pass in the temporary holding area beneath the wall. Four cells face each other with two on each side, and two cadets stand watch in the aisle between. They&apos;re unsure what prison guards even do beyond the books they&apos;ve read and the films they&apos;ve seen, so they just idle &mdash; whistling as they pace back and forth.",
                "&quot;You don&apos;t have to listen to that bastard,&quot; Jarrett insists. He&apos;s said that for hours. Our voices are the only power we have left, as the amorphous mass of Endogeny gets closer.",
@@ -1963,136 +1945,19 @@
                " ",
                ""
             ]
-         },
-         {
-            "Perspective": "Titus",
-            "Text": [
-               "They said the iron gates dissolved in a matter of minutes. I refused to turn my head and watch ever since that moment I closed my eyes and bowed my head. ",
-               "I feel so weak. Weak and afraid. Afraid and unworthy to play the executioner in a world of sheer brutality. A single spasm of muscle and I ended the lives of two dozen cadets, condemning to the fate of death before Endogeny could consume them, and I wish I were among them.",
-               "I refuse to move while the cadets I saved fight for me. That confidence was all a lie: we know nothing of this horrifying amalgamation, and just like Romin, I am nothing but a coward, unwilling to fight, detached from the drive to live for myself.",
-               "My sins will never be forgiven. Every time I close my eyes I&apos;m met with the face of my dying father, and I remember our final argument. Gods &mdash; I was such a child. And Ellie&apos;s cry, pleading for me to save her when I was powerless and weak, as weak as I am now &mdash; there was nothing I could do for her. Now the two dozen other fatalities join them; they need no faces for me to place their anguish to the bitter end.",
-               "My body tingles with the desire for motion. All it needs is just a spark, and I search for it within me. How terrible am I, to speak words of courage and how badly these Cadets need us, only to cower here and do nothing? If there&apos;s an afterlife, I don&apos;t deserve it. No acts of valor denote the bookends of my story. I can only redeem a fraction of what I&apos;ve taken if I give myself wholly. There will be no peace otherwise.",
-               "I draw Valentina&apos;s Vermillion rifle. I loaded it moments before, considering pulling the trigger when Sylvia wasn&apos;t looking, but the thoughts of leaving her in her last moments weeping over the body of a friend who killed himself is too much to bear.",
-               "So I decide I won&apos;t live for myself anymore. I steady the rifle to the sound of battle cries beyond the barracks, and the memory of distant dreams harmonize between my ears, singing that I was born to this world as nothing more than a sacrifice. There need be no spirit when it impedes the soulless machine of battle. The pain of sorrow can no longer hurt me. The pleasures of love pass through me as phantoms of a life I don&apos;t deserve. I&apos;ve always lived just to die for others, and now in the final chapter, I must steel myself in those vows.",
-               "My ears ring. All I can hear is the sound of my own heartbeat, and all I can feel is the trembling ground beneath my feet with every explosion. For once my mind is entirely clear, unrestrained by primal fear. Endogeny pours through the melted gates like molten magma rock, a conscious mass of blackened innards, bone, and tendons, splitting and merging in an orchestrated cacophony. Explosions rip chunks that launch skyward, leaving craters that mend in seconds. The front lines keep dragging backwards, driving us up the hill. ",
-               "The mass is conscious and horrifying. It contains the memories of all the lives it&apos;s taken. When it splits into humanoid projections, armed with obsidian swords composed of the hardest parts of its victims, it seems as if each cadet can discern the faces, and I soon learn that hesitation is its strength.",
-               "So many figures withdraw from Endogeny like hail from a storm cloud. They grow legs when they need to go faster; additional arms when engaged in swordsmanship. My hands are steady when I draw the rifle, finger posed on the trigger at the perfect angle. I pull when the sights line on a blackened torso. They crumble like wax idols, dissolving into the dirt, waiting to be remerged with its greater form, too small to be capable of motion. I pull the bolt back and chamber another round, just as the front lines are pushed a hundred feet from the stone walls.",
-               "The great mass shapes all its victims in flesh before the living, a master weaver of sinew and bone; a sculptor with skill as divine as the Chymaeran Gods. It reaches within to the memory of every victim to project the images of everyone that cadet has ever loved.",
-               "I watch Isla&apos;s hands tremble as Delvin and Vera appear before her. Flushed in false color like glazed tar pottery, I&apos;m surprised when these projections try to resist, but no matter what, Endogeny collapses them to reform again, endless as the waves against the shore of Blackwater&apos;s lakes.",
-               "&quot;Don&apos;t hesitate! Hesitation is death,&quot; I shout, but I cannot hear the sound of my own voice, and I&apos;m sure not many listen either. The lines draw closer. I know these are my final moments. ",
-               "I want to die away from my friends, somewhere they won&apos;t find me, to an enemy that leaves its victims with no recognition.",
-               "&quot;Pull back! Pull back,&quot; the Cadets shout, but I don&apos;t listen. Our faith tells us of the Reservoir of Souls, where the dead reconvene before being reborn into a new life. You can only be freed when you entirely release the attachments of your past life, and I pray if I succumb in a final act of valor that I might be found worthy to see the ones I love again.",
-               "I want to come home to my mother. I want to feel the warmth of her embrace again. I want to cry and tell her how hard this life has been, how sorry I am that I was too weak to protect her daughter. I want to apologize to my father. I want us to be a family again, wherever that future world takes us, no matter how long we might wait there in the Reservoir, how many words and tears it might take to settle the woes of this endless nightmare.",
-               "And I feel my grasp loosen on the rifle, the last piece of a cherished friend who waits for me on the other side. I can feel her spirit in every stroke of the bolt, the jarring crash of the debris that killed her in every blast. The concept of death horrifies me, no matter how much I galvanize myself against the values of life, and I hate that feeling. I hate the self-preservation that draws the breath when I hold it as long as I can. Will it be painless? Did poor Delvin feel nothing when it took his legs and he was beyond the point of no return?",
-               "Endogeny has focused on me. I&apos;ve disappeared from Sylvia, Isla, and Jarrett in the scrum of two hundred cadets, the closest on the front lines, and I know now is the time to give in. I can pray that I&apos;ll see them on the other side: there&apos;s no chance for anyone.",
-               "Endogeny erects three masses, drawing a ten-foot circle around my feet, closing me in. It chisels them in convulsions of muscle and sinew, drawing the memories of my beloved that succumbed to its influence.",
-               "Their guise adapts from memory. Endogeny searches the neurons of minds that recall me for emotion of the strongest memories. One rises with the cloak of a city guard, strong with muscle. A mess of black sharpens into a prickled beard. The figure is unfinished, but not by accident; the arm crumbles off as if it were a statue mistakenly blemished by its creator.",
-               "To the side rises Romin. Further right rises Valentina, their faces just slightly off, enough that it twists my stomach and sends shivers down my spine, as if they were formed by an amateur artist who had only seen them in passing, who knew nothing of proportions.",
-               "They extend their arms to me. We can be free, forever, they speak, without words. I feel my hands loosen further on the rifle. I feel myself drawn towards their embrace, wanting so badly to succumb, to give my life for one last feeling of warmth to send me off. ",
-               "It&apos;s a gift to die here, and I feel my breath falter. My heart slows. Endogeny presses another ten feet up the hill, and I&apos;m left far behind in the circle.",
-               "&quot;I&apos;m sorry,&quot; I tell them. &quot;I&apos;m sorry I couldn&apos;t save you. I don&apos;t deserve this mercy.&quot; The circle draws closer as they approach. The rifle falls from my hands, and just when I think I&apos;m going to lose myself entirely, color begins to flush in the shadowed face of my father.",
-               " ",
-               ""
-            ]
-         },
-         {
-            "Perspective": "Titus",
-            "Text": [
-               "The circle halts. Endogeny freezes around me. I can see a tension in its mass, some force resilient against the command to consume. ",
-               "The form of my father resists. The colors grow sharper. The cloak saturates, and his arm grows from bone. He twinges, as if the conscious anguish metastasizes in a physical struggle for command of his form.",
-               "&quot;You deserve . . . everything . . . of the world I couldn&apos;t give you,&quot; he mutters, as his true colors flush entirely, and he detaches from Endogeny. His skin is smooth, no longer worn with age. An iron sword carved from memories of his time as a guard is tensioned in his hand, and the gift of a locket I gave him as a child holds around his neck.",
-               "He&apos;s no older than I am. He looks around twenty. Cords of finely-honed muscle brazen his arms, and the past design of the Dragon Class mark pours from his shoulders.",
-               "&quot;Don&apos;t die an early death and live the rest of it in regret. Don&apos;t make the same mistake as me,&quot; he pleads. &quot;In death I will protect you the way I never did. I hope it &mdash; amounts &mdash; to anything,&quot; he says, slashing at the forms of Romin and Valentina, decapitating them. They fall back to the uphill river of black tar.",
-               "The creatures turn to me. I&apos;m a hundred feet inside the bounds of Endogeny. They take the faces of any victim I&apos;ve ever seen: the postman that greeted me every day at the door. All my beloved Academy instructors. Valentina and Romin. Even the face of my mother &mdash; and so I realize it ravaged the graveyards for flesh as fuel, too.",
-               "But the postmortem specter of my father braces. I can feel the immense pain he takes to keep this form apart from Endogeny, and I know it won&apos;t hold forever. I watch him raise his hand as the tar river slims in front of me.",
-               "I reach for the rifle only to find it has already been taken. He extends his new arm to clasp my hand. In the firmness of my grasp, it molds to take the form of the sword he bought me when I began my training at the Academy almost fifteen years ago, the sword I threw out in anger when our arguments boiled over into rage, when I began to hate him so much that I stopped visiting him for leisure.",
-               "Bone and sinew contract to form the appearance of carbon steel. The weapon is brutal and resilient, literally forged of love and memory, far stronger and sharper than any weapon I&apos;ve ever used.",
-               "The projection of my father and I stand together. Our movements play in an immaculate last dance of slashes. The sword I hold floats with the lightness of my family&apos;s love. The sound of every slice graces with rekindled memories of my mother&apos;s voice. When it connects with the black wax of dark dopplegangers, it slices through with the sharpness of my father&apos;s lessons, the strength he taught me before sadness divided us. Every step is another memory, and as a blade dancer, I can feel an entire life flash before my eyes.",
-               "I watch the colors of my young father fade. His strength over the conscious mass weakens as I re-approach the edge of the tar, so close to breaking through, although the creatures mutate faster. The last memory of Clint and I reduce the masses to their earthly graves &mdash; just enough impedance before they reform ahead of us, and we&apos;re slicing at them all over again.",
-               "But that detachment still holds within me. In the beauty of this last moment, I can&apos;t think of it as anything more than a last fruitless effort. The line of freedom is still so far away, and what is it for? Just for another hour alive to succumb later. I can see Sylvia slashing from the other end, out of arrows, reduced to a scavenged sword, and she cries out for me.",
-               "I still can&apos;t feel any reason to live for myself. The love of others is beautiful, but not persuasive enough. I can feel the exhaustion flood my muscles. I know I cannot keep this up forever. Ninety percent of the cadets have been extinguished. The remaining are stranded atop the perimeter walls, their high ground a stranded island surrounded by seas of liquid charcoal.",
-               "I see Isla&apos;s face appear among the tar-bound doubles, and a piece of my soul fractures when I sever her neck, slicing like butter with no hardness of a spine. I&apos;ve lost her. And when Jarrett joins Romin, I feel the spirit of my resistance dissolve.",
-               "My hands are frail and weak. Endogeny gains strength as my father fades. Sylvia is still so far away, and I hope I can apologize to her in another life. ",
-               "I&apos;m not strong enough for this battle.",
-               "The will to live for myself is too weak.",
-               "So my slashes grow sloppy, my dodges slow like moving through molasses, and obsidian blades begin to slice my skin.",
-               "It&apos;s then that I fall to the ocean of tar, to become another face that haunts the living.",
-               "My father stands over me, reminding me of the times we practiced in the back yard of the house with training equipment. So many rounds after the passing of my mother he would stand over me in resentment, feeling pleasure in letting me saturate in that pain, as if I could feel the hurt of loss for him. But here his body covers me, no color left to distinguish him.",
-               "&quot;I&apos;m sorry I couldn&apos;t save you,&quot; Clint says, before his mouth seals over with the tar, robbing him of any further words. He dissolves back to nothingness as I feel Endogeny overtake me, the heaviness like water torture with a weighted blanket, and I try to force my last thoughts to be of the life after this one.",
-               "I catch a final image of Sylvia standing over me before my face is overtaken. With no breath, mouth, or nose to shout, I watch as it overtakes her. The viscosity collapses her alongside me, and we lay there, entombed in Endogeny just as Valentina laid once beneath the wreckage.",
-               " ",
-               ""
-            ]
          }
       ],
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-30",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            }
-         ],
-         [
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            }
-         ],
-         [
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-30",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Inner Wall Checkpoint",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -2221,34 +2086,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Recovery Center",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Recovery Center",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -2330,34 +2207,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Recovery Center",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Capitol Building",
+               "Place": "Reception Hall"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Recovery Center",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Capitol Building",
+               "Place": "Reception Hall"
             }
          ]
       ],
@@ -2398,7 +2287,7 @@
                "&quot;You all are murderers. You can incapacitate, curse out, and bludgeon me, but you can never remove the weight of the ultimate truth, and you all will die with it.&quot;",
                "It&apos;s then that Ullrich grabs me. &quot;I want you to know it was nothing personal,&quot; he whispers, before driving his knee into my stomach, letting me keel over in the absence of breath. &quot;When I let your father die. Those Chymaerans that you inferior people fear are the ones that stand with us.&quot;",
                "My limbs refuse to lift me from the stage. I had just enough strength to speak and just enough fury to attack him once. My vision falters when I look to the box seats where Sylvia sits, squinting to see if I can find those crimson eyes before I&apos;m stoned with artifacts finer than anything Clint&apos;s shop could ever sell; before the refined barbarism of these godless adherents ends me. All I know is that she is there. She covers her eyes of the sight though she convulses with sobs, too timid and afraid to watch me dying.",
-               "There is nothing left for me here. But Ullrich doesn&apos;t want me to die. Between the cheers of this congregation, he makes his pronouncement: &quot;This rustblood, and the other two prisoners, will be saved for later. Endogeny will finish its liquidation of the last stragglers in merely a day, and these will be the last to fall to the tar. Tomorrow begins the rise of the pure-blooded Mask, the Heiress of Purgatory, whose divinity spans two races. She toils deep within the heart of this mountain to train and raise an army of the worthy. With the new golden age of the Humans only a sunset away, we will rise and reclaim Nordhaven, and all the lands beyond the frost!&quot;",
+               "There is nothing left for me here. But Ullrich doesn&apos;t want me to die. Between the cheers of this congregation, he makes his pronouncement: &quot;This rustblood, and the other two prisoners, will be saved for later. Endogeny will finish its liquidation of the last stragglers in merely a day, and these will be the last to fall to the tar. Tomorrow begins the rise of the pure-blooded Mask, the Heiress of Purgatory, whose divinity spans two races. She toils deep within the heart of this mountain to train and raise an army of the worthy. With the new golden age of the Humans only a sunset away, we will rise and reclaim Northaven, and all the lands beyond the frost!&quot;",
                " ",
                ""
             ]
@@ -2461,34 +2350,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Capitol Building",
+               "Place": "Reception Hall"
             },
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Underhold",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Capitol Building",
+               "Place": "Reception Hall"
             },
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Underhold",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -2595,34 +2496,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Underhold",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Capitol Grounds",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Underhold",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Capitol Grounds",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -2721,34 +2634,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Academy Streets",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Academy Streets",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -2978,122 +2903,170 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Foothills",
+               "Location": "Academy Lift",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Foothills",
+               "Location": "Academy Lift",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Foothills",
+               "Location": "Academy Lift",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Foothills",
+               "Location": "Academy Lift",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -3314,34 +3287,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -3483,34 +3468,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -3659,71 +3656,98 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -3814,34 +3838,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Snowdrift Traders",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Snowdrift Traders",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -3946,34 +3982,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Snowdrift Traders",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Snowdrift Traders",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Snowdrift Traders",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Snowdrift Traders",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -4085,34 +4133,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Outwallers&apos; Shanty",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Railcar S",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Outwallers&apos; Shanty",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Railcar S",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -4204,34 +4264,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Railcar S",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Railcar S",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Railcar S",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Railcar S",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -4377,34 +4449,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -4484,11 +4568,14 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -4629,34 +4716,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-30",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-30",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-30",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-30",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -4806,34 +4905,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -4993,34 +5104,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-30",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-30",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-30",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-30",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-30",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-30",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-30",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-30",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -5148,71 +5271,98 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-30",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-30",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Floor Thousandth",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Floor Hundredth",
+               "Place": "Victory Row"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Central Void",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-30",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-30",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Floor Thousandth",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Floor Hundredth",
+               "Place": "Victory Row"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Central Void",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-30",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-30",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Floor Thousandth",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Floor Hundredth",
+               "Place": "Victory Row"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Central Void",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -5241,8 +5391,9 @@
                "I feel her hand cup the side of my face. The last sensation I feel of her is the coldness of her fingers as that touch dissolves away, and I&apos;m ripped awake on light sleep when something clatters on the floor in front of me.",
                "The first colors of dawn are fixed in the almond-shaped sliver of sky, and orange radiates on every surface the sluggish sun shimmers. I reach for covers to throw aside, but the surface I sleep on is bare, and the left side of my face is cold from sweat.",
                "Still half in that dream world, I squint my eyes and look at the floor, finding something black and reflective right in front of the steel door. I drop my cold feet to the floor and stumble forward.",
-               "The amethyst crystal faintly glows when I raise it, and I feel the energy of something calling to me. A scrap of paper is coupled to my necklace by the pendant&apos;s chain.",
-               "&quot;WE WILL MEET AGAIN AT THE END,&quot; it reads, and when I finally realize the source of these messages, I realize I was a fool to think it could have been anyone I knew.",
+               "The amethyst crystal faintly glows when I raise it, and I feel the energy of something calling to me. A scrap of paper is coupled to my necklace by the pendant&apos;s chain, and it reads:",
+               "WE WILL MEET AGAIN AT THE END",
+               "When I finally realize the source of these messages, I realize I was a fool to think it could have been anyone I knew.",
                "I return the necklace to its rightful place around my neck, motivation for what I have to make it home to. But that past life shows me I just might have a chance if I can defeat the sender &mdash; my watcher &mdash; waiting to challenge me after I lost our skirmish beyond the train car. The Heiress of Purgatory is flooded by the Essence of the cadets she kills, the great beast of the Afterlife, the future weapon that will bring Blackwater to its fated end.",
                "And if I can kill them, absorbing their Essence before the Afterlife can obliterate me &mdash; then Gods know how far back I can ride the thread, maybe all the way to the beginning of everything. I just need the courage to do whatever it takes, because the next time I&apos;ll have no chance to cheat or hesitate.",
                "They don&apos;t waste any time keeping us in the cells. We&apos;re a commodity in mass-production, pinions in the gears of this great machine; so many to process with so little that last the eternal day. And so they force us from our cells to the next challenge, without a blindfold to cover our eyes, led through a new series of twists and turns to meet at the heart of the second floor: an arena adorned with rocks and uneven terrain.",
@@ -5347,71 +5498,98 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Floor Hundredth",
+               "Place": "Victory Row"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Floor Hundredth",
+               "Place": "Victory Row"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Floor Hundredth",
+               "Place": "Victory Row"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -5571,71 +5749,98 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -5732,34 +5937,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Unknown",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
                "Region": "Unknown",
-               "Area": ""
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-31",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Unknown",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -5854,34 +6071,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "First Red Ampitheatre",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "First Red Ampitheatre",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -5962,34 +6191,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-20",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-12-02",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-20",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -6118,34 +6359,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-12-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-20",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-20",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-12-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-20",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-12-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-20",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -6203,11 +6456,14 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-12-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-12-20",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -6333,34 +6589,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-20",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Great Coliseum",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-20",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Great Coliseum",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-20",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Great Coliseum",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-20",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Great Coliseum",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -6481,34 +6749,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-20",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-20",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-20",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-20",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-20",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -6615,34 +6895,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-21",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-21",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Safehouse Foxtrot",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-22",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-22",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-21",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-21",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Safehouse Foxtrot",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-22",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-22",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -6795,71 +7087,98 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-23",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-23",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-23",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-23",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-23",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-23",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-23",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-23",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-23",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-23",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-23",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-23",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-23",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-23",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-23",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-23",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-23",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-23",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -7015,71 +7334,98 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Carmine Compound",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Carmine Compound",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Carmine Compound",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-26",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -7211,34 +7557,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -7388,34 +7746,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Carmine Compound",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Carmine Compound",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-27",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -7527,34 +7897,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -7707,34 +8089,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Distribution Hall",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Distribution Hall",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -7870,34 +8264,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Ullrich&apos;s Loft",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Profaned Chapel",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Ullrich&apos;s Loft",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-28",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Profaned Chapel",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -7969,34 +8375,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Profaned Chapel",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Profaned Chapel",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -8102,34 +8520,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Verdant Slope",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Verdant Slope",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -8233,34 +8663,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Marble Streets",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Marble Streets",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -8331,34 +8773,46 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
             }
          ],
          [
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
             },
             {
-               "Date": "",
+               "Date": "2026-11-29",
                "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
             }
          ]
       ],
@@ -8371,7 +8825,29 @@
          {
             "Perspective": "Titus",
             "Text": [
-               "The end :] totally complete no revision required rite??? LMAO",
+               "I find a woman slouched beneath a tree in the open field as I drag my sled on frostless ground, looking as if she&apos;s relinquished her life to join the landscape. ",
+               "Sylvia shrugs, and so I kick her boot, startling her.",
+               "&quot;What are you doing here?&quot; I ask her, discovering that her eyes run with tears. The trek has taken so much out of all the survivors of the Afterlife&apos;s great attempt at liquidation: noticing her face worn with the same brand of strain, I ask, &quot;are you one of us that has nowhere to go?&quot;",
+               "&quot;I was just trying to get away,&quot; she says. &quot;If I wasn&apos;t so indebted to my past, I might head south with the both of you.&quot;",
+               "&quot;So you&apos;re not?&quot; Sylvia asks. &quot;Are you from here? We didn&apos;t know there was as town.&quot;",
+               "&quot;This is Gaffesend,&quot; she says. &quot;And you&apos;re headed for Northaven?&quot;",
+               "&quot;Whatever is left of it,&quot; I say. It&apos;s strange enough to mention a place that&apos;s been dead in my mind since birth.",
+               "I open my rucksack, withdrawing an old book printed in Blackwater&apos;s crimson ink. I quickly realize my grandfather&apos;s map is no longer useful. ",
+               "I nudge Sylvia. &quot;We&apos;re certainly far past Everett&apos;s bounds.&quot;",
+               "&quot;And who are you?&quot; The girl interrupts.",
+               "&quot;The daughter of Khiras,&quot; Sylvia says. The words give me a scare when we agreed to keep that truth in confidence, but both of them smile. ",
+               "&quot;And I&apos;m the queen of England,&quot; the girl says.",
+               "&quot;Where&apos;s England?&quot; I ask.",
+               "She looks afraid: struck with the same expression I wore moments earlier. &quot;Too far to measure,&quot; she says. &quot;My name&apos;s Katiya, and I am . . . or was, a Royal Guard.&quot;",
+               "&quot;We used to be Royal Guards just like you,&quot; Sylvia says: already making friends without hesitation as she lifts Katiya to her feet.",
+               "&quot;What did it in for you?&quot; Katiya asks.",
+               "I try my own attempt at revelatory humor. &quot;We blew up a mountain,&quot; I say.",
+               "&quot;So that was you,&quot; Katiya says. &quot;Ryder said there was some awful stuff going on up there, but I thought it was just exaggerating.&quot;",
+               "The name halts me. &quot;What Ryder?&quot;",
+               "She shrugs. &quot;You surely wouldn&apos;t knwo him: he&apos;s been here for a long time.&quot; A silence hangs between us as Katiya decides to part from the old tree, on a spot rife with an energy of dead Essence. &quot;Say . . . if you&apos;re passing through, I have a place you can stay for a while.&quot;",
+               "&quot;Really?&quot; Sylvia asks.",
+               "&quot;It&apos;s not for long,&quot; Katiya says, stricken with an air of remorse. &quot;But rules don&apos;t really apply to me all that much anymore. If I can&apos;t protect, I can at least house.&quot;",
+               "&quot;That would be great,&quot; I tell her, searching for a blank corner of my grandfather&apos;s map to add the first set of strokes since his passing: the first record of a land beyond the wall. &quot;Just give us a place.&quot;",
                " ",
                ""
             ]
@@ -8380,11 +8856,14 @@
       "SceneLocation": [
          [
             {
-               "Date": "",
-               "Time": "",
-               "ISO": "TZ",
-               "Region": "Unknown",
-               "Area": ""
+               "Date": "2026-12-06",
+               "Time": "12:09:00",
+               "ISO": "2026-12-06T12:09:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
             }
          ]
       ],

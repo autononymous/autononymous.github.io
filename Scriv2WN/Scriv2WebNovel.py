@@ -289,7 +289,7 @@ def InterpretJSON(js,info=True):
             except:
                 PubDate = datetime.now()
             ChapterData['NextPublish'] = PubDate.strftime('%m/%d/%y')
-            PubDateLog +=  f"\n{ChapterData['NextPublish']}|\t{ThisAct}.{ThisChapter+1}|\t {ChapterData['ChapterName']}|\t{entry['Synopsis'][0:150]} ..."
+            PubDateLog +=  f"\n{ChapterData['NextPublish']}\t|\t{ThisAct}.{ThisChapter+1}\t|\t {ChapterData['ChapterName']}\n\t> {entry['Synopsis'][0:200]} ..."
             ChapterData['Scenes'] = 0
             ChapterData['Body'] = []
             ChapterData['POV'] = []        
@@ -323,6 +323,9 @@ def InterpretJSON(js,info=True):
                 ChapterData['Settings'].append(DefaultStorySetting)
             else:
                 ChapterData['Settings'].append(entry['SettingInfo'])
+            # What if the setting ISO is timeless, and only has a date?
+            if ('TZ' in ChapterData['Settings'][-1]['ISO']):
+                ChapterData['Settings'][-1]['ISO'] = ChapterData['Settings'][-1]['ISO'].split('TZ')[0]
             ChapterData['WCs'].append(0)
             Sentences = entry["Body"].replace("</>","\n").replace("<>","").split("\n")
             for Sentence in Sentences:
@@ -331,7 +334,7 @@ def InterpretJSON(js,info=True):
                     for Fragment in Fragments:
                         ChapterData['Body'][-1].append(Fragment)
                         ChapterData['WCs'][-1] += len(Fragment[1].split(" "))    
-            PubDateLog += f"|\t{ChapterData['WCs'][-1]}"
+            PubDateLog += f"\n\t\t> SCENE 0{ChapterData['Scenes']} - {ChapterData['WCs'][-1]} WORDS - SETTING: {ChapterData['Settings'][-1]['Area']}, {ChapterData['Settings'][-1]['Region']} - {ChapterData['Settings'][-1]['Location']} \n {ChapterData['Settings'][-1]}"
     # Some lines require line breaks instead of paragraph tags: the current
     #   example is when a NOTE type is present -- if the next style is also
     #   a NOTE, it should only be a line break instead of a paragraph break,

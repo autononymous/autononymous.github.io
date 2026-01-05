@@ -106,7 +106,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "",
+               "ISO": "TZ",
                "DoSettingTag": "Yes",
                "Region": "Unknown",
                "Area": "The Undercroft",
@@ -391,7 +391,7 @@
             {
                "Date": "2026-11-20",
                "Time": "",
-               "ISO": "2026-11-20",
+               "ISO": "2026-11-20TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "The Academy",
@@ -942,7 +942,7 @@
             {
                "Date": "2026-11-20",
                "Time": "",
-               "ISO": "2026-11-20",
+               "ISO": "2026-11-20TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "Unspecified",
@@ -1462,7 +1462,7 @@
             {
                "Date": "2026-11-21",
                "Time": "",
-               "ISO": "2026-11-21",
+               "ISO": "2026-11-21TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "Barren Wastes",
@@ -1472,7 +1472,7 @@
             {
                "Date": "2026-11-22",
                "Time": "",
-               "ISO": "2026-11-22",
+               "ISO": "2026-11-22TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "Unspecified",
@@ -2256,7 +2256,7 @@
             {
                "Date": "2026-11-22",
                "Time": "",
-               "ISO": "2026-11-22",
+               "ISO": "2026-11-22TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "Unspecified",
@@ -2266,7 +2266,7 @@
             {
                "Date": "2026-11-22",
                "Time": "",
-               "ISO": "2026-11-22",
+               "ISO": "2026-11-22TZ",
                "DoSettingTag": "No",
                "Region": "Frosthards",
                "Area": "Unspecified",
@@ -2276,7 +2276,7 @@
             {
                "Date": "2026-11-23",
                "Time": "",
-               "ISO": "2026-11-23",
+               "ISO": "2026-11-23TZ",
                "DoSettingTag": "No",
                "Region": "Frosthards",
                "Area": "Unspecified",
@@ -2994,7 +2994,7 @@
             {
                "Date": "2026-11-25",
                "Time": "",
-               "ISO": "2026-11-25",
+               "ISO": "2026-11-25TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Province XIV West",
@@ -3004,7 +3004,7 @@
             {
                "Date": "2026-11-25",
                "Time": "",
-               "ISO": "2026-11-25",
+               "ISO": "2026-11-25TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "Province XIV West",
@@ -3752,7 +3752,7 @@
             {
                "Date": "2026-11-25",
                "Time": "",
-               "ISO": "2026-11-25",
+               "ISO": "2026-11-25TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Province XIV East",
@@ -4174,7 +4174,7 @@
             {
                "Date": "2026-11-25",
                "Time": "",
-               "ISO": "2026-11-25",
+               "ISO": "2026-11-25TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Academy",
@@ -4184,7 +4184,7 @@
             {
                "Date": "2026-11-25",
                "Time": "",
-               "ISO": "2026-11-25",
+               "ISO": "2026-11-25TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "Province XIV East",
@@ -4838,7 +4838,7 @@
             {
                "Date": "2026-11-25",
                "Time": "",
-               "ISO": "2026-11-25",
+               "ISO": "2026-11-25TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Academy",
@@ -4848,7 +4848,7 @@
             {
                "Date": "2026-11-25",
                "Time": "",
-               "ISO": "2026-11-25",
+               "ISO": "2026-11-25TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "The Academy",
@@ -5607,7 +5607,7 @@
             {
                "Date": "2026-11-26",
                "Time": "",
-               "ISO": "2026-11-26",
+               "ISO": "2026-11-26TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Vermillion Boulevard",
@@ -5617,7 +5617,7 @@
             {
                "Date": "2026-11-26",
                "Time": "",
-               "ISO": "2026-11-26",
+               "ISO": "2026-11-26TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "Vermillion Boulevard",
@@ -6166,7 +6166,7 @@
             {
                "Date": "2026-11-26",
                "Time": "",
-               "ISO": "2026-11-26",
+               "ISO": "2026-11-26TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Academy",
@@ -6176,7 +6176,7 @@
             {
                "Date": "2026-11-26",
                "Time": "",
-               "ISO": "2026-11-26",
+               "ISO": "2026-11-26TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "The Academy",
@@ -6756,7 +6756,7 @@
             {
                "Date": "2026-11-27",
                "Time": "",
-               "ISO": "2026-11-27",
+               "ISO": "2026-11-27TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Province XIV East",
@@ -7094,7 +7094,7 @@
             {
                "Date": "2026-11-27",
                "Time": "",
-               "ISO": "2026-11-27",
+               "ISO": "2026-11-27TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Upper Mantle",
@@ -7104,7 +7104,7 @@
             {
                "Date": "2026-11-27",
                "Time": "",
-               "ISO": "2026-11-27",
+               "ISO": "2026-11-27TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "Upper Mantle",
@@ -7660,7 +7660,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Upper Mantle",
@@ -7670,7 +7670,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "Upper Mantle",
@@ -7995,7 +7995,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Upper Mantle",
@@ -8005,7 +8005,7 @@
             {
                "Date": "2026-11-29",
                "Time": "",
-               "ISO": "2026-11-29",
+               "ISO": "2026-11-29TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Upper Mantle",
@@ -8459,7 +8459,7 @@
             {
                "Date": "2026-11-30",
                "Time": "",
-               "ISO": "2026-11-30",
+               "ISO": "2026-11-30TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Upper Mantle",
@@ -9224,7 +9224,7 @@
             {
                "Date": "2026-12-02",
                "Time": "",
-               "ISO": "2026-12-02",
+               "ISO": "2026-12-02TZ",
                "DoSettingTag": "Yes",
                "Region": "Unknown",
                "Area": "Unspecified",
@@ -9234,7 +9234,7 @@
             {
                "Date": "2026-12-02",
                "Time": "",
-               "ISO": "2026-12-02",
+               "ISO": "2026-12-02TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "The Afterlife",
@@ -9671,7 +9671,7 @@
             {
                "Date": "2026-12-02",
                "Time": "",
-               "ISO": "2026-12-02",
+               "ISO": "2026-12-02TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Afterlife",
@@ -9681,7 +9681,7 @@
             {
                "Date": "2026-12-02",
                "Time": "",
-               "ISO": "2026-12-02",
+               "ISO": "2026-12-02TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "The Afterlife",
@@ -10272,7 +10272,7 @@
             {
                "Date": "2026-12-02",
                "Time": "",
-               "ISO": "2026-12-02",
+               "ISO": "2026-12-02TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Afterlife",
@@ -10282,7 +10282,7 @@
             {
                "Date": "2026-12-02",
                "Time": "",
-               "ISO": "2026-12-02",
+               "ISO": "2026-12-02TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Afterlife",
@@ -10894,7 +10894,7 @@
             {
                "Date": "2026-12-02",
                "Time": "",
-               "ISO": "2026-12-02",
+               "ISO": "2026-12-02TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Afterlife",
@@ -10904,7 +10904,7 @@
             {
                "Date": "2026-12-02",
                "Time": "",
-               "ISO": "2026-12-02",
+               "ISO": "2026-12-02TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Afterlife",
@@ -11460,7 +11460,7 @@
             {
                "Date": "2026-11-26",
                "Time": "",
-               "ISO": "2026-11-26",
+               "ISO": "2026-11-26TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Academy",
@@ -11470,7 +11470,7 @@
             {
                "Date": "2026-11-26",
                "Time": "",
-               "ISO": "2026-11-26",
+               "ISO": "2026-11-26TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "The Academy",
@@ -12867,7 +12867,7 @@
             {
                "Date": "2026-11-26",
                "Time": "",
-               "ISO": "2026-11-26",
+               "ISO": "2026-11-26TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Foothills",
@@ -12877,7 +12877,7 @@
             {
                "Date": "2026-11-26",
                "Time": "",
-               "ISO": "2026-11-26",
+               "ISO": "2026-11-26TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Province XIV West",
@@ -12887,7 +12887,7 @@
             {
                "Date": "2026-11-26",
                "Time": "",
-               "ISO": "2026-11-26",
+               "ISO": "2026-11-26TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "Province XIV West",
@@ -12897,7 +12897,7 @@
             {
                "Date": "2026-11-26",
                "Time": "",
-               "ISO": "2026-11-26",
+               "ISO": "2026-11-26TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "Province XIV West",
@@ -14309,7 +14309,7 @@
             {
                "Date": "2026-11-27",
                "Time": "",
-               "ISO": "2026-11-27",
+               "ISO": "2026-11-27TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Province XIV East",
@@ -14319,7 +14319,7 @@
             {
                "Date": "2026-11-27",
                "Time": "",
-               "ISO": "2026-11-27",
+               "ISO": "2026-11-27TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Province XIV East",
@@ -15176,7 +15176,7 @@
             {
                "Date": "2026-11-27",
                "Time": "",
-               "ISO": "2026-11-27",
+               "ISO": "2026-11-27TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Province XIV East",
@@ -15186,7 +15186,7 @@
             {
                "Date": "2026-11-27",
                "Time": "",
-               "ISO": "2026-11-27",
+               "ISO": "2026-11-27TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "Province XIV East",
@@ -16054,7 +16054,7 @@
             {
                "Date": "2026-11-27",
                "Time": "",
-               "ISO": "2026-11-27",
+               "ISO": "2026-11-27TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Province XIV East",
@@ -16064,7 +16064,7 @@
             {
                "Date": "2026-11-27",
                "Time": "",
-               "ISO": "2026-11-27",
+               "ISO": "2026-11-27TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "Province XIV East",
@@ -16074,7 +16074,7 @@
             {
                "Date": "2026-11-27",
                "Time": "",
-               "ISO": "2026-11-27",
+               "ISO": "2026-11-27TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "Province XIV East",
@@ -16575,7 +16575,7 @@
             {
                "Date": "2026-11-27",
                "Time": "",
-               "ISO": "2026-11-27",
+               "ISO": "2026-11-27TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Province XIV East",
@@ -16585,7 +16585,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Province XIV West",
@@ -17183,7 +17183,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Province XIV West",
@@ -17193,7 +17193,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "Province XIV West",
@@ -17840,7 +17840,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Outwallers&apos; Shanty",
@@ -17850,7 +17850,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "Barren Wastes",
@@ -18357,7 +18357,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "Barren Wastes",
@@ -18367,7 +18367,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "No",
                "Region": "Frosthards",
                "Area": "Barren Wastes",
@@ -19252,7 +19252,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "Barren Wastes",
@@ -19262,7 +19262,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "The Backwoods",
@@ -19723,7 +19723,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "The Backwoods",
@@ -20572,7 +20572,7 @@
             {
                "Date": "2026-11-29",
                "Time": "",
-               "ISO": "2026-11-29",
+               "ISO": "2026-11-29TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "The Backwoods",
@@ -20582,7 +20582,7 @@
             {
                "Date": "2026-11-30",
                "Time": "",
-               "ISO": "2026-11-30",
+               "ISO": "2026-11-30TZ",
                "DoSettingTag": "No",
                "Region": "Frosthards",
                "Area": "The Backwoods",
@@ -21495,7 +21495,7 @@
             {
                "Date": "2026-11-29",
                "Time": "",
-               "ISO": "2026-11-29",
+               "ISO": "2026-11-29TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "The Backwoods",
@@ -21505,7 +21505,7 @@
             {
                "Date": "2026-11-29",
                "Time": "",
-               "ISO": "2026-11-29",
+               "ISO": "2026-11-29TZ",
                "DoSettingTag": "No",
                "Region": "Frosthards",
                "Area": "The Backwoods",
@@ -22488,7 +22488,7 @@
             {
                "Date": "2026-11-30",
                "Time": "",
-               "ISO": "2026-11-30",
+               "ISO": "2026-11-30TZ",
                "DoSettingTag": "Yes",
                "Region": "Unknown",
                "Area": "Unspecified",
@@ -22498,7 +22498,7 @@
             {
                "Date": "2026-11-30",
                "Time": "",
-               "ISO": "2026-11-30",
+               "ISO": "2026-11-30TZ",
                "DoSettingTag": "Yes",
                "Region": "Unknown",
                "Area": "Unspecified",
@@ -23219,7 +23219,7 @@
             {
                "Date": "2026-11-30",
                "Time": "",
-               "ISO": "2026-11-30",
+               "ISO": "2026-11-30TZ",
                "DoSettingTag": "Yes",
                "Region": "Unknown",
                "Area": "The Undercroft",
@@ -23229,7 +23229,7 @@
             {
                "Date": "2026-11-31",
                "Time": "",
-               "ISO": "2026-11-31",
+               "ISO": "2026-11-31TZ",
                "DoSettingTag": "No",
                "Region": "Unknown",
                "Area": "The Undercroft",
@@ -23239,7 +23239,7 @@
             {
                "Date": "2026-11-31",
                "Time": "",
-               "ISO": "2026-11-31",
+               "ISO": "2026-11-31TZ",
                "DoSettingTag": "No",
                "Region": "Unknown",
                "Area": "The Undercroft",
@@ -24017,7 +24017,7 @@
             {
                "Date": "2026-11-31",
                "Time": "",
-               "ISO": "2026-11-31",
+               "ISO": "2026-11-31TZ",
                "DoSettingTag": "Yes",
                "Region": "Unknown",
                "Area": "The Undercroft",
@@ -24027,7 +24027,7 @@
             {
                "Date": "2026-11-31",
                "Time": "",
-               "ISO": "2026-11-31",
+               "ISO": "2026-11-31TZ",
                "DoSettingTag": "Yes",
                "Region": "Unknown",
                "Area": "The Undercroft",
@@ -24037,7 +24037,7 @@
             {
                "Date": "2026-11-31",
                "Time": "",
-               "ISO": "2026-11-31",
+               "ISO": "2026-11-31TZ",
                "DoSettingTag": "No",
                "Region": "Unknown",
                "Area": "The Undercroft",
@@ -24983,7 +24983,7 @@
             {
                "Date": "2026-11-31",
                "Time": "",
-               "ISO": "2026-11-31",
+               "ISO": "2026-11-31TZ",
                "DoSettingTag": "Yes",
                "Region": "Unknown",
                "Area": "The Undercroft",
@@ -24993,7 +24993,7 @@
             {
                "Date": "2026-11-31",
                "Time": "",
-               "ISO": "2026-11-31",
+               "ISO": "2026-11-31TZ",
                "DoSettingTag": "No",
                "Region": "Unknown",
                "Area": "The Undercroft",
@@ -25003,7 +25003,7 @@
             {
                "Date": "2026-11-31",
                "Time": "",
-               "ISO": "2026-11-31",
+               "ISO": "2026-11-31TZ",
                "DoSettingTag": "No",
                "Region": "Unknown",
                "Area": "The Undercroft",
@@ -25546,7 +25546,7 @@
             {
                "Date": "2026-11-31",
                "Time": "",
-               "ISO": "2026-11-31",
+               "ISO": "2026-11-31TZ",
                "DoSettingTag": "Yes",
                "Region": "Unknown",
                "Area": "The Undercroft",
@@ -25556,7 +25556,7 @@
             {
                "Date": "2026-11-31",
                "Time": "",
-               "ISO": "2026-11-31",
+               "ISO": "2026-11-31TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "Unknown",
@@ -26084,7 +26084,7 @@
             {
                "Date": "2026-12-02",
                "Time": "",
-               "ISO": "2026-12-02",
+               "ISO": "2026-12-02TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "The Backwoods",
@@ -26094,7 +26094,7 @@
             {
                "Date": "2026-12-02",
                "Time": "",
-               "ISO": "2026-12-02",
+               "ISO": "2026-12-02TZ",
                "DoSettingTag": "No",
                "Region": "Frosthards",
                "Area": "The Backwoods",
@@ -26524,7 +26524,7 @@
             {
                "Date": "2026-12-02",
                "Time": "",
-               "ISO": "2026-12-02",
+               "ISO": "2026-12-02TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "The Backwoods",
@@ -26534,7 +26534,7 @@
             {
                "Date": "2026-12-20",
                "Time": "",
-               "ISO": "2026-12-20",
+               "ISO": "2026-12-20TZ",
                "DoSettingTag": "No",
                "Region": "Frosthards",
                "Area": "The Backwoods",
@@ -27300,7 +27300,7 @@
             {
                "Date": "2026-12-20",
                "Time": "",
-               "ISO": "2026-12-20",
+               "ISO": "2026-12-20TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "The Backwoods",
@@ -27310,7 +27310,7 @@
             {
                "Date": "2026-12-20",
                "Time": "",
-               "ISO": "2026-12-20",
+               "ISO": "2026-12-20TZ",
                "DoSettingTag": "No",
                "Region": "Frosthards",
                "Area": "The Backwoods",
@@ -27617,7 +27617,7 @@
             {
                "Date": "2026-12-20",
                "Time": "",
-               "ISO": "2026-12-20",
+               "ISO": "2026-12-20TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "The Backwoods",
@@ -28361,7 +28361,7 @@
             {
                "Date": "2026-11-20",
                "Time": "",
-               "ISO": "2026-11-20",
+               "ISO": "2026-11-20TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Academy",
@@ -28371,7 +28371,7 @@
             {
                "Date": "2026-11-20",
                "Time": "",
-               "ISO": "2026-11-20",
+               "ISO": "2026-11-20TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "The Academy",
@@ -29081,7 +29081,7 @@
             {
                "Date": "2026-11-20",
                "Time": "",
-               "ISO": "2026-11-20",
+               "ISO": "2026-11-20TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Academy",
@@ -29091,7 +29091,7 @@
             {
                "Date": "2026-11-20",
                "Time": "",
-               "ISO": "2026-11-20",
+               "ISO": "2026-11-20TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "Province XIV East",
@@ -29703,7 +29703,7 @@
             {
                "Date": "2026-11-21",
                "Time": "",
-               "ISO": "2026-11-21",
+               "ISO": "2026-11-21TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "Barren Wastes",
@@ -29713,7 +29713,7 @@
             {
                "Date": "2026-11-22",
                "Time": "",
-               "ISO": "2026-11-22",
+               "ISO": "2026-11-22TZ",
                "DoSettingTag": "No",
                "Region": "Frosthards",
                "Area": "Barren Wastes",
@@ -30609,7 +30609,7 @@
             {
                "Date": "2026-11-23",
                "Time": "",
-               "ISO": "2026-11-23",
+               "ISO": "2026-11-23TZ",
                "DoSettingTag": "Yes",
                "Region": "Frosthards",
                "Area": "The Backwoods",
@@ -30619,7 +30619,7 @@
             {
                "Date": "2026-11-23",
                "Time": "",
-               "ISO": "2026-11-23",
+               "ISO": "2026-11-23TZ",
                "DoSettingTag": "No",
                "Region": "Frosthards",
                "Area": "The Backwoods",
@@ -30629,7 +30629,7 @@
             {
                "Date": "2026-11-23",
                "Time": "",
-               "ISO": "2026-11-23",
+               "ISO": "2026-11-23TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "The Backwoods",
@@ -31547,7 +31547,7 @@
             {
                "Date": "2026-11-26",
                "Time": "",
-               "ISO": "2026-11-26",
+               "ISO": "2026-11-26TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Province XIV West",
@@ -31557,7 +31557,7 @@
             {
                "Date": "2026-11-26",
                "Time": "",
-               "ISO": "2026-11-26",
+               "ISO": "2026-11-26TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Province XIV West",
@@ -31567,7 +31567,7 @@
             {
                "Date": "2026-11-26",
                "Time": "",
-               "ISO": "2026-11-26",
+               "ISO": "2026-11-26TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Province XIV East",
@@ -32355,7 +32355,7 @@
             {
                "Date": "2026-11-27",
                "Time": "",
-               "ISO": "2026-11-27",
+               "ISO": "2026-11-27TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Upper Mantle",
@@ -32365,7 +32365,7 @@
             {
                "Date": "2026-11-27",
                "Time": "",
-               "ISO": "2026-11-27",
+               "ISO": "2026-11-27TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Upper Mantle",
@@ -33278,7 +33278,7 @@
             {
                "Date": "2026-11-27",
                "Time": "",
-               "ISO": "2026-11-27",
+               "ISO": "2026-11-27TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Province XIV West",
@@ -33288,7 +33288,7 @@
             {
                "Date": "2026-11-27",
                "Time": "",
-               "ISO": "2026-11-27",
+               "ISO": "2026-11-27TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Province XIV East",
@@ -33935,7 +33935,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Province XIV East",
@@ -33945,7 +33945,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "Province XIV East",
@@ -34879,7 +34879,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Upper Mantle",
@@ -34889,7 +34889,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Afterlife",
@@ -35704,7 +35704,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Afterlife",
@@ -35714,7 +35714,7 @@
             {
                "Date": "2026-11-28",
                "Time": "",
-               "ISO": "2026-11-28",
+               "ISO": "2026-11-28TZ",
                "DoSettingTag": "No",
                "Region": "Blackwater",
                "Area": "The Afterlife",
@@ -36081,7 +36081,7 @@
             {
                "Date": "2026-11-29",
                "Time": "",
-               "ISO": "2026-11-29",
+               "ISO": "2026-11-29TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Afterlife",
@@ -36091,7 +36091,7 @@
             {
                "Date": "2026-11-29",
                "Time": "",
-               "ISO": "2026-11-29",
+               "ISO": "2026-11-29TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Afterlife",
@@ -36696,7 +36696,7 @@
             {
                "Date": "2026-11-29",
                "Time": "",
-               "ISO": "2026-11-29",
+               "ISO": "2026-11-29TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "Upper Mantle",
@@ -36706,7 +36706,7 @@
             {
                "Date": "2026-11-29",
                "Time": "",
-               "ISO": "2026-11-29",
+               "ISO": "2026-11-29TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Afterlife",
@@ -37297,7 +37297,7 @@
             {
                "Date": "2026-11-29",
                "Time": "",
-               "ISO": "2026-11-29",
+               "ISO": "2026-11-29TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Afterlife",
@@ -37307,7 +37307,7 @@
             {
                "Date": "2026-11-29",
                "Time": "",
-               "ISO": "2026-11-29",
+               "ISO": "2026-11-29TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Undercroft",
@@ -37667,7 +37667,7 @@
             {
                "Date": "2026-11-29",
                "Time": "",
-               "ISO": "2026-11-29",
+               "ISO": "2026-11-29TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Undercroft",
@@ -37677,7 +37677,7 @@
             {
                "Date": "2026-11-29",
                "Time": "",
-               "ISO": "2026-11-29",
+               "ISO": "2026-11-29TZ",
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Undercroft",
