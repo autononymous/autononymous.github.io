@@ -15,10 +15,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 var _a;
 //
-//  ████▄  ▄████▄ ██████ ▄████▄   ██  ██ ▄████▄ ███  ██ ████▄  ██     ██ ███  ██  ▄████  
-//  ██  ██ ██▄▄██   ██   ██▄▄██   ██████ ██▄▄██ ██ ▀▄██ ██  ██ ██     ██ ██ ▀▄██ ██  ▄▄▄ 
-//  ████▀  ██  ██   ██   ██  ██   ██  ██ ██  ██ ██   ██ ████▀  ██████ ██ ██   ██  ▀███▀  
-//  
+// HELPER FUNCITONS
+//
 var decodeEntities = (function () {
     // this prevents any overhead from creating the object each time
     var element = document.createElement('div');
@@ -35,6 +33,65 @@ var decodeEntities = (function () {
     }
     return decodeHTMLEntities;
 })();
+// --- helpers (put somewhere near the top of your file) ---
+const MS_PER_DAY = 24 * 60 * 60 * 1000;
+function ordinal(n) {
+    const mod100 = n % 100;
+    if (mod100 >= 11 && mod100 <= 13)
+        return `${n}th`;
+    switch (n % 10) {
+        case 1: return `${n}st`;
+        case 2: return `${n}nd`;
+        case 3: return `${n}rd`;
+        default: return `${n}th`;
+    }
+}
+function formatFosrothDate(dt, yearLabel = "2A-628") {
+    const m = dt.getMonth(); // 0-11
+    const y = dt.getFullYear();
+    let tide;
+    let startY;
+    let startM; // 0-11
+    let startD = 1;
+    // Meteorological seasons for simplicity:
+    // Mar–May = spring, Jun–Aug = summer, Sep–Nov = fall, Dec–Feb = winter
+    if (m >= 2 && m <= 4) {
+        tide = "Verdantide";
+        startY = y;
+        startM = 2;
+    } // Mar 1
+    else if (m >= 5 && m <= 7) {
+        tide = "Suntide";
+        startY = y;
+        startM = 5;
+    } // Jun 1
+    else if (m >= 8 && m <= 10) {
+        tide = "Wanetide";
+        startY = y;
+        startM = 8;
+    } // Sep 1
+    else { // Frostide: Dec–Feb
+        tide = "Frostide";
+        if (m === 11) {
+            startY = y;
+            startM = 11;
+        } // Dec 1 (same year)
+        else {
+            startY = y - 1;
+            startM = 11;
+        } // Jan/Feb => Dec 1 of previous year
+    }
+    // Compute day-of-season using UTC midnight to dodge DST weirdness.
+    const dtUTC = Date.UTC(dt.getFullYear(), dt.getMonth(), dt.getDate());
+    const startUTC = Date.UTC(startY, startM, startD);
+    const dayOfSeason = Math.floor((dtUTC - startUTC) / MS_PER_DAY) + 1;
+    return `${yearLabel}, ${ordinal(dayOfSeason)} of ${tide}`;
+}
+//
+//  ████▄  ▄████▄ ██████ ▄████▄   ██  ██ ▄████▄ ███  ██ ████▄  ██     ██ ███  ██  ▄████  
+//  ██  ██ ██▄▄██   ██   ██▄▄██   ██████ ██▄▄██ ██ ▀▄██ ██  ██ ██     ██ ██ ▀▄██ ██  ▄▄▄ 
+//  ████▀  ██  ██   ██   ██  ██   ██  ██ ██  ██ ██   ██ ████▀  ██████ ██ ██   ██  ▀███▀  
+//  
 class StoryExtrasWindow {
     constructor(storyName, rootURL, containerID) {
         this.Story = null;
@@ -688,9 +745,14 @@ class ChapterDataCard {
 }
 class StoryConfig {
     constructor(cfg, storyName) {
+        this.TagConfig = {}; // Setting tag configuration options.
         this.config = cfg;
         this.storyName = storyName;
         this.themes = (this.getAllPossibleThemes());
+        Object.entries(this.config.Styles).forEach((entry) => {
+            this.TagConfig[entry[0]] = entry[1].SettingTagPrefs;
+        });
+        console.error(this.TagConfig);
         return;
     }
     doesThemeExist(characterName, ignoreDefault = false) {
@@ -1210,6 +1272,8 @@ class ChapterBinder {
                 // It is in fragments, because a line may have multiple styles within it as <span>s.
                 let sectionContent = "";
                 let lineContent = [];
+                // Get tag metadata for this chaacter type.
+                let TAGCONFIG = this.Config.TagConfig[ChapterInfo.Character[thisSection]];
                 // Handle story starter tags.
                 if (this.SHOW_STARTER_TAGS) {
                     let sceneDate = this.TOC[requestedChapter - 1].Settings[thisSection].ISO;
@@ -1219,27 +1283,46 @@ class ChapterBinder {
                     //console.debug(ChapterInfo.Character[thisSection])
                     // Format ISO date to "Weekday, Month Date"
                     starterTag = (() => {
+                        var _a;
                         let formatted = sceneDate;
                         const dt = new Date(sceneDate);
                         if (!isNaN(dt.getTime())) {
-                            const datePart = new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric' }).format(dt);
-                            const timePart = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute: '2-digit', /* second: '2-digit',*/ hour12: false }).format(dt);
-                            // No time with date?
-                            if (sceneDate.includes(':')) {
+                            const timePart = new Intl.DateTimeFormat("en-US", {
+                                hour: "2-digit",
+                                minute: "2-digit",
+                                hour12: false,
+                            }).format(dt);
+                            const isFosroth = TAGCONFIG.TimeZone === "Fosroth";
+                            const datePart = isFosroth
+                                ? formatFosrothDate(dt, (_a = TAGCONFIG.FantasyYear) !== null && _a !== void 0 ? _a : "2A-628")
+                                : new Intl.DateTimeFormat("en-US", {
+                                    weekday: "long",
+                                    month: "long",
+                                    day: "numeric",
+                                }).format(dt);
+                            if (sceneDate.includes(":") && TAGCONFIG.doDate && TAGCONFIG.doTime) {
                                 formatted = `${datePart}, ${timePart}`;
                             }
-                            else {
+                            else if (TAGCONFIG.doDate && !TAGCONFIG.doTime) {
                                 formatted = `${datePart}`;
                             }
+                            else {
+                                formatted = "";
+                            }
                         }
-                        return `<p class="StarterTag Body${ChapterInfo.Character[thisSection]}" style="font-size: var(--TagFontSize); margin-bottom: 20px;">
-                ${this.Config.getFullName(ChapterInfo.Character[thisSection])} <br>
-                ${formatted} <br>
-                ${RegionName}  ${((PlaceName == "") || (!this.doSpecificName)) ? "" : "<br>" + PlaceName}             
-                </p>`;
+                        return `<p class="StarterTag Body${ChapterInfo.Character[thisSection]}" style="font-size: var(--TagFontSize); margin-bottom: 20px;">`
+                            + (TAGCONFIG.doName ? `${this.Config.getFullName(ChapterInfo.Character[thisSection])} <br>` : "")
+                            + ((formatted == "") ? "" : `${formatted} <br>`)
+                            + (TAGCONFIG.doSetting ? `${RegionName}  ${((PlaceName == "") || (!this.doSpecificName)) ? "" : "<br>" + PlaceName}` : "")
+                            + `</p>`;
                     })();
                 }
-                chapterContent += starterTag;
+                if (this.TOC[requestedChapter - 1].Settings[thisSection].DoSettingTag != "No") {
+                    chapterContent += starterTag;
+                }
+                else {
+                    chapterContent += `<br><br>`;
+                }
                 section.forEach((feedline) => {
                     // Store content of this individual line.
                     // The Section Style is an array containing the perspective of each section e.g. [Cody, Katiya, Titus, ...]
