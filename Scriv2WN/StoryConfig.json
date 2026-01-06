@@ -288,18 +288,140 @@
 "Atlas":
 {
     "Blackwater":
-    {   "Province XII":
-        {   "Location":{
-                "MapLocation":[0.00,0.00],
+    {   "Province XIV East":
+        {   "Titus' Home":{
+                "MapLocation":[49.09,54.00],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[56.59,52.50],
+                "Description":""}
+        },
+        "Province XIV West":
+        {   "Everett's Tradehouse":{
+                "MapLocation":[36.94,57.75],
+                "Description":""},
+            "Snowdrift Traders":{
+                "MapLocation":[36.94,57.75],
+                "Description":""},
+            "Carmine Compound":{
+                "MapLocation":[44.44,50.25],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[35.44,55.75],
+                "Description":""}
+        },
+        "The Undercroft":
+        {   "Floor Tenth":{
+                "MapLocation":[49.39,8.25],
+                "Description":""},
+            "Floor Hundredth":{
+                "MapLocation":[49.39,8.25],
+                "Description":""},
+            "Floor Thousandth":{
+                "MapLocation":[49.39,8.25],
+                "Description":""},
+            "Floor Infinity":{
+                "MapLocation":[49.39,8.25],
+                "Description":""},
+            "Central Void":{
+                "MapLocation":[49.39,8.25],
+                "Description":""},
+            "Subterranean Farmlands":{
+                "MapLocation":[49.39,8.25],
+                "Description":""},
+            "Holding Cell":{
+                "MapLocation":[49.39,8.25],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[49.39,8.25],
                 "Description":""}
         },
         "The Afterlife":
-        {   "Location":{
-                "MapLocation":[0.00,0.00],
+        {   "Recovery Center":{
+                "MapLocation":[53.44,21.75],
+                "Description":""},
+            "Capitol Grounds":{
+                "MapLocation":[41.89,15.00],
+                "Description":""},
+            "Underhold":{
+                "MapLocation":[49.39,8.25],
+                "Description":""},
+            "Capitol Building":{
+                "MapLocation":[41.89,15.00],
+                "Description":""},
+            "Marble Streets":{
+                "MapLocation":[49.39,20.00],
+                "Description":""},
+            "Distribution Hall":{
+                "MapLocation":[43.39,32.00],
+                "Description":""},
+            "Ullrich's Loft":{
+                "MapLocation":[41.89,15.00],
+                "Description":""},
+            "Profaned Chapel":{
+                "MapLocation":[41.89,15.00],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[49.39,20.00],
                 "Description":""}
         },
-        "City Outskirts":
-        {   "Location":{
+        "Foothills":
+        {   "Vermillion Estate":{
+                "MapLocation":[43.39,38.25],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[43.39,42.50],
+                "Description":""},
+            "Academy Lift":{
+                "MapLocation":[48.64,40.00],
+                "Description":""}
+        },
+        "Upper Mantle":
+        {   "Inner Wall Checkpoint":{
+                "MapLocation":[43.69,34.25],
+                "Description":""},
+            "Verdant Slope":{
+                "MapLocation":[40.54,35.50],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[40.54,35.50],
+                "Description":""}
+        },
+        "Outwallers' Shanty":
+        {   "Unspecified":{
+                "MapLocation":[16.69,73.00],
+                "Description":""}
+        },
+        "Vermillion Boulevard":
+        {   "Club Vermillion":{
+                "MapLocation":[49.39,45.50],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[49.39,45.50],
+                "Description":""}
+        },
+        "The Academy":
+        {   "Dragon Class Lofts":{
+                "MapLocation":[51.34,36.25],
+                "Description":""},
+            "Academy Streets":{
+                "MapLocation":[51.34,36.25],
+                "Description":""},
+            "Academy Lift":{
+                "MapLocation":[48.64,40.00],
+                "Description":""},
+            "Great Coliseum":{
+                "MapLocation":[48.79,34.75],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[48.79,34.75],
+                "Description":""}
+        },
+        "Unknown":
+        {   "Underhold":{
+                "MapLocation":[49.24,9.75],
+                "Description":""},
+            "Unspecified":{
                 "MapLocation":[0.00,0.00],
                 "Description":""}
         },
@@ -395,6 +517,11 @@
                 "MapLocation":[0.00,0.00],
                 "Description":""}
         },
+        "Unknown":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        },
         "MapSource":"Katiya"
     },
     "Melenia": 
@@ -408,17 +535,44 @@
                 "MapLocation":[0.00,0.00],
                 "Description":""}
         },
-        "MapSource":"Jade"
-    },
-    "Outer Wastes": 
-    {   "The Backwoods":
+        "Unknown":
         {   "Unspecified":{
                 "MapLocation":[0.00,0.00],
                 "Description":""}
         },
+        "MapSource":"Jade"
+    },
+    "Frosthards": 
+    {   "The Backwoods":
+        {   "First Red Ampitheatre":{
+                "MapLocation":[46.24,99.9],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[46.24,99.9],
+                "Description":""}
+        },
+        "Barren Wastes":
+        {   "Safehouse Foxtrot":{
+                "MapLocation":[46.24,99.9],
+                "Description":""},
+            "Abandoned Cabin":{
+                "MapLocation":[46.24,99.9],
+                "Description":""},
+            "Railcar S":{
+                "MapLocation":[46.24,99.9],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[46.24,99.9],
+                "Description":""}
+        },
         "Unspecified":
         {   "Unspecified":{
-                "MapLocation":[0.00,0.00],
+                "MapLocation":[46.24,99.9],
+                "Description":""}
+        },
+        "Unknown":
+        {   "Unspecified":{
+                "MapLocation":[46.24,99.9],
                 "Description":""}
         },
         "MapSource":"Titus"
@@ -472,6 +626,11 @@
                 "Description":""}
         },
         "Unspecified":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        },
+        "Unknown":
         {   "Unspecified":{
                 "MapLocation":[0.00,0.00],
                 "Description":""}

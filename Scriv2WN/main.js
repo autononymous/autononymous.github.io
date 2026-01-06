@@ -2239,3 +2239,27 @@ function shouldDisableMegaDropShadow() {
     return doNoShadows;
 }
 window.addEventListener("resize", shouldDisableMegaDropShadow);
+function getMousePosInImage(img, ev) {
+    const r = img.getBoundingClientRect();
+    const x = ev.clientX - r.left;
+    const y = ev.clientY - r.top;
+    const px = r.width > 0 ? Math.max(0, Math.min(1, x / r.width)) : 0;
+    const py = r.height > 0 ? Math.max(0, Math.min(1, y / r.height)) : 0;
+    const percentX = px * 100;
+    const percentY = py * 100;
+    return { x, y, px, py, percentX, percentY, bounds: r };
+}
+if (eMAP instanceof HTMLImageElement) {
+    eMAP.addEventListener('mousedown', (ev) => {
+        const pos = getMousePosInImage(eMAP, ev);
+        // Example usage: expose as CSS vars or log
+        ROOT.style.setProperty('--img-mouse-x', `${(pos.px * 100).toFixed(2)}%`);
+        ROOT.style.setProperty('--img-mouse-y', `${(pos.py * 100).toFixed(2)}%`);
+        console.debug('Image mouse pos', `[${pos.percentX.toFixed(2)},${pos.percentY.toFixed(2)}],`);
+    });
+    eMAP.addEventListener('mouseleave', () => {
+        ROOT.style.removeProperty('--img-mouse-x');
+        ROOT.style.removeProperty('--img-mouse-y');
+    });
+}
+/**/ 
