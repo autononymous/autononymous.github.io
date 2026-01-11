@@ -225,6 +225,9 @@ p.byKatiya::after {
 p.byMiguel::after {
     background-image: url("../profiles/miggy.jpg");
 }
+p.byKim::after {
+    background-image: url("../profiles/kim.jpg");
+}
 p.byKei::after {
     background-image: url("../profiles/kei.jpg");
 }
