@@ -2,10 +2,10 @@
    "Metadata": {
       "ActCount": 5,
       "ChapterCount": 53,
-      "SceneCount": 154,
-      "WrittenCount": 127,
-      "UnwrittenCount": 27,
-      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 194,739.\n > There are 5 acts, 53 chapters, and 154 scenes.\n > This manuscript averages:\n   - 1264 words per scene.\n   - 3674 words per chapter.\n   - 2.9 scenes per chapter.\n > Out of 154 planned scenes, 127 are written.\n > So the Zero Draft is approximately 82.4% complete.\n"
+      "SceneCount": 156,
+      "WrittenCount": 131,
+      "UnwrittenCount": 25,
+      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 198,249.\n > There are 5 acts, 53 chapters, and 156 scenes.\n > This manuscript averages:\n   - 1270 words per scene.\n   - 3740 words per chapter.\n   - 2.94 scenes per chapter.\n > Out of 156 planned scenes, 131 are written.\n > So the Zero Draft is approximately 83.9% complete.\n"
    },
    "ChapterList": [
       {
@@ -2018,7 +2018,7 @@
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Backwoods",
-               "Location": "",
+               "Location": "Titus&apos; Home",
                "Place": "Unspecified"
             },
             {
@@ -2100,18 +2100,40 @@
          "ChapterName": "In Loving Memory",
          "ChapterNumber": "Forty-Four",
          "Character": [
-            "Default",
-            "Default"
+            "Cody",
+            "Katiya",
+            "Cody",
+            "Cody"
          ],
          "Summary": "",
          "Blurb": "Cody confronts his father about a resurrected dream.",
-         "Written": false,
+         "Written": true,
          "Release": "01/28/27",
          "Settings": [
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2121,11 +2143,11 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dunsmore Family Home",
                "Place": "Unspecified"
             }
          ],
@@ -2150,7 +2172,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2160,7 +2182,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2170,7 +2192,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2199,7 +2221,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2209,7 +2231,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2219,7 +2241,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2247,7 +2269,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2257,7 +2279,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2286,7 +2308,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2296,7 +2318,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2306,7 +2328,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2334,7 +2356,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2344,7 +2366,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2372,7 +2394,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2382,7 +2404,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2411,7 +2433,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2421,7 +2443,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2431,7 +2453,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2461,7 +2483,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2471,7 +2493,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2481,7 +2503,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2491,7 +2513,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2520,7 +2542,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2530,7 +2552,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",
@@ -2540,7 +2562,7 @@
             {
                "Date": "",
                "Time": "",
-               "ISO": "TZ",
+               "ISO": "",
                "DoSettingTag": "Yes",
                "Region": "Unspecified",
                "Area": "Unspecified",

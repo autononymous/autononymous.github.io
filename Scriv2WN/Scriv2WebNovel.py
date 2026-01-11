@@ -12,6 +12,8 @@ import json as js
 import os, sys, glob, time, csv
 from datetime import datetime, timedelta
 from paragate_gpt_parse import GPT_Parse
+import numpy as np
+from matplotlib import pyplot as plt
 
 OnesNames = ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen","Twenty"]
 TensNames = ["err","err","Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"]
@@ -266,6 +268,7 @@ def InterpretJSON(js,info=True):
     doWarnPOV = False; ############################################################## CHECKING POV DATA.
     noPOVwarnings = True;
     PubDate = ""
+    WordCounts = {"Scene":[],"Chapter":[],"SumScene":[],"SumChap":[],"SumSceneWrit":[],"SumChapWrit":[]}
     PubDateLog = f"Publication dates of {MANUSCRIPT['Story']} are computed as follows:\n"
     for entry in js['Manuscript']:
         if entry['DocType'] == "Act":
@@ -289,6 +292,15 @@ def InterpretJSON(js,info=True):
             except:
                 PubDate = datetime.now()
             ChapterData['NextPublish'] = PubDate.strftime('%m/%d/%y')
+            if (ThisChapter > 1):
+                print(STORY[ThisChapter-1])
+                if ('WCs' in STORY[ThisChapter-1].keys() ):
+                    PubDateLog += f"\n\t> TOTAL WORD COUNT = {sum(STORY[ThisChapter-1]['WCs'])}"
+                    WordCounts["Chapter"].append(sum(STORY[ThisChapter-1]['WCs']))
+                    WordCounts["SumChap"].append(sum(WordCounts["Chapter"])*.001)
+                    if STORY[ThisChapter-1]['WCs'] != 0: 
+                        WordCounts["SumChapWrit"].append(sum(WordCounts["Scene"])*.001)
+                        
             PubDateLog +=  f"\n{ChapterData['NextPublish']}\t|\t{ThisAct}.{ThisChapter+1}\t|\t {ChapterData['ChapterName']}\n\t> {entry['Synopsis'][0:200]} ..."
             ChapterData['Scenes'] = 0
             ChapterData['Body'] = []
@@ -299,6 +311,7 @@ def InterpretJSON(js,info=True):
             ChapterData['WCs'] = []
         if entry['DocType'] == 'Scene':
             ChapterData['Story'] = entry['StoryName']
+            ChapterData['History'] = {"Created":entry['CreatedDate'],"Modified":entry['ModifiedDate']}
             ChapterData['Act'] = int(entry['ActNum'])
             ChapterData['ActName'] = ThisActName
             ChapterData['Chapter'] = int(entry['ChapterFull'])
@@ -334,7 +347,39 @@ def InterpretJSON(js,info=True):
                     for Fragment in Fragments:
                         ChapterData['Body'][-1].append(Fragment)
                         ChapterData['WCs'][-1] += len(Fragment[1].split(" "))    
-            PubDateLog += f"\n\t\t> SCENE 0{ChapterData['Scenes']} - {ChapterData['WCs'][-1]} WORDS - SETTING: {ChapterData['Settings'][-1]['Area']}, {ChapterData['Settings'][-1]['Region']} - {ChapterData['Settings'][-1]['Location']} \n {ChapterData['Settings'][-1]}"
+            
+            PubDateLog += f"\n\t\t> SCENE 0{ChapterData['Scenes']} - {ChapterData['WCs'][-1]} WORDS - SETTING: {ChapterData['Settings'][-1]['Area']}, {ChapterData['Settings'][-1]['Region']} - {ChapterData['Settings'][-1]['Location']}" #" \n {ChapterData['Settings'][-1]}"
+            WordCounts["Scene"].append(ChapterData['WCs'][-1])
+            WordCounts["SumScene"].append(sum(WordCounts["Scene"])*.001)
+            if ChapterData['WCs'][-1] != 0: 
+                WordCounts["SumSceneWrit"].append(sum(WordCounts["Scene"])*.001)
+    PubDateLog += f"\n\t> TOTAL WORD COUNT = {sum(STORY[ThisChapter-1]['WCs'])}"
+    
+    # STATISTICS FOR NERDS
+    PubDateLog += f"\n\n --== CHAPTER STATISTICS ==-- \n\n\t > Mean Scene Word Count is {np.round(np.mean(WordCounts['Scene']),1)}. \n\t > Mean Chapter Word Count is {np.round(np.mean(WordCounts['Chapter']),1)}."
+    WordCt = WordCounts['SumChap']
+    SceneCt = WordCounts['SumScene']
+    ChapNum = np.linspace(1,len(WordCt),len(WordCt))
+    SceneNum = np.linspace(1,len(SceneCt),len(SceneCt))
+    WrittenChaps = 0
+    WrittenScenes = 0
+    for entry in WordCounts['Chapter']:
+        WrittenChaps = (WrittenChaps + 1) if entry != 0 else WrittenChaps
+    for entry in WordCounts['Scene']:
+        WrittenScenes = (WrittenScenes + 1) if entry != 0 else WrittenScenes
+    WritChapNum = np.linspace(1,WrittenChaps,WrittenChaps)
+    WritSceneNum =  np.linspace(1,WrittenScenes,WrittenScenes)
+    slopeC = (WritChapNum.dot(WordCounts["SumChap"][0:WrittenChaps])) / (WritChapNum.dot(WritChapNum))
+    slopeS = (WritSceneNum.dot(WordCounts["SumScene"][0:WrittenScenes])) / (WritSceneNum.dot(WritSceneNum))
+    infostring = f" > WC/Scene: {int(slopeS*1000)}\n > WC/Chap:  {int(slopeC*1000)}\n > Scenes: {WrittenScenes} of {int(SceneNum[-1])} ({np.round(WrittenScenes/SceneNum[-1]*100,1)}%)\n > Chaps:  {WrittenChaps} of {int(ChapNum[-1])}  ({np.round(WrittenChaps/ChapNum[-1]*100,1)}%)\n > Estimated {int(slopeC*ChapNum[-1])}k by Ch {int(ChapNum[-1])}."
+    plt.plot(ChapNum,WordCt)
+    plt.plot([0,ChapNum[-1]],[0,slopeC*ChapNum[-1]],'--r',linewidth=1)
+    t = plt.text(2,0.8*WordCt[-1],infostring)
+    t.set_bbox(dict(facecolor='white', alpha=0.5, edgecolor='gray'))
+    plt.title(f"{STORY[0]['Story']} Word Count by Chapter")
+    plt.xlabel("Chapter Number")
+    plt.ylabel("Word Count [Thousands]")
+    plt.grid(True)
     # Some lines require line breaks instead of paragraph tags: the current
     #   example is when a NOTE type is present -- if the next style is also
     #   a NOTE, it should only be a line break instead of a paragraph break,
@@ -483,6 +528,7 @@ if __name__ == "__main__":
     SaveSectionedCopy(MANUSCRIPT['Story'] ,indentLevel=3)
     SaveTableOfContents(MANUSCRIPT, indentLevel=3)
     SaveBasicCopy(MANUSCRIPT['Story'], indentLevel=3)
+    #ProgressReport(MANUSCRIPT)
     
     
     

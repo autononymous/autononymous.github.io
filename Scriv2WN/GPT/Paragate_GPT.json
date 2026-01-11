@@ -8965,7 +8965,7 @@
                "I feel the same eyes on me this time, as if those Chymaerans stood still for decades like the trees &mdash; just waiting to reclaim what they failed to catch, but if it&apos;s the last day I have to live, I want this game to end.",
                "The field is smaller than I remember, but even with the approach of frost, the landscape is verdant and beautiful, without a line of dirt unearthed by Chymaeran hands. Where once the victims of war were left in shallow graves, their dead Essence recycled into saplings and shrubs and long grasses. So much wildlife now inhabits the expanse beyond Hillfar, because nature doesn&apos;t care for the petty squabbles of the overly-conscious. I sit with my back to a massive tree where the pit once was, feeling the pleasure of shade as a light dusting of snow graces the air. A tremendous resonance of energy feathers my circuits as I think I&apos;ll fall asleep, with no intention to wake again.",
                "The funeral is surely over by now. There&apos;s no other event left to wait for, to separate me from the tribunal, and as I begin to drift off to sleep, I&apos;m interrupted by the kick of a stranger against my boot.",
-               "&quot;What are you doing here?&quot; A man asks. He looks slightly younger than me, with piercing, dark eyes and jet-black hair that make me think he&apos;s weathered several lifetimes. &quot;Are you one of us survivors that has nowhere to go?&quot;",
+               "&quot;What are you doing here?&quot; A man asks. He looks slightly younger than me, with piercing, dark eyes and jet-black hair that make me think he&apos;s weathered several lifetimes. &quot;Are you one of us that has nowhere to go?&quot;",
                "And then a beautiful woman with silken, dark hair steps from behind him, a couple inches taller. The crimson rings in her eyes match the vibrant ends of her hair.",
                "Their Essence is so strong that it sends shivers down my circuits: the first time I&apos;ve ever felt it at a distance.",
                "&quot;I was just trying to get away,&quot; I say. &quot;If I wasn&apos;t so indebted to my past, I might head south with the both of you.&quot;",
@@ -8978,7 +8978,7 @@
                "I turn to Titus&apos; companion. &quot;And who are you?&quot;",
                "&quot;The daughter of Khiras.&quot;",
                "&quot;And I&apos;m the queen of England,&quot; I say, before recalling the time when Cody explained his world&apos;s royalty to me. ",
-               "&quot;Where&apos;s England?&quot;",
+               "&quot;Where&apos;s England?&quot; Titus asks.",
                "&quot;Too far to measure,&quot; I say. &quot;My name is Katiya, and I am . . . or was, a Royal Guard.&quot;",
                "&quot;And my name is Sylvia,&quot; she says. &quot;Just Sylvia. And we&apos;re refugees from the North. We used to be Royal Guards just like you!&quot;",
                "She helps me to my feet, and somehow, I entirely blank on the macabre premise of why I was out here.",
@@ -10167,7 +10167,7 @@
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Backwoods",
-               "Location": "",
+               "Location": "Titus&apos; Home",
                "Place": "Unspecified"
             },
             {
@@ -10199,7 +10199,7 @@
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Backwoods",
-               "Location": "",
+               "Location": "Titus&apos; Home",
                "Place": "Unspecified"
             },
             {
@@ -10231,7 +10231,7 @@
                "DoSettingTag": "Yes",
                "Region": "Blackwater",
                "Area": "The Backwoods",
-               "Location": "",
+               "Location": "Titus&apos; Home",
                "Place": "Unspecified"
             },
             {
@@ -10361,62 +10361,7 @@
          {
             "Perspective": "Default",
             "Text": [
-               "I return home full and exhausted with a lot of scrap, and a clean, new replacement part. They send me home with expensive, glass Tupperware containers that &quot;you can send home with Reed,&quot; packed with cuts of tri-tip Geoffrey seared and grilled.",
-               "It has a whole two shelves of space to breathe in my fridge, besides a Costco trip from mom, Katiya&apos;s Chinese leftovers, and a rack of Pabst Blue Ribbon that gives me a taste of college.",
-               "My muscles ache from the chatter of the machines. Micro-abrasions on my fingers sting with hand sanitizer, and I&apos;m about to head up to take a shower when I hear the sound of crying next door. ",
-               "So instead I grab the leftovers, inching my way through Katiya&apos;s door with a container, slow enough to not invoke the wrath of another stranger. I think it&apos;s Rayna at first glance, sitting on Katiya&apos;s couch in her foyer, but then there&apos;s a copy of her. ",
-               "They both look like Rayna. The double doesn&apos;t cry: she just stares at her reflection with piercing blue eyes.",
-               "I knock on the door lightly, yet the two catgirls jump.",
-               "&quot;Intruder!&quot; The stoic one says.",
-               "&quot;Cody,&quot; Rayna says. The name brings the other to lower her weapon. ",
-               "&quot;What&apos;s happening this time? Did you duplicate yourself?&quot;",
-               "&quot;This is Aryn,&quot; Rayna says, &quot;my&mdash;&quot;",
-               "&quot;Who are you?&quot; Aryn asks, but she squints harder. &quot;Wait, I remember you &mdash; you were outside this house. The noble. That Royal Inventor that got the slice on the hand.&quot;",
-               "&quot;That&apos;s me,&quot; I say, while Rayna sniffles, twitching her ears. &quot;I heard crying next door. What&apos;s going on?&quot;",
-               "&quot;An unexpected reunion,&quot; Aryn says. &quot;A dead girl walked into my town, and I found out that she&apos;s my sister. Now we&apos;re in her old home &mdash; was Katiya hiding you here the whole time? Is that why she was so secretive? I thought she was mourning! I trusted her, and she used that trust to hide this from me.&quot;",
-               "&quot;She still is mourning, Aryn,&quot; Rayna says.",
-               "&quot;Then why wouldn&apos;t you come to me, Rayna? Or even &mdash; why didn&apos;t you go home? We&apos;re rich. Mom and Dad could have protected you, no matter the cost!&quot;",
-               "&quot;I couldn&apos;t bear it.&quot; ",
-               "&quot;Bear what?&quot; Aryn says, flashing the contours of her fangs. &quot;I&apos;m your sister. We swore to protect each other!&quot;",
-               "&quot;I couldn&apos;t bear to face you,&quot; Rayna says. &quot;I should have been so much more than I turned out to be. Katiya has her brother Erik, and you should have had me.&quot;",
-               "My hands are tired from machining scrap, so I set the Tupperware containers on the table. I can&apos;t shake the thought all I ever wanted, for years, was to yell the same way at my sibling after they left for the last time &mdash; but seeing how it plays out secondhand, it hurts.",
-               "This should be better.",
-               "&quot;Let&apos;s continue next door,&quot; I say. &quot;Have something to eat: you two look famished.&quot;",
-               "Aryn looks at my dirty hands. &quot;Are you a farm boy, or an inventor? I&apos;m not&mdash;&quot; I open the lid, and her expression quickly changes. &quot;I guess we could. But I&apos;m not even close to done with her.&quot;",
-               "&quot;That&apos;s fine,&quot; I say, wedging the door back open with my foot as I accept it&apos;s going to be a long night. &quot;Warm meat and a cold beer makes anything feel better. Sit down on the couch, and I&apos;ll prepare something for you.&quot;",
-               "Aryn still hesitates. It&apos;s hard to convince cats to do anything, so I act indifferent, rushing in to shutter my shades to forestall a deluge of difficult questions. They enter my world with a few steps at a time, then quietly deposit themselves on the couch, as Aryn gears up to deliver another verbal lashing, forestalled by the oddness of my world, and it&apos;s a distraction that I hinge on.",
-               "I toss the glassware in the microwave. I crack the last two of my craft beers in the back, and pour them in glass mugs from the freezer, taking a PBR for myself. I think of all those things I wanted to tell him, the things that used to be so fresh in my mind that they were almost practiced, and when I set them on the coffee table, I address Aryn first.",
-               "I sit in a folding chair. ",
-               "&quot;It hurts, you know &mdash; all the time you spend counting those shared experiences that were robbed from you. There&apos;s all the joys you thought you&apos;d share. That feeling for them you still want to give,&quot; I say, remembering the empty seat that shouldered the military fatigues at my graduation party: the party my dad spoke at, and I could only feel like something was missing.",
-               "&quot;I&apos;m just so angry,&quot; Aryn says. &quot;You know how many nights I wasted grieving you? I decided to fight in your memory, but now I can only fight in your honor!&quot;",
-               "&quot;I didn&apos;t deserve you,&quot; Rayna says. &quot;Not when you looked up to me.&quot;",
-               "&quot;That&apos;s not true,&quot; Aryn says.",
-               "&quot;I was better off dead to you, because it would make you a whole lot greater than I could ever be.&quot;",
-               "&quot;Better off dead? I don&apos;t want&mdash;&quot;",
-               "&quot;I deserted them, Rayna: I deserted my unit. I vanished to the underworld of the Den of Thieves in Melenia &mdash; the only place that would take a coward and a failure.&quot;",
-               "&quot;You&apos;re neither of those things!&quot;",
-               "&quot;And later, I even deserted them,&quot; Rayna adds.",
-               "&quot;Then why did you return to the place that refused you?&quot; Aryn asks.",
-               "&quot;A job that went wrong,&quot; Rayna says. &quot;I spent my whole life running until I got caught one day. And it was by someone with the grace and courage to give me a second chance.&quot;",
-               "&quot;Katiya,&quot; Aryn says, &quot;wait: you mean that was you on the roof?&quot;",
-               "&quot;She gave me a debt to pay, and when I found the courage to run again, I ran back to pay my debts.&quot;",
-               "&quot;With what?&quot;",
-               "&quot;With a horrible truth,&quot; Rayna says. &quot;I&apos;m giving Katiya a chance to prove herself, because I think she&apos;s capable, and she has that thing &mdash; that spark, that thing that&apos;s never in the service, that thing that brings people together, which is the only way this can work.&quot;",
-               "The microwave chirps, startling Aryn again. I return with the rest of my leftovers, and though they hunger to speak longer, they hunger more for what I&apos;ve served them. Aryn finds a stillness in the silence &mdash; I know that even hearing my brother chewing would be enough to make me cry.",
-               "&quot;So what is your business here?&quot; Aryn asks me.",
-               "&quot;I lost a sibling too. But I saw their body, and from the state it was in, I know I won&apos;t ever get a chance like you have.&quot;",
-               "&quot;Lost to the war?&quot; Aryn asks, unaware she&apos;s changed to English.",
-               "&quot;Yeah,&quot; I say.",
-               "She reads my face, finding familiarity in the contours of my grief. &quot;I&apos;m sorry.&quot;",
-               "&quot;It&apos;s alright,&quot; I say. &quot;It happened a while ago. I didn&apos;t witness it.&quot;",
-               "&quot;And neither did I,&quot; Aryn says. She swirls the drink in the glass, then takes a sip to show she accepts my hospitality, and then asks, &quot;so what will you do to honor them?&quot;",
-               "&quot;I&apos;ll fix what killed him,&quot; I say.",
-               "We sit around for about another half hour, and right about when my body begins to drag my eyelids shut, Aryn and Rayna finally circle around to recounting their childhood memories.",
-               "My head slides further down the couch the more the exhaustion of all my toil catches up to me, and as they ramble further &mdash; around ten minutes after ai add my last word &mdash; I finally give out, around the time they make the decision to leave together.",
-               "Through heavy eyelids, I watch as Rayna takes a sheet from the same pad I wrote the rules on, tearing quietly along the perforations, and while she scribbles something with a pen, Aryn gingerly lifts my head before stuffing one of my mom&apos;s old decorative Christmas pillows in between.",
-               "I don&apos;t resist when the weight of my tired body adheres to the fake leather like flies to honeyed paper, and as sleep muddles conscious thought into peaceful nonsense, Aryn whispers in my ear.",
-               "&quot;I know you&apos;ll honor him well,&quot; she says, her nails tracing tufts of my unkempt, shaggy hair from covering my face.",
-               "The two sisters leave my world and disappear back through Katiya&apos;s front door, leaving the click of the latch as the last sound I hear.",
+               "I return home full and exhausted with a clean, new replacement part. They sent me home with expensive glass Tupperware containers that &quot;you can send home with Reed,&quot; packed with cuts of tri-tip Geoffrey seared and grilled.It has a whole two shelves of space to breathe in my fridge, besides a Costco trip from mom, Katiya&apos;s Chinese leftovers, and a rack of Pabst Blue Ribbon that gives me a taste of college.My muscles ache from the chatter of the machines. Micro-abrasions on my fingers sting with hand sanitizer, and I&apos;m about to head up to take a shower when I hear the sound of crying next door. So instead I grab the leftovers, inching my way through Katiya&apos;s door with a container, slow enough to not invoke the wrath of another stranger. I think it&apos;s Rayna at first glance, sitting on Katiya&apos;s couch in her foyer, but then there&apos;s a copy of her. They both look like Rayna. The double doesn&apos;t cry: she just stares at her reflection with piercing blue eyes. I knock on the door lightly, yet the two catgirls jump.&quot;Intruder!&quot; One of them says.&quot;Cody,&quot; Rayna says. The name brings the other to lower her weapon. &quot;What&apos;s happening this time? Did you duplicate yourself?&quot;&quot;This is Aryn,&quot; Rayna says, &quot;my sister.&quot;&quot;Who are you?&quot; Aryn asks, but she squints harder. &quot;Wait, I remember you &mdash; you were outside this house. The noble. That Royal Inventor that got the slice on the hand.&quot;&quot;That&apos;s me,&quot; I say, while Rayna sniffles. &quot;I heard crying next door. What&apos;s going on?&quot;&quot;An unexpected reunion. A dead girl walked into my town, and I found out that she&apos;s my sister.&quot; She turns back to Rayna, raising her voice again. &quot;Was Katiya hiding you here the whole time? Is that why she was so secretive?&quot;&quot;I&apos;m only here because I forced myself upon her goodwill,&quot; Rayna says. &quot;She has nothing to do with this.&quot;&quot;I thought she was mourning!&quot; Aryn slams the coffee table, and her sister jumps.&quot;She still is,&quot; Rayna says.&quot;I trusted her, and she used that trust to hide everything,&quot; Aryn says. &quot;You should have come to me. Or at least &mdash; why didn&apos;t you go home? Mom and Dad could have protected you. They would give anything.&quot;Rayna sniffles, lowering her head even further. &quot;So why, Rayna? Tell me,&quot; Aryn says, flashing the contours of her fangs. &quot;Now!&quot;&quot;Take it easy,&quot; I say. She glares hard enough to drive me back a couple steps, then tries to soften her voice, but the anger still abrades the words in her throat. &quot;Just tell me,&quot; Aryn says. &quot;Please&mdash;&quot;&quot;I couldn&apos;t bear it,&quot; Rayna says.&quot;Bear what?&quot; Aryn says.&quot;I couldn&apos;t bear to face you,&quot; Rayna says. &quot;But we swore to protect each other, no matter what, and I don&apos;t care if you&apos;re in trouble. You&apos;re my sister.&quot;&quot;I was better off dead to you. And that choice made you a whole lot greater than I could ever be, because you deserved&mdash;&quot;Aryn slaps her sister across the face, and Rayna recoils against the couch. &quot;You don&apos;t get to decide that for us. You made a promise,&quot; Aryn says, &quot;and you&apos;re so much more to me alive...&quot;Aryn raises her hand again, but it falls to her side. Rayna grasps her cheek. I can&apos;t shake the thought all I ever wanted, for years, was to yell the same way at my sibling after they left for the last time &mdash; but watching how it plays out secondhand is painful.&quot;Hey,&quot; I say. &quot;Let&apos;s continue next door. You both seem hungry.&quot;&quot;And why the Res would we do that?&quot; Aryn asks. &quot;You&apos;re interrupting something&mdash;&quot;I open the lid, and her expression quickly changes. &quot;Well . . . fine. But I&apos;m not even close to done with her.&quot;&quot;That&apos;s fine,&quot; I say, wedging the door back open with my foot as I accept it&apos;s going to be a long night. &quot;Sit down on the couch, and I&apos;ll prepare something for you.&quot;Aryn still hesitates. It&apos;s hard to convince cats to do anything, so I act indifferent, rushing in to shutter my shades to forestall a deluge of difficult questions. They enter my world with a few steps at a time, then deposit themselves on the couch, as Aryn gears up to deliver another verbal lashing, but she&apos;s forestalled by the oddness of my world.I toss the glassware in the microwave as I think of all the things I longed to tell him, the thoughts so fresh in my mind that they were almost practiced.And they&apos;re still there. It takes the full three presses of the microwave&apos;s START button to even start to sort them out, and by the time I&apos;m balancing the leftovers between two plates &mdash; and I serve them in the foyer &mdash; I open my mouth, feeling all the sadness of the last decade wash over me. When they see I&apos;ve stopped holding back, they listen: my body shivers when I return to living in his last moments, but this time, it&apos;s no longer forced upon me by a nightmare. A day of exhaustion tears back the mechanisms that might protect me, without space for isolation or irony to invent an escape.&quot;Even through all this anger, you have a chance to start again,&quot; I say. &quot;I never got that.&quot;They blink at me, hesitating to take their first bite until I finish the thought.&quot;There&apos;s not a second I&apos;ve lived since my brother died that I&apos;ve been able to call my own,&quot; I confess, then I gasp, and it startles me: struggling to remember the last time I ever choked on a feeling.",
                " ",
                ""
             ]
@@ -10523,5 +10468,256 @@
       "Chapter": 43,
       "Act": 4,
       "Chapter Name": "Harsh Noise"
+   },
+   {
+      "Scenes": [
+         {
+            "Perspective": "Cody",
+            "Text": [
+               "I think I lose it for a second, but they&apos;re patient. &quot;It started before the news even came. &apos;High risk missions,&apos; he said, and he even seemed excited. Like he was bragging.&quot;&quot;He was a soldier,&quot; Aryn says. &quot;Yeah. And then you think of the worst that can happen, and how you&apos;d feel,&quot; I say, &quot;and in that way your mind tries to prepare you, like tensing up before a hit, though you never know when it&apos;s going to come. And then . . . it does, when you least expect it.&quot;&quot;What was it like to know?&quot; Aryn asks. &quot;Do you find closure? I had to convince myself of the worst when I went so long without knowing.&quot;&quot;You can hear it, cry about it, even see the body, and still not believe it for a while,&quot; I say, and remembering the first image halts the words. &quot;You start counting all the future moments you took for granted &mdash; and the more you look at all they left behind, the more you discover.&quot; I think of the day my mother closed his bedroom door. Even through the first winter, we refused to enter to close his bedroom window from the summer, because he was still alive if we never checked: up late on the Xbox playing his favorite games, chatting over Discord, or curling weights in front of the mirror.The jacket of his unworn fatigues were shouldered around the chair at the head of the kitchen table, and mom always said he was just &quot;out with friends so he couldn&apos;t make supper.&quot; The joke held for years until we refurnished the dining room, and the aged jacket woven with DUNSMORE looked awkward on the high-back chairs.&quot;Training kept me busy. I was never forced to really face your absence,&quot; Aryn says, &quot;but then I came here, and I could no longer distance myself from the last place I knew you were.&quot; She takes her first bite, chewing slowly.Rayna says, &quot;and I never stopped thinking about you. I spent my whole life running, and when fate  finally brought me back here, Katiya gave me a second chance.&quot;Aryn swallows as I find I&apos;m in my head again, then proceeds to speak. &quot;What made you stay, Rayna?&quot;&quot;Katiya showed me grace, and gave me a second chance. So I&apos;m giving Katiya a chance to prove herself, because I think she&apos;s capable . . . and she has that spark that brings people together, which is the only way this can work.&quot;I fetch beers from the fridge now that the temperature of the room has dropped enough. I pour my last two craft beers in frozen mugs from the freezer after I wipe my nose, and as Rayna takes their last bite of the leftovers, I crack a cheap beer before heading back over.&quot;Thank you,&quot; Aryn says. She swirls the drink in the glass, then takes a sip to show she accepts my hospitality. &quot;I might no longer be fighting in memory, but the one thing we have in common is that we can both honor them.&quot;&quot;That&apos;s true,&quot; I say, drawing the can to my mouth with my trembling hands. &quot;What was his name?&quot; Aryn asks.&quot;It was Jackson. Jackson Dunsmore,&quot; I say.&quot;I&apos;m sure Jackson was a glorious warrior,&quot; Aryn says. &quot;So what will you do to honor him?&quot;&quot;I&apos;ll fix what killed him,&quot; I say.We sit around for about another half hour, and right about when my body begins to drag my eyelids shut, weighted by both emotional and physical exhaustion, Aryn and Rayna finally circle around to recounting their childhood memories.My head slides further down the couch the more the exhaustion of all my toil catches up to me, and as they ramble further &mdash; around ten minutes after ai add my last word &mdash; I finally give out, around the time they make the decision to leave together.Through heavy eyelids, I watch as Rayna takes a sheet from the same pad I wrote the rules on, tearing quietly along the perforations, and while she scribbles something with a pen, Aryn gingerly lifts my head before stuffing one of my mom&apos;s old decorative Christmas pillows in between.I don&apos;t resist when the weight of my tired body adheres to the fake leather like flies to honeyed paper, and as sleep muddles conscious thought into peaceful nonsense, Aryn whispers in my ear.&quot;I know you&apos;ll honor him well,&quot; she says, her nails tracing tufts of my unkempt, shaggy hair from covering my face.The two sisters leave my world and disappear back through Katiya&apos;s front door, leaving the click of the latch as the last sound I hear.",
+               " ",
+               ""
+            ]
+         },
+         {
+            "Perspective": "Katiya",
+            "Text": [
+               "The house is silent when we return. I expect to find Rayna sitting in the foyer, but there&apos;s nothing here, and even with Cody&apos;s door ajar leaking light from another world, I don&apos;t hear him tinkering.Titus and Sylvia are the first to follow, then step to the side to remove their boots at the door. I begin to worry when neither Cody nor Rayna make a sound.I scan the shapes in this house silhouetted by another world&apos;s light.  The dining chairs are not in the same positions. The blanket that was on the couch is missing, and finally, when I look at the kitchen table, I find a smooth piece of Cody&apos;s engineering paper lifting at one corner.I read the page, expecting neat block letters in English to decorate the page &mdash; but it&apos;s my language, scribed like it was written in ballpoint pen by someone who&apos;s only ever used a quill.Katiya,Rayna is safe. She&apos;ll be staying with me for a while. We started a long conversation in her old home &mdash; your home &mdash; and Cody gave us a space to talk. We left to continue that.I&apos;m not finished being angry. I&apos;m torn between gratitude and hurt, and Rayna says I should talk to you, soon.Don&apos;t mistake this for forgiveness.Aryn KesgrisinSylvia&apos;s almost a head taller than me, and reads the letter over my shoulder. &quot;So it&apos;s just the three of us,&quot; she says.&quot;It seems that way,&quot; I say. I withdraw the smooth sphere from my pocket that Aliaki left me, resting it on the mantle of the fireplace: even with the slant of the aged surface, the marbled ball still refuses to roll. With one of the two spatial anchors left in my care, Aliaki vanished back to the wastes of Blackwater with the second. Jade seeks shelter somewhere else. &quot;You were smart not to let them in,&quot; Sylvia says, peering through the doorway to Cody&apos;s world. &quot;Humans sense life and heat. But with space and time, there&apos;s no telling how many rules of nature this violates.&quot;&quot;I have an idea,&quot; I say, remembering back to the comment that Rayna made when we crossed back from the Shaleborough Renaissance Faire. There is no Essence over there, she said, and I knew that at least &mdash; but she didn&apos;t stop there. I only have half of the Ahkvasan gift, Rayna said, but I can tell that world is old: older than any piece of our world or its history. Or so young that its fate hasn&apos;t been born yet: and so far away that any outcome of this world will never touch it.And I&apos;ve tried to stop thinking about it ever since.&quot;They&apos;ll have to hear about it at some point. I agreed to set this house as an anchor for one end of those . . . things,&quot; I say, trying not to think of that either &mdash; threatening to twist both my stomach and my mind.&quot;We have our work cut out for us,&quot; Titus says, but I still can&apos;t shake the revelation from the scuffle.&quot;Why didn&apos;t you tell me about your status?&quot; I ask. &quot;I know you have every reason to keep it secret, but . . . if you can tell me now, what happened?&quot;He looks to Sylvia, then back to me, calculating the bare minimum of what he can tell. &quot;Let&apos;s just say we&apos;re refugees for a different reason. Our lives were threatened if we stayed there, but not from hunger.&quot;&quot;You&apos;re both masks, then?&quot;&quot;Not quite,&quot; he says. &quot;I&apos;m just learning my limits, but Khi&mdash; erm, Sylvia is something else, and not even she knows hers.&quot;I have so much more to ask but I refuse to test their patience. I doubt there&apos;s an upper bound to their goodwill, but I&apos;m too afraid to ask about all the Essence events up north &mdash; uncertain whether I harbor valiant saviors, or terrorists of another land.&quot;Maybe we can talk when this is over,&quot; Titus offers to the silence. The two settle in on the first floor again, rifling through their meager sled of possessions. I cross over to find Cody fast asleep on the couch with the missing blanket from my world tucked beneath his head. Beyond the near ream of crumpled pages, scrawled around the coffee table with his ideas, the dwindling pad of engineering paper has a familiar style of writing scrawled across it:Thanks for the kind words, the food, and the company. I know you&apos;ll find your way to honor your brother&apos;s memory.I find another blanket on the floor. It smells like him, and I take a big exhale when I find he&apos;s still fast asleep, his eyelids worn with deeper crescents than I&apos;ve ever seen, and I find it saddens me to see him so worn from all the effort.He&apos;s a warrior in his own way, I think, realizing the man I&apos;ve come to adore looks nothing like the noble I one mistook him for. I tuck the blanket around him, wondering how many days we have left to express our feelings for each other, and as he stirs in his sleep, finding that love for him grow with every breath that leaves his lungs.I settle for a kiss on his forehead &mdash; sitting beside him as long as it takes to drink to this renewable feeling of joy. He melts the fear of the past and future, and as I cling to this precious moment, I make a risky decision for a chance to cuddle.",
+               " ",
+               ""
+            ]
+         },
+         {
+            "Perspective": "Cody",
+            "Text": [
+               "I wake to the ache in my ankle before the alarm I set last night, when I knew the talk with Aryn and Rayna would drag on for hours. My back still rests against the soft cushions of the couch &mdash; my head supported by the pillow Aryn left for me &mdash; and as I twist my ankle to find the source of that unfamiliar pain, I don&apos;t feel the friction of the faux leather, but the comfort of a mattress.",
+               "The light from the window radiates the back of my head instead of my legs: the last I remember, I was pointed toward the kitchen, and as I feel myself overheat from the thick comforter and the cushions behind me, wrapped so tightly that I can&apos;t move my arms, I finally open my eyes, taking in the sight of a different view as I struggle to reach for my phone.",
+               "I feel the texture of the coffee table as I brush across the surface with my fingers, but it&apos;s not as smooth as I remember it. My myopic eyes can&apos;t reconcile the shapes since I didn&apos;t sleep in my contacts, and after I knock over a glass of water and a lamp, I find an unexpected edge to the coffee table &mdash; realizing it&apos;s my nightstand.",
+               "The couch reacts to the crash, and it grabs me tighter, with arms around my body tighter than a grade-schooler&apos;s backpack. I trace through my mind for forgotten memories of a brown-out, but I can only remember having two drinks before I passed out on the couch &mdash; not enough to convince me that furniture has arms that can move.",
+               "But I&apos;m certain that I&apos;m in my bedroom, and it&apos;s the first time since Katiya showed her fire tricks that I&apos;ve been in such a state of disbelief. My ankle still hurts from something I don&apos;t remember, and I&apos;m beginning to believe I drank more than I thought.",
+               "&quot;Gods above,&quot; Katiya says: loosening her grasp on me but still not letting go. &quot;You were a real heavy sleeper until now!&quot;",
+               "I rub my eyes, deciding to relish in her warmth a little longer as I reconcile what the two cushions were. &quot;What happened last night?&quot;",
+               "&quot;You fell asleep,&quot; she says. &quot;Your body is a tool: you can&apos;t sprawl it across a couch when you&apos;re not using it, or else you&apos;ll feel it in the morning. And the next few days are critical for us.&quot;",
+               "I reach to rub out the pain in my ankle. It really hurts. &quot;Then why do I feel pain that I don&apos;t remember?&quot;",
+               "&quot;Story of my life,&quot; she says, then laughs. &quot;I might have caught an edge or two getting you off the couch.&quot;",
+               "&quot;Getting me off the couch?&quot; I ask, and finally turn to face her. She&apos;s wearing a night shirt: her hair dishevelled, with a mischievous grin as I try to piece all this together. &quot;Did I sleepwalk with you? I don&apos;t remember ever getting up.&quot;",
+               "&quot;It&apos;s not Auvryan mind magic! You never got up. You were still asleep,&quot; she says. &quot;I think I hit your ankle on that turn of the stairs.&quot;",
+               "&quot;So you...&quot;",
+               "&quot;So I...&quot;",
+               "&quot;Carried me upstairs?&quot; I ask, as a bead of sweat drips down my forehead.",
+               "She laughs.  &quot;We only get a few more nights to have a chance to cuddle. It&apos;s Frosthide . . . or winter, so I need all the warmth I can get.&quot;",
+               "I throw off the damp sheets, saturated with my sweat, to find I&apos;m still wearing my work clothes from the day before. &quot;And why am I still wearing clothes?&quot;",
+               "Her face scrunches. &quot;You think I would undress you while you were unconscious?&quot; She pinches the single bedsheet that still separates us. &quot;I&apos;m not an animal.&quot;",
+               "&quot;Only an animal would have the strength to carry me upstairs!&quot; I say, trying my feet on the carpet as I add weight to the hurt in my ankle. I hear an alarm go off, but it&apos;s not my phone.",
+               "&quot;Don&apos;t worry. I set an alarm for 0830,&quot; Katiya says. She grabs her smartphone as I squint my eyes to look at the clock, and just as I&apos;m about to leave the bed, I feel her hands at my sides, pulling be back into her grasp.",
+               "&quot;I&apos;m overheating,&quot; I say. &quot;Let me get a layer off!&quot;",
+               "She relents. &quot;Just do it slowly.&quot;",
+               "I strip down to my underwear, then sniff the sweat beneath my armpit that hasn&apos;t had a chance to dry yet. ",
+               "&quot;I need a shower first.&quot;",
+               "&quot;Not right now, you don&apos;t,&quot; Katiya says. &quot;Come back here.&quot; ",
+               "She reaches for my arm, catching my wrist.",
+               "&quot;I have to start my day,&quot; I say, &quot;and you do, too! Maybe you&apos;re used to the stink of people that haven&apos;t invented showers yet&mdash;&quot;",
+               "&quot;Just shut up for a while,&quot; she coos. &quot;Please, Cody. Just a little longer.&quot;",
+               "I take my free hand and grab the thin sheet that&apos;s always separated us. I throw it over her side, exposing her in places I haven&apos;t seen yet &mdash; and find she&apos;s wearing my Hybrid Theory T-shirt, as well as a pair of my (clean) boxers as boyshorts.",
+               "She blushes for a second, covering herself with her hands before she realizes she doesn&apos;t mind. &quot;It&apos;s cold,&quot; she complains.",
+               "&quot;You don&apos;t get cold,&quot; I say, noticing all the scars across her body as I slide back into bed. &quot;And why are you wearing my clothes?&quot;",
+               "She smirks. &quot;Would you prefer that I give them back to you?&quot;",
+               "&quot;It&apos;s fine,&quot; I say. &quot;I think we&apos;re getting to the point that what&apos;s mine is yours.&quot;",
+               "&quot;I can take them off another time,&quot; she says, reaching for her phone to set a timer for another thirty minutes, and when my bare legs wrap between hers, and I feel the warmth of her as she nuzzles herself in the space beneath my chin, I relish the peace of this moment &mdash; only stopping to read the five texts on my watch from my phone downstairs.",
+               "Kimberly Dunsmore // 06:43Happy weekend my handsome son! &#129653;&#129653; ",
+               "Kimberly Dunsmore // 06:44You said you&apos;re coming over today? Something serious to talk about? Dad&apos;s headed to a Corvette Club breakfast + drive, so he&apos;ll be back around 3:00.",
+               "Alan Dunsmore // 07:43Fella at CClub says he knows you and says hello. Name is Geoffrey. says your his sons best friend? and you got some presentation next week?",
+               "Miguel Valdez-Ruelas // 07:53bruh is that katy from hs?? wild she&apos;s at vinyl dt &#128539;",
+               "Kimberly Dunsmore // 08:33Let us know sooner than later when you&apos;re planning to come over. ",
+               "Katiya lightly grabs my wrist, covering the messages. &quot;You can handle that later. Build the energy with me now,&quot; she says. &quot;We can pick each other up later.&quot;",
+               "&quot;Sure,&quot; I say. I take a breath as I trace my fingers behind her ear, feeling my watch vibrate again. &quot;Let&apos;s return here tonight: I want to have something to look forward to.&quot;",
+               " ",
+               ""
+            ]
+         },
+         {
+            "Perspective": "Cody",
+            "Text": [
+               "It always feels strange knocking on the door of my childhood home when I&apos;ve spent a lifetime behind those doors. But I try the handle and find that it&apos;s unlocked, stepping cautiously across the foyer as I call their names.",
+               "&quot;Mom?&quot; I try. &quot;Dad?&quot;",
+               "&quot;Cody,&quot; my mother says. The voice comes from the kitchen. A Broncos preseason game plays on the TV, and I imply my father&apos;s glued to the screen.",
+               " ",
+               ""
+            ]
+         }
+      ],
+      "SceneLocation": [
+         [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dunsmore Family Home",
+               "Place": "Unspecified"
+            }
+         ],
+         [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dunsmore Family Home",
+               "Place": "Unspecified"
+            }
+         ],
+         [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dunsmore Family Home",
+               "Place": "Unspecified"
+            }
+         ],
+         [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dunsmore Family Home",
+               "Place": "Unspecified"
+            }
+         ]
+      ],
+      "Chapter": 44,
+      "Act": 4,
+      "Chapter Name": "In Loving Memory"
    }
 ]
