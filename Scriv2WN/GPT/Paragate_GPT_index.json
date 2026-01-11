@@ -749,7 +749,9 @@
         "index": 42,
         "scene_count": 3,
         "perspectives_order": [
-          "Default"
+          "Cody",
+          "Katiya",
+          "Cody"
         ]
       },
       {
@@ -4592,7 +4594,7 @@
             "\"With her?\" He asks.",
             "\"No. No . . . I mean, close to her. Next to her,\" I say. ",
             "\"Oh. So what do you do for the military then?\"",
-            "My mind races back on Katiya's collection of rehearsed lies. \"I'm one of the Royal Scientists' protgs, so they wedged me in with the others, doing some research in Gaffesend.\"",
+            "My mind races back on Katiya's collection of rehearsed lies. \"I'm one of the Royal Scientists' prot g s, so they wedged me in with the others, doing some research in Gaffesend.\"",
             "\"Well I don't blame you for being close to Katiya. If I was thirty years younger, with a body like that, I'd fight a damn war for a woman like her,\" he says, reminding me of most of the technicians at my work. But the commander's voice cuts us off, before Derry can objectify her any further.",
             "\"Most of you are too, uh . . . 'heavy-set' for running, so today will focus on basic, self-defense sword fighting and feats of strength.\" I flex and feel for the strength in my arms, hoping my two-a-week workouts give me enough muscle to overpower an Essenced tavern-brawler. He continues: \"While our brave, senior soldiers guard the borders of Gaffesend, this is a chance for our trainees to pass on their knowledge.\"",
             "I look to Katiya, flushed with that same sense of anxiety that seems like her factory setting. She musters a smile when we meet eyes, standing next to her beanpole boyfriend with their swords drawn, and as Aldrin rambles on about the value of self-defense like a first-amendment technician at my work, I twirl the wooden training sword in the dirt.",
@@ -7265,7 +7267,7 @@
             "I angle the flashlight to the garage door, pointing it directly above the hood of my car as my other hand fumbles for the string of the shop light. And when my finger flicks the slide switch, I feel a massive jolt of energy kick the flashlight backwards as it slips through my hand, casting the entire garage in a bright, crimson glow.",
             "The nurled handle of the flashlight embeds itself in the pegboard, displacing all the tools in a raucous clatter as a wall-mounted bucket of tiny screws explodes like shotgun pellets, but the crash is silent compared to the otherworldly, phantasmic screech that rings in my ears.",
             "My eyes and ears need seconds to recover — my heart even longer — as my eyes fall to the triplet spread of holes in the far wall, siphoning streetlight in three beams that take shape from floating dust.",
-            "But it's not in the steel of the garage door. It's in the solid wall, and when I approach it, I peek with one eye through the half-inch peephole to find two <em>MORE</em> new holes a hundred feet across the driveway, glowing with heat as a road sign now reads STP."
+            "But it's not in the steel of the garage door. It's in the solid wall, and when I approach it, I peek with one eye through the half-inch peephole to find two <em>MORE</em> new holes a hundred feet across the driveway, glowing with heat as a road sign now reads ST P."
           ]
         }
       ],
@@ -7500,7 +7502,7 @@
             "I attached a different zip tie to the battery, threading it through the same tag, though now the tag and the zip tie both had mismatching IDs. Everything was fine when I left the office at 6:35, saying goodbye to an unfamiliar, overnight gate guard. I took for granted how we only scan IN to the office and not OUT.",
             "But they surely asked later, and yet there wasn't a single person in Internal Affairs that had an answer the next day. Chain of custody was broken. The acceptance unit custody was compromised, and with mismatching timestamps reading three whole seconds faster than the world's clock, it would go down as TAMPERING, launching a full-blown investigation.",
             "The government would ask why the audit was being pushed back, threatening a breach-of-contract for testing deadlines, and all Compliance had was two things: the auto-filed ticket from SOC at 6:30, and the readings from the terminal, suggesting an anomaly that was physically impossible:",
-            "10.25.26_18:31:24 @DUNS_ALAN: > INTERLOCK TRIP LOGGED AT ID# 79C2D110.25.26_18:31:24 @DUNS_ALAN: > CAL-04 calorimeter deficit: ?126 J/s @ 20 A; EIS arc @ ?18 phase10.25.26_18:31:25 @DUNS_ALAN: > [WARNING] OVER-EFFICIENCY() FLAG TRUE — ANOMALY DETECTED10.25.26_18:31:25 @DUNS_ALAN: >  ? = (-15) kJ"
+            "10.25.26_18:31:24 @DUNS_ALAN: > INTERLOCK TRIP LOGGED AT ID# 79C2D110.25.26_18:31:24 @DUNS_ALAN: > CAL-04 calorimeter deficit: ?126 J/s @ 20 A; EIS arc @ ?18  phase10.25.26_18:31:25 @DUNS_ALAN: > [WARNING] OVER-EFFICIENCY() FLAG TRUE — ANOMALY DETECTED10.25.26_18:31:25 @DUNS_ALAN: >  ? = (-15) kJ"
           ]
         }
       ],
@@ -10783,7 +10785,7 @@
     {
       "Scenes": [
         {
-          "Perspective": "Default",
+          "Perspective": "Cody",
           "Text": [
             "Reed's father follows us as we descend the stairs, trying hard not to hover though his curiosity gets the best of him. As we pass aerospace merch from all the way back to Reed's great-grandfather, this Navidson house feels like I'm walking down a five-minute hallway.",
             "\"I don't get many friends that come all the way out here,\" Reed says, then mutters, \"not really at all.\"",
@@ -10836,7 +10838,7 @@
           ]
         },
         {
-          "Perspective": "Default",
+          "Perspective": "Katiya",
           "Text": [
             "I lack the time to explain before my allies turn on each other, and though Jade feels exhausted from bending time to a near stop, she still manages to slow the world enough for the two of us that they can't hear my words.",
             "Sylvia drew her bow with Essenced arrows as soon as we appeared in a flash of light — and when she saw my panicked expression from weathering another long, short trip, she identified Jade as the enemy, refusing to take any chances.",
@@ -10875,7 +10877,7 @@
           ]
         },
         {
-          "Perspective": "Default",
+          "Perspective": "Cody",
           "Text": [
             "I return home full and exhausted with a clean, new replacement part. They sent me home with expensive glass Tupperware containers that \"you can send home with Reed,\" packed with cuts of tri-tip Geoffrey seared and grilled.It has a whole two shelves of space to breathe in my fridge, besides a Costco trip from mom, Katiya's Chinese leftovers, and a rack of Pabst Blue Ribbon that gives me a taste of college.My muscles ache from the chatter of the machines. Micro-abrasions on my fingers sting with hand sanitizer, and I'm about to head up to take a shower when I hear the sound of crying next door. So instead I grab the leftovers, inching my way through Katiya's door with a container, slow enough to not invoke the wrath of another stranger. I think it's Rayna at first glance, sitting on Katiya's couch in her foyer, but then there's a copy of her. They both look like Rayna. The double doesn't cry: she just stares at her reflection with piercing blue eyes. I knock on the door lightly, yet the two catgirls jump.\"Intruder!\" One of them says.\"Cody,\" Rayna says. The name brings the other to lower her weapon. \"What's happening this time? Did you duplicate yourself?\"\"This is Aryn,\" Rayna says, \"my sister.\"\"Who are you?\" Aryn asks, but she squints harder. \"Wait, I remember you — you were outside this house. The noble. That Royal Inventor that got the slice on the hand.\"\"That's me,\" I say, while Rayna sniffles. \"I heard crying next door. What's going on?\"\"An unexpected reunion. A dead girl walked into my town, and I found out that she's my sister.\" She turns back to Rayna, raising her voice again. \"Was Katiya hiding you here the whole time? Is that why she was so secretive?\"\"I'm only here because I forced myself upon her goodwill,\" Rayna says. \"She has nothing to do with this.\"\"I thought she was mourning!\" Aryn slams the coffee table, and her sister jumps.\"She still is,\" Rayna says.\"I trusted her, and she used that trust to hide everything,\" Aryn says. \"You should have come to me. Or at least — why didn't you go home? Mom and Dad could have protected you. They would give anything.\"Rayna sniffles, lowering her head even further. \"So why, Rayna? Tell me,\" Aryn says, flashing the contours of her fangs. \"Now!\"\"Take it easy,\" I say. She glares hard enough to drive me back a couple steps, then tries to soften her voice, but the anger still abrades the words in her throat. \"Just tell me,\" Aryn says. \"Please—\"\"I couldn't bear it,\" Rayna says.\"Bear what?\" Aryn says.\"I couldn't bear to face you,\" Rayna says. \"But we swore to protect each other, no matter what, and I don't care if you're in trouble. You're my sister.\"\"I was better off dead to you. And that choice made you a whole lot greater than I could ever be, because you deserved—\"Aryn slaps her sister across the face, and Rayna recoils against the couch. \"You don't get to decide that for us. You made a promise,\" Aryn says, \"and you're so much more to me alive...\"Aryn raises her hand again, but it falls to her side. Rayna grasps her cheek. I can't shake the thought all I ever wanted, for years, was to yell the same way at my sibling after they left for the last time — but watching how it plays out secondhand is painful.\"Hey,\" I say. \"Let's continue next door. You both seem hungry.\"\"And why the Res would we do that?\" Aryn asks. \"You're interrupting something—\"I open the lid, and her expression quickly changes. \"Well . . . fine. But I'm not even close to done with her.\"\"That's fine,\" I say, wedging the door back open with my foot as I accept it's going to be a long night. \"Sit down on the couch, and I'll prepare something for you.\"Aryn still hesitates. It's hard to convince cats to do anything, so I act indifferent, rushing in to shutter my shades to forestall a deluge of difficult questions. They enter my world with a few steps at a time, then deposit themselves on the couch, as Aryn gears up to deliver another verbal lashing, but she's forestalled by the oddness of my world.I toss the glassware in the microwave as I think of all the things I longed to tell him, the thoughts so fresh in my mind that they were almost practiced.And they're still there. It takes the full three presses of the microwave's START button to even start to sort them out, and by the time I'm balancing the leftovers between two plates — and I serve them in the foyer — I open my mouth, feeling all the sadness of the last decade wash over me. When they see I've stopped holding back, they listen: my body shivers when I return to living in his last moments, but this time, it's no longer forced upon me by a nightmare. A day of exhaustion tears back the mechanisms that might protect me, without space for isolation or irony to invent an escape.\"Even through all this anger, you have a chance to start again,\" I say. \"I never got that.\"They blink at me, hesitating to take their first bite until I finish the thought.\"There's not a second I've lived since my brother died that I've been able to call my own,\" I confess, then I gasp, and it startles me: struggling to remember the last time I ever choked on a feeling."
           ]
