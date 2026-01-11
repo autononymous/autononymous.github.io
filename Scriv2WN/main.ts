@@ -1081,7 +1081,8 @@ class ChapterBinder {
             "BROD":"Reed",
             "Kat":"Katiya",
             "Alan":"Alan",
-            "Reed":"Reed"
+            "Reed":"Reed",
+            "Kimberly":"Kim",
         }
     LockUp() {
     // Add locked messages.

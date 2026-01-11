@@ -1076,7 +1076,8 @@ class ChapterBinder {
             "BROD": "Reed",
             "Kat": "Katiya",
             "Alan": "Alan",
-            "Reed": "Reed"
+            "Reed": "Reed",
+            "Kimberly": "Kim",
         };
         this.rootURL = rootURL;
         this.storyName = storyName;
