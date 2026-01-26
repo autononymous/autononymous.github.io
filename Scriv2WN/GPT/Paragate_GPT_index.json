@@ -63,7 +63,8 @@
       "A04C41": 40,
       "A04C42": 41,
       "A04C43": 42,
-      "A04C44": 43
+      "A04C44": 43,
+      "A04C45": 44
     },
     "act_ch_to_index": {
       "1:1": 0,
@@ -109,7 +110,8 @@
       "4:41": 40,
       "4:42": 41,
       "4:43": 42,
-      "4:44": 43
+      "4:44": 43,
+      "4:45": 44
     },
     "chapter_to_indices": {
       "1": [
@@ -243,6 +245,9 @@
       ],
       "44": [
         43
+      ],
+      "45": [
+        44
       ]
     },
     "entries": [
@@ -765,6 +770,19 @@
           "Cody",
           "Katiya",
           "Cody"
+        ]
+      },
+      {
+        "id": "A04C45",
+        "act": 4,
+        "chapter": 45,
+        "name": "In Future Grief",
+        "index": 44,
+        "scene_count": 3,
+        "perspectives_order": [
+          "Katiya",
+          "Cody",
+          "Katiya"
         ]
       }
     ]
@@ -11314,6 +11332,177 @@
       "Chapter": 44,
       "Act": 4,
       "Chapter Name": "In Loving Memory"
+    },
+    {
+      "Scenes": [
+        {
+          "Perspective": "Katiya",
+          "Text": [
+            "\"And you can't die like this,\" my mother says. \"You're not a guard anymore, and you never fully were!\"",
+            "Even my step father Holden shivers at the sentiment. I'd be so angry if I didn't feel the conviction in my mother's trembling voice: she's stuck where emotion embitters a silver tongue. I can't even look at her, steadying my eyes instead on Erik that sits at the other head of the table.",
+            "I reflexively reach to rub the smooth steel of my gauntlets, only to find skin, reminded again that I've been stripped of that ceremonial presence. I'm still a guard on paper: the proceedings haven't yet come.",
+            "\"You're a civilian now,\" Stella adds. \"Like us. There are others that protect you now, like your brother.\"",
+            "\"That's right.\" Holden flexes his arms as he clasps his hands, making a statement that contradicts his stature. \"You have to give in. There's no other choice here. Go to the tribunal and endure it.\"",
+            "\"I'm not doing this for the guard,\" I say. \"I'm doing this because I'm the only one that can. I don't have my tribunal until after this happens, and I can tell you that as long as I'm—\"",
+            "\"You can't do this alone!\" Stella says. She nudges Erik's shoulder though he's been despondent the entire time. \"Tell her, Erik. Don't let your sister die like her friend — she only made it out of there because you came to rescue her.\"",
+            "\"She held her own,\" Erik mutters, wearing the armor that I don't. \"She deserves better than this. My sister would have made it!\"",
+            "\"Made it back alone?\" Stella asks. \"Really?\"",
+            "\"Made it as a Royal Guard,\" he says.",
+            "\"But she won't. And how is what she's doing any different from Bertram?\"",
+            "\"It's different because I'm not fighting alone,\" I say, finally cutting in. \"The Guard are too busy watching the lake freeze to the north!\"",
+            "She glares as if I know no better.",
+            "\"You think it was luck that brought me home with Raph? Has it just been 'luck' that's graced me my entire life — as if I spent all my bad karma on the fire, that I haven't really owned anything since? Every choice that brought me here has been mine alone,\" I say, \"and every misstep is something I own, too.\" I expose the scars on my body: the indelible marks of sacrifice and loss. \"We don't get to choose whether we live in an age of peace. Only whether we'll fight for those tomorrow to have something better.\" ",
+            "I gesture to the child that hasn't been born yet, and it gives Stella pause. ",
+            "And so I continue.",
+            "\"I choose to be glad that we didn't lose our entire family. That my life didn't end there. I'm fighting so we don't burn together once again, because I don't think this enemy is going to miss.\"",
+            "My mother's voice cracks. \"It's just that after all this loss, Katiya . . . you deserve to live long enough to finally see life come into this world.\"",
+            "I stare across the table at the spot filled by my brother."
+          ]
+        },
+        {
+          "Perspective": "Cody",
+          "Text": [
+            "The chair is still as empty as it's been for years, but I feel his ghost in the Pelican case with a surprise. I wish my brother was here to make it an even fight, and as I struggle to draw the appetite to eat my favorite dish, I try not to let my anger get the best of an important conversation.",
+            "They still think I'm just a reckless kid, but I'm the only one out of any of us that's made an effort to move on. A year of distance from them has given me the conviction to plead my case, and as I feel Jackson's presence in the winter cold that stirs the foyer, I decide to be better.",
+            "\"Dad's spent every day applying for at least ten jobs, and you should be too,\" my mother says. \"Look: you just don't have a future there anymore.\"",
+            "Alan grabs my wrist on the table, waiting unti our eyes meet. \"Look, Cody. Our job as parents has always been to be a safety net, but if you fall behind on payments — and I still don't have work — you're going to lose the house.\"",
+            "\"You have to believe me when I say this isn't just recklessness: I've found something real,\" I say.",
+            "\"And maybe you have, son,\" Alan says, \"but what about the day after? You know...\" He hesitates for a second. \"You know, there was something that Reed's father told me at Corvette Club: something that he didn't want to tell you.\"",
+            "\"Geoffrey?\" I ask.",
+            "\"That's right,\" Dad says. \"He told me a little bit about your night over there and all — but since I'm outside Navidson now, he told me something else that he refused to tell you.\"",
+            "\"What?\" I ask. ",
+            "\"That the layoffs are coming some time next week,\" he says. \"They're looking to reduce headcount by laying off new hires.\"",
+            "\"But I've been there for—\"",
+            "\"Less than a month,\" Mom says: \"as a technician, and didn't your old boss warn you about what would happen if you didn't leave on your own?\"",
+            "\"Then I have a deadline now. But that doesn't change why I'm here.\"",
+            "I scratch my head. Looking up from my plate for the first time in an hour, I notice that a snowstorm rages beyond the window glass. A pallid blue accents the world with closing dusk though it's only four o'clock, blurring itself into the flurrying fog that obscures the entire world. And even though I can't see the shimmer of solar reflectors in the hills, a whole childhood of dreaming from my bedroom window tells me exactly where it is.",
+            "\"I'm not here to ask your permission, but to ask you to understand. I agree with everything you've said,\" I say, \"but this is more than any of that. I came here because I want to show you how I turned my grief and anger into purpose.\"",
+            "I turn to my father.",
+            "\"You fell on my sword because you wanted to protect me. And whether it was just your feelings in the moment that gave me a second chance — you let them march you out so they wouldn't drag me with you.\"",
+            "\"A man protects his son,\" Alan says. \"But it scared me.\"",
+            "\"And maybe you resent me for how I reacted to all that's happened in the last year: being discarded and passed over and forgotten so many times, thinking that a night in the lab could have changed anything.\"",
+            "\"I don't, son,\" he assures me. \" I would never think that.\"",
+            "\"I took your work, your source of pride, and the friends you cherish the most because I made a stupid mistake. I'll never fit into those Cintas work uniforms you left me, even if you shared your last name,\" I say. \"I've been living in that decision since it happened. And I'm genuinely sorry.\"",
+            "He thinks for a moment. My mother's fork stops in the air.",
+            "\"I accept your apology, Cody,\" he finally says.",
+            "\"And now I want to show you something I've been working on,\" I say. \"A piece of myself I forgot about. Something that gave me purpose — and now, whether it amounts to anything or not, it might be the only ticket I have.\"",
+            "The two are quieter now. Their mannerisms changed in a flash: my father trying to process his feelings, as my mother responds to the conviction in my voice.",
+            "\"To get in, you mean,\" my mother mutters. ",
+            "\"Not just to get back in to Navidson,\" I say. \"To say goodbye to him with all the love I still hold, and to find the strength to move on.\"",
+            "I reach for the latches of the case, still decorated with stickers from my college years. The snap echoes through the childless house as they approach, and my hands navigate around the edges for every latch, until the heavy lid finally lifts from the foam, and they discover something that wasn't there the last time.",
+            "On the top of the drone's shell, laser-cut at Miguel's cousin's shop, are three letters proudly contoured into the metal. And my mother manages to whisper the nickname she gave him before breaking down completely.",
+            "J    A    X  ",
+            "V E R  2.0"
+          ]
+        },
+        {
+          "Perspective": "Katiya",
+          "Text": [
+            "asdf"
+          ]
+        }
+      ],
+      "SceneLocation": [
+        [
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
+            "Area": "Gaffesend",
+            "Location": "Hilde Cottage",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Hearthland Ridge",
+            "Location": "Dunsmore Family Home",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
+            "Area": "Gaffesend",
+            "Location": "Hilde Cottage",
+            "Place": "Unspecified"
+          }
+        ],
+        [
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
+            "Area": "Gaffesend",
+            "Location": "Hilde Cottage",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Hearthland Ridge",
+            "Location": "Dunsmore Family Home",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
+            "Area": "Gaffesend",
+            "Location": "Hilde Cottage",
+            "Place": "Unspecified"
+          }
+        ],
+        [
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
+            "Area": "Gaffesend",
+            "Location": "Hilde Cottage",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Hearthland Ridge",
+            "Location": "Dunsmore Family Home",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
+            "Area": "Gaffesend",
+            "Location": "Hilde Cottage",
+            "Place": "Unspecified"
+          }
+        ]
+      ],
+      "Chapter": 45,
+      "Act": 4,
+      "Chapter Name": "In Future Grief"
     }
   ]
 }

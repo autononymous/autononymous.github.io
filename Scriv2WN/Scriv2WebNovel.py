@@ -111,6 +111,7 @@ def ReadJSON(path=None):
         debug.append('Unable to retrieve JSON file.','ERROR')
         return {}
     # Open and read the file.
+    print(f"Actions taken on filename {filepath}.")
     with open(filepath, 'r', encoding='utf-8', errors="ignore") as file:
         try:
             content = file.read().replace('\n','');  
@@ -293,7 +294,7 @@ def InterpretJSON(js,info=True):
                 PubDate = datetime.now()
             ChapterData['NextPublish'] = PubDate.strftime('%m/%d/%y')
             if (ThisChapter > 1):
-                print(STORY[ThisChapter-1])
+                #print(STORY[ThisChapter-1])
                 if ('WCs' in STORY[ThisChapter-1].keys() ):
                     PubDateLog += f"\n\t> TOTAL WORD COUNT = {sum(STORY[ThisChapter-1]['WCs'])}"
                     WordCounts["Chapter"].append(sum(STORY[ThisChapter-1]['WCs']))
@@ -306,6 +307,7 @@ def InterpretJSON(js,info=True):
             ChapterData['Body'] = []
             ChapterData['POV'] = []        
             ChapterData['IDs'] = []
+            ChapterData['Written'] = False
             ChapterData['Settings'] = [];
             DefaultStorySetting = entry['SettingInfo'];
             ChapterData['WCs'] = []
@@ -330,7 +332,7 @@ def InterpretJSON(js,info=True):
             else:
                 ChapterData['POV'].append(entry['Perspective'])
             ChapterData['IDs'].append(entry['VerboseID'])
-            ChapterData['Written'] = len(entry['Body']) > 10
+            ChapterData['Written'] = ChapterData['Written'] or (len(entry['Body']) > 10)
             ChapterData['Body'].append([])
             if entry['SettingInfo']['ISO'] == "":
                 ChapterData['Settings'].append(DefaultStorySetting)
@@ -348,7 +350,7 @@ def InterpretJSON(js,info=True):
                         ChapterData['Body'][-1].append(Fragment)
                         ChapterData['WCs'][-1] += len(Fragment[1].split(" "))    
             
-            PubDateLog += f"\n\t\t> SCENE 0{ChapterData['Scenes']} - {ChapterData['WCs'][-1]} WORDS - SETTING: {ChapterData['Settings'][-1]['Area']}, {ChapterData['Settings'][-1]['Region']} - {ChapterData['Settings'][-1]['Location']}" #" \n {ChapterData['Settings'][-1]}"
+            PubDateLog += f"\n\t\t> SCENE 0{ChapterData['Scenes']} - {ChapterData['WCs'][-1]} WORDS - { 'Written' if ChapterData['Written'] else 'Not Written'} - SETTING: {ChapterData['Settings'][-1]['Area']}, {ChapterData['Settings'][-1]['Region']} - {ChapterData['Settings'][-1]['Location']}" #" \n {ChapterData['Settings'][-1]}"
             WordCounts["Scene"].append(ChapterData['WCs'][-1])
             WordCounts["SumScene"].append(sum(WordCounts["Scene"])*.001)
             if ChapterData['WCs'][-1] != 0: 
@@ -443,10 +445,12 @@ def SaveSectionedCopy(storyDict,indentLevel=None):
             actchap[entry['Act']].append(entry['Chapter'])
     # Make a folder for each act in the Story Name folder.
     #print(actchap)
+    print(chapters)
     for act, chapterlist in actchap.items():
         actpath = f"/sectioned/{storyDict[0]['Story']}/{act}"
         MakeDirIfNotExists(actpath)
         for chapter in chapterlist:
+            #print(chapter)
             with open(os.getcwd() + actpath + f"/{chapter}.json", "w") as f:
                 f.write(js.dumps(storyDict[chapter-1]['Body'],ensure_ascii=True,indent=indentLevel))    
 

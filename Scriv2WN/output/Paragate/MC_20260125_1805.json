@@ -1304,7 +1304,6 @@
             "1.1.3",
             "1.1.4"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-04-24",
@@ -1361,7 +1360,8 @@
          "Act": 1,
          "ActName": "Act One: Spring",
          "Chapter": 1,
-         "ChapterNumber": "One"
+         "ChapterNumber": "One",
+         "Written": true
       },
       "1": {
          "Name": "The Knight Before",
@@ -2145,7 +2145,6 @@
             "1.2.6",
             "1.2.7"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-04-23",
@@ -2191,7 +2190,8 @@
          "Act": 1,
          "ActName": "Act One: Spring",
          "Chapter": 2,
-         "ChapterNumber": "Two"
+         "ChapterNumber": "Two",
+         "Written": true
       },
       "2": {
          "Name": "The Day After",
@@ -3584,7 +3584,6 @@
             "1.3.9",
             "1.3.10"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-04-24",
@@ -3630,7 +3629,8 @@
          "Act": 1,
          "ActName": "Act One: Spring",
          "Chapter": 3,
-         "ChapterNumber": "Three"
+         "ChapterNumber": "Three",
+         "Written": true
       },
       "3": {
          "Name": "Secondhand Cottage",
@@ -4295,7 +4295,6 @@
             "1.4.12",
             "1.4.13"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-04-24",
@@ -4341,7 +4340,8 @@
          "Act": 1,
          "ActName": "Act One: Spring",
          "Chapter": 4,
-         "ChapterNumber": "Four"
+         "ChapterNumber": "Four",
+         "Written": true
       },
       "4": {
          "Name": "Firsthand Home",
@@ -5170,7 +5170,6 @@
             "1.5.14",
             "1.5.15"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-04-24",
@@ -5205,7 +5204,8 @@
          "Act": 1,
          "ActName": "Act One: Spring",
          "Chapter": 5,
-         "ChapterNumber": "Five"
+         "ChapterNumber": "Five",
+         "Written": true
       },
       "5": {
          "Name": "Insurgency",
@@ -6108,7 +6108,6 @@
             "1.6.17",
             "1.6.18"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-04-24",
@@ -6154,7 +6153,8 @@
          "Act": 1,
          "ActName": "Act One: Spring",
          "Chapter": 6,
-         "ChapterNumber": "Six"
+         "ChapterNumber": "Six",
+         "Written": true
       },
       "6": {
          "Name": "Exfiltration",
@@ -6913,7 +6913,6 @@
             "1.7.19",
             "1.7.20"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-04-25",
@@ -6948,7 +6947,8 @@
          "Act": 1,
          "ActName": "Act One: Spring",
          "Chapter": 7,
-         "ChapterNumber": "Seven"
+         "ChapterNumber": "Seven",
+         "Written": true
       },
       "7": {
          "Name": "Strangers To Enemies",
@@ -7518,7 +7518,6 @@
             "1.8.21",
             "1.8.22"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-04-25",
@@ -7553,7 +7552,8 @@
          "Act": 1,
          "ActName": "Act One: Spring",
          "Chapter": 8,
-         "ChapterNumber": "Eight"
+         "ChapterNumber": "Eight",
+         "Written": true
       },
       "8": {
          "Name": "Surprise Approach",
@@ -8249,7 +8249,6 @@
             "1.9.23",
             "1.9.24"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-04-26",
@@ -8284,7 +8283,8 @@
          "Act": 1,
          "ActName": "Act One: Spring",
          "Chapter": 9,
-         "ChapterNumber": "Nine"
+         "ChapterNumber": "Nine",
+         "Written": true
       },
       "9": {
          "Name": "Strategic Retreat",
@@ -8872,7 +8872,6 @@
             "1.10.26",
             "1.10.27"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-04-25",
@@ -8918,7 +8917,8 @@
          "Act": 1,
          "ActName": "Act One: Spring",
          "Chapter": 10,
-         "ChapterNumber": "Ten"
+         "ChapterNumber": "Ten",
+         "Written": true
       },
       "10": {
          "Name": "Ennui and Excoriation",
@@ -9485,7 +9485,6 @@
             "1.11.29",
             "1.11.30"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-05-22",
@@ -9531,7 +9530,8 @@
          "Act": 1,
          "ActName": "Act One: Spring",
          "Chapter": 11,
-         "ChapterNumber": "Eleven"
+         "ChapterNumber": "Eleven",
+         "Written": true
       },
       "11": {
          "Name": "Anxiety and Avoidance",
@@ -9982,7 +9982,6 @@
             "1.12.31",
             "1.12.32"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-05-22",
@@ -10017,7 +10016,8 @@
          "Act": 1,
          "ActName": "Act One: Spring",
          "Chapter": 12,
-         "ChapterNumber": "Twelve"
+         "ChapterNumber": "Twelve",
+         "Written": true
       },
       "12": {
          "Name": "The Sleeping Knight",
@@ -10888,7 +10888,6 @@
             "2.13.33",
             "2.13.34"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-05-23",
@@ -10923,7 +10922,8 @@
          "Act": 2,
          "ActName": "Act Two: Summer",
          "Chapter": 13,
-         "ChapterNumber": "Thirteen"
+         "ChapterNumber": "Thirteen",
+         "Written": true
       },
       "13": {
          "Name": "Luddite By Chance",
@@ -11994,7 +11994,6 @@
             "2.14.36",
             "2.14.37"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-05-23",
@@ -12040,7 +12039,8 @@
          "Act": 2,
          "ActName": "Act Two: Summer",
          "Chapter": 14,
-         "ChapterNumber": "Fourteen"
+         "ChapterNumber": "Fourteen",
+         "Written": true
       },
       "14": {
          "Name": "Technophile By Choice",
@@ -13230,7 +13230,6 @@
             "2.15.39",
             "2.15.40"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-05-24",
@@ -13276,7 +13275,8 @@
          "Act": 2,
          "ActName": "Act Two: Summer",
          "Chapter": 15,
-         "ChapterNumber": "Fifteen"
+         "ChapterNumber": "Fifteen",
+         "Written": true
       },
       "15": {
          "Name": "Back To Business",
@@ -14109,7 +14109,6 @@
             "2.16.42",
             "2.16.43"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-05-25",
@@ -14155,7 +14154,8 @@
          "Act": 2,
          "ActName": "Act Two: Summer",
          "Chapter": 16,
-         "ChapterNumber": "Sixteen"
+         "ChapterNumber": "Sixteen",
+         "Written": true
       },
       "16": {
          "Name": "Onward To Chaos",
@@ -15300,7 +15300,6 @@
             "2.17.46",
             "2.17.47"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-05-26",
@@ -15357,7 +15356,8 @@
          "Act": 2,
          "ActName": "Act Two: Summer",
          "Chapter": 17,
-         "ChapterNumber": "Seventeen"
+         "ChapterNumber": "Seventeen",
+         "Written": true
       },
       "17": {
          "Name": "Civillian Combat",
@@ -16151,7 +16151,6 @@
             "2.18.48",
             "2.18.49"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-06-27",
@@ -16186,7 +16185,8 @@
          "Act": 2,
          "ActName": "Act Two: Summer",
          "Chapter": 18,
-         "ChapterNumber": "Eighteen"
+         "ChapterNumber": "Eighteen",
+         "Written": true
       },
       "18": {
          "Name": "Warrior Business",
@@ -17320,7 +17320,6 @@
             "2.19.51",
             "2.19.52"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-06-28",
@@ -17366,7 +17365,8 @@
          "Act": 2,
          "ActName": "Act Two: Summer",
          "Chapter": 19,
-         "ChapterNumber": "Nineteen"
+         "ChapterNumber": "Nineteen",
+         "Written": true
       },
       "19": {
          "Name": "Domestic Relations",
@@ -18455,7 +18455,6 @@
             "2.20.55",
             "2.20.56"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-06-28",
@@ -18512,7 +18511,8 @@
          "Act": 2,
          "ActName": "Act Two: Summer",
          "Chapter": 20,
-         "ChapterNumber": "Twenty"
+         "ChapterNumber": "Twenty",
+         "Written": true
       },
       "20": {
          "Name": "Foreign Affairs",
@@ -19588,7 +19588,6 @@
             "2.21.61",
             "2.21.62"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-06-29",
@@ -19667,7 +19666,8 @@
          "Act": 2,
          "ActName": "Act Two: Summer",
          "Chapter": 21,
-         "ChapterNumber": "Twenty-One"
+         "ChapterNumber": "Twenty-One",
+         "Written": true
       },
       "21": {
          "Name": "Losing To Fear",
@@ -20899,7 +20899,6 @@
             "2.22.64",
             "2.22.65"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-07-07",
@@ -20945,7 +20944,8 @@
          "Act": 2,
          "ActName": "Act Two: Summer",
          "Chapter": 22,
-         "ChapterNumber": "Twenty-Two"
+         "ChapterNumber": "Twenty-Two",
+         "Written": true
       },
       "22": {
          "Name": "Failing To Launch",
@@ -21991,7 +21991,6 @@
             "2.23.66",
             "2.23.67"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-07-07",
@@ -22026,7 +22025,8 @@
          "Act": 2,
          "ActName": "Act Two: Summer",
          "Chapter": 23,
-         "ChapterNumber": "Twenty-Three"
+         "ChapterNumber": "Twenty-Three",
+         "Written": true
       },
       "23": {
          "Name": "Friendly Fire",
@@ -22883,7 +22883,6 @@
             "2.24.68",
             "2.24.69"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-07-07",
@@ -22918,7 +22917,8 @@
          "Act": 2,
          "ActName": "Act Two: Summer",
          "Chapter": 24,
-         "ChapterNumber": "Twenty-Four"
+         "ChapterNumber": "Twenty-Four",
+         "Written": true
       },
       "24": {
          "Name": "A House Divided",
@@ -23404,7 +23404,6 @@
             "2.25.70",
             "2.25.71"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-07-07",
@@ -23439,7 +23438,8 @@
          "Act": 2,
          "ActName": "Act Two: Summer",
          "Chapter": 25,
-         "ChapterNumber": "Twenty-Five"
+         "ChapterNumber": "Twenty-Five",
+         "Written": true
       },
       "25": {
          "Name": "Cold War",
@@ -24195,7 +24195,6 @@
             "3.26.73",
             "3.26.74"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2015-10-03",
@@ -24241,7 +24240,8 @@
          "Act": 3,
          "ActName": "Act Three: Fall",
          "Chapter": 26,
-         "ChapterNumber": "Twenty-Six"
+         "ChapterNumber": "Twenty-Six",
+         "Written": true
       },
       "26": {
          "Name": "Warm Solitude",
@@ -25242,7 +25242,6 @@
             "3.27.76",
             "3.27.77"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2005-08-23",
@@ -25288,7 +25287,8 @@
          "Act": 3,
          "ActName": "Act Three: Fall",
          "Chapter": 27,
-         "ChapterNumber": "Twenty-Seven"
+         "ChapterNumber": "Twenty-Seven",
+         "Written": true
       },
       "27": {
          "Name": "Prometheus",
@@ -25974,7 +25974,6 @@
             "3.28.79",
             "3.28.80"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-11-25",
@@ -26020,7 +26019,8 @@
          "Act": 3,
          "ActName": "Act Three: Fall",
          "Chapter": 28,
-         "ChapterNumber": "Twenty-Eight"
+         "ChapterNumber": "Twenty-Eight",
+         "Written": true
       },
       "28": {
          "Name": "Once Lovers",
@@ -26850,7 +26850,6 @@
             "3.29.83",
             "3.29.84"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-11-26",
@@ -26907,7 +26906,8 @@
          "Act": 3,
          "ActName": "Act Three: Fall",
          "Chapter": 29,
-         "ChapterNumber": "Twenty-Nine"
+         "ChapterNumber": "Twenty-Nine",
+         "Written": true
       },
       "29": {
          "Name": "Cold Sweat",
@@ -27506,7 +27506,6 @@
             "3.30.87",
             "3.30.88"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-11-27",
@@ -27563,7 +27562,8 @@
          "Act": 3,
          "ActName": "Act Three: Fall",
          "Chapter": 30,
-         "ChapterNumber": "Thirty"
+         "ChapterNumber": "Thirty",
+         "Written": true
       },
       "30": {
          "Name": "Heating Up",
@@ -28571,7 +28571,6 @@
             "3.31.90",
             "3.31.91"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-11-28",
@@ -28617,7 +28616,8 @@
          "Act": 3,
          "ActName": "Act Three: Fall",
          "Chapter": 31,
-         "ChapterNumber": "Thirty-One"
+         "ChapterNumber": "Thirty-One",
+         "Written": true
       },
       "31": {
          "Name": "Fantastic Modernity",
@@ -29422,7 +29422,6 @@
             "3.32.93",
             "3.32.94"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-11-29",
@@ -29468,7 +29467,8 @@
          "Act": 3,
          "ActName": "Act Three: Fall",
          "Chapter": 32,
-         "ChapterNumber": "Thirty-Two"
+         "ChapterNumber": "Thirty-Two",
+         "Written": true
       },
       "32": {
          "Name": "Modern Fantasy",
@@ -30301,7 +30301,6 @@
             "3.33.96",
             "3.33.97"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-11-29",
@@ -30347,7 +30346,8 @@
          "Act": 3,
          "ActName": "Act Three: Fall",
          "Chapter": 33,
-         "ChapterNumber": "Thirty-Three"
+         "ChapterNumber": "Thirty-Three",
+         "Written": true
       },
       "33": {
          "Name": "Professional Death",
@@ -30984,7 +30984,6 @@
             "3.34.99",
             "3.34.100"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-11-30",
@@ -31030,7 +31029,8 @@
          "Act": 3,
          "ActName": "Act Three: Fall",
          "Chapter": 34,
-         "ChapterNumber": "Thirty-Four"
+         "ChapterNumber": "Thirty-Four",
+         "Written": true
       },
       "34": {
          "Name": "Physical Demise",
@@ -31919,7 +31919,6 @@
             "3.35.102",
             "3.35.103"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-11-30",
@@ -31965,7 +31964,8 @@
          "Act": 3,
          "ActName": "Act Three: Fall",
          "Chapter": 35,
-         "ChapterNumber": "Thirty-Five"
+         "ChapterNumber": "Thirty-Five",
+         "Written": true
       },
       "35": {
          "Name": "Holding On",
@@ -33064,7 +33064,6 @@
             "3.36.105",
             "3.36.106"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-11-30",
@@ -33110,7 +33109,8 @@
          "Act": 3,
          "ActName": "Act Three: Fall",
          "Chapter": 36,
-         "ChapterNumber": "Thirty-Six"
+         "ChapterNumber": "Thirty-Six",
+         "Written": true
       },
       "36": {
          "Name": "Letting Go",
@@ -34248,7 +34248,6 @@
             "3.37.109",
             "3.37.110"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-12-01",
@@ -34305,7 +34304,8 @@
          "Act": 3,
          "ActName": "Act Three: Fall",
          "Chapter": 37,
-         "ChapterNumber": "Thirty-Seven"
+         "ChapterNumber": "Thirty-Seven",
+         "Written": true
       },
       "37": {
          "Name": "Bottoming Out",
@@ -34875,7 +34875,6 @@
             "4.38.111",
             "4.38.112"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "2026-12-08",
@@ -34910,7 +34909,8 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 38,
-         "ChapterNumber": "Thirty-Eight"
+         "ChapterNumber": "Thirty-Eight",
+         "Written": true
       },
       "38": {
          "Name": "Crossing Over",
@@ -35771,7 +35771,6 @@
             "4.39.114",
             "4.39.115"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "",
@@ -35817,7 +35816,8 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 39,
-         "ChapterNumber": "Thirty-Nine"
+         "ChapterNumber": "Thirty-Nine",
+         "Written": true
       },
       "39": {
          "Name": "Reaching Up",
@@ -36755,7 +36755,6 @@
             "4.40.117",
             "4.40.118"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "",
@@ -36801,7 +36800,8 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 40,
-         "ChapterNumber": "Forty"
+         "ChapterNumber": "Forty",
+         "Written": true
       },
       "40": {
          "Name": "Annealment",
@@ -37627,7 +37627,6 @@
             "4.41.120",
             "4.41.121"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "",
@@ -37673,7 +37672,8 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 41,
-         "ChapterNumber": "Forty-One"
+         "ChapterNumber": "Forty-One",
+         "Written": true
       },
       "41": {
          "Name": "Eutectic Point",
@@ -38352,7 +38352,6 @@
             "4.42.123",
             "4.42.124"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "",
@@ -38398,7 +38397,8 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 42,
-         "ChapterNumber": "Forty-Two"
+         "ChapterNumber": "Forty-Two",
+         "Written": true
       },
       "42": {
          "Name": "Harsh Noise",
@@ -39028,7 +39028,6 @@
             "4.43.126",
             "4.43.127"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "",
@@ -39074,7 +39073,8 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 43,
-         "ChapterNumber": "Forty-Three"
+         "ChapterNumber": "Forty-Three",
+         "Written": true
       },
       "43": {
          "Name": "In Loving Memory",
@@ -40114,7 +40114,6 @@
             "4.44.130",
             "4.44.131"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "",
@@ -40171,7 +40170,8 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 44,
-         "ChapterNumber": "Forty-Four"
+         "ChapterNumber": "Forty-Four",
+         "Written": true
       },
       "44": {
          "Name": "In Future Grief",
@@ -40577,7 +40577,6 @@
             "4.45.133",
             "4.45.134"
          ],
-         "Written": true,
          "Settings": [
             {
                "Date": "",
@@ -40623,7 +40622,8 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 45,
-         "ChapterNumber": "Forty-Five"
+         "ChapterNumber": "Forty-Five",
+         "Written": false
       },
       "45": {
          "Name": "Legacy Hire",
@@ -40672,7 +40672,6 @@
             "4.46.136",
             "4.46.137"
          ],
-         "Written": false,
          "Settings": [
             {
                "Date": "",
@@ -40718,7 +40717,8 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 46,
-         "ChapterNumber": "Forty-Six"
+         "ChapterNumber": "Forty-Six",
+         "Written": false
       },
       "46": {
          "Name": "Liftoff",
@@ -40756,7 +40756,6 @@
             "4.47.138",
             "4.47.139"
          ],
-         "Written": false,
          "Settings": [
             {
                "Date": "",
@@ -40791,7 +40790,8 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 47,
-         "ChapterNumber": "Forty-Seven"
+         "ChapterNumber": "Forty-Seven",
+         "Written": false
       },
       "47": {
          "Name": "Oscar Mike",
@@ -40840,7 +40840,6 @@
             "4.48.141",
             "4.48.142"
          ],
-         "Written": false,
          "Settings": [
             {
                "Date": "",
@@ -40886,7 +40885,8 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 48,
-         "ChapterNumber": "Forty-Eight"
+         "ChapterNumber": "Forty-Eight",
+         "Written": false
       },
       "48": {
          "Name": "Counter-Strike",
@@ -40924,7 +40924,6 @@
             "4.49.143",
             "4.49.144"
          ],
-         "Written": false,
          "Settings": [
             {
                "Date": "",
@@ -40959,7 +40958,8 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 49,
-         "ChapterNumber": "Forty-Nine"
+         "ChapterNumber": "Forty-Nine",
+         "Written": false
       },
       "49": {
          "Name": "Apotheosis",
@@ -40997,7 +40997,6 @@
             "4.50.145",
             "4.50.146"
          ],
-         "Written": false,
          "Settings": [
             {
                "Date": "",
@@ -41032,7 +41031,8 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 50,
-         "ChapterNumber": "Fifty"
+         "ChapterNumber": "Fifty",
+         "Written": false
       },
       "50": {
          "Name": "Visions Of Fire",
@@ -41081,7 +41081,6 @@
             "4.51.148",
             "4.51.149"
          ],
-         "Written": false,
          "Settings": [
             {
                "Date": "",
@@ -41127,7 +41126,8 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 51,
-         "ChapterNumber": "Fifty-One"
+         "ChapterNumber": "Fifty-One",
+         "Written": false
       },
       "51": {
          "Name": "Parasmagate",
@@ -41187,7 +41187,6 @@
             "5.52.152",
             "5.52.153"
          ],
-         "Written": false,
          "Settings": [
             {
                "Date": "",
@@ -41244,7 +41243,8 @@
          "Act": 5,
          "ActName": "Epilogue",
          "Chapter": 52,
-         "ChapterNumber": "Fifty-Two"
+         "ChapterNumber": "Fifty-Two",
+         "Written": false
       },
       "52": {
          "Name": "Threaded Echoes",
@@ -41293,7 +41293,6 @@
             "5.53.155",
             "5.53.156"
          ],
-         "Written": false,
          "Settings": [
             {
                "Date": "",
@@ -41339,7 +41338,8 @@
          "Act": 5,
          "ActName": "Epilogue",
          "Chapter": 53,
-         "ChapterNumber": "Fifty-Three"
+         "ChapterNumber": "Fifty-Three",
+         "Written": false
       }
    },
    "Metadata": {
