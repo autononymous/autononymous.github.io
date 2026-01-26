@@ -792,7 +792,7 @@
       ],
       [
          "BodyCody",
-         "10.25.26_18:31:24 @DUNS_ALAN: > INTERLOCK TRIP LOGGED AT ID# 79C2D110.25.26_18:31:24 @DUNS_ALAN: > CAL-04 calorimeter deficit: ?126 J/s @ 20 A; EIS arc @ ?18  phase10.25.26_18:31:25 @DUNS_ALAN: > [WARNING] OVER-EFFICIENCY() FLAG TRUE &mdash; ANOMALY DETECTED10.25.26_18:31:25 @DUNS_ALAN: >  ? = (-15) kJ",
+         "10.25.26_18:31:24 @DUNS_ALAN: > INTERLOCK TRIP LOGGED AT ID# 79C2D110.25.26_18:31:24 @DUNS_ALAN: > CAL-04 calorimeter deficit: ?126 J/s @ 20 A; EIS arc @ ?18 phase10.25.26_18:31:25 @DUNS_ALAN: > [WARNING] OVER-EFFICIENCY() FLAG TRUE &mdash; ANOMALY DETECTED10.25.26_18:31:25 @DUNS_ALAN: >  ? = (-15) kJ",
          true,
          false,
          false

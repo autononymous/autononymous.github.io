@@ -642,7 +642,7 @@
          false
       ],
       [
-         "MessageFrom",
+         "BodyCody",
          "Happy weekend my handsome son! &#129653;&#129653; ",
          true,
          false,
@@ -656,7 +656,7 @@
          false
       ],
       [
-         "MessageFrom",
+         "BodyCody",
          "You said you&apos;re coming over today? Something serious to talk about? Dad&apos;s headed to a Corvette Club breakfast + drive, so he&apos;ll be back around 3:00.",
          true,
          false,
@@ -670,7 +670,7 @@
          false
       ],
       [
-         "MessageFrom",
+         "BodyCody",
          "Fella at CClub says he knows you and says hello. Name is Geoffrey. says your his sons best friend? and you got some presentation next week?",
          true,
          false,
@@ -684,7 +684,7 @@
          false
       ],
       [
-         "MessageFrom",
+         "BodyCody",
          "bruh is that katy from hs?? wild she&apos;s at vinyl dt &#128539;",
          true,
          false,
@@ -729,21 +729,280 @@
    [
       [
          "BodyCody",
-         "It always feels strange knocking on the door of my childhood home when I&apos;ve spent a lifetime behind those doors. But I try the handle and find that it&apos;s unlocked, stepping cautiously across the foyer as I call their names.",
+         "I find the long concrete slab holds unfamiliar furniture when I climb the steps: it took ages for them to discard the old wrought-iron furniture, with cushions that held on for ten long winters. I don&apos;t recognize the new LED light poles, or the new coat of asphalt for the streets, covering up cement scars that ate longboard wheels unless you bombed Crichton Circle from the top of the hill.",
          true,
          false,
          false
       ],
       [
          "BodyCody",
-         "&quot;Mom?&quot; I try. &quot;Dad?&quot;",
+         "I&apos;m greeted by the old nutcracker statue Mom made me and Jackie lug up from the basement: these suburban types don&apos;t ditch the Christmas decorations until after the Stock Show comes into town, and yet it feels like this wooden soldier defends the house from strangers like me.",
          true,
          false,
          false
       ],
       [
          "BodyCody",
-         "&quot;Cody,&quot; my mother says. The voice comes from the kitchen. A Broncos preseason game plays on the TV, and I imply my father&apos;s glued to the screen.",
+         "The lights are dark through the porch windows. My hands trace the chipped edge of the brick lodged with Jackson&apos;s BB-gun pellet before reaching the doorbell, and though my finger traces the long, cracked button from a shot that didn&apos;t miss, I find I hesitate.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I try the handle instead to find the house is unlocked, and before I can pull it shut, the door swings open. Raucous applause crackles over the TV with a football game. Somewhere else, pots and pans clatter in the kitchen, and I smell the spice of my favorite dish &mdash; which means they intend to raise my spirits when something heavy&apos;s on  the docket.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "The volume dips.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Hello? Cody?&quot; Alan asks.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Yeah,&quot; I say, lifting the Pelican case from outside the door. I remove my shoes as soon as I enter, crossing the entry rug to reach the kitchen. &quot;Do you just leave the house unlocked all the time now? I thought there was a break-in last week!&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;That&apos;s the Behnkes,&quot; Mom says. She wears the apron I bought her for Mother&apos;s Day as she drains the pasta. &quot;We only leave it unlocked when you&apos;re coming over. Or sometimes &mdash; just because we hope you might surprise us.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "Dad&apos;s eyes are locked on the TV. I set the case down as I expect him to move, but he&apos;s still there: engrossed with the Broncos&apos; new QB though it&apos;s just a preseason game.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;You haven&apos;t seen your father in almost a month,&quot; my mother says. &quot;This is the first year we didn&apos;t even celebrate your birthday!&quot; She rinses the pot, punctuating her protest with the sizzle of steam. &quot;Well at least you spent it with friends.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;What do you mean?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;You said you were downtown. Your teeth were chattering,&quot; she says, and a flash of that cold returns to me again. &quot;What did you guys do?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Nightclubs,&quot; I say.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Huh. Well, at this rate, maybe we&apos;ll get to be grandparents after all,&quot; she says, raising her voice to try and evoke my father&apos;s attention.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "It&apos;s a distance I&apos;ve only felt when my father&apos;s upset about something. I haven&apos;t spoken to him in-person since he was marched out of Navidson: usually he&apos;ll offer at least a grunt or a laugh, but he almost seems nervous.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Alan?&quot; Mom asks.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "He rises from the couch, wearing an old engineering shirt from his alma mater. &quot;Hey,&quot; he offers.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Hey,&quot; I say.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Cat&apos;s in the cradle, huh?&quot; He claps my shoulder awkwardly, like I scored a home run in T-ball.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Huh?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Just a song,&quot; he says. He tugs at the whiskers of my unkempt facial hair. &quot;You&apos;re a lot like me now.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Oh.&quot; ",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I look down at my calloused hands.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;He&apos;s asking you to give him a hug,&quot; Mom says. &quot;He goes on all the time about how he misses you.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I am,&quot; I say, giving him a light squeeze as he reciprocates, and I decide to add, &quot;and I&apos;m sorry.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;We&apos;re doing fine,&quot; he says, but he lingers, offering no more strength in his embrace. He&apos;s quick to release. &quot;Union guys gave me a couple contacts, but they&apos;re kind of far. I hope you don&apos;t stay too long in this line of work. You should be using your degree, unlike me.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Work with your head and not your back,&quot; I recite, feeling this exchange already backslide into the forthcoming lecture.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;You&apos;re still entry-level,&quot; Mom says, setting the table as we head over.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;And you&apos;re not overtime &mdash; or night shift,&quot; Dad adds.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;And you have that mortgage to pay &mdash; and student loans,&quot; Mom adds. My stomach turns before the food can even arrive: they&apos;re always so surgical. &quot;Have you started looking for engineering jobs?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I have a lead,&quot; I say.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "Her eyes brighten. &quot;For what?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;For something at the company,&quot; I say.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "Her eyes darken.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;He&apos;s talking about that presentation thing,&quot; Alan says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;So nothing. Yet,&quot; she adds, over-serving cavatappi on my plate.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Well, actually&mdash;&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;We need to go on the computer to change your Roth IRA contribution,&quot; Dad interjects. &quot;You won&apos;t be maxing it this year, and you need a little more gas in the tank until you can&mdash;&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;&mdash;I got it,&quot; I say. &quot;I&apos;m working on it!&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I&apos;m sure you are,&quot; my mother says. &quot;But you can&apos;t live like this.&quot;",
          true,
          false,
          false

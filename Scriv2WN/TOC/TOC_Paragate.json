@@ -3,9 +3,9 @@
       "ActCount": 5,
       "ChapterCount": 53,
       "SceneCount": 156,
-      "WrittenCount": 131,
-      "UnwrittenCount": 25,
-      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 198,296.\n > There are 5 acts, 53 chapters, and 156 scenes.\n > This manuscript averages:\n   - 1271 words per scene.\n   - 3741 words per chapter.\n   - 2.94 scenes per chapter.\n > Out of 156 planned scenes, 131 are written.\n > So the Zero Draft is approximately 83.9% complete.\n"
+      "WrittenCount": 133,
+      "UnwrittenCount": 23,
+      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 200,965.\n > There are 5 acts, 53 chapters, and 156 scenes.\n > This manuscript averages:\n   - 1288 words per scene.\n   - 3791 words per chapter.\n   - 2.94 scenes per chapter.\n > Out of 156 planned scenes, 133 are written.\n > So the Zero Draft is approximately 85.2% complete.\n"
    },
    "ChapterList": [
       {
@@ -2160,9 +2160,9 @@
          "ChapterName": "In Future Grief",
          "ChapterNumber": "Forty-Five",
          "Character": [
-            "Default",
-            "Default",
-            "Default"
+            "Katiya",
+            "Cody",
+            "Katiya"
          ],
          "Summary": "",
          "Blurb": "Katiya tells her family the whole truth.",
@@ -2174,9 +2174,9 @@
                "Time": "",
                "ISO": "",
                "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Hilde Cottage",
                "Place": "Unspecified"
             },
             {
@@ -2184,9 +2184,9 @@
                "Time": "",
                "ISO": "",
                "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dunsmore Family Home",
                "Place": "Unspecified"
             },
             {
@@ -2194,9 +2194,9 @@
                "Time": "",
                "ISO": "",
                "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Hilde Cottage",
                "Place": "Unspecified"
             }
          ],

@@ -4594,7 +4594,7 @@
             "\"With her?\" He asks.",
             "\"No. No . . . I mean, close to her. Next to her,\" I say. ",
             "\"Oh. So what do you do for the military then?\"",
-            "My mind races back on Katiya's collection of rehearsed lies. \"I'm one of the Royal Scientists' prot g s, so they wedged me in with the others, doing some research in Gaffesend.\"",
+            "My mind races back on Katiya's collection of rehearsed lies. \"I'm one of the Royal Scientists' protgs, so they wedged me in with the others, doing some research in Gaffesend.\"",
             "\"Well I don't blame you for being close to Katiya. If I was thirty years younger, with a body like that, I'd fight a damn war for a woman like her,\" he says, reminding me of most of the technicians at my work. But the commander's voice cuts us off, before Derry can objectify her any further.",
             "\"Most of you are too, uh . . . 'heavy-set' for running, so today will focus on basic, self-defense sword fighting and feats of strength.\" I flex and feel for the strength in my arms, hoping my two-a-week workouts give me enough muscle to overpower an Essenced tavern-brawler. He continues: \"While our brave, senior soldiers guard the borders of Gaffesend, this is a chance for our trainees to pass on their knowledge.\"",
             "I look to Katiya, flushed with that same sense of anxiety that seems like her factory setting. She musters a smile when we meet eyes, standing next to her beanpole boyfriend with their swords drawn, and as Aldrin rambles on about the value of self-defense like a first-amendment technician at my work, I twirl the wooden training sword in the dirt.",
@@ -7267,7 +7267,7 @@
             "I angle the flashlight to the garage door, pointing it directly above the hood of my car as my other hand fumbles for the string of the shop light. And when my finger flicks the slide switch, I feel a massive jolt of energy kick the flashlight backwards as it slips through my hand, casting the entire garage in a bright, crimson glow.",
             "The nurled handle of the flashlight embeds itself in the pegboard, displacing all the tools in a raucous clatter as a wall-mounted bucket of tiny screws explodes like shotgun pellets, but the crash is silent compared to the otherworldly, phantasmic screech that rings in my ears.",
             "My eyes and ears need seconds to recover — my heart even longer — as my eyes fall to the triplet spread of holes in the far wall, siphoning streetlight in three beams that take shape from floating dust.",
-            "But it's not in the steel of the garage door. It's in the solid wall, and when I approach it, I peek with one eye through the half-inch peephole to find two <em>MORE</em> new holes a hundred feet across the driveway, glowing with heat as a road sign now reads ST P."
+            "But it's not in the steel of the garage door. It's in the solid wall, and when I approach it, I peek with one eye through the half-inch peephole to find two <em>MORE</em> new holes a hundred feet across the driveway, glowing with heat as a road sign now reads STP."
           ]
         }
       ],
@@ -7502,7 +7502,7 @@
             "I attached a different zip tie to the battery, threading it through the same tag, though now the tag and the zip tie both had mismatching IDs. Everything was fine when I left the office at 6:35, saying goodbye to an unfamiliar, overnight gate guard. I took for granted how we only scan IN to the office and not OUT.",
             "But they surely asked later, and yet there wasn't a single person in Internal Affairs that had an answer the next day. Chain of custody was broken. The acceptance unit custody was compromised, and with mismatching timestamps reading three whole seconds faster than the world's clock, it would go down as TAMPERING, launching a full-blown investigation.",
             "The government would ask why the audit was being pushed back, threatening a breach-of-contract for testing deadlines, and all Compliance had was two things: the auto-filed ticket from SOC at 6:30, and the readings from the terminal, suggesting an anomaly that was physically impossible:",
-            "10.25.26_18:31:24 @DUNS_ALAN: > INTERLOCK TRIP LOGGED AT ID# 79C2D110.25.26_18:31:24 @DUNS_ALAN: > CAL-04 calorimeter deficit: ?126 J/s @ 20 A; EIS arc @ ?18  phase10.25.26_18:31:25 @DUNS_ALAN: > [WARNING] OVER-EFFICIENCY() FLAG TRUE — ANOMALY DETECTED10.25.26_18:31:25 @DUNS_ALAN: >  ? = (-15) kJ"
+            "10.25.26_18:31:24 @DUNS_ALAN: > INTERLOCK TRIP LOGGED AT ID# 79C2D110.25.26_18:31:24 @DUNS_ALAN: > CAL-04 calorimeter deficit: ?126 J/s @ 20 A; EIS arc @ ?18 phase10.25.26_18:31:25 @DUNS_ALAN: > [WARNING] OVER-EFFICIENCY() FLAG TRUE — ANOMALY DETECTED10.25.26_18:31:25 @DUNS_ALAN: >  ? = (-15) kJ"
           ]
         }
       ],
@@ -11098,9 +11098,46 @@
         {
           "Perspective": "Cody",
           "Text": [
-            "It always feels strange knocking on the door of my childhood home when I've spent a lifetime behind those doors. But I try the handle and find that it's unlocked, stepping cautiously across the foyer as I call their names.",
-            "\"Mom?\" I try. \"Dad?\"",
-            "\"Cody,\" my mother says. The voice comes from the kitchen. A Broncos preseason game plays on the TV, and I imply my father's glued to the screen."
+            "I find the long concrete slab holds unfamiliar furniture when I climb the steps: it took ages for them to discard the old wrought-iron furniture, with cushions that held on for ten long winters. I don't recognize the new LED light poles, or the new coat of asphalt for the streets, covering up cement scars that ate longboard wheels unless you bombed Crichton Circle from the top of the hill.",
+            "I'm greeted by the old nutcracker statue Mom made me and Jackie lug up from the basement: these suburban types don't ditch the Christmas decorations until after the Stock Show comes into town, and yet it feels like this wooden soldier defends the house from strangers like me.",
+            "The lights are dark through the porch windows. My hands trace the chipped edge of the brick lodged with Jackson's BB-gun pellet before reaching the doorbell, and though my finger traces the long, cracked button from a shot that didn't miss, I find I hesitate.",
+            "I try the handle instead to find the house is unlocked, and before I can pull it shut, the door swings open. Raucous applause crackles over the TV with a football game. Somewhere else, pots and pans clatter in the kitchen, and I smell the spice of my favorite dish — which means they intend to raise my spirits when something heavy's on  the docket.",
+            "The volume dips.",
+            "\"Hello? Cody?\" Alan asks.",
+            "\"Yeah,\" I say, lifting the Pelican case from outside the door. I remove my shoes as soon as I enter, crossing the entry rug to reach the kitchen. \"Do you just leave the house unlocked all the time now? I thought there was a break-in last week!\"",
+            "\"That's the Behnkes,\" Mom says. She wears the apron I bought her for Mother's Day as she drains the pasta. \"We only leave it unlocked when you're coming over. Or sometimes — just because we hope you might surprise us.\"",
+            "Dad's eyes are locked on the TV. I set the case down as I expect him to move, but he's still there: engrossed with the Broncos' new QB though it's just a preseason game.",
+            "\"You haven't seen your father in almost a month,\" my mother says. \"This is the first year we didn't even celebrate your birthday!\" She rinses the pot, punctuating her protest with the sizzle of steam. \"Well at least you spent it with friends.\"",
+            "\"What do you mean?\"",
+            "\"You said you were downtown. Your teeth were chattering,\" she says, and a flash of that cold returns to me again. \"What did you guys do?\"",
+            "\"Nightclubs,\" I say.",
+            "\"Huh. Well, at this rate, maybe we'll get to be grandparents after all,\" she says, raising her voice to try and evoke my father's attention.",
+            "It's a distance I've only felt when my father's upset about something. I haven't spoken to him in-person since he was marched out of Navidson: usually he'll offer at least a grunt or a laugh, but he almost seems nervous.",
+            "\"Alan?\" Mom asks.",
+            "He rises from the couch, wearing an old engineering shirt from his alma mater. \"Hey,\" he offers.",
+            "\"Hey,\" I say.",
+            "\"Cat's in the cradle, huh?\" He claps my shoulder awkwardly, like I scored a home run in T-ball.",
+            "\"Huh?\"",
+            "\"Just a song,\" he says. He tugs at the whiskers of my unkempt facial hair. \"You're a lot like me now.\"",
+            "\"Oh.\" ",
+            "I look down at my calloused hands.",
+            "\"He's asking you to give him a hug,\" Mom says. \"He goes on all the time about how he misses you.\"",
+            "\"I am,\" I say, giving him a light squeeze as he reciprocates, and I decide to add, \"and I'm sorry.\"",
+            "\"We're doing fine,\" he says, but he lingers, offering no more strength in his embrace. He's quick to release. \"Union guys gave me a couple contacts, but they're kind of far. I hope you don't stay too long in this line of work. You should be using your degree, unlike me.\"",
+            "\"Work with your head and not your back,\" I recite, feeling this exchange already backslide into the forthcoming lecture.",
+            "\"You're still entry-level,\" Mom says, setting the table as we head over.",
+            "\"And you're not overtime — or night shift,\" Dad adds.",
+            "\"And you have that mortgage to pay — and student loans,\" Mom adds. My stomach turns before the food can even arrive: they're always so surgical. \"Have you started looking for engineering jobs?\"",
+            "\"I have a lead,\" I say.",
+            "Her eyes brighten. \"For what?\"",
+            "\"For something at the company,\" I say.",
+            "Her eyes darken.",
+            "\"He's talking about that presentation thing,\" Alan says.",
+            "\"So nothing. Yet,\" she adds, over-serving cavatappi on my plate.",
+            "\"Well, actually—\"",
+            "\"We need to go on the computer to change your Roth IRA contribution,\" Dad interjects. \"You won't be maxing it this year, and you need a little more gas in the tank until you can—\"",
+            "\"—I got it,\" I say. \"I'm working on it!\"",
+            "\"I'm sure you are,\" my mother says. \"But you can't live like this.\""
           ]
         }
       ],
