@@ -65,7 +65,8 @@
       "A04C43": 42,
       "A04C44": 43,
       "A04C45": 44,
-      "A04C46": 45
+      "A04C46": 45,
+      "A04C47": 46
     },
     "act_ch_to_index": {
       "1:1": 0,
@@ -113,7 +114,8 @@
       "4:43": 42,
       "4:44": 43,
       "4:45": 44,
-      "4:46": 45
+      "4:46": 45,
+      "4:47": 46
     },
     "chapter_to_indices": {
       "1": [
@@ -253,6 +255,9 @@
       ],
       "46": [
         45
+      ],
+      "47": [
+        46
       ]
     },
     "entries": [
@@ -799,6 +804,17 @@
         "scene_count": 4,
         "perspectives_order": [
           "Katiya"
+        ]
+      },
+      {
+        "id": "A04C47",
+        "act": 4,
+        "chapter": 47,
+        "name": "Ground Control",
+        "index": 46,
+        "scene_count": 2,
+        "perspectives_order": [
+          "Default"
         ]
       }
     ]
@@ -11552,13 +11568,28 @@
             "\"It means that this is our last night,\" I say. \"The last night where nobody can take anything from us.\"",
             "I squeeze her until the fear leaves enough space for me to march inside, carrying the case across the threshold, leaving the spare drone battery on my kitchen counter.",
             "We drown in the hapless space between fear and its response like lightning before thunder. All I can think is how to heal together as I lead her up the stairs, whispering the words of a vow I've meant to tell her for a while now.",
-            "\"Whether we burn bright or burn out, we'll burn together,\" I say. \"Let's not close each other out this time.\""
+            "\"Whether we burn bright or burn out,\" I say, \"let's not close each other out this time.\"",
+            "\"Let's burn together,\" Katiya says."
           ]
         },
         {
           "Perspective": "Katiya",
           "Text": [
-            "We enter"
+            "Cody's suit hangs from the top of the door like a tall, headless soldier, standing watch for all the forces of our worlds that are after us. My breath heaves and trembles as the static fills my fingers with anticipation, tightening my chest as I try to stay afloat in this moment.",
+            "\"Maybe this is our last chance,\" Cody whispers in my ear, and it sends a different kind of static through my circuits: like gentle flakes of frost to quench the scalding heat. His flesh is ice when he presses his bare chest against my back, and though I can feel his own panic told in the tremor of his arms as he tightens me in his grasp, his heart beats slower than mine, and in this moment, I feel safer than I ever have before.",
+            "I spent my whole life building resilience with will and muscle as my coat of armor. My entire body still flexes with dread as if to prepare for a wounding strike: trained to be unstoppable, but as his fingers trace the musculature of my core, grabbing the softest parts of my body that strength can't protect, I experience a feeling of love that calms my hesitations.",
+            "I remove my shirt to give more space for us to share our warmth, wearing nothing more than the pair of boxers he bought for me that I insisted on. My resilience gives as I lean for the bed, pulling him now as a thin, stupid bedsheet can no longer separate us. We lie together as my legs tension around his, fully vulnerable as he draws his fingers behind my ear.",
+            "We watch each other closely: closer than we ever have before, separated by one final thread of hesitation — because although we've kissed before, it wasn't like this. I notice the detail of the colored bands within his dark, brown eyes, struggling to settle on looking at a single one.",
+            "\"You always cool me down when I'm burning up,\" I tell him.",
+            "He smiles.",
+            "\"And you always warm me up when life freezes me out,\" he says.",
+            "The hesitation still splits us though we hover close. He looks at my lips. I displace that sense of intention through the tension of my thighs, coaxing Cody to draw himself closer, but he parries with words.",
+            "\"The thought of the future we can share is the only thing that keeps me strong,\" he says, and I can feel his warm breath. He strokes the side of my head with his calloused fingers from days of work, and all I want is for him to do some work on me.",
+            "He still hangs there, searching for another sentence to forestall us, though I can feel his heart pulsing in his legs, but there's no room for fear when you're solaced by the person you love the most.",
+            "I thought my first great act of courage would come tomorrow, but I do it now, sharing the first exchange of passion on our last night of peace.",
+            "\"I love you, Cody,\" I tell him.",
+            "\"And I love you too, Katiya,\" he says.",
+            "The two of us met in a standoff: armed and separated in hesitation between doorways, waiting for the right tell to strike. But now, we both advance at the same time, our lips finally meeting somewhere in the middle. "
           ]
         }
       ],
@@ -11735,6 +11766,69 @@
       "Chapter": 46,
       "Act": 4,
       "Chapter Name": "Close Quarters"
+    },
+    {
+      "Scenes": [
+        {
+          "Perspective": "Default",
+          "Text": [
+            "My keys slide out of the ignition, and after a long, sleepless night, I realize I'm sitting in Navidson-Monroe's dirt lot, seventeen minutes early to clocking in."
+          ]
+        },
+        {
+          "Perspective": "Default",
+          "Text": []
+        }
+      ],
+      "SceneLocation": [
+        [
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Unspecified",
+            "Area": "Unspecified",
+            "Location": "Unspecified",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Unspecified",
+            "Area": "Unspecified",
+            "Location": "Unspecified",
+            "Place": "Unspecified"
+          }
+        ],
+        [
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Unspecified",
+            "Area": "Unspecified",
+            "Location": "Unspecified",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Unspecified",
+            "Area": "Unspecified",
+            "Location": "Unspecified",
+            "Place": "Unspecified"
+          }
+        ]
+      ],
+      "Chapter": 47,
+      "Act": 4,
+      "Chapter Name": "Ground Control"
     }
   ]
 }

@@ -3,9 +3,9 @@
       "ActCount": 5,
       "ChapterCount": 53,
       "SceneCount": 156,
-      "WrittenCount": 136,
-      "UnwrittenCount": 20,
-      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 203,892.\n > There are 5 acts, 53 chapters, and 156 scenes.\n > This manuscript averages:\n   - 1307 words per scene.\n   - 3847 words per chapter.\n   - 2.94 scenes per chapter.\n > Out of 156 planned scenes, 136 are written.\n > So the Zero Draft is approximately 87.1% complete.\n"
+      "WrittenCount": 138,
+      "UnwrittenCount": 18,
+      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 204,649.\n > There are 5 acts, 53 chapters, and 156 scenes.\n > This manuscript averages:\n   - 1311 words per scene.\n   - 3861 words per chapter.\n   - 2.94 scenes per chapter.\n > Out of 156 planned scenes, 138 are written.\n > So the Zero Draft is approximately 88.4% complete.\n"
    },
    "ChapterList": [
       {
@@ -2263,7 +2263,7 @@
          ],
          "Summary": "",
          "Blurb": "Proof flies. A name lands. The verdict doesn&apos;t.dea.",
-         "Written": false,
+         "Written": true,
          "Release": "02/18/27",
          "Settings": [
             {

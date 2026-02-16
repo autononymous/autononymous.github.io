@@ -373,7 +373,7 @@ def InterpretJSON(js,info=True):
     WritSceneNum =  np.linspace(1,WrittenScenes,WrittenScenes)
     slopeC = (WritChapNum.dot(WordCounts["SumChap"][0:WrittenChaps])) / (WritChapNum.dot(WritChapNum))
     slopeS = (WritSceneNum.dot(WordCounts["SumScene"][0:WrittenScenes])) / (WritSceneNum.dot(WritSceneNum))
-    infostring = f" > WC/Scene: {int(slopeS*1000)}\n > WC/Chap:  {int(slopeC*1000)}\n > Scenes: {WrittenScenes} of {int(SceneNum[-1])} ({np.round(WrittenScenes/SceneNum[-1]*100,1)}%)\n > Chaps:  {WrittenChaps} of {int(ChapNum[-1])}  ({np.round(WrittenChaps/ChapNum[-1]*100,1)}%)\n > Estimated {int(slopeC*ChapNum[-1])}k by Ch {int(ChapNum[-1])}."
+    infostring = f" > WC/Scene: {int(slopeS*1000)}\n > WC/Chap:  {int(slopeC*1000)}\n > Scenes: {WrittenScenes} of {int(SceneNum[-1])} ({np.round(WrittenScenes/SceneNum[-1]*100,1)}%)\n > Chaps:  {WrittenChaps+1} of {int(ChapNum[-1])}  ({np.round(WrittenChaps/ChapNum[-1]*100,1)}%)\n > Estimated {int(slopeC*ChapNum[-1])}k by Ch {int(ChapNum[-1])}."
     plt.plot(ChapNum,WordCt)
     plt.plot([0,ChapNum[-1]],[0,slopeC*ChapNum[-1]],'--r',linewidth=1)
     t = plt.text(2,0.8*WordCt[-1],infostring)

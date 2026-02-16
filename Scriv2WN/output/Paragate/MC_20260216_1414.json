@@ -41353,15 +41353,8 @@
                   false
                ],
                [
-                  "BodyCody",
-                  "&quot;Whether we burn bright or burn out,&quot; I say, &quot;let&apos;s not close each other out this time.&quot;",
-                  true,
-                  false,
-                  false
-               ],
-               [
                   "BodyKatiya",
-                  "&quot;Let&apos;s burn together,&quot; Katiya says.",
+                  "&quot;Whether we burn bright or burn out, we&apos;ll burn together,&quot; I say. &quot;Let&apos;s not close each other out this time.&quot;",
                   true,
                   false,
                   false
@@ -41377,105 +41370,7 @@
             [
                [
                   "BodyKatiya",
-                  "Cody&apos;s suit hangs from the top of the door like a tall, headless soldier, standing watch for all the forces of our worlds that are after us. My breath heaves and trembles as the static fills my fingers with anticipation, tightening my chest as I try to stay afloat in this moment.",
-                  true,
-                  false,
-                  false
-               ],
-               [
-                  "BodyKatiya",
-                  "&quot;Maybe this is our last chance,&quot; Cody whispers in my ear, and it sends a different kind of static through my circuits: like gentle flakes of frost to quench the scalding heat. His flesh is ice when he presses his bare chest against my back, and though I can feel his own panic told in the tremor of his arms as he tightens me in his grasp, his heart beats slower than mine, and in this moment, I feel safer than I ever have before.",
-                  true,
-                  false,
-                  false
-               ],
-               [
-                  "BodyKatiya",
-                  "I spent my whole life building resilience with will and muscle as my coat of armor. My entire body still flexes with dread as if to prepare for a wounding strike: trained to be unstoppable, but as his fingers trace the musculature of my core, grabbing the softest parts of my body that strength can&apos;t protect, I experience a feeling of love that calms my hesitations.",
-                  true,
-                  false,
-                  false
-               ],
-               [
-                  "BodyKatiya",
-                  "I remove my shirt to give more space for us to share our warmth, wearing nothing more than the pair of boxers he bought for me that I insisted on. My resilience gives as I lean for the bed, pulling him now as a thin, stupid bedsheet can no longer separate us. We lie together as my legs tension around his, fully vulnerable as he draws his fingers behind my ear.",
-                  true,
-                  false,
-                  false
-               ],
-               [
-                  "BodyKatiya",
-                  "We watch each other closely: closer than we ever have before, separated by one final thread of hesitation &mdash; because although we&apos;ve kissed before, it wasn&apos;t like this. I notice the detail of the colored bands within his dark, brown eyes, struggling to settle on looking at a single one.",
-                  true,
-                  false,
-                  false
-               ],
-               [
-                  "BodyKatiya",
-                  "&quot;You always cool me down when I&apos;m burning up,&quot; I tell him.",
-                  true,
-                  false,
-                  false
-               ],
-               [
-                  "BodyKatiya",
-                  "He smiles.",
-                  true,
-                  false,
-                  false
-               ],
-               [
-                  "BodyKatiya",
-                  "&quot;And you always warm me up when life freezes me out,&quot; he says.",
-                  true,
-                  false,
-                  false
-               ],
-               [
-                  "BodyKatiya",
-                  "The hesitation still splits us though we hover close. He looks at my lips. I displace that sense of intention through the tension of my thighs, coaxing Cody to draw himself closer, but he parries with words.",
-                  true,
-                  false,
-                  false
-               ],
-               [
-                  "BodyKatiya",
-                  "&quot;The thought of the future we can share is the only thing that keeps me strong,&quot; he says, and I can feel his warm breath. He strokes the side of my head with his calloused fingers from days of work, and all I want is for him to do some work on me.",
-                  true,
-                  false,
-                  false
-               ],
-               [
-                  "BodyKatiya",
-                  "He still hangs there, searching for another sentence to forestall us, though I can feel his heart pulsing in his legs, but there&apos;s no room for fear when you&apos;re solaced by the person you love the most.",
-                  true,
-                  false,
-                  false
-               ],
-               [
-                  "BodyKatiya",
-                  "I thought my first great act of courage would come tomorrow, but I do it now, sharing the first exchange of passion on our last night of peace.",
-                  true,
-                  false,
-                  false
-               ],
-               [
-                  "BodyKatiya",
-                  "&quot;I love you, Cody,&quot; I tell him.",
-                  true,
-                  false,
-                  false
-               ],
-               [
-                  "BodyKatiya",
-                  "&quot;And I love you too, Katiya,&quot; he says.",
-                  true,
-                  false,
-                  false
-               ],
-               [
-                  "BodyKatiya",
-                  "The two of us met in a standoff: armed and separated in hesitation between doorways, waiting for the right tell to strike. But now, we both advance at the same time, our lips finally meeting somewhere in the middle. ",
+                  "We enter",
                   true,
                   false,
                   false
@@ -41547,13 +41442,13 @@
          "WCs": [
             1005,
             720,
-            865,
-            561
+            863,
+            2
          ],
          "Story": "Paragate",
          "History": {
             "Created": "2026-02-16T14:04:56Z",
-            "Modified": "2026-02-16T15:58:33Z"
+            "Modified": "2026-02-16T14:05:53Z"
          },
          "Act": 4,
          "ActName": "Act Four: Winter",
@@ -41570,13 +41465,6 @@
          "Scenes": 2,
          "Body": [
             [
-               [
-                  "Body",
-                  "My keys slide out of the ignition, and after a long, sleepless night, I realize I&apos;m sitting in Navidson-Monroe&apos;s dirt lot, seventeen minutes early to clocking in.",
-                  true,
-                  false,
-                  false
-               ],
                [
                   "EndOfScene",
                   " ",
@@ -41603,7 +41491,7 @@
             "4.47.138",
             "4.47.139"
          ],
-         "Written": true,
+         "Written": false,
          "Settings": [
             {
                "Date": "",
@@ -41627,7 +41515,7 @@
             }
          ],
          "WCs": [
-            27,
+            0,
             0
          ],
          "Story": "Paragate",
@@ -42193,8 +42081,8 @@
       "ActCount": 5,
       "ChapterCount": 53,
       "SceneCount": 156,
-      "WrittenCount": 138,
-      "UnwrittenCount": 18,
-      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 204,649.\n > There are 5 acts, 53 chapters, and 156 scenes.\n > This manuscript averages:\n   - 1311 words per scene.\n   - 3861 words per chapter.\n   - 2.94 scenes per chapter.\n > Out of 156 planned scenes, 138 are written.\n > So the Zero Draft is approximately 88.4% complete.\n"
+      "WrittenCount": 136,
+      "UnwrittenCount": 20,
+      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 203,892.\n > There are 5 acts, 53 chapters, and 156 scenes.\n > This manuscript averages:\n   - 1307 words per scene.\n   - 3847 words per chapter.\n   - 2.94 scenes per chapter.\n > Out of 156 planned scenes, 136 are written.\n > So the Zero Draft is approximately 87.1% complete.\n"
    }
 }
