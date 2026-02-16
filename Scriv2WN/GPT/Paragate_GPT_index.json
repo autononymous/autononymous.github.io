@@ -64,7 +64,8 @@
       "A04C42": 41,
       "A04C43": 42,
       "A04C44": 43,
-      "A04C45": 44
+      "A04C45": 44,
+      "A04C46": 45
     },
     "act_ch_to_index": {
       "1:1": 0,
@@ -111,7 +112,8 @@
       "4:42": 41,
       "4:43": 42,
       "4:44": 43,
-      "4:45": 44
+      "4:45": 44,
+      "4:46": 45
     },
     "chapter_to_indices": {
       "1": [
@@ -248,6 +250,9 @@
       ],
       "45": [
         44
+      ],
+      "46": [
+        45
       ]
     },
     "entries": [
@@ -765,7 +770,7 @@
         "chapter": 44,
         "name": "In Loving Memory",
         "index": 43,
-        "scene_count": 4,
+        "scene_count": 3,
         "perspectives_order": [
           "Cody",
           "Katiya",
@@ -780,8 +785,19 @@
         "index": 44,
         "scene_count": 3,
         "perspectives_order": [
-          "Katiya",
           "Cody",
+          "Katiya",
+          "Cody"
+        ]
+      },
+      {
+        "id": "A04C46",
+        "act": 4,
+        "chapter": 46,
+        "name": "Close Quarters",
+        "index": 45,
+        "scene_count": 4,
+        "perspectives_order": [
           "Katiya"
         ]
       }
@@ -11112,7 +11128,112 @@
             "Katiya lightly grabs my wrist, covering the messages. \"You can handle that later. Build the energy with me now,\" she says. \"We can pick each other up later.\"",
             "\"Sure,\" I say. I take a breath as I trace my fingers behind her ear, feeling my watch vibrate again. \"Let's return here tonight: I want to have something to look forward to.\""
           ]
-        },
+        }
+      ],
+      "SceneLocation": [
+        [
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Evergreen Estates",
+            "Location": "Cody's House",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
+            "Area": "Gaffesend",
+            "Location": "Katiya's House",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Evergreen Estates",
+            "Location": "Cody's House",
+            "Place": "Unspecified"
+          }
+        ],
+        [
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Evergreen Estates",
+            "Location": "Cody's House",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
+            "Area": "Gaffesend",
+            "Location": "Katiya's House",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Evergreen Estates",
+            "Location": "Cody's House",
+            "Place": "Unspecified"
+          }
+        ],
+        [
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Evergreen Estates",
+            "Location": "Cody's House",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
+            "Area": "Gaffesend",
+            "Location": "Katiya's House",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Evergreen Estates",
+            "Location": "Cody's House",
+            "Place": "Unspecified"
+          }
+        ]
+      ],
+      "Chapter": 44,
+      "Act": 4,
+      "Chapter Name": "In Loving Memory"
+    },
+    {
+      "Scenes": [
         {
           "Perspective": "Cody",
           "Text": [
@@ -11157,184 +11278,7 @@
             "\"—I got it,\" I say. \"I'm working on it!\"",
             "\"I'm sure you are,\" my mother says. \"But you can't live like this.\""
           ]
-        }
-      ],
-      "SceneLocation": [
-        [
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Colorado",
-            "Area": "Evergreen Estates",
-            "Location": "Cody's House",
-            "Place": "Unspecified"
-          },
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Valenseia",
-            "Area": "Gaffesend",
-            "Location": "Katiya's House",
-            "Place": "Unspecified"
-          },
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Unspecified",
-            "Area": "Unspecified",
-            "Location": "Unspecified",
-            "Place": "Unspecified"
-          },
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Colorado",
-            "Area": "Hearthland Ridge",
-            "Location": "Dunsmore Family Home",
-            "Place": "Unspecified"
-          }
-        ],
-        [
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Colorado",
-            "Area": "Evergreen Estates",
-            "Location": "Cody's House",
-            "Place": "Unspecified"
-          },
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Valenseia",
-            "Area": "Gaffesend",
-            "Location": "Katiya's House",
-            "Place": "Unspecified"
-          },
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Unspecified",
-            "Area": "Unspecified",
-            "Location": "Unspecified",
-            "Place": "Unspecified"
-          },
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Colorado",
-            "Area": "Hearthland Ridge",
-            "Location": "Dunsmore Family Home",
-            "Place": "Unspecified"
-          }
-        ],
-        [
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Colorado",
-            "Area": "Evergreen Estates",
-            "Location": "Cody's House",
-            "Place": "Unspecified"
-          },
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Valenseia",
-            "Area": "Gaffesend",
-            "Location": "Katiya's House",
-            "Place": "Unspecified"
-          },
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Unspecified",
-            "Area": "Unspecified",
-            "Location": "Unspecified",
-            "Place": "Unspecified"
-          },
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Colorado",
-            "Area": "Hearthland Ridge",
-            "Location": "Dunsmore Family Home",
-            "Place": "Unspecified"
-          }
-        ],
-        [
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Colorado",
-            "Area": "Evergreen Estates",
-            "Location": "Cody's House",
-            "Place": "Unspecified"
-          },
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Valenseia",
-            "Area": "Gaffesend",
-            "Location": "Katiya's House",
-            "Place": "Unspecified"
-          },
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Unspecified",
-            "Area": "Unspecified",
-            "Location": "Unspecified",
-            "Place": "Unspecified"
-          },
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Colorado",
-            "Area": "Hearthland Ridge",
-            "Location": "Dunsmore Family Home",
-            "Place": "Unspecified"
-          }
-        ]
-      ],
-      "Chapter": 44,
-      "Act": 4,
-      "Chapter Name": "In Loving Memory"
-    },
-    {
-      "Scenes": [
+        },
         {
           "Perspective": "Katiya",
           "Text": [
@@ -11394,11 +11338,227 @@
             "J    A    X  ",
             "V E R  2.0"
           ]
+        }
+      ],
+      "SceneLocation": [
+        [
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Hearthland Ridge",
+            "Location": "Dunsmore Family Home",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
+            "Area": "Gaffesend",
+            "Location": "Hilde Cottage",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Hearthland Ridge",
+            "Location": "Dunsmore Family Home",
+            "Place": "Unspecified"
+          }
+        ],
+        [
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Hearthland Ridge",
+            "Location": "Dunsmore Family Home",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
+            "Area": "Gaffesend",
+            "Location": "Hilde Cottage",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Hearthland Ridge",
+            "Location": "Dunsmore Family Home",
+            "Place": "Unspecified"
+          }
+        ],
+        [
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Hearthland Ridge",
+            "Location": "Dunsmore Family Home",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
+            "Area": "Gaffesend",
+            "Location": "Hilde Cottage",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Hearthland Ridge",
+            "Location": "Dunsmore Family Home",
+            "Place": "Unspecified"
+          }
+        ]
+      ],
+      "Chapter": 45,
+      "Act": 4,
+      "Chapter Name": "In Future Grief"
+    },
+    {
+      "Scenes": [
+        {
+          "Perspective": "Katiya",
+          "Text": [
+            "The only option we have is to walk.",
+            "The tribunal isn't happening for at least another week, and yet I've found that the Royal Guard are slowly cutting off my access to everything — including transportation, so as soon as the dawn of the next day broke over the Purgatory Mountains, Cody ambled through my door with the large silver case, along with another nondescript parcel he says would \"get him arrested if he tested it in his world.\"",
+            "The cartridges are arranged in a plastic case, bright orange with the words KIRKLAND printed on the shell: I'd think they were shotgun shells if I hadn't seen a smaller version of them fall out of Cody's television remote when he dropped it. He wheels through a cart to hold all the items, saying Titus can \"keep it after since there's not enough snow for sledding.\"",
+            "Titus is good at dragging things: though Cody shoulders his backpack, Titus insists on taking the cart with little pushback as he describes his journeys as a Snowdrifter, collecting artifacts beyond the walls of Blackwater. ",
+            "He still refuses to talk past the incident that brought him here, and so does Sylvia.",
+            "But it frees up Cody and I to share a moment of peace for the first time since our falls from grace. His hand feels far more calloused than the last time I held it, and as I find that my conditioning gives me more space to talk than him, I recount the events of the day before.",
+            "\"You told them?\" He manages.",
+            "\"Yeah. Just like you did,\" I say. \"Scared the Res out of them as much as I expected: especially my brother.\"",
+            "\"Your brother?\"",
+            "\"He left before I did: said he had to handle something. But it was never about getting their approval,\" I say.",
+            "Cody huffs. He hocks and spits into the grass of the narrow trail as the land of the southern hills grows precipitous. \"Me . . . neither,\" he says.",
+            "I tighten my fingers between his. \"Don't make me carry you again,\" I say, looking up at him.",
+            "\"You'll never do that again,\" he says, \"when I'm awake, at least.\"",
+            "The ground levels out enough for Cody to keep the pace. Titus practically carries the whole cart in places. Sylvia shoulders the mysterious bag of metal parts, and the more it clatters, the more I wonder what's inside.",
+            "\"What did you put in there?\" I ask.",
+            "\"I made it last week,\" he says.",
+            "\"Made?\"",
+            "\"Welded with the help of Miguel's cousins. I made a couple of them. Had some scrap gun-level steel lying around that can handle explosions, but we'll have to see how it does.\"",
+            "His answers raise enough questions to draw the attention of Titus and Sylvia — but hearing how exhausted he is, we decide to wait for the spectacle.",
+            "It was a clearing I saw when Jullian and I took the carriage down to the hot spring:wider and deeper than the clearing outside Hillfar, and far enough from  the city that the explosions should blend in with the ambience of war.",
+            "Cody's excitement grows when I tell him we're almost there: he asks Sylvia to un-shoulder the bag, and this time, when he has the bag this close to me, I can feel the presence of something that never came from his world.",
+            "\"Turn here,\" I say, as he fumbles though the bag, withdrawing a familiar pitch I gave to him almost half a year ago. It's the same bag that got him in trouble: I thought he'd never want to see it again, but the determined look in his eyes reads otherwise when he hands it to me.",
+            "We walk across folds of brown grasses that crunch beneath our feet louder than the layer of frost. I feel the sphere that Aliaki gave me hum mysteriously in my pocket, making me feel a little safer knowing they're on the other side of it.",
+            "But Cody's already configuring as he walks between the trees, asking Sylvia to hold \"this and that\" as he screws something into something else, projecting that same innocent excitement that made me fall for this man of another world.",
+            "I finally get a glimpse of it when we stop at the throat of the clearing. It looks even shoddier than the technology of my world, from how improvised it is. Titus is captivated by Cody's creation, taking another one in his hands as he feels for the action. Cody slides open a compartment on the side of the device's long tube, validating that the cartridges fit inside the rifle, and gestures for me to get closer.",
+            "I open the pouch, finding the dead Essence split into smaller bags — small enough for my mind to wonder if it's something else, but the bags are so thin.",
+            "\"What's this thing? Looks like a millipede,\" Titus says, pointing to a metal insect glued to the side of the stock with small, steely legs: some wired to the barrel.",
+            "\"It's a brain,\" Cody says. \"I wrote instructions that tells it what to do when I give it a signal,\" he says, withdrawing a laptop from his backpack.",
+            "Titus is mystified. They'd surely be best friends if reality didn't separate them, and when Cody flicks a small switch, three colored lights illuminate on the top of the barrel.",
+            "He grunts with satisfaction, setting the laptop down as he races to a fallen stump in the meadow with his invention, and an old drill labeled ALAN DUNSMORE with a very long and large drill bit. After the foreign whine of power tools fills the meadow for a few minutes, he jams the barrel through the log, using it as some kind of clamp to hold it in place.",
+            "He gestures for us to come over, and says something terrifying. \"The last time this almost killed me,\" he says: pressing a button on the metal bug that makes a screw stab the hollow space inside the chamber before retreating."
+          ]
         },
         {
           "Perspective": "Katiya",
           "Text": [
-            "asdf"
+            "\"So I get that it's some kind of gun, but . . . is this a toy?\"",
+            "\"I'm not sure yet,\" he says: gesturing for me to give him a thin-walled dime-bag of Essence from the pouch, and asking Sylvia for one of the power cells. \"So the screw punctures the bag. The Essence makes contact with the double-A battery,\" he says, loading it fearlessly as we all move to take ten large steps back.",
+            "\"Are you insane?\" Titus shouts, nearly tripping as I reach to grab Cody's collar. He closes the latch as I start to drag him.",
+            "\"You should have said something,\" I say.",
+            "Sylvia asks, \"does he even understand how much power is in that much Essence?\"",
+            "\"You're going to burn down the forest,\" Titus says: now the three of us are the ones out of breath from yelling.",
+            "Cody withdraws his phone. \"I can launch it on here, too,\" he says, swiping for an application. \"Ready?\"",
+            "\"Cody, you...\" I start. ",
+            "He presses a button on the screen. In the silence, I hear a small whine from the device twenty steps away, and yet nothing happens.",
+            "\"Fuck,\" he exclaims.",
+            "I stop dragging him when we make it to the silver case. \"A thumbnail,\" I say. \"A thumbnail worth of Essence could blow up an entire room if not handled right — you think your world's metal could handle it? You would be evaporated!\"",
+            "\"I'm out of range,\" he says.",
+            "\"Cody, don't!\" I cry, chasing after him as he runs in an even circle around the explosive stump, still punching the glowing button on his phone screen. \"Get away from there!\"",
+            "He cautiously begins to approach, muttering something about blue teeth, but he won't even have dental records left if he gets any closer ",
+            "\"Let's just test the drone and get the footage,\" I plead. My fear for him outpaces my own sense of panic, and soon I realize we're thirty paces away.",
+            "He grumbles before turning to face me. \"I guess you're right. JAX is pretty much done: just needs PID cont—\"",
+            "The stump goes airborne: uprooted with a hundred years' grasp on the soil, taking a hefty chunk of dirt and grass with it. I can tell Cody feels its shadow when I realize the two tons of ground are headed right for me, and without hesitation, Cody dives to intercept me, pushing the two of us out of the way as the massive clod of dirt crumbles across the grass, leaving the stump turned upright as Cody's device catches up on every press.",
+            "We lie against the frosted ground as mechanical screams split the air: launching beams of scalding crimson into the sky that whine like dying foxes. The volley subsides after six more rounds, and though I can feel the powdered Essence in the air, the only sound left is the whine of Cody's machine masochistically begging for more.",
+            "We look at the remains of Cody's invention, expecting to find a chunk of glowing steel — but despite the torment, the device is still fully intact: the three lights glowing with anticipation as they beg for another cell.",
+            "My heart races. My fists are clenched, and I feel like I'm on the verge of another panic attack that can only be cured by punching Cody square in the chest.",
+            "But he's still on top of me: face flushed with an excitement he tries to suppress with even stronger feelings of concern.",
+            "\"Are you okay?\" He asks. The sphere vibrates stronger inside my pocket, as a familiar voice speaks through dimensions, asking the same question.",
+            "\"Yeah, I'm alright,\" I say: gasping for breaths as Titus and Sylvia race over.",
+            "Cody waits for a while until he's sure I'm not going to pass out. The two others gesture to the mountainside, and when Cody turns his head to look, his excitement devolves into either amazement or horror.",
+            "\"I think I used too much Essence,\" he says, laughing with fear because it's the only response he has for the destruction he's wrought.",
+            "A full cone of the hillside is missing, welled with glowing puddles of white-hot plasma dissolving the ground hotter than magma.",
+            "He helps me to my feet, hugging me until we both stop shaking, and then says, \"next time, let's use a pinch.\""
+          ]
+        },
+        {
+          "Perspective": "Katiya",
+          "Text": [
+            "My watch reads half past seven when we reach Katiya's street. The ache I feel at the end of every ten-hour shift of standing returns to my muscles, and as every uneven cobblestone threatens to trip me, I brace myself on the cart, with just enough to make it back to the comforts of modern life.",
+            "The hours I spent testing the drone flew by with little incident. Titus was engrossed in my creation, and though he understands nothing of electronics, he has the hands and mind of a technician. Sylvia and Katiya patrolled the edge of the field, sharing something personal that kept them talking, and at the end, I tested the rifle one last time, discovering that a tenth-sized pinch of Essence is enough to keep it stable — stable enough to fire about four incendiary plumes of Essenced plasma before the battery is reduced to a hollow shell.",
+            "But just because I had a successful day of testing doesn't mean fate is on my side. And it isn't on Katiya's, either. A hundred yards away, five seasoned Royal Guards stand outside Katiya's door, and one of them is her brother.",
+            "I think she'll call to him, but she remains silent, an I sense a fear that overtakes her. She urges us to sneak down the market street, halting at a narrow alley to hear their voices still echo from her porch.",
+            "\"I just hope she knows I'm doing this for her,\" Erik says, \"and I can accept however much she'll hate me, because you know our past, right?\"",
+            "\"You've told us. You're both survivors,\" another says. \"You're doing the right thing, Erik.\"",
+            "Her brother knocks again. \"She's must be ignoring me. But after what I told them, I wanted to be the one to bring her in. Under protective custody, you know.\"",
+            "\"If it's not you, the others won't be violent, Erik. She's not in trouble. You're just moving things faster.\"",
+            "He weathers another pause.",
+            "\"Come on,\" another says. \"Let's go.\"",
+            "They leave the porch, and another three minutes passes before the four of us feel safe enough to speak.",
+            "\"What was that about?\" Sylvia asks, noting a certain peril that flushes Katiya's face. Katiya sneaks through the thin alley before racing for her door, retrieving a letter pinched in the mail slot, furiously tearing off the official wax crest.",
+            "\"Gods damn it,\" she mutters.",
+            "I rush to catch up with her as she takes a final glance around before unlocking the door. My phone vibrates in my pocket when I'm in range of my router, but I don't check it.",
+            "\"What is it?\" I ask.",
+            "\"The tribunal,\" Katiya says. \"They moved it up. He thought it would stop me, but now I'm forced to make a choice.\"",
+            "\"And what if you don't go?\" Titus asks.",
+            "\"I become a deserter,\" Katiya says, crumpling the letter in her fist as her hands tremble. \"And they shoot traitors in the back before they can cross the border.\"",
+            "My phone pings the smartwatch on my wrist. A message reads from Reed and Kei: one they sent some time after work.",
+            "Kei Sakurashima // 05:03They laid the engineers off today. Technicians are supposed to go tomorrow afternoon. ",
+            "Reed Broderick // 05:03My father says HR is coming at 3pm. Your presentation is at 3:30.",
+            "The panic strikes me too: feels like I took an Essenced round to the chest from the pulse of my heart. ",
+            "\"What is it, Cody?\" one of them asks.",
+            "My fingers fumble across the screen of my smartphone.",
+            "Cody Dunsmore // 07:48That's thirty whole minutes!",
+            "Reed Broderick // 07:49Dad says to make it to his office in the Aero tower. Don't leave too early. You'll have to idle. Your card might not work, but we'll get you in.",
+            "Kei Sakurashima // 07:52I can get your case up there. But you have to get yourself up there.",
+            "Reed Broderick // 07:49And we can badge you through anywhere.",
+            "\"Cody,\" Katiya says, but I don't hear her. She grabs my wrist.",
+            "Cody Dunsmore // 07:52And how do I know HR won't start early?",
+            "Kei Sakurashima // 07:52 You don't.",
+            "Kei Sakurashima // 07:52 Just be ready. They're coming for you.",
+            "Katiya forces my attention when she takes my phone before I can respond, and for a second, neither of us speaks. In two different worlds, the machine has begun its countdown.",
+            "\"You know what this means,\" Katiya says.",
+            "\"It means that this is our last night,\" I say. \"The last night where nobody can take anything from us.\"",
+            "I squeeze her until the fear leaves enough space for me to march inside, carrying the case across the threshold, leaving the spare drone battery on my kitchen counter.",
+            "We drown in the hapless space between fear and its response like lightning before thunder. All I can think is how to heal together as I lead her up the stairs, whispering the words of a vow I've meant to tell her for a while now.",
+            "\"Whether we burn bright or burn out, we'll burn together,\" I say. \"Let's not close each other out this time.\""
+          ]
+        },
+        {
+          "Perspective": "Katiya",
+          "Text": [
+            "We enter"
           ]
         }
       ],
@@ -11411,17 +11571,7 @@
             "DoSettingTag": "Yes",
             "Region": "Valenseia",
             "Area": "Gaffesend",
-            "Location": "Hilde Cottage",
-            "Place": "Unspecified"
-          },
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Colorado",
-            "Area": "Hearthland Ridge",
-            "Location": "Dunsmore Family Home",
+            "Location": "Market Street",
             "Place": "Unspecified"
           },
           {
@@ -11430,8 +11580,28 @@
             "ISO": "",
             "DoSettingTag": "Yes",
             "Region": "Valenseia",
-            "Area": "Gaffesend",
-            "Location": "Hilde Cottage",
+            "Area": "Holmfirth",
+            "Location": "Outskirts",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
+            "Area": "Holmfirth",
+            "Location": "Unspecified",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Evergreen Estates",
+            "Location": "Cody's House",
             "Place": "Unspecified"
           }
         ],
@@ -11443,17 +11613,7 @@
             "DoSettingTag": "Yes",
             "Region": "Valenseia",
             "Area": "Gaffesend",
-            "Location": "Hilde Cottage",
-            "Place": "Unspecified"
-          },
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Colorado",
-            "Area": "Hearthland Ridge",
-            "Location": "Dunsmore Family Home",
+            "Location": "Market Street",
             "Place": "Unspecified"
           },
           {
@@ -11462,8 +11622,28 @@
             "ISO": "",
             "DoSettingTag": "Yes",
             "Region": "Valenseia",
-            "Area": "Gaffesend",
-            "Location": "Hilde Cottage",
+            "Area": "Holmfirth",
+            "Location": "Outskirts",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
+            "Area": "Holmfirth",
+            "Location": "Unspecified",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Evergreen Estates",
+            "Location": "Cody's House",
             "Place": "Unspecified"
           }
         ],
@@ -11475,17 +11655,7 @@
             "DoSettingTag": "Yes",
             "Region": "Valenseia",
             "Area": "Gaffesend",
-            "Location": "Hilde Cottage",
-            "Place": "Unspecified"
-          },
-          {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Colorado",
-            "Area": "Hearthland Ridge",
-            "Location": "Dunsmore Family Home",
+            "Location": "Market Street",
             "Place": "Unspecified"
           },
           {
@@ -11494,15 +11664,77 @@
             "ISO": "",
             "DoSettingTag": "Yes",
             "Region": "Valenseia",
+            "Area": "Holmfirth",
+            "Location": "Outskirts",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
+            "Area": "Holmfirth",
+            "Location": "Unspecified",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Evergreen Estates",
+            "Location": "Cody's House",
+            "Place": "Unspecified"
+          }
+        ],
+        [
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
             "Area": "Gaffesend",
-            "Location": "Hilde Cottage",
+            "Location": "Market Street",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
+            "Area": "Holmfirth",
+            "Location": "Outskirts",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Valenseia",
+            "Area": "Holmfirth",
+            "Location": "Unspecified",
+            "Place": "Unspecified"
+          },
+          {
+            "Date": "",
+            "Time": "",
+            "ISO": "",
+            "DoSettingTag": "Yes",
+            "Region": "Colorado",
+            "Area": "Evergreen Estates",
+            "Location": "Cody's House",
             "Place": "Unspecified"
           }
         ]
       ],
-      "Chapter": 45,
+      "Chapter": 46,
       "Act": 4,
-      "Chapter Name": "In Future Grief"
+      "Chapter Name": "Close Quarters"
     }
   ]
 }

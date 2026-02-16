@@ -3,9 +3,9 @@
       "ActCount": 5,
       "ChapterCount": 53,
       "SceneCount": 156,
-      "WrittenCount": 133,
-      "UnwrittenCount": 23,
-      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 200,965.\n > There are 5 acts, 53 chapters, and 156 scenes.\n > This manuscript averages:\n   - 1288 words per scene.\n   - 3791 words per chapter.\n   - 2.94 scenes per chapter.\n > Out of 156 planned scenes, 133 are written.\n > So the Zero Draft is approximately 85.2% complete.\n"
+      "WrittenCount": 136,
+      "UnwrittenCount": 20,
+      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 203,892.\n > There are 5 acts, 53 chapters, and 156 scenes.\n > This manuscript averages:\n   - 1307 words per scene.\n   - 3847 words per chapter.\n   - 2.94 scenes per chapter.\n > Out of 156 planned scenes, 136 are written.\n > So the Zero Draft is approximately 87.1% complete.\n"
    },
    "ChapterList": [
       {
@@ -2102,7 +2102,6 @@
          "Character": [
             "Cody",
             "Katiya",
-            "Cody",
             "Cody"
          ],
          "Summary": "",
@@ -2135,19 +2134,9 @@
                "Time": "",
                "ISO": "",
                "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
-               "Place": "Unspecified"
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "",
-               "DoSettingTag": "Yes",
                "Region": "Colorado",
-               "Area": "Hearthland Ridge",
-               "Location": "Dunsmore Family Home",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
                "Place": "Unspecified"
             }
          ],
@@ -2160,25 +2149,15 @@
          "ChapterName": "In Future Grief",
          "ChapterNumber": "Forty-Five",
          "Character": [
-            "Katiya",
             "Cody",
-            "Katiya"
+            "Katiya",
+            "Cody"
          ],
          "Summary": "",
          "Blurb": "Katiya tells her family the whole truth.",
          "Written": true,
          "Release": "02/04/27",
          "Settings": [
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "",
-               "DoSettingTag": "Yes",
-               "Region": "Valenseia",
-               "Area": "Gaffesend",
-               "Location": "Hilde Cottage",
-               "Place": "Unspecified"
-            },
             {
                "Date": "",
                "Time": "",
@@ -2198,6 +2177,16 @@
                "Area": "Gaffesend",
                "Location": "Hilde Cottage",
                "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dunsmore Family Home",
+               "Place": "Unspecified"
             }
          ],
          "Location": "/sectioned/Paragate/4/45.json"
@@ -2206,16 +2195,17 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 46,
-         "ChapterName": "Legacy Hire",
+         "ChapterName": "Close Quarters",
          "ChapterNumber": "Forty-Six",
          "Character": [
-            "Default",
-            "Default",
-            "Default"
+            "Katiya",
+            "Katiya",
+            "Katiya",
+            "Katiya"
          ],
          "Summary": "",
          "Blurb": "Suit pressed, nerves frayed: Cody walks into the room that could end him&mdash;or open a door.",
-         "Written": false,
+         "Written": true,
          "Release": "02/11/27",
          "Settings": [
             {
@@ -2223,8 +2213,28 @@
                "Time": "",
                "ISO": "",
                "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
                "Location": "Unspecified",
                "Place": "Unspecified"
             },
@@ -2233,19 +2243,9 @@
                "Time": "",
                "ISO": "",
                "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
-               "Place": "Unspecified"
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "",
-               "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
                "Place": "Unspecified"
             }
          ],
@@ -2255,7 +2255,7 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 47,
-         "ChapterName": "Liftoff",
+         "ChapterName": "Ground Control",
          "ChapterNumber": "Forty-Seven",
          "Character": [
             "Default",
