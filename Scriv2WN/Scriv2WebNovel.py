@@ -524,7 +524,8 @@ h3.PDF_Snum {
 </head>
 <body>
 '''
-    
+    storyname = manuscriptDict[1]["Story"]
+    MakeDirIfNotExists(f'/pdf/{storyname}')
     for entry in manuscriptDict.values():
         if entry['Act'] not in acts:
             acts.append(entry['Act'])
@@ -584,9 +585,9 @@ h3.PDF_Snum {
                         
             if chapter == 1:   
                 demoHTMLbody += HTMLbody + "</body></html>"
-            with open(os.getcwd() + f"/pdf/{chapter}.html", "w") as f:
+            with open(os.getcwd() + f"/pdf/{storyname}/{chapter}.html", "w") as f:
                 f.write(HTMLbody)   
-    with open(os.getcwd() + f"/pdf/_DEMO.html", "w") as f:
+    with open(os.getcwd() + f"/pdf/{storyname}/_DEMO.html", "w") as f:
         f.write(demoHTMLbody)   
 
 def SaveTableOfContents(manuscriptDict,indentLevel=None):
