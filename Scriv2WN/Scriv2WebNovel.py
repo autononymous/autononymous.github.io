@@ -493,6 +493,101 @@ def SaveBasicCopy(storyDict, indentLevel=None):
         js.dump(out, f, ensure_ascii=False, indent=2)
     return
     
+def SaveHTMLforPDF(manuscriptDict):
+    MakeDirIfNotExists('/pdf')
+    
+    acts = []
+    chapters = []
+    actchap = {}
+    
+    demoHTMLbody = '''
+<html>
+<head>
+<style>
+h1.PDF_CTitle {
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+}
+h2.PDF_CSub {
+    font-size: 1.2rem;
+    color: black;
+    white-space: nowrap;
+    text-align: center;
+}
+h3.PDF_Snum {
+    font-size: 1.5rem;
+    color: black;
+}
+</style>
+</head>
+<body>
+'''
+    
+    for entry in manuscriptDict.values():
+        if entry['Act'] not in acts:
+            acts.append(entry['Act'])
+            actchap[entry['Act']] = []
+        if entry['Chapter'] not in chapters and entry['Written'] is True:
+            chapters.append(entry['Chapter'])
+            actchap[entry['Act']].append(entry['Chapter'])
+    for act, chapterlist in actchap.items():
+        for chapter in chapterlist:
+            numname = GetNumberName(chapter)
+            HTMLbody = f'''
+<h1 class="PDF_CTitle"> Chapter {numname} </h1>
+<h2 class="PDF_CSub"> {manuscriptDict[chapter-1]['ChapterName']} </h2>
+'''
+            # Order:    [1] CLASS  
+            #           [2] LINE TEXT 
+            #           [3] isEOL (end of <p>)
+            #           [4] do PB instead of </p> if isEOL
+            #           [5] Raw HTML?
+            thisScene = 0;
+            wasEOL = True;
+            wasItalic = False;
+            for scene in manuscriptDict[chapter-1]['Body']:      
+                thisScene += 1;
+                HTMLbody += f'\n<h3 class="PDF_Snum"> 0{thisScene} </h3>'
+                for lineclass, line, isEOL, doPB, isRawHTML in scene:
+                    if lineclass == "EndOfScene":
+                        pass
+                    else:
+                        # Handle if was end of line first.
+                        if wasEOL:
+                            HTMLbody += f'<p class="{lineclass}">'   
+                            wasEOL = False
+                        # Handle text.
+                        isItalic = (lineclass == 'Internal' or lineclass == 'Emphasis')                                   
+                        # If newly italic
+                        if not wasItalic and isItalic:
+                            wasItalic = True
+                            HTMLbody += '<em>'
+                        # If currently italic
+                        if wasItalic and isItalic:
+                            pass
+                        # If no longer italic
+                        if (wasItalic and not isItalic) or (isItalic and isEOL):
+                            wasItalic = False
+                            HTMLbody += '</em>'
+                        HTMLbody += f'{line}'
+                        # Handle if is end of line last.
+                        if isEOL:
+                            wasEOL = True           
+                            isEOL = False
+                            if doPB:
+                                HTMLbody += '<br>\n'
+                            else:
+                                HTMLbody += '</p>\n'
+                            
+                        
+            if chapter == 1:   
+                demoHTMLbody += HTMLbody + "</body></html>"
+            with open(os.getcwd() + f"/pdf/{chapter}.html", "w") as f:
+                f.write(HTMLbody)   
+    with open(os.getcwd() + f"/pdf/_DEMO.html", "w") as f:
+        f.write(demoHTMLbody)   
 
 def SaveTableOfContents(manuscriptDict,indentLevel=None):
     '''! Generate a Table Of Contents file that will guide other programs
@@ -528,10 +623,11 @@ if __name__ == "__main__":
     debug = DebugLog(1)
     JS = ReadJSON('/source')
     MANUSCRIPT = InterpretJSON(JS,True)
-    SaveMasterCopy(MANUSCRIPT,indentLevel=3)
-    SaveSectionedCopy(MANUSCRIPT['Story'] ,indentLevel=3)
-    SaveTableOfContents(MANUSCRIPT, indentLevel=3)
-    SaveBasicCopy(MANUSCRIPT['Story'], indentLevel=3)
+    #SaveMasterCopy(MANUSCRIPT,indentLevel=3)
+    #SaveSectionedCopy(MANUSCRIPT['Story'] ,indentLevel=3)
+    #SaveTableOfContents(MANUSCRIPT, indentLevel=3)
+    #SaveBasicCopy(MANUSCRIPT['Story'], indentLevel=3)
+    SaveHTMLforPDF(MANUSCRIPT['Story'])
     #ProgressReport(MANUSCRIPT)
     
     
