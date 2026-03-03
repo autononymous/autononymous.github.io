@@ -15,6 +15,10 @@ from paragate_gpt_parse import GPT_Parse
 import numpy as np
 from matplotlib import pyplot as plt
 
+from pathlib import Path
+
+import build_pdfs
+
 OnesNames = ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen","Twenty"]
 TensNames = ["err","err","Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"]
 
@@ -537,8 +541,15 @@ h3.PDF_Snum {
         for chapter in chapterlist:
             numname = GetNumberName(chapter)
             HTMLbody = f'''
+<div class="StoryHeader">
+<img class="Namesake" src="https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/Scriv2WN/design/Paragate_logo_inv.png" alt="Story Header">
+<img class="AuthorName" src="https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/Scriv2WN/design/sgname_inv.png" alt="by SavantGuarde">
+</div>
+
+<div class="Header{storyname}">
 <h1 class="PDF_CTitle"> Chapter {numname} </h1>
 <h2 class="PDF_CSub"> {manuscriptDict[chapter-1]['ChapterName']} </h2>
+</div>
 '''
             # Order:    [1] CLASS  
             #           [2] LINE TEXT 
@@ -550,10 +561,10 @@ h3.PDF_Snum {
             wasItalic = False;
             for scene in manuscriptDict[chapter-1]['Body']:      
                 thisScene += 1;
-                HTMLbody += f'\n<h3 class="PDF_Snum"> 0{thisScene} </h3>'
+                HTMLbody += f'''\n<div class="Scene{manuscriptDict[chapter-1]['POV'][thisScene-1]}">\n<h3 class="PDF_Snum"> 0{thisScene} </h3>'''
                 for lineclass, line, isEOL, doPB, isRawHTML in scene:
                     if lineclass == "EndOfScene":
-                        pass
+                        HTMLbody += "</div>"
                     else:
                         # Handle if was end of line first.
                         if wasEOL:
@@ -585,10 +596,48 @@ h3.PDF_Snum {
                         
             if chapter == 1:   
                 demoHTMLbody += HTMLbody + "</body></html>"
+                print(HTMLbody)
             with open(os.getcwd() + f"/pdf/{storyname}/{chapter}.html", "w") as f:
                 f.write(HTMLbody)   
     with open(os.getcwd() + f"/pdf/{storyname}/_DEMO.html", "w") as f:
         f.write(demoHTMLbody)   
+        
+def SavePDF():
+    """
+    Runs after SaveHTMLforPDF(...). Converts ./pdf/<storyname>/*.html -> ./pdf/<storyname>/_PDF/*.pdf
+    """
+    pdf_root = Path(os.getcwd()) / "pdf"
+    if not pdf_root.exists():
+        raise FileNotFoundError(f"PDF root folder not found: {pdf_root}")
+
+    # Pick the most recently modified story folder under ./pdf/
+    story_dirs = [p for p in pdf_root.iterdir() if p.is_dir()]
+    if not story_dirs:
+        raise FileNotFoundError(f"No story folders found under: {pdf_root}")
+
+    story_dir = max(story_dirs, key=lambda p: p.stat().st_mtime)
+    out_dir = story_dir / "_PDF"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    # Optional: if you have a real print stylesheet, drop it here and it will be used.
+    # Otherwise the generator uses a sane default.
+    css_candidate_1 = story_dir / "print.css"
+    css_candidate_2 = Path(os.getcwd()) / "print.css"
+    css_path = None
+    if css_candidate_1.exists():
+        css_path = css_candidate_1
+    elif css_candidate_2.exists():
+        css_path = css_candidate_2
+
+    written = build_pdfs.build_pdfs_from_html_dir(
+        html_dir=story_dir,
+        out_dir=out_dir,
+        paper="Letter",
+        css_path=css_path,
+        include_page_numbers=True
+    )
+
+    print(f" > Wrote {len(written)} PDFs to {out_dir}")
 
 def SaveTableOfContents(manuscriptDict,indentLevel=None):
     '''! Generate a Table Of Contents file that will guide other programs
@@ -629,6 +678,7 @@ if __name__ == "__main__":
     #SaveTableOfContents(MANUSCRIPT, indentLevel=3)
     #SaveBasicCopy(MANUSCRIPT['Story'], indentLevel=3)
     SaveHTMLforPDF(MANUSCRIPT['Story'])
+    SavePDF()
     #ProgressReport(MANUSCRIPT)
     
     
