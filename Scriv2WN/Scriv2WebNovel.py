@@ -668,6 +668,8 @@ def SaveTableOfContents(manuscriptDict,indentLevel=None):
     with open(os.getcwd() + '/TOC/' + f"TOC_{manuscriptDict['Story'][0]['Story']}.json", "w") as f:
         f.write(js.dumps(TOCdict,ensure_ascii=True,indent=indentLevel));  
 
+
+
 # Standalone execution of this file.
 if __name__ == "__main__":        
     debug = DebugLog(1)

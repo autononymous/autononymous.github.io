@@ -1,0 +1,98 @@
+/* print.css (or a <style> block) */
+@page {
+  size: letter;
+  margin: 0in;
+}
+
+:root {
+    --HeaderSource: url("https://autononymous.github.io/Scriv2WN/design/Paragate_logo_inv.png");
+    --PageWidth: 8.5in;
+    --HalfPage: calc(var(--PageWidth) * 0.5);
+    --PageHeight: 11in;
+    
+    --CodyTitle:        "Oxanium", sans-serif, "Bahnscrift",'Arial';
+    --CodyText:         "Roboto Flex", sans-serif, 'Bahnschrift', 'Arial';
+    --KatiyaTitle:      "Cormorant Unicase", serif;
+    --KatiyaText:       'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman';
+    --TitusText:        'Cormorant Infant', serif, 'Lucida Fax', 'Times New Roman';
+    --TitusSize:        calc(var(--TextSize) + 0.00em );
+
+    --MainTitle: var(--CodyTitle);
+    --MainText: var(--CodyText);
+
+
+}
+
+div.fullbg {
+    background-image:         
+    /* Logarithmic gradient to create a fade effect on the sides */
+        linear-gradient(
+            to right,
+            rgba( 255, 255, 255, 0.0 ) 1%,
+            rgba( 255, 255, 255, 1.0 ) 10%,
+            rgba(250, 250, 250, 1.00) 90%,
+            rgba(255, 255, 255, 0.00) 100%
+        );
+    position: absolute;
+    width: var(--PageWidth);
+    height:100vh;
+    left: var(--HalfPage);
+    transform: translateX(-50%);
+    top:0;
+
+}
+div.pagebounds {
+    width: var(--PageWidth);
+}
+div.contentbg {    
+    background-image: url("https://autononymous.github.io/Scriv2WN/design/bg-cody.jpg");
+    filter: invert(1) brightness(2);
+    mix-blend-mode: screen;
+    left: var(--HalfPage);
+    transform: translateX(-50%);
+    width: var(--PageWidth);
+    height: 100vh;
+    position: absolute;
+    top:0;
+}
+
+div.thisheader {
+    padding-top:100px;
+    padding-bottom:40px;
+    width: var(--PageWidth * 0.7)
+}
+
+img.imheader {
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    width: calc( var(--PageWidth) * 0.6 );
+    height: auto;
+}
+img.imlogo {
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc( var(--PageWidth) * 0.2 );
+    height: auto;
+}
+
+div.thiscontent {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc( var(--PageWidth) * 0.7 );
+}
+
+h1 {
+    font-family: var(--MainTitle);
+    font-size: 2.5em;
+    margin: 0.5em 0;
+    line-height: 1em;
+}
+h2 {
+    font-family: var(--MainTitle);
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    line-height: 1em;
+}
