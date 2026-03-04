@@ -517,6 +517,13 @@ def SaveHTMLforPDF(manuscriptDict):
     for act, chapterlist in actchap.items():
         for chapter in chapterlist:
             numname = GetNumberName(chapter)
+            charname = manuscriptDict[chapter-1]['POV'][0]
+            idstring = "•"
+            scnum = 0
+            for idname in manuscriptDict[chapter-1]['IDs']:
+                scnum += 1;
+                idstring += "&ensp;<a href='#" + str(idname) + "'>" + str(act) + "." + str(chapter) + "." + str(scnum) + "</a>&ensp;•";
+            idstring += " "
             HTMLbody = f'''
 <div class="StoryHeader">
 <img class="Namesake" src="https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/Scriv2WN/design/Paragate_logo_inv.png" alt="Story Header">
@@ -524,8 +531,9 @@ def SaveHTMLforPDF(manuscriptDict):
 </div>
 
 <div class="Header{storyname}">
-<h1 class="PDF_CTitle"> Chapter {numname} </h1>
-<h2 class="PDF_CSub"> {manuscriptDict[chapter-1]['ChapterName']} </h2>
+<h1 class="PDF_CTitle Title{charname}"> Chapter {numname} </h1>
+<p style="font-size:20px;margin:0;line-spacing:0.5em;transform:translateY(-10%);font-weight:800;"> {idstring} </p>
+<h2 class="PDF_CSub Sub{charname}"> {manuscriptDict[chapter-1]['ChapterName']} </h2>
 </div>
 '''
             # Order:    [1] CLASS  
@@ -538,7 +546,11 @@ def SaveHTMLforPDF(manuscriptDict):
             wasItalic = False;
             for scene in manuscriptDict[chapter-1]['Body']:      
                 thisScene += 1;
-                HTMLbody += f'''\n<div class="Scene{manuscriptDict[chapter-1]['POV'][thisScene-1]}">\n<h3 class="PDF_Snum"> 0{thisScene} </h3>'''
+                charname = manuscriptDict[chapter-1]['POV'][thisScene-1]
+                HTMLbody += f'''
+                <div class="Scene{manuscriptDict[chapter-1]['POV'][thisScene-1]}">
+                <h3 class="PDF_Snum" id={manuscriptDict[chapter-1]['IDs'][thisScene-1]}> <span class="PDF_Snum">&hairsp;0&hairsp;&hairsp;{thisScene}&hairsp;</span> </h3>
+                <h4 class="Sname{charname}"><img style="height:60px;filter:invert(1);" src="https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/Scriv2WN/icons/logo-{charname}.png">&ensp;<span style="border-top: 1px solid black;border-bottom: 1px solid black;position:absolute;transform:translateY(72%) translateX(10px);font-size:16px;text-transform: uppercase;letter-spacing: 0.1em;">&ensp;{charname}&ensp;</span></h4>'''
                 for lineclass, line, isEOL, doPB, isRawHTML in scene:
                     if lineclass == "EndOfScene":
                         HTMLbody += "</div>"
@@ -573,13 +585,12 @@ def SaveHTMLforPDF(manuscriptDict):
                         
             if chapter == 1:   
                 demoHTMLbody += HTMLbody + "</body></html>"
-                print(HTMLbody)
             with open(os.getcwd() + f"/pdf/{storyname}/{chapter}.html", "w") as f:
                 f.write(HTMLbody)   
     with open(os.getcwd() + f"/pdf/{storyname}/_DEMO.html", "w") as f:
         f.write(demoHTMLbody)   
         
-def SavePDF():
+def SavePDF(storyname):
     """
     Runs after SaveHTMLforPDF(...). Converts ./pdf/<storyname>/*.html -> ./pdf/<storyname>/_PDF/*.pdf
     """
@@ -611,7 +622,8 @@ def SavePDF():
         out_dir=out_dir,
         paper="Letter",
         css_path=css_path,
-        include_page_numbers=True
+        include_page_numbers=True,
+        header_information=f"{storyname} by Savant-Guarde"
     )
 
     print(f" > Wrote {len(written)} PDFs to {out_dir}")
@@ -657,7 +669,7 @@ if __name__ == "__main__":
     SaveTableOfContents(MANUSCRIPT, indentLevel=3)
     SaveBasicCopy(MANUSCRIPT['Story'], indentLevel=3)
     SaveHTMLforPDF(MANUSCRIPT['Story'])
-    SavePDF()
+    SavePDF(str(MANUSCRIPT['Story'][1]["Story"]).replace("Paragate","Knightfall & Daybreak"))
     #ProgressReport(MANUSCRIPT)
     
     

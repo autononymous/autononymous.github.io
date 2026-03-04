@@ -3,6 +3,7 @@ import asyncio
 import threading
 from pathlib import Path
 from typing import Optional, List
+from datetime import datetime
 
 from playwright.async_api import async_playwright
 
@@ -132,7 +133,7 @@ div.HeaderFirebrand{
   text-align: center;
   margin: 0.35in auto 0.30in auto;
   padding-bottom: 0.20in;
-  border-bottom: 1px solid var(--Rule);
+  -bottom: 1px solid var(--Rule);
 
   /* IMPORTANT: do NOT strand the header at the bottom */
   break-inside: avoid;
@@ -330,6 +331,7 @@ async def build_pdfs_from_html_dir_async(
     paper: str = "Letter",
     css_path: Optional[str | Path] = None,
     include_page_numbers: bool = True,
+    header_information="",
 ) -> List[Path]:
     html_dir = Path(html_dir)
     out_dir = Path(out_dir)
@@ -347,14 +349,6 @@ async def build_pdfs_from_html_dir_async(
         raise FileNotFoundError(f"No numeric chapter HTML files found in: {html_dir}")
 
     base_href = html_dir.resolve().as_uri() + "/"
-
-    header_template = "<div></div>"
-    footer_template = (
-        "<div style='font-size:9px;width:100%;padding:0 10mm;color:#666;"
-        "display:flex;justify-content:flex-end;'>"
-        "Page <span class='pageNumber'></span> / <span class='totalPages'></span>"
-        "</div>"
-    )
 
     written: List[Path] = []
 
@@ -380,11 +374,11 @@ async def build_pdfs_from_html_dir_async(
               margin={"top": "1.15in", "right": "0.85in", "bottom": "1.10in", "left": "0.85in"},
 
               display_header_footer=True,
-              header_template="<div></div>",
-              footer_template="""
-                <div style="width:100%; font-size:9px; padding:0 0.85in; color:#666;
-                            display:flex; justify-content:center;">
-                Page <span class="pageNumber"></span> / <span class="totalPages"></span>
+              header_template=" ",#f'''<div style="width:80%; font-size:9px; padding:0 0.85in; color:#666; display:flex; justify-content:center; border-bottom: 1px solid #666;"> {header_information}<br><br> </div>''',
+              footer_template=f"""
+                <div style="width:80%; font-size:9px; padding:0 0.85in; color:#666; border-top: 1px solid #666;">
+                <center><p>Page&emsp;<span class="pageNumber"></span>&ensp;/&ensp;<span class="totalPages"></span></p></center>
+                <center><p>© {datetime.now().year} AUTONONYMOUS/SAVANT-GUARDE. All rights reserved. This work is protected by copyright. Unauthorized copying, sharing, reposting, or commercial use—whether in whole or in part—is prohibited without the author’s written consent, except for brief quotations for commentary or review.</p></center>
                 </div>
               """,
             )
@@ -451,6 +445,7 @@ def build_pdfs_from_html_dir(
     paper: str = "Letter",
     css_path: Optional[str | Path] = None,
     include_page_numbers: bool = True,
+    header_information = "",
 ) -> List[Path]:
     """
     Sync wrapper around the async implementation.
@@ -463,5 +458,6 @@ def build_pdfs_from_html_dir(
             paper=paper,
             css_path=css_path,
             include_page_numbers=include_page_numbers,
+            header_information=header_information,
         )
     )
