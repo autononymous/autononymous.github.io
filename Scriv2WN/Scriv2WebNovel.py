@@ -504,30 +504,7 @@ def SaveHTMLforPDF(manuscriptDict):
     chapters = []
     actchap = {}
     
-    demoHTMLbody = '''
-<html>
-<head>
-<style>
-h1.PDF_CTitle {
-    font-size: 1.5rem;
-    color: black;
-    text-decoration: underline;
-    text-align: center;
-}
-h2.PDF_CSub {
-    font-size: 1.2rem;
-    color: black;
-    white-space: nowrap;
-    text-align: center;
-}
-h3.PDF_Snum {
-    font-size: 1.5rem;
-    color: black;
-}
-</style>
-</head>
-<body>
-'''
+    demoHTMLbody = '<html><head><style>' + build_pdfs._DEFAULT_PRINT_CSS + '</style></head>'
     storyname = manuscriptDict[1]["Story"]
     MakeDirIfNotExists(f'/pdf/{storyname}')
     for entry in manuscriptDict.values():
@@ -675,10 +652,10 @@ if __name__ == "__main__":
     debug = DebugLog(1)
     JS = ReadJSON('/source')
     MANUSCRIPT = InterpretJSON(JS,True)
-    #SaveMasterCopy(MANUSCRIPT,indentLevel=3)
-    #SaveSectionedCopy(MANUSCRIPT['Story'] ,indentLevel=3)
-    #SaveTableOfContents(MANUSCRIPT, indentLevel=3)
-    #SaveBasicCopy(MANUSCRIPT['Story'], indentLevel=3)
+    SaveMasterCopy(MANUSCRIPT,indentLevel=3)
+    SaveSectionedCopy(MANUSCRIPT['Story'] ,indentLevel=3)
+    SaveTableOfContents(MANUSCRIPT, indentLevel=3)
+    SaveBasicCopy(MANUSCRIPT['Story'], indentLevel=3)
     SaveHTMLforPDF(MANUSCRIPT['Story'])
     SavePDF()
     #ProgressReport(MANUSCRIPT)
