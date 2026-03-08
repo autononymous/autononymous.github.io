@@ -1,0 +1,4431 @@
+{
+   "__meta": {
+      "story": "Paragate",
+      "export_type": "chapter_overview",
+      "generated_utc": "2026-03-08T06:12:05Z",
+      "notes": [
+         "Chapter-level retrieval file for summaries, blurbs, settings, POV order, and chapter-to-scene mapping.",
+         "Use this file when the question is about chapter purpose, structure, or high-level continuity."
+      ],
+      "manuscript_metadata": {
+         "ActCount": 5,
+         "ChapterCount": 53,
+         "SceneCount": 160,
+         "WrittenCount": 160,
+         "UnwrittenCount": 0,
+         "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 211,103.\n > There are 5 acts, 53 chapters, and 160 scenes.\n > This manuscript averages:\n   - 1319 words per scene.\n   - 3983 words per chapter.\n   - 3.01 scenes per chapter.\n > Out of 160 planned scenes, 160 are written.\n > So the Zero Draft is approximately 100.0% complete.\n"
+      }
+   },
+   "__index": {
+      "id_to_index": {
+         "A01C01": 0,
+         "A01C02": 1,
+         "A01C03": 2,
+         "A01C04": 3,
+         "A01C05": 4,
+         "A01C06": 5,
+         "A01C07": 6,
+         "A01C08": 7,
+         "A01C09": 8,
+         "A01C10": 9,
+         "A01C11": 10,
+         "A01C12": 11,
+         "A02C13": 12,
+         "A02C14": 13,
+         "A02C15": 14,
+         "A02C16": 15,
+         "A02C17": 16,
+         "A02C18": 17,
+         "A02C19": 18,
+         "A02C20": 19,
+         "A02C21": 20,
+         "A02C22": 21,
+         "A02C23": 22,
+         "A02C24": 23,
+         "A02C25": 24,
+         "A03C26": 25,
+         "A03C27": 26,
+         "A03C28": 27,
+         "A03C29": 28,
+         "A03C30": 29,
+         "A03C31": 30,
+         "A03C32": 31,
+         "A03C33": 32,
+         "A03C34": 33,
+         "A03C35": 34,
+         "A03C36": 35,
+         "A03C37": 36,
+         "A04C38": 37,
+         "A04C39": 38,
+         "A04C40": 39,
+         "A04C41": 40,
+         "A04C42": 41,
+         "A04C43": 42,
+         "A04C44": 43,
+         "A04C45": 44,
+         "A04C46": 45,
+         "A04C47": 46,
+         "A04C48": 47,
+         "A04C49": 48,
+         "A04C50": 49,
+         "A04C51": 50,
+         "A05C52": 51,
+         "A05C53": 52
+      },
+      "chapter_to_id": {
+         "1": "A01C01",
+         "2": "A01C02",
+         "3": "A01C03",
+         "4": "A01C04",
+         "5": "A01C05",
+         "6": "A01C06",
+         "7": "A01C07",
+         "8": "A01C08",
+         "9": "A01C09",
+         "10": "A01C10",
+         "11": "A01C11",
+         "12": "A01C12",
+         "13": "A02C13",
+         "14": "A02C14",
+         "15": "A02C15",
+         "16": "A02C16",
+         "17": "A02C17",
+         "18": "A02C18",
+         "19": "A02C19",
+         "20": "A02C20",
+         "21": "A02C21",
+         "22": "A02C22",
+         "23": "A02C23",
+         "24": "A02C24",
+         "25": "A02C25",
+         "26": "A03C26",
+         "27": "A03C27",
+         "28": "A03C28",
+         "29": "A03C29",
+         "30": "A03C30",
+         "31": "A03C31",
+         "32": "A03C32",
+         "33": "A03C33",
+         "34": "A03C34",
+         "35": "A03C35",
+         "36": "A03C36",
+         "37": "A03C37",
+         "38": "A04C38",
+         "39": "A04C39",
+         "40": "A04C40",
+         "41": "A04C41",
+         "42": "A04C42",
+         "43": "A04C43",
+         "44": "A04C44",
+         "45": "A04C45",
+         "46": "A04C46",
+         "47": "A04C47",
+         "48": "A04C48",
+         "49": "A04C49",
+         "50": "A04C50",
+         "51": "A04C51",
+         "52": "A05C52",
+         "53": "A05C53"
+      },
+      "act_to_ids": {
+         "1": [
+            "A01C01",
+            "A01C02",
+            "A01C03",
+            "A01C04",
+            "A01C05",
+            "A01C06",
+            "A01C07",
+            "A01C08",
+            "A01C09",
+            "A01C10",
+            "A01C11",
+            "A01C12"
+         ],
+         "2": [
+            "A02C13",
+            "A02C14",
+            "A02C15",
+            "A02C16",
+            "A02C17",
+            "A02C18",
+            "A02C19",
+            "A02C20",
+            "A02C21",
+            "A02C22",
+            "A02C23",
+            "A02C24",
+            "A02C25"
+         ],
+         "3": [
+            "A03C26",
+            "A03C27",
+            "A03C28",
+            "A03C29",
+            "A03C30",
+            "A03C31",
+            "A03C32",
+            "A03C33",
+            "A03C34",
+            "A03C35",
+            "A03C36",
+            "A03C37"
+         ],
+         "4": [
+            "A04C38",
+            "A04C39",
+            "A04C40",
+            "A04C41",
+            "A04C42",
+            "A04C43",
+            "A04C44",
+            "A04C45",
+            "A04C46",
+            "A04C47",
+            "A04C48",
+            "A04C49",
+            "A04C50",
+            "A04C51"
+         ],
+         "5": [
+            "A05C52",
+            "A05C53"
+         ]
+      }
+   },
+   "chapters": [
+      {
+         "id": "A01C01",
+         "act": 1,
+         "act_name": "Act One: Spring",
+         "chapter": 1,
+         "chapter_name": "Strangers To Enemies 1",
+         "chapter_number_name": "One",
+         "story": "Paragate",
+         "written": true,
+         "completion": "92",
+         "summary": "Cody celebrates his first home, drunkenly stumbles through the adjoining door into another world, is healed by strangers, and fixates on the \"cosplayer\" girl on the other side.",
+         "blurb": "A housewarming goes sideways when Cody opens the wrong door—and stumbles into a world that shouldn't exist.",
+         "next_publish": "04/02/26",
+         "scene_count": 4,
+         "word_count": 5032,
+         "pov_order": [
+            "Cody",
+            "Cody",
+            "Cody",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A01C01S01",
+            "A01C01S02",
+            "A01C01S03",
+            "A01C01S04"
+         ],
+         "settings": [
+            {
+               "Date": "2026-04-24",
+               "Time": "22:00:00",
+               "ISO": "2026-04-24T22:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-04-24",
+               "Time": "22:20:00",
+               "ISO": "2026-04-24T22:20:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-04-25",
+               "Time": "22:40:00",
+               "ISO": "2026-04-25T22:40:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-04-25",
+               "Time": "23:15:00",
+               "ISO": "2026-04-25T23:15:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Evergreen Estates | Cody's House | 2026-04-24 | 22:00:00",
+            "Valenseia | Gaffesend | Katiya's House | 2026-04-24 | 22:20:00",
+            "Valenseia | Gaffesend | Guards' Quarter | 2026-04-25 | 22:40:00",
+            "Valenseia | Gaffesend | Guards' Quarter | 2026-04-25 | 23:15:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-08-15T04:05:25Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "01 // PROLOGUE // \"Strangers To Enemies, Part One\"",
+            "verbose_id": "1.1",
+            "uuid": "1",
+            "status": "Final Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter One",
+            "auto_name_full": "Chapter One",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody"
+         ]
+      },
+      {
+         "id": "A01C02",
+         "act": 1,
+         "act_name": "Act One: Spring",
+         "chapter": 2,
+         "chapter_name": "The Knight Before",
+         "chapter_number_name": "Two",
+         "story": "Paragate",
+         "written": true,
+         "completion": "95",
+         "summary": "Katiya's intro: she struggles to relax, Aldrin frames trainee expectations, and she reconnects with Jullian as they \"christen\" her new place.",
+         "blurb": "Katiya tries to unwind, but duty—and an old flame—won't let her rest.",
+         "next_publish": "04/09/26",
+         "scene_count": 3,
+         "word_count": 3448,
+         "pov_order": [
+            "Katiya",
+            "Katiya",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A01C02S01",
+            "A01C02S02",
+            "A01C02S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-04-23",
+               "Time": "14:30:00",
+               "ISO": "2026-04-23T14:30:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-04-23",
+               "Time": "15:00:00",
+               "ISO": "2026-04-23T15:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-04-23",
+               "Time": "17:30:00",
+               "ISO": "2026-04-23T17:30:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Gaffesend | Gaffe's End Tavern | 2026-04-23 | 14:30:00",
+            "Valenseia | Gaffesend | Gaffe's End Tavern | 2026-04-23 | 15:00:00",
+            "Valenseia | Gaffesend | Gaffe's End Tavern | 2026-04-23 | 17:30:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-08-15T04:05:59Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "02 // \"The Knight Before\"",
+            "verbose_id": "1.2",
+            "uuid": "6",
+            "status": "Final Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Two",
+            "auto_name_full": "Chapter Two",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A01C03",
+         "act": 1,
+         "act_name": "Act One: Spring",
+         "chapter": 3,
+         "chapter_name": "The Day After",
+         "chapter_number_name": "Three",
+         "story": "Paragate",
+         "written": true,
+         "completion": "95",
+         "summary": "Cody's bleak office day: roasted for late redlines, awkward beat with Kei, then family unpacking with Miguel queued up for drinks.",
+         "blurb": "Another soul-numbing office day pushes Cody toward a choice he's not ready to make.",
+         "next_publish": "04/16/26",
+         "scene_count": 3,
+         "word_count": 4275,
+         "pov_order": [
+            "Cody",
+            "Cody",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A01C03S01",
+            "A01C03S02",
+            "A01C03S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-04-24",
+               "Time": "16:30:00",
+               "ISO": "2026-04-24T16:30:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
+            },
+            {
+               "Date": "2026-04-24",
+               "Time": "16:55:00",
+               "ISO": "2026-04-24T16:55:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
+            },
+            {
+               "Date": "2026-04-24",
+               "Time": "19:45:00",
+               "ISO": "2026-04-24T19:45:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | Legacy Systems Annex | 2026-04-24 | 16:30:00",
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | Legacy Systems Annex | 2026-04-24 | 16:55:00",
+            "Colorado | Evergreen Estates | Cody's House | 2026-04-24 | 19:45:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-08-15T04:08:12Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "03 // \"The Day After\"",
+            "verbose_id": "1.3",
+            "uuid": "10",
+            "status": "Final Draft",
+            "label": "Paragate",
+            "keywords": [
+               "Paragate"
+            ],
+            "author_notes": "Chapters 'Robot Boy' through 'Surprise Approach' are in the final stage of self-revision. Everything past this is still in a generative revision.",
+            "auto_name_part": "Chapter Three",
+            "auto_name_full": "Chapter Three",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "MessageFrom",
+            "MessageTo",
+            "Timestamp"
+         ]
+      },
+      {
+         "id": "A01C04",
+         "act": 1,
+         "act_name": "Act One: Spring",
+         "chapter": 4,
+         "chapter_name": "Secondhand Cottage",
+         "chapter_number_name": "Four",
+         "story": "Paragate",
+         "written": true,
+         "completion": "95",
+         "summary": "Katiya's trauma baseline: nightmares of Hillfar; she self-stabilizes, starts her day, meets Derry & Carmen (Rayna foreshadow), and heads to base with Bertram.",
+         "blurb": "Nightmares, neighbors, and a base run: Katiya fights panic with routine until routine fights back.",
+         "next_publish": "04/23/26",
+         "scene_count": 3,
+         "word_count": 3043,
+         "pov_order": [
+            "Katiya",
+            "Katiya",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A01C04S01",
+            "A01C04S02",
+            "A01C04S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-04-24",
+               "Time": "03:00:00",
+               "ISO": "2026-04-24T03:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-04-24",
+               "Time": "04:00:00",
+               "ISO": "2026-04-24T04:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-04-24",
+               "Time": "04:15:00",
+               "ISO": "2026-04-24T04:15:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Gaffesend | Katiya's House | 2026-04-24 | 03:00:00",
+            "Valenseia | Gaffesend | Katiya's House | 2026-04-24 | 04:00:00",
+            "Valenseia | Gaffesend | Katiya's House | 2026-04-24 | 04:15:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-08-15T04:08:37Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "04 // \"Secondhand Cottage\"",
+            "verbose_id": "1.4",
+            "uuid": "14",
+            "status": "Final Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Four",
+            "auto_name_full": "Chapter Four",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A01C05",
+         "act": 1,
+         "act_name": "Act One: Spring",
+         "chapter": 5,
+         "chapter_name": "Firsthand Home",
+         "chapter_number_name": "Five",
+         "story": "Paragate",
+         "written": true,
+         "completion": "95",
+         "summary": "Cody + Miguel bro out, drink hard; Miguel crashes, Cody stays up.",
+         "blurb": "Drinks with a best friend turn into confessions—and an idea Cody should ignore.",
+         "next_publish": "04/30/26",
+         "scene_count": 2,
+         "word_count": 2949,
+         "pov_order": [
+            "Cody",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A01C05S01",
+            "A01C05S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-04-24",
+               "Time": "18:15:00",
+               "ISO": "2026-04-24T18:15:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-04-24",
+               "Time": "21:45:00",
+               "ISO": "2026-04-24T21:45:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Evergreen Estates | Cody's House | 2026-04-24 | 18:15:00",
+            "Colorado | Evergreen Estates | Cody's House | 2026-04-24 | 21:45:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-08-15T04:09:37Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "05 // \"Firsthand Home\"",
+            "verbose_id": "1.5",
+            "uuid": "18",
+            "status": "Final Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Five",
+            "auto_name_full": "Chapter Five",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody"
+         ]
+      },
+      {
+         "id": "A01C06",
+         "act": 1,
+         "act_name": "Act One: Spring",
+         "chapter": 6,
+         "chapter_name": "Insurgency",
+         "chapter_number_name": "Six",
+         "story": "Paragate",
+         "written": true,
+         "completion": "90",
+         "summary": "Katiya's first day ends in panic when a distant light (Firebrand tie-in) appears; town responds; on returning home she finds an intruder—Cody—and ambushes him.",
+         "blurb": "A distant light rattles Gaffesend; Katiya's first day ends with an intruder at home.",
+         "next_publish": "05/07/26",
+         "scene_count": 3,
+         "word_count": 3223,
+         "pov_order": [
+            "Katiya",
+            "Katiya",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A01C06S01",
+            "A01C06S02",
+            "A01C06S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-04-24",
+               "Time": "20:15:00",
+               "ISO": "2026-04-24T20:15:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Southern Fields",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-04-24",
+               "Time": "20:35:00",
+               "ISO": "2026-04-24T20:35:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-04-24",
+               "Time": "21:15:00",
+               "ISO": "2026-04-24T21:15:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Gaffesend | Southern Fields | 2026-04-24 | 20:15:00",
+            "Valenseia | Gaffesend | Gaffe Royal Base | 2026-04-24 | 20:35:00",
+            "Valenseia | Gaffesend | Guards' Quarter | 2026-04-24 | 21:15:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-08-15T04:10:12Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "06 // \"Insurgency\"",
+            "verbose_id": "1.6",
+            "uuid": "21",
+            "status": "Final Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Six",
+            "auto_name_full": "Chapter Six",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A01C07",
+         "act": 1,
+         "act_name": "Act One: Spring",
+         "chapter": 7,
+         "chapter_name": "Exfiltration",
+         "chapter_number_name": "Seven",
+         "story": "Paragate",
+         "written": true,
+         "completion": "92",
+         "summary": "Prologue re-seen through Katiya: she crosses into the modern world and recoils, landing back through the door—mirror of Cody's intro.",
+         "blurb": "Through Katiya's eyes: a door, a modern nightmare, and a blur she can't unsee. and violence.",
+         "next_publish": "05/14/26",
+         "scene_count": 2,
+         "word_count": 3043,
+         "pov_order": [
+            "Katiya",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A01C07S01",
+            "A01C07S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-04-25",
+               "Time": "22:20:00",
+               "ISO": "2026-04-25T22:20:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-04-25",
+               "Time": "22:40:00",
+               "ISO": "2026-04-25T22:40:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Gaffesend | Katiya's House | 2026-04-25 | 22:20:00",
+            "Valenseia | Gaffesend | Katiya's House | 2026-04-25 | 22:40:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-08-15T04:18:40Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "07 // \"Exfiltration\"",
+            "verbose_id": "1.7",
+            "uuid": "25",
+            "status": "Final Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Seven",
+            "auto_name_full": "Chapter Seven",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A01C08",
+         "act": 1,
+         "act_name": "Act One: Spring",
+         "chapter": 8,
+         "chapter_name": "Strangers To Enemies 2",
+         "chapter_number_name": "Eight",
+         "story": "Paragate",
+         "written": true,
+         "completion": "92",
+         "summary": "Third clash: Katiya (assuming Auvryan assassin) and Cody fight to another misunderstanding; she drives him back through the door.",
+         "blurb": "Misread motives turn their encounter into a full-on clash.",
+         "next_publish": "05/21/26",
+         "scene_count": 2,
+         "word_count": 2039,
+         "pov_order": [
+            "Katiya",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A01C08S01",
+            "A01C08S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-04-25",
+               "Time": "23:15:00",
+               "ISO": "2026-04-25T23:15:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-04-26",
+               "Time": "00:10:00",
+               "ISO": "2026-04-26T00:10:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Gaffesend | Katiya's House | 2026-04-25 | 23:15:00",
+            "Valenseia | Gaffesend | Katiya's House | 2026-04-26 | 00:10:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-08-18T04:42:59Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "08 // \"Strangers To Enemies, Part Two\"",
+            "verbose_id": "1.8",
+            "uuid": "28",
+            "status": "Final Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Eight",
+            "auto_name_full": "Chapter Eight",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A01C09",
+         "act": 1,
+         "act_name": "Act One: Spring",
+         "chapter": 9,
+         "chapter_name": "Surprise Approach",
+         "chapter_number_name": "Nine",
+         "story": "Paragate",
+         "written": true,
+         "completion": "90",
+         "summary": "Cody tries to rationalize it away (no wound); barricades the door; nearly late to work; meets foil Reed.",
+         "blurb": "Cody barricades more than a door as reality refuses to make sense.",
+         "next_publish": "05/28/26",
+         "scene_count": 2,
+         "word_count": 2840,
+         "pov_order": [
+            "Cody",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A01C09S01",
+            "A01C09S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-04-26",
+               "Time": "08:52:00",
+               "ISO": "2026-04-26T08:52:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-04-26",
+               "Time": "09:01:12",
+               "ISO": "2026-04-26T09:01:12Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Evergreen Estates | Cody's House | 2026-04-26 | 08:52:00",
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | Legacy Systems Annex | 2026-04-26 | 09:01:12"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-08-15T04:25:47Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "09 // \"Surprise Approach\"",
+            "verbose_id": "1.9",
+            "uuid": "31",
+            "status": "Final Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Nine",
+            "auto_name_full": "Chapter Nine",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "MessageFrom",
+            "MessageTo",
+            "Timestamp"
+         ]
+      },
+      {
+         "id": "A01C10",
+         "act": 1,
+         "act_name": "Act One: Spring",
+         "chapter": 10,
+         "chapter_name": "Strategic Retreat",
+         "chapter_number_name": "Ten",
+         "story": "Paragate",
+         "written": true,
+         "completion": "92",
+         "summary": "Katiya cleans to stave off panic, studies Cody's device; time skip: a month later she hesitates during a royal escort, barely averts disaster, is berated, and runs to find Bertram.",
+         "blurb": "A month later, a public moment goes wrong—and Katiya can't shake the blame.",
+         "next_publish": "06/04/26",
+         "scene_count": 3,
+         "word_count": 3608,
+         "pov_order": [
+            "Katiya",
+            "Katiya",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A01C10S01",
+            "A01C10S02",
+            "A01C10S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-04-25",
+               "Time": "01:15:00",
+               "ISO": "2026-04-25T01:15:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-05-22",
+               "Time": "19:45:00",
+               "ISO": "2026-05-22T19:45:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Southern Fields",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-05-22",
+               "Time": "20:30:00",
+               "ISO": "2026-05-22T20:30:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Gaffesend | Katiya's House | 2026-04-25 | 01:15:00",
+            "Valenseia | Gaffesend | Southern Fields | 2026-05-22 | 19:45:00",
+            "Valenseia | Gaffesend | Market Street | 2026-05-22 | 20:30:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-08-15T04:19:24Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "10 // \"Strategic Retreat\"",
+            "verbose_id": "1.10",
+            "uuid": "34",
+            "status": "Final Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Ten",
+            "auto_name_full": "Chapter Ten",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyKatiya",
+            "NoteCody",
+            "RawHTML"
+         ]
+      },
+      {
+         "id": "A01C11",
+         "act": 1,
+         "act_name": "Act One: Spring",
+         "chapter": 11,
+         "chapter_name": "Ennui and Excoriation",
+         "chapter_number_name": "Eleven",
+         "story": "Paragate",
+         "written": true,
+         "completion": "75",
+         "summary": "Another month later: Cody is bored while Reed earns praise; Nav spins up a new project; Cody ghosts social invites, but hears pleading through the door at home.",
+         "blurb": "Praise falls on the wrong desk. At home, Cody hears a voice on the other side.",
+         "next_publish": "06/11/26",
+         "scene_count": 3,
+         "word_count": 2426,
+         "pov_order": [
+            "Cody",
+            "Cody",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A01C11S01",
+            "A01C11S02",
+            "A01C11S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-05-22",
+               "Time": "12:30:00",
+               "ISO": "2026-05-22T12:30:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
+            },
+            {
+               "Date": "2026-05-22",
+               "Time": "12:50:00",
+               "ISO": "2026-05-22T12:50:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
+            },
+            {
+               "Date": "2026-05-22",
+               "Time": "17:45:00",
+               "ISO": "2026-05-22T17:45:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Legacy Systems Annex"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | Legacy Systems Annex | 2026-05-22 | 12:30:00",
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | Legacy Systems Annex | 2026-05-22 | 12:50:00",
+            "Colorado | Evergreen Estates | Cody's House | Legacy Systems Annex | 2026-05-22 | 17:45:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:12:05Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "11 // \"Ennui And Excoriation\"",
+            "verbose_id": "1.11",
+            "uuid": "38",
+            "status": "Revised Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Eleven",
+            "auto_name_full": "Chapter Eleven",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody"
+         ]
+      },
+      {
+         "id": "A01C12",
+         "act": 1,
+         "act_name": "Act One: Spring",
+         "chapter": 12,
+         "chapter_name": "Anxiety and Avoidance",
+         "chapter_number_name": "Twelve",
+         "story": "Paragate",
+         "written": true,
+         "completion": "80",
+         "summary": "FOUR WEEK TIME SKIPKatiya, Ryder, and Paxton rescue near-dead Bertram; she's blamed and shut out—her only remaining lifeline is Cody.",
+         "blurb": "With help scarce, Katiya runs toward the only lifeline left.",
+         "next_publish": "06/18/26",
+         "scene_count": 2,
+         "word_count": 1736,
+         "pov_order": [
+            "Katiya",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A01C12S01",
+            "A01C12S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-05-22",
+               "Time": "20:35:00",
+               "ISO": "2026-05-22T20:35:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-05-22",
+               "Time": "21:15:00",
+               "ISO": "2026-05-22T21:15:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Gaffesend | Guards' Quarter | 2026-05-22 | 20:35:00",
+            "Valenseia | Gaffesend | Gaffe Royal Base | 2026-05-22 | 21:15:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:12:05Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "12 // \"Anxiety And Avoidance\"",
+            "verbose_id": "1.12",
+            "uuid": "42",
+            "status": "Revised Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "This chapter marks the end of chapters with extensive self-revision. The rest is in a generative state.",
+            "auto_name_part": "Chapter Twelve",
+            "auto_name_full": "Chapter Twelve",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A02C13",
+         "act": 2,
+         "act_name": "Act Two: Summer",
+         "chapter": 13,
+         "chapter_name": "The Sleeping Knight",
+         "chapter_number_name": "Thirteen",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "Katiya crosses mid-panic; Cody calms her and lets her sleep; awkward breakfast; they agree to \"no interfering\" (both intend to break it).",
+         "blurb": "A midnight crossing. A stranger's kindness. Rules they'll both pretend to follow.",
+         "next_publish": "06/25/26",
+         "scene_count": 2,
+         "word_count": 3230,
+         "pov_order": [
+            "Cody",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A02C13S01",
+            "A02C13S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-05-23",
+               "Time": "02:23:00",
+               "ISO": "2026-05-23T02:23:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-05-23",
+               "Time": "07:15:00",
+               "ISO": "2026-05-23T07:15:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Evergreen Estates | Cody's House | 2026-05-23 | 02:23:00",
+            "Colorado | Evergreen Estates | Cody's House | 2026-05-23 | 07:15:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T02:00:38Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "13 // \"The Sleeping Knight\"",
+            "verbose_id": "2.13",
+            "uuid": "45",
+            "status": "First Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter One",
+            "auto_name_full": "Chapter Thirteen",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya",
+            "NoteCody"
+         ]
+      },
+      {
+         "id": "A02C14",
+         "act": 2,
+         "act_name": "Act Two: Summer",
+         "chapter": 14,
+         "chapter_name": "Luddite By Chance",
+         "chapter_number_name": "Fourteen",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "Cody gives her a gentle orientation day: first car ride (terrifying), Costco errand gauntlet—Katiya is overwhelmed by the future.",
+         "blurb": "\"Welcome to the future.\" A car ride and a big-box errand become an emotional obstacle course.",
+         "next_publish": "07/02/26",
+         "scene_count": 3,
+         "word_count": 4011,
+         "pov_order": [
+            "Cody",
+            "Katiya",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A02C14S01",
+            "A02C14S02",
+            "A02C14S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-05-23",
+               "Time": "08:15:00",
+               "ISO": "2026-05-23T08:15:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-05-23",
+               "Time": "08:23:00",
+               "ISO": "2026-05-23T08:23:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-05-23",
+               "Time": "08:58:00",
+               "ISO": "2026-05-23T08:58:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Costco #8137",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Evergreen Estates | Cody's House | 2026-05-23 | 08:15:00",
+            "Colorado | Evergreen Estates | Cody's House | 2026-05-23 | 08:23:00",
+            "Colorado | Hearthland Ridge | Costco #8137 | 2026-05-23 | 08:58:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:02:39Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "14 // \"Luddite By Chance\"",
+            "verbose_id": "2.14",
+            "uuid": "48",
+            "status": "First Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Two",
+            "auto_name_full": "Chapter Fourteen",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya",
+            "NoteCody"
+         ]
+      },
+      {
+         "id": "A02C15",
+         "act": 2,
+         "act_name": "Act Two: Summer",
+         "chapter": 15,
+         "chapter_name": "Technophile By Choice",
+         "chapter_number_name": "Fifteen",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "Cody runs Katiya's route in Gaffesend; she tours him as \"royal inventor\"; awkward Jullian moment; tavern hang where Cody fits in.",
+         "blurb": "Cody tours Katiya's world—and fits in a little too well.",
+         "next_publish": "07/09/26",
+         "scene_count": 3,
+         "word_count": 4023,
+         "pov_order": [
+            "Cody",
+            "Katiya",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A02C15S01",
+            "A02C15S02",
+            "A02C15S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-05-24",
+               "Time": "04:56:37",
+               "ISO": "2026-05-24T04:56:37Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-05-24",
+               "Time": "04:59:00",
+               "ISO": "2026-05-24T04:59:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Lake Garrison",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-05-24",
+               "Time": "10:12:00",
+               "ISO": "2026-05-24T10:12:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe&apos;s End Tavern",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Gaffesend | Katiya's House | 2026-05-24 | 04:56:37",
+            "Valenseia | Gaffesend | Lake Garrison | 2026-05-24 | 04:59:00",
+            "Valenseia | Gaffesend | Gaffe's End Tavern | 2026-05-24 | 10:12:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:03:15Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "15 // \"Technophile By Choice\"",
+            "verbose_id": "2.15",
+            "uuid": "52",
+            "status": "First Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Three",
+            "auto_name_full": "Chapter Fifteen",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A02C16",
+         "act": 2,
+         "act_name": "Act Two: Summer",
+         "chapter": 16,
+         "chapter_name": "Back To Business",
+         "chapter_number_name": "Sixteen",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "Cody's spark flickers: nostalgia and lunch with Alan (Jackson talk); he returns hoping for an open door.",
+         "blurb": "A lunch with Dad. A memory of a brother. A door that might be open tonight.",
+         "next_publish": "07/16/26",
+         "scene_count": 3,
+         "word_count": 3128,
+         "pov_order": [
+            "Cody",
+            "Cody",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A02C16S01",
+            "A02C16S02",
+            "A02C16S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-05-25",
+               "Time": "11:26:00",
+               "ISO": "2026-05-25T11:26:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
+            },
+            {
+               "Date": "2026-05-25",
+               "Time": "11:43:00",
+               "ISO": "2026-05-25T11:43:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Monroe Canyon Rd",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-05-25",
+               "Time": "16:12:00",
+               "ISO": "2026-05-25T16:12:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | Legacy Systems Annex | 2026-05-25 | 11:26:00",
+            "Colorado | Shaleborough | Monroe Canyon Rd | 2026-05-25 | 11:43:00",
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | Legacy Systems Annex | 2026-05-25 | 16:12:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:03:15Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "16 // \"Back To Business\"",
+            "verbose_id": "2.16",
+            "uuid": "56",
+            "status": "First Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Four",
+            "auto_name_full": "Chapter Sixteen",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "NoteCody"
+         ]
+      },
+      {
+         "id": "A02C17",
+         "act": 2,
+         "act_name": "Act Two: Summer",
+         "chapter": 17,
+         "chapter_name": "Onward To Chaos",
+         "chapter_number_name": "Seventeen",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "Katiya visits Bertram in the hospital (promises Hillfar); market duty goes sideways; she chases and collars Rayna (Ahkvasan half-blood); Jullian downplays her leap; Cody leaves a treat.",
+         "blurb": "Katiya chases a thief and a ghost from her past—while promises tug her toward tomorrow.",
+         "next_publish": "07/23/26",
+         "scene_count": 4,
+         "word_count": 5081,
+         "pov_order": [
+            "Katiya",
+            "Katiya",
+            "Katiya",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A02C17S01",
+            "A02C17S02",
+            "A02C17S03",
+            "A02C17S04"
+         ],
+         "settings": [
+            {
+               "Date": "2026-05-26",
+               "Time": "06:23:00",
+               "ISO": "2026-05-26T06:23:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-05-26",
+               "Time": "08:23:00",
+               "ISO": "2026-05-26T08:23:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-05-26",
+               "Time": "08:29:00",
+               "ISO": "2026-05-26T08:29:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-05-26",
+               "Time": "09:26:00",
+               "ISO": "2026-05-26T09:26:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Gaffesend | Katiya's House | 2026-05-26 | 06:23:00",
+            "Valenseia | Gaffesend | Market Street | 2026-05-26 | 08:23:00",
+            "Valenseia | Gaffesend | Market Street | 2026-05-26 | 08:29:00",
+            "Valenseia | Gaffesend | The Old Castle | 2026-05-26 | 09:26:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:06:21Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "17 // \"Onward To Chaos\"",
+            "verbose_id": "2.17",
+            "uuid": "60",
+            "status": "First Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Five",
+            "auto_name_full": "Chapter Seventeen",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyKatiya",
+            "Internal",
+            "NoteCody"
+         ]
+      },
+      {
+         "id": "A02C18",
+         "act": 2,
+         "act_name": "Act Two: Summer",
+         "chapter": 18,
+         "chapter_name": "Civillian Combat",
+         "chapter_number_name": "Eighteen",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "Cody's volunteer training day: Katiya teases, his mistake catches Aldrin's eye; later he chooses friendship over victory in a challenge—character beat.",
+         "blurb": "A training mishap puts Cody on someone important's radar for all the wrong reasons.",
+         "next_publish": "07/30/26",
+         "scene_count": 2,
+         "word_count": 3931,
+         "pov_order": [
+            "Cody",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A02C18S01",
+            "A02C18S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-06-27",
+               "Time": "08:27:00",
+               "ISO": "2026-06-27T08:27:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-06-27",
+               "Time": "11:02:00",
+               "ISO": "2026-06-27T11:02:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Gaffesend | Gaffe Royal Base | 2026-06-27 | 08:27:00",
+            "Valenseia | Gaffesend | Gaffe Royal Base | 2026-06-27 | 11:02:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:06:23Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "18 // \"Civilian Combat\"",
+            "verbose_id": "2.18",
+            "uuid": "65",
+            "status": "First Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Six",
+            "auto_name_full": "Chapter Eighteen",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "NoteKatiya"
+         ]
+      },
+      {
+         "id": "A02C19",
+         "act": 2,
+         "act_name": "Act Two: Summer",
+         "chapter": 19,
+         "chapter_name": "Warrior Business",
+         "chapter_number_name": "Nineteen",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "Open house at Cody's work: meet Reed & Kei; Cody geeks out, Katiya meets Alan & Kim; they overhear Reed/Kei on Cody missing from the \"Future Talent\" wall.",
+         "blurb": "Open house at work: new faces, old history, and a wall Cody isn't on.",
+         "next_publish": "08/06/26",
+         "scene_count": 3,
+         "word_count": 4567,
+         "pov_order": [
+            "Katiya",
+            "Katiya",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A02C19S01",
+            "A02C19S02",
+            "A02C19S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-06-28",
+               "Time": "09:23:00",
+               "ISO": "2026-06-28T09:23:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-06-28",
+               "Time": "10:20:00",
+               "ISO": "2026-06-28T10:20:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Advanced Systems Building"
+            },
+            {
+               "Date": "2026-06-28",
+               "Time": "12:03:00",
+               "ISO": "2026-06-28T12:03:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Advanced Systems Building"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Evergreen Estates | Cody's House | 2026-06-28 | 09:23:00",
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | Advanced Systems Building | 2026-06-28 | 10:20:00",
+            "Shaleborough | Navidson-Monroe Aerospace | Advanced Systems Building | 2026-06-28 | 12:03:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:06:23Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "19 // \"Warrior Business\"",
+            "verbose_id": "2.19",
+            "uuid": "68",
+            "status": "First Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Seven",
+            "auto_name_full": "Chapter Nineteen",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A02C20",
+         "act": 2,
+         "act_name": "Act Two: Summer",
+         "chapter": 20,
+         "chapter_name": "Domestic Relations",
+         "chapter_number_name": "Twenty",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "Katiya engineers a Cody—Kei date; in parallel she and Jullian go to hot springs and bristle; Cody's date feels off and foggy—he insists he's \"fine.\"",
+         "blurb": "Double dates, mixed signals, and the uneasy question: are we still who we were?",
+         "next_publish": "08/13/26",
+         "scene_count": 4,
+         "word_count": 3491,
+         "pov_order": [
+            "Cody",
+            "Cody",
+            "Katiya",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A02C20S01",
+            "A02C20S02",
+            "A02C20S03",
+            "A02C20S04"
+         ],
+         "settings": [
+            {
+               "Date": "2026-06-28",
+               "Time": "13:57:00",
+               "ISO": "2026-06-28T13:57:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-06-29",
+               "Time": "11:04:00",
+               "ISO": "2026-06-29T11:04:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Mineral Station",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-06-29",
+               "Time": "11:05:00",
+               "ISO": "2026-06-29T11:05:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Southern Fields",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-06-29",
+               "Time": "15:32:00",
+               "ISO": "2026-06-29T15:32:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "16th Street Mall",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | 2026-06-28 | 13:57:00",
+            "Colorado | Hearthland Ridge | Mineral Station | 2026-06-29 | 11:04:00",
+            "Valenseia | Gaffesend | Southern Fields | 2026-06-29 | 11:05:00",
+            "Colorado | Denver | 16th Street Mall | 2026-06-29 | 15:32:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-07-08T00:44:30Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "20 // \"Domestic Relations\"",
+            "verbose_id": "2.20",
+            "uuid": "72",
+            "status": "First Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Eight",
+            "auto_name_full": "Chapter Twenty",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya",
+            "Emphasis",
+            "Internal"
+         ]
+      },
+      {
+         "id": "A02C21",
+         "act": 2,
+         "act_name": "Act Two: Summer",
+         "chapter": 21,
+         "chapter_name": "Foreign Affairs",
+         "chapter_number_name": "Twenty-One",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "Katiya extracts an uncomfortable truth from Jullian; intercut meltdown date beats (both couples misfire); Cody & Kei hook up but it lands as empty.",
+         "blurb": "Cold water and hard truths—two relationships strain to the breaking point.",
+         "next_publish": "08/20/26",
+         "scene_count": 6,
+         "word_count": 4175,
+         "pov_order": [
+            "Katiya",
+            "Cody",
+            "Katiya",
+            "Cody",
+            "Katiya",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A02C21S01",
+            "A02C21S02",
+            "A02C21S03",
+            "A02C21S04",
+            "A02C21S05",
+            "A02C21S06"
+         ],
+         "settings": [
+            {
+               "Date": "2026-06-29",
+               "Time": "15:33:00",
+               "ISO": "2026-06-29T15:33:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-06-29",
+               "Time": "17:09:00",
+               "ISO": "2026-06-29T17:09:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "16th Street Mall",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-06-29",
+               "Time": "15:42:00",
+               "ISO": "2026-06-29T15:42:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-06-29",
+               "Time": "17:24:00",
+               "ISO": "2026-06-29T17:24:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Denver",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-06-29",
+               "Time": "15:51:00",
+               "ISO": "2026-06-29T15:51:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Firtholm Hot Springs",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-06-29",
+               "Time": "18:23:00",
+               "ISO": "2026-06-29T18:23:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Holmfirth | Firtholm Hot Springs | 2026-06-29 | 15:33:00",
+            "Colorado | Denver | 16th Street Mall | 2026-06-29 | 17:09:00",
+            "Valenseia | Holmfirth | Firtholm Hot Springs | 2026-06-29 | 15:42:00",
+            "Colorado | Denver | 2026-06-29 | 17:24:00",
+            "Valenseia | Holmfirth | Firtholm Hot Springs | 2026-06-29 | 15:51:00",
+            "Colorado | Hearthland Ridge | 2026-06-29 | 18:23:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-07-15T03:40:52Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "21 // \"Foreign Affairs\"",
+            "verbose_id": "2.21",
+            "uuid": "77",
+            "status": "First Draft",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Nine",
+            "auto_name_full": "Chapter Twenty-One",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya",
+            "Emphasis",
+            "Internal"
+         ]
+      },
+      {
+         "id": "A02C22",
+         "act": 2,
+         "act_name": "Act Two: Summer",
+         "chapter": 22,
+         "chapter_name": "Losing To Fear",
+         "chapter_number_name": "Twenty-Two",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "Katiya passes core exams but shoots poorly; Aryn is unflappable; Cody and Reed clash about what a Level-1 is; Katiya insists on leading the next team exam, feeling off her game.",
+         "blurb": "Tests expose strengths, flaws, and a calm rival who never seems to miss.",
+         "next_publish": "08/27/26",
+         "scene_count": 3,
+         "word_count": 4650,
+         "pov_order": [
+            "Katiya",
+            "Cody",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A02C22S01",
+            "A02C22S02",
+            "A02C22S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-07-07",
+               "Time": "08:26:00",
+               "ISO": "2026-07-07T08:26:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-07-07",
+               "Time": "13:40:00",
+               "ISO": "2026-07-07T13:40:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
+            },
+            {
+               "Date": "2026-07-07",
+               "Time": "17:21:00",
+               "ISO": "2026-07-07T17:21:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Gaffesend | Gaffe Royal Base | 2026-07-07 | 08:26:00",
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | Legacy Systems Annex | 2026-07-07 | 13:40:00",
+            "Valenseia | Gaffesend | The Old Castle | 2026-07-07 | 17:21:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:06:25Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "22 // \"Losing To Fear\"",
+            "verbose_id": "2.22",
+            "uuid": "84",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Ten",
+            "auto_name_full": "Chapter Twenty-Two",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya",
+            "Emphasis",
+            "Internal"
+         ]
+      },
+      {
+         "id": "A02C23",
+         "act": 2,
+         "act_name": "Act Two: Summer",
+         "chapter": 23,
+         "chapter_name": "Failing To Launch",
+         "chapter_number_name": "Twenty-Three",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "Cody presents and gets hammered; Reed's allies redirect the room; Katiya's plan withers, Bertram is \"killed\" in exercise, she barges the opposing house—bad optics.",
+         "blurb": "A tough room for Cody. A tougher match for Katiya. Plans buckle under pressure.",
+         "next_publish": "09/03/26",
+         "scene_count": 2,
+         "word_count": 3821,
+         "pov_order": [
+            "Cody",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A02C23S01",
+            "A02C23S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-07-07",
+               "Time": "14:04:00",
+               "ISO": "2026-07-07T14:04:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
+            },
+            {
+               "Date": "2026-07-07",
+               "Time": "17:30:00",
+               "ISO": "2026-07-07T17:30:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | Legacy Systems Annex | 2026-07-07 | 14:04:00",
+            "Valenseia | Gaffesend | The Old Castle | 2026-07-07 | 17:30:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:06:26Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "23 // \"Failing To Launch\"",
+            "verbose_id": "2.23",
+            "uuid": "88",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Eleven",
+            "auto_name_full": "Chapter Twenty-Three",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya",
+            "Emphasis"
+         ]
+      },
+      {
+         "id": "A02C24",
+         "act": 2,
+         "act_name": "Act Two: Summer",
+         "chapter": 24,
+         "chapter_name": "Friendly Fire",
+         "chapter_number_name": "Twenty-Four",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "Reed's presentation wins; Cody's mild critique is spun as jealousy and he snaps publicly; Katiya loses to Aryn, is told she's below the line, and learns her family's already in Gaffesend.",
+         "blurb": "One wins the crowd; the other loses control. Lines are drawn on both sides.",
+         "next_publish": "09/10/26",
+         "scene_count": 2,
+         "word_count": 3629,
+         "pov_order": [
+            "Cody",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A02C24S01",
+            "A02C24S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-07-07",
+               "Time": "14:12:00",
+               "ISO": "2026-07-07T14:12:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
+            },
+            {
+               "Date": "2026-07-07",
+               "Time": "17:37:00",
+               "ISO": "2026-07-07T17:37:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | Legacy Systems Annex | 2026-07-07 | 14:12:00",
+            "Valenseia | Gaffesend | The Old Castle | 2026-07-07 | 17:37:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:06:26Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "24 // \"Friendly Fire\"",
+            "verbose_id": "2.24",
+            "uuid": "91",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Twelve",
+            "auto_name_full": "Chapter Twenty-Four",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A02C25",
+         "act": 2,
+         "act_name": "Act Two: Summer",
+         "chapter": 25,
+         "chapter_name": "A House Divided",
+         "chapter_number_name": "Twenty-Five",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "Cody spirals home; Katiya waits on his couch; their mutual failures ignite a bitter fight—door slammed shut again.",
+         "blurb": "Back at the house, two people who need comfort get conflict instead.",
+         "next_publish": "09/17/26",
+         "scene_count": 2,
+         "word_count": 2418,
+         "pov_order": [
+            "Cody",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A02C25S01",
+            "A02C25S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-07-07",
+               "Time": "16:48:00",
+               "ISO": "2026-07-07T16:48:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-07-07",
+               "Time": "17:35:00",
+               "ISO": "2026-07-07T17:35:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Evergreen Estates | Cody's House | 2026-07-07 | 16:48:00",
+            "Colorado | Evergreen Estates | Cody's House | 2026-07-07 | 17:35:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:06:26Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "25 // \"A House Divided\"",
+            "verbose_id": "2.25",
+            "uuid": "94",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Thirteen",
+            "auto_name_full": "Chapter Twenty-Five",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya",
+            "Internal"
+         ]
+      },
+      {
+         "id": "A03C26",
+         "act": 3,
+         "act_name": "Act Three: Fall",
+         "chapter": 26,
+         "chapter_name": "Cold War",
+         "chapter_number_name": "Twenty-Six",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "Jackson's \"Operation Bluewings\" flashback: drone crash, mission abort, and his sacrificial call to Overwatch in the storm.",
+         "blurb": "Years earlier, in a storm of ice and static, a mission hangs by a thread.",
+         "next_publish": "09/24/26",
+         "scene_count": 3,
+         "word_count": 3616,
+         "pov_order": [
+            "Cody",
+            "Cody",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A03C26S01",
+            "A03C26S02",
+            "A03C26S03"
+         ],
+         "settings": [
+            {
+               "Date": "2015-10-03",
+               "Time": "02:23:00",
+               "ISO": "2015-10-03T02:23:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2015-10-03",
+               "Time": "03:52:00",
+               "ISO": "2015-10-03T03:52:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2015-10-03",
+               "Time": "06:28:05",
+               "ISO": "2015-10-03T06:28:05Z",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "2015-10-03 | 02:23:00",
+            "2015-10-03 | 03:52:00",
+            "2015-10-03 | 06:28:05"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T00:14:45Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "26 // \"Cold War\"",
+            "verbose_id": "3.26",
+            "uuid": "97",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter One",
+            "auto_name_full": "Chapter Twenty-Six",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody"
+         ]
+      },
+      {
+         "id": "A03C27",
+         "act": 3,
+         "act_name": "Act Three: Fall",
+         "chapter": 27,
+         "chapter_name": "Warm Solitude",
+         "chapter_number_name": "Twenty-Seven",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "Katiya's origin trauma: childhood game ? treehouse collapse ? Raph's death; she hides in a corpse pit; the Chymaeran lie brands her forever.",
+         "blurb": "Long before today, a childhood dare turned into a scar that never closed.",
+         "next_publish": "10/01/26",
+         "scene_count": 3,
+         "word_count": 4302,
+         "pov_order": [
+            "Katiya",
+            "Katiya",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A03C27S01",
+            "A03C27S02",
+            "A03C27S03"
+         ],
+         "settings": [
+            {
+               "Date": "2005-08-23",
+               "Time": "15:20:00",
+               "ISO": "2005-08-23T15:20:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "The Shortwall",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2005-08-23",
+               "Time": "16:12:00",
+               "ISO": "2005-08-23T16:12:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2005-08-23",
+               "Time": "23:57:00",
+               "ISO": "2005-08-23T23:57:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Hillfar | The Shortwall | 2005-08-23 | 15:20:00",
+            "Valenseia | Hillfar | Outskirts | 2005-08-23 | 16:12:00",
+            "Valenseia | Hillfar | Outskirts | 2005-08-23 | 23:57:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T00:14:45Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "27 // \"Warm Solitude\"",
+            "verbose_id": "3.27",
+            "uuid": "101",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Two",
+            "auto_name_full": "Chapter Twenty-Seven",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A03C28",
+         "act": 3,
+         "act_name": "Act Three: Fall",
+         "chapter": 28,
+         "chapter_name": "Prometheus",
+         "chapter_number_name": "Twenty-Eight",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "Months later: Naveen notes Cody's improvement but deeper ennui; company lunch where Reed is promoted; Reed asks Cody to help fix his flawed prototype (they bond); that night Cody, riding the high, uses Essence as flux—batteries \"fire\" and spark his next idea.",
+         "blurb": "Small progress, big disappointment—until a late-night spark hints at a dangerous idea.",
+         "next_publish": "10/08/26",
+         "scene_count": 3,
+         "word_count": 3150,
+         "pov_order": [
+            "Cody",
+            "Cody",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A03C28S01",
+            "A03C28S02",
+            "A03C28S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-25",
+               "Time": "11:00:00",
+               "ISO": "2026-11-25T11:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
+            },
+            {
+               "Date": "2026-11-25",
+               "Time": "12:17:00",
+               "ISO": "2026-11-25T12:17:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-25",
+               "Time": "22:01:00",
+               "ISO": "2026-11-25T22:01:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | Legacy Systems Annex | 2026-11-25 | 11:00:00",
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | 2026-11-25 | 12:17:00",
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | 2026-11-25 | 22:01:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T00:14:46Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "28 // \"Prometheus\"",
+            "verbose_id": "3.28",
+            "uuid": "105",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Three",
+            "auto_name_full": "Chapter Twenty-Eight",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody"
+         ]
+      },
+      {
+         "id": "A03C29",
+         "act": 3,
+         "act_name": "Act Three: Fall",
+         "chapter": 29,
+         "chapter_name": "Once Lovers",
+         "chapter_number_name": "Twenty-Nine",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "",
+         "blurb": "Family news brightens the table, but Katiya's hands won't stop shaking. A walk with Erik ends at a tavern door—and a choice she should've made months ago.",
+         "next_publish": "10/15/26",
+         "scene_count": 4,
+         "word_count": 3584,
+         "pov_order": [
+            "Katiya",
+            "Katiya",
+            "Katiya",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A03C29S01",
+            "A03C29S02",
+            "A03C29S03",
+            "A03C29S04"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-26",
+               "Time": "16:07:00",
+               "ISO": "2026-11-26T16:07:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Hilde Cottage",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-26",
+               "Time": "17:49:00",
+               "ISO": "2026-11-26T17:49:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Hilde Cottage",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-26",
+               "Time": "17:56:00",
+               "ISO": "2026-11-26T17:56:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-26",
+               "Time": "18:31:25",
+               "ISO": "2026-11-26T18:31:25Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Gaffesend | Hilde Cottage | 2026-11-26 | 16:07:00",
+            "Valenseia | Gaffesend | Hilde Cottage | 2026-11-26 | 17:49:00",
+            "Valenseia | Gaffesend | 2026-11-26 | 17:56:00",
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | Legacy Systems Annex | 2026-11-26 | 18:31:25"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T00:28:27Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "29 // \"Epimetheus\"",
+            "verbose_id": "3.29",
+            "uuid": "109",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Four",
+            "auto_name_full": "Chapter Twenty-Nine",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A03C30",
+         "act": 3,
+         "act_name": "Act Three: Fall",
+         "chapter": 30,
+         "chapter_name": "Cold Sweat",
+         "chapter_number_name": "Thirty",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "",
+         "blurb": "New alliances form while an ominous email threatens Cody's career.",
+         "next_publish": "10/22/26",
+         "scene_count": 4,
+         "word_count": 1896,
+         "pov_order": [
+            "Katiya",
+            "Cody",
+            "Katiya",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A03C30S01",
+            "A03C30S02",
+            "A03C30S03",
+            "A03C30S04"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-27",
+               "Time": "09:47:00",
+               "ISO": "2026-11-27T09:47:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Lake Garrison",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-27",
+               "Time": "06:48:00",
+               "ISO": "2026-11-27T06:48:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "FirstChoice Fitness",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-27",
+               "Time": "11:12:00",
+               "ISO": "2026-11-27T11:12:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Lake Garrison",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-27",
+               "Time": "07:10:00",
+               "ISO": "2026-11-27T07:10:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "FirstChoice Fitness",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Gaffesend | Lake Garrison | 2026-11-27 | 09:47:00",
+            "Colorado | Hearthland Ridge | FirstChoice Fitness | 2026-11-27 | 06:48:00",
+            "Valenseia | Gaffesend | Lake Garrison | 2026-11-27 | 11:12:00",
+            "Colorado | Hearthland Ridge | FirstChoice Fitness | 2026-11-27 | 07:10:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T00:34:08Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "30 // \"Cold Sweat\"",
+            "verbose_id": "3.30",
+            "uuid": "114",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Five",
+            "auto_name_full": "Chapter Thirty",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A03C31",
+         "act": 3,
+         "act_name": "Act Three: Fall",
+         "chapter": 31,
+         "chapter_name": "Heating Up",
+         "chapter_number_name": "Thirty-One",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "",
+         "blurb": "A collapse, a break-in, and a rescue drag Katiya and Cody violently back together.",
+         "next_publish": "10/29/26",
+         "scene_count": 3,
+         "word_count": 3637,
+         "pov_order": [
+            "Katiya",
+            "Cody",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A03C31S01",
+            "A03C31S02",
+            "A03C31S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-28",
+               "Time": "16:45:00",
+               "ISO": "2026-11-28T16:45:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-28",
+               "Time": "15:23:00",
+               "ISO": "2026-11-28T15:23:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
+            },
+            {
+               "Date": "2026-11-28",
+               "Time": "20:35:00",
+               "ISO": "2026-11-28T20:35:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Gaffesend | Katiya's House | 2026-11-28 | 16:45:00",
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | Legacy Systems Annex | 2026-11-28 | 15:23:00",
+            "Valenseia | Gaffesend | 2026-11-28 | 20:35:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T00:35:19Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "31 // \"Heating Up\"",
+            "verbose_id": "3.31",
+            "uuid": "119",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Six",
+            "auto_name_full": "Chapter Thirty-One",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya",
+            "MessageFrom",
+            "MessageTo",
+            "Timestamp"
+         ]
+      },
+      {
+         "id": "A03C32",
+         "act": 3,
+         "act_name": "Act Three: Fall",
+         "chapter": 32,
+         "chapter_name": "Fantastic Modernity",
+         "chapter_number_name": "Thirty-Two",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "",
+         "blurb": "Katiya's first peaceful sleep leads straight into chaotic, sword-filled \"fantasy\" tourism on Earth.",
+         "next_publish": "11/05/26",
+         "scene_count": 3,
+         "word_count": 2956,
+         "pov_order": [
+            "Katiya",
+            "Cody",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A03C32S01",
+            "A03C32S02",
+            "A03C32S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-29",
+               "Time": "05:13:00",
+               "ISO": "2026-11-29T05:13:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-29",
+               "Time": "09:31:00",
+               "ISO": "2026-11-29T09:31:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-29",
+               "Time": "10:12:00",
+               "ISO": "2026-11-29T10:12:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Evergreen Estates | Cody's House | 2026-11-29 | 05:13:00",
+            "Colorado | Evergreen Estates | Cody's House | 2026-11-29 | 09:31:00",
+            "Colorado | Evergreen Estates | Cody's House | 2026-11-29 | 10:12:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T00:35:20Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "32 // \"Fantastic Modernity\"",
+            "verbose_id": "3.32",
+            "uuid": "123",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Seven",
+            "auto_name_full": "Chapter Thirty-Two",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya",
+            "MessageFrom",
+            "Timestamp"
+         ]
+      },
+      {
+         "id": "A03C33",
+         "act": 3,
+         "act_name": "Act Three: Fall",
+         "chapter": 33,
+         "chapter_name": "Modern Fantasy",
+         "chapter_number_name": "Thirty-Three",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "",
+         "blurb": "Tournament glory and a stolen moment of closeness are shattered with sudden news from the north.",
+         "next_publish": "11/12/26",
+         "scene_count": 3,
+         "word_count": 3457,
+         "pov_order": [
+            "Cody",
+            "Katiya",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A03C33S01",
+            "A03C33S02",
+            "A03C33S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-29",
+               "Time": "14:10:00",
+               "ISO": "2026-11-29T14:10:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Rocky Mountain National Forest",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-29",
+               "Time": "14:53:00",
+               "ISO": "2026-11-29T14:53:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Rocky Mountain National Forest",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-29",
+               "Time": "22:12:00",
+               "ISO": "2026-11-29T22:12:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Rocky Mountain National Forest",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Shaleborough | Rocky Mountain National Forest | 2026-11-29 | 14:10:00",
+            "Colorado | Shaleborough | Rocky Mountain National Forest | 2026-11-29 | 14:53:00",
+            "Colorado | Shaleborough | Rocky Mountain National Forest | 2026-11-29 | 22:12:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-31T23:36:19Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "33 // \"Modern Fantasy\"",
+            "verbose_id": "3.33",
+            "uuid": "127",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Eight",
+            "auto_name_full": "Chapter Thirty-Three",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A03C34",
+         "act": 3,
+         "act_name": "Act Three: Fall",
+         "chapter": 34,
+         "chapter_name": "Professional Death",
+         "chapter_number_name": "Thirty-Four",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "",
+         "blurb": "At work, a meeting becomes a reckoning. Someone steps forward, and the cost is real.",
+         "next_publish": "11/19/26",
+         "scene_count": 3,
+         "word_count": 2883,
+         "pov_order": [
+            "Cody",
+            "Cody",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A03C34S01",
+            "A03C34S02",
+            "A03C34S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-30",
+               "Time": "06:00:03",
+               "ISO": "2026-11-30T06:00:03Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
+            },
+            {
+               "Date": "2026-11-30",
+               "Time": "07:00:02",
+               "ISO": "2026-11-30T07:00:02Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-30",
+               "Time": "08:12:00",
+               "ISO": "2026-11-30T08:12:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Evergreen Estates | Navidson-Monroe Aerospace | Legacy Systems Annex | 2026-11-30 | 06:00:03",
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | 2026-11-30 | 07:00:02",
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | Legacy Systems Annex | 2026-11-30 | 08:12:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T00:36:58Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "34 // \"Professional Death\"",
+            "verbose_id": "3.34",
+            "uuid": "131",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Nine",
+            "auto_name_full": "Chapter Thirty-Four",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody"
+         ]
+      },
+      {
+         "id": "A03C35",
+         "act": 3,
+         "act_name": "Act Three: Fall",
+         "chapter": 35,
+         "chapter_name": "Physical Demise",
+         "chapter_number_name": "Thirty-Five",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "",
+         "blurb": "Desperation pulls Katiya beyond the walls, where duty, grief, and old ghosts converge.",
+         "next_publish": "11/26/26",
+         "scene_count": 3,
+         "word_count": 3666,
+         "pov_order": [
+            "Katiya",
+            "Katiya",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A03C35S01",
+            "A03C35S02",
+            "A03C35S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-30",
+               "Time": "10:21:00",
+               "ISO": "2026-11-30T10:21:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Guards&apos; Quarter",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-30",
+               "Time": "10:54:00",
+               "ISO": "2026-11-30T10:54:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Gaffe Royal Base",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-30",
+               "Time": "12:42:00",
+               "ISO": "2026-11-30T12:42:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Village Outskirts",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Gaffesend | Guards' Quarter | 2026-11-30 | 10:21:00",
+            "Valenseia | Gaffesend | Gaffe Royal Base | 2026-11-30 | 10:54:00",
+            "Valenseia | Hillfar | Village Outskirts | 2026-11-30 | 12:42:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-31T23:36:58Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "35 // \"Physical Demise\"",
+            "verbose_id": "3.35",
+            "uuid": "135",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Ten",
+            "auto_name_full": "Chapter Thirty-Five",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A03C36",
+         "act": 3,
+         "act_name": "Act Three: Fall",
+         "chapter": 36,
+         "chapter_name": "Holding On",
+         "chapter_number_name": "Thirty-Six",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "",
+         "blurb": "Kindness and rediscovery of an old passion dare Cody to care again.",
+         "next_publish": "12/03/26",
+         "scene_count": 3,
+         "word_count": 3874,
+         "pov_order": [
+            "Cody",
+            "Cody",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A03C36S01",
+            "A03C36S02",
+            "A03C36S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-30",
+               "Time": "13:02:00",
+               "ISO": "2026-11-30T13:02:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Shaleborough",
+               "Location": "Navidson-Monroe Aerospace",
+               "Place": "Legacy Systems Annex"
+            },
+            {
+               "Date": "2026-11-30",
+               "Time": "17:49:00",
+               "ISO": "2026-11-30T17:49:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-30",
+               "Time": "19:40:00",
+               "ISO": "2026-11-30T19:40:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Shaleborough | Navidson-Monroe Aerospace | Legacy Systems Annex | 2026-11-30 | 13:02:00",
+            "Valenseia | Hearthland Ridge | 2026-11-30 | 17:49:00",
+            "Colorado | Hearthland Ridge | 2026-11-30 | 19:40:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T00:36:59Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "36 // \"Holding On\"",
+            "verbose_id": "3.36",
+            "uuid": "139",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Eleven",
+            "auto_name_full": "Chapter Thirty-Six",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "MessageFrom",
+            "Timestamp"
+         ]
+      },
+      {
+         "id": "A03C37",
+         "act": 3,
+         "act_name": "Act Three: Fall",
+         "chapter": 37,
+         "chapter_name": "Letting Go",
+         "chapter_number_name": "Thirty-Seven",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "",
+         "blurb": "Shame, buried memories, and unexpected visitors push both worlds toward a new kind of war.",
+         "next_publish": "12/10/26",
+         "scene_count": 4,
+         "word_count": 3976,
+         "pov_order": [
+            "Katiya",
+            "Katiya",
+            "Cody",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A03C37S01",
+            "A03C37S02",
+            "A03C37S03",
+            "A03C37S04"
+         ],
+         "settings": [
+            {
+               "Date": "2026-12-01",
+               "Time": "16:53:00",
+               "ISO": "2026-12-01T16:53:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-12-01",
+               "Time": "17:32:00",
+               "ISO": "2026-12-01T17:32:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Hillfar",
+               "Location": "Village Outskirts",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-12-01",
+               "Time": "23:32:00",
+               "ISO": "2026-12-01T23:32:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-12-06",
+               "Time": "12:09:00",
+               "ISO": "2026-12-06T12:09:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Hillfar | 2026-12-01 | 16:53:00",
+            "Valenseia | Hillfar | Village Outskirts | 2026-12-01 | 17:32:00",
+            "Colorado | Evergreen Estates | Cody's House | 2026-12-01 | 23:32:00",
+            "Valenseia | Gaffesend | Katiya's House | 2026-12-06 | 12:09:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-31T23:39:01Z",
+            "ModifiedLatest": "2026-03-07T20:00:01Z"
+         },
+         "raw_metadata": {
+            "doc_name": "37 // \"Letting Go\"",
+            "verbose_id": "3.37",
+            "uuid": "143",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Twelve",
+            "auto_name_full": "Chapter Thirty-Seven",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya",
+            "MessageTo",
+            "NoteCody",
+            "Timestamp"
+         ]
+      },
+      {
+         "id": "A04C38",
+         "act": 4,
+         "act_name": "Act Four: Winter",
+         "chapter": 38,
+         "chapter_name": "Bottoming Out",
+         "chapter_number_name": "Thirty-Eight",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "After reaching the ugliest versions of themselves, Cody and Katiya finally stop performing strength and let each other see the damage. Cody interrupts his own collapse long enough to comfort Katiya after Bertram's death, and Katiya's tribunal summons turns grief into a hard deadline. By the end of the chapter, despair has not lifted—but it has been given direction.",
+         "blurb": "At rock bottom, the doorway stops being an escape and becomes a lifeline.",
+         "next_publish": "12/17/26",
+         "scene_count": 2,
+         "word_count": 2440,
+         "pov_order": [
+            "Cody",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A04C38S01",
+            "A04C38S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-12-08",
+               "Time": "00:00:00",
+               "ISO": "2026-12-08T00:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-12-08",
+               "Time": "00:12:00",
+               "ISO": "2026-12-08T00:12:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Evergreen Estates | Cody's House | 2026-12-08 | 00:00:00",
+            "Valenseia | Gaffesend | Katiya's House | 2026-12-08 | 00:12:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:40:03Z",
+            "ModifiedLatest": "2026-03-07T20:05:35Z"
+         },
+         "raw_metadata": {
+            "doc_name": "38 // \"Bottoming Out\"",
+            "verbose_id": "4.38",
+            "uuid": "148",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter One",
+            "auto_name_full": "Chapter Thirty-Eight",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya",
+            "MessageTo",
+            "Timestamp"
+         ]
+      },
+      {
+         "id": "A04C39",
+         "act": 4,
+         "act_name": "Act Four: Winter",
+         "chapter": 39,
+         "chapter_name": "Crossing Over",
+         "chapter_number_name": "Thirty-Nine",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "The private crisis inside Katiya's house becomes part of a much larger war when Titus and Sylvia force their way into the story. Cody is thrown into a terrifying first encounter with people from a harsher world, Katiya begins to understand the scale of what is coming, and Cody's attempt to regroup turns into a brutal training date that recommits him to fighting for a future instead of grieving one he already lost.",
+         "blurb": "New arrivals from a dying world turn private grief into a larger war.",
+         "next_publish": "12/24/26",
+         "scene_count": 3,
+         "word_count": 3287,
+         "pov_order": [
+            "Cody",
+            "Katiya",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A04C39S01",
+            "A04C39S02",
+            "A04C39S03"
+         ],
+         "settings": [
+            {
+               "Date": "",
+               "Time": "03:39:47",
+               "ISO": "T03:39:47Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "FirstChoice Fitness",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Gaffesend | Katiya's House | 03:39:47",
+            "Valenseia | Gaffesend | Katiya's House | 00:00:00",
+            "Colorado | Hearthland Ridge | FirstChoice Fitness | 00:00:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T02:40:03Z",
+            "ModifiedLatest": "2026-03-07T20:05:56Z"
+         },
+         "raw_metadata": {
+            "doc_name": "39 // \"Crossing Over\"",
+            "verbose_id": "4.39",
+            "uuid": "151",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Two",
+            "auto_name_full": "Chapter Thirty-Nine",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A04C40",
+         "act": 4,
+         "act_name": "Act Four: Winter",
+         "chapter": 40,
+         "chapter_name": "Reaching Up",
+         "chapter_number_name": "Forty",
+         "story": "Paragate",
+         "written": true,
+         "completion": "70",
+         "summary": "The planning phase begins in earnest as Cody's world and Katiya's world stop operating like separate emotional shelters. Over coffee, cheap drinks, and overlapping stories, the group starts building a shared strategy. Cody's abandoned project stops being a joke, and Katiya's increasingly unstable home life collides with the possibility that her estranged allies might actually stand with her.",
+         "blurb": "Plans form over caffeine, alcohol, and people who finally start acting like a team.",
+         "next_publish": "12/31/26",
+         "scene_count": 3,
+         "word_count": 3026,
+         "pov_order": [
+            "Katiya",
+            "Cody",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A04C40S01",
+            "A04C40S02",
+            "A04C40S03"
+         ],
+         "settings": [
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Hearthland Ridge | 00:00:00",
+            "Valenseia | Gaffesend | Katiya's House | 00:00:00",
+            "Colorado | Evergreen Estates | Cody's House | 00:00:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:40:04Z",
+            "ModifiedLatest": "2026-03-07T20:06:19Z"
+         },
+         "raw_metadata": {
+            "doc_name": "40 // \"Reaching Up\"",
+            "verbose_id": "4.40",
+            "uuid": "155",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Three",
+            "auto_name_full": "Chapter Forty",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya",
+            "Emphasis"
+         ]
+      },
+      {
+         "id": "A04C41",
+         "act": 4,
+         "act_name": "Act Four: Winter",
+         "chapter": 41,
+         "chapter_name": "Annealment",
+         "chapter_number_name": "Forty-One",
+         "story": "Paragate",
+         "written": true,
+         "completion": "40",
+         "summary": "Action replaces vague intention. Cody begins rebuilding JAX with help instead of shame, while Katiya tries to hold together a house full of secrets, fugitives, and divided loyalties. Both storylines harden under pressure: Cody through labor, Katiya through deception and risk.",
+         "blurb": "Old metal, old wounds, and fragile trust all go back into the fire.",
+         "next_publish": "01/07/27",
+         "scene_count": 3,
+         "word_count": 3112,
+         "pov_order": [
+            "Cody",
+            "Katiya",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A04C41S01",
+            "A04C41S02",
+            "A04C41S03"
+         ],
+         "settings": [
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Evergreen Estates | Cody's House | 00:00:00",
+            "Valenseia | Gaffesend | Katiya's House | 00:00:00",
+            "Valenseia | Gaffesend | Market Street | 00:00:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:40:04Z",
+            "ModifiedLatest": "2026-03-07T20:12:00Z"
+         },
+         "raw_metadata": {
+            "doc_name": "41 // \"Annealment\"",
+            "verbose_id": "4.41",
+            "uuid": "159",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Four",
+            "auto_name_full": "Chapter Forty-One",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A04C42",
+         "act": 4,
+         "act_name": "Act Four: Winter",
+         "chapter": 42,
+         "chapter_name": "Eutectic Point",
+         "chapter_number_name": "Forty-Two",
+         "story": "Paragate",
+         "written": true,
+         "completion": "",
+         "summary": "The story widens. Katiya is introduced to Aliaki, Jade, and the deeper political reality behind the coming attack, while Cody is invited deeper into Reed's privileged world and closer to a genuine second chance at proving himself. Both protagonists are handed tools and warnings they only partly understand.",
+         "blurb": "New allies arrive with impossible answers—and worse questions.",
+         "next_publish": "01/14/27",
+         "scene_count": 3,
+         "word_count": 3039,
+         "pov_order": [
+            "Katiya",
+            "Cody",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A04C42S01",
+            "A04C42S02",
+            "A04C42S03"
+         ],
+         "settings": [
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Unknown",
+               "Area": "Unknown",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dietz Park Estates",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "00:00:00",
+            "Colorado | Hearthland Ridge | Dietz Park Estates | 00:00:00",
+            "Blackwater | The Backwoods | 00:00:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:41:45Z",
+            "ModifiedLatest": "2026-03-07T20:15:03Z"
+         },
+         "raw_metadata": {
+            "doc_name": "42 // \"Eutectic Point\"",
+            "verbose_id": "4.42",
+            "uuid": "163",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Five",
+            "auto_name_full": "Chapter Forty-Two",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A04C43",
+         "act": 4,
+         "act_name": "Act Four: Winter",
+         "chapter": 43,
+         "chapter_name": "Harsh Noise",
+         "chapter_number_name": "Forty-Three",
+         "story": "Paragate",
+         "written": true,
+         "completion": "",
+         "summary": "Hope starts making noise. Cody begins fabrication in Reed's family machine space and gains the first meaningful encouragement he has felt from adults tied to the aerospace legacy he still wants. Meanwhile, Katiya's alliance nearly implodes in a misunderstanding fueled by power and distrust, forcing her to stabilize a group that could either save Gaffesend or tear itself apart.",
+         "blurb": "One side machines hope into metal; the other fights to keep hope from tearing itself apart.",
+         "next_publish": "01/21/27",
+         "scene_count": 3,
+         "word_count": 3176,
+         "pov_order": [
+            "Cody",
+            "Katiya",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A04C43S01",
+            "A04C43S02",
+            "A04C43S03"
+         ],
+         "settings": [
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dietz Park Estates",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "The Old Castle",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "00:00:00",
+               "ISO": "T00:00:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Hearthland Ridge | Dietz Park Estates | 00:00:00",
+            "Valenseia | Gaffesend | The Old Castle | 00:00:00",
+            "Colorado | Evergreen Estates | Cody's House | 00:00:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:41:45Z",
+            "ModifiedLatest": "2026-03-07T20:16:34Z"
+         },
+         "raw_metadata": {
+            "doc_name": "43 // \"Harsh Noise\"",
+            "verbose_id": "4.43",
+            "uuid": "167",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Six",
+            "auto_name_full": "Chapter Forty-Three",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A04C44",
+         "act": 4,
+         "act_name": "Act Four: Winter",
+         "chapter": 44,
+         "chapter_name": "In Loving Memory",
+         "chapter_number_name": "Forty-Four",
+         "story": "Paragate",
+         "written": true,
+         "completion": "",
+         "summary": "Grief finally becomes communal instead of private. Cody helps Aryn and Rayna speak through loss by talking about Jackson, Katiya returns to a quieter house and finds evidence of the care he has extended to others, and the chapter ends with intimacy growing out of exhaustion, trust, and shared mourning.",
+         "blurb": "Grief moves across worlds—and intimacy arrives in its wake.",
+         "next_publish": "01/28/27",
+         "scene_count": 3,
+         "word_count": 2901,
+         "pov_order": [
+            "Cody",
+            "Katiya",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A04C44S01",
+            "A04C44S02",
+            "A04C44S03"
+         ],
+         "settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Katiya&apos;s House",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Evergreen Estates | Cody's House",
+            "Valenseia | Gaffesend | Katiya's House"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:41:45Z",
+            "ModifiedLatest": "2026-03-07T20:19:07Z"
+         },
+         "raw_metadata": {
+            "doc_name": "44 // \"In Loving Memory\"",
+            "verbose_id": "4.44",
+            "uuid": "171",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Seven",
+            "auto_name_full": "Chapter Forty-Four",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya",
+            "Emphasis",
+            "MessageFrom",
+            "Timestamp"
+         ]
+      },
+      {
+         "id": "A04C45",
+         "act": 4,
+         "act_name": "Act Four: Winter",
+         "chapter": 45,
+         "chapter_name": "In Future Grief",
+         "chapter_number_name": "Forty-Five",
+         "story": "Paragate",
+         "written": true,
+         "completion": "",
+         "summary": "Both protagonists face family systems that love them but do not really understand what they are choosing. Cody confronts his parents' fear, finances, and assumptions about his future, while Katiya tells her family the truth about the danger she still intends to face. Jackson's name and memory become fused to Cody's project, turning invention into memorial.",
+         "blurb": "Home offers no refuge—only love, pressure, and the cost of choosing your path.",
+         "next_publish": "02/04/27",
+         "scene_count": 3,
+         "word_count": 2244,
+         "pov_order": [
+            "Cody",
+            "Katiya",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A04C45S01",
+            "A04C45S02",
+            "A04C45S03"
+         ],
+         "settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Hearthland Ridge",
+               "Location": "Dunsmore Family Home",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Hilde Cottage",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Colorado | Hearthland Ridge | Dunsmore Family Home",
+            "Valenseia | Gaffesend | Hilde Cottage"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:41:45Z",
+            "ModifiedLatest": "2026-03-07T20:20:40Z"
+         },
+         "raw_metadata": {
+            "doc_name": "45 // \"In Future Grief\"",
+            "verbose_id": "4.45",
+            "uuid": "175",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Eight",
+            "auto_name_full": "Chapter Forty-Five",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya",
+            "NoteCody"
+         ]
+      },
+      {
+         "id": "A04C46",
+         "act": 4,
+         "act_name": "Act Four: Winter",
+         "chapter": 46,
+         "chapter_name": "Close Quarters",
+         "chapter_number_name": "Forty-Six",
+         "story": "Paragate",
+         "written": true,
+         "completion": "",
+         "summary": "The quiet before the storm turns out not to be quiet at all. Cody and Katiya field-test the prototype and accidentally unleash terrifying power, then return home to find official pressure closing around Katiya's life. Their last stretch of peace becomes a vow, a confession, and an act of choosing each other before the worlds move to tear them apart.",
+         "blurb": "On the last quiet day, love and danger finally stop pretending they're separate.",
+         "next_publish": "02/11/27",
+         "scene_count": 4,
+         "word_count": 3151,
+         "pov_order": [
+            "Katiya",
+            "Katiya",
+            "Katiya",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A04C46S01",
+            "A04C46S02",
+            "A04C46S03",
+            "A04C46S04"
+         ],
+         "settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Gaffesend",
+               "Location": "Market Street",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Valenseia",
+               "Area": "Holmfirth",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Colorado",
+               "Area": "Evergreen Estates",
+               "Location": "Cody&apos;s House",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Valenseia | Gaffesend | Market Street",
+            "Valenseia | Holmfirth | Outskirts",
+            "Valenseia | Holmfirth",
+            "Colorado | Evergreen Estates | Cody's House"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:44:20Z",
+            "ModifiedLatest": "2026-03-07T20:23:18Z"
+         },
+         "raw_metadata": {
+            "doc_name": "46 // \"Close Quarters\"",
+            "verbose_id": "4.46",
+            "uuid": "179",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Nine",
+            "auto_name_full": "Chapter Forty-Six",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya",
+            "MessageFrom",
+            "MessageTo",
+            "Timestamp"
+         ]
+      },
+      {
+         "id": "A04C47",
+         "act": 4,
+         "act_name": "Act Four: Winter",
+         "chapter": 47,
+         "chapter_name": "Ground Control",
+         "chapter_number_name": "Forty-Seven",
+         "story": "Paragate",
+         "written": true,
+         "completion": "",
+         "summary": "Cody and Katiya each step into what should be their final chance to claim the futures they want, only to be immediately restrained by the institutions they have spent the story trying to survive. Cody tries to reach the Aspen conference room before HR can bury him, while Katiya is taken into custody before her tribunal and shut away from the threat she knows is coming. By the end of the chapter, both are trapped inside systems that mistake control for safety.",
+         "blurb": "On the day everything might change, both worlds decide it's safer to lock their problems down.",
+         "next_publish": "02/18/27",
+         "scene_count": 4,
+         "word_count": 850,
+         "pov_order": [
+            "Cody",
+            "Katiya",
+            "Cody",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A04C47S01",
+            "A04C47S02",
+            "A04C47S03",
+            "A04C47S04"
+         ],
+         "settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            ""
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T01:44:21Z",
+            "ModifiedLatest": "2026-03-07T22:28:26Z"
+         },
+         "raw_metadata": {
+            "doc_name": "47 // \"Ground Control\"",
+            "verbose_id": "4.47",
+            "uuid": "184",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Ten",
+            "auto_name_full": "Chapter Forty-Seven",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A04C48",
+         "act": 4,
+         "act_name": "Act Four: Winter",
+         "chapter": 48,
+         "chapter_name": "Metanoia",
+         "chapter_number_name": "Forty-Eight",
+         "story": "Paragate",
+         "written": true,
+         "completion": "",
+         "summary": "Both protagonists fight for one clean chance to be heard. Cody's confession turns his firing into a political problem inside Navidson-Monroe, while Katiya persuades Aryn that the truth matters more than procedure and turns imprisonment into a joint push toward Aldrin. The chapter tests what they have actually learned: not how to escape pressure, but how to move through it without lying to themselves.",
+         "blurb": "Some doors open because you're invited. The important ones never do.",
+         "next_publish": "02/25/27",
+         "scene_count": 5,
+         "word_count": 212,
+         "pov_order": [
+            "Cody",
+            "Katiya",
+            "Cody",
+            "Katiya",
+            "Cody"
+         ],
+         "scene_ids": [
+            "A04C48S01",
+            "A04C48S02",
+            "A04C48S03",
+            "A04C48S04",
+            "A04C48S05"
+         ],
+         "settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            ""
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T02:44:21Z",
+            "ModifiedLatest": "2026-03-07T22:28:07Z"
+         },
+         "raw_metadata": {
+            "doc_name": "48 // \"Metanoia\"",
+            "verbose_id": "4.48",
+            "uuid": "189",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Eleven",
+            "auto_name_full": "Chapter Forty-Eight",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A04C49",
+         "act": 4,
+         "act_name": "Act Four: Winter",
+         "chapter": 49,
+         "chapter_name": "Paragate",
+         "chapter_number_name": "Forty-Nine",
+         "story": "Paragate",
+         "written": true,
+         "completion": "",
+         "summary": "The true conflict of Paragate begins as witness replaces doubt and preparation replaces denial. Aldrin sees enough to gamble on Katiya, while Cody leaves Navidson-Monroe uncertain of what his honesty has bought him but sure he is not done yet. Both protagonists step fully into the roles they have been resisting, and the story pivots from argument into mobilization.",
+         "blurb": "Once the truth is seen with open eyes, the only question left is whether anyone can move fast enough.",
+         "next_publish": "03/04/27",
+         "scene_count": 5,
+         "word_count": 206,
+         "pov_order": [
+            "Katiya",
+            "Cody",
+            "Katiya",
+            "Cody",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A04C49S01",
+            "A04C49S02",
+            "A04C49S03",
+            "A04C49S04",
+            "A04C49S05"
+         ],
+         "settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            ""
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T02:44:22Z",
+            "ModifiedLatest": "2026-03-07T22:35:16Z"
+         },
+         "raw_metadata": {
+            "doc_name": "49 // \"Paragate\"",
+            "verbose_id": "4.49",
+            "uuid": "195",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Twelve",
+            "auto_name_full": "Chapter Forty-Nine",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A04C50",
+         "act": 4,
+         "act_name": "Act Four: Winter",
+         "chapter": 50,
+         "chapter_name": "Knightfall",
+         "chapter_number_name": "Fifty",
+         "story": "Paragate",
+         "written": true,
+         "completion": "",
+         "summary": "The battle turns when Cody is the first to notice movement across the frozen lake and realizes the defense is pointed the wrong way. As the first line is held by powers and allies beyond the core cast, the real threat reveals itself as a coordinated strike against the city itself. Katiya is forced into the exact shape of the nightmare that made her who she is, and Cody refuses to leave her to face it entirely alone.",
+         "blurb": "Winter arrives with teeth just when the defenses start to hold.",
+         "next_publish": "03/11/27",
+         "scene_count": 4,
+         "word_count": 171,
+         "pov_order": [
+            "Cody",
+            "Katiya",
+            "Cody",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A04C50S01",
+            "A04C50S02",
+            "A04C50S03",
+            "A04C50S04"
+         ],
+         "settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            ""
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T02:44:22Z",
+            "ModifiedLatest": "2026-03-07T22:40:25Z"
+         },
+         "raw_metadata": {
+            "doc_name": "50 // \"Knightfall\"",
+            "verbose_id": "4.50",
+            "uuid": "201",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Thirteen",
+            "auto_name_full": "Chapter Fifty",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody",
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A04C51",
+         "act": 4,
+         "act_name": "Act Four: Winter",
+         "chapter": 51,
+         "chapter_name": "Daybreak",
+         "chapter_number_name": "Fifty-One",
+         "story": "Paragate",
+         "written": true,
+         "completion": "",
+         "summary": "Katiya confronts the living shape of her oldest trauma and proves that what she has learned is stronger than fear. As Nhytyx recreates the emotional architecture of the nightmare that once broke her, Katiya saves her family through action instead of paralysis, while Cody disobeys her only enough to make one small but crucial difference. At dawn, Katiya completes her arc not just by surviving the past, but by replacing it with a new public truth.",
+         "blurb": "At the edge of dawn, courage means returning to the exact place fear was born.",
+         "next_publish": "03/11/27",
+         "scene_count": 3,
+         "word_count": 126,
+         "pov_order": [
+            "Katiya",
+            "Katiya",
+            "Katiya"
+         ],
+         "scene_ids": [
+            "A04C51S01",
+            "A04C51S02",
+            "A04C51S03"
+         ],
+         "settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            ""
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T02:46:49Z",
+            "ModifiedLatest": "2026-03-07T22:45:06Z"
+         },
+         "raw_metadata": {
+            "doc_name": "51 // \"Daybreak\"",
+            "verbose_id": "4.51",
+            "uuid": "206",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Fourteen",
+            "auto_name_full": "Chapter Fifty-One",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyKatiya"
+         ]
+      },
+      {
+         "id": "A05C52",
+         "act": 5,
+         "act_name": "Epilogue",
+         "chapter": 52,
+         "chapter_name": "Parasmagate",
+         "chapter_number_name": "Fifty-Two",
+         "story": "Paragate",
+         "written": true,
+         "completion": "",
+         "summary": "The epilogue gives Paragate its emotional closure before leaving one quiet fracture open for the future. Cody and Katiya emerge from the battle changed, no longer using each other's worlds as refuge from their own lives, and their relationship finally rests on chosen commitment instead of mutual escape.",
+         "blurb": "On the western tower, two silhouettes face what's next.",
+         "next_publish": "03/18/27",
+         "scene_count": 1,
+         "word_count": 19,
+         "pov_order": [
+            "Cody"
+         ],
+         "scene_ids": [
+            "A05C52S01"
+         ],
+         "settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            ""
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T02:46:49Z",
+            "ModifiedLatest": "2026-03-07T22:49:15Z"
+         },
+         "raw_metadata": {
+            "doc_name": "52 // \"Parasmagate\"",
+            "verbose_id": "5.52",
+            "uuid": "210",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter One",
+            "auto_name_full": "Chapter Fifty-Two",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyCody"
+         ]
+      },
+      {
+         "id": "A05C53",
+         "act": 5,
+         "act_name": "Epilogue",
+         "chapter": 53,
+         "chapter_name": "Threaded Echoes",
+         "chapter_number_name": "Fifty-Three",
+         "story": "Paragate",
+         "written": true,
+         "completion": "",
+         "summary": "",
+         "blurb": "Titus' past catches up with him.",
+         "next_publish": "03/25/27",
+         "scene_count": 1,
+         "word_count": 42,
+         "pov_order": [
+            "Default"
+         ],
+         "scene_ids": [
+            "A05C53S01"
+         ],
+         "settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            ""
+         ],
+         "history": {
+            "CreatedEarliest": "2025-06-01T02:48:11Z",
+            "ModifiedLatest": "2026-03-07T22:52:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "53 // \"Threaded Echoes\"",
+            "verbose_id": "5.53",
+            "uuid": "212",
+            "status": "No Status",
+            "label": "Paragate",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Two",
+            "auto_name_full": "Chapter Fifty-Three",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "Body"
+         ]
+      }
+   ]
+}
