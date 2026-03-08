@@ -9,250 +9,301 @@ from playwright.async_api import async_playwright
 
 _DEFAULT_PRINT_CSS = r"""
 /* =========================================================
-   Scriv2WN – Raw Chapter Print Stylesheet (print-first)
+   Scriv2WN – Print Stylesheet (Two Modes)
+   ---------------------------------------------------------
+   Modes:
+     body[data-mode="chapter"]  -> single-chapter PDF (no forced chapter page breaks)
+     body[data-mode="book"]     -> multi-chapter / full-book PDF (chapters start new pages)
+   ---------------------------------------------------------
    Targets:
-   div.HeaderParagate, div.HeaderFirebrand
-   h1.PDF_CTitle, h2.PDF_CSub, h3.PDF_Snum
-   div.SceneCody, div.SceneKatiya, div.SceneTitus
-   p.BodyCody, p.BodyKatiya, p.BodyTitus
-   (Also styles div.StoryHeader because it exists in the raw HTML)
+     div.StoryHeader
+     div.HeaderParagate, div.HeaderFirebrand
+     h1.PDF_CTitle, h2.PDF_CSub, h3.PDF_Snum
+     div.SceneCody, div.SceneKatiya, div.SceneTitus
+     p.BodyCody, p.BodyKatiya, p.BodyTitus
    ========================================================= */
 
+/* ---------- Page setup ---------- */
+@page{
+  size: Letter;
+
+  /* More breathing room top/bottom */
+  margin: 1.15in 0.85in 1.10in 0.85in;
+}
+
+/* ---------- Variables ---------- */
 :root{
-  /* Print palette (kept subtle so it doesn't look like a rave in PDFs) */
-  --paper: #ffffff;
-  --ink: #111111;
-  --muted: #5f6368;
-  --faint: #9aa0a6;
-  --rule: #d8dadd;
+  /* Typography */
+  --TextSize: 11.25pt;
+  --LineHeight: 1.48;
+  --Measure: 66ch;
 
-  /* POV accents (used sparingly: small rules, scene badges) */
-  --cody:   #2a6df4; /* cool/modern */
-  --katiya: #b07a1f; /* brass/warrior */
-  --titus:  #a61b2b; /* ember */
+  /* Color */
+  --Ink: #111;
+  --Muted: #5f6368;
+  --Rule: #d8dadd;
 
-  /* Layout */
-  --page-margin-y: 18mm;
-  --page-margin-x: 16mm;
-  --measure: 66ch;          /* readable line length */
-  --leading: 1.48;          /* line height */
-  --para-gap: 0.85em;
-  --para-indent: 1.5em;
+  /* Rhythm */
+  --ParaGap: 0.85em;
+  --Indent: 1.5em;
 
-  /* Type */
-  --font-body: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, "Georgia", serif;
-  --font-head: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, "Georgia", serif;
+  /* Fonts */
+  --CodyTitle: "Oxanium", "Bahnschrift", Arial, sans-serif;
+  --CodyText:  "Roboto Flex", "Bahnschrift", Arial, sans-serif;
+  --CodySize:  calc(var(--TextSize) - 0.25pt);
+
+  --KatiyaTitle: "Cormorant Unicase", "Palatino Linotype", Palatino, Georgia, serif;
+  --KatiyaText:  "Cormorant Infant",  "Palatino Linotype", Palatino, Georgia, serif;
+  --KatiyaSize:  var(--TextSize);
+
+  --TitusTitle: "Cormorant Unicase", "Palatino Linotype", Palatino, Georgia, serif;
+  --TitusText:  "Cormorant Infant",  "Palatino Linotype", Palatino, Georgia, serif;
+  --TitusSize:  var(--TextSize);
 }
 
-/* ---------- Hard reset (gentle) ---------- */
-html, body { margin: 0; padding: 0; }
-img { max-width: 100%; height: auto; }
-* { box-sizing: border-box; }
-p { margin: 0; }
-em { font-style: italic; }
+/* ---------- Minimal reset + print niceties ---------- */
+*{ box-sizing: border-box; }
+html, body{ margin: 0; padding: 0; }
+img{ max-width: 100%; height: auto; }
+p{ margin: 0; }
+em{ font-style: italic; }
 
-/* ---------- PRINT ---------- */
-@media print {
-  @page {
-    margin: var(--page-margin-y) var(--page-margin-x);
-  }
-
-  body{
-    background: var(--paper);
-    color: var(--ink);
-    font-family: var(--font-body);
-    font-size: 11.25pt;
-    line-height: var(--leading);
-    text-rendering: geometricPrecision;
-    -webkit-font-smoothing: antialiased;
-    font-kerning: normal;
-  }
-
-  /* Keep the text column readable even on letter-sized pages */
-  body > *{
-    max-width: var(--measure);
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* Prevent lonely lines */
-  p{ orphans: 3; widows: 3; }
-
-  /* ===== Story header (logos) ===== */
-  div.StoryHeader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 14mm;
-    margin: 0 0 8mm 0;
-    padding: 0 0 6mm 0;
-    border-bottom: 1px solid var(--rule);
-  }
-  div.StoryHeader img{
-    height: 14mm;
-    width: auto;
-    object-fit: contain;
-    /* Your images are the "inv" versions in the sample,
-       so invert them back for print readability on white paper. */
-    filter: invert(1);
-  }
-
-  /* ===== Chapter header blocks ===== */
-  div.HeaderParagate,
-  div.HeaderFirebrand{
-    text-align: center;
-    margin: 10mm auto 8mm auto;
-    padding: 0 0 6mm 0;
-    border-bottom: 1px solid var(--rule);
-    break-before: page; /* each chapter starts clean */
-  }
-
-  h1.PDF_CTitle{
-    font-family: var(--font-head);
-    font-size: 18pt;
-    font-weight: 650;
-    letter-spacing: 0.06em;
-    margin: 0;
-  }
-
-  h2.PDF_CSub{
-    font-family: var(--font-head);
-    font-size: 12.5pt;
-    font-weight: 500;
-    font-style: italic;
-    color: var(--muted);
-    margin: 2.5mm 0 0 0;
-  }
-
-  /* ===== Scene blocks ===== */
-  div.SceneCody,
-  div.SceneKatiya,
-  div.SceneTitus{
-    margin: 7mm auto 0 auto;
-    padding-top: 5mm;
-    border-top: 1px solid var(--rule);
-  }
-
-  /* Scene number badge */
-  h3.PDF_Snum{
-    display: inline-block;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-    font-size: 9.5pt;
-    font-weight: 650;
-    letter-spacing: 0.12em;
-    color: var(--muted);
-    margin: 0 10px 0 0;
-    padding: 2px 7px;
-    border: 1px solid var(--rule);
-    border-radius: 999px;
-    vertical-align: baseline;
-  }
-
-  /* POV tint on the badge border (subtle but helpful) */
-  div.SceneCody  h3.PDF_Snum{ border-color: color-mix(in srgb, var(--cody) 35%, var(--rule)); }
-  div.SceneKatiya h3.PDF_Snum{ border-color: color-mix(in srgb, var(--katiya) 35%, var(--rule)); }
-  div.SceneTitus h3.PDF_Snum{ border-color: color-mix(in srgb, var(--titus) 35%, var(--rule)); }
-
-  /* ===== Paragraphs ===== */
-  p.BodyCody,
-  p.BodyKatiya,
-  p.BodyTitus{
-    margin: 0 0 var(--para-gap) 0;
-    text-indent: var(--para-indent);
-  }
-
-  /* First paragraph after the scene badge should NOT indent
-     (your HTML is: <h3 ...></h3><p ...>First line...</p>) */
-  h3.PDF_Snum + p.BodyCody,
-  h3.PDF_Snum + p.BodyKatiya,
-  h3.PDF_Snum + p.BodyTitus{
-    text-indent: 0;
-    display: inline; /* keeps the badge + first sentence feeling intentional */
-  }
-
-  /* After the first paragraph, return to block flow */
-  h3.PDF_Snum + p + p{
-    display: block;
-  }
-
-  /* Optional: tiny POV side-rule to help scanning (very light) */
-  div.SceneCody  p.BodyCody,
-  div.SceneKatiya p.BodyKatiya,
-  div.SceneTitus p.BodyTitus{
-    padding-left: 0.9em;
-    border-left: 2px solid transparent;
-  }
-  div.SceneCody  p.BodyCody{ border-left-color: color-mix(in srgb, var(--cody) 22%, transparent); }
-  div.SceneKatiya p.BodyKatiya{ border-left-color: color-mix(in srgb, var(--katiya) 22%, transparent); }
-  div.SceneTitus p.BodyTitus{ border-left-color: color-mix(in srgb, var(--titus) 22%, transparent); }
+body{
+  color: var(--Ink);
+  font-size: var(--TextSize);
+  line-height: var(--LineHeight);
+  font-kerning: normal;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  hyphens: auto;
 }
 
-/* ---------- SCREEN (optional, for quick previewing the fragments) ---------- */
-@media screen {
+/* Keep content readable (centered measure) */
+body > *{
+  max-width: var(--Measure);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Prevent lonely lines */
+p{ orphans: 3; widows: 3; }
+
+/* Avoid awkward breaks around headings */
+h1, h2, h3{ break-after: avoid; }
+
+/* ---------- Mode switch defaults ---------- */
+/* Default to "chapter" if the attribute is missing */
+body:not([data-mode]){ --MODE: chapter; }
+
+/* ---------- Story Header (logos) ---------- */
+div.StoryHeader{
+  margin-top: 0.25in;
+  margin-bottom: 0.55in;
+  padding-bottom: 0.25in;
+  border-bottom: 1px solid var(--Rule);
+  text-align: center;
+
+  /* Do NOT force a page break after this */
+  break-after: auto;
+}
+
+img.Namesake{
+  width: 80%;
+  max-width: 6.0in;
+  display: block;
+  margin: 0 auto 0.15in auto;
+
+  /* Your sample uses *_inv.png (for dark mode), so invert back for print */
+  filter: invert(0);
+}
+
+img.AuthorName{
+  width: 34%;
+  max-width: 3.0in;
+  display: block;
+  margin: 0 auto;
+
+  filter: invert(0);
+}
+
+/* ---------- Chapter Header Blocks ---------- */
+div.HeaderParagate,
+div.HeaderFirebrand{
+  text-align: center;
+  margin: 0.35in auto 0.30in auto;
+  padding-bottom: 0.20in;
+  border-bottom: 1px solid var(--Rule);
+
+  /* IMPORTANT: do NOT strand the header at the bottom */
+  break-inside: avoid;
+  break-after: avoid;
+}
+
+/* Mode: BOOK => each chapter header starts on a new page,
+   BUT NOT if it immediately follows StoryHeader (first chapter in the doc). */
+body[data-mode="book"] > div.HeaderParagate,
+body[data-mode="book"] > div.HeaderFirebrand{
+  break-before: page;
+}
+body[data-mode="book"] > div.StoryHeader + div.HeaderParagate,
+body[data-mode="book"] > div.StoryHeader + div.HeaderFirebrand{
+  break-before: auto;
+}
+
+/* Mode: CHAPTER => never force chapter page breaks */
+body[data-mode="chapter"] > div.HeaderParagate,
+body[data-mode="chapter"] > div.HeaderFirebrand{
+  break-before: auto;
+}
+
+/* Title / subtitle */
+h1.PDF_CTitle{
+  margin: 0;
+  font-size: 18pt;
+  font-weight: 650;
+  letter-spacing: 0.07em;
+  color: var(--Ink);
+}
+h2.PDF_CSub{
+  margin: 0.12in 0 0 0;
+  font-size: 12.5pt;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--Muted);
+  white-space: nowrap;
+}
+
+/* Optional: choose chapter header font based on which header div is used */
+div.HeaderParagate h1.PDF_CTitle,
+div.HeaderParagate h2.PDF_CSub{
+  font-family: var(--CodyTitle);
+}
+div.HeaderFirebrand h1.PDF_CTitle,
+div.HeaderFirebrand h2.PDF_CSub{
+  font-family: var(--TitusTitle);
+}
+
+/* ---------- Scene Blocks ---------- */
+/* Key change: DO NOT "avoid-page" on scenes. Let them flow naturally. */
+div.SceneCody,
+div.SceneKatiya,
+div.SceneTitus{
+  margin: 0.22in auto 0 auto;
+  padding-top: 0.18in;
+  border-top: 1px solid var(--Rule);
+
+  break-inside: auto;          /* allow splitting across pages */
+}
+
+/* ---------- Center-set scene numbers ---------- */
+h3.PDF_Snum{
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  margin: 0 0 0.16in 0;
+  padding: 0;
+
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 9.5pt;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--Muted);
+
+  /* Keep the number with the next paragraph */
+  break-after: avoid;
+}
+
+/* Optional: subtle lines flanking the number */
+h3.PDF_Snum::before,
+h3.PDF_Snum::after{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 18%;
+  border-top: 1px solid var(--Rule);
+  margin: 0 0.14in;
+}
+
+/* Ensure the first paragraph stays with the scene number */
+h3.PDF_Snum + p.BodyCody,
+h3.PDF_Snum + p.BodyKatiya,
+h3.PDF_Snum + p.BodyTitus{
+  break-before: avoid;
+  text-indent: 0; /* reads clean after a centered break marker */
+}
+
+/* ---------- Paragraph styles ---------- */
+p.BodyCody,
+p.BodyKatiya,
+p.BodyTitus{
+  margin: 0 0 var(--ParaGap) 0;
+  text-indent: var(--Indent);
+}
+
+/* First paragraph after a scene number: no indent (already set above) */
+h3.PDF_Snum + p.BodyCody,
+h3.PDF_Snum + p.BodyKatiya,
+h3.PDF_Snum + p.BodyTitus{
+  text-indent: 0;
+}
+
+/* Cody POV */
+p.BodyCody{
+  font-family: var(--CodyText);
+  font-size: var(--CodySize);
+  font-weight: 300;
+}
+
+/* Katiya POV */
+p.BodyKatiya{
+  font-family: var(--KatiyaText);
+  font-size: var(--KatiyaSize);
+  font-weight: 400;
+}
+
+/* Titus POV */
+p.BodyTitus{
+  font-family: var(--TitusText);
+  font-size: var(--TitusSize);
+  font-weight: 400;
+}
+
+/* ---------- Screen preview (optional) ---------- */
+@media screen{
   body{
     background: #0f1115;
     color: #e7e7ea;
-    font-family: var(--font-body);
-    line-height: 1.6;
     padding: 22px 12px;
+    line-height: 1.6;
   }
-  body > *{
-    max-width: 78ch;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  body > *{ max-width: 78ch; }
 
   div.StoryHeader{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap: 20px;
-    margin: 0 0 22px 0;
-    padding: 0 0 16px 0;
     border-bottom: 1px solid rgba(231,231,234,0.14);
   }
-  div.StoryHeader img{ height: 52px; filter: none; }
+  img.Namesake, img.AuthorName{
+    filter: none;
+  }
 
   div.HeaderParagate,
   div.HeaderFirebrand{
-    text-align:center;
-    margin: 22px 0 18px 0;
-    padding: 0 0 14px 0;
     border-bottom: 1px solid rgba(231,231,234,0.14);
   }
 
-  h1.PDF_CTitle{ margin:0; font-size: 1.55rem; letter-spacing: 0.05em; }
-  h2.PDF_CSub{ margin: 6px 0 0 0; color: rgba(231,231,234,0.72); font-style: italic; }
+  h2.PDF_CSub{ color: rgba(231,231,234,0.72); }
 
   div.SceneCody, div.SceneKatiya, div.SceneTitus{
-    margin-top: 18px;
-    padding-top: 14px;
     border-top: 1px solid rgba(231,231,234,0.12);
   }
 
   h3.PDF_Snum{
-    display:inline-block;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-    font-size: 0.8rem;
-    letter-spacing: 0.12em;
-    padding: 2px 8px;
-    border-radius: 999px;
-    border: 1px solid rgba(231,231,234,0.18);
     color: rgba(231,231,234,0.72);
-    margin: 0 10px 0 0;
   }
-
-  p.BodyCody, p.BodyKatiya, p.BodyTitus{
-    margin: 0 0 0.9em 0;
-    text-indent: 1.4em;
+  h3.PDF_Snum::before,
+  h3.PDF_Snum::after{
+    border-top-color: rgba(231,231,234,0.18);
   }
-  h3.PDF_Snum + p.BodyCody,
-  h3.PDF_Snum + p.BodyKatiya,
-  h3.PDF_Snum + p.BodyTitus{ text-indent: 0; display: inline; }
-
-  div.SceneCody  p.BodyCody{ border-left: 2px solid color-mix(in srgb, var(--cody) 45%, transparent); padding-left: 0.9em; }
-  div.SceneKatiya p.BodyKatiya{ border-left: 2px solid color-mix(in srgb, var(--katiya) 45%, transparent); padding-left: 0.9em; }
-  div.SceneTitus p.BodyTitus{ border-left: 2px solid color-mix(in srgb, var(--titus) 45%, transparent); padding-left: 0.9em; }
 }
 """
 
@@ -320,13 +371,22 @@ async def build_pdfs_from_html_dir_async(
 
             out_pdf = out_dir / f"{html_path.stem}.pdf"
             await page.pdf(
-                path=str(out_pdf),
-                format=paper,
-                print_background=True,
-                margin={"top": "18mm", "right": "16mm", "bottom": "18mm", "left": "16mm"},
-                display_header_footer=include_page_numbers,
-                header_template=header_template if include_page_numbers else None,
-                footer_template=footer_template if include_page_numbers else None,
+              path=str(out_pdf),
+              format="Letter",
+              print_background=True,
+              prefer_css_page_size=True,
+
+              # IMPORTANT: give footer room (match or exceed your @page margins)
+              margin={"top": "1.15in", "right": "0.85in", "bottom": "1.10in", "left": "0.85in"},
+
+              display_header_footer=True,
+              header_template="<div></div>",
+              footer_template="""
+                <div style="width:100%; font-size:9px; padding:0 0.85in; color:#666;
+                            display:flex; justify-content:center;">
+                Page <span class="pageNumber"></span> / <span class="totalPages"></span>
+                </div>
+              """,
             )
             written.append(out_pdf)
 
