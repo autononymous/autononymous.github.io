@@ -1,0 +1,66 @@
+[
+   [
+      [
+         "BodyCody",
+         "Watching the drone feed, Cody spots enemy figures crossing the lake and realizes the defenses are no longer where they need to be. When comms fail, he leaves the drone idling and runs into the storm to warn Katiya in person. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "EndOfScene",
+         " ",
+         true,
+         false,
+         false
+      ]
+   ],
+   [
+      [
+         "BodyKatiya",
+         "Katiya realizes the initial front only held because of the overwhelming strength of the bonus allies fighting there. As the Essence rifle runs dry, Cody finally reaches her on foot just as the drone crashes into the snow. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "EndOfScene",
+         " ",
+         true,
+         false,
+         false
+      ]
+   ],
+   [
+      [
+         "BodyCody",
+         "Cody watches Katiya redirect half the forces back toward the lake and the city, where orange light is already staining the storm. She understands at once that this is a pincer attack and that the real horror has been aimed where it will hurt her most. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "EndOfScene",
+         " ",
+         true,
+         false,
+         false
+      ]
+   ],
+   [
+      [
+         "BodyKatiya",
+         "Katiya sees the panic of her childhood rising inside her as the city burns under the same conditions that once scarred her. Cody tells her only she can do this, and she runs back toward the place where her life first broke. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "EndOfScene",
+         " ",
+         true,
+         false,
+         false
+      ]
+   ]
+]

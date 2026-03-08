@@ -1,0 +1,29 @@
+{
+   "story": "Paragate",
+   "generated_utc": "2026-03-08T06:03:27Z",
+   "metadata": {
+      "ActCount": 5,
+      "ChapterCount": 53,
+      "SceneCount": 160,
+      "WrittenCount": 160,
+      "UnwrittenCount": 0,
+      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 211,103.\n > There are 5 acts, 53 chapters, and 160 scenes.\n > This manuscript averages:\n   - 1319 words per scene.\n   - 3983 words per chapter.\n   - 3.01 scenes per chapter.\n > Out of 160 planned scenes, 160 are written.\n > So the Zero Draft is approximately 100.0% complete.\n"
+   },
+   "counts": {
+      "chapters": 53,
+      "scenes": 160,
+      "words": 156816
+   },
+   "files": {
+      "prose": "Paragate_GPT.json",
+      "indexed": "Paragate_GPT_index.json",
+      "chapters": "Paragate_GPT_chapters.json",
+      "scenes": "Paragate_GPT_scenes.json"
+   },
+   "recommended_usage": {
+      "prose": "Best for exact chapter/scene text lookup and quote retrieval.",
+      "indexed": "Best for direct chapter ID lookup using A##C## keys.",
+      "chapters": "Best for chapter-level summaries, structure, and continuity checks.",
+      "scenes": "Best for scene-level reasoning, emotional turns, setting queries, and editorial analysis."
+   }
+}

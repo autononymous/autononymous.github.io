@@ -12,6 +12,7 @@ import json as js
 import os, sys, glob, time, csv
 from datetime import datetime, timedelta
 from paragate_gpt_parse import GPT_Parse
+from novel_gpt_exports import SaveGPTExports
 import numpy as np
 from matplotlib import pyplot as plt
 
@@ -370,9 +371,9 @@ def InterpretJSON(js,info=True):
     WrittenChaps = 0
     WrittenScenes = 0
     for entry in WordCounts['Chapter']:
-        WrittenChaps = (WrittenChaps + 1) if entry != 0 else WrittenChaps
+        WrittenChaps = (WrittenChaps + 1) if entry > 1800 else WrittenChaps
     for entry in WordCounts['Scene']:
-        WrittenScenes = (WrittenScenes + 1) if entry != 0 else WrittenScenes
+        WrittenScenes = (WrittenScenes + 1) if entry > 150 else WrittenScenes
     WritChapNum = np.linspace(1,WrittenChaps,WrittenChaps)
     WritSceneNum =  np.linspace(1,WrittenScenes,WrittenScenes)
     slopeC = (WritChapNum.dot(WordCounts["SumChap"][0:WrittenChaps])) / (WritChapNum.dot(WritChapNum))
@@ -596,7 +597,7 @@ h3.PDF_Snum {
                         
             if chapter == 1:   
                 demoHTMLbody += HTMLbody + "</body></html>"
-                print(HTMLbody)
+                #print(HTMLbody)
             with open(os.getcwd() + f"/pdf/{storyname}/{chapter}.html", "w") as f:
                 f.write(HTMLbody)   
     with open(os.getcwd() + f"/pdf/{storyname}/_DEMO.html", "w") as f:
@@ -673,12 +674,21 @@ if __name__ == "__main__":
     debug = DebugLog(1)
     JS = ReadJSON('/source')
     MANUSCRIPT = InterpretJSON(JS,True)
-    #SaveMasterCopy(MANUSCRIPT,indentLevel=3)
-    #SaveSectionedCopy(MANUSCRIPT['Story'] ,indentLevel=3)
-    #SaveTableOfContents(MANUSCRIPT, indentLevel=3)
-    #SaveBasicCopy(MANUSCRIPT['Story'], indentLevel=3)
-    SaveHTMLforPDF(MANUSCRIPT['Story'])
+    SaveMasterCopy(MANUSCRIPT,indentLevel=3)
+    print(" >>> Saving Master Copy.")
+    SaveSectionedCopy(MANUSCRIPT['Story'] ,indentLevel=3)
+    print(" >>> Saving Sectioned Copy.")
+    SaveTableOfContents(MANUSCRIPT, indentLevel=3)
+    print(" >>> Saving Table Of Contents.")
+    SaveBasicCopy(MANUSCRIPT['Story'], indentLevel=3)
+    print(" >>> Saving Basic Copy.")
+    SaveGPTExports(MANUSCRIPT, JS, indentLevel=3)
+    print(" >>> Saving GPT-optimized JSON files.")
+    print(" >>> Proceeding to save PDFs.")
+    SaveHTMLforPDF(MANUSCRIPT['Story'])    
+    print(" >>> Organized HTML.")
     SavePDF()
+    print(" >>> Saved companion PDFs.")
     #ProgressReport(MANUSCRIPT)
     
     

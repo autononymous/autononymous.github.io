@@ -2,17 +2,17 @@
    "Metadata": {
       "ActCount": 5,
       "ChapterCount": 53,
-      "SceneCount": 156,
-      "WrittenCount": 138,
-      "UnwrittenCount": 18,
-      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 204,649.\n > There are 5 acts, 53 chapters, and 156 scenes.\n > This manuscript averages:\n   - 1311 words per scene.\n   - 3861 words per chapter.\n   - 2.94 scenes per chapter.\n > Out of 156 planned scenes, 138 are written.\n > So the Zero Draft is approximately 88.4% complete.\n"
+      "SceneCount": 160,
+      "WrittenCount": 160,
+      "UnwrittenCount": 0,
+      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 211,103.\n > There are 5 acts, 53 chapters, and 160 scenes.\n > This manuscript averages:\n   - 1319 words per scene.\n   - 3983 words per chapter.\n   - 3.01 scenes per chapter.\n > Out of 160 planned scenes, 160 are written.\n > So the Zero Draft is approximately 100.0% complete.\n"
    },
    "ChapterList": [
       {
          "Act": 1,
          "ActName": "Act One: Spring",
          "Chapter": 1,
-         "ChapterName": "Strangers To Enemies I",
+         "ChapterName": "Strangers To Enemies 1",
          "ChapterNumber": "One",
          "Character": [
             "Cody",
@@ -344,7 +344,7 @@
          "Act": 1,
          "ActName": "Act One: Spring",
          "Chapter": 8,
-         "ChapterName": "Strangers To Enemies",
+         "ChapterName": "Strangers To Enemies 2",
          "ChapterNumber": "Eight",
          "Character": [
             "Katiya",
@@ -1820,8 +1820,8 @@
             "Cody",
             "Katiya"
          ],
-         "Summary": "",
-         "Blurb": "This time, Katiya and Cody come together instead of shutting each other out.",
+         "Summary": "After reaching the ugliest versions of themselves, Cody and Katiya finally stop performing strength and let each other see the damage. Cody interrupts his own collapse long enough to comfort Katiya after Bertram&apos;s death, and Katiya&apos;s tribunal summons turns grief into a hard deadline. By the end of the chapter, despair has not lifted&mdash;but it has been given direction.",
+         "Blurb": "At rock bottom, the doorway stops being an escape and becomes a lifeline.",
          "Written": true,
          "Release": "12/17/26",
          "Settings": [
@@ -1859,8 +1859,8 @@
             "Katiya",
             "Cody"
          ],
-         "Summary": "",
-         "Blurb": "",
+         "Summary": "The private crisis inside Katiya&apos;s house becomes part of a much larger war when Titus and Sylvia force their way into the story. Cody is thrown into a terrifying first encounter with people from a harsher world, Katiya begins to understand the scale of what is coming, and Cody&apos;s attempt to regroup turns into a brutal training date that recommits him to fighting for a future instead of grieving one he already lost.",
+         "Blurb": "New arrivals from a dying world turn private grief into a larger war.",
          "Written": true,
          "Release": "12/24/26",
          "Settings": [
@@ -1908,8 +1908,8 @@
             "Cody",
             "Katiya"
          ],
-         "Summary": "",
-         "Blurb": "Stories from another road change the map. A cross-world conversation reframes what &quot;winning&quot; could mean.",
+         "Summary": "The planning phase begins in earnest as Cody&apos;s world and Katiya&apos;s world stop operating like separate emotional shelters. Over coffee, cheap drinks, and overlapping stories, the group starts building a shared strategy. Cody&apos;s abandoned project stops being a joke, and Katiya&apos;s increasingly unstable home life collides with the possibility that her estranged allies might actually stand with her.",
+         "Blurb": "Plans form over caffeine, alcohol, and people who finally start acting like a team.",
          "Written": true,
          "Release": "12/31/26",
          "Settings": [
@@ -1957,8 +1957,8 @@
             "Katiya",
             "Katiya"
          ],
-         "Summary": "",
-         "Blurb": "An abandoned project stops being a joke.",
+         "Summary": "Action replaces vague intention. Cody begins rebuilding JAX with help instead of shame, while Katiya tries to hold together a house full of secrets, fugitives, and divided loyalties. Both storylines harden under pressure: Cody through labor, Katiya through deception and risk.",
+         "Blurb": "Old metal, old wounds, and fragile trust all go back into the fire.",
          "Written": true,
          "Release": "01/07/27",
          "Settings": [
@@ -2006,8 +2006,8 @@
             "Cody",
             "Katiya"
          ],
-         "Summary": "",
-         "Blurb": "Turned away by authority, Katiya and her new allies make a plan anyway&mdash;three days, no permission, no safety net.",
+         "Summary": "The story widens. Katiya is introduced to Aliaki, Jade, and the deeper political reality behind the coming attack, while Cody is invited deeper into Reed&apos;s privileged world and closer to a genuine second chance at proving himself. Both protagonists are handed tools and warnings they only partly understand.",
+         "Blurb": "New allies arrive with impossible answers&mdash;and worse questions.",
          "Written": true,
          "Release": "01/14/27",
          "Settings": [
@@ -2016,9 +2016,9 @@
                "Time": "00:00:00",
                "ISO": "T00:00:00Z",
                "DoSettingTag": "Yes",
-               "Region": "Blackwater",
-               "Area": "The Backwoods",
-               "Location": "Titus&apos; Home",
+               "Region": "Unknown",
+               "Area": "Unknown",
+               "Location": "Unspecified",
                "Place": "Unspecified"
             },
             {
@@ -2055,8 +2055,8 @@
             "Katiya",
             "Cody"
          ],
-         "Summary": "",
-         "Blurb": "Cody raids parts bins and old code; the prototype finally breathes, then crosses into a world where failure isn&apos;t theoretical.",
+         "Summary": "Hope starts making noise. Cody begins fabrication in Reed&apos;s family machine space and gains the first meaningful encouragement he has felt from adults tied to the aerospace legacy he still wants. Meanwhile, Katiya&apos;s alliance nearly implodes in a misunderstanding fueled by power and distrust, forcing her to stabilize a group that could either save Gaffesend or tear itself apart.",
+         "Blurb": "One side machines hope into metal; the other fights to keep hope from tearing itself apart.",
          "Written": true,
          "Release": "01/21/27",
          "Settings": [
@@ -2104,8 +2104,8 @@
             "Katiya",
             "Cody"
          ],
-         "Summary": "",
-         "Blurb": "Cody confronts his father about a resurrected dream.",
+         "Summary": "Grief finally becomes communal instead of private. Cody helps Aryn and Rayna speak through loss by talking about Jackson, Katiya returns to a quieter house and finds evidence of the care he has extended to others, and the chapter ends with intimacy growing out of exhaustion, trust, and shared mourning.",
+         "Blurb": "Grief moves across worlds&mdash;and intimacy arrives in its wake.",
          "Written": true,
          "Release": "01/28/27",
          "Settings": [
@@ -2153,8 +2153,8 @@
             "Katiya",
             "Cody"
          ],
-         "Summary": "",
-         "Blurb": "Katiya tells her family the whole truth.",
+         "Summary": "Both protagonists face family systems that love them but do not really understand what they are choosing. Cody confronts his parents&apos; fear, finances, and assumptions about his future, while Katiya tells her family the truth about the danger she still intends to face. Jackson&apos;s name and memory become fused to Cody&apos;s project, turning invention into memorial.",
+         "Blurb": "Home offers no refuge&mdash;only love, pressure, and the cost of choosing your path.",
          "Written": true,
          "Release": "02/04/27",
          "Settings": [
@@ -2203,8 +2203,8 @@
             "Katiya",
             "Katiya"
          ],
-         "Summary": "",
-         "Blurb": "Suit pressed, nerves frayed: Cody walks into the room that could end him&mdash;or open a door.",
+         "Summary": "The quiet before the storm turns out not to be quiet at all. Cody and Katiya field-test the prototype and accidentally unleash terrifying power, then return home to find official pressure closing around Katiya&apos;s life. Their last stretch of peace becomes a vow, a confession, and an act of choosing each other before the worlds move to tear them apart.",
+         "Blurb": "On the last quiet day, love and danger finally stop pretending they&apos;re separate.",
          "Written": true,
          "Release": "02/11/27",
          "Settings": [
@@ -2258,14 +2258,36 @@
          "ChapterName": "Ground Control",
          "ChapterNumber": "Forty-Seven",
          "Character": [
-            "Default",
-            "Default"
+            "Cody",
+            "Katiya",
+            "Cody",
+            "Katiya"
          ],
-         "Summary": "",
-         "Blurb": "Proof flies. A name lands. The verdict doesn&apos;t.dea.",
+         "Summary": "Cody and Katiya each step into what should be their final chance to claim the futures they want, only to be immediately restrained by the institutions they have spent the story trying to survive. Cody tries to reach the Aspen conference room before HR can bury him, while Katiya is taken into custody before her tribunal and shut away from the threat she knows is coming. By the end of the chapter, both are trapped inside systems that mistake control for safety.",
+         "Blurb": "On the day everything might change, both worlds decide it&apos;s safer to lock their problems down.",
          "Written": true,
          "Release": "02/18/27",
          "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
             {
                "Date": "",
                "Time": "",
@@ -2293,18 +2315,40 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 48,
-         "ChapterName": "Oscar Mike",
+         "ChapterName": "Metanoia",
          "ChapterNumber": "Forty-Eight",
          "Character": [
-            "Default",
-            "Default",
-            "Default"
+            "Cody",
+            "Katiya",
+            "Cody",
+            "Katiya",
+            "Cody"
          ],
-         "Summary": "",
-         "Blurb": "Dawn, a promise, and zero guarantees. The team rolls out while Cody watches the horizon for what no one else believes.",
-         "Written": false,
+         "Summary": "Both protagonists fight for one clean chance to be heard. Cody&apos;s confession turns his firing into a political problem inside Navidson-Monroe, while Katiya persuades Aryn that the truth matters more than procedure and turns imprisonment into a joint push toward Aldrin. The chapter tests what they have actually learned: not how to escape pressure, but how to move through it without lying to themselves.",
+         "Blurb": "Some doors open because you&apos;re invited. The important ones never do.",
+         "Written": true,
          "Release": "02/25/27",
          "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
             {
                "Date": "",
                "Time": "",
@@ -2342,17 +2386,50 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 49,
-         "ChapterName": "Counter-Strike",
+         "ChapterName": "Paragate",
          "ChapterNumber": "Forty-Nine",
          "Character": [
-            "Default",
-            "Default"
+            "Katiya",
+            "Cody",
+            "Katiya",
+            "Cody",
+            "Katiya"
          ],
-         "Summary": "",
-         "Blurb": "Fire buys time&mdash;then runs out. A second danger moves where no one is looking.",
-         "Written": false,
+         "Summary": "The true conflict of Paragate begins as witness replaces doubt and preparation replaces denial. Aldrin sees enough to gamble on Katiya, while Cody leaves Navidson-Monroe uncertain of what his honesty has bought him but sure he is not done yet. Both protagonists step fully into the roles they have been resisting, and the story pivots from argument into mobilization.",
+         "Blurb": "Once the truth is seen with open eyes, the only question left is whether anyone can move fast enough.",
+         "Written": true,
          "Release": "03/04/27",
          "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
             {
                "Date": "",
                "Time": "",
@@ -2380,17 +2457,39 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 50,
-         "ChapterName": "Apotheosis",
+         "ChapterName": "Knightfall",
          "ChapterNumber": "Fifty",
          "Character": [
-            "Default",
-            "Default"
+            "Cody",
+            "Katiya",
+            "Cody",
+            "Katiya"
          ],
-         "Summary": "",
-         "Blurb": "Winter arrives with teeth. Something old stirs, and Katiya gets a chance to reconcile the past.",
-         "Written": false,
+         "Summary": "The battle turns when Cody is the first to notice movement across the frozen lake and realizes the defense is pointed the wrong way. As the first line is held by powers and allies beyond the core cast, the real threat reveals itself as a coordinated strike against the city itself. Katiya is forced into the exact shape of the nightmare that made her who she is, and Cody refuses to leave her to face it entirely alone.",
+         "Blurb": "Winter arrives with teeth just when the defenses start to hold. ",
+         "Written": true,
          "Release": "03/11/27",
          "Settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
             {
                "Date": "",
                "Time": "",
@@ -2418,17 +2517,17 @@
          "Act": 4,
          "ActName": "Act Four: Winter",
          "Chapter": 51,
-         "ChapterName": "Visions Of Fire",
+         "ChapterName": "Daybreak",
          "ChapterNumber": "Fifty-One",
          "Character": [
-            "Default",
-            "Default",
-            "Default"
+            "Katiya",
+            "Katiya",
+            "Katiya"
          ],
-         "Summary": "",
-         "Blurb": "With the city burning, Katiya chooses action.",
-         "Written": false,
-         "Release": "03/18/27",
+         "Summary": "Katiya confronts the living shape of her oldest trauma and proves that what she has learned is stronger than fear. As Nhytyx recreates the emotional architecture of the nightmare that once broke her, Katiya saves her family through action instead of paralysis, while Cody disobeys her only enough to make one small but crucial difference. At dawn, Katiya completes her arc not just by surviving the past, but by replacing it with a new public truth.",
+         "Blurb": "At the edge of dawn, courage means returning to the exact place fear was born.",
+         "Written": true,
+         "Release": "03/11/27",
          "Settings": [
             {
                "Date": "",
@@ -2470,46 +2569,13 @@
          "ChapterName": "Parasmagate",
          "ChapterNumber": "Fifty-Two",
          "Character": [
-            "Default",
-            "Default",
-            "Default",
-            "Default"
+            "Cody"
          ],
-         "Summary": "",
-         "Blurb": "New halls, old stairs. A photo in a locker. On the western tower, two silhouettes face what&apos;s next.",
-         "Written": false,
-         "Release": "03/25/27",
+         "Summary": "The epilogue gives Paragate its emotional closure before leaving one quiet fracture open for the future. Cody and Katiya emerge from the battle changed, no longer using each other&apos;s worlds as refuge from their own lives, and their relationship finally rests on chosen commitment instead of mutual escape.",
+         "Blurb": "On the western tower, two silhouettes face what&apos;s next.",
+         "Written": true,
+         "Release": "03/18/27",
          "Settings": [
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "",
-               "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
-               "Place": "Unspecified"
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "",
-               "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
-               "Place": "Unspecified"
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "",
-               "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
-               "Place": "Unspecified"
-            },
             {
                "Date": "",
                "Time": "",
@@ -2530,35 +2596,13 @@
          "ChapterName": "Threaded Echoes",
          "ChapterNumber": "Fifty-Three",
          "Character": [
-            "Default",
-            "Default",
             "Default"
          ],
          "Summary": "",
-         "Blurb": "Titus enocunters someone he thought he lost.",
-         "Written": false,
-         "Release": "04/01/27",
+         "Blurb": "Titus&apos; past catches up with him.",
+         "Written": true,
+         "Release": "03/25/27",
          "Settings": [
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "",
-               "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
-               "Place": "Unspecified"
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "",
-               "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
-               "Place": "Unspecified"
-            },
             {
                "Date": "",
                "Time": "",

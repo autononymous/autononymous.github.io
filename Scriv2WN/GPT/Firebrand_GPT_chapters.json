@@ -1,0 +1,4072 @@
+{
+   "__meta": {
+      "story": "Firebrand",
+      "export_type": "chapter_overview",
+      "generated_utc": "2026-03-08T01:45:11Z",
+      "notes": [
+         "Chapter-level retrieval file for summaries, blurbs, settings, POV order, and chapter-to-scene mapping.",
+         "Use this file when the question is about chapter purpose, structure, or high-level continuity."
+      ],
+      "manuscript_metadata": {
+         "ActCount": 6,
+         "ChapterCount": 57,
+         "SceneCount": 114,
+         "WrittenCount": 114,
+         "UnwrittenCount": 0,
+         "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Firebrand\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 200,532.\n > There are 6 acts, 57 chapters, and 114 scenes.\n > This manuscript averages:\n   - 1759 words per scene.\n   - 3518 words per chapter.\n   - 2.0 scenes per chapter.\n > Out of 114 planned scenes, 114 are written.\n > So the Zero Draft is approximately 100.0% complete.\n"
+      }
+   },
+   "__index": {
+      "id_to_index": {
+         "A01C01": 0,
+         "A01C02": 1,
+         "A02C03": 2,
+         "A02C04": 3,
+         "A02C05": 4,
+         "A02C06": 5,
+         "A02C07": 6,
+         "A02C08": 7,
+         "A02C09": 8,
+         "A02C10": 9,
+         "A02C11": 10,
+         "A02C12": 11,
+         "A02C13": 12,
+         "A02C14": 13,
+         "A02C15": 14,
+         "A02C16": 15,
+         "A02C17": 16,
+         "A02C18": 17,
+         "A02C19": 18,
+         "A02C20": 19,
+         "A03C21": 20,
+         "A03C22": 21,
+         "A03C23": 22,
+         "A03C24": 23,
+         "A03C25": 24,
+         "A03C26": 25,
+         "A03C27": 26,
+         "A03C28": 27,
+         "A03C29": 28,
+         "A03C30": 29,
+         "A03C31": 30,
+         "A03C32": 31,
+         "A03C33": 32,
+         "A04C34": 33,
+         "A04C35": 34,
+         "A04C36": 35,
+         "A04C37": 36,
+         "A04C38": 37,
+         "A04C39": 38,
+         "A04C40": 39,
+         "A04C41": 40,
+         "A04C42": 41,
+         "A05C43": 42,
+         "A05C44": 43,
+         "A05C45": 44,
+         "A05C46": 45,
+         "A05C47": 46,
+         "A05C48": 47,
+         "A05C49": 48,
+         "A05C50": 49,
+         "A05C51": 50,
+         "A05C52": 51,
+         "A05C53": 52,
+         "A05C54": 53,
+         "A05C55": 54,
+         "A05C56": 55,
+         "A06C57": 56
+      },
+      "chapter_to_id": {
+         "1": "A01C01",
+         "2": "A01C02",
+         "3": "A02C03",
+         "4": "A02C04",
+         "5": "A02C05",
+         "6": "A02C06",
+         "7": "A02C07",
+         "8": "A02C08",
+         "9": "A02C09",
+         "10": "A02C10",
+         "11": "A02C11",
+         "12": "A02C12",
+         "13": "A02C13",
+         "14": "A02C14",
+         "15": "A02C15",
+         "16": "A02C16",
+         "17": "A02C17",
+         "18": "A02C18",
+         "19": "A02C19",
+         "20": "A02C20",
+         "21": "A03C21",
+         "22": "A03C22",
+         "23": "A03C23",
+         "24": "A03C24",
+         "25": "A03C25",
+         "26": "A03C26",
+         "27": "A03C27",
+         "28": "A03C28",
+         "29": "A03C29",
+         "30": "A03C30",
+         "31": "A03C31",
+         "32": "A03C32",
+         "33": "A03C33",
+         "34": "A04C34",
+         "35": "A04C35",
+         "36": "A04C36",
+         "37": "A04C37",
+         "38": "A04C38",
+         "39": "A04C39",
+         "40": "A04C40",
+         "41": "A04C41",
+         "42": "A04C42",
+         "43": "A05C43",
+         "44": "A05C44",
+         "45": "A05C45",
+         "46": "A05C46",
+         "47": "A05C47",
+         "48": "A05C48",
+         "49": "A05C49",
+         "50": "A05C50",
+         "51": "A05C51",
+         "52": "A05C52",
+         "53": "A05C53",
+         "54": "A05C54",
+         "55": "A05C55",
+         "56": "A05C56",
+         "57": "A06C57"
+      },
+      "act_to_ids": {
+         "1": [
+            "A01C01",
+            "A01C02"
+         ],
+         "2": [
+            "A02C03",
+            "A02C04",
+            "A02C05",
+            "A02C06",
+            "A02C07",
+            "A02C08",
+            "A02C09",
+            "A02C10",
+            "A02C11",
+            "A02C12",
+            "A02C13",
+            "A02C14",
+            "A02C15",
+            "A02C16",
+            "A02C17",
+            "A02C18",
+            "A02C19",
+            "A02C20"
+         ],
+         "3": [
+            "A03C21",
+            "A03C22",
+            "A03C23",
+            "A03C24",
+            "A03C25",
+            "A03C26",
+            "A03C27",
+            "A03C28",
+            "A03C29",
+            "A03C30",
+            "A03C31",
+            "A03C32",
+            "A03C33"
+         ],
+         "4": [
+            "A04C34",
+            "A04C35",
+            "A04C36",
+            "A04C37",
+            "A04C38",
+            "A04C39",
+            "A04C40",
+            "A04C41",
+            "A04C42"
+         ],
+         "5": [
+            "A05C43",
+            "A05C44",
+            "A05C45",
+            "A05C46",
+            "A05C47",
+            "A05C48",
+            "A05C49",
+            "A05C50",
+            "A05C51",
+            "A05C52",
+            "A05C53",
+            "A05C54",
+            "A05C55",
+            "A05C56"
+         ],
+         "6": [
+            "A06C57"
+         ]
+      }
+   },
+   "chapters": [
+      {
+         "id": "A01C01",
+         "act": 1,
+         "act_name": "Prologue",
+         "chapter": 1,
+         "chapter_name": "Beginning From The End",
+         "chapter_number_name": "One",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "80",
+         "summary": "",
+         "blurb": "Titus confronts another inevitable end.",
+         "next_publish": "01/01/26",
+         "scene_count": 1,
+         "word_count": 615,
+         "pov_order": [
+            "Titus"
+         ],
+         "scene_ids": [
+            "A01C01S01"
+         ],
+         "settings": [
+            {
+               "Date": "",
+               "Time": "",
+               "ISO": "",
+               "DoSettingTag": "Yes",
+               "Region": "Unknown",
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "The Undercroft | Floor Infinity"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:32Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "59/0|Beginning From The End",
+            "verbose_id": "1.1",
+            "uuid": "1",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "Unlike the rest of the first act, this prologue is new and still needs some work. The original draft started from Chapter Two.",
+            "auto_name_part": "Chapter One",
+            "auto_name_full": "Chapter One",
+            "is_prologue": "Yes"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A01C02",
+         "act": 1,
+         "act_name": "Prologue",
+         "chapter": 2,
+         "chapter_name": "Valedictorian",
+         "chapter_number_name": "Two",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "80",
+         "summary": "",
+         "blurb": "36|Reward/The Mask",
+         "next_publish": "01/08/26",
+         "scene_count": 1,
+         "word_count": 1390,
+         "pov_order": [
+            "Titus"
+         ],
+         "scene_ids": [
+            "A01C02S01"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-20",
+               "Time": "",
+               "ISO": "2026-11-20",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Great Coliseum",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | The Academy | Great Coliseum | 2026-11-20"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:32Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "00|Prologue",
+            "verbose_id": "1.2",
+            "uuid": "3",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Two",
+            "auto_name_full": "Chapter Two",
+            "is_prologue": "Yes"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A02C03",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 3,
+         "chapter_name": "Snowdrifter",
+         "chapter_number_name": "Three",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "98",
+         "summary": "",
+         "blurb": "Titus and his friend Romin explore the outer wastes of Blackwater.",
+         "next_publish": "01/15/26",
+         "scene_count": 1,
+         "word_count": 2374,
+         "pov_order": [
+            "Titus"
+         ],
+         "scene_ids": [
+            "A02C03S01"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-20",
+               "Time": "",
+               "ISO": "2026-11-20",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Frosthards | 2026-11-20"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:45Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "01|Snowdrifter",
+            "verbose_id": "2.3",
+            "uuid": "5",
+            "status": "Final Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "The rest of this act is pretty well-revised and picked over.",
+            "auto_name_part": "Chapter One",
+            "auto_name_full": "Chapter Three",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A02C04",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 4,
+         "chapter_name": "Deliverance",
+         "chapter_number_name": "Four",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "97",
+         "summary": "",
+         "blurb": "The two friends approach the fated location on Titus' map.",
+         "next_publish": "01/22/26",
+         "scene_count": 2,
+         "word_count": 3033,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A02C04S01",
+            "A02C04S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-21",
+               "Time": "",
+               "ISO": "2026-11-21",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-22",
+               "Time": "",
+               "ISO": "2026-11-22",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Safehouse Foxtrot",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Frosthards | Barren Wastes | 2026-11-21",
+            "Frosthards | Safehouse Foxtrot | 2026-11-22"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:45Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "02|Deliverance",
+            "verbose_id": "2.4",
+            "uuid": "7",
+            "status": "Final Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Two",
+            "auto_name_full": "Chapter Four",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A02C05",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 5,
+         "chapter_name": "First Blight",
+         "chapter_number_name": "Five",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "97",
+         "summary": "",
+         "blurb": "An unfathomable scene quickly overrides the premise of their trip.",
+         "next_publish": "01/29/26",
+         "scene_count": 3,
+         "word_count": 3755,
+         "pov_order": [
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A02C05S01",
+            "A02C05S02",
+            "A02C05S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-22",
+               "Time": "",
+               "ISO": "2026-11-22",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Abandoned Cabin",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-22",
+               "Time": "",
+               "ISO": "2026-11-22",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Abandoned Cabin",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-23",
+               "Time": "",
+               "ISO": "2026-11-23",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Unspecified",
+               "Location": "Abandoned Cabin",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Frosthards | Abandoned Cabin | 2026-11-22",
+            "Frosthards | Abandoned Cabin | 2026-11-22",
+            "Frosthards | Abandoned Cabin | 2026-11-23"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:45Z",
+            "ModifiedLatest": "2026-01-04T17:17:46Z"
+         },
+         "raw_metadata": {
+            "doc_name": "03|First Blight",
+            "verbose_id": "2.5",
+            "uuid": "10",
+            "status": "Final Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Three",
+            "auto_name_full": "Chapter Five",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus",
+            "NoteTitus"
+         ]
+      },
+      {
+         "id": "A02C06",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 6,
+         "chapter_name": "Maleficence",
+         "chapter_number_name": "Six",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "98",
+         "summary": "",
+         "blurb": "Titus presents the results of his expedition at his father's rummage store.",
+         "next_publish": "02/05/26",
+         "scene_count": 2,
+         "word_count": 2884,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A02C06S01",
+            "A02C06S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-25",
+               "Time": "",
+               "ISO": "2026-11-25",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-25",
+               "Time": "",
+               "ISO": "2026-11-25",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Snowdrift Traders",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Province XIV West | Everett's Tradehouse | 2026-11-25",
+            "Blackwater | Province XIV West | Snowdrift Traders | 2026-11-25"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:46Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "04|Maleficence",
+            "verbose_id": "2.6",
+            "uuid": "14",
+            "status": "Final Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Four",
+            "auto_name_full": "Chapter Six",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A02C07",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 7,
+         "chapter_name": "Innocence",
+         "chapter_number_name": "Seven",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "93",
+         "summary": "",
+         "blurb": "Titus tends to his lonely younger sister.",
+         "next_publish": "02/12/26",
+         "scene_count": 1,
+         "word_count": 2058,
+         "pov_order": [
+            "Titus"
+         ],
+         "scene_ids": [
+            "A02C07S01"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-25",
+               "Time": "",
+               "ISO": "2026-11-25",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Province XIV East | Titus' Home | 2026-11-25"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:46Z",
+            "ModifiedLatest": "2026-01-04T17:18:15Z"
+         },
+         "raw_metadata": {
+            "doc_name": "05|Innocence",
+            "verbose_id": "2.7",
+            "uuid": "17",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Five",
+            "auto_name_full": "Chapter Seven",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus",
+            "NoteTitus"
+         ]
+      },
+      {
+         "id": "A02C08",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 8,
+         "chapter_name": "Solitude",
+         "chapter_number_name": "Eight",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "96",
+         "summary": "",
+         "blurb": "Titus finds an uncomfortable breadth of stillness, but still prefers the cold.",
+         "next_publish": "02/19/26",
+         "scene_count": 2,
+         "word_count": 2501,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A02C08S01",
+            "A02C08S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-25",
+               "Time": "",
+               "ISO": "2026-11-25",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
+            },
+            {
+               "Date": "2026-11-25",
+               "Time": "",
+               "ISO": "2026-11-25",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | The Academy | Dragon Class Lofts | Room 451 | 2026-11-25",
+            "Blackwater | Province XIV East | Dragon Class Lofts | Room 451 | 2026-11-25"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:46Z",
+            "ModifiedLatest": "2026-01-04T17:18:27Z"
+         },
+         "raw_metadata": {
+            "doc_name": "06|Solitude",
+            "verbose_id": "2.8",
+            "uuid": "19",
+            "status": "Final Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Six",
+            "auto_name_full": "Chapter Eight",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A02C09",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 9,
+         "chapter_name": "Getting Even",
+         "chapter_number_name": "Nine",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "90",
+         "summary": "",
+         "blurb": "There are always consequences for improper uses of Essence.",
+         "next_publish": "02/26/26",
+         "scene_count": 2,
+         "word_count": 2909,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A02C09S01",
+            "A02C09S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-25",
+               "Time": "",
+               "ISO": "2026-11-25",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
+            },
+            {
+               "Date": "2026-11-25",
+               "Time": "",
+               "ISO": "2026-11-25",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | The Academy | Dragon Class Lofts | Room 451 | 2026-11-25",
+            "Blackwater | The Academy | Dragon Class Lofts | Room 451 | 2026-11-25"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:46Z",
+            "ModifiedLatest": "2026-01-04T17:18:38Z"
+         },
+         "raw_metadata": {
+            "doc_name": "07|Getting Even",
+            "verbose_id": "2.9",
+            "uuid": "22",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Seven",
+            "auto_name_full": "Chapter Nine",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A02C10",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 10,
+         "chapter_name": "Fellowship",
+         "chapter_number_name": "Ten",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "90",
+         "summary": "",
+         "blurb": "Romin, Valentina, and Sylvia join Titus in one last celebration.",
+         "next_publish": "03/05/26",
+         "scene_count": 2,
+         "word_count": 2567,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A02C10S01",
+            "A02C10S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-26",
+               "Time": "",
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Vermillion Boulevard",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-26",
+               "Time": "",
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Vermillion Boulevard",
+               "Location": "Club Vermillion",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Vermillion Boulevard | 2026-11-26",
+            "Blackwater | Vermillion Boulevard | Club Vermillion | 2026-11-26"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:46Z",
+            "ModifiedLatest": "2026-01-04T17:18:45Z"
+         },
+         "raw_metadata": {
+            "doc_name": "08|Fellowship",
+            "verbose_id": "2.10",
+            "uuid": "25",
+            "status": "Final Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Eight",
+            "auto_name_full": "Chapter Ten",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A02C11",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 11,
+         "chapter_name": "Firestarter",
+         "chapter_number_name": "Eleven",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "90",
+         "summary": "",
+         "blurb": "All it takes is one little spark to set the last capital on fire.",
+         "next_publish": "03/12/26",
+         "scene_count": 2,
+         "word_count": 3059,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A02C11S01",
+            "A02C11S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-26",
+               "Time": "",
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-26",
+               "Time": "",
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | The Academy | Dragon Class Lofts | 2026-11-26",
+            "Blackwater | The Academy | Dragon Class Lofts | Room 451 | 2026-11-26"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:46Z",
+            "ModifiedLatest": "2026-01-04T17:18:58Z"
+         },
+         "raw_metadata": {
+            "doc_name": "09|Firestarter",
+            "verbose_id": "2.11",
+            "uuid": "28",
+            "status": "Final Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Nine",
+            "auto_name_full": "Chapter Eleven",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A02C12",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 12,
+         "chapter_name": "Pretense",
+         "chapter_number_name": "Twelve",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "90",
+         "summary": "",
+         "blurb": "The fractured Berguard family faces an unspeakable fate.",
+         "next_publish": "03/19/26",
+         "scene_count": 1,
+         "word_count": 2773,
+         "pov_order": [
+            "Titus"
+         ],
+         "scene_ids": [
+            "A02C12S01"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-27",
+               "Time": "",
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Province XIV East | Titus' Home | 2026-11-27"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:47Z",
+            "ModifiedLatest": "2026-01-04T17:19:02Z"
+         },
+         "raw_metadata": {
+            "doc_name": "10|Pretense",
+            "verbose_id": "2.12",
+            "uuid": "31",
+            "status": "Final Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Ten",
+            "auto_name_full": "Chapter Twelve",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A02C13",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 13,
+         "chapter_name": "Ascension",
+         "chapter_number_name": "Thirteen",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "90",
+         "summary": "",
+         "blurb": "Titus ascends the foothills of the Afterlife.",
+         "next_publish": "03/26/26",
+         "scene_count": 2,
+         "word_count": 1491,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A02C13S01",
+            "A02C13S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-27",
+               "Time": "",
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-27",
+               "Time": "",
+               "ISO": "2026-11-27",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Upper Mantle | Vermillion Estate | 2026-11-27",
+            "Blackwater | Upper Mantle | Vermillion Estate | 2026-11-27"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:47Z",
+            "ModifiedLatest": "2026-01-04T17:19:14Z"
+         },
+         "raw_metadata": {
+            "doc_name": "11|Ascension",
+            "verbose_id": "2.13",
+            "uuid": "33",
+            "status": "Final Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Eleven",
+            "auto_name_full": "Chapter Thirteen",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A02C14",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 14,
+         "chapter_name": "Endogeny",
+         "chapter_number_name": "Fourteen",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "90",
+         "summary": "",
+         "blurb": "The party discovers a sinister Chymaeran agent.",
+         "next_publish": "04/02/26",
+         "scene_count": 2,
+         "word_count": 2973,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A02C14S01",
+            "A02C14S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Upper Mantle | Vermillion Estate | 2026-11-28",
+            "Blackwater | Upper Mantle | Vermillion Estate | 2026-11-28"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:47Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "12|Endogeny",
+            "verbose_id": "2.14",
+            "uuid": "36",
+            "status": "Final Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Twelve",
+            "auto_name_full": "Chapter Fourteen",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A02C15",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 15,
+         "chapter_name": "First Wall",
+         "chapter_number_name": "Fifteen",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "90",
+         "summary": "",
+         "blurb": "The fractured group reaches the first inner wall.",
+         "next_publish": "04/09/26",
+         "scene_count": 2,
+         "word_count": 1631,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A02C15S01",
+            "A02C15S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Verdant Slope",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-29",
+               "Time": "",
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Inner Wall Checkpoint",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Upper Mantle | Verdant Slope | 2026-11-28",
+            "Blackwater | Upper Mantle | Inner Wall Checkpoint | 2026-11-29"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:47Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "13|First Wall",
+            "verbose_id": "2.15",
+            "uuid": "39",
+            "status": "Final Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Thirteen",
+            "auto_name_full": "Chapter Fifteen",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A02C16",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 16,
+         "chapter_name": "Remember Me",
+         "chapter_number_name": "Sixteen",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "90",
+         "summary": "",
+         "blurb": "The party can only watch as Romin's ego expends lives.",
+         "next_publish": "04/16/26",
+         "scene_count": 1,
+         "word_count": 1848,
+         "pov_order": [
+            "Default"
+         ],
+         "scene_ids": [
+            "A02C16S01"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-30",
+               "Time": "",
+               "ISO": "2026-11-30",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Inner Wall Checkpoint",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Upper Mantle | Inner Wall Checkpoint | 2026-11-30"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:48Z",
+            "ModifiedLatest": "2026-01-04T17:19:46Z"
+         },
+         "raw_metadata": {
+            "doc_name": "14|Remember Me",
+            "verbose_id": "2.16",
+            "uuid": "42",
+            "status": "Final Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Fourteen",
+            "auto_name_full": "Chapter Sixteen",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A02C17",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 17,
+         "chapter_name": "Summit",
+         "chapter_number_name": "Seventeen",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "90",
+         "summary": "",
+         "blurb": "Titus reaches the end of his journey.",
+         "next_publish": "04/23/26",
+         "scene_count": 2,
+         "word_count": 3690,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A02C17S01",
+            "A02C17S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-12-02",
+               "Time": "",
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Unknown",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-12-02",
+               "Time": "",
+               "ISO": "2026-12-02",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Recovery Center",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "2026-12-02",
+            "Blackwater | The Afterlife | Recovery Center | 2026-12-02"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:48Z",
+            "ModifiedLatest": "2026-01-04T17:20:10Z"
+         },
+         "raw_metadata": {
+            "doc_name": "15|Summit",
+            "verbose_id": "2.17",
+            "uuid": "44",
+            "status": "Final Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Fifteen",
+            "auto_name_full": "Chapter Seventeen",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A02C18",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 18,
+         "chapter_name": "Valensend",
+         "chapter_number_name": "Eighteen",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "85",
+         "summary": "",
+         "blurb": "Titus encounters Ullrich for a second time.",
+         "next_publish": "04/30/26",
+         "scene_count": 2,
+         "word_count": 2772,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A02C18S01",
+            "A02C18S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-12-02",
+               "Time": "",
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Recovery Center",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-12-02",
+               "Time": "",
+               "ISO": "2026-12-02",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Capitol Building",
+               "Place": "Reception Hall"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | The Afterlife | Recovery Center | 2026-12-02",
+            "Blackwater | The Afterlife | Capitol Building | Reception Hall | 2026-12-02"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:48Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "16|Valensend",
+            "verbose_id": "2.18",
+            "uuid": "47",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Sixteen",
+            "auto_name_full": "Chapter Eighteen",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A02C19",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 19,
+         "chapter_name": "Vainglory",
+         "chapter_number_name": "Nineteen",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "85",
+         "summary": "",
+         "blurb": "Tomorrow marks the advent of a golden age!'",
+         "next_publish": "05/07/26",
+         "scene_count": 2,
+         "word_count": 3717,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A02C19S01",
+            "A02C19S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-12-02",
+               "Time": "",
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Capitol Building",
+               "Place": "Reception Hall"
+            },
+            {
+               "Date": "2026-12-02",
+               "Time": "",
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Underhold",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | The Afterlife | Capitol Building | Reception Hall | 2026-12-02",
+            "Blackwater | The Afterlife | Underhold | 2026-12-02"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:48Z",
+            "ModifiedLatest": "2026-01-04T17:20:34Z"
+         },
+         "raw_metadata": {
+            "doc_name": "17|Vainglory",
+            "verbose_id": "2.19",
+            "uuid": "50",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Seventeen",
+            "auto_name_full": "Chapter Nineteen",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A02C20",
+         "act": 2,
+         "act_name": "Act One",
+         "chapter": 20,
+         "chapter_name": "Liquidation",
+         "chapter_number_name": "Twenty",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "82",
+         "summary": "",
+         "blurb": "May their souls find rest in the Reservoir.",
+         "next_publish": "05/14/26",
+         "scene_count": 2,
+         "word_count": 4127,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A02C20S01",
+            "A02C20S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-12-02",
+               "Time": "",
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Underhold",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-12-02",
+               "Time": "",
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Capitol Grounds",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | The Afterlife | Underhold | 2026-12-02",
+            "Blackwater | The Afterlife | Capitol Grounds | 2026-12-02"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:45:49Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "18|Liquidation",
+            "verbose_id": "2.20",
+            "uuid": "53",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Eighteen",
+            "auto_name_full": "Chapter Twenty",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A03C21",
+         "act": 3,
+         "act_name": "Act Two",
+         "chapter": 21,
+         "chapter_name": "Premonition",
+         "chapter_number_name": "Twenty-One",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "85",
+         "summary": "",
+         "blurb": "The thread says that none of this was ever a dream.",
+         "next_publish": "05/21/26",
+         "scene_count": 2,
+         "word_count": 2258,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A03C21S01",
+            "A03C21S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-26",
+               "Time": "",
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Room 451"
+            },
+            {
+               "Date": "2026-11-26",
+               "Time": "",
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Academy Streets",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | The Academy | Dragon Class Lofts | Room 451 | 2026-11-26",
+            "Blackwater | The Academy | Academy Streets | 2026-11-26"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:12Z",
+            "ModifiedLatest": "2026-01-04T17:20:57Z"
+         },
+         "raw_metadata": {
+            "doc_name": "19|Premonition",
+            "verbose_id": "3.21",
+            "uuid": "56",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter One",
+            "auto_name_full": "Chapter Twenty-One",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A03C22",
+         "act": 3,
+         "act_name": "Act Two",
+         "chapter": 22,
+         "chapter_name": "Lyra",
+         "chapter_number_name": "Twenty-Two",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "85",
+         "summary": "",
+         "blurb": "Titus makes an abrasive, tentative ally.",
+         "next_publish": "05/28/26",
+         "scene_count": 4,
+         "word_count": 5706,
+         "pov_order": [
+            "Titus",
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A03C22S01",
+            "A03C22S02",
+            "A03C22S03",
+            "A03C22S04"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-26",
+               "Time": "",
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Foothills",
+               "Location": "Academy Lift",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-26",
+               "Time": "",
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-26",
+               "Time": "",
+               "ISO": "2026-11-26",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Foothills | Academy Lift | 2026-11-26",
+            "Blackwater | Province XIV West | Everett's Tradehouse | 2026-11-26",
+            "Blackwater | Province XIV West | Everett's Tradehouse | 2026-11-26"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:12Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "20|Lyra",
+            "verbose_id": "3.22",
+            "uuid": "59",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Two",
+            "auto_name_full": "Chapter Twenty-Two",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A03C23",
+         "act": 3,
+         "act_name": "Act Two",
+         "chapter": 23,
+         "chapter_name": "Strategic Retreat",
+         "chapter_number_name": "Twenty-Three",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "87",
+         "summary": "",
+         "blurb": "Titus resists inevitability.",
+         "next_publish": "06/04/26",
+         "scene_count": 2,
+         "word_count": 4473,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A03C23S01",
+            "A03C23S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-27",
+               "Time": "",
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Province XIV East | Titus' Home | 2026-11-27"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:12Z",
+            "ModifiedLatest": "2026-01-04T17:22:08Z"
+         },
+         "raw_metadata": {
+            "doc_name": "21|Strategic Retreat",
+            "verbose_id": "3.23",
+            "uuid": "64",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Three",
+            "auto_name_full": "Chapter Twenty-Three",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A03C24",
+         "act": 3,
+         "act_name": "Act Two",
+         "chapter": 24,
+         "chapter_name": "Explanation",
+         "chapter_number_name": "Twenty-Four",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "80",
+         "summary": "",
+         "blurb": "Titus' friends arrive for answers to his strange behavior.",
+         "next_publish": "06/11/26",
+         "scene_count": 2,
+         "word_count": 3129,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A03C24S01",
+            "A03C24S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-27",
+               "Time": "",
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-27",
+               "Time": "",
+               "ISO": "2026-11-27",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Province XIV East | Titus' Home | 2026-11-27",
+            "Blackwater | Province XIV East | Titus' Home | 2026-11-27"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:12Z",
+            "ModifiedLatest": "2026-01-04T17:22:17Z"
+         },
+         "raw_metadata": {
+            "doc_name": "22|Explanation",
+            "verbose_id": "3.24",
+            "uuid": "67",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "I intend to remove the domestic violence angle from Romin's actions: it would make him an unforgivable character that could not be redeemed.",
+            "auto_name_part": "Chapter Four",
+            "auto_name_full": "Chapter Twenty-Four",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A03C25",
+         "act": 3,
+         "act_name": "Act Two",
+         "chapter": 25,
+         "chapter_name": "Everlasting Moment",
+         "chapter_number_name": "Twenty-Five",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "85",
+         "summary": "",
+         "blurb": "Titus lives a near eternity in a single moment.",
+         "next_publish": "06/18/26",
+         "scene_count": 3,
+         "word_count": 3569,
+         "pov_order": [
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A03C25S01",
+            "A03C25S02",
+            "A03C25S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-27",
+               "Time": "",
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-27",
+               "Time": "",
+               "ISO": "2026-11-27",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Province XIV East | Titus' Home | 2026-11-27",
+            "Blackwater | Province XIV East | Titus' Home | 2026-11-27"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:12Z",
+            "ModifiedLatest": "2026-01-04T17:22:33Z"
+         },
+         "raw_metadata": {
+            "doc_name": "23|Everlasting Moment",
+            "verbose_id": "3.25",
+            "uuid": "70",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Five",
+            "auto_name_full": "Chapter Twenty-Five",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A03C26",
+         "act": 3,
+         "act_name": "Act Two",
+         "chapter": 26,
+         "chapter_name": "Beneath",
+         "chapter_number_name": "Twenty-Six",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "85",
+         "summary": "",
+         "blurb": "It was the only way we could survive.",
+         "next_publish": "06/25/26",
+         "scene_count": 2,
+         "word_count": 2113,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A03C26S01",
+            "A03C26S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-27",
+               "Time": "",
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Snowdrift Traders",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Province XIV East | Titus' Home | 2026-11-27",
+            "Blackwater | Province XIV West | Snowdrift Traders | 2026-11-28"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:13Z",
+            "ModifiedLatest": "2026-01-04T17:22:39Z"
+         },
+         "raw_metadata": {
+            "doc_name": "24|Beneath",
+            "verbose_id": "3.26",
+            "uuid": "74",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Six",
+            "auto_name_full": "Chapter Twenty-Six",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A03C27",
+         "act": 3,
+         "act_name": "Act Two",
+         "chapter": 27,
+         "chapter_name": "Breaking The Habit",
+         "chapter_number_name": "Twenty-Seven",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "88",
+         "summary": "",
+         "blurb": "Titus sees his father in a different light.",
+         "next_publish": "07/02/26",
+         "scene_count": 2,
+         "word_count": 2323,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A03C27S01",
+            "A03C27S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Snowdrift Traders",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Snowdrift Traders",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Province XIV West | Snowdrift Traders | 2026-11-28",
+            "Blackwater | Province XIV West | Snowdrift Traders | 2026-11-28"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:13Z",
+            "ModifiedLatest": "2026-01-04T17:22:49Z"
+         },
+         "raw_metadata": {
+            "doc_name": "25|Breaking The Habit",
+            "verbose_id": "3.27",
+            "uuid": "77",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "Inspired by a section from \"I Don't Want To Talk About It\" by <em>Terrence Real</em>.",
+            "auto_name_part": "Chapter Seven",
+            "auto_name_full": "Chapter Twenty-Seven",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A03C28",
+         "act": 3,
+         "act_name": "Act Two",
+         "chapter": 28,
+         "chapter_name": "Egress",
+         "chapter_number_name": "Twenty-Eight",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "86",
+         "summary": "",
+         "blurb": "Snowdrifters drift by steel this time.",
+         "next_publish": "07/09/26",
+         "scene_count": 2,
+         "word_count": 3194,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A03C28S01",
+            "A03C28S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Outwallers&apos; Shanty",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Railcar S",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Outwallers' Shanty | 2026-11-28",
+            "Frosthards | Barren Wastes | Railcar S | 2026-11-28"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:13Z",
+            "ModifiedLatest": "2026-01-04T17:22:57Z"
+         },
+         "raw_metadata": {
+            "doc_name": "26|Egress",
+            "verbose_id": "3.28",
+            "uuid": "80",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Eight",
+            "auto_name_full": "Chapter Twenty-Eight",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A03C29",
+         "act": 3,
+         "act_name": "Act Two",
+         "chapter": 29,
+         "chapter_name": "Slaughter",
+         "chapter_number_name": "Twenty-Nine",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "82",
+         "summary": "",
+         "blurb": "The survivors realize the ultimate purpose of the unexceptional graduates.",
+         "next_publish": "07/16/26",
+         "scene_count": 2,
+         "word_count": 2374,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A03C29S01",
+            "A03C29S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Railcar S",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Railcar S",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Frosthards | Barren Wastes | Railcar S | 2026-11-28",
+            "Frosthards | Barren Wastes | Railcar S | 2026-11-28"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:13Z",
+            "ModifiedLatest": "2026-01-04T17:23:06Z"
+         },
+         "raw_metadata": {
+            "doc_name": "27|Slaughter",
+            "verbose_id": "3.29",
+            "uuid": "83",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Nine",
+            "auto_name_full": "Chapter Twenty-Nine",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A03C30",
+         "act": 3,
+         "act_name": "Act Two",
+         "chapter": 30,
+         "chapter_name": "Backwoods",
+         "chapter_number_name": "Thirty",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "82",
+         "summary": "",
+         "blurb": "The furthest snowdrifitng expedition.",
+         "next_publish": "07/23/26",
+         "scene_count": 2,
+         "word_count": 3084,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A03C30S01",
+            "A03C30S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Frosthards | Barren Wastes | 2026-11-28",
+            "Frosthards | The Backwoods | 2026-11-28"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:13Z",
+            "ModifiedLatest": "2026-01-04T17:23:21Z"
+         },
+         "raw_metadata": {
+            "doc_name": "28|Backwoods",
+            "verbose_id": "3.30",
+            "uuid": "86",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Ten",
+            "auto_name_full": "Chapter Thirty",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A03C31",
+         "act": 3,
+         "act_name": "Act Two",
+         "chapter": 31,
+         "chapter_name": "Outpost",
+         "chapter_number_name": "Thirty-One",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "82",
+         "summary": "",
+         "blurb": "There is a stronghold far beyond the limits.",
+         "next_publish": "07/30/26",
+         "scene_count": 1,
+         "word_count": 1911,
+         "pov_order": [
+            "Titus"
+         ],
+         "scene_ids": [
+            "A03C31S01"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Frosthards | The Backwoods | 2026-11-28"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:13Z",
+            "ModifiedLatest": "2026-01-04T17:23:27Z"
+         },
+         "raw_metadata": {
+            "doc_name": "29|Outpost",
+            "verbose_id": "3.31",
+            "uuid": "89",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Eleven",
+            "auto_name_full": "Chapter Thirty-One",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A03C32",
+         "act": 3,
+         "act_name": "Act Two",
+         "chapter": 32,
+         "chapter_name": "Unsettled Glory",
+         "chapter_number_name": "Thirty-Two",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "82",
+         "summary": "",
+         "blurb": "They worship themselves in unpaid glory.",
+         "next_publish": "08/06/26",
+         "scene_count": 2,
+         "word_count": 3288,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A03C32S01",
+            "A03C32S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-29",
+               "Time": "",
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-30",
+               "Time": "",
+               "ISO": "2026-11-30",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Frosthards | The Backwoods | 2026-11-29",
+            "Frosthards | The Backwoods | 2026-11-30"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:13Z",
+            "ModifiedLatest": "2026-01-04T17:23:48Z"
+         },
+         "raw_metadata": {
+            "doc_name": "30|Unsettled Glory",
+            "verbose_id": "3.32",
+            "uuid": "91",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Twelve",
+            "auto_name_full": "Chapter Thirty-Two",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A03C33",
+         "act": 3,
+         "act_name": "Act Two",
+         "chapter": 33,
+         "chapter_name": "Craven Denial",
+         "chapter_number_name": "Thirty-Three",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "78",
+         "summary": "",
+         "blurb": "The First Red refuse the premise of their purpose.",
+         "next_publish": "08/13/26",
+         "scene_count": 2,
+         "word_count": 2792,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A03C33S01",
+            "A03C33S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-29",
+               "Time": "",
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-29",
+               "Time": "",
+               "ISO": "2026-11-29",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Frosthards | The Backwoods | 2026-11-29",
+            "Frosthards | The Backwoods | 2026-11-29"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:14Z",
+            "ModifiedLatest": "2026-01-04T17:23:56Z"
+         },
+         "raw_metadata": {
+            "doc_name": "31|Craven Denial",
+            "verbose_id": "3.33",
+            "uuid": "94",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "Need a little more work on  making Titus' actions believable at the end here. Further descent into madness.",
+            "auto_name_part": "Chapter Thirteen",
+            "auto_name_full": "Chapter Thirty-Three",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A04C34",
+         "act": 4,
+         "act_name": "Act Three",
+         "chapter": 34,
+         "chapter_name": "Deployment",
+         "chapter_number_name": "Thirty-Four",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "72",
+         "summary": "",
+         "blurb": "Titus deploys for service with the underachieving classes.",
+         "next_publish": "08/20/26",
+         "scene_count": 2,
+         "word_count": 3977,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A04C34S01",
+            "A04C34S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-30",
+               "Time": "",
+               "ISO": "2026-11-30",
+               "DoSettingTag": "Yes",
+               "Region": "Unknown",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "2026-11-30"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:24Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "32|Deployment",
+            "verbose_id": "4.34",
+            "uuid": "97",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter One",
+            "auto_name_full": "Chapter Thirty-Four",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A04C35",
+         "act": 4,
+         "act_name": "Act Three",
+         "chapter": 35,
+         "chapter_name": "Timeless",
+         "chapter_number_name": "Thirty-Five",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "70",
+         "summary": "",
+         "blurb": "Titus finds himself deep within the Undercroft.",
+         "next_publish": "08/27/26",
+         "scene_count": 3,
+         "word_count": 3565,
+         "pov_order": [
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A04C35S01",
+            "A04C35S02",
+            "A04C35S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-30",
+               "Time": "",
+               "ISO": "2026-11-30",
+               "DoSettingTag": "Yes",
+               "Region": "Unknown",
+               "Area": "The Undercroft",
+               "Location": "Floor Thousandth",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-31",
+               "Time": "",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
+               "Region": "Unknown",
+               "Area": "The Undercroft",
+               "Location": "Floor Hundredth",
+               "Place": "Victory Row"
+            },
+            {
+               "Date": "2026-11-31",
+               "Time": "",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
+               "Region": "Unknown",
+               "Area": "The Undercroft",
+               "Location": "Central Void",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "The Undercroft | Floor Thousandth | 2026-11-30",
+            "The Undercroft | Floor Hundredth | Victory Row | 2026-11-31",
+            "The Undercroft | Central Void | 2026-11-31"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:25Z",
+            "ModifiedLatest": "2026-01-04T17:24:36Z"
+         },
+         "raw_metadata": {
+            "doc_name": "33|Timeless",
+            "verbose_id": "4.35",
+            "uuid": "100",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Two",
+            "auto_name_full": "Chapter Thirty-Five",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus",
+            "NoteTitus"
+         ]
+      },
+      {
+         "id": "A04C36",
+         "act": 4,
+         "act_name": "Act Three",
+         "chapter": 36,
+         "chapter_name": "Pulling Punches",
+         "chapter_number_name": "Thirty-Six",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "70",
+         "summary": "",
+         "blurb": "Titus contemplates the value of his humanity. A stranger solicits him.",
+         "next_publish": "09/03/26",
+         "scene_count": 3,
+         "word_count": 3820,
+         "pov_order": [
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A04C36S01",
+            "A04C36S02",
+            "A04C36S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-31",
+               "Time": "",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
+               "Region": "Unknown",
+               "Area": "The Undercroft",
+               "Location": "Floor Hundredth",
+               "Place": "Victory Row"
+            },
+            {
+               "Date": "2026-11-31",
+               "Time": "",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
+               "Region": "Unknown",
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-31",
+               "Time": "",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
+               "Region": "Unknown",
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "The Undercroft | Floor Hundredth | Victory Row | 2026-11-31",
+            "The Undercroft | Subterranean Farmlands | 2026-11-31",
+            "The Undercroft | Subterranean Farmlands | 2026-11-31"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:25Z",
+            "ModifiedLatest": "2026-01-04T17:25:18Z"
+         },
+         "raw_metadata": {
+            "doc_name": "34|Pulling Punches",
+            "verbose_id": "4.36",
+            "uuid": "104",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Three",
+            "auto_name_full": "Chapter Thirty-Six",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus",
+            "NoteTitus"
+         ]
+      },
+      {
+         "id": "A04C37",
+         "act": 4,
+         "act_name": "Act Three",
+         "chapter": 37,
+         "chapter_name": "No Holds",
+         "chapter_number_name": "Thirty-Seven",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "70",
+         "summary": "",
+         "blurb": "Titus decides a piece of himself is no longer useful.",
+         "next_publish": "09/10/26",
+         "scene_count": 3,
+         "word_count": 3712,
+         "pov_order": [
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A04C37S01",
+            "A04C37S02",
+            "A04C37S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-31",
+               "Time": "",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
+               "Region": "Unknown",
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-31",
+               "Time": "",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "No",
+               "Region": "Unknown",
+               "Area": "The Undercroft",
+               "Location": "Subterranean Farmlands",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "The Undercroft | Subterranean Farmlands | 2026-11-31",
+            "The Undercroft | Subterranean Farmlands | 2026-11-31"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:25Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "35|No Holds",
+            "verbose_id": "4.37",
+            "uuid": "108",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Four",
+            "auto_name_full": "Chapter Thirty-Seven",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A04C38",
+         "act": 4,
+         "act_name": "Act Three",
+         "chapter": 38,
+         "chapter_name": "Reward/The Vassal",
+         "chapter_number_name": "Thirty-Eight",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "70",
+         "summary": "",
+         "blurb": "Titus reaches an unexpected end.",
+         "next_publish": "09/17/26",
+         "scene_count": 2,
+         "word_count": 2731,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A04C38S01",
+            "A04C38S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-31",
+               "Time": "",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
+               "Region": "Unknown",
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-31",
+               "Time": "",
+               "ISO": "2026-11-31",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Unknown",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "The Undercroft | Floor Infinity | 2026-11-31",
+            "Frosthards | 2026-11-31"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:25Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "36|Reward/The Mask",
+            "verbose_id": "4.38",
+            "uuid": "112",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Five",
+            "auto_name_full": "Chapter Thirty-Eight",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A04C39",
+         "act": 4,
+         "act_name": "Act Three",
+         "chapter": 39,
+         "chapter_name": "Revelation",
+         "chapter_number_name": "Thirty-Nine",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "70",
+         "summary": "",
+         "blurb": "A vicious enemy unmasks themselves.",
+         "next_publish": "09/24/26",
+         "scene_count": 2,
+         "word_count": 1813,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A04C39S01",
+            "A04C39S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-12-02",
+               "Time": "",
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "First Red Ampitheatre",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-12-02",
+               "Time": "",
+               "ISO": "2026-12-02",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Frosthards | The Backwoods | First Red Ampitheatre | 2026-12-02",
+            "Frosthards | The Backwoods | 2026-12-02"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:25Z",
+            "ModifiedLatest": "2026-01-04T17:25:46Z"
+         },
+         "raw_metadata": {
+            "doc_name": "37|Revelation",
+            "verbose_id": "4.39",
+            "uuid": "115",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Six",
+            "auto_name_full": "Chapter Thirty-Nine",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A04C40",
+         "act": 4,
+         "act_name": "Act Three",
+         "chapter": 40,
+         "chapter_name": "Forced Rehabilitation",
+         "chapter_number_name": "Forty",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "75",
+         "summary": "",
+         "blurb": "Titus is forced to receive compassion.",
+         "next_publish": "10/01/26",
+         "scene_count": 2,
+         "word_count": 2226,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A04C40S01",
+            "A04C40S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-12-02",
+               "Time": "",
+               "ISO": "2026-12-02",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-12-20",
+               "Time": "",
+               "ISO": "2026-12-20",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Frosthards | The Backwoods | 2026-12-02",
+            "Frosthards | The Backwoods | 2026-12-20"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:25Z",
+            "ModifiedLatest": "2026-01-04T17:25:55Z"
+         },
+         "raw_metadata": {
+            "doc_name": "38|Forced Rehabilitation",
+            "verbose_id": "4.40",
+            "uuid": "118",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "Peak of the narrative premise of the story.",
+            "auto_name_part": "Chapter Seven",
+            "auto_name_full": "Chapter Forty",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A04C41",
+         "act": 4,
+         "act_name": "Act Three",
+         "chapter": 41,
+         "chapter_name": "Rememberance",
+         "chapter_number_name": "Forty-One",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "75",
+         "summary": "",
+         "blurb": "Titus recalls the horrors of what his anger set in motion.",
+         "next_publish": "10/08/26",
+         "scene_count": 2,
+         "word_count": 3750,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A04C41S01",
+            "A04C41S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-12-20",
+               "Time": "",
+               "ISO": "2026-12-20",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-12-20",
+               "Time": "",
+               "ISO": "2026-12-20",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Frosthards | The Backwoods | 2026-12-20",
+            "Frosthards | The Backwoods | 2026-12-20"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:26Z",
+            "ModifiedLatest": "2026-01-04T17:26:07Z"
+         },
+         "raw_metadata": {
+            "doc_name": "39|Rememberance",
+            "verbose_id": "4.41",
+            "uuid": "121",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Eight",
+            "auto_name_full": "Chapter Forty-One",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A04C42",
+         "act": 4,
+         "act_name": "Act Three",
+         "chapter": 42,
+         "chapter_name": "Atonement",
+         "chapter_number_name": "Forty-Two",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "75",
+         "summary": "",
+         "blurb": "A powerful ally centers Titus in one final effort.",
+         "next_publish": "10/15/26",
+         "scene_count": 1,
+         "word_count": 887,
+         "pov_order": [
+            "Titus"
+         ],
+         "scene_ids": [
+            "A04C42S01"
+         ],
+         "settings": [
+            {
+               "Date": "2026-12-20",
+               "Time": "",
+               "ISO": "2026-12-20",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Frosthards | The Backwoods | 2026-12-20"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:26Z",
+            "ModifiedLatest": "2026-01-04T17:26:11Z"
+         },
+         "raw_metadata": {
+            "doc_name": "40|Atonement",
+            "verbose_id": "4.42",
+            "uuid": "124",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Nine",
+            "auto_name_full": "Chapter Forty-Two",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A05C43",
+         "act": 5,
+         "act_name": "Act Four",
+         "chapter": 43,
+         "chapter_name": "Special Pleading",
+         "chapter_number_name": "Forty-Three",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "80",
+         "summary": "",
+         "blurb": "Titus recognizes the strength in his beloved friends.",
+         "next_publish": "10/22/26",
+         "scene_count": 2,
+         "word_count": 3385,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A05C43S01",
+            "A05C43S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-20",
+               "Time": "",
+               "ISO": "2026-11-20",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Great Coliseum",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-20",
+               "Time": "",
+               "ISO": "2026-11-20",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Great Coliseum",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | The Academy | Great Coliseum | 2026-11-20",
+            "Blackwater | The Academy | Great Coliseum | 2026-11-20"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:35Z",
+            "ModifiedLatest": "2026-01-04T17:26:26Z"
+         },
+         "raw_metadata": {
+            "doc_name": "41|Special Pleading",
+            "verbose_id": "5.43",
+            "uuid": "126",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter One",
+            "auto_name_full": "Chapter Forty-Three",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A05C44",
+         "act": 5,
+         "act_name": "Act Four",
+         "chapter": 44,
+         "chapter_name": "Late Confession",
+         "chapter_number_name": "Forty-Four",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "75",
+         "summary": "",
+         "blurb": "Titus digs deep and confronts one of his fears.",
+         "next_publish": "10/29/26",
+         "scene_count": 2,
+         "word_count": 2534,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A05C44S01",
+            "A05C44S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-20",
+               "Time": "",
+               "ISO": "2026-11-20",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Academy",
+               "Location": "Dragon Class Lofts",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-20",
+               "Time": "",
+               "ISO": "2026-11-20",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | The Academy | Dragon Class Lofts | 2026-11-20",
+            "Blackwater | Province XIV East | Titus' Home | 2026-11-20"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:36Z",
+            "ModifiedLatest": "2026-01-04T17:26:32Z"
+         },
+         "raw_metadata": {
+            "doc_name": "42|Late Confession",
+            "verbose_id": "5.44",
+            "uuid": "129",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Two",
+            "auto_name_full": "Chapter Forty-Four",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A05C45",
+         "act": 5,
+         "act_name": "Act Four",
+         "chapter": 45,
+         "chapter_name": "Snowdrifters (Plural)",
+         "chapter_number_name": "Forty-Five",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "75",
+         "summary": "",
+         "blurb": "Titus and his plurality of friends explore the outer wastes of Blackwater.",
+         "next_publish": "11/05/26",
+         "scene_count": 2,
+         "word_count": 2733,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A05C45S01",
+            "A05C45S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-21",
+               "Time": "",
+               "ISO": "2026-11-21",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Safehouse Foxtrot",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-22",
+               "Time": "",
+               "ISO": "2026-11-22",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "Barren Wastes",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Frosthards | Barren Wastes | Safehouse Foxtrot | 2026-11-21",
+            "Frosthards | Barren Wastes | 2026-11-22"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:36Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "43|Snowdrifters (Plural)",
+            "verbose_id": "5.45",
+            "uuid": "132",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Three",
+            "auto_name_full": "Chapter Forty-Five",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A05C46",
+         "act": 5,
+         "act_name": "Act Four",
+         "chapter": 46,
+         "chapter_name": "Saving Face",
+         "chapter_number_name": "Forty-Six",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "75",
+         "summary": "",
+         "blurb": "Something is different this time. Can you feel it?",
+         "next_publish": "11/12/26",
+         "scene_count": 3,
+         "word_count": 3790,
+         "pov_order": [
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A05C46S01",
+            "A05C46S02",
+            "A05C46S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-23",
+               "Time": "",
+               "ISO": "2026-11-23",
+               "DoSettingTag": "Yes",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-23",
+               "Time": "",
+               "ISO": "2026-11-23",
+               "DoSettingTag": "No",
+               "Region": "Frosthards",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-23",
+               "Time": "",
+               "ISO": "2026-11-23",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Backwoods",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Frosthards | The Backwoods | 2026-11-23",
+            "Frosthards | The Backwoods | 2026-11-23",
+            "Blackwater | The Backwoods | 2026-11-23"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:36Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "44|Saving Face",
+            "verbose_id": "5.46",
+            "uuid": "135",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Four",
+            "auto_name_full": "Chapter Forty-Six",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A05C47",
+         "act": 5,
+         "act_name": "Act Four",
+         "chapter": 47,
+         "chapter_name": "Firequencher",
+         "chapter_number_name": "Forty-Seven",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "70",
+         "summary": "",
+         "blurb": "They ambush the ambush on future intelligence.",
+         "next_publish": "11/19/26",
+         "scene_count": 3,
+         "word_count": 3754,
+         "pov_order": [
+            "Titus",
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A05C47S01",
+            "A05C47S02",
+            "A05C47S03"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-26",
+               "Time": "",
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Carmine Compound",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-26",
+               "Time": "",
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Everett&apos;s Tradehouse",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-26",
+               "Time": "",
+               "ISO": "2026-11-26",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Province XIV West | Carmine Compound | 2026-11-26",
+            "Blackwater | Province XIV West | Everett's Tradehouse | 2026-11-26",
+            "Blackwater | Province XIV East | Titus' Home | 2026-11-26"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:36Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "45|Firequencher",
+            "verbose_id": "5.47",
+            "uuid": "139",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Five",
+            "auto_name_full": "Chapter Forty-Seven",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A05C48",
+         "act": 5,
+         "act_name": "Act Four",
+         "chapter": 48,
+         "chapter_name": "Vermillion Family Reunion",
+         "chapter_number_name": "Forty-Eight",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "70",
+         "summary": "",
+         "blurb": "The catgirl crashes back into her neglectul family\"s life.",
+         "next_publish": "11/26/26",
+         "scene_count": 2,
+         "word_count": 3255,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A05C48S01",
+            "A05C48S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-27",
+               "Time": "",
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Upper Mantle | Vermillion Estate | 2026-11-27"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:36Z",
+            "ModifiedLatest": "2026-01-04T17:27:11Z"
+         },
+         "raw_metadata": {
+            "doc_name": "46|Vermillion Family Reunion",
+            "verbose_id": "5.48",
+            "uuid": "143",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Six",
+            "auto_name_full": "Chapter Forty-Eight",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A05C49",
+         "act": 5,
+         "act_name": "Act Four",
+         "chapter": 49,
+         "chapter_name": "Tentative Allies",
+         "chapter_number_name": "Forty-Nine",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "70",
+         "summary": "",
+         "blurb": "How in Khiras\" name did they get together?",
+         "next_publish": "12/03/26",
+         "scene_count": 2,
+         "word_count": 3410,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A05C49S01",
+            "A05C49S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-27",
+               "Time": "",
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV West",
+               "Location": "Carmine Compound",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-27",
+               "Time": "",
+               "ISO": "2026-11-27",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Province XIV West | Carmine Compound | 2026-11-27",
+            "Blackwater | Province XIV East | Titus' Home | 2026-11-27"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:36Z",
+            "ModifiedLatest": "2026-01-04T17:27:19Z"
+         },
+         "raw_metadata": {
+            "doc_name": "47|Tentative Allies",
+            "verbose_id": "5.49",
+            "uuid": "146",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Seven",
+            "auto_name_full": "Chapter Forty-Nine",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A05C50",
+         "act": 5,
+         "act_name": "Act Four",
+         "chapter": 50,
+         "chapter_name": "Reunion/Separation",
+         "chapter_number_name": "Fifty",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "65",
+         "summary": "",
+         "blurb": "Titus wishes his story could have ended here, but there is still so much more that needs to be done.",
+         "next_publish": "12/10/26",
+         "scene_count": 2,
+         "word_count": 2772,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A05C50S01",
+            "A05C50S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "Province XIV East",
+               "Location": "Titus&apos; Home",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Province XIV East | Titus' Home | 2026-11-28",
+            "Blackwater | Province XIV East | Titus' Home | 2026-11-28"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:36Z",
+            "ModifiedLatest": "2026-01-04T17:27:25Z"
+         },
+         "raw_metadata": {
+            "doc_name": "48|Reunion/Separation",
+            "verbose_id": "5.50",
+            "uuid": "149",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Eight",
+            "auto_name_full": "Chapter Fifty",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A05C51",
+         "act": 5,
+         "act_name": "Act Four",
+         "chapter": 51,
+         "chapter_name": "Liftoff",
+         "chapter_number_name": "Fifty-One",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "65",
+         "summary": "",
+         "blurb": "The Carmine-Merlot master plan is set in motion.",
+         "next_publish": "12/17/26",
+         "scene_count": 2,
+         "word_count": 3955,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A05C51S01",
+            "A05C51S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Vermillion Estate",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Distribution Hall",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Upper Mantle | Vermillion Estate | 2026-11-28",
+            "Blackwater | The Afterlife | Distribution Hall | 2026-11-28"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:37Z",
+            "ModifiedLatest": "2026-01-04T17:27:34Z"
+         },
+         "raw_metadata": {
+            "doc_name": "49|Liftoff",
+            "verbose_id": "5.51",
+            "uuid": "152",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Nine",
+            "auto_name_full": "Chapter Fifty-One",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A05C52",
+         "act": 5,
+         "act_name": "Act Four",
+         "chapter": 52,
+         "chapter_name": "Afterlives",
+         "chapter_number_name": "Fifty-Two",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "65",
+         "summary": "",
+         "blurb": "What would happen if the Vermillions made it there?",
+         "next_publish": "12/24/26",
+         "scene_count": 2,
+         "word_count": 4295,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A05C52S01",
+            "A05C52S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Ullrich&apos;s Loft",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-28",
+               "Time": "",
+               "ISO": "2026-11-28",
+               "DoSettingTag": "No",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Profaned Chapel",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | The Afterlife | Ullrich's Loft | 2026-11-28",
+            "Blackwater | The Afterlife | Profaned Chapel | 2026-11-28"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:37Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "50|Afterlives",
+            "verbose_id": "5.52",
+            "uuid": "155",
+            "status": "Revised Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter Ten",
+            "auto_name_full": "Chapter Fifty-Two",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A05C53",
+         "act": 5,
+         "act_name": "Act Four",
+         "chapter": 53,
+         "chapter_name": "Rolling Downhill",
+         "chapter_number_name": "Fifty-Three",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "60",
+         "summary": "",
+         "blurb": "One of the Vermillion girls tries driving.",
+         "next_publish": "12/31/26",
+         "scene_count": 2,
+         "word_count": 1449,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A05C53S01",
+            "A05C53S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-29",
+               "Time": "",
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Profaned Chapel",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-29",
+               "Time": "",
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | The Afterlife | Profaned Chapel | 2026-11-29",
+            "Blackwater | The Afterlife | Outskirts | 2026-11-29"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:37Z",
+            "ModifiedLatest": "2026-03-07T18:39:18Z"
+         },
+         "raw_metadata": {
+            "doc_name": "51|Rolling Downhill",
+            "verbose_id": "5.53",
+            "uuid": "158",
+            "status": "First Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "This chapter (and finale) requires an entire rework as of 03/07/26.",
+            "auto_name_part": "Chapter Eleven",
+            "auto_name_full": "Chapter Fifty-Three",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A05C54",
+         "act": 5,
+         "act_name": "Act Four",
+         "chapter": 54,
+         "chapter_name": "Purgatory Line",
+         "chapter_number_name": "Fifty-Four",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "50",
+         "summary": "",
+         "blurb": "The Lower City converges on the Afterlife.",
+         "next_publish": "01/07/27",
+         "scene_count": 2,
+         "word_count": 2776,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A05C54S01",
+            "A05C54S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-29",
+               "Time": "",
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "Upper Mantle",
+               "Location": "Verdant Slope",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-29",
+               "Time": "",
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Outskirts",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | Upper Mantle | Verdant Slope | 2026-11-29",
+            "Blackwater | The Afterlife | Outskirts | 2026-11-29"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:37Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "52|Purgatory Line",
+            "verbose_id": "5.54",
+            "uuid": "161",
+            "status": "First Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "This chapter (and finale) requires an entire rework as of 03/07/26.",
+            "auto_name_part": "Chapter Twelve",
+            "auto_name_full": "Chapter Fifty-Four",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A05C55",
+         "act": 5,
+         "act_name": "Act Four",
+         "chapter": 55,
+         "chapter_name": "Losing My Perfection",
+         "chapter_number_name": "Fifty-Five",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "50",
+         "summary": "",
+         "blurb": "Titus takes ownership for a world he was only reborn into.",
+         "next_publish": "01/14/27",
+         "scene_count": 2,
+         "word_count": 2452,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A05C55S01",
+            "A05C55S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-29",
+               "Time": "",
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Afterlife",
+               "Location": "Marble Streets",
+               "Place": "Unspecified"
+            },
+            {
+               "Date": "2026-11-29",
+               "Time": "",
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | The Afterlife | Marble Streets | 2026-11-29",
+            "Blackwater | The Undercroft | Floor Infinity | 2026-11-29"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:37Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "53|Losing My Perfection",
+            "verbose_id": "5.55",
+            "uuid": "164",
+            "status": "First Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "This chapter (and finale) requires an entire rework as of 03/07/26.",
+            "auto_name_part": "Chapter Thirteen",
+            "auto_name_full": "Chapter Fifty-Five",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A05C56",
+         "act": 5,
+         "act_name": "Act Four",
+         "chapter": 56,
+         "chapter_name": "The Last Firebrand",
+         "chapter_number_name": "Fifty-Six",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "12",
+         "summary": "",
+         "blurb": "There is no salvation from failure this time. Titus and his adversary fight through the fabric of time itself.",
+         "next_publish": "01/21/27",
+         "scene_count": 2,
+         "word_count": 1855,
+         "pov_order": [
+            "Titus",
+            "Titus"
+         ],
+         "scene_ids": [
+            "A05C56S01",
+            "A05C56S02"
+         ],
+         "settings": [
+            {
+               "Date": "2026-11-29",
+               "Time": "",
+               "ISO": "2026-11-29",
+               "DoSettingTag": "Yes",
+               "Region": "Blackwater",
+               "Area": "The Undercroft",
+               "Location": "Floor Infinity",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "Blackwater | The Undercroft | Floor Infinity | 2026-11-29"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-05-30T01:46:37Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "54|The Last Firebrand",
+            "verbose_id": "5.56",
+            "uuid": "167",
+            "status": "First Draft",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "This chapter (and finale) requires an entire rework as of 03/07/26.",
+            "auto_name_part": "Chapter Fourteen",
+            "auto_name_full": "Chapter Fifty-Six",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      },
+      {
+         "id": "A06C57",
+         "act": 6,
+         "act_name": "Epilogue",
+         "chapter": 57,
+         "chapter_name": "",
+         "chapter_number_name": "Fifty-Seven",
+         "story": "Firebrand",
+         "written": true,
+         "completion": "",
+         "summary": "",
+         "blurb": "",
+         "next_publish": "01/28/27",
+         "scene_count": 1,
+         "word_count": 490,
+         "pov_order": [
+            "Titus"
+         ],
+         "scene_ids": [
+            "A06C57S01"
+         ],
+         "settings": [
+            {
+               "Date": "2026-12-06",
+               "Time": "12:09:00",
+               "ISO": "2026-12-06T12:09:00Z",
+               "DoSettingTag": "Yes",
+               "Region": "Unspecified",
+               "Area": "Unspecified",
+               "Location": "Unspecified",
+               "Place": "Unspecified"
+            }
+         ],
+         "settings_text": [
+            "2026-12-06 | 12:09:00"
+         ],
+         "history": {
+            "CreatedEarliest": "2025-07-24T03:04:59Z",
+            "ModifiedLatest": "2026-01-11T14:25:13Z"
+         },
+         "raw_metadata": {
+            "doc_name": "55|Exodus/The Gate",
+            "verbose_id": "6.57",
+            "uuid": "170",
+            "status": "Unwritten",
+            "label": "Firebrand",
+            "keywords": [],
+            "author_notes": "",
+            "auto_name_part": "Chapter One",
+            "auto_name_full": "Chapter Fifty-Seven",
+            "is_prologue": "No"
+         },
+         "style_classes": [
+            "BodyTitus"
+         ]
+      }
+   ]
+}
