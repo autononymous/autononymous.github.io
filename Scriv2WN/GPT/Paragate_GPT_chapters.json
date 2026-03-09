@@ -2,7 +2,7 @@
    "__meta": {
       "story": "Paragate",
       "export_type": "chapter_overview",
-      "generated_utc": "2026-03-08T06:12:05Z",
+      "generated_utc": "2026-03-09T02:21:58Z",
       "notes": [
          "Chapter-level retrieval file for summaries, blurbs, settings, POV order, and chapter-to-scene mapping.",
          "Use this file when the question is about chapter purpose, structure, or high-level continuity."
@@ -13,7 +13,7 @@
          "SceneCount": 160,
          "WrittenCount": 160,
          "UnwrittenCount": 0,
-         "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 211,103.\n > There are 5 acts, 53 chapters, and 160 scenes.\n > This manuscript averages:\n   - 1319 words per scene.\n   - 3983 words per chapter.\n   - 3.01 scenes per chapter.\n > Out of 160 planned scenes, 160 are written.\n > So the Zero Draft is approximately 100.0% complete.\n"
+         "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 212,227.\n > There are 5 acts, 53 chapters, and 160 scenes.\n > This manuscript averages:\n   - 1326 words per scene.\n   - 4004 words per chapter.\n   - 3.01 scenes per chapter.\n > Out of 160 planned scenes, 160 are written.\n > So the Zero Draft is approximately 100.0% complete.\n"
       }
    },
    "__index": {
@@ -271,7 +271,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-08-15T04:05:25Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:06:08Z"
          },
          "raw_metadata": {
             "doc_name": "01 // PROLOGUE // \"Strangers To Enemies, Part One\"",
@@ -353,7 +353,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-08-15T04:05:59Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:06:23Z"
          },
          "raw_metadata": {
             "doc_name": "02 // \"The Knight Before\"",
@@ -435,7 +435,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-08-15T04:08:12Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:06:39Z"
          },
          "raw_metadata": {
             "doc_name": "03 // \"The Day After\"",
@@ -522,7 +522,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-08-15T04:08:37Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:06:50Z"
          },
          "raw_metadata": {
             "doc_name": "04 // \"Secondhand Cottage\"",
@@ -591,7 +591,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-08-15T04:09:37Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:07:01Z"
          },
          "raw_metadata": {
             "doc_name": "05 // \"Firsthand Home\"",
@@ -673,7 +673,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-08-15T04:10:12Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:07:33Z"
          },
          "raw_metadata": {
             "doc_name": "06 // \"Insurgency\"",
@@ -742,7 +742,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-08-15T04:18:40Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:08:02Z"
          },
          "raw_metadata": {
             "doc_name": "07 // \"Exfiltration\"",
@@ -811,7 +811,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-08-18T04:42:59Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:08:32Z"
          },
          "raw_metadata": {
             "doc_name": "08 // \"Strangers To Enemies, Part Two\"",
@@ -880,7 +880,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-08-15T04:25:47Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:09:10Z"
          },
          "raw_metadata": {
             "doc_name": "09 // \"Surprise Approach\"",
@@ -965,7 +965,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-08-15T04:19:24Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:09:37Z"
          },
          "raw_metadata": {
             "doc_name": "10 // \"Strategic Retreat\"",
@@ -1049,7 +1049,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-05-30T01:12:05Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:10:08Z"
          },
          "raw_metadata": {
             "doc_name": "11 // \"Ennui And Excoriation\"",
@@ -1118,7 +1118,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-05-30T01:12:05Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:10:20Z"
          },
          "raw_metadata": {
             "doc_name": "12 // \"Anxiety And Avoidance\"",
@@ -1187,7 +1187,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-05-30T02:00:38Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:10:50Z"
          },
          "raw_metadata": {
             "doc_name": "13 // \"The Sleeping Knight\"",
@@ -1271,7 +1271,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:02:39Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:11:10Z"
          },
          "raw_metadata": {
             "doc_name": "14 // \"Luddite By Chance\"",
@@ -1355,7 +1355,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:03:15Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:11:34Z"
          },
          "raw_metadata": {
             "doc_name": "15 // \"Technophile By Choice\"",
@@ -1438,7 +1438,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:03:15Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:12:04Z"
          },
          "raw_metadata": {
             "doc_name": "16 // \"Back To Business\"",
@@ -1534,7 +1534,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:06:21Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:12:53Z"
          },
          "raw_metadata": {
             "doc_name": "17 // \"Onward To Chaos\"",
@@ -1605,7 +1605,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:06:23Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:13:07Z"
          },
          "raw_metadata": {
             "doc_name": "18 // \"Civilian Combat\"",
@@ -1688,7 +1688,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:06:23Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:13:27Z"
          },
          "raw_metadata": {
             "doc_name": "19 // \"Warrior Business\"",
@@ -1783,7 +1783,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-07-08T00:44:30Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:14:01Z"
          },
          "raw_metadata": {
             "doc_name": "20 // \"Domestic Relations\"",
@@ -1907,7 +1907,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-07-15T03:40:52Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:14:41Z"
          },
          "raw_metadata": {
             "doc_name": "21 // \"Foreign Affairs\"",
@@ -1992,7 +1992,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:06:25Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:15:03Z"
          },
          "raw_metadata": {
             "doc_name": "22 // \"Losing To Fear\"",
@@ -2064,7 +2064,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:06:26Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:15:18Z"
          },
          "raw_metadata": {
             "doc_name": "23 // \"Failing To Launch\"",
@@ -2135,7 +2135,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:06:26Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:15:33Z"
          },
          "raw_metadata": {
             "doc_name": "24 // \"Friendly Fire\"",
@@ -2205,7 +2205,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:06:26Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:15:48Z"
          },
          "raw_metadata": {
             "doc_name": "25 // \"A House Divided\"",
@@ -2289,7 +2289,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T00:14:45Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:16:46Z"
          },
          "raw_metadata": {
             "doc_name": "26 // \"Cold War\"",
@@ -2371,7 +2371,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T00:14:45Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:17:30Z"
          },
          "raw_metadata": {
             "doc_name": "27 // \"Warm Solitude\"",
@@ -2453,7 +2453,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T00:14:46Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:17:58Z"
          },
          "raw_metadata": {
             "doc_name": "28 // \"Prometheus\"",
@@ -2548,7 +2548,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T00:28:27Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:18:48Z"
          },
          "raw_metadata": {
             "doc_name": "29 // \"Epimetheus\"",
@@ -2644,7 +2644,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T00:34:08Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:19:14Z"
          },
          "raw_metadata": {
             "doc_name": "30 // \"Cold Sweat\"",
@@ -2727,7 +2727,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T00:35:19Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:19:35Z"
          },
          "raw_metadata": {
             "doc_name": "31 // \"Heating Up\"",
@@ -2813,7 +2813,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T00:35:20Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:20:11Z"
          },
          "raw_metadata": {
             "doc_name": "32 // \"Fantastic Modernity\"",
@@ -2898,7 +2898,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-05-31T23:36:19Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:20:27Z"
          },
          "raw_metadata": {
             "doc_name": "33 // \"Modern Fantasy\"",
@@ -2981,7 +2981,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T00:36:58Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:20:48Z"
          },
          "raw_metadata": {
             "doc_name": "34 // \"Professional Death\"",
@@ -3063,7 +3063,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-05-31T23:36:58Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:21:07Z"
          },
          "raw_metadata": {
             "doc_name": "35 // \"Physical Demise\"",
@@ -3145,7 +3145,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T00:36:59Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:22:13Z"
          },
          "raw_metadata": {
             "doc_name": "36 // \"Holding On\"",
@@ -3242,7 +3242,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-05-31T23:39:01Z",
-            "ModifiedLatest": "2026-03-07T20:00:01Z"
+            "ModifiedLatest": "2026-03-08T15:22:36Z"
          },
          "raw_metadata": {
             "doc_name": "37 // \"Letting Go\"",
@@ -3315,7 +3315,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:40:03Z",
-            "ModifiedLatest": "2026-03-07T20:05:35Z"
+            "ModifiedLatest": "2026-03-08T15:23:07Z"
          },
          "raw_metadata": {
             "doc_name": "38 // \"Bottoming Out\"",
@@ -3400,7 +3400,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T02:40:03Z",
-            "ModifiedLatest": "2026-03-07T20:05:56Z"
+            "ModifiedLatest": "2026-03-08T15:23:24Z"
          },
          "raw_metadata": {
             "doc_name": "39 // \"Crossing Over\"",
@@ -3483,7 +3483,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:40:04Z",
-            "ModifiedLatest": "2026-03-07T20:06:19Z"
+            "ModifiedLatest": "2026-03-08T15:23:42Z"
          },
          "raw_metadata": {
             "doc_name": "40 // \"Reaching Up\"",
@@ -3567,7 +3567,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:40:04Z",
-            "ModifiedLatest": "2026-03-07T20:12:00Z"
+            "ModifiedLatest": "2026-03-08T15:24:12Z"
          },
          "raw_metadata": {
             "doc_name": "41 // \"Annealment\"",
@@ -3650,7 +3650,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:41:45Z",
-            "ModifiedLatest": "2026-03-07T20:15:03Z"
+            "ModifiedLatest": "2026-03-08T15:24:28Z"
          },
          "raw_metadata": {
             "doc_name": "42 // \"Eutectic Point\"",
@@ -3733,7 +3733,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:41:45Z",
-            "ModifiedLatest": "2026-03-07T20:16:34Z"
+            "ModifiedLatest": "2026-03-08T15:24:42Z"
          },
          "raw_metadata": {
             "doc_name": "43 // \"Harsh Noise\"",
@@ -3805,7 +3805,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:41:45Z",
-            "ModifiedLatest": "2026-03-07T20:19:07Z"
+            "ModifiedLatest": "2026-03-08T15:24:59Z"
          },
          "raw_metadata": {
             "doc_name": "44 // \"In Loving Memory\"",
@@ -3880,7 +3880,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:41:45Z",
-            "ModifiedLatest": "2026-03-07T20:20:40Z"
+            "ModifiedLatest": "2026-03-08T15:25:40Z"
          },
          "raw_metadata": {
             "doc_name": "45 // \"In Future Grief\"",
@@ -3977,7 +3977,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:44:20Z",
-            "ModifiedLatest": "2026-03-07T20:23:18Z"
+            "ModifiedLatest": "2026-03-08T15:26:25Z"
          },
          "raw_metadata": {
             "doc_name": "46 // \"Close Quarters\"",
@@ -4043,7 +4043,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T01:44:21Z",
-            "ModifiedLatest": "2026-03-07T22:28:26Z"
+            "ModifiedLatest": "2026-03-08T15:26:44Z"
          },
          "raw_metadata": {
             "doc_name": "47 // \"Ground Control\"",
@@ -4108,7 +4108,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T02:44:21Z",
-            "ModifiedLatest": "2026-03-07T22:28:07Z"
+            "ModifiedLatest": "2026-03-08T15:27:28Z"
          },
          "raw_metadata": {
             "doc_name": "48 // \"Metanoia\"",
@@ -4173,7 +4173,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T02:44:22Z",
-            "ModifiedLatest": "2026-03-07T22:35:16Z"
+            "ModifiedLatest": "2026-03-08T15:28:10Z"
          },
          "raw_metadata": {
             "doc_name": "49 // \"Paragate\"",
@@ -4236,7 +4236,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T02:44:22Z",
-            "ModifiedLatest": "2026-03-07T22:40:25Z"
+            "ModifiedLatest": "2026-03-08T15:28:30Z"
          },
          "raw_metadata": {
             "doc_name": "50 // \"Knightfall\"",
@@ -4297,7 +4297,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T02:46:49Z",
-            "ModifiedLatest": "2026-03-07T22:45:06Z"
+            "ModifiedLatest": "2026-03-08T15:28:46Z"
          },
          "raw_metadata": {
             "doc_name": "51 // \"Daybreak\"",
@@ -4353,7 +4353,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T02:46:49Z",
-            "ModifiedLatest": "2026-03-07T22:49:15Z"
+            "ModifiedLatest": "2026-03-08T15:28:52Z"
          },
          "raw_metadata": {
             "doc_name": "52 // \"Parasmagate\"",
@@ -4409,7 +4409,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T02:48:11Z",
-            "ModifiedLatest": "2026-03-07T22:52:13Z"
+            "ModifiedLatest": "2026-03-08T15:28:58Z"
          },
          "raw_metadata": {
             "doc_name": "53 // \"Threaded Echoes\"",

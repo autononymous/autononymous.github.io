@@ -15,6 +15,7 @@ from paragate_gpt_parse import GPT_Parse
 from novel_gpt_exports import SaveGPTExports
 import numpy as np
 from matplotlib import pyplot as plt
+import NarrativeKinematics as NK
 
 from pathlib import Path
 
@@ -310,8 +311,9 @@ def InterpretJSON(js,info=True):
             PubDateLog +=  f"\n{ChapterData['NextPublish']}\t|\t{ThisAct}.{ThisChapter+1}\t|\t {ChapterData['ChapterName']}\n\t> {entry['Synopsis'][0:200]} ..."
             ChapterData['Scenes'] = 0
             ChapterData['Body'] = []
-            ChapterData['POV'] = []        
+            ChapterData['POV'] = []                 
             ChapterData['IDs'] = []
+            ChapterData['Factors'] = []
             ChapterData['Written'] = False
             ChapterData['Settings'] = [];
             DefaultStorySetting = entry['SettingInfo'];
@@ -319,6 +321,8 @@ def InterpretJSON(js,info=True):
         if entry['DocType'] == 'Scene':
             ChapterData['Story'] = entry['StoryName']
             ChapterData['History'] = {"Created":entry['CreatedDate'],"Modified":entry['ModifiedDate']}
+            Factors = entry['Factors']
+            ChapterData['Factors'].append([int(Factors['Action']),int(Factors['Drama']),int(Factors['Theme'])])
             ChapterData['Act'] = int(entry['ActNum'])
             ChapterData['ActName'] = ThisActName
             ChapterData['Chapter'] = int(entry['ChapterFull'])
@@ -666,6 +670,7 @@ if __name__ == "__main__":
     debug = DebugLog(1)
     JS = ReadJSON('/source')
     MANUSCRIPT = InterpretJSON(JS,True)
+    
     SaveMasterCopy(MANUSCRIPT,indentLevel=3)
     print(" >>> Saving Master Copy.")
     SaveSectionedCopy(MANUSCRIPT['Story'] ,indentLevel=3)
@@ -676,9 +681,45 @@ if __name__ == "__main__":
     print(" >>> Saving Basic Copy.")
     SaveGPTExports(MANUSCRIPT, JS, indentLevel=3)
     print(" >>> Saving GPT-optimized JSON files.")
+    MakeDirIfNotExists("/nk_output")
+    storyname = MANUSCRIPT['Story'][0]['Story']
+    print(" >>> Interpreting Narrative Kinematic data for Action, Drama, Theme.")
+    nk = NK.StoryNK(
+        Manuscript=MANUSCRIPT['Story'],
+        doReport=False,
+        story_name          = storyname,
+        outdir              = "./nk_output",
+        factor_mode         = "last",          # or "mean"
+        steady_window       = 7,
+        mass_window         = 5,
+        prominence_window   = 5,
+        gravity_weights     = (0.4, 0.4, 0.2),
+    )    
     print(" >>> Proceeding to save PDFs.")
     SaveHTMLforPDF(MANUSCRIPT['Story'])    
     print(" >>> Organized HTML.")
     SavePDF(str(MANUSCRIPT['Story'][1]["Story"]).replace("Paragate","Knightfall & Daybreak"))
-    print(" >>> Saved companion PDFs.")
-    #ProgressReport(MANUSCRIPT)   
+    print(" >>> Saved companion PDFs.")      
+    
+    #model = "gpt-5-mini" #"gpt-5.4"
+    Mlow = "gpt-5-mini";
+    Mhigh = "gpt-5.4";
+    api_key = os.environ.get("OPENAI_API_KEY")
+    # Narrative Kinematics report
+    print(" >>> Exporting Narrative Kinematics report and data.")
+    answer = input(" >>? Run LLM diagnosis?\n [0] None\n [1] Low (GPT-5 mini)\n [2] High (GPT-5.4)\n\n  > ")
+    [doDiagnose, model] = [True,Mlow] if answer == "1" else [True,Mhigh] if answer == "2" else [False,Mlow]
+    print(f"Diagnosis is {doDiagnose}.")
+    if doDiagnose and not api_key:
+        print(" !!! WARNING: No API key detected.")
+    else:
+        print(f"using API key {api_key[0:20]}...")
+        paths = nk.export_html_report_bundle(
+            "./nk_output",
+            include_llm_diagnosis=doDiagnose,
+            extra_instruction="Be especially sensitive to drag caused by mirrored dual-protagonist beats.",
+            model=model    
+        )
+        
+        print(paths["pdf_report"])
+        print(paths.get("diagnosis_json"))
