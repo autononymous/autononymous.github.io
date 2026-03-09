@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>Scriv2WN</title>
+    <link rel="stylesheet" href="styles/rootstyles.css">
+    <link rel="stylesheet" href="styles/contentstyles.css">
+    <link rel="stylesheet" href="styles/textstyles.css">
+    <link rel="stylesheet" href="styles/announcestyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caveat:wght@400..700&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Montez&family=Oxanium:wght@200..800&family=Patrick+Hand+SC&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color:black;">
+    <div class="STORYMAP" id="STORYMAP">
+        <div class="MAPBOUND" id="MAPBOUND">
+            <img class="MAP" id="MAP" src="" onclick=""/>        
+            <div class="STORYPIN" id="STORYPIN"></div>
+        </div>
+        </div>
+    <!-- This element handles the backgrounds, and takes up the entire  -->
+    <div class="TOC" id="TOC">
+        <div class="TOCwall" id="TOCwall">
+            <div class="TOClogo" id="TOClogo"></div>
+        </div>
+        <div class="TOCthischapter" id="TOCthischapter">
+            <hr>
+            <div class="TTC_HEADER" id="TTC_HEAD">Current Chapter</div>
+            <div class="TTC_elem TTC_ID" id="TTC_ID">X.X.X</div>
+            <div class="TTC_elem TTC_name" id="TTC_name">Chapter Name</div>
+            <div class="TTC_elem TTC_blurb" id="TTC_blurb">Premise</div>
+            <br>
+            <hr>
+            <div class="TTC_HEADER" id="TTC_HEAD">Story Contents</div>
+            <br>
+            <div class="TOCwindow" id="TOCwindow"></div>
+        </div>
+    </div>
+    <div class="EXTRAS" id="EXTRAS">
+        <div class="BCOVER" id="BCOVER"></div>
+        <div class="ANNOUNCE" id="ANNOUNCE">
+        </div>
+        <div class="EXTRACONTENT" id="EXTRACONTENT">
+        </div>
+    </div>
+    <div class="CONTROLLER" id="CONTROLLER">
+        <div class="ICONS">
+            <div class="Icon" id="ICON-LINEDN" onclick="CTRL.setLineHeight(1)"><img class="Icon" title="Increase Line Spacing" src="icons/fbicon-LineDn.png" style="cursor:pointer;" alt="&#8853;" ></div>
+            <div class="Icon" id="ICON-LINEUP" onclick="CTRL.setLineHeight(-1)"><img class="Icon" title="Decrease Line Spacing" src="icons/fbicon-LineUp.png" style="cursor:pointer;" alt="&#8854;" ></div>
+            <div class="Icon" id="ICON-FONTUP" onclick="CTRL.setFontSize(1)"><img class="Icon" title="Increase Font Size" src="icons/fbicon-Larger.png" style="cursor:pointer;" alt="&#8853;" ></div>
+            <div class="Icon" id="ICON-FONTDN" onclick="CTRL.setFontSize(-1)"><img class="Icon" title="Decrease Font Size" src="icons/fbicon-Smaller.png" style="cursor:pointer;" alt="&#8854;" ></div>
+            <div class="Icon" id="ICON-THEME" onclick="doThemeChange();"><span style="color: var(--TextColor);font-size: 40px;cursor:pointer;">&#9680;</span></div>
+        </div>
+        <div class="SETTINGTEXT" id="SETTINGTEXT">
+            <input type="checkbox" id="justify" name="justify" onclick="CTRL.setJustify(this.checked);" /> Text is justified <br>
+            <input type="checkbox" id="showimageheader" name="showimageheader" onclick="BIND.ShowImageHeaders(this.checked);" /> Do image headers <br>
+            <input type="checkbox" id="dotimeheader" name="dotimeheader" onclick="BIND.ToggleStarterTags(this.checked);" /> Scenes have datetime headers <br>
+            <input type="checkbox" id="dospecificheader" name="dospecificheader" onclick="BIND.ToggleSpecificName(this.checked);" /> Do specific header <br>
+            <input type="checkbox" id="doblackfade" name="doblackfade"  onclick="THEME.ToggleFadeIn(this.checked);" /> Colors fade from black <br>
+            <input type="checkbox" id="bs" name="bs" checked onclick="console.info('You ' + (this.checked? 'not ' : '') + 'stupid.')" /> Optimize Bumpscosity <br>
+        </div>
+    </div>
+    <div class="READER" id="READER">
+        <div class="BACKGROUND" id="BACKGROUND"></div>
+        <div class="imgbg layer1" id="LAYER1"></div>
+        <div class="imgbg layer2" id="LAYER2"></div>
+        <div class="HEADER" id="HEADER"></div>
+        <div class="BODY" id="BODY">
+            <div class="TYPESET" id="TYPESET"></div>
+        </div>
+        <div class="TOGGLE TOGGLETOC" id="TOGGLETOC" onclick="BIND.source.ToggleDisplay()">Table Of Contents</div>
+        <div class="TOGGLE TOGGLEINFO" id="TOGGLEINFO" onclick="BIND.source.ToggleInfo()">Extras</div>
+        <div class="TOGGLE TOGGLECTRL" id="TOGGLECTRL" onclick="BIND.source.ToggleControls()">Controls</div>
+        <div class="TOGGLE TOGGLEMAP" id="TOGGLEMAP" onclick="BIND.source.ToggleMap()">Story Map</div>
+        <div class="FOOTER" id="FOOTER">
+            <div class="PROGRESS" id="PROGRESS">
+                <div class="BARBG" id="BARBG">
+                    <div class="BARFG" id="BARFG"></div>
+                    <div class="BARFFG" id="BARFFG"></div>
+                </div>                
+            </div>
+            <div class="CONTROLS" id="CONTROLS">
+                <div class="IDCHAPTER" id="IDCHAPTER">Chapter</div>
+                <div class="IDNAME" id="IDNAME">Name</div>
+            </div>
+            <div class="PREVIOUS" id="PREVIOUS" onclick="BIND.DeployOnPage('PREV',DEPLOY);SRC.SaveLocalStorage()">&laquo;&ensp;PREV</div>
+            <div class="NEXT" id="NEXT" onclick="BIND.DeployOnPage('NEXT',DEPLOY);SRC.SaveLocalStorage()">NEXT&ensp;&raquo;</div>
+        </div>
+    </div>
+    <div class="NOTIFY" id="NOTIFY" onclick="ANN.PopOut()">
+        <div class="NOTIFY-ICON" id="NOTIFY-ICON">&#x2726;</div>
+        <div class="NOTIFY-MSG" id="NOTIFY-MSG">Welcome!</div>
+    </div>
+</body>
+
+<script src="main.js" id="js_main"></script>

@@ -1,0 +1,2341 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Paragate — Narrative Kinematics Report</title>
+    <style>
+    @page {
+        size: Letter;
+        margin: 0.65in 0.7in 0.75in 0.7in;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        color: #222;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 11pt;
+        line-height: 1.45;
+    }
+
+    h1, h2, h3 {
+        page-break-after: avoid;
+        break-after: avoid-page;
+    }
+
+    h1 { font-size: 24pt; margin: 0 0 0.15in 0; }
+    h2 { font-size: 16pt; margin: 0.28in 0 0.12in 0; border-bottom: 1px solid #ddd; padding-bottom: 0.05in; }
+    h3 { font-size: 12.5pt; margin: 0.20in 0 0.08in 0; }
+    p, ul { margin: 0.08in 0; }
+    .small { font-size: 9pt; color: #555; }
+    hr { border: 0; border-top: 1px solid #ddd; margin: 0.12in 0; }
+    .report { width: 100%; }
+    .meta-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.12in; margin: 0.12in 0 0.18in 0; }
+    .meta-card, .callout, .peak-card { border: 1px solid #ddd; border-radius: 8px; padding: 0.10in 0.12in; background: #fafafa; }
+    .callout { margin: 0.12in 0 0.18in 0; }
+    .figure { margin: 0.16in 0 0.22in 0; page-break-inside: avoid; break-inside: avoid; }
+    .figure img { width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; }
+    .caption { font-size: 9pt; color: #555; margin-top: 0.04in; }
+    .peak-grid { display: grid; grid-template-columns: 1fr; gap: 0.12in; }
+    .peak-title { font-weight: bold; font-size: 11.5pt; }
+    .peak-meta { font-size: 9.5pt; color: #555; margin-top: 0.03in; }
+    .peak-summary, .peak-excerpt { margin-top: 0.05in; }
+    table { width: 100%; border-collapse: collapse; font-size: 8.9pt; table-layout: fixed; }
+    th, td { border: 1px solid #ddd; padding: 0.05in 0.05in; vertical-align: top; }
+    thead th { background: #f3f3f3; }
+    .col-num { width: 5%; }
+    .col-name { width: 18%; }
+    .col-score { width: 6%; }
+    .col-pov { width: 13%; }
+    .col-summary { width: 28%; }
+    .page-break { page-break-before: always; break-before: page; }
+    a { color: #000; text-decoration: none; }
+    </style>
+    </head>
+    <body>
+    <div class="report">
+
+        <h1>Paragate — Narrative Kinematics Report</h1>
+        <p class="small">Generated from manuscript ADTM data using the StoryNK model. M = Magnitude / premise alignment (legacy V / Vector).</p>
+
+        <hr>
+        <ul>
+            <li>01.&ensp;<a href="#Overview"> System Overview </a></li>
+            <li>02.&ensp;<a href="#ADTM"> ADTM / Energy Landscape </a></li>
+            <li>03.&ensp;<a href="#PM"> Magnitude / Premise Alignment </a></li>
+            <li>04.&ensp;<a href="#TGP"> Top Gravity Peaks </a></li>
+            <li>05.&ensp;<a href="#TEP"> Top Energy Peaks </a></li>
+            <li>06.&ensp;<a href="#TPL"> Largest Premise Loads </a></li>
+            <li>07.&ensp;<a href="#CUT"> Highest Cut-Risk Elements </a></li>
+            <li>08.&ensp;<a href="#LLM"> LLM Revision Analysis </a></li>
+            <li>09.&ensp;<a href="#CTable"> Full Chapter Table </a></li>
+        </ul>
+        <hr>
+
+        <div class="meta-grid">
+            <div class="meta-card"><strong>Story</strong><br>Paragate</div>
+            <div class="meta-card"><strong>Units</strong><br>53</div>
+            <div class="meta-card"><strong>Position Span</strong><br>571 - 56,806</div>
+            <div class="meta-card"><strong>Mean Energy</strong><br>18.20</div>
+            <div class="meta-card"><strong>Mean Magnitude</strong><br>-0.055</div>
+            <div class="meta-card"><strong>Mean Premise Force</strong><br>-0.34</div>
+        </div>
+
+        <div class="callout">
+            <strong>Peak Energy:</strong>
+            Ch 51 —
+            Daybreak
+            <br>
+            <strong>Peak Gravity:</strong>
+            Ch 51 —
+            Daybreak
+            <br>
+            <strong>Peak Premise Load:</strong>
+            Ch 51 —
+            Daybreak
+            <br>
+            <strong>Highest Cut Risk:</strong>
+            Ch 53 —
+            Threaded Echoes
+        </div>
+
+        <h2 id="Overview">System Overview</h2>
+        <p>
+            Action, Drama, and Theme define the primary narrative magnitude fields. Magnitude (M) tracks premise alignment, with negative values leaning toward anti-truth and positive values leaning toward governing truth. Energy is A + D + T. Premise Force is T × M. Steady-state and transient tracks approximate long-wave baseline versus local fluctuation. Narrative Mass, Peak Prominence, and Narrative Gravity estimate which regions are merely loud versus which ones are actually load-bearing.
+        </p>
+
+        <h2 id="ADTM">ADTM / Energy Landscape</h2>
+        <div class="figure">
+            <img src="paragate_nk_adt.png" alt="ADTM plot">
+            <div class="caption">Action, Drama, Theme, Energy, and Magnitude across cumulative story position.</div>
+        </div>
+
+        <h2 id="PM">Magnitude / Premise Alignment</h2>
+        <div class="figure">
+            <img src="paragate_nk_premise.png" alt="Premise alignment plot">
+            <div class="caption">Magnitude, Premise Force (T×M), and Premise Load |T×M| across the manuscript.</div>
+        </div>
+
+        <div class="figure">
+            <img src="paragate_nk_energy.png" alt="Energy decomposition">
+            <div class="caption">Composite Energy versus steady-state and transient energy behavior.</div>
+        </div>
+
+        <div class="figure">
+            <img src="paragate_nk_gravity.png" alt="Gravity metrics">
+            <div class="caption">Narrative Gravity, Mass, Theme Mass, and Peak Prominence.</div>
+        </div>
+
+        <div class="figure">
+            <img src="paragate_nk_cumulative.png" alt="Cumulative loads">
+            <div class="caption">Cumulative action, drama, theme, energy, and premise progression.</div>
+        </div>
+
+        <div class="figure">
+            <img src="paragate_nk_cutrisk.png" alt="Cut risk plot">
+            <div class="caption">Cut-risk heuristic versus theme and gravity.</div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <h2 id="TGP">Top Gravity Peaks</h2>
+        <div class="peak-grid">
+            
+        <div class="peak-card">
+            <div class="peak-title">Ch 51 — Daybreak</div>
+            <div class="peak-meta">
+                <strong>Gravity:</strong> 91.45
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 25.97
+                &nbsp; | &nbsp;
+                <strong>M:</strong> +0.90
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> +8.06
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Katiya
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Unspecified | Unspecified | Unspecified</div>
+            <div class="peak-summary"><strong>Summary:</strong> Katiya confronts the living shape of her oldest trauma and proves that what she has learned is stronger than fear. As Nhytyx recreates the emotional architecture of the nightmare that once broke her, Katiya saves her family through action instead of paralysis, while Cody disobeys her only enough to make one small but crucial difference. At dawn, Katiya completes her arc not just by surviving the past, but by replacing it with a new public truth.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> At the edge of dawn, courage means returning to the exact place fear was born.</div>
+            <div class="peak-excerpt">Katiya reaches the burning district and finds Nhytyx leading the same kind of horror that defined her childhood trauma: except Endogeny is present (Firebrand). For one terrible bea…</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 26 — Cold War</div>
+            <div class="peak-meta">
+                <strong>Gravity:</strong> 90.32
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 23.43
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.23
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -1.74
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Cody
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Unspecified | Unspecified | Unspecified | 2015-10-03</div>
+            <div class="peak-summary"><strong>Summary:</strong> Jackson&amp;apos;s &amp;quot;Operation Bluewings&amp;quot; flashback: drone crash, mission abort, and his sacrificial call to Overwatch in the storm.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> Years earlier, in a storm of ice and static, a mission hangs by a thread.</div>
+            <div class="peak-excerpt">It&#x27;s the cold snap that brings him back again.</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 49 — Paragate</div>
+            <div class="peak-meta">
+                <strong>Gravity:</strong> 81.98
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 21.86
+                &nbsp; | &nbsp;
+                <strong>M:</strong> +0.85
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> +7.31
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Katiya, Cody
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Unspecified | Unspecified | Unspecified</div>
+            <div class="peak-summary"><strong>Summary:</strong> The true conflict of Paragate begins as witness replaces doubt and preparation replaces denial. Aldrin sees enough to gamble on Katiya, while Cody leaves Navidson-Monroe uncertain of what his honesty has bought him but sure he is not done yet. Both protagonists step fully into the roles they have been resisting, and the story pivots from argument into mobilization.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> Once the truth is seen with open eyes, the only question left is whether anyone can move fast enough.</div>
+            <div class="peak-excerpt">Katiya brings Aldrin face-to-face with the reality of the approaching threat, and Jade and Aliaki reinforce what she has forced him to witness. When the Royal Knights arrive, Aldri…</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 50 — Knightfall</div>
+            <div class="peak-meta">
+                <strong>Gravity:</strong> 80.13
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 20.51
+                &nbsp; | &nbsp;
+                <strong>M:</strong> +0.58
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> +3.79
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Cody, Katiya
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Unspecified | Unspecified | Unspecified</div>
+            <div class="peak-summary"><strong>Summary:</strong> The battle turns when Cody is the first to notice movement across the frozen lake and realizes the defense is pointed the wrong way. As the first line is held by powers and allies beyond the core cast, the real threat reveals itself as a coordinated strike against the city itself. Katiya is forced into the exact shape of the nightmare that made her who she is, and Cody refuses to leave her to face it entirely alone.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> Winter arrives with teeth just when the defenses start to hold. </div>
+            <div class="peak-excerpt">Watching the drone feed, Cody spots enemy figures crossing the lake and realizes the defenses are no longer where they need to be. When comms fail, he leaves the drone idling and r…</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 37 — Letting Go</div>
+            <div class="peak-meta">
+                <strong>Gravity:</strong> 80.12
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 24.13
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.02
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -0.16
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Katiya, Cody
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Valenseia | Hillfar | Unspecified | 2026-12-01</div>
+            <div class="peak-summary"><strong>Summary:</strong> </div>
+            <div class="peak-summary"><strong>Blurb:</strong> Shame, buried memories, and unexpected visitors push both worlds toward a new kind of war.</div>
+            <div class="peak-excerpt">&quot;She was trying to save him,&quot; Jullian says. &quot;Bertram left and we did nothing — but it was Katiya that was braver than all of us!&quot;</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 27 — Warm Solitude</div>
+            <div class="peak-meta">
+                <strong>Gravity:</strong> 79.76
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 22.82
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.61
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -4.80
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Katiya
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Valenseia | Hillfar | The Shortwall | 2005-08-23</div>
+            <div class="peak-summary"><strong>Summary:</strong> Katiya&amp;apos;s origin trauma: childhood game ? treehouse collapse ? Raph&amp;apos;s death; she hides in a corpse pit; the Chymaeran lie brands her forever.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> Long before today, a childhood dare turned into a scar that never closed.</div>
+            <div class="peak-excerpt">&quot;Why is it so hard for you to let go?&quot; The question comes from thirty feet below.</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 25 — A House Divided</div>
+            <div class="peak-meta">
+                <strong>Gravity:</strong> 77.95
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 21.03
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.71
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -5.07
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Cody, Katiya
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Colorado | Evergreen Estates | Cody&amp;apos;s House | 2026-07-07</div>
+            <div class="peak-summary"><strong>Summary:</strong> Cody spirals home; Katiya waits on his couch; their mutual failures ignite a bitter fight&amp;mdash;door slammed shut again.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> Back at the house, two people who need comfort get conflict instead.</div>
+            <div class="peak-excerpt">Sometimes this numbness can be a blessing in the same way that it&#x27;s a curse.</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 35 — Physical Demise</div>
+            <div class="peak-meta">
+                <strong>Gravity:</strong> 75.42
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 22.90
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.72
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -5.13
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Katiya
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Valenseia | Gaffesend | Guards&amp;apos; Quarter | 2026-11-30</div>
+            <div class="peak-summary"><strong>Summary:</strong> </div>
+            <div class="peak-summary"><strong>Blurb:</strong> Desperation pulls Katiya beyond the walls, where duty, grief, and old ghosts converge.</div>
+            <div class="peak-excerpt">It&#x27;s a new feeling that finds me when I&#x27;m rushing through the open streets, one I felt the day before when I heard Cody&#x27;s voice cheering my name. It&#x27;s an energy that races my circu…</div>
+        </div>
+        
+        </div>
+
+        <div class="page-break"></div>
+
+        <h2 id="TEP">Top Energy Peaks</h2>
+        <div class="peak-grid">
+            
+        <div class="peak-card">
+            <div class="peak-title">Ch 51 — Daybreak</div>
+            <div class="peak-meta">
+                <strong>Energy:</strong> 25.97
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 25.97
+                &nbsp; | &nbsp;
+                <strong>M:</strong> +0.90
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> +8.06
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Katiya
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Unspecified | Unspecified | Unspecified</div>
+            <div class="peak-summary"><strong>Summary:</strong> Katiya confronts the living shape of her oldest trauma and proves that what she has learned is stronger than fear. As Nhytyx recreates the emotional architecture of the nightmare that once broke her, Katiya saves her family through action instead of paralysis, while Cody disobeys her only enough to make one small but crucial difference. At dawn, Katiya completes her arc not just by surviving the past, but by replacing it with a new public truth.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> At the edge of dawn, courage means returning to the exact place fear was born.</div>
+            <div class="peak-excerpt">Katiya reaches the burning district and finds Nhytyx leading the same kind of horror that defined her childhood trauma: except Endogeny is present (Firebrand). For one terrible bea…</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 37 — Letting Go</div>
+            <div class="peak-meta">
+                <strong>Energy:</strong> 24.13
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 24.13
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.02
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -0.16
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Katiya, Cody
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Valenseia | Hillfar | Unspecified | 2026-12-01</div>
+            <div class="peak-summary"><strong>Summary:</strong> </div>
+            <div class="peak-summary"><strong>Blurb:</strong> Shame, buried memories, and unexpected visitors push both worlds toward a new kind of war.</div>
+            <div class="peak-excerpt">&quot;She was trying to save him,&quot; Jullian says. &quot;Bertram left and we did nothing — but it was Katiya that was braver than all of us!&quot;</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 26 — Cold War</div>
+            <div class="peak-meta">
+                <strong>Energy:</strong> 23.43
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 23.43
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.23
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -1.74
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Cody
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Unspecified | Unspecified | Unspecified | 2015-10-03</div>
+            <div class="peak-summary"><strong>Summary:</strong> Jackson&amp;apos;s &amp;quot;Operation Bluewings&amp;quot; flashback: drone crash, mission abort, and his sacrificial call to Overwatch in the storm.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> Years earlier, in a storm of ice and static, a mission hangs by a thread.</div>
+            <div class="peak-excerpt">It&#x27;s the cold snap that brings him back again.</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 24 — Friendly Fire</div>
+            <div class="peak-meta">
+                <strong>Energy:</strong> 23.04
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 23.04
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.80
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -6.37
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Cody, Katiya
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Colorado | Shaleborough | Navidson-Monroe Aerospace | 2026-07-07</div>
+            <div class="peak-summary"><strong>Summary:</strong> Reed&amp;apos;s presentation wins; Cody&amp;apos;s mild critique is spun as jealousy and he snaps publicly; Katiya loses to Aryn, is told she&amp;apos;s below the line, and learns her family&amp;apos;s already in Gaffesend.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> One wins the crowd; the other loses control. Lines are drawn on both sides.</div>
+            <div class="peak-excerpt">Reed&#x27;s entirely prepared as he advances towards his last slide. In the lower corner, it reads 20 OF 20: even with a custom progress bar to show the stages of his presentation.</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 35 — Physical Demise</div>
+            <div class="peak-meta">
+                <strong>Energy:</strong> 22.90
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 22.90
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.72
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -5.13
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Katiya
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Valenseia | Gaffesend | Guards&amp;apos; Quarter | 2026-11-30</div>
+            <div class="peak-summary"><strong>Summary:</strong> </div>
+            <div class="peak-summary"><strong>Blurb:</strong> Desperation pulls Katiya beyond the walls, where duty, grief, and old ghosts converge.</div>
+            <div class="peak-excerpt">It&#x27;s a new feeling that finds me when I&#x27;m rushing through the open streets, one I felt the day before when I heard Cody&#x27;s voice cheering my name. It&#x27;s an energy that races my circu…</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 34 — Professional Death</div>
+            <div class="peak-meta">
+                <strong>Energy:</strong> 22.88
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 22.88
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.80
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -6.46
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Cody
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Colorado | Evergreen Estates | Navidson-Monroe Aerospace | 2026-11-30</div>
+            <div class="peak-summary"><strong>Summary:</strong> </div>
+            <div class="peak-summary"><strong>Blurb:</strong> At work, a meeting becomes a reckoning. Someone steps forward, and the cost is real.</div>
+            <div class="peak-excerpt">When I rose from four hours of sleep, I found that same feeling of dread I found in college when the world finally caught up with me, when I remembered it was a heavy day of finals…</div>
+        </div>
+        
+        </div>
+
+        <div class="page-break"></div>
+
+        <h2 id="TPL">Largest Premise Loads</h2>
+        <div class="peak-grid">
+            
+        <div class="peak-card">
+            <div class="peak-title">Ch 51 — Daybreak</div>
+            <div class="peak-meta">
+                <strong>PremiseLoad:</strong> 8.06
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 25.97
+                &nbsp; | &nbsp;
+                <strong>M:</strong> +0.90
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> +8.06
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Katiya
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Unspecified | Unspecified | Unspecified</div>
+            <div class="peak-summary"><strong>Summary:</strong> Katiya confronts the living shape of her oldest trauma and proves that what she has learned is stronger than fear. As Nhytyx recreates the emotional architecture of the nightmare that once broke her, Katiya saves her family through action instead of paralysis, while Cody disobeys her only enough to make one small but crucial difference. At dawn, Katiya completes her arc not just by surviving the past, but by replacing it with a new public truth.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> At the edge of dawn, courage means returning to the exact place fear was born.</div>
+            <div class="peak-excerpt">Katiya reaches the burning district and finds Nhytyx leading the same kind of horror that defined her childhood trauma: except Endogeny is present (Firebrand). For one terrible bea…</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 49 — Paragate</div>
+            <div class="peak-meta">
+                <strong>PremiseLoad:</strong> 7.31
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 21.86
+                &nbsp; | &nbsp;
+                <strong>M:</strong> +0.85
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> +7.31
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Katiya, Cody
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Unspecified | Unspecified | Unspecified</div>
+            <div class="peak-summary"><strong>Summary:</strong> The true conflict of Paragate begins as witness replaces doubt and preparation replaces denial. Aldrin sees enough to gamble on Katiya, while Cody leaves Navidson-Monroe uncertain of what his honesty has bought him but sure he is not done yet. Both protagonists step fully into the roles they have been resisting, and the story pivots from argument into mobilization.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> Once the truth is seen with open eyes, the only question left is whether anyone can move fast enough.</div>
+            <div class="peak-excerpt">Katiya brings Aldrin face-to-face with the reality of the approaching threat, and Jade and Aliaki reinforce what she has forced him to witness. When the Royal Knights arrive, Aldri…</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 34 — Professional Death</div>
+            <div class="peak-meta">
+                <strong>PremiseLoad:</strong> 6.46
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 22.88
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.80
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -6.46
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Cody
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Colorado | Evergreen Estates | Navidson-Monroe Aerospace | 2026-11-30</div>
+            <div class="peak-summary"><strong>Summary:</strong> </div>
+            <div class="peak-summary"><strong>Blurb:</strong> At work, a meeting becomes a reckoning. Someone steps forward, and the cost is real.</div>
+            <div class="peak-excerpt">When I rose from four hours of sleep, I found that same feeling of dread I found in college when the world finally caught up with me, when I remembered it was a heavy day of finals…</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 24 — Friendly Fire</div>
+            <div class="peak-meta">
+                <strong>PremiseLoad:</strong> 6.37
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 23.04
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.80
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -6.37
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Cody, Katiya
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Colorado | Shaleborough | Navidson-Monroe Aerospace | 2026-07-07</div>
+            <div class="peak-summary"><strong>Summary:</strong> Reed&amp;apos;s presentation wins; Cody&amp;apos;s mild critique is spun as jealousy and he snaps publicly; Katiya loses to Aryn, is told she&amp;apos;s below the line, and learns her family&amp;apos;s already in Gaffesend.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> One wins the crowd; the other loses control. Lines are drawn on both sides.</div>
+            <div class="peak-excerpt">Reed&#x27;s entirely prepared as he advances towards his last slide. In the lower corner, it reads 20 OF 20: even with a custom progress bar to show the stages of his presentation.</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 30 — Cold Sweat</div>
+            <div class="peak-meta">
+                <strong>PremiseLoad:</strong> 5.59
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 19.33
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.67
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -5.59
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Katiya, Cody
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Valenseia | Gaffesend | Lake Garrison | 2026-11-27</div>
+            <div class="peak-summary"><strong>Summary:</strong> </div>
+            <div class="peak-summary"><strong>Blurb:</strong> New alliances form while an ominous email threatens Cody&amp;apos;s career.</div>
+            <div class="peak-excerpt">They say to never challenge an Ahkvasan to a foot race: you might be faster, but you still won&#x27;t get there in time.</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 35 — Physical Demise</div>
+            <div class="peak-meta">
+                <strong>PremiseLoad:</strong> 5.13
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 22.90
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.72
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -5.13
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Katiya
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Valenseia | Gaffesend | Guards&amp;apos; Quarter | 2026-11-30</div>
+            <div class="peak-summary"><strong>Summary:</strong> </div>
+            <div class="peak-summary"><strong>Blurb:</strong> Desperation pulls Katiya beyond the walls, where duty, grief, and old ghosts converge.</div>
+            <div class="peak-excerpt">It&#x27;s a new feeling that finds me when I&#x27;m rushing through the open streets, one I felt the day before when I heard Cody&#x27;s voice cheering my name. It&#x27;s an energy that races my circu…</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 25 — A House Divided</div>
+            <div class="peak-meta">
+                <strong>PremiseLoad:</strong> 5.07
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 21.03
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.71
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -5.07
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Cody, Katiya
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Colorado | Evergreen Estates | Cody&amp;apos;s House | 2026-07-07</div>
+            <div class="peak-summary"><strong>Summary:</strong> Cody spirals home; Katiya waits on his couch; their mutual failures ignite a bitter fight&amp;mdash;door slammed shut again.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> Back at the house, two people who need comfort get conflict instead.</div>
+            <div class="peak-excerpt">Sometimes this numbness can be a blessing in the same way that it&#x27;s a curse.</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 48 — Metanoia</div>
+            <div class="peak-meta">
+                <strong>PremiseLoad:</strong> 5.04
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 20.28
+                &nbsp; | &nbsp;
+                <strong>M:</strong> +0.69
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> +5.04
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Cody, Katiya
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Unspecified | Unspecified | Unspecified</div>
+            <div class="peak-summary"><strong>Summary:</strong> Both protagonists fight for one clean chance to be heard. Cody&amp;apos;s confession turns his firing into a political problem inside Navidson-Monroe, while Katiya persuades Aryn that the truth matters more than procedure and turns imprisonment into a joint push toward Aldrin. The chapter tests what they have actually learned: not how to escape pressure, but how to move through it without lying to themselves.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> Some doors open because you&amp;apos;re invited. The important ones never do.</div>
+            <div class="peak-excerpt">Cody is pulled into a glass conference room where HR tries to reduce him to a clean termination case, with Reed present as witness. Cody refuses to sign, clears his father, and for…</div>
+        </div>
+        
+        </div>
+
+        <div class="page-break"></div>
+
+        <h2 id="CUT">Highest Cut-Risk Units</h2>
+        <div class="peak-grid">
+            
+        <div class="peak-card">
+            <div class="peak-title">Ch 53 — Threaded Echoes</div>
+            <div class="peak-meta">
+                <strong>CutRisk:</strong> 99.91
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 12.95
+                &nbsp; | &nbsp;
+                <strong>M:</strong> +0.40
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> +1.82
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Default
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Unspecified | Unspecified | Unspecified</div>
+            <div class="peak-summary"><strong>Summary:</strong> </div>
+            <div class="peak-summary"><strong>Blurb:</strong> Titus&amp;apos; past catches up with him.</div>
+            <div class="peak-excerpt">In the only Titus-perspective scene of the book, Ellie reveals a memory, gesture, or contradiction that should not be possible. The moment leaves Titus with the terrible understand…</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 9 — Surprise Approach</div>
+            <div class="peak-meta">
+                <strong>CutRisk:</strong> 89.63
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 13.69
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.07
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -0.34
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Cody
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Colorado | Evergreen Estates | Cody&amp;apos;s House | 2026-04-26</div>
+            <div class="peak-summary"><strong>Summary:</strong> Cody tries to rationalize it away (no wound); barricades the door; nearly late to work; meets foil Reed.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> Cody barricades more than a door as reality refuses to make sense.</div>
+            <div class="peak-excerpt">Late Sunday morning, around 11:00, I awoke with my neck twisted against the closet door, my face saturated with drool, shirt missing, and a sticky note taped to my forehead with Mi…</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 8 — Strangers To Enemies 2</div>
+            <div class="peak-meta">
+                <strong>CutRisk:</strong> 88.42
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 14.01
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.10
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -0.50
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Katiya
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Valenseia | Gaffesend | Katiya&amp;apos;s House | 2026-04-25</div>
+            <div class="peak-summary"><strong>Summary:</strong> Third clash: Katiya (assuming Auvryan assassin) and Cody fight to another misunderstanding; she drives him back through the door.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> Misread motives turn their encounter into a full-on clash.</div>
+            <div class="peak-excerpt">I wager my strength and power over his defenses. The inebriated man called Cody holds the odd, metallic broomstick with his hands together in the center — a technique I&#x27;ve never se…</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 12 — Anxiety and Avoidance</div>
+            <div class="peak-meta">
+                <strong>CutRisk:</strong> 85.85
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 12.82
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.09
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -0.48
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Katiya
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Valenseia | Gaffesend | Guards&amp;apos; Quarter | 2026-05-22</div>
+            <div class="peak-summary"><strong>Summary:</strong> FOUR WEEK TIME SKIPKatiya, Ryder, and Paxton rescue near-dead Bertram; she&amp;apos;s blamed and shut out&amp;mdash;her only remaining lifeline is Cody.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> With help scarce, Katiya runs toward the only lifeline left.</div>
+            <div class="peak-excerpt">Calling his name will do nothing. I decide ahead of time to break in instead of patiently knocking, hoping the others piece together my purpose for panic instead of thinking I&#x27;m ju…</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 32 — Fantastic Modernity</div>
+            <div class="peak-meta">
+                <strong>CutRisk:</strong> 85.05
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 14.94
+                &nbsp; | &nbsp;
+                <strong>M:</strong> +0.00
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> +0.00
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Katiya, Cody
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Colorado | Evergreen Estates | Cody&amp;apos;s House | 2026-11-29</div>
+            <div class="peak-summary"><strong>Summary:</strong> </div>
+            <div class="peak-summary"><strong>Blurb:</strong> Katiya&amp;apos;s first peaceful sleep leads straight into chaotic, sword-filled &amp;quot;fantasy&amp;quot; tourism on Earth.</div>
+            <div class="peak-excerpt">Even in another world, I can&#x27;t escape the same dream. The only difference is that sleep comes faster on a bed that&#x27;s made of clouds, instead of one made from horsehair and feathers…</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 5 — Firsthand Home</div>
+            <div class="peak-meta">
+                <strong>CutRisk:</strong> 84.87
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 14.47
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.05
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -0.23
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Cody
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Colorado | Evergreen Estates | Cody&amp;apos;s House | 2026-04-24</div>
+            <div class="peak-summary"><strong>Summary:</strong> Cody + Miguel bro out, drink hard; Miguel crashes, Cody stays up.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> Drinks with a best friend turn into confessions&amp;mdash;and an idea Cody should ignore.</div>
+            <div class="peak-excerpt">&quot;Since you started on your first day, you haven&#x27;t been drug tested. What&#x27;s gonna change their mind on Monday, bro? My work never runs drug tests,&quot; he says. Gunfire cracks over the…</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 3 — The Day After</div>
+            <div class="peak-meta">
+                <strong>CutRisk:</strong> 82.74
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 14.81
+                &nbsp; | &nbsp;
+                <strong>M:</strong> +0.03
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> +0.16
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Cody
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Colorado | Shaleborough | Navidson-Monroe Aerospace | 2026-04-24</div>
+            <div class="peak-summary"><strong>Summary:</strong> Cody&amp;apos;s bleak office day: roasted for late redlines, awkward beat with Kei, then family unpacking with Miguel queued up for drinks.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> Another soul-numbing office day pushes Cody toward a choice he&amp;apos;s not ready to make.</div>
+            <div class="peak-excerpt">I realize I&#x27;m done working on the redline when my hands stop moving. Copying changes from a red-inked engineering drawing to the computer is easy enough to get lost in thought. The…</div>
+        </div>
+        
+        <div class="peak-card">
+            <div class="peak-title">Ch 16 — Back To Business</div>
+            <div class="peak-meta">
+                <strong>CutRisk:</strong> 82.33
+                &nbsp; | &nbsp;
+                <strong>Energy:</strong> 13.90
+                &nbsp; | &nbsp;
+                <strong>M:</strong> -0.18
+                &nbsp; | &nbsp;
+                <strong>PF:</strong> -0.96
+                &nbsp; | &nbsp;
+                <strong>POV:</strong> Cody
+            </div>
+            <div class="peak-meta"><strong>Setting:</strong> Colorado | Shaleborough | Navidson-Monroe Aerospace | 2026-05-25</div>
+            <div class="peak-summary"><strong>Summary:</strong> Cody&amp;apos;s spark flickers: nostalgia and lunch with Alan (Jackson talk); he returns hoping for an open door.</div>
+            <div class="peak-summary"><strong>Blurb:</strong> A lunch with Dad. A memory of a brother. A door that might be open tonight.</div>
+            <div class="peak-excerpt">&quot;I think that will work just fine,&quot; Reed says. &quot;What do you think?&quot;</div>
+        </div>
+        
+        </div>
+
+        <div class="page-break"></div>
+
+        
+        <div class="page-break"></div>
+
+        <h2 id="LLM"><img src="../../icons/OpenAI-black-monoblossom.png" style="width:100px; padding:5px;"> LLM Revision Diagnosis</h2>
+
+        <div class="callout">
+            <div><strong>Length assessment:</strong> 53 chapters is viable for a dual-protagonist &quot;double novel,&quot; but the current generative draft reads over-distributed in the first half and middle. The back third has real structural mass; the opening and several mirrored mid-book runs look too granular for the amount of premise movement they deliver.</div>
+            <div><strong>Structural health:</strong> Structurally, the novel is strongest from late Act Three into the Act Four climax. The mountain is real: Chapters 34-35 hit hard on the negative side, Chapter 37 acts as a hinge, Chapters 45-51 build with increasing positive alignment, and Chapter 51 is the unquestionable summit by energy, gravity, and premise force. Earlier sections show valleying, low prominence, and repeated local beats that do not always compound.</div>
+            <div><strong>Premise alignment:</strong> Premise alignment is mixed but promising. The manuscript spends much of its mean magnitude slightly negative, which fits a long failure/descent phase, but too many chapters with decent theme sit near zero or weak alignment, suggesting uncertainty about what the story is &quot;about&quot; in motion. When the book commits—24, 25, 27, 30, 34, 35 on the descent side; 45, 48, 49, 51 on the ascent side—it becomes much sharper.</div>
+            <div><strong>Distribution health:</strong> Energy and gravity are back-loaded. Act One has hook value but also the highest concentration of cut-risk and cheapness. Act Three contains both some of the book&#x27;s best material and a drag pocket around the Earth/fantasy-tourism sequence. Act Four is the cleanest sustained run, though a few planning-and-bonding chapters repeat similar dual-protagonist functions. The Titus bonus chapter lands after emotional closure and currently behaves like detachable promo matter rather than integral epilogue.</div>
+            <div><strong>Primary strength:</strong> The story&#x27;s biggest strength is that its major trauma/reckoning chapters are not merely loud—they are premise-bearing. Katiya&#x27;s arc in particular culminates in a structurally legitimate climax, and the dual-protagonist braid becomes most effective when both lines convert private damage into public action.</div>
+            <div><strong>Primary risk:</strong> The biggest risk is mirrored-beat drag: the dual-novel gimmick sometimes produces paired scenes that echo each other without escalating the central premise. This is most visible in the early misunderstanding loop, the mid-book relationship/outing material, and some Act Four planning-grief-household chapters where emotional intent is clear but thematic vector is diluted.</div>
+        </div>
+
+        <p>Paragate has a real novel inside it already, and the metrics strongly support that the true book emerges in the late-middle through climax rather than in the current opening sprawl. The strongest spine is: descent through public/private failure, excavation of formative trauma, reversal into chosen truth and joint action, then Katiya&#x27;s dawn confrontation. Revision should not flatten the double-novel concept, but it should get much harsher about asking whether each mirrored Cody/Katiya beat creates new vector or merely reflects prior material. Compress the early loop, tighten the Act Three tourism/romance drift, protect the trauma-and-reckoning core, and treat the Titus add-on as explicitly bonus material unless it can be made to pay rent for the main book.</p>
+
+        <h3>Protect at All Costs</h3>
+        <ul><li>Chapter 24</li><li>Chapter 27</li><li>Chapter 34</li><li>Chapter 35</li><li>Chapter 37</li><li>Chapter 45</li><li>Chapter 48</li><li>Chapter 49</li><li>Chapter 51</li></ul>
+
+        <h3>Strongest Regions</h3>
+        <div class="peak-grid">
+            
+                <div class="peak-card">
+                    <div class="peak-title">Ch 51 — Daybreak</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Reason:</strong> This is the clear structural summit: peak energy, peak gravity, peak premise force, zero cheapness flags, and the summary describes true arc completion rather than generic spectacle.</div><div><strong>Revision instruction:</strong> Protect the chapter&#x27;s core design. Revision should focus on setup and clarity, not expansion: make sure every key image, fear trigger, and choice has been planted earlier so the climax feels inevitable rather than merely intense.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 49 — Paragate</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Reason:</strong> This appears to be the story&#x27;s cleanest premise-forward pivot into endgame, with very high theme, very high positive magnitude, low ambiguity, and low cheapness.</div><div><strong>Revision instruction:</strong> Sharpen this as the point of no return. Make the witnesses, decisions, and role-acceptance beats unmistakably irreversible.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 24 — Friendly Fire</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Reason:</strong> A strong negative-alignment structural strike: high energy, high theme, very strong magnitude, and low ambiguity. It reads like one of the first chapters where both halves of the double novel fail in the same meaningful way.</div><div><strong>Revision instruction:</strong> Preserve the chapter&#x27;s twin-collapse design, but ensure cause-and-effect is crisp so this feels like earned consequence, not just stacked humiliation.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 34 — Professional Death</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Reason:</strong> One of the best descent chapters in the manuscript: high energy, strong gravity, very strong premise force, and comparatively low cheapness. This is a real institutional reckoning, not filler conflict.</div><div><strong>Revision instruction:</strong> Give this chapter cleaner payoff links to prior workplace pressures and stronger downstream consequences into the next 2-4 chapters.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 27 — Warm Solitude</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Reason:</strong> Katiya&#x27;s origin trauma chapter has high gravity, high premise load, and meaningful magnitude. It seems to explain the emotional architecture the climax later pays off.</div><div><strong>Revision instruction:</strong> Protect its essential revelations, but integrate it so it lands as structural necessity rather than inserted backstory; trim any explanatory excess around the core wound.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 45 — In Future Grief</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Reason:</strong> This is one of the healthiest bridge chapters in the ascent: both protagonists face family pressure while theme and positive magnitude stay strong.</div><div><strong>Revision instruction:</strong> Keep the bilateral family pressure, but make the mirrored scenes asymmetrical in texture and stakes so they feel complementary rather than duplicated.</div>
+                </div>
+                
+        </div>
+
+        <h3>Drag Corridors</h3>
+        <div class="peak-grid">
+            
+                <div class="peak-card">
+                    <div class="peak-title">Ch 2–9</div>
+                    <div class="peak-meta"><strong>Problem:</strong> opening repetition / premise under-acceleration &nbsp; | &nbsp; <strong>Confidence:</strong> 0.97</div>
+                    <div><strong>Reason:</strong> Act One has a dense cluster of very high cut-risk chapters (2,3,4,5,8,9) and multiple low-gravity, low-magnitude misunderstanding beats. The hook exists, but the opening spends too long re-explaining confusion, trauma baseline, and cross-door disorientation without enough new vector.</div><div><strong>Suggested fix:</strong> Compress the early mirror loop. Merge or shorten repeated Cody/Katiya misunderstanding beats so each crossing changes the relationship or the rules. Make the opening answer a sharper question faster: why this door, why these two, and what pressure will force continued contact?</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 14–20</div>
+                    <div class="peak-meta"><strong>Problem:</strong> mid-Act Two diffusion &nbsp; | &nbsp; <strong>Confidence:</strong> 0.84</div>
+                    <div><strong>Reason:</strong> These chapters carry moderate-to-high cut risk and mostly weak-to-moderate magnitude. The material appears to broaden world/social texture, but premise movement is soft and the dual-protagonist mirroring risks producing pleasant but non-compounding scenes.</div><div><strong>Suggested fix:</strong> Audit every scene in this corridor for net change. Combine orientation, open-house, training, and dating material so that each chapter advances one external complication and one internal contradiction, rather than offering parallel slices of life.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 29–33</div>
+                    <div class="peak-meta"><strong>Problem:</strong> premise drift / tonal tourism &nbsp; | &nbsp; <strong>Confidence:</strong> 0.95</div>
+                    <div><strong>Reason:</strong> This is the clearest Act Three drag pocket. Chapters 29, 32, and 33 are among the highest cut-risk and cheap-action/drama entries, while 32 hits magnitude zero entirely. The Earth/fantasy novelty and relationship beats look entertaining but structurally slack.</div><div><strong>Suggested fix:</strong> Compress this corridor hard. Keep only the moments that directly trigger the later collapses, institutional consequences, or emotional commitments. Any tourism, banter, or romantic beat must earn its place by setting up Chapters 34-38 or the climax.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 40–44</div>
+                    <div class="peak-meta"><strong>Problem:</strong> late-build redundancy &nbsp; | &nbsp; <strong>Confidence:</strong> 0.79</div>
+                    <div><strong>Reason:</strong> Act Four is generally strong, but 40, 41, 43, and 44 show elevated cheapness/cut-risk relative to the surrounding endgame. These chapters seem to repeat planning, fabrication, alliance tension, grief processing, and household pressure in slightly varied mirrored forms.</div><div><strong>Suggested fix:</strong> Condense the run into fewer, sharper escalations. Each late-build chapter should do one irreplaceable thing: reveal capability, fracture alliance, deepen commitment, or trigger the next lock-in. Remove duplicated emotional processing.</div>
+                </div>
+                
+        </div>
+
+        <h3>Magnitude Turns</h3>
+        <div class="peak-grid">
+            
+                <div class="peak-card">
+                    <div class="peak-title">Ch 24 — Friendly Fire</div>
+                    <div class="peak-meta"><strong>Turn:</strong> major negative plunge</div>
+                    <div><strong>Reason:</strong> This is one of the strongest descent beats in the novel and a point where both protagonists&#x27; tracks appear to synchronize around failure.</div><div><strong>Revision instruction:</strong> Strengthen setup in the preceding chapters so this collapse feels like the inevitable result of accumulated flaws, not an abrupt pile-on.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 30 — Cold Sweat</div>
+                    <div class="peak-meta"><strong>Turn:</strong> deepening negative commitment</div>
+                    <div><strong>Reason:</strong> High theme plus strong negative magnitude suggests this is not just setback but premise-bearing deterioration.</div><div><strong>Revision instruction:</strong> Clarify what specifically worsens here that cannot be unworsened, especially across both protagonists&#x27; mirrored tracks.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 34 — Professional Death</div>
+                    <div class="peak-meta"><strong>Turn:</strong> institutional nadir</div>
+                    <div><strong>Reason:</strong> Very high negative premise force marks this as one of the most important collapse chapters on Cody&#x27;s side.</div><div><strong>Revision instruction:</strong> Make downstream fallout visible immediately after the chapter so readers feel the system closing, not just a dramatic scene ending.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 36 — Holding On</div>
+                    <div class="peak-meta"><strong>Turn:</strong> sign change into recovery</div>
+                    <div><strong>Reason:</strong> This is the first clear positive-magnitude step after the Act Three descent, but its own chapter gravity and cut-risk suggest the turn may be underpowered or under-framed.</div><div><strong>Revision instruction:</strong> Build the reversal more explicitly. Seed this chapter in prior despair and make the positive shift legible as a choice, discovery, or alliance, not a mood change.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 37 — Letting Go</div>
+                    <div class="peak-meta"><strong>Turn:</strong> hinge / ambiguous pivot</div>
+                    <div><strong>Reason:</strong> Enormous energy and gravity with magnitude near zero means the chapter matters a lot but its directional meaning is unclear. It likely functions as an emotional hinge without enough vector definition.</div><div><strong>Revision instruction:</strong> Decide whether this chapter is the end of descent, the cost of truth, or the beginning of action, and revise scene emphasis so readers can feel the directional turn.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 38 — Bottoming Out</div>
+                    <div class="peak-meta"><strong>Turn:</strong> recovery consolidation</div>
+                    <div><strong>Reason:</strong> Positive magnitude after the hinge suggests this is where despair becomes direction, but cheap-drama flags indicate some of the pain may be overextended relative to premise movement.</div><div><strong>Revision instruction:</strong> Trim any repetitive collapse language and emphasize the concrete new direction that distinguishes this from Chapter 37.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 48 — Metanoia</div>
+                    <div class="peak-meta"><strong>Turn:</strong> late positive acceleration</div>
+                    <div><strong>Reason:</strong> Strong positive premise force and healthy theme indicate this is a crucial conversion chapter where both protagonists begin acting from earned truth.</div><div><strong>Revision instruction:</strong> Increase the sense that this chapter cashes checks written earlier: callbacks, admissions, and choices should directly answer prior failures.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 49 — Paragate</div>
+                    <div class="peak-meta"><strong>Turn:</strong> endgame lock-in</div>
+                    <div><strong>Reason:</strong> This is the cleanest positive turn before the climax, with excellent alignment and low ambiguity.</div><div><strong>Revision instruction:</strong> Treat it as the final threshold. Tighten any transitional material so the chapter hits as the story officially becoming the story it promised.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 51 — Daybreak</div>
+                    <div class="peak-meta"><strong>Turn:</strong> ultimate positive resolution</div>
+                    <div><strong>Reason:</strong> The manuscript&#x27;s entire mountain resolves here; all metrics agree this is the chapter that matters most.</div><div><strong>Revision instruction:</strong> Ensure the emotional, thematic, and tactical beats converge in the same sequence so the climax resolves character, relationship, and premise together.</div>
+                </div>
+                
+        </div>
+
+        <h3>Cheap Heat / Low-Premise Flags</h3>
+        <div class="peak-grid">
+            
+                <div class="peak-card">
+                    <div class="peak-title">Ch 4 — Secondhand Cottage</div>
+                    <div class="peak-meta"><strong>Issue:</strong> cheap drama / cheap action in early trauma baseline</div>
+                    <div><strong>Reason:</strong> Drama and action are loud for an early chapter, but theme and magnitude are not carrying the same weight. This can read as front-loaded suffering before readers are fully invested.</div><div><strong>Revision instruction:</strong> Reduce repetitive nightmare intensity and redirect focus toward one or two concrete character-defining contradictions that will matter later.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 23 — Failing To Launch</div>
+                    <div class="peak-meta"><strong>Issue:</strong> high-drama low-theme setback pileup</div>
+                    <div><strong>Reason:</strong> Very high cheap-drama and high cut risk suggest a chapter built from frustration beats that do not cohere strongly enough around the premise.</div><div><strong>Revision instruction:</strong> Either upgrade the chapter&#x27;s thematic clarity—what exact fear or flaw is being exposed?—or compress it into adjacent failure chapters.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 29 — Once Lovers</div>
+                    <div class="peak-meta"><strong>Issue:</strong> loud but under-aligned relational material</div>
+                    <div><strong>Reason:</strong> Among the highest cheap-action and cheap-drama scores, with weak theme relative to intensity. The chapter likely contains motion and feeling without enough premise traction.</div><div><strong>Revision instruction:</strong> Strip out any beat that is merely romantic complication or family warmth unless it directly sets up the later collapse or choice.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 32 — Fantastic Modernity</div>
+                    <div class="peak-meta"><strong>Issue:</strong> melodramatic/novelty detour with zero vector</div>
+                    <div><strong>Reason:</strong> Magnitude at 0.0 plus very high cheap drama and high cut risk marks this as the strongest premise-vacuum in the manuscript.</div><div><strong>Revision instruction:</strong> Rebuild the chapter around one consequential discovery or decision; otherwise compress it drastically or merge its useful parts elsewhere.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 41 — Annealment</div>
+                    <div class="peak-meta"><strong>Issue:</strong> late-stage cheap action and cheap drama</div>
+                    <div><strong>Reason:</strong> In the approach to climax, this chapter is doing a lot of labor/tension material with very low theme for its level of noise.</div><div><strong>Revision instruction:</strong> Make the rebuilding/deception beats explicitly about the story&#x27;s core argument—truth, trust, courage, chosen action—or cut them down.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 44 — In Loving Memory</div>
+                    <div class="peak-meta"><strong>Issue:</strong> emotionally sincere but somewhat melodramatic</div>
+                    <div><strong>Reason:</strong> Cheap-drama is high even though the chapter has real human content. It may be processing grief one beat longer than the structure can support this late.</div><div><strong>Revision instruction:</strong> Keep the communal-grief function, but shorten mourning repetitions and sharpen what changes because of the grief.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 46 — Close Quarters</div>
+                    <div class="peak-meta"><strong>Issue:</strong> romance-pressure blend not fully aligned</div>
+                    <div><strong>Reason:</strong> High energy and gravity are real, but cheap-action and cheap-drama remain elevated, suggesting some vow/confession material may be leaning on intensity more than vector.</div><div><strong>Revision instruction:</strong> Clarify what this chapter commits the protagonists to do next. The confession should alter tactics or stakes, not just deepen feeling.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 50 — Knightfall</div>
+                    <div class="peak-meta"><strong>Issue:</strong> spectacle risk in the battle setup</div>
+                    <div><strong>Reason:</strong> High action with notable cheap-action score implies some battle business may be louder than it is thematically precise, especially next to the much stronger Chapter 51.</div><div><strong>Revision instruction:</strong> Refocus battle beats on Katiya&#x27;s nightmare pattern, Cody&#x27;s choice, and the misdirected defense logic so the action is all setup for the true climax.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 53 — Threaded Echoes</div>
+                    <div class="peak-meta"><strong>Issue:</strong> bonus-epilogue cheap heat / low integration</div>
+                    <div><strong>Reason:</strong> Extremely high cut risk, very low gravity, high cheap drama, and placement after emotional closure make this feel detachable. Given your note, it behaves like promo add-on material, not structural necessity.</div><div><strong>Revision instruction:</strong> Label and position it as explicit bonus material, or seed Titus/Ellie earlier and tie the reveal to the main novel&#x27;s thematic argument so it stops feeling appended.</div>
+                </div>
+                
+        </div>
+
+        <h3>Cut Candidates</h3>
+        <div class="peak-grid">
+            
+                <div class="peak-card">
+                    <div class="peak-title">Ch 2 — The Knight Before</div>
+                    <div class="peak-meta"><strong>Action:</strong> trim</div>
+                    <div><strong>Reason:</strong> High cut risk and low gravity in an opening already carrying two-protagonist setup load. Likely useful world/character texture, but not enough movement.</div><div><strong>Target:</strong> Condense tavern/introduction material to the minimum needed to define Katiya&#x27;s baseline, Aldrin/Jullian context, and emotional unrest.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 3 — The Day After</div>
+                    <div class="peak-meta"><strong>Action:</strong> compress_hard</div>
+                    <div><strong>Reason:</strong> Low gravity, high ambiguity, high cut risk. Cody&#x27;s office malaise may be over-explained early.</div><div><strong>Target:</strong> Fold key workplace humiliation and Miguel setup into neighboring chapters so the opening gets to the door-premise faster.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 4 — Secondhand Cottage</div>
+                    <div class="peak-meta"><strong>Action:</strong> trim</div>
+                    <div><strong>Reason:</strong> High cheapness and cut risk despite useful trauma baseline.</div><div><strong>Target:</strong> Shorten nightmare/routine material; keep only details that pay off in Katiya&#x27;s climax or key relationships.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 5 — Firsthand Home</div>
+                    <div class="peak-meta"><strong>Action:</strong> compress_hard</div>
+                    <div><strong>Reason:</strong> Very high cut risk and cheap drama; likely atmosphere and friendship texture more than structural movement.</div><div><strong>Target:</strong> Reduce drinking/bro hang content unless a specific line or choice becomes crucial later.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 8 — Strangers To Enemies 2</div>
+                    <div class="peak-meta"><strong>Action:</strong> merge</div>
+                    <div><strong>Reason:</strong> A repeat misunderstanding/fight beat in an opening already containing multiple such beats.</div><div><strong>Target:</strong> Merge with adjacent crossing/conflict material so the early loop escalates instead of reiterates.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 9 — Surprise Approach</div>
+                    <div class="peak-meta"><strong>Action:</strong> compress_hard</div>
+                    <div><strong>Reason:</strong> One of the highest cut-risk chapters in the book; low gravity and weak alignment.</div><div><strong>Target:</strong> Keep only the Reed introduction and the fact that Cody tries denial; remove repeated rationalization beats.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 12 — Anxiety and Avoidance</div>
+                    <div class="peak-meta"><strong>Action:</strong> merge</div>
+                    <div><strong>Reason:</strong> High cut risk, low gravity, and another time-skip adjustment chapter.</div><div><strong>Target:</strong> Integrate Bertram-rescue/blame fallout into a stronger chapter centered on Katiya&#x27;s isolation and need for Cody.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 16 — Back To Business</div>
+                    <div class="peak-meta"><strong>Action:</strong> trim</div>
+                    <div><strong>Reason:</strong> High cut risk and low prominence; may restate Cody&#x27;s ennui without enough escalation.</div><div><strong>Target:</strong> Condense workplace routine and nostalgia into a shorter bridge with one strong Jackson/father beat.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 23 — Failing To Launch</div>
+                    <div class="peak-meta"><strong>Action:</strong> merge</div>
+                    <div><strong>Reason:</strong> High cheapness and cut risk suggest partial redundancy with 24&#x27;s stronger collapse.</div><div><strong>Target:</strong> Move only the necessary setup beats into 24 and let Friendly Fire carry the real failure sequence.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 29 — Once Lovers</div>
+                    <div class="peak-meta"><strong>Action:</strong> compress_hard</div>
+                    <div><strong>Reason:</strong> Very high cheap-action/cheap-drama and high cut risk in a drag corridor.</div><div><strong>Target:</strong> Cut relational/family beats that do not directly precipitate 30-35 or redefine Katiya&#x27;s stakes.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 32 — Fantastic Modernity</div>
+                    <div class="peak-meta"><strong>Action:</strong> compress_hard</div>
+                    <div><strong>Reason:</strong> Magnitude zero, high cut risk, and top-tier cheap drama make this the easiest structural compression target.</div><div><strong>Target:</strong> Excise novelty-tourism and retain only the one or two revelations needed for subsequent plot and relationship movement.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 33 — Modern Fantasy</div>
+                    <div class="peak-meta"><strong>Action:</strong> merge</div>
+                    <div><strong>Reason:</strong> High cheap action, high cut risk, and adjacent to another drift chapter.</div><div><strong>Target:</strong> Combine with 32 or refocus into a single chapter that moves from brief levity straight into bad news and consequence.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 40 — Reaching Up</div>
+                    <div class="peak-meta"><strong>Action:</strong> trim</div>
+                    <div><strong>Reason:</strong> Late planning chapter with elevated cut risk in a section that can easily overrepeat team-building.</div><div><strong>Target:</strong> Remove redundant planning banter and keep only the decisions, alliances, and project commitments that alter the endgame.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 41 — Annealment</div>
+                    <div class="peak-meta"><strong>Action:</strong> differentiate</div>
+                    <div><strong>Reason:</strong> Extremely high cheap-action/cheap-drama for a late-stage chapter.</div><div><strong>Target:</strong> Make Cody&#x27;s build line and Katiya&#x27;s house-pressure line less mirror-similar; each should solve a different structural problem.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 44 — In Loving Memory</div>
+                    <div class="peak-meta"><strong>Action:</strong> trim</div>
+                    <div><strong>Reason:</strong> Moderate-to-high cut risk and high cheap drama late in the build.</div><div><strong>Target:</strong> Shorten grief/intimacy repetition while preserving the chapter&#x27;s function of communalizing loss.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 53 — Threaded Echoes</div>
+                    <div class="peak-meta"><strong>Action:</strong> keep</div>
+                    <div><strong>Reason:</strong> By far the highest cut risk in the book; clearly behaves like an attached teaser rather than necessary closure.</div><div><strong>Target:</strong> Keep only if explicitly framed as bonus/promotional material. If treated as part of the novel proper, it needs major integration work.</div>
+                </div>
+                
+        </div>
+
+        <h3>Chapter-by-Chapter Notes</h3>
+        <div class="peak-grid">
+            
+                <div class="peak-card">
+                    <div class="peak-title">Ch 1 — Strangers To Enemies 1</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> Strong hook chapter: it introduces the door-premise fast and gives Cody a clear emotional vacancy for the story to invade.</div><div><strong>Revision note:</strong> Clarify the vector of the opening wonder/disorientation so the scene promises more than novelty; signal earlier what this story will demand from Cody.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 2 — The Knight Before</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> Useful Katiya baseline and social context for the mirrored structure.</div><div><strong>Revision note:</strong> Cut to the pressure point sooner; reduce atmospheric setup that delays the actual collision with the premise.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 3 — The Day After</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It broadens Cody&#x27;s ordinary-world dissatisfaction and workplace friction.</div><div><strong>Revision note:</strong> Strip this to the indispensable Reed/workplace beats because the chapter currently spends more time proving ennui than escalating plot.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 4 — Secondhand Cottage</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It establishes Katiya&#x27;s trauma pattern and her habit of self-management, both important for the climax.</div><div><strong>Revision note:</strong> Dial back the suffering-on-arrival effect and emphasize the specific wound patterns that will recur in later high-gravity chapters.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 5 — Firsthand Home</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> The Miguel friendship gives Cody social texture and a lived-in life outside the gimmick.</div><div><strong>Revision note:</strong> Shorten the hangout material aggressively unless each exchange is seeding a later payoff in Cody&#x27;s loyalty, shame, or decision-making.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 6 — Insurgency</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> This chapter gives Katiya an external disturbance that pushes her toward the first real collision with Cody.</div><div><strong>Revision note:</strong> Make the causal chain from distant threat to home intrusion cleaner so the chapter feels less like stacked incidents and more like a single rising turn.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 7 — Exfiltration</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> The mirrored re-seeing of the crossing supports the double-novel design.</div><div><strong>Revision note:</strong> Differentiate Katiya&#x27;s perception enough that this does more than replay Chapter 1; it should revise our understanding, not merely duplicate it.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 8 — Strangers To Enemies 2</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It keeps the mutual fear and misread motives alive.</div><div><strong>Revision note:</strong> This is one misunderstanding clash too many in close sequence; merge or shorten so each confrontation changes the rules.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 9 — Surprise Approach</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> Reed&#x27;s introduction matters for Cody&#x27;s long institutional arc.</div><div><strong>Revision note:</strong> Prune the denial-and-barricade repetition and move to the workplace consequence faster.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 10 — Strategic Retreat</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> This is one of the first chapters where Katiya&#x27;s personal instability turns into public cost.</div><div><strong>Revision note:</strong> Smooth the time-skip handling and tie the panic, reprimand, and Bertram-search into one coherent line of consequence.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 11 — Ennui and Excoriation</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It reinforces Cody&#x27;s stagnation and sets up the cry through the door as a meaningful call to action.</div><div><strong>Revision note:</strong> Trim workplace repetition so the chapter lands on the summons rather than the routine.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 12 — Anxiety and Avoidance</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> Katiya&#x27;s isolation sharpens and the Bertram crisis raises her desperation.</div><div><strong>Revision note:</strong> Merge this with adjacent material so the rescue/blame fallout becomes propulsion instead of another pause-and-redirect chapter.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 13 — The Sleeping Knight</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> This is an effective intimacy-and-rules chapter that makes the bond plausible.</div><div><strong>Revision note:</strong> Keep the vulnerable contact, but sharpen the mutual contradiction in the &#x27;no interfering&#x27; agreement so it reads as character truth, not rom-com scaffolding.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 14 — Luddite By Chance</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> Katiya&#x27;s culture shock gives the cross-world premise concrete texture.</div><div><strong>Revision note:</strong> Watch the charm-to-drag ratio; keep only the future-shock beats that deepen her character or alter the relationship dynamic.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 15 — Technophile By Choice</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It usefully inverts the previous chapter by letting Cody inhabit Katiya&#x27;s world.</div><div><strong>Revision note:</strong> Tighten the social-tour material and preserve only the moments that complicate belonging, jealousy, or status.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 16 — Back To Business</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> The Alan/Jackson material supports Cody&#x27;s grief spine.</div><div><strong>Revision note:</strong> Compress the office return so the father/brother emotional content carries more relative weight.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 17 — Onward To Chaos</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> This chapter gives Katiya active competence, duty, and a growing tangle of promises.</div><div><strong>Revision note:</strong> Highlight which promise or pursuit here will matter later; don&#x27;t let the chapter read as episodic competence display.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 18 — Civillian Combat</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> Cody&#x27;s training day usefully shows his willingness to engage Katiya&#x27;s world rather than merely visit it.</div><div><strong>Revision note:</strong> Clarify the long-term significance of Aldrin noticing him so the chapter&#x27;s character beat also has structural consequence.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 19 — Warrior Business</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It opens Cody&#x27;s workplace world to Katiya and broadens the social network around him.</div><div><strong>Revision note:</strong> Reduce observational social texture unless it sharpens Cody&#x27;s exclusion or Katiya&#x27;s perception of his stalled life.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 20 — Domestic Relations</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> The parallel dating material advances the theme of mutual misrecognition and emotional displacement.</div><div><strong>Revision note:</strong> Differentiate the two halves more sharply so the chapter feels like a comparison with purpose, not double coverage of awkwardness.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 21 — Foreign Affairs</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> This chapter turns relationship unease into revealing discomfort and bad choices.</div><div><strong>Revision note:</strong> Aim the intercutting toward one shared thematic claim about substitution, avoidance, or emotional dishonesty.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 22 — Losing To Fear</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It effectively sets up competitive and professional pressure on both sides of the door.</div><div><strong>Revision note:</strong> Tighten the test/prep material so the chapter&#x27;s function is clear: this is a runway for failure, not another broad sampling of routine.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 23 — Failing To Launch</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It contributes the sense of plans buckling under pressure across both protagonists.</div><div><strong>Revision note:</strong> Most of this chapter is overshadowed by the stronger collapse in 24; salvage only the setup that 24 truly needs.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 24 — Friendly Fire</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> A major twin-failure chapter that sharply aligns the double-novel structure with the book&#x27;s actual premise.</div><div><strong>Revision note:</strong> Make the parallel failures echo by logic rather than by simple simultaneity; the deeper the shared flaw, the stronger this lands.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 25 — A House Divided</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> The domestic blowup gives emotional consequence to the prior public failures.</div><div><strong>Revision note:</strong> Be careful not to let the argument become generic couple combustion; every line should expose the fear structures driving both of them.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 26 — Cold War</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> This flashback has real mass and appears central to Cody&#x27;s grief architecture.</div><div><strong>Revision note:</strong> Frame it with especially clear entry and exit logic so it deepens the present arc instead of feeling like a temporary genre switch.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 27 — Warm Solitude</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> A foundational trauma chapter that appears essential to understanding Katiya&#x27;s entire behavior pattern.</div><div><strong>Revision note:</strong> Refine for precision and image retention; the goal is memorable emotional architecture, not maximal backstory volume.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 28 — Prometheus</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It gives Cody a believable spark of renewed competence and a path toward the project line.</div><div><strong>Revision note:</strong> Make the late-night idea feel more causally fused to his grief and identity, not just to plot convenience.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 29 — Once Lovers</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It supplies relational and family pressure around Katiya at a vulnerable stage.</div><div><strong>Revision note:</strong> Cut any beat that does not directly intensify the later collapse, choice, or loyalty conflict.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 30 — Cold Sweat</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> This chapter seems to fuse alliance-building with looming external/institutional threat in a premise-relevant way.</div><div><strong>Revision note:</strong> Clarify the symmetry between Katiya&#x27;s new alliances and Cody&#x27;s ominous email so the chapter reads as one tightening vice.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 31 — Heating Up</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It helps drag the protagonists back into contact with urgency and physical consequence.</div><div><strong>Revision note:</strong> Because magnitude is near zero, clarify what direction the chapter turns the story—reunion, rescue, relapse, or commitment.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 32 — Fantastic Modernity</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> There is probably some needed decompression and wonder here after heavy material.</div><div><strong>Revision note:</strong> Right now it looks structurally optional; either give it one decisive reveal or strip it to a brief transition.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 33 — Modern Fantasy</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It appears to provide one last moment of buoyancy before the next bad turn.</div><div><strong>Revision note:</strong> Merge the levity with the incoming bad news so the chapter becomes whiplash with purpose rather than another excursion.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 34 — Professional Death</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> A real structural blow that advances Cody&#x27;s institutional and personal arc with force.</div><div><strong>Revision note:</strong> Strengthen continuity from earlier workplace chapters so this feels like culmination, not sudden severity.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 35 — Physical Demise</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> This is a powerful companion collapse on Katiya&#x27;s side and one of the novel&#x27;s true mountains.</div><div><strong>Revision note:</strong> Sharpen the specific way this chapter injures or transforms her position so the aftermath chapters can build from a clean wound.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 36 — Holding On</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It offers the first glimmer of recovery and renewed care after the double collapse.</div><div><strong>Revision note:</strong> The chapter needs a more legible reversal engine; identify the exact act of kindness, discovery, or resolve that turns the vector positive.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 37 — Letting Go</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> Immense emotional and thematic weight makes this an essential hinge chapter.</div><div><strong>Revision note:</strong> Its direction is too ambiguous; revise the emphasis so readers understand what is ending here and what is beginning.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 38 — Bottoming Out</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It converts shared damage into mutual visibility and gives despair practical shape.</div><div><strong>Revision note:</strong> Trim repeated anguish and push harder on the new deadline, plan, or obligation created by the chapter.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 39 — Crossing Over</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> The widening of the private story into larger war stakes is valuable and timely.</div><div><strong>Revision note:</strong> Titus/Sylvia&#x27;s arrival needs crisp integration so the chapter feels like escalation, not a fresh book being introduced.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 40 — Reaching Up</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It begins the team-build/planning mode and usefully merges the two worlds into a shared strategic space.</div><div><strong>Revision note:</strong> Condense the social-planning overlap; late in the novel, every page should either harden the plan or complicate it.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 41 — Annealment</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It keeps both protagonists active under pressure rather than static in grief.</div><div><strong>Revision note:</strong> The mirrored labor-and-household stress needs stronger contrast in dramatic function; make one about capability and the other about moral risk.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 42 — Eutectic Point</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> This chapter broadens the political and practical frame of the endgame in a useful way.</div><div><strong>Revision note:</strong> Because it is an information-bearing chapter, be ruthless about making every new ally, tool, and warning alter later choices.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 43 — Harsh Noise</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It advances hope through fabrication while showing that alliance-building remains unstable.</div><div><strong>Revision note:</strong> Reduce generalized tension and make the chapter pivot on one decisive misunderstanding or breakthrough instead of several medium-intensity frictions.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 44 — In Loving Memory</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> Communal grief and earned intimacy both matter here, and the chapter humanizes the war effort.</div><div><strong>Revision note:</strong> Shorten the mourning passages until the chapter&#x27;s real outcome—changed trust and commitment—stands in the foreground.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 45 — In Future Grief</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> A strong bilateral family-pressure chapter that deepens the stakes without stalling momentum.</div><div><strong>Revision note:</strong> Keep the parallel structure, but avoid scene-mirroring so exact that one side feels like the other&#x27;s echo.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 46 — Close Quarters</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> This chapter effectively turns calm-before-the-storm space into emotional and tactical commitment.</div><div><strong>Revision note:</strong> Make the confession/vow alter concrete endgame behavior so the chapter earns its high intensity structurally.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 47 — Ground Control</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> The institutional lockdown of both protagonists is a strong pre-endgame squeeze.</div><div><strong>Revision note:</strong> Increase the sense of simultaneity and trapped momentum so this reads as a synchronized clamp rather than two adjacent inconveniences.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 48 — Metanoia</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> A highly effective conversion chapter where both protagonists begin acting from earned truth.</div><div><strong>Revision note:</strong> Lean into callback structure; let specific prior lies, evasions, and failures be answered explicitly here.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 49 — Paragate</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> This is the novel fully becoming itself, with strong premise alignment and decisive mobilization.</div><div><strong>Revision note:</strong> Tighten transitions and exposition so nothing blunts the threshold-crossing power of the chapter.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 50 — Knightfall</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> It provides necessary tactical escalation and puts Cody and Katiya under the exact conditions the climax needs.</div><div><strong>Revision note:</strong> Trim any battle logistics that do not directly set up Katiya&#x27;s nightmare confrontation or Cody&#x27;s crucial act of disobedience.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 51 — Daybreak</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> The book&#x27;s true climax and best chapter by every relevant structural measure.</div><div><strong>Revision note:</strong> Revise around setup/payoff integrity only; do not overstuff aftermath or explanation into the chapter and risk diluting its clarity.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 52 — Parasmagate</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> This gives the main emotional closure the novel needs after the summit.</div><div><strong>Revision note:</strong> Because its magnitude softens after the climax, keep it clean and brief; closure should feel settled, not re-litigated.</div>
+                </div>
+                
+
+                <div class="peak-card">
+                    <div class="peak-title">Ch 53 — Threaded Echoes</div>
+                    <div class="peak-meta"></div>
+                    <div><strong>Assessment:</strong> As a bonus sting, it may have intrigue value and sequel/promo utility.</div><div><strong>Revision note:</strong> Do not ask it to function as core epilogue unless you integrate Titus materially earlier; otherwise label it clearly as bonus content and let the main novel end on 52.</div>
+                </div>
+                
+        </div>
+
+        <h3>Next Revision Pass</h3>
+        <ul><li>Compress the opening misunderstanding loop so Chapters 1-12 produce faster premise acceleration and fewer repeated Cody/Katiya mirror beats.</li><li>Identify the indispensable spine of Act Two and merge weak bridge chapters into stronger failure chapters, especially around 23-25.</li><li>Aggressively compress or rebuild the 29-33 corridor so entertainment/novelty material directly sets up the double collapse in 34-35.</li><li>Clarify the major vector hinge across 36-38, especially Chapter 37, so the reader can feel the story turning from descent into directed action.</li><li>In Act Four, reduce duplicated planning, grief-processing, and household-pressure scenes; each chapter should own one unique endgame function.</li><li>Differentiate mirrored dual-protagonist scenes more sharply: if Cody and Katiya are reflecting each other, the reflection must produce contrast or escalation, not repetition.</li><li>Strengthen setup/payoff chains into 24, 34, 35, 49, and 51 so the biggest magnitude turns feel causally inevitable.</li><li>Audit every high cheap-action/high cheap-drama chapter and either increase thematic precision or cut surface intensity.</li><li>Protect and refine the true core mountain: 24, 27, 34, 35, 37, 45, 48, 49, 51.</li><li>Decide formally whether Chapter 53 is part of the novel or a promotional bonus; revise its framing accordingly.</li></ul>
+        
+
+        <div class="page-break"></div>
+
+        <h2 id="CTable">Full Chapter / Unit Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-num">Ch</th>
+                    <th class="col-name">Chapter</th>
+                    <th class="col-score">A</th>
+                    <th class="col-score">D</th>
+                    <th class="col-score">T</th>
+                    <th class="col-score">M</th>
+                    <th class="col-score">E</th>
+                    <th class="col-score">PF</th>
+                    <th class="col-score">G</th>
+                    <th class="col-score">Cut</th>
+                    <th class="col-pov">POV</th>
+                    <th class="col-summary">Summary</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>1</td>
+                    <td>Strangers To Enemies 1</td>
+                    <td>4.9</td>
+                    <td>5.1</td>
+                    <td>7.7</td>
+                    <td>-0.09</td>
+                    <td>17.7</td>
+                    <td>-0.7</td>
+                    <td>35.6</td>
+                    <td>42.7</td>
+                    <td>Cody</td>
+                    <td>Cody celebrates his first home, drunkenly stumbles through the adjoining door into another world, is healed by strangers, and fixates on the &amp;quot;cosplayer&amp;quot; girl on the other side.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>2</td>
+                    <td>The Knight Before</td>
+                    <td>2.3</td>
+                    <td>5.4</td>
+                    <td>5.7</td>
+                    <td>+0.07</td>
+                    <td>13.4</td>
+                    <td>+0.4</td>
+                    <td>11.2</td>
+                    <td>80.2</td>
+                    <td>Katiya</td>
+                    <td>Katiya&amp;apos;s intro: she struggles to relax, Aldrin frames trainee expectations, and she reconnects with Jullian as they &amp;quot;christen&amp;quot; her new place.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>3</td>
+                    <td>The Day After</td>
+                    <td>3.8</td>
+                    <td>5.8</td>
+                    <td>5.2</td>
+                    <td>+0.03</td>
+                    <td>14.8</td>
+                    <td>+0.2</td>
+                    <td>8.8</td>
+                    <td>82.7</td>
+                    <td>Cody</td>
+                    <td>Cody&amp;apos;s bleak office day: roasted for late redlines, awkward beat with Kei, then family unpacking with Miguel queued up for drinks.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>4</td>
+                    <td>Secondhand Cottage</td>
+                    <td>5.5</td>
+                    <td>7.1</td>
+                    <td>4.5</td>
+                    <td>-0.10</td>
+                    <td>17.2</td>
+                    <td>-0.5</td>
+                    <td>15.8</td>
+                    <td>82.1</td>
+                    <td>Katiya</td>
+                    <td>Katiya&amp;apos;s trauma baseline: nightmares of Hillfar; she self-stabilizes, starts her day, meets Derry &amp; Carmen (Rayna foreshadow), and heads to base with Bertram.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>5</td>
+                    <td>Firsthand Home</td>
+                    <td>2.6</td>
+                    <td>6.8</td>
+                    <td>5.1</td>
+                    <td>-0.05</td>
+                    <td>14.5</td>
+                    <td>-0.2</td>
+                    <td>10.2</td>
+                    <td>84.9</td>
+                    <td>Cody</td>
+                    <td>Cody + Miguel bro out, drink hard; Miguel crashes, Cody stays up.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>6</td>
+                    <td>Insurgency</td>
+                    <td>5.4</td>
+                    <td>6.7</td>
+                    <td>5.8</td>
+                    <td>-0.14</td>
+                    <td>17.9</td>
+                    <td>-0.8</td>
+                    <td>22.9</td>
+                    <td>67.2</td>
+                    <td>Katiya</td>
+                    <td>Katiya&amp;apos;s first day ends in panic when a distant light (Firebrand tie-in) appears; town responds; on returning home she finds an intruder&amp;mdash;Cody&amp;mdash;and ambushes him.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>7</td>
+                    <td>Exfiltration</td>
+                    <td>4.6</td>
+                    <td>5.0</td>
+                    <td>6.0</td>
+                    <td>-0.06</td>
+                    <td>15.6</td>
+                    <td>-0.4</td>
+                    <td>12.4</td>
+                    <td>72.2</td>
+                    <td>Katiya</td>
+                    <td>Prologue re-seen through Katiya: she crosses into the modern world and recoils, landing back through the door&amp;mdash;mirror of Cody&amp;apos;s intro.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>8</td>
+                    <td>Strangers To Enemies 2</td>
+                    <td>5.7</td>
+                    <td>3.3</td>
+                    <td>5.0</td>
+                    <td>-0.10</td>
+                    <td>14.0</td>
+                    <td>-0.5</td>
+                    <td>6.7</td>
+                    <td>88.4</td>
+                    <td>Katiya</td>
+                    <td>Third clash: Katiya (assuming Auvryan assassin) and Cody fight to another misunderstanding; she drives him back through the door.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>9</td>
+                    <td>Surprise Approach</td>
+                    <td>4.5</td>
+                    <td>4.4</td>
+                    <td>4.8</td>
+                    <td>-0.07</td>
+                    <td>13.7</td>
+                    <td>-0.3</td>
+                    <td>8.3</td>
+                    <td>89.6</td>
+                    <td>Cody</td>
+                    <td>Cody tries to rationalize it away (no wound); barricades the door; nearly late to work; meets foil Reed.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>10</td>
+                    <td>Strategic Retreat</td>
+                    <td>5.9</td>
+                    <td>8.4</td>
+                    <td>6.1</td>
+                    <td>-0.46</td>
+                    <td>20.4</td>
+                    <td>-2.8</td>
+                    <td>34.7</td>
+                    <td>54.4</td>
+                    <td>Katiya</td>
+                    <td>Katiya cleans to stave off panic, studies Cody&amp;apos;s device; time skip: a month later she hesitates during a royal escort, barely averts disaster, is berated, and runs to find Bertram.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>11</td>
+                    <td>Ennui and Excoriation</td>
+                    <td>3.9</td>
+                    <td>6.5</td>
+                    <td>6.4</td>
+                    <td>-0.18</td>
+                    <td>16.8</td>
+                    <td>-1.1</td>
+                    <td>25.4</td>
+                    <td>63.0</td>
+                    <td>Cody</td>
+                    <td>Another month later: Cody is bored while Reed earns praise; Nav spins up a new project; Cody ghosts social invites, but hears pleading through the door at home.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>12</td>
+                    <td>Anxiety and Avoidance</td>
+                    <td>3.6</td>
+                    <td>3.9</td>
+                    <td>5.3</td>
+                    <td>-0.09</td>
+                    <td>12.8</td>
+                    <td>-0.5</td>
+                    <td>11.2</td>
+                    <td>85.8</td>
+                    <td>Katiya</td>
+                    <td>FOUR WEEK TIME SKIPKatiya, Ryder, and Paxton rescue near-dead Bertram; she&amp;apos;s blamed and shut out&amp;mdash;her only remaining lifeline is Cody.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>13</td>
+                    <td>The Sleeping Knight</td>
+                    <td>5.1</td>
+                    <td>7.2</td>
+                    <td>6.2</td>
+                    <td>-0.55</td>
+                    <td>18.6</td>
+                    <td>-3.4</td>
+                    <td>28.8</td>
+                    <td>59.4</td>
+                    <td>Cody, Katiya</td>
+                    <td>Katiya crosses mid-panic; Cody calms her and lets her sleep; awkward breakfast; they agree to &amp;quot;no interfering&amp;quot; (both intend to break it).</td>
+                </tr>
+                
+
+                <tr>
+                    <td>14</td>
+                    <td>Luddite By Chance</td>
+                    <td>4.3</td>
+                    <td>4.8</td>
+                    <td>6.2</td>
+                    <td>-0.37</td>
+                    <td>15.4</td>
+                    <td>-2.3</td>
+                    <td>16.6</td>
+                    <td>69.0</td>
+                    <td>Cody, Katiya</td>
+                    <td>Cody gives her a gentle orientation day: first car ride (terrifying), Costco errand gauntlet&amp;mdash;Katiya is overwhelmed by the future.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>15</td>
+                    <td>Technophile By Choice</td>
+                    <td>4.3</td>
+                    <td>5.8</td>
+                    <td>5.7</td>
+                    <td>-0.17</td>
+                    <td>15.8</td>
+                    <td>-1.0</td>
+                    <td>19.3</td>
+                    <td>73.6</td>
+                    <td>Cody, Katiya</td>
+                    <td>Cody runs Katiya&amp;apos;s route in Gaffesend; she tours him as &amp;quot;royal inventor&amp;quot;; awkward Jullian moment; tavern hang where Cody fits in.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>16</td>
+                    <td>Back To Business</td>
+                    <td>3.4</td>
+                    <td>5.2</td>
+                    <td>5.3</td>
+                    <td>-0.18</td>
+                    <td>13.9</td>
+                    <td>-1.0</td>
+                    <td>13.2</td>
+                    <td>82.3</td>
+                    <td>Cody</td>
+                    <td>Cody&amp;apos;s spark flickers: nostalgia and lunch with Alan (Jackson talk); he returns hoping for an open door.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>17</td>
+                    <td>Onward To Chaos</td>
+                    <td>6.3</td>
+                    <td>6.0</td>
+                    <td>6.8</td>
+                    <td>-0.37</td>
+                    <td>19.2</td>
+                    <td>-2.5</td>
+                    <td>34.1</td>
+                    <td>51.1</td>
+                    <td>Katiya</td>
+                    <td>Katiya visits Bertram in the hospital (promises Hillfar); market duty goes sideways; she chases and collars Rayna (Ahkvasan half-blood); Jullian downplays her leap; Cody leaves a treat.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>18</td>
+                    <td>Civillian Combat</td>
+                    <td>4.7</td>
+                    <td>5.5</td>
+                    <td>6.1</td>
+                    <td>-0.01</td>
+                    <td>16.3</td>
+                    <td>-0.1</td>
+                    <td>24.0</td>
+                    <td>66.8</td>
+                    <td>Cody</td>
+                    <td>Cody&amp;apos;s volunteer training day: Katiya teases, his mistake catches Aldrin&amp;apos;s eye; later he chooses friendship over victory in a challenge&amp;mdash;character beat.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>19</td>
+                    <td>Warrior Business</td>
+                    <td>3.9</td>
+                    <td>5.2</td>
+                    <td>6.0</td>
+                    <td>-0.17</td>
+                    <td>15.0</td>
+                    <td>-1.0</td>
+                    <td>20.4</td>
+                    <td>73.0</td>
+                    <td>Katiya</td>
+                    <td>Open house at Cody&amp;apos;s work: meet Reed &amp; Kei; Cody geeks out, Katiya meets Alan &amp; Kim; they overhear Reed/Kei on Cody missing from the &amp;quot;Future Talent&amp;quot; wall.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>20</td>
+                    <td>Domestic Relations</td>
+                    <td>4.1</td>
+                    <td>6.3</td>
+                    <td>5.6</td>
+                    <td>-0.26</td>
+                    <td>16.0</td>
+                    <td>-1.5</td>
+                    <td>24.0</td>
+                    <td>72.6</td>
+                    <td>Cody, Katiya</td>
+                    <td>Katiya engineers a Cody&amp;mdash;Kei date; in parallel she and Jullian go to hot springs and bristle; Cody&amp;apos;s date feels off and foggy&amp;mdash;he insists he&amp;apos;s &amp;quot;fine.&amp;quot;</td>
+                </tr>
+                
+
+                <tr>
+                    <td>21</td>
+                    <td>Foreign Affairs</td>
+                    <td>4.9</td>
+                    <td>7.4</td>
+                    <td>6.5</td>
+                    <td>-0.35</td>
+                    <td>18.9</td>
+                    <td>-2.3</td>
+                    <td>35.9</td>
+                    <td>54.0</td>
+                    <td>Katiya, Cody</td>
+                    <td>Katiya extracts an uncomfortable truth from Jullian; intercut meltdown date beats (both couples misfire); Cody &amp; Kei hook up but it lands as empty.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>22</td>
+                    <td>Losing To Fear</td>
+                    <td>4.1</td>
+                    <td>6.5</td>
+                    <td>6.4</td>
+                    <td>-0.44</td>
+                    <td>17.0</td>
+                    <td>-2.8</td>
+                    <td>35.0</td>
+                    <td>60.6</td>
+                    <td>Katiya, Cody</td>
+                    <td>Katiya passes core exams but shoots poorly; Aryn is unflappable; Cody and Reed clash about what a Level-1 is; Katiya insists on leading the next team exam, feeling off her game.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>23</td>
+                    <td>Failing To Launch</td>
+                    <td>4.8</td>
+                    <td>6.7</td>
+                    <td>4.6</td>
+                    <td>-0.28</td>
+                    <td>16.1</td>
+                    <td>-1.3</td>
+                    <td>38.5</td>
+                    <td>78.5</td>
+                    <td>Cody, Katiya</td>
+                    <td>Cody presents and gets hammered; Reed&amp;apos;s allies redirect the room; Katiya&amp;apos;s plan withers, Bertram is &amp;quot;killed&amp;quot; in exercise, she barges the opposing house&amp;mdash;bad optics.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>24</td>
+                    <td>Friendly Fire</td>
+                    <td>7.8</td>
+                    <td>7.2</td>
+                    <td>8.0</td>
+                    <td>-0.80</td>
+                    <td>23.0</td>
+                    <td>-6.4</td>
+                    <td>73.9</td>
+                    <td>22.2</td>
+                    <td>Cody, Katiya</td>
+                    <td>Reed&amp;apos;s presentation wins; Cody&amp;apos;s mild critique is spun as jealousy and he snaps publicly; Katiya loses to Aryn, is told she&amp;apos;s below the line, and learns her family&amp;apos;s already in Gaffesend.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>25</td>
+                    <td>A House Divided</td>
+                    <td>6.3</td>
+                    <td>7.6</td>
+                    <td>7.1</td>
+                    <td>-0.71</td>
+                    <td>21.0</td>
+                    <td>-5.1</td>
+                    <td>78.0</td>
+                    <td>32.9</td>
+                    <td>Cody, Katiya</td>
+                    <td>Cody spirals home; Katiya waits on his couch; their mutual failures ignite a bitter fight&amp;mdash;door slammed shut again.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>26</td>
+                    <td>Cold War</td>
+                    <td>8.6</td>
+                    <td>7.4</td>
+                    <td>7.5</td>
+                    <td>-0.23</td>
+                    <td>23.4</td>
+                    <td>-1.7</td>
+                    <td>90.3</td>
+                    <td>20.9</td>
+                    <td>Cody</td>
+                    <td>Jackson&amp;apos;s &amp;quot;Operation Bluewings&amp;quot; flashback: drone crash, mission abort, and his sacrificial call to Overwatch in the storm.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>27</td>
+                    <td>Warm Solitude</td>
+                    <td>7.3</td>
+                    <td>7.6</td>
+                    <td>7.8</td>
+                    <td>-0.61</td>
+                    <td>22.8</td>
+                    <td>-4.8</td>
+                    <td>79.8</td>
+                    <td>21.8</td>
+                    <td>Katiya</td>
+                    <td>Katiya&amp;apos;s origin trauma: childhood game ? treehouse collapse ? Raph&amp;apos;s death; she hides in a corpse pit; the Chymaeran lie brands her forever.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>28</td>
+                    <td>Prometheus</td>
+                    <td>6.1</td>
+                    <td>6.0</td>
+                    <td>6.6</td>
+                    <td>-0.50</td>
+                    <td>18.8</td>
+                    <td>-3.3</td>
+                    <td>57.1</td>
+                    <td>49.0</td>
+                    <td>Cody</td>
+                    <td>Months later: Naveen notes Cody&amp;apos;s improvement but deeper ennui; company lunch where Reed is promoted; Reed asks Cody to help fix his flawed prototype (they bond); that night Cody, riding the high, uses Essence as flux&amp;mdash;batteries &amp;quot;fire&amp;quot; and spark his next idea.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>29</td>
+                    <td>Once Lovers</td>
+                    <td>6.5</td>
+                    <td>6.0</td>
+                    <td>4.6</td>
+                    <td>-0.36</td>
+                    <td>17.1</td>
+                    <td>-1.6</td>
+                    <td>43.4</td>
+                    <td>74.9</td>
+                    <td>Katiya, Cody</td>
+                    <td></td>
+                </tr>
+                
+
+                <tr>
+                    <td>30</td>
+                    <td>Cold Sweat</td>
+                    <td>4.6</td>
+                    <td>6.4</td>
+                    <td>8.3</td>
+                    <td>-0.67</td>
+                    <td>19.3</td>
+                    <td>-5.6</td>
+                    <td>46.7</td>
+                    <td>33.8</td>
+                    <td>Katiya, Cody</td>
+                    <td></td>
+                </tr>
+                
+
+                <tr>
+                    <td>31</td>
+                    <td>Heating Up</td>
+                    <td>5.8</td>
+                    <td>5.5</td>
+                    <td>6.8</td>
+                    <td>-0.06</td>
+                    <td>18.2</td>
+                    <td>-0.4</td>
+                    <td>37.1</td>
+                    <td>52.5</td>
+                    <td>Katiya, Cody</td>
+                    <td></td>
+                </tr>
+                
+
+                <tr>
+                    <td>32</td>
+                    <td>Fantastic Modernity</td>
+                    <td>4.0</td>
+                    <td>6.4</td>
+                    <td>4.6</td>
+                    <td>+0.00</td>
+                    <td>14.9</td>
+                    <td>+0.0</td>
+                    <td>25.7</td>
+                    <td>85.1</td>
+                    <td>Katiya, Cody</td>
+                    <td></td>
+                </tr>
+                
+
+                <tr>
+                    <td>33</td>
+                    <td>Modern Fantasy</td>
+                    <td>6.1</td>
+                    <td>4.6</td>
+                    <td>5.5</td>
+                    <td>-0.17</td>
+                    <td>16.2</td>
+                    <td>-0.9</td>
+                    <td>36.6</td>
+                    <td>70.2</td>
+                    <td>Cody, Katiya</td>
+                    <td></td>
+                </tr>
+                
+
+                <tr>
+                    <td>34</td>
+                    <td>Professional Death</td>
+                    <td>6.8</td>
+                    <td>8.0</td>
+                    <td>8.0</td>
+                    <td>-0.80</td>
+                    <td>22.9</td>
+                    <td>-6.5</td>
+                    <td>67.4</td>
+                    <td>22.4</td>
+                    <td>Cody</td>
+                    <td></td>
+                </tr>
+                
+
+                <tr>
+                    <td>35</td>
+                    <td>Physical Demise</td>
+                    <td>7.3</td>
+                    <td>8.4</td>
+                    <td>7.2</td>
+                    <td>-0.72</td>
+                    <td>22.9</td>
+                    <td>-5.1</td>
+                    <td>75.4</td>
+                    <td>29.3</td>
+                    <td>Katiya</td>
+                    <td></td>
+                </tr>
+                
+
+                <tr>
+                    <td>36</td>
+                    <td>Holding On</td>
+                    <td>4.6</td>
+                    <td>5.1</td>
+                    <td>5.3</td>
+                    <td>+0.11</td>
+                    <td>15.1</td>
+                    <td>+0.6</td>
+                    <td>49.0</td>
+                    <td>70.8</td>
+                    <td>Cody</td>
+                    <td></td>
+                </tr>
+                
+
+                <tr>
+                    <td>37</td>
+                    <td>Letting Go</td>
+                    <td>6.1</td>
+                    <td>9.2</td>
+                    <td>8.8</td>
+                    <td>-0.02</td>
+                    <td>24.1</td>
+                    <td>-0.2</td>
+                    <td>80.1</td>
+                    <td>10.9</td>
+                    <td>Katiya, Cody</td>
+                    <td></td>
+                </tr>
+                
+
+                <tr>
+                    <td>38</td>
+                    <td>Bottoming Out</td>
+                    <td>5.7</td>
+                    <td>7.4</td>
+                    <td>6.0</td>
+                    <td>+0.19</td>
+                    <td>19.1</td>
+                    <td>+1.2</td>
+                    <td>60.5</td>
+                    <td>51.1</td>
+                    <td>Cody, Katiya</td>
+                    <td>After reaching the ugliest versions of themselves, Cody and Katiya finally stop performing strength and let each other see the damage. Cody interrupts his own collapse long enough to comfort Katiya after Bertram&amp;apos;s death, and Katiya&amp;apos;s tribunal summons turns grief into a hard deadline. By the end of the chapter, despair has not lifted&amp;mdash;but it has been given direction.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>39</td>
+                    <td>Crossing Over</td>
+                    <td>6.8</td>
+                    <td>7.9</td>
+                    <td>7.0</td>
+                    <td>+0.21</td>
+                    <td>21.7</td>
+                    <td>+1.5</td>
+                    <td>65.8</td>
+                    <td>36.7</td>
+                    <td>Cody, Katiya</td>
+                    <td>The private crisis inside Katiya&amp;apos;s house becomes part of a much larger war when Titus and Sylvia force their way into the story. Cody is thrown into a terrifying first encounter with people from a harsher world, Katiya begins to understand the scale of what is coming, and Cody&amp;apos;s attempt to regroup turns into a brutal training date that recommits him to fighting for a future instead of grieving one he already lost.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>40</td>
+                    <td>Reaching Up</td>
+                    <td>5.7</td>
+                    <td>6.1</td>
+                    <td>5.9</td>
+                    <td>+0.34</td>
+                    <td>17.6</td>
+                    <td>+2.0</td>
+                    <td>43.0</td>
+                    <td>62.4</td>
+                    <td>Katiya, Cody</td>
+                    <td>The planning phase begins in earnest as Cody&amp;apos;s world and Katiya&amp;apos;s world stop operating like separate emotional shelters. Over coffee, cheap drinks, and overlapping stories, the group starts building a shared strategy. Cody&amp;apos;s abandoned project stops being a joke, and Katiya&amp;apos;s increasingly unstable home life collides with the possibility that her estranged allies might actually stand with her.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>41</td>
+                    <td>Annealment</td>
+                    <td>6.7</td>
+                    <td>7.2</td>
+                    <td>4.6</td>
+                    <td>+0.16</td>
+                    <td>18.5</td>
+                    <td>+0.7</td>
+                    <td>42.9</td>
+                    <td>72.3</td>
+                    <td>Cody, Katiya</td>
+                    <td>Action replaces vague intention. Cody begins rebuilding JAX with help instead of shame, while Katiya tries to hold together a house full of secrets, fugitives, and divided loyalties. Both storylines harden under pressure: Cody through labor, Katiya through deception and risk.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>42</td>
+                    <td>Eutectic Point</td>
+                    <td>5.7</td>
+                    <td>5.7</td>
+                    <td>7.0</td>
+                    <td>+0.43</td>
+                    <td>18.4</td>
+                    <td>+3.0</td>
+                    <td>42.0</td>
+                    <td>50.4</td>
+                    <td>Katiya, Cody</td>
+                    <td>The story widens. Katiya is introduced to Aliaki, Jade, and the deeper political reality behind the coming attack, while Cody is invited deeper into Reed&amp;apos;s privileged world and closer to a genuine second chance at proving himself. Both protagonists are handed tools and warnings they only partly understand.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>43</td>
+                    <td>Harsh Noise</td>
+                    <td>5.7</td>
+                    <td>7.6</td>
+                    <td>6.0</td>
+                    <td>+0.35</td>
+                    <td>19.3</td>
+                    <td>+2.1</td>
+                    <td>49.1</td>
+                    <td>55.6</td>
+                    <td>Cody, Katiya</td>
+                    <td>Hope starts making noise. Cody begins fabrication in Reed&amp;apos;s family machine space and gains the first meaningful encouragement he has felt from adults tied to the aerospace legacy he still wants. Meanwhile, Katiya&amp;apos;s alliance nearly implodes in a misunderstanding fueled by power and distrust, forcing her to stabilize a group that could either save Gaffesend or tear itself apart.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>44</td>
+                    <td>In Loving Memory</td>
+                    <td>5.0</td>
+                    <td>7.7</td>
+                    <td>5.4</td>
+                    <td>+0.37</td>
+                    <td>18.0</td>
+                    <td>+2.0</td>
+                    <td>50.6</td>
+                    <td>63.5</td>
+                    <td>Cody, Katiya</td>
+                    <td>Grief finally becomes communal instead of private. Cody helps Aryn and Rayna speak through loss by talking about Jackson, Katiya returns to a quieter house and finds evidence of the care he has extended to others, and the chapter ends with intimacy growing out of exhaustion, trust, and shared mourning.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>45</td>
+                    <td>In Future Grief</td>
+                    <td>6.3</td>
+                    <td>7.9</td>
+                    <td>7.7</td>
+                    <td>+0.54</td>
+                    <td>21.8</td>
+                    <td>+4.1</td>
+                    <td>68.4</td>
+                    <td>29.4</td>
+                    <td>Cody, Katiya</td>
+                    <td>Both protagonists face family systems that love them but do not really understand what they are choosing. Cody confronts his parents&amp;apos; fear, finances, and assumptions about his future, while Katiya tells her family the truth about the danger she still intends to face. Jackson&amp;apos;s name and memory become fused to Cody&amp;apos;s project, turning invention into memorial.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>46</td>
+                    <td>Close Quarters</td>
+                    <td>7.0</td>
+                    <td>8.5</td>
+                    <td>6.5</td>
+                    <td>+0.42</td>
+                    <td>22.0</td>
+                    <td>+2.7</td>
+                    <td>71.2</td>
+                    <td>38.7</td>
+                    <td>Katiya</td>
+                    <td>The quiet before the storm turns out not to be quiet at all. Cody and Katiya field-test the prototype and accidentally unleash terrifying power, then return home to find official pressure closing around Katiya&amp;apos;s life. Their last stretch of peace becomes a vow, a confession, and an act of choosing each other before the worlds move to tear them apart.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>47</td>
+                    <td>Ground Control</td>
+                    <td>5.9</td>
+                    <td>6.1</td>
+                    <td>6.6</td>
+                    <td>+0.27</td>
+                    <td>18.7</td>
+                    <td>+1.8</td>
+                    <td>63.1</td>
+                    <td>47.2</td>
+                    <td>Cody, Katiya</td>
+                    <td>Cody and Katiya each step into what should be their final chance to claim the futures they want, only to be immediately restrained by the institutions they have spent the story trying to survive. Cody tries to reach the Aspen conference room before HR can bury him, while Katiya is taken into custody before her tribunal and shut away from the threat she knows is coming. By the end of the chapter, both are trapped inside systems that mistake control for safety.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>48</td>
+                    <td>Metanoia</td>
+                    <td>6.0</td>
+                    <td>6.9</td>
+                    <td>7.3</td>
+                    <td>+0.69</td>
+                    <td>20.3</td>
+                    <td>+5.0</td>
+                    <td>69.4</td>
+                    <td>35.3</td>
+                    <td>Cody, Katiya</td>
+                    <td>Both protagonists fight for one clean chance to be heard. Cody&amp;apos;s confession turns his firing into a political problem inside Navidson-Monroe, while Katiya persuades Aryn that the truth matters more than procedure and turns imprisonment into a joint push toward Aldrin. The chapter tests what they have actually learned: not how to escape pressure, but how to move through it without lying to themselves.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>49</td>
+                    <td>Paragate</td>
+                    <td>6.4</td>
+                    <td>6.9</td>
+                    <td>8.6</td>
+                    <td>+0.85</td>
+                    <td>21.9</td>
+                    <td>+7.3</td>
+                    <td>82.0</td>
+                    <td>17.2</td>
+                    <td>Katiya, Cody</td>
+                    <td>The true conflict of Paragate begins as witness replaces doubt and preparation replaces denial. Aldrin sees enough to gamble on Katiya, while Cody leaves Navidson-Monroe uncertain of what his honesty has bought him but sure he is not done yet. Both protagonists step fully into the roles they have been resisting, and the story pivots from argument into mobilization.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>50</td>
+                    <td>Knightfall</td>
+                    <td>7.7</td>
+                    <td>6.3</td>
+                    <td>6.5</td>
+                    <td>+0.58</td>
+                    <td>20.5</td>
+                    <td>+3.8</td>
+                    <td>80.1</td>
+                    <td>38.2</td>
+                    <td>Cody, Katiya</td>
+                    <td>The battle turns when Cody is the first to notice movement across the frozen lake and realizes the defense is pointed the wrong way. As the first line is held by powers and allies beyond the core cast, the real threat reveals itself as a coordinated strike against the city itself. Katiya is forced into the exact shape of the nightmare that made her who she is, and Cody refuses to leave her to face it entirely alone.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>51</td>
+                    <td>Daybreak</td>
+                    <td>8.1</td>
+                    <td>8.9</td>
+                    <td>9.0</td>
+                    <td>+0.90</td>
+                    <td>26.0</td>
+                    <td>+8.1</td>
+                    <td>91.4</td>
+                    <td>0.0</td>
+                    <td>Katiya</td>
+                    <td>Katiya confronts the living shape of her oldest trauma and proves that what she has learned is stronger than fear. As Nhytyx recreates the emotional architecture of the nightmare that once broke her, Katiya saves her family through action instead of paralysis, while Cody disobeys her only enough to make one small but crucial difference. At dawn, Katiya completes her arc not just by surviving the past, but by replacing it with a new public truth.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>52</td>
+                    <td>Parasmagate</td>
+                    <td>3.0</td>
+                    <td>6.8</td>
+                    <td>7.5</td>
+                    <td>+0.32</td>
+                    <td>17.3</td>
+                    <td>+2.4</td>
+                    <td>42.4</td>
+                    <td>48.7</td>
+                    <td>Cody, Default</td>
+                    <td>The epilogue gives Paragate its emotional closure before leaving one quiet fracture open for the future. Cody and Katiya emerge from the battle changed, no longer using each other&amp;apos;s worlds as refuge from their own lives, and their relationship finally rests on chosen commitment instead of mutual escape.</td>
+                </tr>
+                
+
+                <tr>
+                    <td>53</td>
+                    <td>Threaded Echoes</td>
+                    <td>2.6</td>
+                    <td>5.8</td>
+                    <td>4.6</td>
+                    <td>+0.40</td>
+                    <td>13.0</td>
+                    <td>+1.8</td>
+                    <td>5.4</td>
+                    <td>99.9</td>
+                    <td>Default</td>
+                    <td></td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+    </div>
+    </body>
+    </html>
+    

@@ -1,0 +1,723 @@
+{
+  "macro_assessment": {
+    "length_assessment": "53 chapters is viable for a dual-protagonist \"double novel,\" but the current generative draft reads over-distributed in the first half and middle. The back third has real structural mass; the opening and several mirrored mid-book runs look too granular for the amount of premise movement they deliver.",
+    "structural_health": "Structurally, the novel is strongest from late Act Three into the Act Four climax. The mountain is real: Chapters 34-35 hit hard on the negative side, Chapter 37 acts as a hinge, Chapters 45-51 build with increasing positive alignment, and Chapter 51 is the unquestionable summit by energy, gravity, and premise force. Earlier sections show valleying, low prominence, and repeated local beats that do not always compound.",
+    "premise_alignment_health": "Premise alignment is mixed but promising. The manuscript spends much of its mean magnitude slightly negative, which fits a long failure/descent phase, but too many chapters with decent theme sit near zero or weak alignment, suggesting uncertainty about what the story is \"about\" in motion. When the book commits—24, 25, 27, 30, 34, 35 on the descent side; 45, 48, 49, 51 on the ascent side—it becomes much sharper.",
+    "distribution_health": "Energy and gravity are back-loaded. Act One has hook value but also the highest concentration of cut-risk and cheapness. Act Three contains both some of the book's best material and a drag pocket around the Earth/fantasy-tourism sequence. Act Four is the cleanest sustained run, though a few planning-and-bonding chapters repeat similar dual-protagonist functions. The Titus bonus chapter lands after emotional closure and currently behaves like detachable promo matter rather than integral epilogue.",
+    "primary_strength": "The story's biggest strength is that its major trauma/reckoning chapters are not merely loud—they are premise-bearing. Katiya's arc in particular culminates in a structurally legitimate climax, and the dual-protagonist braid becomes most effective when both lines convert private damage into public action.",
+    "primary_risk": "The biggest risk is mirrored-beat drag: the dual-novel gimmick sometimes produces paired scenes that echo each other without escalating the central premise. This is most visible in the early misunderstanding loop, the mid-book relationship/outing material, and some Act Four planning-grief-household chapters where emotional intent is clear but thematic vector is diluted.",
+    "one_paragraph_verdict": "Paragate has a real novel inside it already, and the metrics strongly support that the true book emerges in the late-middle through climax rather than in the current opening sprawl. The strongest spine is: descent through public/private failure, excavation of formative trauma, reversal into chosen truth and joint action, then Katiya's dawn confrontation. Revision should not flatten the double-novel concept, but it should get much harsher about asking whether each mirrored Cody/Katiya beat creates new vector or merely reflects prior material. Compress the early loop, tighten the Act Three tourism/romance drift, protect the trauma-and-reckoning core, and treat the Titus add-on as explicitly bonus material unless it can be made to pay rent for the main book."
+  },
+  "strongest_regions": [
+    {
+      "chapter": 51,
+      "chapter_name": "Daybreak",
+      "reason": "This is the clear structural summit: peak energy, peak gravity, peak premise force, zero cheapness flags, and the summary describes true arc completion rather than generic spectacle.",
+      "revision_instruction": "Protect the chapter's core design. Revision should focus on setup and clarity, not expansion: make sure every key image, fear trigger, and choice has been planted earlier so the climax feels inevitable rather than merely intense."
+    },
+    {
+      "chapter": 49,
+      "chapter_name": "Paragate",
+      "reason": "This appears to be the story's cleanest premise-forward pivot into endgame, with very high theme, very high positive magnitude, low ambiguity, and low cheapness.",
+      "revision_instruction": "Sharpen this as the point of no return. Make the witnesses, decisions, and role-acceptance beats unmistakably irreversible."
+    },
+    {
+      "chapter": 24,
+      "chapter_name": "Friendly Fire",
+      "reason": "A strong negative-alignment structural strike: high energy, high theme, very strong magnitude, and low ambiguity. It reads like one of the first chapters where both halves of the double novel fail in the same meaningful way.",
+      "revision_instruction": "Preserve the chapter's twin-collapse design, but ensure cause-and-effect is crisp so this feels like earned consequence, not just stacked humiliation."
+    },
+    {
+      "chapter": 34,
+      "chapter_name": "Professional Death",
+      "reason": "One of the best descent chapters in the manuscript: high energy, strong gravity, very strong premise force, and comparatively low cheapness. This is a real institutional reckoning, not filler conflict.",
+      "revision_instruction": "Give this chapter cleaner payoff links to prior workplace pressures and stronger downstream consequences into the next 2-4 chapters."
+    },
+    {
+      "chapter": 27,
+      "chapter_name": "Warm Solitude",
+      "reason": "Katiya's origin trauma chapter has high gravity, high premise load, and meaningful magnitude. It seems to explain the emotional architecture the climax later pays off.",
+      "revision_instruction": "Protect its essential revelations, but integrate it so it lands as structural necessity rather than inserted backstory; trim any explanatory excess around the core wound."
+    },
+    {
+      "chapter": 45,
+      "chapter_name": "In Future Grief",
+      "reason": "This is one of the healthiest bridge chapters in the ascent: both protagonists face family pressure while theme and positive magnitude stay strong.",
+      "revision_instruction": "Keep the bilateral family pressure, but make the mirrored scenes asymmetrical in texture and stakes so they feel complementary rather than duplicated."
+    }
+  ],
+  "drag_corridors": [
+    {
+      "start_chapter": 2,
+      "end_chapter": 9,
+      "problem_type": "opening repetition / premise under-acceleration",
+      "reason": "Act One has a dense cluster of very high cut-risk chapters (2,3,4,5,8,9) and multiple low-gravity, low-magnitude misunderstanding beats. The hook exists, but the opening spends too long re-explaining confusion, trauma baseline, and cross-door disorientation without enough new vector.",
+      "suggested_fix": "Compress the early mirror loop. Merge or shorten repeated Cody/Katiya misunderstanding beats so each crossing changes the relationship or the rules. Make the opening answer a sharper question faster: why this door, why these two, and what pressure will force continued contact?",
+      "confidence": 0.97
+    },
+    {
+      "start_chapter": 14,
+      "end_chapter": 20,
+      "problem_type": "mid-Act Two diffusion",
+      "reason": "These chapters carry moderate-to-high cut risk and mostly weak-to-moderate magnitude. The material appears to broaden world/social texture, but premise movement is soft and the dual-protagonist mirroring risks producing pleasant but non-compounding scenes.",
+      "suggested_fix": "Audit every scene in this corridor for net change. Combine orientation, open-house, training, and dating material so that each chapter advances one external complication and one internal contradiction, rather than offering parallel slices of life.",
+      "confidence": 0.84
+    },
+    {
+      "start_chapter": 29,
+      "end_chapter": 33,
+      "problem_type": "premise drift / tonal tourism",
+      "reason": "This is the clearest Act Three drag pocket. Chapters 29, 32, and 33 are among the highest cut-risk and cheap-action/drama entries, while 32 hits magnitude zero entirely. The Earth/fantasy novelty and relationship beats look entertaining but structurally slack.",
+      "suggested_fix": "Compress this corridor hard. Keep only the moments that directly trigger the later collapses, institutional consequences, or emotional commitments. Any tourism, banter, or romantic beat must earn its place by setting up Chapters 34-38 or the climax.",
+      "confidence": 0.95
+    },
+    {
+      "start_chapter": 40,
+      "end_chapter": 44,
+      "problem_type": "late-build redundancy",
+      "reason": "Act Four is generally strong, but 40, 41, 43, and 44 show elevated cheapness/cut-risk relative to the surrounding endgame. These chapters seem to repeat planning, fabrication, alliance tension, grief processing, and household pressure in slightly varied mirrored forms.",
+      "suggested_fix": "Condense the run into fewer, sharper escalations. Each late-build chapter should do one irreplaceable thing: reveal capability, fracture alliance, deepen commitment, or trigger the next lock-in. Remove duplicated emotional processing.",
+      "confidence": 0.79
+    }
+  ],
+  "magnitude_turns": [
+    {
+      "chapter": 24,
+      "chapter_name": "Friendly Fire",
+      "turn_type": "major negative plunge",
+      "reason": "This is one of the strongest descent beats in the novel and a point where both protagonists' tracks appear to synchronize around failure.",
+      "revision_instruction": "Strengthen setup in the preceding chapters so this collapse feels like the inevitable result of accumulated flaws, not an abrupt pile-on."
+    },
+    {
+      "chapter": 30,
+      "chapter_name": "Cold Sweat",
+      "turn_type": "deepening negative commitment",
+      "reason": "High theme plus strong negative magnitude suggests this is not just setback but premise-bearing deterioration.",
+      "revision_instruction": "Clarify what specifically worsens here that cannot be unworsened, especially across both protagonists' mirrored tracks."
+    },
+    {
+      "chapter": 34,
+      "chapter_name": "Professional Death",
+      "turn_type": "institutional nadir",
+      "reason": "Very high negative premise force marks this as one of the most important collapse chapters on Cody's side.",
+      "revision_instruction": "Make downstream fallout visible immediately after the chapter so readers feel the system closing, not just a dramatic scene ending."
+    },
+    {
+      "chapter": 36,
+      "chapter_name": "Holding On",
+      "turn_type": "sign change into recovery",
+      "reason": "This is the first clear positive-magnitude step after the Act Three descent, but its own chapter gravity and cut-risk suggest the turn may be underpowered or under-framed.",
+      "revision_instruction": "Build the reversal more explicitly. Seed this chapter in prior despair and make the positive shift legible as a choice, discovery, or alliance, not a mood change."
+    },
+    {
+      "chapter": 37,
+      "chapter_name": "Letting Go",
+      "turn_type": "hinge / ambiguous pivot",
+      "reason": "Enormous energy and gravity with magnitude near zero means the chapter matters a lot but its directional meaning is unclear. It likely functions as an emotional hinge without enough vector definition.",
+      "revision_instruction": "Decide whether this chapter is the end of descent, the cost of truth, or the beginning of action, and revise scene emphasis so readers can feel the directional turn."
+    },
+    {
+      "chapter": 38,
+      "chapter_name": "Bottoming Out",
+      "turn_type": "recovery consolidation",
+      "reason": "Positive magnitude after the hinge suggests this is where despair becomes direction, but cheap-drama flags indicate some of the pain may be overextended relative to premise movement.",
+      "revision_instruction": "Trim any repetitive collapse language and emphasize the concrete new direction that distinguishes this from Chapter 37."
+    },
+    {
+      "chapter": 48,
+      "chapter_name": "Metanoia",
+      "turn_type": "late positive acceleration",
+      "reason": "Strong positive premise force and healthy theme indicate this is a crucial conversion chapter where both protagonists begin acting from earned truth.",
+      "revision_instruction": "Increase the sense that this chapter cashes checks written earlier: callbacks, admissions, and choices should directly answer prior failures."
+    },
+    {
+      "chapter": 49,
+      "chapter_name": "Paragate",
+      "turn_type": "endgame lock-in",
+      "reason": "This is the cleanest positive turn before the climax, with excellent alignment and low ambiguity.",
+      "revision_instruction": "Treat it as the final threshold. Tighten any transitional material so the chapter hits as the story officially becoming the story it promised."
+    },
+    {
+      "chapter": 51,
+      "chapter_name": "Daybreak",
+      "turn_type": "ultimate positive resolution",
+      "reason": "The manuscript's entire mountain resolves here; all metrics agree this is the chapter that matters most.",
+      "revision_instruction": "Ensure the emotional, thematic, and tactical beats converge in the same sequence so the climax resolves character, relationship, and premise together."
+    }
+  ],
+  "cheap_heat_flags": [
+    {
+      "chapter": 4,
+      "chapter_name": "Secondhand Cottage",
+      "issue": "cheap drama / cheap action in early trauma baseline",
+      "reason": "Drama and action are loud for an early chapter, but theme and magnitude are not carrying the same weight. This can read as front-loaded suffering before readers are fully invested.",
+      "revision_instruction": "Reduce repetitive nightmare intensity and redirect focus toward one or two concrete character-defining contradictions that will matter later."
+    },
+    {
+      "chapter": 23,
+      "chapter_name": "Failing To Launch",
+      "issue": "high-drama low-theme setback pileup",
+      "reason": "Very high cheap-drama and high cut risk suggest a chapter built from frustration beats that do not cohere strongly enough around the premise.",
+      "revision_instruction": "Either upgrade the chapter's thematic clarity—what exact fear or flaw is being exposed?—or compress it into adjacent failure chapters."
+    },
+    {
+      "chapter": 29,
+      "chapter_name": "Once Lovers",
+      "issue": "loud but under-aligned relational material",
+      "reason": "Among the highest cheap-action and cheap-drama scores, with weak theme relative to intensity. The chapter likely contains motion and feeling without enough premise traction.",
+      "revision_instruction": "Strip out any beat that is merely romantic complication or family warmth unless it directly sets up the later collapse or choice."
+    },
+    {
+      "chapter": 32,
+      "chapter_name": "Fantastic Modernity",
+      "issue": "melodramatic/novelty detour with zero vector",
+      "reason": "Magnitude at 0.0 plus very high cheap drama and high cut risk marks this as the strongest premise-vacuum in the manuscript.",
+      "revision_instruction": "Rebuild the chapter around one consequential discovery or decision; otherwise compress it drastically or merge its useful parts elsewhere."
+    },
+    {
+      "chapter": 41,
+      "chapter_name": "Annealment",
+      "issue": "late-stage cheap action and cheap drama",
+      "reason": "In the approach to climax, this chapter is doing a lot of labor/tension material with very low theme for its level of noise.",
+      "revision_instruction": "Make the rebuilding/deception beats explicitly about the story's core argument—truth, trust, courage, chosen action—or cut them down."
+    },
+    {
+      "chapter": 44,
+      "chapter_name": "In Loving Memory",
+      "issue": "emotionally sincere but somewhat melodramatic",
+      "reason": "Cheap-drama is high even though the chapter has real human content. It may be processing grief one beat longer than the structure can support this late.",
+      "revision_instruction": "Keep the communal-grief function, but shorten mourning repetitions and sharpen what changes because of the grief."
+    },
+    {
+      "chapter": 46,
+      "chapter_name": "Close Quarters",
+      "issue": "romance-pressure blend not fully aligned",
+      "reason": "High energy and gravity are real, but cheap-action and cheap-drama remain elevated, suggesting some vow/confession material may be leaning on intensity more than vector.",
+      "revision_instruction": "Clarify what this chapter commits the protagonists to do next. The confession should alter tactics or stakes, not just deepen feeling."
+    },
+    {
+      "chapter": 50,
+      "chapter_name": "Knightfall",
+      "issue": "spectacle risk in the battle setup",
+      "reason": "High action with notable cheap-action score implies some battle business may be louder than it is thematically precise, especially next to the much stronger Chapter 51.",
+      "revision_instruction": "Refocus battle beats on Katiya's nightmare pattern, Cody's choice, and the misdirected defense logic so the action is all setup for the true climax."
+    },
+    {
+      "chapter": 53,
+      "chapter_name": "Threaded Echoes",
+      "issue": "bonus-epilogue cheap heat / low integration",
+      "reason": "Extremely high cut risk, very low gravity, high cheap drama, and placement after emotional closure make this feel detachable. Given your note, it behaves like promo add-on material, not structural necessity.",
+      "revision_instruction": "Label and position it as explicit bonus material, or seed Titus/Ellie earlier and tie the reveal to the main novel's thematic argument so it stops feeling appended."
+    }
+  ],
+  "cut_candidates": [
+    {
+      "chapter": 2,
+      "chapter_name": "The Knight Before",
+      "cut_risk_reason": "High cut risk and low gravity in an opening already carrying two-protagonist setup load. Likely useful world/character texture, but not enough movement.",
+      "suggested_action": "trim",
+      "what_to_target": "Condense tavern/introduction material to the minimum needed to define Katiya's baseline, Aldrin/Jullian context, and emotional unrest."
+    },
+    {
+      "chapter": 3,
+      "chapter_name": "The Day After",
+      "cut_risk_reason": "Low gravity, high ambiguity, high cut risk. Cody's office malaise may be over-explained early.",
+      "suggested_action": "compress_hard",
+      "what_to_target": "Fold key workplace humiliation and Miguel setup into neighboring chapters so the opening gets to the door-premise faster."
+    },
+    {
+      "chapter": 4,
+      "chapter_name": "Secondhand Cottage",
+      "cut_risk_reason": "High cheapness and cut risk despite useful trauma baseline.",
+      "suggested_action": "trim",
+      "what_to_target": "Shorten nightmare/routine material; keep only details that pay off in Katiya's climax or key relationships."
+    },
+    {
+      "chapter": 5,
+      "chapter_name": "Firsthand Home",
+      "cut_risk_reason": "Very high cut risk and cheap drama; likely atmosphere and friendship texture more than structural movement.",
+      "suggested_action": "compress_hard",
+      "what_to_target": "Reduce drinking/bro hang content unless a specific line or choice becomes crucial later."
+    },
+    {
+      "chapter": 8,
+      "chapter_name": "Strangers To Enemies 2",
+      "cut_risk_reason": "A repeat misunderstanding/fight beat in an opening already containing multiple such beats.",
+      "suggested_action": "merge",
+      "what_to_target": "Merge with adjacent crossing/conflict material so the early loop escalates instead of reiterates."
+    },
+    {
+      "chapter": 9,
+      "chapter_name": "Surprise Approach",
+      "cut_risk_reason": "One of the highest cut-risk chapters in the book; low gravity and weak alignment.",
+      "suggested_action": "compress_hard",
+      "what_to_target": "Keep only the Reed introduction and the fact that Cody tries denial; remove repeated rationalization beats."
+    },
+    {
+      "chapter": 12,
+      "chapter_name": "Anxiety and Avoidance",
+      "cut_risk_reason": "High cut risk, low gravity, and another time-skip adjustment chapter.",
+      "suggested_action": "merge",
+      "what_to_target": "Integrate Bertram-rescue/blame fallout into a stronger chapter centered on Katiya's isolation and need for Cody."
+    },
+    {
+      "chapter": 16,
+      "chapter_name": "Back To Business",
+      "cut_risk_reason": "High cut risk and low prominence; may restate Cody's ennui without enough escalation.",
+      "suggested_action": "trim",
+      "what_to_target": "Condense workplace routine and nostalgia into a shorter bridge with one strong Jackson/father beat."
+    },
+    {
+      "chapter": 23,
+      "chapter_name": "Failing To Launch",
+      "cut_risk_reason": "High cheapness and cut risk suggest partial redundancy with 24's stronger collapse.",
+      "suggested_action": "merge",
+      "what_to_target": "Move only the necessary setup beats into 24 and let Friendly Fire carry the real failure sequence."
+    },
+    {
+      "chapter": 29,
+      "chapter_name": "Once Lovers",
+      "cut_risk_reason": "Very high cheap-action/cheap-drama and high cut risk in a drag corridor.",
+      "suggested_action": "compress_hard",
+      "what_to_target": "Cut relational/family beats that do not directly precipitate 30-35 or redefine Katiya's stakes."
+    },
+    {
+      "chapter": 32,
+      "chapter_name": "Fantastic Modernity",
+      "cut_risk_reason": "Magnitude zero, high cut risk, and top-tier cheap drama make this the easiest structural compression target.",
+      "suggested_action": "compress_hard",
+      "what_to_target": "Excise novelty-tourism and retain only the one or two revelations needed for subsequent plot and relationship movement."
+    },
+    {
+      "chapter": 33,
+      "chapter_name": "Modern Fantasy",
+      "cut_risk_reason": "High cheap action, high cut risk, and adjacent to another drift chapter.",
+      "suggested_action": "merge",
+      "what_to_target": "Combine with 32 or refocus into a single chapter that moves from brief levity straight into bad news and consequence."
+    },
+    {
+      "chapter": 40,
+      "chapter_name": "Reaching Up",
+      "cut_risk_reason": "Late planning chapter with elevated cut risk in a section that can easily overrepeat team-building.",
+      "suggested_action": "trim",
+      "what_to_target": "Remove redundant planning banter and keep only the decisions, alliances, and project commitments that alter the endgame."
+    },
+    {
+      "chapter": 41,
+      "chapter_name": "Annealment",
+      "cut_risk_reason": "Extremely high cheap-action/cheap-drama for a late-stage chapter.",
+      "suggested_action": "differentiate",
+      "what_to_target": "Make Cody's build line and Katiya's house-pressure line less mirror-similar; each should solve a different structural problem."
+    },
+    {
+      "chapter": 44,
+      "chapter_name": "In Loving Memory",
+      "cut_risk_reason": "Moderate-to-high cut risk and high cheap drama late in the build.",
+      "suggested_action": "trim",
+      "what_to_target": "Shorten grief/intimacy repetition while preserving the chapter's function of communalizing loss."
+    },
+    {
+      "chapter": 53,
+      "chapter_name": "Threaded Echoes",
+      "cut_risk_reason": "By far the highest cut risk in the book; clearly behaves like an attached teaser rather than necessary closure.",
+      "suggested_action": "keep",
+      "what_to_target": "Keep only if explicitly framed as bonus/promotional material. If treated as part of the novel proper, it needs major integration work."
+    }
+  ],
+  "protect_at_all_costs": [
+    24,
+    27,
+    34,
+    35,
+    37,
+    45,
+    48,
+    49,
+    51
+  ],
+  "chapter_notes": [
+    {
+      "chapter": 1,
+      "chapter_name": "Strangers To Enemies 1",
+      "status": "keep",
+      "assessment": "Strong hook chapter: it introduces the door-premise fast and gives Cody a clear emotional vacancy for the story to invade.",
+      "note": "Clarify the vector of the opening wonder/disorientation so the scene promises more than novelty; signal earlier what this story will demand from Cody."
+    },
+    {
+      "chapter": 2,
+      "chapter_name": "The Knight Before",
+      "status": "trim",
+      "assessment": "Useful Katiya baseline and social context for the mirrored structure.",
+      "note": "Cut to the pressure point sooner; reduce atmospheric setup that delays the actual collision with the premise."
+    },
+    {
+      "chapter": 3,
+      "chapter_name": "The Day After",
+      "status": "compress_hard",
+      "assessment": "It broadens Cody's ordinary-world dissatisfaction and workplace friction.",
+      "note": "Strip this to the indispensable Reed/workplace beats because the chapter currently spends more time proving ennui than escalating plot."
+    },
+    {
+      "chapter": 4,
+      "chapter_name": "Secondhand Cottage",
+      "status": "trim",
+      "assessment": "It establishes Katiya's trauma pattern and her habit of self-management, both important for the climax.",
+      "note": "Dial back the suffering-on-arrival effect and emphasize the specific wound patterns that will recur in later high-gravity chapters."
+    },
+    {
+      "chapter": 5,
+      "chapter_name": "Firsthand Home",
+      "status": "compress_hard",
+      "assessment": "The Miguel friendship gives Cody social texture and a lived-in life outside the gimmick.",
+      "note": "Shorten the hangout material aggressively unless each exchange is seeding a later payoff in Cody's loyalty, shame, or decision-making."
+    },
+    {
+      "chapter": 6,
+      "chapter_name": "Insurgency",
+      "status": "keep",
+      "assessment": "This chapter gives Katiya an external disturbance that pushes her toward the first real collision with Cody.",
+      "note": "Make the causal chain from distant threat to home intrusion cleaner so the chapter feels less like stacked incidents and more like a single rising turn."
+    },
+    {
+      "chapter": 7,
+      "chapter_name": "Exfiltration",
+      "status": "differentiate",
+      "assessment": "The mirrored re-seeing of the crossing supports the double-novel design.",
+      "note": "Differentiate Katiya's perception enough that this does more than replay Chapter 1; it should revise our understanding, not merely duplicate it."
+    },
+    {
+      "chapter": 8,
+      "chapter_name": "Strangers To Enemies 2",
+      "status": "compress_hard",
+      "assessment": "It keeps the mutual fear and misread motives alive.",
+      "note": "This is one misunderstanding clash too many in close sequence; merge or shorten so each confrontation changes the rules."
+    },
+    {
+      "chapter": 9,
+      "chapter_name": "Surprise Approach",
+      "status": "compress_hard",
+      "assessment": "Reed's introduction matters for Cody's long institutional arc.",
+      "note": "Prune the denial-and-barricade repetition and move to the workplace consequence faster."
+    },
+    {
+      "chapter": 10,
+      "chapter_name": "Strategic Retreat",
+      "status": "keep",
+      "assessment": "This is one of the first chapters where Katiya's personal instability turns into public cost.",
+      "note": "Smooth the time-skip handling and tie the panic, reprimand, and Bertram-search into one coherent line of consequence."
+    },
+    {
+      "chapter": 11,
+      "chapter_name": "Ennui and Excoriation",
+      "status": "keep",
+      "assessment": "It reinforces Cody's stagnation and sets up the cry through the door as a meaningful call to action.",
+      "note": "Trim workplace repetition so the chapter lands on the summons rather than the routine."
+    },
+    {
+      "chapter": 12,
+      "chapter_name": "Anxiety and Avoidance",
+      "status": "compress_hard",
+      "assessment": "Katiya's isolation sharpens and the Bertram crisis raises her desperation.",
+      "note": "Merge this with adjacent material so the rescue/blame fallout becomes propulsion instead of another pause-and-redirect chapter."
+    },
+    {
+      "chapter": 13,
+      "chapter_name": "The Sleeping Knight",
+      "status": "keep",
+      "assessment": "This is an effective intimacy-and-rules chapter that makes the bond plausible.",
+      "note": "Keep the vulnerable contact, but sharpen the mutual contradiction in the 'no interfering' agreement so it reads as character truth, not rom-com scaffolding."
+    },
+    {
+      "chapter": 14,
+      "chapter_name": "Luddite By Chance",
+      "status": "keep",
+      "assessment": "Katiya's culture shock gives the cross-world premise concrete texture.",
+      "note": "Watch the charm-to-drag ratio; keep only the future-shock beats that deepen her character or alter the relationship dynamic."
+    },
+    {
+      "chapter": 15,
+      "chapter_name": "Technophile By Choice",
+      "status": "trim",
+      "assessment": "It usefully inverts the previous chapter by letting Cody inhabit Katiya's world.",
+      "note": "Tighten the social-tour material and preserve only the moments that complicate belonging, jealousy, or status."
+    },
+    {
+      "chapter": 16,
+      "chapter_name": "Back To Business",
+      "status": "trim",
+      "assessment": "The Alan/Jackson material supports Cody's grief spine.",
+      "note": "Compress the office return so the father/brother emotional content carries more relative weight."
+    },
+    {
+      "chapter": 17,
+      "chapter_name": "Onward To Chaos",
+      "status": "keep",
+      "assessment": "This chapter gives Katiya active competence, duty, and a growing tangle of promises.",
+      "note": "Highlight which promise or pursuit here will matter later; don't let the chapter read as episodic competence display."
+    },
+    {
+      "chapter": 18,
+      "chapter_name": "Civillian Combat",
+      "status": "keep",
+      "assessment": "Cody's training day usefully shows his willingness to engage Katiya's world rather than merely visit it.",
+      "note": "Clarify the long-term significance of Aldrin noticing him so the chapter's character beat also has structural consequence."
+    },
+    {
+      "chapter": 19,
+      "chapter_name": "Warrior Business",
+      "status": "trim",
+      "assessment": "It opens Cody's workplace world to Katiya and broadens the social network around him.",
+      "note": "Reduce observational social texture unless it sharpens Cody's exclusion or Katiya's perception of his stalled life."
+    },
+    {
+      "chapter": 20,
+      "chapter_name": "Domestic Relations",
+      "status": "keep",
+      "assessment": "The parallel dating material advances the theme of mutual misrecognition and emotional displacement.",
+      "note": "Differentiate the two halves more sharply so the chapter feels like a comparison with purpose, not double coverage of awkwardness."
+    },
+    {
+      "chapter": 21,
+      "chapter_name": "Foreign Affairs",
+      "status": "keep",
+      "assessment": "This chapter turns relationship unease into revealing discomfort and bad choices.",
+      "note": "Aim the intercutting toward one shared thematic claim about substitution, avoidance, or emotional dishonesty."
+    },
+    {
+      "chapter": 22,
+      "chapter_name": "Losing To Fear",
+      "status": "keep",
+      "assessment": "It effectively sets up competitive and professional pressure on both sides of the door.",
+      "note": "Tighten the test/prep material so the chapter's function is clear: this is a runway for failure, not another broad sampling of routine."
+    },
+    {
+      "chapter": 23,
+      "chapter_name": "Failing To Launch",
+      "status": "compress_hard",
+      "assessment": "It contributes the sense of plans buckling under pressure across both protagonists.",
+      "note": "Most of this chapter is overshadowed by the stronger collapse in 24; salvage only the setup that 24 truly needs."
+    },
+    {
+      "chapter": 24,
+      "chapter_name": "Friendly Fire",
+      "status": "protect",
+      "assessment": "A major twin-failure chapter that sharply aligns the double-novel structure with the book's actual premise.",
+      "note": "Make the parallel failures echo by logic rather than by simple simultaneity; the deeper the shared flaw, the stronger this lands."
+    },
+    {
+      "chapter": 25,
+      "chapter_name": "A House Divided",
+      "status": "keep",
+      "assessment": "The domestic blowup gives emotional consequence to the prior public failures.",
+      "note": "Be careful not to let the argument become generic couple combustion; every line should expose the fear structures driving both of them."
+    },
+    {
+      "chapter": 26,
+      "chapter_name": "Cold War",
+      "status": "keep",
+      "assessment": "This flashback has real mass and appears central to Cody's grief architecture.",
+      "note": "Frame it with especially clear entry and exit logic so it deepens the present arc instead of feeling like a temporary genre switch."
+    },
+    {
+      "chapter": 27,
+      "chapter_name": "Warm Solitude",
+      "status": "protect",
+      "assessment": "A foundational trauma chapter that appears essential to understanding Katiya's entire behavior pattern.",
+      "note": "Refine for precision and image retention; the goal is memorable emotional architecture, not maximal backstory volume."
+    },
+    {
+      "chapter": 28,
+      "chapter_name": "Prometheus",
+      "status": "keep",
+      "assessment": "It gives Cody a believable spark of renewed competence and a path toward the project line.",
+      "note": "Make the late-night idea feel more causally fused to his grief and identity, not just to plot convenience."
+    },
+    {
+      "chapter": 29,
+      "chapter_name": "Once Lovers",
+      "status": "compress_hard",
+      "assessment": "It supplies relational and family pressure around Katiya at a vulnerable stage.",
+      "note": "Cut any beat that does not directly intensify the later collapse, choice, or loyalty conflict."
+    },
+    {
+      "chapter": 30,
+      "chapter_name": "Cold Sweat",
+      "status": "keep",
+      "assessment": "This chapter seems to fuse alliance-building with looming external/institutional threat in a premise-relevant way.",
+      "note": "Clarify the symmetry between Katiya's new alliances and Cody's ominous email so the chapter reads as one tightening vice."
+    },
+    {
+      "chapter": 31,
+      "chapter_name": "Heating Up",
+      "status": "keep",
+      "assessment": "It helps drag the protagonists back into contact with urgency and physical consequence.",
+      "note": "Because magnitude is near zero, clarify what direction the chapter turns the story—reunion, rescue, relapse, or commitment."
+    },
+    {
+      "chapter": 32,
+      "chapter_name": "Fantastic Modernity",
+      "status": "compress_hard",
+      "assessment": "There is probably some needed decompression and wonder here after heavy material.",
+      "note": "Right now it looks structurally optional; either give it one decisive reveal or strip it to a brief transition."
+    },
+    {
+      "chapter": 33,
+      "chapter_name": "Modern Fantasy",
+      "status": "compress_hard",
+      "assessment": "It appears to provide one last moment of buoyancy before the next bad turn.",
+      "note": "Merge the levity with the incoming bad news so the chapter becomes whiplash with purpose rather than another excursion."
+    },
+    {
+      "chapter": 34,
+      "chapter_name": "Professional Death",
+      "status": "protect",
+      "assessment": "A real structural blow that advances Cody's institutional and personal arc with force.",
+      "note": "Strengthen continuity from earlier workplace chapters so this feels like culmination, not sudden severity."
+    },
+    {
+      "chapter": 35,
+      "chapter_name": "Physical Demise",
+      "status": "protect",
+      "assessment": "This is a powerful companion collapse on Katiya's side and one of the novel's true mountains.",
+      "note": "Sharpen the specific way this chapter injures or transforms her position so the aftermath chapters can build from a clean wound."
+    },
+    {
+      "chapter": 36,
+      "chapter_name": "Holding On",
+      "status": "keep",
+      "assessment": "It offers the first glimmer of recovery and renewed care after the double collapse.",
+      "note": "The chapter needs a more legible reversal engine; identify the exact act of kindness, discovery, or resolve that turns the vector positive."
+    },
+    {
+      "chapter": 37,
+      "chapter_name": "Letting Go",
+      "status": "protect",
+      "assessment": "Immense emotional and thematic weight makes this an essential hinge chapter.",
+      "note": "Its direction is too ambiguous; revise the emphasis so readers understand what is ending here and what is beginning."
+    },
+    {
+      "chapter": 38,
+      "chapter_name": "Bottoming Out",
+      "status": "keep",
+      "assessment": "It converts shared damage into mutual visibility and gives despair practical shape.",
+      "note": "Trim repeated anguish and push harder on the new deadline, plan, or obligation created by the chapter."
+    },
+    {
+      "chapter": 39,
+      "chapter_name": "Crossing Over",
+      "status": "keep",
+      "assessment": "The widening of the private story into larger war stakes is valuable and timely.",
+      "note": "Titus/Sylvia's arrival needs crisp integration so the chapter feels like escalation, not a fresh book being introduced."
+    },
+    {
+      "chapter": 40,
+      "chapter_name": "Reaching Up",
+      "status": "trim",
+      "assessment": "It begins the team-build/planning mode and usefully merges the two worlds into a shared strategic space.",
+      "note": "Condense the social-planning overlap; late in the novel, every page should either harden the plan or complicate it."
+    },
+    {
+      "chapter": 41,
+      "chapter_name": "Annealment",
+      "status": "differentiate",
+      "assessment": "It keeps both protagonists active under pressure rather than static in grief.",
+      "note": "The mirrored labor-and-household stress needs stronger contrast in dramatic function; make one about capability and the other about moral risk."
+    },
+    {
+      "chapter": 42,
+      "chapter_name": "Eutectic Point",
+      "status": "keep",
+      "assessment": "This chapter broadens the political and practical frame of the endgame in a useful way.",
+      "note": "Because it is an information-bearing chapter, be ruthless about making every new ally, tool, and warning alter later choices."
+    },
+    {
+      "chapter": 43,
+      "chapter_name": "Harsh Noise",
+      "status": "keep",
+      "assessment": "It advances hope through fabrication while showing that alliance-building remains unstable.",
+      "note": "Reduce generalized tension and make the chapter pivot on one decisive misunderstanding or breakthrough instead of several medium-intensity frictions."
+    },
+    {
+      "chapter": 44,
+      "chapter_name": "In Loving Memory",
+      "status": "trim",
+      "assessment": "Communal grief and earned intimacy both matter here, and the chapter humanizes the war effort.",
+      "note": "Shorten the mourning passages until the chapter's real outcome—changed trust and commitment—stands in the foreground."
+    },
+    {
+      "chapter": 45,
+      "chapter_name": "In Future Grief",
+      "status": "protect",
+      "assessment": "A strong bilateral family-pressure chapter that deepens the stakes without stalling momentum.",
+      "note": "Keep the parallel structure, but avoid scene-mirroring so exact that one side feels like the other's echo."
+    },
+    {
+      "chapter": 46,
+      "chapter_name": "Close Quarters",
+      "status": "keep",
+      "assessment": "This chapter effectively turns calm-before-the-storm space into emotional and tactical commitment.",
+      "note": "Make the confession/vow alter concrete endgame behavior so the chapter earns its high intensity structurally."
+    },
+    {
+      "chapter": 47,
+      "chapter_name": "Ground Control",
+      "status": "keep",
+      "assessment": "The institutional lockdown of both protagonists is a strong pre-endgame squeeze.",
+      "note": "Increase the sense of simultaneity and trapped momentum so this reads as a synchronized clamp rather than two adjacent inconveniences."
+    },
+    {
+      "chapter": 48,
+      "chapter_name": "Metanoia",
+      "status": "protect",
+      "assessment": "A highly effective conversion chapter where both protagonists begin acting from earned truth.",
+      "note": "Lean into callback structure; let specific prior lies, evasions, and failures be answered explicitly here."
+    },
+    {
+      "chapter": 49,
+      "chapter_name": "Paragate",
+      "status": "protect",
+      "assessment": "This is the novel fully becoming itself, with strong premise alignment and decisive mobilization.",
+      "note": "Tighten transitions and exposition so nothing blunts the threshold-crossing power of the chapter."
+    },
+    {
+      "chapter": 50,
+      "chapter_name": "Knightfall",
+      "status": "keep",
+      "assessment": "It provides necessary tactical escalation and puts Cody and Katiya under the exact conditions the climax needs.",
+      "note": "Trim any battle logistics that do not directly set up Katiya's nightmare confrontation or Cody's crucial act of disobedience."
+    },
+    {
+      "chapter": 51,
+      "chapter_name": "Daybreak",
+      "status": "protect",
+      "assessment": "The book's true climax and best chapter by every relevant structural measure.",
+      "note": "Revise around setup/payoff integrity only; do not overstuff aftermath or explanation into the chapter and risk diluting its clarity."
+    },
+    {
+      "chapter": 52,
+      "chapter_name": "Parasmagate",
+      "status": "keep",
+      "assessment": "This gives the main emotional closure the novel needs after the summit.",
+      "note": "Because its magnitude softens after the climax, keep it clean and brief; closure should feel settled, not re-litigated."
+    },
+    {
+      "chapter": 53,
+      "chapter_name": "Threaded Echoes",
+      "status": "differentiate",
+      "assessment": "As a bonus sting, it may have intrigue value and sequel/promo utility.",
+      "note": "Do not ask it to function as core epilogue unless you integrate Titus materially earlier; otherwise label it clearly as bonus content and let the main novel end on 52."
+    }
+  ],
+  "next_revision_pass": [
+    "Compress the opening misunderstanding loop so Chapters 1-12 produce faster premise acceleration and fewer repeated Cody/Katiya mirror beats.",
+    "Identify the indispensable spine of Act Two and merge weak bridge chapters into stronger failure chapters, especially around 23-25.",
+    "Aggressively compress or rebuild the 29-33 corridor so entertainment/novelty material directly sets up the double collapse in 34-35.",
+    "Clarify the major vector hinge across 36-38, especially Chapter 37, so the reader can feel the story turning from descent into directed action.",
+    "In Act Four, reduce duplicated planning, grief-processing, and household-pressure scenes; each chapter should own one unique endgame function.",
+    "Differentiate mirrored dual-protagonist scenes more sharply: if Cody and Katiya are reflecting each other, the reflection must produce contrast or escalation, not repetition.",
+    "Strengthen setup/payoff chains into 24, 34, 35, 49, and 51 so the biggest magnitude turns feel causally inevitable.",
+    "Audit every high cheap-action/high cheap-drama chapter and either increase thematic precision or cut surface intensity.",
+    "Protect and refine the true core mountain: 24, 27, 34, 35, 37, 45, 48, 49, 51.",
+    "Decide formally whether Chapter 53 is part of the novel or a promotional bonus; revise its framing accordingly."
+  ]
+}

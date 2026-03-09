@@ -20,6 +20,9 @@ from playwright.async_api import async_playwright
 
 from openai import OpenAI
 
+import warnings
+warnings.filterwarnings("ignore")
+
 class StoryNK:
     COLORS = {
         "Action": "#8B0000",
@@ -1098,6 +1101,17 @@ class StoryNK:
     
         <h1>{self._html(title or f"{self.story_name} — Narrative Kinematics Report")}</h1>
         <p class="small">Generated from manuscript ADT data using the StoryNK model.</p>
+        
+        <hr>
+        <ul>
+            <li>01.&ensp;<a href="#Overview"> System Overview </a></li>
+            <li>02.&ensp;<a href="#TGP"> Top Gravity Peaks </a></li>
+            <li>03.&ensp;<a href="#TEP"> Top Energy Peaks </a></li>
+            <li>04.&ensp;<a href="#CUT"> Highest Cut-Risk Elements </a></li>
+            <li>05.&ensp;<a href="#LLM"> LLM Revision Analysis </a></li>
+            <li>06.&ensp;<a href="#CTable"> Full Chapter Table </a></li>
+        </ul>
+        <hr>
     
         <div class="meta-grid">
             <div class="meta-card"><strong>Story</strong><br>{self._html(summary["story"])}</div>
@@ -1122,7 +1136,7 @@ class StoryNK:
             {self._html(summary["peak_cutrisk"].get("ChapterName", ""))}
         </div>
     
-        <h2>System Overview</h2>
+        <h2 id="Overview">System Overview</h2>
         <p>
             Action, Drama, and Theme define the primary narrative state. Energy is their sum. Steady-state and transient
             tracks approximate long-wave baseline versus local fluctuation. Narrative Mass, Peak Prominence, and Narrative Gravity
@@ -1156,30 +1170,32 @@ class StoryNK:
     
         <div class="page-break"></div>
     
-        <h2>Top Gravity Peaks</h2>
+        <h2 id="TGP">Top Gravity Peaks</h2>
         <div class="peak-grid">
             {''.join(self._html_peak_block(row, "Gravity") for row in top_gravity)}
         </div>
     
         <div class="page-break"></div>
     
-        <h2>Top Energy Peaks</h2>
+        <h2 id="TEP">Top Energy Peaks</h2>
         <div class="peak-grid">
             {''.join(self._html_peak_block(row, "Energy") for row in top_energy)}
         </div>
     
         <div class="page-break"></div>
     
-        <h2>Highest Cut-Risk Units</h2>
+        <h2 id="CUT">Highest Cut-Risk Units</h2>
         <div class="peak-grid">
             {''.join(self._html_peak_block(row, "CutRisk") for row in top_cutrisk)}
         </div>
+        
+        <div class="page-break"></div>
         
         {self._html_llm_diagnosis_section(diagnosis)}
     
         <div class="page-break"></div>
     
-        <h2>Full Chapter / Unit Table</h2>
+        <h2 id="CTable">Full Chapter / Unit Table</h2>
         <table>
             <thead>
                 <tr>
@@ -1627,9 +1643,6 @@ class StoryNK:
                 "next_revision_pass": {
                     "type": "array",
                     "items": {"type": "string"},
-                },
-                "final_remarks": {
-                    "type": "string"
                 }
             },
             "required": [
@@ -1741,7 +1754,7 @@ class StoryNK:
     def _html_llm_diagnosis_section(self, diagnosis: Optional[Dict[str, Any]]) -> str:
         if not diagnosis:
             return """
-            <h2><img src="/icons/OpenAI-black-monoblossom.png" style="width:100px; padding:40px;"> LLM Revision Diagnosis</h2>
+            <h2 id="LLM"><img src="https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/Scriv2WN/icons/OpenAI-black-monoblossom.png" style="width:100px; padding:5px;"> LLM Revision Diagnosis</h2>
             <p class="small">No LLM diagnosis was attached to this report.</p>
             """
     
@@ -1758,7 +1771,7 @@ class StoryNK:
         return f"""
         <div class="page-break"></div>
     
-        <h2>LLM Revision Diagnosis</h2>
+        <h2 id="LLM"><img src="https://raw.githubusercontent.com/autononymous/autononymous.github.io/refs/heads/master/Scriv2WN/icons/OpenAI-black-monoblossom.png" style="width:100px; padding:5px;"> LLM Revision Diagnosis</h2>
     
         <div class="callout">
             <div><strong>Length assessment:</strong> {self._html(macro.get("length_assessment", ""))}</div>

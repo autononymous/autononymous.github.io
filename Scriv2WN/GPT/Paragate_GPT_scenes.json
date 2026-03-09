@@ -2,7 +2,7 @@
    "__meta": {
       "story": "Paragate",
       "export_type": "scene_flat",
-      "generated_utc": "2026-03-09T02:41:38Z",
+      "generated_utc": "2026-03-09T03:02:46Z",
       "notes": [
          "Primary GPT retrieval file. One row per scene, flattened for semantic search and editorial reasoning.",
          "Includes both scene-level text and attached chapter-level summary/blurb context."

@@ -16,8 +16,12 @@ from novel_gpt_exports import SaveGPTExports
 import numpy as np
 from matplotlib import pyplot as plt
 import NarrativeKinematics as NK
+import pandas as pd
 
 from pathlib import Path
+
+import warnings
+warnings.filterwarnings("ignore")
 
 import build_pdfs
 
@@ -321,8 +325,13 @@ def InterpretJSON(js,info=True):
         if entry['DocType'] == 'Scene':
             ChapterData['Story'] = entry['StoryName']
             ChapterData['History'] = {"Created":entry['CreatedDate'],"Modified":entry['ModifiedDate']}
-            Factors = entry['Factors']
-            ChapterData['Factors'].append([int(Factors['Action']),int(Factors['Drama']),int(Factors['Theme'])])
+            
+            # Preparing story factors data            
+            Factors = {"Action":0,"Drama":0,"Theme":0,"Magnitude":0}
+            ChapterData['Factors'].append(Factors)
+            # @TODO This will be integrated in a future step.
+            # Scrivener is not designed for heavy metadata. Import an information file.
+            
             ChapterData['Act'] = int(entry['ActNum'])
             ChapterData['ActName'] = ThisActName
             ChapterData['Chapter'] = int(entry['ChapterFull'])
@@ -407,6 +416,16 @@ def InterpretJSON(js,info=True):
                     
     if noPOVwarnings: print("No POV errors found in manuscript. Good work.")
     print(f"\n{PubDateLog}\n")
+    
+    return MANUSCRIPT
+
+
+def AppendStoryData(MANUSCRIPT): # @todo
+    STORY = MANUSCRIPT['Story']         
+    META = MANUSCRIPT['Metadata']
+    storyname = manuscriptDict[1]["Story"]
+    newdat = pd.read_excel(
+        f"{os.getcwd()}/Meta_{storyname}.xlsx")
     
     return MANUSCRIPT
 
@@ -670,7 +689,7 @@ if __name__ == "__main__":
     debug = DebugLog(1)
     JS = ReadJSON('/source')
     MANUSCRIPT = InterpretJSON(JS,True)
-    
+    MANUSCRIPT = AppendStoryData(MANUSCRIPT)    
     SaveMasterCopy(MANUSCRIPT,indentLevel=3)
     print(" >>> Saving Master Copy.")
     SaveSectionedCopy(MANUSCRIPT['Story'] ,indentLevel=3)

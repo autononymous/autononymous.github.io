@@ -1,0 +1,286 @@
+[
+   [
+      [
+         "BodyTitus",
+         "It gets warmer the closer we get. Our grafted fireteam sheds skin like a snake, leaving our layers behind in the brush, and I&apos;m already down to a short-sleeve shirt. The air is fresh. Smoke no longer rises from the generators: we&apos;re too far inland to smell the last of it, anyways.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "There&apos;s little room for talk between heaving breaths. The land is desolate of houses, just stark grasslands, and it infuriates me to think how such land can be unused when the outwallers freeze at the edges of the city. We haven&apos;t seen Endogeny since last night, and we continue climbing up unmarked switchbacks of an untraveled path, hoping the future landscape will open up to anything.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "We take breaks for Jarrett. Like Romin, his muscle is burdensome, great for quick action and aggressive bursts, but nothing for long distances. We turn around to look at our progress, watching the city grow lower and smaller until buildings are reduced to pebbles in a boundless gravel pit. Despite everything, the view is captivating, and we find ourselves more driven to watch the sight than to press on.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "The motion feels cathartic despite the worry. I see all the best images float through my mind and out in my heaving breaths. I still see Ellie, knowing nothing of where she was taken. I remember our childhood, the last time she smiled, when mother was still around and Clint didn&apos;t stoop to his endless depression. I know I&apos;m weak, but I find myself praying every hour that I&apos;ll see her again, whether it&apos;s this life or the next one. I know nothing of this world is owed to me, and I learned that fighting tooth and nail for worthiness in the orphanage. But when everything is gone, all that remains is just the flimsiness of hope; the moments when you truly question what immaterial source drives you, what pushes you onwards when nothing remains.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "All I can do is look to my friends for answers, catching glimpses like cheating during an Academy exam. Isla and Jarrett&apos; expressions are resolute, bodies tensioned, no looseness in them at all. Fear is an exceptional motivator. It&apos;s what drives the Academy, motivating Cadets to climb the ranks: not only fear of failure, but of one&apos;s duty to family and society. I know little of their origins. But without family or society, all that&apos;s left is the anxiety of self-defense against the unknown; the natural Human terror of the dark.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "But Sylvia surprises me. Her body is as light as theirs is tense, as if she has swallowed the unpalatable weight of grief and begun to process it, and somehow, she looks beautiful: fragile, yet fierce, with a venom that fails to arise from her own vitriol. And then I see the faces of all the people I&apos;ve lost. I feel the blessedness of their presence in my life. I try, just for a moment to be like her, to feel the grief of Valentina&apos;s untimely demise, just as she learned to love herself, wishing so deeply I could undo the pains of that past. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "I feel my wrist tension. The emotions halt where they always do, and all I have left is to steel myself further. It&apos;s been a full day now, and darkness shadows the horizon. The clouds aren&apos;t too high above us, and I wonder how much further we have.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;We&apos;ll camp here for the night,&quot; Jarrett says, our de-facto leader by size. They left their tents behind, so all we can do is scavenge for sticks, eat our provisions, and cozy by the fire until sleep outweighs the discomfort of the ground. None of us sleep too close. We favor the fire over contact, too absorbed by mutual fears, which are much greater amalgamated mess than Endogeny.",
+         true,
+         false,
+         false
+      ],
+      [
+         "EndOfScene",
+         " ",
+         true,
+         false,
+         false
+      ]
+   ],
+   [
+      [
+         "BodyTitus",
+         "We arrive in the middle of the second day, starving, with no sight of that endogenous black bile. But its presence still lingers close as if it watches us. We catch the irradiated smell of ozone. Sparse trees are stripped of their leaves, and fluid veins glow amethyst. Whether it&apos;s just a property of the upper land, or that Endogeny has drawn such mass that its influence stretches for miles, we don&apos;t know. But a temporary relief rests inside us when we find the inner gates.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "A cadet hails us from the perimeter walls. He shouts something of Dragon Class, and dirty faces approach the lattice of the portcullis. But the gate doesn&apos;t open.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;Prove yourself!&quot; one of them shouts. It&apos;s a lower-class Cadet, but still the highest among them.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;Prove what?&quot; Jarrett asks. His irritation peaks from two days of exhaustion. &quot;Just let us in.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;Prove you&apos;re not one of them,&quot; he says. He gestures towards the ground beneath the gates, and it&apos;s then that we notice the bodies blended in the brush all around us.. Cadets level rifles to the gates, steadied in the iron mesh, pointed directly at our heads. I look down. Most of the corpses&apos; eyes are amethyst, beginning to fade back from their Human disguises. They&apos;re skin-walkers. The stories are true.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;There&apos;s nothing left to prove, you low-level bastards. Now let us in before I shove those rifles up your ass so far your brain will spray out in gray-matter confetti,&quot; Jarrett says. Carmine run hot-blooded. Some of the minions panic, but their leader is adamant. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "His fingers touch the lever. &quot;We&apos;re the ones with the upper hand here, not you,&quot; he says. &quot;For all we know, you&apos;re those skin-walkers. Maybe you took the cloaks of Dragon Class and pose as them. We already know they&apos;ve infiltrated the city long before this.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;What do you mean by that?&quot; I ask.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;Don&apos;t act like you don&apos;t know, Chymaeran,&quot; he says. I feel an anger twist in me. &quot;A friend I knew for years turned on me.&quot; He shows a scar across his lower torso. &quot;Tried to kill me as soon as things went south, until I killed him first. So don&apos;t think we&apos;re too weak to kill a threat that talks like an ally.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;You&apos;re insane,&quot; Isla says. &quot;Cut your stupid power trip and let us in, that&apos;s an order, Garnet Class,&quot; but he refuses. She only makes the situation worse.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "One of the Cadets pipes up. &quot;Hey &mdash;&quot; she says, &quot;isn&apos;t that the Valedictorian? From graduation? What&apos;s his name . . .&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;Titus,&quot; I say.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;That&apos;s right.&quot; Several nod, and she turns to their edgy leader. &quot;How else would they know that?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;They walk among us. Remember that friend of mine &mdash; they say they even steal their host&apos;s memories.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;But that doesn&apos;t justify&mdash;&quot; ",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "He slaps her across the face. &quot;Don&apos;t speak like that or else we&apos;ll throw you out there with them&mdash;you understand?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "Sylvia gasps as she looks at the ground. I follow her gaze, and my stomach crumples at the horror of her realization. At least a third of the corpses were actual cadets &mdash; people whose lives they gambled with, and I realize we are reasoning with immoral psychopaths.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "How to convince them, I think. None of the others understand. This bastard just wants power, so how do I give it to him? Or how do I make it crumble?",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "Fear. Fear is how you do it, I think.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "I say, &quot;Endogeny is right behind us&mdash;the Chymaeran black bile. That&apos;s why we&apos;re out of breath. We could see it after we packed up camp this morning.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;Bullshit,&quot; he says. The cadets grow uncomfortable.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;But do you know anything of how to defeat it? Do any of you know its weakness? How to defend against it? It tore through a whole battalion of Dragon Class cadets in a single night. And you&apos;re all doomed to die if you don&apos;t get our help,&quot; I say. I sow further fear. &quot;All of you are weak. You&apos;d piss your pants before you drew your sword or rifle.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;But we can&apos;t risk it!&quot; He says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;That&apos;s a risk you can&apos;t afford to take. Would you rather die in an hour or have a chance to live longer? Kill us, and you lose that knowledge. We&apos;re the only ones that survived it. It will liquidate your forces and dissolve you away just like your families,&quot; I say, making sure my face is adamant with rage and resolve.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;No. You&apos;re not the leader here&mdash;&quot; he says, but the cadets overtake his power. Beyond his words, he has nothing. He tries defending the lever, grasping on to it as if it were a lone branch in a torrential river, but their forces overpower them.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "The portcullis opens, just a hair. The stabbing edges rise from the dirt, just enough for us to crawl under, as their demoted leader is forced away. The cadets draw their weapons, trembling, pointing them at us. The truth is that we&apos;re all just kids that have never seen war, only weapons and training. I doubt any of them have the courage to pull the trigger &mdash; all bark and no bite.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;What the hell were you doing?&quot; a voice shouts, its figure emerging from a makeshift bedroom inside the walls. A Dragon-Class cloak shimmers. &quot;I make you second-in-command and you raise hell on a power trip. Send this traitor out of here. Go, force him!&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "The lower-level cadets drag him like subservient ants. He thrashes. They knock him unconscious. They roll his body beyond the gates and close it, though his arms and legs refuse to move. For a moment, I wonder if he&apos;s dead. Some protest, but the others follow his command.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "He&apos;s the only one I could expect to be drunk on absolute power. But his face lightens in the moment that he sees us, only to frown when he counts four.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyTitus",
+         "&quot;Where&apos;s Valentina?&quot; Romin asks.",
+         true,
+         false,
+         false
+      ],
+      [
+         "EndOfScene",
+         " ",
+         true,
+         false,
+         false
+      ]
+   ]
+]

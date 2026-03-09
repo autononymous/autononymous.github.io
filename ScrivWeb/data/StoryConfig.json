@@ -1,0 +1,642 @@
+{
+"Modes":
+[
+    "Background","Text","ProgressBar"
+],
+"ThemeIndex":
+{
+    "Firebrand":  [ "Titus" ],
+    "Paragate":   [ "Katiya" , "Cody" ],
+    "Goldenfur":  [ "Jade"]
+},
+"Shorthands":
+{
+    "Names":
+    {
+        "Titus":"Titus Berguard",
+        "Cody":"Cody Dunsmore",
+        "Katiya":"Katiya Breakey-Hilde",
+        "Jade":"Ja'ada &quot;Jade&quot; Akhnali"
+    },
+    "Timezones":
+    {
+        "Titus":"FantasyTime",
+        "Cody":"ModernTime",
+        "Katiya":"FantasyTime",
+        "Jade":"FantasyTime"
+    },
+    "GeneralSettings":
+    {
+        "Titus":"Blackwater North",
+        "Cody":"Colorado, USA",
+        "Katiya":"Gaffesend, Fosroth",
+        "Jade":"Melenia City, Fosroth"
+    }
+
+},
+"Styles":
+{
+    "Titus":
+    {
+        "Light":
+        {
+            "Background":[240,240,240,1],
+            "Text": [18, 18, 18 ,1],
+            "ProgressBar": [18, 18, 18 ,1]
+        },
+        "Dark":
+        {
+            "Background":[35, 20 ,18 ,1],
+            "Text": [255,240,240,1],
+            "ProgressBar":[255,240,240,1]
+        },
+        "Prefix":" = ",
+        "Suffix":" = ",
+        "WallImage":"design/bg-tie.jpg",
+        "Favicon":"icons/logo-Firebrand",
+        "CharacterTheme":[245, 149, 66],
+        "SettingTagPrefs": 
+        {
+            "doName":false,
+            "doDate":true,
+            "doTime":false,
+            "doSetting":true,
+            "TimeZone":"Fosroth"
+        }
+    },
+    "Katiya":
+    {
+        "Light":
+        {
+            "Background":[240,240,240,1],
+            "Text": [80 ,18 ,18 ,1],
+            "ProgressBar": [80 ,18 ,18 ,1]
+        },
+        "Dark":
+        {
+            "Background":[36 ,18 ,18 ,1],
+            "Text": [255,200,200,1],
+            "ProgressBar":[255,200,200,1]
+        },
+        "Prefix":" &#10048; ",
+        "Suffix":" &#10048; ",
+        "WallImage":"design/bg-kat.jpg",
+        "Favicon":"icons/logo-Katiya",
+        "CharacterTheme":[255, 61, 61],
+        "SettingTagPrefs": 
+        {
+            "doName":true,
+            "doDate":true,
+            "doTime":true,
+            "doSetting":true,
+            "TimeZone":"Fosroth"
+        }   
+    },
+    "Cody":
+    {
+        "Light":
+        {
+            "Background":[240,240,240,1],
+            "Text": [18 ,18 ,80 ,1],
+            "ProgressBar": [18 ,18 ,80 ,1]
+        },
+        "Dark":
+        {
+            "Background":[18 ,18 ,36 ,1],
+            "Text": [200,200,255,1],
+            "ProgressBar":[200,200,255,1]
+        },
+        "Prefix":" /* ",
+        "Suffix":" */ ",
+        "WallImage":"design/bg-cody.jpg",
+        "Favicon":"icons/logo-Cody",
+        "CharacterTheme":[61, 100, 255],
+        "SettingTagPrefs": 
+        {
+            "doName":true,
+            "doDate":true,
+            "doTime":true,
+            "doSetting":true,
+            "TimeZone":"Earth"
+        }
+    },
+    "Jade":
+    {
+        "Light":
+        {
+            "Background":[240,240,240,1],
+            "Text": [18, 80, 18 ,1],
+            "ProgressBar": [18, 80, 18 ,1]
+        },
+        "Dark":
+        {
+            "Background":[18 ,80 ,18 ,1],
+            "Text": [240,255,240,1],
+            "ProgressBar":[240,255,240,1]
+        },
+        "Prefix":" &laquo; ",
+        "Suffix":" &raquo; ",
+        "WallImage":"design/bg-jade.jpg",
+        "Favicon":"icons/logo-Goldenfur",
+        "CharacterTheme":[142, 255, 61],
+        "SettingTagPrefs": 
+        {
+            "doName":false,
+            "doDate":true,
+            "doTime":false,
+            "doSetting":true,
+            "TimeZone":"Fosroth"
+        }
+    },
+    "Default":
+    {
+        "Light":
+        {
+            "Background":[240,240,240,1],
+            "Text": [18 ,18 ,18 ,1],
+            "ProgressBar": [18 ,18 ,18 ,1]
+        },
+        "Dark":
+        {
+            "Background":[18 ,18 ,18 ,1],
+            "Text": [240,240,240,1],
+            "ProgressBar":[240,240,240,1]
+        },
+        "Prefix":" ~ ",
+        "Suffix":" ~ ",
+        "WallImage":""     
+    }
+},
+"Preferences": 
+{
+    "StartChapter":1,
+    "DisplayMode":"Light",
+    "FontSize":"1.5em",
+    "LineHeight":"1.5em",
+    "Margins": "5vw"
+},
+"Settings":
+{
+    "FontSize":
+    {
+        "Setting":3,
+        "Options":["0.9em","1.1em","1.3em","1.5em","1.7em","1.9em","2.1em"],
+        "CSSname":"--TextSize"
+    },
+    "LineHeight":
+    {
+        "Setting":3,
+        "Options":["0.9em","1.1em","1.3em","1.5em","1.7em","1.9em","2.1em"],
+        "CSSname":"--TextLineHeight"
+    },
+    "Margins":
+    {
+        "Setting":1,
+        "Options":["5vw","10vw","15vw"],
+        "CSSname":"--TextMargin"
+    }
+},
+"Announcements":
+{
+    "Paragate":
+    {
+        "03/14/25 // Site Release":"Today marks the release of <a href='https://autononymous.io/'>Autononymous.io</a>! Check out our main page for story updates.",       
+        "07/02/25 // Viewer & Story Beta":"&emsp;If you&apos;re reading this right now, it&apos;s for only one of two reasons: either you&apos;re one of my trusted friends or family that I&apos;ve decided to share this with, or you&apos;ve randomly discovered this and you&apos;re early to the show. But either way, I want to thank you for being here and supporting my work. <br><br>&emsp;PARAGATE is the second novel I&apos;ve written; one that is far more personal to me. The two main characters are manifestations of anxiety and major depression that closely resemble my own struggles with these battles, and I look forward to telling you a story about what I&apos;ve learned in &quot;fighting the good fight&quot; against both of them.<br><br>&emsp;This is an early release of the story, so not everything is entirely nailed down yet &mdash; but it&apos;s certainly <em>planned</em>. That being said, if it&apos;s posted here, it&apos;s in polished enough of a form that I&apos;m confident to post it.<br><br>&emsp;If you enjoy this work, please let me know on social media, and feel free to share it with others. I&apos;m still figuring out this self-publishing thing (and trying to spend more of my time writing than improving this Javascript applet).<br><br>Thanks again for your support.<br><br>With love,<br>&emsp;<span style='font-family:Brush Script MT, cursive;font-size:1.5em;'>Savant-Guarde :)</span>",
+        "07/11/25 // Prologue Update":"Finished the split prologue for PARAGATE. Was pretty tough to make the damn thing read across and down most of the time, like a word puzzle or something.",
+        "10/11/25 // Story Restructure":"Hey there! <br>If you're actually reading this, not only am I surprised, but I'm very thankful for your support. <br>As you should know, Paragate is still in a preliminary state. Over the course of the last few months, I've decided to restructure the story's order to make it more compelling out of the gate: with an 'in medias res' opening. <br> I've also made loads of progress on the story: already halfway into the third act of four, with everything planned out. <br> Can't tell you how excited I am to share this story with you. And if you're reading this, and I actually have readers out there, reach out to me on <a href='https://bsky.app/profile/savant-guarde.bsky.social'> BlueSky <a>, or send me a message on Discord @SavantGuarde#8032 :)<br>Thanks again for your support!<br><br>With love,<br>&emsp;<span style='font-family:Brush Script MT, cursive;font-size:1.5em;'>Savant-Guarde :)</span>"
+    },
+    "Firebrand":
+    {
+        "03/14/25 // Site Release":"Today marks the release of <a href='https://autononymous.io/'>Autononymous.io</a>! Check out our main page for story updates.",
+        "04/27/25 // First Act Release":"Hey Readers! Since I&apos;ve made extra progress with Firebrand, I decided to release the <strong>entire first act</strong>. Should get the story rolling a little better. Further updates of Acts 2 ~ 4 will continue per the standard weekly release. Thanks for your support!",
+        "07/02/25 // Viewer & Story Beta":"&emsp;If you&apos;re reading this right now, it&apos;s for only one of two reasons: either you&apos;re one of my trusted friends or family that I&apos;ve decided to share this with, or you&apos;ve randomly discovered this and you&apos;re early to the show. But either way, I want to thank you for being here and supporting my work. <br><br>&emsp;FIREBRAND is the first novel I&apos;ve ever written. I wrote the bulk of this during a rough time of my life, when I was going to college in a different state: starting entirely from zero and not knowing anyone; allowing loneliness and unmedicated depression to lead me into a long spiral. <br><br>&emsp;But I came out the other side and I survived, making it through the long quarters of my engineering program. The concept of a continuous fight without an end in sight provided the fuel for the thesis of this story: <em>&apos;If you had an unlimited number of attempts to rewrite the past, would it break you, or would you find peace&apos;?</em> It also inspired the main character <strong>Titus</strong>: a suffer-it-alone kind of guy that was a lot like me before I learned my lesson, figuring out how to sincerely open up to people. <br><br>&emsp;This is an early release of the story, but the full story is entirely written: just being progressively edited. But, rest assured, if it&apos;s posted here, it&apos;s in polished enough a form that I&apos;m confident to post it.<br><br>&emsp;If you enjoy this work, please let me know on social media and feel free to share it with others. I&apos;m still figuring out this self-publishing thing (and trying to spend more of my time writing than improving this Javascript applet).<br><br>Thanks again for your support.<br><br>With love,<br>&emsp;<span style='font-family:Brush Script MT, cursive;font-size:1.5em;'>Savant-Guarde :)</span>"
+    },
+    "Goldenfur":
+    {
+        "07/27/25 // Breaking Ground":"Story process begins today!"
+    }
+},
+"RevisionNotes":
+{
+    "Paragate":
+    {
+        "0.1":"I&apos;m still working on formatting this prologue. Might remove it altogether.",
+        "1.11":"This chapter marks the end of chapters with extensive self-revision. The rest is in a generative state."
+    },
+    "Firebrand":
+    {
+        "0.1":"Unlike the rest of the first act, this prologue is new and still needs some work. The original draft started from Chapter Two.",
+        "1.2":"The rest of this act is pretty well-revised and picked over."
+    }
+},
+"Locations":
+{
+    "Firebrand":
+    {
+        "StoryRoot":"https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/ScrivReader/",
+        "StoryFile":"story/latest/Firebrand.JSON",
+        "StoryName":"Firebrand",
+        "CoverImage":"design/cover-FBC.jpg"   
+    },
+    "Paragate":
+    {
+        "StoryRoot":"https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/ScrivReader/",
+        "StoryFile":"story/latest/Paragate.JSON",
+        "StoryName":"Paragate",
+        "CoverImage":"design/cover-PG.jpg"
+    },
+    "Goldenfur":
+    {
+        "StoryRoot":"https://raw.githubusercontent.com/autononymous/autononymous.github.io/master/ScrivReader/",
+        "StoryFile":"story/latest/Goldenfur.JSON",
+        "StoryName":"Goldenfur",
+        "CoverImage":"design/cover-GF.jpg"
+    }
+},
+"Bonus":{
+    "Firebrand":
+    {
+        "Maps":"<p class='Titus'>Titus gave this map to Romin after the events of the Prologue, scribbling several notes on a district map from the Ministry Of Truth. After adulteration, it must be burned &mdash; or discarded like all the other lost items they&apos;ll recover in their frostbitten trek beyond the walls.</p><p class='Titus'>But the real journey isn&apos;t out there. It&apos;s in the downfall of the last city of the Humans, and one cadet&apos;s desperate efforts to hold on to everything he can&apos;t save.</p><img class='map' src='https://autononymous.io/wp-content/uploads/2025/04/BLACKWATER_lowres.jpg'/>",
+        "Other":"<h3 class='Subtitle'>Acknowledgements</h3><p class='Titus'>I dedicate this work to the following people:</p><ul class='Titus'><li>Lillie, my life partner</li><li>Karl R, my closest friend</li><li>The version of me I left in the third year of college: that might have never been brave enough to fight for my mental health, and to believe in the possibility of love</li><li>YOU, the person giving this story a shot (and I hope you enjoy it).</li></ul><br><hr><br><h3 class='Subtitle' style='line-height:0.2em;'>Fireteam Dossiers</h3><p class='Titus'>Recovered Documents of Royal Academy Fireteam 473</p><p class='Titus'>Long after the incident at Blackwater, the following files were among the documents recovered from the Royal Academy of Blackwater&apos;s Internal Affairs division. Investigation into this fireteam&apos;s firebrands is being processed by the Royal Capital to investigate the causes of the great Chosen Mask event.</p><img class='map' src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1354a52b-f5b0-4108-977e-10ce7e3cec45/djc708e-0311b085-c2c4-449c-bff1-3feb4b052d64.png/v1/fill/w_1024,h_640,q_80,strp/cadet_dossiers___titus_berguard_by_savant_guarde_djc708e-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEzNTRhNTJiLWY1YjAtNDEwOC05NzdlLTEwY2U3ZTNjZWM0NVwvZGpjNzA4ZS0wMzExYjA4NS1jMmM0LTQ0OWMtYmZmMS0zZmViNGIwNTJkNjQucG5nIiwiaGVpZ2h0IjoiPD02NDAiLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8xMzU0YTUyYi1mNWIwLTQxMDgtOTc3ZS0xMGNlN2UzY2VjNDVcL3NhdmFudC1ndWFyZGUtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.72hhTDr7XySmVZnQ5G97xtaBLQ2eQ3hFOd475xzwdvU'/><img class='map' src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1354a52b-f5b0-4108-977e-10ce7e3cec45/djc75ik-677d2826-2bf1-435c-a3a1-efbe9acf6343.png/v1/fill/w_1131,h_707,q_70,strp/character_dossiers___sylvia_by_savant_guarde_djc75ik-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEzNTRhNTJiLWY1YjAtNDEwOC05NzdlLTEwY2U3ZTNjZWM0NVwvZGpjNzVpay02NzdkMjgyNi0yYmYxLTQzNWMtYTNhMS1lZmJlOWFjZjYzNDMucG5nIiwiaGVpZ2h0IjoiPD04MDAiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8xMzU0YTUyYi1mNWIwLTQxMDgtOTc3ZS0xMGNlN2UzY2VjNDVcL3NhdmFudC1ndWFyZGUtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.Qjke_niRK9Sup0gKJkMd_c6t-UuLUL4VcMgduIGvDvo'/><img class='map' src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1354a52b-f5b0-4108-977e-10ce7e3cec45/djc76nd-3aa130de-0a51-4a21-adf4-ce481d6a19fe.png/v1/fill/w_1131,h_707,q_70,strp/cadet_dossiers___romin_zebal_by_savant_guarde_djc76nd-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEzNTRhNTJiLWY1YjAtNDEwOC05NzdlLTEwY2U3ZTNjZWM0NVwvZGpjNzZuZC0zYWExMzBkZS0wYTUxLTRhMjEtYWRmNC1jZTQ4MWQ2YTE5ZmUucG5nIiwiaGVpZ2h0IjoiPD04MDAiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8xMzU0YTUyYi1mNWIwLTQxMDgtOTc3ZS0xMGNlN2UzY2VjNDVcL3NhdmFudC1ndWFyZGUtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.6lUT6BddRAzqi37gvrBK6JOkvlRkbX3Qii6jEULcH28'/><img class='map' src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1354a52b-f5b0-4108-977e-10ce7e3cec45/djc78z8-76c03d5a-fd80-404b-a358-353eb8966b58.png/v1/fill/w_1131,h_707,q_70,strp/cadet_dossiers___valentina_vermillion_by_savant_guarde_djc78z8-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEzNTRhNTJiLWY1YjAtNDEwOC05NzdlLTEwY2U3ZTNjZWM0NVwvZGpjNzh6OC03NmMwM2Q1YS1mZDgwLTQwNGItYTM1OC0zNTNlYjg5NjZiNTgucG5nIiwiaGVpZ2h0IjoiPD04MDAiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8xMzU0YTUyYi1mNWIwLTQxMDgtOTc3ZS0xMGNlN2UzY2VjNDVcL3NhdmFudC1ndWFyZGUtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0._zV8pqqCo4JQ5-6ACnTw2oFBrFnkDh3p28G2K1g7C0g'/>",
+        "Dividers":
+        {
+            "Titus":"<img src='dividers/hr-tie.png' class='hrdiv'>"
+        }
+    
+    },
+    "Paragate":
+    {
+        "Maps":"<p></p><p class='Cody'>The following maps were exchanged by Cody and Katiya.</p><p class='Katiya'>Katiya (indefinitely) borrowed her map from the Gaffesend Headquarters &mdash; the same one she annotated after arriving to serve the Royal Guard.</p><img class='map' src='https://autononymous.io/wp-content/uploads/2025/02/map_kat02_l.jpeg'/><p class='Cody'>Cody printed his out on the work printer when no one was looking, long after everyone left the office. </p><img class='map' src='https://autononymous.io/wp-content/uploads/2025/02/map_cody02_l.jpeg'/>",
+        "Other":"<h3 class='Subtitle'>Acknowledgements</h3><p class='Cody'>I dedicate this work to the following people:</p><ul class='Cody'><li>Lillie, my life partner</li><li>Karl R, my closest friend</li><li>The version of me I left in the third year of college: that might have never been brave enough to fight for my mental health, and to believe in the possibility of love</li><li>YOU, the person giving this story a shot (and I hope you enjoy it).</li></ul><br><div style='background-image: linear-gradient(to right, rgba(247, 200, 200,0.4) , rgba(200, 218, 247,0.4));border-top: 2px solid black;border-bottom:2px solid black;'><div style='padding-left:2em;padding-top:2em;'><div style='border-left:3px solid black; padding-left:1em; font-family:Perpetua, Garamond, Cambria; font-size:1.2em;'> <p>गते गते पार गते <br> Gone, gone, gone to the other shore beyond.<br></p></div></div><div style='padding-right:1em; font-family:Perpetua, Garamond, Cambria; font-size:1.2em; text-align:right;padding-bottom:2em;'>A prayer from the end of the <em>Heart Sutra</em></div></div>",  
+        "Dividers":
+        {
+            "Katiya":"<img src='dividers/hr-kat.png' class='hrdiv'>",
+            "Cody":"<img src='dividers/hr-cody.png' class='hrdiv'>",
+            "Mixed":"<img src='dividers/hr-katcody.png' class='hrdiv'>"
+        }
+    },
+    "Goldenfur":
+    {
+        "Maps":"<p></p><p class='Jade'>TBD</p>",
+        "Other":"<h3 class='Subtitle'>Acknowledgements</h3><p class='Jade'>I dedicate this work to the following people:</p><ul class='Jade'><li>Lillie, my life partner</li><li>Karl R, my closest friend</li><li>The version of me I left in the third year of college: that might have never been brave enough to fight for my mental health, and to believe in the possibility of love</li><li>YOU, the person giving this story a shot (and I hope you enjoy it).</li></ul><br>",  
+        "Dividers":
+        {
+            "Jade":"<img src='dividers/hr-jade.png' class='hrdiv'>"
+        }
+    }
+},
+"Atlas":
+{
+    "Blackwater":
+    {   "Province XIV East":
+        {   "Titus' Home":{
+                "MapLocation":[49.09,54.00],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[56.59,52.50],
+                "Description":""}
+        },
+        "Province XIV West":
+        {   "Everett's Tradehouse":{
+                "MapLocation":[36.94,54.75],
+                "Description":""},
+            "Snowdrift Traders":{
+                "MapLocation":[36.94,57.75],
+                "Description":""},
+            "Carmine Compound":{
+                "MapLocation":[44.44,50.25],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[35.44,55.75],
+                "Description":""}
+        },
+        "The Undercroft":
+        {   "Floor Tenth":{
+                "MapLocation":[49.39,8.25],
+                "Description":""},
+            "Floor Hundredth":{
+                "MapLocation":[49.39,8.25],
+                "Description":""},
+            "Floor Thousandth":{
+                "MapLocation":[49.39,8.25],
+                "Description":""},
+            "Floor Infinity":{
+                "MapLocation":[49.39,8.25],
+                "Description":""},
+            "Central Void":{
+                "MapLocation":[49.39,8.25],
+                "Description":""},
+            "Subterranean Farmlands":{
+                "MapLocation":[49.39,8.25],
+                "Description":""},
+            "Holding Cell":{
+                "MapLocation":[49.39,8.25],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[49.39,8.25],
+                "Description":""}
+        },
+        "The Afterlife":
+        {   "Recovery Center":{
+                "MapLocation":[53.44,21.75],
+                "Description":""},
+            "Capitol Grounds":{
+                "MapLocation":[41.89,15.00],
+                "Description":""},
+            "Underhold":{
+                "MapLocation":[49.39,8.25],
+                "Description":""},
+            "Capitol Building":{
+                "MapLocation":[41.89,15.00],
+                "Description":""},
+            "Marble Streets":{
+                "MapLocation":[49.39,20.00],
+                "Description":""},
+            "Distribution Hall":{
+                "MapLocation":[43.39,32.00],
+                "Description":""},
+            "Ullrich's Loft":{
+                "MapLocation":[41.89,15.00],
+                "Description":""},
+            "Profaned Chapel":{
+                "MapLocation":[41.89,15.00],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[49.39,20.00],
+                "Description":""}
+        },
+        "Foothills":
+        {   "Vermillion Estate":{
+                "MapLocation":[43.39,38.25],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[43.39,42.50],
+                "Description":""},
+            "Academy Lift":{
+                "MapLocation":[48.64,40.00],
+                "Description":""}
+        },
+        "Upper Mantle":
+        {   "Inner Wall Checkpoint":{
+                "MapLocation":[43.69,34.25],
+                "Description":""},
+            "Verdant Slope":{
+                "MapLocation":[40.54,35.50],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[40.54,35.50],
+                "Description":""}
+        },
+        "Outwallers' Shanty":
+        {   "Unspecified":{
+                "MapLocation":[16.69,73.00],
+                "Description":""}
+        },
+        "Vermillion Boulevard":
+        {   "Club Vermillion":{
+                "MapLocation":[49.39,45.50],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[49.39,45.50],
+                "Description":""}
+        },
+        "The Academy":
+        {   "Dragon Class Lofts":{
+                "MapLocation":[51.34,36.25],
+                "Description":""},
+            "Academy Streets":{
+                "MapLocation":[51.34,36.25],
+                "Description":""},
+            "Academy Lift":{
+                "MapLocation":[48.64,40.00],
+                "Description":""},
+            "Great Coliseum":{
+                "MapLocation":[48.79,34.75],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[48.79,34.75],
+                "Description":""}
+        },
+        "Unknown":
+        {   "Underhold":{
+                "MapLocation":[49.24,9.75],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        },
+        "Unspecified":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        },
+        "MapSource":"Titus"
+    },
+    "Valenseia": 
+    {   "Gaffesend":
+        {   "Katiya's House":{
+                "MapLocation":[57.86,47.25],
+                "Description":""},
+            "Guards' Quarter":{
+                "MapLocation":[58.70,45.75],
+                "Description":""},
+            "Gaffe's End Tavern":{
+                "MapLocation":[52.86,55.50],
+                "Description":""},
+            "Gaffe Royal Base":{
+                "MapLocation":[54.36,37.50],
+                "Description":""},
+            "Lake Garrison":{
+                "MapLocation":[58.20,61.00],
+                "Description":""},
+            "The Old Castle":{
+                "MapLocation":[42.70,40.00],
+                "Description":""},
+            "Southern Fields":{
+                "MapLocation":[43.20,64.50],
+                "Description":""},
+            "Market Street":{
+                "MapLocation":[54.03,47.00],
+                "Description":""},
+            "Village Outskirts":{
+                "MapLocation":[37.53,49.75],
+                "Description":""},
+            "Outskirts":{
+                "MapLocation":[41.36,59.50],
+                "Description":""},
+            "Hilde Cottage":{
+                "MapLocation":[46.03,48.75],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[47.53,45.50],
+                "Description":""}
+        },
+        "Hillfar":
+        {   "Village Outskirts":{
+                "MapLocation":[89.86,64.00],
+                "Description":""},
+            "The Shortwall":{
+                "MapLocation":[88.86,57.25],
+                "Description":""},
+            "Breakey Cottage":{
+                "MapLocation":[86.03,56.50],
+                "Description":""},
+            "Outskirts":{
+                "MapLocation":[92.20,51.00],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[87.53,56.25],
+                "Description":""}
+        },
+        "Northaven":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        },
+        "Holmfirth":
+        {   "Firtholm Hot Springs":{
+                "MapLocation":[20.03,90.00],
+                "Description":""},
+            "Outskirts":{
+                "MapLocation":[28.86,67.75],
+                "Description":""},
+            "Village Outskirts":{
+                "MapLocation":[28.86,67.75],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[24.53,82.00],
+                "Description":""}
+        },
+        "Outer Lands":
+        {   "Unspecified":{
+                "MapLocation":[59.03,0.50],
+                "Description":""}
+        },
+        "Unspecified":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        },
+        "Unknown":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        },
+        "MapSource":"Katiya"
+    },
+    "Melenia": 
+    {   "Palace":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        },
+        "Unspecified":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        },
+        "Unknown":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        },
+        "MapSource":"Jade"
+    },
+    "Frosthards": 
+    {   "The Backwoods":
+        {   "First Red Ampitheatre":{
+                "MapLocation":[46.24,99.9],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[46.24,99.9],
+                "Description":""}
+        },
+        "Barren Wastes":
+        {   "Safehouse Foxtrot":{
+                "MapLocation":[46.24,99.9],
+                "Description":""},
+            "Abandoned Cabin":{
+                "MapLocation":[46.24,99.9],
+                "Description":""},
+            "Railcar S":{
+                "MapLocation":[46.24,99.9],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[46.24,99.9],
+                "Description":""}
+        },
+        "Unspecified":
+        {   "Unspecified":{
+                "MapLocation":[46.24,99.9],
+                "Description":""}
+        },
+        "Unknown":
+        {   "Unspecified":{
+                "MapLocation":[46.24,99.9],
+                "Description":""}
+        },
+        "MapSource":"Titus"
+    },
+    "Colorado": 
+    {   "Hearthland Ridge":
+        {   "Mineral Station":{
+                "MapLocation":[59.03,73.75],
+                "Description":""},
+            "Costco #8137":{
+                "MapLocation":[50.03,69.00],
+                "Description":""},
+            "Starbucks":{
+                "MapLocation":[55.86,74.50],
+                "Description":""},
+            "Dunsmore Family Home":{
+                "MapLocation":[29.03,75.00],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[28.70,85.25],
+                "Description":""}
+        },
+        "Shaleborough":
+        {   "Navidson-Monroe Aerospace":{
+                "MapLocation":[43.20,13.25],
+                "Description":""},  
+            "Rocky Mountain National Forest":{
+                "MapLocation":[32.70,8.00],
+                "Description":""},
+            "Monroe Canyon Rd":{
+                "MapLocation":[42.03,12.00],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[35.53,22.75],
+                "Description":""}
+        },
+        "Evergreen Estates":
+        {   "Cody's House":{
+                "MapLocation":[53.20,48.75],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[45.03,48.25],
+                "Description":""}
+        },
+        "Denver":
+        {   "16th Street Mall":{
+                "MapLocation":[93.86,97.50],
+                "Description":""},
+            "Unspecified":{
+                "MapLocation":[93.86,97.50],
+                "Description":""}
+        },
+        "Unspecified":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        },
+        "Unknown":
+        {   "Unspecified":{
+                "MapLocation":[0.00,0.00],
+                "Description":""}
+        },
+        "MapSource":"Cody"
+    }
+}
+
+}

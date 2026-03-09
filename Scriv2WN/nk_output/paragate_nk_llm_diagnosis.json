@@ -1,585 +1,217 @@
 {
   "macro_assessment": {
-    "length_assessment": "Long and vulnerable to bloat in Acts 1–3, especially in low-energy domestic/world-tour beats and duplicated dual-protagonist setbacks. The final run (49–51) earns its length; the setup and midbook likely do not.",
-    "structural_health": "Basically sound. The book has real structural peaks, a strong late escalation, and unusually high theme integration overall. The weak point is not lack of climax but too many mirrored approach/retreat beats before the machine fully locks in. Several chapters read like alternate-angle restatements of the same emotional movement.",
-    "primary_strength": "The ending is built on genuine thematic load, not just spectacle. Chapters 35, 49, 50, and 51 show high gravity with low cut risk, which suggests the book can land hard when plot, character, and meaning converge.",
-    "primary_risk": "Drag from mirrored dual-protagonist beats. Cody and Katiya repeatedly undergo parallel embarrassment, alienation, recovery, orientation, institutional pushback, and romantic hesitation in adjacent chapters. Even when individual chapters are competent, the pairing can feel redundant and delay irreversible movement.",
-    "one_paragraph_verdict": "Paragate is not broken; it is over-repeated. The data says the novel knows what its story is about and where its real peaks are. The problem is that too much of the first two-thirds spends time proving the same things twice—once in Cody’s register, once in Katiya’s. That creates drag corridors, especially where both leads experience analogous social discomfort, professional failure, or cross-world discovery in parallel. Revision should be aggressive about compression in the opening and middle, ruthless about deleting duplicate beats, and disciplined about making each protagonist carry different narrative labor. Protect the trauma-origin material that powers the climax and the late Act 4 run that converts theme into action."
+    "length_assessment": "At 53 short chapters, Paragate is full-length and weighted toward a four-act climax. Overall length is fine; the problem is internal pacing: long, low-energy stretches early and midbook create clear drag corridors that blunt the two-protagonist mirroring gimmick unless trimmed.",
+    "structural_health": "Structurally strong at the top: the second half — especially chapters 35, 49–51 — supplies clear peaks of action, drama, and thematic payoff. The first third and some midbook scenes sag. Several low-action, high-cut-risk scenes cluster early and in the midbook and threaten momentum.",
+    "primary_strength": "A tightly built climax cluster (Paragate → Knightfall → Daybreak) that resolves Katiya's arc with high action/drama/theme. The double-protagonist conceit produces powerful mirrored stakes when used to escalate rather than repeat.",
+    "primary_risk": "Mirror-drag: many mirrored Cody/Katiya beats deliver near-duplicate emotional information rather than additive contrast. Low-energy, high-cut-risk setpieces (dream tourism, domestic replays, procedural domestic days) create long stretches where theme doesn't sufficiently advance the plot.",
+    "one_paragraph_verdict": "Keep the major spine and climactic sequence intact — that's where the book sings — but surgically tighten the opening and selected midbook episodes. Eliminate or compress repetitive domestic and ‘tourism’ dream sequences; collapse mirrored scenes unless they show new information or conflicting perspective; protect chapters 49–51 and 35 at all costs. A tight pass focused on merging exposition, pruning fantasy-dream detours, and sharpening the mirrored beats will transform the current slow middle into forward-driving setup for the excellent climax."
   },
   "strongest_regions": [
     {
-      "chapter": 35,
-      "chapter_name": "Physical Demise",
-      "reason": "Major structural peak: very high energy/gravity, minimal cut risk, and directly tied to Katiya’s core arc. This looks like one of the chapters where the book stops circling and becomes inevitable.",
-      "revision_instruction": "Protect the chapter’s core sequence and emotional logic. Only trim for sharpness or clarity; do not soften, redistribute, or undercut its consequences."
+      "chapter": 49,
+      "chapter_name": "Paragate",
+      "reason": "Story pivot: both protagonists commit and the narrative pivots from argument into mobilization. High gravity, high theme mass — this is the inciting point for the final act.",
+      "revision_instruction": "Do not cut. Strengthen immediacy: shorten any reflective asides here so the chapter functions as the trigger that forces immediate action."
     },
     {
       "chapter": 50,
       "chapter_name": "Knightfall",
-      "reason": "Peak gravity chapter. It fuses battle turn, protagonist interdependence, and trauma pressure without losing theme. This is structural spine material.",
-      "revision_instruction": "Protect pacing and crosscutting. If anything, simplify surrounding setup so this chapter arrives sooner and cleaner."
+      "reason": "Peak gravity and setup for emotional climax. High action + drama + theme; converts political stakes into immediate battlefield threat and forces Katiya into the nightmare shape required for arc completion.",
+      "revision_instruction": "Protect. Ensure scene beats are crisp and causal (Cody’s discovery → defensive failure → Katiya’s crisis). Trim anything that delays the sequence."
     },
     {
       "chapter": 51,
       "chapter_name": "Daybreak",
-      "reason": "Peak energy and near-peak gravity with almost nonexistent cut risk. This is the clearest evidence that the novel’s ending is doing real work, not just making noise.",
-      "revision_instruction": "Protect almost wholesale. Any revision should heighten readability and line-of-action clarity, not alter the chapter’s role or redistribute its climax elsewhere."
+      "reason": "Peak energy/action/drama/theme — emotional and thematic payoff for Katiya. It’s the story’s culmination and the clearest thematic resolution.",
+      "revision_instruction": "Protect absolutely. Keep sensory immediacy and action economy. If anything feels repetitive of Knightfall, remove it — this must feel like final, non-redundant closure."
     },
     {
-      "chapter": 49,
-      "chapter_name": "Paragate",
-      "reason": "Strong hinge chapter: mobilization, witness replacing doubt, protagonists stepping into resisted roles. It appears to be the true launch into the ending.",
-      "revision_instruction": "Keep as the pivot into the final run. Tighten any exposition that delays commitment, but preserve the sense of irrevocable transition."
-    },
-    {
-      "chapter": 26,
-      "chapter_name": "Cold War",
-      "reason": "High gravity flashback with low cut risk. Unlike many backstory inserts, this one appears to carry genuine weight and fuels Cody’s side of the thematic engine.",
-      "revision_instruction": "Keep the flashback, but make sure it pays forward directly into subsequent choice. If any section is ornamental military texture, cut that before touching the core memory."
-    },
-    {
-      "chapter": 27,
-      "chapter_name": "Warm Solitude",
-      "reason": "Katiya’s origin trauma scores high in gravity/theme and clearly underwrites the climax in 50–51. This looks foundational, not indulgent backstory.",
-      "revision_instruction": "Protect the causal details that later echo in the finale. Trim only if there is atmospheric repetition or over-explaining around the wound."
+      "chapter": 35,
+      "chapter_name": "Physical Demise",
+      "reason": "High energy and emotional stakes; a structural peak in Act Three that feeds Act Four. Strong thematic mass tied directly to Katiya’s arc.",
+      "revision_instruction": "Keep and, if possible, use as a pacing hinge: make beats here feed Act Four threats so the late-file stakes feel earned rather than dropped into place."
     }
   ],
   "drag_corridors": [
     {
-      "start_chapter": 2,
-      "end_chapter": 5,
-      "problem_type": "slow start / alternating intro redundancy",
-      "reason": "Chapters 2–5 are all high cut-risk or near it, with low gravity and low-to-moderate energy. This stretch alternates Cody/Katiya setup beats without enough forward lock. It likely over-explains baseline lives before the story’s actual engine takes over.",
-      "suggested_fix": "Collapse baseline characterization. Keep the minimum needed to establish Cody’s deadened life, Katiya’s trauma-routine, and the practical circumstances around the door. Consider merging material from 2–5 so each protagonist gets one sharp intro chapter instead of multiple soft-launches.",
-      "confidence": 0.95
+      "start_chapter": 1,
+      "end_chapter": 12,
+      "problem_type": "slow_opening / repeated orientation",
+      "reason": "Many scenes here are low-action, expository, or domestic in similar key (Cody and Katiya intros, repeated door/doorway motifs, multiple small social beats). High collective cut risk and low cumulative gravity slows momentum before the first major escalation.",
+      "suggested_fix": "Compress the opening two-dozen pages into fewer, higher-stakes scenes: combine redundant domestic beats, move the most necessary worldbuilding into single, sharper encounters, and make the inciting oddity/doorbeat occur earlier and with clearer consequence.",
+      "confidence": 0.85
     },
     {
-      "start_chapter": 13,
+      "start_chapter": 14,
       "end_chapter": 17,
-      "problem_type": "cross-world orientation drag / mirrored bonding beats",
-      "reason": "13–17 contains multiple low-energy, high cut-risk chapters centered on calming, orientation, touring, hospitality, routine, and aftermath. This is exactly where dual-protagonist mirroring can become deadly: each lead experiences the other world, the other’s social network, and mutual softening in separate but emotionally similar installments.",
-      "suggested_fix": "Compress the exchange-tour material hard. One Earth disorientation chapter and one Valenseia disorientation chapter are probably enough. Fold 'gentle orientation,' tavern fit-in, workplace reset, and market/hospital follow-through into fewer chapters with stronger turning points. Each scene should either alter trust, reveal a nonredundant pressure source, or set up a later payoff.",
-      "confidence": 0.97
+      "problem_type": "midbook lull / redundant orientation",
+      "reason": "This block contains low-action Cody/Katiya orientation and ‘getting-to-know’ beats that repeat earlier information and do little to escalate theme or conflict.",
+      "suggested_fix": "Trim or merge these chapters; convert small, redundant domestic/comfort beats into micro-scenes embedded in higher-stakes chapters so momentum doesn't stall.",
+      "confidence": 0.78
     },
     {
-      "start_chapter": 20,
-      "end_chapter": 25,
-      "problem_type": "parallel failure escalation with duplicate beat shape",
-      "reason": "This run has decent gravity overall, but it appears to stage a sequence where both leads undergo relational/professional/social failure in mirrored fashion: awkward dating, uncomfortable truths, tests, presentations, losses, and then a mutual fight. The risk is not low stakes; it is too many adjacent chapters delivering the same emotional message: both are failing and defensive.",
-      "suggested_fix": "Differentiate the labor of each protagonist. Do not let both halves merely echo humiliation. Pick one line to carry professional collapse and the other to carry relational or family pressure. Trim or combine chapters 22–24 if they are separate expressions of the same failure spiral. Preserve the fight in 25 only if the preceding losses are not already repetitive.",
-      "confidence": 0.88
+      "start_chapter": 32,
+      "end_chapter": 34,
+      "problem_type": "tonal whiplash / fantasy tourism detour",
+      "reason": "Chapter 32 (Fantastic Modernity) registers as an energetic and thematic outlier (low action, high cut risk). The 'fantasy tourism' dream sequence interrupts built momentum from the fall arc, creating a pause that doesn't advance threat or character.",
+      "suggested_fix": "Compress or excise the 'tourism' framing; if any material is essential for theme, fold it into surrounding chapters as a brief memory or single strong image instead of a separate chapter.",
+      "confidence": 0.86
     },
     {
-      "start_chapter": 28,
-      "end_chapter": 33,
-      "problem_type": "midbook wobble / tonal diffusion",
-      "reason": "After two strong backstory chapters (26–27), the novel appears to drift through improvement, family/romantic material, ominous email, reunion/rescue, low-value Earth tourism, and tournament/outing disruption. Chapter 32 is a huge cut-risk spike, and 28–33 as a block feels like the book re-earning momentum it already had.",
-      "suggested_fix": "Use 26–27 as a relaunch, not a pause. Cut chapter 32 hard, compress 28–30, and make 31 the decisive reconnection beat. Move to 34–35 faster. If 33 contains important bad news, extract that turn and lose the sightseeing/tournament padding around it.",
-      "confidence": 0.94
-    },
-    {
-      "start_chapter": 40,
-      "end_chapter": 45,
-      "problem_type": "late planning plateau",
-      "reason": "Act 4 should be tightening, but 40–45 stacks planning, new allies, fabrication, alliance friction, grief processing, and family confrontation across many medium-gravity chapters. The content may be good, but the sequence risks feeling like six versions of 'we are preparing / connecting / being tested emotionally' before the lock-in at 46–49.",
-      "suggested_fix": "Condense preparation. Combine allied-politics material with fabrication progress where possible, and eliminate repeated team-stabilization conversations. Make each chapter answer a different question: what is the plan, what is the cost, who commits, what fails. If a chapter only reaffirms support or grief already established, trim it aggressively.",
-      "confidence": 0.82
+      "start_chapter": 3,
+      "end_chapter": 6,
+      "problem_type": "high-cut-risk exposition cluster",
+      "reason": "Contains multiple low-action, high cut-risk scenes (The Day After, Secondhand Cottage, Firsthand Home) that repeat mood-setting without distinct forward motion.",
+      "suggested_fix": "Triage: keep what establishes the core inciting facts and character constraints; convert the rest to short beats or delete. Prioritize unique, plot-moving detail over atmospheric repetition.",
+      "confidence": 0.8
     }
   ],
   "cut_candidates": [
     {
       "chapter": 4,
       "chapter_name": "Secondhand Cottage",
-      "cut_risk_reason": "Highest cut risk in the book by a wide margin, very low gravity, and early-placement vulnerability. Trauma baseline matters, but this chapter likely spends too long on routine and baseline before plot pressure is strong enough to justify it.",
+      "cut_risk_reason": "Top raw cut risk (92). Long nightmare/daily routine material that repeats trauma-baseline information already suggested elsewhere.",
       "suggested_action": "compress_hard",
-      "what_to_target": "Condense nightmare/routine/neighbors/base-run material to the minimum that establishes Katiya’s trauma management and daily world. Preserve only foreshadowing that pays off decisively later."
-    },
-    {
-      "chapter": 3,
-      "chapter_name": "The Day After",
-      "cut_risk_reason": "Very high cut risk, very low gravity. Likely another baseline-workplace misery chapter before the central engine is fully engaged.",
-      "suggested_action": "compress_hard",
-      "what_to_target": "Strip to the essentials of Cody’s deadened work life, Reed/Kei setup, and home/social context. If this repeats attitudes already clear in chapter 1, merge the best parts."
-    },
-    {
-      "chapter": 2,
-      "chapter_name": "The Knight Before",
-      "cut_risk_reason": "High cut risk and low gravity as an introductory Katiya setup chapter. In combination with 4, this suggests overbuilt baseline for her side.",
-      "suggested_action": "merge",
-      "what_to_target": "Merge core trainee-expectation/Jullian/home-life setup with chapter 4 or another stronger Katiya chapter. Avoid giving Katiya multiple pre-engine introduction chapters."
-    },
-    {
-      "chapter": 5,
-      "chapter_name": "Firsthand Home",
-      "cut_risk_reason": "High cut risk and modest gravity. Another Cody-home baseline scene soon after his intro and office-day material is likely redundant.",
-      "suggested_action": "trim",
-      "what_to_target": "Cut any extended bro-out/confession material that does not directly motivate the doorway event or Cody’s emotional vacancy."
-    },
-    {
-      "chapter": 9,
-      "chapter_name": "Surprise Approach",
-      "cut_risk_reason": "High cut risk and a severe prominence dip immediately after stronger confrontation chapters. Reads like reaction/reset after the story had already found momentum.",
-      "suggested_action": "compress_hard",
-      "what_to_target": "Keep only what is necessary to establish Cody’s denial and Reed as foil. Lose repetitive rationalization and domestic aftermath."
-    },
-    {
-      "chapter": 14,
-      "chapter_name": "Luddite By Chance",
-      "cut_risk_reason": "High cut risk inside an already drag-prone orientation corridor. Fish-out-of-water material is easy to overindulge.",
-      "suggested_action": "trim",
-      "what_to_target": "Cut sightseeing/comedy that does not change the relationship or world stakes. Keep only the moments that force Katiya into a new understanding of Cody’s world."
-    },
-    {
-      "chapter": 15,
-      "chapter_name": "Technophile By Choice",
-      "cut_risk_reason": "Very high cut risk and structurally mirrors chapter 14 in reverse. This is the dual-protagonist drag pattern in pure form.",
-      "suggested_action": "compress_hard",
-      "what_to_target": "Reduce reciprocal tourism and social integration beats. Keep one or two scenes that create genuine friction or irreversible closeness; cut the rest."
-    },
-    {
-      "chapter": 16,
-      "chapter_name": "Back To Business",
-      "cut_risk_reason": "Very high cut risk, low gravity, and likely a minor bridge chapter between more important relationship/world beats.",
-      "suggested_action": "merge",
-      "what_to_target": "Fold Alan/Jackson/work-door material into a stronger Cody chapter, ideally one where it changes an actual decision rather than just sustaining mood."
-    },
-    {
-      "chapter": 17,
-      "chapter_name": "Onward To Chaos",
-      "cut_risk_reason": "Still high cut risk at the tail end of an already overlong corridor. Contains several obligations at once, which may mean none land with enough force.",
-      "suggested_action": "trim",
-      "what_to_target": "Prioritize the promise/Hillfar and Rayna elements if they matter downstream; cut routine setup and any soft connective tissue."
-    },
-    {
-      "chapter": 20,
-      "chapter_name": "Domestic Relations",
-      "cut_risk_reason": "Midlevel cut risk, but the bigger problem is duplicate emotional geometry with nearby relationship chapters. Parallel date misfires can feel conceptually clever and narratively repetitive.",
-      "suggested_action": "differentiate",
-      "what_to_target": "Make the two date lines do radically different work or reduce one. Do not let both function as 'this relationship is off' in stereo."
-    },
-    {
-      "chapter": 22,
-      "chapter_name": "Losing To Fear",
-      "cut_risk_reason": "Not disastrous on metrics, but vulnerable because 22–24 appear to stage closely related failure beats in sequence.",
-      "suggested_action": "trim",
-      "what_to_target": "Retain only the test results and rival/pressure beats that are indispensable to 23–24. Remove any rehearsal of anxieties the reader already understands."
-    },
-    {
-      "chapter": 24,
-      "chapter_name": "Friendly Fire",
-      "cut_risk_reason": "Strong chapter on paper, but it sits adjacent to 23 with similar dual-collapse architecture. Risk is not weakness but repetition.",
-      "suggested_action": "differentiate",
-      "what_to_target": "Ensure this chapter advances consequences, not just adds another humiliation. If it repeats the same downward beat as 23, combine or sharply separate their functions."
-    },
-    {
-      "chapter": 28,
-      "chapter_name": "Prometheus",
-      "cut_risk_reason": "Moderate-high cut risk after two major backstory peaks. May feel like the novel taking its foot off the gas too soon.",
-      "suggested_action": "trim",
-      "what_to_target": "Keep the dangerous-idea ignition and any Reed complication. Cut workplace texture or lunch material that merely restates Cody’s ennui."
-    },
-    {
-      "chapter": 30,
-      "chapter_name": "Cold Sweat",
-      "cut_risk_reason": "Mid-high cut risk and reads like connective tissue: alliance formation plus ominous email. Likely functional but not efficient.",
-      "suggested_action": "merge",
-      "what_to_target": "Fold the threatening email and key alliance turn into adjacent chapters instead of giving them a full standalone valley."
+      "what_to_target": "Reduce dream-length and routine beats to a paragraph or single evocative scene; retain only one explicit trauma-image that will be echoed later."
     },
     {
       "chapter": 32,
       "chapter_name": "Fantastic Modernity",
-      "cut_risk_reason": "One of the worst cut-risk chapters in the book, low gravity/theme, and placed inside the most vulnerable midbook corridor. Earth-tourism/fantasy-chaos material is almost certainly overlong relative to its value.",
+      "cut_risk_reason": "High cut risk (85.6). 'Fantasy tourism' sequence distracts and duplicates dream imagery without advancing threat or character choice.",
+      "suggested_action": "trim",
+      "what_to_target": "Remove tourism framing; keep at most one image or sentence that signals recurring nightmare — fold into adjacent chapter."
+    },
+    {
+      "chapter": 16,
+      "chapter_name": "Back To Business",
+      "cut_risk_reason": "High cut risk (82.9). Low action; functions as filler nostalgia without moving the plot.",
       "suggested_action": "compress_hard",
-      "what_to_target": "Reduce to whatever directly affects Katiya/Cody trust, cultural comprehension, or the next crisis. Excise novelty-for-novelty’s-sake."
+      "what_to_target": "Collapse lunch/nostalgia beats into a single scene that establishes Cody's flicker-of-spark without full detour."
     },
     {
-      "chapter": 33,
-      "chapter_name": "Modern Fantasy",
-      "cut_risk_reason": "Moderate cut risk immediately after 32; if both chapters are novelty/outing before sudden bad news, they likely overoccupy the same tonal space.",
+      "chapter": 3,
+      "chapter_name": "The Day After",
+      "cut_risk_reason": "High cut risk (81.57). Office day/low action; repeats Cody’s discontent without new stakes.",
+      "suggested_action": "compress_hard",
+      "what_to_target": "Tighten to essential incident(s) — the minimal scenes that explain Cody’s inertia and introduce Miguel's role; remove ancillary office humdrum."
+    },
+    {
+      "chapter": 15,
+      "chapter_name": "Technophile By Choice",
+      "cut_risk_reason": "High cut risk (79.96). Duplicate tour-of-world beats that overlap with adjacent chapters.",
+      "suggested_action": "merge",
+      "what_to_target": "Fuse with neighboring orientation chapter (14 or 17); remove repeated dialogue and incidental errands."
+    },
+    {
+      "chapter": 9,
+      "chapter_name": "Surprise Approach",
+      "cut_risk_reason": "High cut risk (79.93). Low-action panic/barricade scene that mostly restates earlier door-confusion beats.",
       "suggested_action": "trim",
-      "what_to_target": "Cut tournament/outing business that exists only for charm. Preserve only the stolen closeness and the disruptive news trigger."
-    },
-    {
-      "chapter": 40,
-      "chapter_name": "Reaching Up",
-      "cut_risk_reason": "Planning chapter in a late-act cluster that already risks plateau. Medium cut risk and likely broad rather than decisive.",
-      "suggested_action": "trim",
-      "what_to_target": "Remove repeated team-bonding and planning chatter. Keep only the strategic decisions and one meaningful emotional collision."
-    },
-    {
-      "chapter": 42,
-      "chapter_name": "Eutectic Point",
-      "cut_risk_reason": "Another expansion chapter in the late planning block; medium cut risk and likely heavy on introduction/explanation.",
-      "suggested_action": "trim",
-      "what_to_target": "Condense new-allies exposition and privileged-world invitation material to what later pays off concretely."
-    },
-    {
-      "chapter": 43,
-      "chapter_name": "Harsh Noise",
-      "cut_risk_reason": "Not weak, but one more chapter of hope-building/fabrication/alliance instability in a crowded late-prep section can blur together.",
-      "suggested_action": "differentiate",
-      "what_to_target": "Make either Cody’s fabrication or Katiya’s alliance crisis the dominant spine, not both at equal weight again."
-    },
-    {
-      "chapter": 44,
-      "chapter_name": "In Loving Memory",
-      "cut_risk_reason": "Emotionally valid, but this region may contain too many grief/support chapters before the final lock-in.",
-      "suggested_action": "trim",
-      "what_to_target": "Preserve the grief transfer that matters to the memorial/project arc; reduce repeated mourning language or secondary consoling beats."
-    },
-    {
-      "chapter": 45,
-      "chapter_name": "In Future Grief",
-      "cut_risk_reason": "Very similar functional space to 44: family systems, grief, commitment. Risk of emotional overconfirmation before action resumes.",
-      "suggested_action": "differentiate",
-      "what_to_target": "Sharpen this into a decisions-and-costs chapter rather than another support/processing chapter."
-    },
-    {
-      "chapter": 52,
-      "chapter_name": "Parasmagate",
-      "cut_risk_reason": "High cut risk epilogue immediately after an extremely strong climax. The ending may already be emotionally complete at 51, making overt closure vulnerable to feeling like explanatory cooldown.",
-      "suggested_action": "trim",
-      "what_to_target": "Shorten to the single emotional beat readers truly need after 51. If it restates that the relationship is now healthy/chosen, cut hard."
+      "what_to_target": "Keep the single high-impact beat (Cody's panic/barricade) and excise repeated interiorization or redundant setup scenes."
     }
   ],
   "protect_at_all_costs": [
-    26,
-    27,
-    35,
     49,
     50,
-    51
+    51,
+    35,
+    26,
+    36
   ],
   "chapter_notes": [
     {
       "chapter": 1,
       "chapter_name": "Strangers To Enemies 1",
-      "status": "trim",
-      "note": "Good premise ignition, but the high cut risk suggests the opening may spend too much time on malaise before the impossible event. Start later if you can."
+      "status": "keep",
+      "note": "Keep as the core inciting fun/hook for Cody, but consider shortening the opening paragraphs to accelerate momentum into the door incident."
     },
     {
       "chapter": 2,
       "chapter_name": "The Knight Before",
       "status": "compress_hard",
-      "note": "Too much Katiya setup before the central engine earns it."
-    },
-    {
-      "chapter": 3,
-      "chapter_name": "The Day After",
-      "status": "compress_hard",
-      "note": "Baseline office misery is probably overrepresented."
+      "note": "Katiya’s christening and tavern beat can be compressed; preserve the Aldrin framing line, remove extraneous social padding."
     },
     {
       "chapter": 4,
       "chapter_name": "Secondhand Cottage",
       "status": "compress_hard",
-      "note": "Important trauma material buried inside a chapter that looks structurally expendable in current form."
-    },
-    {
-      "chapter": 5,
-      "chapter_name": "Firsthand Home",
-      "status": "trim",
-      "note": "Likely redundant Cody-home texture."
-    },
-    {
-      "chapter": 6,
-      "chapter_name": "Insurgency",
-      "status": "keep",
-      "note": "This appears to be where Katiya’s side starts generating actual momentum."
-    },
-    {
-      "chapter": 7,
-      "chapter_name": "Exfiltration",
-      "status": "keep",
-      "note": "Mirrored prologue material can work, but be careful not to over-repeat the novelty."
-    },
-    {
-      "chapter": 8,
-      "chapter_name": "Strangers To Enemies 2",
-      "status": "keep",
-      "note": "The confrontation itself seems to carry real energy. Keep the fight; cut any repeated misunderstanding scaffolding around it."
-    },
-    {
-      "chapter": 9,
-      "chapter_name": "Surprise Approach",
-      "status": "compress_hard",
-      "note": "Reaction chapter after stronger material; likely unnecessary at full size."
+      "note": "High cut risk — compress nightmare and routine. Keep only the scene elements that will be referenced later."
     },
     {
       "chapter": 10,
       "chapter_name": "Strategic Retreat",
       "status": "keep",
-      "note": "Strong early Katiya chapter. Likely one of the first real anchors."
-    },
-    {
-      "chapter": 11,
-      "chapter_name": "Ennui and Excoriation",
-      "status": "trim",
-      "note": "Another Cody stagnation beat; keep only what directly triggers renewed contact."
-    },
-    {
-      "chapter": 12,
-      "chapter_name": "Anxiety and Avoidance",
-      "status": "keep",
-      "note": "This seems to convert Katiya’s pressure into necessity. Probably useful."
-    },
-    {
-      "chapter": 13,
-      "chapter_name": "The Sleeping Knight",
-      "status": "keep",
-      "note": "Important trust-forming chapter, but keep it efficient."
+      "note": "Important for character stakes; keep but trim any reflective tangents that delay the time-skip payoff."
     },
     {
       "chapter": 14,
       "chapter_name": "Luddite By Chance",
       "status": "trim",
-      "note": "Cross-world novelty should not overrun momentum."
-    },
-    {
-      "chapter": 15,
-      "chapter_name": "Technophile By Choice",
-      "status": "compress_hard",
-      "note": "This is the mirrored version of 14 and therefore more dangerous."
+      "note": "Combine small orientation beats into adjacent chapters; avoid long errands that do not advance the plot."
     },
     {
       "chapter": 16,
       "chapter_name": "Back To Business",
       "status": "compress_hard",
-      "note": "Bridge chapter energy without enough weight."
-    },
-    {
-      "chapter": 17,
-      "chapter_name": "Onward To Chaos",
-      "status": "trim",
-      "note": "Likely doing too many small duties instead of one strong turn."
-    },
-    {
-      "chapter": 18,
-      "chapter_name": "Civillian Combat",
-      "status": "keep",
-      "note": "Carries character motion and external integration."
-    },
-    {
-      "chapter": 19,
-      "chapter_name": "Warrior Business",
-      "status": "trim",
-      "note": "Useful social exposure, but probably not at current length."
-    },
-    {
-      "chapter": 20,
-      "chapter_name": "Domestic Relations",
-      "status": "differentiate",
-      "note": "Parallel-date structure is a prime mirrored-beat hazard."
-    },
-    {
-      "chapter": 21,
-      "chapter_name": "Foreign Affairs",
-      "status": "keep",
-      "note": "If this is the hard-truth rupture chapter, keep it sharper than 20 rather than redundant with it."
-    },
-    {
-      "chapter": 22,
-      "chapter_name": "Losing To Fear",
-      "status": "trim",
-      "note": "Likely one setup-to-failure chapter too many before the real collapse."
-    },
-    {
-      "chapter": 23,
-      "chapter_name": "Failing To Launch",
-      "status": "keep",
-      "note": "Strong enough to survive, but watch overlap with 24."
-    },
-    {
-      "chapter": 24,
-      "chapter_name": "Friendly Fire",
-      "status": "differentiate",
-      "note": "Make consequences distinct from 23, not cumulative in the same emotional key."
-    },
-    {
-      "chapter": 25,
-      "chapter_name": "A House Divided",
-      "status": "keep",
-      "note": "Probably the earned rupture, provided earlier failures are compressed."
+      "note": "Collapse nostalgia/lunch into a single scene that sparks Cody's tentative arc forward."
     },
     {
       "chapter": 26,
       "chapter_name": "Cold War",
       "status": "protect",
-      "note": "Keep. This looks like essential Cody backstory with real structural force."
-    },
-    {
-      "chapter": 27,
-      "chapter_name": "Warm Solitude",
-      "status": "protect",
-      "note": "Keep. Essential Katiya trauma architecture."
-    },
-    {
-      "chapter": 28,
-      "chapter_name": "Prometheus",
-      "status": "trim",
-      "note": "Good ignition idea, but likely overpadded after the flashbacks."
-    },
-    {
-      "chapter": 29,
-      "chapter_name": "Once Lovers",
-      "status": "keep",
-      "note": "Relationship/personal stakes chapter with useful pressure, but don't let it meander."
-    },
-    {
-      "chapter": 30,
-      "chapter_name": "Cold Sweat",
-      "status": "trim",
-      "note": "Feels connective more than central."
-    },
-    {
-      "chapter": 31,
-      "chapter_name": "Heating Up",
-      "status": "keep",
-      "note": "Seems like a real reconnection/plot turn. Preserve the decisive parts."
+      "note": "Strong flashback with high gravity; it anchors Cody’s motivations and must remain intact."
     },
     {
       "chapter": 32,
       "chapter_name": "Fantastic Modernity",
       "status": "compress_hard",
-      "note": "Biggest midbook cut target."
-    },
-    {
-      "chapter": 33,
-      "chapter_name": "Modern Fantasy",
-      "status": "trim",
-      "note": "Cut charm that delays bad-news propulsion."
-    },
-    {
-      "chapter": 34,
-      "chapter_name": "Professional Death",
-      "status": "keep",
-      "note": "Strong serious consequence chapter for Cody."
+      "note": "Tonally jarring — convert to a short interior image or fold into surrounding chapters to avoid interrupting pacing."
     },
     {
       "chapter": 35,
       "chapter_name": "Physical Demise",
       "status": "protect",
-      "note": "Core peak. Do not mess with it."
+      "note": "Critical Act Three peak that should be polished for causal links into Act Four."
     },
     {
       "chapter": 36,
       "chapter_name": "Holding On",
-      "status": "keep",
-      "note": "High-value Cody aftermath/renewal chapter. Protect its function."
-    },
-    {
-      "chapter": 37,
-      "chapter_name": "Letting Go",
-      "status": "keep",
-      "note": "Heavy thematic chapter; just ensure it is not emotionally repetitive after 35–36."
-    },
-    {
-      "chapter": 38,
-      "chapter_name": "Bottoming Out",
-      "status": "keep",
-      "note": "Needed if it truly redirects despair into action; otherwise trim repetition of collapse language."
-    },
-    {
-      "chapter": 39,
-      "chapter_name": "Crossing Over",
-      "status": "keep",
-      "note": "Good scale-expansion chapter; likely necessary bridge into Act 4 war footing."
-    },
-    {
-      "chapter": 40,
-      "chapter_name": "Reaching Up",
-      "status": "trim",
-      "note": "Planning chapter; keep decisions, cut chatter."
-    },
-    {
-      "chapter": 41,
-      "chapter_name": "Annealment",
-      "status": "keep",
-      "note": "Useful hardening chapter if it materially advances capability and risk."
-    },
-    {
-      "chapter": 42,
-      "chapter_name": "Eutectic Point",
-      "status": "trim",
-      "note": "Exposition and introductions should be aggressively compressed."
-    },
-    {
-      "chapter": 43,
-      "chapter_name": "Harsh Noise",
-      "status": "differentiate",
-      "note": "Avoid another split-screen 'both are building hope under pressure' beat."
-    },
-    {
-      "chapter": 44,
-      "chapter_name": "In Loving Memory",
-      "status": "trim",
-      "note": "Good emotion, but likely one grief beat too many at full size."
-    },
-    {
-      "chapter": 45,
-      "chapter_name": "In Future Grief",
-      "status": "differentiate",
-      "note": "Must do different work from 44 or it will blur."
-    },
-    {
-      "chapter": 46,
-      "chapter_name": "Close Quarters",
-      "status": "keep",
-      "note": "Strong pre-storm intimacy/pressure chapter; likely worth preserving."
-    },
-    {
-      "chapter": 47,
-      "chapter_name": "Ground Control",
-      "status": "keep",
-      "note": "Institutional trap chapter that cleanly sets up the last run."
-    },
-    {
-      "chapter": 48,
-      "chapter_name": "Metanoia",
-      "status": "trim",
-      "note": "Useful conversion chapter, but the negative prominence suggests some of it may be over-explained."
+      "status": "protect",
+      "note": "High drama/theme for Cody; keep and ensure it directly informs the choices he makes in Act Four."
     },
     {
       "chapter": 49,
       "chapter_name": "Paragate",
       "status": "protect",
-      "note": "The real launch. Essential."
+      "note": "The hinge of the final act — preserve, sharpen, and remove anything that softens its pivot function."
     },
     {
       "chapter": 50,
       "chapter_name": "Knightfall",
       "status": "protect",
-      "note": "Peak structural chapter."
+      "note": "High-stakes action; sequence timing is everything. Cut indulgent description; keep causal beats tight."
     },
     {
       "chapter": 51,
       "chapter_name": "Daybreak",
       "status": "protect",
-      "note": "Peak climax chapter."
+      "note": "Final arc resolution: maintain emotional specificity and action economy. Remove repetitions of previous horrors."
     },
     {
       "chapter": 52,
       "chapter_name": "Parasmagate",
-      "status": "trim",
-      "note": "The book may already be done. Shorten closure to avoid bleed-off."
-    },
-    {
-      "chapter": 53,
-      "chapter_name": "Threaded Echoes",
       "status": "keep",
-      "note": "Sequel hook / wider-world sting is fine if brief and tonally earned; do not let it retroactively steal closure from 51."
+      "note": "Epilogue — keep but ensure it follows immediately after Daybreak with minimal tonal backtracking."
     }
   ],
   "next_revision_pass": [
-    "Cut the opening by collapsing chapters 2–5 into leaner dual-protagonist setup. You need one sharp Cody-baseline move and one sharp Katiya-baseline move, not a relay race of low-gravity intros.",
-    "Audit every paired Cody/Katiya chapter for mirrored function. If both halves communicate the same emotional information, assign the beat to one protagonist and cut or repurpose the other.",
-    "Compress the Act 2 cross-world tourism corridor (13–17). Preserve only scenes that change trust, deepen conflict, or set up a concrete payoff.",
-    "Differentiate the Act 2 failure run (20–25). Stop letting both protagonists fail in parallel in the same tonal register. One should escalate externally while the other escalates relationally or morally.",
-    "Use chapters 26–27 as a hard relaunch into the second half. After those flashbacks, move to consequence fast; do not let the novel drift into novelty or domestic charm before the crisis tightens.",
-    "Cut chapter 32 brutally and trim 33. Midbook novelty is your clearest bloat signal.",
-    "Condense late Act 4 planning/support/grief chapters (40–45) so the story reaches 46–49 with more urgency. Remove repeated team-bonding, repeated grief-processing, and repeated statements of commitment.",
-    "Protect 35, 49, 50, and 51 from structural surgery. The book’s strongest evidence says those chapters are doing the heavy lifting.",
-    "On a scene-by-scene pass, label each scene by function: setup, escalation, reversal, revelation, commitment, consequence. Delete scenes whose only function is mood maintenance after that mood is already established.",
-    "Watch epilogue bleed. If 51 feels like the emotional ending in revision, let 52–53 become brief resonance, not a second ending."
+    "1) Tighten Act One: collapse or merge low-energy domestic setup scenes (chapters 2–6) so the door/other-world hook and its consequences sit within the first 3–4 chapters.",
+    "2) Prune or compress dream/tourism material (especially chapter 32 and the long trauma baseline in chapter 4). Convert long dream sequences to single, potent images that echo later rather than interrupting pacing.",
+    "3) Reduce mirror-drag: audit each Cody/Katiya mirrored pair and keep only the version that adds unique information or true contrast. If both must exist, make them contrapuntal (conflicting perceptions or different consequences) instead of redundant.",
+    "4) Protect and polish the climax cluster (49–51): tighten causality between Paragate → Knightfall → Daybreak and remove any reflective scenes that duplicate emotional beats already resolved in the action.",
+    "5) Trim low-theme/high-drama melodrama (overwritten interiority) — convert internal monologues that restate stakes into visible choices and actions.",
+    "6) Merge small expository chapters into neighboring scenes and ensure every chapter advances either plot (new obstacle) or theme (decision/change), not just atmosphere.",
+    "7) Re-check POV switching: avoid neutral or indistinct POV frames that dilute emotional immediacy; make each swap earn its space by delivering new stakes, crucial information, or tonal contrast.",
+    "8) Do a final pass to confirm chapter transitions are driven by conflict, not merely scene change; every chapter should raise a question the next chapter answers or escalates."
   ]
 }

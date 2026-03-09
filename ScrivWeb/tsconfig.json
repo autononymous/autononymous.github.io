@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": [
+        "es6",
+        "dom",
+        "es2015.promise",
+        "ES2024"
+    ],
+    "module": "commonjs",
+    "strict": true,
+    "outDir": "./"
+    },
+  "files": [
+    "main.ts"
+  ]
+}
