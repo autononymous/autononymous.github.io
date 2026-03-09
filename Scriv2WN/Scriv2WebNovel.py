@@ -705,6 +705,21 @@ if __name__ == "__main__":
     Mlow = "gpt-5-mini";
     Mhigh = "gpt-5.4";
     api_key = os.environ.get("OPENAI_API_KEY")
+    
+    extra_instruction = {
+    "Paragate":
+        """Note that the gimmick of this story, I believe, is how it is premised 
+        around a 'double novel' where two characters have reflective, 
+        equal-and-opposite scenes. Nonetheless, be sensitive to drag caused by 
+        these mirrored dual-protagonist beats. """,
+    "Firebrand":
+        """This novel was written before my second novel and not released yet.
+        The chapters from 'Rolling Downhill' and onward are unfinished and will
+        be rewritten with a better ending.""",
+    "Goldenfur":
+        """This novel is in an incredibly preliminary state."""
+        }
+    
     # Narrative Kinematics report
     print(" >>> Exporting Narrative Kinematics report and data.")
     answer = input(" >>? Run LLM diagnosis?\n [0] None\n [1] Low (GPT-5 mini)\n [2] High (GPT-5.4)\n\n  > ")
@@ -717,7 +732,7 @@ if __name__ == "__main__":
         paths = nk.export_html_report_bundle(
             "./nk_output",
             include_llm_diagnosis=doDiagnose,
-            extra_instruction="Be especially sensitive to drag caused by mirrored dual-protagonist beats.",
+            extra_instruction=extra_instruction[storyname],
             model=model    
         )
         

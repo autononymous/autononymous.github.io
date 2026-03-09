@@ -1628,6 +1628,9 @@ class StoryNK:
                     "type": "array",
                     "items": {"type": "string"},
                 },
+                "final_remarks": {
+                    "type": "string"
+                }
             },
             "required": [
                 "macro_assessment",
@@ -1738,7 +1741,7 @@ class StoryNK:
     def _html_llm_diagnosis_section(self, diagnosis: Optional[Dict[str, Any]]) -> str:
         if not diagnosis:
             return """
-            <h2>LLM Revision Diagnosis</h2>
+            <h2><img src="/icons/OpenAI-black-monoblossom.png" style="width:100px; padding:40px;"> LLM Revision Diagnosis</h2>
             <p class="small">No LLM diagnosis was attached to this report.</p>
             """
     
