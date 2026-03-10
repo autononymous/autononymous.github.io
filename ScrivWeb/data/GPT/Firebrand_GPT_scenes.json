@@ -2,7 +2,7 @@
    "__meta": {
       "story": "Firebrand",
       "export_type": "scene_flat",
-      "generated_utc": "2026-03-08T01:45:11Z",
+      "generated_utc": "2026-03-10T06:59:18Z",
       "notes": [
          "Primary GPT retrieval file. One row per scene, flattened for semantic search and editorial reasoning.",
          "Includes both scene-level text and attached chapter-level summary/blurb context."

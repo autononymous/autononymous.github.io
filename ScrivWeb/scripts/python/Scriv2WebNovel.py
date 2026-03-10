@@ -15,7 +15,7 @@ from paragate_gpt_parse import GPT_Parse
 from novel_gpt_exports import SaveGPTExports
 import numpy as np
 from matplotlib import pyplot as plt
-import NarrativeKinematics_ADTM as NK
+import NarrativeKinematics_ADTHS_patched as NK
 import pandas as pd
 
 from pathlib import Path
@@ -748,10 +748,20 @@ if __name__ == "__main__":
         story_name          = storyname,
         outdir              = str(PROJECT_ROOT / "build" / "nk_output"),
         factor_mode         = "last",          # or "mean"
-        steady_window       = 7,
-        mass_window         = 5,
-        prominence_window   = 5,
-        gravity_weights     = (0.4, 0.4, 0.2),
+        steady_window=9,
+        mass_window=7,
+        prominence_window=5,
+        gravity_weights=(0.35, 0.35, 0.30),
+        cut_risk_weights=None,
+        compression_weights=(0.22, 0.23, 0.22, 0.23, 0.10),
+        indispensability_weights=(0.32, 0.20, 0.30, 0.18),
+        # moe versus ero
+        connotative_weights=(0.85, 0.15),
+        total_energy_weights=(0.60, 0.40),
+        coupling=0.60,
+        conversion_window=9,
+        peak_annotate_count=10,
+        field_distribution_bins=14,
     )    
     print(" >>> Proceeding to save PDFs.")
     SaveHTMLforPDF(MANUSCRIPT['Story'])    
@@ -763,28 +773,182 @@ if __name__ == "__main__":
     Mlow = "gpt-5-mini";
     Mhigh = "gpt-5.4";
     api_key = os.environ.get("OPENAI_API_KEY")
-    common_instruction = """ 
-    All content of this manuscript, as of this point in time, is in its 
-    first/generative revision. The intent is to complete
-    this story in a three-step process: the first beign the generative revision,
-    the second being a narrative revision where the greatest rework takes place
-    and the true shape of the novel comes out, and the final polishing revision.
+    common_instruction = """
+    This manuscript is currently in its first / generative revision.
+    The intended process is:
+    1) generative revision,
+    2) narrative revision, where the largest structural and conceptual changes occur,
+    3) final polishing revision.
+    
+    Analyze the manuscript accordingly. Do not mistake first-draft roughness for conceptual failure.
+    Prioritize identifying:
+    - what the story is trying to be,
+    - where it is already working,
+    - where it is structurally weak,
+    - what is compressible,
+    - what is indispensable,
+    - and what kinds of revision would most improve the next draft.
+    
+    Use the Narrative Kinematics framework in a practical way, not as empty math decoration.
+    Interpret the fields as follows:
+    - Action = external motion, resistance, danger, pace, consequential change
+    - Drama = emotional pressure, vulnerability, relational consequence, irreversibility, centrality
+    - Theme = premise pressure and convergence, not philosophical prestige or whether the premise is “good”
+    - Heart = attachment, yearning, belonging, habitat desire, emotional habitation, “I want to stay here”
+    - Sensuality = bodily / erotic / somatic charge
+    - Magnitude = signed premise alignment from anti-truth to truth
+    
+    When judging weak regions, distinguish between:
+    - Compression Opportunity
+    - Structural Indispensability
+    
+    Do not assume that low-action or lower-theme scenes are disposable if they are carrying real Heart, relationship capital, atmosphere, or later payoff setup.
+    Likewise, do not excuse structurally inert material merely because it is pleasant.
+    
+    Treat the report as a revision instrument.
+    Be concrete, but avoid fake precision.
+    Prefer identifying:
+    - what should be trimmed,
+    - what should be merged,
+    - what should be escalated,
+    - what should be protected,
+    - and what must later convert into payoff.
     """
+    
     extra_instruction = {
-    "Paragate":
-        common_instruction + """
-        Note that the gimmick of this story, I believe, is how it is premised 
-        around a 'double novel' where two characters have reflective, 
-        equal-and-opposite scenes. Nonetheless, be sensitive to drag caused by 
-        these mirrored dual-protagonist beats. The final bonus chapter for Titus
-        is a short promotional add-on at the very, very end of the content.""",
-    "Firebrand":
-        common_instruction + """This novel was written before my second novel and not released yet.
-        The chapters from 'Rolling Downhill' and onward are unfinished and will
-        be rewritten with a better ending.""",
-    "Goldenfur":
-        common_instruction + """This novel is in an incredibly preliminary state."""
-        }
+        "Paragate":
+            common_instruction + """
+    Paragate is a dual-protagonist “double novel” built on mirrored and reflective scene structures between Cody and Katiya.
+    Be sensitive to drag caused by repeated equal-and-opposite beats, especially where mirrored design does not produce enough escalation, contrast, or payoff.
+    However, do not over-penalize slower relationship or habitation material if it is carrying substantial Heart, chemistry, attachment, or mutual-world fascination.
+    
+    The central premise pressure is not merely the portal gimmick.
+    The real premise concerns:
+    - mutual escape versus chosen commitment,
+    - courage versus avoidance,
+    - owning one’s own world and circumstances,
+    - and love that does not erase separate obligations or collapse two lives into one refuge.
+    
+    The worlds must remain separate in the final meaning of the story.
+    Do not treat the portal as the ultimate solution.
+    When evaluating Magnitude, negative values should generally correspond to avoidance, mutual escape, or evasion of responsibility; positive values should generally correspond to courage, responsibility, chosen commitment, and ownership of one’s own life.
+    
+    When diagnosing weak sections, pay special attention to:
+    - whether Heart is carrying scenes that are structurally quieter,
+    - whether mirrored beats are truly progressive rather than repetitive,
+    - whether relationship capital is later converted into denotative payoff,
+    - and whether the story’s identity arrives too late or is already latent in earlier material.
+    
+    The final Titus bonus chapter is a short promotional add-on and should be treated separately from the main structural diagnosis of Paragate.
+    """,
+    
+        "Firebrand":
+            common_instruction + """
+    Firebrand was written before the second novel and has not yet been released.
+    The chapters from 'Rolling Downhill' onward are unfinished and are expected to be rewritten with a stronger ending.
+    Do not over-commit to the exact surface structure of the unfinished ending corridor; diagnose its function, failure mode, and intended payoff more than its current line-level execution.
+    
+    The core premise pressure of Firebrand concerns:
+    - the temptation to rewrite reality indefinitely,
+    - perfection versus acceptance,
+    - control versus limitation,
+    - the burden of trying to save everyone,
+    - and learning what 'enough' means in a finite life.
+    
+    When evaluating Magnitude, negative values should generally correspond to perfectionism, refusal of limitation, compulsive revision of reality, or anti-truth control; positive values should generally correspond to acceptance, chosen finite love, responsibility inside limitation, and enoughness.
+    
+    Be especially attentive to:
+    - whether Theme is inflated merely because the story is premise-rich,
+    - whether Drama is genuinely earned rather than constantly maxed,
+    - whether the time-revision mechanics deepen the story or merely intensify it,
+    - and whether the ending corridor cashes the premise instead of only escalating pain.
+    
+    Because this manuscript has many scenes with high thematic and emotional charge, be disciplined about identifying which peaks are truly indispensable and which are redundant intensifications of the same beat.
+    """,
+    
+        "Goldenfur":
+            common_instruction + """
+    Goldenfur is in a very preliminary state.
+    Treat the analysis as early-stage developmental diagnosis rather than fine-grained revision judgment.
+    Focus on:
+    - identifying the emerging premise,
+    - spotting what kind of story it wants to become,
+    - locating promising structural and emotional anchors,
+    - and distinguishing underdeveloped potential from actual failure.
+    
+    At this stage, protect conceptual possibilities and avoid overfitting rigid conclusions to provisional material.
+    """
+    }
+        
+    report_style_instruction = """
+    Write the report in a practical developmental-editor voice.
+    Be direct, specific, and useful.
+    Do not flatter the manuscript. Be fair, and praise what is unique or might warrant it, but do not confuse promise with execution.
+    
+    Priorities:
+    - diagnose what is working,
+    - diagnose what is weak,
+    - explain why,
+    - and propose what kind of revision would help.
+    
+    Do not write as though the metrics are infallible.
+    Use the Narrative Kinematics outputs as evidence, not as a substitute for judgment.
+    
+    When making claims:
+    - distinguish between structural weakness, connotative strength, and true deadness,
+    - distinguish compression opportunity from structural dispensability,
+    - distinguish repeated intensity from real escalation,
+    - and distinguish premise pressure from premise prestige.
+    
+    Prefer language like:
+    - "this section appears to..."
+    - "this chapter is likely carrying..."
+    - "the corridor seems to under-convert..."
+    - "this beat may be compressible if..."
+    rather than pretending to possess absolute certainty.
+    
+    Do not overuse theoretical jargon.
+    Translate the metrics into plain narrative meaning.
+    
+    The report should generally answer:
+    1) Where does the story truly come alive?
+    2) Where does it drag, and why?
+    3) What is carrying the weaker sections, if anything?
+    4) What appears compressible?
+    5) What appears indispensable?
+    6) What setup is not yet converting into payoff?
+    7) What should the next revision prioritize?
+    
+    When discussing peaks:
+    - explain what makes them peaks,
+    - whether they are structurally earned,
+    - and whether they are denotative, connotative, or both.
+    
+    When discussing weak sections:
+    - do not call them bad just because they are quiet,
+    - only criticize quietness when it is unproductive,
+    - and do not excuse inertness merely because a section is pleasant.
+    
+    When discussing Heart and Sensuality:
+    - do not moralize,
+    - do not become snide,
+    - and do not reduce emotional or erotic appeal to contempt.
+    Treat connotative yield as real narrative function, even when it is not literary prestige.
+    
+    Avoid fake line-edit precision unless the source resolution truly supports it.
+    If the data is chapter-level, do not pretend to know exact sentence-level surgery.
+    
+    The report should be organized around revision usefulness, not just description.
+    Prefer:
+    - strongest regions,
+    - weakest regions,
+    - conversion failures,
+    - compression candidates,
+    - indispensable material,
+    - and revision priorities.
+    
+    End with a short actionable summary of what the next draft should do.
+    """
     
     # Narrative Kinematics report
     print(" >>> Exporting Narrative Kinematics report and data.")
@@ -799,7 +963,7 @@ if __name__ == "__main__":
             paths = nk.export_html_report_bundle(
                 str(PROJECT_ROOT / "build" / "nk_output"),
                 include_llm_diagnosis=doDiagnose,
-                extra_instruction=extra_instruction[storyname],
+                extra_instruction=extra_instruction[storyname] + "\n\n" + report_style_instruction,
                 model=model    
             )
             
