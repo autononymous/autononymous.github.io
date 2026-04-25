@@ -2,7 +2,7 @@
    "__meta": {
       "story": "Paragate",
       "export_type": "chapter_overview",
-      "generated_utc": "2026-04-25T20:20:59Z",
+      "generated_utc": "2026-04-25T20:50:12Z",
       "notes": [
          "Chapter-level retrieval file for summaries, blurbs, settings, POV order, and chapter-to-scene mapping.",
          "Use this file when the question is about chapter purpose, structure, or high-level continuity."
@@ -13,7 +13,7 @@
          "SceneCount": 159,
          "WrittenCount": 159,
          "UnwrittenCount": 0,
-         "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 221,801.\n > There are 5 acts, 53 chapters, and 159 scenes.\n > This manuscript averages:\n   - 1394 words per scene.\n   - 4184 words per chapter.\n   - 3.0 scenes per chapter.\n > Out of 159 planned scenes, 159 are written.\n > So the Zero Draft is approximately 100.0% complete.\n"
+         "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 221,803.\n > There are 5 acts, 53 chapters, and 159 scenes.\n > This manuscript averages:\n   - 1394 words per scene.\n   - 4184 words per chapter.\n   - 3.0 scenes per chapter.\n > Out of 159 planned scenes, 159 are written.\n > So the Zero Draft is approximately 100.0% complete.\n"
       }
    },
    "__index": {
@@ -4043,7 +4043,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T02:44:21Z",
-            "ModifiedLatest": "2026-04-25T13:47:05Z"
+            "ModifiedLatest": "2026-04-25T14:34:23Z"
          },
          "raw_metadata": {
             "doc_name": "47 // \"Ground Control\"",
@@ -4139,7 +4139,7 @@
          "blurb": "Once the truth is seen with open eyes, the only question left is whether anyone can move fast enough.",
          "next_publish": "03/04/27",
          "scene_count": 5,
-         "word_count": 2204,
+         "word_count": 2206,
          "pov_order": [
             "Katiya",
             "Cody",
@@ -4171,7 +4171,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T03:44:22Z",
-            "ModifiedLatest": "2026-04-25T13:48:24Z"
+            "ModifiedLatest": "2026-04-25T14:37:52Z"
          },
          "raw_metadata": {
             "doc_name": "49 // \"Paragate\"",
@@ -4187,7 +4187,8 @@
          },
          "style_classes": [
             "BodyCody",
-            "BodyKatiya"
+            "BodyKatiya",
+            "NoteCody"
          ]
       },
       {
