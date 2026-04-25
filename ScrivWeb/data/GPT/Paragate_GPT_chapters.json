@@ -2,7 +2,7 @@
    "__meta": {
       "story": "Paragate",
       "export_type": "chapter_overview",
-      "generated_utc": "2026-04-25T20:10:13Z",
+      "generated_utc": "2026-04-25T20:20:59Z",
       "notes": [
          "Chapter-level retrieval file for summaries, blurbs, settings, POV order, and chapter-to-scene mapping.",
          "Use this file when the question is about chapter purpose, structure, or high-level continuity."
@@ -10,10 +10,10 @@
       "manuscript_metadata": {
          "ActCount": 5,
          "ChapterCount": 53,
-         "SceneCount": 165,
-         "WrittenCount": 160,
-         "UnwrittenCount": 5,
-         "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 213,044.\n > There are 5 acts, 53 chapters, and 165 scenes.\n > This manuscript averages:\n   - 1291 words per scene.\n   - 4019 words per chapter.\n   - 3.11 scenes per chapter.\n > Out of 165 planned scenes, 160 are written.\n > So the Zero Draft is approximately 96.9% complete.\n"
+         "SceneCount": 159,
+         "WrittenCount": 159,
+         "UnwrittenCount": 0,
+         "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 221,801.\n > There are 5 acts, 53 chapters, and 159 scenes.\n > This manuscript averages:\n   - 1394 words per scene.\n   - 4184 words per chapter.\n   - 3.0 scenes per chapter.\n > Out of 159 planned scenes, 159 are written.\n > So the Zero Draft is approximately 100.0% complete.\n"
       }
    },
    "__index": {
@@ -4013,7 +4013,7 @@
          "blurb": "On the day everything might change, both worlds decide it's safer to lock their problems down.",
          "next_publish": "02/18/27",
          "scene_count": 4,
-         "word_count": 850,
+         "word_count": 3392,
          "pov_order": [
             "Cody",
             "Katiya",
@@ -4043,7 +4043,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T02:44:21Z",
-            "ModifiedLatest": "2026-03-09T14:09:09Z"
+            "ModifiedLatest": "2026-04-25T13:47:05Z"
          },
          "raw_metadata": {
             "doc_name": "47 // \"Ground Control\"",
@@ -4075,21 +4075,19 @@
          "summary": "Both protagonists fight for one clean chance to be heard. Cody's confession turns his firing into a political problem inside Navidson-Monroe, while Katiya persuades Aryn that the truth matters more than procedure and turns imprisonment into a joint push toward Aldrin. The chapter tests what they have actually learned: not how to escape pressure, but how to move through it without lying to themselves.",
          "blurb": "Some doors open because you're invited. The important ones never do.",
          "next_publish": "02/25/27",
-         "scene_count": 5,
-         "word_count": 212,
+         "scene_count": 4,
+         "word_count": 3373,
          "pov_order": [
             "Cody",
             "Katiya",
             "Cody",
-            "Katiya",
-            "Cody"
+            "Katiya"
          ],
          "scene_ids": [
             "A04C48S01",
             "A04C48S02",
             "A04C48S03",
-            "A04C48S04",
-            "A04C48S05"
+            "A04C48S04"
          ],
          "settings": [
             {
@@ -4108,7 +4106,7 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T03:44:21Z",
-            "ModifiedLatest": "2026-03-09T14:09:09Z"
+            "ModifiedLatest": "2026-04-25T13:47:44Z"
          },
          "raw_metadata": {
             "doc_name": "48 // \"Metanoia\"",
@@ -4141,7 +4139,7 @@
          "blurb": "Once the truth is seen with open eyes, the only question left is whether anyone can move fast enough.",
          "next_publish": "03/04/27",
          "scene_count": 5,
-         "word_count": 206,
+         "word_count": 2204,
          "pov_order": [
             "Katiya",
             "Cody",
@@ -4173,12 +4171,12 @@
          ],
          "history": {
             "CreatedEarliest": "2025-06-01T03:44:22Z",
-            "ModifiedLatest": "2026-03-09T14:09:09Z"
+            "ModifiedLatest": "2026-04-25T13:48:24Z"
          },
          "raw_metadata": {
             "doc_name": "49 // \"Paragate\"",
             "verbose_id": "4.49",
-            "uuid": "195",
+            "uuid": "194",
             "status": "No Status",
             "label": "Paragate",
             "keywords": [],
@@ -4241,7 +4239,7 @@
          "raw_metadata": {
             "doc_name": "50 // \"Knightfall\"",
             "verbose_id": "4.50",
-            "uuid": "201",
+            "uuid": "200",
             "status": "No Status",
             "label": "Paragate",
             "keywords": [],
@@ -4302,7 +4300,7 @@
          "raw_metadata": {
             "doc_name": "51 // \"Daybreak\"",
             "verbose_id": "4.51",
-            "uuid": "206",
+            "uuid": "205",
             "status": "No Status",
             "label": "Paragate",
             "keywords": [],
@@ -4328,19 +4326,13 @@
          "summary": "The epilogue gives Paragate its emotional closure before leaving one quiet fracture open for the future. Cody and Katiya emerge from the battle changed, no longer using each other's worlds as refuge from their own lives, and their relationship finally rests on chosen commitment instead of mutual escape.",
          "blurb": "On the western tower, two silhouettes face what's next.",
          "next_publish": "03/18/27",
-         "scene_count": 4,
+         "scene_count": 1,
          "word_count": 19,
          "pov_order": [
-            "Cody",
-            "Default",
-            "Default",
-            "Default"
+            "Cody"
          ],
          "scene_ids": [
-            "A05C52S01",
-            "A05C52S02",
-            "A05C52S03",
-            "A05C52S04"
+            "A05C52S01"
          ],
          "settings": [
             {
@@ -4364,7 +4356,7 @@
          "raw_metadata": {
             "doc_name": "52 // \"Parasmagate\"",
             "verbose_id": "5.52",
-            "uuid": "210",
+            "uuid": "209",
             "status": "No Status",
             "label": "Paragate",
             "keywords": [],
@@ -4390,17 +4382,13 @@
          "summary": "",
          "blurb": "Titus' past catches up with him.",
          "next_publish": "03/25/27",
-         "scene_count": 3,
+         "scene_count": 1,
          "word_count": 42,
          "pov_order": [
-            "Default",
-            "Default",
             "Default"
          ],
          "scene_ids": [
-            "A05C53S01",
-            "A05C53S02",
-            "A05C53S03"
+            "A05C53S01"
          ],
          "settings": [
             {
@@ -4424,7 +4412,7 @@
          "raw_metadata": {
             "doc_name": "53 // \"Threaded Echoes\"",
             "verbose_id": "5.53",
-            "uuid": "212",
+            "uuid": "211",
             "status": "No Status",
             "label": "Paragate",
             "keywords": [],

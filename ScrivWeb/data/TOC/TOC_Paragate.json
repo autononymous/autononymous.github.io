@@ -2,10 +2,10 @@
    "Metadata": {
       "ActCount": 5,
       "ChapterCount": 53,
-      "SceneCount": 165,
-      "WrittenCount": 160,
-      "UnwrittenCount": 5,
-      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 213,044.\n > There are 5 acts, 53 chapters, and 165 scenes.\n > This manuscript averages:\n   - 1291 words per scene.\n   - 4019 words per chapter.\n   - 3.11 scenes per chapter.\n > Out of 165 planned scenes, 160 are written.\n > So the Zero Draft is approximately 96.9% complete.\n"
+      "SceneCount": 159,
+      "WrittenCount": 159,
+      "UnwrittenCount": 0,
+      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 221,801.\n > There are 5 acts, 53 chapters, and 159 scenes.\n > This manuscript averages:\n   - 1394 words per scene.\n   - 4184 words per chapter.\n   - 3.0 scenes per chapter.\n > Out of 159 planned scenes, 159 are written.\n > So the Zero Draft is approximately 100.0% complete.\n"
    },
    "ChapterList": [
       {
@@ -2321,24 +2321,13 @@
             "Cody",
             "Katiya",
             "Cody",
-            "Katiya",
-            "Cody"
+            "Katiya"
          ],
          "Summary": "Both protagonists fight for one clean chance to be heard. Cody&apos;s confession turns his firing into a political problem inside Navidson-Monroe, while Katiya persuades Aryn that the truth matters more than procedure and turns imprisonment into a joint push toward Aldrin. The chapter tests what they have actually learned: not how to escape pressure, but how to move through it without lying to themselves.",
          "Blurb": "Some doors open because you&apos;re invited. The important ones never do.",
          "Written": true,
          "Release": "02/25/27",
          "Settings": [
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "",
-               "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
-               "Place": "Unspecified"
-            },
             {
                "Date": "",
                "Time": "",
@@ -2569,46 +2558,13 @@
          "ChapterName": "Parasmagate",
          "ChapterNumber": "Fifty-Two",
          "Character": [
-            "Cody",
-            "Default",
-            "Default",
-            "Default"
+            "Cody"
          ],
          "Summary": "The epilogue gives Paragate its emotional closure before leaving one quiet fracture open for the future. Cody and Katiya emerge from the battle changed, no longer using each other&apos;s worlds as refuge from their own lives, and their relationship finally rests on chosen commitment instead of mutual escape.",
          "Blurb": "On the western tower, two silhouettes face what&apos;s next.",
          "Written": true,
          "Release": "03/18/27",
          "Settings": [
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "",
-               "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
-               "Place": "Unspecified"
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "",
-               "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
-               "Place": "Unspecified"
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "",
-               "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
-               "Place": "Unspecified"
-            },
             {
                "Date": "",
                "Time": "",
@@ -2629,8 +2585,6 @@
          "ChapterName": "Threaded Echoes",
          "ChapterNumber": "Fifty-Three",
          "Character": [
-            "Default",
-            "Default",
             "Default"
          ],
          "Summary": "",
@@ -2638,26 +2592,6 @@
          "Written": true,
          "Release": "03/25/27",
          "Settings": [
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "",
-               "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
-               "Place": "Unspecified"
-            },
-            {
-               "Date": "",
-               "Time": "",
-               "ISO": "",
-               "DoSettingTag": "Yes",
-               "Region": "Unspecified",
-               "Area": "Unspecified",
-               "Location": "Unspecified",
-               "Place": "Unspecified"
-            },
             {
                "Date": "",
                "Time": "",

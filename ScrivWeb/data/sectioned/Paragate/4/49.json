@@ -2,7 +2,280 @@
    [
       [
          "BodyKatiya",
-         "Katiya brings Aldrin face-to-face with the reality of the approaching threat, and Jade and Aliaki reinforce what she has forced him to witness. When the Royal Knights arrive, Aldrin calls them off and chooses to bet on Katiya&apos;s madness being the truth. ",
+         "&quot;Your sister killed him! How could you let her go?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;She didn&apos;t kill him,&quot; Erik responds. He grimaces with the tension of the arm that&apos;s twisted behind his back, as two other guards restrain him for a piece of the action.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;Then where are they?&quot; The guard asks. &quot;Your sister was a coward. Then she went nuts! Either a murder-suicide, or a suicide-murder&mdash;&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;Katiya doesn&apos;t run any more,&quot; Aryn shouts. The sound of her voice is still muffled when she&apos;s far shorter than the senior guards, and almost three scores of them have all collected in the room as if the power of inaction will bring Aldrin back. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "The minutes grow uncomfortable as the guards debate whether to find the next-in-line, more disconnected from power than Auvryan peasantry without the birthright to fly, just staring at the perfect spherical divot of missing mass that vanished several layers of the floor, a chunk of the brick wall, Aldrin&apos;s desk, and the two assailants, with a lamp perfectly severed at the base but still floating there: traded for frozen dirt, a cross-sectioned split of a pine tree, an a thin layer of snow that still has flakes falling within the sphere.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "One of the elders finally speaks, breaking the spell of the inexplicable sight of indoor snow.. &quot;Bring up the other two vagrants that came with the blonde bitch. Maybe they&mdash;&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "A soundless burst of air knocks the frontmost guards from their feet, launching them into the others. Even a blink isn&apos;t fast enough for the exchange of space as Aldrin returns with Jade, Aliaki, her two Blackwater refugees, and me, leaning over the desk with his hands planted on the mahogany as his Essenced panic melts the desk&apos;s fine layer of snow.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "He hunches further over an eventual proclamation as the unsevered lamp flickers back on. Erik shakes free of the stunned guards as Aryn slips into view.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "Aryn asks loudly, &quot;what did Katiya show you?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "Aldrin scratches at his salt-and-pepper beard as his eyes flutter across the damp map of Gaffesend. &quot;Miss Katiya showed me something real . . . and not just something real but something horrible, worse than I could have imagined, worse than whatever waits across the ice.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "Erik swallows. &quot;What is it?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;It&apos;s Ahkvasan.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "The guards murmur words of disbelief until one speaks above the others. &quot;But they&apos;re neutral. Even with the regime change.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;They&apos;re far from neutral,&quot; Jade says. &quot;My people have been misled by a campaign of distraction, and they&apos;re coming.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;But it&apos;s so far,&quot; another says. &quot;How many weeks? Or days?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;Hours,&quot; Aldrin says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "The murmurs sharpen to shouts of panic.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;But we can&apos;t watch the East and the West, Aldrin,&quot; says the scoutmaster general. &quot;Northaven only sent enough to repel the west &mdash; and that&apos;s short-term!&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "I watch him assemble the plan on the spot, counting his new allies just as Titus and Sylvia are marshaled into the room. And now he recognizes them, too.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;Rest assured that there is fortune on our side,&quot; he says, his voice still unwavering as the Guards search for strength. &quot;The Gods grace us with an unexpected source of strength. A strength that might just let us hold out.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "He introduces Jade and Aliaki, and  after he orders the other two captured celestials to be released, Titus and Sylvia are given a brief introduction.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;Two Chosen kids. And two Masked foreigners, Aldrin,&quot; the Scoutmaster says. &quot;And some other asset that&apos;s on the way? Chymaeran, you said?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;That&apos;s what we have,&quot; he says. &quot;And then the three regiments from Northaven&mdash;about a hundred and fifty men. And then our sixty-five Royal Guards . . . including the new trainees, of course.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;Against what?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;I don&apos;t know. And yet the Chymaeran faction to the East puts us on highest alert,&quot; he says, pulling at the joints of his fingers until his knuckles turn white. &quot;We can&apos;t risk the chance of collusion when we no longer know the Ahkvasa. So I will guide this offensive, but I will remain focused to the east as I always have.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;Then who will lead?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "He lets the silence hang: not one of his tactical pauses to charge strength into his words, and after a while, we realize he simply doesn&apos;t know.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "Yet nobody offers. And even his generals hesitate to step forward.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;There&apos;s only one of us that knows the most, and has thought about this, and has planned for this, and I&apos;m still not sure how they fit into the equation.&quot; The guards stare at Aldrin as I&apos;m facing his audience. It&apos;s sometime before or after his next action that their eyes all fall on me.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;The foreign Masks said that Katiya has been their coordinator this entire time. She quartered the other two masks, and had been planning an offensive while we refused to listen.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "They scoff. &quot;A dropout?&quot; One calls. &quot;You&apos;re going to enlist a dropout?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;We don&apos;t have the luxury of time right now, and information is more valuable than prejudice.&quot; Aldrin gestures to his most senior generals, along with Aryn and Erik. &quot;You will convene and enact the best version of Katiya&apos;s plan. You will listen to her. And to the rest of you: prepare Blackwater for siege. This is not a drill.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "The others rush from the room, scratching their pauldrons on the double-wide doorframe. Signals blast over secured talking wires, reaching the bases at the ends of the lake, as three short blasts of a siren tell the civilians to shelter as they&apos;ve been trained.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "Aldrin turns to me, and across my shoulders, he places the mark of an ensign. &quot;It seems you&apos;ve been handed a final test instead of a certain tribunal. You&apos;re lucky that we need you.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;Sir, yes sir,&quot; I say, three words I thought I&apos;d never need together again.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "He grabs two handfuls of the thin cloak I scrounged before jumping out the window. &quot;Listen to me, Katiya: share everything you know to our senior officers. Be concise.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "I say, &quot;Sir&mdash;&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;You were brave to pull that stunt. Keep that courage alive,&quot; he says, pushing me towards the Senior officers as I try to catch my breath.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "He shouts one last thing.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;And don&apos;t you dare fucking choke!&quot;",
          true,
          false,
          false
@@ -18,7 +291,350 @@
    [
       [
          "BodyCody",
-         "Cody drives home in his suit with his father&apos;s technician shirt over it, unsure whether his presentation changed anything. What he does know is that Katiya still needs him, and that is enough to make his next decision. ",
+         "The phalanx of overtime HR employees guides me down the elevator as I try to catch my breath. They&apos;re kind enough to help me carry the case, and when I get to my car, they usher me towards the gate, demanding my badge after I scan it at the toll one last time.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Good luck out there,&quot; says the one that first arrived at the Aspen conference room in the middle of my presentation.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Thanks,&quot; I say. &quot;And thanks to you guys for letting me finish.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Navidson needs more talent like you,&quot; a recruiter says. &quot;Cool project. I hope you&apos;ll be back.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I guess we&apos;ll have to see,&quot; I say, and when the long striped arm of the toll bar raises to the top, I tear out of Navidson with the last piece of my brother&apos;s namesake in the back, wearing my father&apos;s thick technician shirt as a jacket over my formal clothes.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I think it went well. Or at least I hope it went well, and when Mom calls over the car&apos;s hands-free system, I tell my mother and father all about it.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I&apos;m pulling into the neighborhood when their response first crackles over the old speakers. &quot;Well, you took your shot,&quot; says my old man.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;We&apos;re proud of you,&quot; Mom says. &quot;But I&apos;d still send more rsums.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "They nag me over employment a little further, filling me with just enough fear of god to remember the townhouse at stake.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I&apos;ll call you later,&quot; I say, as I pull into the garage, unable to discern the strange noise coming from inside. It sounds like someone&apos;s car is going off  in their garage, and when I enter the house with the case dragging behind me, I realize it&apos;s from Katiya&apos;s side.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "It sounds like pulses of the alarm system: not the short, single burst that tells the laborers that it&apos;s time to go home. Both doors are ajar, and I hear a lot of commotion coming from her side.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I hardly notice her sitting there at my window until she shifts a little. The left shade is drawn, and while she tries to steady the tremble in her right hand that holds the walkie-talkie, the fine dusting of snow mesmerizes her.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I struggle to guess at all she&apos;s thinking when she doesn&apos;t even notice me come in the door. I expected her to be gone, and without my own words, I approach her.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "A decorated short cape hangs over the chair, embellished with the markings of an officer, but when I get closer, I see she wears it over a tattered commoner&apos;s cloak.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I can sense the tremor without having to touch her, from how she pulses her palms to recirculate the blood back into her extremities, drawing short breaths without the space to talk.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I pull up another folding chair, and as soon as I sit next to her, she lowers her head against my shoulder.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I put my arm around her. She feels so cold despite the gift of fire I thought would forever keep her warm, and as I draw her closer, she mutters the first words.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Did you do it?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Yeah,&quot; I say. &quot;And you?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "The tightness of her grasp around my waist speaks in lieu of a response. She hands me the walkie-talkie, pressing the call button to test its power. The speaker chirps louder than the droning sirens a world over.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I&apos;m not over here to run away,&quot; she says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Of course not,&quot; I say.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;There are so many people depending on me. And I&apos;m so afraid,&quot; she musters.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I get it,&quot; I say.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;But not of failure.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Of course not,&quot; I repeat. &quot;I&apos;m proud of how much we&apos;ve grown together. I&apos;ll be scared, too, to face an enemy like that.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;That&apos;s not what it is, either,&quot; she says. &quot;And what do you mean, you&apos;ll be scared?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I mean, I would be scared,&quot; I say, quickly changing the subject. &quot;Then what are you afraid of, if it&apos;s not friends or enemies?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;It&apos;s what I have to lose,&quot; she says, and  she pulls her chair closer to mine. &quot;Not friends or enemies, but something stronger.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I smile. &quot;Then let&apos;s shut the door forever,&quot; I say, struggling to read my own words as sarcasm. &quot;You can stay here forever. Never have to see war again. Live a life so slow it pains you from how boring it is.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I finally get a smile from her. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "She says, &quot;or maybe if your plans fall through, you can become an adventurer with me&quot; she says. &quot;I&apos;ll never let anyone hurt you.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I&apos;m sure you would,&quot; I say, and I feel the exhaustion finally overtake me. There&apos;s a feeling I thought I lost a long time ago that glows in my chest. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;But I like it here,&quot; I say. &quot;Hell, I think I even love it here again.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "She nods in agreement.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "We sit in silence until the longing fades, left with a single question we haven&apos;t answered since the beginning.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;How will we destroy it?&quot; I ask.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I don&apos;t think there will be a &apos;we,&apos; Cody,&quot; Katiya says. She swallows. &quot;There&apos;s you, a lighter, a fuse. And a bag of dead Essence on my counter I&apos;ve kept around since the beginning.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;But what about the others?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;There won&apos;t be anyone around,&quot; she says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;And the fire?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Fire doesn&apos;t spread across the portal,&quot; she says. &quot;I tested it.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;And what if I&apos;m the one to lose?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I don&apos;t know,&quot; she says. &quot;But then we&apos;ll both be around to figure it out.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "My stomach twists, mostly because of what I haven&apos;t told her. I turn the walkie-talkie over on my hands: one of ten I purchased at Cabela&apos;s on a drive home from work.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;That&apos;s for you to listen in, to blow it in case it all goes south.&quot; She points to the rules: the one that we amended.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "03. NO ONE ELSE CAN CROSS THE THRESHOLD. (UNLESS THEY CAN CROSS THE THRESHOLD)",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;You should know that sheet of paper is useless by now,&quot; I tell her, grasping her chin to pull her closer. &quot;We couldn&apos;t even follow the biggest one.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "She bites my ear.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;And we&apos;ll break it a lot more when this is over,&quot; she whispers.",
          true,
          false,
          false

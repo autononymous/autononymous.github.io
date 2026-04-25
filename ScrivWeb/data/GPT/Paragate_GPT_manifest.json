@@ -1,18 +1,18 @@
 {
    "story": "Paragate",
-   "generated_utc": "2026-04-25T20:10:13Z",
+   "generated_utc": "2026-04-25T20:20:59Z",
    "metadata": {
       "ActCount": 5,
       "ChapterCount": 53,
-      "SceneCount": 165,
-      "WrittenCount": 160,
-      "UnwrittenCount": 5,
-      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 213,044.\n > There are 5 acts, 53 chapters, and 165 scenes.\n > This manuscript averages:\n   - 1291 words per scene.\n   - 4019 words per chapter.\n   - 3.11 scenes per chapter.\n > Out of 165 planned scenes, 160 are written.\n > So the Zero Draft is approximately 96.9% complete.\n"
+      "SceneCount": 159,
+      "WrittenCount": 159,
+      "UnwrittenCount": 0,
+      "Summary": "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n     SUMMARY FOR STORY \"Paragate\" by SavantGuarde:\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n > Word count is 221,801.\n > There are 5 acts, 53 chapters, and 159 scenes.\n > This manuscript averages:\n   - 1394 words per scene.\n   - 4184 words per chapter.\n   - 3.0 scenes per chapter.\n > Out of 159 planned scenes, 159 are written.\n > So the Zero Draft is approximately 100.0% complete.\n"
    },
    "counts": {
       "chapters": 53,
-      "scenes": 165,
-      "words": 156816
+      "scenes": 159,
+      "words": 164517
    },
    "files": {
       "prose": "Paragate_GPT.json",

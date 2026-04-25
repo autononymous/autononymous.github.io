@@ -2,7 +2,7 @@
    "__meta": {
       "story": "Paragate",
       "export_type": "scene_flat",
-      "generated_utc": "2026-04-25T20:10:13Z",
+      "generated_utc": "2026-04-25T20:20:59Z",
       "notes": [
          "Primary GPT retrieval file. One row per scene, flattened for semantic search and editorial reasoning.",
          "Includes both scene-level text and attached chapter-level summary/blurb context."
@@ -155,26 +155,20 @@
          "A04C48S02": 142,
          "A04C48S03": 143,
          "A04C48S04": 144,
-         "A04C48S05": 145,
-         "A04C49S01": 146,
-         "A04C49S02": 147,
-         "A04C49S03": 148,
-         "A04C49S04": 149,
-         "A04C49S05": 150,
-         "A04C50S01": 151,
-         "A04C50S02": 152,
-         "A04C50S03": 153,
-         "A04C50S04": 154,
-         "A04C51S01": 155,
-         "A04C51S02": 156,
-         "A04C51S03": 157,
-         "A05C52S01": 158,
-         "A05C52S02": 159,
-         "A05C52S03": 160,
-         "A05C52S04": 161,
-         "A05C53S01": 162,
-         "A05C53S02": 163,
-         "A05C53S03": 164
+         "A04C49S01": 145,
+         "A04C49S02": 146,
+         "A04C49S03": 147,
+         "A04C49S04": 148,
+         "A04C49S05": 149,
+         "A04C50S01": 150,
+         "A04C50S02": 151,
+         "A04C50S03": 152,
+         "A04C50S04": 153,
+         "A04C51S01": 154,
+         "A04C51S02": 155,
+         "A04C51S03": 156,
+         "A05C52S01": 157,
+         "A05C53S01": 158
       },
       "chapter_to_scene_ids": {
          "A01C01": [
@@ -416,8 +410,7 @@
             "A04C48S01",
             "A04C48S02",
             "A04C48S03",
-            "A04C48S04",
-            "A04C48S05"
+            "A04C48S04"
          ],
          "A04C49": [
             "A04C49S01",
@@ -438,15 +431,10 @@
             "A04C51S03"
          ],
          "A05C52": [
-            "A05C52S01",
-            "A05C52S02",
-            "A05C52S03",
-            "A05C52S04"
+            "A05C52S01"
          ],
          "A05C53": [
-            "A05C53S01",
-            "A05C53S02",
-            "A05C53S03"
+            "A05C53S01"
          ]
       },
       "pov_to_scene_ids": {
@@ -519,7 +507,6 @@
             "A04C47S03",
             "A04C48S01",
             "A04C48S03",
-            "A04C48S05",
             "A04C49S02",
             "A04C49S04",
             "A04C50S01",
@@ -614,12 +601,7 @@
             "A04C51S03"
          ],
          "Default": [
-            "A05C52S02",
-            "A05C52S03",
-            "A05C52S04",
-            "A05C53S01",
-            "A05C53S02",
-            "A05C53S03"
+            "A05C53S01"
          ]
       },
       "location_to_scene_ids": {
@@ -10061,7 +10043,7 @@
          },
          "setting_text": "Colorado | Hearthland Ridge | 2026-11-30 | 19:40:00",
          "history": {
-            "Created": "2025-11-07T21:52:15Z",
+            "Created": "2025-11-07T20:52:15Z",
             "Modified": "2026-03-09T14:09:09Z"
          },
          "status": "No Status",
@@ -10488,7 +10470,7 @@
          },
          "setting_text": "Colorado | Evergreen Estates | Cody's House | 2026-12-08 | 00:00:00",
          "history": {
-            "Created": "2025-11-21T01:51:59Z",
+            "Created": "2025-11-21T00:51:59Z",
             "Modified": "2026-03-09T14:09:09Z"
          },
          "status": "No Status",
@@ -11522,7 +11504,7 @@
          },
          "setting_text": "Colorado | Hearthland Ridge | Dietz Park Estates | 00:00:00",
          "history": {
-            "Created": "2025-12-16T18:22:01Z",
+            "Created": "2025-12-16T17:22:01Z",
             "Modified": "2026-03-09T14:09:09Z"
          },
          "status": "No Status",
@@ -11848,7 +11830,7 @@
          },
          "setting_text": "Colorado | Evergreen Estates | Cody's House | 00:00:00",
          "history": {
-            "Created": "2025-12-18T11:42:07Z",
+            "Created": "2025-12-18T10:42:07Z",
             "Modified": "2026-03-09T14:09:09Z"
          },
          "status": "No Status",
@@ -11893,7 +11875,7 @@
          },
          "setting_text": "Colorado | Evergreen Estates | Cody's House",
          "history": {
-            "Created": "2025-12-23T21:16:25Z",
+            "Created": "2025-12-23T20:16:25Z",
             "Modified": "2026-03-09T14:09:09Z"
          },
          "status": "No Status",
@@ -12129,7 +12111,7 @@
          },
          "setting_text": "Colorado | Hearthland Ridge | Dunsmore Family Home",
          "history": {
-            "Created": "2026-01-11T14:23:58Z",
+            "Created": "2026-01-11T13:23:58Z",
             "Modified": "2026-03-09T14:09:09Z"
          },
          "status": "No Status",
@@ -12439,7 +12421,7 @@
          },
          "setting_text": "Valenseia | Holmfirth | Outskirts",
          "history": {
-            "Created": "2026-02-01T19:31:26Z",
+            "Created": "2026-02-01T18:31:26Z",
             "Modified": "2026-03-09T14:09:09Z"
          },
          "status": "No Status",
@@ -12601,7 +12583,7 @@
          },
          "setting_text": "Colorado | Evergreen Estates | Cody's House",
          "history": {
-            "Created": "2026-02-16T14:04:56Z",
+            "Created": "2026-02-16T13:04:56Z",
             "Modified": "2026-03-09T14:09:09Z"
          },
          "status": "No Status",
@@ -12711,7 +12693,7 @@
          "uuid": "186",
          "pov": "Katiya",
          "written": true,
-         "word_count": 41,
+         "word_count": 837,
          "setting": {
             "Date": "",
             "Time": "",
@@ -12743,9 +12725,28 @@
             "BodyKatiya"
          ],
          "text_blocks": [
-            "Katiya wakes to find Royal Guard surrounding her home in a blizzard, taking her in as a flight risk \"for her own safety.\" When she tries to escape, Erik catches her and becomes the first barrier she cannot simply outrun."
+            "The chill of an open window isn't the first sensation I feel when I wake. Maybe I stirred a little between frames of a dream when he rose to go to work — cracking a window since my small bedroom was warm without Cody's creature comforts of conditioned air — all I really remember is the pronouncement of how he loves me, no matter how this story ends.",
+            "The first sensation is sound: hearing the raucous crash of something heavy before I planned to wake. The knocker stopped rapping my door after the incident in Hillfar. And usually, Titus and Sylvia are so silent that I hardly hear them before the morning begins.",
+            "I think it's another break-in before I hear the voices announce themselves in the early hours. I could only presume they'd be smitten by the immeasurable power of the refugees, but when I don't hear an answer, I know exactly what's going on.",
+            "An inclement blizzard glows with enough of the morning light for me to look down and notice I'm not wearing anything. The commotion grows  downstairs as my eyes refuse to leave the round door handle: familiar voices that aren't my allies, but familiar from somewhere else, and as I throw the nearest pair of civilian clothes on, the only thing I can think of is the meeting I promised  Jade and Aliaki before danger befalls Gaffesend.",
+            "I wear enough to run, without even the shoes downstairs to keep my feet warm, deciding I'll rely instead on the Essence to melt the snow beneath my feet. I curse and I struggle with words that don't even belong to my world, throwing the window open further as flakes filter in, searching the room for the small sphere that vibrates with otherworldly energy.",
+            "Fuck, where is it?",
+            "I check beneath Cody's clothes. I check the corner, I check the bathroom and the vanity, and just when I turn to find it next to Cody's little music box, the door handle turns gingerly.",
+            "It's then that I make the choice on Rayna's gambit before I can even think. I eye the window still fluttering with drapes, trying to remember the landscape below and where the latticed garden fence terminates in sharp spears, but I don't have the time.",
+            "My heart pulses, and I decide to move instead of hesitate, just as the sound of my footfalls brings the intruders to bash the door open in splinters. The cloak that once hid my shame in the beginning flutters behind me as my bare feet take three long strides toward the windowsill, trying to calculate how I'll shape my body to fit through the small window as I haven't even the mental space to think of how I'll land.",
+            "\"Katiya, stop!\" My brother yells, and then the rage of betrayal makes me not even care how I'll resolve the next few seconds. I throw myself through the window as his fingers tangle between the fabric of the cloak. It's only when half my body is beyond the threshold of the window that I see Titus and Sylvia being marshalled by the Royal Guard, and I catch a sudden source of slack in the cape I thought might keep me warm.",
+            "\"Gods damn it, Katiya,\" Erik says, as the sudden slack makes me flip forwards and slam against the wooden siding.",
+            "I see a constellation of stars like Cody's little lights beneath the fabric when my head hits the wall. I choke in the pocket of recycled air, thrashing as I struggle for enough breath to curse him.",
+            "And I find it.",
+            "\"You're killing everyone, Erik!\" I manage. \"You have to let me—\" and I begin to choke on the fabric as he tries to pull back in the window. I free my left arm, grabbing the canvas noose to try to free my throat before I draw the breath to remove my other arm.",
+            "\"You're going to get yourself killed, Katiya,\" he says. \"Bertram wasn't your fault!\"",
+            "\"This isn't about Bertram,\" I manage on a rasping exhale. \"They're coming.\" I tuck my arm further through the sleeve, and eventually my chin is the only thing hanging as I near the windowsill: playing dead-fish tug-of-war with a few other guards that try to help Erik even the odds.",
+            "And then I slip through the fabric wearing summer clothes. The Essence scalds my circuits enough to evaporate the snowflakes as I collapse into the snowdrift, springing to my feet to try to run as I feel the sphere still swirling in my pocket.",
+            "And then I realize why Titus and Sylvia never tried to protest.",
+            "Twenty guards stand watch over the small terrace, forming a wall with their plated armor. Two of them grab my arms to bind my wrists as Erik pulls up the last of the cloak, peeking out the window.",
+            "\"You're not a deserter here. You're being held until you can stand tribunal,\" he cries in relief. \"This is for your own protection.\""
          ],
-         "full_text": "Katiya wakes to find Royal Guard surrounding her home in a blizzard, taking her in as a flight risk \"for her own safety.\" When she tries to escape, Erik catches her and becomes the first barrier she cannot simply outrun."
+         "full_text": "The chill of an open window isn't the first sensation I feel when I wake. Maybe I stirred a little between frames of a dream when he rose to go to work — cracking a window since my small bedroom was warm without Cody's creature comforts of conditioned air — all I really remember is the pronouncement of how he loves me, no matter how this story ends.\n\nThe first sensation is sound: hearing the raucous crash of something heavy before I planned to wake. The knocker stopped rapping my door after the incident in Hillfar. And usually, Titus and Sylvia are so silent that I hardly hear them before the morning begins.\n\nI think it's another break-in before I hear the voices announce themselves in the early hours. I could only presume they'd be smitten by the immeasurable power of the refugees, but when I don't hear an answer, I know exactly what's going on.\n\nAn inclement blizzard glows with enough of the morning light for me to look down and notice I'm not wearing anything. The commotion grows  downstairs as my eyes refuse to leave the round door handle: familiar voices that aren't my allies, but familiar from somewhere else, and as I throw the nearest pair of civilian clothes on, the only thing I can think of is the meeting I promised  Jade and Aliaki before danger befalls Gaffesend.\n\nI wear enough to run, without even the shoes downstairs to keep my feet warm, deciding I'll rely instead on the Essence to melt the snow beneath my feet. I curse and I struggle with words that don't even belong to my world, throwing the window open further as flakes filter in, searching the room for the small sphere that vibrates with otherworldly energy.\n\nFuck, where is it?\n\nI check beneath Cody's clothes. I check the corner, I check the bathroom and the vanity, and just when I turn to find it next to Cody's little music box, the door handle turns gingerly.\n\nIt's then that I make the choice on Rayna's gambit before I can even think. I eye the window still fluttering with drapes, trying to remember the landscape below and where the latticed garden fence terminates in sharp spears, but I don't have the time.\n\nMy heart pulses, and I decide to move instead of hesitate, just as the sound of my footfalls brings the intruders to bash the door open in splinters. The cloak that once hid my shame in the beginning flutters behind me as my bare feet take three long strides toward the windowsill, trying to calculate how I'll shape my body to fit through the small window as I haven't even the mental space to think of how I'll land.\n\n\"Katiya, stop!\" My brother yells, and then the rage of betrayal makes me not even care how I'll resolve the next few seconds. I throw myself through the window as his fingers tangle between the fabric of the cloak. It's only when half my body is beyond the threshold of the window that I see Titus and Sylvia being marshalled by the Royal Guard, and I catch a sudden source of slack in the cape I thought might keep me warm.\n\n\"Gods damn it, Katiya,\" Erik says, as the sudden slack makes me flip forwards and slam against the wooden siding.\n\nI see a constellation of stars like Cody's little lights beneath the fabric when my head hits the wall. I choke in the pocket of recycled air, thrashing as I struggle for enough breath to curse him.\n\nAnd I find it.\n\n\"You're killing everyone, Erik!\" I manage. \"You have to let me—\" and I begin to choke on the fabric as he tries to pull back in the window. I free my left arm, grabbing the canvas noose to try to free my throat before I draw the breath to remove my other arm.\n\n\"You're going to get yourself killed, Katiya,\" he says. \"Bertram wasn't your fault!\"\n\n\"This isn't about Bertram,\" I manage on a rasping exhale. \"They're coming.\" I tuck my arm further through the sleeve, and eventually my chin is the only thing hanging as I near the windowsill: playing dead-fish tug-of-war with a few other guards that try to help Erik even the odds.\n\nAnd then I slip through the fabric wearing summer clothes. The Essence scalds my circuits enough to evaporate the snowflakes as I collapse into the snowdrift, springing to my feet to try to run as I feel the sphere still swirling in my pocket.\n\nAnd then I realize why Titus and Sylvia never tried to protest.\n\nTwenty guards stand watch over the small terrace, forming a wall with their plated armor. Two of them grab my arms to bind my wrists as Erik pulls up the last of the cloak, peeking out the window.\n\n\"You're not a deserter here. You're being held until you can stand tribunal,\" he cries in relief. \"This is for your own protection.\""
       },
       {
          "id": "A04C47S03",
@@ -12760,7 +12761,7 @@
          "uuid": "187",
          "pov": "Cody",
          "written": true,
-         "word_count": 38,
+         "word_count": 1047,
          "setting": {
             "Date": "",
             "Time": "",
@@ -12774,7 +12775,7 @@
          "setting_text": "",
          "history": {
             "Created": "2026-03-07T21:33:33Z",
-            "Modified": "2026-03-09T14:09:09Z"
+            "Modified": "2026-04-25T13:47:05Z"
          },
          "status": "No Status",
          "label": "Planned content",
@@ -12792,9 +12793,44 @@
             "BodyCody"
          ],
          "text_blocks": [
-            "Cody changes into his suit and tries to slip upward toward the conference room, but his badge fails and HR intercepts him before he can get there. His plan to move quietly turns into a formal containment."
+            "The monkey suit strangles me when I wrangle it on in a narrow stall of the technician's washroom. The stench of shit and cigarettes makes it hard to clock if I've applied too much cologne — and after the mirror got punched out by a man called Brucifer, I have to balance my phone on the seat cover holder to make sure my tie is straight.",
+            "But the tight collar offers a feeling of protection, dressing even nicer than I did as an engineer. The coolant-stained work shirt sits in a pungent pouch of the briefcase I'm carrying, along with the cologne sampler and some deodorant as I try to plan my egress, thirty minutes early to the end of my shift.",
+            "My neck strains from spending seven-and-a-half hours looking over my shoulder, more sensitive to axe-talk than a pine tree in the middle of a ski run. But I made it this far: by now, Kei should have left the pelican case at the top of the tower, and all that's left is to ascend.",
+            "I leave the washroom wearing an outfit I've only worn once before. The shop is warm despite the winter's cold, and whether it's from the nerves or long sleeves and pants, I can already feel myself sweat.",
+            "It's only times like these that you realize how many unfamiliar faces walk these halls. Every white-collared stranger is a threat, like those flesh walkers in Katiya's world — and I'm waiting for that tell of recognition as I try to slip between them, racking my mind for a memory of the office layout.",
+            "It's a quick pass through the engineering wing, through the cubicle farm, then out the door to the Aero building's glass elevator instead of racing my way through the lower floors. Then thirty minutes until it begins, and in that time I figure it out from there, since the engineers never decided on a conference room.",
+            "I climb a familiar set of grated metal stairs to rise to the battery division's mezzanine. Peering in the window, I find Reed's desk empty, even though he promised me that he'd be there.",
+            "I scan my keycard. The light flashes red. I scan it again, and as I try it a third time, I feel my smart watch vibrate on my wrist.",
+            "It's not a text.",
+            "It's a call from Reed.",
+            "I curse as I fumble through my pockets to find my gym earbuds to pop in an ear. Cornered in a high position, I rush back down the stairs as my mind scrambles over an alternate route, waiting for the call to connect when this building is a fucking Faraday cage.",
+            "It stops ringing.",
+            "\"Reed?\" I ask.",
+            "No answer. But I can hear a rustling.",
+            "My grasp tightens on the briefcase. I can feel the eyes of everyone in the midday shuffle as I decide I'll go for the rear warehouse door instead of going through Engineering.",
+            "I hear distant voices over the call. \"He tried to use his badge at the engineering door. He didn't leave! He's still in the building.\"",
+            "My heart pulses. The technicians jeer at me when they see a suit with such high blood pressure.",
+            "\"Get Security,\" a voice demands. \"We have our witness. Now he needs to sign the form.\"",
+            "The badge is useless to me. I decide to dart down a dead-end hallway and scan the badge half-a-dozen more times before pitching it in the trash and rapidly retracing my steps, turning the corner in my disguise as two HR goons take the bait.",
+            "Government contracts means a hefty budget for guards, and I realize I'm far from safety as three more uniforms look down at their phones while scanning the crowd, ten yards ahead of me, right in front of the only cardless door.",
+            "I feel a meaty hand on my collar, and it startles me until I realize it's too calloused to be an office worker.",
+            "He pulls me through the blue-plastic weld shop curtain. His knuckles are bloody: surely from punching the mirror in the break room, but he's my dad's best friend.",
+            "\"Are you stuck, kid?\" Bruce asks me. \"Your dad told me about your stupid plan.\"",
+            "\"I can't get to the Aero wing,\" I say, but he coaxes me towards a large metal weldment: one of the battery enclosures I helped design.",
+            "\"This has to go to second-story inspection for tomorrow,\" he says, and he opens the door of the cabinet: its guts still unfilled with wires.",
+            "\"You don't mean—\"",
+            "\"Kid, I stopped giving two fucks about OSHA when those office pukes stopped buying us gloves,\" he says.",
+            "I step inside, expecting the hydraulic forklift to hoist the battery cabinet like an elevator, but the whir of something else makes my stomach turn harder.",
+            "I fall to the floor of the cabinet as the bridge crane hoists the metal box two stores into the air. Through the vents, I see the three guards refuse to leave the door: my employee profile picture on their screens as Brucifer hoists the cabinet to the engineering wing's inspection balcony.",
+            "I see stars when my head slams against the steel: not enough to concuss, but enough to stun, as the ringing in my ears fades out to the fifteen-minute mark of Reed's call.",
+            "\"The floor,\" they say. \"He's on the floor. The rear door is blocked: either you catch him, or the gate guard stops him.\"",
+            "Brucifer sets the enclosure gently on the painted target. I peek through the door like a nerd hiding in a high school locker, and when the huge weldment settles, I race for the only badge-free door in the engineering wing.",
+            "The door opens.",
+            "I rub the back of my head as I speed-walk through a familiar set of cubicles. The exit is right past the Aspen conference room, and though I hear a commotion, I decide to make a break for it, accelerating my footfalls as the sound over my headphones begins to mesh with the voices in the room.",
+            "It's too late to respond when the director of Human Resources exits the room, finding her mark standing right in front of her.",
+            "\"Looking sharp today, Mr. Dunsmore,\" she says. \"Where are you headed?\""
          ],
-         "full_text": "Cody changes into his suit and tries to slip upward toward the conference room, but his badge fails and HR intercepts him before he can get there. His plan to move quietly turns into a formal containment."
+         "full_text": "The monkey suit strangles me when I wrangle it on in a narrow stall of the technician's washroom. The stench of shit and cigarettes makes it hard to clock if I've applied too much cologne — and after the mirror got punched out by a man called Brucifer, I have to balance my phone on the seat cover holder to make sure my tie is straight.\n\nBut the tight collar offers a feeling of protection, dressing even nicer than I did as an engineer. The coolant-stained work shirt sits in a pungent pouch of the briefcase I'm carrying, along with the cologne sampler and some deodorant as I try to plan my egress, thirty minutes early to the end of my shift.\n\nMy neck strains from spending seven-and-a-half hours looking over my shoulder, more sensitive to axe-talk than a pine tree in the middle of a ski run. But I made it this far: by now, Kei should have left the pelican case at the top of the tower, and all that's left is to ascend.\n\nI leave the washroom wearing an outfit I've only worn once before. The shop is warm despite the winter's cold, and whether it's from the nerves or long sleeves and pants, I can already feel myself sweat.\n\nIt's only times like these that you realize how many unfamiliar faces walk these halls. Every white-collared stranger is a threat, like those flesh walkers in Katiya's world — and I'm waiting for that tell of recognition as I try to slip between them, racking my mind for a memory of the office layout.\n\nIt's a quick pass through the engineering wing, through the cubicle farm, then out the door to the Aero building's glass elevator instead of racing my way through the lower floors. Then thirty minutes until it begins, and in that time I figure it out from there, since the engineers never decided on a conference room.\n\nI climb a familiar set of grated metal stairs to rise to the battery division's mezzanine. Peering in the window, I find Reed's desk empty, even though he promised me that he'd be there.\n\nI scan my keycard. The light flashes red. I scan it again, and as I try it a third time, I feel my smart watch vibrate on my wrist.\n\nIt's not a text.\n\nIt's a call from Reed.\n\nI curse as I fumble through my pockets to find my gym earbuds to pop in an ear. Cornered in a high position, I rush back down the stairs as my mind scrambles over an alternate route, waiting for the call to connect when this building is a fucking Faraday cage.\n\nIt stops ringing.\n\n\"Reed?\" I ask.\n\nNo answer. But I can hear a rustling.\n\nMy grasp tightens on the briefcase. I can feel the eyes of everyone in the midday shuffle as I decide I'll go for the rear warehouse door instead of going through Engineering.\n\nI hear distant voices over the call. \"He tried to use his badge at the engineering door. He didn't leave! He's still in the building.\"\n\nMy heart pulses. The technicians jeer at me when they see a suit with such high blood pressure.\n\n\"Get Security,\" a voice demands. \"We have our witness. Now he needs to sign the form.\"\n\nThe badge is useless to me. I decide to dart down a dead-end hallway and scan the badge half-a-dozen more times before pitching it in the trash and rapidly retracing my steps, turning the corner in my disguise as two HR goons take the bait.\n\nGovernment contracts means a hefty budget for guards, and I realize I'm far from safety as three more uniforms look down at their phones while scanning the crowd, ten yards ahead of me, right in front of the only cardless door.\n\nI feel a meaty hand on my collar, and it startles me until I realize it's too calloused to be an office worker.\n\nHe pulls me through the blue-plastic weld shop curtain. His knuckles are bloody: surely from punching the mirror in the break room, but he's my dad's best friend.\n\n\"Are you stuck, kid?\" Bruce asks me. \"Your dad told me about your stupid plan.\"\n\n\"I can't get to the Aero wing,\" I say, but he coaxes me towards a large metal weldment: one of the battery enclosures I helped design.\n\n\"This has to go to second-story inspection for tomorrow,\" he says, and he opens the door of the cabinet: its guts still unfilled with wires.\n\n\"You don't mean—\"\n\n\"Kid, I stopped giving two fucks about OSHA when those office pukes stopped buying us gloves,\" he says.\n\nI step inside, expecting the hydraulic forklift to hoist the battery cabinet like an elevator, but the whir of something else makes my stomach turn harder.\n\nI fall to the floor of the cabinet as the bridge crane hoists the metal box two stores into the air. Through the vents, I see the three guards refuse to leave the door: my employee profile picture on their screens as Brucifer hoists the cabinet to the engineering wing's inspection balcony.\n\nI see stars when my head slams against the steel: not enough to concuss, but enough to stun, as the ringing in my ears fades out to the fifteen-minute mark of Reed's call.\n\n\"The floor,\" they say. \"He's on the floor. The rear door is blocked: either you catch him, or the gate guard stops him.\"\n\nBrucifer sets the enclosure gently on the painted target. I peek through the door like a nerd hiding in a high school locker, and when the huge weldment settles, I race for the only badge-free door in the engineering wing.\n\nThe door opens.\n\nI rub the back of my head as I speed-walk through a familiar set of cubicles. The exit is right past the Aspen conference room, and though I hear a commotion, I decide to make a break for it, accelerating my footfalls as the sound over my headphones begins to mesh with the voices in the room.\n\nIt's too late to respond when the director of Human Resources exits the room, finding her mark standing right in front of her.\n\n\"Looking sharp today, Mr. Dunsmore,\" she says. \"Where are you headed?\""
       },
       {
          "id": "A04C47S04",
@@ -12809,7 +12845,7 @@
          "uuid": "188",
          "pov": "Katiya",
          "written": true,
-         "word_count": 33,
+         "word_count": 770,
          "setting": {
             "Date": "",
             "Time": "",
@@ -12823,7 +12859,7 @@
          "setting_text": "",
          "history": {
             "Created": "2026-03-07T21:33:55Z",
-            "Modified": "2026-03-09T14:09:09Z"
+            "Modified": "2026-04-25T13:46:56Z"
          },
          "status": "No Status",
          "label": "Planned content",
@@ -12841,9 +12877,37 @@
             "BodyKatiya"
          ],
          "text_blocks": [
-            "Katiya is jailed beside Titus and Sylvia, who offer to break everyone out by force. When she sees Aryn is the one guarding her, she decides on a riskier, smarter approach instead."
+            "\"And where would you go?\" Aryn asks. \"That was just so stupid, Katiya. You're no better than my sister. You're the same type of coward!\"",
+            "My knuckles are white when I grasp the bars. \"A coward? Aryn, listen to me: in a couple hours, this cell will be the safest room in all of Gaffesend, and yet, for the first time in my life, I feel more afraid of what's on the other side.\"",
+            "Titus and Sylvia sit across from me in separate cells, behind Aryn, listening to her taunt me as a way to blow off steam. \"I was going to take a scouting quest. But I thought you should get an earful from me instead,\" she says.",
+            "Titus interjects, \"if there's any time for an act of civil disobedience, it's now.\"",
+            "\"Just say the word,\" Sylvia says, and maybe Aryn's so hot with disappointment that she can't feel how the sudden rise in Essence feathers our circuits. Sylvia's hands clutch the lattice of my stepfather's ironwork — her crimson eyes burning with something ancient — and I watch her fingers begin to slide through the iron like butter. Titus pulls from something similar.",
+            "But I interrupt them.",
+            "\"Not now,\" I say. \"It will be a losing fight if it's only us.\"",
+            "Aryn scoffs. \"Even if you broke out, how would you get past me? You couldn't even beat me in a match!\" I look for a sense of sadistic pleasure in her face, but only find an overwhelming sense of hurt in her soul. \"You're my closest friend, and I'm not letting you go this time. Not to cower like Rayna.\"",
+            "\"And what is that cowardice to you?\" I ask. \"Because I'm terrified right now.\" I show my trembling hands. \"See? I'm terrified because I already decided months ago what I'm going to do today, and that wasn't running away.\"",
+            "\"Your duty is to stand trial. And I'll provide everything I can to clear you — Jullian and ai both, and your brother, and even if it doesn't work,\" Aryn's voice strains, \"then...then I know it's going to be alright.\"",
+            "\"So you're afraid,\" I say.",
+            "\"No, of course not.\"",
+            "\"Complicity isn't courage, Aryn. I was complicit in doing the minimum by giving up on scouting. And now, even if I could go back and relive the day Bertram left, I wouldn't have done it any different.\"",
+            "\"Then I hope you don't say that at trial,\" she says. \"This new you could have put you at the top of your class! We could graduate, then save lives on the other side.\"",
+            "\"There won't be any lives left to save,\" I say. \"That bill is coming due early, because chaos doesn't wait for the spaces between order.\"",
+            "She pauses. Something in her can't resist the question. \"And what do you think is coming?\"",
+            "\"A small battalion of Ahkvas that's grown by the week. About four hundred, attacking from the west, when they know we're all watching the frozen lake.\" I heard the whispers over the sphere on my pocket they thought was just a trinket.",
+            "\"I know. Rayna told me,\" she says, flicking the end of her tail without rhythm.",
+            "I grab at the bars again. pressing my face closer to hers. \"If you keep me here and I'm right, you'll have to live with choosing procedure over people.\"",
+            "\"But . . . I can't just let you go,\" she says.",
+            "Titus says, \"of course you can!\"",
+            "\"You don't have the momentum, no matter how powerful your friends are here,\" Aryn says. \"Four hundred? And that is, assuming I believe it.\"",
+            "\"All I want is an audience with Aldrin, and you can take me there,\" I say. \"Three of us is a coerced prison break. But just you and me looks like procedure.\"",
+            "She still hesitates. Her sharp nails bite her flesh, so I give her one last push.",
+            "\"Rayna didn't fail because she ran,\" I tell her. \"She failed because no one helped her when it mattered the most.\"",
+            "\"Then you better not be wrong,\" she says. She looks left and right, then twists the key in the lock, blocking the open door with her body as if she's trying to keep a pet from escaping.",
+            "\"You're making the right decision,\" I say, as I hear something click behind her.",
+            "She swats at my left wrist with a hook made of metal, and I only realize it's one end of a handcuff when she raises her right arm in front of me.",
+            "\"But I don't think you won't try something,\" she says. \"You have a lot to prove.\""
          ],
-         "full_text": "Katiya is jailed beside Titus and Sylvia, who offer to break everyone out by force. When she sees Aryn is the one guarding her, she decides on a riskier, smarter approach instead."
+         "full_text": "\"And where would you go?\" Aryn asks. \"That was just so stupid, Katiya. You're no better than my sister. You're the same type of coward!\"\n\nMy knuckles are white when I grasp the bars. \"A coward? Aryn, listen to me: in a couple hours, this cell will be the safest room in all of Gaffesend, and yet, for the first time in my life, I feel more afraid of what's on the other side.\"\n\nTitus and Sylvia sit across from me in separate cells, behind Aryn, listening to her taunt me as a way to blow off steam. \"I was going to take a scouting quest. But I thought you should get an earful from me instead,\" she says.\n\nTitus interjects, \"if there's any time for an act of civil disobedience, it's now.\"\n\n\"Just say the word,\" Sylvia says, and maybe Aryn's so hot with disappointment that she can't feel how the sudden rise in Essence feathers our circuits. Sylvia's hands clutch the lattice of my stepfather's ironwork — her crimson eyes burning with something ancient — and I watch her fingers begin to slide through the iron like butter. Titus pulls from something similar.\n\nBut I interrupt them.\n\n\"Not now,\" I say. \"It will be a losing fight if it's only us.\"\n\nAryn scoffs. \"Even if you broke out, how would you get past me? You couldn't even beat me in a match!\" I look for a sense of sadistic pleasure in her face, but only find an overwhelming sense of hurt in her soul. \"You're my closest friend, and I'm not letting you go this time. Not to cower like Rayna.\"\n\n\"And what is that cowardice to you?\" I ask. \"Because I'm terrified right now.\" I show my trembling hands. \"See? I'm terrified because I already decided months ago what I'm going to do today, and that wasn't running away.\"\n\n\"Your duty is to stand trial. And I'll provide everything I can to clear you — Jullian and ai both, and your brother, and even if it doesn't work,\" Aryn's voice strains, \"then...then I know it's going to be alright.\"\n\n\"So you're afraid,\" I say.\n\n\"No, of course not.\"\n\n\"Complicity isn't courage, Aryn. I was complicit in doing the minimum by giving up on scouting. And now, even if I could go back and relive the day Bertram left, I wouldn't have done it any different.\"\n\n\"Then I hope you don't say that at trial,\" she says. \"This new you could have put you at the top of your class! We could graduate, then save lives on the other side.\"\n\n\"There won't be any lives left to save,\" I say. \"That bill is coming due early, because chaos doesn't wait for the spaces between order.\"\n\nShe pauses. Something in her can't resist the question. \"And what do you think is coming?\"\n\n\"A small battalion of Ahkvas that's grown by the week. About four hundred, attacking from the west, when they know we're all watching the frozen lake.\" I heard the whispers over the sphere on my pocket they thought was just a trinket.\n\n\"I know. Rayna told me,\" she says, flicking the end of her tail without rhythm.\n\nI grab at the bars again. pressing my face closer to hers. \"If you keep me here and I'm right, you'll have to live with choosing procedure over people.\"\n\n\"But . . . I can't just let you go,\" she says.\n\nTitus says, \"of course you can!\"\n\n\"You don't have the momentum, no matter how powerful your friends are here,\" Aryn says. \"Four hundred? And that is, assuming I believe it.\"\n\n\"All I want is an audience with Aldrin, and you can take me there,\" I say. \"Three of us is a coerced prison break. But just you and me looks like procedure.\"\n\nShe still hesitates. Her sharp nails bite her flesh, so I give her one last push.\n\n\"Rayna didn't fail because she ran,\" I tell her. \"She failed because no one helped her when it mattered the most.\"\n\n\"Then you better not be wrong,\" she says. She looks left and right, then twists the key in the lock, blocking the open door with her body as if she's trying to keep a pet from escaping.\n\n\"You're making the right decision,\" I say, as I hear something click behind her.\n\nShe swats at my left wrist with a hook made of metal, and I only realize it's one end of a handcuff when she raises her right arm in front of me.\n\n\"But I don't think you won't try something,\" she says. \"You have a lot to prove.\""
       },
       {
          "id": "A04C48S01",
@@ -12858,7 +12922,7 @@
          "uuid": "190",
          "pov": "Cody",
          "written": true,
-         "word_count": 47,
+         "word_count": 1118,
          "setting": {
             "Date": "",
             "Time": "",
@@ -12872,7 +12936,7 @@
          "setting_text": "",
          "history": {
             "Created": "2025-06-01T03:44:21Z",
-            "Modified": "2026-03-09T14:09:09Z"
+            "Modified": "2026-04-25T13:47:13Z"
          },
          "status": "No Status",
          "label": "Planned content",
@@ -12890,9 +12954,45 @@
             "BodyCody"
          ],
          "text_blocks": [
-            "Cody is pulled into a glass conference room where HR tries to reduce him to a clean termination case, with Reed present as witness. Cody refuses to sign, clears his father, and forces the company to deal with the messier truth of what he actually did."
+            "\"You have nothing left to prove,\" Reed says, but the words are not his.",
+            "I tug at the ironed sleeve beneath my suit jacket as he prattles on, feeling like I'm dressed for my own funeral. The incandescent glow of the projector burns a radiant square into my eyes as I sit in the dimly-lit room, flanked by a phalanx of security staff with clipboards: only a single name left to cross from their list.",
+            "And after they close the door behind us, it appears on the screen.",
+            "\"You have been very elusive,\" the HR director says. \"We've already had this conversation with all the rest of the outgoing staff.\" She gestures to my outfit. \"And it surely seems you're dressed for the occasion.\"",
+            "Reed lets out a corporate laugh. His clammy hands tremble as he tries to wipe the sweat on his jeans, but I'm unmoved by such an attempt at humor, using the glow of the projector slide to try and discern the words on the stapled form peaking out of the Manila folder.",
+            "\"I have an appointment with the Aerospace division,\" I tell her. \"I have something important to present to them.\"",
+            "She sits in front of me, her features silhouetted by the radiant glow of the pallid PowerPoint slide. \"That's not going to be relevant to you anymore,\" she says. \"You have no options with Navidson-Monroe after the incident last month. You were given the clemency to make a favorable exit after your demotion.\"",
+            "The slide switches to stills of the security camera, stamped with time and date, framed so deviously I look like I'm the perp on a true crime show.",
+            "\"Your father gave you his code. You used it to enter, and you disconnected an active battery cell, contaminating the test data. Beyond the cost to the company, what matters is that what you did was unsafe.\"",
+            "My mouth hinges open at all the arguments I've recited in my mind, thinking of the sign that read OPEN TO ENGINEERING STAFF. The residue of duct tape across the door from taping the deadbolt open. The verbal permission I received — but Reed lightly elbows me, knowing I might dig myself deeper.",
+            "\"Although your father never had the chance at a clean break after his outburst, we're still offering you a chance, because you're a young man with promise.\"",
+            "I think of my promise to make it to the top of the tower as she slides the folder across the table. A familiar anger might ball my fists again if I didn't have the strength to process it. Part of me wants to capitulate; to concede; to play it safe; to never figure out what I'm really made of, and as my eyes glaze over the contract, I decide whether or not to touch the pen to the page.",
+            "\"Your father told me that I had a clean slate,\" I tell Reed. \"I was told I had a chance — but are they really waiting for me up there?\"",
+            "He doesn't want to answer. \"I think . . . you should do what's best for your future, Cody. You tried. But we knew this might happen.\"",
+            "The letters blend together on the page in the darkness. It's not even light enough to read: only light enough to find the line I'm being goaded to sign.",
+            "\"I spent years being the best version of myself this company could ask for. I was patient, and I was passionate, and I refused to let the silent indifference tempt me with a shortcut.\"",
+            "\"We know,\" the Director says. \"And your colleagues have had nothing but the highest praise for you. That's why the offer stands,\" she says, pushing the form further.",
+            "\"I did this. I own my mistakes. And my father had nothing to do with this: if this signature could liberate him from suffering for his son's mistakes, then I would do it.\"",
+            "A sense of relief seems to flush their faces. I can tell how badly she wants to drag the last file with my name on it into the folder labeled COMPLETE. How badly Reed wants to return to subsisting as a pinion in the machine he was designed for.",
+            "\"But I respect myself too much to sign this, to be reduced to something neat and forgettable.\"",
+            "She grimaces with a smile. \"Mr. Dunsmore, if you don't sign this, you will be fired immediately. You will not get references. And I hear the market is tough out there.\"",
+            "\"Then maybe Navidson-Monroe should assess its blind spots, instead of pawning off inefficiencies on the workers brave enough to admit the truth in their failures.\" I shut the folder and push it back to her. \"I deserve so much more than being reduced a single page.\"",
+            "Reed winces at my words, distracted enough that he fails to catch his phone when it vibrates off his lap. I'm certain that there's no other destination on this impasse, so I begin to stand, just as the name flashes across his phone: three letters, reading DAD.",
+            "Maybe he might put it to his ear, or maybe he might silence it, but he slams it on the table, putting it on speaker.",
+            "\"Hey son, where's your friend?\" Geoffrey asks. \"We got this box upstairs with the prototype, and the Aero guys are looking at it.\"",
+            "The HR director recognizes the voice. Somehow she never made the connection between the director of Research & Development and his son.",
+            "\"We're in the room with HR,\" Reed says.",
+            "\"Well, did he sign anything?\"",
+            "\"No,\" Reed says.",
+            "\"Then what are you doing? Get him up here.\"",
+            "The HR staff take a step forward as the director rises from her seat. \"Cody isn't going anywhere. He's being terminated,\" she tells Geoffrey.",
+            "His voice crackles over the phone. \"I knew this was going to happen. Whether he's with us or not, Cody is a guest of the Aerospace division today, and you knew that!\"",
+            "At the top of the hour, the conference room door opens, and light pours back in once again. Three white collars peek inside the room, muttering about this \"being their scheduled block,\" and behind them, several more employees enter.",
+            "I grab my bag as the HR staff are distracted, trying to flaunt their authority over several impatient bean counters. Reed grabs his phone as a decision crystallizes in his mind, grabbing me by the lapel as he drags me towards the door, taking his employee badge into his other hand.",
+            "\"You're right,\" Reed says. \"You deserve more. And my father is not a liar.\"",
+            "\"Where are we going?\" I ask.",
+            "\"I'm getting you up there,\" he says. \"But then it's all on you.\""
          ],
-         "full_text": "Cody is pulled into a glass conference room where HR tries to reduce him to a clean termination case, with Reed present as witness. Cody refuses to sign, clears his father, and forces the company to deal with the messier truth of what he actually did."
+         "full_text": "\"You have nothing left to prove,\" Reed says, but the words are not his.\n\nI tug at the ironed sleeve beneath my suit jacket as he prattles on, feeling like I'm dressed for my own funeral. The incandescent glow of the projector burns a radiant square into my eyes as I sit in the dimly-lit room, flanked by a phalanx of security staff with clipboards: only a single name left to cross from their list.\n\nAnd after they close the door behind us, it appears on the screen.\n\n\"You have been very elusive,\" the HR director says. \"We've already had this conversation with all the rest of the outgoing staff.\" She gestures to my outfit. \"And it surely seems you're dressed for the occasion.\"\n\nReed lets out a corporate laugh. His clammy hands tremble as he tries to wipe the sweat on his jeans, but I'm unmoved by such an attempt at humor, using the glow of the projector slide to try and discern the words on the stapled form peaking out of the Manila folder.\n\n\"I have an appointment with the Aerospace division,\" I tell her. \"I have something important to present to them.\"\n\nShe sits in front of me, her features silhouetted by the radiant glow of the pallid PowerPoint slide. \"That's not going to be relevant to you anymore,\" she says. \"You have no options with Navidson-Monroe after the incident last month. You were given the clemency to make a favorable exit after your demotion.\"\n\nThe slide switches to stills of the security camera, stamped with time and date, framed so deviously I look like I'm the perp on a true crime show.\n\n\"Your father gave you his code. You used it to enter, and you disconnected an active battery cell, contaminating the test data. Beyond the cost to the company, what matters is that what you did was unsafe.\"\n\nMy mouth hinges open at all the arguments I've recited in my mind, thinking of the sign that read OPEN TO ENGINEERING STAFF. The residue of duct tape across the door from taping the deadbolt open. The verbal permission I received — but Reed lightly elbows me, knowing I might dig myself deeper.\n\n\"Although your father never had the chance at a clean break after his outburst, we're still offering you a chance, because you're a young man with promise.\"\n\nI think of my promise to make it to the top of the tower as she slides the folder across the table. A familiar anger might ball my fists again if I didn't have the strength to process it. Part of me wants to capitulate; to concede; to play it safe; to never figure out what I'm really made of, and as my eyes glaze over the contract, I decide whether or not to touch the pen to the page.\n\n\"Your father told me that I had a clean slate,\" I tell Reed. \"I was told I had a chance — but are they really waiting for me up there?\"\n\nHe doesn't want to answer. \"I think . . . you should do what's best for your future, Cody. You tried. But we knew this might happen.\"\n\nThe letters blend together on the page in the darkness. It's not even light enough to read: only light enough to find the line I'm being goaded to sign.\n\n\"I spent years being the best version of myself this company could ask for. I was patient, and I was passionate, and I refused to let the silent indifference tempt me with a shortcut.\"\n\n\"We know,\" the Director says. \"And your colleagues have had nothing but the highest praise for you. That's why the offer stands,\" she says, pushing the form further.\n\n\"I did this. I own my mistakes. And my father had nothing to do with this: if this signature could liberate him from suffering for his son's mistakes, then I would do it.\"\n\nA sense of relief seems to flush their faces. I can tell how badly she wants to drag the last file with my name on it into the folder labeled COMPLETE. How badly Reed wants to return to subsisting as a pinion in the machine he was designed for.\n\n\"But I respect myself too much to sign this, to be reduced to something neat and forgettable.\"\n\nShe grimaces with a smile. \"Mr. Dunsmore, if you don't sign this, you will be fired immediately. You will not get references. And I hear the market is tough out there.\"\n\n\"Then maybe Navidson-Monroe should assess its blind spots, instead of pawning off inefficiencies on the workers brave enough to admit the truth in their failures.\" I shut the folder and push it back to her. \"I deserve so much more than being reduced a single page.\"\n\nReed winces at my words, distracted enough that he fails to catch his phone when it vibrates off his lap. I'm certain that there's no other destination on this impasse, so I begin to stand, just as the name flashes across his phone: three letters, reading DAD.\n\nMaybe he might put it to his ear, or maybe he might silence it, but he slams it on the table, putting it on speaker.\n\n\"Hey son, where's your friend?\" Geoffrey asks. \"We got this box upstairs with the prototype, and the Aero guys are looking at it.\"\n\nThe HR director recognizes the voice. Somehow she never made the connection between the director of Research & Development and his son.\n\n\"We're in the room with HR,\" Reed says.\n\n\"Well, did he sign anything?\"\n\n\"No,\" Reed says.\n\n\"Then what are you doing? Get him up here.\"\n\nThe HR staff take a step forward as the director rises from her seat. \"Cody isn't going anywhere. He's being terminated,\" she tells Geoffrey.\n\nHis voice crackles over the phone. \"I knew this was going to happen. Whether he's with us or not, Cody is a guest of the Aerospace division today, and you knew that!\"\n\nAt the top of the hour, the conference room door opens, and light pours back in once again. Three white collars peek inside the room, muttering about this \"being their scheduled block,\" and behind them, several more employees enter.\n\nI grab my bag as the HR staff are distracted, trying to flaunt their authority over several impatient bean counters. Reed grabs his phone as a decision crystallizes in his mind, grabbing me by the lapel as he drags me towards the door, taking his employee badge into his other hand.\n\n\"You're right,\" Reed says. \"You deserve more. And my father is not a liar.\"\n\n\"Where are we going?\" I ask.\n\n\"I'm getting you up there,\" he says. \"But then it's all on you.\""
       },
       {
          "id": "A04C48S02",
@@ -12907,7 +13007,7 @@
          "uuid": "191",
          "pov": "Katiya",
          "written": true,
-         "word_count": 36,
+         "word_count": 556,
          "setting": {
             "Date": "",
             "Time": "",
@@ -12921,7 +13021,7 @@
          "setting_text": "",
          "history": {
             "Created": "2025-06-01T03:44:22Z",
-            "Modified": "2026-03-09T14:09:09Z"
+            "Modified": "2026-04-25T13:47:20Z"
          },
          "status": "No Status",
          "label": "Planned content",
@@ -12939,9 +13039,37 @@
             "BodyKatiya"
          ],
          "text_blocks": [
-            "Katiya apologizes for hiding Rayna, explains what is coming, and demands an audience with Aldrin. Aryn cuffs herself to Katiya and chooses to help her force a path through a system that refuses to listen."
+            "\"I'm getting you across the base, but then it's all on you,\" Aryn says.",
+            "\"And what if they don't listen?\" I ask.",
+            "She doesn't respond.",
+            "\"What if this falls on deaf ears, Aryn? What if they stop us? You know every guard is aware of my arrest. If I'm right—\"",
+            "\"I know,\" Aryn mutters, \"just shut up!\"",
+            "She replaces my breath for reason with a growing tension in my wrist. Our walk hastens from an escort to looking more like a coerced escape, and as we climb the stone stairs from deep within the holding cells, I watch a certain hesitation wage war within her mind.",
+            "\"The handcuffs don't help the image,\" I say. \"Can't you just take them off?\"",
+            "\"I'm only helping you because this town can't afford for you to be right,\" she says. \"Don't push it.\"",
+            "\"Aldrin's all the way across the base,\" I say. \"We're at the southeast corner. How are we going to clear that much ground? Or even make it past the—\"",
+            "\"Stop right there,\" the receptionist says, sitting inside the metal booth as he speaks through an open door. \"What are you doing with her?\"",
+            "\"I'm escorting Katiya to Command,\" Aryn says.",
+            "\"On whose orders?\"",
+            "\"On . . . on the fact that she knows something we can't afford to ignore,\" Aryn says.",
+            "\"Aldrin specifically ordered her to stay put until the tribunal. You're not taking her anywhere,\" the receptionist says, flashing his weapon from beneath his cloak. \"And I don't care what lies she told you.\"",
+            "\"We can't afford to be wrong about this,\" Aryn begs, \"she—\"",
+            "\"—There is procedure for a reason, and you are a probationary guard! Turn around right or without another word, or else I'll have to report you.\"",
+            "I let the Essence scald the handcuff on my left wrist. The tempered steel was made to be unmeltable by the Essenced, but with my heightened strength as a guard, I think I might just be able to break free.",
+            "I expect so little of the girl that's chained to me. The hesitation wears her down enough to the point that I know she'll crack.",
+            "But I underestimate which way she'll turn, feeling the heat rise in her manicured claws as she builds the strength to make her opening move.",
+            "Her boot bludgeons the iron door shut, and as the low-level guard curses us out with the names of lesser gods, her hands weld the latch to the door.",
+            "\"I swear I'll kill you if you're lying to me,\" she says. \"Because my sister spoke the world of you, and that's the only reason I'm giving you this.\"",
+            "The receptionist shouts through the open window as Aryn drags me through the front doors of the holding block, the two of us still bound by the unmeltable bond of steel.",
+            "The guards yell for us to stop, but they're not fast enough: words reduced to sluggish slurs as Aryn's Ahkvasan blood becomes handy, with just enough Essence for us to clear the courtyard as confusion turns to animosity.",
+            "\"How will they listen to us now?\" Aryn asks.",
+            "\"I need to show him what's coming.\"",
+            "\"He won't leave,\" Aryn huffs.",
+            "\"So I'll have to force him,\" I manage.",
+            "\"And how will we do that?\"",
+            "\"First, let's enter on the third floor,\" I say, gesturing to the rooftops."
          ],
-         "full_text": "Katiya apologizes for hiding Rayna, explains what is coming, and demands an audience with Aldrin. Aryn cuffs herself to Katiya and chooses to help her force a path through a system that refuses to listen."
+         "full_text": "\"I'm getting you across the base, but then it's all on you,\" Aryn says.\n\n\"And what if they don't listen?\" I ask.\n\nShe doesn't respond.\n\n\"What if this falls on deaf ears, Aryn? What if they stop us? You know every guard is aware of my arrest. If I'm right—\"\n\n\"I know,\" Aryn mutters, \"just shut up!\"\n\nShe replaces my breath for reason with a growing tension in my wrist. Our walk hastens from an escort to looking more like a coerced escape, and as we climb the stone stairs from deep within the holding cells, I watch a certain hesitation wage war within her mind.\n\n\"The handcuffs don't help the image,\" I say. \"Can't you just take them off?\"\n\n\"I'm only helping you because this town can't afford for you to be right,\" she says. \"Don't push it.\"\n\n\"Aldrin's all the way across the base,\" I say. \"We're at the southeast corner. How are we going to clear that much ground? Or even make it past the—\"\n\n\"Stop right there,\" the receptionist says, sitting inside the metal booth as he speaks through an open door. \"What are you doing with her?\"\n\n\"I'm escorting Katiya to Command,\" Aryn says.\n\n\"On whose orders?\"\n\n\"On . . . on the fact that she knows something we can't afford to ignore,\" Aryn says.\n\n\"Aldrin specifically ordered her to stay put until the tribunal. You're not taking her anywhere,\" the receptionist says, flashing his weapon from beneath his cloak. \"And I don't care what lies she told you.\"\n\n\"We can't afford to be wrong about this,\" Aryn begs, \"she—\"\n\n\"—There is procedure for a reason, and you are a probationary guard! Turn around right or without another word, or else I'll have to report you.\"\n\nI let the Essence scald the handcuff on my left wrist. The tempered steel was made to be unmeltable by the Essenced, but with my heightened strength as a guard, I think I might just be able to break free.\n\nI expect so little of the girl that's chained to me. The hesitation wears her down enough to the point that I know she'll crack.\n\nBut I underestimate which way she'll turn, feeling the heat rise in her manicured claws as she builds the strength to make her opening move.\n\nHer boot bludgeons the iron door shut, and as the low-level guard curses us out with the names of lesser gods, her hands weld the latch to the door.\n\n\"I swear I'll kill you if you're lying to me,\" she says. \"Because my sister spoke the world of you, and that's the only reason I'm giving you this.\"\n\nThe receptionist shouts through the open window as Aryn drags me through the front doors of the holding block, the two of us still bound by the unmeltable bond of steel.\n\nThe guards yell for us to stop, but they're not fast enough: words reduced to sluggish slurs as Aryn's Ahkvasan blood becomes handy, with just enough Essence for us to clear the courtyard as confusion turns to animosity.\n\n\"How will they listen to us now?\" Aryn asks.\n\n\"I need to show him what's coming.\"\n\n\"He won't leave,\" Aryn huffs.\n\n\"So I'll have to force him,\" I manage.\n\n\"And how will we do that?\"\n\n\"First, let's enter on the third floor,\" I say, gesturing to the rooftops."
       },
       {
          "id": "A04C48S03",
@@ -12956,7 +13084,7 @@
          "uuid": "192",
          "pov": "Cody",
          "written": true,
-         "word_count": 47,
+         "word_count": 846,
          "setting": {
             "Date": "",
             "Time": "",
@@ -12970,7 +13098,7 @@
          "setting_text": "",
          "history": {
             "Created": "2025-06-01T03:44:22Z",
-            "Modified": "2026-03-09T14:09:09Z"
+            "Modified": "2026-04-25T13:47:30Z"
          },
          "status": "No Status",
          "label": "Planned content",
@@ -12988,9 +13116,50 @@
             "BodyCody"
          ],
          "text_blocks": [
-            "Upper management asks for Cody by name, forcing Aerospace and HR into conflict over whether he is a liability or an asset. Reed becomes Cody's reluctant way up the tower, using his access to move him toward Aspen while Security tries to shut the route down."
+            "Reed scans his badge in the glass elevator as security crests the hill. The doors close long before they're even a couple hundred feet away, and as we huff for breath, the inertia of the lift staggers us.",
+            "His hand tightens on the railing. I watch Security's four-by-four shrink to the size of a matchbox car as the glass elevator climbs ever-so-slowly: designed to be slow on purpose.",
+            "\"So that's it,\" I say.",
+            "\"Huh?\" Reed asks.",
+            "\"I don't know — I expected more, you know,\" I say. \"More of a chase.\"",
+            "\"Did . . . did you want a chase?\" Reed asks, returning the badge to his neck.",
+            "\"I thought you'd be scanning me through doors and stuff. Just you and me: making our way up through the Aero building as they chase us,\" I say.",
+            "\"I dunno. I think that was pretty exciting. When was the last time you ran hills like that?\"",
+            "\"My last lacrosse practice maybe, senior year?\" I feel like I'm going to vomit: it's a miracle the seams of my suit never tore on the way up here, though puddles of sweat surely saturate my undershirt.",
+            "He laughs. \"Same for me, too, I think.\"",
+            "We watch the security staff as they split up, but none of them tilt their heads towards the glass carriage. Soon we realize that they weren't chasing us after all:  just preparing the grounds to close in the next couple of hours.",
+            "\"Why the hell did we run?\" I ask.",
+            "\"It seemed like the right thing to do,\" Reed says. \"I ran because you were running.\"",
+            "\"Well, you pulled me by the collar to get out of the room,\" I say. \"What was that for?\"",
+            "\"It seems like a big moment, you know?\"",
+            "I repeat. \"A big moment.\"",
+            "\"Yeah, like on TV, you know. Being chased by the bad guys or whatever. I guess I watch a lot of movies in the cinema in my basement,\" he casually drops. \"But...\"",
+            "\"It's just Human Resources,\" I say. \"The modern world is so boring — I mean, what are they going to do? Write a strongly worded email?\"",
+            "We wait a couple pings of the elevator before I speak again.",
+            "\"As wrong as they have me pinned, I mean, I can't blame her: she's just doing her job.\"",
+            "\"Huh,\" Reed says.",
+            "I laugh as I sniff my armpit. \"You know, I thought before I got a 'big boy job' that Human Resources was, like, resources for humans.\"",
+            "\"What do you mean?\" He asks.",
+            "\"Like, I don't know, like they were there for the employees or whatever.\" I gesture to the elevator. \"Like if you were stuck in here, they'd be the ones to call the fire department. Or if you . . . well, I don't know, I can't really think of an example, but you'd call them if you needed something.\"",
+            "\"So like, on your side, you mean,\" Reed says. \"You first.\"",
+            "\"Yeah. But the humans are the resources, though, like you and me,\" I say. \"We're resources, and they cut us or promote us. Isn't that kind of fucked up?\"",
+            "\"I guess I never thought of that.\" He clears his throat. \"But that's corporate. I grew up in a corporate household, you know. My mom did some HR stuff before I was born, I think, so that never really crossed my mind.\"",
+            "\"Oh,\" I say.",
+            "\"Yeah. Baskin Robins. So I was a fat kid.\"",
+            "I snort. \"No way.\"",
+            "We aren't even a quarter of the way up as we look out upon the eastern skyline. The incredible vista of Denver glistens with the light of the sun setting somewhere far behind us. The parking lot is empty without all the early-rising technicians, and as the numbers scroll ever-so-slowly on the elevator's screen, Reed laughs again.",
+            "\"To think I'd ever do something like this,\" he says, wiping the sweat from his forehead. \"I was perfectly boring until I met you. Hell, I don't even think my dad can save me from this.\"",
+            "\"Then what changed your mind?\" I ask. \"Why risk it all for me?\"",
+            "\"I couldn't stand to let mediocrity drag down real talent any further,\" he says. \"You have heart like my brother did. And yet you never give up.\"",
+            "\"Thanks,\" I say. \"You're a good friend.\"",
+            "\"And, uh ... I kinda stole your girl. Yet you were remarkably chill about it, and though you found Katiya, I've always felt like I really owed you one.\"",
+            "\"But you make her happy in a way that I can't. I've come to accept that we were only ever meant to be friends — and I'm not a renewable source of energy like you.\"",
+            "\"Thanks, Cody.\" He smiles as the elevator reaches the top floor. \"Give 'em hell with this interview,\" he says.",
+            "\"Where will you go?\" I ask.",
+            "\"Hide in my dad's office till this blows over,\" he says.",
+            "\"Right,\" I say.",
+            "I turn the corner, walking through the marble halls of the main building before I find the exact people I've been looking for."
          ],
-         "full_text": "Upper management asks for Cody by name, forcing Aerospace and HR into conflict over whether he is a liability or an asset. Reed becomes Cody's reluctant way up the tower, using his access to move him toward Aspen while Security tries to shut the route down."
+         "full_text": "Reed scans his badge in the glass elevator as security crests the hill. The doors close long before they're even a couple hundred feet away, and as we huff for breath, the inertia of the lift staggers us.\n\nHis hand tightens on the railing. I watch Security's four-by-four shrink to the size of a matchbox car as the glass elevator climbs ever-so-slowly: designed to be slow on purpose.\n\n\"So that's it,\" I say.\n\n\"Huh?\" Reed asks.\n\n\"I don't know — I expected more, you know,\" I say. \"More of a chase.\"\n\n\"Did . . . did you want a chase?\" Reed asks, returning the badge to his neck.\n\n\"I thought you'd be scanning me through doors and stuff. Just you and me: making our way up through the Aero building as they chase us,\" I say.\n\n\"I dunno. I think that was pretty exciting. When was the last time you ran hills like that?\"\n\n\"My last lacrosse practice maybe, senior year?\" I feel like I'm going to vomit: it's a miracle the seams of my suit never tore on the way up here, though puddles of sweat surely saturate my undershirt.\n\nHe laughs. \"Same for me, too, I think.\"\n\nWe watch the security staff as they split up, but none of them tilt their heads towards the glass carriage. Soon we realize that they weren't chasing us after all:  just preparing the grounds to close in the next couple of hours.\n\n\"Why the hell did we run?\" I ask.\n\n\"It seemed like the right thing to do,\" Reed says. \"I ran because you were running.\"\n\n\"Well, you pulled me by the collar to get out of the room,\" I say. \"What was that for?\"\n\n\"It seems like a big moment, you know?\"\n\nI repeat. \"A big moment.\"\n\n\"Yeah, like on TV, you know. Being chased by the bad guys or whatever. I guess I watch a lot of movies in the cinema in my basement,\" he casually drops. \"But...\"\n\n\"It's just Human Resources,\" I say. \"The modern world is so boring — I mean, what are they going to do? Write a strongly worded email?\"\n\nWe wait a couple pings of the elevator before I speak again.\n\n\"As wrong as they have me pinned, I mean, I can't blame her: she's just doing her job.\"\n\n\"Huh,\" Reed says.\n\nI laugh as I sniff my armpit. \"You know, I thought before I got a 'big boy job' that Human Resources was, like, resources for humans.\"\n\n\"What do you mean?\" He asks.\n\n\"Like, I don't know, like they were there for the employees or whatever.\" I gesture to the elevator. \"Like if you were stuck in here, they'd be the ones to call the fire department. Or if you . . . well, I don't know, I can't really think of an example, but you'd call them if you needed something.\"\n\n\"So like, on your side, you mean,\" Reed says. \"You first.\"\n\n\"Yeah. But the humans are the resources, though, like you and me,\" I say. \"We're resources, and they cut us or promote us. Isn't that kind of fucked up?\"\n\n\"I guess I never thought of that.\" He clears his throat. \"But that's corporate. I grew up in a corporate household, you know. My mom did some HR stuff before I was born, I think, so that never really crossed my mind.\"\n\n\"Oh,\" I say.\n\n\"Yeah. Baskin Robins. So I was a fat kid.\"\n\nI snort. \"No way.\"\n\nWe aren't even a quarter of the way up as we look out upon the eastern skyline. The incredible vista of Denver glistens with the light of the sun setting somewhere far behind us. The parking lot is empty without all the early-rising technicians, and as the numbers scroll ever-so-slowly on the elevator's screen, Reed laughs again.\n\n\"To think I'd ever do something like this,\" he says, wiping the sweat from his forehead. \"I was perfectly boring until I met you. Hell, I don't even think my dad can save me from this.\"\n\n\"Then what changed your mind?\" I ask. \"Why risk it all for me?\"\n\n\"I couldn't stand to let mediocrity drag down real talent any further,\" he says. \"You have heart like my brother did. And yet you never give up.\"\n\n\"Thanks,\" I say. \"You're a good friend.\"\n\n\"And, uh ... I kinda stole your girl. Yet you were remarkably chill about it, and though you found Katiya, I've always felt like I really owed you one.\"\n\n\"But you make her happy in a way that I can't. I've come to accept that we were only ever meant to be friends — and I'm not a renewable source of energy like you.\"\n\n\"Thanks, Cody.\" He smiles as the elevator reaches the top floor. \"Give 'em hell with this interview,\" he says.\n\n\"Where will you go?\" I ask.\n\n\"Hide in my dad's office till this blows over,\" he says.\n\n\"Right,\" I say.\n\nI turn the corner, walking through the marble halls of the main building before I find the exact people I've been looking for."
       },
       {
          "id": "A04C48S04",
@@ -13005,7 +13174,7 @@
          "uuid": "193",
          "pov": "Katiya",
          "written": true,
-         "word_count": 54,
+         "word_count": 853,
          "setting": {
             "Date": "",
             "Time": "",
@@ -13019,7 +13188,7 @@
          "setting_text": "",
          "history": {
             "Created": "2026-03-07T23:24:17Z",
-            "Modified": "2026-03-09T14:09:09Z"
+            "Modified": "2026-04-25T13:47:44Z"
          },
          "status": "No Status",
          "label": "Planned content",
@@ -13037,58 +13206,34 @@
             "BodyKatiya"
          ],
          "text_blocks": [
-            "Katiya and Aryn fight their way across the base until Erik blocks the last path to Aldrin. Katiya convinces him to let her go, and the choice costs him as much as it frees her. Katiya tackles Aldrin over his desk with the sphere and warps him to the site of the coming attack."
+            "\"So that's it?\" I ask.",
+            "\"Yeah,\" Aryn says. \"Why else do you think it's so far from anything else?\"",
+            "We can hear them climbing the stairs behind us, so drained of Essence that we couldn't even weld the rooftop door shut. I stole a piece of scrap from the Ironworks, reduced to a crumpled steel rod after deflecting blows from the agitated Royal Guards. Now it's jammed between the door handle, along with all the rest of whatever we could stack in front of the door.",
+            "Now we stand at the fourth-story edge of the building, remembering the inconvenient fact that a large courtyard spans between the main building and all the other buildings. The cuffs chafe a bright red line in our wrists, and when Aryn looks to the weave of wires spanning from the fourth story radio tower to the command center's third-story teletype room, I shudder.",
+            "\"Well, our Essence didn't break it!\"",
+            "\"You're the one that wanted the handcuffs, Aryn,\" I tell her. \"And I didn't leave the key, either.\"",
+            "She grunts, taking a piece of scrap metal from the roof and bending it around the chain link of the cuffs to make an improvised sheath.",
+            "\"Why are you making it even harder to get off?\" I ask, guessing the rooftop door can take two or three more blows before we're stranded four stories in the air.",
+            "But then she leaps over the wires, suspending us on our toes as the massive, vibrating stretch of cable screeches with the weight of both of us in either side.",
+            "I scream when the jostling cable lifts us off our feet, and I crash into Aryn as we're suspended by our two wrists, sliding down the wire as a trail of sparks erupt from the metal sheath. Her tail wraps around my leg as she hugs my waist with her free hand, and I embrace her, too terrified to feel the anguish in my wrist as we accelerate along the stretch of wire.",
+            "I can feel the burning friction in my wrist and I wonder how much longer Aryn's improvised zip line will hold. Several hot sparks burn my wrist as the command post gets closer, and right when I wonder whether we might actually make it, the handcuff finally snaps, sending the two of us perfectly horizontal through the second story window.",
+            "I close my eyes as glass and wood explode across the floor of a storeroom: the two of us crash into a shelf that tilts several of them over like dominoes as we try to regain our footing.",
+            "Several volunteers taking inventory vacate the room in terror after the loud crash, and without time to take inventory of our own aching bodies, the two of us rush out the door to climb the stairs, hearing several new guards give chase.",
+            "We crest the third story of the square stairway as a couple unprepared guards try to restrain us, but in their bulky armor, they can't get low enough to grab us. Aryn and I charge with our shoulders, and they flip over us, rolling down the stairs in metal armor that absorbs all their blows, blocking the rest of the ascending guards.",
+            "We make it to the double doors of Aldrin's office, only to find a familiar face standing watch.",
+            "\"What in Khiras' name have you done, Katiya?\" Erik says.",
+            "\"Move or be moved,\" Aryn sneers. \"Aldrin has to hear something whether he wants to or not.\"",
+            "\"Gods damn it, Katiya!\" Erik says. \"You've destroyed everything I've done to protect you, can't you see that?\"",
+            "\"I asked for none of it,\" I say. \"I confided in you, and all this time I KNOW you knew I wasn't running away. Do you have the slightest idea of what's coming? Of what we have to save?\"",
+            "\"It can't be,\" Erik says. \"There's no way!\"",
+            "\"But can you afford to be wrong?\" Aryn asks.",
+            "\"I get you want to save your sister. And I love you just as much as you love me. But you can't stop me from fulfilling my highest purpose.\"",
+            "The guards made it around their fallen counterparts, rushing only seconds behind us as all this effort comes down to a final decision.",
+            "\"You better be right,\" Erik says, opening the door to expose Aldrin as I feel for the sphere on my pocket, whispering to Aliaki on the other side.",
+            "\"That's what I said.\" Aryn says. The two stand at the door, ready to receive the full might of the Guard on my behalf as I hurl the sphere towards Aldrin's desk, blinded by the pearlescent glow of its scrolling texture as his eyes widen, and I dive across the desk, tackling him out of his chair as an entire chunk of the office folds between spaces, leaving a cleanly-sliced cross section of his mahogany desk and most of the back wall, with picture frames still hanging, standing awkwardly in a distant forest.",
+            "\"Commander,\" Aliaki says, as Jade, Romin, and Valentina stand beside them. \"Katiya has something to show you, and I'm certain it will change your priorities.\""
          ],
-         "full_text": "Katiya and Aryn fight their way across the base until Erik blocks the last path to Aldrin. Katiya convinces him to let her go, and the choice costs him as much as it frees her. Katiya tackles Aldrin over his desk with the sphere and warps him to the site of the coming attack."
-      },
-      {
-         "id": "A04C48S05",
-         "chapter_id": "A04C48",
-         "chapter": 48,
-         "chapter_name": "Metanoia",
-         "act": 4,
-         "act_name": "Act Four: Winter",
-         "scene_number": 5,
-         "verbose_id": "4.48.146",
-         "doc_name": "PGC-4.48.5",
-         "uuid": "194",
-         "pov": "Cody",
-         "written": true,
-         "word_count": 28,
-         "setting": {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Unspecified",
-            "Area": "Unspecified",
-            "Location": "Unspecified",
-            "Place": "Unspecified"
-         },
-         "setting_text": "",
-         "history": {
-            "Created": "2026-03-07T23:26:00Z",
-            "Modified": "2026-03-09T14:09:09Z"
-         },
-         "status": "No Status",
-         "label": "Planned content",
-         "keywords": [
-            "Paragate",
-            "Katiya",
-            "Current"
-         ],
-         "summary": "(SHORT) Cody reaches Aspen and is finally allowed to present, pulled between the company that wants him contained and the people who want to hear him speak.",
-         "synopsis": "Upper management asks for Cody by name, forcing Aerospace and HR into conflict over whether he is a liability or an asset. Reed becomes Cody's reluctant way up the tower, using his access to move him toward Aspen while Security tries to shut the route down.",
-         "author_notes": "",
-         "chapter_summary": "Both protagonists fight for one clean chance to be heard. Cody's confession turns his firing into a political problem inside Navidson-Monroe, while Katiya persuades Aryn that the truth matters more than procedure and turns imprisonment into a joint push toward Aldrin. The chapter tests what they have actually learned: not how to escape pressure, but how to move through it without lying to themselves.",
-         "chapter_blurb": "Some doors open because you're invited. The important ones never do.",
-         "style_classes": [
-            "BodyCody"
-         ],
-         "text_blocks": [
-            "Cody reaches Aspen and is finally allowed to present, pulled between the company that wants him contained and the people who want to hear him speak."
-         ],
-         "full_text": "Cody reaches Aspen and is finally allowed to present, pulled between the company that wants him contained and the people who want to hear him speak."
+         "full_text": "\"So that's it?\" I ask.\n\n\"Yeah,\" Aryn says. \"Why else do you think it's so far from anything else?\"\n\nWe can hear them climbing the stairs behind us, so drained of Essence that we couldn't even weld the rooftop door shut. I stole a piece of scrap from the Ironworks, reduced to a crumpled steel rod after deflecting blows from the agitated Royal Guards. Now it's jammed between the door handle, along with all the rest of whatever we could stack in front of the door.\n\nNow we stand at the fourth-story edge of the building, remembering the inconvenient fact that a large courtyard spans between the main building and all the other buildings. The cuffs chafe a bright red line in our wrists, and when Aryn looks to the weave of wires spanning from the fourth story radio tower to the command center's third-story teletype room, I shudder.\n\n\"Well, our Essence didn't break it!\"\n\n\"You're the one that wanted the handcuffs, Aryn,\" I tell her. \"And I didn't leave the key, either.\"\n\nShe grunts, taking a piece of scrap metal from the roof and bending it around the chain link of the cuffs to make an improvised sheath.\n\n\"Why are you making it even harder to get off?\" I ask, guessing the rooftop door can take two or three more blows before we're stranded four stories in the air.\n\nBut then she leaps over the wires, suspending us on our toes as the massive, vibrating stretch of cable screeches with the weight of both of us in either side.\n\nI scream when the jostling cable lifts us off our feet, and I crash into Aryn as we're suspended by our two wrists, sliding down the wire as a trail of sparks erupt from the metal sheath. Her tail wraps around my leg as she hugs my waist with her free hand, and I embrace her, too terrified to feel the anguish in my wrist as we accelerate along the stretch of wire.\n\nI can feel the burning friction in my wrist and I wonder how much longer Aryn's improvised zip line will hold. Several hot sparks burn my wrist as the command post gets closer, and right when I wonder whether we might actually make it, the handcuff finally snaps, sending the two of us perfectly horizontal through the second story window.\n\nI close my eyes as glass and wood explode across the floor of a storeroom: the two of us crash into a shelf that tilts several of them over like dominoes as we try to regain our footing.\n\nSeveral volunteers taking inventory vacate the room in terror after the loud crash, and without time to take inventory of our own aching bodies, the two of us rush out the door to climb the stairs, hearing several new guards give chase.\n\nWe crest the third story of the square stairway as a couple unprepared guards try to restrain us, but in their bulky armor, they can't get low enough to grab us. Aryn and I charge with our shoulders, and they flip over us, rolling down the stairs in metal armor that absorbs all their blows, blocking the rest of the ascending guards.\n\nWe make it to the double doors of Aldrin's office, only to find a familiar face standing watch.\n\n\"What in Khiras' name have you done, Katiya?\" Erik says.\n\n\"Move or be moved,\" Aryn sneers. \"Aldrin has to hear something whether he wants to or not.\"\n\n\"Gods damn it, Katiya!\" Erik says. \"You've destroyed everything I've done to protect you, can't you see that?\"\n\n\"I asked for none of it,\" I say. \"I confided in you, and all this time I KNOW you knew I wasn't running away. Do you have the slightest idea of what's coming? Of what we have to save?\"\n\n\"It can't be,\" Erik says. \"There's no way!\"\n\n\"But can you afford to be wrong?\" Aryn asks.\n\n\"I get you want to save your sister. And I love you just as much as you love me. But you can't stop me from fulfilling my highest purpose.\"\n\nThe guards made it around their fallen counterparts, rushing only seconds behind us as all this effort comes down to a final decision.\n\n\"You better be right,\" Erik says, opening the door to expose Aldrin as I feel for the sphere on my pocket, whispering to Aliaki on the other side.\n\n\"That's what I said.\" Aryn says. The two stand at the door, ready to receive the full might of the Guard on my behalf as I hurl the sphere towards Aldrin's desk, blinded by the pearlescent glow of its scrolling texture as his eyes widen, and I dive across the desk, tackling him out of his chair as an entire chunk of the office folds between spaces, leaving a cleanly-sliced cross section of his mahogany desk and most of the back wall, with picture frames still hanging, standing awkwardly in a distant forest.\n\n\"Commander,\" Aliaki says, as Jade, Romin, and Valentina stand beside them. \"Katiya has something to show you, and I'm certain it will change your priorities.\""
       },
       {
          "id": "A04C49S01",
@@ -13098,12 +13243,12 @@
          "act": 4,
          "act_name": "Act Four: Winter",
          "scene_number": 1,
-         "verbose_id": "4.49.147",
+         "verbose_id": "4.49.146",
          "doc_name": "PGK-4.49.1",
-         "uuid": "196",
+         "uuid": "195",
          "pov": "Katiya",
          "written": true,
-         "word_count": 43,
+         "word_count": 1038,
          "setting": {
             "Date": "",
             "Time": "",
@@ -13117,7 +13262,7 @@
          "setting_text": "",
          "history": {
             "Created": "2025-06-01T03:44:22Z",
-            "Modified": "2026-03-09T14:09:09Z"
+            "Modified": "2026-04-25T13:47:56Z"
          },
          "status": "No Status",
          "label": "Planned content",
@@ -13135,9 +13280,48 @@
             "BodyKatiya"
          ],
          "text_blocks": [
-            "Katiya brings Aldrin face-to-face with the reality of the approaching threat, and Jade and Aliaki reinforce what she has forced him to witness. When the Royal Knights arrive, Aldrin calls them off and chooses to bet on Katiya's madness being the truth."
+            "\"Your sister killed him! How could you let her go?\"",
+            "\"She didn't kill him,\" Erik responds. He grimaces with the tension of the arm that's twisted behind his back, as two other guards restrain him for a piece of the action.",
+            "\"Then where are they?\" The guard asks. \"Your sister was a coward. Then she went nuts! Either a murder-suicide, or a suicide-murder—\"",
+            "\"Katiya doesn't run any more,\" Aryn shouts. The sound of her voice is still muffled when she's far shorter than the senior guards, and almost three scores of them have all collected in the room as if the power of inaction will bring Aldrin back.",
+            "The minutes grow uncomfortable as the guards debate whether to find the next-in-line, more disconnected from power than Auvryan peasantry without the birthright to fly, just staring at the perfect spherical divot of missing mass that vanished several layers of the floor, a chunk of the brick wall, Aldrin's desk, and the two assailants, with a lamp perfectly severed at the base but still floating there: traded for frozen dirt, a cross-sectioned split of a pine tree, an a thin layer of snow that still has flakes falling within the sphere.",
+            "One of the elders finally speaks, breaking the spell of the inexplicable sight of indoor snow.. \"Bring up the other two vagrants that came with the blonde bitch. Maybe they—\"",
+            "A soundless burst of air knocks the frontmost guards from their feet, launching them into the others. Even a blink isn't fast enough for the exchange of space as Aldrin returns with Jade, Aliaki, her two Blackwater refugees, and me, leaning over the desk with his hands planted on the mahogany as his Essenced panic melts the desk's fine layer of snow.",
+            "He hunches further over an eventual proclamation as the unsevered lamp flickers back on. Erik shakes free of the stunned guards as Aryn slips into view.",
+            "Aryn asks loudly, \"what did Katiya show you?\"",
+            "Aldrin scratches at his salt-and-pepper beard as his eyes flutter across the damp map of Gaffesend. \"Miss Katiya showed me something real . . . and not just something real but something horrible, worse than I could have imagined, worse than whatever waits across the ice.\"",
+            "Erik swallows. \"What is it?\"",
+            "\"It's Ahkvasan.\"",
+            "The guards murmur words of disbelief until one speaks above the others. \"But they're neutral. Even with the regime change.\"",
+            "\"They're far from neutral,\" Jade says. \"My people have been misled by a campaign of distraction, and they're coming.\"",
+            "\"But it's so far,\" another says. \"How many weeks? Or days?\"",
+            "\"Hours,\" Aldrin says.",
+            "The murmurs sharpen to shouts of panic.",
+            "\"But we can't watch the East and the West, Aldrin,\" says the scoutmaster general. \"Northaven only sent enough to repel the west — and that's short-term!\"",
+            "I watch him assemble the plan on the spot, counting his new allies just as Titus and Sylvia are marshaled into the room. And now he recognizes them, too.",
+            "\"Rest assured that there is fortune on our side,\" he says, his voice still unwavering as the Guards search for strength. \"The Gods grace us with an unexpected source of strength. A strength that might just let us hold out.\"",
+            "He introduces Jade and Aliaki, and  after he orders the other two captured celestials to be released, Titus and Sylvia are given a brief introduction.",
+            "\"Two Chosen kids. And two Masked foreigners, Aldrin,\" the Scoutmaster says. \"And some other asset that's on the way? Chymaeran, you said?\"",
+            "\"That's what we have,\" he says. \"And then the three regiments from Northaven—about a hundred and fifty men. And then our sixty-five Royal Guards . . . including the new trainees, of course.\"",
+            "\"Against what?\"",
+            "\"I don't know. And yet the Chymaeran faction to the East puts us on highest alert,\" he says, pulling at the joints of his fingers until his knuckles turn white. \"We can't risk the chance of collusion when we no longer know the Ahkvasa. So I will guide this offensive, but I will remain focused to the east as I always have.\"",
+            "\"Then who will lead?\"",
+            "He lets the silence hang: not one of his tactical pauses to charge strength into his words, and after a while, we realize he simply doesn't know.",
+            "Yet nobody offers. And even his generals hesitate to step forward.",
+            "\"There's only one of us that knows the most, and has thought about this, and has planned for this, and I'm still not sure how they fit into the equation.\" The guards stare at Aldrin as I'm facing his audience. It's sometime before or after his next action that their eyes all fall on me.",
+            "\"The foreign Masks said that Katiya has been their coordinator this entire time. She quartered the other two masks, and had been planning an offensive while we refused to listen.\"",
+            "They scoff. \"A dropout?\" One calls. \"You're going to enlist a dropout?\"",
+            "\"We don't have the luxury of time right now, and information is more valuable than prejudice.\" Aldrin gestures to his most senior generals, along with Aryn and Erik. \"You will convene and enact the best version of Katiya's plan. You will listen to her. And to the rest of you: prepare Blackwater for siege. This is not a drill.\"",
+            "The others rush from the room, scratching their pauldrons on the double-wide doorframe. Signals blast over secured talking wires, reaching the bases at the ends of the lake, as three short blasts of a siren tell the civilians to shelter as they've been trained.",
+            "Aldrin turns to me, and across my shoulders, he places the mark of an ensign. \"It seems you've been handed a final test instead of a certain tribunal. You're lucky that we need you.\"",
+            "\"Sir, yes sir,\" I say, three words I thought I'd never need together again.",
+            "He grabs two handfuls of the thin cloak I scrounged before jumping out the window. \"Listen to me, Katiya: share everything you know to our senior officers. Be concise.\"",
+            "I say, \"Sir—\"",
+            "\"You were brave to pull that stunt. Keep that courage alive,\" he says, pushing me towards the Senior officers as I try to catch my breath.",
+            "He shouts one last thing.",
+            "\"And don't you dare fucking choke!\""
          ],
-         "full_text": "Katiya brings Aldrin face-to-face with the reality of the approaching threat, and Jade and Aliaki reinforce what she has forced him to witness. When the Royal Knights arrive, Aldrin calls them off and chooses to bet on Katiya's madness being the truth."
+         "full_text": "\"Your sister killed him! How could you let her go?\"\n\n\"She didn't kill him,\" Erik responds. He grimaces with the tension of the arm that's twisted behind his back, as two other guards restrain him for a piece of the action.\n\n\"Then where are they?\" The guard asks. \"Your sister was a coward. Then she went nuts! Either a murder-suicide, or a suicide-murder—\"\n\n\"Katiya doesn't run any more,\" Aryn shouts. The sound of her voice is still muffled when she's far shorter than the senior guards, and almost three scores of them have all collected in the room as if the power of inaction will bring Aldrin back.\n\nThe minutes grow uncomfortable as the guards debate whether to find the next-in-line, more disconnected from power than Auvryan peasantry without the birthright to fly, just staring at the perfect spherical divot of missing mass that vanished several layers of the floor, a chunk of the brick wall, Aldrin's desk, and the two assailants, with a lamp perfectly severed at the base but still floating there: traded for frozen dirt, a cross-sectioned split of a pine tree, an a thin layer of snow that still has flakes falling within the sphere.\n\nOne of the elders finally speaks, breaking the spell of the inexplicable sight of indoor snow.. \"Bring up the other two vagrants that came with the blonde bitch. Maybe they—\"\n\nA soundless burst of air knocks the frontmost guards from their feet, launching them into the others. Even a blink isn't fast enough for the exchange of space as Aldrin returns with Jade, Aliaki, her two Blackwater refugees, and me, leaning over the desk with his hands planted on the mahogany as his Essenced panic melts the desk's fine layer of snow.\n\nHe hunches further over an eventual proclamation as the unsevered lamp flickers back on. Erik shakes free of the stunned guards as Aryn slips into view.\n\nAryn asks loudly, \"what did Katiya show you?\"\n\nAldrin scratches at his salt-and-pepper beard as his eyes flutter across the damp map of Gaffesend. \"Miss Katiya showed me something real . . . and not just something real but something horrible, worse than I could have imagined, worse than whatever waits across the ice.\"\n\nErik swallows. \"What is it?\"\n\n\"It's Ahkvasan.\"\n\nThe guards murmur words of disbelief until one speaks above the others. \"But they're neutral. Even with the regime change.\"\n\n\"They're far from neutral,\" Jade says. \"My people have been misled by a campaign of distraction, and they're coming.\"\n\n\"But it's so far,\" another says. \"How many weeks? Or days?\"\n\n\"Hours,\" Aldrin says.\n\nThe murmurs sharpen to shouts of panic.\n\n\"But we can't watch the East and the West, Aldrin,\" says the scoutmaster general. \"Northaven only sent enough to repel the west — and that's short-term!\"\n\nI watch him assemble the plan on the spot, counting his new allies just as Titus and Sylvia are marshaled into the room. And now he recognizes them, too.\n\n\"Rest assured that there is fortune on our side,\" he says, his voice still unwavering as the Guards search for strength. \"The Gods grace us with an unexpected source of strength. A strength that might just let us hold out.\"\n\nHe introduces Jade and Aliaki, and  after he orders the other two captured celestials to be released, Titus and Sylvia are given a brief introduction.\n\n\"Two Chosen kids. And two Masked foreigners, Aldrin,\" the Scoutmaster says. \"And some other asset that's on the way? Chymaeran, you said?\"\n\n\"That's what we have,\" he says. \"And then the three regiments from Northaven—about a hundred and fifty men. And then our sixty-five Royal Guards . . . including the new trainees, of course.\"\n\n\"Against what?\"\n\n\"I don't know. And yet the Chymaeran faction to the East puts us on highest alert,\" he says, pulling at the joints of his fingers until his knuckles turn white. \"We can't risk the chance of collusion when we no longer know the Ahkvasa. So I will guide this offensive, but I will remain focused to the east as I always have.\"\n\n\"Then who will lead?\"\n\nHe lets the silence hang: not one of his tactical pauses to charge strength into his words, and after a while, we realize he simply doesn't know.\n\nYet nobody offers. And even his generals hesitate to step forward.\n\n\"There's only one of us that knows the most, and has thought about this, and has planned for this, and I'm still not sure how they fit into the equation.\" The guards stare at Aldrin as I'm facing his audience. It's sometime before or after his next action that their eyes all fall on me.\n\n\"The foreign Masks said that Katiya has been their coordinator this entire time. She quartered the other two masks, and had been planning an offensive while we refused to listen.\"\n\nThey scoff. \"A dropout?\" One calls. \"You're going to enlist a dropout?\"\n\n\"We don't have the luxury of time right now, and information is more valuable than prejudice.\" Aldrin gestures to his most senior generals, along with Aryn and Erik. \"You will convene and enact the best version of Katiya's plan. You will listen to her. And to the rest of you: prepare Blackwater for siege. This is not a drill.\"\n\nThe others rush from the room, scratching their pauldrons on the double-wide doorframe. Signals blast over secured talking wires, reaching the bases at the ends of the lake, as three short blasts of a siren tell the civilians to shelter as they've been trained.\n\nAldrin turns to me, and across my shoulders, he places the mark of an ensign. \"It seems you've been handed a final test instead of a certain tribunal. You're lucky that we need you.\"\n\n\"Sir, yes sir,\" I say, three words I thought I'd never need together again.\n\nHe grabs two handfuls of the thin cloak I scrounged before jumping out the window. \"Listen to me, Katiya: share everything you know to our senior officers. Be concise.\"\n\nI say, \"Sir—\"\n\n\"You were brave to pull that stunt. Keep that courage alive,\" he says, pushing me towards the Senior officers as I try to catch my breath.\n\nHe shouts one last thing.\n\n\"And don't you dare fucking choke!\""
       },
       {
          "id": "A04C49S02",
@@ -13147,12 +13331,12 @@
          "act": 4,
          "act_name": "Act Four: Winter",
          "scene_number": 2,
-         "verbose_id": "4.49.148",
+         "verbose_id": "4.49.147",
          "doc_name": "PGC-4.49.2",
-         "uuid": "197",
+         "uuid": "196",
          "pov": "Cody",
          "written": true,
-         "word_count": 39,
+         "word_count": 1042,
          "setting": {
             "Date": "",
             "Time": "",
@@ -13166,7 +13350,7 @@
          "setting_text": "",
          "history": {
             "Created": "2025-06-01T03:44:22Z",
-            "Modified": "2026-03-09T14:09:09Z"
+            "Modified": "2026-04-25T13:48:03Z"
          },
          "status": "No Status",
          "label": "Planned content",
@@ -13175,7 +13359,7 @@
             "Katiya",
             "Current"
          ],
-         "summary": "Cody drives home in his suit with his father's technician shirt over it, unsure whether his presentation changed anything. What he does know is that Katiya still needs him, and that is enough to make his next decision.",
+         "summary": "Cody drives home in his suit with his father's technician shirt over it, unsure whether his presentation changed anything. What he does know is that Katiya still needs him, and that is enough to make his next decision.My door is still locked, but I find that hers is left ajar. The three pulses of the siren stir the town into disarray as I watch encumbered groups of villagers rush the streets beyond her windows.I enter the foyer to find that winter's chill has overtaken the small space. Debris is scattered across the floor, with half a dozen muddy footprints saturating my socks with another world's snow and soil, and I finally find the source of all the panic.My heart pulses as I try to remember her face as I last saw it, praying to whatever one of her Gods will listen that last night will never be the last time. I stretch my fingers through the hole in the front door where the lock used to be, and turn around to see all the items we prepared are missing from her kitchen counters.The fear overtakes me as I race up the uneven stairs, prepared to throw my powerless body at anything that might harm her. My breaths become short. Maybe tears crest my eyes by the time I make it to her bedroom, finding the curtains frozen, the window open, and a small pile of snow collecting below the desperate set of scratches in the windowsill.Something in me twists enough to refuse any sense of logic, and as the siren blares, her world feels like mine now more than ever. I ignore all her past warnings of the dangers of this world, hearing only the intimate words we shared the night before as I throw open her front door and rush the cobblestone streets in dress shoes, warmed only by the thick buttoned shirt of my father's uniform.",
          "synopsis": "Cody drives home in his suit with his father's technician shirt over it, unsure whether his presentation changed anything. What he does know is that Katiya still needs him, and that is enough to make his next decision.",
          "author_notes": "",
          "chapter_summary": "The true conflict of Paragate begins as witness replaces doubt and preparation replaces denial. Aldrin sees enough to gamble on Katiya, while Cody leaves Navidson-Monroe uncertain of what his honesty has bought him but sure he is not done yet. Both protagonists step fully into the roles they have been resisting, and the story pivots from argument into mobilization.",
@@ -13184,9 +13368,58 @@
             "BodyCody"
          ],
          "text_blocks": [
-            "Cody drives home in his suit with his father's technician shirt over it, unsure whether his presentation changed anything. What he does know is that Katiya still needs him, and that is enough to make his next decision."
+            "The phalanx of overtime HR employees guides me down the elevator as I try to catch my breath. They're kind enough to help me carry the case, and when I get to my car, they usher me towards the gate, demanding my badge after I scan it at the toll one last time.",
+            "\"Good luck out there,\" says the one that first arrived at the Aspen conference room in the middle of my presentation.",
+            "\"Thanks,\" I say. \"And thanks to you guys for letting me finish.\"",
+            "\"Navidson needs more talent like you,\" a recruiter says. \"Cool project. I hope you'll be back.\"",
+            "\"I guess we'll have to see,\" I say, and when the long striped arm of the toll bar raises to the top, I tear out of Navidson with the last piece of my brother's namesake in the back, wearing my father's thick technician shirt as a jacket over my formal clothes.",
+            "I think it went well. Or at least I hope it went well, and when Mom calls over the car's hands-free system, I tell my mother and father all about it.",
+            "I'm pulling into the neighborhood when their response first crackles over the old speakers. \"Well, you took your shot,\" says my old man.",
+            "\"We're proud of you,\" Mom says. \"But I'd still send more rsums.\"",
+            "They nag me over employment a little further, filling me with just enough fear of god to remember the townhouse at stake.",
+            "\"I'll call you later,\" I say, as I pull into the garage, unable to discern the strange noise coming from inside. It sounds like someone's car is going off  in their garage, and when I enter the house with the case dragging behind me, I realize it's from Katiya's side.",
+            "It sounds like pulses of the alarm system: not the short, single burst that tells the laborers that it's time to go home. Both doors are ajar, and I hear a lot of commotion coming from her side.",
+            "I hardly notice her sitting there at my window until she shifts a little. The left shade is drawn, and while she tries to steady the tremble in her right hand that holds the walkie-talkie, the fine dusting of snow mesmerizes her.",
+            "I struggle to guess at all she's thinking when she doesn't even notice me come in the door. I expected her to be gone, and without my own words, I approach her.",
+            "A decorated short cape hangs over the chair, embellished with the markings of an officer, but when I get closer, I see she wears it over a tattered commoner's cloak.",
+            "I can sense the tremor without having to touch her, from how she pulses her palms to recirculate the blood back into her extremities, drawing short breaths without the space to talk.",
+            "I pull up another folding chair, and as soon as I sit next to her, she lowers her head against my shoulder.",
+            "I put my arm around her. She feels so cold despite the gift of fire I thought would forever keep her warm, and as I draw her closer, she mutters the first words.",
+            "\"Did you do it?\"",
+            "\"Yeah,\" I say. \"And you?\"",
+            "The tightness of her grasp around my waist speaks in lieu of a response. She hands me the walkie-talkie, pressing the call button to test its power. The speaker chirps louder than the droning sirens a world over.",
+            "\"I'm not over here to run away,\" she says.",
+            "\"Of course not,\" I say.",
+            "\"There are so many people depending on me. And I'm so afraid,\" she musters.",
+            "\"I get it,\" I say.",
+            "\"But not of failure.\"",
+            "\"Of course not,\" I repeat. \"I'm proud of how much we've grown together. I'll be scared, too, to face an enemy like that.\"",
+            "\"That's not what it is, either,\" she says. \"And what do you mean, you'll be scared?\"",
+            "\"I mean, I would be scared,\" I say, quickly changing the subject. \"Then what are you afraid of, if it's not friends or enemies?\"",
+            "\"It's what I have to lose,\" she says, and  she pulls her chair closer to mine. \"Not friends or enemies, but something stronger.\"",
+            "I smile. \"Then let's shut the door forever,\" I say, struggling to read my own words as sarcasm. \"You can stay here forever. Never have to see war again. Live a life so slow it pains you from how boring it is.\"",
+            "I finally get a smile from her.",
+            "She says, \"or maybe if your plans fall through, you can become an adventurer with me\" she says. \"I'll never let anyone hurt you.\"",
+            "\"I'm sure you would,\" I say, and I feel the exhaustion finally overtake me. There's a feeling I thought I lost a long time ago that glows in my chest.",
+            "\"But I like it here,\" I say. \"Hell, I think I even love it here again.\"",
+            "She nods in agreement.",
+            "We sit in silence until the longing fades, left with a single question we haven't answered since the beginning.",
+            "\"How will we destroy it?\" I ask.",
+            "\"I don't think there will be a 'we,' Cody,\" Katiya says. She swallows. \"There's you, a lighter, a fuse. And a bag of dead Essence on my counter I've kept around since the beginning.\"",
+            "\"But what about the others?\"",
+            "\"There won't be anyone around,\" she says.",
+            "\"And the fire?\"",
+            "\"Fire doesn't spread across the portal,\" she says. \"I tested it.\"",
+            "\"And what if I'm the one to lose?\"",
+            "\"I don't know,\" she says. \"But then we'll both be around to figure it out.\"",
+            "My stomach twists, mostly because of what I haven't told her. I turn the walkie-talkie over on my hands: one of ten I purchased at Cabela's on a drive home from work.",
+            "\"That's for you to listen in, to blow it in case it all goes south.\" She points to the rules: the one that we amended.",
+            "03. NO ONE ELSE CAN CROSS THE THRESHOLD. (UNLESS THEY CAN CROSS THE THRESHOLD)",
+            "\"You should know that sheet of paper is useless by now,\" I tell her, grasping her chin to pull her closer. \"We couldn't even follow the biggest one.\"",
+            "She bites my ear.",
+            "\"And we'll break it a lot more when this is over,\" she whispers."
          ],
-         "full_text": "Cody drives home in his suit with his father's technician shirt over it, unsure whether his presentation changed anything. What he does know is that Katiya still needs him, and that is enough to make his next decision."
+         "full_text": "The phalanx of overtime HR employees guides me down the elevator as I try to catch my breath. They're kind enough to help me carry the case, and when I get to my car, they usher me towards the gate, demanding my badge after I scan it at the toll one last time.\n\n\"Good luck out there,\" says the one that first arrived at the Aspen conference room in the middle of my presentation.\n\n\"Thanks,\" I say. \"And thanks to you guys for letting me finish.\"\n\n\"Navidson needs more talent like you,\" a recruiter says. \"Cool project. I hope you'll be back.\"\n\n\"I guess we'll have to see,\" I say, and when the long striped arm of the toll bar raises to the top, I tear out of Navidson with the last piece of my brother's namesake in the back, wearing my father's thick technician shirt as a jacket over my formal clothes.\n\nI think it went well. Or at least I hope it went well, and when Mom calls over the car's hands-free system, I tell my mother and father all about it.\n\nI'm pulling into the neighborhood when their response first crackles over the old speakers. \"Well, you took your shot,\" says my old man.\n\n\"We're proud of you,\" Mom says. \"But I'd still send more rsums.\"\n\nThey nag me over employment a little further, filling me with just enough fear of god to remember the townhouse at stake.\n\n\"I'll call you later,\" I say, as I pull into the garage, unable to discern the strange noise coming from inside. It sounds like someone's car is going off  in their garage, and when I enter the house with the case dragging behind me, I realize it's from Katiya's side.\n\nIt sounds like pulses of the alarm system: not the short, single burst that tells the laborers that it's time to go home. Both doors are ajar, and I hear a lot of commotion coming from her side.\n\nI hardly notice her sitting there at my window until she shifts a little. The left shade is drawn, and while she tries to steady the tremble in her right hand that holds the walkie-talkie, the fine dusting of snow mesmerizes her.\n\nI struggle to guess at all she's thinking when she doesn't even notice me come in the door. I expected her to be gone, and without my own words, I approach her.\n\nA decorated short cape hangs over the chair, embellished with the markings of an officer, but when I get closer, I see she wears it over a tattered commoner's cloak.\n\nI can sense the tremor without having to touch her, from how she pulses her palms to recirculate the blood back into her extremities, drawing short breaths without the space to talk.\n\nI pull up another folding chair, and as soon as I sit next to her, she lowers her head against my shoulder.\n\nI put my arm around her. She feels so cold despite the gift of fire I thought would forever keep her warm, and as I draw her closer, she mutters the first words.\n\n\"Did you do it?\"\n\n\"Yeah,\" I say. \"And you?\"\n\nThe tightness of her grasp around my waist speaks in lieu of a response. She hands me the walkie-talkie, pressing the call button to test its power. The speaker chirps louder than the droning sirens a world over.\n\n\"I'm not over here to run away,\" she says.\n\n\"Of course not,\" I say.\n\n\"There are so many people depending on me. And I'm so afraid,\" she musters.\n\n\"I get it,\" I say.\n\n\"But not of failure.\"\n\n\"Of course not,\" I repeat. \"I'm proud of how much we've grown together. I'll be scared, too, to face an enemy like that.\"\n\n\"That's not what it is, either,\" she says. \"And what do you mean, you'll be scared?\"\n\n\"I mean, I would be scared,\" I say, quickly changing the subject. \"Then what are you afraid of, if it's not friends or enemies?\"\n\n\"It's what I have to lose,\" she says, and  she pulls her chair closer to mine. \"Not friends or enemies, but something stronger.\"\n\nI smile. \"Then let's shut the door forever,\" I say, struggling to read my own words as sarcasm. \"You can stay here forever. Never have to see war again. Live a life so slow it pains you from how boring it is.\"\n\nI finally get a smile from her.\n\nShe says, \"or maybe if your plans fall through, you can become an adventurer with me\" she says. \"I'll never let anyone hurt you.\"\n\n\"I'm sure you would,\" I say, and I feel the exhaustion finally overtake me. There's a feeling I thought I lost a long time ago that glows in my chest.\n\n\"But I like it here,\" I say. \"Hell, I think I even love it here again.\"\n\nShe nods in agreement.\n\nWe sit in silence until the longing fades, left with a single question we haven't answered since the beginning.\n\n\"How will we destroy it?\" I ask.\n\n\"I don't think there will be a 'we,' Cody,\" Katiya says. She swallows. \"There's you, a lighter, a fuse. And a bag of dead Essence on my counter I've kept around since the beginning.\"\n\n\"But what about the others?\"\n\n\"There won't be anyone around,\" she says.\n\n\"And the fire?\"\n\n\"Fire doesn't spread across the portal,\" she says. \"I tested it.\"\n\n\"And what if I'm the one to lose?\"\n\n\"I don't know,\" she says. \"But then we'll both be around to figure it out.\"\n\nMy stomach twists, mostly because of what I haven't told her. I turn the walkie-talkie over on my hands: one of ten I purchased at Cabela's on a drive home from work.\n\n\"That's for you to listen in, to blow it in case it all goes south.\" She points to the rules: the one that we amended.\n\n03. NO ONE ELSE CAN CROSS THE THRESHOLD. (UNLESS THEY CAN CROSS THE THRESHOLD)\n\n\"You should know that sheet of paper is useless by now,\" I tell her, grasping her chin to pull her closer. \"We couldn't even follow the biggest one.\"\n\nShe bites my ear.\n\n\"And we'll break it a lot more when this is over,\" she whispers."
       },
       {
          "id": "A04C49S03",
@@ -13196,9 +13429,9 @@
          "act": 4,
          "act_name": "Act Four: Winter",
          "scene_number": 3,
-         "verbose_id": "4.49.149",
+         "verbose_id": "4.49.148",
          "doc_name": "PGK-4.49.3",
-         "uuid": "198",
+         "uuid": "197",
          "pov": "Katiya",
          "written": true,
          "word_count": 37,
@@ -13215,7 +13448,7 @@
          "setting_text": "",
          "history": {
             "Created": "2026-03-07T23:29:26Z",
-            "Modified": "2026-03-09T14:09:09Z"
+            "Modified": "2026-04-25T13:48:24Z"
          },
          "status": "No Status",
          "label": "Planned content",
@@ -13245,9 +13478,9 @@
          "act": 4,
          "act_name": "Act Four: Winter",
          "scene_number": 4,
-         "verbose_id": "4.49.150",
+         "verbose_id": "4.49.149",
          "doc_name": "PGC-4.49.4",
-         "uuid": "199",
+         "uuid": "198",
          "pov": "Cody",
          "written": true,
          "word_count": 43,
@@ -13294,9 +13527,9 @@
          "act": 4,
          "act_name": "Act Four: Winter",
          "scene_number": 5,
-         "verbose_id": "4.49.151",
+         "verbose_id": "4.49.150",
          "doc_name": "PGK-4.49.5",
-         "uuid": "200",
+         "uuid": "199",
          "pov": "Katiya",
          "written": true,
          "word_count": 44,
@@ -13343,9 +13576,9 @@
          "act": 4,
          "act_name": "Act Four: Winter",
          "scene_number": 1,
-         "verbose_id": "4.50.152",
+         "verbose_id": "4.50.151",
          "doc_name": "PGC-4.50.1",
-         "uuid": "202",
+         "uuid": "201",
          "pov": "Cody",
          "written": true,
          "word_count": 42,
@@ -13392,9 +13625,9 @@
          "act": 4,
          "act_name": "Act Four: Winter",
          "scene_number": 2,
-         "verbose_id": "4.50.153",
+         "verbose_id": "4.50.152",
          "doc_name": "PGK-4.50.2",
-         "uuid": "203",
+         "uuid": "202",
          "pov": "Katiya",
          "written": true,
          "word_count": 39,
@@ -13441,9 +13674,9 @@
          "act": 4,
          "act_name": "Act Four: Winter",
          "scene_number": 3,
-         "verbose_id": "4.50.154",
+         "verbose_id": "4.50.153",
          "doc_name": "PGC-4.50.3",
-         "uuid": "204",
+         "uuid": "203",
          "pov": "Cody",
          "written": true,
          "word_count": 47,
@@ -13490,9 +13723,9 @@
          "act": 4,
          "act_name": "Act Four: Winter",
          "scene_number": 4,
-         "verbose_id": "4.50.155",
+         "verbose_id": "4.50.154",
          "doc_name": "PGK-4.50.4",
-         "uuid": "205",
+         "uuid": "204",
          "pov": "Katiya",
          "written": true,
          "word_count": 43,
@@ -13539,9 +13772,9 @@
          "act": 4,
          "act_name": "Act Four: Winter",
          "scene_number": 1,
-         "verbose_id": "4.51.156",
+         "verbose_id": "4.51.155",
          "doc_name": "PGK-4.51.1",
-         "uuid": "207",
+         "uuid": "206",
          "pov": "Katiya",
          "written": true,
          "word_count": 41,
@@ -13588,9 +13821,9 @@
          "act": 4,
          "act_name": "Act Four: Winter",
          "scene_number": 2,
-         "verbose_id": "4.51.157",
+         "verbose_id": "4.51.156",
          "doc_name": "PGC-4.51.2",
-         "uuid": "208",
+         "uuid": "207",
          "pov": "Katiya",
          "written": true,
          "word_count": 39,
@@ -13637,9 +13870,9 @@
          "act": 4,
          "act_name": "Act Four: Winter",
          "scene_number": 3,
-         "verbose_id": "4.51.158",
+         "verbose_id": "4.51.157",
          "doc_name": "PGK-4.51.3",
-         "uuid": "209",
+         "uuid": "208",
          "pov": "Katiya",
          "written": true,
          "word_count": 46,
@@ -13686,9 +13919,9 @@
          "act": 5,
          "act_name": "Epilogue",
          "scene_number": 1,
-         "verbose_id": "5.52.159",
+         "verbose_id": "5.52.158",
          "doc_name": "PGC-5.52.1",
-         "uuid": "211",
+         "uuid": "210",
          "pov": "Cody",
          "written": true,
          "word_count": 19,
@@ -13728,141 +13961,6 @@
          "full_text": "Cody and Katiya announce that they'll both be able to keep their respective homes, and their relationship will continue."
       },
       {
-         "id": "A05C52S02",
-         "chapter_id": "A05C52",
-         "chapter": 52,
-         "chapter_name": "Parasmagate",
-         "act": 5,
-         "act_name": "Epilogue",
-         "scene_number": 2,
-         "verbose_id": "5.52.160",
-         "doc_name": "PG-167",
-         "uuid": "212",
-         "pov": "Default",
-         "written": false,
-         "word_count": 0,
-         "setting": {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Unspecified",
-            "Area": "Unspecified",
-            "Location": "Unspecified",
-            "Place": "Unspecified"
-         },
-         "setting_text": "",
-         "history": {
-            "Created": "2025-06-01T03:46:49Z",
-            "Modified": "2026-03-09T01:10:22Z"
-         },
-         "status": "No Status",
-         "label": "Planned content",
-         "keywords": [
-            "Paragate",
-            "Cody",
-            "Current"
-         ],
-         "summary": "Cody places a photo of his dad and Jackson into his Aerospace locker. Father is re-hired. Still doing redlines, but for Aerospace.",
-         "synopsis": "",
-         "author_notes": "",
-         "chapter_summary": "The epilogue gives Paragate its emotional closure before leaving one quiet fracture open for the future. Cody and Katiya emerge from the battle changed, no longer using each other's worlds as refuge from their own lives, and their relationship finally rests on chosen commitment instead of mutual escape.",
-         "chapter_blurb": "On the western tower, two silhouettes face what's next.",
-         "style_classes": [],
-         "text_blocks": [],
-         "full_text": ""
-      },
-      {
-         "id": "A05C52S03",
-         "chapter_id": "A05C52",
-         "chapter": 52,
-         "chapter_name": "Parasmagate",
-         "act": 5,
-         "act_name": "Epilogue",
-         "scene_number": 3,
-         "verbose_id": "5.52.161",
-         "doc_name": "PG-168",
-         "uuid": "212",
-         "pov": "Default",
-         "written": false,
-         "word_count": 0,
-         "setting": {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Unspecified",
-            "Area": "Unspecified",
-            "Location": "Unspecified",
-            "Place": "Unspecified"
-         },
-         "setting_text": "",
-         "history": {
-            "Created": "2025-06-01T03:46:50Z",
-            "Modified": "2026-03-09T01:10:22Z"
-         },
-         "status": "No Status",
-         "label": "Planned content",
-         "keywords": [
-            "Paragate",
-            "Katiya",
-            "Current"
-         ],
-         "summary": "Katiya in full guard uniform, standing tall at the western watchtower with Cody at her side.",
-         "synopsis": "",
-         "author_notes": "",
-         "chapter_summary": "The epilogue gives Paragate its emotional closure before leaving one quiet fracture open for the future. Cody and Katiya emerge from the battle changed, no longer using each other's worlds as refuge from their own lives, and their relationship finally rests on chosen commitment instead of mutual escape.",
-         "chapter_blurb": "On the western tower, two silhouettes face what's next.",
-         "style_classes": [],
-         "text_blocks": [],
-         "full_text": ""
-      },
-      {
-         "id": "A05C52S04",
-         "chapter_id": "A05C52",
-         "chapter": 52,
-         "chapter_name": "Parasmagate",
-         "act": 5,
-         "act_name": "Epilogue",
-         "scene_number": 4,
-         "verbose_id": "5.52.162",
-         "doc_name": "PG-169",
-         "uuid": "212",
-         "pov": "Default",
-         "written": false,
-         "word_count": 0,
-         "setting": {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Unspecified",
-            "Area": "Unspecified",
-            "Location": "Unspecified",
-            "Place": "Unspecified"
-         },
-         "setting_text": "",
-         "history": {
-            "Created": "2025-06-01T03:48:09Z",
-            "Modified": "2026-03-09T01:10:22Z"
-         },
-         "status": "No Status",
-         "label": "Planned content",
-         "keywords": [
-            "Paragate",
-            "Katiya",
-            "Current"
-         ],
-         "summary": "Celebrating Christmas together in Cody's old house.",
-         "synopsis": "",
-         "author_notes": "",
-         "chapter_summary": "The epilogue gives Paragate its emotional closure before leaving one quiet fracture open for the future. Cody and Katiya emerge from the battle changed, no longer using each other's worlds as refuge from their own lives, and their relationship finally rests on chosen commitment instead of mutual escape.",
-         "chapter_blurb": "On the western tower, two silhouettes face what's next.",
-         "style_classes": [],
-         "text_blocks": [],
-         "full_text": ""
-      },
-      {
          "id": "A05C53S01",
          "chapter_id": "A05C53",
          "chapter": 53,
@@ -13870,9 +13968,9 @@
          "act": 5,
          "act_name": "Epilogue",
          "scene_number": 1,
-         "verbose_id": "5.53.163",
+         "verbose_id": "5.53.159",
          "doc_name": "PGT-5.53.1",
-         "uuid": "213",
+         "uuid": "212",
          "pov": "Default",
          "written": true,
          "word_count": 42,
@@ -13911,97 +14009,6 @@
             "In the only Titus-perspective scene of the book, Ellie reveals a memory, gesture, or contradiction that should not be possible. The moment leaves Titus with the terrible understanding that her return did not close the wound—it changed it. Romin confronts brother Ryder."
          ],
          "full_text": "In the only Titus-perspective scene of the book, Ellie reveals a memory, gesture, or contradiction that should not be possible. The moment leaves Titus with the terrible understanding that her return did not close the wound—it changed it. Romin confronts brother Ryder."
-      },
-      {
-         "id": "A05C53S02",
-         "chapter_id": "A05C53",
-         "chapter": 53,
-         "chapter_name": "Threaded Echoes",
-         "act": 5,
-         "act_name": "Epilogue",
-         "scene_number": 2,
-         "verbose_id": "5.53.164",
-         "doc_name": "PG-171",
-         "uuid": "214",
-         "pov": "Default",
-         "written": false,
-         "word_count": 0,
-         "setting": {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Unspecified",
-            "Area": "Unspecified",
-            "Location": "Unspecified",
-            "Place": "Unspecified"
-         },
-         "setting_text": "",
-         "history": {
-            "Created": "2025-06-01T03:48:11Z",
-            "Modified": "2026-03-09T01:10:22Z"
-         },
-         "status": "No Status",
-         "label": "Planned content",
-         "keywords": [
-            "Firebrand",
-            "Threadwalker",
-            "Titus",
-            "Current"
-         ],
-         "summary": "Titus confronts a version of his sister that is torn between two realities.",
-         "synopsis": "",
-         "author_notes": "",
-         "chapter_summary": "",
-         "chapter_blurb": "Titus' past catches up with him.",
-         "style_classes": [],
-         "text_blocks": [],
-         "full_text": ""
-      },
-      {
-         "id": "A05C53S03",
-         "chapter_id": "A05C53",
-         "chapter": 53,
-         "chapter_name": "Threaded Echoes",
-         "act": 5,
-         "act_name": "Epilogue",
-         "scene_number": 3,
-         "verbose_id": "5.53.165",
-         "doc_name": "PG-172",
-         "uuid": "214",
-         "pov": "Default",
-         "written": false,
-         "word_count": 0,
-         "setting": {
-            "Date": "",
-            "Time": "",
-            "ISO": "",
-            "DoSettingTag": "Yes",
-            "Region": "Unspecified",
-            "Area": "Unspecified",
-            "Location": "Unspecified",
-            "Place": "Unspecified"
-         },
-         "setting_text": "",
-         "history": {
-            "Created": "2025-06-01T03:48:11Z",
-            "Modified": "2026-03-09T01:10:22Z"
-         },
-         "status": "No Status",
-         "label": "Planned content",
-         "keywords": [
-            "Goldenfur",
-            "Jade",
-            "Current"
-         ],
-         "summary": "Jade tells of the forthcoming battle to reclaim the soul of Melenia, heading south to Northaven.",
-         "synopsis": "",
-         "author_notes": "",
-         "chapter_summary": "",
-         "chapter_blurb": "Titus' past catches up with him.",
-         "style_classes": [],
-         "text_blocks": [],
-         "full_text": ""
       }
    ]
 }

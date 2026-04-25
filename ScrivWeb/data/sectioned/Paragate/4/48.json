@@ -2,7 +2,259 @@
    [
       [
          "BodyCody",
-         "Cody is pulled into a glass conference room where HR tries to reduce him to a clean termination case, with Reed present as witness. Cody refuses to sign, clears his father, and forces the company to deal with the messier truth of what he actually did. ",
+         "&quot;You have nothing left to prove,&quot; Reed says, but the words are not his.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I tug at the ironed sleeve beneath my suit jacket as he prattles on, feeling like I&apos;m dressed for my own funeral. The incandescent glow of the projector burns a radiant square into my eyes as I sit in the dimly-lit room, flanked by a phalanx of security staff with clipboards: only a single name left to cross from their list.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "And after they close the door behind us, it appears on the screen.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;You have been very elusive,&quot; the HR director says. &quot;We&apos;ve already had this conversation with all the rest of the outgoing staff.&quot; She gestures to my outfit. &quot;And it surely seems you&apos;re dressed for the occasion.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "Reed lets out a corporate laugh. His clammy hands tremble as he tries to wipe the sweat on his jeans, but I&apos;m unmoved by such an attempt at humor, using the glow of the projector slide to try and discern the words on the stapled form peaking out of the Manila folder.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I have an appointment with the Aerospace division,&quot; I tell her. &quot;I have something important to present to them.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "She sits in front of me, her features silhouetted by the radiant glow of the pallid PowerPoint slide. &quot;That&apos;s not going to be relevant to you anymore,&quot; she says. &quot;You have no options with Navidson-Monroe after the incident last month. You were given the clemency to make a favorable exit after your demotion.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "The slide switches to stills of the security camera, stamped with time and date, framed so deviously I look like I&apos;m the perp on a true crime show.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Your father gave you his code. You used it to enter, and you disconnected an active battery cell, contaminating the test data. Beyond the cost to the company, what matters is that what you did was unsafe.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "My mouth hinges open at all the arguments I&apos;ve recited in my mind, thinking of the sign that read OPEN TO ENGINEERING STAFF. The residue of duct tape across the door from taping the deadbolt open. The verbal permission I received &mdash; but Reed lightly elbows me, knowing I might dig myself deeper.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Although your father never had the chance at a clean break after his outburst, we&apos;re still offering you a chance, because you&apos;re a young man with promise.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I think of my promise to make it to the top of the tower as she slides the folder across the table. A familiar anger might ball my fists again if I didn&apos;t have the strength to process it. Part of me wants to capitulate; to concede; to play it safe; to never figure out what I&apos;m really made of, and as my eyes glaze over the contract, I decide whether or not to touch the pen to the page.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Your father told me that I had a clean slate,&quot; I tell Reed. &quot;I was told I had a chance &mdash; but are they really waiting for me up there?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "He doesn&apos;t want to answer. &quot;I think . . . you should do what&apos;s best for your future, Cody. You tried. But we knew this might happen.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "The letters blend together on the page in the darkness. It&apos;s not even light enough to read: only light enough to find the line I&apos;m being goaded to sign.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I spent years being the best version of myself this company could ask for. I was patient, and I was passionate, and I refused to let the silent indifference tempt me with a shortcut.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;We know,&quot; the Director says. &quot;And your colleagues have had nothing but the highest praise for you. That&apos;s why the offer stands,&quot; she says, pushing the form further.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I did this. I own my mistakes. And my father had nothing to do with this: if this signature could liberate him from suffering for his son&apos;s mistakes, then I would do it.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "A sense of relief seems to flush their faces. I can tell how badly she wants to drag the last file with my name on it into the folder labeled COMPLETE. How badly Reed wants to return to subsisting as a pinion in the machine he was designed for.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;But I respect myself too much to sign this, to be reduced to something neat and forgettable.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "She grimaces with a smile. &quot;Mr. Dunsmore, if you don&apos;t sign this, you will be fired immediately. You will not get references. And I hear the market is tough out there.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Then maybe Navidson-Monroe should assess its blind spots, instead of pawning off inefficiencies on the workers brave enough to admit the truth in their failures.&quot; I shut the folder and push it back to her. &quot;I deserve so much more than being reduced a single page.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "Reed winces at my words, distracted enough that he fails to catch his phone when it vibrates off his lap. I&apos;m certain that there&apos;s no other destination on this impasse, so I begin to stand, just as the name flashes across his phone: three letters, reading DAD.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "Maybe he might put it to his ear, or maybe he might silence it, but he slams it on the table, putting it on speaker.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Hey son, where&apos;s your friend?&quot; Geoffrey asks. &quot;We got this box upstairs with the prototype, and the Aero guys are looking at it.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "The HR director recognizes the voice. Somehow she never made the connection between the director of Research & Development and his son.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;We&apos;re in the room with HR,&quot; Reed says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Well, did he sign anything?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;No,&quot; Reed says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Then what are you doing? Get him up here.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "The HR staff take a step forward as the director rises from her seat. &quot;Cody isn&apos;t going anywhere. He&apos;s being terminated,&quot; she tells Geoffrey.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "His voice crackles over the phone. &quot;I knew this was going to happen. Whether he&apos;s with us or not, Cody is a guest of the Aerospace division today, and you knew that!&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "At the top of the hour, the conference room door opens, and light pours back in once again. Three white collars peek inside the room, muttering about this &quot;being their scheduled block,&quot; and behind them, several more employees enter.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I grab my bag as the HR staff are distracted, trying to flaunt their authority over several impatient bean counters. Reed grabs his phone as a decision crystallizes in his mind, grabbing me by the lapel as he drags me towards the door, taking his employee badge into his other hand.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;You&apos;re right,&quot; Reed says. &quot;You deserve more. And my father is not a liar.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Where are we going?&quot; I ask.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I&apos;m getting you up there,&quot; he says. &quot;But then it&apos;s all on you.&quot;",
          true,
          false,
          false
@@ -18,7 +270,203 @@
    [
       [
          "BodyKatiya",
-         "Katiya apologizes for hiding Rayna, explains what is coming, and demands an audience with Aldrin. Aryn cuffs herself to Katiya and chooses to help her force a path through a system that refuses to listen. ",
+         "&quot;I&apos;m getting you across the base, but then it&apos;s all on you,&quot; Aryn says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;And what if they don&apos;t listen?&quot; I ask.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "She doesn&apos;t respond.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;What if this falls on deaf ears, Aryn? What if they stop us? You know every guard is aware of my arrest. If I&apos;m right&mdash;&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;I know,&quot; Aryn mutters, &quot;just shut up!&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "She replaces my breath for reason with a growing tension in my wrist. Our walk hastens from an escort to looking more like a coerced escape, and as we climb the stone stairs from deep within the holding cells, I watch a certain hesitation wage war within her mind.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;The handcuffs don&apos;t help the image,&quot; I say. &quot;Can&apos;t you just take them off?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;I&apos;m only helping you because this town can&apos;t afford for you to be right,&quot; she says. &quot;Don&apos;t push it.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;Aldrin&apos;s all the way across the base,&quot; I say. &quot;We&apos;re at the southeast corner. How are we going to clear that much ground? Or even make it past the&mdash;&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;Stop right there,&quot; the receptionist says, sitting inside the metal booth as he speaks through an open door. &quot;What are you doing with her?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;I&apos;m escorting Katiya to Command,&quot; Aryn says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;On whose orders?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;On . . . on the fact that she knows something we can&apos;t afford to ignore,&quot; Aryn says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;Aldrin specifically ordered her to stay put until the tribunal. You&apos;re not taking her anywhere,&quot; the receptionist says, flashing his weapon from beneath his cloak. &quot;And I don&apos;t care what lies she told you.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;We can&apos;t afford to be wrong about this,&quot; Aryn begs, &quot;she&mdash;&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;&mdash;There is procedure for a reason, and you are a probationary guard! Turn around right or without another word, or else I&apos;ll have to report you.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "I let the Essence scald the handcuff on my left wrist. The tempered steel was made to be unmeltable by the Essenced, but with my heightened strength as a guard, I think I might just be able to break free.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "I expect so little of the girl that&apos;s chained to me. The hesitation wears her down enough to the point that I know she&apos;ll crack.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "But I underestimate which way she&apos;ll turn, feeling the heat rise in her manicured claws as she builds the strength to make her opening move.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "Her boot bludgeons the iron door shut, and as the low-level guard curses us out with the names of lesser gods, her hands weld the latch to the door.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;I swear I&apos;ll kill you if you&apos;re lying to me,&quot; she says. &quot;Because my sister spoke the world of you, and that&apos;s the only reason I&apos;m giving you this.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "The receptionist shouts through the open window as Aryn drags me through the front doors of the holding block, the two of us still bound by the unmeltable bond of steel.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "The guards yell for us to stop, but they&apos;re not fast enough: words reduced to sluggish slurs as Aryn&apos;s Ahkvasan blood becomes handy, with just enough Essence for us to clear the courtyard as confusion turns to animosity.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;How will they listen to us now?&quot; Aryn asks.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;I need to show him what&apos;s coming.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;He won&apos;t leave,&quot; Aryn huffs.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;So I&apos;ll have to force him,&quot; I manage.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;And how will we do that?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;First, let&apos;s enter on the third floor,&quot; I say, gesturing to the rooftops.",
          true,
          false,
          false
@@ -34,7 +482,294 @@
    [
       [
          "BodyCody",
-         "Upper management asks for Cody by name, forcing Aerospace and HR into conflict over whether he is a liability or an asset. Reed becomes Cody&apos;s reluctant way up the tower, using his access to move him toward Aspen while Security tries to shut the route down. ",
+         "Reed scans his badge in the glass elevator as security crests the hill. The doors close long before they&apos;re even a couple hundred feet away, and as we huff for breath, the inertia of the lift staggers us.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "His hand tightens on the railing. I watch Security&apos;s four-by-four shrink to the size of a matchbox car as the glass elevator climbs ever-so-slowly: designed to be slow on purpose.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;So that&apos;s it,&quot; I say.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Huh?&quot; Reed asks.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I don&apos;t know &mdash; I expected more, you know,&quot; I say. &quot;More of a chase.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Did . . . did you want a chase?&quot; Reed asks, returning the badge to his neck. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I thought you&apos;d be scanning me through doors and stuff. Just you and me: making our way up through the Aero building as they chase us,&quot; I say.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I dunno. I think that was pretty exciting. When was the last time you ran hills like that?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;My last lacrosse practice maybe, senior year?&quot; I feel like I&apos;m going to vomit: it&apos;s a miracle the seams of my suit never tore on the way up here, though puddles of sweat surely saturate my undershirt.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "He laughs. &quot;Same for me, too, I think.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "We watch the security staff as they split up, but none of them tilt their heads towards the glass carriage. Soon we realize that they weren&apos;t chasing us after all:  just preparing the grounds to close in the next couple of hours. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Why the hell did we run?&quot; I ask.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;It seemed like the right thing to do,&quot; Reed says. &quot;I ran because you were running.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Well, you pulled me by the collar to get out of the room,&quot; I say. &quot;What was that for?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;It seems like a big moment, you know?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I repeat. &quot;A big moment.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Yeah, like on TV, you know. Being chased by the bad guys or whatever. I guess I watch a lot of movies in the cinema in my basement,&quot; he casually drops. &quot;But...&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;It&apos;s just Human Resources,&quot; I say. &quot;The modern world is so boring &mdash; I mean, what are they going to do? Write a strongly worded email?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "We wait a couple pings of the elevator before I speak again.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;As wrong as they have me pinned, I mean, I can&apos;t blame her: she&apos;s just doing her job.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Huh,&quot; Reed says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I laugh as I sniff my armpit. &quot;You know, I thought before I got a &apos;big boy job&apos; that Human Resources was, like, resources for humans.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;What do you mean?&quot; He asks.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Like, I don&apos;t know, like they were there for the employees or whatever.&quot; I gesture to the elevator. &quot;Like if you were stuck in here, they&apos;d be the ones to call the fire department. Or if you . . . well, I don&apos;t know, I can&apos;t really think of an example, but you&apos;d call them if you needed something.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;So like, on your side, you mean,&quot; Reed says. &quot;You first.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Yeah. But the humans are the resources, though, like you and me,&quot; I say. &quot;We&apos;re resources, and they cut us or promote us. Isn&apos;t that kind of fucked up?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I guess I never thought of that.&quot; He clears his throat. &quot;But that&apos;s corporate. I grew up in a corporate household, you know. My mom did some HR stuff before I was born, I think, so that never really crossed my mind.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Oh,&quot; I say.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Yeah. Baskin Robins. So I was a fat kid.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I snort. &quot;No way.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "We aren&apos;t even a quarter of the way up as we look out upon the eastern skyline. The incredible vista of Denver glistens with the light of the sun setting somewhere far behind us. The parking lot is empty without all the early-rising technicians, and as the numbers scroll ever-so-slowly on the elevator&apos;s screen, Reed laughs again.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;To think I&apos;d ever do something like this,&quot; he says, wiping the sweat from his forehead. &quot;I was perfectly boring until I met you. Hell, I don&apos;t even think my dad can save me from this.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Then what changed your mind?&quot; I ask. &quot;Why risk it all for me?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;I couldn&apos;t stand to let mediocrity drag down real talent any further,&quot; he says. &quot;You have heart like my brother did. And yet you never give up.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Thanks,&quot; I say. &quot;You&apos;re a good friend.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;And, uh ... I kinda stole your girl. Yet you were remarkably chill about it, and though you found Katiya, I&apos;ve always felt like I really owed you one.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;But you make her happy in a way that I can&apos;t. I&apos;ve come to accept that we were only ever meant to be friends &mdash; and I&apos;m not a renewable source of energy like you.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Thanks, Cody.&quot; He smiles as the elevator reaches the top floor. &quot;Give &apos;em hell with this interview,&quot; he says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Where will you go?&quot; I ask.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Hide in my dad&apos;s office till this blows over,&quot; he says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "&quot;Right,&quot; I say.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyCody",
+         "I turn the corner, walking through the marble halls of the main building before I find the exact people I&apos;ve been looking for.",
          true,
          false,
          false
@@ -50,23 +785,182 @@
    [
       [
          "BodyKatiya",
-         "Katiya and Aryn fight their way across the base until Erik blocks the last path to Aldrin. Katiya convinces him to let her go, and the choice costs him as much as it frees her. Katiya tackles Aldrin over his desk with the sphere and warps him to the site of the coming attack.",
+         "&quot;So that&apos;s it?&quot; I ask.",
          true,
          false,
          false
       ],
       [
-         "EndOfScene",
-         " ",
+         "BodyKatiya",
+         "&quot;Yeah,&quot; Aryn says. &quot;Why else do you think it&apos;s so far from anything else?&quot;",
          true,
          false,
          false
-      ]
-   ],
-   [
+      ],
       [
-         "BodyCody",
-         " Cody reaches Aspen and is finally allowed to present, pulled between the company that wants him contained and the people who want to hear him speak. ",
+         "BodyKatiya",
+         "We can hear them climbing the stairs behind us, so drained of Essence that we couldn&apos;t even weld the rooftop door shut. I stole a piece of scrap from the Ironworks, reduced to a crumpled steel rod after deflecting blows from the agitated Royal Guards. Now it&apos;s jammed between the door handle, along with all the rest of whatever we could stack in front of the door.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "Now we stand at the fourth-story edge of the building, remembering the inconvenient fact that a large courtyard spans between the main building and all the other buildings. The cuffs chafe a bright red line in our wrists, and when Aryn looks to the weave of wires spanning from the fourth story radio tower to the command center&apos;s third-story teletype room, I shudder.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;Well, our Essence didn&apos;t break it!&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;You&apos;re the one that wanted the handcuffs, Aryn,&quot; I tell her. &quot;And I didn&apos;t leave the key, either.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "She grunts, taking a piece of scrap metal from the roof and bending it around the chain link of the cuffs to make an improvised sheath.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;Why are you making it even harder to get off?&quot; I ask, guessing the rooftop door can take two or three more blows before we&apos;re stranded four stories in the air. ",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "But then she leaps over the wires, suspending us on our toes as the massive, vibrating stretch of cable screeches with the weight of both of us in either side.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "I scream when the jostling cable lifts us off our feet, and I crash into Aryn as we&apos;re suspended by our two wrists, sliding down the wire as a trail of sparks erupt from the metal sheath. Her tail wraps around my leg as she hugs my waist with her free hand, and I embrace her, too terrified to feel the anguish in my wrist as we accelerate along the stretch of wire.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "I can feel the burning friction in my wrist and I wonder how much longer Aryn&apos;s improvised zip line will hold. Several hot sparks burn my wrist as the command post gets closer, and right when I wonder whether we might actually make it, the handcuff finally snaps, sending the two of us perfectly horizontal through the second story window.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "I close my eyes as glass and wood explode across the floor of a storeroom: the two of us crash into a shelf that tilts several of them over like dominoes as we try to regain our footing.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "Several volunteers taking inventory vacate the room in terror after the loud crash, and without time to take inventory of our own aching bodies, the two of us rush out the door to climb the stairs, hearing several new guards give chase.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "We crest the third story of the square stairway as a couple unprepared guards try to restrain us, but in their bulky armor, they can&apos;t get low enough to grab us. Aryn and I charge with our shoulders, and they flip over us, rolling down the stairs in metal armor that absorbs all their blows, blocking the rest of the ascending guards.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "We make it to the double doors of Aldrin&apos;s office, only to find a familiar face standing watch.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;What in Khiras&apos; name have you done, Katiya?&quot; Erik says.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;Move or be moved,&quot; Aryn sneers. &quot;Aldrin has to hear something whether he wants to or not.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;Gods damn it, Katiya!&quot; Erik says. &quot;You&apos;ve destroyed everything I&apos;ve done to protect you, can&apos;t you see that?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;I asked for none of it,&quot; I say. &quot;I confided in you, and all this time I KNOW you knew I wasn&apos;t running away. Do you have the slightest idea of what&apos;s coming? Of what we have to save?&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;It can&apos;t be,&quot; Erik says. &quot;There&apos;s no way!&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;But can you afford to be wrong?&quot; Aryn asks.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;I get you want to save your sister. And I love you just as much as you love me. But you can&apos;t stop me from fulfilling my highest purpose.&quot;",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "The guards made it around their fallen counterparts, rushing only seconds behind us as all this effort comes down to a final decision.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;You better be right,&quot; Erik says, opening the door to expose Aldrin as I feel for the sphere on my pocket, whispering to Aliaki on the other side.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;That&apos;s what I said.&quot; Aryn says. The two stand at the door, ready to receive the full might of the Guard on my behalf as I hurl the sphere towards Aldrin&apos;s desk, blinded by the pearlescent glow of its scrolling texture as his eyes widen, and I dive across the desk, tackling him out of his chair as an entire chunk of the office folds between spaces, leaving a cleanly-sliced cross section of his mahogany desk and most of the back wall, with picture frames still hanging, standing awkwardly in a distant forest.",
+         true,
+         false,
+         false
+      ],
+      [
+         "BodyKatiya",
+         "&quot;Commander,&quot; Aliaki says, as Jade, Romin, and Valentina stand beside them. &quot;Katiya has something to show you, and I&apos;m certain it will change your priorities.&quot;",
          true,
          false,
          false
